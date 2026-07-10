@@ -1485,7 +1485,20 @@
       "date": "2026-07-10T15:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrf0llbjcay2u",
+      "event": "Nicolas Mejia – Hernan Casanova",
+      "selection": "Acima 9.5 1º set",
+      "house": "Novibeet",
+      "odd": 2,
+      "pot": 2.17,
+      "prob": 51.1,
+      "stake": 15,
+      "date": "2026-07-10T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T13:57:32.094Z"
+  "updatedAt": "2026-07-10T14:12:13.231Z"
 }
