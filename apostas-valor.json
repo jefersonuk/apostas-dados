@@ -637,8 +637,8 @@
       "prob": 50.2,
       "stake": 30,
       "date": "2026-07-10T00:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "red",
       "selection": "+44.5 1o quarto"
     },
     {
@@ -1331,5 +1331,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T08:04:45.831Z"
+  "updatedAt": "2026-07-10T08:04:56.651Z"
 }
