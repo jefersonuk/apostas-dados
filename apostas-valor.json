@@ -1368,7 +1368,20 @@
       "date": "2026-07-10T09:20",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrerzj2a474pz",
+      "event": "Hugo gaston",
+      "selection": "Handicap -1.5",
+      "house": "Betnacional",
+      "odd": 2.1,
+      "pot": 35,
+      "prob": 60,
+      "stake": 20,
+      "date": "2026-07-10T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T10:08:35.601Z"
+  "updatedAt": "2026-07-10T10:11:06.946Z"
 }
