@@ -1067,8 +1067,8 @@
       "prob": 46.7,
       "stake": 36.53,
       "date": "2026-07-10T08:05",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrdx36suvbnjs",
@@ -1448,5 +1448,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T13:45:37.958Z"
+  "updatedAt": "2026-07-10T13:45:46.941Z"
 }
