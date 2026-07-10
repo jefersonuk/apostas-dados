@@ -546,8 +546,8 @@
       "prob": 51.9,
       "stake": 18.75,
       "date": "2026-07-10T06:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "green",
       "selection": "- 1o set - PAR"
     },
     {
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:30:59.298Z"
+  "updatedAt": "2026-07-10T14:35:49.875Z"
 }
