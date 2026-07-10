@@ -1457,8 +1457,8 @@
       "prob": 57.1,
       "stake": 40,
       "date": "2026-07-10T11:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrezxfoy51zgv",
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T23:38:58.962Z"
+  "updatedAt": "2026-07-10T23:39:06.246Z"
 }
