@@ -1379,8 +1379,8 @@
       "prob": 60,
       "stake": 20,
       "date": "2026-07-10T11:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mresl3g88gizk",
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T15:10:29.914Z"
+  "updatedAt": "2026-07-10T15:13:15.378Z"
 }
