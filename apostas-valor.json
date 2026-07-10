@@ -702,8 +702,8 @@
       "prob": 58.7,
       "stake": 30,
       "date": "2026-07-10T15:45",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "green",
       "selection": "Livingston +1,00"
     },
     {
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T23:47:35.466Z"
+  "updatedAt": "2026-07-10T23:48:06.177Z"
 }
