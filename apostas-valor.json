@@ -1392,8 +1392,8 @@
       "prob": 42.3,
       "stake": 20,
       "date": "2026-07-14T16:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mress5oxmzca0",
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:59:14.149Z"
+  "updatedAt": "2026-07-10T15:10:29.914Z"
 }
