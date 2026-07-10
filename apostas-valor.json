@@ -1472,7 +1472,20 @@
       "date": "2026-07-10T12:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrf02pfi159po",
+      "event": "Luca Pow / Mees Rottgering – Nathan Cox / Eugenio Gonzalez Fitzmaurice",
+      "selection": "1 vence",
+      "house": "Betano",
+      "odd": 1.52,
+      "pot": 3.75,
+      "prob": 68.3,
+      "stake": 38.55,
+      "date": "2026-07-10T15:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T13:53:26.194Z"
+  "updatedAt": "2026-07-10T13:57:32.094Z"
 }
