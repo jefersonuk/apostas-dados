@@ -1353,8 +1353,8 @@
       "prob": 46,
       "stake": 20,
       "date": "2026-07-10T15:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrerwaa93pfgs",
@@ -1418,8 +1418,8 @@
       "prob": 47.9,
       "stake": 30,
       "date": "2026-07-11T06:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mret2za8l5f1k",
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T23:39:19.497Z"
+  "updatedAt": "2026-07-10T23:39:24.662Z"
 }
