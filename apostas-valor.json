@@ -1483,8 +1483,8 @@
       "prob": 68.3,
       "stake": 38.55,
       "date": "2026-07-10T15:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrf0llbjcay2u",
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T23:48:06.177Z"
+  "updatedAt": "2026-07-10T23:51:31.207Z"
 }
