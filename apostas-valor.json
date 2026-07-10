@@ -1394,7 +1394,20 @@
       "date": "2026-07-14T16:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mress5oxmzca0",
+      "event": "Espanha – Bélgica",
+      "selection": "Espanha menos de 15.5 chutes",
+      "house": "Betano",
+      "odd": 2.4,
+      "pot": 14.6,
+      "prob": 47.8,
+      "stake": 30,
+      "date": "2026-07-10T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T10:27:53.144Z"
+  "updatedAt": "2026-07-10T10:33:22.641Z"
 }
