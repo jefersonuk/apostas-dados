@@ -1365,7 +1365,7 @@
       "pot": 36,
       "prob": 65,
       "stake": 30,
-      "date": "2026-07-10T09:20",
+      "date": "2026-07-10T15:00",
       "status": "pendente",
       "result": null
     },
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:35:49.875Z"
+  "updatedAt": "2026-07-10T14:41:31.621Z"
 }
