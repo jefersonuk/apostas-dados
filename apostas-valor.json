@@ -1329,7 +1329,20 @@
       "date": "2026-07-10T05:30",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrer51pyhbbxu",
+      "event": "Zverev",
+      "selection": "Handicap -2.5 zverev",
+      "house": "Betnacional",
+      "odd": 2,
+      "pot": 58,
+      "prob": 78,
+      "stake": 30,
+      "date": "2026-07-10T07:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T09:30:02.472Z"
+  "updatedAt": "2026-07-10T09:47:24.790Z"
 }
