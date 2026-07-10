@@ -1498,7 +1498,20 @@
       "date": "2026-07-10T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrf0qhwx4nnkg",
+      "event": "Espanha – Bélgica",
+      "selection": "abaixo 3.5 impedimentos total",
+      "house": "Betano",
+      "odd": 2.4,
+      "pot": 13.1,
+      "prob": 47.1,
+      "stake": 30,
+      "date": "2026-07-10T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:12:13.231Z"
+  "updatedAt": "2026-07-10T14:16:02.097Z"
 }
