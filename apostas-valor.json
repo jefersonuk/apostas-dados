@@ -624,8 +624,8 @@
       "prob": 49.5,
       "stake": 30,
       "date": "2026-07-10T09:30",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "green",
       "selection": "Impar total games"
     },
     {
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:43:11.153Z"
+  "updatedAt": "2026-07-10T14:43:15.271Z"
 }
