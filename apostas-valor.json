@@ -1550,7 +1550,20 @@
       "date": "2026-07-10T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrf19q76wmdlw",
+      "event": "Toronto Raptors x  Boston Celtics",
+      "selection": "menos de 45.5 primeiro quarto",
+      "house": "Betano",
+      "odd": 2.15,
+      "pot": 3.93,
+      "prob": 48.3,
+      "stake": 21,
+      "date": "2026-07-10T22:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:28:07.898Z"
+  "updatedAt": "2026-07-10T14:30:59.298Z"
 }
