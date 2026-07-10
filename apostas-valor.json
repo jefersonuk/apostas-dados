@@ -1314,8 +1314,8 @@
       "prob": 55.6,
       "stake": 30,
       "date": "2026-07-10T01:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mreaksx47h6uy",
@@ -1331,5 +1331,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T08:04:56.651Z"
+  "updatedAt": "2026-07-10T08:05:31.736Z"
 }
