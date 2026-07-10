@@ -1355,7 +1355,20 @@
       "date": "2026-07-10T15:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrerwaa93pfgs",
+      "event": "Federico bondioli",
+      "selection": "Vence handicap -1.5",
+      "house": "Betnacional",
+      "odd": 2.88,
+      "pot": 36,
+      "prob": 65,
+      "stake": 30,
+      "date": "2026-07-10T09:20",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T10:03:00.310Z"
+  "updatedAt": "2026-07-10T10:08:35.601Z"
 }
