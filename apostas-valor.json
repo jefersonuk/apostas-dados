@@ -1381,7 +1381,20 @@
       "date": "2026-07-10T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mresl3g88gizk",
+      "event": "Shamrock Rovers – Floriana FC",
+      "selection": "Floriana qualificar-se",
+      "house": "Novibet",
+      "odd": 4.15,
+      "pot": 75,
+      "prob": 42.3,
+      "stake": 20,
+      "date": "2026-07-14T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T10:11:06.946Z"
+  "updatedAt": "2026-07-10T10:27:53.144Z"
 }
