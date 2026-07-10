@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Apostas de Valor — Banca & Escalonamento por Risco</title>
+<style>
+  :root{
+    --bg:#0B0D10; --panel:#12161C; --panel-2:#171C23; --border:#232933;
+    --text:#E7EAEE; --muted:#8B93A1; --muted-2:#5C6472;
+    --sky:#38BDF8; --amber:#F5A524; --green:#34D399; --red:#F87171; --violet:#A78BFA;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;}
+  body{padding:20px;max-width:820px;margin:0 auto;padding-bottom:60px;}
+  h1{font-size:19px;font-weight:700;margin:0 0 2px;letter-spacing:-0.01em;}
+  .subtitle{color:var(--muted);font-size:12.5px;margin:0 0 4px;}
+  #autosaveStatus{font-size:11px;color:var(--muted-2);margin:0 0 18px;}
+
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:12px;}
+  .card-title{font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:10px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px;}
+
+  label{display:block;font-size:11px;color:var(--muted);margin-bottom:4px;font-weight:600;}
+  input[type=text],input[type=number],input[type=date],input[type=datetime-local],select{
+    width:100%;background:#0E1116;border:1px solid var(--border);color:var(--text);
+    padding:8px 10px;border-radius:6px;font-size:14px;font-family:var(--sans);margin-bottom:8px;
+  }
+  input[type=number],input[type=date],input[type=datetime-local]{font-family:var(--mono);}
+  input:focus,select:focus{outline:none;border-color:var(--sky);}
+
+  .empty{color:var(--muted-2);font-size:12.5px;padding:8px 0;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px;}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 10px;}
+  @media (max-width:520px){.grid2,.grid3{grid-template-columns:1fr;}}
+
+  .btn{width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--panel-2);color:var(--text);font-size:13px;font-weight:600;cursor:pointer;margin-top:2px;}
+  .btn.primary{background:var(--sky);color:#04121C;border-color:var(--sky);}
+  .btn.small{width:auto;padding:5px 10px;font-size:11px;margin:0;}
+  .btn:active{opacity:0.85;}
+  .btn.copied{background:var(--green);color:#04231A;border-color:var(--green);}
+  .btn-row{display:flex;gap:8px;} .btn-row .btn{flex:1;}
+
+  .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px;}
+  @media (max-width:640px){.summary-grid{grid-template-columns:1fr 1fr;}}
+  .summary-item{background:var(--panel-2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;}
+  .summary-item .k{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;}
+  .summary-item .v{font-family:var(--mono);font-size:17px;font-weight:600;}
+  .v.pos{color:var(--green);} .v.neg{color:var(--red);}
+
+  .chart-wrap{background:#0E1116;border:1px solid var(--border);border-radius:8px;padding:8px 8px 4px;}
+  .chart-wrap svg{width:100%;height:auto;display:block;}
+  .axis-label{font-size:9px;fill:var(--muted-2);font-family:var(--mono);}
+
+  .risk-preview{background:#0E1116;border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:8px;font-family:var(--mono);font-size:12px;line-height:1.7;}
+  .risk-bar{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--green),var(--amber),var(--red));position:relative;margin:6px 0 8px;}
+  .risk-bar .marker{position:absolute;top:-3px;width:3px;height:14px;background:#fff;border-radius:2px;transform:translateX(-50%);box-shadow:0 0 4px rgba(0,0,0,.6);}
+  .stake-suggest{font-size:15px;color:var(--sky);font-weight:700;}
+  .warn-filter{color:var(--amber);font-size:11px;margin-top:4px;}
+
+  /* bets: linhas compactas */
+  .section-label{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:12px 0 6px;font-weight:700;}
+  .section-label:first-child{margin-top:0;}
+  .bet-row{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;margin-bottom:6px;background:var(--panel-2);}
+  .bet-row.resolved{opacity:.75;}
+  .bet-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+  .bet-dot.pendente{background:var(--amber);} .bet-dot.green{background:var(--green);} .bet-dot.red{background:var(--red);} .bet-dot.void{background:var(--muted-2);}
+  .bet-main{flex:1;min-width:0;cursor:pointer;}
+  .bet-event{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .bet-sub{font-size:11px;color:var(--muted-2);font-family:var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .bet-val{font-family:var(--mono);font-size:12.5px;font-weight:600;text-align:right;white-space:nowrap;}
+  .bet-val.pos{color:var(--green);} .bet-val.neg{color:var(--red);} .bet-val.pend{color:var(--muted);}
+  .qbtn{width:32px;height:32px;border-radius:7px;border:1px solid var(--border);background:#0E1116;color:var(--muted);font-size:14px;font-weight:700;cursor:pointer;flex-shrink:0;line-height:1;}
+  .qbtn.g:hover{background:var(--green);color:#04231A;border-color:var(--green);}
+  .qbtn.r:hover{background:var(--red);color:#2A0E12;border-color:var(--red);}
+  .bet-detail{display:none;padding:8px 10px 10px 26px;margin:-4px 0 6px;font-size:11.5px;color:var(--muted);font-family:var(--mono);line-height:1.7;border-left:2px solid var(--border);margin-left:14px;}
+  .bet-detail.show{display:block;}
+  .bet-detail .btn.small{font-family:var(--sans);}
+  .search-box{position:relative;margin-bottom:10px;}
+  .search-box input{margin-bottom:0;padding-left:30px;}
+  .search-box::before{content:'⌕';position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted-2);font-size:15px;}
+  .house-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:10px;background:#1A1F28;border:1px solid var(--border);color:var(--sky);margin-right:4px;vertical-align:middle;}
+  .house-filter{padding:5px 9px;border-radius:14px;border:1px solid var(--border);background:#0E1116;color:var(--muted);font-size:11px;cursor:pointer;font-weight:600;white-space:nowrap;}
+  .house-filter.active{background:var(--sky);color:#04121C;border-color:var(--sky);}
+  .edit-form{background:#0E1116;border:1px solid var(--border);border-radius:8px;padding:10px;margin-top:8px;}
+  .edit-form .grid2{margin-bottom:0;}
+  .edit-form label{font-size:10px;}
+  .edit-form input,.edit-form select{font-size:12px;padding:6px 8px;margin-bottom:4px;}
+  .bet-date{font-size:11px;color:var(--muted-2);font-family:var(--mono);white-space:nowrap;min-width:52px;text-align:right;}
+
+  .op{border:1px solid var(--border);border-radius:9px;margin-bottom:9px;overflow:hidden;}
+  .op-head{display:flex;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;background:var(--panel-2);}
+  .op-head:hover{background:#1B212A;}
+  .op-status{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+  .op-status.pendente{background:var(--amber);} .op-status.green{background:var(--green);} .op-status.red{background:var(--red);}
+  .op-title{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .op-date{font-size:11px;color:var(--muted-2);font-family:var(--mono);white-space:nowrap;}
+  .op-result{font-family:var(--mono);font-size:13px;font-weight:600;min-width:74px;text-align:right;}
+  .op-result.pos{color:var(--green);} .op-result.neg{color:var(--red);} .op-result.pend{color:var(--amber);}
+  .op-body{padding:0 12px;max-height:0;overflow:hidden;transition:max-height .2s ease,padding .2s ease;}
+  .op.open .op-body{max-height:600px;padding:10px 12px 12px;border-top:1px solid var(--border);}
+  .op-meta{font-size:12px;color:var(--muted);font-family:var(--mono);line-height:1.7;}
+  .op-actions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;}
+  .tag{display:inline-block;font-size:10px;padding:2px 7px;border-radius:10px;background:#0E1116;border:1px solid var(--border);color:var(--muted);}
+  .resolve-box{background:#0E1116;border:1px solid var(--border);border-radius:8px;padding:10px;margin-top:8px;}
+  .res-btns{display:flex;gap:6px;}
+  .res-btn{flex:1;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--panel-2);color:var(--muted);font-size:12px;cursor:pointer;font-weight:600;}
+  .res-btn.green:hover{background:var(--green);color:#04231A;border-color:var(--green);}
+  .res-btn.red:hover{background:var(--red);color:#2A0E12;border-color:var(--red);}
+  .res-btn.void:hover{background:var(--muted-2);color:#0B0D10;}
+
+  .filter-row{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;}
+  .filter-btn{flex:1;min-width:70px;text-align:center;padding:6px;border-radius:6px;border:1px solid var(--border);background:#0E1116;color:var(--muted);font-size:12px;cursor:pointer;font-weight:600;}
+  .filter-btn.active{background:var(--sky);color:#04121C;border-color:var(--sky);}
+
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--green);color:#04231A;padding:11px 20px;border-radius:10px;font-size:13px;font-weight:600;box-shadow:0 6px 24px rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:20;}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(-4px);}
+  .footnote{color:var(--muted-2);font-size:11px;margin-top:10px;line-height:1.5;}
+  #loadBackupInput{display:none;}
+
+  .cfg-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px;}
+  @media(max-width:520px){.cfg-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+  <h1>Apostas de Valor — Banca &amp; Escalonamento</h1>
+  <p class="subtitle">Sinais EV+ (surebet.com) · stake escalonado por risco (odd + potencial) · banca dedicada</p>
+  <p id="autosaveStatus"></p>
+
+  <!-- SUMMARY -->
+  <div class="card">
+    <div class="card-title">Dashboard</div>
+    <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="summary-item"><div class="k">Banca atual</div><div class="v" id="sBanca">—</div></div>
+      <div class="summary-item"><div class="k">Resultado</div><div class="v" id="sProfit">—</div></div>
+      <div class="summary-item"><div class="k">Yield %</div><div class="v" id="sYield">—</div></div>
+    </div>
+    <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="summary-item"><div class="k">Taxa de acerto</div><div class="v" id="sHit">—</div></div>
+      <div class="summary-item"><div class="k">Calibração (prob→real)</div><div class="v" id="sCalib" style="font-size:13px;">—</div></div>
+      <div class="summary-item"><div class="k">EV esperado vs yield</div><div class="v" id="sEvVsYld" style="font-size:13px;">—</div></div>
+    </div>
+    <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="summary-item"><div class="k">Drawdown máximo</div><div class="v" id="sDrawdown">—</div></div>
+      <div class="summary-item"><div class="k">Maior seq. de reds</div><div class="v" id="sMaxReds">—</div></div>
+      <div class="summary-item"><div class="k">Pendente em jogo</div><div class="v" id="sPending">—</div></div>
+    </div>
+    <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="summary-item"><div class="k">Acerto por faixa de odd</div><div class="v" id="sOddBands" style="font-size:11px;line-height:1.6;">—</div></div>
+      <div class="summary-item"><div class="k">Lucro por casa</div><div class="v" id="sHouseProfit" style="font-size:11px;line-height:1.6;">—</div></div>
+      <div class="summary-item"><div class="k">Tendência (últ. 10)</div><div class="v" id="sTrend">—</div></div>
+    </div>
+    <div class="chart-wrap" style="margin-top:12px;"><svg id="chartSvg" viewBox="0 0 780 220" preserveAspectRatio="none"></svg></div>
+    <div class="footnote" id="chartNote"></div>
+  </div>
+
+  <!-- CONFIG -->
+  <div class="card">
+    <div class="card-title"><span>Configuração da estratégia</span><button class="btn small" id="toggleCfg">mostrar</button></div>
+    <div id="cfgBody" style="display:none;">
+      <div class="cfg-grid">
+        <div><label>Banca inicial (R$)</label><input type="number" id="cfgBankroll" step="0.01"></div>
+        <div><label>Data de início</label><input type="date" id="cfgDate"></div>
+      </div>
+      <div class="cfg-grid">
+        <div><label>Stake mínima — maior risco (R$)</label><input type="number" id="cfgStakeMin" step="0.01"></div>
+        <div><label>Stake máxima — menor risco (R$)</label><input type="number" id="cfgStakeMax" step="0.01"></div>
+      </div>
+      <div class="cfg-grid">
+        <div><label>Odd mínima (filtro)</label><input type="number" id="cfgOddMin" step="0.01"></div>
+        <div><label>Potencial mínimo % (filtro)</label><input type="number" id="cfgPotMin" step="0.1"></div>
+      </div>
+      <div class="cfg-grid">
+        <div><label>Multiplicador de Kelly</label><input type="number" id="cfgKellyMult" step="0.01" min="0"></div>
+        <div><label>Tolerância consistência (pp)</label><input type="number" id="cfgProbTol" step="0.5" min="0"></div>
+      </div>
+      <div class="cfg-grid">
+        <div><label>Prob "cheia" % (sem penalidade acima)</label><input type="number" id="cfgProbFull" step="1" min="0"></div>
+        <div><label>Prob "piso" % (penalidade máxima abaixo)</label><input type="number" id="cfgProbFloor" step="1" min="0"></div>
+      </div>
+      <div class="cfg-grid">
+        <div><label>Fator mínimo no piso (0–1)</label><input type="number" id="cfgPenMin" step="0.05" min="0" max="1"></div>
+        <div></div>
+      </div>
+      <div class="footnote"><b>Stake progressivo:</b> o cálculo usa a <b>banca atual</b> (inicial + lucro realizado), e a faixa R$mín–máx <b>escala junto com o crescimento</b> — banca +50% → faixa R$7,50–30. Se a banca cair, a faixa encolhe na mesma proporção (proteção em drawdown). Fórmula: stake = banca atual × Kelly(prob, odd) × multiplicador × fator de probabilidade, limitado à faixa escalada. O <b>fator de probabilidade</b> penaliza apostas de prob baixa: acima da "prob cheia" sem penalidade; abaixo, redução progressiva até o "fator mínimo" no "piso". A <b>tolerância</b> define a divergência aceitável entre odd, prob e Supervalorizado.</div>
+    </div>
+  </div>
+
+  <!-- NEW BET -->
+  <div class="card">
+    <div class="card-title">Nova aposta</div>
+    <label>Evento</label>
+    <input type="text" id="bEvent" placeholder="Ex: Rapid Bucuresti – FC Kosice">
+    <label>Seleção (mercado)</label>
+    <input type="text" id="bSelection" placeholder="Ex: Abaixo 2.75 gols">
+    <div class="grid2">
+      <div><label>Casa de aposta</label><input type="text" id="bHouse" placeholder="Ex: Bet365"></div>
+      <div><label>Data do evento</label><input type="datetime-local" id="bDate"></div>
+    </div>
+    <div class="grid3">
+      <div><label>Odd (Chance)</label><input type="number" id="bOdd" step="0.01" min="1.01" placeholder="2.00"></div>
+      <div><label>Prob. real % (base)</label><input type="number" id="bProb" step="0.1" placeholder="50.9"></div>
+      <div><label>Potencial % (verificação)</label><input type="number" id="bPot" step="0.01" placeholder="1.75"></div>
+    </div>
+
+    <div class="risk-preview" id="riskPreview">
+      <span style="color:var(--muted)">Preencha odd e probabilidade para ver o stake sugerido.</span>
+    </div>
+
+    <label>Stake (R$) — sugerida, ajustável</label>
+    <input type="number" id="bStake" step="0.01" min="0" placeholder="—">
+
+    <button class="btn primary" id="addBetBtn">Registrar aposta</button>
+  </div>
+
+  <!-- LIST -->
+  <div class="card">
+    <div class="card-title"><span>Apostas</span><button class="btn small" id="copyBtn">Copiar p/ planilha</button></div>
+    <div class="search-box"><input type="text" id="betSearch" placeholder="Buscar por evento, casa ou mercado..."></div>
+    <div class="filter-row">
+      <div class="filter-btn active" data-filter="all">Todas</div>
+      <div class="filter-btn" data-filter="pendente">Ativas</div>
+      <div class="filter-btn" data-filter="green">Green</div>
+      <div class="filter-btn" data-filter="red">Red</div>
+    </div>
+    <div class="filter-row" id="houseFilterRow" style="display:none;"></div>
+    <div id="betsList"></div>
+  </div>
+
+  <!-- SYNC -->
+  <div class="card">
+    <div class="card-title">Sincronização na nuvem (GitHub)</div>
+    <div id="syncSetup">
+      <label>Token do GitHub (fine-grained, Contents read/write no repo privado)</label>
+      <input type="password" id="syncToken" placeholder="github_pat_...">
+      <div class="grid2">
+        <div><label>Repositório privado (usuário/repo)</label><input type="text" id="syncRepo" placeholder="jeferson/apostas-dados"></div>
+        <div><label>Arquivo de dados</label><input type="text" id="syncPath" value="apostas-valor.json"></div>
+      </div>
+      <button class="btn primary" id="syncConnectBtn">Conectar e sincronizar</button>
+    </div>
+    <div id="syncActive" style="display:none;">
+      <div class="footnote" id="syncInfo" style="margin:0 0 8px;"></div>
+      <div class="btn-row">
+        <button class="btn" id="syncPushBtn">Forçar envio ↑</button>
+        <button class="btn" id="syncPullBtn">Forçar download ↓</button>
+        <button class="btn" id="syncDisconnectBtn" style="border-color:#5C2530;color:#F87171;">Desconectar</button>
+      </div>
+    </div>
+    <div class="footnote">Dados num repositório <b>privado</b> seu. O token é a senha — cole uma vez em cada dispositivo (fica só no navegador local). Toda alteração é enviada automaticamente; ao abrir no outro dispositivo, a versão mais recente é baixada.</div>
+  </div>
+
+  <!-- BACKUP -->
+  <div class="card">
+    <div class="card-title">Backup</div>
+    <div class="btn-row">
+      <button class="btn" id="saveBackupBtn">Salvar backup (.json)</button>
+      <button class="btn" id="loadBackupBtn">Carregar backup</button>
+    </div>
+    <input type="file" id="loadBackupInput" accept=".json">
+    <div class="footnote">Banca separada da de surebets. Salvo automaticamente neste navegador; use backup para migrar ou proteger o histórico.</div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  const STORAGE_KEY='apostasValor_v1';
+  let storageAvailable=true;
+
+  function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+  function todayStr(){ return new Date().toISOString().slice(0,10); }
+  function nowLocalStr(){ const d=new Date(); const off=d.getTimezoneOffset(); const l=new Date(d-off*60000); return l.toISOString().slice(0,16); }
+  function fmt(n){ return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function fmtSign(n){ return (n>=0?'+':'')+fmt(n); }
+  function fmtPct(n){ return (n>=0?'+':'')+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'%'; }
+  function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  const DEFAULTS={
+    bankroll:1000, startDate:todayStr(),
+    stakeMin:5, stakeMax:20,
+    oddMin:1.5, potMin:1,
+    kellyMult:0.50, probTolerance:3,
+    probFull:50, probFloor:20, penMin:0.35
+  };
+
+  function normalize(p){
+    const cfg=Object.assign({},DEFAULTS,p.cfg||{});
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], updatedAt:p.updatedAt||'' };
+  }
+  function loadState(){
+    try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
+    catch(e){ storageAvailable=false; }
+    return { cfg:Object.assign({},DEFAULTS), bets:[], updatedAt:'' };
+  }
+  function saveState(){ try{ state.updatedAt=new Date().toISOString(); localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); storageAvailable=true; }catch(e){ storageAvailable=false; } renderAutosave(); }
+
+  let state=loadState();
+  let currentFilter='all';
+
+  function toast(m){ const t=$('toast'); t.textContent=m; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1600); }
+
+  /* ---------- stake model: Kelly a partir da probabilidade real ---------- */
+  // Kelly canônico: f* = prob - (1-prob)/(odd-1) = (prob*odd - 1)/(odd-1).
+  // Usa a probabilidade REAL (sem spread) como input principal.
+  // Se prob não informada, cai para o potencial: f* = potencial/(odd-1).
+  function kellyFromProb(odd,probPct){
+    const b=odd-1; if(b<=0) return 0;
+    const p=probPct/100;
+    return p - (1-p)/b;   // = (p*odd-1)/b
+  }
+  function kellyFromPot(odd,potPct){
+    const b=odd-1; if(b<=0) return 0;
+    return (potPct/100)/b;
+  }
+  // fração de Kelly: prioriza a prob real; usa potencial como fallback
+  function kellyFraction(odd,potPct,probPct){
+    if(typeof probPct==='number' && !isNaN(probPct)) return kellyFromProb(odd,probPct);
+    return kellyFromPot(odd,potPct);
+  }
+  // fator de penalização por probabilidade baixa (meio-termo Kelly + proteção de capital)
+  function probFactor(probPct){
+    const c=state.cfg;
+    const full=(typeof c.probFull==='number')?c.probFull:50;
+    const floor=(typeof c.probFloor==='number')?c.probFloor:20;
+    const penMin=(typeof c.penMin==='number')?c.penMin:0.35;
+    if(typeof probPct!=='number' || isNaN(probPct)) return 1;   // sem prob: sem penalidade
+    if(probPct>=full) return 1;
+    if(probPct<=floor) return penMin;
+    const frac=(probPct-floor)/(full-floor);
+    return penMin + frac*(1-penMin);
+  }
+  // banca atual = inicial + lucro realizado (base do stake progressivo)
+  function currentBankroll(){
+    const profit=state.bets.filter(b=>b.status==='resolvida').reduce((s,b)=>s+(betProfit(b)||0),0);
+    return state.cfg.bankroll + profit;
+  }
+  // fator de crescimento: escala os limites de stake junto com a banca
+  function growthFactor(){
+    if(!(state.cfg.bankroll>0)) return 1;
+    return Math.max(0.2, currentBankroll()/state.cfg.bankroll);   // piso 0.2 p/ drawdown extremo
+  }
+  function stakeLimits(){
+    const g=growthFactor();
+    return { min: Math.round(state.cfg.stakeMin*g*100)/100, max: Math.round(state.cfg.stakeMax*g*100)/100 };
+  }
+  function suggestStake(odd,potPct,probPct){
+    const f=kellyFraction(odd,potPct,probPct);
+    if(f<=0) return 0;   // sem edge -> não apostar
+    const c=state.cfg;
+    const mult=(typeof c.kellyMult==='number')?c.kellyMult:0.50;
+    const lim=stakeLimits();
+    const raw=currentBankroll()*f*mult*probFactor(probPct);
+    return Math.round(Math.max(lim.min,Math.min(lim.max,raw))*100)/100;
+  }
+  // EV derivado da prob real e da odd (para conferir com o "Supervalorizado")
+  function evFromProb(odd,probPct){ return (probPct/100*odd-1)*100; }
+  // prob implícita se só temos odd+potencial
+  function impliedProb(odd,potPct){ return (1+potPct/100)/odd*100; }
+
+  /* ---------- config ---------- */
+  const cfgEls={
+    body:$('cfgBody'), toggle:$('toggleCfg'),
+    bankroll:$('cfgBankroll'), date:$('cfgDate'), stakeMin:$('cfgStakeMin'), stakeMax:$('cfgStakeMax'),
+    oddMin:$('cfgOddMin'), potMin:$('cfgPotMin'),
+    kellyMult:$('cfgKellyMult'), probTol:$('cfgProbTol'),
+    probFull:$('cfgProbFull'), probFloor:$('cfgProbFloor'), penMin:$('cfgPenMin')
+  };
+  function fillCfg(){
+    const c=state.cfg;
+    cfgEls.bankroll.value=c.bankroll; cfgEls.date.value=c.startDate;
+    cfgEls.stakeMin.value=c.stakeMin; cfgEls.stakeMax.value=c.stakeMax;
+    cfgEls.oddMin.value=c.oddMin; cfgEls.potMin.value=c.potMin;
+    cfgEls.kellyMult.value=c.kellyMult; cfgEls.probTol.value=c.probTolerance;
+    cfgEls.probFull.value=c.probFull; cfgEls.probFloor.value=c.probFloor; cfgEls.penMin.value=c.penMin;
+  }
+  cfgEls.toggle.addEventListener('click',()=>{
+    const open=cfgEls.body.style.display!=='none';
+    cfgEls.body.style.display=open?'none':'block';
+    cfgEls.toggle.textContent=open?'mostrar':'ocultar';
+  });
+  function bindCfg(el,key,isNum){
+    el.addEventListener('input',()=>{
+      state.cfg[key]=isNum?(parseFloat(el.value)||0):el.value;
+      saveState(); renderSummary(); renderChart(); updateRiskPreview();
+    });
+  }
+  bindCfg(cfgEls.bankroll,'bankroll',true); bindCfg(cfgEls.date,'startDate',false);
+  bindCfg(cfgEls.stakeMin,'stakeMin',true); bindCfg(cfgEls.stakeMax,'stakeMax',true);
+  bindCfg(cfgEls.oddMin,'oddMin',true); bindCfg(cfgEls.potMin,'potMin',true);
+  bindCfg(cfgEls.kellyMult,'kellyMult',true); bindCfg(cfgEls.probTol,'probTolerance',true);
+  bindCfg(cfgEls.probFull,'probFull',true); bindCfg(cfgEls.probFloor,'probFloor',true); bindCfg(cfgEls.penMin,'penMin',true);
+
+  /* ---------- new bet ---------- */
+  const bEls={ event:$('bEvent'), selection:$('bSelection'), house:$('bHouse'), odd:$('bOdd'), pot:$('bPot'), prob:$('bProb'), date:$('bDate'), stake:$('bStake'), preview:$('riskPreview'), add:$('addBetBtn') };
+  bEls.date.value=nowLocalStr();
+  let stakeManuallyEdited=false;
+
+  function updateRiskPreview(){
+    const odd=parseFloat(bEls.odd.value), pot=parseFloat(bEls.pot.value), prob=parseFloat(bEls.prob.value);
+    const c=state.cfg;
+    if(!(odd>1)){ bEls.preview.innerHTML='<span style="color:var(--muted)">Preencha odd, probabilidade e potencial (Supervalorizado).</span>'; return; }
+    const hasProb=!isNaN(prob), hasPot=!isNaN(pot);
+    if(!hasProb && !hasPot){ bEls.preview.innerHTML='<span style="color:var(--muted)">Informe a probabilidade real (base do cálculo) ou o potencial.</span>'; return; }
+
+    const f=kellyFraction(odd,pot,hasProb?prob:undefined);
+    const stake=suggestStake(odd,pot,hasProb?prob:undefined);
+    const limBar=stakeLimits();
+    const pctPos=((stake-limBar.min)/Math.max(0.01,(limBar.max-limBar.min))*100).toFixed(0);
+
+    // ---- verificação de consistência dos três (odd, prob, supervalorização) ----
+    // Relação: supervalorização = prob × odd − 1 (EV). Se prob e superval informados,
+    // a odd coerente seria (1+SV)/prob. Divergência grande = números não fecham.
+    let consistLine='';
+    if(hasProb && hasPot){
+      const evCalc=evFromProb(odd,prob);            // EV real dos números dados
+      const oddCoerente=(1+pot/100)/(prob/100);      // odd que produziria o SV informado
+      const tol=(typeof c.probTolerance==='number')?c.probTolerance:3;
+      const diff=evCalc-pot;
+      if(Math.abs(diff)<=tol){
+        consistLine=`<div style="margin-top:5px;font-size:11px;color:var(--green)">✓ Números consistentes: prob ${prob}% × odd ${odd.toFixed(2)} = EV ${evCalc.toFixed(1)}% ≈ Supervalorizado ${pot}%.</div>`;
+      } else {
+        consistLine=`<div style="margin-top:5px;font-size:11px;color:var(--red)">⚠ Números não fecham: com prob ${prob}% e ${pot}% de supervalorização, a odd deveria ser ~${oddCoerente.toFixed(2)} (você digitou ${odd.toFixed(2)}). EV real destes números: ${evCalc.toFixed(1)}%. Confira antes de apostar.</div>`;
+      }
+    } else if(hasProb){
+      const evCalc=evFromProb(odd,prob);
+      consistLine=`<div style="margin-top:5px;font-size:11px;color:var(--muted-2)">Supervalorização derivada: prob ${prob}% × odd ${odd.toFixed(2)} − 1 = <b>${evCalc.toFixed(1)}%</b>. (Informe o Supervalorizado da plataforma para conferir.)</div>`;
+    } else {
+      const ip=impliedProb(odd,pot);
+      consistLine=`<div style="margin-top:5px;font-size:11px;color:var(--muted-2)">Prob implícita (odd + supervalorização): ${ip.toFixed(1)}%. Informe a Probabilidade real para o cálculo correto.</div>`;
+    }
+
+    // ---- leitura da correlação risco↔retorno ----
+    let corrLine='';
+    if(hasProb && f>0){
+      const pf=probFactor(prob);
+      const riscoLabel = prob>=50?'baixo (aposta segura)':(prob>=38?'médio':'alto (aposta arriscada)');
+      const acaoLabel = stake>=17?'entra forte':(stake<=7?'entra pouco — protege capital':'entrada moderada');
+      const penNote = pf<0.99?` <span style="color:var(--amber)">(stake reduzido a ${(pf*100).toFixed(0)}% por prob baixa)</span>`:'';
+      corrLine=`<div style="margin-top:4px;font-size:11px;color:var(--muted)">Risco ${riscoLabel} · ${prob}% de chance de green → <b style="color:var(--sky)">${acaoLabel}</b>${penNote}</div>`;
+    }
+
+    let warns='';
+    if(odd<c.oddMin) warns+=`<div class="warn-filter">⚠ Odd ${odd.toFixed(2)} abaixo do filtro (${c.oddMin}).</div>`;
+
+    const edgeLabel = f<=0?'nulo':(f<0.02?'mínimo':(f<0.08?'baixo':(f<0.18?'médio':'alto')));
+    const base = hasProb
+      ? `<span style="color:var(--muted)">Edge ${edgeLabel} · base: probabilidade ${prob}% · Kelly ${(f*100).toFixed(2)}% da banca</span>`
+      : `<span style="color:var(--muted)">Edge ${edgeLabel} · base: potencial ${pot}% · Kelly ${(f*100).toFixed(2)}% da banca</span>`;
+    const lim=stakeLimits();
+    const g=growthFactor();
+    const growthNote = Math.abs(g-1)>0.02 ? ` · banca ${g>1?'↑':'↓'}${((g-1)*100).toFixed(0)}% → faixa R$${lim.min.toFixed(0)}–${lim.max.toFixed(0)}` : '';
+    const stakeDisplay = stake>0
+      ? `Stake sugerida: <span class="stake-suggest">${fmt(stake)}</span> <span style="font-size:11px;color:var(--muted-2)">(Kelly×${((typeof c.kellyMult==='number'?c.kellyMult:0.50)).toFixed(2)} sobre ${fmt(currentBankroll())}${growthNote})</span>`
+      : `<span class="stake-suggest" style="color:var(--red)">Sem valor — não apostar</span> <span style="font-size:11px;color:var(--muted-2)">(edge ≤ 0: a odd não supera a probabilidade)</span>`;
+
+    bEls.preview.innerHTML=
+      base+
+      `<div class="risk-bar"><div class="marker" style="left:${Math.max(0,Math.min(100,pctPos))}%"></div></div>`+
+      stakeDisplay+
+      corrLine+consistLine+warns;
+    if(!stakeManuallyEdited && stake>0) bEls.stake.value=stake.toFixed(2);
+    else if(!stakeManuallyEdited) bEls.stake.value='';
+  }
+  bEls.odd.addEventListener('input',updateRiskPreview);
+  bEls.pot.addEventListener('input',updateRiskPreview);
+  bEls.prob.addEventListener('input',updateRiskPreview);
+  bEls.stake.addEventListener('input',()=>{ stakeManuallyEdited=true; });
+
+  bEls.add.addEventListener('click',()=>{
+    const odd=parseFloat(bEls.odd.value), pot=parseFloat(bEls.pot.value), prob=parseFloat(bEls.prob.value), stake=parseFloat(bEls.stake.value);
+    if(!(odd>1)){ alert('Informe uma odd válida (>1).'); return; }
+    if(isNaN(prob) && isNaN(pot)){ alert('Informe a probabilidade real (recomendado) ou ao menos o potencial %.'); return; }
+    if(!(stake>0)){ alert('Informe um stake válido.'); return; }
+    const bet={
+      id:uid(), event:bEls.event.value.trim()||'Aposta sem nome',
+      selection:bEls.selection.value.trim(), house:bEls.house.value.trim(),
+      odd, pot:isNaN(pot)?null:pot, prob:isNaN(prob)?null:prob, stake, date:bEls.date.value||nowLocalStr(),
+      status:'pendente', result:null
+    };
+    state.bets.push(bet); saveState();
+    bEls.event.value=''; bEls.selection.value=''; bEls.house.value=''; bEls.odd.value=''; bEls.pot.value=''; bEls.prob.value=''; bEls.stake.value=''; bEls.date.value=nowLocalStr();
+    stakeManuallyEdited=false; updateRiskPreview();
+    renderAll(); toast('Aposta registrada ✓');
+  });
+
+  /* ---------- computations ---------- */
+  function betProfit(b){
+    if(b.status!=='resolvida') return null;
+    if(b.result==='green') return b.stake*(b.odd-1);
+    if(b.result==='red') return -b.stake;
+    return 0; // void
+  }
+
+  function renderSummary(){
+    const resolved=state.bets.filter(b=>b.status==='resolvida');
+    const settled=resolved.filter(b=>b.result!=='void');
+    const greens=settled.filter(b=>b.result==='green');
+    const reds=settled.filter(b=>b.result==='red');
+    const profit=resolved.reduce((s,b)=>s+(betProfit(b)||0),0);
+    const banca=state.cfg.bankroll+profit;
+    const volume=settled.reduce((s,b)=>s+b.stake,0);
+    const yld=volume>0?(profit/volume*100):0;
+    const hit=settled.length?(greens.length/settled.length*100):0;
+
+    // 1. Banca, Resultado, Yield
+    $('sBanca').textContent=fmt(banca);
+    $('sProfit').textContent=fmtSign(profit); $('sProfit').className='v '+(profit>=0?'pos':'neg');
+    $('sYield').textContent=settled.length?fmtPct(yld):'—'; $('sYield').className='v '+(yld>=0?'pos':'neg');
+
+    // 2. Taxa de acerto
+    $('sHit').textContent=settled.length?`${hit.toFixed(1)}% (${greens.length}/${settled.length})`:'—';
+
+    // 3. Calibração: prob média informada vs taxa de acerto real
+    const withProb=settled.filter(b=>typeof b.prob==='number');
+    if(withProb.length>=3){
+      const avgProb=withProb.reduce((s,b)=>s+b.prob,0)/withProb.length;
+      const realHit=withProb.filter(b=>b.result==='green').length/withProb.length*100;
+      const diff=realHit-avgProb;
+      const cls=Math.abs(diff)<=5?'muted':(diff>0?'green':'red');
+      $('sCalib').innerHTML=`<span style="color:var(--${cls})">${avgProb.toFixed(1)}% → ${realHit.toFixed(1)}%</span>`;
+    } else { $('sCalib').textContent=settled.length?'< 3 apostas':'—'; }
+
+    // 4. EV esperado vs yield real
+    const withPot=settled.filter(b=>typeof b.pot==='number');
+    if(withPot.length>=3){
+      const avgEV=withPot.reduce((s,b)=>s+b.pot,0)/withPot.length;
+      const yldOfPot=withPot.reduce((s,b)=>s+b.stake,0);
+      const profOfPot=withPot.reduce((s,b)=>s+(betProfit(b)||0),0);
+      const realYld=yldOfPot>0?(profOfPot/yldOfPot*100):0;
+      const cls2=realYld>=0?'green':'red';
+      $('sEvVsYld').innerHTML=`<span style="color:var(--muted)">EV ${avgEV.toFixed(1)}%</span> → <span style="color:var(--${cls2})">${realYld.toFixed(1)}%</span>`;
+    } else { $('sEvVsYld').textContent=settled.length?'< 3 apostas':'—'; }
+
+    // 5. Drawdown máximo
+    if(settled.length){
+      let run=state.cfg.bankroll, peak=run, maxDD=0;
+      resolved.sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id))
+        .forEach(b=>{ run+=betProfit(b)||0; if(run>peak) peak=run; const dd=peak-run; if(dd>maxDD) maxDD=dd; });
+      $('sDrawdown').textContent=maxDD>0?`−${fmt(maxDD).replace('R$ ','')}`:'R$ 0';
+      $('sDrawdown').className='v '+(maxDD>0?'neg':'pos');
+    } else { $('sDrawdown').textContent='—'; }
+
+    // 6. Maior sequência de reds
+    if(settled.length){
+      let maxSeq=0, cur=0;
+      settled.sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id))
+        .forEach(b=>{ if(b.result==='red'){ cur++; if(cur>maxSeq) maxSeq=cur; } else cur=0; });
+      $('sMaxReds').textContent=maxSeq>0?`${maxSeq} seguidos`:'0';
+      $('sMaxReds').className='v '+(maxSeq>=5?'neg':(maxSeq>=3?'':'pos'));
+    } else { $('sMaxReds').textContent='—'; }
+
+    // 7. Pendente em jogo
+    const pendBets=state.bets.filter(b=>b.status==='pendente');
+    const pendVol=pendBets.reduce((s,b)=>s+b.stake,0);
+    $('sPending').textContent=pendBets.length?`${fmt(pendVol)} (${pendBets.length})`:'—';
+
+    // 8. Acerto por faixa de odd
+    if(settled.length>=3){
+      const bands=[[1,2,'1-2'],[2,3,'2-3'],[3,99,'3+']];
+      const parts=bands.map(([lo,hi,label])=>{
+        const inBand=settled.filter(b=>b.odd>=lo&&b.odd<hi);
+        if(!inBand.length) return null;
+        const h=inBand.filter(b=>b.result==='green').length;
+        return `<span style="color:var(--muted-2)">${label}:</span> ${(h/inBand.length*100).toFixed(0)}% <span style="color:var(--muted-2)">(${h}/${inBand.length})</span>`;
+      }).filter(Boolean);
+      $('sOddBands').innerHTML=parts.join('<br>')||'—';
+    } else { $('sOddBands').textContent='—'; }
+
+    // 9. Lucro por casa (top 3)
+    if(settled.length){
+      const houseMap={};
+      settled.forEach(b=>{
+        const h=b.house||'(sem casa)';
+        if(!houseMap[h]) houseMap[h]={profit:0,count:0};
+        houseMap[h].profit+=betProfit(b)||0;
+        houseMap[h].count++;
+      });
+      const sorted=Object.entries(houseMap).sort((a,b)=>b[1].profit-a[1].profit).slice(0,3);
+      $('sHouseProfit').innerHTML=sorted.map(([h,d])=>{
+        const cls=d.profit>=0?'green':'red';
+        return `<span style="color:var(--muted-2)">${esc(h)}:</span> <span style="color:var(--${cls})">${fmtSign(d.profit)}</span> <span style="color:var(--muted-2)">(${d.count})</span>`;
+      }).join('<br>')||'—';
+    } else { $('sHouseProfit').textContent='—'; }
+
+    // 10. Tendência (últimas 10)
+    if(settled.length>=2){
+      const last=settled.sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id)).slice(0,10);
+      const tProfit=last.reduce((s,b)=>s+(betProfit(b)||0),0);
+      const tVol=last.reduce((s,b)=>s+b.stake,0);
+      const tYld=tVol>0?(tProfit/tVol*100):0;
+      $('sTrend').innerHTML=`<span class="${tProfit>=0?'pos':'neg'}">${fmtSign(tProfit)}</span> <span style="font-size:11px;color:var(--muted-2)">yield ${tYld.toFixed(1)}%</span>`;
+    } else { $('sTrend').textContent='—'; }
+  }
+
+  function renderChart(){
+    const resolved=state.bets.filter(b=>b.status==='resolvida')
+      .sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
+    const W=780,H=220,padL=58,padR=14,padT=14,padB=24,plotW=W-padL-padR,plotH=H-padT-padB;
+    if(resolved.length===0){ $('chartSvg').innerHTML=`<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="#5C6472" font-size="12">Resolva apostas para ver a evolução da banca</text>`; $('chartNote').textContent=''; return; }
+    const pts=[{x:0,val:state.cfg.bankroll}]; let run=state.cfg.bankroll;
+    resolved.forEach((b,i)=>{ run+=betProfit(b)||0; pts.push({x:i+1,val:run}); });
+    const vals=pts.map(p=>p.val); let min=Math.min(...vals),max=Math.max(...vals);
+    if(min===max){min-=1;max+=1;} const pad=(max-min)*0.12; min-=pad;max+=pad;
+    const n=pts.length, xFor=i=>n===1?padL+plotW/2:padL+(i/(n-1))*plotW, yFor=v=>padT+(1-(v-min)/(max-min))*plotH;
+    let svg='';
+    const startY=yFor(state.cfg.bankroll);
+    svg+=`<line x1="${padL}" y1="${startY.toFixed(1)}" x2="${W-padR}" y2="${startY.toFixed(1)}" stroke="#232933" stroke-width="1" stroke-dasharray="3,3"/>`;
+    svg+=`<text class="axis-label" x="6" y="${(padT+4).toFixed(1)}">${fmt(max).replace('R$ ','')}</text>`;
+    svg+=`<text class="axis-label" x="6" y="${(H-padB+4).toFixed(1)}">${fmt(min).replace('R$ ','')}</text>`;
+    const line=pts.map(p=>`${xFor(p.x).toFixed(1)},${yFor(p.val).toFixed(1)}`).join(' ');
+    svg+=`<polygon points="${padL},${(H-padB).toFixed(1)} ${line} ${xFor(pts[n-1].x).toFixed(1)},${(H-padB).toFixed(1)}" fill="rgba(56,189,248,0.08)"/>`;
+    svg+=`<polyline points="${line}" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+    pts.forEach(p=>{ svg+=`<circle cx="${xFor(p.x).toFixed(1)}" cy="${yFor(p.val).toFixed(1)}" r="2.5" fill="#38BDF8"/>`; });
+    $('chartSvg').innerHTML=svg;
+    const finalVal=pts[n-1].val, delta=finalVal-state.cfg.bankroll;
+    $('chartNote').textContent=`${resolved.length} aposta(s) resolvida(s) · banca ${fmt(state.cfg.bankroll)} → ${fmt(finalVal)} (${fmtSign(delta)})`;
+  }
+
+  let searchTerm='';
+  let openDetail=null;
+  let editingId=null;
+  let houseFilter='all';
+
+  // formata "2026-07-08T21:10" -> "08/07 21:10"
+  function fmtDate(d){
+    if(!d) return '—';
+    const s=String(d);
+    const m=s.match(/(\d{4})-(\d{2})-(\d{2})T?(\d{2}):?(\d{2})?/);
+    if(!m) return s.slice(0,16);
+    return `${m[3]}/${m[2]} ${m[4]}:${m[5]||'00'}`;
+  }
+
+  function allHouses(){
+    const set=new Set();
+    state.bets.forEach(b=>{ if(b.house) set.add(b.house); });
+    return [...set].sort();
+  }
+
+  function renderHouseFilter(){
+    const houses=allHouses();
+    const row=$('houseFilterRow');
+    if(houses.length<2){ row.style.display='none'; return; }
+    row.style.display='flex';
+    row.innerHTML=`<span class="house-filter ${houseFilter==='all'?'active':''}" data-house="all">Todas</span>`+
+      houses.map(h=>`<span class="house-filter ${houseFilter===h?'active':''}" data-house="${esc(h)}">${esc(h)}</span>`).join('');
+    row.querySelectorAll('.house-filter').forEach(el=>el.addEventListener('click',()=>{
+      houseFilter=el.dataset.house;
+      renderBets();
+    }));
+  }
+
+  function betRow(b){
+    const profit=betProfit(b);
+    let dot,val,valClass;
+    if(b.status!=='resolvida'){ dot='pendente'; val='—'; valClass='pend'; }
+    else if(b.result==='green'){ dot='green'; val=fmtSign(profit); valClass='pos'; }
+    else if(b.result==='red'){ dot='red'; val=fmtSign(profit); valClass='neg'; }
+    else { dot='void'; val='anul.'; valClass='pend'; }
+    const dateStr=fmtDate(b.date);
+    const sel=b.selection?esc(b.selection):'';
+    const houseBadge=b.house?`<span class="house-tag">${esc(b.house)}</span>`:'';
+    const sub=`${houseBadge}${sel?sel+' · ':''}@${b.odd.toFixed(2)} · ${fmt(b.stake)}`;
+    const quick = b.status==='pendente'
+      ? `<button class="qbtn g" data-res="${b.id}:green" title="Green">✓</button>
+         <button class="qbtn r" data-res="${b.id}:red" title="Red">✗</button>`
+      : '';
+    const isOpen = openDetail===b.id;
+    const isEditing = editingId===b.id;
+    const prob=(typeof b.prob==='number')?b.prob:null;
+
+    let detailContent='';
+    if(isEditing){
+      detailContent=`<div class="edit-form" id="editForm_${b.id}">
+        <label>Evento</label>
+        <input type="text" class="ed" data-f="event" value="${esc(b.event)}">
+        <label>Seleção (mercado)</label>
+        <input type="text" class="ed" data-f="selection" value="${esc(b.selection||'')}">
+        <div class="grid2">
+          <div><label>Casa de aposta</label><input type="text" class="ed" data-f="house" value="${esc(b.house||'')}"></div>
+          <div><label>Data do evento</label><input type="datetime-local" class="ed" data-f="date" value="${(b.date||'').slice(0,16)}"></div>
+        </div>
+        <div class="grid2">
+          <div><label>Odd</label><input type="number" class="ed" data-f="odd" step="0.01" value="${b.odd}"></div>
+          <div><label>Stake</label><input type="number" class="ed" data-f="stake" step="0.01" value="${b.stake}"></div>
+        </div>
+        <div class="grid2">
+          <div><label>Prob %</label><input type="number" class="ed" data-f="prob" step="0.1" value="${prob!==null?prob:''}"></div>
+          <div><label>Superval %</label><input type="number" class="ed" data-f="pot" step="0.01" value="${(typeof b.pot==='number')?b.pot:''}"></div>
+        </div>
+        <div style="display:flex;gap:6px;margin-top:8px;">
+          <button class="btn small primary" data-save="${b.id}">Salvar</button>
+          <button class="btn small" data-cancel="${b.id}">Cancelar</button>
+        </div>
+      </div>`;
+    } else {
+      detailContent=`
+        ${prob!==null?`Prob ${prob}%`:''}${(typeof b.pot==='number')?` · Superval ${b.pot}%`:''} · Retorno ${fmt(b.stake*b.odd)} (lucro ${fmt(b.stake*(b.odd-1))})<br>
+        <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;">
+          <button class="btn small" data-edit="${b.id}">Editar</button>
+          ${b.status==='pendente'?`<button class="btn small" data-res="${b.id}:void">Anular</button>`:''}
+          ${b.status==='resolvida'?`<button class="btn small" data-reopen="${b.id}">Reabrir</button>`:''}
+          <button class="btn small" data-del="${b.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
+        </div>`;
+    }
+
+    return `<div class="bet-row ${b.status==='resolvida'?'resolved':''}">
+      <span class="bet-dot ${dot}"></span>
+      <span class="bet-date">${dateStr}</span>
+      <div class="bet-main" data-toggle="${b.id}">
+        <div class="bet-event">${esc(b.event)}</div>
+        <div class="bet-sub">${sub}</div>
+      </div>
+      <span class="bet-val ${valClass}">${val}</span>
+      ${quick}
+    </div>
+    <div class="bet-detail ${isOpen?'show':''}" data-detail="${b.id}">${detailContent}</div>`;
+  }
+
+  function renderBets(){
+    let bets=[...state.bets];
+    // filtro por busca
+    if(searchTerm){
+      const t=searchTerm.toLowerCase();
+      bets=bets.filter(b=>(b.event||'').toLowerCase().includes(t)||(b.house||'').toLowerCase().includes(t)||(b.selection||'').toLowerCase().includes(t));
+    }
+    // filtro por status
+    if(currentFilter==='pendente') bets=bets.filter(b=>b.status==='pendente');
+    else if(currentFilter==='green') bets=bets.filter(b=>b.result==='green');
+    else if(currentFilter==='red') bets=bets.filter(b=>b.result==='red');
+    // filtro por casa
+    if(houseFilter!=='all') bets=bets.filter(b=>b.house===houseFilter);
+
+    renderHouseFilter();
+
+    if(bets.length===0){ $('betsList').innerHTML='<div class="empty">Nenhuma aposta neste filtro.</div>'; return; }
+
+    // ativas: cronológica ascendente (próximo jogo no topo)
+    const sortAsc=(a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id);
+    // resolvidas: mais recente primeiro
+    const sortDesc=(a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id);
+    const pend=bets.filter(b=>b.status==='pendente').sort(sortAsc);
+    const res=bets.filter(b=>b.status!=='pendente').sort(sortDesc);
+
+    let html='';
+    if(pend.length && currentFilter==='all'){ html+=`<div class="section-label">⏳ Ativas (${pend.length})</div>`; }
+    html+=pend.map(betRow).join('');
+    if(res.length && currentFilter==='all'){ html+=`<div class="section-label">Resolvidas (${res.length})</div>`; }
+    html+=res.map(betRow).join('');
+    $('betsList').innerHTML=html;
+
+    // wiring
+    $('betsList').querySelectorAll('[data-toggle]').forEach(el=>el.addEventListener('click',()=>{
+      const id=el.dataset.toggle;
+      if(editingId===id) return;
+      openDetail = openDetail===id?null:id;
+      renderBets();
+    }));
+    $('betsList').querySelectorAll('[data-res]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation(); const [id,r]=btn.dataset.res.split(':'); const b=state.bets.find(x=>x.id===id);
+      if(b){ b.status='resolvida'; b.result=r; openDetail=null; editingId=null; saveState(); renderAll(); }
+    }));
+    $('betsList').querySelectorAll('[data-reopen]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation(); const b=state.bets.find(x=>x.id===btn.dataset.reopen);
+      if(b){ b.status='pendente'; b.result=null; saveState(); renderAll(); }
+    }));
+    $('betsList').querySelectorAll('[data-del]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation(); const b=state.bets.find(x=>x.id===btn.dataset.del);
+      if(b&&confirm(`Excluir "${b.event}"?`)){ state.bets=state.bets.filter(x=>x.id!==btn.dataset.del); openDetail=null; editingId=null; saveState(); renderAll(); }
+    }));
+    $('betsList').querySelectorAll('[data-edit]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation(); editingId=btn.dataset.edit; openDetail=btn.dataset.edit; renderBets();
+    }));
+    $('betsList').querySelectorAll('[data-cancel]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation(); editingId=null; renderBets();
+    }));
+    $('betsList').querySelectorAll('[data-save]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const b=state.bets.find(x=>x.id===btn.dataset.save); if(!b) return;
+      const form=document.getElementById('editForm_'+b.id); if(!form) return;
+      form.querySelectorAll('.ed').forEach(inp=>{
+        const f=inp.dataset.f, v=inp.value;
+        if(f==='event') b.event=v.trim()||b.event;
+        else if(f==='selection') b.selection=v.trim();
+        else if(f==='house') b.house=v.trim();
+        else if(f==='odd'){ const n=parseFloat(v); if(n>1) b.odd=n; }
+        else if(f==='stake'){ const n=parseFloat(v); if(n>0) b.stake=n; }
+        else if(f==='prob'){ const n=parseFloat(v); b.prob=isNaN(n)?null:n; }
+        else if(f==='pot'){ const n=parseFloat(v); b.pot=isNaN(n)?null:n; }
+        else if(f==='date') b.date=v||b.date;
+      });
+      editingId=null; saveState(); renderAll();
+    }));
+  }
+
+  document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active'); currentFilter=btn.dataset.filter; renderBets();
+  }));
+  $('betSearch').addEventListener('input',e=>{ searchTerm=e.target.value.trim(); renderBets(); });
+
+  $('copyBtn').addEventListener('click',()=>{
+    const lines=[['Data','Evento','Seleção','Casa','Odd','Potencial%','ProbGreen%','Stake','Status','Resultado','Lucro'].join('\t')];
+    [...state.bets].sort((a,b)=>(a.date||'').localeCompare(b.date||'')).forEach(b=>{
+      const p=betProfit(b);
+      lines.push([(b.date||'').replace('T',' '),b.event,b.selection||'',b.house||'',b.odd.toFixed(2),(typeof b.pot==='number'?b.pot:''),(typeof b.prob==='number'?b.prob:''),b.stake.toFixed(2),b.status,b.result||'',p===null?'':p.toFixed(2)].join('\t'));
+    });
+    const resolved=state.bets.filter(b=>b.status==='resolvida');
+    const profit=resolved.reduce((s,b)=>s+(betProfit(b)||0),0);
+    lines.push('',['Banca inicial',state.cfg.bankroll.toFixed(2)].join('\t'),['Resultado',profit.toFixed(2)].join('\t'),['Banca atual',(state.cfg.bankroll+profit).toFixed(2)].join('\t'));
+    navigator.clipboard.writeText(lines.join('\n')).then(()=>{ $('copyBtn').textContent='Copiado!'; $('copyBtn').classList.add('copied'); setTimeout(()=>{$('copyBtn').textContent='Copiar p/ planilha'; $('copyBtn').classList.remove('copied');},1500); });
+  });
+
+  $('saveBackupBtn').addEventListener('click',()=>{
+    const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob);
+    const a=document.createElement('a'); a.href=url; a.download=`apostas-valor-backup-${todayStr()}.json`; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  $('loadBackupBtn').addEventListener('click',()=>$('loadBackupInput').click());
+  $('loadBackupInput').addEventListener('change',e=>{
+    const file=e.target.files[0]; if(!file)return; const r=new FileReader();
+    r.onload=()=>{ try{ const p=JSON.parse(r.result); if(!Array.isArray(p.bets))throw 0; state=normalize(p); fillCfg(); saveState(); renderAll(); toast('Backup carregado ✓'); }catch(err){ alert('Backup inválido.'); } };
+    r.readAsText(file); $('loadBackupInput').value='';
+  });
+
+  /* ---------- cloud sync (GitHub Contents API) ---------- */
+  const SYNC_KEY='apostasValorSync_v1';
+  let syncCfg=null, cloudSha=null, pushTimer=null, syncBusy=false;
+  try{ const raw=localStorage.getItem(SYNC_KEY); if(raw) syncCfg=JSON.parse(raw); }catch(e){}
+
+  const sEls={
+    setup:$('syncSetup'), active:$('syncActive'), info:$('syncInfo'),
+    token:$('syncToken'), repo:$('syncRepo'), path:$('syncPath'),
+    connect:$('syncConnectBtn'), push:$('syncPushBtn'), pull:$('syncPullBtn'), disconnect:$('syncDisconnectBtn')
+  };
+
+  function setSyncStatus(msg,isError){
+    sEls.info.innerHTML=msg;
+    sEls.info.style.color=isError?'#F87171':'#5C6472';
+    const el=$('autosaveStatus');
+    if(syncCfg&&!isError){ el.textContent='☁ '+msg.replace(/<[^>]+>/g,''); el.style.color='#5C6472'; }
+  }
+
+  function apiUrl(){ return 'https://api.github.com/repos/'+syncCfg.repo+'/contents/'+encodeURIComponent(syncCfg.path); }
+  function apiHeaders(){ return { 'Authorization':'Bearer '+syncCfg.token, 'Accept':'application/vnd.github+json' }; }
+  function b64encode(str){ return btoa(unescape(encodeURIComponent(str))); }
+  function b64decode(b64){ return decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))); }
+
+  async function cloudPull(){
+    const r=await fetch(apiUrl(),{headers:apiHeaders()});
+    if(r.status===404){ cloudSha=null; return null; }
+    if(r.status===401||r.status===403) throw new Error('Token inválido ou sem permissão.');
+    if(!r.ok) throw new Error('Erro ao ler (HTTP '+r.status+').');
+    const j=await r.json(); cloudSha=j.sha;
+    try{ return JSON.parse(b64decode(j.content)); }catch(e){ throw new Error('JSON inválido na nuvem.'); }
+  }
+
+  async function cloudPush(retry){
+    if(!syncCfg) return;
+    const body={ message:'sync '+new Date().toISOString(), content:b64encode(JSON.stringify(state,null,2)) };
+    if(cloudSha) body.sha=cloudSha;
+    const r=await fetch(apiUrl(),{method:'PUT',headers:{...apiHeaders(),'Content-Type':'application/json'},body:JSON.stringify(body)});
+    if((r.status===409||r.status===422)&&!retry){ try{await cloudPull();}catch(e){} return cloudPush(true); }
+    if(!r.ok) throw new Error('Erro ao gravar (HTTP '+r.status+').');
+    const j=await r.json(); cloudSha=j.content&&j.content.sha;
+  }
+
+  function schedulePush(){
+    if(!syncCfg) return;
+    clearTimeout(pushTimer);
+    setSyncStatus('Alterações pendentes…');
+    pushTimer=setTimeout(async ()=>{
+      if(syncBusy){ schedulePush(); return; }
+      syncBusy=true;
+      try{ await cloudPush(); setSyncStatus('Sincronizado ↑ '+new Date().toLocaleTimeString('pt-BR')); }
+      catch(e){ setSyncStatus('⚠ '+e.message,true); }
+      finally{ syncBusy=false; }
+    },1500);
+  }
+
+  function renderSyncUi(){
+    if(syncCfg){ sEls.setup.style.display='none'; sEls.active.style.display='block'; setSyncStatus('Conectado a <b>'+esc(syncCfg.repo)+'</b>'); }
+    else { sEls.setup.style.display='block'; sEls.active.style.display='none'; }
+  }
+
+  async function initialSync(){
+    if(!syncCfg) return;
+    try{
+      setSyncStatus('Baixando dados da nuvem…');
+      const remote=await cloudPull();
+      if(remote===null){ await cloudPush(); setSyncStatus('Nuvem inicializada ↑ '+new Date().toLocaleTimeString('pt-BR')); }
+      else {
+        const remoteAt=remote.updatedAt||'', localAt=state.updatedAt||'';
+        if(remoteAt>=localAt){
+          state=normalize(remote); state.updatedAt=remote.updatedAt;
+          try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){}
+          fillCfg(); renderAll();
+          setSyncStatus('Sincronizado ↓ '+new Date().toLocaleTimeString('pt-BR'));
+        } else {
+          await cloudPush();
+          setSyncStatus('Dados locais mais recentes enviados ↑ '+new Date().toLocaleTimeString('pt-BR'));
+        }
+      }
+    }catch(e){ setSyncStatus('⚠ '+e.message,true); }
+  }
+
+  sEls.connect.addEventListener('click', async ()=>{
+    const token=sEls.token.value.trim(), repo=sEls.repo.value.trim(), path=(sEls.path.value.trim()||'apostas-valor.json');
+    if(!token||!repo||!repo.includes('/')){ alert('Preencha o token e o repositório (usuário/repo).'); return; }
+    syncCfg={token,repo,path};
+    sEls.connect.textContent='Conectando…';
+    try{
+      try{localStorage.setItem(SYNC_KEY,JSON.stringify(syncCfg));}catch(e){}
+      renderSyncUi(); await initialSync(); sEls.token.value=''; toast('Sincronização ativada ☁');
+    }catch(e){ alert('Falha: '+e.message); syncCfg=null; try{localStorage.removeItem(SYNC_KEY);}catch(_){} renderSyncUi(); }
+    finally{ sEls.connect.textContent='Conectar e sincronizar'; }
+  });
+  sEls.disconnect.addEventListener('click',()=>{
+    if(!confirm('Desconectar neste dispositivo? Dados locais e da nuvem são mantidos.')) return;
+    syncCfg=null; cloudSha=null; try{localStorage.removeItem(SYNC_KEY);}catch(e){} renderSyncUi(); renderAutosave();
+  });
+  sEls.push.addEventListener('click', async ()=>{
+    if(syncBusy) return; syncBusy=true;
+    try{ await cloudPush(); setSyncStatus('Sincronizado ↑ '+new Date().toLocaleTimeString('pt-BR')); toast('Enviado ☁'); }
+    catch(e){ setSyncStatus('⚠ '+e.message,true); }
+    finally{ syncBusy=false; }
+  });
+  sEls.pull.addEventListener('click', async ()=>{
+    if(syncBusy) return;
+    if(!confirm('Baixar a versão da nuvem e substituir os dados deste dispositivo?')) return;
+    syncBusy=true;
+    try{
+      const remote=await cloudPull();
+      if(remote===null){ alert('Ainda não existe arquivo na nuvem.'); }
+      else { state=normalize(remote); state.updatedAt=remote.updatedAt;
+        try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}
+        fillCfg(); renderAll();
+        setSyncStatus('Sincronizado ↓ '+new Date().toLocaleTimeString('pt-BR')); toast('Baixado ☁');
+      }
+    }catch(e){ setSyncStatus('⚠ '+e.message,true); }
+    finally{ syncBusy=false; }
+  });
+
+  /* ---------- autosave + sync ---------- */
+  function renderAutosave(){
+    const el=$('autosaveStatus');
+    if(!storageAvailable){ el.textContent='⚠ Armazenamento local indisponível — use "Salvar backup".'; el.style.color='#F87171'; }
+    else if(!syncCfg){ el.textContent='● Salvo neste navegador — '+new Date().toLocaleTimeString('pt-BR'); el.style.color='#5C6472'; }
+  }
+
+  function renderAll(){ renderSummary(); renderChart(); renderBets(); }
+
+  // wrap saveState pra carimbar updatedAt e agendar push
+  const _origSave=saveState;
+  saveState=function(){ state.updatedAt=new Date().toISOString(); _origSave(); renderAutosave(); schedulePush(); };
+
+  // init
+  fillCfg();
+  updateRiskPreview();
+  renderAll();
+  renderAutosave();
+  renderSyncUi();
+  initialSync();
+})();
+</script>
+</body>
+</html>
