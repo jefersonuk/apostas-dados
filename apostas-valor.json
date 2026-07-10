@@ -962,8 +962,8 @@
       "prob": 49.4,
       "stake": 30,
       "date": "2026-07-10T05:30",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "green",
       "selection": "Abaixo 38.5 1º período("
     },
     {
@@ -1331,5 +1331,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T08:05:36.852Z"
+  "updatedAt": "2026-07-10T08:56:54.552Z"
 }
