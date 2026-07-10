@@ -910,8 +910,8 @@
       "prob": 54.3,
       "stake": 30,
       "date": "2026-07-10T05:45",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "green",
       "selection": "Abaixo de 9.5 escanteios"
     },
     {
@@ -1448,5 +1448,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T13:38:25.977Z"
+  "updatedAt": "2026-07-10T13:41:23.910Z"
 }
