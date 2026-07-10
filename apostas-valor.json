@@ -1132,8 +1132,8 @@
       "prob": 47.2,
       "stake": 26.79,
       "date": "2026-07-10T16:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mre7recb54nv0",
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T23:39:24.662Z"
+  "updatedAt": "2026-07-10T23:40:40.653Z"
 }
