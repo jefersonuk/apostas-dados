@@ -1537,7 +1537,20 @@
       "date": "2026-07-10T21:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrf161y223670",
+      "event": "Francs Borains – Crossing Schaerbeek",
+      "selection": "Abaixo 2.5 1º o time",
+      "house": "KTO",
+      "odd": 1.8,
+      "pot": 4.11,
+      "prob": 57.8,
+      "stake": 30,
+      "date": "2026-07-10T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:26:28.799Z"
+  "updatedAt": "2026-07-10T14:28:07.898Z"
 }
