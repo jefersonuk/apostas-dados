@@ -1524,7 +1524,20 @@
       "date": "2026-07-10T20:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrf13xhbsksis",
+      "event": "CD Espanol De Talca – CD Universidad Catolica De Santiago",
+      "selection": "Universidad Catolica De Santiago vence",
+      "house": "Novibet",
+      "odd": 1.78,
+      "pot": 4.11,
+      "prob": 58.5,
+      "stake": 34.02,
+      "date": "2026-07-10T21:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-10T14:18:34.380Z"
+  "updatedAt": "2026-07-10T14:26:28.799Z"
 }
