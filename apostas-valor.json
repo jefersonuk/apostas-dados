@@ -1327,9 +1327,9 @@
       "prob": 62.7,
       "stake": 37,
       "date": "2026-07-10T05:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     }
   ],
-  "updatedAt": "2026-07-10T08:56:54.552Z"
+  "updatedAt": "2026-07-10T08:58:02.399Z"
 }
