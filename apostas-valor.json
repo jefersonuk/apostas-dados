@@ -1366,8 +1366,8 @@
       "prob": 65,
       "stake": 30,
       "date": "2026-07-10T15:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrerzj2a474pz",
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-10T23:39:06.246Z"
+  "updatedAt": "2026-07-10T23:39:19.497Z"
 }
