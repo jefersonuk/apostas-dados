@@ -676,8 +676,8 @@
       "prob": 59.9,
       "stake": 22.02,
       "date": "2026-07-10T20:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "red",
       "selection": "Botafogo mais cartoes"
     },
     {
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-11T02:29:40.853Z"
+  "updatedAt": "2026-07-11T02:30:35.075Z"
 }
