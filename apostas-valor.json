@@ -1029,8 +1029,8 @@
       "prob": 61.7,
       "stake": 7.58,
       "date": "2026-07-11T18:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "red",
       "selection": "+ 10.5 faltas time 1"
     },
     {
@@ -1720,5 +1720,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:08:21.768Z"
+  "updatedAt": "2026-07-11T23:08:50.425Z"
 }
