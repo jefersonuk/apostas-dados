@@ -89,6 +89,16 @@
   .edit-form input,.edit-form select{font-size:12px;padding:6px 8px;margin-bottom:4px;}
   .bet-date{font-size:11px;color:var(--muted-2);font-family:var(--mono);white-space:nowrap;min-width:52px;text-align:right;}
 
+  .bal-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);}
+  .bal-row:last-of-type{border-bottom:none;}
+  .bal-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+  .bal-name{flex:1;font-size:13px;font-weight:600;}
+  .bal-val{font-family:var(--mono);font-size:14px;font-weight:600;cursor:pointer;min-width:80px;text-align:right;padding:4px 8px;border-radius:6px;border:1px solid transparent;}
+  .bal-val:hover{border-color:var(--border);background:#0E1116;}
+  .bal-edit{width:100px;font-family:var(--mono);font-size:13px;padding:4px 8px;border-radius:6px;border:1px solid var(--sky);background:#0E1116;color:var(--text);text-align:right;}
+  .bal-del{background:none;border:none;color:var(--muted-2);font-size:15px;cursor:pointer;padding:0 4px;}
+  .bal-del:hover{color:var(--red);}
+
   .op{border:1px solid var(--border);border-radius:9px;margin-bottom:9px;overflow:hidden;}
   .op-head{display:flex;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;background:var(--panel-2);}
   .op-head:hover{background:#1B212A;}
@@ -154,6 +164,18 @@
     </div>
     <div class="chart-wrap" style="margin-top:12px;"><svg id="chartSvg" viewBox="0 0 780 220" preserveAspectRatio="none"></svg></div>
     <div class="footnote" id="chartNote"></div>
+  </div>
+
+  <!-- SALDO POR CASA -->
+  <div class="card">
+    <div class="card-title"><span>Saldo por casa de aposta</span><span id="balTotal" style="font-family:var(--mono);font-size:13px;color:var(--text);"></span></div>
+    <div id="balList"></div>
+    <div class="grid2" style="margin-top:8px;">
+      <div><label>Casa</label><input type="text" id="balName" placeholder="Ex: Bet365"></div>
+      <div><label>Saldo (R$)</label><input type="number" id="balValue" step="0.01" placeholder="0.00"></div>
+    </div>
+    <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar casa</button>
+    <div class="footnote">Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
   </div>
 
   <!-- CONFIG -->
@@ -289,7 +311,7 @@
 
   function normalize(p){
     const cfg=Object.assign({},DEFAULTS,p.cfg||{});
-    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], updatedAt:p.updatedAt||'' };
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], updatedAt:p.updatedAt||'' };
   }
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
@@ -950,7 +972,59 @@
     else if(!syncCfg){ el.textContent='● Salvo neste navegador — '+new Date().toLocaleTimeString('pt-BR'); el.style.color='#5C6472'; }
   }
 
-  function renderAll(){ renderSummary(); renderChart(); renderBets(); }
+  /* ---------- saldo por casa (manual) ---------- */
+  const HOUSE_COLORS=['#38BDF8','#F5A524','#34D399','#A78BFA','#F472B6','#F87171','#22D3EE','#FACC15','#FB923C','#4ADE80'];
+  let editingBal=null;
+
+  function renderBalances(){
+    const list=$('balList');
+    if(!state.balances.length){ list.innerHTML='<div class="empty">Nenhuma casa cadastrada.</div>'; $('balTotal').textContent=''; return; }
+    const total=state.balances.reduce((s,b)=>s+b.value,0);
+    $('balTotal').textContent='Total: '+fmt(total);
+    list.innerHTML=state.balances.map((b,i)=>{
+      const color=HOUSE_COLORS[i%HOUSE_COLORS.length];
+      const valHtml = editingBal===b.id
+        ? `<input type="number" class="bal-edit" data-balsave="${b.id}" value="${b.value}" step="0.01" autofocus>`
+        : `<span class="bal-val" data-baledit="${b.id}">${fmt(b.value)}</span>`;
+      return `<div class="bal-row">
+        <span class="bal-dot" style="background:${color}"></span>
+        <span class="bal-name">${esc(b.name)}</span>
+        ${valHtml}
+        <button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>
+      </div>`;
+    }).join('');
+    // wiring: click no valor -> editar
+    list.querySelectorAll('[data-baledit]').forEach(el=>el.addEventListener('click',()=>{
+      editingBal=el.dataset.baledit; renderBalances();
+      const inp=list.querySelector('.bal-edit'); if(inp){ inp.focus(); inp.select(); }
+    }));
+    // wiring: input de edição -> salvar ao perder foco ou Enter
+    list.querySelectorAll('[data-balsave]').forEach(inp=>{
+      const save=()=>{
+        const b=state.balances.find(x=>x.id===inp.dataset.balsave);
+        if(b){ const v=parseFloat(inp.value); if(!isNaN(v)) b.value=v; }
+        editingBal=null; saveState(); renderBalances();
+      };
+      inp.addEventListener('blur',save);
+      inp.addEventListener('keydown',e=>{ if(e.key==='Enter') save(); if(e.key==='Escape'){ editingBal=null; renderBalances(); } });
+    });
+    // wiring: excluir
+    list.querySelectorAll('[data-baldel]').forEach(btn=>btn.addEventListener('click',()=>{
+      const b=state.balances.find(x=>x.id===btn.dataset.baldel);
+      if(b&&confirm(`Remover "${b.name}"?`)){ state.balances=state.balances.filter(x=>x.id!==btn.dataset.baldel); saveState(); renderBalances(); }
+    }));
+  }
+
+  $('balAddBtn').addEventListener('click',()=>{
+    const name=$('balName').value.trim(), value=parseFloat($('balValue').value);
+    if(!name){ alert('Informe o nome da casa.'); return; }
+    if(state.balances.some(b=>b.name.toLowerCase()===name.toLowerCase())){ alert('Essa casa já existe. Edite o saldo clicando no valor.'); return; }
+    state.balances.push({ id:uid(), name, value:isNaN(value)?0:value });
+    $('balName').value=''; $('balValue').value='';
+    saveState(); renderBalances();
+  });
+
+  function renderAll(){ renderSummary(); renderChart(); renderBets(); renderBalances(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
