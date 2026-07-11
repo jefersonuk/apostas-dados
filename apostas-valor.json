@@ -173,14 +173,15 @@
     {
       "id": "mrc8s27j4au6z",
       "event": "Noruega – Inglaterra",
-      "house": "SuperBet",
+      "house": "Superbet",
       "odd": 3.85,
       "pot": 9.69,
       "prob": 28.5,
       "stake": 10,
       "date": "2026-07-11T18:00",
       "status": "pendente",
-      "result": null
+      "result": null,
+      "selection": ""
     },
     {
       "id": "mrc9s97fgfljr",
@@ -1566,5 +1567,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-11T14:56:42.147Z"
+  "updatedAt": "2026-07-11T14:56:51.510Z"
 }
