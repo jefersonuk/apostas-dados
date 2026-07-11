@@ -1695,6 +1695,19 @@
       "date": "2026-07-12T06:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrh0m33du64u1",
+      "event": "LA Galaxy – CF America",
+      "selection": "Abaixo 2.5 gols",
+      "house": "Betnacional",
+      "odd": 2.25,
+      "pot": 8.63,
+      "prob": 48.3,
+      "stake": 42,
+      "date": "2026-07-11T23:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1759,5 +1772,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:40:34.220Z"
+  "updatedAt": "2026-07-11T23:48:08.617Z"
 }
