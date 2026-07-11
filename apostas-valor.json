@@ -613,8 +613,8 @@
       "prob": 24.9,
       "stake": 14.15,
       "date": "2026-07-10T12:30",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "void",
       "selection": "menos 8.5 games 1o set"
     },
     {
@@ -1658,5 +1658,5 @@
       "result": "green"
     }
   ],
-  "updatedAt": "2026-07-11T20:36:10.451Z"
+  "updatedAt": "2026-07-11T20:52:20.481Z"
 }
