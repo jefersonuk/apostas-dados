@@ -1563,8 +1563,8 @@
       "prob": 48.3,
       "stake": 21,
       "date": "2026-07-10T22:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrgipi50jfwcd",
@@ -1658,5 +1658,5 @@
       "result": "green"
     }
   ],
-  "updatedAt": "2026-07-11T20:11:36.678Z"
+  "updatedAt": "2026-07-11T20:15:42.402Z"
 }
