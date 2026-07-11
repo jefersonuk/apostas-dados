@@ -1630,7 +1630,20 @@
       "date": "2026-07-11T13:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrgj08ib0uudq",
+      "event": "Viktoria Morvayova – Franziska Sziedat",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 1.67,
+      "pot": 21.5,
+      "prob": 72.9,
+      "stake": 36,
+      "date": "2026-07-11T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-11T15:33:28.032Z"
+  "updatedAt": "2026-07-11T15:35:15.731Z"
 }
