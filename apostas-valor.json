@@ -1658,5 +1658,12 @@
       "result": "green"
     }
   ],
-  "updatedAt": "2026-07-11T20:52:20.481Z"
+  "balances": [
+    {
+      "id": "mrgvixbvmtmbs",
+      "name": "Bet365",
+      "value": 61.67
+    }
+  ],
+  "updatedAt": "2026-07-11T21:25:43.100Z"
 }
