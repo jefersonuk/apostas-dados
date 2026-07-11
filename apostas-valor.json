@@ -1656,6 +1656,19 @@
       "date": "2026-07-11T16:46",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrh08nyfyk0ii",
+      "event": "Francesco Passaro – Maks Kasnikowski",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 3,
+      "pot": 37.3,
+      "prob": 45.8,
+      "stake": 20,
+      "date": "2026-07-12T07:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1720,5 +1733,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:13:14.762Z"
+  "updatedAt": "2026-07-11T23:37:42.471Z"
 }
