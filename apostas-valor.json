@@ -1682,6 +1682,19 @@
       "date": "2026-07-12T08:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrh0cch8fiknq",
+      "event": "Federico Cina – Calvin Hemery",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 1.91,
+      "pot": 28.4,
+      "prob": 67.3,
+      "stake": 32,
+      "date": "2026-07-12T06:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1746,5 +1759,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:39:14.204Z"
+  "updatedAt": "2026-07-11T23:40:34.220Z"
 }
