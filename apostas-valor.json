@@ -1537,8 +1537,8 @@
       "prob": 58.5,
       "stake": 34.02,
       "date": "2026-07-10T21:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrf161y223670",
@@ -1589,8 +1589,8 @@
       "prob": 64.6,
       "stake": 36,
       "date": "2026-07-11T13:10",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrgitvdnqkhwk",
@@ -1643,7 +1643,20 @@
       "date": "2026-07-11T13:00",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrgs7v3kq7ymv",
+      "event": "Juan Carlos prado",
+      "selection": "Handicap",
+      "house": "Betnacional",
+      "odd": 1.57,
+      "pot": 6,
+      "prob": 50,
+      "stake": 36,
+      "date": "2026-07-11T16:46",
+      "status": "resolvida",
+      "result": "green"
     }
   ],
-  "updatedAt": "2026-07-11T19:37:49.894Z"
+  "updatedAt": "2026-07-11T20:11:36.678Z"
 }
