@@ -1565,7 +1565,20 @@
       "date": "2026-07-10T22:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrgipi50jfwcd",
+      "event": "Alexis Galarneau – Jacob Fearnley",
+      "selection": "H2(−1.5)",
+      "house": "Betnacional",
+      "odd": 2.2,
+      "pot": 41.3,
+      "prob": 64.3,
+      "stake": 36,
+      "date": "2026-07-11T15:30",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-11T14:56:59.245Z"
+  "updatedAt": "2026-07-11T15:26:54.996Z"
 }
