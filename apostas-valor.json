@@ -743,8 +743,8 @@
       "prob": 11.6,
       "stake": 2.1,
       "date": "2026-07-11T01:30",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "red",
       "selection": "KTO 2 vence - empate anula aposta -"
     },
     {
@@ -1658,5 +1658,5 @@
       "result": "green"
     }
   ],
-  "updatedAt": "2026-07-11T20:33:26.447Z"
+  "updatedAt": "2026-07-11T20:36:10.451Z"
 }
