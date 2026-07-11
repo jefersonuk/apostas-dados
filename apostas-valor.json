@@ -49,8 +49,8 @@
       "pot": 25,
       "stake": 10,
       "date": "2026-07-11T12:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "void",
       "selection": "Djoko menor 3 games primeiro set",
       "prob": null
     },
@@ -1720,5 +1720,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:02:16.651Z"
+  "updatedAt": "2026-07-11T23:02:29.502Z"
 }
