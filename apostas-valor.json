@@ -1708,6 +1708,19 @@
       "date": "2026-07-11T23:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrh0quvd56zzh",
+      "event": "Clement Chidekh – Henry Searle",
+      "selection": "2(−1.5)",
+      "house": "Betnacional",
+      "odd": 2.2,
+      "pot": 32.4,
+      "prob": 60.2,
+      "stake": 42.11,
+      "date": "2026-07-11T08:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1772,5 +1785,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:48:08.617Z"
+  "updatedAt": "2026-07-11T23:51:51.241Z"
 }
