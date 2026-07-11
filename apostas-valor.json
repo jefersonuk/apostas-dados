@@ -310,14 +310,15 @@
     {
       "id": "mrcce4wjxen33",
       "event": "Venezuela – Colômbia (COL -2,5 2o tempo V)",
-      "house": "Super Bet",
+      "house": "Superbet",
       "odd": 2.12,
       "pot": 7.13,
       "prob": 50.5,
       "stake": 10,
       "date": "2026-07-08T14:09",
       "status": "resolvida",
-      "result": "green"
+      "result": "green",
+      "selection": ""
     },
     {
       "id": "mrcch4lv1zgzc",
@@ -1565,5 +1566,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-11T14:54:19.468Z"
+  "updatedAt": "2026-07-11T14:56:19.371Z"
 }
