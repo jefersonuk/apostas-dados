@@ -1591,7 +1591,20 @@
       "date": "2026-07-11T13:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrgitvdnqkhwk",
+      "event": "Florian Broska – Kimmer Coppejans",
+      "selection": "H2(−1.5)",
+      "house": "Betnacional",
+      "odd": 2,
+      "pot": 34.4,
+      "prob": 67.2,
+      "stake": 36,
+      "date": "2026-07-11T12:30",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-11T15:28:22.312Z"
+  "updatedAt": "2026-07-11T15:30:18.779Z"
 }
