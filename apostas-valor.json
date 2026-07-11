@@ -1040,8 +1040,8 @@
       "prob": 41.3,
       "stake": 24.37,
       "date": "2026-07-11T05:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "green",
       "selection": "Vitória 1"
     },
     {
@@ -1565,5 +1565,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-11T02:30:35.075Z"
+  "updatedAt": "2026-07-11T13:49:08.728Z"
 }
