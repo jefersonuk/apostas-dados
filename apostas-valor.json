@@ -1602,8 +1602,8 @@
       "prob": 67.2,
       "stake": 36,
       "date": "2026-07-11T12:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrgivvs45ehyi",
@@ -1645,5 +1645,5 @@
       "result": null
     }
   ],
-  "updatedAt": "2026-07-11T19:15:53.949Z"
+  "updatedAt": "2026-07-11T19:33:00.247Z"
 }
