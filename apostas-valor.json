@@ -1578,7 +1578,20 @@
       "date": "2026-07-11T15:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrgirdiglnuwj",
+      "event": "Lukas Neumayer – Mili Poljicak",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 2.1,
+      "pot": 35.7,
+      "prob": 64.6,
+      "stake": 36,
+      "date": "2026-07-11T13:10",
+      "status": "pendente",
+      "result": null
     }
   ],
-  "updatedAt": "2026-07-11T15:26:54.996Z"
+  "updatedAt": "2026-07-11T15:28:22.312Z"
 }
