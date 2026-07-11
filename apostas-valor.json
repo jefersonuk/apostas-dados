@@ -1524,8 +1524,8 @@
       "prob": 55.3,
       "stake": 30,
       "date": "2026-07-10T20:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrf13xhbsksis",
@@ -1658,5 +1658,5 @@
       "result": "green"
     }
   ],
-  "updatedAt": "2026-07-11T20:15:42.402Z"
+  "updatedAt": "2026-07-11T20:15:49.367Z"
 }
