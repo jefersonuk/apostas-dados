@@ -50,7 +50,7 @@
       "stake": 10,
       "date": "2026-07-11T12:00",
       "status": "resolvida",
-      "result": "void",
+      "result": "red",
       "selection": "Djoko menor 3 games primeiro set",
       "prob": null
     },
@@ -1720,5 +1720,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:08:17.537Z"
+  "updatedAt": "2026-07-11T23:08:21.768Z"
 }
