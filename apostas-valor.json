@@ -808,8 +808,8 @@
       "prob": 41,
       "stake": 20,
       "date": "2026-07-10T11:30",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "void",
       "selection": "Ilbirs FC Empate Anula Aposta"
     },
     {
@@ -1720,5 +1720,5 @@
       "value": 2149.58
     }
   ],
-  "updatedAt": "2026-07-11T23:09:05.741Z"
+  "updatedAt": "2026-07-11T23:13:14.762Z"
 }
