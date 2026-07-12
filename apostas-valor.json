@@ -821,8 +821,8 @@
       "prob": 37.4,
       "stake": 20,
       "date": "2026-07-12T09:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "red",
       "selection": "IFK Goteborg Total de Escanteios menos 3.5"
     },
     {
@@ -1920,5 +1920,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T18:14:31.094Z"
+  "updatedAt": "2026-07-12T18:18:16.700Z"
 }
