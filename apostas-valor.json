@@ -1968,6 +1968,19 @@
       "date": "2026-07-15T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mric96t6he8da",
+      "event": "Dallas Wings – Chicago Sky",
+      "selection": "H1(−3.5) 4º período",
+      "house": "Betnacional",
+      "odd": 2.5,
+      "pot": 4.6,
+      "prob": 41.6,
+      "stake": 16,
+      "date": "2026-07-12T20:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2042,5 +2055,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T21:23:31.045Z"
+  "updatedAt": "2026-07-12T22:01:48.474Z"
 }
