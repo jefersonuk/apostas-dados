@@ -1786,6 +1786,19 @@
       "date": "2026-07-12T14:20",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrhrbjy1436kt",
+      "event": "Lukas Neumayer – Marko Topo",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 1.91,
+      "pot": 28.2,
+      "prob": 67.2,
+      "stake": 30,
+      "date": "2026-07-12T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1855,5 +1868,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T12:14:40.673Z"
+  "updatedAt": "2026-07-12T12:15:46.873Z"
 }
