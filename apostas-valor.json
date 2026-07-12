@@ -938,8 +938,8 @@
       "prob": 59.4,
       "stake": 6,
       "date": "2026-07-11T18:00",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "void",
       "selection": "Sem bolas na trave"
     },
     {
@@ -1829,5 +1829,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T00:11:59.055Z"
+  "updatedAt": "2026-07-12T10:36:19.708Z"
 }
