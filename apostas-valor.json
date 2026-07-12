@@ -1890,6 +1890,19 @@
       "date": "2026-07-12T20:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mri80pi3wt4gi",
+      "event": "Titans – Tornado + CD Espanol Osorno – CD Castro",
+      "selection": "Abaixo 44.5 1º set + H2(+4) 1º período",
+      "house": "Faz1bet",
+      "odd": 5.15,
+      "pot": 2.91,
+      "prob": 48.6,
+      "stake": 15,
+      "date": "2026-07-13T01:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1964,5 +1977,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T19:52:55.997Z"
+  "updatedAt": "2026-07-12T20:03:14.332Z"
 }
