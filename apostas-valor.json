@@ -1771,8 +1771,8 @@
       "prob": 61.6,
       "stake": 36,
       "date": "2026-07-12T13:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrhra4v562o4m",
@@ -1920,5 +1920,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T18:14:22.057Z"
+  "updatedAt": "2026-07-12T18:14:31.094Z"
 }
