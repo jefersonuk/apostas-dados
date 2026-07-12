@@ -1825,6 +1825,19 @@
       "date": "2026-07-12T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrhrgvcb8255c",
+      "event": "Roberto Carballes Baena – Carlos Sanchez Jover",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 1.57,
+      "pot": 21.4,
+      "prob": 77.3,
+      "stake": 15.57,
+      "date": "2026-07-12T10:10",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1894,5 +1907,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T12:18:40.555Z"
+  "updatedAt": "2026-07-12T12:19:54.923Z"
 }
