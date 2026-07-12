@@ -1916,6 +1916,19 @@
       "date": "2026-07-12T18:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mri9h00votuek",
+      "event": "Emelec – Barcelona SC",
+      "selection": "1(1:0) - escanteios",
+      "house": "",
+      "odd": 1.52,
+      "pot": 4.93,
+      "prob": 69,
+      "stake": 43,
+      "date": "2026-07-12T20:10",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1990,5 +2003,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T20:41:45.748Z"
+  "updatedAt": "2026-07-12T20:43:54.079Z"
 }
