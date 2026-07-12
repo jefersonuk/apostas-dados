@@ -1864,6 +1864,19 @@
       "date": "2026-07-12T17:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mri7fiao26adg",
+      "event": "Juan ferreira W. – CBR B W.",
+      "selection": "Abaixo 43.5 1º set",
+      "house": "Faz1bet",
+      "odd": 2.25,
+      "pot": 7,
+      "prob": 49,
+      "stake": 30,
+      "date": "2026-07-12T19:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1938,5 +1951,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T19:43:11.016Z"
+  "updatedAt": "2026-07-12T19:46:45.216Z"
 }
