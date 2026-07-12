@@ -1942,6 +1942,19 @@
       "date": "2026-07-12T20:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mriablreiuudr",
+      "event": "França – Espanha",
+      "selection": "Acima 2.5 - cartões 2º o time",
+      "house": "Betnacional",
+      "odd": 3.7,
+      "pot": 12.4,
+      "prob": 30.4,
+      "stake": 20,
+      "date": "2026-07-14T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2016,5 +2029,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T21:05:02.364Z"
+  "updatedAt": "2026-07-12T21:07:41.930Z"
 }
