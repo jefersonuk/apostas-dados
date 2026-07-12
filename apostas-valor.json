@@ -1851,6 +1851,19 @@
       "date": "2026-07-12T12:00",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mri7al69xxw5r",
+      "event": "Pinheiros x Flamengo",
+      "selection": "1 vence",
+      "house": "Faz1bet",
+      "odd": 1.79,
+      "pot": 10.3,
+      "prob": 61,
+      "stake": 43.7,
+      "date": "2026-07-12T17:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1920,5 +1933,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T18:52:15.785Z"
+  "updatedAt": "2026-07-12T19:42:55.665Z"
 }
