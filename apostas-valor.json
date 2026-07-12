@@ -1812,6 +1812,19 @@
       "date": "2026-07-12T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrhrf9yjxncu6",
+      "event": "Hiroki Moriya – Andreja Petrovic",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 2.1,
+      "pot": 23.7,
+      "prob": 58.9,
+      "stake": 30,
+      "date": "2026-07-12T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1881,5 +1894,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T12:17:05.889Z"
+  "updatedAt": "2026-07-12T12:18:40.555Z"
 }
