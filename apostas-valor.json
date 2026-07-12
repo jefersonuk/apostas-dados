@@ -1994,6 +1994,19 @@
       "date": "2026-07-12T20:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mricoa9g83o22",
+      "event": "CR Brasil AL – Goiás EC",
+      "selection": "Acima 2.5",
+      "house": "Betvip",
+      "odd": 2.43,
+      "pot": 3.13,
+      "prob": 50,
+      "stake": 30,
+      "date": "2026-07-12T19:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2073,5 +2086,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T22:11:58.291Z"
+  "updatedAt": "2026-07-12T22:13:32.788Z"
 }
