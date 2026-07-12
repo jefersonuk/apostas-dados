@@ -1929,6 +1929,19 @@
       "date": "2026-07-12T20:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mria86n04q5ar",
+      "event": "Pinheiros – SESI Jundiai",
+      "selection": "H2(0)",
+      "house": "",
+      "odd": 1.82,
+      "pot": 0.29,
+      "prob": 55,
+      "stake": 30,
+      "date": "2026-07-12T20:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2003,5 +2016,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T21:01:32.064Z"
+  "updatedAt": "2026-07-12T21:05:02.364Z"
 }
