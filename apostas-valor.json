@@ -1784,8 +1784,8 @@
       "prob": 44.4,
       "stake": 20,
       "date": "2026-07-12T14:20",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrhrbjy1436kt",
@@ -2003,5 +2003,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T20:43:54.079Z"
+  "updatedAt": "2026-07-12T20:58:18.532Z"
 }
