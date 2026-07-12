@@ -1747,6 +1747,19 @@
       "date": "2026-07-11T20:53",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrh1ed7biztg6",
+      "event": "FSV Frankfurt – Rot-Weiss Walldorf",
+      "selection": "2 vence com handicap +2",
+      "house": "Pixbet",
+      "odd": 1.5,
+      "pot": 16.5,
+      "prob": 57.1,
+      "stake": 20,
+      "date": "2026-07-11T21:03",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1816,5 +1829,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T00:03:42.738Z"
+  "updatedAt": "2026-07-12T00:10:08.087Z"
 }
