@@ -1732,8 +1732,8 @@
       "prob": 60.2,
       "stake": 17.34,
       "date": "2026-07-12T08:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrh163v6ul2y7",
@@ -1829,5 +1829,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T10:44:47.134Z"
+  "updatedAt": "2026-07-12T12:09:21.642Z"
 }
