@@ -1903,6 +1903,19 @@
       "date": "2026-07-13T01:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mri9e904y2gvg",
+      "event": "São Paulo FC (Fem) – EC Taubate (Fem)",
+      "selection": "X / HNB (casa ganha anula aposta)",
+      "house": "Vbet",
+      "odd": 1.52,
+      "pot": 8,
+      "prob": 71,
+      "stake": 40,
+      "date": "2026-07-12T18:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1977,5 +1990,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T20:03:14.332Z"
+  "updatedAt": "2026-07-12T20:41:45.748Z"
 }
