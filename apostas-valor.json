@@ -1838,6 +1838,19 @@
       "date": "2026-07-12T10:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrhvnf0ge1yhz",
+      "event": "Thomas Fancutt - Kaylan Bigun",
+      "selection": "2 -1,5",
+      "house": "Betnacional",
+      "odd": 2.25,
+      "pot": 28,
+      "prob": 57,
+      "stake": 44,
+      "date": "2026-07-12T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1907,5 +1920,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T13:47:10.917Z"
+  "updatedAt": "2026-07-12T14:16:58.816Z"
 }
