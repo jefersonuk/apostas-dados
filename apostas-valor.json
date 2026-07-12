@@ -2007,6 +2007,19 @@
       "date": "2026-07-12T19:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mriculrpz4cno",
+      "event": "Thitsar Arman FC (W) – Ispe FC (W)",
+      "selection": "2(2:0)",
+      "house": "Betnacional",
+      "odd": 2.6,
+      "pot": 4,
+      "prob": 40.1,
+      "stake": 26.88,
+      "date": "2026-07-13T06:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2086,5 +2099,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T22:13:32.788Z"
+  "updatedAt": "2026-07-12T22:18:27.637Z"
 }
