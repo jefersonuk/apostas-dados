@@ -1864,6 +1864,19 @@
       "date": "2026-07-12T19:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mri7j679xnx5h",
+      "event": "El Farolito – Sun City FC",
+      "selection": "X2",
+      "house": "",
+      "odd": 2.4,
+      "pot": 7.78,
+      "prob": 43.7,
+      "stake": 22,
+      "date": "2026-07-12T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1938,5 +1951,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T19:47:05.671Z"
+  "updatedAt": "2026-07-12T19:49:36.165Z"
 }
