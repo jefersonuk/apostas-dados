@@ -1862,8 +1862,8 @@
       "prob": 61,
       "stake": 43.7,
       "date": "2026-07-12T17:00",
-      "status": "resolvida",
-      "result": "red"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mri7fiao26adg",
@@ -1951,5 +1951,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T19:46:52.765Z"
+  "updatedAt": "2026-07-12T19:47:02.115Z"
 }
