@@ -1199,8 +1199,8 @@
       "prob": 63.8,
       "stake": 30,
       "date": "2026-07-12T11:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mre8h86d5z6dn",
@@ -1920,5 +1920,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T18:20:59.640Z"
+  "updatedAt": "2026-07-12T18:52:15.785Z"
 }
