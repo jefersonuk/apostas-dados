@@ -1773,6 +1773,19 @@
       "date": "2026-07-12T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrhra4v562o4m",
+      "event": "Jacob Fearnley – Adam Walton",
+      "selection": "H2(−1.5)",
+      "house": "Betnacional",
+      "odd": 3,
+      "pot": 33.3,
+      "prob": 44.4,
+      "stake": 20,
+      "date": "2026-07-12T14:20",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1842,5 +1855,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T12:13:37.090Z"
+  "updatedAt": "2026-07-12T12:14:40.673Z"
 }
