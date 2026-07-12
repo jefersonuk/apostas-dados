@@ -1823,8 +1823,8 @@
       "prob": 58.9,
       "stake": 30,
       "date": "2026-07-12T12:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrhrgvcb8255c",
@@ -1920,5 +1920,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T16:24:02.852Z"
+  "updatedAt": "2026-07-12T18:13:41.590Z"
 }
