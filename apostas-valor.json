@@ -1760,6 +1760,19 @@
       "date": "2026-07-12T09:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrhr8rsy86qhv",
+      "event": "Nicolas Mejia – Matias Soto",
+      "selection": "H1(−1.5)",
+      "house": "Betnacional",
+      "odd": 2.25,
+      "pot": 38.6,
+      "prob": 61.6,
+      "stake": 36,
+      "date": "2026-07-12T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1829,5 +1842,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T12:09:21.642Z"
+  "updatedAt": "2026-07-12T12:13:37.090Z"
 }
