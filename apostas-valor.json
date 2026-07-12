@@ -1734,6 +1734,19 @@
       "date": "2026-07-12T08:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrh163v6ul2y7",
+      "event": "Northside Wizards – Brisbane Capitals",
+      "selection": "H1(+5)",
+      "house": "Pixbet",
+      "odd": 1.9,
+      "pot": 4,
+      "prob": 57.4,
+      "stake": 20,
+      "date": "2026-07-11T20:53",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -1803,5 +1816,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T00:01:47.805Z"
+  "updatedAt": "2026-07-12T00:03:42.738Z"
 }
