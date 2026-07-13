@@ -1914,8 +1914,8 @@
       "prob": 71,
       "stake": 40,
       "date": "2026-07-12T18:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mri9h00votuek",
@@ -2099,5 +2099,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-12T22:25:43.728Z"
+  "updatedAt": "2026-07-13T00:23:00.157Z"
 }
