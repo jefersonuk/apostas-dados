@@ -1927,8 +1927,8 @@
       "prob": 69,
       "stake": 43,
       "date": "2026-07-12T20:10",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mria86n04q5ar",
@@ -2099,5 +2099,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T01:25:07.306Z"
+  "updatedAt": "2026-07-13T11:05:40.517Z"
 }
