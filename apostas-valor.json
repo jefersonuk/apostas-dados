@@ -2020,6 +2020,19 @@
       "date": "2026-07-13T06:00",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mrj8vxvvmvdyt",
+      "event": "Deportivo Capiata v Club Atletico Tembetary",
+      "selection": "X2",
+      "house": "Betnacional",
+      "odd": 1.83,
+      "pot": 5,
+      "prob": 45,
+      "stake": 40,
+      "date": "2026-07-13T12:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2099,5 +2112,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T12:58:13.539Z"
+  "updatedAt": "2026-07-13T13:15:17.707Z"
 }
