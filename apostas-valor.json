@@ -2046,6 +2046,19 @@
       "date": "2026-07-13T22:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrjcsn4h8dovr",
+      "event": "Djurgårdens IF – Halmstads BK",
+      "selection": "Acima 3.5 - escanteios 2º o time",
+      "house": "Betwarrior",
+      "odd": 2.45,
+      "pot": 7,
+      "prob": 43,
+      "stake": 25,
+      "date": "2026-07-13T14:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2125,5 +2138,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T14:53:26.048Z"
+  "updatedAt": "2026-07-13T15:04:42.257Z"
 }
