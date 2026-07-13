@@ -1875,8 +1875,8 @@
       "prob": 43.7,
       "stake": 22,
       "date": "2026-07-12T21:30",
-      "status": "resolvida",
-      "result": "red"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mri7nge5wt94n",
@@ -1901,8 +1901,8 @@
       "prob": 48.6,
       "stake": 15,
       "date": "2026-07-13T01:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mri9e904y2gvg",
@@ -1927,8 +1927,8 @@
       "prob": 69,
       "stake": 43,
       "date": "2026-07-12T20:10",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mria86n04q5ar",
@@ -2018,18 +2018,18 @@
       "prob": 40.1,
       "stake": 26.88,
       "date": "2026-07-13T06:00",
-      "status": "resolvida",
-      "result": "red"
+      "status": "pendente",
+      "result": null
     },
     {
-      "id": "mrj8vxvvmvdyt",
-      "event": "Deportivo Capiata v Club Atletico Tembetary",
-      "selection": "X2",
+      "id": "mrjca6wt3ofzz",
+      "event": "jypk",
+      "selection": "x1",
       "house": "Betnacional",
-      "odd": 1.83,
-      "pot": 5,
+      "odd": 2.38,
+      "pot": 6,
       "prob": 45,
-      "stake": 40,
+      "stake": 30,
       "date": "2026-07-13T12:30",
       "status": "pendente",
       "result": null
@@ -2112,5 +2112,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T13:15:17.707Z"
+  "updatedAt": "2026-07-13T14:50:21.439Z"
 }
