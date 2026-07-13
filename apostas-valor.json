@@ -2033,6 +2033,19 @@
       "date": "2026-07-13T12:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrjce5cwp19nd",
+      "event": "Minnesota Lynx – Phoenix Mercury",
+      "selection": "H2(+2.5) 3º período",
+      "house": "Betnacional",
+      "odd": 2.2,
+      "pot": 5,
+      "prob": 47,
+      "stake": 32.5,
+      "date": "2026-07-13T22:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2112,5 +2125,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T14:50:21.439Z"
+  "updatedAt": "2026-07-13T14:53:26.048Z"
 }
