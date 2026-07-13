@@ -1875,8 +1875,8 @@
       "prob": 43.7,
       "stake": 22,
       "date": "2026-07-12T21:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mri7nge5wt94n",
@@ -1927,8 +1927,8 @@
       "prob": 69,
       "stake": 43,
       "date": "2026-07-12T20:10",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mria86n04q5ar",
@@ -2156,5 +2156,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T15:13:21.894Z"
+  "updatedAt": "2026-07-13T15:17:49.542Z"
 }
