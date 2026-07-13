@@ -2124,6 +2124,19 @@
       "date": "2026-07-20T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrjjkwm87rivk",
+      "event": "Boston x Atlanta",
+      "selection": "Mais de 42.5 primeiro quarto",
+      "house": "Aposta1",
+      "odd": 1.83,
+      "pot": 4,
+      "prob": 55,
+      "stake": 25,
+      "date": "2026-07-13T19:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2213,5 +2226,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-13T18:08:34.216Z"
+  "updatedAt": "2026-07-13T18:14:38.624Z"
 }
