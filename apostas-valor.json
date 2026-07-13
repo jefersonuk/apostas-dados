@@ -2098,6 +2098,19 @@
       "date": "2026-07-14T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrjgibvxeskmu",
+      "event": "Capitanes de Arecibo vs Santeros de Aguada",
+      "selection": "H2 + 1.5",
+      "house": "Pixbet",
+      "odd": 1.9,
+      "pot": 3.23,
+      "prob": 44.9,
+      "stake": 13,
+      "date": "2026-07-13T22:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2182,5 +2195,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T15:27:44.579Z"
+  "updatedAt": "2026-07-13T16:48:39.597Z"
 }
