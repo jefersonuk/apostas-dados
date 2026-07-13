@@ -2085,6 +2085,19 @@
       "date": "2026-07-13T21:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrjdm9qbq9wmv",
+      "event": "KuPS Kuopio – Vardar",
+      "selection": "menos 10.5 escanteios",
+      "house": "Pixbet",
+      "odd": 1.84,
+      "pot": 3.27,
+      "prob": 56.1,
+      "stake": 30,
+      "date": "2026-07-14T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2169,5 +2182,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T15:24:54.394Z"
+  "updatedAt": "2026-07-13T15:27:44.579Z"
 }
