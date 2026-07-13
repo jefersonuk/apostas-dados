@@ -2057,8 +2057,8 @@
       "prob": 43,
       "stake": 25,
       "date": "2026-07-13T14:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrjcwjtq7bqll",
@@ -2208,5 +2208,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T17:54:24.489Z"
+  "updatedAt": "2026-07-13T17:55:55.722Z"
 }
