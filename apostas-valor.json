@@ -1862,8 +1862,8 @@
       "prob": 49,
       "stake": 30,
       "date": "2026-07-12T19:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mri7j679xnx5h",
@@ -2099,5 +2099,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T00:27:04.143Z"
+  "updatedAt": "2026-07-13T01:11:09.503Z"
 }
