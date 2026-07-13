@@ -2059,6 +2059,19 @@
       "date": "2026-07-13T14:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrjcwjtq7bqll",
+      "event": "CA Atlanta – Colegiales",
+      "selection": "Acima 3.5 - escanteios 2º o time",
+      "house": "Betwarrior",
+      "odd": 1.96,
+      "pot": 3.96,
+      "prob": 52.9,
+      "stake": 25,
+      "date": "2026-07-13T21:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2138,5 +2151,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T15:04:42.257Z"
+  "updatedAt": "2026-07-13T15:07:44.606Z"
 }
