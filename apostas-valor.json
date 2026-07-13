@@ -1888,8 +1888,8 @@
       "prob": 43.7,
       "stake": 25,
       "date": "2026-07-12T20:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mri80pi3wt4gi",
@@ -2099,5 +2099,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T01:11:09.503Z"
+  "updatedAt": "2026-07-13T01:22:05.586Z"
 }
