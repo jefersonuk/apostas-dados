@@ -2072,6 +2072,19 @@
       "date": "2026-07-13T21:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrjdimeylhuyt",
+      "event": "Capitanes de Arecibo – Santeros de Aguada",
+      "selection": "H2(+1.5) 1ª metade",
+      "house": "Pixbet",
+      "odd": 1.9,
+      "pot": 4,
+      "prob": 54.5,
+      "stake": 30,
+      "date": "2026-07-13T21:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2156,5 +2169,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T15:18:09.375Z"
+  "updatedAt": "2026-07-13T15:24:54.394Z"
 }
