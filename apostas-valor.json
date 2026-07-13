@@ -1940,8 +1940,8 @@
       "prob": 55,
       "stake": 30,
       "date": "2026-07-12T20:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mriablreiuudr",
@@ -2099,5 +2099,5 @@
       "value": 100
     }
   ],
-  "updatedAt": "2026-07-13T01:23:21.786Z"
+  "updatedAt": "2026-07-13T01:25:07.306Z"
 }
