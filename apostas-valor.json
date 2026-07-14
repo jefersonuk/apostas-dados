@@ -1147,8 +1147,8 @@
       "prob": 66.9,
       "stake": 26.28,
       "date": "2026-07-11T05:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mre82reo0tgo3",
@@ -2369,5 +2369,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T13:05:29.102Z"
+  "updatedAt": "2026-07-14T13:58:22.606Z"
 }
