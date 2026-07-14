@@ -2241,6 +2241,19 @@
       "date": "2026-07-14T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrkm8f36z34zu",
+      "event": "Jaime Faria - Stan Wawrinka",
+      "selection": "1 vence handicap",
+      "house": "Betnacional",
+      "odd": 2.25,
+      "pot": 30.7,
+      "prob": 59.4,
+      "stake": 20,
+      "date": "2026-07-14T12:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2330,5 +2343,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T12:14:55.763Z"
+  "updatedAt": "2026-07-14T12:16:41.058Z"
 }
