@@ -2254,6 +2254,19 @@
       "date": "2026-07-14T12:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrkmb9lt14nfe",
+      "event": "Panna Udvardy - Leyre Romero Gormaz",
+      "selection": "1 vence handicap",
+      "house": "Betnacional",
+      "odd": 2.88,
+      "pot": 30,
+      "prob": 59,
+      "stake": 31.07,
+      "date": "2026-07-14T10:25",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2343,5 +2356,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T12:16:41.058Z"
+  "updatedAt": "2026-07-14T12:18:53.921Z"
 }
