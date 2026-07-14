@@ -2070,8 +2070,8 @@
       "prob": 52.9,
       "stake": 25,
       "date": "2026-07-13T21:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrjdimeylhuyt",
@@ -2239,5 +2239,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T01:09:38.553Z"
+  "updatedAt": "2026-07-14T10:10:08.213Z"
 }
