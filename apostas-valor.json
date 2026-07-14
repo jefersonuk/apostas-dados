@@ -2252,8 +2252,8 @@
       "prob": 59.4,
       "stake": 20,
       "date": "2026-07-14T12:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrkmb9lt14nfe",
@@ -2382,5 +2382,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T17:39:48.564Z"
+  "updatedAt": "2026-07-14T21:27:54.782Z"
 }
