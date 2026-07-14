@@ -2267,6 +2267,19 @@
       "date": "2026-07-14T10:25",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrknz6dqihu0g",
+      "event": "Brechin City x Livingston",
+      "selection": "2 vence -3.75",
+      "house": "Betwarrior",
+      "odd": 2.38,
+      "pot": 3,
+      "prob": 51.2,
+      "stake": 20,
+      "date": "2026-07-14T15:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2356,5 +2369,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T13:01:42.563Z"
+  "updatedAt": "2026-07-14T13:05:29.102Z"
 }
