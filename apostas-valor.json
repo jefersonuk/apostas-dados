@@ -2200,8 +2200,8 @@
       "prob": 63,
       "stake": 30,
       "date": "2026-07-14T14:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrklvcq53o60k",
@@ -2382,5 +2382,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T21:29:20.564Z"
+  "updatedAt": "2026-07-14T21:29:22.597Z"
 }
