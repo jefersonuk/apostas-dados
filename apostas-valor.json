@@ -834,8 +834,8 @@
       "prob": 14.8,
       "stake": 5,
       "date": "2026-07-13T20:30",
-      "status": "pendente",
-      "result": null,
+      "status": "resolvida",
+      "result": "red",
       "selection": "Acima 9.5 - escanteios 1º o time"
     },
     {
@@ -2239,5 +2239,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T10:10:51.729Z"
+  "updatedAt": "2026-07-14T10:13:54.846Z"
 }
