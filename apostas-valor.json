@@ -2226,8 +2226,8 @@
       "prob": 74.1,
       "stake": 25,
       "date": "2026-07-14T09:20",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrkm65ublr232",
@@ -2369,5 +2369,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T14:46:01.888Z"
+  "updatedAt": "2026-07-14T15:42:58.749Z"
 }
