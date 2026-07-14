@@ -2215,6 +2215,19 @@
       "date": "2026-07-14T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrklzmwtu6hhl",
+      "event": "Nuno Borges - Moise Kouame",
+      "selection": "Handicap 1",
+      "house": "Betnacional",
+      "odd": 1.8,
+      "pot": 24.1,
+      "prob": 74.1,
+      "stake": 25,
+      "date": "2026-07-14T09:20",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2304,5 +2317,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T12:06:31.469Z"
+  "updatedAt": "2026-07-14T12:09:51.293Z"
 }
