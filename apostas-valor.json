@@ -2202,6 +2202,19 @@
       "date": "2026-07-14T14:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrklvcq53o60k",
+      "event": "Henri Squire - Jan Kumstat",
+      "selection": "Handicap 1",
+      "house": "Betnacional",
+      "odd": 2.2,
+      "pot": 30,
+      "prob": 63,
+      "stake": 25,
+      "date": "2026-07-14T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2291,5 +2304,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T12:04:14.023Z"
+  "updatedAt": "2026-07-14T12:06:31.469Z"
 }
