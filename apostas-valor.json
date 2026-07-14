@@ -2096,8 +2096,8 @@
       "prob": 56.1,
       "stake": 30,
       "date": "2026-07-14T12:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrjgibvxeskmu",
@@ -2382,5 +2382,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T21:35:07.849Z"
+  "updatedAt": "2026-07-14T21:35:33.392Z"
 }
