@@ -2265,8 +2265,8 @@
       "prob": 59,
       "stake": 31.07,
       "date": "2026-07-14T10:25",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrknz6dqihu0g",
@@ -2369,5 +2369,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T16:34:12.139Z"
+  "updatedAt": "2026-07-14T16:41:14.030Z"
 }
