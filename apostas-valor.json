@@ -2161,8 +2161,8 @@
       "prob": 48.5,
       "stake": 20,
       "date": "2026-07-14T12:10",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrklj3gu0ka7d",
@@ -2382,5 +2382,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T21:27:54.782Z"
+  "updatedAt": "2026-07-14T21:29:20.564Z"
 }
