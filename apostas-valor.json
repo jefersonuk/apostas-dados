@@ -2122,8 +2122,8 @@
       "prob": 57,
       "stake": 15,
       "date": "2026-07-20T13:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrjjkwm87rivk",
@@ -2278,8 +2278,8 @@
       "prob": 51.2,
       "stake": 20,
       "date": "2026-07-14T15:45",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrkw6cwfx2acu",
@@ -2291,8 +2291,8 @@
       "prob": 42,
       "stake": 25,
       "date": "2026-07-14T15:45",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     }
   ],
   "balances": [
@@ -2382,5 +2382,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T21:29:22.597Z"
+  "updatedAt": "2026-07-14T21:35:07.849Z"
 }
