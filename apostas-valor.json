@@ -2150,6 +2150,19 @@
       "date": "2026-07-13T23:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrklheeo2v7l6",
+      "event": "Federico Agustin Gomez - Niels Mcdonald",
+      "selection": "1 vence handicap -1.5",
+      "house": "Betnacional",
+      "odd": 2.88,
+      "pot": 39,
+      "prob": 48.5,
+      "stake": 20,
+      "date": "2026-07-14T12:10",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2239,5 +2252,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T10:13:54.846Z"
+  "updatedAt": "2026-07-14T11:55:40.464Z"
 }
