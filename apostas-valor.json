@@ -2280,6 +2280,19 @@
       "date": "2026-07-14T15:45",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrkw6cwfx2acu",
+      "event": "Annan x dundee",
+      "selection": "+0,5 gol time 1",
+      "house": "Betwarrior",
+      "odd": 2.28,
+      "pot": 4,
+      "prob": 42,
+      "stake": 25,
+      "date": "2026-07-14T15:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2369,5 +2382,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T16:41:14.030Z"
+  "updatedAt": "2026-07-14T16:55:01.071Z"
 }
