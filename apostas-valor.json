@@ -2163,6 +2163,19 @@
       "date": "2026-07-14T12:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrklj3gu0ka7d",
+      "event": "August Holmgren - Yosuke Watanuki",
+      "selection": "1 vence handicap",
+      "house": "Betnacional",
+      "odd": 3,
+      "pot": 37.8,
+      "prob": 45.9,
+      "stake": 20,
+      "date": "2026-07-14T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2252,5 +2265,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T11:55:40.464Z"
+  "updatedAt": "2026-07-14T11:56:59.598Z"
 }
