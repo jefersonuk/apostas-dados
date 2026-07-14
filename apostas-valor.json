@@ -2189,6 +2189,19 @@
       "date": "2026-07-14T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrklseo7sjdxu",
+      "event": "Fabian Marozsan - Juan Carlos Prado Angelo",
+      "selection": "Handicap 1",
+      "house": "Betnacional",
+      "odd": 1.91,
+      "pot": 37,
+      "prob": 63,
+      "stake": 30,
+      "date": "2026-07-14T14:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2278,5 +2291,5 @@
       "value": 50
     }
   ],
-  "updatedAt": "2026-07-14T11:58:28.706Z"
+  "updatedAt": "2026-07-14T12:04:14.023Z"
 }
