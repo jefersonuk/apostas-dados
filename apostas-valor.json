@@ -2306,6 +2306,19 @@
       "date": "2026-07-15T16:00",
       "status": "resolvida",
       "result": "void"
+    },
+    {
+      "id": "mrm0s3o0g7utc",
+      "event": "Aposta sem nome",
+      "selection": "",
+      "house": "",
+      "odd": 2.63,
+      "pot": 8.5,
+      "prob": 41.3,
+      "stake": 25,
+      "date": "2026-07-15T19:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2395,5 +2408,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-15T11:49:08.301Z"
+  "updatedAt": "2026-07-15T11:51:40.176Z"
 }
