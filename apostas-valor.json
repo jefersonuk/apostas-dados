@@ -1966,8 +1966,8 @@
       "prob": 28,
       "stake": 10,
       "date": "2026-07-15T12:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mric96t6he8da",
@@ -2408,5 +2408,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-15T11:51:40.176Z"
+  "updatedAt": "2026-07-15T18:14:00.082Z"
 }
