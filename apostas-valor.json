@@ -2293,6 +2293,19 @@
       "date": "2026-07-14T15:45",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mrm0o9fcljz4r",
+      "event": "Argentina x Inglaterra",
+      "selection": "Menos de 7..5 defesas",
+      "house": "Faz1bet",
+      "odd": 1.45,
+      "pot": 12.9,
+      "prob": 78,
+      "stake": 35,
+      "date": "2026-07-15T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2382,5 +2395,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-15T11:42:42.728Z"
+  "updatedAt": "2026-07-15T11:48:41.016Z"
 }
