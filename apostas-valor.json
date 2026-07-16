@@ -2462,6 +2462,19 @@
       "date": "2026-07-16T13:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrnen27u30iql",
+      "event": "Saint Louis City SC – Sporting KC",
+      "selection": "Cartões 2",
+      "house": "Aposta1",
+      "odd": 2.25,
+      "pot": 6,
+      "prob": 49,
+      "stake": 30,
+      "date": "2026-07-16T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2551,5 +2564,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T11:04:16.965Z"
+  "updatedAt": "2026-07-16T11:07:25.818Z"
 }
