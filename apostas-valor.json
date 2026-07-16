@@ -2514,6 +2514,19 @@
       "date": "2026-07-16T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrnf2bw5l2ish",
+      "event": "Cangrejeros de Santurce – Criollas de Caguas",
+      "selection": "Mais de 94.5 1tempo",
+      "house": "Aposta1",
+      "odd": 2.5,
+      "pot": 8.2,
+      "prob": 43,
+      "stake": 38.94,
+      "date": "2026-07-16T21:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2603,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T11:17:04.381Z"
+  "updatedAt": "2026-07-16T11:19:18.197Z"
 }
