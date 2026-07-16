@@ -2423,6 +2423,19 @@
       "date": "2026-07-16T14:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrne9mv0dg653",
+      "event": "Vitória - Vasco da Gama",
+      "selection": "Mais 4.5 cartões",
+      "house": "Betnacional",
+      "odd": 2.15,
+      "pot": 7.45,
+      "prob": 50,
+      "stake": 25,
+      "date": "2026-07-16T19:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2512,5 +2525,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T10:46:51.363Z"
+  "updatedAt": "2026-07-16T10:56:59.388Z"
 }
