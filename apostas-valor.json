@@ -2421,8 +2421,8 @@
       "prob": 54,
       "stake": 28.97,
       "date": "2026-07-16T14:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrne9mv0dg653",
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T18:30:46.180Z"
+  "updatedAt": "2026-07-16T19:14:12.004Z"
 }
