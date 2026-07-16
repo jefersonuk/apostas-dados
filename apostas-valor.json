@@ -2356,8 +2356,8 @@
       "prob": 43.5,
       "stake": 20,
       "date": "2026-07-16T00:33",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrmsupakidojz",
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T18:30:36.845Z"
+  "updatedAt": "2026-07-16T18:30:46.180Z"
 }
