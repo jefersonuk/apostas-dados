@@ -2475,6 +2475,19 @@
       "date": "2026-07-16T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrnepp2xv21gt",
+      "event": "CD Maxaquene – Vilankulo FC",
+      "selection": "X2",
+      "house": "Betnacional",
+      "odd": 1.5,
+      "pot": 5,
+      "prob": 71,
+      "stake": 45,
+      "date": "2026-07-16T09:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2564,5 +2577,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T11:07:25.818Z"
+  "updatedAt": "2026-07-16T11:09:28.761Z"
 }
