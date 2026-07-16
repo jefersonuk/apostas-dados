@@ -2358,6 +2358,19 @@
       "date": "2026-07-16T00:33",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrmsupakidojz",
+      "event": "Lu / Wang vs Rang Lim / Ziatdinova",
+      "selection": "2 vence",
+      "house": "kalshi.com",
+      "odd": 1.33,
+      "pot": 21,
+      "prob": 81,
+      "stake": 25,
+      "date": "2026-07-16T08:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2447,5 +2460,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T00:34:34.491Z"
+  "updatedAt": "2026-07-16T00:57:30.765Z"
 }
