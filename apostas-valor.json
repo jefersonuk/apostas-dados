@@ -2122,8 +2122,8 @@
       "prob": 57,
       "stake": 15,
       "date": "2026-07-20T13:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrjjkwm87rivk",
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T19:14:59.018Z"
+  "updatedAt": "2026-07-16T19:15:18.343Z"
 }
