@@ -2384,6 +2384,19 @@
       "date": "2026-07-15T06:00",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrmtbwwo5rsav",
+      "event": "SC Wiener Neustadt – QPR",
+      "selection": "1(4:0)",
+      "house": "Betnacional",
+      "odd": 2.2,
+      "pot": 8,
+      "prob": 49,
+      "stake": 20,
+      "date": "2026-07-16T13:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2473,5 +2486,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T01:05:45.585Z"
+  "updatedAt": "2026-07-16T01:10:53.785Z"
 }
