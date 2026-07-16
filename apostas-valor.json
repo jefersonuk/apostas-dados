@@ -2486,8 +2486,8 @@
       "prob": 71,
       "stake": 45,
       "date": "2026-07-16T09:45",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrneuk1zoizl8",
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T11:19:18.197Z"
+  "updatedAt": "2026-07-16T18:28:53.225Z"
 }
