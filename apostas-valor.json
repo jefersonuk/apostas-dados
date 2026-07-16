@@ -2369,8 +2369,8 @@
       "prob": 81,
       "stake": 25,
       "date": "2026-07-16T08:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrmsx74kdjr3r",
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T19:14:12.004Z"
+  "updatedAt": "2026-07-16T19:14:18.296Z"
 }
