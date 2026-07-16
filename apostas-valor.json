@@ -2410,6 +2410,19 @@
       "date": "2026-07-16T13:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrndwlpfo4nku",
+      "event": "Bate borisov x Elbasani",
+      "selection": "Esc 2vence",
+      "house": "Betwarrior",
+      "odd": 2,
+      "pot": 8,
+      "prob": 54,
+      "stake": 28.97,
+      "date": "2026-07-16T14:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2499,5 +2512,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T01:14:30.233Z"
+  "updatedAt": "2026-07-16T10:46:51.363Z"
 }
