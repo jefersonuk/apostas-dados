@@ -2449,6 +2449,19 @@
       "date": "2026-07-16T19:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrnej0hxfgzup",
+      "event": "SC Wiener Neustadt vs Queens Park Rangers",
+      "selection": "+ 4.5 gols",
+      "house": "Pixbet",
+      "odd": 1.49,
+      "pot": 6.49,
+      "prob": 71.5,
+      "stake": 30,
+      "date": "2026-07-16T13:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2538,5 +2551,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T10:58:51.328Z"
+  "updatedAt": "2026-07-16T11:04:16.965Z"
 }
