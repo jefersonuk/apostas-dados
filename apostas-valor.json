@@ -2371,6 +2371,19 @@
       "date": "2026-07-16T08:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrmsx74kdjr3r",
+      "event": "Kumari vs Kruger",
+      "selection": "1 vence",
+      "house": "kalshi.com",
+      "odd": 1.61,
+      "pot": 56,
+      "prob": 96,
+      "stake": 23,
+      "date": "2026-07-15T06:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2460,5 +2473,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T00:57:30.765Z"
+  "updatedAt": "2026-07-16T00:59:27.189Z"
 }
