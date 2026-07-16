@@ -2436,6 +2436,19 @@
       "date": "2026-07-16T19:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrnec18f4mn7u",
+      "event": "Botafogo - Santos",
+      "selection": "Mais de 5.5 cartoes",
+      "house": "Betnacional",
+      "odd": 2.5,
+      "pot": 8,
+      "prob": 42,
+      "stake": 25,
+      "date": "2026-07-16T19:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2525,5 +2538,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T10:56:59.388Z"
+  "updatedAt": "2026-07-16T10:58:51.328Z"
 }
