@@ -2345,6 +2345,19 @@
       "date": "2026-07-16T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrms17crp628w",
+      "event": "Pyunik – Marsaxlokk FC",
+      "selection": "Acima 3.5 - escanteios 2º o time",
+      "house": "Betwarrior",
+      "odd": 2.5,
+      "pot": 8.58,
+      "prob": 43.5,
+      "stake": 20,
+      "date": "2026-07-16T00:33",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2434,5 +2447,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T00:33:26.024Z"
+  "updatedAt": "2026-07-16T00:34:34.491Z"
 }
