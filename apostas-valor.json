@@ -2319,6 +2319,19 @@
       "date": "2026-07-15T19:00",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mrmrujbn9ujnv",
+      "event": "San Antonio Spurs x Utah Jazz",
+      "selection": "+ 88.5 1 tempo",
+      "house": "Aposta1",
+      "odd": 2.12,
+      "pot": 5,
+      "prob": 46.6,
+      "stake": 25,
+      "date": "2026-07-13T22:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2408,5 +2421,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T00:11:32.129Z"
+  "updatedAt": "2026-07-16T00:29:23.411Z"
 }
