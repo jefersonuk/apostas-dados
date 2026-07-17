@@ -2434,8 +2434,8 @@
       "prob": 50,
       "stake": 25,
       "date": "2026-07-16T19:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrnec18f4mn7u",
@@ -2447,8 +2447,8 @@
       "prob": 42,
       "stake": 25,
       "date": "2026-07-16T19:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrnej0hxfgzup",
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-17T00:34:06.021Z"
+  "updatedAt": "2026-07-17T00:34:56.830Z"
 }
