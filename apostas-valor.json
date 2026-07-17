@@ -2499,8 +2499,8 @@
       "prob": 43,
       "stake": 30,
       "date": "2026-07-16T18:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrnezgn10i5ut",
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-16T19:15:18.343Z"
+  "updatedAt": "2026-07-17T00:34:06.021Z"
 }
