@@ -2408,8 +2408,8 @@
       "prob": 49,
       "stake": 20,
       "date": "2026-07-16T13:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrndwlpfo4nku",
@@ -2473,8 +2473,8 @@
       "prob": 49,
       "stake": 30,
       "date": "2026-07-16T21:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrnepp2xv21gt",
@@ -2512,8 +2512,8 @@
       "prob": 50,
       "stake": 40,
       "date": "2026-07-16T21:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrnf2bw5l2ish",
@@ -2525,8 +2525,8 @@
       "prob": 43,
       "stake": 38.94,
       "date": "2026-07-16T21:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     }
   ],
   "balances": [
@@ -2616,5 +2616,5 @@
       "value": 100.83
     }
   ],
-  "updatedAt": "2026-07-17T00:34:56.830Z"
+  "updatedAt": "2026-07-17T13:51:25.710Z"
 }
