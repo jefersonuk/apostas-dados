@@ -2876,8 +2876,8 @@
       "prob": 57.66,
       "stake": 42.3,
       "date": "2026-07-18T08:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrpsbfiu533zv",
@@ -3046,5 +3046,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T12:28:07.140Z"
+  "updatedAt": "2026-07-18T12:41:59.372Z"
 }
