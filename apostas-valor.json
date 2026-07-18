@@ -2577,8 +2577,8 @@
       "prob": 62,
       "stake": 40,
       "date": "2026-07-17T22:46",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     }
   ],
   "balances": [
@@ -2668,5 +2668,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:48:03.680Z"
+  "updatedAt": "2026-07-18T01:48:06.626Z"
 }
