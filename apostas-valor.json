@@ -2930,6 +2930,19 @@
       "date": "2026-07-18T18:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrq68ea442eex",
+      "event": "Longford Town FC x Baldoyle United",
+      "selection": "Igual ambos os tempos gols",
+      "house": "Betsul",
+      "odd": 3.64,
+      "pot": 49,
+      "prob": 42,
+      "stake": 30,
+      "date": "2026-07-18T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3020,5 +3033,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T09:29:26.125Z"
+  "updatedAt": "2026-07-18T09:35:23.212Z"
 }
