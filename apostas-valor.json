@@ -2902,8 +2902,8 @@
       "prob": 45,
       "stake": 30,
       "date": "2026-07-18T07:01",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrq5uiexj8nyt",
@@ -3046,5 +3046,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T12:28:00.203Z"
+  "updatedAt": "2026-07-18T12:28:07.140Z"
 }
