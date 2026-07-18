@@ -2722,6 +2722,19 @@
       "date": "2026-07-18T08:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpqme38xt8m4",
+      "event": "Magni Grenivik – Fjolnir",
+      "selection": "Abaixo 1.5 1º o time",
+      "house": "Aposta1",
+      "odd": 2.2,
+      "pot": 16.4,
+      "prob": 52.9,
+      "stake": 42.3,
+      "date": "2026-07-18T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2812,5 +2825,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:15:36.860Z"
+  "updatedAt": "2026-07-18T02:18:22.294Z"
 }
