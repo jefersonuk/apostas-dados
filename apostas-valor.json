@@ -2774,6 +2774,19 @@
       "date": "2026-07-18T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpqxcgtbqjgz",
+      "event": "Wigan - Port Vale",
+      "selection": "x2",
+      "house": "Betnacional",
+      "odd": 2.05,
+      "pot": 9.02,
+      "prob": 57.1,
+      "stake": 42.3,
+      "date": "2026-07-18T09:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2864,5 +2877,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:25:00.589Z"
+  "updatedAt": "2026-07-18T02:26:53.405Z"
 }
