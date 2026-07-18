@@ -3086,6 +3086,19 @@
       "date": "2026-07-18T22:07",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqt5oor674dk",
+      "event": "llawarra Hawks NBL1 (W) – Penrith Panthers (W)",
+      "selection": "Abaixo 64.5 Tempo Extra 2º o time",
+      "house": "Bet365",
+      "odd": 1.8,
+      "pot": 3.17,
+      "prob": 59,
+      "stake": 40,
+      "date": "2026-07-09T01:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3198,5 +3211,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T20:15:14.251Z"
+  "updatedAt": "2026-07-18T20:17:07.902Z"
 }
