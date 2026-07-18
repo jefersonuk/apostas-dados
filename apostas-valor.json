@@ -2579,6 +2579,19 @@
       "date": "2026-07-17T22:46",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mrppk7eb0k8dl",
+      "event": "Chicago sky x los angeles",
+      "selection": "ognwumike mais de 8,5 reb",
+      "house": "Superbet",
+      "odd": 2,
+      "pot": 8,
+      "prob": 52,
+      "stake": 40,
+      "date": "2026-07-17T22:48",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2668,5 +2681,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:48:06.626Z"
+  "updatedAt": "2026-07-18T01:48:40.691Z"
 }
