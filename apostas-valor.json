@@ -2644,6 +2644,19 @@
       "date": "2026-07-17T22:50",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrppobd4s87i4",
+      "event": "Londrina xBotafogo",
+      "selection": "Mais de 26.5 finalizações",
+      "house": "Superbet",
+      "odd": 1.77,
+      "pot": 9,
+      "prob": 60,
+      "stake": 40,
+      "date": "2026-07-17T22:51",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2733,5 +2746,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:51:11.223Z"
+  "updatedAt": "2026-07-18T01:51:52.456Z"
 }
