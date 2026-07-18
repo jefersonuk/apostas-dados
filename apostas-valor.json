@@ -2995,6 +2995,19 @@
       "date": "2026-07-18T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqggx8pvhlf7",
+      "event": "Rot Weiss Oberhausen vs Borussia Dortmund",
+      "selection": "Abaixo 3.5 2º o time",
+      "house": "Betsson",
+      "odd": 3.05,
+      "pot": 10,
+      "prob": 48.03,
+      "stake": 30,
+      "date": "2026-07-18T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3105,5 +3118,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:17:54.319Z"
+  "updatedAt": "2026-07-18T14:21:57.193Z"
 }
