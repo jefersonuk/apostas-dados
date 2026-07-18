@@ -2787,6 +2787,19 @@
       "date": "2026-07-18T09:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpr0jgbvf26k",
+      "event": "Monaco – AS Saint Priest",
+      "selection": "fora nao faz gol",
+      "house": "Aposta1",
+      "odd": 1.68,
+      "pot": 6,
+      "prob": 62,
+      "stake": 42.3,
+      "date": "2026-07-18T05:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2877,5 +2890,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:26:53.405Z"
+  "updatedAt": "2026-07-18T02:29:22.429Z"
 }
