@@ -2566,6 +2566,19 @@
       "date": "2026-07-18T09:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrppjeu6gtbnq",
+      "event": "Juv x cuib",
+      "selection": "mai 14.5 faltas",
+      "house": "Superbet",
+      "odd": 1.77,
+      "pot": 9,
+      "prob": 62,
+      "stake": 40,
+      "date": "2026-07-17T22:46",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2655,5 +2668,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T00:36:15.363Z"
+  "updatedAt": "2026-07-18T01:48:03.680Z"
 }
