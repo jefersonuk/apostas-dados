@@ -2683,6 +2683,19 @@
       "date": "2026-07-18T12:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpps33o4bb1n",
+      "event": "Phoenix Mercury x Connecticut",
+      "selection": "Akoa Makani menos de 3.5 rebotes",
+      "house": "Superbet",
+      "odd": 1.7,
+      "pot": 1,
+      "prob": 1,
+      "stake": 6.45,
+      "date": "2026-07-17T23:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2772,5 +2785,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:53:48.673Z"
+  "updatedAt": "2026-07-18T01:54:48.372Z"
 }
