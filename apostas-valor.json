@@ -2943,6 +2943,19 @@
       "date": "2026-07-18T15:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqfzbsgk0z1k",
+      "event": "CFRJ Maricá – Resende",
+      "selection": "2 / DNB",
+      "house": "Betao",
+      "odd": 2.77,
+      "pot": 11.9,
+      "prob": 40.3,
+      "stake": 37.22,
+      "date": "2026-07-18T14:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3048,5 +3061,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:05:52.542Z"
+  "updatedAt": "2026-07-18T14:08:16.240Z"
 }
