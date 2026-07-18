@@ -2904,6 +2904,19 @@
       "date": "2026-07-18T07:01",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrq5uiexj8nyt",
+      "event": "Atyrau – Kairat Almaty",
+      "selection": "Acima 4.5 esc primeiro tempo",
+      "house": "Superbet",
+      "odd": 2.55,
+      "pot": 21,
+      "prob": 49,
+      "stake": 45,
+      "date": "2026-07-18T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2994,5 +3007,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T09:21:58.322Z"
+  "updatedAt": "2026-07-18T09:24:35.385Z"
 }
