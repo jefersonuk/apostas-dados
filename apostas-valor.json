@@ -2839,6 +2839,19 @@
       "date": "2026-07-18T04:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpr9et10hgqn",
+      "event": "Kyrian Jacquet – Goncalo Da Rosa Castro",
+      "selection": "Abaixo 17.5",
+      "house": "Bet365",
+      "odd": 2,
+      "pot": 24.8,
+      "prob": 62.4,
+      "stake": 42.3,
+      "date": "2026-07-17T23:33",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2929,5 +2942,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:33:36.238Z"
+  "updatedAt": "2026-07-18T02:36:16.310Z"
 }
