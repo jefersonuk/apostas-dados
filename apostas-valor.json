@@ -2798,8 +2798,8 @@
       "prob": 62,
       "stake": 42.3,
       "date": "2026-07-18T05:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrpr1r9450s1l",
@@ -3046,5 +3046,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T10:00:30.131Z"
+  "updatedAt": "2026-07-18T11:04:35.278Z"
 }
