@@ -2824,8 +2824,8 @@
       "prob": 71.8,
       "stake": 42.3,
       "date": "2026-07-18T04:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrpr5zam3nus1",
@@ -2981,5 +2981,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T08:33:09.863Z"
+  "updatedAt": "2026-07-18T08:42:10.671Z"
 }
