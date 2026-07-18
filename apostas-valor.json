@@ -3021,6 +3021,19 @@
       "date": "2026-07-18T18:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqgucl7r9tkp",
+      "event": "Veronika Podrez v Tereza Krejcova",
+      "selection": "2 vence o 2º game",
+      "house": "Betnacional",
+      "odd": 2.63,
+      "pot": 10.3,
+      "prob": 42,
+      "stake": 38.46,
+      "date": "2026-07-18T11:42",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3131,5 +3144,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:27:43.053Z"
+  "updatedAt": "2026-07-18T14:32:23.613Z"
 }
