@@ -2681,8 +2681,8 @@
       "prob": 53,
       "stake": 30,
       "date": "2026-07-18T12:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrpps33o4bb1n",
@@ -3187,5 +3187,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T16:17:14.631Z"
+  "updatedAt": "2026-07-18T17:39:36.329Z"
 }
