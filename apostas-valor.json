@@ -2956,6 +2956,19 @@
       "date": "2026-07-18T14:45",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqg2htzobbu6",
+      "event": "SC Braga – Celta de Vigo",
+      "selection": "1 primeiro a vai conseguir 5 escanteios",
+      "house": "Betano",
+      "odd": 2.02,
+      "pot": 11,
+      "prob": 54.9,
+      "stake": 43.03,
+      "date": "2026-07-18T15:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3061,5 +3074,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:08:16.240Z"
+  "updatedAt": "2026-07-18T14:10:44.039Z"
 }
