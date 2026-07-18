@@ -2891,6 +2891,19 @@
       "date": "2026-07-18T14:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqf03rtojlq1",
+      "event": "Taroona FC - Olympia FC Warriors",
+      "selection": "mais de 4.5 gols",
+      "house": "Betnacional",
+      "odd": 2.55,
+      "pot": 111,
+      "prob": 50,
+      "stake": 30,
+      "date": "2026-07-18T00:05",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2986,5 +2999,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T13:36:55.423Z"
+  "updatedAt": "2026-07-18T13:40:52.889Z"
 }
