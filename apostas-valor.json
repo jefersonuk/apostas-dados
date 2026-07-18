@@ -2735,6 +2735,19 @@
       "date": "2026-07-18T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpqpqbze54uj",
+      "event": "Mayar Sherif – Oleksandra Oliynykova WTA - WTA Iasi,",
+      "selection": "Acima 0.5 - aces 2º o participante",
+      "house": "Aposta1",
+      "odd": 2.8,
+      "pot": 13.6,
+      "prob": 40.6,
+      "stake": 13.88,
+      "date": "2026-07-18T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2825,5 +2838,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:18:22.294Z"
+  "updatedAt": "2026-07-18T02:20:58.129Z"
 }
