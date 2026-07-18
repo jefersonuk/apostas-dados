@@ -2527,6 +2527,19 @@
       "date": "2026-07-16T21:00",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mrpmfj2p10bzu",
+      "event": "NEC Nijmegen – Al Fayha FC",
+      "selection": "Segundo temo fayha +0,5",
+      "house": "Brbet",
+      "odd": 2.54,
+      "pot": 13.9,
+      "prob": 43.9,
+      "stake": 25,
+      "date": "2026-07-18T09:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2616,5 +2629,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-17T13:57:11.244Z"
+  "updatedAt": "2026-07-18T00:21:03.697Z"
 }
