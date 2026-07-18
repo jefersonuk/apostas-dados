@@ -2930,6 +2930,19 @@
       "date": "2026-07-18T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqfv75z4o8ch",
+      "event": "SC Aymores v Boa Esporte Clube",
+      "selection": "visitante menos de 0.5",
+      "house": "Betnacional",
+      "odd": 2.63,
+      "pot": 13.7,
+      "prob": 43.3,
+      "stake": 43.03,
+      "date": "2026-07-18T15:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3030,5 +3043,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:03:43.494Z"
+  "updatedAt": "2026-07-18T14:05:03.623Z"
 }
