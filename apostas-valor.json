@@ -2852,6 +2852,19 @@
       "date": "2026-07-17T23:33",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrprjjmtglec2",
+      "event": "Tranmere – Blackpool",
+      "selection": "2 / DNB",
+      "house": "Bet365",
+      "odd": 1.66,
+      "pot": 7.15,
+      "prob": 64.3,
+      "stake": 42.3,
+      "date": "2026-07-18T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2942,5 +2955,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:36:16.310Z"
+  "updatedAt": "2026-07-18T02:44:09.127Z"
 }
