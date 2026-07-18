@@ -2800,6 +2800,19 @@
       "date": "2026-07-18T05:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpr1r9450s1l",
+      "event": "Hartberg – First Vienna Fc 1894",
+      "selection": "x2",
+      "house": "Betnacional",
+      "odd": 2.3,
+      "pot": 8.4,
+      "prob": 47.1,
+      "stake": 42.3,
+      "date": "2026-07-18T10:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2890,5 +2903,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:29:22.429Z"
+  "updatedAt": "2026-07-18T02:30:19.195Z"
 }
