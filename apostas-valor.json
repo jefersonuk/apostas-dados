@@ -2618,6 +2618,19 @@
       "date": "2026-07-17T22:49",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrppmfokxoevu",
+      "event": "Fortaleza x Novorizontino",
+      "selection": "Mais de 12.5 faltas",
+      "house": "Superbet",
+      "odd": 1.95,
+      "pot": 10,
+      "prob": 57,
+      "stake": 40,
+      "date": "2026-07-17T22:49",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2707,5 +2720,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:49:40.973Z"
+  "updatedAt": "2026-07-18T01:50:24.740Z"
 }
