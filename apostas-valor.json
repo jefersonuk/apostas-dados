@@ -3006,8 +3006,8 @@
       "prob": 48.03,
       "stake": 30,
       "date": "2026-07-18T12:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrqgoc3tkcoa6",
@@ -3170,22 +3170,5 @@
     }
   ],
   "aportes": [],
-  "surebets": [
-    {
-      "id": "mrqkaqnnqq3l1",
-      "event": "Espanha x Argentina",
-      "houseA": "Kalshi",
-      "houseB": "KTO",
-      "oddA": 2.18,
-      "oddB": 2.2,
-      "total": 943,
-      "stakeA": 473.65296803652967,
-      "stakeB": 469.34703196347033,
-      "lucro": 89.56347031963469,
-      "roi": 9.497716894977168,
-      "date": "2026-07-19T18:00"
-    }
-  ],
-  "sbBankroll": 0,
-  "updatedAt": "2026-07-18T17:39:38.442Z"
+  "updatedAt": "2026-07-18T18:40:02.595Z"
 }
