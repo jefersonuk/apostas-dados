@@ -2878,6 +2878,19 @@
       "date": "2026-07-18T08:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpsbfiu533zv",
+      "event": "Pumas UNAM – CF Pachuca",
+      "selection": "2",
+      "house": "Betvip",
+      "odd": 3.06,
+      "pot": 12.5,
+      "prob": 46.9,
+      "stake": 42.3,
+      "date": "2026-07-18T14:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2968,5 +2981,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:49:19.192Z"
+  "updatedAt": "2026-07-18T03:05:50.169Z"
 }
