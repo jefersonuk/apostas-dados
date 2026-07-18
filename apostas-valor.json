@@ -2904,6 +2904,19 @@
       "date": "2026-07-18T00:05",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrqfmtxlprc6x",
+      "event": "Baldoyle United – Longford Town",
+      "selection": "Gols: igual em ambas os tempos 2º o time",
+      "house": "Vbet",
+      "odd": 3.78,
+      "pot": 88.5,
+      "prob": 49.9,
+      "stake": 30,
+      "date": "2026-07-18T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3004,5 +3017,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T13:51:49.511Z"
+  "updatedAt": "2026-07-18T13:58:33.226Z"
 }
