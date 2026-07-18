@@ -2943,6 +2943,19 @@
       "date": "2026-07-18T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrq74p0zb8cxg",
+      "event": "Malta x inglaterra",
+      "selection": "1",
+      "house": "Betano",
+      "odd": 3.6,
+      "pot": 99,
+      "prob": 55,
+      "stake": 45,
+      "date": "2026-07-18T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3033,5 +3046,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T09:35:23.212Z"
+  "updatedAt": "2026-07-18T10:00:30.131Z"
 }
