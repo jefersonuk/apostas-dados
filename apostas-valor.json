@@ -3144,5 +3144,22 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T15:45:59.894Z"
+  "surebets": [
+    {
+      "id": "mrqkaqnnqq3l1",
+      "event": "Espanha x Argentina",
+      "houseA": "Kalshi",
+      "houseB": "KTO",
+      "oddA": 2.18,
+      "oddB": 2.2,
+      "total": 943,
+      "stakeA": 473.65296803652967,
+      "stakeB": 469.34703196347033,
+      "lucro": 89.56347031963469,
+      "roi": 9.497716894977168,
+      "date": "2026-07-19T18:00"
+    }
+  ],
+  "sbBankroll": 0,
+  "updatedAt": "2026-07-18T16:09:07.192Z"
 }
