@@ -2826,6 +2826,19 @@
       "date": "2026-07-18T04:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpr5zam3nus1",
+      "event": "Illawarra Hawks NBL1 (W) – Hills Hornets (W)",
+      "selection": "menos de 83.5 segundo time",
+      "house": "Bet365",
+      "odd": 1.8,
+      "pot": 7.66,
+      "prob": 59.8,
+      "stake": 42.3,
+      "date": "2026-07-18T04:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2916,5 +2929,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:32:17.438Z"
+  "updatedAt": "2026-07-18T02:33:36.238Z"
 }
