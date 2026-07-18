@@ -1290,8 +1290,8 @@
       "prob": 41.1,
       "stake": 24.11,
       "date": "2026-07-17T18:45",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mreag0qyrx0of",
@@ -2629,5 +2629,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T00:21:03.697Z"
+  "updatedAt": "2026-07-18T00:21:36.617Z"
 }
