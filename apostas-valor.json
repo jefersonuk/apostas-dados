@@ -3099,6 +3099,19 @@
       "date": "2026-07-09T01:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqtm8tbdnsre",
+      "event": "Espanha – Argentina",
+      "selection": "H2(+4.5) - chutes",
+      "house": "Superbet",
+      "odd": 1.68,
+      "pot": 18.6,
+      "prob": 70.6,
+      "stake": 40,
+      "date": "2026-07-19T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3211,5 +3224,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T20:17:07.902Z"
+  "updatedAt": "2026-07-18T20:30:00.480Z"
 }
