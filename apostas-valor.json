@@ -2642,8 +2642,8 @@
       "prob": 52,
       "stake": 40,
       "date": "2026-07-17T22:50",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrppobd4s87i4",
@@ -2981,5 +2981,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T03:08:21.660Z"
+  "updatedAt": "2026-07-18T03:09:13.078Z"
 }
