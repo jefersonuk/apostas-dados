@@ -2917,6 +2917,19 @@
       "date": "2026-07-18T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrq60qr13xcla",
+      "event": "Ponte Preta – Goiás",
+      "selection": "Menos 1.5 impedimentos Goiás",
+      "house": "Superbet",
+      "odd": 1.92,
+      "pot": 14.1,
+      "prob": 59.5,
+      "stake": 45,
+      "date": "2026-07-18T18:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3007,5 +3020,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T09:24:35.385Z"
+  "updatedAt": "2026-07-18T09:29:26.125Z"
 }
