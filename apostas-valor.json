@@ -3112,6 +3112,19 @@
       "date": "2026-07-19T16:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqtsb1cwbv7c",
+      "event": "França – Inglaterra",
+      "selection": "H1(−3.5) - chutes",
+      "house": "Superbet",
+      "odd": 1.88,
+      "pot": 26.4,
+      "prob": 67.2,
+      "stake": 40,
+      "date": "2026-07-18T18:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3224,5 +3237,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T20:30:00.480Z"
+  "updatedAt": "2026-07-18T20:34:43.296Z"
 }
