@@ -2592,6 +2592,19 @@
       "date": "2026-07-17T22:48",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrppkxt74aygv",
+      "event": "londrina x botafogo",
+      "selection": "menos de 1.5 finalizações londrina",
+      "house": "Superbet",
+      "odd": 2,
+      "pot": 8,
+      "prob": 52,
+      "stake": 40,
+      "date": "2026-07-17T22:48",
+      "status": "resolvida",
+      "result": "red"
     }
   ],
   "balances": [
@@ -2681,5 +2694,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:48:43.056Z"
+  "updatedAt": "2026-07-18T01:49:16.422Z"
 }
