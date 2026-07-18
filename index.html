@@ -98,6 +98,14 @@
   .bal-edit{width:100px;font-family:var(--mono);font-size:13px;padding:4px 8px;border-radius:6px;border:1px solid var(--sky);background:#0E1116;color:var(--text);text-align:right;}
   .bal-del{background:none;border:none;color:var(--muted-2);font-size:15px;cursor:pointer;padding:0 4px;}
   .bal-del:hover{color:var(--red);}
+  .insight{padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:12px;}
+  .insight.good{background:#0A2018;border:1px solid #1A3D2E;color:var(--green);}
+  .insight.warn{background:#2A1A08;border:1px solid #4D3010;color:var(--amber);}
+  .insight.bad{background:#2A0E12;border:1px solid #5C2530;color:var(--red);}
+  .insight.info{background:#0E1520;border:1px solid #1A2C40;color:var(--sky);}
+  .resolved-toggle{display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--muted-2);font-size:11px;font-weight:600;margin:8px 0 4px;user-select:none;}
+  .resolved-toggle .arrow{transition:transform .15s;font-size:13px;}
+  .resolved-toggle .arrow.open{transform:rotate(90deg);}
 
   .op{border:1px solid var(--border);border-radius:9px;margin-bottom:9px;overflow:hidden;}
   .op-head{display:flex;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;background:var(--panel-2);}
@@ -166,6 +174,12 @@
     <div class="footnote" id="chartNote"></div>
   </div>
 
+  <!-- INSIGHTS -->
+  <div class="card">
+    <div class="card-title">Insights</div>
+    <div id="insightsBox" style="font-size:12px;line-height:1.8;"></div>
+  </div>
+
   <!-- SALDO POR CASA -->
   <div class="card">
     <div class="card-title"><span>Saldo por casa de aposta</span><span id="balTotal" style="font-family:var(--mono);font-size:13px;color:var(--text);"></span></div>
@@ -176,6 +190,19 @@
     </div>
     <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar casa</button>
     <div class="footnote">Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
+  </div>
+
+  <!-- APORTES -->
+  <div class="card">
+    <div class="card-title"><span>Aportes &amp; Saques</span><span id="apTotal" style="font-family:var(--mono);font-size:13px;color:var(--text);"></span></div>
+    <div id="apList"></div>
+    <div class="grid3" style="margin-top:8px;">
+      <div><label>Valor (R$, negativo = saque)</label><input type="number" id="apValue" step="0.01" placeholder="3648.19"></div>
+      <div><label>Data</label><input type="date" id="apDate"></div>
+      <div><label>Nota (opcional)</label><input type="text" id="apNote" placeholder="Ex: aporte julho"></div>
+    </div>
+    <button class="btn small" id="apAddBtn" style="width:100%;">+ Registrar aporte / saque</button>
+    <div class="footnote">Capital que entra ou sai da banca <b>sem ser resultado de aposta</b>. Aportes elevam a base da banca (e a faixa de stake) sem inflar o yield nem a curva de lucro — que continuam medindo só o desempenho das apostas.</div>
   </div>
 
   <!-- CONFIG -->
@@ -311,7 +338,7 @@
 
   function normalize(p){
     const cfg=Object.assign({},DEFAULTS,p.cfg||{});
-    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], updatedAt:p.updatedAt||'' };
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], updatedAt:p.updatedAt||'' };
   }
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
@@ -355,19 +382,26 @@
     const frac=(probPct-floor)/(full-floor);
     return penMin + frac*(1-penMin);
   }
-  // banca atual = inicial + lucro realizado (base do stake progressivo)
+  // capital base = banca inicial + aportes (capital não-aposta)
+  function baseCapital(){
+    const ap=(state.aportes||[]).reduce((s,a)=>s+a.value,0);
+    return state.cfg.bankroll + ap;
+  }
+  // banca atual = base + lucro realizado das apostas
   function currentBankroll(){
     const profit=state.bets.filter(b=>b.status==='resolvida').reduce((s,b)=>s+(betProfit(b)||0),0);
-    return state.cfg.bankroll + profit;
+    return baseCapital() + profit;
   }
-  // fator de crescimento: escala os limites de stake junto com a banca
+  // fator de crescimento: mede o crescimento por apostas sobre a base (aportes elevam base e faixa juntos)
   function growthFactor(){
-    if(!(state.cfg.bankroll>0)) return 1;
-    return Math.max(0.2, currentBankroll()/state.cfg.bankroll);   // piso 0.2 p/ drawdown extremo
+    const base=baseCapital();
+    if(!(base>0)) return 1;
+    return Math.max(0.2, currentBankroll()/base);
   }
   function stakeLimits(){
-    const g=growthFactor();
-    return { min: Math.round(state.cfg.stakeMin*g*100)/100, max: Math.round(state.cfg.stakeMax*g*100)/100 };
+    // escala total: banca atual (com aportes) vs banca original da config
+    const scale=(state.cfg.bankroll>0)?Math.max(0.2,currentBankroll()/state.cfg.bankroll):1;
+    return { min: Math.round(state.cfg.stakeMin*scale*100)/100, max: Math.round(state.cfg.stakeMax*scale*100)/100 };
   }
   function suggestStake(odd,potPct,probPct){
     const f=kellyFraction(odd,potPct,probPct);
@@ -523,7 +557,7 @@
     const greens=settled.filter(b=>b.result==='green');
     const reds=settled.filter(b=>b.result==='red');
     const profit=resolved.reduce((s,b)=>s+(betProfit(b)||0),0);
-    const banca=state.cfg.bankroll+profit;
+    const banca=baseCapital()+profit;
     const volume=settled.reduce((s,b)=>s+b.stake,0);
     const yld=volume>0?(profit/volume*100):0;
     const hit=settled.length?(greens.length/settled.length*100):0;
@@ -559,8 +593,8 @@
 
     // 5. Drawdown máximo
     if(settled.length){
-      let run=state.cfg.bankroll, peak=run, maxDD=0;
-      resolved.sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id))
+      let run=baseCapital(), peak=run, maxDD=0;
+      [...resolved].sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id))
         .forEach(b=>{ run+=betProfit(b)||0; if(run>peak) peak=run; const dd=peak-run; if(dd>maxDD) maxDD=dd; });
       $('sDrawdown').textContent=maxDD>0?`−${fmt(maxDD).replace('R$ ','')}`:'R$ 0';
       $('sDrawdown').className='v '+(maxDD>0?'neg':'pos');
@@ -569,7 +603,7 @@
     // 6. Maior sequência de reds
     if(settled.length){
       let maxSeq=0, cur=0;
-      settled.sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id))
+      [...settled].sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id))
         .forEach(b=>{ if(b.result==='red'){ cur++; if(cur>maxSeq) maxSeq=cur; } else cur=0; });
       $('sMaxReds').textContent=maxSeq>0?`${maxSeq} seguidos`:'0';
       $('sMaxReds').className='v '+(maxSeq>=5?'neg':(maxSeq>=3?'':'pos'));
@@ -610,7 +644,7 @@
 
     // 10. Tendência (últimas 10)
     if(settled.length>=2){
-      const last=settled.sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id)).slice(0,10);
+      const last=[...settled].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id)).slice(0,10);
       const tProfit=last.reduce((s,b)=>s+(betProfit(b)||0),0);
       const tVol=last.reduce((s,b)=>s+b.stake,0);
       const tYld=tVol>0?(tProfit/tVol*100):0;
@@ -623,13 +657,14 @@
       .sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
     const W=780,H=220,padL=58,padR=14,padT=14,padB=24,plotW=W-padL-padR,plotH=H-padT-padB;
     if(resolved.length===0){ $('chartSvg').innerHTML=`<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="#5C6472" font-size="12">Resolva apostas para ver a evolução da banca</text>`; $('chartNote').textContent=''; return; }
-    const pts=[{x:0,val:state.cfg.bankroll}]; let run=state.cfg.bankroll;
+    const base=baseCapital();
+    const pts=[{x:0,val:base}]; let run=base;
     resolved.forEach((b,i)=>{ run+=betProfit(b)||0; pts.push({x:i+1,val:run}); });
     const vals=pts.map(p=>p.val); let min=Math.min(...vals),max=Math.max(...vals);
     if(min===max){min-=1;max+=1;} const pad=(max-min)*0.12; min-=pad;max+=pad;
     const n=pts.length, xFor=i=>n===1?padL+plotW/2:padL+(i/(n-1))*plotW, yFor=v=>padT+(1-(v-min)/(max-min))*plotH;
     let svg='';
-    const startY=yFor(state.cfg.bankroll);
+    const startY=yFor(base);
     svg+=`<line x1="${padL}" y1="${startY.toFixed(1)}" x2="${W-padR}" y2="${startY.toFixed(1)}" stroke="#232933" stroke-width="1" stroke-dasharray="3,3"/>`;
     svg+=`<text class="axis-label" x="6" y="${(padT+4).toFixed(1)}">${fmt(max).replace('R$ ','')}</text>`;
     svg+=`<text class="axis-label" x="6" y="${(H-padB+4).toFixed(1)}">${fmt(min).replace('R$ ','')}</text>`;
@@ -638,8 +673,8 @@
     svg+=`<polyline points="${line}" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
     pts.forEach(p=>{ svg+=`<circle cx="${xFor(p.x).toFixed(1)}" cy="${yFor(p.val).toFixed(1)}" r="2.5" fill="#38BDF8"/>`; });
     $('chartSvg').innerHTML=svg;
-    const finalVal=pts[n-1].val, delta=finalVal-state.cfg.bankroll;
-    $('chartNote').textContent=`${resolved.length} aposta(s) resolvida(s) · banca ${fmt(state.cfg.bankroll)} → ${fmt(finalVal)} (${fmtSign(delta)})`;
+    const finalVal=pts[n-1].val, delta=finalVal-base;
+    $('chartNote').textContent=`${resolved.length} aposta(s) resolvida(s) · base ${fmt(base)} → ${fmt(finalVal)} (${fmtSign(delta)} em apostas)`;
   }
 
   let searchTerm='';
@@ -683,7 +718,7 @@
     else if(b.result==='red'){ dot='red'; val=fmtSign(profit); valClass='neg'; }
     else { dot='void'; val='anul.'; valClass='pend'; }
     const dateStr=fmtDate(b.date);
-    const sel=b.selection?esc(b.selection):'';
+    const sel=(b.selection)?esc(b.selection):'';
     const houseBadge=b.house?`<span class="house-tag">${esc(b.house)}</span>`:'';
     const sub=`${houseBadge}${sel?sel+' · ':''}@${b.odd.toFixed(2)} · ${fmt(b.stake)}`;
     const quick = b.status==='pendente'
@@ -770,11 +805,17 @@
     let html='';
     if(pend.length && currentFilter==='all'){ html+=`<div class="section-label">⏳ Ativas (${pend.length})</div>`; }
     html+=pend.map(betRow).join('');
-    if(res.length && currentFilter==='all'){ html+=`<div class="section-label">Resolvidas (${res.length})</div>`; }
-    html+=res.map(betRow).join('');
+    if(res.length && currentFilter==='all'){
+      html+=`<div class="resolved-toggle" id="resolvedToggle"><span class="arrow ${showResolved?'open':''}">▶</span> Resolvidas (${res.length}) — ${showResolved?'recolher':'expandir'}</div>`;
+      if(showResolved) html+=res.map(betRow).join('');
+    } else {
+      html+=res.map(betRow).join('');
+    }
     $('betsList').innerHTML=html;
 
     // wiring
+    const togEl=$('betsList').querySelector('#resolvedToggle');
+    if(togEl) togEl.addEventListener('click',()=>{ showResolved=!showResolved; renderBets(); });
     $('betsList').querySelectorAll('[data-toggle]').forEach(el=>el.addEventListener('click',()=>{
       const id=el.dataset.toggle;
       if(editingId===id) return;
@@ -832,7 +873,7 @@
     });
     const resolved=state.bets.filter(b=>b.status==='resolvida');
     const profit=resolved.reduce((s,b)=>s+(betProfit(b)||0),0);
-    lines.push('',['Banca inicial',state.cfg.bankroll.toFixed(2)].join('\t'),['Resultado',profit.toFixed(2)].join('\t'),['Banca atual',(state.cfg.bankroll+profit).toFixed(2)].join('\t'));
+    lines.push('',['Base (inicial+aportes)',baseCapital().toFixed(2)].join('\t'),['Resultado apostas',profit.toFixed(2)].join('\t'),['Banca atual',(baseCapital()+profit).toFixed(2)].join('\t'));
     navigator.clipboard.writeText(lines.join('\n')).then(()=>{ $('copyBtn').textContent='Copiado!'; $('copyBtn').classList.add('copied'); setTimeout(()=>{$('copyBtn').textContent='Copiar p/ planilha'; $('copyBtn').classList.remove('copied');},1500); });
   });
 
@@ -1024,7 +1065,105 @@
     saveState(); renderBalances();
   });
 
-  function renderAll(){ renderSummary(); renderChart(); renderBets(); renderBalances(); }
+  /* ---------- insights dinâmicos ---------- */
+  function renderInsights(){
+    const box=$('insightsBox');
+    const settled=state.bets.filter(b=>b.status==='resolvida'&&b.result!=='void');
+    if(settled.length<5){ box.innerHTML='<span style="color:var(--muted-2)">Resolva pelo menos 5 apostas para ver os insights.</span>'; return; }
+
+    const greens=settled.filter(b=>b.result==='green');
+    const volume=settled.reduce((s,b)=>s+b.stake,0);
+    const profit=settled.reduce((s,b)=>s+(b.result==='green'?b.stake*(b.odd-1):-b.stake),0);
+    const yld=volume>0?(profit/volume*100):0;
+    const items=[];
+
+    // Yield global
+    if(yld>=10) items.push({cls:'good',msg:`Yield de ${yld.toFixed(1)}% — excelente. Acima de 5% já é bom em value betting.`});
+    else if(yld>=3) items.push({cls:'info',msg:`Yield de ${yld.toFixed(1)}% — positivo, operação lucrativa.`});
+    else if(yld>=0) items.push({cls:'warn',msg:`Yield de ${yld.toFixed(1)}% — marginal. Margens finas exigem disciplina.`});
+    else items.push({cls:'bad',msg:`Yield de ${yld.toFixed(1)}% — negativo. A operação está perdendo dinheiro.`});
+
+    // Calibração
+    const wp=settled.filter(b=>typeof b.prob==='number');
+    if(wp.length>=5){
+      const avgP=wp.reduce((s,b)=>s+b.prob,0)/wp.length;
+      const realH=wp.filter(b=>b.result==='green').length/wp.length*100;
+      const diff=realH-avgP;
+      if(Math.abs(diff)<=3) items.push({cls:'good',msg:`Calibração: plataforma diz ${avgP.toFixed(0)}%, você acerta ${realH.toFixed(0)}% — bate.`});
+      else if(diff<-3) items.push({cls:'warn',msg:`Calibração: plataforma diz ${avgP.toFixed(0)}%, acerto real ${realH.toFixed(0)}% (${diff.toFixed(0)}pp). Sinais podem estar otimistas.`});
+      else items.push({cls:'good',msg:`Calibração: acerto real ${realH.toFixed(0)}% supera a prob informada ${avgP.toFixed(0)}% em ${diff.toFixed(0)}pp — boa seleção.`});
+    }
+
+    // Tendência últimas 10
+    const last10=[...settled].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id)).slice(0,10);
+    const l10p=last10.reduce((s,b)=>s+(b.result==='green'?b.stake*(b.odd-1):-b.stake),0);
+    const l10h=last10.filter(b=>b.result==='green').length;
+    if(l10p<0 && l10h<=3) items.push({cls:'bad',msg:`⚠ Últimas 10: ${l10h} greens, R$${l10p.toFixed(0)}. Sequência ruim — considere pausar ou reduzir stakes.`});
+    else if(l10p>0) items.push({cls:'good',msg:`Últimas 10: ${l10h} greens, +R$${l10p.toFixed(0)}. Momento positivo.`});
+
+    // Seq de reds
+    let maxSeq=0,cur=0;
+    [...settled].sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id))
+      .forEach(b=>{ if(b.result==='red'){cur++;maxSeq=Math.max(maxSeq,cur);}else cur=0; });
+    if(maxSeq>=5) items.push({cls:'warn',msg:`Maior sequência de reds: ${maxSeq} seguidos. Normal em value betting, mas exige disciplina.`});
+
+    // Casas boas/ruins
+    const hMap={};
+    settled.forEach(b=>{
+      const h=b.house||''; if(!h) return;
+      if(!hMap[h]) hMap[h]={g:0,r:0,p:0,v:0};
+      hMap[h].v+=b.stake; hMap[h].p+=b.result==='green'?b.stake*(b.odd-1):-b.stake;
+      if(b.result==='green') hMap[h].g++; else hMap[h].r++;
+    });
+    Object.entries(hMap).forEach(([h,d])=>{
+      const n=d.g+d.r; if(n<3) return;
+      const y=d.v>0?(d.p/d.v*100):0;
+      if(y<=-20) items.push({cls:'bad',msg:`${h}: yield ${y.toFixed(0)}% em ${n} apostas (${d.g}G/${d.r}R). Considere pausar esta casa.`});
+      else if(y>=20 && n>=5) items.push({cls:'good',msg:`${h}: yield +${y.toFixed(0)}% em ${n} apostas (${d.g}G/${d.r}R). Casa consistente.`});
+    });
+
+    // Sem casa
+    const noCasa=settled.filter(b=>!b.house).length;
+    if(noCasa>=5) items.push({cls:'warn',msg:`${noCasa} apostas sem casa preenchida — dificulta a análise. Edite e preencha retroativamente.`});
+
+    box.innerHTML=items.map(i=>`<div class="insight ${i.cls}">${i.msg}</div>`).join('');
+  }
+
+  let showResolved=false;
+
+  /* ---------- aportes & saques ---------- */
+  function renderAportes(){
+    const list=$('apList');
+    const aps=state.aportes||[];
+    if(!aps.length){ list.innerHTML='<div class="empty">Nenhum aporte registrado.</div>'; $('apTotal').textContent=''; return; }
+    const total=aps.reduce((s,a)=>s+a.value,0);
+    $('apTotal').textContent=(total>=0?'+':'')+fmt(total).replace('R$ ','R$ ');
+    list.innerHTML=[...aps].sort((a,b)=>(b.date||'').localeCompare(a.date||''))
+      .map(a=>`<div class="bal-row">
+        <span class="bal-dot" style="background:${a.value>=0?'var(--green)':'var(--red)'}"></span>
+        <span class="bal-name">${a.date?a.date.split('-').reverse().slice(0,2).join('/'):'—'}${a.note?' · '+esc(a.note):''}</span>
+        <span class="bal-val" style="color:${a.value>=0?'var(--green)':'var(--red)'}">${fmtSign(a.value)}</span>
+        <button class="bal-del" data-apdel="${a.id}" title="Remover">×</button>
+      </div>`).join('');
+    list.querySelectorAll('[data-apdel]').forEach(btn=>btn.addEventListener('click',()=>{
+      const a=state.aportes.find(x=>x.id===btn.dataset.apdel);
+      if(a&&confirm(`Remover ${a.value>=0?'aporte':'saque'} de ${fmt(Math.abs(a.value))}?`)){
+        state.aportes=state.aportes.filter(x=>x.id!==btn.dataset.apdel);
+        saveState(); renderAll();
+      }
+    }));
+  }
+
+  $('apAddBtn').addEventListener('click',()=>{
+    const value=parseFloat($('apValue').value);
+    if(isNaN(value)||value===0){ alert('Informe o valor (negativo para saque).'); return; }
+    state.aportes.push({ id:uid(), value, date:$('apDate').value||todayStr(), note:$('apNote').value.trim() });
+    $('apValue').value=''; $('apNote').value='';
+    saveState(); renderAll();
+    toast((value>=0?'Aporte':'Saque')+' registrado ✓');
+  });
+
+  function renderAll(){ renderSummary(); renderChart(); renderInsights(); renderBets(); renderBalances(); renderAportes(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
