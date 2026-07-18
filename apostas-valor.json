@@ -3073,6 +3073,19 @@
       "date": "2026-07-19T09:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqt38ztum0n9",
+      "event": "Chivas Guadalajara – Deportivo Toluca",
+      "selection": "Acima 3.5 - chutes no alvo 2º o time",
+      "house": "Superbet",
+      "odd": 1.61,
+      "pot": 6.17,
+      "prob": 65.9,
+      "stake": 40,
+      "date": "2026-07-18T22:07",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3185,5 +3198,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T20:08:57.247Z"
+  "updatedAt": "2026-07-18T20:15:14.251Z"
 }
