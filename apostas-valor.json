@@ -2746,8 +2746,8 @@
       "prob": 40.6,
       "stake": 13.88,
       "date": "2026-07-18T11:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrpqt1v6hyngr",
@@ -3161,5 +3161,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T16:09:07.192Z"
+  "updatedAt": "2026-07-18T16:09:35.389Z"
 }
