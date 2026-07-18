@@ -2761,6 +2761,19 @@
       "date": "2026-07-18T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpquxf1h1gmh",
+      "event": "Southend United – West Ham United",
+      "selection": "X / ANB",
+      "house": "Vbet",
+      "odd": 2.05,
+      "pot": 10.2,
+      "prob": 53.8,
+      "stake": 27.7,
+      "date": "2026-07-18T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2851,5 +2864,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:23:33.045Z"
+  "updatedAt": "2026-07-18T02:25:00.589Z"
 }
