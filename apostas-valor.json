@@ -2837,8 +2837,8 @@
       "prob": 59.8,
       "stake": 42.3,
       "date": "2026-07-18T04:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrpr9et10hgqn",
@@ -2981,5 +2981,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T08:31:53.923Z"
+  "updatedAt": "2026-07-18T08:33:09.863Z"
 }
