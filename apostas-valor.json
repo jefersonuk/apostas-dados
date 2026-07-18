@@ -2941,8 +2941,8 @@
       "prob": 43.3,
       "stake": 43.03,
       "date": "2026-07-18T15:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrqfzbsgk0z1k",
@@ -3172,5 +3172,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T20:01:35.809Z"
+  "updatedAt": "2026-07-18T20:01:58.510Z"
 }
