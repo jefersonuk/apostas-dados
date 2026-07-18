@@ -2670,6 +2670,19 @@
       "date": "2026-07-18T09:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrppqt1dickl9",
+      "event": "OTELUL GALATI X CFR CLUJ",
+      "selection": "Mais de 4.5 esc",
+      "house": "Superbet",
+      "odd": 2.2,
+      "pot": 8,
+      "prob": 53,
+      "stake": 30,
+      "date": "2026-07-18T12:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2759,5 +2772,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:52:55.756Z"
+  "updatedAt": "2026-07-18T01:53:48.673Z"
 }
