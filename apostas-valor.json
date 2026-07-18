@@ -2605,6 +2605,19 @@
       "date": "2026-07-17T22:48",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mrpplgd97t6wu",
+      "event": "flamengo x olimpia",
+      "selection": "2.5 esc mais olimpia",
+      "house": "Superbet",
+      "odd": 40,
+      "pot": 8,
+      "prob": 52,
+      "stake": 40,
+      "date": "2026-07-17T22:49",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2694,5 +2707,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:49:16.422Z"
+  "updatedAt": "2026-07-18T01:49:38.973Z"
 }
