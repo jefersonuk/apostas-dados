@@ -3045,8 +3045,8 @@
       "prob": 84.6,
       "stake": 40,
       "date": "2026-07-18T14:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrqkl6rr70w8i",
@@ -3058,8 +3058,8 @@
       "prob": 56.2,
       "stake": 40,
       "date": "2026-07-18T14:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     }
   ],
   "balances": [
@@ -3172,5 +3172,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T19:17:01.937Z"
+  "updatedAt": "2026-07-18T19:17:42.482Z"
 }
