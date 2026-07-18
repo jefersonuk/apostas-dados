@@ -2891,6 +2891,19 @@
       "date": "2026-07-18T14:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrq5r5823hnbe",
+      "event": "Termalica Nieciecza – Podbeskidzie Bielsko-Biala",
+      "selection": "2dnb",
+      "house": "Superbet",
+      "odd": 3.1,
+      "pot": 33,
+      "prob": 45,
+      "stake": 30,
+      "date": "2026-07-18T07:01",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2981,5 +2994,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T08:42:10.671Z"
+  "updatedAt": "2026-07-18T09:21:58.322Z"
 }
