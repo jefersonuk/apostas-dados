@@ -2668,8 +2668,8 @@
       "prob": 50,
       "stake": 11.6,
       "date": "2026-07-18T09:10",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrppqt1dickl9",
@@ -3100,5 +3100,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:15:50.790Z"
+  "updatedAt": "2026-07-18T14:16:16.179Z"
 }
