@@ -2657,6 +2657,19 @@
       "date": "2026-07-17T22:51",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpppo7gmfwxh",
+      "event": "Francisco Rocha x gonzalo Bueno",
+      "selection": "Par",
+      "house": "Superbet",
+      "odd": 2.35,
+      "pot": 10,
+      "prob": 50,
+      "stake": 11.6,
+      "date": "2026-07-18T09:10",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2746,5 +2759,5 @@
       "value": 0
     }
   ],
-  "updatedAt": "2026-07-18T01:51:52.456Z"
+  "updatedAt": "2026-07-18T01:52:55.756Z"
 }
