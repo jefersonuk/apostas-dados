@@ -3123,8 +3123,8 @@
       "prob": 67.2,
       "stake": 40,
       "date": "2026-07-18T18:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     }
   ],
   "balances": [
@@ -3237,5 +3237,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T20:34:43.296Z"
+  "updatedAt": "2026-07-18T23:51:05.401Z"
 }
