@@ -2813,6 +2813,19 @@
       "date": "2026-07-18T10:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpr4ahqj0i7h",
+      "event": "Floreat Athena – Quinns FC",
+      "selection": "Acima 2.5",
+      "house": "Bet365",
+      "odd": 1.5,
+      "pot": 7.72,
+      "prob": 71.8,
+      "stake": 42.3,
+      "date": "2026-07-18T04:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2903,5 +2916,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:30:19.195Z"
+  "updatedAt": "2026-07-18T02:32:17.438Z"
 }
