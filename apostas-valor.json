@@ -3034,6 +3034,19 @@
       "date": "2026-07-18T11:42",
       "status": "resolvida",
       "result": "red"
+    },
+    {
+      "id": "mrqkjl73e2td4",
+      "event": "Gambia Prison (F) – Gambia Armed Forces (F)",
+      "selection": "1",
+      "house": "Superbet",
+      "odd": 5.15,
+      "pot": 336,
+      "prob": 84.6,
+      "stake": 40,
+      "date": "2026-07-18T14:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3161,5 +3174,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-18T16:11:53.520Z"
+  "updatedAt": "2026-07-18T16:16:00.015Z"
 }
