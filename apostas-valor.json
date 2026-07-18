@@ -3008,6 +3008,19 @@
       "date": "2026-07-18T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqgoc3tkcoa6",
+      "event": "França vs Inglaterra",
+      "selection": "Abaixo 3.5 - defesas 2º o time",
+      "house": "Betsson",
+      "odd": 2.15,
+      "pot": 13.5,
+      "prob": 52.8,
+      "stake": 43.5,
+      "date": "2026-07-18T18:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3118,5 +3131,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:21:57.193Z"
+  "updatedAt": "2026-07-18T14:27:43.053Z"
 }
