@@ -2748,6 +2748,19 @@
       "date": "2026-07-18T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrpqt1v6hyngr",
+      "event": "Evesham United FC – Cheltenham Town",
+      "selection": "X / ANB",
+      "house": "Vbet",
+      "odd": 2.08,
+      "pot": 10.6,
+      "prob": 53.2,
+      "stake": 42.3,
+      "date": "2026-07-18T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -2838,5 +2851,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T02:20:58.129Z"
+  "updatedAt": "2026-07-18T02:23:33.045Z"
 }
