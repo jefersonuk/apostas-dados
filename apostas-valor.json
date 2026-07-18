@@ -2982,6 +2982,19 @@
       "date": "2026-07-18T20:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrqg92iuw97zf",
+      "event": "NK Opatija – SV Austria Salzburg",
+      "selection": "Gols: mais no segundo tempo",
+      "house": "Vbet",
+      "odd": 2.77,
+      "pot": 21.3,
+      "prob": 43.8,
+      "stake": 42.9,
+      "date": "2026-07-18T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3087,5 +3100,5 @@
     }
   ],
   "aportes": [],
-  "updatedAt": "2026-07-18T14:13:58.293Z"
+  "updatedAt": "2026-07-18T14:15:50.790Z"
 }
