@@ -3294,6 +3294,19 @@
       "date": "2026-07-23T15:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs4stbgc147p",
+      "event": "Flamengo x 3b Amazonia",
+      "selection": "HAndicap -3 flamengo",
+      "house": "Betnacional",
+      "odd": 2.5,
+      "pot": 10,
+      "prob": 50,
+      "stake": 41,
+      "date": "2026-07-20T19:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3491,5 +3504,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:29:56.619Z"
+  "updatedAt": "2026-07-19T18:30:48.941Z"
 }
