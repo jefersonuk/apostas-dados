@@ -3385,6 +3385,19 @@
       "date": "2026-07-19T17:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs5b4gn9aenm",
+      "event": "FK Mariehamn - FC Lahti",
+      "selection": "Handicap Asiático: FC Lahti -0.75",
+      "house": "Betwarrior",
+      "odd": 1.83,
+      "pot": 10,
+      "prob": 60,
+      "stake": 15,
+      "date": "2026-07-20T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3582,5 +3595,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:43:04.178Z"
+  "updatedAt": "2026-07-19T18:45:03.193Z"
 }
