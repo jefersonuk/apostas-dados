@@ -2889,8 +2889,8 @@
       "prob": 46.9,
       "stake": 42.3,
       "date": "2026-07-18T20:00",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrqf03rtojlq1",
@@ -2980,8 +2980,8 @@
       "prob": 54.7,
       "stake": 43.03,
       "date": "2026-07-18T20:00",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrqg92iuw97zf",
@@ -3019,8 +3019,8 @@
       "prob": 52.8,
       "stake": 43.5,
       "date": "2026-07-18T18:00",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrqgucl7r9tkp",
@@ -3084,8 +3084,8 @@
       "prob": 65.9,
       "stake": 40,
       "date": "2026-07-18T22:07",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrqt5oor674dk",
@@ -3097,8 +3097,8 @@
       "prob": 59,
       "stake": 40,
       "date": "2026-07-09T01:00",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrqtm8tbdnsre",
@@ -3123,8 +3123,8 @@
       "prob": 67.2,
       "stake": 40,
       "date": "2026-07-18T18:00",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrrieizjnmud7",
@@ -3136,8 +3136,8 @@
       "prob": 38.8,
       "stake": 40.58,
       "date": "2026-07-18T09:00",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrrih82zb92q9",
@@ -3214,8 +3214,8 @@
       "prob": 70,
       "stake": 40.58,
       "date": "2026-07-19T07:30",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrrj6s4t4yotv",
@@ -3240,8 +3240,8 @@
       "prob": 48.3,
       "stake": 39.58,
       "date": "2026-07-19T06:30",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrrjlixmb1p45",
@@ -3253,8 +3253,8 @@
       "prob": 48.8,
       "stake": 41,
       "date": "2026-07-19T06:30",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrrjp95lkz7ki",
@@ -3392,8 +3392,22 @@
       "lucro": 11.494736842105283,
       "roi": 4.421052631578955,
       "date": "2026-07-19T09:00"
+    },
+    {
+      "id": "mrrqs4q603pgq",
+      "event": "Sebastian Baez – Miomir Kecmanovic",
+      "houseA": "Superbet",
+      "houseB": "Betano",
+      "oddA": 1.92,
+      "oddB": 2.25,
+      "total": 280,
+      "stakeA": 151.0791366906475,
+      "stakeB": 128.9208633093525,
+      "lucro": 10.071942446043181,
+      "roi": 3.5971223021582786,
+      "date": "2026-07-20T07:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T11:21:22.370Z"
+  "updatedAt": "2026-07-19T11:58:22.454Z"
 }
