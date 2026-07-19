@@ -3359,6 +3359,19 @@
       "date": "2026-07-19T16:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs55xn33zcfk",
+      "event": "Atle MG x Bahia",
+      "selection": "sem escanteio 1 tempo",
+      "house": "Betboo",
+      "odd": 46,
+      "pot": 45,
+      "prob": 3,
+      "stake": 2,
+      "date": "2026-07-21T19:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3390,7 +3403,7 @@
     {
       "id": "mrgvma913rlg3",
       "name": "Betano",
-      "value": 445.21
+      "value": 669.91
     },
     {
       "id": "mrgvmrccr6mld",
@@ -3556,5 +3569,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:40:02.373Z"
+  "updatedAt": "2026-07-19T18:41:26.364Z"
 }
