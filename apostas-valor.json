@@ -3434,8 +3434,22 @@
       "lucro": 5.902777777777786,
       "roi": 6.9444444444444535,
       "date": "2026-07-19T09:30"
+    },
+    {
+      "id": "mrrrs3aalzov2",
+      "event": "G.Bianchi/C.Scampoli – V.Davidova/A.Khmil",
+      "houseA": "Betano",
+      "houseB": "Brbet",
+      "oddA": 2.75,
+      "oddB": 1.73,
+      "total": 444,
+      "stakeA": 171.45535714285714,
+      "stakeB": 272.5446428571429,
+      "lucro": 27.50223214285711,
+      "roi": 6.194196428571421,
+      "date": "2026-07-19T09:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T12:22:34.714Z"
+  "updatedAt": "2026-07-19T12:26:20.205Z"
 }
