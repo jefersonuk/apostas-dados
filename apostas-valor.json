@@ -3229,6 +3229,19 @@
       "date": "2026-07-19T14:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrrjhxuucnp6a",
+      "event": "Stefanos Tsitsipas – Raphael Collignon",
+      "selection": "Abaixo 6.5 - aces 2º o participante",
+      "house": "Superbet",
+      "odd": 2.27,
+      "pot": 9.63,
+      "prob": 48.3,
+      "stake": 39.58,
+      "date": "2026-07-19T06:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3341,5 +3354,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:25:49.039Z"
+  "updatedAt": "2026-07-19T08:34:29.672Z"
 }
