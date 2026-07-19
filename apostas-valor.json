@@ -3190,6 +3190,19 @@
       "date": "2026-07-19T12:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrrizisjuhx7p",
+      "event": "Lillestrøm – Viking",
+      "selection": "Abaixo 3.75",
+      "house": "Betsson",
+      "odd": 1.72,
+      "pot": 8,
+      "prob": 67.6,
+      "stake": 41,
+      "date": "2026-07-22T14:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3302,5 +3315,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:16:39.158Z"
+  "updatedAt": "2026-07-19T08:20:10.340Z"
 }
