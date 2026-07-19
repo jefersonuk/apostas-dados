@@ -3320,6 +3320,19 @@
       "date": "2026-07-21T21:35",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs4x75aufbmw",
+      "event": "Mohameddan SC (R) Police AC",
+      "selection": "Dupla Chance — Empate ou 2",
+      "house": "Superbet",
+      "odd": 2.22,
+      "pot": 10,
+      "prob": 50,
+      "stake": 40,
+      "date": "2026-07-20T06:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3517,5 +3530,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:33:08.174Z"
+  "updatedAt": "2026-07-19T18:34:13.489Z"
 }
