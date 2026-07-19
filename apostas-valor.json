@@ -3346,6 +3346,19 @@
       "date": "2026-07-25T10:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs4zzaijzto2",
+      "event": "Espanha — Argentina",
+      "selection": "Argentina (4.5) Handicap - Finalizações",
+      "house": "Superbet",
+      "odd": 1.68,
+      "pot": 10,
+      "prob": 55,
+      "stake": 40,
+      "date": "2026-07-19T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3543,5 +3556,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:35:37.697Z"
+  "updatedAt": "2026-07-19T18:36:23.276Z"
 }
