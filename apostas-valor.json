@@ -3333,6 +3333,19 @@
       "date": "2026-07-20T06:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs4z04bp3eqh",
+      "event": "Stal Rzeszow — Chrobry Glogow",
+      "selection": "Mais de 1.5 Chrobry Glogow - Total de Gols",
+      "house": "Superbet",
+      "odd": 2.3,
+      "pot": 10,
+      "prob": 55,
+      "stake": 40,
+      "date": "2026-07-25T10:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3530,5 +3543,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:34:13.489Z"
+  "updatedAt": "2026-07-19T18:35:37.697Z"
 }
