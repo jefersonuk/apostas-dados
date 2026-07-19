@@ -3268,6 +3268,19 @@
       "date": "2026-07-20T15:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs4pux0j0s0z",
+      "event": "Mushuc Runa x Orense",
+      "selection": "Orense ANB",
+      "house": "Bet365",
+      "odd": 3,
+      "pot": 18,
+      "prob": 40,
+      "stake": 30,
+      "date": "2026-07-20T16:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3465,5 +3478,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:26:13.847Z"
+  "updatedAt": "2026-07-19T18:28:31.047Z"
 }
