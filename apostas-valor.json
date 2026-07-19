@@ -3424,6 +3424,19 @@
       "date": "2026-07-21T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs5wgez6r66y",
+      "event": "Cruz Azul – Club Puebla",
+      "selection": "2 primeiro a vai conseguir 9 escanteios",
+      "house": "Betano",
+      "odd": 40,
+      "pot": 57.3,
+      "prob": 3.93,
+      "stake": 3.68,
+      "date": "2026-07-21T22:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3621,5 +3634,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:59:51.126Z"
+  "updatedAt": "2026-07-19T19:01:38.464Z"
 }
