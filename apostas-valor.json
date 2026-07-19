@@ -3378,7 +3378,22 @@
     }
   ],
   "aportes": [],
-  "surebets": [],
+  "surebets": [
+    {
+      "id": "mrrk2z5ufcd56",
+      "event": "Barbora Krejcikova – Maria Sakkari",
+      "houseA": "Brbet",
+      "houseB": "Novibet",
+      "oddA": 1.55,
+      "oddB": 3.2,
+      "total": 260,
+      "stakeA": 175.1578947368421,
+      "stakeB": 84.84210526315789,
+      "lucro": 11.494736842105283,
+      "roi": 4.421052631578955,
+      "date": "2026-07-19T09:00"
+    }
+  ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:40:10.906Z"
+  "updatedAt": "2026-07-19T08:50:51.151Z"
 }
