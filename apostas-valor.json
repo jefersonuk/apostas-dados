@@ -3518,6 +3518,11 @@
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
       "value": 22.5
+    },
+    {
+      "id": "mrs5l3t4ih3xy",
+      "name": "Kalshi",
+      "value": 650
     }
   ],
   "aportes": [],
@@ -3608,5 +3613,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:51:52.673Z"
+  "updatedAt": "2026-07-19T18:52:48.904Z"
 }
