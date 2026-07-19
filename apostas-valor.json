@@ -3281,6 +3281,19 @@
       "date": "2026-07-20T16:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs4qw6ltbalq",
+      "event": "LNZ CHRKASY X GENT",
+      "selection": "GENT CLASSIFICA",
+      "house": "Bet365",
+      "odd": 1.57,
+      "pot": 10,
+      "prob": 70,
+      "stake": 41,
+      "date": "2026-07-23T15:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3478,5 +3491,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:28:31.047Z"
+  "updatedAt": "2026-07-19T18:29:19.341Z"
 }
