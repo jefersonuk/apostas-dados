@@ -3151,6 +3151,19 @@
       "date": "2026-07-19T14:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrriq5rz6sldm",
+      "event": "Itália (F) – Austrália (F)",
+      "selection": "1 TE + DP",
+      "house": "Betano",
+      "odd": 3.7,
+      "pot": 14.9,
+      "prob": 31.1,
+      "stake": 40,
+      "date": "2026-07-22T05:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3263,5 +3276,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:05:56.656Z"
+  "updatedAt": "2026-07-19T08:12:53.570Z"
 }
