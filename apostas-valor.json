@@ -3372,6 +3372,19 @@
       "date": "2026-07-21T19:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs58kmn3yeaw",
+      "event": "OKLAHOMA CTD X BROOKLYN NETS",
+      "selection": "primeiro quarto mais de 46.5",
+      "house": "Betanos",
+      "odd": 2.2,
+      "pot": 15,
+      "prob": 50,
+      "stake": 30,
+      "date": "2026-07-19T17:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3569,5 +3582,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:41:26.364Z"
+  "updatedAt": "2026-07-19T18:43:04.178Z"
 }
