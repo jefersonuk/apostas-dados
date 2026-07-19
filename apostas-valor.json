@@ -3164,6 +3164,19 @@
       "date": "2026-07-22T05:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrrir96d2jfo2",
+      "event": "Andrey Rublev – Luciano Darderi",
+      "selection": "Acima 6.5 - aces 2º o participante",
+      "house": "Superbet",
+      "odd": 2.37,
+      "pot": 9.79,
+      "prob": 46.3,
+      "stake": 40.58,
+      "date": "2026-07-19T09:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3276,5 +3289,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:12:53.570Z"
+  "updatedAt": "2026-07-19T08:13:44.631Z"
 }
