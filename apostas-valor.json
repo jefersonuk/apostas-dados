@@ -3177,6 +3177,19 @@
       "date": "2026-07-19T09:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrriuzudsdpcd",
+      "event": "Szombathelyi Haladas – Lecce World - Club Friendlies",
+      "selection": "X / ANB",
+      "house": "Vbet",
+      "odd": 1.56,
+      "pot": 8.59,
+      "prob": 70,
+      "stake": 41,
+      "date": "2026-07-19T12:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3289,5 +3302,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:13:44.631Z"
+  "updatedAt": "2026-07-19T08:16:39.158Z"
 }
