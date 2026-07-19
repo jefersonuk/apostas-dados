@@ -3398,6 +3398,19 @@
       "date": "2026-07-20T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs5jwf3t6hns",
+      "event": "Fenerbahce - Gornik Zabrze",
+      "selection": "Fenerbahce vence anula aposta: Gornik Zabrze",
+      "house": "Betsson",
+      "odd": 3.3,
+      "pot": 45,
+      "prob": 30,
+      "stake": 30,
+      "date": "2026-07-21T15:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3595,5 +3608,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:50:46.176Z"
+  "updatedAt": "2026-07-19T18:51:52.673Z"
 }
