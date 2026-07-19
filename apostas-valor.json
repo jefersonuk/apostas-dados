@@ -3307,6 +3307,19 @@
       "date": "2026-07-20T19:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs4vsr1882el",
+      "event": "Vila Nova GO Fortaleza",
+      "selection": "Mais de 3.5 Fortaleza - Total de Escanteios",
+      "house": "Superbet",
+      "odd": 1.52,
+      "pot": 10,
+      "prob": 80,
+      "stake": 40,
+      "date": "2026-07-21T21:35",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3504,5 +3517,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:32:08.856Z"
+  "updatedAt": "2026-07-19T18:33:08.174Z"
 }
