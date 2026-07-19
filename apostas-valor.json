@@ -3084,8 +3084,8 @@
       "prob": 65.9,
       "stake": 40,
       "date": "2026-07-18T22:07",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrqt5oor674dk",
@@ -3237,5 +3237,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T01:22:40.064Z"
+  "updatedAt": "2026-07-19T02:02:14.211Z"
 }
