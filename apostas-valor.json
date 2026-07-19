@@ -3138,6 +3138,19 @@
       "date": "2026-07-18T09:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrrih82zb92q9",
+      "event": "Barbora Krejcikova – Maria Sakkari",
+      "selection": "abaixo 2.5 - aces 2º o participante",
+      "house": "Brbet",
+      "odd": 2.1,
+      "pot": 15.7,
+      "prob": 55.1,
+      "stake": 40.58,
+      "date": "2026-07-19T14:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3250,5 +3263,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:03:50.817Z"
+  "updatedAt": "2026-07-19T08:05:56.656Z"
 }
