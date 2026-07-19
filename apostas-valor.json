@@ -3450,6 +3450,19 @@
       "date": "2026-07-20T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs6cuuu65sqx",
+      "event": "Macara – Deportivo Cuenca The Americas - Ecuador LigaPro Serie A",
+      "selection": "1 / DNB",
+      "house": "Bet365",
+      "odd": 1.73,
+      "pot": 10.1,
+      "prob": 63.7,
+      "stake": 40,
+      "date": "2026-07-22T17:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3647,5 +3660,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T19:12:21.659Z"
+  "updatedAt": "2026-07-19T19:14:23.670Z"
 }
