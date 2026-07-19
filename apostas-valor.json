@@ -3437,6 +3437,19 @@
       "date": "2026-07-21T22:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrs6a8plxt3im",
+      "event": "Cangrejeros de Santurce – Criollos de Caguas",
+      "selection": "Acima 89.5 1ª metade",
+      "house": "Betboo",
+      "odd": 1.65,
+      "pot": 64.8,
+      "prob": 6.85,
+      "stake": 50,
+      "date": "2026-07-20T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3634,5 +3647,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T19:01:38.464Z"
+  "updatedAt": "2026-07-19T19:12:21.659Z"
 }
