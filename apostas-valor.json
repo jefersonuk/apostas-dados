@@ -3449,7 +3449,7 @@
     {
       "id": "mrgvrivsc6dqm",
       "name": "KTO",
-      "value": 474.05
+      "value": 0.05
     },
     {
       "id": "mrgvsm1zamouv",
@@ -3595,5 +3595,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:45:03.193Z"
+  "updatedAt": "2026-07-19T18:45:32.104Z"
 }
