@@ -3255,6 +3255,19 @@
       "date": "2026-07-19T06:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrrjp95lkz7ki",
+      "event": "Rapid Bucareste x ACS Sepsi",
+      "selection": "ACS Sepsi mais de 1.5 impedimentos",
+      "house": "Betano",
+      "odd": 2.25,
+      "pot": 6,
+      "prob": 48,
+      "stake": 41,
+      "date": "2026-07-20T15:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3367,5 +3380,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:37:16.956Z"
+  "updatedAt": "2026-07-19T08:40:10.906Z"
 }
