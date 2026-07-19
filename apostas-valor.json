@@ -3203,6 +3203,19 @@
       "date": "2026-07-22T14:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrrj1x6aprcyq",
+      "event": "Cheongju x Cheonan City",
+      "selection": "Mais de 7.5 escanteios",
+      "house": "Superbet",
+      "odd": 1.56,
+      "pot": 6,
+      "prob": 70,
+      "stake": 40.58,
+      "date": "2026-07-19T07:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3315,5 +3328,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T08:20:10.340Z"
+  "updatedAt": "2026-07-19T08:22:02.291Z"
 }
