@@ -3071,8 +3071,8 @@
       "prob": 48.4,
       "stake": 40,
       "date": "2026-07-19T09:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrqt38ztum0n9",
@@ -3175,8 +3175,8 @@
       "prob": 46.3,
       "stake": 40.58,
       "date": "2026-07-19T09:00",
-      "status": "resolvida",
-      "result": "red"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrriuzudsdpcd",
@@ -3448,8 +3448,22 @@
       "lucro": 27.50223214285711,
       "roi": 6.194196428571421,
       "date": "2026-07-19T09:30"
+    },
+    {
+      "id": "mrs15klztnovu",
+      "event": "All ettifaq x Johor Darul",
+      "houseA": "Betnacional",
+      "houseB": "Betwarrior",
+      "oddA": 3,
+      "oddB": 2.6,
+      "total": 225,
+      "stakeA": 104.46428571428574,
+      "stakeB": 120.53571428571429,
+      "lucro": 88.39285714285722,
+      "roi": 39.28571428571432,
+      "date": "2026-07-19T13:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T13:27:38.517Z"
+  "updatedAt": "2026-07-19T16:48:45.738Z"
 }
