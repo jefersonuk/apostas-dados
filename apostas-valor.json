@@ -2980,8 +2980,8 @@
       "prob": 54.7,
       "stake": 43.03,
       "date": "2026-07-18T20:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrqg92iuw97zf",
@@ -3237,5 +3237,5 @@
   "aportes": [],
   "surebets": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T01:21:56.787Z"
+  "updatedAt": "2026-07-19T01:22:40.064Z"
 }
