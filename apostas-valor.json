@@ -3459,7 +3459,7 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 1635.28
+      "value": 0
     },
     {
       "id": "mrh13j589laju",
@@ -3595,5 +3595,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T18:45:32.104Z"
+  "updatedAt": "2026-07-19T18:45:39.121Z"
 }
