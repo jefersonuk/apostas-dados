@@ -3749,6 +3749,19 @@
       "date": "2026-07-20T12:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrt2jjny9e26u",
+      "event": "Unsw FC – Apia Leichhardt FC",
+      "selection": "2",
+      "house": "Pitaco",
+      "odd": 2.88,
+      "pot": 79.9,
+      "prob": 62.5,
+      "stake": 50,
+      "date": "2026-07-25T04:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3951,5 +3964,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T10:13:59.390Z"
+  "updatedAt": "2026-07-20T10:15:23.472Z"
 }
