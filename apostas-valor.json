@@ -3710,6 +3710,19 @@
       "date": "2026-07-20T15:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsl1e2zm8ubf",
+      "event": "NK Bravo – Shkendija Tetovo UEFA Competitions - UEFA Conference League Qualifying",
+      "selection": "1",
+      "house": "Bet365",
+      "odd": 1.8,
+      "pot": 8.38,
+      "prob": 60.2,
+      "stake": 50,
+      "date": "2026-07-23T15:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3912,5 +3925,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T02:00:15.941Z"
+  "updatedAt": "2026-07-20T02:05:22.957Z"
 }
