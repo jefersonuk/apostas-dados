@@ -3682,8 +3682,8 @@
       "prob": 34.7,
       "stake": 25,
       "date": "2026-07-19T23:50",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrskrp4ge1brp",
@@ -4003,5 +4003,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T10:19:45.752Z"
+  "updatedAt": "2026-07-20T10:39:05.562Z"
 }
