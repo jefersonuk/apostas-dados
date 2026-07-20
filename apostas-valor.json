@@ -3697,6 +3697,19 @@
       "date": "2026-07-20T12:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrskut6rb2hvj",
+      "event": "Peñarol (URU) (R) – RC Montevideo (R)",
+      "selection": "2 dnb",
+      "house": "Superbet",
+      "odd": 2.47,
+      "pot": 43.9,
+      "prob": 58.3,
+      "stake": 25,
+      "date": "2026-07-20T15:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3899,5 +3912,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:57:50.705Z"
+  "updatedAt": "2026-07-20T02:00:15.941Z"
 }
