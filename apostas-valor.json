@@ -3775,6 +3775,19 @@
       "date": "2026-07-20T08:40",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrt2nnplomp2t",
+      "event": "Inverness Caledonian Thistle FC – St. Johnstone FC",
+      "selection": "1x",
+      "house": "Vbet",
+      "odd": 2.08,
+      "pot": 12.8,
+      "prob": 54.2,
+      "stake": 50,
+      "date": "2026-07-21T15:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3977,5 +3990,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T10:16:56.368Z"
+  "updatedAt": "2026-07-20T10:18:35.339Z"
 }
