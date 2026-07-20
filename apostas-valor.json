@@ -4009,6 +4009,19 @@
       "date": "2026-07-21T03:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtrmlsa6ggjb",
+      "event": "Volta Redonda – Sao Goncalo EC RJ",
+      "selection": "Menos 11.5 escanteios",
+      "house": "Betano",
+      "odd": 1.87,
+      "pot": 30,
+      "prob": 67,
+      "stake": 50,
+      "date": "2026-07-20T19:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4197,5 +4210,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T21:53:52.286Z"
+  "updatedAt": "2026-07-20T21:57:36.587Z"
 }
