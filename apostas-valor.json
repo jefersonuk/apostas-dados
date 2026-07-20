@@ -3827,6 +3827,19 @@
       "date": "2026-07-20T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtfjf3jz3ajk",
+      "event": "Botafogo x vitória",
+      "selection": "Vitória mais de 3.5 cartões",
+      "house": "Pitaco",
+      "odd": 2.8,
+      "pot": 10.5,
+      "prob": 39.4,
+      "stake": 30,
+      "date": "2026-07-23T19:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4015,5 +4028,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T15:53:04.593Z"
+  "updatedAt": "2026-07-20T16:19:12.559Z"
 }
