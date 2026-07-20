@@ -3632,6 +3632,19 @@
       "date": "2026-07-22T14:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsk56hs4ya0p",
+      "event": "Dunav Ruse – PFC Ludogorets 1945 Razgrad Bulgaria - First Professional League",
+      "selection": "2(2:0)",
+      "house": "Brbet",
+      "odd": 3.33,
+      "pot": 14.7,
+      "prob": 34.4,
+      "stake": 30,
+      "date": "2026-07-27T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3829,5 +3842,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:37:24.510Z"
+  "updatedAt": "2026-07-20T01:40:20.128Z"
 }
