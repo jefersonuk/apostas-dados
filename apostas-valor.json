@@ -3765,6 +3765,11 @@
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
       "value": 22.5
+    },
+    {
+      "id": "mrskg1h6rlv1s",
+      "name": "Meridian",
+      "value": 100
     }
   ],
   "aportes": [],
@@ -3855,5 +3860,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:43:28.493Z"
+  "updatedAt": "2026-07-20T01:48:46.844Z"
 }
