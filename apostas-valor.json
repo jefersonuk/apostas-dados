@@ -3840,6 +3840,19 @@
       "date": "2026-07-23T19:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtfs7dmxs5xw",
+      "event": "Lagomar CC – CD Albatros",
+      "selection": "2",
+      "house": "Bandbet",
+      "odd": 3.98,
+      "pot": 27.9,
+      "prob": 32.2,
+      "stake": 25,
+      "date": "2026-07-20T20:15",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4028,5 +4041,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T16:19:12.559Z"
+  "updatedAt": "2026-07-20T16:26:02.458Z"
 }
