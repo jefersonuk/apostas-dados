@@ -3957,6 +3957,19 @@
       "date": "2026-07-20T18:38",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtqzdfp12oug",
+      "event": "University Azzurri FC – Macarthur FC",
+      "selection": "Ambas nao",
+      "house": "Superbet",
+      "odd": 2.22,
+      "pot": 40,
+      "prob": 64,
+      "stake": 50,
+      "date": "2026-07-22T07:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4145,5 +4158,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T21:39:03.096Z"
+  "updatedAt": "2026-07-20T21:39:32.677Z"
 }
