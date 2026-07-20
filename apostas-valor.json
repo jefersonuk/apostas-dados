@@ -3814,6 +3814,19 @@
       "date": "2026-07-21T06:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtelt8xa3ajl",
+      "event": "Anna Bondar – Moyuka Uchijima",
+      "selection": "Segundo participante menos de 1.5 aces",
+      "house": "Superbet",
+      "odd": 2.35,
+      "pot": 15,
+      "prob": 49,
+      "stake": 50,
+      "date": "2026-07-20T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4002,5 +4015,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T15:18:54.573Z"
+  "updatedAt": "2026-07-20T15:53:04.593Z"
 }
