@@ -3528,6 +3528,19 @@
       "date": "2026-07-23T16:15",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsjhtu33p6e9",
+      "event": "Aluminij – Dinamo Tirana",
+      "selection": "2 / DNB",
+      "house": "Brbet",
+      "odd": 2.05,
+      "pot": 13.9,
+      "prob": 55.9,
+      "stake": 50,
+      "date": "2026-07-23T15:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3725,5 +3738,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:19:45.015Z"
+  "updatedAt": "2026-07-20T01:22:10.636Z"
 }
