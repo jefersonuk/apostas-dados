@@ -3879,6 +3879,19 @@
       "date": "2026-07-21T19:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtoifjo3gu34",
+      "event": "Maria Lourdes Carle – Jule Niemeier",
+      "selection": "2 menos 1 ave 1 set",
+      "house": "Superbet",
+      "odd": 2.2,
+      "pot": 40,
+      "prob": 64,
+      "stake": 50,
+      "date": "2026-07-21T07:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4067,5 +4080,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T20:03:29.725Z"
+  "updatedAt": "2026-07-20T20:30:23.028Z"
 }
