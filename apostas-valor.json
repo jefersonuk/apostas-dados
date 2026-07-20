@@ -3954,7 +3954,7 @@
       "pot": 15,
       "prob": 50,
       "stake": 50,
-      "date": "2026-07-20T18:38",
+      "date": "2026-07-22T20:30",
       "status": "pendente",
       "result": null
     },
@@ -4184,5 +4184,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T21:43:42.804Z"
+  "updatedAt": "2026-07-20T21:44:28.737Z"
 }
