@@ -3892,6 +3892,19 @@
       "date": "2026-07-21T07:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtokyu9vbwjg",
+      "event": "Elena Pridankina – Panna Udvardy",
+      "selection": "1mais de 0,5 aces",
+      "house": "Superbet",
+      "odd": 2.05,
+      "pot": 25,
+      "prob": 61,
+      "stake": 50,
+      "date": "2026-07-21T05:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4080,5 +4093,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T20:30:23.028Z"
+  "updatedAt": "2026-07-20T20:32:21.345Z"
 }
