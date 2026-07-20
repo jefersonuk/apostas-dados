@@ -3489,6 +3489,19 @@
       "date": "2026-07-20T10:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsj38ps3zoa1",
+      "event": "São Paulo – Athletico PR",
+      "selection": "Acima 2.5 - cartões 1º o time",
+      "house": "Superbet",
+      "odd": 2.1,
+      "pot": 10.5,
+      "prob": 52.6,
+      "stake": 50,
+      "date": "2026-07-22T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3686,5 +3699,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:09:12.154Z"
+  "updatedAt": "2026-07-20T01:10:50.082Z"
 }
