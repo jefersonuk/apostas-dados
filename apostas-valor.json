@@ -3619,6 +3619,19 @@
       "date": "2026-07-23T15:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsk1ezh7gqn4",
+      "event": "Bodø/Glimt – Ham-Kam",
+      "selection": "2 / HNB",
+      "house": "Betsson",
+      "odd": 3.25,
+      "pot": 15.1,
+      "prob": 35.4,
+      "stake": 22.5,
+      "date": "2026-07-22T14:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3816,5 +3829,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:35:03.409Z"
+  "updatedAt": "2026-07-20T01:37:24.510Z"
 }
