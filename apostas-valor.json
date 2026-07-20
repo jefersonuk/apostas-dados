@@ -3305,8 +3305,8 @@
       "prob": 50,
       "stake": 41,
       "date": "2026-07-20T19:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrs4vsr1882el",
@@ -4223,5 +4223,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T23:45:59.126Z"
+  "updatedAt": "2026-07-20T23:58:01.573Z"
 }
