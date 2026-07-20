@@ -3476,6 +3476,19 @@
       "date": "2026-07-20T05:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsj155ku9tr3",
+      "event": "Nadia Podoroska – Julia Stusek",
+      "selection": "Acima 0.5 1º set - aces 1º o participante",
+      "house": "Superbet",
+      "odd": 2.02,
+      "pot": 12.4,
+      "prob": 55.7,
+      "stake": 50,
+      "date": "2026-07-20T10:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3673,5 +3686,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:05:21.636Z"
+  "updatedAt": "2026-07-20T01:09:12.154Z"
 }
