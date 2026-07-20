@@ -4022,6 +4022,19 @@
       "date": "2026-07-20T19:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtrqm3ajyuwa",
+      "event": "Paksi FC - Panathinaikos",
+      "selection": "Menos 4.5 escanteios 2",
+      "house": "Novibet",
+      "odd": 2.65,
+      "pot": 21.7,
+      "prob": 45.9,
+      "stake": 50,
+      "date": "2026-07-23T15:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4210,5 +4223,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T21:57:36.587Z"
+  "updatedAt": "2026-07-20T22:00:43.606Z"
 }
