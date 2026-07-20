@@ -3723,6 +3723,19 @@
       "date": "2026-07-23T15:45",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsl3fnzinhp5",
+      "event": "Elena Mireles – Alyson Shannon",
+      "selection": "1 primeiro set",
+      "house": "Bet365",
+      "odd": 1.8,
+      "pot": 8,
+      "prob": 60,
+      "stake": 50,
+      "date": "2026-07-21T14:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3925,5 +3938,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T02:05:22.957Z"
+  "updatedAt": "2026-07-20T02:06:58.319Z"
 }
