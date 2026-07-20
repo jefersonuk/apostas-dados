@@ -3996,6 +3996,19 @@
       "date": "2026-07-21T06:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtrhspqdqzr9",
+      "event": "Alessia Popescu – Juliana Singeorzan",
+      "selection": "2 primeiro set",
+      "house": "Bet365",
+      "odd": 1.9,
+      "pot": 9,
+      "prob": 57,
+      "stake": 50,
+      "date": "2026-07-21T03:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4184,5 +4197,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T21:44:28.737Z"
+  "updatedAt": "2026-07-20T21:53:52.286Z"
 }
