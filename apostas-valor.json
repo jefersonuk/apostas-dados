@@ -3502,6 +3502,32 @@
       "date": "2026-07-22T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsja7whzon2t",
+      "event": "Internacional RS – Cruzeiro MG",
+      "selection": "Acima 5.5 cartões",
+      "house": "Superbet",
+      "odd": 2.15,
+      "pot": 8.7,
+      "prob": 50.6,
+      "stake": 50,
+      "date": "2026-07-22T21:30",
+      "status": "pendente",
+      "result": null
+    },
+    {
+      "id": "mrsjepgzqsq82",
+      "event": "Valur Reykjavik – Zrinjski",
+      "selection": "1 DNB 1o tempo",
+      "house": "Aposta1",
+      "odd": 2.05,
+      "pot": 21.7,
+      "prob": 59.4,
+      "stake": 50,
+      "date": "2026-07-23T16:15",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3699,5 +3725,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:13:02.518Z"
+  "updatedAt": "2026-07-20T01:19:45.015Z"
 }
