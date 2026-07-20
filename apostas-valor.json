@@ -3357,8 +3357,8 @@
       "prob": 55,
       "stake": 40,
       "date": "2026-07-19T16:00",
-      "status": "resolvida",
-      "result": "red"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrs55xn33zcfk",
@@ -3383,8 +3383,8 @@
       "prob": 50,
       "stake": 30,
       "date": "2026-07-19T17:30",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrs5b4gn9aenm",
@@ -3469,22 +3469,22 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 223.18
+      "value": 128.18
     },
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 606.96
+      "value": 200
     },
     {
       "id": "mrgvjhha81y8r",
       "name": "Superbet",
-      "value": 18.91
+      "value": 300.97
     },
     {
       "id": "mrgvjnlmwqrl4",
       "name": "Novibet",
-      "value": 585.63
+      "value": 200
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -3603,6 +3603,20 @@
       "date": "2026-07-20T07:30"
     },
     {
+      "id": "mrrqv356npy98",
+      "event": "Argentina x Espanha",
+      "houseA": "Kalshi",
+      "houseB": "KTO",
+      "oddA": 1.63,
+      "oddB": 3.35,
+      "total": 943.67,
+      "stakeA": 634.7980923694779,
+      "stakeB": 308.87190763052206,
+      "lucro": 91.05089056224904,
+      "roi": 9.648594377510044,
+      "date": "2026-07-19T18:00"
+    },
+    {
       "id": "mrrrn9aramqex",
       "event": "G.Bianchi/C.Scampoli – V.Davidova/A.Khmil",
       "houseA": "Betano",
@@ -3646,5 +3660,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-19T22:12:43.852Z"
+  "updatedAt": "2026-07-20T00:57:00.983Z"
 }
