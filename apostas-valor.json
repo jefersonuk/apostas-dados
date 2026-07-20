@@ -3474,8 +3474,8 @@
       "prob": 58.3,
       "stake": 50,
       "date": "2026-07-20T15:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrsj155ku9tr3",
@@ -4067,5 +4067,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T19:58:41.275Z"
+  "updatedAt": "2026-07-20T19:59:08.494Z"
 }
