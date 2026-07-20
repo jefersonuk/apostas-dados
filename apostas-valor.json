@@ -3541,6 +3541,19 @@
       "date": "2026-07-23T15:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsjkueqnmivk",
+      "event": "Vila Nova GO – Fortaleza",
+      "selection": "Acima 4.5 - chutes no alvo 1º o time",
+      "house": "2.17",
+      "odd": 2.17,
+      "pot": 8.95,
+      "prob": 50.2,
+      "stake": 50,
+      "date": "2026-07-21T21:35",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3738,5 +3751,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:22:10.636Z"
+  "updatedAt": "2026-07-20T01:24:31.347Z"
 }
