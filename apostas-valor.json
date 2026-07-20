@@ -3983,6 +3983,19 @@
       "date": "2026-07-27T14:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtr4qfotnj64",
+      "event": "Diane Parry – Mai Hontama",
+      "selection": "Menos 3.5 aces diane",
+      "house": "Superbet",
+      "odd": 2.1,
+      "pot": 15.7,
+      "prob": 53,
+      "stake": 50,
+      "date": "2026-07-21T06:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4171,5 +4184,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T21:41:25.441Z"
+  "updatedAt": "2026-07-20T21:43:42.804Z"
 }
