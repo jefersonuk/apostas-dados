@@ -3671,6 +3671,19 @@
       "date": "2026-07-21T15:20",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsknmu9zjii4",
+      "event": "Crowther vs Nakamura",
+      "selection": "1",
+      "house": "Kalshi",
+      "odd": 3,
+      "pot": 11.7,
+      "prob": 34.7,
+      "stake": 25,
+      "date": "2026-07-19T23:50",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3873,5 +3886,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:50:29.372Z"
+  "updatedAt": "2026-07-20T01:54:41.124Z"
 }
