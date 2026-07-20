@@ -3580,6 +3580,19 @@
       "date": "2026-07-20T22:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsjrjoqdc2y1",
+      "event": "Justin Boulais – Johannus Monday",
+      "selection": "H2(−2.5) 1º set",
+      "house": "Superbet",
+      "odd": 3.9,
+      "pot": 19,
+      "prob": 30.5,
+      "stake": 25,
+      "date": "2026-07-21T13:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3777,5 +3790,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:28:16.930Z"
+  "updatedAt": "2026-07-20T01:29:44.045Z"
 }
