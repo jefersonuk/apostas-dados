@@ -3918,6 +3918,19 @@
       "date": "2026-07-21T06:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtp5fz0unaw7",
+      "event": "Sao Gabriel – Aquidauanense",
+      "selection": "Menos 2.5",
+      "house": "Bet365",
+      "odd": 3.75,
+      "pot": 40,
+      "prob": 40,
+      "stake": 30,
+      "date": "2026-07-20T20:35",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4106,5 +4119,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T20:35:00.472Z"
+  "updatedAt": "2026-07-20T20:48:16.668Z"
 }
