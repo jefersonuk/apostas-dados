@@ -3866,6 +3866,19 @@
       "date": "2026-07-23T19:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtg2qbu8ul8c",
+      "event": "Atlético-MG – Bahia",
+      "selection": "Mais de 6.5 cartões",
+      "house": "Betnacional",
+      "odd": 3.5,
+      "pot": 12,
+      "prob": 32,
+      "stake": 30,
+      "date": "2026-07-21T19:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4054,5 +4067,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T16:28:33.297Z"
+  "updatedAt": "2026-07-20T16:34:13.578Z"
 }
