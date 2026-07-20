@@ -3494,7 +3494,7 @@
     {
       "id": "mrgvma913rlg3",
       "name": "Betano",
-      "value": 666.23
+      "value": 200
     },
     {
       "id": "mrgvmrccr6mld",
@@ -3519,7 +3519,7 @@
     {
       "id": "mrgvsm1zamouv",
       "name": "Brbet",
-      "value": 593.21
+      "value": 100
     },
     {
       "id": "mrgvt68edox8t",
@@ -3660,5 +3660,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T00:57:00.983Z"
+  "updatedAt": "2026-07-20T01:03:06.605Z"
 }
