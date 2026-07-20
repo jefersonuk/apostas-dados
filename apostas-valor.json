@@ -3905,6 +3905,19 @@
       "date": "2026-07-21T05:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtoodmgilkl8",
+      "event": "Leyre Romero Gormaz – Veronika Erjavec",
+      "selection": "2 abaix de 1 ace",
+      "house": "Superbet",
+      "odd": 2.22,
+      "pot": 30,
+      "prob": 59,
+      "stake": 50,
+      "date": "2026-07-21T06:10",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4093,5 +4106,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T20:32:21.345Z"
+  "updatedAt": "2026-07-20T20:35:00.472Z"
 }
