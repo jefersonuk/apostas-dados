@@ -3463,6 +3463,19 @@
       "date": "2026-07-22T17:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsiw7abgo8qi",
+      "event": "Penarol Reserves – Racing Club de Montevideo Reserves",
+      "selection": "2 / DNB",
+      "house": "Bet365",
+      "odd": 2.63,
+      "pot": 53,
+      "prob": 58.3,
+      "stake": 50,
+      "date": "2026-07-20T05:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3660,5 +3673,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:03:06.605Z"
+  "updatedAt": "2026-07-20T01:05:21.636Z"
 }
