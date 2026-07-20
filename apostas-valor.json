@@ -3970,6 +3970,19 @@
       "date": "2026-07-22T07:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtr1sg1gtkae",
+      "event": "Zaglebie Lubin – Piast Gliwice",
+      "selection": "2 dnb",
+      "house": "Superbet",
+      "odd": 2.2,
+      "pot": 19,
+      "prob": 54,
+      "stake": 50,
+      "date": "2026-07-27T14:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4158,5 +4171,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T21:39:32.677Z"
+  "updatedAt": "2026-07-20T21:41:25.441Z"
 }
