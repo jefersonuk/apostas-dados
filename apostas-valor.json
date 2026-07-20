@@ -3658,6 +3658,19 @@
       "date": "2026-07-20T16:15",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrski8l81cl0j",
+      "event": "Ella Brownback – Letizia Corsini",
+      "selection": "1",
+      "house": "Betão",
+      "odd": 3.1,
+      "pot": 30.5,
+      "prob": 42.1,
+      "stake": 30,
+      "date": "2026-07-21T15:20",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3860,5 +3873,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:49:00.599Z"
+  "updatedAt": "2026-07-20T01:50:29.372Z"
 }
