@@ -3357,8 +3357,8 @@
       "prob": 55,
       "stake": 40,
       "date": "2026-07-19T16:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrs55xn33zcfk",
@@ -3938,5 +3938,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T02:06:58.319Z"
+  "updatedAt": "2026-07-20T02:23:07.141Z"
 }
