@@ -3684,6 +3684,19 @@
       "date": "2026-07-19T23:50",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrskrp4ge1brp",
+      "event": "Corvinul 1921 Hunedoara – FK Csikszereda Miercurea Ciuc",
+      "selection": "2 - escanteios",
+      "house": "Betano",
+      "odd": 3.4,
+      "pot": 8.19,
+      "prob": 31.8,
+      "stake": 20,
+      "date": "2026-07-20T12:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3886,5 +3899,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:54:41.124Z"
+  "updatedAt": "2026-07-20T01:57:50.705Z"
 }
