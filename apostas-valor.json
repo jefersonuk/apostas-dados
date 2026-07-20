@@ -3773,8 +3773,8 @@
       "prob": 57.7,
       "stake": 50,
       "date": "2026-07-20T08:40",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrt2nnplomp2t",
@@ -3989,5 +3989,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T14:28:40.925Z"
+  "updatedAt": "2026-07-20T15:10:46.431Z"
 }
