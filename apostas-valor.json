@@ -3606,6 +3606,19 @@
       "date": "2026-07-22T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsjye40qp7wm",
+      "event": "NK Varazdin – FK Jablonec",
+      "selection": "1",
+      "house": "Betano",
+      "odd": 3.05,
+      "pot": 8.48,
+      "prob": 35.6,
+      "stake": 30,
+      "date": "2026-07-23T15:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3803,5 +3816,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:32:08.813Z"
+  "updatedAt": "2026-07-20T01:35:03.409Z"
 }
