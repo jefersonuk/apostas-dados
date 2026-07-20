@@ -3853,6 +3853,19 @@
       "date": "2026-07-20T20:15",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtfvfrkqywn3",
+      "event": "Bolívar x gremio",
+      "selection": "Bolívar menos 2.5 escanteios primeiro tempo",
+      "house": "Betano",
+      "odd": 3.25,
+      "pot": 22.1,
+      "prob": 37.6,
+      "stake": 30,
+      "date": "2026-07-23T19:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4041,5 +4054,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T16:26:02.458Z"
+  "updatedAt": "2026-07-20T16:28:33.297Z"
 }
