@@ -3645,6 +3645,19 @@
       "date": "2026-07-27T13:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrsk97u3e623j",
+      "event": "Sporting – Strasbourg",
+      "selection": "Abaixo 3.25",
+      "house": "Aposta1",
+      "odd": 2.05,
+      "pot": 10,
+      "prob": 53.7,
+      "stake": 50,
+      "date": "2026-07-20T16:15",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3842,5 +3855,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T01:40:20.128Z"
+  "updatedAt": "2026-07-20T01:43:28.493Z"
 }
