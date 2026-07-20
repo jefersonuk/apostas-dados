@@ -3931,6 +3931,19 @@
       "date": "2026-07-20T20:35",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtpldicusn9a",
+      "event": "Goiás x sport",
+      "selection": "Mais de 1.5 impedimentos sport",
+      "house": "Superbet",
+      "odd": 2.25,
+      "pot": 21,
+      "prob": 48,
+      "stake": 50,
+      "date": "2026-07-22T20:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4119,5 +4132,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T20:57:58.304Z"
+  "updatedAt": "2026-07-20T21:00:39.972Z"
 }
