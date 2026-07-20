@@ -3946,20 +3946,6 @@
       "date": "2026-07-20T07:30"
     },
     {
-      "id": "mrrqv356npy98",
-      "event": "Argentina x Espanha",
-      "houseA": "Kalshi",
-      "houseB": "KTO",
-      "oddA": 1.63,
-      "oddB": 3.35,
-      "total": 943.67,
-      "stakeA": 634.7980923694779,
-      "stakeB": 308.87190763052206,
-      "lucro": 91.05089056224904,
-      "roi": 9.648594377510044,
-      "date": "2026-07-19T18:00"
-    },
-    {
       "id": "mrrrn9aramqex",
       "event": "G.Bianchi/C.Scampoli – V.Davidova/A.Khmil",
       "houseA": "Betano",
@@ -4003,5 +3989,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T13:45:38.264Z"
+  "updatedAt": "2026-07-20T14:28:40.925Z"
 }
