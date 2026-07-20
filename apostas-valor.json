@@ -3762,6 +3762,19 @@
       "date": "2026-07-25T04:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrt2ljcfka9sm",
+      "event": "Kaitlin Quevedo – Anhelina Kalinina",
+      "selection": "acima de 1.5 aces para 1",
+      "house": "Superbet",
+      "odd": 2,
+      "pot": 15.3,
+      "prob": 57.7,
+      "stake": 50,
+      "date": "2026-07-20T08:40",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -3964,5 +3977,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T10:15:23.472Z"
+  "updatedAt": "2026-07-20T10:16:56.368Z"
 }
