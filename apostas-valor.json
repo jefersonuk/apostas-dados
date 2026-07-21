@@ -4117,6 +4117,19 @@
       "date": "2026-07-21T21:35",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mru0fv5c2zc1z",
+      "event": "Aposta sem nome",
+      "selection": "",
+      "house": "",
+      "odd": 1.75,
+      "pot": 5.83,
+      "prob": 60.5,
+      "stake": 50,
+      "date": "2026-07-20T22:59",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4305,5 +4318,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T01:59:58.643Z"
+  "updatedAt": "2026-07-21T02:04:18.672Z"
 }
