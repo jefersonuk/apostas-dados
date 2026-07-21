@@ -3907,8 +3907,8 @@
       "prob": 61,
       "stake": 50,
       "date": "2026-07-21T05:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtoodmgilkl8",
@@ -3998,8 +3998,8 @@
       "prob": 53,
       "stake": 50,
       "date": "2026-07-21T06:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtrhspqdqzr9",
@@ -4011,8 +4011,8 @@
       "prob": 57,
       "stake": 50,
       "date": "2026-07-21T03:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtrmlsa6ggjb",
@@ -4180,6 +4180,45 @@
       "prob": 58.7,
       "stake": 50,
       "date": "2026-07-21T06:00",
+      "status": "pendente",
+      "result": null
+    },
+    {
+      "id": "mruivbbb5m7s8",
+      "event": "Itália (F) – Austrália (F)",
+      "selection": "abaixo 12.5 primeira metade",
+      "house": "Novibet",
+      "odd": 2,
+      "pot": 25.8,
+      "prob": 62.9,
+      "stake": 50,
+      "date": "2026-07-22T05:30",
+      "status": "pendente",
+      "result": null
+    },
+    {
+      "id": "mruj7gffunubn",
+      "event": "Raith Rovers – Peterhead",
+      "selection": "2(0:3) - escanteios",
+      "house": "Reidopitaco",
+      "odd": 2.07,
+      "pot": 18.8,
+      "prob": 57.4,
+      "stake": 16,
+      "date": "2026-07-21T15:45",
+      "status": "pendente",
+      "result": null
+    },
+    {
+      "id": "mrujot02qcq6c",
+      "event": "Sturm Graz – Hearts",
+      "selection": "Acima 3.5 1º período - chutes no alvo",
+      "house": "Superbet",
+      "odd": 2,
+      "pot": 11.5,
+      "prob": 55.7,
+      "stake": 50,
+      "date": "2026-07-21T15:30",
       "status": "pendente",
       "result": null
     }
@@ -4370,5 +4409,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T10:23:35.972Z"
+  "updatedAt": "2026-07-21T11:03:08.498Z"
 }
