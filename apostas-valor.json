@@ -4104,6 +4104,19 @@
       "date": "2026-07-21T09:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mru0aaibeklnk",
+      "event": "Vila Nova GO – Fortaleza",
+      "selection": "Menos 27.5 chutes",
+      "house": "Superbet",
+      "odd": 1.7,
+      "pot": 9.23,
+      "prob": 64.3,
+      "stake": 50,
+      "date": "2026-07-21T21:35",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4292,5 +4305,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T01:57:32.568Z"
+  "updatedAt": "2026-07-21T01:59:58.643Z"
 }
