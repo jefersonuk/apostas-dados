@@ -4063,8 +4063,8 @@
       "prob": 60,
       "stake": 50,
       "date": "2026-07-21T13:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrtzmix2z2vb6",
@@ -4435,5 +4435,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T19:05:20.307Z"
+  "updatedAt": "2026-07-21T19:24:07.353Z"
 }
