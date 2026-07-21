@@ -338,14 +338,15 @@
     {
       "id": "mrccjzu3bmfmt",
       "event": "ndrea Pellegrino – Raul Brancaccio",
-      "house": "SuperBet",
+      "house": "Superbet",
       "odd": 3.75,
       "pot": 1.33,
       "prob": 27,
       "stake": 5,
       "date": "2026-07-08T15:50",
       "status": "resolvida",
-      "result": "red"
+      "result": "red",
+      "selection": ""
     },
     {
       "id": "mrcdegzb5tpzl",
@@ -4278,5 +4279,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T01:51:00.266Z"
+  "updatedAt": "2026-07-21T01:51:06.878Z"
 }
