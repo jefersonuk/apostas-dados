@@ -3816,8 +3816,8 @@
       "prob": 12,
       "stake": 50,
       "date": "2026-07-21T06:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrtelt8xa3ajl",
@@ -4409,5 +4409,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T11:13:39.413Z"
+  "updatedAt": "2026-07-21T11:26:33.405Z"
 }
