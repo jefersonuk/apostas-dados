@@ -3568,7 +3568,7 @@
       "pot": 42.6,
       "prob": 41.3,
       "stake": 30,
-      "date": "2026-07-22T15:00",
+      "date": "2026-07-20T15:00",
       "status": "resolvida",
       "result": "green"
     },
@@ -4331,5 +4331,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T02:08:59.557Z"
+  "updatedAt": "2026-07-21T03:12:23.735Z"
 }
