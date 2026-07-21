@@ -4169,6 +4169,19 @@
       "date": "2026-07-21T07:10",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mru3uq6wqarq5",
+      "event": "Jana Otzipka – Laura Svatikova ITF Feminino - ITF Amstetten - Feminino",
+      "selection": "H1(−2.5)",
+      "house": "Betnacional",
+      "odd": 1.9,
+      "pot": 11.6,
+      "prob": 58.7,
+      "stake": 50,
+      "date": "2026-07-21T06:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4357,5 +4370,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T03:36:41.670Z"
+  "updatedAt": "2026-07-21T03:39:50.936Z"
 }
