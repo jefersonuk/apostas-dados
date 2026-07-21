@@ -4048,6 +4048,19 @@
       "date": "2026-07-21T08:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtwb41u5w01t",
+      "event": "Nicolas Zanellato – Nicolas Oliveira",
+      "selection": "1 primeiro set",
+      "house": "Bet365",
+      "odd": 2,
+      "pot": 20,
+      "prob": 60,
+      "stake": 50,
+      "date": "2026-07-21T13:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4236,5 +4249,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T00:02:34.997Z"
+  "updatedAt": "2026-07-21T00:08:38.466Z"
 }
