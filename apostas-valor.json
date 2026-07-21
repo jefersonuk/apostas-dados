@@ -546,7 +546,7 @@
     {
       "id": "mrcwf4ufnfsqt",
       "event": "Jack Loge x Lorenzo Giustino - SuperBet",
-      "house": "SuperBet",
+      "house": "Superbet",
       "odd": 2,
       "pot": 3.75,
       "prob": 51.9,
@@ -4279,5 +4279,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T01:51:35.022Z"
+  "updatedAt": "2026-07-21T01:51:42.193Z"
 }
