@@ -4195,6 +4195,19 @@
       "date": "2026-07-22T05:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mruj7gffunubn",
+      "event": "Raith Rovers – Peterhead",
+      "selection": "2(0:3) - escanteios",
+      "house": "Reidopitaco",
+      "odd": 2.07,
+      "pot": 18.8,
+      "prob": 57.4,
+      "stake": 16,
+      "date": "2026-07-21T15:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4383,5 +4396,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T10:40:12.551Z"
+  "updatedAt": "2026-07-21T10:49:39.051Z"
 }
