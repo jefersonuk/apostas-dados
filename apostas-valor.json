@@ -3374,8 +3374,8 @@
       "prob": 3,
       "stake": 2,
       "date": "2026-07-21T19:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrs58kmn3yeaw",
@@ -4435,5 +4435,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T22:24:37.006Z"
+  "updatedAt": "2026-07-21T23:45:01.263Z"
 }
