@@ -3894,8 +3894,8 @@
       "prob": 64,
       "stake": 50,
       "date": "2026-07-21T07:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrtokyu9vbwjg",
@@ -4409,5 +4409,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T13:13:40.401Z"
+  "updatedAt": "2026-07-21T13:26:32.877Z"
 }
