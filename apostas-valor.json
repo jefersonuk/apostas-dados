@@ -349,14 +349,15 @@
     {
       "id": "mrcdegzb5tpzl",
       "event": "Iryna Shymanovich Hayu Kinoshita",
-      "house": "SuperBet",
+      "house": "Superbet",
       "odd": 2.06,
       "pot": 4.68,
       "prob": 52.3,
       "stake": 10,
       "date": "2026-07-08T14:23",
       "status": "resolvida",
-      "result": "green"
+      "result": "green",
+      "selection": ""
     },
     {
       "id": "mrcdg86t5dplf",
@@ -4276,5 +4277,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T01:50:47.526Z"
+  "updatedAt": "2026-07-21T01:50:54.135Z"
 }
