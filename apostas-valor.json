@@ -4120,14 +4120,14 @@
     },
     {
       "id": "mru0fv5c2zc1z",
-      "event": "Aposta sem nome",
-      "selection": "",
-      "house": "",
+      "event": "Cruz azul x puebla",
+      "selection": "2 cartões",
+      "house": "Superbet",
       "odd": 1.75,
       "pot": 5.83,
       "prob": 60.5,
       "stake": 50,
-      "date": "2026-07-20T22:59",
+      "date": "2026-07-21T22:00",
       "status": "pendente",
       "result": null
     }
@@ -4318,5 +4318,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T02:04:18.672Z"
+  "updatedAt": "2026-07-21T02:05:17.143Z"
 }
