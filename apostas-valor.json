@@ -4035,6 +4035,19 @@
       "date": "2026-07-23T15:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtw3blhclbf5",
+      "event": "Tamara Korpatsch Victoria Jimenez Kasintseva",
+      "selection": "Menos 0.5 aces para 2",
+      "house": "Superbet",
+      "odd": 2.4,
+      "pot": 27,
+      "prob": 53,
+      "stake": 50,
+      "date": "2026-07-21T08:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4223,5 +4236,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-20T23:58:01.573Z"
+  "updatedAt": "2026-07-21T00:02:34.997Z"
 }
