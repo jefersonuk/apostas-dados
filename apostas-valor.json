@@ -4143,6 +4143,19 @@
       "date": "2026-07-21T15:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mru3e41k4sv4q",
+      "event": "Club Trouville – CA Tabare",
+      "selection": "2",
+      "house": "Bandbet",
+      "odd": 3.49,
+      "pot": 16.9,
+      "prob": 33.5,
+      "stake": 30,
+      "date": "2026-07-21T20:15",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4331,5 +4344,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T03:14:49.218Z"
+  "updatedAt": "2026-07-21T03:26:55.736Z"
 }
