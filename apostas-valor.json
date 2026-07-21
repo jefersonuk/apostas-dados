@@ -4076,8 +4076,8 @@
       "prob": 32,
       "stake": 29,
       "date": "2026-07-21T06:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrtzx24ok45zt",
@@ -4409,5 +4409,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T11:52:35.281Z"
+  "updatedAt": "2026-07-21T11:52:57.301Z"
 }
