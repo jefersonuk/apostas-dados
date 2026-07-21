@@ -104,6 +104,16 @@
   .bal-edit{width:100px;font-family:var(--mono);font-size:13px;padding:4px 8px;border-radius:6px;border:1px solid var(--sky);background:#0E1116;color:var(--text);text-align:right;}
   .bal-del{background:none;border:none;color:var(--muted-2);font-size:15px;cursor:pointer;padding:0 4px;}
   .bal-del:hover{color:var(--red);}
+  .day-row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border);font-size:12px;}
+  .day-row:last-child{border-bottom:none;}
+  .day-date{font-family:var(--mono);color:var(--muted);min-width:44px;font-size:11px;}
+  .day-bar-wrap{flex:1;height:16px;background:#0E1116;border-radius:4px;position:relative;overflow:hidden;display:flex;align-items:center;}
+  .day-bar{height:100%;position:absolute;top:0;border-radius:4px;}
+  .day-bar.pos{background:linear-gradient(90deg,#1A3D2E,#34D399);left:50%;}
+  .day-bar.neg{background:linear-gradient(90deg,#F87171,#5C2530);right:50%;}
+  .day-center{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--border);}
+  .day-val{font-family:var(--mono);font-weight:600;min-width:78px;text-align:right;}
+  .day-meta{font-family:var(--mono);color:var(--muted-2);min-width:58px;text-align:right;font-size:10.5px;}
   .insight{padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:12px;}
   .insight.good{background:#0A2018;border:1px solid #1A3D2E;color:var(--green);}
   .insight.warn{background:#2A1A08;border:1px solid #4D3010;color:var(--amber);}
@@ -183,6 +193,10 @@
       <div class="summary-item"><div class="k">Acerto por faixa de odd</div><div class="v" id="sOddBands" style="font-size:11px;line-height:1.6;">—</div></div>
       <div class="summary-item"><div class="k">Lucro por casa</div><div class="v" id="sHouseProfit" style="font-size:11px;line-height:1.6;">—</div></div>
       <div class="summary-item"><div class="k">Tendência (últ. 10)</div><div class="v" id="sTrend">—</div></div>
+    </div>
+    <div class="daily-section">
+      <div class="k" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:4px 0 6px;font-weight:700;">Resultados por dia</div>
+      <div id="sDaily"></div>
     </div>
     <div class="chart-wrap" style="margin-top:12px;"><svg id="chartSvg" viewBox="0 0 780 220" preserveAspectRatio="none"></svg></div>
     <div class="footnote" id="chartNote"></div>
@@ -723,6 +737,39 @@
       const tYld=tVol>0?(tProfit/tVol*100):0;
       $('sTrend').innerHTML=`<span class="${tProfit>=0?'pos':'neg'}">${fmtSign(tProfit)}</span> <span style="font-size:11px;color:var(--muted-2)">yield ${tYld.toFixed(1)}%</span>`;
     } else { $('sTrend').textContent='—'; }
+  }
+
+  function renderDaily(){
+    const box=$('sDaily');
+    const settled=state.bets.filter(b=>b.status==='resolvida'&&b.result!=='void');
+    if(!settled.length){ box.innerHTML='<div class="empty" style="padding:8px;">Sem apostas resolvidas.</div>'; return; }
+    // agrupa por dia (YYYY-MM-DD)
+    const days={};
+    settled.forEach(b=>{
+      const d=(b.date||'').slice(0,10)||'—';
+      if(!days[d]) days[d]={n:0,g:0,profit:0,vol:0};
+      days[d].n++; days[d].vol+=b.stake;
+      days[d].profit+=(betProfit(b)||0);
+      if(b.result==='green') days[d].g++;
+    });
+    const entries=Object.entries(days).sort((a,b)=>b[0].localeCompare(a[0])); // mais recente primeiro
+    const maxAbs=Math.max(...entries.map(([,d])=>Math.abs(d.profit)),1);
+    box.innerHTML=entries.map(([date,d])=>{
+      const dd=date.slice(8,10)+'/'+date.slice(5,7);
+      const yld=d.vol>0?(d.profit/d.vol*100):0;
+      const w=Math.min(50,Math.abs(d.profit)/maxAbs*50); // % da metade da barra
+      const bar=d.profit>=0
+        ? `<div class="day-bar pos" style="width:${w}%;"></div>`
+        : `<div class="day-bar neg" style="width:${w}%;"></div>`;
+      const valCls=d.profit>=0?'pos':'neg';
+      return `<div class="day-row">
+        <span class="day-date">${dd}</span>
+        <span class="day-meta">${d.g}/${d.n}</span>
+        <div class="day-bar-wrap"><div class="day-center"></div>${bar}</div>
+        <span class="day-val ${valCls}">${fmtSign(d.profit)}</span>
+        <span class="day-meta">${yld>=0?'+':''}${yld.toFixed(0)}%</span>
+      </div>`;
+    }).join('');
   }
 
   function renderChart(){
@@ -1385,7 +1432,7 @@
     $('tab-'+tab.dataset.tab).classList.add('active');
   }));
 
-  function renderAll(){ renderSummary(); renderChart(); renderInsights(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); }
+  function renderAll(){ renderSummary(); renderDaily(); renderChart(); renderInsights(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
