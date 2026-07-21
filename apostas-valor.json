@@ -4156,6 +4156,19 @@
       "date": "2026-07-21T20:15",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mru3m77yehkkc",
+      "event": "Valentina Steiner Noma Akugue Noha",
+      "selection": "Acima 0.5 - aces 1º o participante",
+      "house": "Superbet",
+      "odd": 2.35,
+      "pot": 14.5,
+      "prob": 48.7,
+      "stake": 50,
+      "date": "2026-07-21T07:10",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4344,5 +4357,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T03:31:31.421Z"
+  "updatedAt": "2026-07-21T03:33:13.103Z"
 }
