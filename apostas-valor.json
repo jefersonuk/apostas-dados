@@ -3595,8 +3595,8 @@
       "prob": 30.5,
       "stake": 25,
       "date": "2026-07-21T13:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrsjune3ly50c",
@@ -4435,5 +4435,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T19:46:37.626Z"
+  "updatedAt": "2026-07-21T22:18:03.606Z"
 }
