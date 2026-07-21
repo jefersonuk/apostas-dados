@@ -4074,6 +4074,19 @@
       "date": "2026-07-21T06:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrtzx24ok45zt",
+      "event": "Universidad Central Venezuela – Santos",
+      "selection": "+25.5 chutes",
+      "house": "Superbet",
+      "odd": 2.27,
+      "pot": 9.58,
+      "prob": 48.3,
+      "stake": 50,
+      "date": "2026-07-21T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4262,5 +4275,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T01:41:29.798Z"
+  "updatedAt": "2026-07-21T01:49:41.256Z"
 }
