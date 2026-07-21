@@ -198,14 +198,15 @@
     {
       "id": "mrc9u69zx7kx1",
       "event": "Amy Lee – Misa Malkin",
-      "house": "SuperBet",
+      "house": "Superbet",
       "odd": 39,
       "pot": 2.85,
       "prob": 2.6,
       "stake": 7,
       "date": "2026-07-08T13:06",
       "status": "resolvida",
-      "result": "void"
+      "result": "void",
+      "selection": ""
     },
     {
       "id": "mrcak27jqjyc3",
@@ -4275,5 +4276,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T01:50:39.584Z"
+  "updatedAt": "2026-07-21T01:50:47.526Z"
 }
