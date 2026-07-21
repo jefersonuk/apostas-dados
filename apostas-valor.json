@@ -4130,6 +4130,19 @@
       "date": "2026-07-21T22:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mru0k6alxypds",
+      "event": "Sturm Graz – Hearts",
+      "selection": "Acima de 7.5 chutes no gol",
+      "house": "Superbet",
+      "odd": 1.85,
+      "pot": 7.78,
+      "prob": 58.3,
+      "stake": 50,
+      "date": "2026-07-21T15:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4318,5 +4331,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T02:05:17.143Z"
+  "updatedAt": "2026-07-21T02:07:39.741Z"
 }
