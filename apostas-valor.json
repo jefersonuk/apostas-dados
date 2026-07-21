@@ -3907,8 +3907,8 @@
       "prob": 61,
       "stake": 50,
       "date": "2026-07-21T05:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtoodmgilkl8",
@@ -3998,8 +3998,8 @@
       "prob": 53,
       "stake": 50,
       "date": "2026-07-21T06:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtrhspqdqzr9",
@@ -4011,8 +4011,8 @@
       "prob": 57,
       "stake": 50,
       "date": "2026-07-21T03:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtrmlsa6ggjb",
@@ -4180,6 +4180,19 @@
       "prob": 58.7,
       "stake": 50,
       "date": "2026-07-21T06:00",
+      "status": "pendente",
+      "result": null
+    },
+    {
+      "id": "mruivbbb5m7s8",
+      "event": "Itália (F) – Austrália (F)",
+      "selection": "abaixo 12.5 primeira metade",
+      "house": "Novibet",
+      "odd": 2,
+      "pot": 25.8,
+      "prob": 62.9,
+      "stake": 50,
+      "date": "2026-07-22T05:30",
       "status": "pendente",
       "result": null
     }
@@ -4370,5 +4383,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T10:23:35.972Z"
+  "updatedAt": "2026-07-21T10:40:12.551Z"
 }
