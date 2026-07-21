@@ -4221,6 +4221,19 @@
       "date": "2026-07-21T15:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mruq0rnvchvxo",
+      "event": "Partick Thistle – Stenhousemuir",
+      "selection": "Mais 3.5 esc para 2",
+      "house": "Betwarrior",
+      "odd": 2.12,
+      "pot": 8,
+      "prob": 51,
+      "stake": 19.52,
+      "date": "2026-07-21T15:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4409,5 +4422,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T13:26:32.877Z"
+  "updatedAt": "2026-07-21T14:00:24.331Z"
 }
