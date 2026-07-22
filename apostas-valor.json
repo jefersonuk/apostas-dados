@@ -4325,6 +4325,19 @@
       "date": "2026-07-22T07:15",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrvgc7jn5rxya",
+      "event": "Katarzyna Kawa – Paula Badosa",
+      "selection": "menos 0.5 aces para 1",
+      "house": "Superbet",
+      "odd": 2.25,
+      "pot": 35,
+      "prob": 60,
+      "stake": 50,
+      "date": "2026-07-22T07:10",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4533,5 +4546,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:16:08.642Z"
+  "updatedAt": "2026-07-22T02:17:08.147Z"
 }
