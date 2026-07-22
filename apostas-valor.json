@@ -4374,6 +4374,11 @@
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
       "value": 210
+    },
+    {
+      "id": "mrvdbif64wnfw",
+      "name": "Kalshi",
+      "value": 105
     }
   ],
   "aportes": [],
@@ -4450,5 +4455,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T00:49:39.560Z"
+  "updatedAt": "2026-07-22T00:52:36.739Z"
 }
