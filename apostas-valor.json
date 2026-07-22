@@ -4273,6 +4273,19 @@
       "date": "2026-07-22T18:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrvfx2i8ktoqj",
+      "event": "New England Revolution – Toronto FC",
+      "selection": "1 mais cartoes",
+      "house": "Betano",
+      "odd": 3.35,
+      "pot": 16,
+      "prob": 35,
+      "stake": 30,
+      "date": "2026-07-22T20:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4481,5 +4494,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:03:19.977Z"
+  "updatedAt": "2026-07-22T02:05:21.776Z"
 }
