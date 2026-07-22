@@ -4359,6 +4359,11 @@
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
       "value": 0
+    },
+    {
+      "id": "mrvd5wwhq7rkj",
+      "name": "Em apostas",
+      "value": 1391.18
     }
   ],
   "aportes": [],
@@ -4435,5 +4440,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T00:46:05.841Z"
+  "updatedAt": "2026-07-22T00:48:15.569Z"
 }
