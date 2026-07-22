@@ -3556,8 +3556,8 @@
       "prob": 50.2,
       "stake": 50,
       "date": "2026-07-21T21:35",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrsjnv4okk2df",
@@ -4546,5 +4546,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:31:13.175Z"
+  "updatedAt": "2026-07-22T02:31:49.059Z"
 }
