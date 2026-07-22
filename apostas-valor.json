@@ -4293,7 +4293,7 @@
     {
       "id": "mrgvo3wyl82nh",
       "name": "Betboom",
-      "value": 100.22
+      "value": 0.22
     },
     {
       "id": "mrgvrivsc6dqm",
@@ -4435,5 +4435,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T00:32:39.362Z"
+  "updatedAt": "2026-07-22T00:32:56.623Z"
 }
