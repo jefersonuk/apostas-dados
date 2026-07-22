@@ -4312,6 +4312,19 @@
       "date": "2026-07-22T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrvgaxmqbwce9",
+      "event": "Espanha (F) - Hungria (F)",
+      "selection": "menos 6.5 primeiro quarto",
+      "house": "Novibet",
+      "odd": 2,
+      "pot": 30,
+      "prob": 64,
+      "stake": 20.02,
+      "date": "2026-07-22T07:15",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4520,5 +4533,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:13:11.143Z"
+  "updatedAt": "2026-07-22T02:16:08.642Z"
 }
