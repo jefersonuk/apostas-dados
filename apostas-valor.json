@@ -4543,8 +4543,22 @@
       "lucro": 88.39285714285722,
       "roi": 39.28571428571432,
       "date": "2026-07-19T13:00"
+    },
+    {
+      "id": "mrw512da0ksel",
+      "event": "Oleksandra Oliynykova – Leyre Romero Gormaz",
+      "houseA": "Onabet",
+      "houseB": "Superbet",
+      "oddA": 2.75,
+      "oddB": 1.92,
+      "total": 50,
+      "stakeA": 20.55674518201285,
+      "stakeB": 29.443254817987153,
+      "lucro": 6.5310492505353395,
+      "roi": 13.062098501070679,
+      "date": "2026-07-23T05:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T13:24:44.110Z"
+  "updatedAt": "2026-07-22T13:48:18.622Z"
 }
