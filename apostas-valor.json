@@ -4338,6 +4338,19 @@
       "date": "2026-07-22T09:10",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrw5qd1iyw9d3",
+      "event": "Alina",
+      "selection": "",
+      "house": "Superbet",
+      "odd": 2.2,
+      "pot": 17,
+      "prob": 60,
+      "stake": 50,
+      "date": "2026-07-22T11:07",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4565,5 +4578,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T13:57:08.236Z"
+  "updatedAt": "2026-07-22T14:07:58.854Z"
 }
