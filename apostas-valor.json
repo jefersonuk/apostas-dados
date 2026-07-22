@@ -4364,6 +4364,11 @@
       "id": "mrvd5wwhq7rkj",
       "name": "Em apostas",
       "value": 1391.18
+    },
+    {
+      "id": "mrvd69ldy1o1z",
+      "name": "Santgreen",
+      "value": 340
     }
   ],
   "aportes": [],
@@ -4440,5 +4445,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T00:48:15.569Z"
+  "updatedAt": "2026-07-22T00:48:32.017Z"
 }
