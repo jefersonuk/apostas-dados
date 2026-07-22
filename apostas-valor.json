@@ -4299,6 +4299,19 @@
       "date": "2026-07-22T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrvg74o67t7qv",
+      "event": "Chapecoense – Flamengo",
+      "selection": "2 vence e 1 menos 9.5 chtutes",
+      "house": "Superbet",
+      "odd": 4,
+      "pot": 20,
+      "prob": 40,
+      "stake": 50,
+      "date": "2026-07-22T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4507,5 +4520,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:08:47.793Z"
+  "updatedAt": "2026-07-22T02:13:11.143Z"
 }
