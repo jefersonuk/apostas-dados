@@ -3166,8 +3166,8 @@
       "prob": 31.1,
       "stake": 40,
       "date": "2026-07-22T05:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrrir96d2jfo2",
@@ -4546,5 +4546,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T11:54:56.128Z"
+  "updatedAt": "2026-07-22T11:55:37.845Z"
 }
