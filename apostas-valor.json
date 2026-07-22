@@ -3634,8 +3634,8 @@
       "prob": 35.4,
       "stake": 22.5,
       "date": "2026-07-22T14:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrsk56hs4ya0p",
@@ -4578,5 +4578,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T23:55:48.551Z"
+  "updatedAt": "2026-07-22T23:56:00.047Z"
 }
