@@ -4247,6 +4247,19 @@
       "date": "2026-07-21T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrvfsaolomlic",
+      "event": "Sebastian Baez - Arthur Rinderknech",
+      "selection": "menos 1.5 breaks primeiro set",
+      "house": "Noviber",
+      "odd": 2.4,
+      "pot": 26,
+      "prob": 49,
+      "stake": 40,
+      "date": "2026-07-22T06:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4455,5 +4468,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T00:56:43.215Z"
+  "updatedAt": "2026-07-22T02:01:39.093Z"
 }
