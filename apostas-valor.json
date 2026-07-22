@@ -4260,6 +4260,19 @@
       "date": "2026-07-22T06:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrvfugix7501n",
+      "event": "Independiente del Valle – Técnico Universitario",
+      "selection": "mais 2.5 escanteios segundo time",
+      "house": "Novibet",
+      "odd": 2.3,
+      "pot": 16,
+      "prob": 50,
+      "stake": 40,
+      "date": "2026-07-22T18:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4468,5 +4481,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:01:39.093Z"
+  "updatedAt": "2026-07-22T02:03:19.977Z"
 }
