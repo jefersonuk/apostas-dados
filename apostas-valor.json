@@ -4245,8 +4245,8 @@
       "prob": 61,
       "stake": 50,
       "date": "2026-07-21T21:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrvfsaolomlic",
@@ -4546,5 +4546,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:29:28.509Z"
+  "updatedAt": "2026-07-22T02:29:56.077Z"
 }
