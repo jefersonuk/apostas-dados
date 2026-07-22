@@ -4369,6 +4369,11 @@
       "id": "mrvd69ldy1o1z",
       "name": "Santgreen",
       "value": 340
+    },
+    {
+      "id": "mrvd6n3x6xs48",
+      "name": "Binance",
+      "value": 210
     }
   ],
   "aportes": [],
@@ -4445,5 +4450,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T00:48:32.017Z"
+  "updatedAt": "2026-07-22T00:48:49.533Z"
 }
