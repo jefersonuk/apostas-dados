@@ -4258,8 +4258,8 @@
       "prob": 49,
       "stake": 40,
       "date": "2026-07-22T06:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrvfugix7501n",
@@ -4546,5 +4546,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T11:58:34.635Z"
+  "updatedAt": "2026-07-22T13:24:44.110Z"
 }
