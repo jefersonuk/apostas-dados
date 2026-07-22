@@ -3322,8 +3322,8 @@
       "prob": 80,
       "stake": 40,
       "date": "2026-07-21T21:35",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrs4x75aufbmw",
@@ -4546,5 +4546,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:18:45.545Z"
+  "updatedAt": "2026-07-22T02:29:28.509Z"
 }
