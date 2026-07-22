@@ -4286,6 +4286,19 @@
       "date": "2026-07-22T20:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrvg1hgxd1tgn",
+      "event": "Náutico PE – Londrina",
+      "selection": "menos 26.5 chutes",
+      "house": "Superbet",
+      "odd": 2.12,
+      "pot": 12,
+      "prob": 52.9,
+      "stake": 50,
+      "date": "2026-07-22T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4494,5 +4507,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T02:05:21.776Z"
+  "updatedAt": "2026-07-22T02:08:47.793Z"
 }
