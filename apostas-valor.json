@@ -3413,8 +3413,8 @@
       "prob": 30,
       "stake": 30,
       "date": "2026-07-21T15:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrs5u5lgjx8g0",
@@ -4435,5 +4435,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-21T23:45:01.263Z"
+  "updatedAt": "2026-07-22T00:10:22.842Z"
 }
