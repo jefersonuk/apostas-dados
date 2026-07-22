@@ -4344,7 +4344,7 @@
       "event": "Alina",
       "selection": "",
       "house": "Superbet",
-      "odd": 2.2,
+      "odd": 2.4,
       "pot": 17,
       "prob": 60,
       "stake": 50,
@@ -4578,5 +4578,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-22T14:07:58.854Z"
+  "updatedAt": "2026-07-22T14:08:08.809Z"
 }
