@@ -4468,45 +4468,6 @@
       "date": "2026-07-25T11:30",
       "status": "pendente",
       "result": null
-    },
-    {
-      "id": "mrxphylxbsd8l",
-      "event": "Islam Dulatov – Wellington Turman",
-      "selection": "Menos de 1 round",
-      "house": "Betnacional",
-      "odd": 2.88,
-      "pot": 25,
-      "prob": 43,
-      "stake": 30,
-      "date": "2026-07-25T14:45",
-      "status": "pendente",
-      "result": null
-    },
-    {
-      "id": "mrxq8nlhffh28",
-      "event": "Igor Ribeiro Marcondes – Diego Dedura-Palomero",
-      "selection": "2 -2.5 1set",
-      "house": "Superbet",
-      "odd": 4.25,
-      "pot": 26,
-      "prob": 33,
-      "stake": 30,
-      "date": "2026-07-24T07:00",
-      "status": "pendente",
-      "result": null
-    },
-    {
-      "id": "mrxqc4dbr91nn",
-      "event": "Launceston United v Devonport City",
-      "selection": "1x",
-      "house": "Betnacional",
-      "odd": 8.5,
-      "pot": 24,
-      "prob": 14,
-      "stake": 10,
-      "date": "2026-07-25T01:30",
-      "status": "pendente",
-      "result": null
     }
   ],
   "balances": [
@@ -4633,7 +4594,7 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 497
+      "value": 734
     },
     {
       "id": "mrvdbif64wnfw",
@@ -4781,5 +4742,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T16:32:32.543Z"
+  "updatedAt": "2026-07-23T17:00:01.603Z"
 }
