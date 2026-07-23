@@ -4468,6 +4468,19 @@
       "date": "2026-07-25T11:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrxphylxbsd8l",
+      "event": "Islam Dulatov – Wellington Turman",
+      "selection": "Menos de 1 round",
+      "house": "Betnacional",
+      "odd": 2.88,
+      "pot": 25,
+      "prob": 43,
+      "stake": 30,
+      "date": "2026-07-25T14:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4742,5 +4755,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T15:20:41.015Z"
+  "updatedAt": "2026-07-23T16:09:05.398Z"
 }
