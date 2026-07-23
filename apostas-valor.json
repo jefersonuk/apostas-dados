@@ -4403,6 +4403,19 @@
       "date": "2026-07-24T11:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrwtqvp0y7k95",
+      "event": "Cruc1al",
+      "selection": "Abaixo 14.5 2º mapa + Tempo Extra - abates",
+      "house": "Superbet",
+      "odd": 2.03,
+      "pot": 10,
+      "prob": 53,
+      "stake": 50,
+      "date": "2026-07-23T12:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4630,5 +4643,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T01:19:07.350Z"
+  "updatedAt": "2026-07-23T01:20:13.812Z"
 }
