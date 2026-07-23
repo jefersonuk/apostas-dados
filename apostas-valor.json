@@ -4442,6 +4442,19 @@
       "date": "2026-07-23T10:02",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrxnce6h3orp6",
+      "event": "Austrália – Hungria",
+      "selection": "1 vence",
+      "house": "",
+      "odd": 6.5,
+      "pot": 27.5,
+      "prob": 19.6,
+      "stake": 18,
+      "date": "2026-07-25T07:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4702,5 +4715,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T13:41:42.894Z"
+  "updatedAt": "2026-07-23T15:08:46.409Z"
 }
