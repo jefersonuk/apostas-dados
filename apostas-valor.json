@@ -4553,6 +4553,11 @@
       "id": "mrw5cf0sta6jf",
       "name": "Onabet",
       "value": 325
+    },
+    {
+      "id": "mrwvr02fexo4s",
+      "name": "1xbet",
+      "value": 0
     }
   ],
   "aportes": [],
@@ -4657,5 +4662,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T02:15:43.863Z"
+  "updatedAt": "2026-07-23T02:16:18.711Z"
 }
