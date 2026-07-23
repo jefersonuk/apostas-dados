@@ -3504,8 +3504,8 @@
       "prob": 52.6,
       "stake": 50,
       "date": "2026-07-22T21:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrsja7whzon2t",
@@ -4662,5 +4662,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T02:23:46.462Z"
+  "updatedAt": "2026-07-23T02:23:48.895Z"
 }
