@@ -4481,6 +4481,19 @@
       "date": "2026-07-25T14:45",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrxq8nlhffh28",
+      "event": "Igor Ribeiro Marcondes – Diego Dedura-Palomero",
+      "selection": "2 -2.5 1set",
+      "house": "Superbet",
+      "odd": 4.25,
+      "pot": 26,
+      "prob": 33,
+      "stake": 30,
+      "date": "2026-07-24T07:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4755,5 +4768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T16:09:05.398Z"
+  "updatedAt": "2026-07-23T16:29:50.837Z"
 }
