@@ -4725,8 +4725,22 @@
       "lucro": 136.48975791433884,
       "roi": 25.512104283053986,
       "date": "2026-07-24T13:00"
+    },
+    {
+      "id": "mrxnrpkm6uuj0",
+      "event": "Marie Bouzkova – Tereza Valentova",
+      "houseA": "Betano",
+      "houseB": "Onabet",
+      "oddA": 4.2,
+      "oddB": 1.81,
+      "total": 64,
+      "stakeA": 19.274542429284526,
+      "stakeB": 44.72545757071548,
+      "lucro": 16.953078202995016,
+      "roi": 26.489184692179712,
+      "date": "2026-07-24T06:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T15:10:44.425Z"
+  "updatedAt": "2026-07-23T15:20:41.015Z"
 }
