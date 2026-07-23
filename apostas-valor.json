@@ -4377,6 +4377,19 @@
       "date": "2026-07-25T11:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrwte77li35ap",
+      "event": "New england",
+      "selection": "Mais cartoes",
+      "house": "Betano",
+      "odd": 3.35,
+      "pot": 26,
+      "prob": 40,
+      "stake": 30,
+      "date": "2026-07-22T22:04",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4604,5 +4617,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T01:04:06.803Z"
+  "updatedAt": "2026-07-23T01:10:22.209Z"
 }
