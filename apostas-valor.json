@@ -4310,8 +4310,8 @@
       "prob": 40,
       "stake": 50,
       "date": "2026-07-22T21:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrvgaxmqbwce9",
@@ -4662,5 +4662,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T02:28:36.280Z"
+  "updatedAt": "2026-07-23T02:29:09.412Z"
 }
