@@ -4455,6 +4455,19 @@
       "date": "2026-07-25T07:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrxneisc3560m",
+      "event": "Cuala – Lucan Sarsfields",
+      "selection": "2",
+      "house": "Novibet",
+      "odd": 2.5,
+      "pot": 27,
+      "prob": 60,
+      "stake": 64.04,
+      "date": "2026-07-25T11:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4715,5 +4728,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T15:08:46.409Z"
+  "updatedAt": "2026-07-23T15:10:25.692Z"
 }
