@@ -4494,6 +4494,19 @@
       "date": "2026-07-24T07:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrxqc4dbr91nn",
+      "event": "Launceston United v Devonport City",
+      "selection": "1x",
+      "house": "Betnacional",
+      "odd": 8.5,
+      "pot": 24,
+      "prob": 14,
+      "stake": 10,
+      "date": "2026-07-25T01:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4768,5 +4781,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T16:29:50.837Z"
+  "updatedAt": "2026-07-23T16:32:32.543Z"
 }
