@@ -4435,7 +4435,7 @@
       "event": "Aposta sem nome",
       "selection": "",
       "house": "",
-      "odd": 1.75,
+      "odd": 1.85,
       "pot": 15,
       "prob": 70,
       "stake": 30,
@@ -4702,5 +4702,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T13:41:16.255Z"
+  "updatedAt": "2026-07-23T13:41:28.451Z"
 }
