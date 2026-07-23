@@ -4390,6 +4390,19 @@
       "date": "2026-07-22T22:04",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrwtpgeu2b9uj",
+      "event": "Mezii",
+      "selection": "Menos 7.5 head shots segundo mapa",
+      "house": "Superbet",
+      "odd": 2.04,
+      "pot": 10,
+      "prob": 53,
+      "stake": 50,
+      "date": "2026-07-24T11:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4617,5 +4630,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T01:10:22.209Z"
+  "updatedAt": "2026-07-23T01:19:07.350Z"
 }
