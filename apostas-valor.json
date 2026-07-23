@@ -3946,8 +3946,8 @@
       "prob": 48,
       "stake": 50,
       "date": "2026-07-22T20:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrtqyqm06ga0n",
@@ -4662,5 +4662,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T02:23:40.597Z"
+  "updatedAt": "2026-07-23T02:23:46.462Z"
 }
