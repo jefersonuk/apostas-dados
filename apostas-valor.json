@@ -4362,8 +4362,8 @@
       "prob": 55,
       "stake": 50,
       "date": "2026-07-22T21:45",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     }
   ],
   "balances": [
@@ -4591,5 +4591,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T00:47:57.851Z"
+  "updatedAt": "2026-07-23T00:48:13.926Z"
 }
