@@ -4364,6 +4364,19 @@
       "date": "2026-07-22T21:45",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrwt65jm220o4",
+      "event": "Cuala – Lucan Sarsfields",
+      "selection": "2",
+      "house": "Novibet",
+      "odd": 2.1,
+      "pot": 26,
+      "prob": 60,
+      "stake": 50,
+      "date": "2026-07-25T11:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4591,5 +4604,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T00:48:13.926Z"
+  "updatedAt": "2026-07-23T01:04:06.803Z"
 }
