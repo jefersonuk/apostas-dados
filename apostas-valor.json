@@ -4429,6 +4429,19 @@
       "date": "2026-07-23T10:02",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrxk7n69hhql5",
+      "event": "Aposta sem nome",
+      "selection": "",
+      "house": "",
+      "odd": 1.57,
+      "pot": 15,
+      "prob": 70,
+      "stake": 30,
+      "date": "2026-07-23T10:02",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4689,5 +4702,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T13:02:56.091Z"
+  "updatedAt": "2026-07-23T13:41:05.938Z"
 }
