@@ -4351,6 +4351,19 @@
       "date": "2026-07-22T11:07",
       "status": "resolvida",
       "result": "green"
+    },
+    {
+      "id": "mrwsldwbbmyx7",
+      "event": "Lanus cienciano",
+      "selection": "Primeiro escanteio lanus",
+      "house": "Superbet",
+      "odd": 2.15,
+      "pot": 15,
+      "prob": 55,
+      "stake": 50,
+      "date": "2026-07-22T21:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4578,5 +4591,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-23T00:46:57.883Z"
+  "updatedAt": "2026-07-23T00:47:57.851Z"
 }
