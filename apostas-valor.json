@@ -3543,8 +3543,8 @@
       "prob": 55.9,
       "stake": 50,
       "date": "2026-07-23T15:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrsjkueqnmivk",
@@ -4037,8 +4037,8 @@
       "prob": 45.9,
       "stake": 50,
       "date": "2026-07-23T15:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrtw3blhclbf5",
@@ -4784,5 +4784,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T14:59:45.667Z"
+  "updatedAt": "2026-07-24T18:44:29.951Z"
 }
