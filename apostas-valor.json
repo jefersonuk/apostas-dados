@@ -1216,8 +1216,8 @@
       "prob": 62.2,
       "stake": 30,
       "date": "2026-07-23T21:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mre8kv550lepk",
@@ -4401,8 +4401,8 @@
       "prob": 53,
       "stake": 50,
       "date": "2026-07-24T11:00",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "green"
     },
     {
       "id": "mrwtqvp0y7k95",
@@ -4784,5 +4784,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T18:44:29.951Z"
+  "updatedAt": "2026-07-24T21:59:19.565Z"
 }
