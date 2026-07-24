@@ -1216,8 +1216,8 @@
       "prob": 62.2,
       "stake": 30,
       "date": "2026-07-23T21:30",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mre8kv550lepk",
@@ -3530,8 +3530,8 @@
       "prob": 59.4,
       "stake": 50,
       "date": "2026-07-23T16:15",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrsjhtu33p6e9",
@@ -3543,8 +3543,8 @@
       "prob": 55.9,
       "stake": 50,
       "date": "2026-07-23T15:00",
-      "status": "resolvida",
-      "result": "void"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrsjkueqnmivk",
@@ -3842,8 +3842,8 @@
       "prob": 39.4,
       "stake": 30,
       "date": "2026-07-23T19:30",
-      "status": "resolvida",
-      "result": "red"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtfs7dmxs5xw",
@@ -3868,8 +3868,8 @@
       "prob": 37.6,
       "stake": 30,
       "date": "2026-07-23T19:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtg2qbu8ul8c",
@@ -4037,8 +4037,8 @@
       "prob": 45.9,
       "stake": 50,
       "date": "2026-07-23T15:00",
-      "status": "resolvida",
-      "result": "green"
+      "status": "pendente",
+      "result": null
     },
     {
       "id": "mrtw3blhclbf5",
@@ -4468,32 +4468,6 @@
       "date": "2026-07-25T11:30",
       "status": "pendente",
       "result": null
-    },
-    {
-      "id": "mryyx8u84wjcb",
-      "event": "ASA Aarhus (W) v AGF Aarhus (W) ASA Aarhus (W) - AGF Aarhus (W) shadowhighlight Asa Aarhus 25 JUL | 08:00 shadowhighlight Aarhus    Início da partida 0 Dias 21 H 40 Min 04 S Cobertura limitada Logo Posição Da Liga 53 % Forma Recente 1 1 7 % Forma Recente E D E V V D D E D D Encontros Anteriores 0 0 2 VITÓRIAS EMPATES VITÓRIAS",
-      "selection": "1x",
-      "house": "Betnacional",
-      "odd": 2.5,
-      "pot": 30,
-      "prob": 61,
-      "stake": 40,
-      "date": "2026-07-25T08:00",
-      "status": "pendente",
-      "result": null
-    },
-    {
-      "id": "mryz33e62dc3q",
-      "event": "Rio Negro RR (F) – Itabirito (F)",
-      "selection": "Menos 9.5 esc",
-      "house": "Sueprbet",
-      "odd": 1.85,
-      "pot": 17,
-      "prob": 61,
-      "stake": 50,
-      "date": "2026-07-24T20:00",
-      "status": "pendente",
-      "result": null
     }
   ],
   "balances": [
@@ -4505,12 +4479,12 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 40
+      "value": 215
     },
     {
       "id": "mrgvjhha81y8r",
       "name": "Superbet",
-      "value": 1760
+      "value": 1588
     },
     {
       "id": "mrgvjnlmwqrl4",
@@ -4530,7 +4504,7 @@
     {
       "id": "mrgvmrccr6mld",
       "name": "Pitaco",
-      "value": 84.11
+      "value": 33.11
     },
     {
       "id": "mrgvnqkej651m",
@@ -4545,7 +4519,7 @@
     {
       "id": "mrgvrivsc6dqm",
       "name": "KTO",
-      "value": 200
+      "value": 0.05
     },
     {
       "id": "mrgvsm1zamouv",
@@ -4610,17 +4584,17 @@
     {
       "id": "mrvd5wwhq7rkj",
       "name": "Em apostas",
-      "value": 1100
+      "value": 1363
     },
     {
       "id": "mrvd69ldy1o1z",
       "name": "Santgreen",
-      "value": 70
+      "value": 715
     },
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 1127
+      "value": 734
     },
     {
       "id": "mrvdbif64wnfw",
@@ -4630,7 +4604,7 @@
     {
       "id": "mrw5cf0sta6jf",
       "name": "Onabet",
-      "value": 277.93
+      "value": 264.54
     },
     {
       "id": "mrwvr02fexo4s",
@@ -4765,8 +4739,36 @@
       "lucro": 16.953078202995016,
       "roi": 26.489184692179712,
       "date": "2026-07-24T06:00"
+    },
+    {
+      "id": "mrywavioy96oe",
+      "event": "Kickers Offenback - Bayer Lerverkusen",
+      "houseA": "1xbet",
+      "houseB": "superbet",
+      "oddA": 9,
+      "oddB": 1.64,
+      "total": 828,
+      "stakeA": 127.62406015037595,
+      "stakeB": 700.3759398496242,
+      "lucro": 320.6165413533836,
+      "roi": 38.721804511278215,
+      "date": "2026-07-25T10:00"
+    },
+    {
+      "id": "mrz1hzjkyvd4k",
+      "event": "Krzysztof x Damian",
+      "houseA": "Superbet",
+      "houseB": "1xbet",
+      "oddA": 1.6,
+      "oddB": 4.855,
+      "total": 290,
+      "stakeA": 218.11773818745158,
+      "stakeB": 71.8822618125484,
+      "lucro": 58.98838109992255,
+      "roi": 20.340821068938812,
+      "date": "2026-07-24T15:45"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T13:25:14.094Z"
+  "updatedAt": "2026-07-24T14:32:48.179Z"
 }
