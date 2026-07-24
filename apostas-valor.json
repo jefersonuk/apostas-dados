@@ -4755,20 +4755,6 @@
       "date": "2026-07-25T10:00"
     },
     {
-      "id": "mrz1hzjkyvd4k",
-      "event": "Krzysztof x Damian",
-      "houseA": "Superbet",
-      "houseB": "1xbet",
-      "oddA": 1.6,
-      "oddB": 4.855,
-      "total": 290,
-      "stakeA": 218.11773818745158,
-      "stakeB": 71.8822618125484,
-      "lucro": 58.98838109992255,
-      "roi": 20.340821068938812,
-      "date": "2026-07-24T15:45"
-    },
-    {
       "id": "mrz2ar96v7dv2",
       "event": "Santos x Chapecoense",
       "houseA": "Betnacional",
@@ -4784,5 +4770,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T21:59:19.565Z"
+  "updatedAt": "2026-07-24T23:10:29.478Z"
 }
