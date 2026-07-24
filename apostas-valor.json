@@ -4481,6 +4481,19 @@
       "date": "2026-07-25T08:00",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mryz33e62dc3q",
+      "event": "Rio Negro RR (F) – Itabirito (F)",
+      "selection": "Menos 9.5 esc",
+      "house": "Sueprbet",
+      "odd": 1.85,
+      "pot": 17,
+      "prob": 61,
+      "stake": 50,
+      "date": "2026-07-24T20:00",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4755,5 +4768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T13:20:41.216Z"
+  "updatedAt": "2026-07-24T13:25:14.094Z"
 }
