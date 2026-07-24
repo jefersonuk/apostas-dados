@@ -4767,8 +4767,22 @@
       "lucro": 58.98838109992255,
       "roi": 20.340821068938812,
       "date": "2026-07-24T15:45"
+    },
+    {
+      "id": "mrz2ar96v7dv2",
+      "event": "Santos x Chapecoense",
+      "houseA": "Betnacional",
+      "houseB": "Superbet",
+      "oddA": 2.8,
+      "oddB": 1.8,
+      "total": 500,
+      "stakeA": 195.65217391304347,
+      "stakeB": 304.3478260869565,
+      "lucro": 47.826086956521635,
+      "roi": 9.565217391304328,
+      "date": "2026-07-25T18:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T14:32:48.179Z"
+  "updatedAt": "2026-07-24T14:55:10.460Z"
 }
