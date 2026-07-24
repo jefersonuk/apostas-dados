@@ -3842,8 +3842,8 @@
       "prob": 39.4,
       "stake": 30,
       "date": "2026-07-23T19:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrtfs7dmxs5xw",
@@ -4742,5 +4742,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T10:57:43.984Z"
+  "updatedAt": "2026-07-24T11:01:03.965Z"
 }
