@@ -4468,6 +4468,19 @@
       "date": "2026-07-25T11:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrzlc40dz8qc5",
+      "event": "Colo colo",
+      "selection": "Menos 4.5 cartões",
+      "house": "Superbet",
+      "odd": 2.7,
+      "pot": 17,
+      "prob": 43.7,
+      "stake": 50,
+      "date": "2026-07-24T21:30",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4770,5 +4783,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T23:10:29.478Z"
+  "updatedAt": "2026-07-24T23:48:06.349Z"
 }
