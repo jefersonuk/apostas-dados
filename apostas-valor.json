@@ -4481,6 +4481,19 @@
       "date": "2026-07-24T21:30",
       "status": "pendente",
       "result": null
+    },
+    {
+      "id": "mrzldo8vwey8s",
+      "event": "Islam dulatov",
+      "selection": "Menos 0.5 rounds",
+      "house": "Betnacional",
+      "odd": 2.88,
+      "pot": 19,
+      "prob": 41,
+      "stake": 40,
+      "date": "2026-07-25T14:45",
+      "status": "pendente",
+      "result": null
     }
   ],
   "balances": [
@@ -4783,5 +4796,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-24T23:48:06.349Z"
+  "updatedAt": "2026-07-24T23:49:19.231Z"
 }
