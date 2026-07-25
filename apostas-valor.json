@@ -4636,6 +4636,11 @@
       "id": "mrwvr02fexo4s",
       "name": "1xbet",
       "value": 0
+    },
+    {
+      "id": "mrzmpfmzgil2s",
+      "name": "Em arbitragem",
+      "value": 1330
     }
   ],
   "aportes": [],
@@ -4796,5 +4801,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-25T00:24:43.248Z"
+  "updatedAt": "2026-07-25T00:26:27.564Z"
 }
