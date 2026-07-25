@@ -3348,8 +3348,8 @@
       "prob": 55,
       "stake": 40,
       "date": "2026-07-25T10:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrs4zzaijzto2",
@@ -4829,5 +4829,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-25T13:40:10.089Z"
+  "updatedAt": "2026-07-25T15:54:02.880Z"
 }
