@@ -4798,8 +4798,22 @@
       "lucro": 47.826086956521635,
       "roi": 9.565217391304328,
       "date": "2026-07-25T18:30"
+    },
+    {
+      "id": "ms0em4eta1pme",
+      "event": "FK Aktobe – FC Okzhetpes Kokshetau",
+      "houseA": "Superbet",
+      "houseB": "1xbet",
+      "oddA": 2.1,
+      "oddB": 2.13,
+      "total": 1000,
+      "stakeA": 503.5460992907801,
+      "stakeB": 496.45390070921985,
+      "lucro": 57.44680851063822,
+      "roi": 5.744680851063822,
+      "date": "2026-07-24T12:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-25T10:32:24.810Z"
+  "updatedAt": "2026-07-25T13:27:42.294Z"
 }
