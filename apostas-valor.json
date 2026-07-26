@@ -4610,7 +4610,7 @@
     {
       "id": "mrvd5wwhq7rkj",
       "name": "Em apostas",
-      "value": 80
+      "value": 5122
     },
     {
       "id": "mrvd69ldy1o1z",
@@ -4843,5 +4843,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-26T20:13:34.387Z"
+  "updatedAt": "2026-07-26T20:15:39.619Z"
 }
