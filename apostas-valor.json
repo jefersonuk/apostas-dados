@@ -4375,8 +4375,8 @@
       "prob": 60,
       "stake": 50,
       "date": "2026-07-25T11:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrwte77li35ap",
@@ -4466,8 +4466,8 @@
       "prob": 60,
       "stake": 64.04,
       "date": "2026-07-25T11:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrzlc40dz8qc5",
@@ -4843,5 +4843,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-26T20:08:05.518Z"
+  "updatedAt": "2026-07-26T20:08:24.130Z"
 }
