@@ -4625,7 +4625,7 @@
     {
       "id": "mrvdbif64wnfw",
       "name": "Kalshi",
-      "value": 105
+      "value": 0
     },
     {
       "id": "mrw5cf0sta6jf",
@@ -4843,5 +4843,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-26T23:42:48.726Z"
+  "updatedAt": "2026-07-26T23:55:45.741Z"
 }
