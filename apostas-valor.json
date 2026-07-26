@@ -4453,8 +4453,8 @@
       "prob": 19.6,
       "stake": 18,
       "date": "2026-07-25T07:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "red"
     },
     {
       "id": "mrxneisc3560m",
@@ -4843,5 +4843,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-26T20:06:37.713Z"
+  "updatedAt": "2026-07-26T20:08:05.518Z"
 }
