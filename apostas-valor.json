@@ -3296,8 +3296,8 @@
       "prob": 70,
       "stake": 41,
       "date": "2026-07-23T15:30",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrs4stbgc147p",
@@ -3725,8 +3725,8 @@
       "prob": 60.2,
       "stake": 50,
       "date": "2026-07-23T15:45",
-      "status": "pendente",
-      "result": null
+      "status": "resolvida",
+      "result": "void"
     },
     {
       "id": "mrsl3fnzinhp5",
@@ -4843,5 +4843,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-26T20:10:01.049Z"
+  "updatedAt": "2026-07-26T20:10:04.013Z"
 }
