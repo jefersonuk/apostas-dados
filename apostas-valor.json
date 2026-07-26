@@ -4641,6 +4641,11 @@
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
       "value": 0
+    },
+    {
+      "id": "ms2ghozrogav9",
+      "name": "Metamask",
+      "value": 205
     }
   ],
   "aportes": [],
@@ -4843,5 +4848,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-26T23:55:45.741Z"
+  "updatedAt": "2026-07-26T23:55:47.271Z"
 }
