@@ -4646,6 +4646,11 @@
       "id": "ms2ghozrogav9",
       "name": "Metamask",
       "value": 205
+    },
+    {
+      "id": "ms573t068wk2v",
+      "name": "Casobet",
+      "value": 0
     }
   ],
   "aportes": [],
@@ -4848,5 +4853,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-28T19:34:22.507Z"
+  "updatedAt": "2026-07-28T21:56:21.274Z"
 }
