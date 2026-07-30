@@ -4651,6 +4651,11 @@
       "id": "ms573t068wk2v",
       "name": "Casobet",
       "value": 0
+    },
+    {
+      "id": "ms7iedf1byig1",
+      "name": "Zenit",
+      "value": 0
     }
   ],
   "aportes": [],
@@ -4853,5 +4858,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-30T02:34:38.018Z"
+  "updatedAt": "2026-07-30T12:48:02.414Z"
 }
