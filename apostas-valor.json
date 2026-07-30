@@ -4661,6 +4661,11 @@
       "id": "ms7irn12hybsq",
       "name": "Luvabet",
       "value": 32
+    },
+    {
+      "id": "ms7mczdaa6ad4",
+      "name": "Betfast",
+      "value": 321
     }
   ],
   "aportes": [],
@@ -4891,5 +4896,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-30T14:25:08.882Z"
+  "updatedAt": "2026-07-30T14:38:56.015Z"
 }
