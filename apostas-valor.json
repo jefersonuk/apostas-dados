@@ -4874,8 +4874,22 @@
       "lucro": 11.462620423892105,
       "roi": 27.95761078998074,
       "date": "2026-07-30T22:00"
+    },
+    {
+      "id": "ms7lv95a7bmwu",
+      "event": "Deportivo Español – Leones de Rosario FC",
+      "houseA": "Pitaco",
+      "houseB": "Zenit",
+      "oddA": 2.23,
+      "oddB": 2.37,
+      "total": 90,
+      "stakeA": 46.36956521739131,
+      "stakeB": 43.630434782608695,
+      "lucro": 13.40413043478263,
+      "roi": 14.893478260869589,
+      "date": "2026-07-31T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-30T12:58:32.331Z"
+  "updatedAt": "2026-07-30T14:25:08.882Z"
 }
