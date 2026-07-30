@@ -4656,6 +4656,11 @@
       "id": "ms7iedf1byig1",
       "name": "Zenit",
       "value": 0
+    },
+    {
+      "id": "ms7irn12hybsq",
+      "name": "Luvabet",
+      "value": 32
     }
   ],
   "aportes": [],
@@ -4872,5 +4877,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-30T12:57:51.448Z"
+  "updatedAt": "2026-07-30T12:58:21.398Z"
 }
