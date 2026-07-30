@@ -4655,7 +4655,7 @@
     {
       "id": "ms7iedf1byig1",
       "name": "Zenit",
-      "value": 0
+      "value": 45.96
     },
     {
       "id": "ms7irn12hybsq",
@@ -4877,5 +4877,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-30T12:58:23.846Z"
+  "updatedAt": "2026-07-30T12:58:32.331Z"
 }
