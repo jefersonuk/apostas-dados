@@ -4855,8 +4855,22 @@
       "lucro": 76.48863636363649,
       "roi": 7.215909090909102,
       "date": "2026-07-25T19:30"
+    },
+    {
+      "id": "ms7iqzx32epk6",
+      "event": "Francisco Cerundolo – Arthur Gea",
+      "houseA": "Zenit",
+      "houseB": "Luvabet",
+      "oddA": 2.29,
+      "oddB": 2.9,
+      "total": 41,
+      "stakeA": 22.909441233140658,
+      "stakeB": 18.090558766859345,
+      "lucro": 11.462620423892105,
+      "roi": 27.95761078998074,
+      "date": "2026-07-30T22:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-30T12:48:02.414Z"
+  "updatedAt": "2026-07-30T12:57:51.448Z"
 }
