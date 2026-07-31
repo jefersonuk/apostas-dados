@@ -4666,6 +4666,11 @@
       "id": "ms7mczdaa6ad4",
       "name": "Betfast",
       "value": 0
+    },
+    {
+      "id": "ms95ud6rq4x12",
+      "name": "Blaze",
+      "value": 300
     }
   ],
   "aportes": [],
@@ -4896,5 +4901,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-31T10:53:10.244Z"
+  "updatedAt": "2026-07-31T16:32:05.955Z"
 }
