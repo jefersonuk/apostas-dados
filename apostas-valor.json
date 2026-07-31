@@ -4963,8 +4963,22 @@
       "lucro": 128.38695652173897,
       "roi": 10.15789473684209,
       "date": "2026-07-31T20:19"
+    },
+    {
+      "id": "ms9kwmguszl19",
+      "event": "Puebla – Chivas Guadalajara",
+      "houseA": "Betsson",
+      "houseB": "Vbet",
+      "oddA": 4.5,
+      "oddB": 1.93,
+      "total": 83.190207253886,
+      "stakeA": 24.97,
+      "stakeB": 58.22020725388601,
+      "lucro": 29.174792746113994,
+      "roi": 35.069984447900474,
+      "date": "2026-07-31T22:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-31T23:24:28.242Z"
+  "updatedAt": "2026-07-31T23:33:45.536Z"
 }
