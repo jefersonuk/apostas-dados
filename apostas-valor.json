@@ -4951,20 +4951,6 @@
       "date": "2026-08-01T15:30"
     },
     {
-      "id": "ms9kj0zqmf0nt",
-      "event": "Operação sem nome",
-      "houseA": "",
-      "houseB": "",
-      "oddA": 5.46,
-      "oddB": 1.38,
-      "total": 1263.913043478261,
-      "stakeA": 255,
-      "stakeB": 1008.9130434782609,
-      "lucro": 128.38695652173897,
-      "roi": 10.15789473684209,
-      "date": "2026-07-31T20:19"
-    },
-    {
       "id": "ms9kwmguszl19",
       "event": "Puebla – Chivas Guadalajara",
       "houseA": "Betsson",
@@ -4994,5 +4980,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-31T23:41:16.673Z"
+  "updatedAt": "2026-07-31T23:43:08.594Z"
 }
