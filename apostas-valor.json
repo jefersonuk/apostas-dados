@@ -4935,8 +4935,22 @@
       "lucro": 17.76559546313797,
       "roi": 4.801512287334587,
       "date": "2026-07-31T17:00"
+    },
+    {
+      "id": "ms9ke9q3n9snt",
+      "event": "Porto x Torreense",
+      "houseA": "Pitaco",
+      "houseB": "Superbet",
+      "oddA": 5.46,
+      "oddB": 1.38,
+      "total": 1225,
+      "stakeA": 247.14912280701748,
+      "stakeB": 977.8508771929825,
+      "lucro": 124.43421052631538,
+      "roi": 10.157894736842072,
+      "date": "2026-08-01T15:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-31T19:31:24.853Z"
+  "updatedAt": "2026-07-31T23:19:29.227Z"
 }
