@@ -4663,11 +4663,6 @@
       "value": 32
     },
     {
-      "id": "ms7mczdaa6ad4",
-      "name": "Betfast",
-      "value": 0
-    },
-    {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
       "value": 300
@@ -4915,5 +4910,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-31T18:41:42.309Z"
+  "updatedAt": "2026-07-31T18:41:50.640Z"
 }
