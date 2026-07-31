@@ -114,6 +114,16 @@
   .day-center{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--border);}
   .day-val{font-family:var(--mono);font-weight:600;min-width:78px;text-align:right;}
   .day-meta{font-family:var(--mono);color:var(--muted-2);min-width:58px;text-align:right;font-size:10.5px;}
+  .sc-mode{display:flex;gap:6px;margin:10px 0 8px;flex-wrap:wrap;}
+  .sc-mode-opt{display:flex;align-items:center;gap:5px;font-size:11.5px;color:var(--muted);background:#0E1116;border:1px solid var(--border);border-radius:7px;padding:6px 10px;cursor:pointer;flex:1;justify-content:center;}
+  .sc-mode-opt input{accent-color:var(--sky);}
+  .sc-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px;}
+  .sc-table th{text-align:right;color:var(--muted-2);font-size:10px;text-transform:uppercase;letter-spacing:.05em;padding:6px 8px;border-bottom:1px solid var(--border);font-weight:700;}
+  .sc-table th:first-child{text-align:left;}
+  .sc-table td{padding:6px 8px;border-bottom:1px solid var(--border);font-family:var(--mono);text-align:right;}
+  .sc-table td:first-child{text-align:left;font-family:var(--mono);color:var(--muted);}
+  .sc-table tr:last-child td{border-bottom:none;}
+  .sc-table .cum{color:var(--sky);font-weight:600;}
   .insight{padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:12px;}
   .insight.good{background:#0A2018;border:1px solid #1A3D2E;color:var(--green);}
   .insight.warn{background:#2A1A08;border:1px solid #4D3010;color:var(--amber);}
@@ -363,24 +373,44 @@
       <div style="margin-top:8px;"><label>Banca inicial de surebets (R$)</label><input type="number" id="sbBankrollInput" step="0.01" min="0" placeholder="0.00"></div>
     </div>
 
+    <!-- RESULTADO DIÁRIO SUREBET -->
+    <div class="card">
+      <div class="card-title">Resultado diário &amp; crescimento</div>
+      <div id="sbDaily"></div>
+    </div>
+
     <!-- CALCULADORA SUREBET -->
     <div class="card">
       <div class="card-title">Calculadora de Surebet (2 vias)</div>
-      <div class="footnote" style="margin-top:0;">Informe as duas odds e a banca total a distribuir. A calculadora acha a divisão que garante o mesmo retorno independente do resultado.</div>
+      <div class="footnote" style="margin-top:0;">Informe as odds. Escolha o modo: distribuir uma banca total, ou fixar o valor de uma perna e deixar a outra se ajustar automaticamente. Edite qualquer campo e tudo recalcula.</div>
 
       <div class="grid2" style="margin-top:10px;">
-        <div><label>Odd — Resultado A</label><input type="number" id="scOddA" step="0.01" min="1.01" placeholder="2.10"></div>
-        <div><label>Odd — Resultado B</label><input type="number" id="scOddB" step="0.01" min="1.01" placeholder="2.05"></div>
+        <div><label>Casa A</label><input type="text" id="scHouseA" placeholder="Ex: Bet365"></div>
+        <div><label>Casa B</label><input type="text" id="scHouseB" placeholder="Ex: Betano"></div>
       </div>
       <div class="grid2">
-        <div><label>Casa A (opcional)</label><input type="text" id="scHouseA" placeholder="Ex: Bet365"></div>
-        <div><label>Casa B (opcional)</label><input type="text" id="scHouseB" placeholder="Ex: Betano"></div>
+        <div><label>Odd A</label><input type="number" id="scOddA" step="0.01" min="1.01" placeholder="2.10"></div>
+        <div><label>Odd B</label><input type="number" id="scOddB" step="0.01" min="1.01" placeholder="2.05"></div>
       </div>
-      <label>Banca total a distribuir (R$)</label>
-      <input type="number" id="scTotal" step="0.01" min="0" placeholder="1000">
+
+      <div class="sc-mode">
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="total" checked> Distribuir banca total</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixA"> Fixar perna A</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixB"> Fixar perna B</label>
+      </div>
+
+      <div id="scTotalWrap">
+        <label>Banca total a distribuir (R$)</label>
+        <input type="number" id="scTotal" step="0.01" min="0" placeholder="1000">
+      </div>
+
+      <div class="grid2">
+        <div><label>Stake A (R$)</label><input type="number" id="scStakeA" step="0.01" min="0" placeholder="—"></div>
+        <div><label>Stake B (R$)</label><input type="number" id="scStakeB" step="0.01" min="0" placeholder="—"></div>
+      </div>
 
       <div class="risk-preview" id="scResult">
-        <span style="color:var(--muted)">Preencha as duas odds e a banca para ver a distribuição.</span>
+        <span style="color:var(--muted)">Preencha as odds e a banca (ou o stake de uma perna) para ver a distribuição.</span>
       </div>
 
       <div class="grid2">
@@ -1286,55 +1316,93 @@
   /* ============ ABA SUREBET ============ */
   const scEls={
     oddA:$('scOddA'), oddB:$('scOddB'), houseA:$('scHouseA'), houseB:$('scHouseB'),
-    total:$('scTotal'), result:$('scResult'), event:$('scEvent'), date:$('scDate'), register:$('scRegisterBtn')
+    total:$('scTotal'), stakeA:$('scStakeA'), stakeB:$('scStakeB'),
+    totalWrap:$('scTotalWrap'), result:$('scResult'), event:$('scEvent'), date:$('scDate'), register:$('scRegisterBtn')
   };
+  let scMode='total';       // 'total' | 'fixA' | 'fixB'
+  let scLast=null;          // último resultado calculado (para registrar)
 
-  // calcula distribuição de surebet 2 vias
-  function calcSurebet(oddA,oddB,total){
-    const invA=1/oddA, invB=1/oddB;
-    const sumInv=invA+invB;              // < 1 => surebet
-    const stakeA=total*invA/sumInv;
-    const stakeB=total*invB/sumInv;
-    const retorno=stakeA*oddA;            // = stakeB*oddB (igualados)
+  function scGetMode(){
+    const r=document.querySelector('input[name="scMode"]:checked');
+    return r?r.value:'total';
+  }
+
+  // calcula ambos os stakes conforme o modo, mantendo a surebet (retornos iguais)
+  function computeSurebet(){
+    const oddA=parseFloat(scEls.oddA.value), oddB=parseFloat(scEls.oddB.value);
+    if(!(oddA>1)||!(oddB>1)) return null;
+    const invA=1/oddA, invB=1/oddB, sumInv=invA+invB;
+    let stakeA,stakeB;
+    if(scMode==='total'){
+      const total=parseFloat(scEls.total.value);
+      if(!(total>0)) return null;
+      stakeA=total*invA/sumInv;
+      stakeB=total*invB/sumInv;
+    } else if(scMode==='fixA'){
+      stakeA=parseFloat(scEls.stakeA.value);
+      if(!(stakeA>0)) return null;
+      // retorno igual: stakeA*oddA = stakeB*oddB => stakeB = stakeA*oddA/oddB
+      stakeB=stakeA*oddA/oddB;
+    } else { // fixB
+      stakeB=parseFloat(scEls.stakeB.value);
+      if(!(stakeB>0)) return null;
+      stakeA=stakeB*oddB/oddA;
+    }
+    const total=stakeA+stakeB;
+    const retA=stakeA*oddA, retB=stakeB*oddB;
+    const retorno=Math.min(retA,retB);   // retorno garantido (pior caso, se houver desequilíbrio)
     const lucro=retorno-total;
     const roi=total>0?(lucro/total*100):0;
-    return { stakeA, stakeB, retorno, lucro, roi, sumInv, isSure:sumInv<1 };
+    const pctA=total>0?stakeA/total*100:0, pctB=total>0?stakeB/total*100:0;
+    return { oddA,oddB,stakeA,stakeB,total,retA,retB,retorno,lucro,roi,sumInv,pctA,pctB,isSure:sumInv<1 };
   }
 
   function updateSurebetCalc(){
-    const oddA=parseFloat(scEls.oddA.value), oddB=parseFloat(scEls.oddB.value), total=parseFloat(scEls.total.value);
-    if(!(oddA>1)||!(oddB>1)||!(total>0)){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as duas odds e a banca para ver a distribuição.</span>'; return; }
-    const r=calcSurebet(oddA,oddB,total);
+    scMode=scGetMode();
+    // mostrar/ocultar campo de banca total conforme o modo
+    scEls.totalWrap.style.display=(scMode==='total')?'block':'none';
+    const r=computeSurebet();
+    if(!r){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as odds e a banca (ou o stake de uma perna) para ver a distribuição.</span>'; scLast=null; return; }
+    scLast=r;
+    // refletir os stakes calculados nos campos (sem sobrescrever o campo que o usuário está editando)
+    if(scMode!=='fixA') scEls.stakeA.value=r.stakeA.toFixed(2);
+    if(scMode!=='fixB') scEls.stakeB.value=r.stakeB.toFixed(2);
+    if(scMode!=='total') scEls.total.value=r.total.toFixed(2);
+
     const cls=r.isSure?'green':'red';
     const label=r.isSure?`✓ Surebet — lucro garantido ${r.roi.toFixed(2)}%`:`⚠ Não é surebet (margem ${((r.sumInv-1)*100).toFixed(2)}% contra você)`;
     const hA=scEls.houseA.value.trim()||'A', hB=scEls.houseB.value.trim()||'B';
     scEls.result.innerHTML=
       `<div style="color:var(--${cls});font-weight:600;margin-bottom:8px;">${label}</div>`+
       `<div style="font-family:var(--mono);font-size:13px;line-height:1.9;">`+
-      `${esc(hA)} (odd ${oddA.toFixed(2)}): <b>${fmt(r.stakeA)}</b><br>`+
-      `${esc(hB)} (odd ${oddB.toFixed(2)}): <b>${fmt(r.stakeB)}</b><br>`+
-      `<span style="color:var(--muted-2)">Retorno em qualquer resultado: ${fmt(r.retorno)}</span><br>`+
+      `${esc(hA)} @${r.oddA.toFixed(2)}: <b>${fmt(r.stakeA)}</b> <span style="color:var(--muted-2)">(${r.pctA.toFixed(1)}%)</span> → retorno ${fmt(r.retA)}<br>`+
+      `${esc(hB)} @${r.oddB.toFixed(2)}: <b>${fmt(r.stakeB)}</b> <span style="color:var(--muted-2)">(${r.pctB.toFixed(1)}%)</span> → retorno ${fmt(r.retB)}<br>`+
+      `<span style="color:var(--muted-2)">Total investido: ${fmt(r.total)} · retorno garantido: ${fmt(r.retorno)}</span><br>`+
       `<span style="color:var(--${cls})">Lucro: ${fmtSign(r.lucro)} (${r.roi.toFixed(2)}%)</span>`+
       `</div>`;
   }
-  scEls.oddA.addEventListener('input',updateSurebetCalc);
-  scEls.oddB.addEventListener('input',updateSurebetCalc);
-  scEls.total.addEventListener('input',updateSurebetCalc);
-  scEls.houseA.addEventListener('input',updateSurebetCalc);
-  scEls.houseB.addEventListener('input',updateSurebetCalc);
+
+  // recalcula ao mudar odds, banca, stakes ou modo
+  ['scOddA','scOddB','scTotal','scStakeA','scStakeB','scHouseA','scHouseB'].forEach(id=>{
+    $(id).addEventListener('input',updateSurebetCalc);
+  });
+  document.querySelectorAll('input[name="scMode"]').forEach(r=>r.addEventListener('change',()=>{
+    scMode=scGetMode();
+    // ao trocar de modo, limpa os campos de stake para reentrada limpa (exceto no total)
+    updateSurebetCalc();
+  }));
 
   scEls.register.addEventListener('click',()=>{
-    const oddA=parseFloat(scEls.oddA.value), oddB=parseFloat(scEls.oddB.value), total=parseFloat(scEls.total.value);
-    if(!(oddA>1)||!(oddB>1)||!(total>0)){ alert('Preencha as duas odds e a banca.'); return; }
-    const r=calcSurebet(oddA,oddB,total);
+    const r=scLast||computeSurebet();
+    if(!r){ alert('Preencha as odds e a banca (ou o stake de uma perna).'); return; }
     state.surebets.push({
       id:uid(), event:scEls.event.value.trim()||'Operação sem nome',
       houseA:scEls.houseA.value.trim(), houseB:scEls.houseB.value.trim(),
-      oddA, oddB, total, stakeA:r.stakeA, stakeB:r.stakeB, lucro:r.lucro, roi:r.roi,
+      oddA:r.oddA, oddB:r.oddB, total:r.total, stakeA:r.stakeA, stakeB:r.stakeB, lucro:r.lucro, roi:r.roi,
       date:scEls.date.value||nowLocalStr()
     });
-    scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
-    updateSurebetCalc(); saveState(); renderAll();
+    scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
+    scLast=null; updateSurebetCalc(); saveState(); renderAll();
     toast('Operação registrada ✓');
   });
 
@@ -1432,7 +1500,44 @@
     $('tab-'+tab.dataset.tab).classList.add('active');
   }));
 
-  function renderAll(){ renderSummary(); renderDaily(); renderChart(); renderInsights(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); }
+  function renderSurebetDaily(){
+    const box=$('sbDaily');
+    const ops=state.surebets||[];
+    if(!ops.length){ box.innerHTML='<div class="empty" style="padding:8px;">Registre operações para ver o resultado diário.</div>'; return; }
+    // agrupa por dia
+    const days={};
+    ops.forEach(o=>{
+      const d=(o.date||'').slice(0,10)||'—';
+      if(!days[d]) days[d]={n:0,lucro:0,vol:0};
+      days[d].n++; days[d].lucro+=o.lucro; days[d].vol+=o.total;
+    });
+    // ordem cronológica ascendente para acumular, exibe descendente
+    const asc=Object.entries(days).sort((a,b)=>a[0].localeCompare(b[0]));
+    const base=state.sbBankroll||0;
+    let cum=base;
+    const rows=asc.map(([date,d])=>{ cum+=d.lucro; return {date,...d,cum}; });
+    rows.reverse(); // mais recente primeiro
+    box.innerHTML=
+      `<table class="sc-table"><thead><tr>`+
+      `<th>Dia</th><th>Ops</th><th>Volume</th><th>Lucro</th><th>ROI</th><th>Banca acum.</th>`+
+      `</tr></thead><tbody>`+
+      rows.map(r=>{
+        const dd=r.date.slice(8,10)+'/'+r.date.slice(5,7);
+        const roi=r.vol>0?(r.lucro/r.vol*100):0;
+        const lucroCls=r.lucro>=0?'pos':'neg';
+        return `<tr>`+
+          `<td>${dd}</td>`+
+          `<td>${r.n}</td>`+
+          `<td>${fmt(r.vol)}</td>`+
+          `<td class="${lucroCls}">${fmtSign(r.lucro)}</td>`+
+          `<td>${roi>=0?'+':''}${roi.toFixed(2)}%</td>`+
+          `<td class="cum">${fmt(r.cum)}</td>`+
+          `</tr>`;
+      }).join('')+
+      `</tbody></table>`;
+  }
+
+  function renderAll(){ renderSummary(); renderDaily(); renderChart(); renderInsights(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderSurebetDaily(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
