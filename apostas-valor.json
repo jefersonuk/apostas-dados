@@ -4907,8 +4907,22 @@
       "lucro": 2.4158970976253293,
       "roi": 9.663588390501317,
       "date": "2026-07-31T13:31"
+    },
+    {
+      "id": "ms9bin9bxkfpl",
+      "event": "Puebla",
+      "houseA": "Pitaco",
+      "houseB": "Betvip",
+      "oddA": 3.57,
+      "oddB": 1.55,
+      "total": 145,
+      "stakeA": 43.896484375,
+      "stakeB": 101.103515625,
+      "lucro": 11.71044921875,
+      "roi": 8.076171875,
+      "date": "2026-07-31T22:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-31T18:41:50.640Z"
+  "updatedAt": "2026-07-31T19:10:56.832Z"
 }
