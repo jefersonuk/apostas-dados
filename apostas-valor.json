@@ -4921,8 +4921,22 @@
       "lucro": 11.71044921875,
       "roi": 8.076171875,
       "date": "2026-07-31T22:00"
+    },
+    {
+      "id": "ms9c3hgqko9ga",
+      "event": "G3X FC – DesimpaiN",
+      "houseA": "Superbet",
+      "houseB": "Bet365",
+      "oddA": 3.85,
+      "oddB": 1.44,
+      "total": 370,
+      "stakeA": 100.71833648393194,
+      "stakeB": 269.2816635160681,
+      "lucro": 17.76559546313797,
+      "roi": 4.801512287334587,
+      "date": "2026-07-31T17:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-07-31T19:26:09.658Z"
+  "updatedAt": "2026-07-31T19:27:09.099Z"
 }
