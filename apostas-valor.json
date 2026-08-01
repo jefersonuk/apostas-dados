@@ -4520,7 +4520,7 @@
     {
       "id": "mrgvkcbyx38ge",
       "name": "Betboo",
-      "value": 300
+      "value": 333.3
     },
     {
       "id": "mrgvma913rlg3",
@@ -5024,5 +5024,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-01T22:49:01.500Z"
+  "updatedAt": "2026-08-01T22:49:46.222Z"
 }
