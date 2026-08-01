@@ -4999,8 +4999,25 @@
       "roi": 8.434004474272932,
       "date": "2026-08-01T07:30",
       "winner": "B"
+    },
+    {
+      "id": "msaeyf29rb0x9",
+      "event": "Napoli (Gaga) – Bologna (borees)",
+      "houseA": "Betwarrior",
+      "houseB": "Betão",
+      "oddA": 3.1,
+      "oddB": 2.1,
+      "total": 50,
+      "stakeA": 20,
+      "stakeB": 30,
+      "lucroA": 12,
+      "lucroB": 13,
+      "lucro": 12,
+      "roi": 24,
+      "winner": null,
+      "date": "2026-08-01T10:34"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-01T12:37:06.301Z"
+  "updatedAt": "2026-08-01T13:34:57.732Z"
 }
