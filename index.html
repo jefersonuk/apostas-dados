@@ -124,6 +124,34 @@
   .sc-table td:first-child{text-align:left;font-family:var(--mono);color:var(--muted);}
   .sc-table tr:last-child td{border-bottom:none;}
   .sc-table .cum{color:var(--sky);font-weight:600;}
+  /* surebet ops segmentadas */
+  .sb-day-header{display:flex;align-items:center;justify-content:space-between;margin:14px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--sky);}
+  .sb-day-header:first-child{margin-top:0;}
+  .sb-day-title{font-size:14px;font-weight:700;color:var(--text);}
+  .sb-day-title .weekday{color:var(--muted-2);font-weight:500;font-size:12px;margin-left:6px;}
+  .sb-day-sum{font-family:var(--mono);font-size:12px;font-weight:600;}
+  .sb-op{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;overflow:hidden;background:var(--panel-2);}
+  .sb-op-top{display:flex;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;}
+  .sb-time{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0E1520;border:1px solid #1A2C40;border-radius:8px;padding:5px 9px;min-width:52px;}
+  .sb-time .hh{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--sky);line-height:1;}
+  .sb-time .label{font-size:8.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;}
+  .sb-op-mid{flex:1;min-width:0;}
+  .sb-op-event{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:5px;}
+  .sb-houses{display:flex;gap:6px;flex-wrap:wrap;}
+  .sb-house{display:flex;align-items:center;gap:5px;background:#0E1116;border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:11px;}
+  .sb-house .hname{font-weight:600;color:var(--text);}
+  .sb-house .hodd{font-family:var(--mono);color:var(--amber);}
+  .sb-house.hA{border-left:3px solid #38BDF8;}
+  .sb-house.hB{border-left:3px solid #A78BFA;}
+  .sb-house.winner{background:#0A2018;border-color:#1A3D2E;}
+  .sb-house.winner .hname{color:var(--green);}
+  .sb-op-val{text-align:right;white-space:nowrap;}
+  .sb-op-val .lucro{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--green);}
+  .sb-op-val .roi{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);}
+  .sb-op-detail{display:none;padding:10px 12px;border-top:1px solid var(--border);font-family:var(--mono);font-size:12px;line-height:1.9;color:var(--muted);}
+  .sb-op-detail.show{display:block;}
+  .sb-op-detail .leg{display:flex;justify-content:space-between;}
+  .sb-op-detail .legA{color:#7DD3FC;} .sb-op-detail .legB{color:#C4B5FD;}
   .insight{padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:12px;}
   .insight.good{background:#0A2018;border:1px solid #1A3D2E;color:var(--green);}
   .insight.warn{background:#2A1A08;border:1px solid #4D3010;color:var(--amber);}
@@ -394,9 +422,10 @@
       </div>
 
       <div class="sc-mode">
-        <label class="sc-mode-opt"><input type="radio" name="scMode" value="total" checked> Distribuir banca total</label>
-        <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixA"> Fixar perna A</label>
-        <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixB"> Fixar perna B</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="total" checked> Distribuir banca</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixA"> Fixar A (balancear)</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixB"> Fixar B (balancear)</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="livre"> Manual (livre)</label>
       </div>
 
       <div id="scTotalWrap">
@@ -1341,55 +1370,69 @@
     } else if(scMode==='fixA'){
       stakeA=parseFloat(scEls.stakeA.value);
       if(!(stakeA>0)) return null;
-      // retorno igual: stakeA*oddA = stakeB*oddB => stakeB = stakeA*oddA/oddB
-      stakeB=stakeA*oddA/oddB;
-    } else { // fixB
+      stakeB=stakeA*oddA/oddB;   // balanceado
+    } else if(scMode==='fixB'){
       stakeB=parseFloat(scEls.stakeB.value);
       if(!(stakeB>0)) return null;
-      stakeA=stakeB*oddB/oddA;
+      stakeA=stakeB*oddB/oddA;   // balanceado
+    } else { // livre: os dois stakes são digitados independentemente
+      stakeA=parseFloat(scEls.stakeA.value);
+      stakeB=parseFloat(scEls.stakeB.value);
+      if(!(stakeA>0)||!(stakeB>0)) return null;
     }
     const total=stakeA+stakeB;
-    const retA=stakeA*oddA, retB=stakeB*oddB;
-    const retorno=Math.min(retA,retB);   // retorno garantido (pior caso, se houver desequilíbrio)
-    const lucro=retorno-total;
+    const retA=stakeA*oddA, retB=stakeB*oddB;   // retorno se cada lado ganhar
+    const lucroA=retA-total, lucroB=retB-total; // lucro por cenário
+    const retorno=Math.min(retA,retB);
+    const lucro=retorno-total;                  // lucro garantido (pior cenário)
     const roi=total>0?(lucro/total*100):0;
     const pctA=total>0?stakeA/total*100:0, pctB=total>0?stakeB/total*100:0;
-    return { oddA,oddB,stakeA,stakeB,total,retA,retB,retorno,lucro,roi,sumInv,pctA,pctB,isSure:sumInv<1 };
+    return { oddA,oddB,stakeA,stakeB,total,retA,retB,lucroA,lucroB,retorno,lucro,roi,sumInv,pctA,pctB,isSure:sumInv<1 };
   }
 
   function updateSurebetCalc(){
     scMode=scGetMode();
-    // mostrar/ocultar campo de banca total conforme o modo
     scEls.totalWrap.style.display=(scMode==='total')?'block':'none';
     const r=computeSurebet();
-    if(!r){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as odds e a banca (ou o stake de uma perna) para ver a distribuição.</span>'; scLast=null; return; }
+    if(!r){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as odds e os valores para ver o resultado de cada cenário.</span>'; scLast=null; return; }
     scLast=r;
-    // refletir os stakes calculados nos campos (sem sobrescrever o campo que o usuário está editando)
-    if(scMode!=='fixA') scEls.stakeA.value=r.stakeA.toFixed(2);
-    if(scMode!=='fixB') scEls.stakeB.value=r.stakeB.toFixed(2);
-    if(scMode!=='total') scEls.total.value=r.total.toFixed(2);
+    // refletir stakes calculados (sem sobrescrever o que o usuário edita)
+    if(scMode==='total'){ scEls.stakeA.value=r.stakeA.toFixed(2); scEls.stakeB.value=r.stakeB.toFixed(2); }
+    else if(scMode==='fixA'){ scEls.stakeB.value=r.stakeB.toFixed(2); }
+    else if(scMode==='fixB'){ scEls.stakeA.value=r.stakeA.toFixed(2); }
+    // modo livre: não sobrescreve nada
 
-    const cls=r.isSure?'green':'red';
-    const label=r.isSure?`✓ Surebet — lucro garantido ${r.roi.toFixed(2)}%`:`⚠ Não é surebet (margem ${((r.sumInv-1)*100).toFixed(2)}% contra você)`;
-    const hA=scEls.houseA.value.trim()||'A', hB=scEls.houseB.value.trim()||'B';
+    const hA=scEls.houseA.value.trim()||'Casa A', hB=scEls.houseB.value.trim()||'Casa B';
+    // status geral: é surebet se AMBOS os cenários dão lucro >= 0
+    const bothPos=r.lucroA>=-0.005 && r.lucroB>=-0.005;
+    const headCls=bothPos?'green':'red';
+    const headMsg=bothPos
+      ? `✓ Sem perda — lucro garantido nos dois cenários`
+      : `⚠ Cenário com perda — não está coberto`;
+
+    const cA=r.lucroA>=0?'green':'red', cB=r.lucroB>=0?'green':'red';
     scEls.result.innerHTML=
-      `<div style="color:var(--${cls});font-weight:600;margin-bottom:8px;">${label}</div>`+
-      `<div style="font-family:var(--mono);font-size:13px;line-height:1.9;">`+
-      `${esc(hA)} @${r.oddA.toFixed(2)}: <b>${fmt(r.stakeA)}</b> <span style="color:var(--muted-2)">(${r.pctA.toFixed(1)}%)</span> → retorno ${fmt(r.retA)}<br>`+
-      `${esc(hB)} @${r.oddB.toFixed(2)}: <b>${fmt(r.stakeB)}</b> <span style="color:var(--muted-2)">(${r.pctB.toFixed(1)}%)</span> → retorno ${fmt(r.retB)}<br>`+
-      `<span style="color:var(--muted-2)">Total investido: ${fmt(r.total)} · retorno garantido: ${fmt(r.retorno)}</span><br>`+
-      `<span style="color:var(--${cls})">Lucro: ${fmtSign(r.lucro)} (${r.roi.toFixed(2)}%)</span>`+
+      `<div style="color:var(--${headCls});font-weight:600;margin-bottom:8px;">${headMsg}</div>`+
+      `<div style="font-family:var(--mono);font-size:13px;line-height:1.85;">`+
+      `<div style="border-left:3px solid #38BDF8;padding-left:8px;margin-bottom:6px;">`+
+        `<b>${esc(hA)}</b> @${r.oddA.toFixed(2)} · aposta <b>${fmt(r.stakeA)}</b> <span style="color:var(--muted-2)">(${r.pctA.toFixed(1)}%)</span><br>`+
+        `<span style="color:var(--muted-2)">Se ${esc(hA)} vencer:</span> retorno ${fmt(r.retA)} · <span style="color:var(--${cA})">lucro ${fmtSign(r.lucroA)}</span>`+
+      `</div>`+
+      `<div style="border-left:3px solid #A78BFA;padding-left:8px;margin-bottom:8px;">`+
+        `<b>${esc(hB)}</b> @${r.oddB.toFixed(2)} · aposta <b>${fmt(r.stakeB)}</b> <span style="color:var(--muted-2)">(${r.pctB.toFixed(1)}%)</span><br>`+
+        `<span style="color:var(--muted-2)">Se ${esc(hB)} vencer:</span> retorno ${fmt(r.retB)} · <span style="color:var(--${cB})">lucro ${fmtSign(r.lucroB)}</span>`+
+      `</div>`+
+      `<span style="color:var(--muted-2)">Total investido: ${fmt(r.total)}</span>`+
+      (bothPos?`<br><span style="color:var(--green)">Pior caso garantido: ${fmtSign(r.lucro)} (${r.roi.toFixed(2)}%)</span>`:'')+
       `</div>`;
   }
 
-  // recalcula ao mudar odds, banca, stakes ou modo
+  // recalcula ao mudar qualquer campo
   ['scOddA','scOddB','scTotal','scStakeA','scStakeB','scHouseA','scHouseB'].forEach(id=>{
     $(id).addEventListener('input',updateSurebetCalc);
   });
   document.querySelectorAll('input[name="scMode"]').forEach(r=>r.addEventListener('change',()=>{
-    scMode=scGetMode();
-    // ao trocar de modo, limpa os campos de stake para reentrada limpa (exceto no total)
-    updateSurebetCalc();
+    scMode=scGetMode(); updateSurebetCalc();
   }));
 
   scEls.register.addEventListener('click',()=>{
@@ -1398,7 +1441,8 @@
     state.surebets.push({
       id:uid(), event:scEls.event.value.trim()||'Operação sem nome',
       houseA:scEls.houseA.value.trim(), houseB:scEls.houseB.value.trim(),
-      oddA:r.oddA, oddB:r.oddB, total:r.total, stakeA:r.stakeA, stakeB:r.stakeB, lucro:r.lucro, roi:r.roi,
+      oddA:r.oddA, oddB:r.oddB, total:r.total, stakeA:r.stakeA, stakeB:r.stakeB,
+      lucroA:r.lucroA, lucroB:r.lucroB, lucro:r.lucro, roi:r.roi, winner:null,
       date:scEls.date.value||nowLocalStr()
     });
     scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
@@ -1406,9 +1450,16 @@
     toast('Operação registrada ✓');
   });
 
+  // lucro real: se o vencedor foi marcado, usa o cenário real; senão usa o pior caso (garantido/teórico)
+  function sbRealProfit(o){
+    if(o.winner==='A') return (typeof o.lucroA==='number')?o.lucroA:o.lucro;
+    if(o.winner==='B') return (typeof o.lucroB==='number')?o.lucroB:o.lucro;
+    return o.lucro; // não resolvida: mostra o pior caso garantido como estimativa
+  }
+
   function renderSurebetSummary(){
     const ops=state.surebets||[];
-    const profit=ops.reduce((s,o)=>s+o.lucro,0);
+    const profit=ops.reduce((s,o)=>s+sbRealProfit(o),0);
     const volume=ops.reduce((s,o)=>s+o.total,0);
     const banca=(state.sbBankroll||0)+profit;
     const avgRoi=ops.length?ops.reduce((s,o)=>s+o.roi,0)/ops.length:0;
@@ -1427,7 +1478,7 @@
     const base=state.sbBankroll||0;
     if(!ops.length){ svg.innerHTML=''; $('sbChartNote').textContent='Registre operações para ver a evolução.'; return; }
     const pts=[{x:0,val:base}]; let run=base;
-    ops.forEach((o,i)=>{ run+=o.lucro; pts.push({x:i+1,val:run}); });
+    ops.forEach((o,i)=>{ run+=sbRealProfit(o); pts.push({x:i+1,val:run}); });
     const W=780,H=220,pad=30,n=pts.length;
     const vals=pts.map(p=>p.val), min=Math.min(...vals), max=Math.max(...vals), range=(max-min)||1;
     const xFor=i=>pad+(W-2*pad)*(i/(n-1||1));
@@ -1447,29 +1498,73 @@
 
   function renderSurebetList(){
     const list=$('sbList');
-    const ops=[...(state.surebets||[])].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id));
+    const ops=state.surebets||[];
     if(!ops.length){ list.innerHTML='<div class="empty">Nenhuma operação registrada.</div>'; return; }
-    list.innerHTML=ops.map(o=>{
-      const dateStr=fmtDate(o.date);
-      const hA=o.houseA?esc(o.houseA):'A', hB=o.houseB?esc(o.houseB):'B';
-      return `<div class="bet-row">
-        <span class="bet-dot green"></span>
-        <span class="bet-date">${dateStr}</span>
-        <div class="bet-main" data-sbtoggle="${o.id}">
-          <div class="bet-event">${esc(o.event)}</div>
-          <div class="bet-sub">${hA} ${o.oddA.toFixed(2)} / ${hB} ${o.oddB.toFixed(2)} · ${fmt(o.total)}</div>
-        </div>
-        <span class="bet-val pos">${fmtSign(o.lucro)}</span>
-      </div>
-      <div class="bet-detail" data-sbdetail="${o.id}">
-        ${esc(hA)}: ${fmt(o.stakeA)} @ ${o.oddA.toFixed(2)}<br>
-        ${esc(hB)}: ${fmt(o.stakeB)} @ ${o.oddB.toFixed(2)}<br>
-        ROI ${o.roi.toFixed(2)}% · lucro garantido ${fmt(o.lucro)}<br>
-        <div style="display:flex;gap:6px;margin-top:6px;">
-          <button class="btn small" data-sbdel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
-        </div>
+
+    // agrupa por dia (YYYY-MM-DD)
+    const byDay={};
+    ops.forEach(o=>{ const d=(o.date||'').slice(0,10)||'—'; (byDay[d]=byDay[d]||[]).push(o); });
+    // dias em ordem decrescente (mais recente no topo)
+    const days=Object.keys(byDay).sort((a,b)=>b.localeCompare(a));
+    const weekdays=['dom','seg','ter','qua','qui','sex','sáb'];
+
+    let html='';
+    days.forEach(day=>{
+      // operações do dia ordenadas por HORÁRIO ascendente (jogo mais cedo primeiro)
+      const dayOps=byDay[day].sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
+      const dayProfit=dayOps.reduce((s,o)=>s+sbRealProfit(o),0);
+      const dd=day==='—'?'Sem data':(day.slice(8,10)+'/'+day.slice(5,7)+'/'+day.slice(0,4));
+      let wd='';
+      if(day!=='—'){ const dt=new Date(day+'T12:00:00'); wd=weekdays[dt.getDay()]; }
+      html+=`<div class="sb-day-header">
+        <div class="sb-day-title">${dd}${wd?`<span class="weekday">${wd}</span>`:''}</div>
+        <div class="sb-day-sum ${dayProfit>=0?'pos':'neg'}">${fmtSign(dayProfit)} · ${dayOps.length} op${dayOps.length>1?'s':''}</div>
       </div>`;
-    }).join('');
+      dayOps.forEach(o=>{
+        const hh=(o.date||'').slice(11,16)||'--:--';
+        const hA=o.houseA?esc(o.houseA):'Casa A', hB=o.houseB?esc(o.houseB):'Casa B';
+        const realProfit=sbRealProfit(o);
+        const resolved=!!o.winner;
+        const statusDot=resolved?'green':'pendente';
+        html+=`<div class="sb-op">
+          <div class="sb-op-top" data-sbtoggle="${o.id}">
+            <div class="sb-time"><span class="hh">${hh}</span><span class="label">jogo</span></div>
+            <div class="sb-op-mid">
+              <div class="sb-op-event"><span class="bet-dot ${statusDot}" style="margin-right:6px;"></span>${esc(o.event)}</div>
+              <div class="sb-houses">
+                <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
+                <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
+              </div>
+            </div>
+            <div class="sb-op-val">
+              <div class="lucro">${fmtSign(realProfit)}</div>
+              <div class="roi">${resolved?(o.winner==='A'?'ganhou A':'ganhou B'):'pendente'}</div>
+            </div>
+          </div>
+          <div class="sb-op-detail" data-sbdetail="${o.id}">
+            <div class="leg legA"><span>${hA} · aposta @${o.oddA.toFixed(2)}</span><span>${fmt(o.stakeA)}</span></div>
+            <div class="leg legB"><span>${hB} · aposta @${o.oddB.toFixed(2)}</span><span>${fmt(o.stakeB)}</span></div>
+            <div class="leg" style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Total investido</span><span>${fmt(o.total)}</span></div>
+            <div class="leg"><span>Se ${hA} vencer</span><span style="color:${(o.lucroA??o.lucro)>=0?'var(--green)':'var(--red)'}">${fmtSign(o.lucroA??o.lucro)}</span></div>
+            <div class="leg"><span>Se ${hB} vencer</span><span style="color:${(o.lucroB??o.lucro)>=0?'var(--green)':'var(--red)'}">${fmtSign(o.lucroB??o.lucro)}</span></div>
+            <div class="leg" style="color:var(--sky);border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Resultado real</span><span>${resolved?fmtSign(realProfit):'aguardando'}</span></div>
+            <div style="margin-top:10px;">
+              <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Marcar casa vencedora</div>
+              <div style="display:flex;gap:6px;">
+                <button class="btn small ${o.winner==='A'?'primary':''}" data-sbwin="${o.id}:A">${hA} venceu</button>
+                <button class="btn small ${o.winner==='B'?'primary':''}" data-sbwin="${o.id}:B">${hB} venceu</button>
+                ${o.winner?`<button class="btn small" data-sbwin="${o.id}:">Limpar</button>`:''}
+              </div>
+            </div>
+            <div style="display:flex;gap:6px;margin-top:8px;">
+              <button class="btn small" data-sbdel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir operação</button>
+            </div>
+          </div>
+        </div>`;
+      });
+    });
+    list.innerHTML=html;
+
     list.querySelectorAll('[data-sbtoggle]').forEach(el=>el.addEventListener('click',()=>{
       const d=list.querySelector(`[data-sbdetail="${el.dataset.sbtoggle}"]`);
       if(d) d.classList.toggle('show');
@@ -1478,12 +1573,18 @@
       e.stopPropagation(); const o=state.surebets.find(x=>x.id===btn.dataset.sbdel);
       if(o&&confirm(`Excluir "${o.event}"?`)){ state.surebets=state.surebets.filter(x=>x.id!==btn.dataset.sbdel); saveState(); renderAll(); }
     }));
+    list.querySelectorAll('[data-sbwin]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const [id,w]=btn.dataset.sbwin.split(':');
+      const o=state.surebets.find(x=>x.id===id);
+      if(o){ o.winner=w||null; saveState(); renderAll(); }
+    }));
   }
 
   $('sbCopyBtn').addEventListener('click',()=>{
     const ops=[...(state.surebets||[])].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
-    const lines=[['Data','Evento','CasaA','OddA','StakeA','CasaB','OddB','StakeB','Total','Lucro','ROI%'].join('\t')];
-    ops.forEach(o=>lines.push([(o.date||'').replace('T',' '),o.event,o.houseA||'',o.oddA.toFixed(2),o.stakeA.toFixed(2),o.houseB||'',o.oddB.toFixed(2),o.stakeB.toFixed(2),o.total.toFixed(2),o.lucro.toFixed(2),o.roi.toFixed(2)].join('\t')));
+    const lines=[['Data','Evento','CasaA','OddA','StakeA','CasaB','OddB','StakeB','Total','Vencedor','LucroReal','ROI%'].join('\t')];
+    ops.forEach(o=>lines.push([(o.date||'').replace('T',' '),o.event,o.houseA||'',o.oddA.toFixed(2),o.stakeA.toFixed(2),o.houseB||'',o.oddB.toFixed(2),o.stakeB.toFixed(2),o.total.toFixed(2),o.winner||'pendente',sbRealProfit(o).toFixed(2),o.roi.toFixed(2)].join('\t')));
     navigator.clipboard.writeText(lines.join('\n')).then(()=>toast('Copiado ✓')).catch(()=>alert('Não foi possível copiar.'));
   });
 
@@ -1509,7 +1610,7 @@
     ops.forEach(o=>{
       const d=(o.date||'').slice(0,10)||'—';
       if(!days[d]) days[d]={n:0,lucro:0,vol:0};
-      days[d].n++; days[d].lucro+=o.lucro; days[d].vol+=o.total;
+      days[d].n++; days[d].lucro+=sbRealProfit(o); days[d].vol+=o.total;
     });
     // ordem cronológica ascendente para acumular, exibe descendente
     const asc=Object.entries(days).sort((a,b)=>a[0].localeCompare(b[0]));
