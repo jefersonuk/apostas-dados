@@ -4620,7 +4620,7 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 22086
+      "value": 25086.27
     },
     {
       "id": "mrvdbif64wnfw",
@@ -4977,8 +4977,22 @@
       "lucro": 34.1677631578948,
       "roi": 5.024671052631588,
       "date": "2026-08-01T01:00"
+    },
+    {
+      "id": "msa2z5v16jse2",
+      "event": "Red lions x Lanzhou",
+      "houseA": "Betnacional",
+      "houseB": "Superbet",
+      "oddA": 2.62,
+      "oddB": 1.85,
+      "total": 440,
+      "stakeA": 182.1029082774049,
+      "stakeB": 257.89709172259506,
+      "lucro": 37.1096196868009,
+      "roi": 8.434004474272932,
+      "date": "2026-08-01T07:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-01T00:22:23.095Z"
+  "updatedAt": "2026-08-01T07:59:37.074Z"
 }
