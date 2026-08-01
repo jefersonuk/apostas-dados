@@ -4570,7 +4570,7 @@
     {
       "id": "mricm6v4hbqxz",
       "name": "Betvip",
-      "value": 100
+      "value": 255
     },
     {
       "id": "mrjd3s2tnko13",
@@ -5024,5 +5024,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-01T22:46:08.802Z"
+  "updatedAt": "2026-08-01T22:46:52.551Z"
 }
