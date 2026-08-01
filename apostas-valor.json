@@ -4595,7 +4595,7 @@
     {
       "id": "mrqfw8wuhoz55",
       "name": "Betão",
-      "value": 280
+      "value": 319.9
     },
     {
       "id": "mrqgbm24pa9kf",
@@ -5024,5 +5024,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-01T22:45:24.330Z"
+  "updatedAt": "2026-08-01T22:45:40.126Z"
 }
