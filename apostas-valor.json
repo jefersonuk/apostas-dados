@@ -5022,8 +5022,25 @@
       "roi": 24,
       "winner": "A",
       "date": "2026-08-01T10:34"
+    },
+    {
+      "id": "msd7wrpant5h2",
+      "event": "Ribero Franco x Cazacu Dragos",
+      "houseA": "Betsson",
+      "houseB": "Meridian",
+      "oddA": 1.64,
+      "oddB": 2.9,
+      "total": 305,
+      "stakeA": 195,
+      "stakeB": 110,
+      "lucroA": 14.799999999999955,
+      "lucroB": 14,
+      "lucro": 14,
+      "roi": 4.590163934426229,
+      "winner": null,
+      "date": "2026-08-03T10:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T12:34:43.697Z"
+  "updatedAt": "2026-08-03T12:41:02.014Z"
 }
