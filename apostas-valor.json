@@ -4671,6 +4671,11 @@
       "id": "msan29jv5dft4",
       "name": "BetMGM",
       "value": 1519.1
+    },
+    {
+      "id": "msd8uqystuub5",
+      "name": "Parasino",
+      "value": 0
     }
   ],
   "aportes": [],
@@ -5042,5 +5047,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T13:04:14.537Z"
+  "updatedAt": "2026-08-03T13:07:27.364Z"
 }
