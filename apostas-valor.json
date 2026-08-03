@@ -5215,8 +5215,25 @@
       "roi": 12.066666666666661,
       "winner": null,
       "date": "2026-08-04T12:00"
+    },
+    {
+      "id": "msdpd9g62xtbc",
+      "event": "Monfils x Kamil Majchrzak",
+      "houseA": "Epicbet",
+      "houseB": "Casinozer",
+      "oddA": 2.7,
+      "oddB": 1.8,
+      "total": 212,
+      "stakeA": 84,
+      "stakeB": 128,
+      "lucroA": 14.800000000000011,
+      "lucroB": 18.400000000000006,
+      "lucro": 14.800000000000011,
+      "roi": 6.981132075471703,
+      "winner": null,
+      "date": "2026-08-03T22:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T20:31:28.292Z"
+  "updatedAt": "2026-08-03T20:49:44.983Z"
 }
