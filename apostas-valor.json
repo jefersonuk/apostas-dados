@@ -5171,8 +5171,25 @@
       "roi": 6.014934289127825,
       "winner": null,
       "date": "2026-08-03T15:00"
+    },
+    {
+      "id": "msdkj6m2lsexb",
+      "event": "Adam Walton x Jenson Broksby",
+      "houseA": "Luva",
+      "houseB": "Epicbet",
+      "oddA": 2,
+      "oddB": 7,
+      "total": 96,
+      "stakeA": 75,
+      "stakeB": 21,
+      "lucroA": 54,
+      "lucroB": 51,
+      "lucro": 51,
+      "roi": 53.125,
+      "winner": null,
+      "date": "2026-08-03T18:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T18:26:16.789Z"
+  "updatedAt": "2026-08-03T18:34:23.162Z"
 }
