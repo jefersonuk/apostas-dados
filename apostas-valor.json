@@ -5081,8 +5081,25 @@
       "roi": 12.615384615384627,
       "winner": null,
       "date": "2026-08-03T13:30"
+    },
+    {
+      "id": "msddx6g0nwasc",
+      "event": "Colombia x Trinidad e Tobago",
+      "houseA": "Betboo",
+      "houseB": "Ivibet",
+      "oddA": 1.95,
+      "oddB": 2.94,
+      "total": 300,
+      "stakeA": 180.3680981595092,
+      "stakeB": 119.63190184049077,
+      "lucroA": 51.717791411042924,
+      "lucroB": 51.71779141104287,
+      "lucro": 51.71779141104287,
+      "roi": 17.239263803680956,
+      "winner": null,
+      "date": "2026-08-03T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:26:57.624Z"
+  "updatedAt": "2026-08-03T15:29:18.817Z"
 }
