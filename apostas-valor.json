@@ -5071,23 +5071,6 @@
       "date": "2026-08-03T10:30"
     },
     {
-      "id": "msddbxxo942wu",
-      "event": "Talia gibson x cocciaretto",
-      "houseA": "Epicbet",
-      "houseB": "Casinozer",
-      "oddA": 3.65,
-      "oddB": 1.83,
-      "total": 195,
-      "stakeA": 75,
-      "stakeB": 120,
-      "lucroA": 78.75,
-      "lucroB": 24.600000000000023,
-      "lucro": 24.600000000000023,
-      "roi": 12.615384615384627,
-      "winner": null,
-      "date": "2026-08-03T13:30"
-    },
-    {
       "id": "msddx6g0nwasc",
       "event": "Colombia x Trinidad e Tobago",
       "houseA": "Betboo",
@@ -5191,5 +5174,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T19:32:39.462Z"
+  "updatedAt": "2026-08-03T19:32:51.498Z"
 }
