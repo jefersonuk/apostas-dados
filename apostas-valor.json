@@ -5249,8 +5249,25 @@
       "roi": 9.857125705366789,
       "winner": null,
       "date": "2026-08-03T18:53"
+    },
+    {
+      "id": "msdsyoj8482rk",
+      "event": "Lorenzo Sonego – Tallon Griekspoor",
+      "houseA": "Casinozer",
+      "houseB": "Epicbet",
+      "oddA": 2.22,
+      "oddB": 2.25,
+      "total": 84.56756756756756,
+      "stakeA": 42.567567567567565,
+      "stakeB": 42,
+      "lucroA": 9.932432432432435,
+      "lucroB": 9.932432432432435,
+      "lucro": 9.932432432432435,
+      "roi": 11.744966442953023,
+      "winner": null,
+      "date": "2026-08-04T11:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T21:56:45.197Z"
+  "updatedAt": "2026-08-03T22:30:23.161Z"
 }
