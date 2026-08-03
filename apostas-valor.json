@@ -4681,6 +4681,11 @@
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
       "value": 0
+    },
+    {
+      "id": "msddfl9dohdf9",
+      "name": "Epicbet",
+      "value": 225
     }
   ],
   "aportes": [],
@@ -5069,5 +5074,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:12:48.012Z"
+  "updatedAt": "2026-08-03T15:15:38.209Z"
 }
