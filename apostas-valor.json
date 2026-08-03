@@ -4706,6 +4706,11 @@
       "id": "msdo3we6tcksb",
       "name": "C@sobet",
       "value": 150
+    },
+    {
+      "id": "msdo40ziujrhq",
+      "name": "Thunderpick",
+      "value": 150
     }
   ],
   "aportes": [],
@@ -5196,5 +5201,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T20:14:28.542Z"
+  "updatedAt": "2026-08-03T20:14:34.494Z"
 }
