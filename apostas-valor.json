@@ -4590,7 +4590,7 @@
     {
       "id": "mrqfe6f9kfukr",
       "name": "Estrela",
-      "value": 300
+      "value": 0
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -5042,5 +5042,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T13:03:44.798Z"
+  "updatedAt": "2026-08-03T13:04:01.089Z"
 }
