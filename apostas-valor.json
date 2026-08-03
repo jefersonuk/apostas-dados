@@ -5171,8 +5171,25 @@
       "roi": 53.125,
       "winner": null,
       "date": "2026-08-03T18:30"
+    },
+    {
+      "id": "msdnt24se0quv",
+      "event": "Huracan x Tucuman",
+      "houseA": "Thunderpick",
+      "houseB": "Luva",
+      "oddA": 2.06,
+      "oddB": 2.4,
+      "total": 67,
+      "stakeA": 35,
+      "stakeB": 32,
+      "lucroA": 5.1000000000000085,
+      "lucroB": 9.799999999999997,
+      "lucro": 5.1000000000000085,
+      "roi": 7.611940298507476,
+      "winner": null,
+      "date": "2026-08-03T21:15"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T19:37:50.060Z"
+  "updatedAt": "2026-08-03T20:06:02.764Z"
 }
