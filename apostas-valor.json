@@ -4701,6 +4701,11 @@
       "id": "msdee34ivpnvx",
       "name": "Jetcasino",
       "value": 200
+    },
+    {
+      "id": "msdo3we6tcksb",
+      "name": "C@sobet",
+      "value": 150
     }
   ],
   "aportes": [],
@@ -5191,5 +5196,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T20:06:02.764Z"
+  "updatedAt": "2026-08-03T20:14:28.542Z"
 }
