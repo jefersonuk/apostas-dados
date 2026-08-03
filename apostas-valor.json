@@ -5103,8 +5103,25 @@
       "roi": 17.239263803680956,
       "winner": null,
       "date": "2026-08-03T15:00"
+    },
+    {
+      "id": "msdegu4msbro1",
+      "event": "Danial x Ryo",
+      "houseA": "Jetcasino",
+      "houseB": "Bet365",
+      "oddA": 1.73,
+      "oddB": 3.4,
+      "total": 300,
+      "stakeA": 200,
+      "stakeB": 100,
+      "lucroA": 46,
+      "lucroB": 40,
+      "lucro": 40,
+      "roi": 13.333333333333334,
+      "winner": null,
+      "date": "2026-08-04T05:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:42:27.667Z"
+  "updatedAt": "2026-08-03T15:44:35.974Z"
 }
