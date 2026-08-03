@@ -4686,6 +4686,11 @@
       "id": "msddfl9dohdf9",
       "name": "Epicbet",
       "value": 225
+    },
+    {
+      "id": "msddfxwzvj74u",
+      "name": "Casinozer",
+      "value": 250
     }
   ],
   "aportes": [],
@@ -5074,5 +5079,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:15:38.209Z"
+  "updatedAt": "2026-08-03T15:15:54.611Z"
 }
