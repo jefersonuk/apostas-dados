@@ -5137,8 +5137,25 @@
       "roi": 13.333333333333334,
       "winner": null,
       "date": "2026-08-03T15:45"
+    },
+    {
+      "id": "msdgeesxpbd4e",
+      "event": "Nikola Bartunkova – Bianca Andreescu",
+      "houseA": "Epicbet",
+      "houseB": "Casinozer",
+      "oddA": 2.9,
+      "oddB": 1.75,
+      "total": 217.5,
+      "stakeA": 82.5,
+      "stakeB": 135,
+      "lucroA": 21.75,
+      "lucroB": 18.75,
+      "lucro": 18.75,
+      "roi": 8.620689655172415,
+      "winner": null,
+      "date": "2026-08-03T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:49:40.327Z"
+  "updatedAt": "2026-08-03T16:38:42.037Z"
 }
