@@ -5154,8 +5154,25 @@
       "roi": 8.620689655172415,
       "winner": null,
       "date": "2026-08-03T15:00"
+    },
+    {
+      "id": "msdiegtmmi6th",
+      "event": "Fritz x jodar",
+      "houseA": "",
+      "houseB": "",
+      "oddA": 2.4,
+      "oddB": 2.06,
+      "total": 133.92000000000002,
+      "stakeA": 65,
+      "stakeB": 68.92,
+      "lucroA": 22.079999999999984,
+      "lucroB": 8.055199999999985,
+      "lucro": 8.055199999999985,
+      "roi": 6.014934289127825,
+      "winner": null,
+      "date": "2026-08-03T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T16:38:42.037Z"
+  "updatedAt": "2026-08-03T17:34:43.882Z"
 }
