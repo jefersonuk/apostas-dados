@@ -5266,8 +5266,25 @@
       "roi": 11.744966442953023,
       "winner": null,
       "date": "2026-08-04T11:00"
+    },
+    {
+      "id": "msduvvlbd50k2",
+      "event": "UMF Selfoss – Ymir",
+      "houseA": "EPICBET",
+      "houseB": "CASOBET",
+      "oddA": 2.4,
+      "oddB": 1.88,
+      "total": 97,
+      "stakeA": 41,
+      "stakeB": 56,
+      "lucroA": 1.3999999999999915,
+      "lucroB": 8.280000000000001,
+      "lucro": 1.3999999999999915,
+      "roi": 1.4432989690721563,
+      "winner": null,
+      "date": "2026-08-04T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T22:32:39.992Z"
+  "updatedAt": "2026-08-03T23:24:11.575Z"
 }
