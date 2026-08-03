@@ -5198,8 +5198,25 @@
       "roi": 7.611940298507476,
       "winner": null,
       "date": "2026-08-03T21:15"
+    },
+    {
+      "id": "msdonubi2qyxn",
+      "event": "UB ALMA MATER X MOVISTAR KOI FENIX",
+      "houseA": "Ivibet",
+      "houseB": "Casobet",
+      "oddA": 2.46,
+      "oddB": 2.06,
+      "total": 540,
+      "stakeA": 246,
+      "stakeB": 294,
+      "lucroA": 65.15999999999997,
+      "lucroB": 65.63999999999999,
+      "lucro": 65.15999999999997,
+      "roi": 12.066666666666661,
+      "winner": null,
+      "date": "2026-08-04T12:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T20:14:34.494Z"
+  "updatedAt": "2026-08-03T20:29:58.974Z"
 }
