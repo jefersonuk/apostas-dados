@@ -4691,6 +4691,11 @@
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
       "value": 174.88
+    },
+    {
+      "id": "msddu5i007wwm",
+      "name": "Ivibet",
+      "value": 250
     }
   ],
   "aportes": [],
@@ -5079,5 +5084,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:23:57.636Z"
+  "updatedAt": "2026-08-03T15:26:57.624Z"
 }
