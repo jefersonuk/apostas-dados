@@ -4696,6 +4696,11 @@
       "id": "msddu5i007wwm",
       "name": "Ivibet",
       "value": 250
+    },
+    {
+      "id": "msdee34ivpnvx",
+      "name": "Jetcasino",
+      "value": 200
     }
   ],
   "aportes": [],
@@ -5101,5 +5106,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:29:18.817Z"
+  "updatedAt": "2026-08-03T15:42:27.667Z"
 }
