@@ -5232,8 +5232,25 @@
       "roi": 6.981132075471703,
       "winner": null,
       "date": "2026-08-03T22:00"
+    },
+    {
+      "id": "msdrrfgra6glk",
+      "event": "Yu Hsiou Hsu – Sebastian Gorzny",
+      "houseA": "Betnacional",
+      "houseB": "Jetcasino",
+      "oddA": 1.83,
+      "oddB": 4.4,
+      "total": 249.87,
+      "stakeA": 150,
+      "stakeB": 99.87,
+      "lucroA": 24.629999999999995,
+      "lucroB": 189.55800000000005,
+      "lucro": 24.629999999999995,
+      "roi": 9.857125705366789,
+      "winner": null,
+      "date": "2026-08-03T18:53"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T20:49:44.983Z"
+  "updatedAt": "2026-08-03T21:56:45.197Z"
 }
