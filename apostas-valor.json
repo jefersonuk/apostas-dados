@@ -5120,8 +5120,25 @@
       "roi": 13.333333333333334,
       "winner": null,
       "date": "2026-08-04T05:00"
+    },
+    {
+      "id": "msdencyvh6i36",
+      "event": "Linfield x Crusaders",
+      "houseA": "Ivibet",
+      "houseB": "Pixbet",
+      "oddA": 2.6,
+      "oddB": 2.04,
+      "total": 270,
+      "stakeA": 120,
+      "stakeB": 150,
+      "lucroA": 42,
+      "lucroB": 36,
+      "lucro": 36,
+      "roi": 13.333333333333334,
+      "winner": null,
+      "date": "2026-08-03T15:45"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-03T15:44:35.974Z"
+  "updatedAt": "2026-08-03T15:49:40.327Z"
 }
