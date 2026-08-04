@@ -4605,7 +4605,7 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 0
+      "value": 300
     },
     {
       "id": "msddfl9dohdf9",
@@ -5284,5 +5284,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:47:19.467Z"
+  "updatedAt": "2026-08-04T14:48:28.346Z"
 }
