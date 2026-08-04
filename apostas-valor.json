@@ -4568,16 +4568,6 @@
       "value": 22399.55
     },
     {
-      "id": "mrvdbif64wnfw",
-      "name": "Kalshi",
-      "value": 0
-    },
-    {
-      "id": "mrw5cf0sta6jf",
-      "name": "Onabet",
-      "value": 0
-    },
-    {
       "id": "mrwvr02fexo4s",
       "name": "1xbet",
       "value": 0
@@ -5304,5 +5294,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:43:44.299Z"
+  "updatedAt": "2026-08-04T14:43:54.149Z"
 }
