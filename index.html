@@ -145,6 +145,21 @@
   .sb-house.hB{border-left:3px solid #A78BFA;}
   .sb-house.winner{background:#0A2018;border-color:#1A3D2E;}
   .sb-house.winner .hname{color:var(--green);}
+  /* capital em aberto */
+  .sb-open-box{margin-top:10px;padding:10px 12px;border-radius:9px;background:#2A1A08;border:1px solid #4D3010;font-size:12.5px;line-height:1.7;}
+  .sb-open-box.none{background:#0A2018;border-color:#1A3D2E;}
+  .sb-open-box .big{font-family:var(--mono);font-size:17px;font-weight:700;color:var(--amber);}
+  .sb-open-box.none .big{color:var(--green);font-size:13px;}
+  /* status pendente vs finalizada */
+  .sb-op.pending{border-left:4px solid var(--amber);background:#16120B;}
+  .sb-op.done{border-left:4px solid var(--green);opacity:.82;}
+  .sb-status-badge{display:inline-block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:10px;margin-right:6px;vertical-align:middle;}
+  .sb-status-badge.pending{background:#4D3010;color:var(--amber);}
+  .sb-status-badge.done{background:#1A3D2E;color:var(--green);}
+  .sb-op-val .lucro.pend{color:var(--amber);}
+  .sb-edit{padding:10px 12px;border-top:1px solid var(--border);background:#0E1116;}
+  .sb-edit label{font-size:10px;}
+  .sb-edit input{font-size:12px;padding:6px 8px;margin-bottom:4px;}
   .sb-op-val{text-align:right;white-space:nowrap;}
   .sb-op-val .lucro{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--green);}
   .sb-op-val .roi{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);}
@@ -396,6 +411,7 @@
         <div class="summary-item"><div class="k">Lucro garantido médio</div><div class="v" id="sbAvgLock" style="font-size:14px;">—</div></div>
         <div class="summary-item"><div class="k">Volume total girado</div><div class="v" id="sbVolume" style="font-size:14px;">—</div></div>
       </div>
+      <div class="sb-open-box" id="sbOpenBox"></div>
       <div class="chart-wrap" style="margin-top:12px;"><svg id="sbChartSvg" viewBox="0 0 780 220" preserveAspectRatio="none"></svg></div>
       <div class="footnote" id="sbChartNote"></div>
       <div style="margin-top:8px;"><label>Banca inicial de surebets (R$)</label><input type="number" id="sbBankrollInput" step="0.01" min="0" placeholder="0.00"></div>
@@ -452,6 +468,11 @@
     <!-- LISTA DE OPERAÇÕES -->
     <div class="card">
       <div class="card-title"><span>Operações</span><button class="btn small" id="sbCopyBtn">Copiar p/ planilha</button></div>
+      <div class="filter-row">
+        <div class="filter-btn active" data-sbfilter="all">Todas</div>
+        <div class="filter-btn" data-sbfilter="open">⏳ Em aberto</div>
+        <div class="filter-btn" data-sbfilter="done">✓ Finalizadas</div>
+      </div>
       <div id="sbList"></div>
     </div>
 
@@ -1459,24 +1480,52 @@
 
   function renderSurebetSummary(){
     const ops=state.surebets||[];
-    const profit=ops.reduce((s,o)=>s+sbRealProfit(o),0);
+    const open=ops.filter(o=>!o.winner);
+    const done=ops.filter(o=>!!o.winner);
+    // lucro realizado: só das finalizadas
+    const profit=done.reduce((s,o)=>s+sbRealProfit(o),0);
     const volume=ops.reduce((s,o)=>s+o.total,0);
     const banca=(state.sbBankroll||0)+profit;
-    const avgRoi=ops.length?ops.reduce((s,o)=>s+o.roi,0)/ops.length:0;
-    const avgLock=ops.length?profit/ops.length:0;
+    const avgRoi=done.length?done.reduce((s,o)=>s+o.roi,0)/done.length:0;
+    const avgLock=done.length?profit/done.length:0;
     $('sbBanca').textContent=fmt(banca);
     $('sbProfit').textContent=fmtSign(profit); $('sbProfit').className='v '+(profit>=0?'pos':'neg');
-    $('sbRoi').textContent=ops.length?avgRoi.toFixed(2)+'%':'—'; $('sbRoi').className='v '+(avgRoi>=0?'pos':'neg');
-    $('sbCount').textContent=ops.length||'—';
-    $('sbAvgLock').textContent=ops.length?fmtSign(avgLock):'—';
+    $('sbRoi').textContent=done.length?avgRoi.toFixed(2)+'%':'—'; $('sbRoi').className='v '+(avgRoi>=0?'pos':'neg');
+    $('sbCount').innerHTML=ops.length?`${done.length} <span style="font-size:11px;color:var(--muted-2)">fin.</span> · <span style="color:var(--amber)">${open.length}</span> <span style="font-size:11px;color:var(--muted-2)">aberto</span>`:'—';
+    $('sbAvgLock').textContent=done.length?fmtSign(avgLock):'—';
     $('sbVolume').textContent=ops.length?fmt(volume):'—';
+
+    // caixa de capital em aberto
+    const box=$('sbOpenBox');
+    if(!open.length){
+      box.className='sb-open-box none';
+      box.innerHTML=`<span class="big">✓ Nenhum capital em aberto</span><br><span style="color:var(--muted-2)">Todas as operações estão finalizadas.</span>`;
+    } else {
+      const openTotal=open.reduce((s,o)=>s+o.total,0);
+      const minLucro=open.reduce((s,o)=>s+Math.min(o.lucroA??o.lucro,o.lucroB??o.lucro),0);
+      const maxLucro=open.reduce((s,o)=>s+Math.max(o.lucroA??o.lucro,o.lucroB??o.lucro),0);
+      // casas com capital preso
+      const byHouse={};
+      open.forEach(o=>{
+        if(o.houseA) byHouse[o.houseA]=(byHouse[o.houseA]||0)+o.stakeA;
+        if(o.houseB) byHouse[o.houseB]=(byHouse[o.houseB]||0)+o.stakeB;
+      });
+      const houseList=Object.entries(byHouse).sort((a,b)=>b[1]-a[1])
+        .map(([h,v])=>`${esc(h)} ${fmt(v)}`).join(' · ');
+      box.className='sb-open-box';
+      box.innerHTML=
+        `<span style="color:var(--muted-2);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;">⏳ Capital em jogo (${open.length} operação${open.length>1?'ões':''} não finalizada${open.length>1?'s':''})</span><br>`+
+        `<span class="big">${fmt(openTotal)}</span><br>`+
+        `<span style="color:var(--muted-2)">Retorno esperado: ${fmtSign(minLucro)} a ${fmtSign(maxLucro)}</span>`+
+        (houseList?`<br><span style="color:var(--muted-2);font-size:11px;">Distribuído: ${houseList}</span>`:'');
+    }
   }
 
   function renderSurebetChart(){
     const svg=$('sbChartSvg');
-    const ops=[...(state.surebets||[])].sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
+    const ops=[...(state.surebets||[])].filter(o=>!!o.winner).sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
     const base=state.sbBankroll||0;
-    if(!ops.length){ svg.innerHTML=''; $('sbChartNote').textContent='Registre operações para ver a evolução.'; return; }
+    if(!ops.length){ svg.innerHTML=''; $('sbChartNote').textContent='Finalize operações (marque a casa vencedora) para ver a evolução real.'; return; }
     const pts=[{x:0,val:base}]; let run=base;
     ops.forEach((o,i)=>{ run+=sbRealProfit(o); pts.push({x:i+1,val:run}); });
     const W=780,H=220,pad=30,n=pts.length;
@@ -1496,10 +1545,15 @@
     $('sbChartNote').textContent=`${ops.length} operação(ões) · base ${fmt(base)} → ${fmt(finalVal)} (${fmtSign(delta)})`;
   }
 
+  let sbEditingId=null, sbOpenDetail=null, sbFilter='all';
+
   function renderSurebetList(){
     const list=$('sbList');
-    const ops=state.surebets||[];
+    let ops=state.surebets||[];
     if(!ops.length){ list.innerHTML='<div class="empty">Nenhuma operação registrada.</div>'; return; }
+    if(sbFilter==='open') ops=ops.filter(o=>!o.winner);
+    else if(sbFilter==='done') ops=ops.filter(o=>!!o.winner);
+    if(!ops.length){ list.innerHTML='<div class="empty">Nenhuma operação neste filtro.</div>'; return; }
 
     // agrupa por dia (YYYY-MM-DD)
     const byDay={};
@@ -1525,23 +1579,39 @@
         const hA=o.houseA?esc(o.houseA):'Casa A', hB=o.houseB?esc(o.houseB):'Casa B';
         const realProfit=sbRealProfit(o);
         const resolved=!!o.winner;
-        const statusDot=resolved?'green':'pendente';
-        html+=`<div class="sb-op">
-          <div class="sb-op-top" data-sbtoggle="${o.id}">
-            <div class="sb-time"><span class="hh">${hh}</span><span class="label">jogo</span></div>
-            <div class="sb-op-mid">
-              <div class="sb-op-event"><span class="bet-dot ${statusDot}" style="margin-right:6px;"></span>${esc(o.event)}</div>
-              <div class="sb-houses">
-                <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
-                <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
-              </div>
+        const isEditing=sbEditingId===o.id;
+        const badge=resolved
+          ? `<span class="sb-status-badge done">✓ finalizada</span>`
+          : `<span class="sb-status-badge pending">⏳ em aberto</span>`;
+        const lucroCls=resolved?'lucro':'lucro pend';
+        const lucroTxt=resolved?fmtSign(realProfit):`${fmtSign(o.lucroA??o.lucro)} a ${fmtSign(o.lucroB??o.lucro)}`;
+        const subTxt=resolved?(o.winner==='A'?`ganhou ${hA}`:`ganhou ${hB}`):'aguardando resultado';
+
+        let detailInner;
+        if(isEditing){
+          detailInner=`<div class="sb-edit" id="sbEditForm_${o.id}">
+            <label>Evento</label><input type="text" class="sbed" data-f="event" value="${esc(o.event)}">
+            <div class="grid2">
+              <div><label>Casa A</label><input type="text" class="sbed" data-f="houseA" value="${esc(o.houseA||'')}"></div>
+              <div><label>Casa B</label><input type="text" class="sbed" data-f="houseB" value="${esc(o.houseB||'')}"></div>
             </div>
-            <div class="sb-op-val">
-              <div class="lucro">${fmtSign(realProfit)}</div>
-              <div class="roi">${resolved?(o.winner==='A'?'ganhou A':'ganhou B'):'pendente'}</div>
+            <div class="grid2">
+              <div><label>Odd A</label><input type="number" class="sbed" data-f="oddA" step="0.01" value="${o.oddA}"></div>
+              <div><label>Odd B</label><input type="number" class="sbed" data-f="oddB" step="0.01" value="${o.oddB}"></div>
             </div>
-          </div>
-          <div class="sb-op-detail" data-sbdetail="${o.id}">
+            <div class="grid2">
+              <div><label>Stake A (R$)</label><input type="number" class="sbed" data-f="stakeA" step="0.01" value="${o.stakeA.toFixed(2)}"></div>
+              <div><label>Stake B (R$)</label><input type="number" class="sbed" data-f="stakeB" step="0.01" value="${o.stakeB.toFixed(2)}"></div>
+            </div>
+            <label>Data / horário do jogo</label>
+            <input type="datetime-local" class="sbed" data-f="date" value="${(o.date||'').slice(0,16)}">
+            <div style="display:flex;gap:6px;margin-top:8px;">
+              <button class="btn small primary" data-sbsave="${o.id}">Salvar</button>
+              <button class="btn small" data-sbcancel="${o.id}">Cancelar</button>
+            </div>
+          </div>`;
+        } else {
+          detailInner=`<div class="sb-op-detail${sbOpenDetail===o.id?' show':''}" data-sbdetail="${o.id}">
             <div class="leg legA"><span>${hA} · aposta @${o.oddA.toFixed(2)}</span><span>${fmt(o.stakeA)}</span></div>
             <div class="leg legB"><span>${hB} · aposta @${o.oddB.toFixed(2)}</span><span>${fmt(o.stakeB)}</span></div>
             <div class="leg" style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Total investido</span><span>${fmt(o.total)}</span></div>
@@ -1550,28 +1620,49 @@
             <div class="leg" style="color:var(--sky);border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Resultado real</span><span>${resolved?fmtSign(realProfit):'aguardando'}</span></div>
             <div style="margin-top:10px;">
               <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Marcar casa vencedora</div>
-              <div style="display:flex;gap:6px;">
+              <div style="display:flex;gap:6px;flex-wrap:wrap;">
                 <button class="btn small ${o.winner==='A'?'primary':''}" data-sbwin="${o.id}:A">${hA} venceu</button>
                 <button class="btn small ${o.winner==='B'?'primary':''}" data-sbwin="${o.id}:B">${hB} venceu</button>
-                ${o.winner?`<button class="btn small" data-sbwin="${o.id}:">Limpar</button>`:''}
+                ${o.winner?`<button class="btn small" data-sbwin="${o.id}:">Reabrir</button>`:''}
               </div>
             </div>
-            <div style="display:flex;gap:6px;margin-top:8px;">
-              <button class="btn small" data-sbdel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir operação</button>
+            <div style="display:flex;gap:6px;margin-top:10px;">
+              <button class="btn small" data-sbedit="${o.id}">Editar dados</button>
+              <button class="btn small" data-sbdel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
+            </div>
+          </div>`;
+        }
+
+        html+=`<div class="sb-op ${resolved?'done':'pending'}">
+          <div class="sb-op-top" data-sbtoggle="${o.id}">
+            <div class="sb-time"><span class="hh">${hh}</span><span class="label">jogo</span></div>
+            <div class="sb-op-mid">
+              <div class="sb-op-event">${badge}${esc(o.event)}</div>
+              <div class="sb-houses">
+                <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
+                <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
+              </div>
+            </div>
+            <div class="sb-op-val">
+              <div class="${lucroCls}">${lucroTxt}</div>
+              <div class="roi">${subTxt}</div>
             </div>
           </div>
+          ${detailInner}
         </div>`;
       });
     });
     list.innerHTML=html;
 
     list.querySelectorAll('[data-sbtoggle]').forEach(el=>el.addEventListener('click',()=>{
-      const d=list.querySelector(`[data-sbdetail="${el.dataset.sbtoggle}"]`);
-      if(d) d.classList.toggle('show');
+      const id=el.dataset.sbtoggle;
+      if(sbEditingId===id) return;
+      sbOpenDetail = sbOpenDetail===id?null:id;
+      renderSurebetList();
     }));
     list.querySelectorAll('[data-sbdel]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); const o=state.surebets.find(x=>x.id===btn.dataset.sbdel);
-      if(o&&confirm(`Excluir "${o.event}"?`)){ state.surebets=state.surebets.filter(x=>x.id!==btn.dataset.sbdel); saveState(); renderAll(); }
+      if(o&&confirm(`Excluir "${o.event}"?`)){ state.surebets=state.surebets.filter(x=>x.id!==btn.dataset.sbdel); sbOpenDetail=null; sbEditingId=null; saveState(); renderAll(); }
     }));
     list.querySelectorAll('[data-sbwin]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation();
@@ -1579,7 +1670,43 @@
       const o=state.surebets.find(x=>x.id===id);
       if(o){ o.winner=w||null; saveState(); renderAll(); }
     }));
+    list.querySelectorAll('[data-sbedit]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation(); sbEditingId=btn.dataset.sbedit; sbOpenDetail=btn.dataset.sbedit; renderSurebetList();
+    }));
+    list.querySelectorAll('[data-sbcancel]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation(); sbEditingId=null; renderSurebetList();
+    }));
+    list.querySelectorAll('[data-sbsave]').forEach(btn=>btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const o=state.surebets.find(x=>x.id===btn.dataset.sbsave); if(!o) return;
+      const form=document.getElementById('sbEditForm_'+o.id); if(!form) return;
+      form.querySelectorAll('.sbed').forEach(inp=>{
+        const f=inp.dataset.f, v=inp.value;
+        if(f==='event') o.event=v.trim()||o.event;
+        else if(f==='houseA') o.houseA=v.trim();
+        else if(f==='houseB') o.houseB=v.trim();
+        else if(f==='oddA'){ const n=parseFloat(v); if(n>1) o.oddA=n; }
+        else if(f==='oddB'){ const n=parseFloat(v); if(n>1) o.oddB=n; }
+        else if(f==='stakeA'){ const n=parseFloat(v); if(n>0) o.stakeA=n; }
+        else if(f==='stakeB'){ const n=parseFloat(v); if(n>0) o.stakeB=n; }
+        else if(f==='date') o.date=v||o.date;
+      });
+      // recalcula os derivados com os novos valores
+      o.total=o.stakeA+o.stakeB;
+      const retA=o.stakeA*o.oddA, retB=o.stakeB*o.oddB;
+      o.lucroA=retA-o.total; o.lucroB=retB-o.total;
+      o.lucro=Math.min(o.lucroA,o.lucroB);
+      o.roi=o.total>0?(o.lucro/o.total*100):0;
+      sbEditingId=null; saveState(); renderAll();
+      toast('Operação atualizada ✓');
+    }));
   }
+
+  // filtro da lista de surebets
+  document.querySelectorAll('[data-sbfilter]').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-sbfilter]').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active'); sbFilter=btn.dataset.sbfilter; sbEditingId=null; renderSurebetList();
+  }));
 
   $('sbCopyBtn').addEventListener('click',()=>{
     const ops=[...(state.surebets||[])].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
@@ -1603,8 +1730,8 @@
 
   function renderSurebetDaily(){
     const box=$('sbDaily');
-    const ops=state.surebets||[];
-    if(!ops.length){ box.innerHTML='<div class="empty" style="padding:8px;">Registre operações para ver o resultado diário.</div>'; return; }
+    const ops=(state.surebets||[]).filter(o=>!!o.winner);
+    if(!ops.length){ box.innerHTML='<div class="empty" style="padding:8px;">Finalize operações (marque a casa vencedora) para ver o resultado diário.</div>'; return; }
     // agrupa por dia
     const days={};
     ops.forEach(o=>{
