@@ -5339,8 +5339,25 @@
       "roi": 9.492868462757514,
       "winner": null,
       "date": "2026-08-04T14:45"
+    },
+    {
+      "id": "msepfv2u81gul",
+      "event": "Roma",
+      "houseA": "Betwarrior",
+      "houseB": "Thunderpick",
+      "oddA": 2.23,
+      "oddB": 2.14,
+      "total": 110,
+      "stakeA": 54,
+      "stakeB": 56,
+      "lucroA": 10.420000000000002,
+      "lucroB": 9.840000000000003,
+      "lucro": 9.840000000000003,
+      "roi": 8.945454545454549,
+      "winner": null,
+      "date": "2026-08-04T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T11:59:33.306Z"
+  "updatedAt": "2026-08-04T13:39:32.503Z"
 }
