@@ -4515,7 +4515,7 @@
     {
       "id": "mrgvjnlmwqrl4",
       "name": "Novibet",
-      "value": 300
+      "value": 0
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -5359,5 +5359,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:34:37.603Z"
+  "updatedAt": "2026-08-04T14:37:40.003Z"
 }
