@@ -5298,8 +5298,25 @@
       "roi": 16.400778210116723,
       "winner": null,
       "date": "2026-08-05T13:00"
+    },
+    {
+      "id": "mseuqcmxfhnam",
+      "event": "ACS PROGRESUL X ACS VOINTA CREVEDIA",
+      "houseA": "Jetcasino",
+      "houseB": "Milhão",
+      "oddA": 1.93,
+      "oddB": 2.6,
+      "total": 469.4300518134715,
+      "stakeA": 269.4300518134715,
+      "stakeB": 200,
+      "lucroA": 50.56994818652851,
+      "lucroB": 50.56994818652851,
+      "lucro": 50.56994818652851,
+      "roi": 10.77262693156733,
+      "winner": null,
+      "date": "2026-08-04T11:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T16:04:35.562Z"
+  "updatedAt": "2026-08-04T16:07:39.897Z"
 }
