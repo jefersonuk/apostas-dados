@@ -5322,8 +5322,25 @@
       "roi": 29.054054054054053,
       "winner": null,
       "date": "2026-08-04T09:30"
+    },
+    {
+      "id": "mselva2cl3sb4",
+      "event": "France U20 (w) – United Kingdom U20 (w)",
+      "houseA": "Casobet",
+      "houseB": "Ivibet",
+      "oddA": 4.9,
+      "oddB": 1.41,
+      "total": 57.94897959183673,
+      "stakeA": 12.948979591836732,
+      "stakeB": 45,
+      "lucroA": 5.5010204081632565,
+      "lucroB": 5.501020408163264,
+      "lucro": 5.5010204081632565,
+      "roi": 9.492868462757514,
+      "winner": null,
+      "date": "2026-08-04T14:45"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T11:42:26.341Z"
+  "updatedAt": "2026-08-04T11:59:33.306Z"
 }
