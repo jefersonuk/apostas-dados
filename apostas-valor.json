@@ -4575,7 +4575,7 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 0
+      "value": 50
     },
     {
       "id": "ms7iedf1byig1",
@@ -5284,5 +5284,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:44:01.604Z"
+  "updatedAt": "2026-08-04T14:44:28.019Z"
 }
