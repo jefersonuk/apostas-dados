@@ -4558,11 +4558,6 @@
       "value": 411.69
     },
     {
-      "id": "mrvd5wwhq7rkj",
-      "name": "Em apostas",
-      "value": 0
-    },
-    {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
       "value": 22399.55
@@ -5289,5 +5284,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:43:58.275Z"
+  "updatedAt": "2026-08-04T14:44:01.604Z"
 }
