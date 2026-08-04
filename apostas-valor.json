@@ -5276,8 +5276,25 @@
       "roi": 7.586206896551724,
       "winner": null,
       "date": "2026-08-04T11:00"
+    },
+    {
+      "id": "mseu2ol8icw3q",
+      "event": "Lazio x Ostiamare",
+      "houseA": "Thunderpick",
+      "houseB": "Vbet",
+      "oddA": 2.94,
+      "oddB": 1.93,
+      "total": 257,
+      "stakeA": 102,
+      "stakeB": 155,
+      "lucroA": 42.879999999999995,
+      "lucroB": 42.14999999999998,
+      "lucro": 42.14999999999998,
+      "roi": 16.400778210116723,
+      "winner": null,
+      "date": "2026-08-05T13:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T15:26:45.044Z"
+  "updatedAt": "2026-08-04T15:49:15.644Z"
 }
