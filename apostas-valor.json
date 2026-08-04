@@ -4641,6 +4641,11 @@
       "id": "mseumeeird6tj",
       "name": "Milhão",
       "value": 200
+    },
+    {
+      "id": "mseutuzodhxpd",
+      "name": "Jogo de ouro",
+      "value": 200
     }
   ],
   "aportes": [],
@@ -5318,5 +5323,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T16:07:39.897Z"
+  "updatedAt": "2026-08-04T16:10:23.652Z"
 }
