@@ -4563,11 +4563,6 @@
       "value": 0
     },
     {
-      "id": "mrvd69ldy1o1z",
-      "name": "Santgreen",
-      "value": 0
-    },
-    {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
       "value": 23683.64
@@ -5309,5 +5304,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:43:24.738Z"
+  "updatedAt": "2026-08-04T14:43:28.177Z"
 }
