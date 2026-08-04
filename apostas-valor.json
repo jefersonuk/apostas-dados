@@ -5373,8 +5373,25 @@
       "roi": 12.7134724857685,
       "winner": null,
       "date": "2026-08-05T08:00"
+    },
+    {
+      "id": "msf3kehmj37k9",
+      "event": "Tirante x Fritz",
+      "houseA": "",
+      "houseB": "",
+      "oddA": 2.17,
+      "oddB": 2.6,
+      "total": 38,
+      "stakeA": 20,
+      "stakeB": 18,
+      "lucroA": 5.399999999999999,
+      "lucroB": 8.800000000000004,
+      "lucro": 5.399999999999999,
+      "roi": 14.21052631578947,
+      "winner": null,
+      "date": "2026-08-05T12:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T19:58:22.188Z"
+  "updatedAt": "2026-08-04T20:14:58.910Z"
 }
