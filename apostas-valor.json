@@ -4631,6 +4631,11 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 200
+    },
+    {
+      "id": "msesofpdcy90h",
+      "name": "Overtimemarket",
+      "value": 250
     }
   ],
   "aportes": [],
@@ -5257,5 +5262,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T15:03:31.120Z"
+  "updatedAt": "2026-08-04T15:10:11.329Z"
 }
