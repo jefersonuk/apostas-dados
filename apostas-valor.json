@@ -4628,11 +4628,6 @@
       "value": 526
     },
     {
-      "id": "msdo3we6tcksb",
-      "name": "C@sobet",
-      "value": 150
-    },
-    {
       "id": "msdo40ziujrhq",
       "name": "Thunderpick",
       "value": 150
@@ -5284,5 +5279,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:57:46.288Z"
+  "updatedAt": "2026-08-04T14:57:53.513Z"
 }
