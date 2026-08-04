@@ -5424,8 +5424,25 @@
       "roi": 11.296842105263154,
       "winner": null,
       "date": "2026-08-04T22:30"
+    },
+    {
+      "id": "msf8f9z5yn9p8",
+      "event": "NK Brinje Grosuplje v Rudar Prijedor",
+      "houseA": "Casobet",
+      "houseB": "Betnacional",
+      "oddA": 2.97,
+      "oddB": 2.1,
+      "total": 61,
+      "stakeA": 25,
+      "stakeB": 36,
+      "lucroA": 13.25,
+      "lucroB": 14.600000000000009,
+      "lucro": 13.25,
+      "roi": 21.721311475409834,
+      "winner": null,
+      "date": "2026-08-05T05:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T22:18:21.339Z"
+  "updatedAt": "2026-08-04T22:30:57.864Z"
 }
