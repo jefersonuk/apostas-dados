@@ -4538,19 +4538,9 @@
       "value": 321.1
     },
     {
-      "id": "mrgvo3wyl82nh",
-      "name": "Betboom",
-      "value": 0.22
-    },
-    {
       "id": "mrgvrivsc6dqm",
       "name": "KTO",
       "value": 119.67
-    },
-    {
-      "id": "mrgvsm1zamouv",
-      "name": "Brbet",
-      "value": 0
     },
     {
       "id": "mrgvt68edox8t",
@@ -4558,29 +4548,9 @@
       "value": 5961.85
     },
     {
-      "id": "mrh13j589laju",
-      "name": "Pixbet",
-      "value": 0.59
-    },
-    {
-      "id": "mri7as4pg7i99",
-      "name": "Faz1bet",
-      "value": 0
-    },
-    {
       "id": "mricm6v4hbqxz",
       "name": "Betvip",
       "value": 255
-    },
-    {
-      "id": "mrjd3s2tnko13",
-      "name": "Betsul",
-      "value": 0
-    },
-    {
-      "id": "mrjjd3fsmdo54",
-      "name": "Aposta1",
-      "value": 0
     },
     {
       "id": "mrqepyieyl3gk",
@@ -5359,5 +5329,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:38:52.554Z"
+  "updatedAt": "2026-08-04T14:41:35.429Z"
 }
