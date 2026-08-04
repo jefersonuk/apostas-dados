@@ -5390,8 +5390,25 @@
       "roi": 14.21052631578947,
       "winner": null,
       "date": "2026-08-05T12:00"
+    },
+    {
+      "id": "msf41fg99j9n3",
+      "event": "Argentina x Paraguai",
+      "houseA": "Betboo",
+      "houseB": "Ivibet",
+      "oddA": 1.85,
+      "oddB": 2.65,
+      "total": 260,
+      "stakeA": 153,
+      "stakeB": 107,
+      "lucroA": 23.05000000000001,
+      "lucroB": 23.55000000000001,
+      "lucro": 23.05000000000001,
+      "roi": 8.86538461538462,
+      "winner": null,
+      "date": "2026-08-04T21:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T20:20:03.411Z"
+  "updatedAt": "2026-08-04T20:28:13.310Z"
 }
