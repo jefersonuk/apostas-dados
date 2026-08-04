@@ -4645,12 +4645,12 @@
     {
       "id": "mseutuzodhxpd",
       "name": "Jogo de ouro",
-      "value": 400
+      "value": 0
     },
     {
       "id": "msewm3oh3mb30",
       "name": "Aposta1",
-      "value": 400
+      "value": 0
     }
   ],
   "aportes": [],
@@ -5376,5 +5376,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T17:25:24.799Z"
+  "updatedAt": "2026-08-04T17:46:34.380Z"
 }
