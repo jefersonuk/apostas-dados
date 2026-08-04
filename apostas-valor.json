@@ -4650,7 +4650,7 @@
     {
       "id": "msewm3oh3mb30",
       "name": "Aposta1",
-      "value": 30
+      "value": 400
     }
   ],
   "aportes": [],
@@ -5376,5 +5376,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T17:23:08.969Z"
+  "updatedAt": "2026-08-04T17:25:24.799Z"
 }
