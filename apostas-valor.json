@@ -4628,11 +4628,6 @@
       "value": 526
     },
     {
-      "id": "msdo40ziujrhq",
-      "name": "Thunderpick",
-      "value": 150
-    },
-    {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 200
@@ -5279,5 +5274,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:57:53.513Z"
+  "updatedAt": "2026-08-04T14:58:27.771Z"
 }
