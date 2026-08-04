@@ -4636,6 +4636,11 @@
       "id": "msesofpdcy90h",
       "name": "Overtimemarket",
       "value": 250
+    },
+    {
+      "id": "mseumeeird6tj",
+      "name": "Milhão",
+      "value": 200
     }
   ],
   "aportes": [],
@@ -5296,5 +5301,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T15:49:15.644Z"
+  "updatedAt": "2026-08-04T16:04:35.562Z"
 }
