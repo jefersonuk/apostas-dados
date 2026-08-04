@@ -4543,11 +4543,6 @@
       "value": 155.8
     },
     {
-      "id": "mrqfe6f9kfukr",
-      "name": "Estrela",
-      "value": 0
-    },
-    {
       "id": "mrqfw8wuhoz55",
       "name": "Betão",
       "value": 319.9
@@ -5314,5 +5309,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:41:48.114Z"
+  "updatedAt": "2026-08-04T14:42:13.024Z"
 }
