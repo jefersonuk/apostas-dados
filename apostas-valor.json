@@ -5337,8 +5337,25 @@
       "roi": 22,
       "winner": null,
       "date": "2026-08-05T02:25"
+    },
+    {
+      "id": "msewg6dkarljm",
+      "event": "2000 Sarajevo (F) – PSV (F)",
+      "houseA": "Aposta1",
+      "houseB": "Jetcasino",
+      "oddA": 2.2,
+      "oddB": 2.32,
+      "total": 527,
+      "stakeA": 270,
+      "stakeB": 257,
+      "lucroA": 67,
+      "lucroB": 69.24000000000001,
+      "lucro": 67,
+      "roi": 12.7134724857685,
+      "winner": null,
+      "date": "2026-08-05T08:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T16:14:47.194Z"
+  "updatedAt": "2026-08-04T16:55:44.459Z"
 }
