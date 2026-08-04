@@ -4716,11 +4716,6 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 200
-    },
-    {
-      "id": "msejsbucz4sfm",
-      "name": "Overtimemarkets",
-      "value": 250
     }
   ],
   "aportes": [],
@@ -5121,7 +5116,7 @@
       "lucroB": 40,
       "lucro": 40,
       "roi": 13.333333333333334,
-      "winner": "A",
+      "winner": null,
       "date": "2026-08-04T05:00"
     },
     {
@@ -5206,7 +5201,7 @@
       "lucroB": 9.799999999999997,
       "lucro": 5.1000000000000085,
       "roi": 7.611940298507476,
-      "winner": "A",
+      "winner": null,
       "date": "2026-08-03T21:15"
     },
     {
@@ -5240,7 +5235,7 @@
       "lucroB": 18.400000000000006,
       "lucro": 14.800000000000011,
       "roi": 6.981132075471703,
-      "winner": "B",
+      "winner": null,
       "date": "2026-08-03T22:00"
     },
     {
@@ -5257,7 +5252,7 @@
       "lucroB": 189.55800000000005,
       "lucro": 24.629999999999995,
       "roi": 9.857125705366789,
-      "winner": "B",
+      "winner": null,
       "date": "2026-08-03T18:53"
     },
     {
@@ -5295,23 +5290,23 @@
       "date": "2026-08-04T15:00"
     },
     {
-      "id": "msdwt5iue63it",
-      "event": "Sven Corbinais – Filip Krolo",
-      "houseA": "Ivibet",
-      "houseB": "Pitaco",
-      "oddA": 3.55,
-      "oddB": 1.56,
-      "total": 435,
-      "stakeA": 135,
-      "stakeB": 300,
-      "lucroA": 44.25,
-      "lucroB": 33,
-      "lucro": 33,
-      "roi": 7.586206896551724,
+      "id": "msel8gu58li1q",
+      "event": "Olympiacos – NEC",
+      "houseA": "Jetcasino",
+      "houseB": "Epicbet",
+      "oddA": 2.14,
+      "oddB": 2.35,
+      "total": 498,
+      "stakeA": 260,
+      "stakeB": 238,
+      "lucroA": 58.39999999999998,
+      "lucroB": 61.30000000000007,
+      "lucro": 58.39999999999998,
+      "roi": 11.726907630522083,
       "winner": null,
-      "date": "2026-08-04T10:00"
+      "date": "2026-08-04T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T11:10:44.225Z"
+  "updatedAt": "2026-08-04T11:41:49.000Z"
 }
