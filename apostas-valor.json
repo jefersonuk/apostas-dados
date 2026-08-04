@@ -5407,8 +5407,25 @@
       "roi": 8.86538461538462,
       "winner": null,
       "date": "2026-08-04T21:00"
+    },
+    {
+      "id": "msf6xvy3yx6lc",
+      "event": "Kim Seung Min/Lee Sang Won – Hung Kuei Chun/Lui Chun Wai",
+      "houseA": "Casobet",
+      "houseB": "Thunderpick",
+      "oddA": 2.97,
+      "oddB": 1.78,
+      "total": 439,
+      "stakeA": 164.50947368421052,
+      "stakeB": 274.49052631578945,
+      "lucroA": 49.59313684210525,
+      "lucroB": 49.59313684210525,
+      "lucro": 49.59313684210525,
+      "roi": 11.296842105263154,
+      "winner": null,
+      "date": "2026-08-04T22:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T20:28:13.310Z"
+  "updatedAt": "2026-08-04T21:49:26.911Z"
 }
