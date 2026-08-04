@@ -5320,8 +5320,25 @@
       "roi": 10.77262693156733,
       "winner": null,
       "date": "2026-08-04T11:30"
+    },
+    {
+      "id": "mseuzicagj8rh",
+      "event": "Taiwan x Macau",
+      "houseA": "Jogodeouro",
+      "houseB": "Ivibet",
+      "oddA": 1.83,
+      "oddB": 3.82,
+      "total": 300,
+      "stakeA": 200,
+      "stakeB": 100,
+      "lucroA": 66,
+      "lucroB": 82,
+      "lucro": 66,
+      "roi": 22,
+      "winner": null,
+      "date": "2026-08-05T02:25"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T16:10:23.652Z"
+  "updatedAt": "2026-08-04T16:14:47.194Z"
 }
