@@ -4508,24 +4508,9 @@
       "value": 951.62
     },
     {
-      "id": "mrgvjhha81y8r",
-      "name": "Superbet",
-      "value": 0
-    },
-    {
-      "id": "mrgvjnlmwqrl4",
-      "name": "Novibet",
-      "value": 0
-    },
-    {
       "id": "mrgvkcbyx38ge",
       "name": "Betboo",
       "value": 153.3
-    },
-    {
-      "id": "mrgvma913rlg3",
-      "name": "Betano",
-      "value": 0
     },
     {
       "id": "mrgvmrccr6mld",
@@ -5329,5 +5314,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T14:41:35.429Z"
+  "updatedAt": "2026-08-04T14:41:48.114Z"
 }
