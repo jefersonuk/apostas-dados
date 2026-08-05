@@ -5376,7 +5376,7 @@
     {
       "id": "msf3kehmj37k9",
       "event": "Tirante x Fritz",
-      "houseA": "",
+      "houseA": "Epicbet",
       "houseB": "",
       "oddA": 2.17,
       "oddB": 2.6,
@@ -5545,5 +5545,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T16:24:07.581Z"
+  "updatedAt": "2026-08-05T17:28:52.781Z"
 }
