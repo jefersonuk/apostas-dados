@@ -5525,8 +5525,25 @@
       "roi": 10.205391527599486,
       "winner": null,
       "date": "2026-08-07T06:00"
+    },
+    {
+      "id": "msgalgtughkgt",
+      "event": "Bolivar – Oriente Petrolero",
+      "houseA": "Ivibet",
+      "houseB": "Thunderpick",
+      "oddA": 1.8,
+      "oddB": 2.51,
+      "total": 515.1394422310757,
+      "stakeA": 300,
+      "stakeB": 215.13944223107572,
+      "lucroA": 24.86055776892431,
+      "lucroB": 24.86055776892431,
+      "lucro": 24.86055776892431,
+      "roi": 4.825986078886312,
+      "winner": null,
+      "date": "2026-08-05T21:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T16:07:09.604Z"
+  "updatedAt": "2026-08-05T16:19:32.085Z"
 }
