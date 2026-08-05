@@ -5581,8 +5581,25 @@
       "roi": -98.48234410217881,
       "winner": "A",
       "date": "2026-08-05T15:30"
+    },
+    {
+      "id": "msggnu3jt12c3",
+      "event": "Unidos do Alvorada x CDC Manicore",
+      "houseA": "Vbet",
+      "houseB": "Ivibet",
+      "oddA": 1.66,
+      "oddB": 2.92,
+      "total": 445,
+      "stakeA": 280,
+      "stakeB": 165,
+      "lucroA": 19.799999999999955,
+      "lucroB": 36.80000000000001,
+      "lucro": 19.799999999999955,
+      "roi": 4.449438202247181,
+      "winner": null,
+      "date": "2026-08-05T21:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T18:48:53.649Z"
+  "updatedAt": "2026-08-05T19:09:20.288Z"
 }
