@@ -4550,7 +4550,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 80.03
+      "value": 0
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -5483,5 +5483,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T12:50:24.820Z"
+  "updatedAt": "2026-08-05T12:51:47.490Z"
 }
