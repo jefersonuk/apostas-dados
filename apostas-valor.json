@@ -4661,6 +4661,11 @@
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
       "value": 20
+    },
+    {
+      "id": "msgew6ic764xc",
+      "name": "Gamdom",
+      "value": 0
     }
   ],
   "aportes": [],
@@ -5562,5 +5567,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T18:19:00.721Z"
+  "updatedAt": "2026-08-05T18:19:50.388Z"
 }
