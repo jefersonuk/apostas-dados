@@ -4656,13 +4656,18 @@
       "id": "msfgf86ojrke9",
       "name": "Egb",
       "value": 55
+    },
+    {
+      "id": "msg7v7zbl5xz5",
+      "name": "Betesporte",
+      "value": 20
     }
   ],
   "aportes": [],
   "caixa": [
     {
       "date": "2026-08-05",
-      "value": 37375.43
+      "value": 37395.43
     }
   ],
   "surebets": [
@@ -5523,5 +5528,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T15:02:53.480Z"
+  "updatedAt": "2026-08-05T15:03:08.327Z"
 }
