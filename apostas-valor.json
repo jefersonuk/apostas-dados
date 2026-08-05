@@ -5342,7 +5342,7 @@
       "lucroB": 82,
       "lucro": 66,
       "roi": 22,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-05T02:25"
     },
     {
@@ -5483,5 +5483,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T07:56:17.474Z"
+  "updatedAt": "2026-08-05T07:57:21.396Z"
 }
