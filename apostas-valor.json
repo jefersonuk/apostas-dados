@@ -5441,8 +5441,25 @@
       "roi": 21.721311475409834,
       "winner": null,
       "date": "2026-08-05T05:00"
+    },
+    {
+      "id": "msfci7scg691e",
+      "event": "UCAM Esports Club – Movistar KOI Fenix",
+      "houseA": "Ivibet",
+      "houseB": "Betsson & thunderpick",
+      "oddA": 1.8,
+      "oddB": 2.8,
+      "total": 410.7142857142857,
+      "stakeA": 250,
+      "stakeB": 160.71428571428572,
+      "lucroA": 39.28571428571428,
+      "lucroB": 39.28571428571428,
+      "lucro": 39.28571428571428,
+      "roi": 9.565217391304346,
+      "winner": null,
+      "date": "2026-08-05T14:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-04T22:30:57.864Z"
+  "updatedAt": "2026-08-05T00:25:13.453Z"
 }
