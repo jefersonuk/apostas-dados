@@ -4659,12 +4659,7 @@
     }
   ],
   "aportes": [],
-  "caixa": [
-    {
-      "date": "2026-08-05",
-      "value": 37.37543
-    }
-  ],
+  "caixa": [],
   "surebets": [
     {
       "id": "mrrk2z5ufcd56",
@@ -5489,5 +5484,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T13:09:04.518Z"
+  "updatedAt": "2026-08-05T13:09:09.916Z"
 }
