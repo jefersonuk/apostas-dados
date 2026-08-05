@@ -4651,6 +4651,11 @@
       "id": "msewm3oh3mb30",
       "name": "Aposta1",
       "value": 0
+    },
+    {
+      "id": "msfgf86ojrke9",
+      "name": "Egb",
+      "value": 250
     }
   ],
   "aportes": [],
@@ -5495,5 +5500,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T02:12:20.851Z"
+  "updatedAt": "2026-08-05T02:14:52.464Z"
 }
