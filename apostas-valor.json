@@ -5486,8 +5486,25 @@
       "roi": 4.678500986193304,
       "winner": null,
       "date": "2026-08-05T09:00"
+    },
+    {
+      "id": "msg70kqju21sn",
+      "event": "BC GAME X BASEMENT BOYS",
+      "houseA": "Blaze",
+      "houseB": "Casobet",
+      "oddA": 3.2,
+      "oddB": 1.7,
+      "total": 135.47058823529414,
+      "stakeA": 47,
+      "stakeB": 88.47058823529413,
+      "lucroA": 14.929411764705861,
+      "lucroB": 14.929411764705861,
+      "lucro": 14.929411764705861,
+      "roi": 11.020408163265289,
+      "winner": null,
+      "date": "2026-08-07T06:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T14:15:05.875Z"
+  "updatedAt": "2026-08-05T14:39:18.528Z"
 }
