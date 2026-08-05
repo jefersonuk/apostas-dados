@@ -5458,8 +5458,25 @@
       "roi": 9.565217391304346,
       "winner": null,
       "date": "2026-08-05T14:30"
+    },
+    {
+      "id": "msfemm0e86hvg",
+      "event": "Vitor Costa Goncalves – Maximo Zeitune",
+      "houseA": "Thunderpick",
+      "houseB": "Ivibet",
+      "oddA": 1.97,
+      "oddB": 2.46,
+      "total": 315.1422764227642,
+      "stakeA": 175,
+      "stakeB": 140.14227642276424,
+      "lucroA": 29.607723577235788,
+      "lucroB": 29.607723577235788,
+      "lucro": 29.607723577235788,
+      "roi": 9.395033860045151,
+      "winner": null,
+      "date": "2026-08-05T18:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T00:54:54.606Z"
+  "updatedAt": "2026-08-05T01:24:37.743Z"
 }
