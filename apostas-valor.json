@@ -5473,21 +5473,21 @@
     {
       "id": "msfgbz76rezti",
       "event": "PlayTime – Yakult's Brothers",
-      "houseA": "Egb",
+      "houseA": "Casinozer",
       "houseB": "Pinnacle",
-      "oddA": 1.95,
+      "oddA": 1.57,
       "oddB": 3.21,
-      "total": 525.0000000000001,
-      "stakeA": 326.5988372093024,
-      "stakeB": 198.40116279069767,
-      "lucroA": 111.86773255813955,
-      "lucroB": 111.86773255813944,
-      "lucro": 111.86773255813944,
-      "roi": 21.308139534883697,
+      "total": 608.4,
+      "stakeA": 410,
+      "stakeB": 198.4,
+      "lucroA": 35.30000000000007,
+      "lucroB": 28.464000000000055,
+      "lucro": 28.464000000000055,
+      "roi": 4.678500986193304,
       "winner": null,
       "date": "2026-08-05T09:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T13:09:20.562Z"
+  "updatedAt": "2026-08-05T14:15:05.875Z"
 }
