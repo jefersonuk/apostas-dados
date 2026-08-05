@@ -5564,8 +5564,25 @@
       "roi": 4.571428571428582,
       "winner": null,
       "date": "2026-08-05T18:00"
+    },
+    {
+      "id": "msgfw5x3tmvff",
+      "event": "Jogo marcado errado na Epic",
+      "houseA": "Epic",
+      "houseB": "Epic",
+      "oddA": 4.06,
+      "oddB": 1.01,
+      "total": 66.55,
+      "stakeA": 65.55,
+      "stakeB": 1,
+      "lucroA": 199.58299999999997,
+      "lucroB": -65.53999999999999,
+      "lucro": -65.53999999999999,
+      "roi": -98.48234410217881,
+      "winner": null,
+      "date": "2026-08-05T15:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T18:45:07.580Z"
+  "updatedAt": "2026-08-05T18:47:49.243Z"
 }
