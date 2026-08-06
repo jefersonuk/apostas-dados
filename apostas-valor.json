@@ -4535,7 +4535,7 @@
     {
       "id": "mricm6v4hbqxz",
       "name": "Betvip",
-      "value": 255
+      "value": 0
     },
     {
       "id": "mrqepyieyl3gk",
@@ -4686,7 +4686,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 35214.12
+      "value": 34959.12
     }
   ],
   "surebets": [
@@ -5768,5 +5768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T18:52:38.993Z"
+  "updatedAt": "2026-08-06T19:04:45.918Z"
 }
