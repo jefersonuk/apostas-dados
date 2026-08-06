@@ -4525,7 +4525,7 @@
     {
       "id": "mrgvrivsc6dqm",
       "name": "KTO",
-      "value": 119.67
+      "value": 0
     },
     {
       "id": "mrgvt68edox8t",
@@ -4686,7 +4686,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 35653.69
+      "value": 35534.02
     }
   ],
   "surebets": [
@@ -5768,5 +5768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T18:09:33.616Z"
+  "updatedAt": "2026-08-06T18:51:53.603Z"
 }
