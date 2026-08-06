@@ -5602,8 +5602,25 @@
       "roi": 8.194895591647343,
       "winner": null,
       "date": "2026-08-06T15:30"
+    },
+    {
+      "id": "mshk4qmamyapk",
+      "event": "Osasco x Corinthians",
+      "houseA": "Bet365",
+      "houseB": "Ivibet",
+      "oddA": 6.5,
+      "oddB": 1.32,
+      "total": 600,
+      "stakeA": 100,
+      "stakeB": 500,
+      "lucroA": 50,
+      "lucroB": 60,
+      "lucro": 50,
+      "roi": 8.333333333333332,
+      "winner": null,
+      "date": "2026-08-06T21:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T12:44:16.332Z"
+  "updatedAt": "2026-08-06T13:34:13.957Z"
 }
