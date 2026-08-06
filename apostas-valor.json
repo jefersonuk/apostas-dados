@@ -5748,8 +5748,25 @@
       "roi": 10.389046360797497,
       "winner": null,
       "date": "2026-08-07T06:00"
+    },
+    {
+      "id": "mshs5t36zumak",
+      "event": "FC ZBROJOVKA BRNO X SLOVAN LIBEREC",
+      "houseA": "Sportybet",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.6,
+      "oddB": 2.38,
+      "total": 455,
+      "stakeA": 230,
+      "stakeB": 225,
+      "lucroA": 143,
+      "lucroB": 80.5,
+      "lucro": 80.5,
+      "roi": 17.692307692307693,
+      "winner": null,
+      "date": "2026-08-07T14:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T17:10:47.156Z"
+  "updatedAt": "2026-08-06T17:19:00.742Z"
 }
