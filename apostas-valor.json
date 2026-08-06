@@ -4666,6 +4666,11 @@
       "id": "msgew6ic764xc",
       "name": "Gamdom",
       "value": 0
+    },
+    {
+      "id": "mshooqow0ee6e",
+      "name": "Betadonis",
+      "value": 50
     }
   ],
   "aportes": [],
@@ -4676,7 +4681,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 38278.420000000006
+      "value": 38328.420000000006
     }
   ],
   "surebets": [
@@ -5690,5 +5695,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T15:14:03.267Z"
+  "updatedAt": "2026-08-06T15:41:45.633Z"
 }
