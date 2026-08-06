@@ -4605,7 +4605,7 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 481.35
+      "value": 798.05
     },
     {
       "id": "msddfl9dohdf9",
@@ -4676,7 +4676,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 35744.840000000004
+      "value": 36061.54000000001
     }
   ],
   "surebets": [
@@ -5605,5 +5605,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T12:39:46.246Z"
+  "updatedAt": "2026-08-06T12:40:11.031Z"
 }
