@@ -5765,8 +5765,25 @@
       "roi": 17.692307692307693,
       "winner": null,
       "date": "2026-08-07T14:00"
+    },
+    {
+      "id": "msi3m9tz39i5s",
+      "event": "Castleford Tigers – Hull Kingston Rovers",
+      "houseA": "Ivibet",
+      "houseB": "Betsson",
+      "oddA": 2.45,
+      "oddB": 1.92,
+      "total": 852,
+      "stakeA": 375,
+      "stakeB": 477,
+      "lucroA": 66.75000000000011,
+      "lucroB": 63.83999999999992,
+      "lucro": 63.83999999999992,
+      "roi": 7.492957746478863,
+      "winner": null,
+      "date": "2026-08-07T16:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T20:44:56.052Z"
+  "updatedAt": "2026-08-06T22:39:44.712Z"
 }
