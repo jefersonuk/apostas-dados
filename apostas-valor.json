@@ -4575,7 +4575,7 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 638.95
+      "value": 45
     },
     {
       "id": "ms7iedf1byig1",
@@ -4676,7 +4676,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 36725.61
+      "value": 36131.66
     }
   ],
   "surebets": [
@@ -5605,5 +5605,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T12:06:12.477Z"
+  "updatedAt": "2026-08-06T12:06:54.733Z"
 }
