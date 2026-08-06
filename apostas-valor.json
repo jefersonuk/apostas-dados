@@ -4565,7 +4565,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2015.29
+      "value": 1345.47
     },
     {
       "id": "ms2ghozrogav9",
@@ -4673,6 +4673,10 @@
     {
       "date": "2026-08-05",
       "value": 37395.43
+    },
+    {
+      "date": "2026-08-06",
+      "value": 36725.61
     }
   ],
   "surebets": [
@@ -5601,5 +5605,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T02:08:39.440Z"
+  "updatedAt": "2026-08-06T12:06:12.477Z"
 }
