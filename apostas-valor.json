@@ -4500,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 320
+      "value": 522.5
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4686,7 +4686,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 39617.4
+      "value": 39819.9
     }
   ],
   "surebets": [
@@ -5768,5 +5768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T19:14:55.760Z"
+  "updatedAt": "2026-08-06T19:15:06.762Z"
 }
