@@ -4645,7 +4645,7 @@
     {
       "id": "mseutuzodhxpd",
       "name": "Jogo de ouro",
-      "value": 366.68
+      "value": 0
     },
     {
       "id": "msewm3oh3mb30",
@@ -4686,7 +4686,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 37781.920000000006
+      "value": 37415.240000000005
     }
   ],
   "surebets": [
@@ -5768,5 +5768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T18:03:12.667Z"
+  "updatedAt": "2026-08-06T18:06:25.103Z"
 }
