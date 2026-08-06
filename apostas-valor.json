@@ -5636,8 +5636,25 @@
       "roi": 10.101512954265063,
       "winner": null,
       "date": "2026-08-06T13:30"
+    },
+    {
+      "id": "mshlo0xj1p1h1",
+      "event": "Guam x Palau",
+      "houseA": "Blaze",
+      "houseB": "Casobet",
+      "oddA": 3.1,
+      "oddB": 6.09,
+      "total": 130.29048387096776,
+      "stakeA": 86.34048387096774,
+      "stakeB": 43.95,
+      "lucroA": 137.36501612903226,
+      "lucroB": 137.36501612903226,
+      "lucro": 137.36501612903226,
+      "roi": 105.42981501632207,
+      "winner": null,
+      "date": "2026-08-07T07:10"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T14:09:49.663Z"
+  "updatedAt": "2026-08-06T14:17:13.400Z"
 }
