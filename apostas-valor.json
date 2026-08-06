@@ -5598,8 +5598,25 @@
       "roi": 4.449438202247181,
       "winner": null,
       "date": "2026-08-05T21:00"
+    },
+    {
+      "id": "msgr24cyjbu69",
+      "event": "Adrian Sanchez – Bradley Swanepoel",
+      "houseA": "Ivibet",
+      "houseB": "Gamdom",
+      "oddA": 2.68,
+      "oddB": 1.9,
+      "total": 431,
+      "stakeA": 174,
+      "stakeB": 257,
+      "lucroA": 35.32000000000005,
+      "lucroB": 57.299999999999955,
+      "lucro": 35.32000000000005,
+      "roi": 8.194895591647343,
+      "winner": null,
+      "date": "2026-08-06T15:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-05T21:56:18.611Z"
+  "updatedAt": "2026-08-06T00:00:22.931Z"
 }
