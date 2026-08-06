@@ -5549,23 +5549,6 @@
       "date": "2026-08-05T21:00"
     },
     {
-      "id": "msgev46obhimu",
-      "event": "Union Cocle FC - Udelas FC",
-      "houseA": "Gamdom",
-      "houseB": "Ivibet",
-      "oddA": 2.44,
-      "oddB": 1.83,
-      "total": 290.5,
-      "stakeA": 124.50000000000001,
-      "stakeB": 166,
-      "lucroA": 13.28000000000003,
-      "lucroB": 13.28000000000003,
-      "lucro": 13.28000000000003,
-      "roi": 4.571428571428582,
-      "winner": "B",
-      "date": "2026-08-05T18:00"
-    },
-    {
       "id": "msgfw5x3tmvff",
       "event": "Jogo marcado errado na Epic",
       "houseA": "Epic",
@@ -5618,5 +5601,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T00:00:43.039Z"
+  "updatedAt": "2026-08-06T00:04:54.483Z"
 }
