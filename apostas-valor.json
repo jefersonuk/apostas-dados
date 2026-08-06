@@ -4585,7 +4585,7 @@
     {
       "id": "ms7irn12hybsq",
       "name": "Luvabet",
-      "value": 75
+      "value": 0
     },
     {
       "id": "ms95ud6rq4x12",
@@ -4686,7 +4686,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 35728.69
+      "value": 35653.69
     }
   ],
   "surebets": [
@@ -5768,5 +5768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T18:08:41.293Z"
+  "updatedAt": "2026-08-06T18:09:33.616Z"
 }
