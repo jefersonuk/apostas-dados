@@ -4595,7 +4595,7 @@
     {
       "id": "msan29jv5dft4",
       "name": "BetMGM",
-      "value": 1509.1
+      "value": 1491
     },
     {
       "id": "msd8uqystuub5",
@@ -4676,7 +4676,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 35762.94
+      "value": 35744.840000000004
     }
   ],
   "surebets": [
@@ -5605,5 +5605,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T12:39:41.213Z"
+  "updatedAt": "2026-08-06T12:39:46.246Z"
 }
