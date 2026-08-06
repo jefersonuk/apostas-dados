@@ -5731,8 +5731,25 @@
       "roi": 7.142857142857142,
       "winner": null,
       "date": "2026-08-06T19:00"
+    },
+    {
+      "id": "mshrfnex5uujz",
+      "event": "INNER CICLE X NIO",
+      "houseA": "Thunderpick",
+      "houseB": "Casobet",
+      "oddA": 1.22,
+      "oddB": 11.6,
+      "total": 208.15,
+      "stakeA": 188.34,
+      "stakeB": 19.81,
+      "lucroA": 21.624799999999993,
+      "lucroB": 21.645999999999987,
+      "lucro": 21.624799999999993,
+      "roi": 10.389046360797497,
+      "winner": null,
+      "date": "2026-08-07T06:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T16:47:58.223Z"
+  "updatedAt": "2026-08-06T16:58:40.330Z"
 }
