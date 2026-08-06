@@ -4590,7 +4590,7 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 295
+      "value": 248
     },
     {
       "id": "msan29jv5dft4",
@@ -4676,7 +4676,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 35809.94
+      "value": 35762.94
     }
   ],
   "surebets": [
@@ -5605,5 +5605,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T12:38:48.643Z"
+  "updatedAt": "2026-08-06T12:39:41.213Z"
 }
