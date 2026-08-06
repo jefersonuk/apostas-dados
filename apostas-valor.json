@@ -4610,7 +4610,7 @@
     {
       "id": "msddfl9dohdf9",
       "name": "Epicbet",
-      "value": 195.55
+      "value": 0
     },
     {
       "id": "msddfxwzvj74u",
@@ -4686,7 +4686,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 37415.240000000005
+      "value": 37219.69
     }
   ],
   "surebets": [
@@ -5768,5 +5768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T18:06:25.103Z"
+  "updatedAt": "2026-08-06T18:06:50.125Z"
 }
