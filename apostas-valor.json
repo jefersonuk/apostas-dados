@@ -5653,8 +5653,25 @@
       "roi": 105.42981501632207,
       "winner": null,
       "date": "2026-08-07T07:10"
+    },
+    {
+      "id": "mshnf2sw24wqp",
+      "event": "Alberto Mino – Sven Happek",
+      "houseA": "Ivibet",
+      "houseB": "Bet365",
+      "oddA": 1.96,
+      "oddB": 2.37,
+      "total": 487,
+      "stakeA": 266.5565819861432,
+      "stakeB": 220.4434180138568,
+      "lucroA": 35.45090069284072,
+      "lucroB": 35.45090069284072,
+      "lucro": 35.45090069284072,
+      "roi": 7.279445727482694,
+      "winner": null,
+      "date": "2026-08-06T13:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T14:17:13.400Z"
+  "updatedAt": "2026-08-06T15:06:15.160Z"
 }
