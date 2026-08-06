@@ -4540,7 +4540,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 0.8
+      "value": 19.95
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4676,7 +4676,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 36131.66
+      "value": 36150.81
     }
   ],
   "surebets": [
@@ -5605,5 +5605,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T12:06:54.733Z"
+  "updatedAt": "2026-08-06T12:38:19.283Z"
 }
