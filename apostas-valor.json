@@ -4670,7 +4670,7 @@
     {
       "id": "mshooqow0ee6e",
       "name": "Betadonis",
-      "value": 50
+      "value": 42.5
     },
     {
       "id": "mshp2yxy7igul",
@@ -4686,7 +4686,7 @@
     },
     {
       "date": "2026-08-06",
-      "value": 37789.420000000006
+      "value": 37781.920000000006
     }
   ],
   "surebets": [
@@ -5768,5 +5768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T18:02:54.422Z"
+  "updatedAt": "2026-08-06T18:03:12.667Z"
 }
