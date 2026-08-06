@@ -5705,17 +5705,17 @@
       "houseB": "Casobet",
       "oddA": 3.1,
       "oddB": 1.53,
-      "total": 251,
-      "stakeA": 1,
+      "total": 350,
+      "stakeA": 100,
       "stakeB": 250,
-      "lucroA": -247.9,
-      "lucroB": 131.5,
-      "lucro": -247.9,
-      "roi": -98.76494023904382,
+      "lucroA": -40,
+      "lucroB": 32.5,
+      "lucro": -40,
+      "roi": -11.428571428571429,
       "winner": null,
       "date": "2026-08-06T16:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T16:31:15.911Z"
+  "updatedAt": "2026-08-06T16:32:35.640Z"
 }
