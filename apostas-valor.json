@@ -5697,8 +5697,25 @@
       "roi": 8.525654450261788,
       "winner": null,
       "date": "2026-08-06T15:45"
+    },
+    {
+      "id": "mshpovvpnmizd",
+      "event": "Guatemala x Venezuela",
+      "houseA": "X",
+      "houseB": "Casobet",
+      "oddA": 3.1,
+      "oddB": 1.53,
+      "total": 251,
+      "stakeA": 1,
+      "stakeB": 250,
+      "lucroA": -247.9,
+      "lucroB": 131.5,
+      "lucro": -247.9,
+      "roi": -98.76494023904382,
+      "winner": null,
+      "date": "2026-08-06T16:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T15:52:49.510Z"
+  "updatedAt": "2026-08-06T16:09:51.973Z"
 }
