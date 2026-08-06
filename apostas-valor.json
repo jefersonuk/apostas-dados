@@ -5714,8 +5714,25 @@
       "roi": -98.76494023904382,
       "winner": "B",
       "date": "2026-08-06T16:00"
+    },
+    {
+      "id": "mshr1vyma4sju",
+      "event": "CA union de santa fé x CA Lanus",
+      "houseA": "Betboo",
+      "houseB": "Ivibet",
+      "oddA": 2.25,
+      "oddB": 2.06,
+      "total": 420,
+      "stakeA": 200,
+      "stakeB": 220,
+      "lucroA": 30,
+      "lucroB": 33.19999999999999,
+      "lucro": 30,
+      "roi": 7.142857142857142,
+      "winner": null,
+      "date": "2026-08-06T19:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T16:33:04.732Z"
+  "updatedAt": "2026-08-06T16:47:58.223Z"
 }
