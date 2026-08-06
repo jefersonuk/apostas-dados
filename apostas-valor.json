@@ -5619,8 +5619,25 @@
       "roi": 8.333333333333332,
       "winner": null,
       "date": "2026-08-06T21:00"
+    },
+    {
+      "id": "mshleijfcgmt8",
+      "event": "Ittlinger S /Vande Velde K x Marrimo C H / Silva ramos AP",
+      "houseA": "Sportybet",
+      "houseB": "Ivibet",
+      "oddA": 1.7,
+      "oddB": 3.14,
+      "total": 462.01,
+      "stakeA": 300.01,
+      "stakeB": 162,
+      "lucroA": 48.007000000000005,
+      "lucroB": 46.670000000000016,
+      "lucro": 46.670000000000016,
+      "roi": 10.101512954265063,
+      "winner": null,
+      "date": "2026-08-06T13:30"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-06T13:34:13.957Z"
+  "updatedAt": "2026-08-06T14:09:49.663Z"
 }
