@@ -5893,8 +5893,25 @@
       "roi": 1.6528925619834711,
       "winner": null,
       "date": "2026-08-07T18:00"
+    },
+    {
+      "id": "msjf97p6isach",
+      "event": "100Thieves x Cloud9",
+      "houseA": "Ivibet",
+      "houseB": "Betsson",
+      "oddA": 3.09,
+      "oddB": 1.48,
+      "total": 812.3211974110033,
+      "stakeA": 263.07119741100325,
+      "stakeB": 549.25,
+      "lucroA": 0.5688025889967321,
+      "lucroB": 0.5688025889967321,
+      "lucro": 0.5688025889967321,
+      "roi": 0.0700218818380705,
+      "winner": null,
+      "date": "2026-08-07T18:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T19:50:15.914Z"
+  "updatedAt": "2026-08-07T20:53:16.989Z"
 }
