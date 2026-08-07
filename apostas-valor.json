@@ -5859,8 +5859,25 @@
       "roi": 4.1322580645161295,
       "winner": "B",
       "date": "2026-08-07T14:00"
+    },
+    {
+      "id": "msjc0kqpzpyjm",
+      "event": "100Thieves x Cloud9 (Valorant)",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.172,
+      "oddB": 7.9,
+      "total": 765,
+      "stakeA": 665,
+      "stakeB": 100,
+      "lucroA": 14.379999999999995,
+      "lucroB": 25,
+      "lucro": 14.379999999999995,
+      "roi": 1.8797385620915028,
+      "winner": null,
+      "date": "2026-08-07T18:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T19:14:54.859Z"
+  "updatedAt": "2026-08-07T19:22:35.140Z"
 }
