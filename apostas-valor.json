@@ -5876,8 +5876,25 @@
       "roi": 1.8797385620915028,
       "winner": null,
       "date": "2026-08-07T18:00"
+    },
+    {
+      "id": "msjc60trzpyuw",
+      "event": "CRB X MATENSE",
+      "houseA": "Betsson",
+      "houseB": "Ivibet",
+      "oddA": 1.23,
+      "oddB": 5.9,
+      "total": 2178,
+      "stakeA": 1800,
+      "stakeB": 378,
+      "lucroA": 36,
+      "lucroB": 52.20000000000027,
+      "lucro": 36,
+      "roi": 1.6528925619834711,
+      "winner": null,
+      "date": "2026-08-07T18:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T19:22:35.140Z"
+  "updatedAt": "2026-08-07T19:26:49.263Z"
 }
