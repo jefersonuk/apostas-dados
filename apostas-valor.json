@@ -5859,8 +5859,25 @@
       "roi": 2.6119402985074625,
       "winner": null,
       "date": "2026-08-07T22:00"
+    },
+    {
+      "id": "msj4n78lf5s6a",
+      "event": "FaZe – Virtus.pro",
+      "houseA": "EGB",
+      "houseB": "Pinnacle",
+      "oddA": 2.7,
+      "oddB": 1.699,
+      "total": 620,
+      "stakeA": 240,
+      "stakeB": 380,
+      "lucroA": 28,
+      "lucroB": 25.620000000000005,
+      "lucro": 25.620000000000005,
+      "roi": 4.1322580645161295,
+      "winner": null,
+      "date": "2026-08-07T12:46"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T15:46:14.489Z"
+  "updatedAt": "2026-08-07T15:56:13.804Z"
 }
