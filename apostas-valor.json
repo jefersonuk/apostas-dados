@@ -5782,8 +5782,25 @@
       "roi": 7.492957746478863,
       "winner": null,
       "date": "2026-08-07T16:00"
+    },
+    {
+      "id": "msiuzdnv5bxz9",
+      "event": "Vôlei de praia",
+      "houseA": "Ivibet",
+      "houseB": "Betsson",
+      "oddA": 1.73,
+      "oddB": 3.08,
+      "total": 640,
+      "stakeA": 410,
+      "stakeB": 230,
+      "lucroA": 69.29999999999995,
+      "lucroB": 68.39999999999998,
+      "lucro": 68.39999999999998,
+      "roi": 10.687499999999996,
+      "winner": null,
+      "date": "2026-08-07T07:39"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T01:00:38.219Z"
+  "updatedAt": "2026-08-07T11:25:45.836Z"
 }
