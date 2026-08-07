@@ -4550,7 +4550,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 0
+      "value": 363.68
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4690,7 +4690,7 @@
     },
     {
       "date": "2026-08-07",
-      "value": 38163.45
+      "value": 38527.12999999999
     }
   ],
   "surebets": [
@@ -5789,5 +5789,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T12:51:21.492Z"
+  "updatedAt": "2026-08-07T12:52:11.108Z"
 }
