@@ -5825,8 +5825,25 @@
       "roi": 1.2307692307692377,
       "winner": null,
       "date": "2026-08-07T13:30"
+    },
+    {
+      "id": "msj3yskbceqg8",
+      "event": "Tallon Griekspoor – Matteo Arnaldi",
+      "houseA": "EGB",
+      "houseB": "Pinnacle",
+      "oddA": 1.628,
+      "oddB": 2.81,
+      "total": 1254,
+      "stakeA": 794,
+      "stakeB": 460,
+      "lucroA": 38.631999999999834,
+      "lucroB": 38.600000000000136,
+      "lucro": 38.600000000000136,
+      "roi": 3.0781499202551945,
+      "winner": null,
+      "date": "2026-08-07T13:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T15:23:05.982Z"
+  "updatedAt": "2026-08-07T15:37:15.043Z"
 }
