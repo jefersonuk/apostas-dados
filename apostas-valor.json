@@ -5810,23 +5810,6 @@
       "date": "2026-08-07T12:00"
     },
     {
-      "id": "msj3glffyw5so",
-      "event": "Carolina Solberg Salgado/Rebecca Cavalcante Barbosa da Silva – Joana Mader/Leona Kernen",
-      "houseA": "Betsson",
-      "houseB": "Ivibet",
-      "oddA": 1.51,
-      "oddB": 3.08,
-      "total": 858,
-      "stakeA": 576,
-      "stakeB": 282,
-      "lucroA": 11.759999999999991,
-      "lucroB": 10.56000000000006,
-      "lucro": 10.56000000000006,
-      "roi": 1.2307692307692377,
-      "winner": null,
-      "date": "2026-08-07T13:30"
-    },
-    {
       "id": "msj3yskbceqg8",
       "event": "Tallon Griekspoor – Matteo Arnaldi",
       "houseA": "EGB",
@@ -5879,5 +5862,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T17:36:11.843Z"
+  "updatedAt": "2026-08-07T18:16:43.119Z"
 }
