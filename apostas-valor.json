@@ -4676,6 +4676,11 @@
       "id": "mshp2yxy7igul",
       "name": "hiperbet",
       "value": 55
+    },
+    {
+      "id": "msiybd3uy2l7d",
+      "name": "sportybet",
+      "value": 280
     }
   ],
   "aportes": [],
@@ -4690,7 +4695,7 @@
     },
     {
       "date": "2026-08-07",
-      "value": 38359.81999999999
+      "value": 38639.81999999999
     }
   ],
   "surebets": [
@@ -5789,5 +5794,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T12:57:22.538Z"
+  "updatedAt": "2026-08-07T12:59:03.834Z"
 }
