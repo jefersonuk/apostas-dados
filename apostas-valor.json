@@ -4660,7 +4660,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 20
+      "value": 578
     },
     {
       "id": "msgew6ic764xc",
@@ -4690,7 +4690,7 @@
     },
     {
       "date": "2026-08-07",
-      "value": 37801.81999999999
+      "value": 38359.81999999999
     }
   ],
   "surebets": [
@@ -5789,5 +5789,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T12:57:05.435Z"
+  "updatedAt": "2026-08-07T12:57:22.538Z"
 }
