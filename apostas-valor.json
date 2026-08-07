@@ -5791,8 +5791,25 @@
       "roi": 10.687499999999996,
       "winner": "A",
       "date": "2026-08-07T07:39"
+    },
+    {
+      "id": "msj1q0n1w1op7",
+      "event": "HC DYNAMO PARDUBICE X VLCI ZILINA",
+      "houseA": "Betsson",
+      "houseB": "Casinozer",
+      "oddA": 1.41,
+      "oddB": 3.55,
+      "total": 1138.06,
+      "stakeA": 815,
+      "stakeB": 323.06,
+      "lucroA": 11.089999999999918,
+      "lucroB": 8.803000000000111,
+      "lucro": 8.803000000000111,
+      "roi": 0.7735093053090445,
+      "winner": null,
+      "date": "2026-08-07T12:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T13:00:57.413Z"
+  "updatedAt": "2026-08-07T14:34:26.368Z"
 }
