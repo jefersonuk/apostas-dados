@@ -4545,7 +4545,7 @@
     {
       "id": "mrqfw8wuhoz55",
       "name": "Betão",
-      "value": 0
+      "value": 45
     },
     {
       "id": "mrqgbm24pa9kf",
@@ -4690,7 +4690,7 @@
     },
     {
       "date": "2026-08-07",
-      "value": 38118.45
+      "value": 38163.45
     }
   ],
   "surebets": [
@@ -5789,5 +5789,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-07T12:51:13.602Z"
+  "updatedAt": "2026-08-07T12:51:21.492Z"
 }
