@@ -4550,7 +4550,8 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 2758.84
+      "value": 2758.84,
+      "currency": "USD"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4621,7 +4622,8 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 3042.2
+      "value": 3042.2,
+      "currency": "USD"
     },
     {
       "id": "msdee34ivpnvx",
@@ -6072,5 +6074,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T23:27:56.302Z"
+  "updatedAt": "2026-08-08T23:28:00.846Z"
 }
