@@ -101,6 +101,8 @@
   .bal-name{flex:1;font-size:13px;font-weight:600;}
   .bal-rank{font-family:var(--mono);font-size:10px;color:var(--muted-2);min-width:16px;text-align:right;font-weight:700;}
   .bal-pct{font-family:var(--mono);font-size:10px;color:var(--muted-2);font-weight:500;margin-left:6px;}
+  .bal-auto{display:inline-block;font-size:9px;font-weight:700;color:var(--sky);background:#0E1520;border:1px solid #1A2C40;border-radius:4px;padding:0 4px;margin-left:5px;vertical-align:middle;letter-spacing:.03em;}
+  .bal-val.auto-val{color:var(--sky);}
   .bal-cur{display:inline-block;font-size:9px;font-weight:700;color:#34D399;background:#0A2018;border:1px solid #1A3D2E;border-radius:4px;padding:0 4px;margin-left:5px;vertical-align:middle;}
   .bal-conv{display:block;font-size:10px;color:var(--muted-2);font-weight:500;}
   .bal-cur-btn{background:#0E1116;border:1px solid var(--border);border-radius:6px;color:var(--muted);font-size:11px;font-weight:700;font-family:var(--mono);cursor:pointer;padding:4px 7px;min-width:38px;}
@@ -1095,6 +1097,7 @@
   });
 
   function renderBalances(){
+    sincronizarArbitragem();
     const list=$('balList');
     if(!state.balances.length){ list.innerHTML='<div class="empty">Nenhuma casa cadastrada.</div>'; $('balTotal').textContent=''; return; }
     const total=state.balances.reduce((s,b)=>s+balBRL(b),0);
@@ -1113,16 +1116,21 @@
       const pct=total>0?(emBRL/total*100):0;
       const jogo=emJogo[b.name.trim().toLowerCase()]||0;
       const isUSD=b.currency==='USD';
-      const valHtml = editingBal===b.id
+      const isAuto=!!b.auto;
+      const valHtml = (editingBal===b.id && !isAuto)
         ? `<input type="number" class="bal-edit" data-balsave="${b.id}" value="${b.value}" step="0.01" autofocus>`
-        : `<span class="bal-val" data-baledit="${b.id}">${fmtBal(b)}${isUSD?`<span class="bal-conv">≈ ${fmt(emBRL)}</span>`:''}</span>`;
+        : (isAuto
+            ? `<span class="bal-val auto-val">${fmt(b.value)}</span>`
+            : `<span class="bal-val" data-baledit="${b.id}">${fmtBal(b)}${isUSD?`<span class="bal-conv">≈ ${fmt(emBRL)}</span>`:''}</span>`);
       return `<div class="bal-row">
         <span class="bal-rank">${i+1}</span>
         <span class="bal-dot" style="background:${color}"></span>
-        <span class="bal-name">${esc(b.name)}${isUSD?'<span class="bal-cur">USD</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${jogo>0?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):fmt(jogo)} em jogo</span>`:''}</span>
+        <span class="bal-name">${esc(b.name)}${isAuto?'<span class="bal-auto">AUTO</span>':''}${isUSD?'<span class="bal-cur">USD</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">calculado das surebets em aberto</span>`:''}</span>
         ${valHtml}
-        <button class="bal-cur-btn ${isUSD?'usd':''}" data-balcur="${b.id}" title="Clique para alternar entre Real e Dólar">${isUSD?'US$':'R$'}</button>
-        <button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>
+        ${isAuto?'<span class="bal-cur-btn" style="opacity:.35;cursor:default;">R$</span>'
+                :`<button class="bal-cur-btn ${isUSD?'usd':''}" data-balcur="${b.id}" title="Clique para alternar entre Real e Dólar">${isUSD?'US$':'R$'}</button>`}
+        ${isAuto?'<span class="bal-del" style="opacity:.2;cursor:default;">×</span>'
+                :`<button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>`}
       </div>`;
     }).join('');
     // wiring: click no valor -> editar
@@ -1368,6 +1376,21 @@
     o.aplicado.resultado=null;
   }
   function reverterTudo(o){ reverterResultado(o); reverterStakes(o); }
+
+  // Mantém a linha "Em arbitragem" igual ao total apostado em surebets ainda abertas
+  const ARB_NAME='Em arbitragem';
+  function sincronizarArbitragem(){
+    const emJogo=(state.surebets||[]).filter(o=>!o.winner)
+      .reduce((s,o)=>s+o.stakeA+o.stakeB,0);
+    let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===ARB_NAME.toLowerCase());
+    if(!b){
+      if(emJogo<=0) return;                       // não cria se não há nada em jogo
+      b={id:uid(), name:ARB_NAME, value:0, currency:'BRL', auto:true};
+      state.balances.push(b);
+    }
+    b.auto=true; b.currency='BRL';
+    b.value=Math.round(emJogo*100)/100;
+  }
 
   function renderSurebetSummary(){
     const ops=state.surebets||[];
@@ -1667,7 +1690,7 @@
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
-  saveState=function(){ state.updatedAt=new Date().toISOString(); _origSave(); renderAutosave(); schedulePush(); };
+  saveState=function(){ try{ sincronizarArbitragem(); }catch(e){} state.updatedAt=new Date().toISOString(); _origSave(); renderAutosave(); schedulePush(); };
 
   // init
   fillCfg();
