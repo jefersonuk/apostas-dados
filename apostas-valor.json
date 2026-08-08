@@ -6033,8 +6033,25 @@
       "roi": 2.043010752688172,
       "winner": null,
       "date": "2026-08-08T17:00"
+    },
+    {
+      "id": "mskoalqhnll7g",
+      "event": "Sydney Bears – Central Coast Rhinos",
+      "houseA": "Pitaco",
+      "houseB": "Thunderpick",
+      "oddA": 1.29,
+      "oddB": 4.52,
+      "total": 318,
+      "stakeA": 250,
+      "stakeB": 68,
+      "lucroA": 4.5,
+      "lucroB": -10.640000000000043,
+      "lucro": -10.640000000000043,
+      "roi": -3.345911949685548,
+      "winner": null,
+      "date": "2026-08-09T04:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T17:45:56.734Z"
+  "updatedAt": "2026-08-08T17:54:04.554Z"
 }
