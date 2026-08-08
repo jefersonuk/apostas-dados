@@ -101,6 +101,7 @@
   .bal-name{flex:1;font-size:13px;font-weight:600;}
   .bal-rank{font-family:var(--mono);font-size:10px;color:var(--muted-2);min-width:16px;text-align:right;font-weight:700;}
   .bal-pct{font-family:var(--mono);font-size:10px;color:var(--muted-2);font-weight:500;margin-left:6px;}
+  .bal-jogo{display:block;font-family:var(--mono);font-size:10px;color:var(--amber);font-weight:500;margin-top:1px;}
   .bal-val{font-family:var(--mono);font-size:14px;font-weight:600;cursor:pointer;min-width:80px;text-align:right;padding:4px 8px;border-radius:6px;border:1px solid transparent;}
   .bal-val:hover{border-color:var(--border);background:#0E1116;}
   .bal-edit{width:100px;font-family:var(--mono);font-size:13px;padding:4px 8px;border-radius:6px;border:1px solid var(--sky);background:#0E1116;color:var(--text);text-align:right;}
@@ -267,7 +268,7 @@
       <div><label>Saldo (R$)</label><input type="number" id="balValue" step="0.01" placeholder="0.00"></div>
     </div>
     <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar casa</button>
-    <div class="footnote">Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
+    <div class="footnote">Ordenado por saldo. As operações de surebet debitam e creditam estes saldos automaticamente. Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
   </div>
 
   <!-- APORTES -->
@@ -1078,18 +1079,25 @@
     if(!state.balances.length){ list.innerHTML='<div class="empty">Nenhuma casa cadastrada.</div>'; $('balTotal').textContent=''; return; }
     const total=state.balances.reduce((s,b)=>s+b.value,0);
     $('balTotal').textContent='Total: '+fmt(total);
+    // capital preso em surebets ainda não finalizadas, por casa
+    const emJogo={};
+    (state.surebets||[]).filter(o=>!o.winner).forEach(o=>{
+      if(o.houseA){ const k=o.houseA.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeA; }
+      if(o.houseB){ const k=o.houseB.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeB; }
+    });
     // ordenar por saldo decrescente (maior primeiro), sem mutar o array original
     const ordenadas=[...state.balances].sort((a,b)=>b.value-a.value);
     list.innerHTML=ordenadas.map((b,i)=>{
       const color=HOUSE_COLORS[i%HOUSE_COLORS.length];
       const pct=total>0?(b.value/total*100):0;
+      const jogo=emJogo[b.name.trim().toLowerCase()]||0;
       const valHtml = editingBal===b.id
         ? `<input type="number" class="bal-edit" data-balsave="${b.id}" value="${b.value}" step="0.01" autofocus>`
         : `<span class="bal-val" data-baledit="${b.id}">${fmt(b.value)}</span>`;
       return `<div class="bal-row">
         <span class="bal-rank">${i+1}</span>
         <span class="bal-dot" style="background:${color}"></span>
-        <span class="bal-name">${esc(b.name)}<span class="bal-pct">${pct.toFixed(1)}%</span></span>
+        <span class="bal-name">${esc(b.name)}<span class="bal-pct">${pct.toFixed(1)}%</span>${jogo>0?`<span class="bal-jogo">⏳ ${fmt(jogo)} em jogo</span>`:''}</span>
         ${valHtml}
         <button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>
       </div>`;
@@ -1257,13 +1265,15 @@
   scEls.register.addEventListener('click',()=>{
     const r=scLast||computeSurebet();
     if(!r){ alert('Preencha as odds e a banca (ou o stake de uma perna).'); return; }
-    state.surebets.push({
+    const novaOp={
       id:uid(), event:scEls.event.value.trim()||'Operação sem nome',
       houseA:scEls.houseA.value.trim(), houseB:scEls.houseB.value.trim(),
       oddA:r.oddA, oddB:r.oddB, total:r.total, stakeA:r.stakeA, stakeB:r.stakeB,
       lucroA:r.lucroA, lucroB:r.lucroB, lucro:r.lucro, roi:r.roi, winner:null,
       date:scEls.date.value||nowLocalStr()
-    });
+    };
+    aplicarStakes(novaOp);
+    state.surebets.push(novaOp);
     scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
     scLast=null; updateSurebetCalc(); saveState(); renderAll();
     toast('Operação registrada ✓');
@@ -1275,6 +1285,51 @@
     if(o.winner==='B') return (typeof o.lucroB==='number')?o.lucroB:o.lucro;
     return o.lucro; // não resolvida: mostra o pior caso garantido como estimativa
   }
+
+  /* ---------- integração surebets -> saldo por casa ---------- */
+  // Encontra (ou cria) a casa no saldo, casando por nome sem diferenciar maiúsculas
+  function acharCasa(nome){
+    if(!nome) return null;
+    const alvo=nome.trim().toLowerCase();
+    let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===alvo);
+    if(!b){ b={id:uid(), name:nome.trim(), value:0}; state.balances.push(b); }
+    return b;
+  }
+  function moverSaldo(nome,delta){
+    const b=acharCasa(nome);
+    if(b) b.value=Math.round((b.value+delta)*100)/100;
+  }
+  // Debita os stakes das duas casas (ao registrar a operação)
+  function aplicarStakes(o){
+    if(o.aplicado&&o.aplicado.stakes) return;
+    moverSaldo(o.houseA,-o.stakeA);
+    moverSaldo(o.houseB,-o.stakeB);
+    o.aplicado=Object.assign({},o.aplicado,{stakes:true});
+  }
+  function reverterStakes(o){
+    if(!(o.aplicado&&o.aplicado.stakes)) return;
+    moverSaldo(o.houseA,+o.stakeA);
+    moverSaldo(o.houseB,+o.stakeB);
+    o.aplicado.stakes=false;
+  }
+  // Credita o retorno na casa vencedora (ao marcar o vencedor)
+  function aplicarResultado(o,vencedor){
+    if(o.aplicado&&o.aplicado.resultado) reverterResultado(o);
+    if(!vencedor) return;
+    const casa = vencedor==='A'?o.houseA:o.houseB;
+    const retorno = vencedor==='A'?(o.stakeA*o.oddA):(o.stakeB*o.oddB);
+    moverSaldo(casa,+retorno);
+    o.aplicado=Object.assign({},o.aplicado,{resultado:vencedor});
+  }
+  function reverterResultado(o){
+    if(!(o.aplicado&&o.aplicado.resultado)) return;
+    const v=o.aplicado.resultado;
+    const casa = v==='A'?o.houseA:o.houseB;
+    const retorno = v==='A'?(o.stakeA*o.oddA):(o.stakeB*o.oddB);
+    moverSaldo(casa,-retorno);
+    o.aplicado.resultado=null;
+  }
+  function reverterTudo(o){ reverterResultado(o); reverterStakes(o); }
 
   function renderSurebetSummary(){
     const ops=state.surebets||[];
@@ -1460,13 +1515,13 @@
     }));
     list.querySelectorAll('[data-sbdel]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); const o=state.surebets.find(x=>x.id===btn.dataset.sbdel);
-      if(o&&confirm(`Excluir "${o.event}"?`)){ state.surebets=state.surebets.filter(x=>x.id!==btn.dataset.sbdel); sbOpenDetail=null; sbEditingId=null; saveState(); renderAll(); }
+      if(o&&confirm(`Excluir "${o.event}"?\n\nOs valores voltam para os saldos das casas.`)){ reverterTudo(o); state.surebets=state.surebets.filter(x=>x.id!==btn.dataset.sbdel); sbOpenDetail=null; sbEditingId=null; saveState(); renderAll(); }
     }));
     list.querySelectorAll('[data-sbwin]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation();
       const [id,w]=btn.dataset.sbwin.split(':');
       const o=state.surebets.find(x=>x.id===id);
-      if(o){ o.winner=w||null; saveState(); renderAll(); }
+      if(o){ o.winner=w||null; aplicarResultado(o,o.winner); saveState(); renderAll(); }
     }));
     list.querySelectorAll('[data-sbedit]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); sbEditingId=btn.dataset.sbedit; sbOpenDetail=btn.dataset.sbedit; renderSurebetList();
@@ -1478,6 +1533,8 @@
       e.stopPropagation();
       const o=state.surebets.find(x=>x.id===btn.dataset.sbsave); if(!o) return;
       const form=document.getElementById('sbEditForm_'+o.id); if(!form) return;
+      const tinhaVencedor=o.winner;
+      reverterTudo(o);   // desfaz os lançamentos antigos antes de alterar
       form.querySelectorAll('.sbed').forEach(inp=>{
         const f=inp.dataset.f, v=inp.value;
         if(f==='event') o.event=v.trim()||o.event;
@@ -1495,6 +1552,8 @@
       o.lucroA=retA-o.total; o.lucroB=retB-o.total;
       o.lucro=Math.min(o.lucroA,o.lucroB);
       o.roi=o.total>0?(o.lucro/o.total*100):0;
+      aplicarStakes(o);                          // re-aplica com os valores novos
+      if(tinhaVencedor) aplicarResultado(o,tinhaVencedor);
       sbEditingId=null; saveState(); renderAll();
       toast('Operação atualizada ✓');
     }));
