@@ -4635,7 +4635,7 @@
     {
       "id": "msesofpdcy90h",
       "name": "Overtimemarket",
-      "value": 550
+      "value": 300
     },
     {
       "id": "mseumeeird6tj",
@@ -4699,7 +4699,7 @@
     },
     {
       "date": "2026-08-08",
-      "value": 38758.21
+      "value": 38508.21
     }
   ],
   "surebets": [
@@ -5951,5 +5951,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T16:27:33.560Z"
+  "updatedAt": "2026-08-08T16:27:51.765Z"
 }
