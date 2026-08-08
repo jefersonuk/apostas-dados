@@ -101,6 +101,10 @@
   .bal-name{flex:1;font-size:13px;font-weight:600;}
   .bal-rank{font-family:var(--mono);font-size:10px;color:var(--muted-2);min-width:16px;text-align:right;font-weight:700;}
   .bal-pct{font-family:var(--mono);font-size:10px;color:var(--muted-2);font-weight:500;margin-left:6px;}
+  .bal-cur{display:inline-block;font-size:9px;font-weight:700;color:#34D399;background:#0A2018;border:1px solid #1A3D2E;border-radius:4px;padding:0 4px;margin-left:5px;vertical-align:middle;}
+  .bal-conv{display:block;font-size:10px;color:var(--muted-2);font-weight:500;}
+  .bal-cur-btn{background:none;border:1px solid var(--border);border-radius:5px;color:var(--muted-2);font-size:10px;font-family:var(--mono);cursor:pointer;padding:2px 5px;}
+  .bal-cur-btn:hover{color:var(--sky);border-color:var(--sky);}
   .bal-jogo{display:block;font-family:var(--mono);font-size:10px;color:var(--amber);font-weight:500;margin-top:1px;}
   .bal-val{font-family:var(--mono);font-size:14px;font-weight:600;cursor:pointer;min-width:80px;text-align:right;padding:4px 8px;border-radius:6px;border:1px solid transparent;}
   .bal-val:hover{border-color:var(--border);background:#0E1116;}
@@ -265,7 +269,11 @@
     <div id="balList"></div>
     <div class="grid2" style="margin-top:8px;">
       <div><label>Casa</label><input type="text" id="balName" placeholder="Ex: Bet365"></div>
-      <div><label>Saldo (R$)</label><input type="number" id="balValue" step="0.01" placeholder="0.00"></div>
+      <div><label>Saldo</label><input type="number" id="balValue" step="0.01" placeholder="0.00"></div>
+    </div>
+    <div class="grid2">
+      <div><label>Moeda</label><select id="balCur"><option value="BRL">R$ — Real</option><option value="USD">US$ — Dólar</option></select></div>
+      <div><label>Cotação USD → BRL</label><input type="number" id="balRate" step="0.01" placeholder="5.00"></div>
     </div>
     <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar casa</button>
     <div class="footnote">Ordenado por saldo. As operações de surebet debitam e creditam estes saldos automaticamente. Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
@@ -461,6 +469,11 @@
   function todayStr(){ return new Date().toISOString().slice(0,10); }
   function nowLocalStr(){ const d=new Date(); const off=d.getTimezoneOffset(); const l=new Date(d-off*60000); return l.toISOString().slice(0,16); }
   function fmt(n){ return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function fmtUSD(n){ return 'US$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function usdRate(){ const r=state.usdRate; return (typeof r==='number'&&r>0)?r:5; }
+  // valor de um saldo convertido para BRL
+  function balBRL(b){ return (b.currency==='USD') ? b.value*usdRate() : b.value; }
+  function fmtBal(b){ return (b.currency==='USD') ? fmtUSD(b.value) : fmt(b.value); }
   function fmtSign(n){ return (n>=0?'+':'')+fmt(n); }
   function fmtPct(n){ return (n>=0?'+':'')+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'%'; }
   function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -475,7 +488,7 @@
 
   function normalize(p){
     const cfg=Object.assign({},DEFAULTS,p.cfg||{});
-    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], surebets:Array.isArray(p.surebets)?p.surebets:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5, surebets:Array.isArray(p.surebets)?p.surebets:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
   }
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
@@ -944,7 +957,7 @@
   /* ---------- caixa total & evolução diária ---------- */
   function caixaAtual(){
     // soma dos saldos por casa; se não houver, usa o último registro diário
-    const bal=(state.balances||[]).reduce((s,b)=>s+b.value,0);
+    const bal=(state.balances||[]).reduce((s,b)=>s+balBRL(b),0);
     if((state.balances||[]).length) return bal;
     const hist=[...(state.caixa||[])].sort((a,b)=>a.date.localeCompare(b.date));
     return hist.length?hist[hist.length-1].value:0;
@@ -1077,7 +1090,7 @@
   function renderBalances(){
     const list=$('balList');
     if(!state.balances.length){ list.innerHTML='<div class="empty">Nenhuma casa cadastrada.</div>'; $('balTotal').textContent=''; return; }
-    const total=state.balances.reduce((s,b)=>s+b.value,0);
+    const total=state.balances.reduce((s,b)=>s+balBRL(b),0);
     $('balTotal').textContent='Total: '+fmt(total);
     // capital preso em surebets ainda não finalizadas, por casa
     const emJogo={};
@@ -1086,19 +1099,22 @@
       if(o.houseB){ const k=o.houseB.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeB; }
     });
     // ordenar por saldo decrescente (maior primeiro), sem mutar o array original
-    const ordenadas=[...state.balances].sort((a,b)=>b.value-a.value);
+    const ordenadas=[...state.balances].sort((a,b)=>balBRL(b)-balBRL(a));
     list.innerHTML=ordenadas.map((b,i)=>{
       const color=HOUSE_COLORS[i%HOUSE_COLORS.length];
-      const pct=total>0?(b.value/total*100):0;
+      const emBRL=balBRL(b);
+      const pct=total>0?(emBRL/total*100):0;
       const jogo=emJogo[b.name.trim().toLowerCase()]||0;
+      const isUSD=b.currency==='USD';
       const valHtml = editingBal===b.id
         ? `<input type="number" class="bal-edit" data-balsave="${b.id}" value="${b.value}" step="0.01" autofocus>`
-        : `<span class="bal-val" data-baledit="${b.id}">${fmt(b.value)}</span>`;
+        : `<span class="bal-val" data-baledit="${b.id}">${fmtBal(b)}${isUSD?`<span class="bal-conv">≈ ${fmt(emBRL)}</span>`:''}</span>`;
       return `<div class="bal-row">
         <span class="bal-rank">${i+1}</span>
         <span class="bal-dot" style="background:${color}"></span>
-        <span class="bal-name">${esc(b.name)}<span class="bal-pct">${pct.toFixed(1)}%</span>${jogo>0?`<span class="bal-jogo">⏳ ${fmt(jogo)} em jogo</span>`:''}</span>
+        <span class="bal-name">${esc(b.name)}${isUSD?'<span class="bal-cur">USD</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${jogo>0?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):fmt(jogo)} em jogo</span>`:''}</span>
         ${valHtml}
+        <button class="bal-cur-btn" data-balcur="${b.id}" title="Alternar moeda">${isUSD?'$':'R$'}</button>
         <button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>
       </div>`;
     }).join('');
@@ -1118,17 +1134,29 @@
       inp.addEventListener('keydown',e=>{ if(e.key==='Enter') save(); if(e.key==='Escape'){ editingBal=null; renderBalances(); } });
     });
     // wiring: excluir
+    list.querySelectorAll('[data-balcur]').forEach(btn=>btn.addEventListener('click',()=>{
+      const b=state.balances.find(x=>x.id===btn.dataset.balcur);
+      if(!b) return;
+      b.currency = (b.currency==='USD') ? 'BRL' : 'USD';
+      saveState(); renderAll();
+      toast(`${b.name} agora em ${b.currency==='USD'?'dólar':'real'}`);
+    }));
     list.querySelectorAll('[data-baldel]').forEach(btn=>btn.addEventListener('click',()=>{
       const b=state.balances.find(x=>x.id===btn.dataset.baldel);
       if(b&&confirm(`Remover "${b.name}"?`)){ state.balances=state.balances.filter(x=>x.id!==btn.dataset.baldel); saveState(); renderBalances(); }
     }));
   }
 
+  $('balRate').addEventListener('change',e=>{
+    const v=parseFloat(e.target.value);
+    state.usdRate=(isNaN(v)||v<=0)?5:v; saveState(); renderAll();
+    toast('Cotação atualizada: '+usdRate().toFixed(2));
+  });
   $('balAddBtn').addEventListener('click',()=>{
     const name=$('balName').value.trim(), value=parseFloat($('balValue').value);
     if(!name){ alert('Informe o nome da casa.'); return; }
     if(state.balances.some(b=>b.name.toLowerCase()===name.toLowerCase())){ alert('Essa casa já existe. Edite o saldo clicando no valor.'); return; }
-    state.balances.push({ id:uid(), name, value:isNaN(value)?0:value });
+    state.balances.push({ id:uid(), name, value:isNaN(value)?0:value, currency:$('balCur').value||'BRL' });
     $('balName').value=''; $('balValue').value='';
     saveState(); renderAll();
   });
@@ -1295,9 +1323,12 @@
     if(!b){ b={id:uid(), name:nome.trim(), value:0}; state.balances.push(b); }
     return b;
   }
-  function moverSaldo(nome,delta){
+  // delta sempre chega em BRL; converte para a moeda da casa antes de aplicar
+  function moverSaldo(nome,deltaBRL){
     const b=acharCasa(nome);
-    if(b) b.value=Math.round((b.value+delta)*100)/100;
+    if(!b) return;
+    const delta = (b.currency==='USD') ? deltaBRL/usdRate() : deltaBRL;
+    b.value=Math.round((b.value+delta)*100)/100;
   }
   // Debita os stakes das duas casas (ao registrar a operação)
   function aplicarStakes(o){
@@ -1631,6 +1662,7 @@
   // init
   fillCfg();
   $('sbBankrollInput').value=state.sbBankroll||'';
+  $('balRate').value=usdRate();
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
   updateSurebetCalc();
   renderAll();
