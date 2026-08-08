@@ -4615,7 +4615,7 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 634.04
+      "value": 310.99
     },
     {
       "id": "msddu5i007wwm",
@@ -4699,7 +4699,7 @@
     },
     {
       "date": "2026-08-08",
-      "value": 38640.47
+      "value": 38317.42
     }
   ],
   "surebets": [
@@ -5917,5 +5917,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T10:11:36.202Z"
+  "updatedAt": "2026-08-08T10:11:58.770Z"
 }
