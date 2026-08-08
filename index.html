@@ -148,7 +148,9 @@
   /* capital em aberto */
   .caixa-hero{text-align:center;padding:14px 0 6px;}
   .caixa-val{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--text);letter-spacing:-0.5px;}
-  .caixa-sub{font-size:12px;margin-top:6px;}
+  .caixa-sub{font-size:12px;margin-top:6px;line-height:1.7;}
+  .caixa-edit-val{cursor:pointer;border-bottom:1px dashed var(--muted-2);}
+  .caixa-edit-val:hover{color:var(--sky);border-bottom-color:var(--sky);}
   .sb-open-box{margin-top:10px;padding:10px 12px;border-radius:9px;background:#2A1A08;border:1px solid #4D3010;font-size:12.5px;line-height:1.7;}
   .sb-open-box.none{background:#0A2018;border-color:#1A3D2E;}
   .sb-open-box .big{font-family:var(--mono);font-size:17px;font-weight:700;color:var(--amber);}
@@ -237,7 +239,7 @@
     <div class="btn-row" style="margin-top:10px;">
       <button class="btn primary" id="caixaSnapBtn">Registrar caixa de hoje</button>
     </div>
-    <div class="footnote">O caixa é a soma dos saldos por casa abaixo. Registre o valor de hoje para alimentar a evolução diária. Aportes e saques são registrados à parte e não alteram este acompanhamento.</div>
+    <div class="footnote">O registro diário é <b>fixo</b>: uma vez gravado, não muda quando você atualiza os saldos por casa durante o dia. Para alterá-lo, use o botão acima (pede confirmação) ou clique no valor na tabela abaixo. Aportes e saques não alteram este acompanhamento.</div>
   </div>
 
   <!-- EVOLUÇÃO DIÁRIA DA BANCA -->
@@ -946,21 +948,39 @@
   }
 
   function renderCaixa(){
-    const total=caixaAtual();
-    $('caixaTotal').textContent=fmt(total);
-
+    const aoVivo=caixaAtual();                 // soma atual das casas (muda o tempo todo)
     const hist=[...(state.caixa||[])].sort((a,b)=>a.date.localeCompare(b.date));
-    // variação vs último registro anterior a hoje
     const hoje=todayStr();
-    const anteriores=hist.filter(h=>h.date<hoje);
+    const regHoje=hist.find(h=>h.date===hoje); // registro FIXO do dia
+
+    // número grande = o registro fixo do dia, se houver; senão o ao vivo
+    const principal = regHoje ? regHoje.value : aoVivo;
+    $('caixaTotal').textContent=fmt(principal);
+
     const sub=$('caixaSub');
+    let linhas=[];
+
+    if(regHoje){
+      linhas.push(`<span style="color:var(--green)">● Registro fixo de hoje</span>`);
+      const dif=aoVivo-regHoje.value;
+      if(Math.abs(dif)>=0.01){
+        const cls=dif>=0?'var(--green)':'var(--red)';
+        linhas.push(`<span style="color:var(--muted-2)">Saldo ao vivo nas casas: ${fmt(aoVivo)}</span> <span style="color:${cls}">(${fmtSign(dif)})</span>`);
+      }
+    } else {
+      linhas.push(`<span style="color:var(--amber)">○ Hoje ainda não registrado — valor ao vivo das casas</span>`);
+    }
+
+    // variação vs último dia anterior
+    const anteriores=hist.filter(h=>h.date<hoje);
     if(anteriores.length){
       const prev=anteriores[anteriores.length-1];
-      const delta=total-prev.value;
+      const delta=principal-prev.value;
       const pct=prev.value>0?(delta/prev.value*100):0;
       const cls=delta>=0?'var(--green)':'var(--red)';
-      sub.innerHTML=`<span style="color:${cls}">${fmtSign(delta)} (${pct>=0?'+':''}${pct.toFixed(2)}%)</span> <span style="color:var(--muted-2)">desde ${prev.date.slice(8,10)}/${prev.date.slice(5,7)}</span>`;
-    } else { sub.innerHTML='<span style="color:var(--muted-2)">Registre o caixa por alguns dias para ver a variação.</span>'; }
+      linhas.push(`<span style="color:${cls}">${fmtSign(delta)} (${pct>=0?'+':''}${pct.toFixed(2)}%)</span> <span style="color:var(--muted-2)">desde ${prev.date.slice(8,10)}/${prev.date.slice(5,7)}</span>`);
+    }
+    sub.innerHTML=linhas.join('<br>');
 
     renderCaixaList(hist);
     renderCaixaChart(hist);
@@ -979,12 +999,21 @@
         const dd=h.date.slice(8,10)+'/'+h.date.slice(5,7);
         return `<tr>
           <td>${dd}</td>
-          <td>${fmt(h.value)}</td>
+          <td><span class="caixa-edit-val" data-caixaedit="${h.date}" title="Clique para editar">${fmt(h.value)}</span></td>
           <td class="${cls}">${delta===null?'—':fmtSign(delta)}</td>
           <td class="${cls}">${pct===null?'—':(pct>=0?'+':'')+pct.toFixed(2)+'%'}</td>
           <td><button class="bal-del" data-caixadel="${h.date}">×</button></td>
         </tr>`;
       }).join('')+'</tbody></table>';
+    box.querySelectorAll('[data-caixaedit]').forEach(el=>el.addEventListener('click',()=>{
+      const d=el.dataset.caixaedit;
+      const atual=(state.caixa.find(x=>x.date===d)||{}).value||0;
+      const novo=prompt(`Valor em caixa de ${d.slice(8,10)}/${d.slice(5,7)}:`, atual.toFixed(2));
+      if(novo===null) return;
+      const v=parseFloat(String(novo).replace(',','.'));
+      if(isNaN(v)){ alert('Valor inválido.'); return; }
+      upsertCaixa(d,v); saveState(); renderAll(); toast('Registro atualizado ✓');
+    }));
     box.querySelectorAll('[data-caixadel]').forEach(btn=>btn.addEventListener('click',()=>{
       const d=btn.dataset.caixadel;
       if(confirm(`Remover o registro de ${d.slice(8,10)}/${d.slice(5,7)}?`)){
@@ -1026,8 +1055,11 @@
   $('caixaSnapBtn').addEventListener('click',()=>{
     const total=caixaAtual();
     if(!(total>0)){ alert('Cadastre os saldos por casa (ou informe um valor manual abaixo) antes de registrar.'); return; }
-    upsertCaixa(todayStr(),total);
-    saveState(); renderAll(); toast('Caixa de hoje registrado ✓');
+    const hoje=todayStr();
+    const ex=(state.caixa||[]).find(x=>x.date===hoje);
+    if(ex && !confirm(`Já existe registro de hoje: ${fmt(ex.value)}.\n\nSubstituir por ${fmt(total)}?`)) return;
+    upsertCaixa(hoje,total);
+    saveState(); renderAll(); toast(ex?'Registro de hoje atualizado ✓':'Caixa de hoje registrado ✓');
   });
 
   $('caixaAddBtn').addEventListener('click',()=>{
@@ -1066,7 +1098,7 @@
       const save=()=>{
         const b=state.balances.find(x=>x.id===inp.dataset.balsave);
         if(b){ const v=parseFloat(inp.value); if(!isNaN(v)) b.value=v; }
-        editingBal=null; upsertCaixa(todayStr(),caixaAtual()); saveState(); renderAll();
+        editingBal=null; saveState(); renderAll();
       };
       inp.addEventListener('blur',save);
       inp.addEventListener('keydown',e=>{ if(e.key==='Enter') save(); if(e.key==='Escape'){ editingBal=null; renderBalances(); } });
@@ -1084,7 +1116,7 @@
     if(state.balances.some(b=>b.name.toLowerCase()===name.toLowerCase())){ alert('Essa casa já existe. Edite o saldo clicando no valor.'); return; }
     state.balances.push({ id:uid(), name, value:isNaN(value)?0:value });
     $('balName').value=''; $('balValue').value='';
-    upsertCaixa(todayStr(),caixaAtual()); saveState(); renderAll();
+    saveState(); renderAll();
   });
 
   /* ---------- insights dinâmicos ---------- */
