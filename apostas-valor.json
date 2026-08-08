@@ -4560,7 +4560,7 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 20605.42
+      "value": 20645
     },
     {
       "id": "mrzmpfmzgil2s",
@@ -4699,7 +4699,7 @@
     },
     {
       "date": "2026-08-08",
-      "value": 39029.619999999995
+      "value": 39069.2
     }
   ],
   "surebets": [
@@ -5917,5 +5917,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T10:14:09.340Z"
+  "updatedAt": "2026-08-08T10:15:16.821Z"
 }
