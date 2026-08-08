@@ -6050,8 +6050,25 @@
       "roi": -3.345911949685548,
       "winner": null,
       "date": "2026-08-09T04:00"
+    },
+    {
+      "id": "mskoo49725xd9",
+      "event": "Newcastle North Stars – Sydney Ice Dogs",
+      "houseA": "Betsson",
+      "houseB": "Thunderpick",
+      "oddA": 1.47,
+      "oddB": 3.11,
+      "total": 190,
+      "stakeA": 130,
+      "stakeB": 60,
+      "lucroA": 1.0999999999999943,
+      "lucroB": -3.4000000000000057,
+      "lucro": -3.4000000000000057,
+      "roi": -1.7894736842105292,
+      "winner": null,
+      "date": "2026-08-09T03:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T17:54:04.554Z"
+  "updatedAt": "2026-08-08T18:04:35.084Z"
 }
