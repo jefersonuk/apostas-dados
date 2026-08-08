@@ -4567,7 +4567,7 @@
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
       "value": 2042.2,
-      "currency": "USD"
+      "currency": "BRL"
     },
     {
       "id": "ms2ghozrogav9",
@@ -6074,5 +6074,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T23:28:00.846Z"
+  "updatedAt": "2026-08-08T23:28:03.946Z"
 }
