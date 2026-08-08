@@ -5965,8 +5965,25 @@
       "roi": 1.3260869565217357,
       "winner": null,
       "date": "2026-08-08T18:00"
+    },
+    {
+      "id": "mskmgajd3iwpt",
+      "event": "Kato/Samsonova – Errani/Melichar-Martinez",
+      "houseA": "Thunderpick",
+      "houseB": "Bet365",
+      "oddA": 1.88,
+      "oddB": 2.2,
+      "total": 342,
+      "stakeA": 184,
+      "stakeB": 158,
+      "lucroA": 3.919999999999959,
+      "lucroB": 5.600000000000023,
+      "lucro": 3.919999999999959,
+      "roi": 1.1461988304093447,
+      "winner": null,
+      "date": "2026-08-08T15:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T16:55:58.488Z"
+  "updatedAt": "2026-08-08T17:02:30.752Z"
 }
