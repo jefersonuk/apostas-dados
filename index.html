@@ -133,20 +133,22 @@
   .sc-table tr:last-child td{border-bottom:none;}
   .sc-table .cum{color:var(--sky);font-weight:600;}
   /* surebet ops segmentadas */
-  .sb-day-header{display:flex;align-items:center;justify-content:space-between;margin:14px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--sky);}
+  .sb-day-header{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:16px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--sky);}
   .sb-day-header:first-child{margin-top:0;}
-  .sb-day-title{font-size:14px;font-weight:700;color:var(--text);}
+  .sb-day-title{font-size:13.5px;font-weight:700;color:var(--text);}
   .sb-day-title .weekday{color:var(--muted-2);font-weight:500;font-size:12px;margin-left:6px;}
-  .sb-day-sum{font-family:var(--mono);font-size:12px;font-weight:600;}
+  .sb-day-sum{font-family:var(--mono);font-size:11.5px;font-weight:600;white-space:nowrap;}
   .sb-op{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;overflow:hidden;background:var(--panel-2);}
-  .sb-op-top{display:flex;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;}
-  .sb-time{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0E1520;border:1px solid #1A2C40;border-radius:8px;padding:5px 9px;min-width:52px;}
-  .sb-time .hh{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--sky);line-height:1;}
-  .sb-time .label{font-size:8.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;}
-  .sb-op-mid{flex:1;min-width:0;}
-  .sb-op-event{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:5px;}
+  .sb-op-top{display:flex;flex-direction:column;gap:8px;padding:11px 12px;cursor:pointer;}
+  .sb-op-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .sb-time{display:inline-flex;align-items:baseline;gap:4px;background:#0E1520;border:1px solid #1A2C40;border-radius:7px;padding:3px 8px;}
+  .sb-time .hh{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--sky);line-height:1.2;}
+  .sb-time .label{font-size:8.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.04em;}
+  .sb-op-mid{min-width:0;}
+  .sb-op-event{font-size:13.5px;font-weight:600;line-height:1.35;word-break:break-word;}
   .sb-houses{display:flex;gap:6px;flex-wrap:wrap;}
-  .sb-house{display:flex;align-items:center;gap:5px;background:#0E1116;border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:11px;}
+  .sb-house{display:flex;align-items:center;gap:5px;background:#0E1116;border:1px solid var(--border);border-radius:6px;padding:4px 8px;font-size:11px;max-width:100%;min-width:0;}
+  .sb-house .hname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   .sb-house .hname{font-weight:600;color:var(--text);}
   .sb-house .hodd{font-family:var(--mono);color:var(--amber);}
   .sb-house.hA{border-left:3px solid #38BDF8;}
@@ -166,19 +168,23 @@
   /* status pendente vs finalizada */
   .sb-op.pending{border-left:4px solid var(--amber);background:#16120B;}
   .sb-op.done{border-left:4px solid var(--green);opacity:.82;}
-  .sb-status-badge{display:inline-block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:10px;margin-right:6px;vertical-align:middle;}
+  .sb-status-badge{display:inline-block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:10px;white-space:nowrap;}
   .sb-status-badge.pending{background:#4D3010;color:var(--amber);}
   .sb-status-badge.done{background:#1A3D2E;color:var(--green);}
   .sb-op-val .lucro.pend{color:var(--amber);}
   .sb-edit{padding:10px 12px;border-top:1px solid var(--border);background:#0E1116;}
   .sb-edit label{font-size:10px;}
   .sb-edit input{font-size:12px;padding:6px 8px;margin-bottom:4px;}
-  .sb-op-val{text-align:right;white-space:nowrap;}
+  .sb-op-val{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;
+             border-top:1px solid var(--border);padding-top:7px;margin-top:1px;}
   .sb-op-val .lucro{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--green);}
+  .sb-op-val .lucro.pend{font-size:12.5px;}
   .sb-op-val .roi{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);}
   .sb-op-detail{display:none;padding:10px 12px;border-top:1px solid var(--border);font-family:var(--mono);font-size:12px;line-height:1.9;color:var(--muted);}
   .sb-op-detail.show{display:block;}
-  .sb-op-detail .leg{display:flex;justify-content:space-between;}
+  .sb-op-detail .leg{display:flex;justify-content:space-between;gap:10px;}
+  .sb-op-detail .leg span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .sb-op-detail .leg span:last-child{white-space:nowrap;}
   .sb-op-detail .legA{color:#7DD3FC;} .sb-op-detail .legB{color:#C4B5FD;}
   .insight{padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:12px;}
   .insight.good{background:#0A2018;border:1px solid #1A3D2E;color:var(--green);}
@@ -1520,17 +1526,20 @@
 
         html+=`<div class="sb-op ${resolved?'done':'pending'}">
           <div class="sb-op-top" data-sbtoggle="${o.id}">
-            <div class="sb-time"><span class="hh">${hh}</span><span class="label">jogo</span></div>
+            <div class="sb-op-head">
+              <span class="sb-time"><span class="hh">${hh}</span><span class="label">jogo</span></span>
+              ${badge}
+            </div>
             <div class="sb-op-mid">
-              <div class="sb-op-event">${badge}${esc(o.event)}</div>
-              <div class="sb-houses">
-                <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
-                <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
-              </div>
+              <div class="sb-op-event">${esc(o.event)}</div>
+            </div>
+            <div class="sb-houses">
+              <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
+              <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
             </div>
             <div class="sb-op-val">
-              <div class="${lucroCls}">${lucroTxt}</div>
-              <div class="roi">${subTxt}</div>
+              <span class="${lucroCls}">${lucroTxt}</span>
+              <span class="roi">${subTxt}</span>
             </div>
           </div>
           ${detailInner}
