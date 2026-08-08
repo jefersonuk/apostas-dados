@@ -4625,7 +4625,7 @@
     {
       "id": "msdee34ivpnvx",
       "name": "Jetcasino",
-      "value": 331.8
+      "value": 519
     },
     {
       "id": "msdvui0wbro2s",
@@ -4699,7 +4699,7 @@
     },
     {
       "date": "2026-08-08",
-      "value": 38317.42
+      "value": 38504.619999999995
     }
   ],
   "surebets": [
@@ -5917,5 +5917,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T10:11:58.770Z"
+  "updatedAt": "2026-08-08T10:12:33.836Z"
 }
