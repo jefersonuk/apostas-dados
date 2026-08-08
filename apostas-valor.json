@@ -5914,8 +5914,25 @@
       "roi": 0.0700218818380705,
       "winner": "A",
       "date": "2026-08-07T18:00"
+    },
+    {
+      "id": "mskgwayojieb7",
+      "event": "Navi x Sk Gaming",
+      "houseA": "BETMGM",
+      "houseB": "Thunderpick",
+      "oddA": 1.41,
+      "oddB": 3.5,
+      "total": 271.6170212765958,
+      "stakeA": 193.61702127659575,
+      "stakeB": 78,
+      "lucroA": 1.3829787234042215,
+      "lucroB": 1.3829787234042215,
+      "lucro": 1.3829787234042215,
+      "roi": 0.5091649694500893,
+      "winner": null,
+      "date": "2026-08-07T13:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T10:15:56.723Z"
+  "updatedAt": "2026-08-08T14:27:00.102Z"
 }
