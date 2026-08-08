@@ -103,8 +103,9 @@
   .bal-pct{font-family:var(--mono);font-size:10px;color:var(--muted-2);font-weight:500;margin-left:6px;}
   .bal-cur{display:inline-block;font-size:9px;font-weight:700;color:#34D399;background:#0A2018;border:1px solid #1A3D2E;border-radius:4px;padding:0 4px;margin-left:5px;vertical-align:middle;}
   .bal-conv{display:block;font-size:10px;color:var(--muted-2);font-weight:500;}
-  .bal-cur-btn{background:none;border:1px solid var(--border);border-radius:5px;color:var(--muted-2);font-size:10px;font-family:var(--mono);cursor:pointer;padding:2px 5px;}
+  .bal-cur-btn{background:#0E1116;border:1px solid var(--border);border-radius:6px;color:var(--muted);font-size:11px;font-weight:700;font-family:var(--mono);cursor:pointer;padding:4px 7px;min-width:38px;}
   .bal-cur-btn:hover{color:var(--sky);border-color:var(--sky);}
+  .bal-cur-btn.usd{background:#0A2018;border-color:#1A3D2E;color:#34D399;}
   .bal-jogo{display:block;font-family:var(--mono);font-size:10px;color:var(--amber);font-weight:500;margin-top:1px;}
   .bal-val{font-family:var(--mono);font-size:14px;font-weight:600;cursor:pointer;min-width:80px;text-align:right;padding:4px 8px;border-radius:6px;border:1px solid transparent;}
   .bal-val:hover{border-color:var(--border);background:#0E1116;}
@@ -276,7 +277,7 @@
       <div><label>Cotação USD → BRL</label><input type="number" id="balRate" step="0.01" placeholder="5.00"></div>
     </div>
     <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar casa</button>
-    <div class="footnote">Ordenado por saldo. As operações de surebet debitam e creditam estes saldos automaticamente. Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
+    <div class="footnote">Ordenado pelo valor <b>convertido em reais</b> — uma conta de US$ 50 (R$ 250) fica acima de uma de R$ 200. Use o botão <b>R$ / US$</b> em cada linha para marcar a moeda da conta. As operações de surebet debitam e creditam estes saldos automaticamente. Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
   </div>
 
   <!-- APORTES -->
@@ -1114,7 +1115,7 @@
         <span class="bal-dot" style="background:${color}"></span>
         <span class="bal-name">${esc(b.name)}${isUSD?'<span class="bal-cur">USD</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${jogo>0?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):fmt(jogo)} em jogo</span>`:''}</span>
         ${valHtml}
-        <button class="bal-cur-btn" data-balcur="${b.id}" title="Alternar moeda">${isUSD?'$':'R$'}</button>
+        <button class="bal-cur-btn ${isUSD?'usd':''}" data-balcur="${b.id}" title="Clique para alternar entre Real e Dólar">${isUSD?'US$':'R$'}</button>
         <button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>
       </div>`;
     }).join('');
