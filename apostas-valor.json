@@ -4530,7 +4530,8 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 1931.7
+      "value": 1931.7,
+      "currency": "USD"
     },
     {
       "id": "mricm6v4hbqxz",
@@ -4659,7 +4660,8 @@
     {
       "id": "msfgf86ojrke9",
       "name": "Egb",
-      "value": 1250
+      "value": 1250,
+      "currency": "USD"
     },
     {
       "id": "msg7v7zbl5xz5",
@@ -6075,5 +6077,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T23:28:26.496Z"
+  "updatedAt": "2026-08-08T23:29:03.896Z"
 }
