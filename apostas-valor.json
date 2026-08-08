@@ -5948,8 +5948,25 @@
       "roi": 0.21551724137931033,
       "winner": null,
       "date": "2026-08-08T15:30"
+    },
+    {
+      "id": "mskm7vv4en1xk",
+      "event": "Giovanna Canuto – Carol Foro",
+      "houseA": "Thunderpick",
+      "houseB": "Betsson",
+      "oddA": 2.37,
+      "oddB": 1.77,
+      "total": 168.40677966101697,
+      "stakeA": 72,
+      "stakeB": 96.40677966101696,
+      "lucroA": 2.2332203389830454,
+      "lucroB": 2.2332203389830454,
+      "lucro": 2.2332203389830454,
+      "roi": 1.3260869565217357,
+      "winner": null,
+      "date": "2026-08-08T18:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T16:27:51.765Z"
+  "updatedAt": "2026-08-08T16:55:58.488Z"
 }
