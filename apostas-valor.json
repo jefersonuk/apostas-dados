@@ -4551,7 +4551,7 @@
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
       "value": 2758.84,
-      "currency": "USD"
+      "currency": "BRL"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -6074,5 +6074,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T23:28:09.813Z"
+  "updatedAt": "2026-08-08T23:28:11.464Z"
 }
