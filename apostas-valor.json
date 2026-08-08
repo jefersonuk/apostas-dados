@@ -6003,8 +6003,8 @@
     {
       "id": "msknlo8tso4ru",
       "event": "Botafogo x Fluminense",
-      "houseA": "Casobet",
-      "houseB": "",
+      "houseA": "Thunderpick",
+      "houseB": "Pinnacle",
       "oddA": 1.71,
       "oddB": 2.43,
       "total": 393.25,
@@ -6019,5 +6019,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T17:34:41.414Z"
+  "updatedAt": "2026-08-08T17:35:28.679Z"
 }
