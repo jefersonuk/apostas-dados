@@ -6016,8 +6016,25 @@
       "roi": 0.10425937698665608,
       "winner": null,
       "date": "2026-08-08T21:00"
+    },
+    {
+      "id": "msko05br1seju",
+      "event": "Cloud9 – Disguised",
+      "houseA": "Betsson",
+      "houseB": "Casobet",
+      "oddA": 1.3,
+      "oddB": 4.75,
+      "total": 930,
+      "stakeA": 730,
+      "stakeB": 200,
+      "lucroA": 19,
+      "lucroB": 20,
+      "lucro": 19,
+      "roi": 2.043010752688172,
+      "winner": null,
+      "date": "2026-08-08T17:00"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-08T17:37:03.421Z"
+  "updatedAt": "2026-08-08T17:45:56.734Z"
 }
