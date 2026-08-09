@@ -124,6 +124,9 @@
   .day-center{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--border);}
   .day-val{font-family:var(--mono);font-weight:600;min-width:78px;text-align:right;}
   .day-meta{font-family:var(--mono);color:var(--muted-2);min-width:58px;text-align:right;font-size:10.5px;}
+  .sc-stake-row{display:flex;gap:5px;}
+  .sc-stake-row input{flex:1;min-width:0;margin-bottom:4px;}
+  .sc-stake-row select{width:66px;margin-bottom:4px;padding:8px 4px;font-size:12px;}
   .sc-mode{display:flex;gap:6px;margin:10px 0 8px;flex-wrap:wrap;}
   .sc-mode-opt{display:flex;align-items:center;gap:5px;font-size:11.5px;color:var(--muted);background:#0E1116;border:1px solid var(--border);border-radius:7px;padding:6px 10px;cursor:pointer;flex:1;justify-content:center;}
   .sc-mode-opt input{accent-color:var(--sky);}
@@ -414,7 +417,7 @@
     <!-- CALCULADORA SUREBET -->
     <div class="card">
       <div class="card-title">Calculadora de Surebet (2 vias)</div>
-      <div class="footnote" style="margin-top:0;">Informe as odds. Escolha o modo: distribuir uma banca total, ou fixar o valor de uma perna e deixar a outra se ajustar automaticamente. Edite qualquer campo e tudo recalcula.</div>
+      <div class="footnote" style="margin-top:0;">Informe as odds e escolha o modo. Cada perna pode ser em <b>R$ ou US$</b> (convertido pela cotação configurada na aba de banca). Edite qualquer campo e tudo recalcula.</div>
 
       <div class="grid2" style="margin-top:10px;">
         <div><label>Casa A</label><input type="text" id="scHouseA" placeholder="Ex: Bet365"></div>
@@ -438,8 +441,20 @@
       </div>
 
       <div class="grid2">
-        <div><label>Stake A (R$)</label><input type="number" id="scStakeA" step="0.01" min="0" placeholder="—"></div>
-        <div><label>Stake B (R$)</label><input type="number" id="scStakeB" step="0.01" min="0" placeholder="—"></div>
+        <div>
+          <label>Stake A</label>
+          <div class="sc-stake-row">
+            <input type="number" id="scStakeA" step="0.01" min="0" placeholder="—">
+            <select id="scCurA"><option value="BRL">R$</option><option value="USD">US$</option></select>
+          </div>
+        </div>
+        <div>
+          <label>Stake B</label>
+          <div class="sc-stake-row">
+            <input type="number" id="scStakeB" step="0.01" min="0" placeholder="—">
+            <select id="scCurB"><option value="BRL">R$</option><option value="USD">US$</option></select>
+          </div>
+        </div>
       </div>
 
       <div class="risk-preview" id="scResult">
@@ -1215,7 +1230,7 @@
   /* ============ ABA SUREBET ============ */
   const scEls={
     oddA:$('scOddA'), oddB:$('scOddB'), houseA:$('scHouseA'), houseB:$('scHouseB'),
-    total:$('scTotal'), stakeA:$('scStakeA'), stakeB:$('scStakeB'),
+    total:$('scTotal'), stakeA:$('scStakeA'), stakeB:$('scStakeB'), curA:$('scCurA'), curB:$('scCurB'),
     totalWrap:$('scTotalWrap'), result:$('scResult'), event:$('scEvent'), date:$('scDate'), register:$('scRegisterBtn')
   };
   let scMode='total';       // 'total' | 'fixA' | 'fixB'
@@ -1231,6 +1246,9 @@
     const oddA=parseFloat(scEls.oddA.value), oddB=parseFloat(scEls.oddB.value);
     if(!(oddA>1)||!(oddB>1)) return null;
     const invA=1/oddA, invB=1/oddB, sumInv=invA+invB;
+    const curA=scEls.curA.value, curB=scEls.curB.value;
+    const fatA=(curA==='USD')?usdRate():1;   // digitado -> BRL
+    const fatB=(curB==='USD')?usdRate():1;
     let stakeA,stakeB;
     if(scMode==='total'){
       const total=parseFloat(scEls.total.value);
@@ -1238,16 +1256,16 @@
       stakeA=total*invA/sumInv;
       stakeB=total*invB/sumInv;
     } else if(scMode==='fixA'){
-      stakeA=parseFloat(scEls.stakeA.value);
+      stakeA=parseFloat(scEls.stakeA.value)*fatA;
       if(!(stakeA>0)) return null;
       stakeB=stakeA*oddA/oddB;   // balanceado
     } else if(scMode==='fixB'){
-      stakeB=parseFloat(scEls.stakeB.value);
+      stakeB=parseFloat(scEls.stakeB.value)*fatB;
       if(!(stakeB>0)) return null;
       stakeA=stakeB*oddB/oddA;   // balanceado
     } else { // livre: os dois stakes são digitados independentemente
-      stakeA=parseFloat(scEls.stakeA.value);
-      stakeB=parseFloat(scEls.stakeB.value);
+      stakeA=parseFloat(scEls.stakeA.value)*fatA;
+      stakeB=parseFloat(scEls.stakeB.value)*fatB;
       if(!(stakeA>0)||!(stakeB>0)) return null;
     }
     const total=stakeA+stakeB;
@@ -1257,7 +1275,7 @@
     const lucro=retorno-total;                  // lucro garantido (pior cenário)
     const roi=total>0?(lucro/total*100):0;
     const pctA=total>0?stakeA/total*100:0, pctB=total>0?stakeB/total*100:0;
-    return { oddA,oddB,stakeA,stakeB,total,retA,retB,lucroA,lucroB,retorno,lucro,roi,sumInv,pctA,pctB,isSure:sumInv<1 };
+    return { oddA,oddB,stakeA,stakeB,total,retA,retB,lucroA,lucroB,retorno,lucro,roi,sumInv,pctA,pctB,curA,curB,fatA,fatB,isSure:sumInv<1 };
   }
 
   function updateSurebetCalc(){
@@ -1267,9 +1285,9 @@
     if(!r){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as odds e os valores para ver o resultado de cada cenário.</span>'; scLast=null; return; }
     scLast=r;
     // refletir stakes calculados (sem sobrescrever o que o usuário edita)
-    if(scMode==='total'){ scEls.stakeA.value=r.stakeA.toFixed(2); scEls.stakeB.value=r.stakeB.toFixed(2); }
-    else if(scMode==='fixA'){ scEls.stakeB.value=r.stakeB.toFixed(2); }
-    else if(scMode==='fixB'){ scEls.stakeA.value=r.stakeA.toFixed(2); }
+    if(scMode==='total'){ scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2); scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2); }
+    else if(scMode==='fixA'){ scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2); }
+    else if(scMode==='fixB'){ scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2); }
     // modo livre: não sobrescreve nada
 
     const hA=scEls.houseA.value.trim()||'Casa A', hB=scEls.houseB.value.trim()||'Casa B';
@@ -1285,11 +1303,13 @@
       `<div style="color:var(--${headCls});font-weight:600;margin-bottom:8px;">${headMsg}</div>`+
       `<div style="font-family:var(--mono);font-size:13px;line-height:1.85;">`+
       `<div style="border-left:3px solid #38BDF8;padding-left:8px;margin-bottom:6px;">`+
-        `<b>${esc(hA)}</b> @${r.oddA.toFixed(2)} · aposta <b>${fmt(r.stakeA)}</b> <span style="color:var(--muted-2)">(${r.pctA.toFixed(1)}%)</span><br>`+
+        `<b>${esc(hA)}</b> @${r.oddA.toFixed(2)} · aposta <b>${r.curA==='USD'?fmtUSD(r.stakeA/r.fatA):fmt(r.stakeA)}</b>`+
+        `${r.curA==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(r.stakeA)}</span>`:''} <span style="color:var(--muted-2)">(${r.pctA.toFixed(1)}%)</span><br>`+
         `<span style="color:var(--muted-2)">Se ${esc(hA)} vencer:</span> retorno ${fmt(r.retA)} · <span style="color:var(--${cA})">lucro ${fmtSign(r.lucroA)}</span>`+
       `</div>`+
       `<div style="border-left:3px solid #A78BFA;padding-left:8px;margin-bottom:8px;">`+
-        `<b>${esc(hB)}</b> @${r.oddB.toFixed(2)} · aposta <b>${fmt(r.stakeB)}</b> <span style="color:var(--muted-2)">(${r.pctB.toFixed(1)}%)</span><br>`+
+        `<b>${esc(hB)}</b> @${r.oddB.toFixed(2)} · aposta <b>${r.curB==='USD'?fmtUSD(r.stakeB/r.fatB):fmt(r.stakeB)}</b>`+
+        `${r.curB==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(r.stakeB)}</span>`:''} <span style="color:var(--muted-2)">(${r.pctB.toFixed(1)}%)</span><br>`+
         `<span style="color:var(--muted-2)">Se ${esc(hB)} vencer:</span> retorno ${fmt(r.retB)} · <span style="color:var(--${cB})">lucro ${fmtSign(r.lucroB)}</span>`+
       `</div>`+
       `<span style="color:var(--muted-2)">Total investido: ${fmt(r.total)}</span>`+
@@ -1301,6 +1321,7 @@
   ['scOddA','scOddB','scTotal','scStakeA','scStakeB','scHouseA','scHouseB'].forEach(id=>{
     $(id).addEventListener('input',updateSurebetCalc);
   });
+  ['scCurA','scCurB'].forEach(id=>$(id).addEventListener('change',updateSurebetCalc));
   document.querySelectorAll('input[name="scMode"]').forEach(r=>r.addEventListener('change',()=>{
     scMode=scGetMode(); updateSurebetCalc();
   }));
@@ -1312,12 +1333,12 @@
       id:uid(), event:scEls.event.value.trim()||'Operação sem nome',
       houseA:scEls.houseA.value.trim(), houseB:scEls.houseB.value.trim(),
       oddA:r.oddA, oddB:r.oddB, total:r.total, stakeA:r.stakeA, stakeB:r.stakeB,
-      lucroA:r.lucroA, lucroB:r.lucroB, lucro:r.lucro, roi:r.roi, winner:null,
+      lucroA:r.lucroA, lucroB:r.lucroB, lucro:r.lucro, roi:r.roi, winner:null, curA:r.curA, curB:r.curB,
       date:scEls.date.value||nowLocalStr()
     };
     aplicarStakes(novaOp);
     state.surebets.push(novaOp);
-    scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
+    scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.curA.value='BRL'; scEls.curB.value='BRL'; scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
     scLast=null; updateSurebetCalc(); saveState(); renderAll();
     toast('Operação registrada ✓');
   });
@@ -1526,8 +1547,8 @@
           </div>`;
         } else {
           detailInner=`<div class="sb-op-detail${sbOpenDetail===o.id?' show':''}" data-sbdetail="${o.id}">
-            <div class="leg legA"><span>${hA} · aposta @${o.oddA.toFixed(2)}</span><span>${fmt(o.stakeA)}</span></div>
-            <div class="leg legB"><span>${hB} · aposta @${o.oddB.toFixed(2)}</span><span>${fmt(o.stakeB)}</span></div>
+            <div class="leg legA"><span>${hA} · aposta @${o.oddA.toFixed(2)}</span><span>${o.curA==='USD'?fmtUSD(o.stakeA/usdRate())+' ('+fmt(o.stakeA)+')':fmt(o.stakeA)}</span></div>
+            <div class="leg legB"><span>${hB} · aposta @${o.oddB.toFixed(2)}</span><span>${o.curB==='USD'?fmtUSD(o.stakeB/usdRate())+' ('+fmt(o.stakeB)+')':fmt(o.stakeB)}</span></div>
             <div class="leg" style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Total investido</span><span>${fmt(o.total)}</span></div>
             <div class="leg"><span>Se ${hA} vencer</span><span style="color:${(o.lucroA??o.lucro)>=0?'var(--green)':'var(--red)'}">${fmtSign(o.lucroA??o.lucro)}</span></div>
             <div class="leg"><span>Se ${hB} vencer</span><span style="color:${(o.lucroB??o.lucro)>=0?'var(--green)':'var(--red)'}">${fmtSign(o.lucroB??o.lucro)}</span></div>
