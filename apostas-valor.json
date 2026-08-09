@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 0,
+      "value": 505,
       "currency": "BRL",
       "auto": true
     },
@@ -4690,7 +4690,12 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 280
+      "value": 0
+    },
+    {
+      "id": "mslrzo1vux1bp",
+      "name": "Stake",
+      "value": -225
     }
   ],
   "aportes": [],
@@ -6070,8 +6075,30 @@
       "aplicado": {
         "resultado": "A"
       }
+    },
+    {
+      "id": "mslrzo1vvhda9",
+      "event": "Arsenal x Coventry city",
+      "houseA": "Stake",
+      "houseB": "Sportybet",
+      "oddA": 2.45,
+      "oddB": 1.95,
+      "total": 505,
+      "stakeA": 225,
+      "stakeB": 280,
+      "lucroA": 46.25,
+      "lucroB": 41,
+      "lucro": 41,
+      "roi": 8.118811881188119,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-21T16:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-09T09:14:58.642Z"
+  "updatedAt": "2026-08-09T12:25:18.988Z"
 }
