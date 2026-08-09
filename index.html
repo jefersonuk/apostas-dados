@@ -124,9 +124,11 @@
   .day-center{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--border);}
   .day-val{font-family:var(--mono);font-weight:600;min-width:78px;text-align:right;}
   .day-meta{font-family:var(--mono);color:var(--muted-2);min-width:58px;text-align:right;font-size:10.5px;}
-  .sc-stake-row{display:flex;gap:5px;}
-  .sc-stake-row input{flex:1;min-width:0;margin-bottom:4px;}
-  .sc-stake-row select{width:66px;margin-bottom:4px;padding:8px 4px;font-size:12px;}
+  .cur-toggle{display:flex;gap:4px;margin-bottom:5px;}
+  .cur-opt{flex:1;padding:6px 4px;border-radius:6px;border:1px solid var(--border);background:#0E1116;
+           color:var(--muted-2);font-family:var(--mono);font-size:12px;font-weight:700;cursor:pointer;}
+  .cur-opt.active{background:var(--sky);color:#04121C;border-color:var(--sky);}
+  .cur-opt.active[data-cur$="USD"]{background:#34D399;border-color:#34D399;color:#04231A;}
   .sc-mode{display:flex;gap:6px;margin:10px 0 8px;flex-wrap:wrap;}
   .sc-mode-opt{display:flex;align-items:center;gap:5px;font-size:11.5px;color:var(--muted);background:#0E1116;border:1px solid var(--border);border-radius:7px;padding:6px 10px;cursor:pointer;flex:1;justify-content:center;}
   .sc-mode-opt input{accent-color:var(--sky);}
@@ -436,24 +438,33 @@
       </div>
 
       <div id="scTotalWrap">
-        <label>Banca total a distribuir (R$)</label>
+        <label>Banca total a distribuir</label>
+        <div class="cur-toggle" id="curToggleT">
+          <button type="button" class="cur-opt active" data-cur="T:BRL">R$</button>
+          <button type="button" class="cur-opt" data-cur="T:USD">US$</button>
+        </div>
         <input type="number" id="scTotal" step="0.01" min="0" placeholder="1000">
       </div>
+      <input type="hidden" id="scCurA" value="BRL">
+      <input type="hidden" id="scCurB" value="BRL">
+      <input type="hidden" id="scCurT" value="BRL">
 
       <div class="grid2">
         <div>
           <label>Stake A</label>
-          <div class="sc-stake-row">
-            <input type="number" id="scStakeA" step="0.01" min="0" placeholder="—">
-            <select id="scCurA"><option value="BRL">R$</option><option value="USD">US$</option></select>
+          <div class="cur-toggle" id="curToggleA">
+            <button type="button" class="cur-opt active" data-cur="A:BRL">R$</button>
+            <button type="button" class="cur-opt" data-cur="A:USD">US$</button>
           </div>
+          <input type="number" id="scStakeA" step="0.01" min="0" placeholder="—">
         </div>
         <div>
           <label>Stake B</label>
-          <div class="sc-stake-row">
-            <input type="number" id="scStakeB" step="0.01" min="0" placeholder="—">
-            <select id="scCurB"><option value="BRL">R$</option><option value="USD">US$</option></select>
+          <div class="cur-toggle" id="curToggleB">
+            <button type="button" class="cur-opt active" data-cur="B:BRL">R$</button>
+            <button type="button" class="cur-opt" data-cur="B:USD">US$</button>
           </div>
+          <input type="number" id="scStakeB" step="0.01" min="0" placeholder="—">
         </div>
       </div>
 
@@ -1251,7 +1262,8 @@
     const fatB=(curB==='USD')?usdRate():1;
     let stakeA,stakeB;
     if(scMode==='total'){
-      const total=parseFloat(scEls.total.value);
+      const fatT=($('scCurT').value==='USD')?usdRate():1;
+      const total=parseFloat(scEls.total.value)*fatT;
       if(!(total>0)) return null;
       stakeA=total*invA/sumInv;
       stakeB=total*invB/sumInv;
@@ -1321,7 +1333,14 @@
   ['scOddA','scOddB','scTotal','scStakeA','scStakeB','scHouseA','scHouseB'].forEach(id=>{
     $(id).addEventListener('input',updateSurebetCalc);
   });
-  ['scCurA','scCurB'].forEach(id=>$(id).addEventListener('change',updateSurebetCalc));
+  document.querySelectorAll('.cur-opt').forEach(btn=>btn.addEventListener('click',()=>{
+    const [perna,moeda]=btn.dataset.cur.split(':');
+    // ativa o botão clicado dentro do seu grupo
+    btn.parentElement.querySelectorAll('.cur-opt').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active');
+    $('scCur'+perna).value=moeda;
+    updateSurebetCalc();
+  }));
   document.querySelectorAll('input[name="scMode"]').forEach(r=>r.addEventListener('change',()=>{
     scMode=scGetMode(); updateSurebetCalc();
   }));
@@ -1338,7 +1357,11 @@
     };
     aplicarStakes(novaOp);
     state.surebets.push(novaOp);
-    scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.curA.value='BRL'; scEls.curB.value='BRL'; scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
+    scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; ['A','B','T'].forEach(p=>{
+      $('scCur'+p).value='BRL';
+      const g=$('curToggle'+p);
+      if(g){ g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active', x.dataset.cur.endsWith('BRL'))); }
+    }); scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
     scLast=null; updateSurebetCalc(); saveState(); renderAll();
     toast('Operação registrada ✓');
   });
