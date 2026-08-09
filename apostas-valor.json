@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1176.25,
+      "value": 783,
       "currency": "BRL",
       "auto": true
     },
@@ -6012,23 +6012,6 @@
       "date": "2026-08-09T04:00"
     },
     {
-      "id": "msknlo8tso4ru",
-      "event": "Botafogo x Fluminense",
-      "houseA": "Thunderpick",
-      "houseB": "Pinnacle",
-      "oddA": 1.71,
-      "oddB": 2.43,
-      "total": 393.25,
-      "stakeA": 231.25,
-      "stakeB": 162,
-      "lucroA": 2.1875,
-      "lucroB": 0.410000000000025,
-      "lucro": 0.410000000000025,
-      "roi": 0.10425937698665608,
-      "winner": null,
-      "date": "2026-08-08T21:00"
-    },
-    {
       "id": "msko05br1seju",
       "event": "Cloud9 – Disguised",
       "houseA": "Betsson",
@@ -6081,5 +6064,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-09T08:12:17.136Z"
+  "updatedAt": "2026-08-09T08:12:33.731Z"
 }
