@@ -4515,7 +4515,7 @@
     {
       "id": "mrgvmrccr6mld",
       "name": "Pitaco",
-      "value": 0
+      "value": 322.5
     },
     {
       "id": "mrgvnqkej651m",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 783,
+      "value": 465,
       "currency": "BRL",
       "auto": true
     },
@@ -6042,8 +6042,11 @@
       "lucroB": -10.640000000000043,
       "lucro": -10.640000000000043,
       "roi": -3.345911949685548,
-      "winner": null,
-      "date": "2026-08-09T04:00"
+      "winner": "A",
+      "date": "2026-08-09T04:00",
+      "aplicado": {
+        "resultado": "A"
+      }
     },
     {
       "id": "mskoo49725xd9",
@@ -6064,5 +6067,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-09T08:12:33.731Z"
+  "updatedAt": "2026-08-09T09:13:22.858Z"
 }
