@@ -4696,11 +4696,6 @@
       "id": "mslrzo1vux1bp",
       "name": "Stake",
       "value": 693.3
-    },
-    {
-      "id": "msmjdbecq54em",
-      "name": "Overtimemarkets",
-      "value": 0
     }
   ],
   "aportes": [],
@@ -6194,5 +6189,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T15:39:06.271Z"
+  "updatedAt": "2026-08-10T15:39:18.791Z"
 }
