@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2028.8,
+      "value": 2160.5,
       "currency": "BRL",
       "auto": true
     },
@@ -4670,7 +4670,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 578
+      "value": 528
     },
     {
       "id": "msgew6ic764xc",
@@ -4695,7 +4695,7 @@
     {
       "id": "mslrzo1vux1bp",
       "name": "Stake",
-      "value": -225
+      "value": -306.7
     },
     {
       "id": "msmjdbecq54em",
@@ -6146,8 +6146,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msn4vd6hog0sn",
+      "event": "Navi x G2 esports",
+      "houseA": "Stake",
+      "houseB": "Betesporte",
+      "oddA": 1.72,
+      "oddB": 2.7,
+      "total": 131.7,
+      "stakeA": 81.7,
+      "stakeB": 50,
+      "lucroA": 8.824000000000012,
+      "lucroB": 3.3000000000000114,
+      "lucro": 3.3000000000000114,
+      "roi": 2.5056947608200546,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-10T14:15",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T10:56:09.444Z"
+  "updatedAt": "2026-08-10T11:13:39.466Z"
 }
