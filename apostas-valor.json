@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2919.39,
+      "value": 3249.39,
       "currency": "BRL",
       "auto": true
     },
@@ -4600,7 +4600,7 @@
     {
       "id": "msan29jv5dft4",
       "name": "BetMGM",
-      "value": 1952.81
+      "value": 2075
     },
     {
       "id": "msd8uqystuub5",
@@ -4716,7 +4716,12 @@
     {
       "id": "msnh5t8va374r",
       "name": "Overtimemarkets",
-      "value": -146
+      "value": -336
+    },
+    {
+      "id": "msnhqdm1jeqv4",
+      "name": "Betmgm / Stake",
+      "value": -262.19
     }
   ],
   "aportes": [],
@@ -6215,17 +6220,17 @@
     {
       "id": "msngttaebgjez",
       "event": "RED CANIDS - LEVIATAN ESPORTS",
-      "houseA": "Betmgm",
+      "houseA": "Betmgm / Stake",
       "houseB": "Overtimemarkets",
       "oddA": 2.33,
       "oddB": 1.95,
-      "total": 268.19,
-      "stakeA": 122.19,
-      "stakeB": 146,
-      "lucroA": 16.512699999999995,
-      "lucroB": 16.50999999999999,
-      "lucro": 16.50999999999999,
-      "roi": 6.1560833737275775,
+      "total": 598.19,
+      "stakeA": 262.19,
+      "stakeB": 336,
+      "lucroA": 12.712699999999927,
+      "lucroB": 57.00999999999988,
+      "lucro": 12.712699999999927,
+      "roi": 2.125194336247668,
       "winner": null,
       "curA": "BRL",
       "curB": "USD",
@@ -6285,5 +6290,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T17:07:37.055Z"
+  "updatedAt": "2026-08-10T17:13:41.738Z"
 }
