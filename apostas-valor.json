@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2977.69,
+      "value": 3557.69,
       "currency": "BRL",
       "auto": true
     },
@@ -4670,7 +4670,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 488
+      "value": 238
     },
     {
       "id": "msgew6ic764xc",
@@ -4722,6 +4722,11 @@
       "id": "msnhqdm1jeqv4",
       "name": "Betmgm / Stake",
       "value": -282.19
+    },
+    {
+      "id": "msnl9l6iu0oso",
+      "name": "Overtimemarkets / casinozer",
+      "value": -170
     }
   ],
   "aportes": [],
@@ -6288,8 +6293,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msnl9l6hnsgbe",
+      "event": "CD Santa Clara – CD Nacional",
+      "houseA": "Betesporte",
+      "houseB": "Overtimemarkets / casinozer",
+      "oddA": 1.85,
+      "oddB": 2.7,
+      "total": 420,
+      "stakeA": 250,
+      "stakeB": 170,
+      "lucroA": 42.5,
+      "lucroB": 39.00000000000006,
+      "lucro": 39.00000000000006,
+      "roi": 9.2857142857143,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-10T16:15",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T18:03:30.243Z"
+  "updatedAt": "2026-08-10T18:52:36.860Z"
 }
