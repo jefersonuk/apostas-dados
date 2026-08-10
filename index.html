@@ -527,13 +527,13 @@
   function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
   function todayStr(){ return new Date().toISOString().slice(0,10); }
   function nowLocalStr(){ const d=new Date(); const off=d.getTimezoneOffset(); const l=new Date(d-off*60000); return l.toISOString().slice(0,16); }
-  function fmt(n){ return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
-  function fmtUSD(n){ return 'US$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function fmt(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return 'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function fmtUSD(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return 'US$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
   function usdRate(){ const r=state.usdRate; return (typeof r==='number'&&r>0)?r:5; }
   // valor de um saldo convertido para BRL
   function balBRL(b){ return (b.currency==='USD') ? b.value*usdRate() : b.value; }
   function fmtBal(b){ return (b.currency==='USD') ? fmtUSD(b.value) : fmt(b.value); }
-  function fmtSign(n){ return (n>=0?'+':'')+fmt(n); }
+  function fmtSign(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return (v>=0?'+':'')+fmt(v); }
   function fmtPct(n){ return (n>=0?'+':'')+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'%'; }
   function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
@@ -1442,19 +1442,25 @@
 
   // lucro real: se o vencedor foi marcado, usa o cenário real; senão usa o pior caso (garantido/teórico)
   function sbRealProfit(o){
-    if(o.winner==='A') return (typeof o.lucroA==='number')?o.lucroA:o.lucro;
-    if(o.winner==='B') return (typeof o.lucroB==='number')?o.lucroB:o.lucro;
-    if(o.winner==='C') return (typeof o.lucroC==='number')?o.lucroC:o.lucro;
-    return o.lucro; // não resolvida: mostra o pior caso garantido como estimativa
+    if(o.winner) return legLucro(o,o.winner);
+    return (typeof o.lucro==='number'&&isFinite(o.lucro))?o.lucro:0;
   }
 
   // pernas presentes numa operação (2 ou 3), e acesso genérico por letra
+  // tolerante a operações antigas que não tenham todos os campos
   function opLegs(o){ const l=['A','B']; if(typeof o.oddC==='number') l.push('C'); return l; }
-  function legHouse(o,l){ return l==='A'?o.houseA:l==='B'?o.houseB:o.houseC; }
-  function legStake(o,l){ return l==='A'?o.stakeA:l==='B'?o.stakeB:o.stakeC; }
-  function legOdd(o,l){ return l==='A'?o.oddA:l==='B'?o.oddB:o.oddC; }
-  function legLucro(o,l){ return l==='A'?o.lucroA:l==='B'?o.lucroB:o.lucroC; }
-  function legCur(o,l){ return l==='A'?o.curA:l==='B'?o.curB:o.curC; }
+  function legHouse(o,l){ return (l==='A'?o.houseA:l==='B'?o.houseB:o.houseC)||('Casa '+l); }
+  function legStake(o,l){ const v=(l==='A'?o.stakeA:l==='B'?o.stakeB:o.stakeC); return (typeof v==='number'&&isFinite(v))?v:0; }
+  function legOdd(o,l){ const v=(l==='A'?o.oddA:l==='B'?o.oddB:o.oddC); return (typeof v==='number'&&isFinite(v))?v:0; }
+  function legCur(o,l){ return (l==='A'?o.curA:l==='B'?o.curB:o.curC)||'BRL'; }
+  // lucro da perna: se a operação antiga não gravou lucroX, recalcula ou cai no lucro garantido
+  function legLucro(o,l){
+    const v=(l==='A'?o.lucroA:l==='B'?o.lucroB:o.lucroC);
+    if(typeof v==='number'&&isFinite(v)) return v;
+    const st=legStake(o,l), od=legOdd(o,l), tot=(typeof o.total==='number')?o.total:0;
+    if(st>0&&od>0&&tot>0) return st*od-tot;          // reconstrói a partir dos dados brutos
+    return (typeof o.lucro==='number')?o.lucro:0;    // último recurso
+  }
 
   /* ---------- integração surebets -> saldo por casa ---------- */
   // Encontra (ou cria) a casa no saldo, casando por nome sem diferenciar maiúsculas
@@ -1624,7 +1630,8 @@
           : `<span class="sb-status-badge pending">⏳ em aberto</span>`;
         const lucroCls=resolved?'lucro':'lucro pend';
         const lucroTxt=resolved?fmtSign(realProfit):
-          (has3?`${fmtSign(o.lucroA)} · ${fmtSign(o.lucroB)} · ${fmtSign(o.lucroC)}`:`${fmtSign(o.lucroA??o.lucro)} a ${fmtSign(o.lucroB??o.lucro)}`);
+          (has3?`${fmtSign(legLucro(o,'A'))} · ${fmtSign(legLucro(o,'B'))} · ${fmtSign(legLucro(o,'C'))}`
+               :`${fmtSign(legLucro(o,'A'))} a ${fmtSign(legLucro(o,'B'))}`);
         const winnerHouse=o.winner?(o.winner==='A'?hA:o.winner==='B'?hB:hC):null;
         const subTxt=resolved?`ganhou ${winnerHouse}`:'aguardando resultado';
 
@@ -1637,19 +1644,19 @@
               <div><label>Casa B</label><input type="text" class="sbed" data-f="houseB" value="${esc(o.houseB||'')}"></div>
             </div>
             <div class="grid2">
-              <div><label>Odd A</label><input type="number" class="sbed" data-f="oddA" step="0.01" value="${o.oddA}"></div>
-              <div><label>Odd B</label><input type="number" class="sbed" data-f="oddB" step="0.01" value="${o.oddB}"></div>
+              <div><label>Odd A</label><input type="number" class="sbed" data-f="oddA" step="0.01" value="${legOdd(o,'A')}"></div>
+              <div><label>Odd B</label><input type="number" class="sbed" data-f="oddB" step="0.01" value="${legOdd(o,'B')}"></div>
             </div>
             <div class="grid2">
-              <div><label>Stake A (R$)</label><input type="number" class="sbed" data-f="stakeA" step="0.01" value="${o.stakeA.toFixed(2)}"></div>
-              <div><label>Stake B (R$)</label><input type="number" class="sbed" data-f="stakeB" step="0.01" value="${o.stakeB.toFixed(2)}"></div>
+              <div><label>Stake A (R$)</label><input type="number" class="sbed" data-f="stakeA" step="0.01" value="${legStake(o,'A').toFixed(2)}"></div>
+              <div><label>Stake B (R$)</label><input type="number" class="sbed" data-f="stakeB" step="0.01" value="${legStake(o,'B').toFixed(2)}"></div>
             </div>
             ${has3?`<div class="grid2">
               <div><label>Casa C</label><input type="text" class="sbed" data-f="houseC" value="${esc(o.houseC||'')}"></div>
-              <div><label>Odd C</label><input type="number" class="sbed" data-f="oddC" step="0.01" value="${o.oddC}"></div>
+              <div><label>Odd C</label><input type="number" class="sbed" data-f="oddC" step="0.01" value="${legOdd(o,'C')}"></div>
             </div>
             <label>Stake C (R$)</label>
-            <input type="number" class="sbed" data-f="stakeC" step="0.01" value="${o.stakeC.toFixed(2)}">`:''}
+            <input type="number" class="sbed" data-f="stakeC" step="0.01" value="${legStake(o,'C').toFixed(2)}">`:''}
             <label>Data / horário do jogo</label>
             <input type="datetime-local" class="sbed" data-f="date" value="${(o.date||'').slice(0,16)}">
             <div style="display:flex;gap:6px;margin-top:8px;">
@@ -1688,9 +1695,9 @@
         }
 
         const housesHtml=`
-              <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
-              <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
-              ${has3?`<span class="sb-house hC${o.winner==='C'?' winner':''}"><span class="hname">${hC}${o.winner==='C'?' ✓':''}</span><span class="hodd">@${o.oddC.toFixed(2)}</span></span>`:''}`;
+              <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${legOdd(o,'A').toFixed(2)}</span></span>
+              <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${legOdd(o,'B').toFixed(2)}</span></span>
+              ${has3?`<span class="sb-house hC${o.winner==='C'?' winner':''}"><span class="hname">${hC}${o.winner==='C'?' ✓':''}</span><span class="hodd">@${legOdd(o,'C').toFixed(2)}</span></span>`:''}`;
 
         html+=`<div class="sb-op ${resolved?'done':'pending'}">
           <div class="sb-op-top" data-sbtoggle="${o.id}">
@@ -1779,8 +1786,18 @@
 
   $('sbCopyBtn').addEventListener('click',()=>{
     const ops=[...(state.surebets||[])].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
-    const lines=[['Data','Evento','CasaA','OddA','StakeA','CasaB','OddB','StakeB','Total','Vencedor','LucroReal','ROI%'].join('\t')];
-    ops.forEach(o=>lines.push([(o.date||'').replace('T',' '),o.event,o.houseA||'',o.oddA.toFixed(2),o.stakeA.toFixed(2),o.houseB||'',o.oddB.toFixed(2),o.stakeB.toFixed(2),o.total.toFixed(2),o.winner||'pendente',sbRealProfit(o).toFixed(2),o.roi.toFixed(2)].join('\t')));
+    const num=v=>(typeof v==='number'&&isFinite(v))?v.toFixed(2):'';
+    const lines=[['Data','Evento','CasaA','OddA','StakeA','CasaB','OddB','StakeB','CasaC','OddC','StakeC','Total','Vencedor','LucroReal','ROI%'].join('\t')];
+    ops.forEach(o=>{
+      const has3=typeof o.oddC==='number';
+      lines.push([
+        (o.date||'').replace('T',' '), o.event||'',
+        o.houseA||'', num(legOdd(o,'A')), num(legStake(o,'A')),
+        o.houseB||'', num(legOdd(o,'B')), num(legStake(o,'B')),
+        has3?(o.houseC||''):'', has3?num(legOdd(o,'C')):'', has3?num(legStake(o,'C')):'',
+        num(o.total), o.winner||'pendente', num(sbRealProfit(o)), num(o.roi)
+      ].join('\t'));
+    });
     navigator.clipboard.writeText(lines.join('\n')).then(()=>toast('Copiado ✓')).catch(()=>alert('Não foi possível copiar.'));
   });
 
