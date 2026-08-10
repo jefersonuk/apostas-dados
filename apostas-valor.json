@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 862.95
+      "value": 702.95
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4551,7 +4551,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 2569.94,
+      "value": 2524.94,
       "currency": "BRL"
     },
     {
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2209.39,
+      "value": 2514.39,
       "currency": "BRL",
       "auto": true
     },
@@ -4622,7 +4622,7 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 150
+      "value": 50
     },
     {
       "id": "msddu5i007wwm",
@@ -6218,8 +6218,35 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msngw6ixfaw0f",
+      "event": "Jodar x Fills",
+      "houseA": "casinozer",
+      "houseB": "betsson",
+      "oddA": 3.25,
+      "oddB": 7.5,
+      "total": 305,
+      "stakeA": 100,
+      "stakeB": 45,
+      "lucroA": 20,
+      "lucroB": 32.5,
+      "lucro": 20,
+      "roi": 6.557377049180328,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-10T19:00",
+      "houseC": "vbet",
+      "oddC": 2.05,
+      "stakeC": 160,
+      "lucroC": 23,
+      "curC": "BRL",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T16:48:22.407Z"
+  "updatedAt": "2026-08-10T16:50:12.875Z"
 }
