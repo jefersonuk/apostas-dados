@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1941.2,
+      "value": 2209.39,
       "currency": "BRL",
       "auto": true
     },
@@ -6196,8 +6196,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msngttaebgjez",
+      "event": "RED CANIDS - LEVIATAN ESPORTS",
+      "houseA": "",
+      "houseB": "",
+      "oddA": 2.33,
+      "oddB": 1.95,
+      "total": 268.1913846153846,
+      "stakeA": 122.19,
+      "stakeB": 146.0013846153846,
+      "lucroA": 16.511315384615386,
+      "lucroB": 16.511315384615386,
+      "lucro": 16.511315384615386,
+      "roi": 6.156542056074767,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-10T18:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T15:41:00.594Z"
+  "updatedAt": "2026-08-10T16:48:22.407Z"
 }
