@@ -160,6 +160,8 @@
   .sb-house .hodd{font-family:var(--mono);color:var(--amber);}
   .sb-house.hA{border-left:3px solid #38BDF8;}
   .sb-house.hB{border-left:3px solid #A78BFA;}
+  .sb-house.hC{border-left:3px solid #34D399;}
+  .sb-op-detail .legC{color:#6EE7B7;}
   .sb-house.winner{background:#0A2018;border-color:#1A3D2E;}
   .sb-house.winner .hname{color:var(--green);}
   /* capital em aberto */
@@ -418,8 +420,13 @@
 
     <!-- CALCULADORA SUREBET -->
     <div class="card">
-      <div class="card-title">Calculadora de Surebet (2 vias)</div>
+      <div class="card-title">Calculadora de Surebet</div>
       <div class="footnote" style="margin-top:0;">Informe as odds e escolha o modo. Cada perna pode ser em <b>R$ ou US$</b> (convertido pela cotação configurada na aba de banca). Edite qualquer campo e tudo recalcula.</div>
+
+      <div class="sc-mode" style="margin-top:10px;">
+        <label class="sc-mode-opt"><input type="radio" name="scLegs" value="2" checked> 2 pernas</label>
+        <label class="sc-mode-opt"><input type="radio" name="scLegs" value="3"> 3 pernas</label>
+      </div>
 
       <div class="grid2" style="margin-top:10px;">
         <div><label>Casa A</label><input type="text" id="scHouseA" placeholder="Ex: Bet365"></div>
@@ -430,10 +437,18 @@
         <div><label>Odd B</label><input type="number" id="scOddB" step="0.01" min="1.01" placeholder="2.05"></div>
       </div>
 
+      <div id="scLegCWrap" style="display:none;">
+        <div class="grid2">
+          <div><label>Casa C</label><input type="text" id="scHouseC" placeholder="Ex: EpicBet"></div>
+          <div><label>Odd C</label><input type="number" id="scOddC" step="0.01" min="1.01" placeholder="3.50"></div>
+        </div>
+      </div>
+
       <div class="sc-mode">
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="total" checked> Distribuir banca</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixA"> Fixar A (balancear)</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixB"> Fixar B (balancear)</label>
+        <label class="sc-mode-opt" id="scModeFixCWrap" style="display:none;"><input type="radio" name="scMode" value="fixC"> Fixar C (balancear)</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="livre"> Manual (livre)</label>
       </div>
 
@@ -447,6 +462,7 @@
       </div>
       <input type="hidden" id="scCurA" value="BRL">
       <input type="hidden" id="scCurB" value="BRL">
+      <input type="hidden" id="scCurC" value="BRL">
       <input type="hidden" id="scCurT" value="BRL">
 
       <div class="grid2">
@@ -466,6 +482,14 @@
           </div>
           <input type="number" id="scStakeB" step="0.01" min="0" placeholder="—">
         </div>
+      </div>
+      <div id="scStakeCWrap" style="display:none;">
+        <label>Stake C</label>
+        <div class="cur-toggle" id="curToggleC">
+          <button type="button" class="cur-opt active" data-cur="C:BRL">R$</button>
+          <button type="button" class="cur-opt" data-cur="C:USD">US$</button>
+        </div>
+        <input type="number" id="scStakeC" step="0.01" min="0" placeholder="—">
       </div>
 
       <div class="risk-preview" id="scResult">
@@ -1133,6 +1157,7 @@
     (state.surebets||[]).filter(o=>!o.winner).forEach(o=>{
       if(o.houseA){ const k=o.houseA.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeA; }
       if(o.houseB){ const k=o.houseB.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeB; }
+      if(o.houseC){ const k=o.houseC.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeC; }
     });
     // ordenar por saldo decrescente (maior primeiro), sem mutar o array original
     const ordenadas=[...state.balances].sort((a,b)=>balBRL(b)-balBRL(a));
@@ -1240,97 +1265,136 @@
 
   /* ============ ABA SUREBET ============ */
   const scEls={
-    oddA:$('scOddA'), oddB:$('scOddB'), houseA:$('scHouseA'), houseB:$('scHouseB'),
-    total:$('scTotal'), stakeA:$('scStakeA'), stakeB:$('scStakeB'), curA:$('scCurA'), curB:$('scCurB'),
-    totalWrap:$('scTotalWrap'), result:$('scResult'), event:$('scEvent'), date:$('scDate'), register:$('scRegisterBtn')
+    oddA:$('scOddA'), oddB:$('scOddB'), oddC:$('scOddC'),
+    houseA:$('scHouseA'), houseB:$('scHouseB'), houseC:$('scHouseC'),
+    total:$('scTotal'), stakeA:$('scStakeA'), stakeB:$('scStakeB'), stakeC:$('scStakeC'),
+    curA:$('scCurA'), curB:$('scCurB'), curC:$('scCurC'),
+    totalWrap:$('scTotalWrap'), legCWrap:$('scLegCWrap'), stakeCWrap:$('scStakeCWrap'), modeFixCWrap:$('scModeFixCWrap'),
+    result:$('scResult'), event:$('scEvent'), date:$('scDate'), register:$('scRegisterBtn')
   };
-  let scMode='total';       // 'total' | 'fixA' | 'fixB'
+  let scMode='total';       // 'total' | 'fixA' | 'fixB' | 'fixC' | 'livre'
+  let scLegs=2;             // 2 ou 3 pernas
   let scLast=null;          // último resultado calculado (para registrar)
 
   function scGetMode(){
     const r=document.querySelector('input[name="scMode"]:checked');
     return r?r.value:'total';
   }
+  function scGetLegs(){
+    const r=document.querySelector('input[name="scLegs"]:checked');
+    return r?parseInt(r.value,10):2;
+  }
 
-  // calcula ambos os stakes conforme o modo, mantendo a surebet (retornos iguais)
+  // calcula os stakes de todas as pernas conforme o modo, mantendo o retorno equilibrado
   function computeSurebet(){
+    const n=scLegs;
     const oddA=parseFloat(scEls.oddA.value), oddB=parseFloat(scEls.oddB.value);
-    if(!(oddA>1)||!(oddB>1)) return null;
-    const invA=1/oddA, invB=1/oddB, sumInv=invA+invB;
-    const curA=scEls.curA.value, curB=scEls.curB.value;
-    const fatA=(curA==='USD')?usdRate():1;   // digitado -> BRL
-    const fatB=(curB==='USD')?usdRate():1;
-    let stakeA,stakeB;
+    const oddC=n===3?parseFloat(scEls.oddC.value):null;
+    if(!(oddA>1)||!(oddB>1)||(n===3&&!(oddC>1))) return null;
+    const invA=1/oddA, invB=1/oddB, invC=n===3?1/oddC:0;
+    const sumInv=invA+invB+invC;
+    const curA=scEls.curA.value, curB=scEls.curB.value, curC=scEls.curC.value;
+    const fatA=(curA==='USD')?usdRate():1, fatB=(curB==='USD')?usdRate():1, fatC=(curC==='USD')?usdRate():1;
+    let stakeA,stakeB,stakeC=0;
     if(scMode==='total'){
       const fatT=($('scCurT').value==='USD')?usdRate():1;
       const total=parseFloat(scEls.total.value)*fatT;
       if(!(total>0)) return null;
-      stakeA=total*invA/sumInv;
-      stakeB=total*invB/sumInv;
+      stakeA=total*invA/sumInv; stakeB=total*invB/sumInv;
+      if(n===3) stakeC=total*invC/sumInv;
     } else if(scMode==='fixA'){
       stakeA=parseFloat(scEls.stakeA.value)*fatA;
       if(!(stakeA>0)) return null;
-      stakeB=stakeA*oddA/oddB;   // balanceado
+      const k=stakeA/invA;
+      stakeB=k*invB; if(n===3) stakeC=k*invC;
     } else if(scMode==='fixB'){
       stakeB=parseFloat(scEls.stakeB.value)*fatB;
       if(!(stakeB>0)) return null;
-      stakeA=stakeB*oddB/oddA;   // balanceado
-    } else { // livre: os dois stakes são digitados independentemente
+      const k=stakeB/invB;
+      stakeA=k*invA; if(n===3) stakeC=k*invC;
+    } else if(scMode==='fixC'&&n===3){
+      stakeC=parseFloat(scEls.stakeC.value)*fatC;
+      if(!(stakeC>0)) return null;
+      const k=stakeC/invC;
+      stakeA=k*invA; stakeB=k*invB;
+    } else { // livre: pernas digitadas independentemente
       stakeA=parseFloat(scEls.stakeA.value)*fatA;
       stakeB=parseFloat(scEls.stakeB.value)*fatB;
-      if(!(stakeA>0)||!(stakeB>0)) return null;
+      if(n===3) stakeC=parseFloat(scEls.stakeC.value)*fatC;
+      if(!(stakeA>0)||!(stakeB>0)||(n===3&&!(stakeC>0))) return null;
     }
-    const total=stakeA+stakeB;
-    const retA=stakeA*oddA, retB=stakeB*oddB;   // retorno se cada lado ganhar
-    const lucroA=retA-total, lucroB=retB-total; // lucro por cenário
-    const retorno=Math.min(retA,retB);
-    const lucro=retorno-total;                  // lucro garantido (pior cenário)
+    const total=stakeA+stakeB+stakeC;
+    const retA=stakeA*oddA, retB=stakeB*oddB, retC=n===3?stakeC*oddC:0;
+    const lucroA=retA-total, lucroB=retB-total, lucroC=n===3?(retC-total):null;
+    const retorno=n===3?Math.min(retA,retB,retC):Math.min(retA,retB);
+    const lucro=retorno-total;
     const roi=total>0?(lucro/total*100):0;
-    const pctA=total>0?stakeA/total*100:0, pctB=total>0?stakeB/total*100:0;
-    return { oddA,oddB,stakeA,stakeB,total,retA,retB,lucroA,lucroB,retorno,lucro,roi,sumInv,pctA,pctB,curA,curB,fatA,fatB,isSure:sumInv<1 };
+    const pctA=total>0?stakeA/total*100:0, pctB=total>0?stakeB/total*100:0, pctC=total>0?stakeC/total*100:0;
+    return { n, oddA,oddB,oddC, stakeA,stakeB,stakeC, total, retA,retB,retC, lucroA,lucroB,lucroC,
+      retorno,lucro,roi,sumInv, pctA,pctB,pctC, curA,curB,curC, fatA,fatB,fatC, isSure:sumInv<1 };
+  }
+
+  function scLegBlock(letra,cor,r){
+    const house=scEls['house'+letra].value.trim()||'Casa '+letra;
+    const odd=r['odd'+letra], stake=r['stake'+letra], cur=r['cur'+letra], fat=r['fat'+letra];
+    const ret=r['ret'+letra], lucro=r['lucro'+letra];
+    const pct=r['pct'+letra];
+    const cls=lucro>=0?'green':'red';
+    return `<div style="border-left:3px solid ${cor};padding-left:8px;margin-bottom:6px;">`+
+      `<b>${esc(house)}</b> @${odd.toFixed(2)} · aposta <b>${cur==='USD'?fmtUSD(stake/fat):fmt(stake)}</b>`+
+      `${cur==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(stake)}</span>`:''} <span style="color:var(--muted-2)">(${pct.toFixed(1)}%)</span><br>`+
+      `<span style="color:var(--muted-2)">Se ${esc(house)} vencer:</span> retorno ${fmt(ret)} · <span style="color:var(--${cls})">lucro ${fmtSign(lucro)}</span>`+
+    `</div>`;
   }
 
   function updateSurebetCalc(){
-    scMode=scGetMode();
+    scMode=scGetMode(); scLegs=scGetLegs();
     scEls.totalWrap.style.display=(scMode==='total')?'block':'none';
+    scEls.legCWrap.style.display=(scLegs===3)?'block':'none';
+    scEls.stakeCWrap.style.display=(scLegs===3)?'block':'none';
+    scEls.modeFixCWrap.style.display=(scLegs===3)?'flex':'none';
+    if(scLegs===2 && scMode==='fixC'){
+      scMode='total';
+      document.querySelector('input[name="scMode"][value="total"]').checked=true;
+    }
     const r=computeSurebet();
     if(!r){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as odds e os valores para ver o resultado de cada cenário.</span>'; scLast=null; return; }
     scLast=r;
-    // refletir stakes calculados (sem sobrescrever o que o usuário edita)
-    if(scMode==='total'){ scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2); scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2); }
-    else if(scMode==='fixA'){ scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2); }
-    else if(scMode==='fixB'){ scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2); }
+    // refletir stakes calculados (sem sobrescrever o campo que o usuário está editando)
+    if(scMode==='total'){
+      scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2); scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2);
+      if(r.n===3) scEls.stakeC.value=(r.stakeC/r.fatC).toFixed(2);
+    } else if(scMode==='fixA'){
+      scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2);
+      if(r.n===3) scEls.stakeC.value=(r.stakeC/r.fatC).toFixed(2);
+    } else if(scMode==='fixB'){
+      scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2);
+      if(r.n===3) scEls.stakeC.value=(r.stakeC/r.fatC).toFixed(2);
+    } else if(scMode==='fixC'){
+      scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2); scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2);
+    }
     // modo livre: não sobrescreve nada
 
-    const hA=scEls.houseA.value.trim()||'Casa A', hB=scEls.houseB.value.trim()||'Casa B';
-    // status geral: é surebet se AMBOS os cenários dão lucro >= 0
-    const bothPos=r.lucroA>=-0.005 && r.lucroB>=-0.005;
+    const lucros=[r.lucroA,r.lucroB]; if(r.n===3) lucros.push(r.lucroC);
+    const bothPos=lucros.every(l=>l>=-0.005);
     const headCls=bothPos?'green':'red';
     const headMsg=bothPos
-      ? `✓ Sem perda — lucro garantido nos dois cenários`
+      ? `✓ Sem perda — lucro garantido em ${r.n===3?'todos os':'ambos os'} cenários`
       : `⚠ Cenário com perda — não está coberto`;
 
-    const cA=r.lucroA>=0?'green':'red', cB=r.lucroB>=0?'green':'red';
+    let body=scLegBlock('A','#38BDF8',r)+scLegBlock('B','#A78BFA',r);
+    if(r.n===3) body+=scLegBlock('C','#34D399',r);
+
     scEls.result.innerHTML=
       `<div style="color:var(--${headCls});font-weight:600;margin-bottom:8px;">${headMsg}</div>`+
-      `<div style="font-family:var(--mono);font-size:13px;line-height:1.85;">`+
-      `<div style="border-left:3px solid #38BDF8;padding-left:8px;margin-bottom:6px;">`+
-        `<b>${esc(hA)}</b> @${r.oddA.toFixed(2)} · aposta <b>${r.curA==='USD'?fmtUSD(r.stakeA/r.fatA):fmt(r.stakeA)}</b>`+
-        `${r.curA==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(r.stakeA)}</span>`:''} <span style="color:var(--muted-2)">(${r.pctA.toFixed(1)}%)</span><br>`+
-        `<span style="color:var(--muted-2)">Se ${esc(hA)} vencer:</span> retorno ${fmt(r.retA)} · <span style="color:var(--${cA})">lucro ${fmtSign(r.lucroA)}</span>`+
-      `</div>`+
-      `<div style="border-left:3px solid #A78BFA;padding-left:8px;margin-bottom:8px;">`+
-        `<b>${esc(hB)}</b> @${r.oddB.toFixed(2)} · aposta <b>${r.curB==='USD'?fmtUSD(r.stakeB/r.fatB):fmt(r.stakeB)}</b>`+
-        `${r.curB==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(r.stakeB)}</span>`:''} <span style="color:var(--muted-2)">(${r.pctB.toFixed(1)}%)</span><br>`+
-        `<span style="color:var(--muted-2)">Se ${esc(hB)} vencer:</span> retorno ${fmt(r.retB)} · <span style="color:var(--${cB})">lucro ${fmtSign(r.lucroB)}</span>`+
-      `</div>`+
+      `<div style="font-family:var(--mono);font-size:13px;line-height:1.85;">`+body+
       `<span style="color:var(--muted-2)">Total investido: ${fmt(r.total)}</span>`+
       (bothPos?`<br><span style="color:var(--green)">Pior caso garantido: ${fmtSign(r.lucro)} (${r.roi.toFixed(2)}%)</span>`:'')+
       `</div>`;
   }
 
   // recalcula ao mudar qualquer campo
-  ['scOddA','scOddB','scTotal','scStakeA','scStakeB','scHouseA','scHouseB'].forEach(id=>{
+  ['scOddA','scOddB','scOddC','scTotal','scStakeA','scStakeB','scStakeC','scHouseA','scHouseB','scHouseC'].forEach(id=>{
     $(id).addEventListener('input',updateSurebetCalc);
   });
   document.querySelectorAll('.cur-opt').forEach(btn=>btn.addEventListener('click',()=>{
@@ -1344,10 +1408,13 @@
   document.querySelectorAll('input[name="scMode"]').forEach(r=>r.addEventListener('change',()=>{
     scMode=scGetMode(); updateSurebetCalc();
   }));
+  document.querySelectorAll('input[name="scLegs"]').forEach(r=>r.addEventListener('change',()=>{
+    scLegs=scGetLegs(); updateSurebetCalc();
+  }));
 
   scEls.register.addEventListener('click',()=>{
     const r=scLast||computeSurebet();
-    if(!r){ alert('Preencha as odds e a banca (ou o stake de uma perna).'); return; }
+    if(!r){ alert('Preencha as odds e a banca (ou o stake de cada perna).'); return; }
     const novaOp={
       id:uid(), event:scEls.event.value.trim()||'Operação sem nome',
       houseA:scEls.houseA.value.trim(), houseB:scEls.houseB.value.trim(),
@@ -1355,13 +1422,20 @@
       lucroA:r.lucroA, lucroB:r.lucroB, lucro:r.lucro, roi:r.roi, winner:null, curA:r.curA, curB:r.curB,
       date:scEls.date.value||nowLocalStr()
     };
+    if(r.n===3){
+      novaOp.houseC=scEls.houseC.value.trim();
+      novaOp.oddC=r.oddC; novaOp.stakeC=r.stakeC; novaOp.lucroC=r.lucroC; novaOp.curC=r.curC;
+    }
     aplicarStakes(novaOp);
     state.surebets.push(novaOp);
-    scEls.oddA.value=''; scEls.oddB.value=''; scEls.total.value=''; scEls.stakeA.value=''; scEls.stakeB.value=''; ['A','B','T'].forEach(p=>{
+    scEls.oddA.value=''; scEls.oddB.value=''; scEls.oddC.value=''; scEls.total.value='';
+    scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.stakeC.value='';
+    ['A','B','C','T'].forEach(p=>{
       $('scCur'+p).value='BRL';
       const g=$('curToggle'+p);
       if(g){ g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active', x.dataset.cur.endsWith('BRL'))); }
-    }); scEls.houseA.value=''; scEls.houseB.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
+    });
+    scEls.houseA.value=''; scEls.houseB.value=''; scEls.houseC.value=''; scEls.event.value=''; scEls.date.value=nowLocalStr();
     scLast=null; updateSurebetCalc(); saveState(); renderAll();
     toast('Operação registrada ✓');
   });
@@ -1370,8 +1444,17 @@
   function sbRealProfit(o){
     if(o.winner==='A') return (typeof o.lucroA==='number')?o.lucroA:o.lucro;
     if(o.winner==='B') return (typeof o.lucroB==='number')?o.lucroB:o.lucro;
+    if(o.winner==='C') return (typeof o.lucroC==='number')?o.lucroC:o.lucro;
     return o.lucro; // não resolvida: mostra o pior caso garantido como estimativa
   }
+
+  // pernas presentes numa operação (2 ou 3), e acesso genérico por letra
+  function opLegs(o){ const l=['A','B']; if(typeof o.oddC==='number') l.push('C'); return l; }
+  function legHouse(o,l){ return l==='A'?o.houseA:l==='B'?o.houseB:o.houseC; }
+  function legStake(o,l){ return l==='A'?o.stakeA:l==='B'?o.stakeB:o.stakeC; }
+  function legOdd(o,l){ return l==='A'?o.oddA:l==='B'?o.oddB:o.oddC; }
+  function legLucro(o,l){ return l==='A'?o.lucroA:l==='B'?o.lucroB:o.lucroC; }
+  function legCur(o,l){ return l==='A'?o.curA:l==='B'?o.curB:o.curC; }
 
   /* ---------- integração surebets -> saldo por casa ---------- */
   // Encontra (ou cria) a casa no saldo, casando por nome sem diferenciar maiúsculas
@@ -1389,33 +1472,29 @@
     const delta = (b.currency==='USD') ? deltaBRL/usdRate() : deltaBRL;
     b.value=Math.round((b.value+delta)*100)/100;
   }
-  // Debita os stakes das duas casas (ao registrar a operação)
+  // Debita os stakes de todas as pernas (ao registrar a operação)
   function aplicarStakes(o){
     if(o.aplicado&&o.aplicado.stakes) return;
-    moverSaldo(o.houseA,-o.stakeA);
-    moverSaldo(o.houseB,-o.stakeB);
+    opLegs(o).forEach(l=>moverSaldo(legHouse(o,l), -legStake(o,l)));
     o.aplicado=Object.assign({},o.aplicado,{stakes:true});
   }
   function reverterStakes(o){
     if(!(o.aplicado&&o.aplicado.stakes)) return;
-    moverSaldo(o.houseA,+o.stakeA);
-    moverSaldo(o.houseB,+o.stakeB);
+    opLegs(o).forEach(l=>moverSaldo(legHouse(o,l), +legStake(o,l)));
     o.aplicado.stakes=false;
   }
   // Credita o retorno na casa vencedora (ao marcar o vencedor)
   function aplicarResultado(o,vencedor){
     if(o.aplicado&&o.aplicado.resultado) reverterResultado(o);
     if(!vencedor) return;
-    const casa = vencedor==='A'?o.houseA:o.houseB;
-    const retorno = vencedor==='A'?(o.stakeA*o.oddA):(o.stakeB*o.oddB);
+    const casa=legHouse(o,vencedor), retorno=legStake(o,vencedor)*legOdd(o,vencedor);
     moverSaldo(casa,+retorno);
     o.aplicado=Object.assign({},o.aplicado,{resultado:vencedor});
   }
   function reverterResultado(o){
     if(!(o.aplicado&&o.aplicado.resultado)) return;
     const v=o.aplicado.resultado;
-    const casa = v==='A'?o.houseA:o.houseB;
-    const retorno = v==='A'?(o.stakeA*o.oddA):(o.stakeB*o.oddB);
+    const casa=legHouse(o,v), retorno=legStake(o,v)*legOdd(o,v);
     moverSaldo(casa,-retorno);
     o.aplicado.resultado=null;
   }
@@ -1425,7 +1504,7 @@
   const ARB_NAME='Em arbitragem';
   function sincronizarArbitragem(){
     const emJogo=(state.surebets||[]).filter(o=>!o.winner)
-      .reduce((s,o)=>s+o.stakeA+o.stakeB,0);
+      .reduce((s,o)=>s+o.stakeA+o.stakeB+(o.stakeC||0),0);
     let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===ARB_NAME.toLowerCase());
     if(!b){
       if(emJogo<=0) return;                       // não cria se não há nada em jogo
@@ -1534,7 +1613,9 @@
       </div>`;
       dayOps.forEach(o=>{
         const hh=(o.date||'').slice(11,16)||'--:--';
+        const has3=typeof o.oddC==='number';
         const hA=o.houseA?esc(o.houseA):'Casa A', hB=o.houseB?esc(o.houseB):'Casa B';
+        const hC=has3?(o.houseC?esc(o.houseC):'Casa C'):null;
         const realProfit=sbRealProfit(o);
         const resolved=!!o.winner;
         const isEditing=sbEditingId===o.id;
@@ -1542,8 +1623,10 @@
           ? `<span class="sb-status-badge done">✓ finalizada</span>`
           : `<span class="sb-status-badge pending">⏳ em aberto</span>`;
         const lucroCls=resolved?'lucro':'lucro pend';
-        const lucroTxt=resolved?fmtSign(realProfit):`${fmtSign(o.lucroA??o.lucro)} a ${fmtSign(o.lucroB??o.lucro)}`;
-        const subTxt=resolved?(o.winner==='A'?`ganhou ${hA}`:`ganhou ${hB}`):'aguardando resultado';
+        const lucroTxt=resolved?fmtSign(realProfit):
+          (has3?`${fmtSign(o.lucroA)} · ${fmtSign(o.lucroB)} · ${fmtSign(o.lucroC)}`:`${fmtSign(o.lucroA??o.lucro)} a ${fmtSign(o.lucroB??o.lucro)}`);
+        const winnerHouse=o.winner?(o.winner==='A'?hA:o.winner==='B'?hB:hC):null;
+        const subTxt=resolved?`ganhou ${winnerHouse}`:'aguardando resultado';
 
         let detailInner;
         if(isEditing){
@@ -1561,6 +1644,12 @@
               <div><label>Stake A (R$)</label><input type="number" class="sbed" data-f="stakeA" step="0.01" value="${o.stakeA.toFixed(2)}"></div>
               <div><label>Stake B (R$)</label><input type="number" class="sbed" data-f="stakeB" step="0.01" value="${o.stakeB.toFixed(2)}"></div>
             </div>
+            ${has3?`<div class="grid2">
+              <div><label>Casa C</label><input type="text" class="sbed" data-f="houseC" value="${esc(o.houseC||'')}"></div>
+              <div><label>Odd C</label><input type="number" class="sbed" data-f="oddC" step="0.01" value="${o.oddC}"></div>
+            </div>
+            <label>Stake C (R$)</label>
+            <input type="number" class="sbed" data-f="stakeC" step="0.01" value="${o.stakeC.toFixed(2)}">`:''}
             <label>Data / horário do jogo</label>
             <input type="datetime-local" class="sbed" data-f="date" value="${(o.date||'').slice(0,16)}">
             <div style="display:flex;gap:6px;margin-top:8px;">
@@ -1569,18 +1658,25 @@
             </div>
           </div>`;
         } else {
+          const legRows=[['A',hA],['B',hB]]; if(has3) legRows.push(['C',hC]);
+          const legLines=legRows.map(([l,h])=>
+            `<div class="leg leg${l}"><span>${h} · aposta @${legOdd(o,l).toFixed(2)}</span><span>${legCur(o,l)==='USD'?fmtUSD(legStake(o,l)/usdRate())+' ('+fmt(legStake(o,l))+')':fmt(legStake(o,l))}</span></div>`
+          ).join('');
+          const cenarioLines=legRows.map(([l,h])=>
+            `<div class="leg"><span>Se ${h} vencer</span><span style="color:${legLucro(o,l)>=0?'var(--green)':'var(--red)'}">${fmtSign(legLucro(o,l))}</span></div>`
+          ).join('');
+          const winBtns=legRows.map(([l,h])=>
+            `<button class="btn small ${o.winner===l?'primary':''}" data-sbwin="${o.id}:${l}">${h} venceu</button>`
+          ).join('');
           detailInner=`<div class="sb-op-detail${sbOpenDetail===o.id?' show':''}" data-sbdetail="${o.id}">
-            <div class="leg legA"><span>${hA} · aposta @${o.oddA.toFixed(2)}</span><span>${o.curA==='USD'?fmtUSD(o.stakeA/usdRate())+' ('+fmt(o.stakeA)+')':fmt(o.stakeA)}</span></div>
-            <div class="leg legB"><span>${hB} · aposta @${o.oddB.toFixed(2)}</span><span>${o.curB==='USD'?fmtUSD(o.stakeB/usdRate())+' ('+fmt(o.stakeB)+')':fmt(o.stakeB)}</span></div>
+            ${legLines}
             <div class="leg" style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Total investido</span><span>${fmt(o.total)}</span></div>
-            <div class="leg"><span>Se ${hA} vencer</span><span style="color:${(o.lucroA??o.lucro)>=0?'var(--green)':'var(--red)'}">${fmtSign(o.lucroA??o.lucro)}</span></div>
-            <div class="leg"><span>Se ${hB} vencer</span><span style="color:${(o.lucroB??o.lucro)>=0?'var(--green)':'var(--red)'}">${fmtSign(o.lucroB??o.lucro)}</span></div>
+            ${cenarioLines}
             <div class="leg" style="color:var(--sky);border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Resultado real</span><span>${resolved?fmtSign(realProfit):'aguardando'}</span></div>
             <div style="margin-top:10px;">
               <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Marcar casa vencedora</div>
               <div style="display:flex;gap:6px;flex-wrap:wrap;">
-                <button class="btn small ${o.winner==='A'?'primary':''}" data-sbwin="${o.id}:A">${hA} venceu</button>
-                <button class="btn small ${o.winner==='B'?'primary':''}" data-sbwin="${o.id}:B">${hB} venceu</button>
+                ${winBtns}
                 ${o.winner?`<button class="btn small" data-sbwin="${o.id}:">Reabrir</button>`:''}
               </div>
             </div>
@@ -1591,18 +1687,21 @@
           </div>`;
         }
 
+        const housesHtml=`
+              <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
+              <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
+              ${has3?`<span class="sb-house hC${o.winner==='C'?' winner':''}"><span class="hname">${hC}${o.winner==='C'?' ✓':''}</span><span class="hodd">@${o.oddC.toFixed(2)}</span></span>`:''}`;
+
         html+=`<div class="sb-op ${resolved?'done':'pending'}">
           <div class="sb-op-top" data-sbtoggle="${o.id}">
             <div class="sb-op-head">
               <span class="sb-time"><span class="hh">${hh}</span><span class="label">jogo</span></span>
-              ${badge}
+              ${badge}${has3?'<span class="sb-status-badge" style="background:#0E1520;color:var(--sky);">3 pernas</span>':''}
             </div>
             <div class="sb-op-mid">
               <div class="sb-op-event">${esc(o.event)}</div>
             </div>
-            <div class="sb-houses">
-              <span class="sb-house hA${o.winner==='A'?' winner':''}"><span class="hname">${hA}${o.winner==='A'?' ✓':''}</span><span class="hodd">@${o.oddA.toFixed(2)}</span></span>
-              <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${o.oddB.toFixed(2)}</span></span>
+            <div class="sb-houses">${housesHtml}
             </div>
             <div class="sb-op-val">
               <span class="${lucroCls}">${lucroTxt}</span>
@@ -1648,17 +1747,22 @@
         if(f==='event') o.event=v.trim()||o.event;
         else if(f==='houseA') o.houseA=v.trim();
         else if(f==='houseB') o.houseB=v.trim();
+        else if(f==='houseC') o.houseC=v.trim();
         else if(f==='oddA'){ const n=parseFloat(v); if(n>1) o.oddA=n; }
         else if(f==='oddB'){ const n=parseFloat(v); if(n>1) o.oddB=n; }
+        else if(f==='oddC'){ const n=parseFloat(v); if(n>1) o.oddC=n; }
         else if(f==='stakeA'){ const n=parseFloat(v); if(n>0) o.stakeA=n; }
         else if(f==='stakeB'){ const n=parseFloat(v); if(n>0) o.stakeB=n; }
+        else if(f==='stakeC'){ const n=parseFloat(v); if(n>0) o.stakeC=n; }
         else if(f==='date') o.date=v||o.date;
       });
       // recalcula os derivados com os novos valores
-      o.total=o.stakeA+o.stakeB;
-      const retA=o.stakeA*o.oddA, retB=o.stakeB*o.oddB;
+      const has3=typeof o.oddC==='number';
+      o.total=o.stakeA+o.stakeB+(has3?o.stakeC:0);
+      const retA=o.stakeA*o.oddA, retB=o.stakeB*o.oddB, retC=has3?(o.stakeC*o.oddC):null;
       o.lucroA=retA-o.total; o.lucroB=retB-o.total;
-      o.lucro=Math.min(o.lucroA,o.lucroB);
+      if(has3){ o.lucroC=retC-o.total; o.lucro=Math.min(o.lucroA,o.lucroB,o.lucroC); }
+      else o.lucro=Math.min(o.lucroA,o.lucroB);
       o.roi=o.total>0?(o.lucro/o.total*100):0;
       aplicarStakes(o);                          // re-aplica com os valores novos
       if(tinhaVencedor) aplicarResultado(o,tinhaVencedor);
