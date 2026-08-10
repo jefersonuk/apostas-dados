@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2160.5,
+      "value": 2740.5,
       "currency": "BRL",
       "auto": true
     },
@@ -4595,7 +4595,7 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 856.3
+      "value": 526.3
     },
     {
       "id": "msan29jv5dft4",
@@ -4627,7 +4627,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 3042.2,
+      "value": 2792.2,
       "currency": "BRL"
     },
     {
@@ -6168,8 +6168,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msn7ebg4vam9a",
+      "event": "Nacional – Osasco",
+      "houseA": "Blaze",
+      "houseB": "Ivibet",
+      "oddA": 1.89,
+      "oddB": 2.47,
+      "total": 580,
+      "stakeA": 330,
+      "stakeB": 250,
+      "lucroA": 43.69999999999993,
+      "lucroB": 37.5,
+      "lucro": 37.5,
+      "roi": 6.4655172413793105,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-10T15:30",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T11:13:39.466Z"
+  "updatedAt": "2026-08-10T12:24:22.902Z"
 }
