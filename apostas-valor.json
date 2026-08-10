@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3249.39,
+      "value": 3269.39,
       "currency": "BRL",
       "auto": true
     },
@@ -4721,7 +4721,7 @@
     {
       "id": "msnhqdm1jeqv4",
       "name": "Betmgm / Stake",
-      "value": -262.19
+      "value": -282.19
     }
   ],
   "aportes": [],
@@ -6224,13 +6224,13 @@
       "houseB": "Overtimemarkets",
       "oddA": 2.33,
       "oddB": 1.95,
-      "total": 598.19,
-      "stakeA": 262.19,
+      "total": 618.19,
+      "stakeA": 282.19,
       "stakeB": 336,
-      "lucroA": 12.712699999999927,
-      "lucroB": 57.00999999999988,
-      "lucro": 12.712699999999927,
-      "roi": 2.125194336247668,
+      "lucroA": 39.31269999999995,
+      "lucroB": 37.00999999999988,
+      "lucro": 37.00999999999988,
+      "roi": 5.9868325272165315,
       "winner": null,
       "curA": "BRL",
       "curB": "USD",
@@ -6290,5 +6290,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T17:13:41.738Z"
+  "updatedAt": "2026-08-10T17:14:27.987Z"
 }
