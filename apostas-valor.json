@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 19.95
+      "value": -470.05
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 505,
+      "value": 1304.3,
       "currency": "BRL",
       "auto": true
     },
@@ -4696,6 +4696,11 @@
       "id": "mslrzo1vux1bp",
       "name": "Stake",
       "value": -225
+    },
+    {
+      "id": "msmjdbecq54em",
+      "name": "Overtimemarkets",
+      "value": -309.3
     }
   ],
   "aportes": [],
@@ -6097,8 +6102,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msmjdbecjxfpp",
+      "event": "San Diego FC - Club Tijuana Xoloitzcuintles de Caliente",
+      "houseA": "Vbet",
+      "houseB": "Overtimemarkets",
+      "oddA": 1.7,
+      "oddB": 2.67,
+      "total": 799.3,
+      "stakeA": 490,
+      "stakeB": 309.3,
+      "lucroA": 33.700000000000045,
+      "lucroB": 26.531000000000063,
+      "lucro": 26.531000000000063,
+      "roi": 3.3192793694482754,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-09T23:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-09T12:25:18.988Z"
+  "updatedAt": "2026-08-10T01:11:45.398Z"
 }
