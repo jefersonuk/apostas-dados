@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 702.95
+      "value": 472.95
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2514.39,
+      "value": 2919.39,
       "currency": "BRL",
       "auto": true
     },
@@ -4670,7 +4670,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 528
+      "value": 353
     },
     {
       "id": "msgew6ic764xc",
@@ -6260,8 +6260,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msnhik7q1f37r",
+      "event": "Jdgaming x Edward Gaming",
+      "houseA": "Vbet",
+      "houseB": "Betesporte",
+      "oddA": 1.82,
+      "oddB": 2.4,
+      "total": 405,
+      "stakeA": 230,
+      "stakeB": 175,
+      "lucroA": 13.600000000000023,
+      "lucroB": 15,
+      "lucro": 13.600000000000023,
+      "roi": 3.3580246913580303,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-11T05:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T16:57:42.223Z"
+  "updatedAt": "2026-08-10T17:07:37.055Z"
 }
