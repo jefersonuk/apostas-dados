@@ -4600,7 +4600,7 @@
     {
       "id": "msan29jv5dft4",
       "name": "BetMGM",
-      "value": 2075
+      "value": 1952.81
     },
     {
       "id": "msd8uqystuub5",
@@ -4702,6 +4702,21 @@
       "name": "Asianodds",
       "value": 20,
       "currency": "USD"
+    },
+    {
+      "id": "msnh5t8vawlqg",
+      "name": "Casa A",
+      "value": 122.19
+    },
+    {
+      "id": "msnh5t8vmqy7k",
+      "name": "Casa B",
+      "value": 146
+    },
+    {
+      "id": "msnh5t8va374r",
+      "name": "Overtimemarkets",
+      "value": -146
     }
   ],
   "aportes": [],
@@ -6200,17 +6215,17 @@
     {
       "id": "msngttaebgjez",
       "event": "RED CANIDS - LEVIATAN ESPORTS",
-      "houseA": "",
-      "houseB": "",
+      "houseA": "Betmgm",
+      "houseB": "Overtimemarkets",
       "oddA": 2.33,
       "oddB": 1.95,
-      "total": 268.1913846153846,
+      "total": 268.19,
       "stakeA": 122.19,
-      "stakeB": 146.0013846153846,
-      "lucroA": 16.511315384615386,
-      "lucroB": 16.511315384615386,
-      "lucro": 16.511315384615386,
-      "roi": 6.156542056074767,
+      "stakeB": 146,
+      "lucroA": 16.512699999999995,
+      "lucroB": 16.50999999999999,
+      "lucro": 16.50999999999999,
+      "roi": 6.1560833737275775,
       "winner": null,
       "curA": "BRL",
       "curB": "USD",
@@ -6248,5 +6263,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T16:52:29.440Z"
+  "updatedAt": "2026-08-10T16:57:42.223Z"
 }
