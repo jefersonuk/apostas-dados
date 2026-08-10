@@ -6299,15 +6299,15 @@
       "event": "CD Santa Clara – CD Nacional",
       "houseA": "Betesporte",
       "houseB": "Overtimemarkets / casinozer",
-      "oddA": 1.85,
+      "oddA": 1.81,
       "oddB": 2.7,
       "total": 420,
       "stakeA": 250,
       "stakeB": 170,
-      "lucroA": 42.5,
+      "lucroA": 32.5,
       "lucroB": 39.00000000000006,
-      "lucro": 39.00000000000006,
-      "roi": 9.2857142857143,
+      "lucro": 32.5,
+      "roi": 7.738095238095238,
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
@@ -6318,5 +6318,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-10T18:52:36.860Z"
+  "updatedAt": "2026-08-10T18:54:57.435Z"
 }
