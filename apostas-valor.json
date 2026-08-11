@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2317.16,
+      "value": 2514.07,
       "currency": "BRL",
       "auto": true
     },
@@ -4622,7 +4622,7 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 70.19
+      "value": 20.19
     },
     {
       "id": "msddu5i007wwm",
@@ -4695,7 +4695,7 @@
     {
       "id": "mslrzo1vux1bp",
       "name": "Stake",
-      "value": 383.3
+      "value": 236.39
     },
     {
       "id": "msneebp3j8g2z",
@@ -6668,8 +6668,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msorhheail5wa",
+      "event": "Bilibili gaming x JD gaming",
+      "houseA": "Casinozer",
+      "houseB": "Stake",
+      "oddA": 4.2,
+      "oddB": 1.4,
+      "total": 196.91,
+      "stakeA": 50,
+      "stakeB": 146.91,
+      "lucroA": 13.090000000000003,
+      "lucroB": 8.763999999999982,
+      "lucro": 8.763999999999982,
+      "roi": 4.450764308567356,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-11T11:30",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T14:30:12.057Z"
+  "updatedAt": "2026-08-11T14:34:29.075Z"
 }
