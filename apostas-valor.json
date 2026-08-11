@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2293.1,
+      "value": 2317.16,
       "currency": "BRL",
       "auto": true
     },
@@ -4616,7 +4616,7 @@
     {
       "id": "msddfl9dohdf9",
       "name": "Epicbet",
-      "value": 19.36,
+      "value": 14.55,
       "currency": "USD"
     },
     {
@@ -6646,8 +6646,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msorbz2w93bm2",
+      "event": "Manchester Super giants x Sunrisers Leeds",
+      "houseA": "Epicbet",
+      "houseB": "Epicbet",
+      "oddA": 2.25,
+      "oddB": 1.01,
+      "total": 24.060000000000002,
+      "stakeA": 23.05,
+      "stakeB": 1.01,
+      "lucroA": 27.802500000000002,
+      "lucroB": -23.039900000000003,
+      "lucro": -23.039900000000003,
+      "roi": -95.76018287614298,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-11T14:30",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T14:16:19.588Z"
+  "updatedAt": "2026-08-11T14:30:12.057Z"
 }
