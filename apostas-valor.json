@@ -6700,7 +6700,7 @@
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
-      "date": "2026-08-11T11:30",
+      "date": "2026-08-12T08:00",
       "aplicado": {
         "stakes": true
       }
@@ -6887,5 +6887,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T20:43:57.578Z"
+  "updatedAt": "2026-08-11T21:00:45.296Z"
 }
