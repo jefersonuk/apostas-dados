@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2990.87,
+      "value": 3033.87,
       "currency": "BRL",
       "auto": true
     },
@@ -4579,7 +4579,7 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 5.38,
+      "value": 2.18,
       "currency": "USD"
     },
     {
@@ -4627,7 +4627,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1220.88,
+      "value": 1193.88,
       "currency": "BRL"
     },
     {
@@ -6739,8 +6739,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msotyphoeofnm",
+      "event": "Tunari x CS Stefanesti",
+      "houseA": "Ivibet",
+      "houseB": "Casobet",
+      "oddA": 1.88,
+      "oddB": 3.34,
+      "total": 43,
+      "stakeA": 27,
+      "stakeB": 16,
+      "lucroA": 7.759999999999998,
+      "lucroB": 10.439999999999998,
+      "lucro": 7.759999999999998,
+      "roi": 18.046511627906973,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-12T11:30",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T15:02:58.955Z"
+  "updatedAt": "2026-08-11T15:43:51.952Z"
 }
