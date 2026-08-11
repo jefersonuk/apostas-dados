@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2979.49,
+      "value": 3029.59,
       "currency": "BRL",
       "auto": true
     },
@@ -4695,7 +4695,7 @@
     {
       "id": "mslrzo1vux1bp",
       "name": "Stake",
-      "value": 693.3
+      "value": 643.2
     },
     {
       "id": "msneebp3j8g2z",
@@ -6412,8 +6412,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "mso295s1ml42l",
+      "event": "Fenerbahce x monaco",
+      "houseA": "Stake",
+      "houseB": "Stake",
+      "oddA": 1.83,
+      "oddB": 1.01,
+      "total": 50.1,
+      "stakeA": 50,
+      "stakeB": 0.1,
+      "lucroA": 41.4,
+      "lucroB": -49.999,
+      "lucro": -49.999,
+      "roi": -99.79840319361277,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-10T23:15",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T02:43:29.622Z"
+  "updatedAt": "2026-08-11T02:48:10.371Z"
 }
