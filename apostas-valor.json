@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3801.08,
+      "value": 3777.02,
       "currency": "BRL",
       "auto": true
     },
@@ -4616,7 +4616,7 @@
     {
       "id": "msddfl9dohdf9",
       "name": "Epicbet",
-      "value": 14.55,
+      "value": 24.92,
       "currency": "USD"
     },
     {
@@ -6673,12 +6673,13 @@
       "lucroB": -23.039900000000003,
       "lucro": -23.039900000000003,
       "roi": -95.76018287614298,
-      "winner": null,
+      "winner": "A",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-11T14:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       }
     },
     {
@@ -6885,5 +6886,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T20:41:33.527Z"
+  "updatedAt": "2026-08-11T20:42:52.882Z"
 }
