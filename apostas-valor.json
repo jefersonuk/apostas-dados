@@ -4551,7 +4551,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 2524.94,
+      "value": 2339.19,
       "currency": "BRL"
     },
     {
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1939.5,
+      "value": 2442.11,
       "currency": "BRL",
       "auto": true
     },
@@ -4627,7 +4627,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 617.5,
+      "value": 300.64,
       "currency": "BRL"
     },
     {
@@ -6318,8 +6318,30 @@
         "stakes": true,
         "resultado": "A"
       }
+    },
+    {
+      "id": "msnyajy3wcc9y",
+      "event": "NSRedForce Challengers – Dplus Challengers",
+      "houseA": "Ivibet",
+      "houseB": "Betsson",
+      "oddA": 1.7,
+      "oddB": 2.9,
+      "total": 502.61,
+      "stakeA": 316.86282608695655,
+      "stakeB": 185.7471739130435,
+      "lucroA": 36.05680434782607,
+      "lucroB": 36.05680434782607,
+      "lucro": 36.05680434782607,
+      "roi": 7.173913043478258,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-11T07:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T00:37:21.109Z"
+  "updatedAt": "2026-08-11T00:57:16.930Z"
 }
