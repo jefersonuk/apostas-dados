@@ -4500,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 503.29
+      "value": 453.29
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3952.29,
+      "value": 4002.39,
       "currency": "BRL",
       "auto": true
     },
@@ -4717,6 +4717,11 @@
       "id": "msorkx0qx15s5",
       "name": "7bet",
       "value": -238
+    },
+    {
+      "id": "msozrxqhmaq4n",
+      "name": "BNet365",
+      "value": -0.1
     }
   ],
   "aportes": [],
@@ -6874,8 +6879,30 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msozrxqdr6w8v",
+      "event": "Estrela Vermelha X Hapoel",
+      "houseA": "Bet365",
+      "houseB": "BNet365",
+      "oddA": 2.025,
+      "oddB": 1.01,
+      "total": 50.1,
+      "stakeA": 50,
+      "stakeB": 0.1,
+      "lucroA": 51.15,
+      "lucroB": -49.999,
+      "lucro": -49.999,
+      "roi": -99.79840319361277,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-11T15:15",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T18:17:30.117Z"
+  "updatedAt": "2026-08-11T18:26:33.750Z"
 }
