@@ -4704,11 +4704,6 @@
       "currency": "USD"
     },
     {
-      "id": "msnh5t8vawlqg",
-      "name": "Casa A",
-      "value": 122.19
-    },
-    {
       "id": "msnhqdm1jeqv4",
       "name": "Betmgm / Stake",
       "value": -282.19
@@ -6564,5 +6559,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T11:05:26.688Z"
+  "updatedAt": "2026-08-11T11:05:30.370Z"
 }
