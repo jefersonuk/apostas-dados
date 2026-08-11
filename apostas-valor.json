@@ -4500,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 504.4
+      "value": 696.9
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2597.31,
+      "value": 2497.21,
       "currency": "BRL",
       "auto": true
     },
@@ -6587,12 +6587,13 @@
       "lucroB": -99.999,
       "lucro": -99.999,
       "roi": -99.8991008991009,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-11T19:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       }
     },
     {
@@ -6914,5 +6915,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-11T21:48:59.438Z"
+  "updatedAt": "2026-08-11T22:40:18.934Z"
 }
