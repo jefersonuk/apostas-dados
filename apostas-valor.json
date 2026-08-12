@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5110.48,
+      "value": 5010.48,
       "currency": "BRL",
       "auto": true
     },
@@ -4638,7 +4638,7 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 69.68
+      "value": 280.68
     },
     {
       "id": "msesofpdcy90h",
@@ -7240,7 +7240,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-12T13:00",
       "total": 100,
       "lucroA": 110.99999999999999,
@@ -7248,7 +7248,8 @@
       "lucro": 110.99999999999999,
       "roi": 110.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       }
     },
     {
@@ -7342,5 +7343,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T18:06:06.003Z"
+  "updatedAt": "2026-08-12T18:06:42.319Z"
 }
