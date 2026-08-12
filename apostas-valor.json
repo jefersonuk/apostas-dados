@@ -4760,7 +4760,8 @@
       "lucro": 11.494736842105283,
       "roi": 4.421052631578955,
       "date": "2026-07-19T09:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "mrrqs4q603pgq",
@@ -4775,7 +4776,8 @@
       "lucro": 10.071942446043181,
       "roi": 3.5971223021582786,
       "date": "2026-07-20T07:30",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "mrrrn9aramqex",
@@ -4790,7 +4792,8 @@
       "lucro": 5.902777777777786,
       "roi": 6.9444444444444535,
       "date": "2026-07-19T09:30",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "mrrrs3aalzov2",
@@ -4805,7 +4808,8 @@
       "lucro": 27.50223214285711,
       "roi": 6.194196428571421,
       "date": "2026-07-19T09:30",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "mrs15klztnovu",
@@ -4820,7 +4824,8 @@
       "lucro": 88.39285714285722,
       "roi": 39.28571428571432,
       "date": "2026-07-19T13:00",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "mrw512da0ksel",
@@ -4835,7 +4840,8 @@
       "lucro": 6.5310492505353395,
       "roi": 13.062098501070679,
       "date": "2026-07-23T05:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "mrwvq96djyjim",
@@ -4850,7 +4856,8 @@
       "lucro": 108.22467402206621,
       "roi": 10.822467402206621,
       "date": "2026-07-23T02:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "mrxebb17erlcq",
@@ -4865,7 +4872,8 @@
       "lucro": 136.48975791433884,
       "roi": 25.512104283053986,
       "date": "2026-07-24T13:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "mrxnrpkm6uuj0",
@@ -4880,7 +4888,8 @@
       "lucro": 16.953078202995016,
       "roi": 26.489184692179712,
       "date": "2026-07-24T06:00",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "mrywavioy96oe",
@@ -4895,7 +4904,8 @@
       "lucro": 320.6165413533836,
       "roi": 38.721804511278215,
       "date": "2026-07-25T10:00",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "mrz2ar96v7dv2",
@@ -4910,7 +4920,8 @@
       "lucro": 47.826086956521635,
       "roi": 9.565217391304328,
       "date": "2026-07-25T18:30",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "ms0em4eta1pme",
@@ -4925,7 +4936,8 @@
       "lucro": 57.44680851063822,
       "roi": 5.744680851063822,
       "date": "2026-07-24T12:00",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "ms0f25ew0gc45",
@@ -4940,7 +4952,8 @@
       "lucro": 41.09890109890108,
       "roi": 12.087912087912082,
       "date": "2026-07-25T18:30",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "ms0s4e0shsfn9",
@@ -4955,7 +4968,8 @@
       "lucro": 76.48863636363649,
       "roi": 7.215909090909102,
       "date": "2026-07-25T19:30",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "ms7iqzx32epk6",
@@ -4970,7 +4984,8 @@
       "lucro": 11.462620423892105,
       "roi": 27.95761078998074,
       "date": "2026-07-30T22:00",
-      "winner": "A"
+      "winner": "A",
+      "kind": "sure"
     },
     {
       "id": "ms7lv95a7bmwu",
@@ -4985,7 +5000,8 @@
       "lucro": 13.40413043478263,
       "roi": 14.893478260869589,
       "date": "2026-07-31T15:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "ms971ko36gv0x",
@@ -5000,7 +5016,8 @@
       "lucro": 2.4158970976253293,
       "roi": 9.663588390501317,
       "date": "2026-07-31T13:31",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "ms9bin9bxkfpl",
@@ -5015,7 +5032,8 @@
       "lucro": 11.71044921875,
       "roi": 8.076171875,
       "date": "2026-07-31T22:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "ms9c3hgqko9ga",
@@ -5030,7 +5048,8 @@
       "lucro": 17.76559546313797,
       "roi": 4.801512287334587,
       "date": "2026-07-31T17:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "ms9ke9q3n9snt",
@@ -5045,7 +5064,8 @@
       "lucro": 124.43421052631538,
       "roi": 10.157894736842072,
       "date": "2026-08-01T15:30",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "ms9kwmguszl19",
@@ -5060,7 +5080,8 @@
       "lucro": 29.174792746113994,
       "roi": 35.069984447900474,
       "date": "2026-07-31T22:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "ms9l6akd4io31",
@@ -5075,7 +5096,8 @@
       "lucro": 34.1677631578948,
       "roi": 5.024671052631588,
       "date": "2026-08-01T01:00",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "msa2z5v16jse2",
@@ -5090,7 +5112,8 @@
       "lucro": 37.1096196868009,
       "roi": 8.434004474272932,
       "date": "2026-08-01T07:30",
-      "winner": "B"
+      "winner": "B",
+      "kind": "sure"
     },
     {
       "id": "msaeyf29rb0x9",
@@ -5107,7 +5130,8 @@
       "lucro": 12,
       "roi": 24,
       "winner": "A",
-      "date": "2026-08-01T10:34"
+      "date": "2026-08-01T10:34",
+      "kind": "sure"
     },
     {
       "id": "msd7wrpant5h2",
@@ -5124,7 +5148,8 @@
       "lucro": 14,
       "roi": 4.590163934426229,
       "winner": "B",
-      "date": "2026-08-03T10:30"
+      "date": "2026-08-03T10:30",
+      "kind": "sure"
     },
     {
       "id": "msddx6g0nwasc",
@@ -5141,7 +5166,8 @@
       "lucro": 51.71779141104287,
       "roi": 17.239263803680956,
       "winner": "B",
-      "date": "2026-08-03T15:00"
+      "date": "2026-08-03T15:00",
+      "kind": "sure"
     },
     {
       "id": "msdegu4msbro1",
@@ -5158,7 +5184,8 @@
       "lucro": 40,
       "roi": 13.333333333333334,
       "winner": "A",
-      "date": "2026-08-04T05:00"
+      "date": "2026-08-04T05:00",
+      "kind": "sure"
     },
     {
       "id": "msdencyvh6i36",
@@ -5175,7 +5202,8 @@
       "lucro": 36,
       "roi": 13.333333333333334,
       "winner": "A",
-      "date": "2026-08-03T15:45"
+      "date": "2026-08-03T15:45",
+      "kind": "sure"
     },
     {
       "id": "msdgeesxpbd4e",
@@ -5192,7 +5220,8 @@
       "lucro": 18.75,
       "roi": 8.620689655172415,
       "winner": "A",
-      "date": "2026-08-03T15:00"
+      "date": "2026-08-03T15:00",
+      "kind": "sure"
     },
     {
       "id": "msdiegtmmi6th",
@@ -5209,7 +5238,8 @@
       "lucro": 8.055199999999985,
       "roi": 6.014934289127825,
       "winner": "B",
-      "date": "2026-08-03T15:00"
+      "date": "2026-08-03T15:00",
+      "kind": "sure"
     },
     {
       "id": "msdkj6m2lsexb",
@@ -5226,7 +5256,8 @@
       "lucro": 51,
       "roi": 53.125,
       "winner": "B",
-      "date": "2026-08-03T18:30"
+      "date": "2026-08-03T18:30",
+      "kind": "sure"
     },
     {
       "id": "msdnt24se0quv",
@@ -5243,7 +5274,8 @@
       "lucro": 5.1000000000000085,
       "roi": 7.611940298507476,
       "winner": "A",
-      "date": "2026-08-03T21:15"
+      "date": "2026-08-03T21:15",
+      "kind": "sure"
     },
     {
       "id": "msdonubi2qyxn",
@@ -5260,7 +5292,8 @@
       "lucro": 65.15999999999997,
       "roi": 12.066666666666661,
       "winner": "B",
-      "date": "2026-08-04T12:00"
+      "date": "2026-08-04T12:00",
+      "kind": "sure"
     },
     {
       "id": "msdpd9g62xtbc",
@@ -5277,7 +5310,8 @@
       "lucro": 14.800000000000011,
       "roi": 6.981132075471703,
       "winner": "B",
-      "date": "2026-08-03T22:00"
+      "date": "2026-08-03T22:00",
+      "kind": "sure"
     },
     {
       "id": "msdrrfgra6glk",
@@ -5294,7 +5328,8 @@
       "lucro": 24.629999999999995,
       "roi": 9.857125705366789,
       "winner": "B",
-      "date": "2026-08-03T18:53"
+      "date": "2026-08-03T18:53",
+      "kind": "sure"
     },
     {
       "id": "msdsyoj8482rk",
@@ -5311,7 +5346,8 @@
       "lucro": 9.930000000000007,
       "roi": 11.741752394466133,
       "winner": "A",
-      "date": "2026-08-04T16:00"
+      "date": "2026-08-04T16:00",
+      "kind": "sure"
     },
     {
       "id": "msduvvlbd50k2",
@@ -5328,7 +5364,8 @@
       "lucro": 1.3999999999999915,
       "roi": 1.4432989690721563,
       "winner": "B",
-      "date": "2026-08-04T15:00"
+      "date": "2026-08-04T15:00",
+      "kind": "sure"
     },
     {
       "id": "mselva2cl3sb4",
@@ -5345,7 +5382,8 @@
       "lucro": 5.5010204081632565,
       "roi": 9.492868462757514,
       "winner": "B",
-      "date": "2026-08-04T14:45"
+      "date": "2026-08-04T14:45",
+      "kind": "sure"
     },
     {
       "id": "msepfv2u81gul",
@@ -5362,7 +5400,8 @@
       "lucro": 9.840000000000003,
       "roi": 8.945454545454549,
       "winner": "B",
-      "date": "2026-08-04T15:00"
+      "date": "2026-08-04T15:00",
+      "kind": "sure"
     },
     {
       "id": "mset1oxtk7kgd",
@@ -5379,7 +5418,8 @@
       "lucro": 33,
       "roi": 7.586206896551724,
       "winner": "A",
-      "date": "2026-08-04T11:00"
+      "date": "2026-08-04T11:00",
+      "kind": "sure"
     },
     {
       "id": "mseu2ol8icw3q",
@@ -5396,7 +5436,8 @@
       "lucro": 42.14999999999998,
       "roi": 16.400778210116723,
       "winner": "B",
-      "date": "2026-08-05T13:00"
+      "date": "2026-08-05T13:00",
+      "kind": "sure"
     },
     {
       "id": "mseuqcmxfhnam",
@@ -5413,7 +5454,8 @@
       "lucro": -267.83,
       "roi": -99.03856820619013,
       "winner": "A",
-      "date": "2026-08-05T11:30"
+      "date": "2026-08-05T11:30",
+      "kind": "sure"
     },
     {
       "id": "mseuzicagj8rh",
@@ -5430,7 +5472,8 @@
       "lucro": 66,
       "roi": 22,
       "winner": "A",
-      "date": "2026-08-05T02:25"
+      "date": "2026-08-05T02:25",
+      "kind": "sure"
     },
     {
       "id": "msewg6dkarljm",
@@ -5447,7 +5490,8 @@
       "lucro": 67,
       "roi": 12.7134724857685,
       "winner": "A",
-      "date": "2026-08-05T08:00"
+      "date": "2026-08-05T08:00",
+      "kind": "sure"
     },
     {
       "id": "msf3kehmj37k9",
@@ -5464,7 +5508,8 @@
       "lucro": 5.399999999999999,
       "roi": 14.21052631578947,
       "winner": "A",
-      "date": "2026-08-06T12:00"
+      "date": "2026-08-06T12:00",
+      "kind": "sure"
     },
     {
       "id": "msf41fg99j9n3",
@@ -5481,7 +5526,8 @@
       "lucro": 23.05000000000001,
       "roi": 8.86538461538462,
       "winner": "B",
-      "date": "2026-08-04T21:00"
+      "date": "2026-08-04T21:00",
+      "kind": "sure"
     },
     {
       "id": "msf6xvy3yx6lc",
@@ -5498,7 +5544,8 @@
       "lucro": 49.59313684210525,
       "roi": 11.296842105263154,
       "winner": "B",
-      "date": "2026-08-04T22:30"
+      "date": "2026-08-04T22:30",
+      "kind": "sure"
     },
     {
       "id": "msf8f9z5yn9p8",
@@ -5515,7 +5562,8 @@
       "lucro": 13.25,
       "roi": 21.721311475409834,
       "winner": "A",
-      "date": "2026-08-05T05:00"
+      "date": "2026-08-05T05:00",
+      "kind": "sure"
     },
     {
       "id": "msfci7scg691e",
@@ -5532,7 +5580,8 @@
       "lucro": 39.28571428571428,
       "roi": 9.565217391304346,
       "winner": "A",
-      "date": "2026-08-05T14:30"
+      "date": "2026-08-05T14:30",
+      "kind": "sure"
     },
     {
       "id": "msfemm0e86hvg",
@@ -5549,7 +5598,8 @@
       "lucro": 29.607723577235788,
       "roi": 9.395033860045151,
       "winner": "B",
-      "date": "2026-08-05T18:00"
+      "date": "2026-08-05T18:00",
+      "kind": "sure"
     },
     {
       "id": "msfgbz76rezti",
@@ -5566,7 +5616,8 @@
       "lucro": 28.464000000000055,
       "roi": 4.678500986193304,
       "winner": "B",
-      "date": "2026-08-05T09:00"
+      "date": "2026-08-05T09:00",
+      "kind": "sure"
     },
     {
       "id": "msg70kqju21sn",
@@ -5583,7 +5634,8 @@
       "lucro": 14.929411764705861,
       "roi": 11.020408163265289,
       "winner": "A",
-      "date": "2026-08-07T06:00"
+      "date": "2026-08-07T06:00",
+      "kind": "sure"
     },
     {
       "id": "msg7uwivg8aql",
@@ -5600,7 +5652,8 @@
       "lucro": 79.5,
       "roi": 10.205391527599486,
       "winner": "A",
-      "date": "2026-08-07T06:00"
+      "date": "2026-08-07T06:00",
+      "kind": "sure"
     },
     {
       "id": "msgalgtughkgt",
@@ -5617,24 +5670,24 @@
       "lucro": 24.86055776892431,
       "roi": 4.825986078886312,
       "winner": "B",
-      "date": "2026-08-05T21:00"
+      "date": "2026-08-05T21:00",
+      "kind": "sure"
     },
     {
       "id": "msgfw5x3tmvff",
       "event": "Jogo marcado errado na Epic",
       "houseA": "Epic",
-      "houseB": "Epic",
       "oddA": 4.06,
-      "oddB": 1.01,
-      "total": 66.55,
+      "total": 65.55,
       "stakeA": 65.55,
-      "stakeB": 1,
-      "lucroA": 199.58299999999997,
-      "lucroB": -65.53999999999999,
-      "lucro": -65.53999999999999,
-      "roi": -98.48234410217881,
+      "lucroA": 200.58299999999997,
+      "lucro": 200.58299999999997,
+      "roi": 305.99999999999994,
       "winner": "A",
-      "date": "2026-08-05T15:30"
+      "date": "2026-08-05T15:30",
+      "kind": "valor",
+      "stakeFake": 1,
+      "lucroRed": -65.55
     },
     {
       "id": "msggnu3jt12c3",
@@ -5651,7 +5704,8 @@
       "lucro": 19.799999999999955,
       "roi": 4.449438202247181,
       "winner": "B",
-      "date": "2026-08-05T21:00"
+      "date": "2026-08-05T21:00",
+      "kind": "sure"
     },
     {
       "id": "msgr24cyjbu69",
@@ -5668,7 +5722,8 @@
       "lucro": 35.32000000000005,
       "roi": 8.194895591647343,
       "winner": "A",
-      "date": "2026-08-06T15:30"
+      "date": "2026-08-06T15:30",
+      "kind": "sure"
     },
     {
       "id": "mshk4qmamyapk",
@@ -5685,7 +5740,8 @@
       "lucro": 50,
       "roi": 8.333333333333332,
       "winner": "B",
-      "date": "2026-08-06T21:00"
+      "date": "2026-08-06T21:00",
+      "kind": "sure"
     },
     {
       "id": "mshleijfcgmt8",
@@ -5702,7 +5758,8 @@
       "lucro": 46.670000000000016,
       "roi": 10.101512954265063,
       "winner": "A",
-      "date": "2026-08-06T13:30"
+      "date": "2026-08-06T13:30",
+      "kind": "sure"
     },
     {
       "id": "mshlo0xj1p1h1",
@@ -5719,7 +5776,8 @@
       "lucro": 137.36501612903226,
       "roi": 105.42981501632207,
       "winner": "A",
-      "date": "2026-08-07T07:10"
+      "date": "2026-08-07T07:10",
+      "kind": "sure"
     },
     {
       "id": "mshnf2sw24wqp",
@@ -5736,7 +5794,8 @@
       "lucro": 35.45090069284072,
       "roi": 7.279445727482694,
       "winner": "B",
-      "date": "2026-08-06T13:00"
+      "date": "2026-08-06T13:00",
+      "kind": "sure"
     },
     {
       "id": "mshnp3zyijhsc",
@@ -5753,7 +5812,8 @@
       "lucro": 81.42000000000007,
       "roi": 8.525654450261788,
       "winner": "B",
-      "date": "2026-08-06T15:45"
+      "date": "2026-08-06T15:45",
+      "kind": "sure"
     },
     {
       "id": "mshpovvpnmizd",
@@ -5770,7 +5830,8 @@
       "lucro": -247.9,
       "roi": -98.76494023904382,
       "winner": "B",
-      "date": "2026-08-06T16:00"
+      "date": "2026-08-06T16:00",
+      "kind": "sure"
     },
     {
       "id": "mshr1vyma4sju",
@@ -5787,7 +5848,8 @@
       "lucro": 30,
       "roi": 7.142857142857142,
       "winner": "B",
-      "date": "2026-08-06T19:00"
+      "date": "2026-08-06T19:00",
+      "kind": "sure"
     },
     {
       "id": "mshs5t36zumak",
@@ -5804,7 +5866,8 @@
       "lucro": 80.5,
       "roi": 17.692307692307693,
       "winner": "B",
-      "date": "2026-08-07T14:00"
+      "date": "2026-08-07T14:00",
+      "kind": "sure"
     },
     {
       "id": "msi3m9tz39i5s",
@@ -5821,7 +5884,8 @@
       "lucro": 63.83999999999992,
       "roi": 7.492957746478863,
       "winner": "B",
-      "date": "2026-08-07T16:00"
+      "date": "2026-08-07T16:00",
+      "kind": "sure"
     },
     {
       "id": "msiuzdnv5bxz9",
@@ -5838,7 +5902,8 @@
       "lucro": 68.39999999999998,
       "roi": 10.687499999999996,
       "winner": "A",
-      "date": "2026-08-07T07:39"
+      "date": "2026-08-07T07:39",
+      "kind": "sure"
     },
     {
       "id": "msj1q0n1w1op7",
@@ -5855,7 +5920,8 @@
       "lucro": 8.803000000000111,
       "roi": 0.7735093053090445,
       "winner": "A",
-      "date": "2026-08-07T12:00"
+      "date": "2026-08-07T12:00",
+      "kind": "sure"
     },
     {
       "id": "msj3yskbceqg8",
@@ -5872,7 +5938,8 @@
       "lucro": 38.600000000000136,
       "roi": 3.0781499202551945,
       "winner": "A",
-      "date": "2026-08-07T16:00"
+      "date": "2026-08-07T16:00",
+      "kind": "sure"
     },
     {
       "id": "msj4acsz3a7g7",
@@ -5889,7 +5956,8 @@
       "lucro": 14,
       "roi": 2.6119402985074625,
       "winner": "B",
-      "date": "2026-08-07T22:00"
+      "date": "2026-08-07T22:00",
+      "kind": "sure"
     },
     {
       "id": "msj4n78lf5s6a",
@@ -5906,7 +5974,8 @@
       "lucro": 25.620000000000005,
       "roi": 4.1322580645161295,
       "winner": "B",
-      "date": "2026-08-07T14:00"
+      "date": "2026-08-07T14:00",
+      "kind": "sure"
     },
     {
       "id": "msjc0kqpzpyjm",
@@ -5923,7 +5992,8 @@
       "lucro": 14.379999999999995,
       "roi": 1.8797385620915028,
       "winner": "B",
-      "date": "2026-08-07T18:00"
+      "date": "2026-08-07T18:00",
+      "kind": "sure"
     },
     {
       "id": "msjc60trzpyuw",
@@ -5940,7 +6010,8 @@
       "lucro": 36,
       "roi": 1.6528925619834711,
       "winner": "A",
-      "date": "2026-08-07T18:00"
+      "date": "2026-08-07T18:00",
+      "kind": "sure"
     },
     {
       "id": "msjf97p6isach",
@@ -5957,7 +6028,8 @@
       "lucro": 0.5688025889967321,
       "roi": 0.0700218818380705,
       "winner": "A",
-      "date": "2026-08-07T18:00"
+      "date": "2026-08-07T18:00",
+      "kind": "sure"
     },
     {
       "id": "mskgwayojieb7",
@@ -5974,7 +6046,8 @@
       "lucro": 1.3799999999999955,
       "roi": 0.508062734702892,
       "winner": "B",
-      "date": "2026-08-08T13:00"
+      "date": "2026-08-08T13:00",
+      "kind": "sure"
     },
     {
       "id": "mskhdi6kmnxim",
@@ -5991,7 +6064,8 @@
       "lucro": 1,
       "roi": 0.21551724137931033,
       "winner": "B",
-      "date": "2026-08-08T15:30"
+      "date": "2026-08-08T15:30",
+      "kind": "sure"
     },
     {
       "id": "mskm7vv4en1xk",
@@ -6008,7 +6082,8 @@
       "lucro": 2.2332203389830454,
       "roi": 1.3260869565217357,
       "winner": "B",
-      "date": "2026-08-08T18:00"
+      "date": "2026-08-08T18:00",
+      "kind": "sure"
     },
     {
       "id": "mskmgajd3iwpt",
@@ -6025,7 +6100,8 @@
       "lucro": 3.919999999999959,
       "roi": 1.1461988304093447,
       "winner": "B",
-      "date": "2026-08-08T15:00"
+      "date": "2026-08-08T15:00",
+      "kind": "sure"
     },
     {
       "id": "mskn69guit5ns",
@@ -6045,7 +6121,8 @@
       "date": "2026-08-09T04:00",
       "aplicado": {
         "resultado": "B"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msko05br1seju",
@@ -6062,7 +6139,8 @@
       "lucro": 19,
       "roi": 2.043010752688172,
       "winner": "A",
-      "date": "2026-08-08T17:00"
+      "date": "2026-08-08T17:00",
+      "kind": "sure"
     },
     {
       "id": "mskoalqhnll7g",
@@ -6082,7 +6160,8 @@
       "date": "2026-08-09T04:00",
       "aplicado": {
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "mskoo49725xd9",
@@ -6102,7 +6181,8 @@
       "date": "2026-08-09T03:00",
       "aplicado": {
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "mslrzo1vvhda9",
@@ -6124,7 +6204,8 @@
       "date": "2026-08-21T16:00",
       "aplicado": {
         "stakes": true
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msmjdbecjxfpp",
@@ -6147,7 +6228,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msn48uz4i8yf8",
@@ -6170,7 +6252,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "B"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msn4vd6hog0sn",
@@ -6193,7 +6276,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "B"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msn7ebg4vam9a",
@@ -6216,7 +6300,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "B"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msngttaebgjez",
@@ -6239,7 +6324,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "B"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msngw6ixfaw0f",
@@ -6267,7 +6353,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "C"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msnhik7q1f37r",
@@ -6290,7 +6377,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msnl9l6hnsgbe",
@@ -6313,7 +6401,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msnyajy3wcc9y",
@@ -6336,7 +6425,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msnzi4rhkto4m",
@@ -6359,7 +6449,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "mso1xf1lpasxj",
@@ -6382,7 +6473,8 @@
       "aplicado": {
         "stakes": true,
         "resultado": "B"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "mso22oyi2s53e",
@@ -6405,99 +6497,92 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "mso295s1ml42l",
       "event": "Fenerbahce x monaco",
       "houseA": "Stake",
-      "houseB": "Stake",
       "oddA": 1.83,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 41.4,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 41.5,
+      "lucro": 41.5,
+      "roi": 83,
+      "winner": "RED",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-10T23:15",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "mso2aisdh3clz",
       "event": "Naoki Tanaka x Issa Hosokawa",
       "houseA": "Casobet",
-      "houseB": "casobet",
       "oddA": 1.36,
-      "oddB": 1.01,
-      "total": 100.1,
+      "total": 100,
       "stakeA": 100,
-      "stakeB": 0.1,
-      "lucroA": 35.900000000000006,
-      "lucroB": -99.999,
-      "lucro": -99.999,
-      "roi": -99.8991008991009,
+      "lucroA": 36.00000000000001,
+      "lucro": 36.00000000000001,
+      "roi": 36.00000000000001,
       "winner": "A",
       "curA": "USD",
-      "curB": "BRL",
       "date": "2026-08-11T01:30",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -100
     },
     {
       "id": "mso2de1zp3kwp",
       "event": "Francesco forti x Michele Mecarelli",
       "houseA": "Blaze",
-      "houseB": "Blaze",
       "oddA": 2.12,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 55.9,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 56.00000000000001,
+      "lucro": 56.00000000000001,
+      "roi": 112.00000000000001,
+      "winner": "RED",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T05:00",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "mso2e62aoxbcv",
       "event": "DRX x FEARX",
       "houseA": "Ivibet",
-      "houseB": "Ivibet",
       "oddA": 1.87,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 43.4,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
+      "lucroA": 43.50000000000001,
+      "lucro": 43.50000000000001,
+      "roi": 87.00000000000001,
       "winner": "A",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T05:00",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msoja886pw9rk",
@@ -6520,168 +6605,155 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msojkycvzs4ns",
       "event": "Kairat Almaty – Levski Sofia (acima 4.5 escanteios primeiro time)",
       "houseA": "Stake",
-      "houseB": "Stake",
       "oddA": 1.96,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 47.9,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
+      "lucroA": 48,
+      "lucro": 48,
+      "roi": 96,
       "winner": "A",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T12:00",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msojmdha27u46",
       "event": "Slovan Bratislava – Mjällby AIF (acima 3.5 escanteios segundo time)",
       "houseA": "Stake",
-      "houseB": "Stake",
       "oddA": 1.91,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 45.4,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
+      "lucroA": 45.49999999999999,
+      "lucro": 45.49999999999999,
+      "roi": 90.99999999999999,
       "winner": "A",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T15:15",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msop2n8jrvze7",
       "event": "Fluminense x Rivadavia",
       "houseA": "Bet365",
-      "houseB": "Bet365",
       "oddA": 1.925,
-      "oddB": 1.01,
-      "total": 100.1,
+      "total": 100,
       "stakeA": 100,
-      "stakeB": 0.1,
-      "lucroA": 92.4,
-      "lucroB": -99.999,
-      "lucro": -99.999,
-      "roi": -99.8991008991009,
+      "lucroA": 92.5,
+      "lucro": 92.5,
+      "roi": 92.5,
       "winner": "A",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T19:00",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -100
     },
     {
       "id": "msoqhtuo4nas0",
       "event": "Sk x Fenerbahçe",
       "houseA": "Betsson",
-      "houseB": "Betsson",
       "oddA": 1.98,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 48.9,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 49,
+      "lucro": 49,
+      "roi": 98,
+      "winner": "RED",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T15:30",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msoqlknd4zjod",
       "event": "CrvenaZvezda - Hapoel Be er Sheva",
       "houseA": "Betsson",
-      "houseB": "Betsson",
       "oddA": 3.1,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 104.9,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
+      "lucroA": 105,
+      "lucro": 105,
+      "roi": 210,
       "winner": "A",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T16:30",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msoqu4qrx2ewt",
       "event": "Sabah FK x Aarthus Gymn",
       "houseA": "Overtimemarkets",
-      "houseB": "Overtimemarkets",
       "oddA": 4.45,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 172.4,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 172.5,
+      "lucro": 172.5,
+      "roi": 345,
+      "winner": "RED",
       "curA": "USD",
-      "curB": "BRL",
       "date": "2026-08-11T13:00",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msorbz2w93bm2",
       "event": "Manchester Super giants x Sunrisers Leeds",
       "houseA": "Epicbet",
-      "houseB": "Epicbet",
       "oddA": 2.25,
-      "oddB": 1.01,
-      "total": 24.060000000000002,
+      "total": 23.05,
       "stakeA": 23.05,
-      "stakeB": 1.01,
-      "lucroA": 27.802500000000002,
-      "lucroB": -23.039900000000003,
-      "lucro": -23.039900000000003,
-      "roi": -95.76018287614298,
+      "lucroA": 28.8125,
+      "lucro": 28.8125,
+      "roi": 125,
       "winner": "A",
       "curA": "USD",
-      "curB": "BRL",
       "date": "2026-08-11T14:30",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 1.01,
+      "lucroRed": -23.05
     },
     {
       "id": "msorhheail5wa",
@@ -6703,7 +6775,8 @@
       "date": "2026-08-12T08:00",
       "aplicado": {
         "stakes": true
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msorkx0q6hg07",
@@ -6726,30 +6799,29 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msosi4qyons7q",
       "event": "Costa rica x Canada",
       "houseA": "Ivibet",
-      "houseB": "Ivibet",
       "oddA": 2.17,
-      "oddB": 1.01,
-      "total": 50.01,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.01,
-      "lucroA": 58.49,
-      "lucroB": -49.9999,
-      "lucro": -49.9999,
-      "roi": -99.97980403919216,
+      "lucroA": 58.5,
+      "lucro": 58.5,
+      "roi": 117,
       "winner": "A",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T16:30",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.01,
+      "lucroRed": -50
     },
     {
       "id": "msotyphoeofnm",
@@ -6771,53 +6843,50 @@
       "date": "2026-08-12T11:30",
       "aplicado": {
         "stakes": true
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msowwsz8udlyo",
       "event": "Dinamo zagreb  -handicap primeiro tempo 4 escanteios",
       "houseA": "Bet365",
-      "houseB": "Bet365",
       "oddA": 1.85,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 42.4,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
+      "lucroA": 42.50000000000001,
+      "lucro": 42.50000000000001,
+      "roi": 85.00000000000001,
       "winner": "A",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T14:00",
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msoy3uuinsjyn",
       "event": "NEC x Olympiacos",
       "houseA": "Bet365",
-      "houseB": "Bet365",
       "oddA": 2.15,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 57.4,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 57.49999999999999,
+      "lucro": 57.49999999999999,
+      "roi": 114.99999999999999,
+      "winner": "RED",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T14:30",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msoyg836zvpk8",
@@ -6840,76 +6909,71 @@
       "aplicado": {
         "stakes": true,
         "resultado": "B"
-      }
+      },
+      "kind": "sure"
     },
     {
       "id": "msozga9snl70h",
       "event": "Slovan bratislava (h4)",
       "houseA": "Bet365",
-      "houseB": "Bet365",
       "oddA": 1.925,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 46.15,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 46.25,
+      "lucro": 46.25,
+      "roi": 92.5,
+      "winner": "RED",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T15:15",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msozrxqdr6w8v",
       "event": "Estrela Vermelha X Hapoel",
       "houseA": "Bet365",
-      "houseB": "BNet365",
       "oddA": 2.025,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 51.15,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 51.24999999999999,
+      "lucro": 51.24999999999999,
+      "roi": 102.49999999999999,
+      "winner": "RED",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T15:15",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msp709exmw5qe",
       "event": "Fluminense",
       "houseA": "Stake",
-      "houseB": "Stake",
       "oddA": 2.17,
-      "oddB": 1.01,
-      "total": 50.1,
+      "total": 50,
       "stakeA": 50,
-      "stakeB": 0.1,
-      "lucroA": 58.4,
-      "lucroB": -49.999,
-      "lucro": -49.999,
-      "roi": -99.79840319361277,
-      "winner": "B",
+      "lucroA": 58.5,
+      "lucro": 58.5,
+      "roi": 117,
+      "winner": "RED",
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-08-11T19:00",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
-      }
+        "resultado": "RED"
+      },
+      "kind": "valor",
+      "stakeFake": 0.1,
+      "lucroRed": -50
     },
     {
       "id": "msq30q6nef8tc",
@@ -6931,9 +6995,10 @@
       "date": "2026-08-12T15:00",
       "aplicado": {
         "stakes": true
-      }
+      },
+      "kind": "sure"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T12:45:08.881Z"
+  "updatedAt": "2026-08-12T13:14:46.635Z"
 }
