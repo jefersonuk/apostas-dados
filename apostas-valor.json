@@ -4505,7 +4505,7 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": -449.38
+      "value": -545.38
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4551,7 +4551,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 763.9,
+      "value": 269.78,
       "currency": "BRL"
     },
     {
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2697.11,
+      "value": 3287.22,
       "currency": "BRL",
       "auto": true
     },
@@ -7120,8 +7120,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msqdk1u1emhqo",
+      "kind": "sure",
+      "event": "Omonia x Lincoln Red Imps",
+      "houseA": "Betnacional",
+      "houseB": "Betsson",
+      "oddA": 7,
+      "oddB": 1.36,
+      "total": 590.1176470588234,
+      "stakeA": 96,
+      "stakeB": 494.1176470588235,
+      "lucroA": 81.88235294117658,
+      "lucroB": 81.88235294117658,
+      "lucro": 81.88235294117658,
+      "roi": 13.875598086124421,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-13T14:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T17:18:52.883Z"
+  "updatedAt": "2026-08-12T17:40:06.606Z"
 }
