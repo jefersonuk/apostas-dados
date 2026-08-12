@@ -4551,7 +4551,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 813.9,
+      "value": 763.9,
       "currency": "BRL"
     },
     {
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2547.11,
+      "value": 2597.11,
       "currency": "BRL",
       "auto": true
     },
@@ -6997,8 +6997,28 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msq8wr6dospu4",
+      "kind": "valor",
+      "event": "Aston Villa - Total de defesas do goleiro: Abaixo de 3.5",
+      "houseA": "Betsson",
+      "oddA": 2.01,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T16:00",
+      "total": 50,
+      "lucroA": 50.499999999999986,
+      "lucroRed": -50,
+      "lucro": 50.499999999999986,
+      "roi": 100.99999999999997,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T15:28:30.097Z"
+  "updatedAt": "2026-08-12T15:30:01.245Z"
 }
