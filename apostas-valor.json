@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1194.91,
+      "value": 1294.91,
       "currency": "BRL",
       "auto": true
     },
@@ -4638,7 +4638,7 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 169.68
+      "value": 69.68
     },
     {
       "id": "mseumeeird6tj",
@@ -6997,8 +6997,28 @@
         "stakes": true
       },
       "kind": "sure"
+    },
+    {
+      "id": "msq4iryc5lr7u",
+      "kind": "valor",
+      "event": "SSvg x Borussia - H2 -4.75",
+      "houseA": "Pinnacle",
+      "oddA": 2.11,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T13:00",
+      "total": 100,
+      "lucroA": 110.99999999999999,
+      "lucroRed": -100,
+      "lucro": 110.99999999999999,
+      "roi": 110.99999999999999,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T13:14:46.635Z"
+  "updatedAt": "2026-08-12T13:27:10.598Z"
 }
