@@ -4500,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 747.91
+      "value": 697.91
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2918.37,
+      "value": 2968.37,
       "currency": "BRL",
       "auto": true
     },
@@ -7326,8 +7326,28 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msqfx35lp4656",
+      "kind": "valor",
+      "event": "Nottm forrest H4",
+      "houseA": "Bet365",
+      "oddA": 2.075,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T15:45",
+      "total": 50,
+      "lucroA": 53.75000000000001,
+      "lucroRed": -50,
+      "lucro": 53.75000000000001,
+      "roi": 107.50000000000001,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T18:43:10.091Z"
+  "updatedAt": "2026-08-12T18:46:14.077Z"
 }
