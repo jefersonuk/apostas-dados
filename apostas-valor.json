@@ -4500,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 646.9
+      "value": 596.9
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2597.11,
+      "value": 2647.11,
       "currency": "BRL",
       "auto": true
     },
@@ -7059,8 +7059,28 @@
         "stakes": true,
         "resultado": "RED"
       }
+    },
+    {
+      "id": "msq9kiaevr1lr",
+      "kind": "valor",
+      "event": "Everton x Newcastle (h4)",
+      "houseA": "Bet365",
+      "oddA": 1.975,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T13:00",
+      "total": 50,
+      "lucroA": 48.75000000000001,
+      "lucroRed": -50,
+      "lucro": 48.75000000000001,
+      "roi": 97.50000000000001,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T15:44:10.990Z"
+  "updatedAt": "2026-08-12T15:48:29.472Z"
 }
