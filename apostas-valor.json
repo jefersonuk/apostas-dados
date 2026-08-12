@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2528.37,
+      "value": 3389.75,
       "currency": "BRL",
       "auto": true
     },
@@ -4729,6 +4729,16 @@
       "name": "Marathon",
       "value": 0,
       "currency": "BRL"
+    },
+    {
+      "id": "msqr1ktlw3015",
+      "name": "Sxbet",
+      "value": -366.38
+    },
+    {
+      "id": "msqr1ktmyxbew",
+      "name": "Opinion",
+      "value": -495
     }
   ],
   "aportes": [],
@@ -7420,8 +7430,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msqr1ktjo4r0t",
+      "kind": "sure",
+      "event": "Moutet x Hurkarcs",
+      "houseA": "Sxbet",
+      "houseB": "Opinion",
+      "oddA": 2.54,
+      "oddB": 1.88,
+      "total": 861.3779527559054,
+      "stakeA": 366.3779527559055,
+      "stakeB": 495,
+      "lucroA": 69.22204724409448,
+      "lucroB": 69.22204724409448,
+      "lucro": 69.22204724409448,
+      "roi": 8.036199095022626,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-13T11:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T23:40:14.422Z"
+  "updatedAt": "2026-08-12T23:57:39.391Z"
 }
