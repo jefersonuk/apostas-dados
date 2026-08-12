@@ -4616,7 +4616,7 @@
     {
       "id": "msddfl9dohdf9",
       "name": "Epicbet",
-      "value": 58.09,
+      "value": 25.09,
       "currency": "USD"
     },
     {
@@ -6919,5 +6919,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T12:25:59.345Z"
+  "updatedAt": "2026-08-12T12:26:02.649Z"
 }
