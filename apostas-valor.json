@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4763.57,
+      "value": 4720.57,
       "currency": "BRL",
       "auto": true
     },
@@ -4579,7 +4579,7 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 2.18,
+      "value": 5.38,
       "currency": "USD"
     },
     {
@@ -4627,7 +4627,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 734.98,
+      "value": 761.98,
       "currency": "BRL"
     },
     {
@@ -4760,6 +4760,10 @@
     {
       "id": "msqafwz3it5kb",
       "at": "2026-08-12T18:07:08.405Z"
+    },
+    {
+      "id": "msotyphoeofnm",
+      "at": "2026-08-12T18:16:29.139Z"
     }
   ],
   "surebets": [
@@ -6839,29 +6843,6 @@
       "lucroRed": -50
     },
     {
-      "id": "msotyphoeofnm",
-      "event": "Tunari x CS Stefanesti",
-      "houseA": "Ivibet",
-      "houseB": "Casobet",
-      "oddA": 1.88,
-      "oddB": 3.34,
-      "total": 43,
-      "stakeA": 27,
-      "stakeB": 16,
-      "lucroA": 7.759999999999998,
-      "lucroB": 10.439999999999998,
-      "lucro": 7.759999999999998,
-      "roi": 18.046511627906973,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-08-12T11:30",
-      "aplicado": {
-        "stakes": true
-      },
-      "kind": "sure"
-    },
-    {
       "id": "msowwsz8udlyo",
       "event": "Dinamo zagreb  -handicap primeiro tempo 4 escanteios",
       "houseA": "Bet365",
@@ -7328,5 +7309,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T18:14:44.363Z"
+  "updatedAt": "2026-08-12T18:16:29.139Z"
 }
