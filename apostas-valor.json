@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 1219.55
+      "value": 1009.55
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2918.37,
+      "value": 3128.37,
       "currency": "BRL",
       "auto": true
     },
@@ -7347,8 +7347,28 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msqhfknuuv02q",
+      "kind": "valor",
+      "event": "Tampa bay DNB",
+      "houseA": "Vbet",
+      "oddA": 2.01,
+      "stakeA": 210,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T20:00",
+      "total": 210,
+      "lucroA": 212.09999999999997,
+      "lucroRed": -210,
+      "lucro": 212.09999999999997,
+      "roi": 100.99999999999997,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T19:13:46.558Z"
+  "updatedAt": "2026-08-12T19:28:36.187Z"
 }
