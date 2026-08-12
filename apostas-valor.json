@@ -4505,7 +4505,7 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 635.87
+      "value": 1135.87
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3128.37,
+      "value": 2678.37,
       "currency": "BRL",
       "auto": true
     },
@@ -7253,12 +7253,13 @@
       "lucroB": 32.5,
       "lucro": 32.5,
       "roi": 7.222222222222221,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-08-12T15:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
       "kind": "sure"
     },
@@ -7391,5 +7392,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T19:33:42.541Z"
+  "updatedAt": "2026-08-12T20:10:30.165Z"
 }
