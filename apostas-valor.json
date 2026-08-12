@@ -4705,7 +4705,8 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 155.91
+      "value": 155.91,
+      "currency": "USD"
     },
     {
       "id": "msorkx0qx15s5",
@@ -7394,5 +7395,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T22:04:30.646Z"
+  "updatedAt": "2026-08-12T22:04:38.129Z"
 }
