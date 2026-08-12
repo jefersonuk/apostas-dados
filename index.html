@@ -545,7 +545,9 @@
         <div class="summary-item"><div class="k">Volume</div><div class="v" id="vbVolume" style="font-size:13px;">—</div></div>
         <div class="summary-item"><div class="k">Odd média</div><div class="v" id="vbAvgOdd" style="font-size:13px;">—</div></div>
       </div>
-      <div class="filter-row">
+      <div class="k" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:12px 0 4px;font-weight:700;">Evolução diária</div>
+      <div id="vbDaily"></div>
+      <div class="filter-row" style="margin-top:12px;">
         <div class="filter-btn active" data-vbfilter="all">Todas</div>
         <div class="filter-btn" data-vbfilter="open">⏳ Em aberto</div>
         <div class="filter-btn" data-vbfilter="green">✓ Green</div>
@@ -1152,6 +1154,40 @@
     $('vbAvgOdd').textContent=avgOdd?avgOdd.toFixed(2):'—';
   }
 
+  function renderValorDaily(){
+    const box=$('vbDaily');
+    const fin=valorBets().filter(o=>o.winner);
+    if(!fin.length){ box.innerHTML='<div class="empty" style="padding:8px;">Resolva apostas para ver a evolução diária.</div>'; return; }
+    const days={};
+    fin.forEach(o=>{
+      const d=(o.date||'').slice(0,10)||'—';
+      if(!days[d]) days[d]={n:0,g:0,lucro:0,vol:0};
+      days[d].n++; days[d].vol+=legStake(o,'A'); days[d].lucro+=sbRealProfit(o);
+      if(o.winner==='A') days[d].g++;
+    });
+    const asc=Object.entries(days).sort((a,b)=>a[0].localeCompare(b[0]));
+    let cum=0;
+    const rows=asc.map(([date,d])=>{ cum+=d.lucro; return {date,...d,cum}; }).reverse();
+    box.innerHTML=
+      `<table class="sc-table"><thead><tr>`+
+      `<th>Dia</th><th>Apostas</th><th>Acerto</th><th>Volume</th><th>Lucro</th><th>Yield</th><th>Acumulado</th>`+
+      `</tr></thead><tbody>`+
+      rows.map(r=>{
+        const dd=r.date==='—'?'—':(r.date.slice(8,10)+'/'+r.date.slice(5,7));
+        const yld=r.vol>0?(r.lucro/r.vol*100):0;
+        return `<tr>`+
+          `<td>${dd}</td>`+
+          `<td>${r.n}</td>`+
+          `<td>${r.g}/${r.n}</td>`+
+          `<td>${fmt(r.vol)}</td>`+
+          `<td class="${r.lucro>=0?'pos':'neg'}">${fmtSign(r.lucro)}</td>`+
+          `<td class="${yld>=0?'pos':'neg'}">${yld>=0?'+':''}${yld.toFixed(1)}%</td>`+
+          `<td class="cum">${fmtSign(r.cum)}</td>`+
+          `</tr>`;
+      }).join('')+
+      `</tbody></table>`;
+  }
+
   function renderValorList(){
     const box=$('vbList');
     let arr=valorBets();
@@ -1159,9 +1195,28 @@
     else if(vbFilter==='green') arr=arr.filter(o=>o.winner==='A');
     else if(vbFilter==='red') arr=arr.filter(o=>o.winner==='RED');
     if(!arr.length){ box.innerHTML='<div class="empty">Nenhuma aposta de valor neste filtro.</div>'; return; }
-    arr=[...arr].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id));
 
-    box.innerHTML=arr.map(o=>{
+    // agrupa por dia (mais recente primeiro); dentro do dia, por horário
+    const byDay={};
+    arr.forEach(o=>{ const d=(o.date||'').slice(0,10)||'—'; (byDay[d]=byDay[d]||[]).push(o); });
+    const dias=Object.keys(byDay).sort((a,b)=>b.localeCompare(a));
+    const semana=['dom','seg','ter','qua','qui','sex','sáb'];
+
+    box.innerHTML=dias.map(dia=>{
+      const doDia=byDay[dia].sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
+      const fin=doDia.filter(o=>o.winner);
+      const lucroDia=fin.reduce((s,o)=>s+sbRealProfit(o),0);
+      const gDia=fin.filter(o=>o.winner==='A').length;
+      const volDia=fin.reduce((s,o)=>s+legStake(o,'A'),0);
+      const yldDia=volDia>0?(lucroDia/volDia*100):0;
+      const dd=dia==='—'?'Sem data':(dia.slice(8,10)+'/'+dia.slice(5,7)+'/'+dia.slice(0,4));
+      let wd=''; if(dia!=='—'){ const dt2=new Date(dia+'T12:00:00'); wd=semana[dt2.getDay()]; }
+      const abertas=doDia.length-fin.length;
+      const head=`<div class="sb-day-header">
+        <div class="sb-day-title">${dd}${wd?`<span class="weekday">${wd}</span>`:''}</div>
+        <div class="sb-day-sum ${lucroDia>=0?'pos':'neg'}">${fin.length?`${fmtSign(lucroDia)} · ${gDia}/${fin.length}G · ${yldDia>=0?'+':''}${yldDia.toFixed(1)}%`:''}${abertas?`<span style="color:var(--amber)"> · ${abertas} aberta${abertas>1?'s':''}</span>`:''}</div>
+      </div>`;
+      return head+doDia.map(o=>{
       const st=legStake(o,'A'), od=legOdd(o,'A');
       const casa=legHouse(o,'A');
       const dt=fmtDate(o.date);
@@ -1209,6 +1264,7 @@
           </div>
           <span class="bet-val ${valCls}" style="font-size:11.5px;">${val}</span>
         </div>${det}`;
+      }).join('');
     }).join('');
 
     box.querySelectorAll('[data-vbtoggle]').forEach(el=>el.addEventListener('click',()=>{
@@ -2146,7 +2202,7 @@
       `</tbody></table>`;
   }
 
-  function renderAll(){ renderCaixa(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderSurebetDaily(); renderValorSummary(); renderValorList(); }
+  function renderAll(){ renderCaixa(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderSurebetDaily(); renderValorSummary(); renderValorDaily(); renderValorList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
