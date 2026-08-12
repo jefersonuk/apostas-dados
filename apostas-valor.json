@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1303.83,
+      "value": 1403.83,
       "currency": "BRL",
       "auto": true
     },
@@ -4627,7 +4627,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 841.44,
+      "value": 741.44,
       "currency": "BRL"
     },
     {
@@ -7037,8 +7037,28 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msq4ruf8zpi3v",
+      "kind": "valor",
+      "event": "Mais de 27,5 abates primeiro mapa",
+      "houseA": "Ivibet",
+      "oddA": 1.87,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-13T07:00",
+      "total": 100,
+      "lucroA": 87.00000000000001,
+      "lucroRed": -100,
+      "lucro": 87.00000000000001,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T13:30:30.722Z"
+  "updatedAt": "2026-08-12T13:34:13.701Z"
 }
