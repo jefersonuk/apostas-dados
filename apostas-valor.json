@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2497.11,
+      "value": 2547.11,
       "currency": "BRL",
       "auto": true
     },
@@ -4638,7 +4638,7 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 169.68
+      "value": 119.68
     },
     {
       "id": "msesofpdcy90h",
@@ -6977,8 +6977,28 @@
       "kind": "valor",
       "stakeFake": 0.1,
       "lucroRed": -50
+    },
+    {
+      "id": "msq8usug0kowf",
+      "kind": "valor",
+      "event": "Khimik Dzerzhinsk – Nosta Novotroitsk H1(−0.75) 1º período:",
+      "houseA": "Pinnacle",
+      "oddA": 1.952,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T13:00",
+      "total": 50,
+      "lucroA": 47.599999999999994,
+      "lucroRed": -50,
+      "lucro": 47.599999999999994,
+      "roi": 95.19999999999999,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T15:27:37.746Z"
+  "updatedAt": "2026-08-12T15:28:30.097Z"
 }
