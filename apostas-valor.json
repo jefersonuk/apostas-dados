@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4034.52,
+      "value": 3826.37,
       "currency": "BRL",
       "auto": true
     },
@@ -4772,6 +4772,10 @@
     {
       "id": "msknlo8tso4ru",
       "at": "2026-08-12T18:34:28.182Z"
+    },
+    {
+      "id": "mshrfnex5uujz",
+      "at": "2026-08-12T18:34:37.263Z"
     }
   ],
   "surebets": [
@@ -7319,23 +7323,6 @@
       }
     },
     {
-      "id": "mshrfnex5uujz",
-      "event": "INNER CICLE X NIO",
-      "houseA": "Thunderpick",
-      "houseB": "Casobet",
-      "oddA": 1.22,
-      "oddB": 11.6,
-      "total": 208.15,
-      "stakeA": 188.34,
-      "stakeB": 19.81,
-      "lucroA": 21.624799999999993,
-      "lucroB": 21.645999999999987,
-      "lucro": 21.624799999999993,
-      "roi": 10.389046360797497,
-      "winner": null,
-      "date": "2026-08-07T06:00"
-    },
-    {
       "id": "msj3glffyw5so",
       "event": "Carolina Solberg Salgado/Rebecca Cavalcante Barbosa da Silva – Joana Mader/Leona Kernen",
       "houseA": "Betsson",
@@ -7354,5 +7341,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T18:34:28.182Z"
+  "updatedAt": "2026-08-12T18:34:37.263Z"
 }
