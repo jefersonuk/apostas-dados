@@ -4520,7 +4520,7 @@
     {
       "id": "mrgvnqkej651m",
       "name": "Betwarrior",
-      "value": 321.1
+      "value": 271.1
     },
     {
       "id": "mrgvrivsc6dqm",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2597.11,
+      "value": 2647.11,
       "currency": "BRL",
       "auto": true
     },
@@ -7017,8 +7017,28 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msq97p33n7tdw",
+      "kind": "valor",
+      "event": "Total de Escanteio por Durban City FC: Mais 4.5",
+      "houseA": "Betwarrior",
+      "oddA": 2.32,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T14:30",
+      "total": 50,
+      "lucroA": 65.99999999999999,
+      "lucroRed": -50,
+      "lucro": 65.99999999999999,
+      "roi": 131.99999999999997,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T15:30:01.245Z"
+  "updatedAt": "2026-08-12T15:38:31.753Z"
 }
