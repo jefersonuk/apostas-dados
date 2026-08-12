@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1888.06,
+      "value": 2418.17,
       "currency": "BRL",
       "auto": true
     },
@@ -4622,12 +4622,12 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 20.19
+      "value": -209.81
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 741.44,
+      "value": 441.33,
       "currency": "BRL"
     },
     {
@@ -7081,8 +7081,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msq7voq648ixs",
+      "kind": "sure",
+      "event": "Gen G x Hanwha",
+      "houseA": "Ivibet",
+      "houseB": "Casinozer",
+      "oddA": 1.87,
+      "oddB": 2.44,
+      "total": 530.1069518716577,
+      "stakeA": 300.10695187165766,
+      "stakeB": 230,
+      "lucroA": 31.09304812834216,
+      "lucroB": 31.093048128342275,
+      "lucro": 31.09304812834216,
+      "roi": 5.865429234338732,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-13T07:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T14:52:50.901Z"
+  "updatedAt": "2026-08-12T15:01:11.791Z"
 }
