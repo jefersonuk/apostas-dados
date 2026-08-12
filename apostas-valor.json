@@ -4505,7 +4505,7 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1231.87
+      "value": 1031.87
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 744.91,
+      "value": 1194.91,
       "currency": "BRL",
       "auto": true
     },
@@ -4579,7 +4579,7 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 89.49,
+      "value": 39.49,
       "currency": "USD"
     },
     {
@@ -6910,8 +6910,30 @@
         "stakes": true,
         "resultado": "B"
       }
+    },
+    {
+      "id": "msq30q6nef8tc",
+      "event": "Navalcarnero x Siello Nuevo",
+      "houseA": "Betnacional",
+      "houseB": "Casobet",
+      "oddA": 2.5,
+      "oddB": 1.93,
+      "total": 450,
+      "stakeA": 200,
+      "stakeB": 250,
+      "lucroA": 50,
+      "lucroB": 32.5,
+      "lucro": 32.5,
+      "roi": 7.222222222222221,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-12T15:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T12:29:07.746Z"
+  "updatedAt": "2026-08-12T12:45:08.881Z"
 }
