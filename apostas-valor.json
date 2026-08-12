@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2647.11,
+      "value": 2697.11,
       "currency": "BRL",
       "auto": true
     },
@@ -4627,7 +4627,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 884.98,
+      "value": 834.98,
       "currency": "BRL"
     },
     {
@@ -7079,8 +7079,28 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msq9o9jb6j86y",
+      "kind": "valor",
+      "event": "Hammarby – Vasteras (1)",
+      "houseA": "Ivibet",
+      "oddA": 2.52,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T14:00",
+      "total": 50,
+      "lucroA": 76,
+      "lucroRed": -50,
+      "lucro": 76,
+      "roi": 152,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T15:48:29.472Z"
+  "updatedAt": "2026-08-12T15:51:24.751Z"
 }
