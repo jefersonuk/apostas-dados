@@ -4500,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 596.9
+      "value": 646.9
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4752,7 +4752,12 @@
     }
   ],
   "usdRate": 5,
-  "deleted": [],
+  "deleted": [
+    {
+      "id": "msq9evr1gkm04",
+      "at": "2026-08-12T18:06:06.003Z"
+    }
+  ],
   "surebets": [
     {
       "id": "mrrk2z5ufcd56",
@@ -7041,27 +7046,6 @@
       }
     },
     {
-      "id": "msq9evr1gkm04",
-      "kind": "valor",
-      "event": "feminino",
-      "houseA": "Bet365",
-      "oddA": 2,
-      "stakeA": 50,
-      "curA": "BRL",
-      "prob": null,
-      "winner": "RED",
-      "date": "2026-08-12T12:38",
-      "total": 50,
-      "lucroA": 50,
-      "lucroRed": -50,
-      "lucro": 50,
-      "roi": 100,
-      "aplicado": {
-        "stakes": true,
-        "resultado": "RED"
-      }
-    },
-    {
       "id": "msq9kiaevr1lr",
       "kind": "valor",
       "event": "Everton x Newcastle (h4)",
@@ -7358,5 +7342,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T18:06:00.428Z"
+  "updatedAt": "2026-08-12T18:06:06.003Z"
 }
