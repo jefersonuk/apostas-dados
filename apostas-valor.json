@@ -4520,7 +4520,7 @@
     {
       "id": "mrgvnqkej651m",
       "name": "Betwarrior",
-      "value": 312.18
+      "value": 335.82
     },
     {
       "id": "mrgvrivsc6dqm",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1403.83,
+      "value": 1394.91,
       "currency": "BRL",
       "auto": true
     },
@@ -7027,7 +7027,7 @@
       "stakeA": 8.92,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-12T10:27",
       "total": 8.92,
       "lucroA": 14.718,
@@ -7035,7 +7035,8 @@
       "lucro": 14.718,
       "roi": 165,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       }
     },
     {
@@ -7060,5 +7061,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T13:34:13.701Z"
+  "updatedAt": "2026-08-12T14:17:13.101Z"
 }
