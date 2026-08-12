@@ -418,9 +418,14 @@
       <div id="sbDaily"></div>
     </div>
 
-    <!-- CALCULADORA SUREBET -->
+    <!-- CALCULADORA -->
     <div class="card">
-      <div class="card-title">Calculadora de Surebet</div>
+      <div class="card-title" id="calcTitle">Calculadora de Surebet</div>
+      <div class="cur-toggle" style="margin-bottom:10px;">
+        <button type="button" class="cur-opt active" id="kindSure" style="flex:1;">🎯 Surebet</button>
+        <button type="button" class="cur-opt" id="kindValor" style="flex:1;">📈 Aposta de Valor</button>
+      </div>
+      <div id="blocoSurebet">
       <div class="footnote" style="margin-top:0;">Informe as odds e escolha o modo. Cada perna pode ser em <b>R$ ou US$</b> (convertido pela cotação configurada na aba de banca). Edite qualquer campo e tudo recalcula.</div>
 
       <div class="sc-mode" style="margin-top:10px;">
@@ -496,6 +501,30 @@
         <span style="color:var(--muted)">Preencha as odds e a banca (ou o stake de uma perna) para ver a distribuição.</span>
       </div>
 
+      </div><!-- /blocoSurebet -->
+
+      <div id="blocoValor" style="display:none;">
+        <div class="grid2">
+          <div><label>Casa de aposta</label><input type="text" id="vbHouse" placeholder="Ex: Bet365"></div>
+          <div><label>Odd</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="2.10"></div>
+        </div>
+        <div class="grid2">
+          <div>
+            <label>Stake</label>
+            <div class="cur-toggle" id="curToggleV">
+              <button type="button" class="cur-opt active" data-cur="V:BRL">R$</button>
+              <button type="button" class="cur-opt" data-cur="V:USD">US$</button>
+            </div>
+            <input type="number" id="vbStake" step="0.01" min="0" placeholder="50.00">
+          </div>
+          <div><label>Prob. real % (opcional)</label><input type="number" id="vbProb" step="0.1" placeholder="52.5"></div>
+        </div>
+        <input type="hidden" id="scCurV" value="BRL">
+        <div class="risk-preview" id="vbResult">
+          <span style="color:var(--muted)">Preencha a odd e o stake para ver o retorno.</span>
+        </div>
+      </div>
+
       <div class="grid2">
         <div><label>Evento (opcional)</label><input type="text" id="scEvent" placeholder="Ex: Sport × Santa Cruz"></div>
         <div><label>Data</label><input type="datetime-local" id="scDate"></div>
@@ -503,9 +532,31 @@
       <button class="btn primary" id="scRegisterBtn">Registrar operação</button>
     </div>
 
+    <!-- APOSTAS DE VALOR -->
+    <div class="card">
+      <div class="card-title"><span>📈 Apostas de Valor</span><span id="vbTotalHead" style="font-family:var(--mono);font-size:12px;"></span></div>
+      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="summary-item"><div class="k">Lucro realizado</div><div class="v" id="vbProfit" style="font-size:15px;">—</div></div>
+        <div class="summary-item"><div class="k">Yield</div><div class="v" id="vbYield" style="font-size:15px;">—</div></div>
+        <div class="summary-item"><div class="k">Taxa de acerto</div><div class="v" id="vbHit" style="font-size:15px;">—</div></div>
+      </div>
+      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="summary-item"><div class="k">Apostas</div><div class="v" id="vbCount" style="font-size:13px;">—</div></div>
+        <div class="summary-item"><div class="k">Volume</div><div class="v" id="vbVolume" style="font-size:13px;">—</div></div>
+        <div class="summary-item"><div class="k">Odd média</div><div class="v" id="vbAvgOdd" style="font-size:13px;">—</div></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-btn active" data-vbfilter="all">Todas</div>
+        <div class="filter-btn" data-vbfilter="open">⏳ Em aberto</div>
+        <div class="filter-btn" data-vbfilter="green">✓ Green</div>
+        <div class="filter-btn" data-vbfilter="red">✗ Red</div>
+      </div>
+      <div id="vbList"></div>
+    </div>
+
     <!-- LISTA DE OPERAÇÕES -->
     <div class="card">
-      <div class="card-title"><span>Operações</span><button class="btn small" id="sbCopyBtn">Copiar p/ planilha</button></div>
+      <div class="card-title"><span>🎯 Operações de Surebet</span><button class="btn small" id="sbCopyBtn">Copiar p/ planilha</button></div>
       <div class="filter-row">
         <div class="filter-btn active" data-sbfilter="all">Todas</div>
         <div class="filter-btn" data-sbfilter="open">⏳ Em aberto</div>
@@ -1009,6 +1060,210 @@
     else if(!syncCfg){ el.textContent='● Salvo neste navegador — '+new Date().toLocaleTimeString('pt-BR'); el.style.color='#5C6472'; }
   }
 
+
+  /* ---------- aposta de valor (uma perna) ---------- */
+  let calcKind='sure', vbFilter='all';
+
+  function vbCompute(){
+    const odd=parseFloat($('vbOdd').value);
+    const fat=($('scCurV').value==='USD')?usdRate():1;
+    const stake=parseFloat($('vbStake').value)*fat;
+    if(!(odd>1)||!(stake>0)) return null;
+    const prob=parseFloat($('vbProb').value);
+    const retorno=stake*odd, lucro=stake*(odd-1);
+    const ev=(!isNaN(prob))?((prob/100*odd-1)*100):null;
+    return {odd,stake,retorno,lucro,prob:isNaN(prob)?null:prob,ev,cur:$('scCurV').value,fat};
+  }
+
+  function updateValorCalc(){
+    const r=vbCompute();
+    const box=$('vbResult');
+    if(!r){ box.innerHTML='<span style="color:var(--muted)">Preencha a odd e o stake para ver o retorno.</span>'; return; }
+    const casa=$('vbHouse').value.trim()||'Casa';
+    let evLine='';
+    if(r.ev!==null){
+      const cls=r.ev>=0?'green':'red';
+      evLine=`<br><span style="color:var(--muted-2)">Prob ${r.prob}% × odd ${r.odd.toFixed(2)} → EV </span><span style="color:var(--${cls})">${r.ev>=0?'+':''}${r.ev.toFixed(1)}%</span>`;
+    }
+    box.innerHTML=
+      `<div style="font-family:var(--mono);font-size:13px;line-height:1.85;">`+
+      `<b>${esc(casa)}</b> @${r.odd.toFixed(2)} · aposta <b>${r.cur==='USD'?fmtUSD(r.stake/r.fat):fmt(r.stake)}</b>`+
+      `${r.cur==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(r.stake)}</span>`:''}<br>`+
+      `<span style="color:var(--green)">Se GREEN: retorno ${fmt(r.retorno)} · lucro ${fmtSign(r.lucro)}</span><br>`+
+      `<span style="color:var(--red)">Se RED: perde ${fmt(r.stake)}</span>`+evLine+
+      `</div>`;
+  }
+
+  function registrarValor(){
+    const r=vbCompute();
+    if(!r){ alert('Preencha a odd e o stake.'); return; }
+    const op={
+      id:uid(), kind:'valor', event:$('scEvent').value.trim()||'Aposta sem nome',
+      houseA:$('vbHouse').value.trim(), oddA:r.odd, stakeA:r.stake, curA:r.cur,
+      prob:r.prob, winner:null, date:$('scDate').value||nowLocalStr()
+    };
+    recalcValor(op);
+    aplicarStakes(op);
+    state.surebets.push(op);
+    $('vbHouse').value=''; $('vbOdd').value=''; $('vbStake').value=''; $('vbProb').value='';
+    $('scEvent').value=''; $('scDate').value=nowLocalStr();
+    $('scCurV').value='BRL';
+    const g=$('curToggleV'); if(g) g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active',x.dataset.cur.endsWith('BRL')));
+    updateValorCalc(); saveState(); renderAll();
+    toast('Aposta de valor registrada ✓');
+  }
+
+  ['vbHouse','vbOdd','vbStake','vbProb'].forEach(id=>$(id).addEventListener('input',updateValorCalc));
+
+  function setCalcKind(k){
+    calcKind=k;
+    $('kindSure').classList.toggle('active',k==='sure');
+    $('kindValor').classList.toggle('active',k==='valor');
+    $('blocoSurebet').style.display=(k==='sure')?'block':'none';
+    $('blocoValor').style.display=(k==='valor')?'block':'none';
+    $('calcTitle').textContent=(k==='sure')?'Calculadora de Surebet':'Registrar Aposta de Valor';
+    $('scRegisterBtn').textContent=(k==='sure')?'Registrar operação':'Registrar aposta de valor';
+  }
+  $('kindSure').addEventListener('click',()=>setCalcKind('sure'));
+  $('kindValor').addEventListener('click',()=>setCalcKind('valor'));
+
+  function valorBets(){ return (state.surebets||[]).filter(ehValor); }
+
+  function renderValorSummary(){
+    const all=valorBets();
+    const done=all.filter(o=>o.winner);
+    const greens=done.filter(o=>o.winner==='A');
+    const open=all.filter(o=>!o.winner);
+    const profit=done.reduce((s,o)=>s+sbRealProfit(o),0);
+    const volume=done.reduce((s,o)=>s+legStake(o,'A'),0);
+    const yld=volume>0?(profit/volume*100):0;
+    const hit=done.length?(greens.length/done.length*100):0;
+    const avgOdd=all.length?all.reduce((s,o)=>s+legOdd(o,'A'),0)/all.length:0;
+    const openVol=open.reduce((s,o)=>s+legStake(o,'A'),0);
+
+    $('vbTotalHead').innerHTML=open.length?`<span style="color:var(--amber)">⏳ ${fmt(openVol)} em aberto</span>`:'';
+    $('vbProfit').textContent=done.length?fmtSign(profit):'—';
+    $('vbProfit').className='v '+(profit>=0?'pos':'neg');
+    $('vbYield').textContent=volume>0?(yld>=0?'+':'')+yld.toFixed(2)+'%':'—';
+    $('vbYield').className='v '+(yld>=0?'pos':'neg');
+    $('vbHit').textContent=done.length?`${hit.toFixed(1)}%`:'—';
+    $('vbCount').innerHTML=all.length?`${greens.length}G / ${done.length-greens.length}R${open.length?` · <span style="color:var(--amber)">${open.length} aberta${open.length>1?'s':''}</span>`:''}`:'—';
+    $('vbVolume').textContent=volume>0?fmt(volume):'—';
+    $('vbAvgOdd').textContent=avgOdd?avgOdd.toFixed(2):'—';
+  }
+
+  function renderValorList(){
+    const box=$('vbList');
+    let arr=valorBets();
+    if(vbFilter==='open') arr=arr.filter(o=>!o.winner);
+    else if(vbFilter==='green') arr=arr.filter(o=>o.winner==='A');
+    else if(vbFilter==='red') arr=arr.filter(o=>o.winner==='RED');
+    if(!arr.length){ box.innerHTML='<div class="empty">Nenhuma aposta de valor neste filtro.</div>'; return; }
+    arr=[...arr].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id));
+
+    box.innerHTML=arr.map(o=>{
+      const st=legStake(o,'A'), od=legOdd(o,'A');
+      const casa=legHouse(o,'A');
+      const dt=fmtDate(o.date);
+      let dot,val,valCls,statusTxt;
+      if(!o.winner){ dot='pendente'; val=`+${fmt(st*(od-1)).replace('R$ ','R$ ')} / −${fmt(st).replace('R$ ','R$ ')}`; valCls='pend'; statusTxt='aguardando'; }
+      else if(o.winner==='A'){ dot='green'; val=fmtSign(st*(od-1)); valCls='pos'; statusTxt='green'; }
+      else { dot='red'; val=fmtSign(-st); valCls='neg'; statusTxt='red'; }
+      const isEd=vbEditingId===o.id;
+      const det = isEd
+        ? `<div class="sb-edit" id="vbEditForm_${o.id}">
+             <label>Evento</label><input type="text" class="vbed" data-f="event" value="${esc(o.event||'')}">
+             <div class="grid2">
+               <div><label>Casa</label><input type="text" class="vbed" data-f="houseA" value="${esc(o.houseA||'')}"></div>
+               <div><label>Odd</label><input type="number" class="vbed" data-f="oddA" step="0.01" value="${od}"></div>
+             </div>
+             <div class="grid2">
+               <div><label>Stake (R$)</label><input type="number" class="vbed" data-f="stakeA" step="0.01" value="${st.toFixed(2)}"></div>
+               <div><label>Prob %</label><input type="number" class="vbed" data-f="prob" step="0.1" value="${(typeof o.prob==='number')?o.prob:''}"></div>
+             </div>
+             <label>Data / horário</label><input type="datetime-local" class="vbed" data-f="date" value="${(o.date||'').slice(0,16)}">
+             <div style="display:flex;gap:6px;margin-top:8px;">
+               <button class="btn small primary" data-vbsave="${o.id}">Salvar</button>
+               <button class="btn small" data-vbcancel="${o.id}">Cancelar</button>
+             </div>
+           </div>`
+        : `<div class="bet-detail${vbOpenDetail===o.id?' show':''}" data-vbdetail="${o.id}">
+             Retorno se green: ${fmt(st*od)} · lucro ${fmtSign(st*(od-1))}<br>
+             Perda se red: ${fmt(st)}${(typeof o.prob==='number')?`<br>Prob informada ${o.prob}% → EV ${((o.prob/100*od-1)*100).toFixed(1)}%`:''}
+             <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">
+               <button class="btn small ${o.winner==='A'?'primary':''}" data-vbres="${o.id}:A">✓ Green</button>
+               <button class="btn small ${o.winner==='RED'?'primary':''}" data-vbres="${o.id}:RED">✗ Red</button>
+               ${o.winner?`<button class="btn small" data-vbres="${o.id}:">Reabrir</button>`:''}
+             </div>
+             <div style="display:flex;gap:6px;margin-top:8px;">
+               <button class="btn small" data-vbedit="${o.id}">Editar</button>
+               <button class="btn small" data-vbdel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
+             </div>
+           </div>`;
+      return `<div class="bet-row" style="border-left:3px solid ${o.winner==='A'?'#34D399':o.winner==='RED'?'#F87171':'#F5A524'};">
+          <span class="bet-dot ${dot}"></span>
+          <span class="bet-date">${dt}</span>
+          <div class="bet-main" data-vbtoggle="${o.id}">
+            <div class="bet-event">${esc(o.event||'')}</div>
+            <div class="bet-sub"><span class="house-tag">${esc(casa)}</span>@${od.toFixed(2)} · ${fmt(st)} · ${statusTxt}</div>
+          </div>
+          <span class="bet-val ${valCls}" style="font-size:11.5px;">${val}</span>
+        </div>${det}`;
+    }).join('');
+
+    box.querySelectorAll('[data-vbtoggle]').forEach(el=>el.addEventListener('click',()=>{
+      const id=el.dataset.vbtoggle;
+      if(vbEditingId===id) return;
+      vbOpenDetail = vbOpenDetail===id?null:id;
+      renderValorList();
+    }));
+    box.querySelectorAll('[data-vbres]').forEach(b=>b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const [id,res]=b.dataset.vbres.split(':');
+      const o=state.surebets.find(x=>x.id===id);
+      if(o){ o.winner=res||null; aplicarResultado(o,o.winner); saveState(); renderAll(); }
+    }));
+    box.querySelectorAll('[data-vbedit]').forEach(b=>b.addEventListener('click',e=>{
+      e.stopPropagation(); vbEditingId=b.dataset.vbedit; vbOpenDetail=b.dataset.vbedit; renderValorList();
+    }));
+    box.querySelectorAll('[data-vbcancel]').forEach(b=>b.addEventListener('click',e=>{
+      e.stopPropagation(); vbEditingId=null; renderValorList();
+    }));
+    box.querySelectorAll('[data-vbdel]').forEach(b=>b.addEventListener('click',e=>{
+      e.stopPropagation(); const o=state.surebets.find(x=>x.id===b.dataset.vbdel);
+      if(o&&confirm(`Excluir "${o.event}"?\n\nO valor volta para o saldo da casa.`)){
+        reverterTudo(o); state.surebets=state.surebets.filter(x=>x.id!==b.dataset.vbdel);
+        vbOpenDetail=null; vbEditingId=null; saveState(); renderAll();
+      }
+    }));
+    box.querySelectorAll('[data-vbsave]').forEach(b=>b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const o=state.surebets.find(x=>x.id===b.dataset.vbsave); if(!o) return;
+      const form=document.getElementById('vbEditForm_'+o.id); if(!form) return;
+      const tinha=o.winner;
+      reverterTudo(o);
+      form.querySelectorAll('.vbed').forEach(inp=>{
+        const f=inp.dataset.f, v=inp.value;
+        if(f==='event') o.event=v.trim()||o.event;
+        else if(f==='houseA') o.houseA=v.trim();
+        else if(f==='oddA'){ const n=parseFloat(v); if(n>1) o.oddA=n; }
+        else if(f==='stakeA'){ const n=parseFloat(v); if(n>0) o.stakeA=n; }
+        else if(f==='prob'){ const n=parseFloat(v); o.prob=isNaN(n)?null:n; }
+        else if(f==='date') o.date=v||o.date;
+      });
+      recalcValor(o);
+      aplicarStakes(o);
+      if(tinha) aplicarResultado(o,tinha);
+      vbEditingId=null; saveState(); renderAll();
+      toast('Aposta atualizada ✓');
+    }));
+  }
+
+  document.querySelectorAll('[data-vbfilter]').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-vbfilter]').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active'); vbFilter=btn.dataset.vbfilter; vbEditingId=null; renderValorList();
+  }));
+
   /* ---------- saldo por casa (manual) ---------- */
   const HOUSE_COLORS=['#38BDF8','#F5A524','#34D399','#A78BFA','#F472B6','#F87171','#22D3EE','#FACC15','#FB923C','#4ADE80'];
   let editingBal=null;
@@ -1413,10 +1668,11 @@
   }));
 
   scEls.register.addEventListener('click',()=>{
+    if(calcKind==='valor'){ registrarValor(); return; }
     const r=scLast||computeSurebet();
     if(!r){ alert('Preencha as odds e a banca (ou o stake de cada perna).'); return; }
     const novaOp={
-      id:uid(), event:scEls.event.value.trim()||'Operação sem nome',
+      id:uid(), kind:'sure', event:scEls.event.value.trim()||'Operação sem nome',
       houseA:scEls.houseA.value.trim(), houseB:scEls.houseB.value.trim(),
       oddA:r.oddA, oddB:r.oddB, total:r.total, stakeA:r.stakeA, stakeB:r.stakeB,
       lucroA:r.lucroA, lucroB:r.lucroB, lucro:r.lucro, roi:r.roi, winner:null, curA:r.curA, curB:r.curB,
@@ -1442,13 +1698,19 @@
 
   // lucro real: se o vencedor foi marcado, usa o cenário real; senão usa o pior caso (garantido/teórico)
   function sbRealProfit(o){
+    if(ehValor(o)){
+      if(o.winner==='A') return legStake(o,'A')*(legOdd(o,'A')-1);   // green
+      if(o.winner==='RED') return -legStake(o,'A');                   // red
+      return 0;                                                       // pendente: nada realizado
+    }
     if(o.winner) return legLucro(o,o.winner);
     return (typeof o.lucro==='number'&&isFinite(o.lucro))?o.lucro:0;
   }
 
   // pernas presentes numa operação (2 ou 3), e acesso genérico por letra
   // tolerante a operações antigas que não tenham todos os campos
-  function opLegs(o){ const l=['A','B']; if(typeof o.oddC==='number') l.push('C'); return l; }
+  function ehValor(o){ return o.kind==='valor'; }
+  function opLegs(o){ if(ehValor(o)) return ['A']; const l=['A','B']; if(typeof o.oddC==='number') l.push('C'); return l; }
   function legHouse(o,l){ return (l==='A'?o.houseA:l==='B'?o.houseB:o.houseC)||('Casa '+l); }
   function legStake(o,l){ const v=(l==='A'?o.stakeA:l==='B'?o.stakeB:o.stakeC); return (typeof v==='number'&&isFinite(v))?v:0; }
   function legOdd(o,l){ const v=(l==='A'?o.oddA:l==='B'?o.oddB:o.oddC); return (typeof v==='number'&&isFinite(v))?v:0; }
@@ -1493,24 +1755,56 @@
   function aplicarResultado(o,vencedor){
     if(o.aplicado&&o.aplicado.resultado) reverterResultado(o);
     if(!vencedor) return;
-    const casa=legHouse(o,vencedor), retorno=legStake(o,vencedor)*legOdd(o,vencedor);
-    moverSaldo(casa,+retorno);
+    if(vencedor!=='RED'){                       // RED (aposta de valor perdida) não devolve nada
+      const casa=legHouse(o,vencedor), retorno=legStake(o,vencedor)*legOdd(o,vencedor);
+      moverSaldo(casa,+retorno);
+    }
     o.aplicado=Object.assign({},o.aplicado,{resultado:vencedor});
   }
   function reverterResultado(o){
     if(!(o.aplicado&&o.aplicado.resultado)) return;
     const v=o.aplicado.resultado;
-    const casa=legHouse(o,v), retorno=legStake(o,v)*legOdd(o,v);
-    moverSaldo(casa,-retorno);
+    if(v!=='RED'){
+      const casa=legHouse(o,v), retorno=legStake(o,v)*legOdd(o,v);
+      moverSaldo(casa,-retorno);
+    }
     o.aplicado.resultado=null;
   }
   function reverterTudo(o){ reverterResultado(o); reverterStakes(o); }
+
+  // recalcula os derivados de uma aposta de valor (uma perna só)
+  function recalcValor(o){
+    o.total=o.stakeA;
+    o.lucroA=o.stakeA*(o.oddA-1);      // cenário green
+    o.lucroRed=-o.stakeA;              // cenário red
+    o.lucro=o.lucroA;
+    o.roi=(o.oddA-1)*100;
+  }
+
+  // converte entradas antigas registradas como 2 pernas com odd 1.01 no lado fake.
+  // NÃO mexe em saldos: apenas reclassifica os dados, preservando o estado contábil já aplicado.
+  function migrarValueBets(){
+    let n=0;
+    (state.surebets||[]).forEach(o=>{
+      if(o.kind) return;                                   // já classificada
+      const fake = typeof o.oddB==='number' && Math.abs(o.oddB-1.01)<0.02 && typeof o.oddC!=='number';
+      if(!fake){ o.kind='sure'; return; }
+      o.kind='valor';
+      if(o.winner==='B') o.winner='RED';                   // a perna B era o marcador de perda
+      if(o.aplicado&&o.aplicado.resultado==='B') o.aplicado.resultado='RED';
+      o.stakeFake=o.stakeB;                                // rastro do stake simbólico já debitado
+      delete o.houseB; delete o.oddB; delete o.stakeB; delete o.curB; delete o.lucroB;
+      recalcValor(o);
+      n++;
+    });
+    return n;
+  }
 
   // Mantém a linha "Em arbitragem" igual ao total apostado em surebets ainda abertas
   const ARB_NAME='Em arbitragem';
   function sincronizarArbitragem(){
     const emJogo=(state.surebets||[]).filter(o=>!o.winner)
-      .reduce((s,o)=>s+o.stakeA+o.stakeB+(o.stakeC||0),0);
+      .reduce((s,o)=>s+(o.stakeA||0)+(o.stakeB||0)+(o.stakeC||0),0);
     let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===ARB_NAME.toLowerCase());
     if(!b){
       if(emJogo<=0) return;                       // não cria se não há nada em jogo
@@ -1522,7 +1816,7 @@
   }
 
   function renderSurebetSummary(){
-    const ops=state.surebets||[];
+    const ops=(state.surebets||[]).filter(o=>!ehValor(o));
     const open=ops.filter(o=>!o.winner);
     const done=ops.filter(o=>!!o.winner);
     // lucro realizado: só das finalizadas
@@ -1566,7 +1860,7 @@
 
   function renderSurebetChart(){
     const svg=$('sbChartSvg');
-    const ops=[...(state.surebets||[])].filter(o=>!!o.winner).sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
+    const ops=[...(state.surebets||[])].filter(o=>!!o.winner&&!ehValor(o)).sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
     const base=state.sbBankroll||0;
     if(!ops.length){ svg.innerHTML=''; $('sbChartNote').textContent='Finalize operações (marque a casa vencedora) para ver a evolução real.'; return; }
     const pts=[{x:0,val:base}]; let run=base;
@@ -1589,10 +1883,11 @@
   }
 
   let sbEditingId=null, sbOpenDetail=null, sbFilter='all';
+  let vbEditingId=null, vbOpenDetail=null;
 
   function renderSurebetList(){
     const list=$('sbList');
-    let ops=state.surebets||[];
+    let ops=(state.surebets||[]).filter(o=>!ehValor(o));
     if(!ops.length){ list.innerHTML='<div class="empty">Nenhuma operação registrada.</div>'; return; }
     if(sbFilter==='open') ops=ops.filter(o=>!o.winner);
     else if(sbFilter==='done') ops=ops.filter(o=>!!o.winner);
@@ -1785,7 +2080,7 @@
   }));
 
   $('sbCopyBtn').addEventListener('click',()=>{
-    const ops=[...(state.surebets||[])].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+    const ops=[...(state.surebets||[])].filter(o=>!ehValor(o)).sort((a,b)=>(a.date||'').localeCompare(b.date||''));
     const num=v=>(typeof v==='number'&&isFinite(v))?v.toFixed(2):'';
     const lines=[['Data','Evento','CasaA','OddA','StakeA','CasaB','OddB','StakeB','CasaC','OddC','StakeC','Total','Vencedor','LucroReal','ROI%'].join('\t')];
     ops.forEach(o=>{
@@ -1816,7 +2111,7 @@
 
   function renderSurebetDaily(){
     const box=$('sbDaily');
-    const ops=(state.surebets||[]).filter(o=>!!o.winner);
+    const ops=(state.surebets||[]).filter(o=>!!o.winner&&!ehValor(o));
     if(!ops.length){ box.innerHTML='<div class="empty" style="padding:8px;">Finalize operações (marque a casa vencedora) para ver o resultado diário.</div>'; return; }
     // agrupa por dia
     const days={};
@@ -1851,18 +2146,22 @@
       `</tbody></table>`;
   }
 
-  function renderAll(){ renderCaixa(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderSurebetDaily(); }
+  function renderAll(){ renderCaixa(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderSurebetDaily(); renderValorSummary(); renderValorList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
   saveState=function(){ try{ sincronizarArbitragem(); }catch(e){} state.updatedAt=new Date().toISOString(); _origSave(); renderAutosave(); schedulePush(); };
 
   // init
+  const migradas=migrarValueBets();
+  if(migradas>0){ saveState(); }
   fillCfg();
   $('sbBankrollInput').value=state.sbBankroll||'';
   $('balRate').value=usdRate();
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
   updateSurebetCalc();
+  updateValorCalc();
+  setCalcKind('sure');
   renderAll();
   renderAutosave();
   renderSyncUi();
