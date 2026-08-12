@@ -4500,12 +4500,12 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 696.9
+      "value": 697.1
     },
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 731.87
+      "value": 1031.87
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4520,7 +4520,7 @@
     {
       "id": "mrgvnqkej651m",
       "name": "Betwarrior",
-      "value": 321.1
+      "value": 312.18
     },
     {
       "id": "mrgvrivsc6dqm",
@@ -4530,7 +4530,7 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 6338.41,
+      "value": 6138.41,
       "currency": "BRL"
     },
     {
@@ -4551,7 +4551,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 813.9,
+      "value": 1015,
       "currency": "BRL"
     },
     {
@@ -4562,12 +4562,12 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 20375.14
+      "value": 20534.03
     },
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 744.91,
+      "value": 1403.83,
       "currency": "BRL",
       "auto": true
     },
@@ -4579,7 +4579,7 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 91.67,
+      "value": 39.49,
       "currency": "USD"
     },
     {
@@ -4616,7 +4616,7 @@
     {
       "id": "msddfl9dohdf9",
       "name": "Epicbet",
-      "value": 24.92,
+      "value": 25.09,
       "currency": "USD"
     },
     {
@@ -4627,7 +4627,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1329.84,
+      "value": 741.44,
       "currency": "BRL"
     },
     {
@@ -4638,13 +4638,7 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 169.68
-    },
-    {
-      "id": "msesofpdcy90h",
-      "name": "Overtimemarket",
-      "value": 155.91,
-      "currency": "USD"
+      "value": 69.68
     },
     {
       "id": "mseumeeird6tj",
@@ -4706,21 +4700,17 @@
     {
       "id": "mso22oyjdi55r",
       "name": "7games",
-      "value": 238.61
+      "value": 0
     },
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": -50
+      "value": 145.91,
+      "currency": "USD"
     },
     {
       "id": "msorkx0qx15s5",
       "name": "7bet",
-      "value": -238
-    },
-    {
-      "id": "msozrxqhmaq4n",
-      "name": "BNet365",
       "value": 0
     }
   ],
@@ -4749,6 +4739,10 @@
     {
       "date": "2026-08-11",
       "value": 39334.11
+    },
+    {
+      "date": "2026-08-12",
+      "value": 40303.44
     }
   ],
   "usdRate": 5,
@@ -6980,8 +6974,91 @@
       "kind": "valor",
       "stakeFake": 0.1,
       "lucroRed": -50
+    },
+    {
+      "id": "msq30q6nef8tc",
+      "event": "Navalcarnero x Siello Nuevo",
+      "houseA": "Betnacional",
+      "houseB": "Casobet",
+      "oddA": 2.5,
+      "oddB": 1.93,
+      "total": 450,
+      "stakeA": 200,
+      "stakeB": 250,
+      "lucroA": 50,
+      "lucroB": 32.5,
+      "lucro": 32.5,
+      "roi": 7.222222222222221,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-12T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "kind": "sure"
+    },
+    {
+      "id": "msq4iryc5lr7u",
+      "kind": "valor",
+      "event": "SSvg x Borussia - H2 -4.75",
+      "houseA": "Pinnacle",
+      "oddA": 2.11,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T13:00",
+      "total": 100,
+      "lucroA": 110.99999999999999,
+      "lucroRed": -100,
+      "lucro": 110.99999999999999,
+      "roi": 110.99999999999999,
+      "aplicado": {
+        "stakes": true
+      }
+    },
+    {
+      "id": "msq4n2ddrrf1w",
+      "kind": "valor",
+      "event": "Dumau menos 16.5 kills",
+      "houseA": "Betwarrior",
+      "oddA": 2.65,
+      "stakeA": 8.92,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-12T10:27",
+      "total": 8.92,
+      "lucroA": 14.718,
+      "lucroRed": -8.92,
+      "lucro": 14.718,
+      "roi": 165,
+      "aplicado": {
+        "stakes": true
+      }
+    },
+    {
+      "id": "msq4ruf8zpi3v",
+      "kind": "valor",
+      "event": "Mais de 27,5 abates primeiro mapa",
+      "houseA": "Ivibet",
+      "oddA": 1.87,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-13T07:00",
+      "total": 100,
+      "lucroA": 87.00000000000001,
+      "lucroRed": -100,
+      "lucro": 87.00000000000001,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T14:11:05.704Z"
+  "updatedAt": "2026-08-12T13:34:13.701Z"
 }
