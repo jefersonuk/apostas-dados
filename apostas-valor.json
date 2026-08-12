@@ -4722,6 +4722,12 @@
       "id": "msozrxqhmaq4n",
       "name": "BNet365",
       "value": 0
+    },
+    {
+      "id": "msqmzms2hzjnb",
+      "name": "Marathon",
+      "value": 50,
+      "currency": "BRL"
     }
   ],
   "aportes": [],
@@ -7394,5 +7400,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T20:51:04.391Z"
+  "updatedAt": "2026-08-12T22:04:10.130Z"
 }
