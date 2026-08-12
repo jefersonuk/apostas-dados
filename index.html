@@ -374,7 +374,7 @@
         <button class="btn" id="syncDisconnectBtn" style="border-color:#5C2530;color:#F87171;">Desconectar</button>
       </div>
     </div>
-    <div class="footnote">Dados num repositório <b>privado</b> seu. O token é a senha — cole uma vez em cada dispositivo (fica só no navegador local). Toda alteração é enviada automaticamente; ao abrir no outro dispositivo, a versão mais recente é baixada.</div>
+    <div class="footnote">Os dados são <b>fundidos</b>, nunca sobrescritos: registros feitos em dispositivos diferentes se somam, e a app verifica a nuvem a cada 45s e ao voltar para a aba. O token é a senha — cole uma vez em cada dispositivo (fica só no navegador local). Toda alteração é enviada automaticamente; ao abrir no outro dispositivo, a versão mais recente é baixada.</div>
   </div>
 
   <!-- BACKUP -->
@@ -600,7 +600,7 @@
 
   function normalize(p){
     const cfg=Object.assign({},DEFAULTS,p.cfg||{});
-    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5, surebets:Array.isArray(p.surebets)?p.surebets:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5, deleted:Array.isArray(p.deleted)?p.deleted:[], surebets:Array.isArray(p.surebets)?p.surebets:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
   }
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
@@ -881,7 +881,7 @@
     }));
     $('betsList').querySelectorAll('[data-del]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); const b=state.bets.find(x=>x.id===btn.dataset.del);
-      if(b&&confirm(`Excluir "${b.event}"?`)){ state.bets=state.bets.filter(x=>x.id!==btn.dataset.del); openDetail=null; editingId=null; saveState(); renderAll(); }
+      if(b&&confirm(`Excluir "${b.event}"?`)){ marcarExcluido(btn.dataset.del); state.bets=state.bets.filter(x=>x.id!==btn.dataset.del); openDetail=null; editingId=null; saveState(); renderAll(); }
     }));
     $('betsList').querySelectorAll('[data-edit]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); editingId=btn.dataset.edit; openDetail=btn.dataset.edit; renderBets();
@@ -974,7 +974,14 @@
     const body={ message:'sync '+new Date().toISOString(), content:b64encode(JSON.stringify(state,null,2)) };
     if(cloudSha) body.sha=cloudSha;
     const r=await fetch(apiUrl(),{method:'PUT',headers:{...apiHeaders(),'Content-Type':'application/json'},body:JSON.stringify(body)});
-    if((r.status===409||r.status===422)&&!retry){ try{await cloudPull();}catch(e){} return cloudPush(true); }
+    if((r.status===409||r.status===422)&&!retry){
+      // outro dispositivo gravou antes: funde e reenvia, sem descartar nada
+      try{
+        const remoto=await cloudPull();
+        if(remoto){ state=fundirEstados(state,normalize(remoto)); try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){} fillCfg(); renderAll(); }
+      }catch(e){}
+      return cloudPush(true);
+    }
     if(!r.ok) throw new Error('Erro ao gravar (HTTP '+r.status+').');
     const j=await r.json(); cloudSha=j.content&&j.content.sha;
   }
@@ -997,6 +1004,52 @@
     else { sEls.setup.style.display='block'; sEls.active.style.display='none'; }
   }
 
+
+  /* ---------- fusão de estados (evita perda por sobrescrita entre dispositivos) ---------- */
+  function marcarExcluido(id){
+    state.deleted=state.deleted||[];
+    if(!state.deleted.some(d=>d.id===id)) state.deleted.push({id,at:new Date().toISOString()});
+  }
+
+  // une duas listas por chave, mantendo a versão do lado mais recente quando o item existe nos dois
+  function fundirListas(locais,remotos,chave,localMaisNovo){
+    const mapa=new Map();
+    const base = localMaisNovo?remotos:locais;      // o mais antigo entra primeiro
+    const topo = localMaisNovo?locais:remotos;      // o mais novo sobrescreve
+    (base||[]).forEach(x=>mapa.set(chave(x),x));
+    (topo||[]).forEach(x=>mapa.set(chave(x),x));
+    return [...mapa.values()];
+  }
+
+  function fundirEstados(local,remoto){
+    const tL=local.updatedAt||'', tR=remoto.updatedAt||'';
+    const localMaisNovo = tL>=tR;
+    const novo = localMaisNovo?Object.assign({},remoto,local):Object.assign({},local,remoto);
+
+    novo.surebets = fundirListas(local.surebets,remoto.surebets,o=>o.id,localMaisNovo);
+    novo.bets     = fundirListas(local.bets,remoto.bets,o=>o.id,localMaisNovo);
+    novo.aportes  = fundirListas(local.aportes,remoto.aportes,o=>o.id,localMaisNovo);
+    novo.caixa    = fundirListas(local.caixa,remoto.caixa,o=>o.date,localMaisNovo);
+    // saldos casam por NOME (ids podem divergir entre dispositivos)
+    novo.balances = fundirListas(local.balances,remoto.balances,b=>(b.name||'').trim().toLowerCase(),localMaisNovo);
+
+    // respeita exclusões feitas em qualquer um dos lados
+    novo.deleted = fundirListas(local.deleted,remoto.deleted,d=>d.id,localMaisNovo);
+    const apagados=new Set((novo.deleted||[]).map(d=>d.id));
+    novo.surebets=novo.surebets.filter(o=>!apagados.has(o.id));
+    novo.bets=novo.bets.filter(o=>!apagados.has(o.id));
+    novo.aportes=novo.aportes.filter(o=>!apagados.has(o.id));
+
+    novo.updatedAt = tL>tR?tL:tR;
+    return normalize(novo);
+  }
+
+  // quanto o remoto acrescentaria ao local (para avisar o usuário)
+  function diffFusao(local,fundido){
+    const antes=new Set((local.surebets||[]).map(o=>o.id));
+    return (fundido.surebets||[]).filter(o=>!antes.has(o.id)).length;
+  }
+
   async function initialSync(){
     if(!syncCfg) return;
     try{
@@ -1004,16 +1057,15 @@
       const remote=await cloudPull();
       if(remote===null){ await cloudPush(); setSyncStatus('Nuvem inicializada ↑ '+new Date().toLocaleTimeString('pt-BR')); }
       else {
-        const remoteAt=remote.updatedAt||'', localAt=state.updatedAt||'';
-        if(remoteAt>=localAt){
-          state=normalize(remote); state.updatedAt=remote.updatedAt;
-          try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){}
-          fillCfg(); renderAll();
-          setSyncStatus('Sincronizado ↓ '+new Date().toLocaleTimeString('pt-BR'));
-        } else {
-          await cloudPush();
-          setSyncStatus('Dados locais mais recentes enviados ↑ '+new Date().toLocaleTimeString('pt-BR'));
-        }
+        const antes=state;
+        const fundido=fundirEstados(state,normalize(remote));
+        const novos=diffFusao(antes,fundido);
+        state=fundido;
+        try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){}
+        fillCfg(); renderAll();
+        await cloudPush();   // devolve a versão fundida para a nuvem
+        setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR')+(novos?` · ${novos} registro(s) recebido(s)`:''));
+        if(novos) toast(`${novos} registro(s) de outro dispositivo ✓`);
       }
     }catch(e){ setSyncStatus('⚠ '+e.message,true); }
   }
@@ -1025,13 +1077,13 @@
     sEls.connect.textContent='Conectando…';
     try{
       try{localStorage.setItem(SYNC_KEY,JSON.stringify(syncCfg));}catch(e){}
-      renderSyncUi(); await initialSync(); sEls.token.value=''; toast('Sincronização ativada ☁');
+      renderSyncUi(); await initialSync(); iniciarAutoSync(); sEls.token.value=''; toast('Sincronização ativada ☁');
     }catch(e){ alert('Falha: '+e.message); syncCfg=null; try{localStorage.removeItem(SYNC_KEY);}catch(_){} renderSyncUi(); }
     finally{ sEls.connect.textContent='Conectar e sincronizar'; }
   });
   sEls.disconnect.addEventListener('click',()=>{
     if(!confirm('Desconectar neste dispositivo? Dados locais e da nuvem são mantidos.')) return;
-    syncCfg=null; cloudSha=null; try{localStorage.removeItem(SYNC_KEY);}catch(e){} renderSyncUi(); renderAutosave();
+    syncCfg=null; cloudSha=null; clearInterval(autoSyncTimer); try{localStorage.removeItem(SYNC_KEY);}catch(e){} renderSyncUi(); renderAutosave();
   });
   sEls.push.addEventListener('click', async ()=>{
     if(syncBusy) return; syncBusy=true;
@@ -1041,15 +1093,17 @@
   });
   sEls.pull.addEventListener('click', async ()=>{
     if(syncBusy) return;
-    if(!confirm('Baixar a versão da nuvem e substituir os dados deste dispositivo?')) return;
+    if(!confirm('Buscar a versão da nuvem e fundir com os dados deste dispositivo?\n\nNada é apagado — registros dos dois lados são mantidos.')) return;
     syncBusy=true;
     try{
       const remote=await cloudPull();
       if(remote===null){ alert('Ainda não existe arquivo na nuvem.'); }
-      else { state=normalize(remote); state.updatedAt=remote.updatedAt;
+      else { const antes=state;
+        state=fundirEstados(state,normalize(remote));
+        const novos=diffFusao(antes,state);
         try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}
         fillCfg(); renderAll();
-        setSyncStatus('Sincronizado ↓ '+new Date().toLocaleTimeString('pt-BR')); toast('Baixado ☁');
+        setSyncStatus('Sincronizado ↓ '+new Date().toLocaleTimeString('pt-BR')); toast(novos?`${novos} registro(s) recebido(s) ☁`:'Baixado ☁');
       }
     }catch(e){ setSyncStatus('⚠ '+e.message,true); }
     finally{ syncBusy=false; }
@@ -1288,7 +1342,7 @@
     box.querySelectorAll('[data-vbdel]').forEach(b=>b.addEventListener('click',e=>{
       e.stopPropagation(); const o=state.surebets.find(x=>x.id===b.dataset.vbdel);
       if(o&&confirm(`Excluir "${o.event}"?\n\nO valor volta para o saldo da casa.`)){
-        reverterTudo(o); state.surebets=state.surebets.filter(x=>x.id!==b.dataset.vbdel);
+        reverterTudo(o); marcarExcluido(o.id); state.surebets=state.surebets.filter(x=>x.id!==b.dataset.vbdel);
         vbOpenDetail=null; vbEditingId=null; saveState(); renderAll();
       }
     }));
@@ -1559,7 +1613,7 @@
     list.querySelectorAll('[data-apdel]').forEach(btn=>btn.addEventListener('click',()=>{
       const a=state.aportes.find(x=>x.id===btn.dataset.apdel);
       if(a&&confirm(`Remover ${a.value>=0?'aporte':'saque'} de ${fmt(Math.abs(a.value))}?`)){
-        state.aportes=state.aportes.filter(x=>x.id!==btn.dataset.apdel);
+        marcarExcluido(btn.dataset.apdel); state.aportes=state.aportes.filter(x=>x.id!==btn.dataset.apdel);
         saveState(); renderAll();
       }
     }));
@@ -2080,7 +2134,7 @@
     }));
     list.querySelectorAll('[data-sbdel]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); const o=state.surebets.find(x=>x.id===btn.dataset.sbdel);
-      if(o&&confirm(`Excluir "${o.event}"?\n\nOs valores voltam para os saldos das casas.`)){ reverterTudo(o); state.surebets=state.surebets.filter(x=>x.id!==btn.dataset.sbdel); sbOpenDetail=null; sbEditingId=null; saveState(); renderAll(); }
+      if(o&&confirm(`Excluir "${o.event}"?\n\nOs valores voltam para os saldos das casas.`)){ reverterTudo(o); marcarExcluido(o.id); state.surebets=state.surebets.filter(x=>x.id!==btn.dataset.sbdel); sbOpenDetail=null; sbEditingId=null; saveState(); renderAll(); }
     }));
     list.querySelectorAll('[data-sbwin]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation();
@@ -2208,6 +2262,36 @@
   const _origSave=saveState;
   saveState=function(){ try{ sincronizarArbitragem(); }catch(e){} state.updatedAt=new Date().toISOString(); _origSave(); renderAutosave(); schedulePush(); };
 
+  /* ---------- verificação periódica de mudanças remotas ---------- */
+  let autoSyncTimer=null;
+  async function verificarRemoto(){
+    if(!syncCfg||syncBusy||pushTimer) return;
+    syncBusy=true;
+    try{
+      const remoto=await cloudPull();
+      if(remoto){
+        const antes=state;
+        const fundido=fundirEstados(state,normalize(remoto));
+        const novos=diffFusao(antes,fundido);
+        if(novos>0 || (remoto.updatedAt||'')>(state.updatedAt||'')){
+          state=fundido;
+          try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}
+          fillCfg(); renderAll();
+          if(novos>0){ toast(`${novos} registro(s) de outro dispositivo ✓`); await cloudPush(); }
+          setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR'));
+        }
+      }
+    }catch(e){}
+    finally{ syncBusy=false; }
+  }
+  function iniciarAutoSync(){
+    clearInterval(autoSyncTimer);
+    if(syncCfg) autoSyncTimer=setInterval(verificarRemoto,45000);   // a cada 45s
+  }
+  // ao voltar para a aba, verifica na hora
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) verificarRemoto(); });
+  window.addEventListener('focus',verificarRemoto);
+
   // init
   const migradas=migrarValueBets();
   if(migradas>0){ saveState(); }
@@ -2221,7 +2305,7 @@
   renderAll();
   renderAutosave();
   renderSyncUi();
-  initialSync();
+  initialSync().then(iniciarAutoSync);
 })();
 </script>
 </body>
