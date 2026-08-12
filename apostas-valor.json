@@ -6989,7 +6989,7 @@
       "curA": "BRL",
       "prob": null,
       "winner": null,
-      "date": "2026-08-12T13:00",
+      "date": "2026-08-12T17:00",
       "total": 50,
       "lucroA": 47.599999999999994,
       "lucroRed": -50,
@@ -7102,5 +7102,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T16:50:39.536Z"
+  "updatedAt": "2026-08-12T16:59:42.392Z"
 }
