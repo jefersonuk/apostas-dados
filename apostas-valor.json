@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 1219.55
+      "value": 1071.4
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4567,7 +4567,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1394.91,
+      "value": 1888.06,
       "currency": "BRL",
       "auto": true
     },
@@ -4705,7 +4705,7 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 145.91,
+      "value": 76.91,
       "currency": "USD"
     },
     {
@@ -7058,8 +7058,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msq7ky8i2c6u8",
+      "kind": "sure",
+      "event": "Parivision x Team Resolution",
+      "houseA": "Overtimemarkets",
+      "houseB": "Vbet",
+      "oddA": 1.53,
+      "oddB": 3.7,
+      "total": 493.15,
+      "stakeA": 345,
+      "stakeB": 148.15,
+      "lucroA": 34.700000000000045,
+      "lucroB": 55.00500000000011,
+      "lucro": 34.700000000000045,
+      "roi": 7.036398661664818,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-12T23:00",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-12T14:17:13.101Z"
+  "updatedAt": "2026-08-12T14:52:50.901Z"
 }
