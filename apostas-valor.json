@@ -1,16 +1,18 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-13",
-    "stakeMin": 5,
-    "stakeMax": 20,
+    "startDate": "2026-07-08",
+    "stakeMin": 1,
+    "stakeMax": 30,
     "oddMin": 1.5,
-    "potMin": 1,
+    "potMin": 25,
     "kellyMult": 0.5,
     "probTolerance": 3,
     "probFull": 50,
     "probFloor": 20,
-    "penMin": 0.35
+    "penMin": 0.35,
+    "oddCap": 3,
+    "potCap": 50
   },
   "bets": [
     {
@@ -4498,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 345.85
+      "value": 650.85
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4528,7 +4530,7 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 6974.8,
+      "value": 6869.3,
       "currency": "BRL"
     },
     {
@@ -4555,7 +4557,7 @@
     {
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
-      "value": 500
+      "value": 0
     },
     {
       "id": "mrvd6n3x6xs48",
@@ -4566,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3681.3,
+      "value": 4211.41,
       "currency": "BRL",
       "auto": true
     },
@@ -4594,7 +4596,7 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 240.48
+      "value": 314.9
     },
     {
       "id": "msan29jv5dft4",
@@ -4621,12 +4623,12 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 653.39
+      "value": 91.19
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": -19.06,
+      "value": 935.54,
       "currency": "BRL"
     },
     {
@@ -4704,7 +4706,7 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 56.92,
+      "value": 76.92,
       "currency": "USD"
     },
     {
@@ -4715,7 +4717,7 @@
     {
       "id": "msqmzms2hzjnb",
       "name": "Marathon",
-      "value": 100,
+      "value": 105.5,
       "currency": "BRL"
     },
     {
@@ -4733,9 +4735,20 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 153.8,
+      "value": 253.8,
       "currency": "BRL",
       "auto": true
+    },
+    {
+      "id": "msesofpdcy90h",
+      "name": "Overtimemarket",
+      "value": 155.91,
+      "currency": "USD"
+    },
+    {
+      "id": "msozrxqhmaq4n",
+      "name": "BNet365",
+      "value": 0
     }
   ],
   "aportes": [],
@@ -4767,11 +4780,15 @@
     {
       "date": "2026-08-12",
       "value": 40913.95
+    },
+    {
+      "date": "2026-08-13",
+      "value": 41325.95
     }
   ],
   "usdRate": 5.19,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-13T12:32:59.440Z",
+  "usdRateAt": "2026-08-13T14:17:37.249Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -7324,7 +7341,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-08-13T07:00",
       "total": 100,
       "lucroA": 87.00000000000001,
@@ -7332,8 +7349,7 @@
       "lucro": 87.00000000000001,
       "roi": 87.00000000000001,
       "aplicado": {
-        "stakes": true,
-        "resultado": "RED"
+        "stakes": true
       }
     },
     {
@@ -7351,13 +7367,12 @@
       "lucroB": 31.093048128342275,
       "lucro": 31.09304812834216,
       "roi": 5.865429234338732,
-      "winner": "B",
+      "winner": null,
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T07:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "B"
+        "stakes": true
       }
     },
     {
@@ -7559,5 +7574,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T14:07:17.683Z"
+  "updatedAt": "2026-08-13T14:17:37.249Z"
 }
