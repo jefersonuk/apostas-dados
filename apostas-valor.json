@@ -1,18 +1,16 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-07-08",
-    "stakeMin": 1,
-    "stakeMax": 30,
+    "startDate": "2026-08-13",
+    "stakeMin": 5,
+    "stakeMax": 20,
     "oddMin": 1.5,
-    "potMin": 25,
+    "potMin": 1,
     "kellyMult": 0.5,
     "probTolerance": 3,
     "probFull": 50,
     "probFloor": 20,
-    "penMin": 0.35,
-    "oddCap": 3,
-    "potCap": 50
+    "penMin": 0.35
   },
   "bets": [
     {
@@ -4787,7 +4785,7 @@
   ],
   "usdRate": 5.2,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-13T15:31:18.268Z",
+  "usdRateAt": "2026-08-13T18:28:01.349Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -7621,5 +7619,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T18:23:45.119Z"
+  "updatedAt": "2026-08-13T18:28:01.349Z"
 }
