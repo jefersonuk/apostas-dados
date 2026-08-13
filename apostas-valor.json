@@ -4551,7 +4551,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 269.78,
+      "value": -26.89,
       "currency": "BRL"
     },
     {
@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3389.75,
+      "value": 3707.36,
       "currency": "BRL",
       "auto": true
     },
@@ -4628,7 +4628,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 956.48,
+      "value": 935.54,
       "currency": "BRL"
     },
     {
@@ -7456,8 +7456,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msqrblbariz6p",
+      "kind": "sure",
+      "event": "Tampere Saints – Helsinki Roosters",
+      "houseA": "Ivibet",
+      "houseB": "Betsson",
+      "oddA": 17,
+      "oddB": 1.2,
+      "total": 317.6114117647059,
+      "stakeA": 20.941411764705883,
+      "stakeB": 296.67,
+      "lucroA": 38.39258823529411,
+      "lucroB": 38.39258823529411,
+      "lucro": 38.39258823529411,
+      "roi": 12.087912087912086,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-13T12:30",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T00:00:54.080Z"
+  "updatedAt": "2026-08-13T00:05:26.578Z"
 }
