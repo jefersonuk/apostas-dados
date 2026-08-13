@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 1071.4
+      "value": 1057.4
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4545.68,
+      "value": 4611.68,
       "currency": "BRL",
       "auto": true
     },
@@ -4743,6 +4743,11 @@
       "id": "msozrxqhmaq4n",
       "name": "BNet365",
       "value": 0
+    },
+    {
+      "id": "msrueg4hvw63f",
+      "name": "Predict",
+      "value": -52
     }
   ],
   "aportes": [],
@@ -7590,8 +7595,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msrueg4g2wpk5",
+      "kind": "sure",
+      "event": "Olympique x Atl Madrid",
+      "houseA": "Vbet",
+      "houseB": "Predict",
+      "oddA": 6,
+      "oddB": 1.593,
+      "total": 66,
+      "stakeA": 14,
+      "stakeB": 52,
+      "lucroA": 18,
+      "lucroB": 16.836,
+      "lucro": 16.836,
+      "roi": 25.509090909090908,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-14T12:30",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T18:02:30.456Z"
+  "updatedAt": "2026-08-13T18:19:24.841Z"
 }
