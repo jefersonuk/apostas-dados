@@ -4566,7 +4566,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3331.99,
+      "value": 2801.88,
       "currency": "BRL",
       "auto": true
     },
@@ -4621,7 +4621,7 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 653.39
+      "value": 1214.59
     },
     {
       "id": "msddu5i007wwm",
@@ -7355,12 +7355,13 @@
       "lucroB": 31.093048128342275,
       "lucro": 31.09304812834216,
       "roi": 5.865429234338732,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T07:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       }
     },
     {
@@ -7496,5 +7497,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T11:59:41.269Z"
+  "updatedAt": "2026-08-13T12:00:30.461Z"
 }
