@@ -911,11 +911,11 @@
     }));
     $('betsList').querySelectorAll('[data-res]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); const [id,r]=btn.dataset.res.split(':'); const b=state.bets.find(x=>x.id===id);
-      if(b){ b.status='resolvida'; b.result=r; openDetail=null; editingId=null; saveState(); renderAll(); }
+      if(b){ b.status='resolvida'; b.result=r; touch(b); openDetail=null; editingId=null; saveState(); renderAll(); }
     }));
     $('betsList').querySelectorAll('[data-reopen]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); const b=state.bets.find(x=>x.id===btn.dataset.reopen);
-      if(b){ b.status='pendente'; b.result=null; saveState(); renderAll(); }
+      if(b){ b.status='pendente'; b.result=null; touch(b); saveState(); renderAll(); }
     }));
     $('betsList').querySelectorAll('[data-del]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); const b=state.bets.find(x=>x.id===btn.dataset.del);
@@ -942,6 +942,7 @@
         else if(f==='pot'){ const n=parseFloat(v); b.pot=isNaN(n)?null:n; }
         else if(f==='date') b.date=v||b.date;
       });
+      touch(b);
       editingId=null; saveState(); renderAll();
     }));
   }
@@ -1050,33 +1051,53 @@
   }
 
   // une duas listas por chave, mantendo a versão do lado mais recente quando o item existe nos dois
-  function fundirListas(locais,remotos,chave,localMaisNovo){
+  // carimba um registro com o horário da última alteração (usado na fusão item a item)
+  function touch(obj){ obj.updatedAt=new Date().toISOString(); return obj; }
+
+  // funde duas listas: quando a MESMA chave existe nos dois lados, vence o item
+  // com o updatedAt mais recente — nunca a lista inteira de um lado por cima da outra.
+  function fundirListas(locais,remotos,chave){
     const mapa=new Map();
-    const base = localMaisNovo?remotos:locais;      // o mais antigo entra primeiro
-    const topo = localMaisNovo?locais:remotos;      // o mais novo sobrescreve
-    (base||[]).forEach(x=>mapa.set(chave(x),x));
-    (topo||[]).forEach(x=>mapa.set(chave(x),x));
+    (remotos||[]).forEach(x=>mapa.set(chave(x),x));
+    (locais||[]).forEach(x=>{
+      const k=chave(x);
+      const outro=mapa.get(k);
+      if(!outro){ mapa.set(k,x); return; }
+      const tL=x.updatedAt||'', tR=outro.updatedAt||'';
+      mapa.set(k, tL>=tR?x:outro);   // item mais recente vence, registro a registro
+    });
+    return [...mapa.values()];
+  }
+  // união simples (sem comparação), usada só para a lista de exclusões — deleção é idempotente
+  function unirSimples(locais,remotos,chave){
+    const mapa=new Map();
+    (remotos||[]).forEach(x=>mapa.set(chave(x),x));
+    (locais||[]).forEach(x=>mapa.set(chave(x),x));
     return [...mapa.values()];
   }
 
   function fundirEstados(local,remoto){
     const tL=local.updatedAt||'', tR=remoto.updatedAt||'';
     const localMaisNovo = tL>=tR;
+    // campos simples (cfg, sbBankroll, usdRate...) seguem o estado mais recente como um todo —
+    // baixo risco de conflito porque mudam raramente e não em paralelo nos dois dispositivos.
     const novo = localMaisNovo?Object.assign({},remoto,local):Object.assign({},local,remoto);
 
-    novo.surebets = fundirListas(local.surebets,remoto.surebets,o=>o.id,localMaisNovo);
-    novo.bets     = fundirListas(local.bets,remoto.bets,o=>o.id,localMaisNovo);
-    novo.aportes  = fundirListas(local.aportes,remoto.aportes,o=>o.id,localMaisNovo);
-    novo.caixa    = fundirListas(local.caixa,remoto.caixa,o=>o.date,localMaisNovo);
+    // listas: fusão item a item, pelo timestamp de cada registro
+    novo.surebets = fundirListas(local.surebets,remoto.surebets,o=>o.id);
+    novo.bets     = fundirListas(local.bets,remoto.bets,o=>o.id);
+    novo.aportes  = fundirListas(local.aportes,remoto.aportes,o=>o.id);
+    novo.caixa    = fundirListas(local.caixa,remoto.caixa,o=>o.date);
     // saldos casam por NOME (ids podem divergir entre dispositivos)
-    novo.balances = fundirListas(local.balances,remoto.balances,b=>(b.name||'').trim().toLowerCase(),localMaisNovo);
+    novo.balances = fundirListas(local.balances,remoto.balances,b=>(b.name||'').trim().toLowerCase());
 
     // respeita exclusões feitas em qualquer um dos lados
-    novo.deleted = fundirListas(local.deleted,remoto.deleted,d=>d.id,localMaisNovo);
+    novo.deleted = unirSimples(local.deleted,remoto.deleted,d=>d.id);
     const apagados=new Set((novo.deleted||[]).map(d=>d.id));
     novo.surebets=novo.surebets.filter(o=>!apagados.has(o.id));
     novo.bets=novo.bets.filter(o=>!apagados.has(o.id));
     novo.aportes=novo.aportes.filter(o=>!apagados.has(o.id));
+    novo.balances=novo.balances.filter(b=>!apagados.has(b.id));
 
     novo.updatedAt = tL>tR?tL:tR;
     return normalize(novo);
@@ -1198,6 +1219,7 @@
     };
     recalcValor(op);
     aplicarStakes(op);
+    touch(op);
     state.surebets.push(op);
     $('vbHouse').value=''; $('vbOdd').value=''; $('vbStake').value=''; $('vbProb').value='';
     $('scEvent').value=''; $('scDate').value=nowLocalStr();
@@ -1342,7 +1364,7 @@
       e.stopPropagation();
       const [id,res]=b.dataset.vbres.split(':');
       const o=state.surebets.find(x=>x.id===id);
-      if(o){ o.winner=res||null; aplicarResultado(o,o.winner); saveState(); renderAll(); }
+      if(o){ o.winner=res||null; aplicarResultado(o,o.winner); touch(o); saveState(); renderAll(); }
     }));
     box.querySelectorAll('[data-vbedit]').forEach(b=>b.addEventListener('click',e=>{
       e.stopPropagation(); vbEditingId=b.dataset.vbedit; vbOpenDetail=b.dataset.vbedit; renderValorList();
@@ -1375,6 +1397,7 @@
       recalcValor(o);
       aplicarStakes(o);
       if(tinha) aplicarResultado(o,tinha);
+      touch(o);
       vbEditingId=null; saveState(); renderAll();
       toast('Aposta atualizada ✓');
     }));
@@ -1507,7 +1530,7 @@
   function upsertCaixa(date,value){
     state.caixa=state.caixa||[];
     const ex=state.caixa.find(x=>x.date===date);
-    if(ex) ex.value=value; else state.caixa.push({date,value});
+    if(ex){ ex.value=value; touch(ex); } else state.caixa.push(touch({date,value}));
   }
 
   $('caixaSnapBtn').addEventListener('click',()=>{
@@ -1577,7 +1600,7 @@
     list.querySelectorAll('[data-balsave]').forEach(inp=>{
       const save=()=>{
         const b=state.balances.find(x=>x.id===inp.dataset.balsave);
-        if(b){ const v=parseFloat(inp.value); if(!isNaN(v)) b.value=v; }
+        if(b){ const v=parseFloat(inp.value); if(!isNaN(v)&&v!==b.value){ b.value=v; touch(b); } }
         editingBal=null; saveState(); renderAll();
       };
       inp.addEventListener('blur',save);
@@ -1588,12 +1611,13 @@
       const b=state.balances.find(x=>x.id===btn.dataset.balcur);
       if(!b) return;
       b.currency = (b.currency==='USD') ? 'BRL' : 'USD';
+      touch(b);
       saveState(); renderAll();
       toast(`${b.name} agora em ${b.currency==='USD'?'dólar':'real'}`);
     }));
     list.querySelectorAll('[data-baldel]').forEach(btn=>btn.addEventListener('click',()=>{
       const b=state.balances.find(x=>x.id===btn.dataset.baldel);
-      if(b&&confirm(`Remover "${b.name}"?`)){ state.balances=state.balances.filter(x=>x.id!==btn.dataset.baldel); saveState(); renderBalances(); }
+      if(b&&confirm(`Remover "${b.name}"?`)){ marcarExcluido(b.id); state.balances=state.balances.filter(x=>x.id!==btn.dataset.baldel); saveState(); renderBalances(); }
     }));
   }
 
@@ -1651,7 +1675,7 @@
     const name=$('balName').value.trim(), value=parseFloat($('balValue').value);
     if(!name){ alert('Informe o nome da casa.'); return; }
     if(state.balances.some(b=>b.name.toLowerCase()===name.toLowerCase())){ alert('Essa casa já existe. Edite o saldo clicando no valor.'); return; }
-    state.balances.push({ id:uid(), name, value:isNaN(value)?0:value, currency:$('balCur').value||'BRL' });
+    state.balances.push(touch({ id:uid(), name, value:isNaN(value)?0:value, currency:$('balCur').value||'BRL' }));
     $('balName').value=''; $('balValue').value='';
     saveState(); renderAll();
   });
@@ -1686,7 +1710,7 @@
   $('apAddBtn').addEventListener('click',()=>{
     const value=parseFloat($('apValue').value);
     if(isNaN(value)||value===0){ alert('Informe o valor (negativo para saque).'); return; }
-    state.aportes.push({ id:uid(), value, date:$('apDate').value||todayStr(), note:$('apNote').value.trim() });
+    state.aportes.push(touch({ id:uid(), value, date:$('apDate').value||todayStr(), note:$('apNote').value.trim() }));
     $('apValue').value=''; $('apNote').value='';
     saveState(); renderAll();
     toast((value>=0?'Aporte':'Saque')+' registrado ✓');
@@ -1857,6 +1881,7 @@
       novaOp.oddC=r.oddC; novaOp.stakeC=r.stakeC; novaOp.lucroC=r.lucroC; novaOp.curC=r.curC;
     }
     aplicarStakes(novaOp);
+    touch(novaOp);
     state.surebets.push(novaOp);
     scEls.oddA.value=''; scEls.oddB.value=''; scEls.oddC.value=''; scEls.total.value='';
     scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.stakeC.value='';
@@ -1904,7 +1929,7 @@
     if(!nome) return null;
     const alvo=nome.trim().toLowerCase();
     let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===alvo);
-    if(!b){ b={id:uid(), name:nome.trim(), value:0}; state.balances.push(b); }
+    if(!b){ b=touch({id:uid(), name:nome.trim(), value:0}); state.balances.push(b); }
     return b;
   }
   // delta sempre chega em BRL; converte para a moeda da casa antes de aplicar
@@ -1913,6 +1938,7 @@
     if(!b) return;
     const delta = (b.currency==='USD') ? deltaBRL/usdRate() : deltaBRL;
     b.value=Math.round((b.value+delta)*100)/100;
+    touch(b);
   }
   // Debita os stakes de todas as pernas (ao registrar a operação)
   function aplicarStakes(o){
@@ -1983,11 +2009,12 @@
     let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===nome.toLowerCase());
     if(!b){
       if(total<=0) return;                        // não cria linha vazia
-      b={id:uid(), name:nome, value:0, currency:'BRL', auto:true};
+      b=touch({id:uid(), name:nome, value:0, currency:'BRL', auto:true});
       state.balances.push(b);
     }
     b.auto=true; b.currency='BRL';
-    b.value=Math.round(total*100)/100;
+    const novoValor=Math.round(total*100)/100;
+    if(novoValor!==b.value){ b.value=novoValor; touch(b); }   // só carimba se mudou de fato
   }
 
   function sincronizarArbitragem(){
@@ -2223,7 +2250,7 @@
       e.stopPropagation();
       const [id,w]=btn.dataset.sbwin.split(':');
       const o=state.surebets.find(x=>x.id===id);
-      if(o){ o.winner=w||null; aplicarResultado(o,o.winner); saveState(); renderAll(); }
+      if(o){ o.winner=w||null; aplicarResultado(o,o.winner); touch(o); saveState(); renderAll(); }
     }));
     list.querySelectorAll('[data-sbedit]').forEach(btn=>btn.addEventListener('click',e=>{
       e.stopPropagation(); sbEditingId=btn.dataset.sbedit; sbOpenDetail=btn.dataset.sbedit; renderSurebetList();
@@ -2261,6 +2288,7 @@
       o.roi=o.total>0?(o.lucro/o.total*100):0;
       aplicarStakes(o);                          // re-aplica com os valores novos
       if(tinhaVencedor) aplicarResultado(o,tinhaVencedor);
+      touch(o);
       sbEditingId=null; saveState(); renderAll();
       toast('Operação atualizada ✓');
     }));
