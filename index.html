@@ -124,6 +124,17 @@
   .day-center{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--border);}
   .day-val{font-family:var(--mono);font-weight:600;min-width:78px;text-align:right;}
   .day-meta{font-family:var(--mono);color:var(--muted-2);min-width:58px;text-align:right;font-size:10.5px;}
+  .day-val.pos{color:var(--green);} .day-val.neg{color:var(--red);}
+  .day-date .wd{display:block;font-size:8.5px;color:var(--muted-2);font-weight:500;}
+  .day-row-wrap{margin-bottom:2px;}
+  .day-split{padding-left:52px;font-size:10px;color:var(--muted-2);font-family:var(--mono);margin:-2px 0 5px;}
+  .day-split .dot{color:var(--border);margin:0 2px;}
+  .evo-seg{display:flex;gap:5px;margin:8px 0 12px;}
+  .evo-opt{flex:1;padding:9px 6px;border-radius:9px;border:1px solid var(--border);background:#0E1116;
+           color:var(--muted);font-size:12.5px;font-weight:700;cursor:pointer;transition:all .15s;}
+  .evo-opt.active{background:var(--sky);color:#04121C;border-color:var(--sky);}
+  .evo-opt.active[data-evo="valor"]{background:#34D399;border-color:#34D399;color:#04231A;}
+  .evo-opt.active[data-evo="both"]{background:#A78BFA;border-color:#A78BFA;color:#1E1633;}
   .cur-toggle{display:flex;gap:4px;margin-bottom:5px;}
   .cur-opt{flex:1;padding:6px 4px;border-radius:6px;border:1px solid var(--border);background:#0E1116;
            color:var(--muted-2);font-family:var(--mono);font-size:12px;font-weight:700;cursor:pointer;}
@@ -142,7 +153,10 @@
   /* surebet ops segmentadas */
   .sb-day-header{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:16px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--sky);}
   .sb-day-header:first-child{margin-top:0;}
-  .sb-day-title{font-size:13.5px;font-weight:700;color:var(--text);}
+  .sb-day-title{font-size:13.5px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:6px;}
+  .day-chevron{display:inline-block;font-size:11px;color:var(--muted-2);transition:transform .15s;}
+  .day-chevron.open{transform:rotate(90deg);}
+  .sb-day-header:active{opacity:.7;}
   .sb-day-title .weekday{color:var(--muted-2);font-weight:500;font-size:12px;margin-left:6px;}
   .sb-day-sum{font-family:var(--mono);font-size:11.5px;font-weight:600;white-space:nowrap;}
   .sb-op{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;overflow:hidden;background:var(--panel-2);}
@@ -399,6 +413,22 @@
   <!-- ============ ABA SUREBET ============ -->
   <div class="tab-panel" id="tab-surebet">
 
+    <!-- EVOLUÇÃO DIÁRIA COMBINADA -->
+    <div class="card">
+      <div class="card-title">📊 Evolução Diária</div>
+      <div class="evo-seg">
+        <button type="button" class="evo-opt" data-evo="sure">🎯 Surebet</button>
+        <button type="button" class="evo-opt" data-evo="valor">📈 Valor</button>
+        <button type="button" class="evo-opt active" data-evo="both">Ambos</button>
+      </div>
+      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="summary-item"><div class="k">Lucro do período</div><div class="v" id="evoProfit">—</div></div>
+        <div class="summary-item"><div class="k">Yield</div><div class="v" id="evoYield">—</div></div>
+        <div class="summary-item"><div class="k">Operações</div><div class="v" id="evoCount" style="font-size:14px;">—</div></div>
+      </div>
+      <div id="evoDaily"></div>
+    </div>
+
     <!-- SUREBET DASHBOARD -->
     <div class="card">
       <div class="card-title">Banca de Surebets</div>
@@ -416,12 +446,6 @@
       <div class="chart-wrap" style="margin-top:12px;"><svg id="sbChartSvg" viewBox="0 0 780 220" preserveAspectRatio="none"></svg></div>
       <div class="footnote" id="sbChartNote"></div>
       <div style="margin-top:8px;"><label>Banca inicial de surebets (R$)</label><input type="number" id="sbBankrollInput" step="0.01" min="0" placeholder="0.00"></div>
-    </div>
-
-    <!-- RESULTADO DIÁRIO SUREBET -->
-    <div class="card">
-      <div class="card-title">Resultado diário &amp; crescimento</div>
-      <div id="sbDaily"></div>
     </div>
 
     <!-- CALCULADORA -->
@@ -540,7 +564,12 @@
 
     <!-- APOSTAS DE VALOR -->
     <div class="card">
-      <div class="card-title"><span>📈 Apostas de Valor</span><span id="vbTotalHead" style="font-family:var(--mono);font-size:12px;"></span></div>
+      <div class="card-title"><span>📈 Apostas de Valor</span>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span id="vbTotalHead" style="font-family:var(--mono);font-size:12px;"></span>
+          <button class="btn small" id="vbCollapseBtn">▾</button>
+        </div>
+      </div>
       <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
         <div class="summary-item"><div class="k">Lucro realizado</div><div class="v" id="vbProfit" style="font-size:15px;">—</div></div>
         <div class="summary-item"><div class="k">Yield</div><div class="v" id="vbYield" style="font-size:15px;">—</div></div>
@@ -551,9 +580,7 @@
         <div class="summary-item"><div class="k">Volume</div><div class="v" id="vbVolume" style="font-size:13px;">—</div></div>
         <div class="summary-item"><div class="k">Odd média</div><div class="v" id="vbAvgOdd" style="font-size:13px;">—</div></div>
       </div>
-      <div class="k" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:12px 0 4px;font-weight:700;">Evolução diária</div>
-      <div id="vbDaily"></div>
-      <div class="filter-row" style="margin-top:12px;">
+      <div class="filter-row" style="margin-top:14px;">
         <div class="filter-btn active" data-vbfilter="all">Todas</div>
         <div class="filter-btn" data-vbfilter="open">⏳ Em aberto</div>
         <div class="filter-btn" data-vbfilter="green">✓ Green</div>
@@ -564,7 +591,12 @@
 
     <!-- LISTA DE OPERAÇÕES -->
     <div class="card">
-      <div class="card-title"><span>🎯 Operações de Surebet</span><button class="btn small" id="sbCopyBtn">Copiar p/ planilha</button></div>
+      <div class="card-title"><span>🎯 Operações de Surebet</span>
+        <div style="display:flex;gap:6px;">
+          <button class="btn small" id="sbCollapseBtn">▾ Recolher tudo</button>
+          <button class="btn small" id="sbCopyBtn">Copiar p/ planilha</button>
+        </div>
+      </div>
       <div class="filter-row">
         <div class="filter-btn active" data-sbfilter="all">Todas</div>
         <div class="filter-btn" data-sbfilter="open">⏳ Em aberto</div>
@@ -1214,40 +1246,6 @@
     $('vbAvgOdd').textContent=avgOdd?avgOdd.toFixed(2):'—';
   }
 
-  function renderValorDaily(){
-    const box=$('vbDaily');
-    const fin=valorBets().filter(o=>o.winner);
-    if(!fin.length){ box.innerHTML='<div class="empty" style="padding:8px;">Resolva apostas para ver a evolução diária.</div>'; return; }
-    const days={};
-    fin.forEach(o=>{
-      const d=(o.date||'').slice(0,10)||'—';
-      if(!days[d]) days[d]={n:0,g:0,lucro:0,vol:0};
-      days[d].n++; days[d].vol+=legStake(o,'A'); days[d].lucro+=sbRealProfit(o);
-      if(o.winner==='A') days[d].g++;
-    });
-    const asc=Object.entries(days).sort((a,b)=>a[0].localeCompare(b[0]));
-    let cum=0;
-    const rows=asc.map(([date,d])=>{ cum+=d.lucro; return {date,...d,cum}; }).reverse();
-    box.innerHTML=
-      `<table class="sc-table"><thead><tr>`+
-      `<th>Dia</th><th>Apostas</th><th>Acerto</th><th>Volume</th><th>Lucro</th><th>Yield</th><th>Acumulado</th>`+
-      `</tr></thead><tbody>`+
-      rows.map(r=>{
-        const dd=r.date==='—'?'—':(r.date.slice(8,10)+'/'+r.date.slice(5,7));
-        const yld=r.vol>0?(r.lucro/r.vol*100):0;
-        return `<tr>`+
-          `<td>${dd}</td>`+
-          `<td>${r.n}</td>`+
-          `<td>${r.g}/${r.n}</td>`+
-          `<td>${fmt(r.vol)}</td>`+
-          `<td class="${r.lucro>=0?'pos':'neg'}">${fmtSign(r.lucro)}</td>`+
-          `<td class="${yld>=0?'pos':'neg'}">${yld>=0?'+':''}${yld.toFixed(1)}%</td>`+
-          `<td class="cum">${fmtSign(r.cum)}</td>`+
-          `</tr>`;
-      }).join('')+
-      `</tbody></table>`;
-  }
-
   function renderValorList(){
     const box=$('vbList');
     let arr=valorBets();
@@ -1272,10 +1270,12 @@
       const dd=dia==='—'?'Sem data':(dia.slice(8,10)+'/'+dia.slice(5,7)+'/'+dia.slice(0,4));
       let wd=''; if(dia!=='—'){ const dt2=new Date(dia+'T12:00:00'); wd=semana[dt2.getDay()]; }
       const abertas=doDia.length-fin.length;
-      const head=`<div class="sb-day-header">
-        <div class="sb-day-title">${dd}${wd?`<span class="weekday">${wd}</span>`:''}</div>
+      const colapsado=vbCollapsedDays.has(dia);
+      const head=`<div class="sb-day-header" data-vbdaytoggle="${dia}" style="cursor:pointer;">
+        <div class="sb-day-title"><span class="day-chevron ${colapsado?'':'open'}">▸</span>${dd}${wd?`<span class="weekday">${wd}</span>`:''}</div>
         <div class="sb-day-sum ${lucroDia>=0?'pos':'neg'}">${fin.length?`${fmtSign(lucroDia)} · ${gDia}/${fin.length}G · ${yldDia>=0?'+':''}${yldDia.toFixed(1)}%`:''}${abertas?`<span style="color:var(--amber)"> · ${abertas} aberta${abertas>1?'s':''}</span>`:''}</div>
       </div>`;
+      if(colapsado) return head;
       return head+doDia.map(o=>{
       const st=legStake(o,'A'), od=legOdd(o,'A');
       const casa=legHouse(o,'A');
@@ -1327,6 +1327,11 @@
       }).join('');
     }).join('');
 
+    box.querySelectorAll('[data-vbdaytoggle]').forEach(el=>el.addEventListener('click',()=>{
+      const d=el.dataset.vbdaytoggle;
+      if(vbCollapsedDays.has(d)) vbCollapsedDays.delete(d); else vbCollapsedDays.add(d);
+      renderValorList();
+    }));
     box.querySelectorAll('[data-vbtoggle]').forEach(el=>el.addEventListener('click',()=>{
       const id=el.dataset.vbtoggle;
       if(vbEditingId===id) return;
@@ -1375,6 +1380,13 @@
     }));
   }
 
+  $('vbCollapseBtn').addEventListener('click',()=>{
+    const dias=[...new Set(valorBets().map(o=>(o.date||'').slice(0,10)||'—'))];
+    const todosColapsados = dias.length>0 && dias.every(d=>vbCollapsedDays.has(d));
+    if(todosColapsados){ vbCollapsedDays.clear(); $('vbCollapseBtn').textContent='▾'; $('vbCollapseBtn').title='Recolher tudo'; }
+    else { dias.forEach(d=>vbCollapsedDays.add(d)); $('vbCollapseBtn').textContent='▸'; $('vbCollapseBtn').title='Expandir tudo'; }
+    renderValorList();
+  });
   document.querySelectorAll('[data-vbfilter]').forEach(btn=>btn.addEventListener('click',()=>{
     document.querySelectorAll('[data-vbfilter]').forEach(x=>x.classList.remove('active'));
     btn.classList.add('active'); vbFilter=btn.dataset.vbfilter; vbEditingId=null; renderValorList();
@@ -2057,6 +2069,7 @@
 
   let sbEditingId=null, sbOpenDetail=null, sbFilter='all';
   let vbEditingId=null, vbOpenDetail=null;
+  let sbCollapsedDays=new Set(), vbCollapsedDays=new Set();
 
   function renderSurebetList(){
     const list=$('sbList');
@@ -2081,10 +2094,12 @@
       const dd=day==='—'?'Sem data':(day.slice(8,10)+'/'+day.slice(5,7)+'/'+day.slice(0,4));
       let wd='';
       if(day!=='—'){ const dt=new Date(day+'T12:00:00'); wd=weekdays[dt.getDay()]; }
-      html+=`<div class="sb-day-header">
-        <div class="sb-day-title">${dd}${wd?`<span class="weekday">${wd}</span>`:''}</div>
+      const colapsado=sbCollapsedDays.has(day);
+      html+=`<div class="sb-day-header" data-sbdaytoggle="${day}" style="cursor:pointer;">
+        <div class="sb-day-title"><span class="day-chevron ${colapsado?'':'open'}">▸</span>${dd}${wd?`<span class="weekday">${wd}</span>`:''}</div>
         <div class="sb-day-sum ${dayProfit>=0?'pos':'neg'}">${fmtSign(dayProfit)} · ${dayOps.length} op${dayOps.length>1?'s':''}</div>
       </div>`;
+      if(colapsado) return;
       dayOps.forEach(o=>{
         const hh=(o.date||'').slice(11,16)||'--:--';
         const has3=typeof o.oddC==='number';
@@ -2189,6 +2204,11 @@
     });
     list.innerHTML=html;
 
+    list.querySelectorAll('[data-sbdaytoggle]').forEach(el=>el.addEventListener('click',()=>{
+      const d=el.dataset.sbdaytoggle;
+      if(sbCollapsedDays.has(d)) sbCollapsedDays.delete(d); else sbCollapsedDays.add(d);
+      renderSurebetList();
+    }));
     list.querySelectorAll('[data-sbtoggle]').forEach(el=>el.addEventListener('click',()=>{
       const id=el.dataset.sbtoggle;
       if(sbEditingId===id) return;
@@ -2252,6 +2272,14 @@
     btn.classList.add('active'); sbFilter=btn.dataset.sbfilter; sbEditingId=null; renderSurebetList();
   }));
 
+  $('sbCollapseBtn').addEventListener('click',()=>{
+    const ops=(state.surebets||[]).filter(o=>!ehValor(o));
+    const dias=[...new Set(ops.map(o=>(o.date||'').slice(0,10)||'—'))];
+    const todosColapsados = dias.length>0 && dias.every(d=>sbCollapsedDays.has(d));
+    if(todosColapsados){ sbCollapsedDays.clear(); $('sbCollapseBtn').textContent='▾ Recolher tudo'; }
+    else { dias.forEach(d=>sbCollapsedDays.add(d)); $('sbCollapseBtn').textContent='▸ Expandir tudo'; }
+    renderSurebetList();
+  });
   $('sbCopyBtn').addEventListener('click',()=>{
     const ops=[...(state.surebets||[])].filter(o=>!ehValor(o)).sort((a,b)=>(a.date||'').localeCompare(b.date||''));
     const num=v=>(typeof v==='number'&&isFinite(v))?v.toFixed(2):'';
@@ -2282,44 +2310,86 @@
     $('tab-'+tab.dataset.tab).classList.add('active');
   }));
 
-  function renderSurebetDaily(){
-    const box=$('sbDaily');
-    const ops=(state.surebets||[]).filter(o=>!!o.winner&&!ehValor(o));
-    if(!ops.length){ box.innerHTML='<div class="empty" style="padding:8px;">Finalize operações (marque a casa vencedora) para ver o resultado diário.</div>'; return; }
-    // agrupa por dia
+
+  /* ---------- evolução diária combinada (surebet / valor / ambos) ---------- */
+  let evoScope='both';
+
+  function computeDailyRaw(){
+    const ops=(state.surebets||[]).filter(o=>o.winner);
     const days={};
     ops.forEach(o=>{
       const d=(o.date||'').slice(0,10)||'—';
-      if(!days[d]) days[d]={n:0,lucro:0,vol:0};
-      days[d].n++; days[d].lucro+=sbRealProfit(o); days[d].vol+=o.total;
+      if(!days[d]) days[d]={nSure:0,nValor:0,lucroSure:0,lucroValor:0,volSure:0,volValor:0};
+      const p=sbRealProfit(o);
+      const vol=ehValor(o)?legStake(o,'A'):(o.total||0);
+      if(ehValor(o)){ days[d].nValor++; days[d].lucroValor+=p; days[d].volValor+=vol; }
+      else { days[d].nSure++; days[d].lucroSure+=p; days[d].volSure+=vol; }
     });
-    // ordem cronológica ascendente para acumular, exibe descendente
-    const asc=Object.entries(days).sort((a,b)=>a[0].localeCompare(b[0]));
-    const base=state.sbBankroll||0;
-    let cum=base;
-    const rows=asc.map(([date,d])=>{ cum+=d.lucro; return {date,...d,cum}; });
-    rows.reverse(); // mais recente primeiro
-    box.innerHTML=
-      `<table class="sc-table"><thead><tr>`+
-      `<th>Dia</th><th>Ops</th><th>Volume</th><th>Lucro</th><th>ROI</th><th>Banca acum.</th>`+
-      `</tr></thead><tbody>`+
-      rows.map(r=>{
-        const dd=r.date.slice(8,10)+'/'+r.date.slice(5,7);
-        const roi=r.vol>0?(r.lucro/r.vol*100):0;
-        const lucroCls=r.lucro>=0?'pos':'neg';
-        return `<tr>`+
-          `<td>${dd}</td>`+
-          `<td>${r.n}</td>`+
-          `<td>${fmt(r.vol)}</td>`+
-          `<td class="${lucroCls}">${fmtSign(r.lucro)}</td>`+
-          `<td>${roi>=0?'+':''}${roi.toFixed(2)}%</td>`+
-          `<td class="cum">${fmt(r.cum)}</td>`+
-          `</tr>`;
-      }).join('')+
-      `</tbody></table>`;
+    return days;
   }
 
-  function renderAll(){ renderCaixa(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderSurebetDaily(); renderValorSummary(); renderValorDaily(); renderValorList(); }
+  function renderEvoDaily(){
+    document.querySelectorAll('.evo-opt').forEach(b=>b.classList.toggle('active', b.dataset.evo===evoScope));
+    const raw=computeDailyRaw();
+    function pick(d){
+      if(evoScope==='sure') return {n:d.nSure, lucro:d.lucroSure, vol:d.volSure};
+      if(evoScope==='valor') return {n:d.nValor, lucro:d.lucroValor, vol:d.volValor};
+      return {n:d.nSure+d.nValor, lucro:d.lucroSure+d.lucroValor, vol:d.volSure+d.volValor};
+    }
+    const rows=Object.entries(raw).map(([date,d])=>({date,raw:d,...pick(d)})).filter(r=>r.n>0);
+
+    const totLucro=rows.reduce((s,r)=>s+r.lucro,0);
+    const totVol=rows.reduce((s,r)=>s+r.vol,0);
+    const totN=rows.reduce((s,r)=>s+r.n,0);
+    $('evoProfit').textContent=rows.length?fmtSign(totLucro):'—';
+    $('evoProfit').className='v '+(totLucro>=0?'pos':'neg');
+    const totYld=totVol>0?(totLucro/totVol*100):0;
+    $('evoYield').textContent=rows.length&&totVol>0?(totYld>=0?'+':'')+totYld.toFixed(2)+'%':'—';
+    $('evoYield').className='v '+(totYld>=0?'pos':'neg');
+    $('evoCount').textContent=rows.length?totN:'—';
+
+    const box=$('evoDaily');
+    if(!rows.length){ box.innerHTML='<div class="empty" style="padding:8px;">Sem operações resolvidas neste filtro.</div>'; return; }
+
+    const asc=[...rows].sort((a,b)=>a.date.localeCompare(b.date));
+    let cum=0;
+    const withCum=asc.map(r=>{ cum+=r.lucro; return {...r,cum}; });
+    const maxAbs=Math.max(...withCum.map(r=>Math.abs(r.lucro)),1);
+    const display=[...withCum].reverse();
+    const semana=['dom','seg','ter','qua','qui','sex','sáb'];
+
+    box.innerHTML=display.map(r=>{
+      const dd=r.date==='—'?'—':(r.date.slice(8,10)+'/'+r.date.slice(5,7));
+      let wd=''; if(r.date!=='—'){ const dt=new Date(r.date+'T12:00:00'); wd=semana[dt.getDay()]; }
+      const yld=r.vol>0?(r.lucro/r.vol*100):0;
+      const w=Math.min(50,Math.abs(r.lucro)/maxAbs*50);
+      const bar=r.lucro>=0?`<div class="day-bar pos" style="width:${w}%;"></div>`:`<div class="day-bar neg" style="width:${w}%;"></div>`;
+      let splitNote='';
+      if(evoScope==='both' && r.raw.nSure>0 && r.raw.nValor>0){
+        splitNote=`<div class="day-split">🎯 ${fmtSign(r.raw.lucroSure)} <span class="dot">·</span> 📈 ${fmtSign(r.raw.lucroValor)}</div>`;
+      }
+      return `<div class="day-row-wrap">
+        <div class="day-row">
+          <span class="day-date">${dd}<span class="wd">${wd}</span></span>
+          <span class="day-meta">${r.n}op</span>
+          <div class="day-bar-wrap"><div class="day-center"></div>${bar}</div>
+          <span class="day-val ${r.lucro>=0?'pos':'neg'}">${fmtSign(r.lucro)}</span>
+          <span class="day-meta">${yld>=0?'+':''}${yld.toFixed(0)}%</span>
+        </div>
+        ${splitNote}
+      </div>`;
+    }).join('')+
+    `<div class="day-row-wrap"><div class="day-row" style="border-top:2px solid var(--border);margin-top:4px;padding-top:8px;">
+      <span class="day-date" style="color:var(--text);font-weight:700;">acum.</span>
+      <span class="day-meta"></span>
+      <div class="day-bar-wrap" style="background:none;"></div>
+      <span class="day-val ${cum>=0?'pos':'neg'}" style="font-size:13px;">${fmtSign(cum)}</span>
+      <span class="day-meta"></span>
+    </div></div>`;
+  }
+  document.querySelectorAll('.evo-opt').forEach(b=>b.addEventListener('click',()=>{ evoScope=b.dataset.evo; renderEvoDaily(); }));
+
+  function renderAll(){ renderCaixa(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderValorSummary(); renderValorList(); renderEvoDaily(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
