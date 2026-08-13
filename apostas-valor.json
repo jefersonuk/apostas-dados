@@ -4740,12 +4740,6 @@
       "auto": true
     },
     {
-      "id": "msesofpdcy90h",
-      "name": "Overtimemarket",
-      "value": 155.91,
-      "currency": "USD"
-    },
-    {
       "id": "msozrxqhmaq4n",
       "name": "BNet365",
       "value": 0
@@ -7598,5 +7592,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T16:18:53.365Z"
+  "updatedAt": "2026-08-13T17:55:59.402Z"
 }
