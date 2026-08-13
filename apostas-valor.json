@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3707.36,
+      "value": 4235.14,
       "currency": "BRL",
       "auto": true
     },
@@ -4623,7 +4623,7 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 230.19
+      "value": -97.59
     },
     {
       "id": "msddu5i007wwm",
@@ -4671,7 +4671,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 690.5
+      "value": 490.5
     },
     {
       "id": "msgew6ic764xc",
@@ -7481,8 +7481,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msqsncmnyxacs",
+      "kind": "sure",
+      "event": "PEKA – Lautp/2",
+      "houseA": "Betesporte",
+      "houseB": "Casinozer",
+      "oddA": 2.95,
+      "oddB": 1.8,
+      "total": 527.7777777777778,
+      "stakeA": 200,
+      "stakeB": 327.77777777777777,
+      "lucroA": 62.22222222222217,
+      "lucroB": 62.22222222222217,
+      "lucro": 62.22222222222217,
+      "roi": 11.789473684210515,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-13T12:30",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T00:29:49.800Z"
+  "updatedAt": "2026-08-13T00:42:34.806Z"
 }
