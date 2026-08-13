@@ -4704,7 +4704,7 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 76.92,
+      "value": 56.92,
       "currency": "USD"
     },
     {
@@ -4733,7 +4733,7 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 50,
+      "value": 153.8,
       "currency": "BRL",
       "auto": true
     }
@@ -7513,8 +7513,28 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msrjnml2bpzny",
+      "kind": "valor",
+      "event": "San francisco 49ers x Tennessee titans (1 menos 13.5)",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.51,
+      "stakeA": 103.80000000000001,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-13T22:00",
+      "total": 103.80000000000001,
+      "lucroA": 156.738,
+      "lucroRed": -103.80000000000001,
+      "lucro": 156.738,
+      "roi": 150.99999999999997,
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T13:04:39.091Z"
+  "updatedAt": "2026-08-13T13:18:37.337Z"
 }
