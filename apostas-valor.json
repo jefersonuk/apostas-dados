@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 861.4
+      "value": 1071.4
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4235.14,
+      "value": 4025.14,
       "currency": "BRL",
       "auto": true
     },
@@ -4795,6 +4795,10 @@
     {
       "id": "msj3glffyw5so",
       "at": "2026-08-12T18:34:41.287Z"
+    },
+    {
+      "id": "msqhfknuuv02q",
+      "at": "2026-08-13T01:04:15.811Z"
     }
   ],
   "surebets": [
@@ -7370,26 +7374,6 @@
       }
     },
     {
-      "id": "msqhfknuuv02q",
-      "kind": "valor",
-      "event": "Tampa bay DNB",
-      "houseA": "Vbet",
-      "oddA": 2.01,
-      "stakeA": 210,
-      "curA": "BRL",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-12T20:00",
-      "total": 210,
-      "lucroA": 212.09999999999997,
-      "lucroRed": -210,
-      "lucro": 212.09999999999997,
-      "roi": 100.99999999999997,
-      "aplicado": {
-        "stakes": true
-      }
-    },
-    {
       "id": "msqhjuy0six1s",
       "kind": "valor",
       "event": "H(0) Central Cordoba de Santiago",
@@ -7500,5 +7484,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T01:03:21.641Z"
+  "updatedAt": "2026-08-13T01:04:15.812Z"
 }
