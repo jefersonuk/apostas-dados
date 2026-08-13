@@ -4771,7 +4771,9 @@
       "value": 39334.11
     }
   ],
-  "usdRate": 5,
+  "usdRate": 5.19,
+  "usdRateSrc": "inicial",
+  "usdRateAt": "2026-08-13T00:18:33.468Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
