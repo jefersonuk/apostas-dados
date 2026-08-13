@@ -4549,7 +4549,7 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 172.92,
+      "value": 528.92,
       "currency": "BRL"
     },
     {
@@ -4566,7 +4566,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4118.53,
+      "value": 3800.92,
       "currency": "BRL",
       "auto": true
     },
@@ -7474,12 +7474,13 @@
       "lucroB": 38.39258823529411,
       "lucro": 38.39258823529411,
       "roi": 12.087912087912086,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T12:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       }
     },
     {
@@ -7620,5 +7621,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T18:40:14.745Z"
+  "updatedAt": "2026-08-13T18:42:48.958Z"
 }
