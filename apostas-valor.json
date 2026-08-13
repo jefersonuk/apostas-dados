@@ -4566,7 +4566,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2801.88,
+      "value": 2976.3,
       "currency": "BRL",
       "auto": true
     },
@@ -4594,7 +4594,7 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 314.9
+      "value": 240.48
     },
     {
       "id": "msan29jv5dft4",
@@ -4626,7 +4626,7 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 480.94,
+      "value": 380.94,
       "currency": "BRL"
     },
     {
@@ -7490,8 +7490,31 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "msrj5nsgx0bk3",
+      "kind": "sure",
+      "event": "Australi x Japão",
+      "houseA": "Ivibet",
+      "houseB": "Blaze",
+      "oddA": 1.92,
+      "oddB": 2.58,
+      "total": 174.41860465116278,
+      "stakeA": 100,
+      "stakeB": 74.41860465116278,
+      "lucroA": 17.58139534883722,
+      "lucroB": 17.58139534883719,
+      "lucro": 17.58139534883719,
+      "roi": 10.079999999999991,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-15T02:15",
+      "aplicado": {
+        "stakes": true
+      }
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T12:40:37.413Z"
+  "updatedAt": "2026-08-13T13:04:39.091Z"
 }
