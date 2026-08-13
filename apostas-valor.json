@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5073.46,
+      "value": 4545.68,
       "currency": "BRL",
       "auto": true
     },
@@ -4665,7 +4665,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 490.5
+      "value": 1080.5
     },
     {
       "id": "msgew6ic764xc",
@@ -7493,12 +7493,13 @@
       "lucroB": 62.22222222222217,
       "lucro": 62.22222222222217,
       "roi": 11.789473684210515,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T12:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       }
     },
     {
@@ -7592,5 +7593,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T17:57:54.241Z"
+  "updatedAt": "2026-08-13T18:02:30.456Z"
 }
