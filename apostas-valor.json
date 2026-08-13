@@ -4745,7 +4745,7 @@
     {
       "id": "msrueg4hvw63f",
       "name": "Predict",
-      "value": -52
+      "value": 0
     }
   ],
   "aportes": [],
@@ -7621,5 +7621,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T18:47:43.548Z"
+  "updatedAt": "2026-08-13T18:47:59.659Z"
 }
