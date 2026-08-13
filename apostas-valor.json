@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4025.14,
+      "value": 3825.14,
       "currency": "BRL",
       "auto": true
     },
@@ -4731,6 +4731,13 @@
       "name": "Opinion",
       "value": 0.99,
       "currency": "USD"
+    },
+    {
+      "id": "msqtofykbh7kq",
+      "name": "Em apostas de valor",
+      "value": 200,
+      "currency": "BRL",
+      "auto": true
     }
   ],
   "aportes": [],
