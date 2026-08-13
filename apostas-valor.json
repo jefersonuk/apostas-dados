@@ -4640,12 +4640,6 @@
       "value": 433.33
     },
     {
-      "id": "msesofpdcy90h",
-      "name": "Overtimemarket",
-      "value": 155.91,
-      "currency": "USD"
-    },
-    {
       "id": "mseumeeird6tj",
       "name": "Milhão",
       "value": 200
@@ -7502,5 +7496,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T11:54:14.650Z"
+  "updatedAt": "2026-08-13T11:57:08.214Z"
 }
