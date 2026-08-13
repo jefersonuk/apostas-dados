@@ -4541,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 1619.56
+      "value": 1071.4
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5110.41,
+      "value": 5603.56,
       "currency": "BRL",
       "auto": true
     },
@@ -4665,7 +4665,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 110.5
+      "value": 490.5
     },
     {
       "id": "msgew6ic764xc",
@@ -4717,7 +4717,7 @@
     {
       "id": "msqmzms2hzjnb",
       "name": "Marathon",
-      "value": 105.5,
+      "value": 0,
       "currency": "BRL"
     },
     {
@@ -4729,13 +4729,13 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": -99.01,
+      "value": 0.99,
       "currency": "USD"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 253.8,
+      "value": 303.8,
       "currency": "BRL",
       "auto": true
     },
@@ -4786,9 +4786,9 @@
       "value": 41325.95
     }
   ],
-  "usdRate": 5.19,
+  "usdRate": 5.2,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-13T14:17:37.249Z",
+  "usdRateAt": "2026-08-13T15:31:18.268Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -7323,13 +7323,12 @@
       "lucroB": 55.00500000000011,
       "lucro": 34.700000000000045,
       "roi": 7.036398661664818,
-      "winner": "B",
+      "winner": null,
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-12T23:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "B"
+        "stakes": true
       }
     },
     {
@@ -7425,7 +7424,7 @@
       "stakeA": 50,
       "curA": "BRL",
       "prob": null,
-      "winner": "A",
+      "winner": null,
       "date": "2026-08-12T21:00",
       "total": 50,
       "lucroA": 55.49999999999999,
@@ -7433,8 +7432,7 @@
       "lucro": 55.49999999999999,
       "roi": 110.99999999999999,
       "aplicado": {
-        "stakes": true,
-        "resultado": "A"
+        "stakes": true
       }
     },
     {
@@ -7597,5 +7595,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T14:19:03.532Z"
+  "updatedAt": "2026-08-13T15:31:18.268Z"
 }
