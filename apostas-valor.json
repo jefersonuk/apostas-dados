@@ -4738,11 +4738,6 @@
       "auto": true
     },
     {
-      "id": "msozrxqhmaq4n",
-      "name": "BNet365",
-      "value": 0
-    },
-    {
       "id": "msrueg4hvw63f",
       "name": "Predict",
       "value": 0
@@ -7621,5 +7616,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T18:47:59.659Z"
+  "updatedAt": "2026-08-13T18:48:29.008Z"
 }
