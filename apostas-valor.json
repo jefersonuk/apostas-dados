@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4025.14,
+      "value": 3825.14,
       "currency": "BRL",
       "auto": true
     },
@@ -4782,7 +4782,9 @@
       "value": 41325.95
     }
   ],
-  "usdRate": 5.19,
+  "usdRate": 5.17,
+  "usdRateSrc": "CoinGecko",
+  "usdRateAt": "2026-08-13T07:51:35.418Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -7500,5 +7502,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T01:04:15.812Z"
+  "updatedAt": "2026-08-13T07:51:35.418Z"
 }
