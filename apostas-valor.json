@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5073.45,
+      "value": 5073.46,
       "currency": "BRL",
       "auto": true
     },
@@ -7446,17 +7446,17 @@
       "houseB": "Opinion",
       "oddA": 2.54,
       "oddB": 1.88,
-      "total": 861.3779527559054,
-      "stakeA": 366.3779527559055,
+      "total": 861.38,
+      "stakeA": 366.38,
       "stakeB": 495,
-      "lucroA": 69.22204724409448,
-      "lucroB": 69.22204724409448,
-      "lucro": 69.22204724409448,
-      "roi": 8.036199095022626,
+      "lucroA": 69.22519999999997,
+      "lucroB": 69.21999999999991,
+      "lucro": 69.21999999999991,
+      "roi": 8.035942325106214,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
-      "date": "2026-08-13T11:00",
+      "date": "2026-08-14T11:00",
       "aplicado": {
         "stakes": true
       }
@@ -7598,5 +7598,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T15:33:13.481Z"
+  "updatedAt": "2026-08-13T16:18:53.365Z"
 }
