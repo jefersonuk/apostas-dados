@@ -4568,7 +4568,7 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3825.14,
+      "value": 4025.14,
       "currency": "BRL",
       "auto": true
     },
@@ -4640,6 +4640,12 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 433.33
+    },
+    {
+      "id": "msesofpdcy90h",
+      "name": "Overtimemarket",
+      "value": 155.91,
+      "currency": "USD"
     },
     {
       "id": "mseumeeird6tj",
@@ -4715,6 +4721,11 @@
       "value": 0
     },
     {
+      "id": "msozrxqhmaq4n",
+      "name": "BNet365",
+      "value": 0
+    },
+    {
       "id": "msqmzms2hzjnb",
       "name": "Marathon",
       "value": 0,
@@ -4772,8 +4783,6 @@
     }
   ],
   "usdRate": 5.19,
-  "usdRateSrc": "inicial",
-  "usdRateAt": "2026-08-13T00:18:33.468Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
