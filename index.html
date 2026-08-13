@@ -1548,7 +1548,7 @@
       return `<div class="bal-row">
         <span class="bal-rank">${i+1}</span>
         <span class="bal-dot" style="background:${color}"></span>
-        <span class="bal-name">${esc(b.name)}${isAuto?'<span class="bal-auto">AUTO</span>':''}${isUSD?'<span class="bal-cur">USD</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">calculado das surebets em aberto</span>`:''}</span>
+        <span class="bal-name">${esc(b.name)}${isAuto?`<span class="bal-auto">${/valor/i.test(b.name)?'VALOR':'ARB'} · AUTO</span>`:''}${isUSD?'<span class="bal-cur">USD</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">${/valor/i.test(b.name)?'apostas de valor':'surebets'} em aberto</span>`:''}</span>
         ${valHtml}
         ${isAuto?'<span class="bal-cur-btn" style="opacity:.35;cursor:default;">R$</span>'
                 :`<button class="bal-cur-btn ${isUSD?'usd':''}" data-balcur="${b.id}" title="Clique para alternar entre Real e Dólar">${isUSD?'US$':'R$'}</button>`}
@@ -1964,17 +1964,28 @@
 
   // Mantém a linha "Em arbitragem" igual ao total apostado em surebets ainda abertas
   const ARB_NAME='Em arbitragem';
-  function sincronizarArbitragem(){
-    const emJogo=(state.surebets||[]).filter(o=>!o.winner)
-      .reduce((s,o)=>s+(o.stakeA||0)+(o.stakeB||0)+(o.stakeC||0),0);
-    let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===ARB_NAME.toLowerCase());
+  const VAL_NAME='Em apostas de valor';
+
+  // mantém uma linha automática com o total apostado e ainda não resolvido
+  function sincLinhaAuto(nome,total){
+    let b=(state.balances||[]).find(x=>x.name.trim().toLowerCase()===nome.toLowerCase());
     if(!b){
-      if(emJogo<=0) return;                       // não cria se não há nada em jogo
-      b={id:uid(), name:ARB_NAME, value:0, currency:'BRL', auto:true};
+      if(total<=0) return;                        // não cria linha vazia
+      b={id:uid(), name:nome, value:0, currency:'BRL', auto:true};
       state.balances.push(b);
     }
     b.auto=true; b.currency='BRL';
-    b.value=Math.round(emJogo*100)/100;
+    b.value=Math.round(total*100)/100;
+  }
+
+  function sincronizarArbitragem(){
+    const abertas=(state.surebets||[]).filter(o=>!o.winner);
+    const emArb=abertas.filter(o=>!ehValor(o))
+      .reduce((s,o)=>s+(o.stakeA||0)+(o.stakeB||0)+(o.stakeC||0),0);
+    const emValor=abertas.filter(ehValor)
+      .reduce((s,o)=>s+(o.stakeA||0),0);
+    sincLinhaAuto(ARB_NAME,emArb);
+    sincLinhaAuto(VAL_NAME,emValor);
   }
 
   function renderSurebetSummary(){
