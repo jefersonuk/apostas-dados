@@ -4769,9 +4769,9 @@
       "value": 41325.95
     }
   ],
-  "usdRate": 5.18,
+  "usdRate": 5.19,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-13T11:52:46.294Z",
+  "usdRateAt": "2026-08-13T12:32:59.440Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -7493,5 +7493,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T12:05:34.175Z"
+  "updatedAt": "2026-08-13T12:32:59.441Z"
 }
