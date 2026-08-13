@@ -4713,11 +4713,6 @@
       "value": 0
     },
     {
-      "id": "msozrxqhmaq4n",
-      "name": "BNet365",
-      "value": 0
-    },
-    {
       "id": "msqmzms2hzjnb",
       "name": "Marathon",
       "value": 0,
@@ -7498,5 +7493,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T12:01:10.636Z"
+  "updatedAt": "2026-08-13T12:05:34.175Z"
 }
