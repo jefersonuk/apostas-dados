@@ -4651,8 +4651,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": -94.54,
-      "updatedAt": "2026-08-14T16:30:39.486Z"
+      "value": -194.54,
+      "updatedAt": "2026-08-14T17:04:34.465Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 808.4,
+      "value": 908.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T17:03:18.788Z"
+      "updatedAt": "2026-08-14T17:04:34.475Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8003,8 +8003,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T17:03:18.781Z"
+    },
+    {
+      "id": "mst761zu56dh0",
+      "kind": "valor",
+      "event": "Atlanta Braves – Arizona Diamondbacks · Michael Harris II",
+      "houseA": "Pinnacle",
+      "oddA": 1.61,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T20:15",
+      "total": 100,
+      "lucroA": 61.00000000000001,
+      "lucroRed": -100,
+      "lucro": 61.00000000000001,
+      "roi": 61.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T17:04:34.467Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T17:03:18.788Z"
+  "updatedAt": "2026-08-14T17:04:34.475Z"
 }
