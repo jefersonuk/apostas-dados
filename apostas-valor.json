@@ -4500,8 +4500,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 828.35,
-      "updatedAt": "2026-08-14T20:55:15.475Z"
+      "value": 728.35,
+      "updatedAt": "2026-08-14T22:39:48.190Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4754,10 +4754,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1458.4,
+      "value": 1558.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T22:11:43.941Z"
+      "updatedAt": "2026-08-14T22:39:48.190Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8277,8 +8277,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T22:11:43.937Z"
+    },
+    {
+      "id": "mstj55ul3qhm4",
+      "kind": "valor",
+      "event": "Ponte Preta H4",
+      "houseA": "Bet365",
+      "oddA": 2,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T19:39",
+      "total": 100,
+      "lucroA": 100,
+      "lucroRed": -100,
+      "lucro": 100,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T22:39:48.190Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T22:32:00.799Z"
+  "updatedAt": "2026-08-14T22:39:48.191Z"
 }
