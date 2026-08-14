@@ -4675,8 +4675,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 1080.5,
-      "updatedAt": "2026-08-14T12:15:55.915Z"
+      "value": 1030.5,
+      "updatedAt": "2026-08-14T14:17:13.128Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4750,10 +4750,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 50,
+      "value": 100,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T08:44:10.037Z"
+      "updatedAt": "2026-08-14T14:17:13.131Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7693,8 +7693,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T14:02:51.322Z"
+    },
+    {
+      "id": "mst16u1zrm4cf",
+      "kind": "valor",
+      "event": "Flandre total de kills - 2.5 mapa 1",
+      "houseA": "Betesporte",
+      "oddA": 2.7,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T08:00",
+      "total": 50,
+      "lucroA": 85.00000000000001,
+      "lucroRed": -50,
+      "lucro": 85.00000000000001,
+      "roi": 170.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T14:17:13.128Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:03:12.764Z"
+  "updatedAt": "2026-08-14T14:17:13.131Z"
 }
