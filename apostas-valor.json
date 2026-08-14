@@ -4500,8 +4500,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 428.35,
-      "updatedAt": "2026-08-14T17:52:21.694Z"
+      "value": 733.35,
+      "updatedAt": "2026-08-14T17:52:37.406Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4575,10 +4575,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4173.96,
+      "value": 3468.96,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T17:13:19.402Z"
+      "updatedAt": "2026-08-14T17:52:37.406Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0,
+      "value": 400,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T14:02:51.322Z"
+      "updatedAt": "2026-08-14T17:52:37.406Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4872,6 +4872,10 @@
     {
       "id": "mst7owyuu870z",
       "at": "2026-08-14T17:52:21.694Z"
+    },
+    {
+      "id": "msrle7xrteq09",
+      "at": "2026-08-14T17:52:37.406Z"
     }
   ],
   "surebets": [
@@ -7590,29 +7594,6 @@
       "updatedAt": "2026-08-14T08:44:10.037Z"
     },
     {
-      "id": "msrle7xrteq09",
-      "kind": "sure",
-      "event": "Strani x Kozlovice",
-      "houseA": "Ivibet",
-      "houseB": "Bet365",
-      "oddA": 1.91,
-      "oddB": 2.5,
-      "total": 705,
-      "stakeA": 400,
-      "stakeB": 305,
-      "lucroA": 59,
-      "lucroB": 57.5,
-      "lucro": 57.5,
-      "roi": 8.156028368794328,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-14T13:00",
-      "aplicado": {
-        "stakes": true
-      }
-    },
-    {
       "id": "msrueg4g2wpk5",
       "kind": "sure",
       "event": "Olympique x Atl Madrid",
@@ -8032,5 +8013,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T17:52:21.694Z"
+  "updatedAt": "2026-08-14T17:52:37.408Z"
 }
