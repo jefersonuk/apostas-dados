@@ -4575,10 +4575,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2689.92,
+      "value": 4402.97,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T20:55:37.011Z"
+      "updatedAt": "2026-08-14T22:03:35.310Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1360,
+      "value": 770,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T21:01:37.348Z"
+      "updatedAt": "2026-08-14T22:03:35.284Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4651,8 +4651,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": -214.54,
-      "updatedAt": "2026-08-14T21:48:47.276Z"
+      "value": -844.44,
+      "updatedAt": "2026-08-14T22:03:35.282Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -7380,13 +7380,12 @@
       "lucroB": 55.00500000000011,
       "lucro": 34.700000000000045,
       "roi": 7.036398661664818,
-      "winner": "B",
+      "winner": null,
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-12T23:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "B"
+        "stakes": true
       }
     },
     {
@@ -8230,8 +8229,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T21:48:47.276Z"
+    },
+    {
+      "id": "msthul7vo0lxk",
+      "kind": "sure",
+      "event": "Winnipeg Blue Bombers – Ottawa RedBlacks",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 2.07,
+      "oddB": 2.21,
+      "total": 1219.9033816425122,
+      "stakeA": 629.9033816425122,
+      "stakeB": 590,
+      "lucroA": 83.99661835748793,
+      "lucroB": 83.99661835748793,
+      "lucro": 83.99661835748793,
+      "roi": 6.885514018691589,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-14T21:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T22:03:35.285Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T21:48:47.277Z"
+  "updatedAt": "2026-08-14T22:03:35.310Z"
 }
