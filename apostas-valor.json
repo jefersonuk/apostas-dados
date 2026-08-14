@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 245.85,
-      "updatedAt": "2026-08-14T15:35:13.560Z"
+      "value": 342.1,
+      "updatedAt": "2026-08-14T15:41:06.985Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4751,10 +4751,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 603.6,
+      "value": 553.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T15:35:13.562Z"
+      "updatedAt": "2026-08-14T15:41:06.985Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7814,7 +7814,7 @@
       "stakeA": 50,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-14T12:33",
       "total": 50,
       "lucroA": 46.25,
@@ -7822,9 +7822,10 @@
       "lucro": 46.25,
       "roi": 92.5,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-14T15:34:22.249Z"
+      "updatedAt": "2026-08-14T15:41:06.985Z"
     },
     {
       "id": "mst3z5i0ggcup",
@@ -7849,5 +7850,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T15:35:13.562Z"
+  "updatedAt": "2026-08-14T15:41:06.985Z"
 }
