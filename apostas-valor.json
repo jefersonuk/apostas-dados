@@ -4506,8 +4506,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1135.87,
-      "updatedAt": "2026-08-14T17:03:18.780Z"
+      "value": 1035.87,
+      "updatedAt": "2026-08-14T22:11:43.937Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1358.4,
+      "value": 1458.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T21:48:47.277Z"
+      "updatedAt": "2026-08-14T22:11:43.941Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8253,8 +8253,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T22:03:35.285Z"
+    },
+    {
+      "id": "msti529sht96w",
+      "kind": "valor",
+      "event": "New Town Eagles – Tasmania University",
+      "houseA": "Betnacional",
+      "oddA": 2.63,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T01:30",
+      "total": 100,
+      "lucroA": 163,
+      "lucroRed": -100,
+      "lucro": 163,
+      "roi": 163,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T22:11:43.937Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T22:03:35.310Z"
+  "updatedAt": "2026-08-14T22:11:43.941Z"
 }
