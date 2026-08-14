@@ -4506,8 +4506,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1235.87,
-      "updatedAt": "2026-08-14T17:00:36.145Z"
+      "value": 1135.87,
+      "updatedAt": "2026-08-14T17:03:18.780Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 708.4,
+      "value": 808.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T17:00:36.157Z"
+      "updatedAt": "2026-08-14T17:03:18.788Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7982,8 +7982,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T17:00:36.146Z"
+    },
+    {
+      "id": "mst74flkldlp6",
+      "kind": "valor",
+      "event": "Burnley – West Ham",
+      "houseA": "Betnacional",
+      "oddA": 3.2,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T12:00",
+      "total": 100,
+      "lucroA": 220.00000000000003,
+      "lucroRed": -100,
+      "lucro": 220.00000000000003,
+      "roi": 220.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T17:03:18.781Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T17:00:36.157Z"
+  "updatedAt": "2026-08-14T17:03:18.788Z"
 }
