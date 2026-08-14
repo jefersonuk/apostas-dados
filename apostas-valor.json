@@ -4572,10 +4572,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1450.42,
+      "value": 2285.23,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T12:15:55.915Z"
+      "updatedAt": "2026-08-14T12:37:36.312Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4636,9 +4636,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 6.94,
+      "value": -250,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T12:08:32.955Z"
+      "updatedAt": "2026-08-14T12:37:36.309Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4648,7 +4648,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 433.33
+      "value": -144.54,
+      "updatedAt": "2026-08-14T12:37:36.309Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -7614,8 +7615,32 @@
       "aplicado": {
         "stakes": true
       }
+    },
+    {
+      "id": "mssxmqb80o8f1",
+      "kind": "sure",
+      "event": "Fram Reyjavik x Stjarnan",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.574,
+      "oddB": 3.54,
+      "total": 834.8101397712833,
+      "stakeA": 577.8701397712833,
+      "stakeB": 256.94,
+      "lucroA": 74.7574602287167,
+      "lucroB": 74.7574602287167,
+      "lucro": 74.7574602287167,
+      "roi": 8.955025420414556,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-17T16:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T12:37:36.310Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T12:17:40.767Z"
+  "updatedAt": "2026-08-14T12:37:36.312Z"
 }
