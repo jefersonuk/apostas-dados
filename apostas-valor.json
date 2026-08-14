@@ -4560,8 +4560,8 @@
     {
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
-      "value": 500,
-      "updatedAt": "2026-08-14T12:06:20.660Z"
+      "value": 400,
+      "updatedAt": "2026-08-14T14:32:57.830Z"
     },
     {
       "id": "mrvd6n3x6xs48",
@@ -4751,10 +4751,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 200,
+      "value": 300,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T14:19:35.577Z"
+      "updatedAt": "2026-08-14T14:32:57.836Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7736,8 +7736,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T14:19:35.577Z"
+    },
+    {
+      "id": "mst1r2zptilie",
+      "kind": "valor",
+      "event": "1X 1º tempo - Kaarinan pojat",
+      "houseA": "Meridian",
+      "oddA": 2.58,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T12:30",
+      "total": 100,
+      "lucroA": 158,
+      "lucroRed": -100,
+      "lucro": 158,
+      "roi": 158,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T14:32:57.831Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:19:35.577Z"
+  "updatedAt": "2026-08-14T14:32:57.836Z"
 }
