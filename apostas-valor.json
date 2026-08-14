@@ -4751,10 +4751,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 300,
+      "value": 403.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T14:32:57.836Z"
+      "updatedAt": "2026-08-14T14:45:51.579Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4766,6 +4766,12 @@
       "name": "Overtimemarket",
       "value": 0,
       "updatedAt": "2026-08-14T14:03:12.734Z"
+    },
+    {
+      "id": "mst27o0q2ewv2",
+      "name": "Kalshi",
+      "value": -103.6,
+      "updatedAt": "2026-08-14T14:45:51.578Z"
     }
   ],
   "aportes": [],
@@ -7757,8 +7763,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T14:32:57.831Z"
+    },
+    {
+      "id": "mst27o0qjajk5",
+      "kind": "valor",
+      "event": "New york wins 1st quarter",
+      "houseA": "Kalshi",
+      "oddA": 2.73,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T19:00",
+      "total": 103.6,
+      "lucroA": 179.22799999999998,
+      "lucroRed": -103.6,
+      "lucro": 179.22799999999998,
+      "roi": 173,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T14:45:51.578Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:32:57.836Z"
+  "updatedAt": "2026-08-14T14:45:51.579Z"
 }
