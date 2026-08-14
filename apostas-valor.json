@@ -1,16 +1,18 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-13",
-    "stakeMin": 5,
-    "stakeMax": 20,
+    "startDate": "2026-07-08",
+    "stakeMin": 1,
+    "stakeMax": 30,
     "oddMin": 1.5,
-    "potMin": 1,
+    "potMin": 25,
     "kellyMult": 0.5,
     "probTolerance": 3,
     "probFull": 50,
     "probFloor": 20,
-    "penMin": 0.35
+    "penMin": 0.35,
+    "oddCap": 3,
+    "potCap": 50
   },
   "bets": [
     {
@@ -4498,7 +4500,7 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 345.82
+      "value": 650.85
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4528,7 +4530,7 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 6374.8,
+      "value": 6869.3,
       "currency": "BRL"
     },
     {
@@ -4539,7 +4541,7 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 1605.56
+      "value": 1619.56
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -4549,9 +4551,8 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 1200.92,
-      "currency": "BRL",
-      "updatedAt": "2026-08-13T19:04:49.768Z"
+      "value": 172.92,
+      "currency": "BRL"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4561,21 +4562,20 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 3490.85,
+      "value": 3690.85,
       "currency": "USD"
     },
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3210.8,
+      "value": 5176.41,
       "currency": "BRL",
-      "auto": true,
-      "updatedAt": "2026-08-13T19:04:49.768Z"
+      "auto": true
     },
     {
       "id": "ms2ghozrogav9",
       "name": "Metamask",
-      "value": 695.74
+      "value": 420.13
     },
     {
       "id": "ms573t068wk2v",
@@ -4596,7 +4596,7 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 214.9
+      "value": 314.9
     },
     {
       "id": "msan29jv5dft4",
@@ -4623,12 +4623,12 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 653.39
+      "value": 91.19
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 961.12,
+      "value": 935.54,
       "currency": "BRL"
     },
     {
@@ -4665,7 +4665,7 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 700.5
+      "value": 110.5
     },
     {
       "id": "msgew6ic764xc",
@@ -4717,7 +4717,7 @@
     {
       "id": "msqmzms2hzjnb",
       "name": "Marathon",
-      "value": 100,
+      "value": 105.5,
       "currency": "BRL"
     },
     {
@@ -4729,19 +4729,30 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 0.99,
+      "value": -99.01,
       "currency": "USD"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 153.8,
+      "value": 253.8,
       "currency": "BRL",
       "auto": true
     },
     {
       "id": "msrueg4hvw63f",
       "name": "Predict",
+      "value": 0
+    },
+    {
+      "id": "msesofpdcy90h",
+      "name": "Overtimemarket",
+      "value": 155.91,
+      "currency": "USD"
+    },
+    {
+      "id": "msozrxqhmaq4n",
+      "name": "BNet365",
       "value": 0
     }
   ],
@@ -4777,12 +4788,12 @@
     },
     {
       "date": "2026-08-13",
-      "value": 41422.5
+      "value": 41325.95
     }
   ],
   "usdRate": 5.2,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-13T18:28:01.349Z",
+  "usdRateAt": "2026-08-14T01:56:09.421Z",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -7165,15 +7176,13 @@
       "lucroB": 81.88235294117658,
       "lucro": 81.88235294117658,
       "roi": 13.875598086124421,
-      "winner": "B",
+      "winner": null,
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T14:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "B"
-      },
-      "updatedAt": "2026-08-13T19:04:49.768Z"
+        "stakes": true
+      }
     },
     {
       "id": "msqds24hn6vgg",
@@ -7337,7 +7346,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-08-13T07:00",
       "total": 100,
       "lucroA": 87.00000000000001,
@@ -7345,8 +7354,7 @@
       "lucro": 87.00000000000001,
       "roi": 87.00000000000001,
       "aplicado": {
-        "stakes": true,
-        "resultado": "RED"
+        "stakes": true
       }
     },
     {
@@ -7364,13 +7372,12 @@
       "lucroB": 31.093048128342275,
       "lucro": 31.09304812834216,
       "roi": 5.865429234338732,
-      "winner": "B",
+      "winner": null,
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T07:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "B"
+        "stakes": true
       }
     },
     {
@@ -7443,17 +7450,17 @@
       "houseB": "Opinion",
       "oddA": 2.54,
       "oddB": 1.88,
-      "total": 861.38,
-      "stakeA": 366.38,
+      "total": 861.3779527559054,
+      "stakeA": 366.3779527559055,
       "stakeB": 495,
-      "lucroA": 69.22519999999997,
-      "lucroB": 69.21999999999991,
-      "lucro": 69.21999999999991,
-      "roi": 8.035942325106214,
+      "lucroA": 69.22204724409448,
+      "lucroB": 69.22204724409448,
+      "lucro": 69.22204724409448,
+      "roi": 8.036199095022626,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
-      "date": "2026-08-14T11:00",
+      "date": "2026-08-13T11:00",
       "aplicado": {
         "stakes": true
       }
@@ -7473,13 +7480,12 @@
       "lucroB": 38.39258823529411,
       "lucro": 38.39258823529411,
       "roi": 12.087912087912086,
-      "winner": "B",
+      "winner": null,
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T12:30",
       "aplicado": {
-        "stakes": true,
-        "resultado": "B"
+        "stakes": true
       }
     },
     {
@@ -7497,30 +7503,29 @@
       "lucroB": 62.22222222222217,
       "lucro": 62.22222222222217,
       "roi": 11.789473684210515,
-      "winner": "A",
+      "winner": null,
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-13T12:30",
       "aplicado": {
-        "stakes": true,
-        "resultado": "A"
+        "stakes": true
       }
     },
     {
       "id": "msrj5nsgx0bk3",
       "kind": "sure",
       "event": "Australi x Japão",
-      "houseA": "Blaze",
-      "houseB": "Ivibet",
+      "houseA": "Ivibet",
+      "houseB": "Blaze",
       "oddA": 1.92,
       "oddB": 2.58,
-      "total": 174.42000000000002,
+      "total": 174.41860465116278,
       "stakeA": 100,
-      "stakeB": 74.42,
-      "lucroA": 17.579999999999984,
-      "lucroB": 17.58359999999999,
-      "lucro": 17.579999999999984,
-      "roi": 10.079119367045053,
+      "stakeB": 74.41860465116278,
+      "lucroA": 17.58139534883722,
+      "lucroB": 17.58139534883719,
+      "lucro": 17.58139534883719,
+      "roi": 10.079999999999991,
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
@@ -7620,5 +7625,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-13T19:04:49.768Z"
+  "updatedAt": "2026-08-14T01:56:09.421Z"
 }
