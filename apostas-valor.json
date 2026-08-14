@@ -4649,8 +4649,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 105.46,
-      "updatedAt": "2026-08-14T12:37:54.601Z"
+      "value": 5.46,
+      "updatedAt": "2026-08-14T15:33:25.565Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4751,10 +4751,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 403.6,
+      "value": 503.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T14:45:51.579Z"
+      "updatedAt": "2026-08-14T15:33:25.570Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7783,8 +7783,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T14:45:51.578Z"
+    },
+    {
+      "id": "mst3wu644kqwt",
+      "kind": "valor",
+      "event": "H2 (0) - Loiske x TPV II",
+      "houseA": "Pinnacle",
+      "oddA": 1.8,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T13:00",
+      "total": 100,
+      "lucroA": 80,
+      "lucroRed": -100,
+      "lucro": 80,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T15:33:25.566Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:50:04.083Z"
+  "updatedAt": "2026-08-14T15:33:25.570Z"
 }
