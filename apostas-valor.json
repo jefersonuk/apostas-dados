@@ -4798,9 +4798,9 @@
       "value": 41325.95
     }
   ],
-  "usdRate": 5.2,
+  "usdRate": 5.19,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-14T01:56:09.421Z",
+  "usdRateAt": "2026-08-14T08:43:46.278Z",
   "appBuild": "20260813-1900",
   "deleted": [
     {
@@ -7644,5 +7644,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T02:16:37.678Z"
+  "updatedAt": "2026-08-14T08:43:46.279Z"
 }
