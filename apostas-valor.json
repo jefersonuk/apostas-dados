@@ -4572,10 +4572,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4239.95,
+      "value": 4239.96,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T14:02:00.956Z"
+      "updatedAt": "2026-08-14T14:02:51.322Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4638,7 +4638,7 @@
       "name": "Ivibet",
       "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T14:02:23.566Z"
+      "updatedAt": "2026-08-14T14:02:51.322Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4717,9 +4717,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 107.08,
+      "value": -0.01,
       "currency": "USD",
-      "updatedAt": "2026-08-14T12:02:21.972Z"
+      "updatedAt": "2026-08-14T14:02:51.322Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4763,8 +4763,8 @@
     {
       "id": "mst0na7t75dwc",
       "name": "Overtimemarket",
-      "value": 0,
-      "updatedAt": "2026-08-14T14:02:31.590Z"
+      "value": 554.73,
+      "updatedAt": "2026-08-14T14:02:51.321Z"
     }
   ],
   "aportes": [],
@@ -7675,16 +7675,16 @@
       "kind": "sure",
       "event": "Atlanta falcons x Denver broncos",
       "houseA": "IviBet",
-      "houseB": "Overtimemarket",
+      "houseB": "Overtimemarkets",
       "oddA": 3.44,
       "oddB": 1.57,
-      "total": 804.7262,
+      "total": 804.73,
       "stakeA": 250,
-      "stakeB": 554.7262,
-      "lucroA": 55.27380000000005,
-      "lucroB": 66.19393400000001,
-      "lucro": 55.27380000000005,
-      "roi": 6.868646752149993,
+      "stakeB": 554.73,
+      "lucroA": 55.26999999999998,
+      "lucroB": 66.1961,
+      "lucro": 55.26999999999998,
+      "roi": 6.868142109775947,
       "winner": null,
       "curA": "BRL",
       "curB": "USD",
@@ -7692,9 +7692,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-14T14:02:00.953Z"
+      "updatedAt": "2026-08-14T14:02:51.322Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:02:31.619Z"
+  "updatedAt": "2026-08-14T14:02:51.322Z"
 }
