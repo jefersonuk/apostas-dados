@@ -4678,8 +4678,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 1030.5,
-      "updatedAt": "2026-08-14T14:17:13.128Z"
+      "value": 930.5,
+      "updatedAt": "2026-08-14T20:03:34.146Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 908.4,
+      "value": 1008.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T19:53:49.360Z"
+      "updatedAt": "2026-08-14T20:03:34.146Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8080,8 +8080,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T19:53:49.359Z"
+    },
+    {
+      "id": "mstdk8sid3siz",
+      "kind": "valor",
+      "event": "Xxs - Lgd menos de 5.5 2 mapa",
+      "houseA": "Betesporte",
+      "oddA": 2.3,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T23:00",
+      "total": 100,
+      "lucroA": 129.99999999999997,
+      "lucroRed": -100,
+      "lucro": 129.99999999999997,
+      "roi": 129.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T20:03:34.146Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T19:53:49.360Z"
+  "updatedAt": "2026-08-14T20:03:34.146Z"
 }
