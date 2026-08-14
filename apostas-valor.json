@@ -4763,8 +4763,8 @@
     {
       "id": "mst0na7t75dwc",
       "name": "Overtimemarket",
-      "value": -554.73,
-      "updatedAt": "2026-08-14T14:02:00.953Z"
+      "value": 0,
+      "updatedAt": "2026-08-14T14:02:31.590Z"
     }
   ],
   "aportes": [],
@@ -7696,5 +7696,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:02:23.601Z"
+  "updatedAt": "2026-08-14T14:02:31.619Z"
 }
