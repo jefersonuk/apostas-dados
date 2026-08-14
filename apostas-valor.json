@@ -4572,10 +4572,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2349.42,
+      "value": 1450.42,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T12:00:35.161Z"
+      "updatedAt": "2026-08-14T12:15:55.915Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4674,8 +4674,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 700.5,
-      "updatedAt": "2026-08-14T02:15:56.620Z"
+      "value": 1080.5,
+      "updatedAt": "2026-08-14T12:15:55.915Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4742,9 +4742,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 99,
+      "value": 199.19,
       "currency": "USD",
-      "updatedAt": "2026-08-14T12:03:20.475Z"
+      "updatedAt": "2026-08-14T12:15:55.915Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4848,6 +4848,10 @@
     {
       "id": "msozrxqhmaq4n",
       "at": "2026-08-14T12:06:33.327Z"
+    },
+    {
+      "id": "msrltckqzgxo2",
+      "at": "2026-08-14T12:15:55.915Z"
     }
   ],
   "surebets": [
@@ -7589,29 +7593,6 @@
       }
     },
     {
-      "id": "msrltckqzgxo2",
-      "kind": "sure",
-      "event": "Timofeeva, Maria (F) – Katerina Siniakova (F)",
-      "houseA": "Betesporte",
-      "houseB": "Opinion",
-      "oddA": 2.6,
-      "oddB": 1.88,
-      "total": 899,
-      "stakeA": 380,
-      "stakeB": 519,
-      "lucroA": 89,
-      "lucroB": 76.71999999999991,
-      "lucro": 76.71999999999991,
-      "roi": 8.53392658509454,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "USD",
-      "date": "2026-08-14T11:00",
-      "aplicado": {
-        "stakes": true
-      }
-    },
-    {
       "id": "msrueg4g2wpk5",
       "kind": "sure",
       "event": "Olympique x Atl Madrid",
@@ -7636,5 +7617,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T12:09:01.884Z"
+  "updatedAt": "2026-08-14T12:15:55.915Z"
 }
