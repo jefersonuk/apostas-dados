@@ -4725,8 +4725,9 @@
     {
       "id": "msqmzms2hzjnb",
       "name": "Marathon",
-      "value": 105.5,
-      "currency": "BRL"
+      "value": 100,
+      "currency": "BRL",
+      "updatedAt": "2026-08-14T12:05:58.132Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -7631,5 +7632,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T12:05:44.959Z"
+  "updatedAt": "2026-08-14T12:05:58.138Z"
 }
