@@ -4651,8 +4651,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5.46,
-      "updatedAt": "2026-08-14T15:33:25.565Z"
+      "value": -94.54,
+      "updatedAt": "2026-08-14T16:30:39.486Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 558.4,
+      "value": 658.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T16:26:41.678Z"
+      "updatedAt": "2026-08-14T16:30:39.498Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7936,8 +7936,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T16:26:41.671Z"
+    },
+    {
+      "id": "mst5yfsof1y9i",
+      "kind": "valor",
+      "event": "VfB Oldenburg – Eintracht Norderstedt (H2 +0 primeiro tempo)",
+      "houseA": "Pinnacle",
+      "oddA": 3.19,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T13:00",
+      "total": 100,
+      "lucroA": 219,
+      "lucroRed": -100,
+      "lucro": 219,
+      "roi": 219,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T16:30:39.487Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T16:26:41.678Z"
+  "updatedAt": "2026-08-14T16:30:39.498Z"
 }
