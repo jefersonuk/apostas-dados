@@ -4498,7 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 650.85
+      "value": 345.85,
+      "updatedAt": "2026-08-14T12:04:37.372Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -7629,5 +7630,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T12:04:18.723Z"
+  "updatedAt": "2026-08-14T12:04:37.377Z"
 }
