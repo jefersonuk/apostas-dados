@@ -4572,10 +4572,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3435.23,
+      "value": 4239.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T13:18:21.062Z"
+      "updatedAt": "2026-08-14T14:02:00.956Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4636,9 +4636,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0,
+      "value": -250,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T13:18:31.682Z"
+      "updatedAt": "2026-08-14T14:02:00.952Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4759,6 +4759,12 @@
       "id": "msrueg4hvw63f",
       "name": "Predict",
       "value": 0
+    },
+    {
+      "id": "mst0na7t75dwc",
+      "name": "Overtimemarket",
+      "value": -554.73,
+      "updatedAt": "2026-08-14T14:02:00.953Z"
     }
   ],
   "aportes": [],
@@ -7663,8 +7669,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T13:18:21.059Z"
+    },
+    {
+      "id": "mst0na7siyl4z",
+      "kind": "sure",
+      "event": "Atlanta falcons x Denver broncos",
+      "houseA": "IviBet",
+      "houseB": "Overtimemarket",
+      "oddA": 3.44,
+      "oddB": 1.57,
+      "total": 804.7262,
+      "stakeA": 250,
+      "stakeB": 554.7262,
+      "lucroA": 55.27380000000005,
+      "lucroB": 66.19393400000001,
+      "lucro": 55.27380000000005,
+      "roi": 6.868646752149993,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-14T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T14:02:00.953Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T13:18:31.687Z"
+  "updatedAt": "2026-08-14T14:02:00.956Z"
 }
