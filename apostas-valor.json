@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 345.85,
-      "updatedAt": "2026-08-14T12:04:37.372Z"
+      "value": 295.85,
+      "updatedAt": "2026-08-14T15:34:22.249Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4751,10 +4751,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 503.6,
+      "value": 553.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T15:33:25.570Z"
+      "updatedAt": "2026-08-14T15:34:22.249Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7804,8 +7804,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T15:33:25.566Z"
+    },
+    {
+      "id": "mst3y1wn6mke8",
+      "kind": "valor",
+      "event": "H 4 escanteios - VPS Vaasa",
+      "houseA": "Bet365",
+      "oddA": 1.925,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T12:33",
+      "total": 50,
+      "lucroA": 46.25,
+      "lucroRed": -50,
+      "lucro": 46.25,
+      "roi": 92.5,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T15:34:22.249Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T15:33:25.570Z"
+  "updatedAt": "2026-08-14T15:34:22.249Z"
 }
