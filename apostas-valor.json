@@ -4500,8 +4500,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 378.35,
-      "updatedAt": "2026-08-14T17:19:14.406Z"
+      "value": 428.35,
+      "updatedAt": "2026-08-14T17:52:21.694Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 958.4,
+      "value": 908.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T17:19:14.408Z"
+      "updatedAt": "2026-08-14T17:52:21.694Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4868,6 +4868,10 @@
     {
       "id": "mst0na7t75dwc",
       "at": "2026-08-14T14:50:04.083Z"
+    },
+    {
+      "id": "mst7owyuu870z",
+      "at": "2026-08-14T17:52:21.694Z"
     }
   ],
   "surebets": [
@@ -8025,29 +8029,8 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T17:04:34.467Z"
-    },
-    {
-      "id": "mst7owyuu870z",
-      "kind": "valor",
-      "event": "SC Kalsdorf",
-      "houseA": "Bet365",
-      "oddA": 2.075,
-      "stakeA": 50,
-      "curA": "BRL",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-14T14:00",
-      "total": 50,
-      "lucroA": 53.75000000000001,
-      "lucroRed": -50,
-      "lucro": 53.75000000000001,
-      "roi": 107.50000000000001,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-14T17:19:14.406Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T17:19:14.408Z"
+  "updatedAt": "2026-08-14T17:52:21.694Z"
 }
