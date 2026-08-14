@@ -4678,8 +4678,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 930.5,
-      "updatedAt": "2026-08-14T20:03:34.146Z"
+      "value": 830.5,
+      "updatedAt": "2026-08-14T20:04:49.307Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1008.4,
+      "value": 1108.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T20:03:34.146Z"
+      "updatedAt": "2026-08-14T20:04:49.308Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8101,8 +8101,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T20:03:34.146Z"
+    },
+    {
+      "id": "mstdlusbzhbam",
+      "kind": "valor",
+      "event": "planet - tem resilience menos de 2.5 segundo mapa",
+      "houseA": "Betesporte",
+      "oddA": 2.1,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T23:00",
+      "total": 100,
+      "lucroA": 110.00000000000001,
+      "lucroRed": -100,
+      "lucro": 110.00000000000001,
+      "roi": 110.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T20:04:49.307Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T20:03:34.146Z"
+  "updatedAt": "2026-08-14T20:04:49.308Z"
 }
