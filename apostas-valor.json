@@ -4769,7 +4769,7 @@
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
       "value": 10,
-      "updatedAt": "2026-08-14T16:26:41.670Z",
+      "updatedAt": "2026-08-14T22:40:16.271Z",
       "currency": "USD"
     }
   ],
@@ -7767,7 +7767,7 @@
       "curA": "USD",
       "prob": null,
       "winner": null,
-      "date": "2026-08-14T19:00",
+      "date": "2026-08-14T20:00",
       "total": 103.6,
       "lucroA": 179.22799999999998,
       "lucroRed": -103.6,
@@ -7776,7 +7776,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-14T14:45:51.578Z"
+      "updatedAt": "2026-08-14T22:40:16.271Z"
     },
     {
       "id": "mst3wu644kqwt",
@@ -8301,5 +8301,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T22:39:48.191Z"
+  "updatedAt": "2026-08-14T22:40:16.271Z"
 }
