@@ -4756,18 +4756,6 @@
       "id": "msrueg4hvw63f",
       "name": "Predict",
       "value": 0
-    },
-    {
-      "id": "msesofpdcy90h",
-      "name": "Overtimemarket",
-      "value": 0,
-      "currency": "USD",
-      "updatedAt": "2026-08-14T12:01:41.556Z"
-    },
-    {
-      "id": "msozrxqhmaq4n",
-      "name": "BNet365",
-      "value": 0
     }
   ],
   "aportes": [],
@@ -4845,6 +4833,14 @@
     {
       "id": "msqr1ktjo4r0t",
       "at": "2026-08-14T12:00:35.161Z"
+    },
+    {
+      "id": "msesofpdcy90h",
+      "at": "2026-08-14T12:06:31.583Z"
+    },
+    {
+      "id": "msozrxqhmaq4n",
+      "at": "2026-08-14T12:06:33.327Z"
     }
   ],
   "surebets": [
@@ -7633,5 +7629,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T12:06:20.665Z"
+  "updatedAt": "2026-08-14T12:06:33.328Z"
 }
