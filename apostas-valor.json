@@ -4555,9 +4555,9 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 1202.68,
+      "value": 1167.68,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T12:05:25.203Z"
+      "updatedAt": "2026-08-14T19:04:01.032Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4575,10 +4575,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3468.96,
+      "value": 3585.02,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T17:52:37.406Z"
+      "updatedAt": "2026-08-14T19:04:01.035Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4761,8 +4761,8 @@
     {
       "id": "msrueg4hvw63f",
       "name": "Predict",
-      "value": 30.84,
-      "updatedAt": "2026-08-14T16:57:30.528Z"
+      "value": -50.22,
+      "updatedAt": "2026-08-14T19:04:01.032Z"
     },
     {
       "id": "mst27o0q2ewv2",
@@ -8011,8 +8011,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T17:04:34.467Z"
+    },
+    {
+      "id": "mstbfnrcnq36d",
+      "kind": "sure",
+      "event": "Alaves x Getafe",
+      "houseA": "Predict",
+      "houseB": "Betsson",
+      "oddA": 1.57,
+      "oddB": 3.75,
+      "total": 116.06280000000001,
+      "stakeA": 81.06280000000001,
+      "stakeB": 35,
+      "lucroA": 11.205796000000007,
+      "lucroB": 15.18719999999999,
+      "lucro": 11.205796000000007,
+      "roi": 9.654941979686864,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-15T14:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T19:04:01.032Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T17:55:11.052Z"
+  "updatedAt": "2026-08-14T19:04:01.035Z"
 }
