@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 360,
+      "value": 260,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T19:43:55.358Z"
+      "updatedAt": "2026-08-14T19:53:49.359Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 808.4,
+      "value": 908.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T17:55:11.052Z"
+      "updatedAt": "2026-08-14T19:53:49.360Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8059,8 +8059,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T19:43:55.358Z"
+    },
+    {
+      "id": "mstd7pkfkqe1r",
+      "kind": "valor",
+      "event": "Crvena Zvezda x Brodarac",
+      "houseA": "Ivibet",
+      "oddA": 3.22,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T04:30",
+      "total": 100,
+      "lucroA": 222.00000000000003,
+      "lucroRed": -100,
+      "lucro": 222.00000000000003,
+      "roi": 222.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T19:53:49.359Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T19:43:55.361Z"
+  "updatedAt": "2026-08-14T19:53:49.360Z"
 }
