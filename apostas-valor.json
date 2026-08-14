@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 453.6,
+      "value": 558.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T16:22:39.189Z"
+      "updatedAt": "2026-08-14T16:26:41.678Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4766,8 +4766,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 30,
-      "updatedAt": "2026-08-14T14:50:00.541Z",
+      "value": 10,
+      "updatedAt": "2026-08-14T16:26:41.670Z",
       "currency": "USD"
     }
   ],
@@ -7915,8 +7915,29 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-14T16:14:42.606Z"
+    },
+    {
+      "id": "mst5tcaswjjad",
+      "kind": "valor",
+      "event": "CAR Panthers vs BUF Bills (2 vence 1 quarto)",
+      "houseA": "Kalshi",
+      "oddA": 3.6,
+      "stakeA": 104.80000000000001,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T13:00",
+      "total": 104.80000000000001,
+      "lucroA": 272.48,
+      "lucroRed": -104.80000000000001,
+      "lucro": 272.48,
+      "roi": 260,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T16:26:41.671Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T16:22:39.189Z"
+  "updatedAt": "2026-08-14T16:26:41.678Z"
 }
