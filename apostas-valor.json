@@ -4500,8 +4500,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 728.35,
-      "updatedAt": "2026-08-14T22:39:48.190Z"
+      "value": 628.35,
+      "updatedAt": "2026-08-14T22:55:21.207Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4754,10 +4754,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1558.4,
+      "value": 1658.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T22:39:48.190Z"
+      "updatedAt": "2026-08-14T22:55:21.208Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8298,8 +8298,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T22:39:48.190Z"
+    },
+    {
+      "id": "mstjp5rq7bar5",
+      "kind": "valor",
+      "event": "La serena h4",
+      "houseA": "Bet365",
+      "oddA": 2,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T20:00",
+      "total": 100,
+      "lucroA": 100,
+      "lucroRed": -100,
+      "lucro": 100,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T22:55:21.207Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T22:40:16.271Z"
+  "updatedAt": "2026-08-14T22:55:21.209Z"
 }
