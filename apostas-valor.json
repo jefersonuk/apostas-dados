@@ -4504,7 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1435.87
+      "value": 1335.87,
+      "updatedAt": "2026-08-14T14:19:35.577Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4750,10 +4751,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 100,
+      "value": 200,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T14:17:13.131Z"
+      "updatedAt": "2026-08-14T14:19:35.577Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7714,8 +7715,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T14:17:13.128Z"
+    },
+    {
+      "id": "mst19vyx0ke0c",
+      "kind": "valor",
+      "event": "York City x Bristol Rovers (1 vence total escanteios)",
+      "houseA": "Betnacional",
+      "oddA": 1.67,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T11:00",
+      "total": 100,
+      "lucroA": 67,
+      "lucroRed": -100,
+      "lucro": 67,
+      "roi": 67,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T14:19:35.577Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:17:13.131Z"
+  "updatedAt": "2026-08-14T14:19:35.577Z"
 }
