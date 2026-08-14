@@ -4651,8 +4651,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": -14.54,
-      "updatedAt": "2026-08-14T17:55:11.052Z"
+      "value": -114.54,
+      "updatedAt": "2026-08-14T21:18:17.696Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1258.4,
+      "value": 1358.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T21:01:37.352Z"
+      "updatedAt": "2026-08-14T21:18:17.697Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8187,8 +8187,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T21:01:37.348Z"
+    },
+    {
+      "id": "mstg8cbkwkpiq",
+      "kind": "valor",
+      "event": "Sorocaba x Pinheiros",
+      "houseA": "Pinnacle",
+      "oddA": 2.19,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T19:30",
+      "total": 100,
+      "lucroA": 119,
+      "lucroRed": -100,
+      "lucro": 119,
+      "roi": 119,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T21:18:17.696Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T21:01:37.352Z"
+  "updatedAt": "2026-08-14T21:18:17.697Z"
 }
