@@ -4577,7 +4577,8 @@
     {
       "id": "ms2ghozrogav9",
       "name": "Metamask",
-      "value": 420.13
+      "value": 692.95,
+      "updatedAt": "2026-08-14T12:02:44.764Z"
     },
     {
       "id": "ms573t068wk2v",
@@ -7628,5 +7629,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T12:02:21.978Z"
+  "updatedAt": "2026-08-14T12:02:44.771Z"
 }
