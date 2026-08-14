@@ -4568,10 +4568,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4646.3,
+      "value": 4646.31,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T02:15:33.407Z"
+      "updatedAt": "2026-08-14T02:15:42.212Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4726,13 +4726,15 @@
       "id": "msqr1ktlw3015",
       "name": "Sxbet",
       "value": 26.35,
-      "currency": "USD"
+      "currency": "USD",
+      "updatedAt": "2026-08-14T02:15:42.212Z"
     },
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
       "value": -99.01,
-      "currency": "USD"
+      "currency": "USD",
+      "updatedAt": "2026-08-14T02:15:42.212Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -7455,20 +7457,21 @@
       "houseB": "Opinion",
       "oddA": 2.54,
       "oddB": 1.88,
-      "total": 861.3779527559054,
-      "stakeA": 366.3779527559055,
+      "total": 861.38,
+      "stakeA": 366.38,
       "stakeB": 495,
-      "lucroA": 69.22204724409448,
-      "lucroB": 69.22204724409448,
-      "lucro": 69.22204724409448,
-      "roi": 8.036199095022626,
+      "lucroA": 69.22519999999997,
+      "lucroB": 69.21999999999991,
+      "lucro": 69.21999999999991,
+      "roi": 8.035942325106214,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
-      "date": "2026-08-13T11:00",
+      "date": "2026-08-14T11:00",
       "aplicado": {
         "stakes": true
-      }
+      },
+      "updatedAt": "2026-08-14T02:15:42.212Z"
     },
     {
       "id": "msqrblbariz6p",
@@ -7630,5 +7633,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T02:15:33.407Z"
+  "updatedAt": "2026-08-14T02:15:42.212Z"
 }
