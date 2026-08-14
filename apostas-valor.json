@@ -4506,8 +4506,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1335.87,
-      "updatedAt": "2026-08-14T14:19:35.577Z"
+      "value": 1235.87,
+      "updatedAt": "2026-08-14T17:00:36.145Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 608.4,
+      "value": 708.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T16:51:35.063Z"
+      "updatedAt": "2026-08-14T17:00:36.157Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7961,8 +7961,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T16:30:39.487Z"
+    },
+    {
+      "id": "mst70y3ztxxfb",
+      "kind": "valor",
+      "event": "Taroona FC – Glenorchy Knights II",
+      "houseA": "Betnacional",
+      "oddA": 3.3,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T23:15",
+      "total": 100,
+      "lucroA": 229.99999999999997,
+      "lucroRed": -100,
+      "lucro": 229.99999999999997,
+      "roi": 229.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T17:00:36.146Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T16:57:30.529Z"
+  "updatedAt": "2026-08-14T17:00:36.157Z"
 }
