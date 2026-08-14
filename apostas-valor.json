@@ -4762,12 +4762,6 @@
       "value": 0
     },
     {
-      "id": "mst0na7t75dwc",
-      "name": "Overtimemarket",
-      "value": 0,
-      "updatedAt": "2026-08-14T14:03:12.734Z"
-    },
-    {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
       "value": 30,
@@ -4867,6 +4861,10 @@
     {
       "id": "msrltckqzgxo2",
       "at": "2026-08-14T12:15:55.915Z"
+    },
+    {
+      "id": "mst0na7t75dwc",
+      "at": "2026-08-14T14:50:04.083Z"
     }
   ],
   "surebets": [
@@ -7788,5 +7786,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:50:00.546Z"
+  "updatedAt": "2026-08-14T14:50:04.083Z"
 }
