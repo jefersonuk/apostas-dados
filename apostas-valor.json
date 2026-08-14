@@ -4771,7 +4771,8 @@
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
       "value": -103.6,
-      "updatedAt": "2026-08-14T14:45:51.578Z"
+      "updatedAt": "2026-08-14T14:49:58.066Z",
+      "currency": "USD"
     }
   ],
   "aportes": [],
@@ -7787,5 +7788,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T14:45:51.579Z"
+  "updatedAt": "2026-08-14T14:49:58.066Z"
 }
