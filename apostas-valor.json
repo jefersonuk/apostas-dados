@@ -1,16 +1,18 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-14",
-    "stakeMin": 5,
-    "stakeMax": 20,
+    "startDate": "2026-07-08",
+    "stakeMin": 1,
+    "stakeMax": 30,
     "oddMin": 1.5,
-    "potMin": 1,
+    "potMin": 25,
     "kellyMult": 0.5,
     "probTolerance": 3,
     "probFull": 50,
     "probFloor": 20,
-    "penMin": 0.35
+    "penMin": 0.35,
+    "oddCap": 3,
+    "potCap": 50
   },
   "bets": [
     {
@@ -4573,10 +4575,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4239.96,
+      "value": 4733.11,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T14:02:51.322Z"
+      "updatedAt": "2026-08-14T16:07:05.371Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4759,7 +4761,7 @@
     {
       "id": "msrueg4hvw63f",
       "name": "Predict",
-      "value": 0
+      "value": -52
     },
     {
       "id": "mst27o0q2ewv2",
@@ -4809,9 +4811,9 @@
       "updatedAt": "2026-08-14T12:09:01.882Z"
     }
   ],
-  "usdRate": 5.18,
+  "usdRate": 5.24,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-14T11:54:54.951Z",
+  "usdRateAt": "2026-08-14T16:07:05.016Z",
   "appBuild": "20260813-1900",
   "deleted": [
     {
@@ -7369,13 +7371,12 @@
       "lucroB": 55.00500000000011,
       "lucro": 34.700000000000045,
       "roi": 7.036398661664818,
-      "winner": "B",
+      "winner": null,
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-12T23:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "B"
+        "stakes": true
       }
     },
     {
@@ -7851,5 +7852,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T15:41:08.780Z"
+  "updatedAt": "2026-08-14T16:07:05.017Z"
 }
