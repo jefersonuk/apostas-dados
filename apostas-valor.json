@@ -4500,8 +4500,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 428.35,
-      "updatedAt": "2026-08-14T16:14:42.606Z"
+      "value": 378.35,
+      "updatedAt": "2026-08-14T17:19:14.406Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4575,10 +4575,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4667.11,
+      "value": 4173.96,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T16:57:30.529Z"
+      "updatedAt": "2026-08-14T17:13:19.402Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 908.4,
+      "value": 958.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T17:04:34.475Z"
+      "updatedAt": "2026-08-14T17:19:14.408Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7372,12 +7372,13 @@
       "lucroB": 55.00500000000011,
       "lucro": 34.700000000000045,
       "roi": 7.036398661664818,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-12T23:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       }
     },
     {
@@ -8024,8 +8025,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T17:04:34.467Z"
+    },
+    {
+      "id": "mst7owyuu870z",
+      "kind": "valor",
+      "event": "SC Kalsdorf",
+      "houseA": "Bet365",
+      "oddA": 2.075,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T14:00",
+      "total": 50,
+      "lucroA": 53.75000000000001,
+      "lucroRed": -50,
+      "lucro": 53.75000000000001,
+      "roi": 107.50000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T17:19:14.406Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T17:04:34.475Z"
+  "updatedAt": "2026-08-14T17:19:14.408Z"
 }
