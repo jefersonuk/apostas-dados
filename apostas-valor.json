@@ -4575,10 +4575,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3585.02,
+      "value": 3839.92,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T19:04:01.035Z"
+      "updatedAt": "2026-08-14T19:43:55.361Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4605,8 +4605,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 214.9,
-      "updatedAt": "2026-08-14T12:05:44.955Z"
+      "value": 0,
+      "updatedAt": "2026-08-14T19:43:55.358Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 400,
+      "value": 360,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T17:52:37.406Z"
+      "updatedAt": "2026-08-14T19:43:55.358Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -8035,8 +8035,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T19:04:01.032Z"
+    },
+    {
+      "id": "mstcuz8ekfsqs",
+      "kind": "sure",
+      "event": "Paris Light x Berin Thunder",
+      "houseA": "Ivibet",
+      "houseB": "Blaze",
+      "oddA": 6.9,
+      "oddB": 1.32,
+      "total": 254.9,
+      "stakeA": 40,
+      "stakeB": 214.9,
+      "lucroA": 21.099999999999994,
+      "lucroB": 28.768,
+      "lucro": 21.099999999999994,
+      "roi": 8.277755982738325,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-15T08:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T19:43:55.358Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T19:04:01.035Z"
+  "updatedAt": "2026-08-14T19:43:55.361Z"
 }
