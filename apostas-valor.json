@@ -4500,8 +4500,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 733.35,
-      "updatedAt": "2026-08-14T17:52:37.406Z"
+      "value": 633.35,
+      "updatedAt": "2026-08-14T20:18:45.321Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4753,10 +4753,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1158.4,
+      "value": 1258.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T20:16:12.591Z"
+      "updatedAt": "2026-08-14T20:18:45.321Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8143,8 +8143,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T20:16:12.590Z"
+    },
+    {
+      "id": "mste3ruxf0cav",
+      "kind": "valor",
+      "event": "Atletico Grau x Comerciantes unidos (H4 esc)",
+      "houseA": "Bet365",
+      "oddA": 1.95,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T17:00",
+      "total": 100,
+      "lucroA": 95,
+      "lucroRed": -100,
+      "lucro": 95,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T20:18:45.321Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T20:16:12.591Z"
+  "updatedAt": "2026-08-14T20:18:45.321Z"
 }
