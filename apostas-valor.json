@@ -4572,10 +4572,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2285.23,
+      "value": 3435.23,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T12:37:36.312Z"
+      "updatedAt": "2026-08-14T13:18:21.062Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4630,15 +4630,15 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 653.39,
-      "updatedAt": "2026-08-14T12:04:18.716Z"
+      "value": 3.39,
+      "updatedAt": "2026-08-14T13:18:21.059Z"
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0,
+      "value": -500,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T12:37:57.049Z"
+      "updatedAt": "2026-08-14T13:18:21.059Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -7639,8 +7639,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T12:37:36.310Z"
+    },
+    {
+      "id": "mssz34oybt4i0",
+      "kind": "sure",
+      "event": "Galatasaray x Arcam Corum",
+      "houseA": "Casinozer",
+      "houseB": "Ivibet",
+      "oddA": 1.91,
+      "oddB": 2.5,
+      "total": 1150,
+      "stakeA": 650,
+      "stakeB": 500,
+      "lucroA": 91.5,
+      "lucroB": 100,
+      "lucro": 91.5,
+      "roi": 7.956521739130435,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-14T15:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T13:18:21.059Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T12:38:11.894Z"
+  "updatedAt": "2026-08-14T13:18:21.062Z"
 }
