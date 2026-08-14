@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 295.85,
-      "updatedAt": "2026-08-14T15:34:22.249Z"
+      "value": 245.85,
+      "updatedAt": "2026-08-14T15:35:13.560Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4751,10 +4751,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 553.6,
+      "value": 603.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-14T15:34:22.249Z"
+      "updatedAt": "2026-08-14T15:35:13.562Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7825,8 +7825,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-14T15:34:22.249Z"
+    },
+    {
+      "id": "mst3z5i0ggcup",
+      "kind": "valor",
+      "event": "H 3.5 escanteios - Bratstvo Gracanica",
+      "houseA": "Bet365",
+      "oddA": 1.85,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-14T12:34",
+      "total": 50,
+      "lucroA": 42.50000000000001,
+      "lucroRed": -50,
+      "lucro": 42.50000000000001,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-14T15:35:13.562Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-14T15:34:22.249Z"
+  "updatedAt": "2026-08-14T15:35:13.562Z"
 }
