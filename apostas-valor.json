@@ -4605,8 +4605,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 276.27,
-      "updatedAt": "2026-08-15T21:28:19.718Z"
+      "value": 176.27,
+      "updatedAt": "2026-08-15T21:36:35.580Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1317.6,
+      "value": 1417.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T21:35:26.912Z"
+      "updatedAt": "2026-08-15T21:36:35.585Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8624,8 +8624,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T21:35:26.909Z"
+    },
+    {
+      "id": "msuwbq4bc98ye",
+      "kind": "valor",
+      "event": "Newell's Old Boys – Deportivo Riestra",
+      "houseA": "Blaze",
+      "oddA": 1.97,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T19:00",
+      "total": 100,
+      "lucroA": 97,
+      "lucroRed": -100,
+      "lucro": 97,
+      "roi": 97,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T21:36:35.581Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:35:26.912Z"
+  "updatedAt": "2026-08-15T21:36:35.585Z"
 }
