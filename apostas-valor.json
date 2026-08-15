@@ -4640,9 +4640,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 70,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T20:26:21.264Z"
+      "updatedAt": "2026-08-15T23:37:35.362Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2172,
+      "value": 2242,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T23:34:03.218Z"
+      "updatedAt": "2026-08-15T23:37:35.367Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8863,8 +8863,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T23:34:03.213Z"
+    },
+    {
+      "id": "msv0nbsu5ft9n",
+      "kind": "valor",
+      "event": "Universidade Catolica – Club Deportes Puente Alto (1 mais de 83)",
+      "houseA": "Ivibet",
+      "oddA": 2.42,
+      "stakeA": 70,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T21:00",
+      "total": 70,
+      "lucroA": 99.39999999999999,
+      "lucroRed": -70,
+      "lucro": 99.39999999999999,
+      "roi": 142,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T23:37:35.363Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T23:34:03.218Z"
+  "updatedAt": "2026-08-15T23:37:35.367Z"
 }
