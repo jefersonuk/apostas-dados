@@ -4782,12 +4782,6 @@
       "updatedAt": "2026-08-15T13:15:02.804Z"
     },
     {
-      "id": "msuu790g45kpf",
-      "name": "Thunderpick",
-      "value": 0,
-      "updatedAt": "2026-08-15T21:22:45.396Z"
-    },
-    {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
       "value": 500,
@@ -4908,6 +4902,10 @@
     {
       "id": "mst5yfsof1y9i",
       "at": "2026-08-15T20:30:42.357Z"
+    },
+    {
+      "id": "msuu790g45kpf",
+      "at": "2026-08-15T21:22:55.166Z"
     }
   ],
   "surebets": [
@@ -8584,5 +8582,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:22:45.396Z"
+  "updatedAt": "2026-08-15T21:22:55.167Z"
 }
