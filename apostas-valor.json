@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1763.2,
+      "value": 1867.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T22:28:16.980Z"
+      "updatedAt": "2026-08-15T23:24:51.859Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4787,6 +4787,12 @@
       "value": 250,
       "currency": "BRL",
       "updatedAt": "2026-08-15T21:45:50.278Z"
+    },
+    {
+      "id": "msv06yohwhdnk",
+      "name": "Thunderpick",
+      "value": -104.4,
+      "updatedAt": "2026-08-15T23:24:51.858Z"
     }
   ],
   "aportes": [],
@@ -8773,8 +8779,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T22:07:47.181Z"
+    },
+    {
+      "id": "msv06yohmlceb",
+      "kind": "valor",
+      "event": "Barcelona – Arsenal",
+      "houseA": "Thunderpick",
+      "oddA": 2.7,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T20:40",
+      "total": 104.39999999999999,
+      "lucroA": 177.48000000000002,
+      "lucroRed": -104.39999999999999,
+      "lucro": 177.48000000000002,
+      "roi": 170.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T23:24:51.858Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T22:28:16.980Z"
+  "updatedAt": "2026-08-15T23:24:51.859Z"
 }
