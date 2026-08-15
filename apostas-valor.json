@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1667.6,
+      "value": 1767.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T21:44:13.906Z"
+      "updatedAt": "2026-08-15T21:45:50.283Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,9 +4784,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 350,
+      "value": 250,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T21:44:13.897Z"
+      "updatedAt": "2026-08-15T21:45:50.278Z"
     }
   ],
   "aportes": [],
@@ -8708,8 +8708,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T21:44:13.898Z"
+    },
+    {
+      "id": "msuwnm4kmrvqp",
+      "kind": "valor",
+      "event": "Athletics – TEX Rangers - menos 16.5 hits",
+      "houseA": "Esportivabet",
+      "oddA": 2.25,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T22:40",
+      "total": 100,
+      "lucroA": 125,
+      "lucroRed": -100,
+      "lucro": 125,
+      "roi": 125,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T21:45:50.279Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:44:13.906Z"
+  "updatedAt": "2026-08-15T21:45:50.283Z"
 }
