@@ -4722,9 +4722,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 147.86,
+      "value": 127.86,
       "currency": "USD",
-      "updatedAt": "2026-08-15T20:33:13.873Z"
+      "updatedAt": "2026-08-15T21:35:26.909Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1213.2,
+      "value": 1317.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T20:46:31.053Z"
+      "updatedAt": "2026-08-15T21:35:26.912Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8603,8 +8603,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T21:28:19.720Z"
+    },
+    {
+      "id": "msuwa94tergpi",
+      "kind": "valor",
+      "event": "Baltimore Ravens – Philadelphia Eagles",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.28,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T20:00",
+      "total": 104.39999999999999,
+      "lucroA": 133.63199999999998,
+      "lucroRed": -104.39999999999999,
+      "lucro": 133.63199999999998,
+      "roi": 127.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T21:35:26.909Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:28:19.727Z"
+  "updatedAt": "2026-08-15T21:35:26.912Z"
 }
