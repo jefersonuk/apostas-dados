@@ -4621,9 +4621,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 94.98,
+      "value": 74.98,
       "currency": "USD",
-      "updatedAt": "2026-08-15T21:22:38.127Z"
+      "updatedAt": "2026-08-15T21:22:45.396Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4784,8 +4784,8 @@
     {
       "id": "msuu790g45kpf",
       "name": "Thunderpick",
-      "value": -104.4,
-      "updatedAt": "2026-08-15T21:22:38.127Z"
+      "value": 0,
+      "updatedAt": "2026-08-15T21:22:45.396Z"
     },
     {
       "id": "msuuloj0waoov",
@@ -8565,24 +8565,24 @@
       "id": "msuujbt70f8ph",
       "kind": "valor",
       "event": "Falcons – Vici Gaming",
-      "houseA": "Thunderpick",
+      "houseA": "Thunderpick.io",
       "oddA": 2.06,
-      "stakeA": 104.39999999999999,
+      "stakeA": 104.4,
       "curA": "USD",
       "prob": null,
       "winner": null,
       "date": "2026-08-15T23:00",
-      "total": 104.39999999999999,
-      "lucroA": 110.664,
-      "lucroRed": -104.39999999999999,
-      "lucro": 110.664,
+      "total": 104.4,
+      "lucroA": 110.66400000000002,
+      "lucroRed": -104.4,
+      "lucro": 110.66400000000002,
       "roi": 106,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-15T20:46:31.052Z"
+      "updatedAt": "2026-08-15T21:22:45.396Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:22:38.127Z"
+  "updatedAt": "2026-08-15T21:22:45.396Z"
 }
