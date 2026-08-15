@@ -4652,8 +4652,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1840.26,
-      "updatedAt": "2026-08-15T20:30:38.574Z"
+      "value": 1940.26,
+      "updatedAt": "2026-08-15T20:30:42.357Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1000,
+      "value": 900,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T20:30:38.574Z"
+      "updatedAt": "2026-08-15T20:30:42.357Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4891,6 +4891,10 @@
     {
       "id": "msrle7xrteq09",
       "at": "2026-08-14T17:52:37.406Z"
+    },
+    {
+      "id": "mst5yfsof1y9i",
+      "at": "2026-08-15T20:30:42.357Z"
     }
   ],
   "surebets": [
@@ -7953,28 +7957,6 @@
       "updatedAt": "2026-08-15T17:45:27.167Z"
     },
     {
-      "id": "mst5yfsof1y9i",
-      "kind": "valor",
-      "event": "VfB Oldenburg – Eintracht Norderstedt (H2 +0 primeiro tempo)",
-      "houseA": "Pinnacle",
-      "oddA": 3.19,
-      "stakeA": 100,
-      "curA": "BRL",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-15T13:00",
-      "total": 100,
-      "lucroA": 219,
-      "lucroRed": -100,
-      "lucro": 219,
-      "roi": 219,
-      "aplicado": {
-        "stakes": true,
-        "resultado": null
-      },
-      "updatedAt": "2026-08-15T20:30:38.574Z"
-    },
-    {
       "id": "mst70y3ztxxfb",
       "kind": "valor",
       "event": "Taroona FC – Glenorchy Knights II",
@@ -8526,5 +8508,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T20:30:38.574Z"
+  "updatedAt": "2026-08-15T20:30:42.357Z"
 }
