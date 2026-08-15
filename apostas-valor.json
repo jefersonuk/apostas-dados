@@ -4829,7 +4829,7 @@
   ],
   "usdRate": 5.22,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-15T12:47:42.450Z",
+  "usdRateAt": "2026-08-15T19:44:59.463Z",
   "appBuild": "20260813-1900",
   "deleted": [
     {
@@ -8503,5 +8503,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T18:36:16.344Z"
+  "updatedAt": "2026-08-15T19:44:59.464Z"
 }
