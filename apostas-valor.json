@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1567.6,
+      "value": 1667.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T21:41:24.452Z"
+      "updatedAt": "2026-08-15T21:44:13.906Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,9 +4784,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 450,
+      "value": 350,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T21:39:48.262Z"
+      "updatedAt": "2026-08-15T21:44:13.897Z"
     }
   ],
   "aportes": [],
@@ -8687,8 +8687,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T21:41:24.447Z"
+    },
+    {
+      "id": "msuwljrblhaaw",
+      "kind": "valor",
+      "event": "LA Angels – KC Royals - Abaixo 15.5 Tempo Extra - hits",
+      "houseA": "Esportivabet",
+      "oddA": 2.05,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T22:40",
+      "total": 100,
+      "lucroA": 104.99999999999999,
+      "lucroRed": -100,
+      "lucro": 104.99999999999999,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T21:44:13.898Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:41:24.452Z"
+  "updatedAt": "2026-08-15T21:44:13.906Z"
 }
