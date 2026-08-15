@@ -4786,6 +4786,13 @@
       "name": "Thunderpick",
       "value": -208.8,
       "updatedAt": "2026-08-15T20:46:31.052Z"
+    },
+    {
+      "id": "msuuloj0waoov",
+      "name": "Esportivabet",
+      "value": 500,
+      "currency": "BRL",
+      "updatedAt": "2026-08-15T20:48:20.844Z"
     }
   ],
   "aportes": [],
@@ -8577,5 +8584,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T20:46:31.053Z"
+  "updatedAt": "2026-08-15T20:48:20.845Z"
 }
