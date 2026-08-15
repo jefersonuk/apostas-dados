@@ -4640,9 +4640,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 770,
+      "value": 670,
       "currency": "BRL",
-      "updatedAt": "2026-08-14T22:03:35.284Z"
+      "updatedAt": "2026-08-15T14:25:21.381Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 504.8,
+      "value": 604.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T14:19:57.825Z"
+      "updatedAt": "2026-08-15T14:25:21.382Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8350,8 +8350,29 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-08-15T00:56:28.249Z"
+    },
+    {
+      "id": "msugx5gkao3z2",
+      "kind": "valor",
+      "event": "Sligo Rovers – Waterford",
+      "houseA": "Ivibet",
+      "oddA": 3.45,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T16:00",
+      "total": 100,
+      "lucroA": 245.00000000000003,
+      "lucroRed": -100,
+      "lucro": 245.00000000000003,
+      "roi": 245.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T14:25:21.381Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T14:22:10.312Z"
+  "updatedAt": "2026-08-15T14:25:21.382Z"
 }
