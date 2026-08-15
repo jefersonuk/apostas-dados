@@ -4679,8 +4679,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 830.5,
-      "updatedAt": "2026-08-14T20:04:49.307Z"
+      "value": 1060.5,
+      "updatedAt": "2026-08-15T12:12:22.486Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4754,10 +4754,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1054.8,
+      "value": 954.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T12:09:21.286Z"
+      "updatedAt": "2026-08-15T12:12:22.487Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8095,7 +8095,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-14T23:00",
       "total": 100,
       "lucroA": 129.99999999999997,
@@ -8103,9 +8103,10 @@
       "lucro": 129.99999999999997,
       "roi": 129.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-14T20:03:34.146Z"
+      "updatedAt": "2026-08-15T12:12:22.486Z"
     },
     {
       "id": "mstdlusbzhbam",
@@ -8329,5 +8330,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T12:11:08.314Z"
+  "updatedAt": "2026-08-15T12:12:22.487Z"
 }
