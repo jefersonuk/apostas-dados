@@ -4640,9 +4640,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 470,
+      "value": 370,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T14:48:23.289Z"
+      "updatedAt": "2026-08-15T14:50:37.349Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 804.8,
+      "value": 904.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T14:48:23.289Z"
+      "updatedAt": "2026-08-15T14:50:37.350Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8413,8 +8413,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T14:48:23.289Z"
+    },
+    {
+      "id": "msuhtn6t8sr1c",
+      "kind": "valor",
+      "event": "A.D. Camacha – Salgueiros",
+      "houseA": "Ivibet",
+      "oddA": 3.59,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T12:00",
+      "total": 100,
+      "lucroA": 259,
+      "lucroRed": -100,
+      "lucro": 259,
+      "roi": 259,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T14:50:37.349Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T14:48:23.289Z"
+  "updatedAt": "2026-08-15T14:50:37.350Z"
 }
