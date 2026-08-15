@@ -4621,9 +4621,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 114,
+      "value": 114.98,
       "currency": "USD",
-      "updatedAt": "2026-08-14T22:32:00.798Z"
+      "updatedAt": "2026-08-15T13:24:52.108Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -8346,5 +8346,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T13:24:18.154Z"
+  "updatedAt": "2026-08-15T13:24:52.109Z"
 }
