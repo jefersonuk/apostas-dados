@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1108.8,
+      "value": 1213.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T20:37:07.554Z"
+      "updatedAt": "2026-08-15T20:46:31.053Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,8 +4784,8 @@
     {
       "id": "msuu790g45kpf",
       "name": "Thunderpick",
-      "value": -104.4,
-      "updatedAt": "2026-08-15T20:37:07.552Z"
+      "value": -208.8,
+      "updatedAt": "2026-08-15T20:46:31.052Z"
     }
   ],
   "aportes": [],
@@ -8553,8 +8553,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T20:37:07.553Z"
+    },
+    {
+      "id": "msuujbt70f8ph",
+      "kind": "valor",
+      "event": "Falcons – Vici Gaming",
+      "houseA": "Thunderpick",
+      "oddA": 2.06,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T23:00",
+      "total": 104.39999999999999,
+      "lucroA": 110.664,
+      "lucroRed": -104.39999999999999,
+      "lucro": 110.664,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T20:46:31.052Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T20:37:07.554Z"
+  "updatedAt": "2026-08-15T20:46:31.053Z"
 }
