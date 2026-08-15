@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 904.8,
+      "value": 800,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T16:22:15.717Z"
+      "updatedAt": "2026-08-15T17:45:27.167Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4770,8 +4770,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 64.18,
-      "updatedAt": "2026-08-15T00:18:29.788Z",
+      "value": 136.46,
+      "updatedAt": "2026-08-15T17:45:27.167Z",
       "currency": "USD"
     },
     {
@@ -7939,7 +7939,7 @@
       "stakeA": 104.80000000000001,
       "curA": "USD",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-15T13:00",
       "total": 104.80000000000001,
       "lucroA": 272.48,
@@ -7947,9 +7947,10 @@
       "lucro": 272.48,
       "roi": 260,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-14T16:26:41.671Z"
+      "updatedAt": "2026-08-15T17:45:27.167Z"
     },
     {
       "id": "mst5yfsof1y9i",
@@ -8459,5 +8460,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T16:22:15.718Z"
+  "updatedAt": "2026-08-15T17:45:27.167Z"
 }
