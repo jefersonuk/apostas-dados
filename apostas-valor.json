@@ -4652,8 +4652,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1940.26,
-      "updatedAt": "2026-08-15T20:30:42.357Z"
+      "value": 1840.26,
+      "updatedAt": "2026-08-15T21:50:24.244Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1767.6,
+      "value": 1867.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T21:45:50.283Z"
+      "updatedAt": "2026-08-15T21:50:24.253Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8729,8 +8729,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T21:45:50.279Z"
+    },
+    {
+      "id": "msuwthiqfao82",
+      "kind": "valor",
+      "event": "Shopify Rebellion (Kills) – Dignitas (Kills) - mais de 28.5 abates 1 mapa",
+      "houseA": "Pinnacle",
+      "oddA": 2.69,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T20:00",
+      "total": 100,
+      "lucroA": 169,
+      "lucroRed": -100,
+      "lucro": 169,
+      "roi": 169,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T21:50:24.246Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:45:50.283Z"
+  "updatedAt": "2026-08-15T21:50:24.253Z"
 }
