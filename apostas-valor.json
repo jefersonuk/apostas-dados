@@ -4621,9 +4621,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 74.98,
+      "value": 131.18,
       "currency": "USD",
-      "updatedAt": "2026-08-15T21:22:45.396Z"
+      "updatedAt": "2026-08-15T22:28:16.978Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1867.6,
+      "value": 1763.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T22:07:47.185Z"
+      "updatedAt": "2026-08-15T22:28:16.980Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8548,7 +8548,7 @@
       "stakeA": 104.4,
       "curA": "USD",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-15T18:00",
       "total": 104.4,
       "lucroA": 188.96400000000003,
@@ -8556,9 +8556,10 @@
       "lucro": 188.96400000000003,
       "roi": 181,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-15T21:22:38.127Z"
+      "updatedAt": "2026-08-15T22:28:16.980Z"
     },
     {
       "id": "msuujbt70f8ph",
@@ -8775,5 +8776,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T22:12:41.677Z"
+  "updatedAt": "2026-08-15T22:28:16.980Z"
 }
