@@ -4722,9 +4722,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 167.86,
+      "value": 147.86,
       "currency": "USD",
-      "updatedAt": "2026-08-15T13:24:18.154Z"
+      "updatedAt": "2026-08-15T20:33:13.873Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 900,
+      "value": 1004.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T20:30:42.357Z"
+      "updatedAt": "2026-08-15T20:33:13.874Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8505,8 +8505,29 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-08-15T20:27:27.850Z"
+    },
+    {
+      "id": "msuu28pcs6pk2",
+      "kind": "valor",
+      "event": "Guabira – Club The Strongest",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.2,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T18:15",
+      "total": 104.39999999999999,
+      "lucroA": 125.28000000000002,
+      "lucroRed": -104.39999999999999,
+      "lucro": 125.28000000000002,
+      "roi": 120.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T20:33:13.873Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T20:30:42.357Z"
+  "updatedAt": "2026-08-15T20:33:13.874Z"
 }
