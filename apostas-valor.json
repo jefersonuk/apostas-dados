@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1417.6,
+      "value": 1467.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T21:36:35.585Z"
+      "updatedAt": "2026-08-15T21:39:48.267Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,9 +4784,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 500,
+      "value": 450,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T20:48:20.844Z"
+      "updatedAt": "2026-08-15T21:39:48.262Z"
     }
   ],
   "aportes": [],
@@ -8645,8 +8645,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T21:36:35.581Z"
+    },
+    {
+      "id": "msuwfusk4gx5l",
+      "kind": "valor",
+      "event": "Palafox menos 2.5 segundo mapa Dignitas – Shopify Rebellion",
+      "houseA": "Esportivabet",
+      "oddA": 2.3,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T20:00",
+      "total": 50,
+      "lucroA": 64.99999999999999,
+      "lucroRed": -50,
+      "lucro": 64.99999999999999,
+      "roi": 129.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T21:39:48.263Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:36:35.585Z"
+  "updatedAt": "2026-08-15T21:39:48.267Z"
 }
