@@ -4640,9 +4640,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 270,
+      "value": 170,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T14:52:20.437Z"
+      "updatedAt": "2026-08-15T18:31:57.973Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 700,
+      "value": 800,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T18:03:33.064Z"
+      "updatedAt": "2026-08-15T18:31:57.975Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8458,8 +8458,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T14:52:20.437Z"
+    },
+    {
+      "id": "msupqal1cyjhm",
+      "kind": "valor",
+      "event": "Riga FC – Metta",
+      "houseA": "Ivibet",
+      "oddA": 2.84,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T10:00",
+      "total": 100,
+      "lucroA": 184,
+      "lucroRed": -100,
+      "lucro": 184,
+      "roi": 184,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T18:31:57.973Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T18:03:33.064Z"
+  "updatedAt": "2026-08-15T18:31:57.975Z"
 }
