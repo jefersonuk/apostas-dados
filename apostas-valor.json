@@ -4640,9 +4640,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 570,
+      "value": 470,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T14:28:04.555Z"
+      "updatedAt": "2026-08-15T14:48:23.289Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 704.8,
+      "value": 804.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T14:28:04.557Z"
+      "updatedAt": "2026-08-15T14:48:23.289Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8392,8 +8392,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T14:28:04.555Z"
+    },
+    {
+      "id": "msuhqrqwa9evw",
+      "kind": "valor",
+      "event": "San Jose Earthquakes – St. Louis City",
+      "houseA": "Ivibet",
+      "oddA": 2.06,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T23:00",
+      "total": 100,
+      "lucroA": 106,
+      "lucroRed": -100,
+      "lucro": 106,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T14:48:23.289Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T14:28:04.557Z"
+  "updatedAt": "2026-08-15T14:48:23.289Z"
 }
