@@ -4605,8 +4605,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 475.67,
-      "updatedAt": "2026-08-15T14:20:33.285Z"
+      "value": 425.67,
+      "updatedAt": "2026-08-15T19:45:42.604Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 900,
+      "value": 950,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T18:36:16.344Z"
+      "updatedAt": "2026-08-15T19:45:42.605Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8500,8 +8500,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T18:36:16.343Z"
+    },
+    {
+      "id": "msusd4nf63sw7",
+      "kind": "valor",
+      "event": "Napoli x Roma",
+      "houseA": "Blaze",
+      "oddA": 4.5,
+      "stakeA": 50,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T17:07",
+      "total": 50,
+      "lucroA": 175,
+      "lucroRed": -50,
+      "lucro": 175,
+      "roi": 350,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T19:45:42.604Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T19:44:59.464Z"
+  "updatedAt": "2026-08-15T19:45:42.605Z"
 }
