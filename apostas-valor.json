@@ -4640,9 +4640,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 370,
+      "value": 270,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T14:50:37.349Z"
+      "updatedAt": "2026-08-15T14:52:20.437Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 904.8,
+      "value": 1004.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T14:50:37.350Z"
+      "updatedAt": "2026-08-15T14:52:20.438Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8434,8 +8434,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T14:50:37.349Z"
+    },
+    {
+      "id": "msuhvuqcd81lw",
+      "kind": "valor",
+      "event": "Cinfaes – UD Sousense",
+      "houseA": "Ivibet",
+      "oddA": 2.22,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T13:00",
+      "total": 100,
+      "lucroA": 122.00000000000001,
+      "lucroRed": -100,
+      "lucro": 122.00000000000001,
+      "roi": 122.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T14:52:20.437Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T14:50:37.350Z"
+  "updatedAt": "2026-08-15T14:52:20.438Z"
 }
