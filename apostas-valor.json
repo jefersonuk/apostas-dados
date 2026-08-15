@@ -4773,6 +4773,13 @@
       "value": 64.18,
       "updatedAt": "2026-08-15T00:18:29.788Z",
       "currency": "USD"
+    },
+    {
+      "id": "msueeqdv25y1y",
+      "name": "Superbet",
+      "value": 205,
+      "currency": "BRL",
+      "updatedAt": "2026-08-15T13:15:02.804Z"
     }
   ],
   "aportes": [],
@@ -8339,5 +8346,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T13:12:15.475Z"
+  "updatedAt": "2026-08-15T13:15:02.805Z"
 }
