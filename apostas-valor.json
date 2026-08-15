@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1763.2,
+      "value": 1867.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T22:02:37.077Z"
+      "updatedAt": "2026-08-15T22:07:47.185Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4770,8 +4770,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 136.46,
-      "updatedAt": "2026-08-15T17:45:27.167Z",
+      "value": 116.46,
+      "updatedAt": "2026-08-15T22:07:47.179Z",
       "currency": "USD"
     },
     {
@@ -8751,8 +8751,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T21:50:24.246Z"
+    },
+    {
+      "id": "msuxfu975zszy",
+      "kind": "valor",
+      "event": "Abdul-Malik vs Stoltzfus",
+      "houseA": "Kalshi",
+      "oddA": 2.15,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T22:20",
+      "total": 104.39999999999999,
+      "lucroA": 120.05999999999997,
+      "lucroRed": -104.39999999999999,
+      "lucro": 120.05999999999997,
+      "roi": 114.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T22:07:47.181Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T22:02:37.077Z"
+  "updatedAt": "2026-08-15T22:07:47.185Z"
 }
