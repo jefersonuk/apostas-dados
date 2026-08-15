@@ -4658,7 +4658,8 @@
     {
       "id": "mseumeeird6tj",
       "name": "Milhão",
-      "value": 200
+      "value": 0,
+      "updatedAt": "2026-08-15T12:59:14.725Z"
     },
     {
       "id": "mseutuzodhxpd",
@@ -8334,5 +8335,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T12:57:53.393Z"
+  "updatedAt": "2026-08-15T12:59:14.726Z"
 }
