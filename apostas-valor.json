@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1967.6,
+      "value": 2067.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T23:27:09.617Z"
+      "updatedAt": "2026-08-15T23:30:18.976Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,9 +4784,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 150,
+      "value": 50,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T23:27:09.612Z"
+      "updatedAt": "2026-08-15T23:30:18.966Z"
     },
     {
       "id": "msv06yohwhdnk",
@@ -8821,8 +8821,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-15T23:27:09.612Z"
+    },
+    {
+      "id": "msv0dz2nnleol",
+      "kind": "valor",
+      "event": "Sentinels – ENVY (H1 +3.5)",
+      "houseA": "Esportivabet",
+      "oddA": 2.15,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-15T20:27",
+      "total": 100,
+      "lucroA": 114.99999999999999,
+      "lucroRed": -100,
+      "lucro": 114.99999999999999,
+      "roi": 114.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-15T23:30:18.967Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T23:27:09.617Z"
+  "updatedAt": "2026-08-15T23:30:18.976Z"
 }
