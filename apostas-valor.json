@@ -4506,8 +4506,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1035.87,
-      "updatedAt": "2026-08-14T22:11:43.937Z"
+      "value": 1365.87,
+      "updatedAt": "2026-08-15T12:13:06.190Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4754,10 +4754,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 854.8,
+      "value": 754.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T12:12:24.469Z"
+      "updatedAt": "2026-08-15T12:13:06.190Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -7962,7 +7962,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-14T23:15",
       "total": 100,
       "lucroA": 229.99999999999997,
@@ -7970,9 +7970,10 @@
       "lucro": 229.99999999999997,
       "roi": 229.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-14T17:00:36.146Z"
+      "updatedAt": "2026-08-15T12:13:06.190Z"
     },
     {
       "id": "mst74flkldlp6",
@@ -8331,5 +8332,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T12:12:24.469Z"
+  "updatedAt": "2026-08-15T12:13:06.190Z"
 }
