@@ -4642,7 +4642,7 @@
       "name": "Ivibet",
       "value": 70,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T18:36:16.343Z"
+      "updatedAt": "2026-08-15T20:26:21.264Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -8365,7 +8365,7 @@
       "curA": "BRL",
       "prob": null,
       "winner": null,
-      "date": "2026-08-15T16:00",
+      "date": "2026-08-21T16:00",
       "total": 100,
       "lucroA": 245.00000000000003,
       "lucroRed": -100,
@@ -8374,7 +8374,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-15T14:25:21.381Z"
+      "updatedAt": "2026-08-15T20:26:21.264Z"
     },
     {
       "id": "msuh0nd7z4t7n",
@@ -8525,5 +8525,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T19:56:29.804Z"
+  "updatedAt": "2026-08-15T20:26:21.264Z"
 }
