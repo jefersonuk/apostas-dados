@@ -4722,9 +4722,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 127.86,
+      "value": 171.86,
       "currency": "USD",
-      "updatedAt": "2026-08-15T21:35:26.909Z"
+      "updatedAt": "2026-08-15T22:02:37.077Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1867.6,
+      "value": 1763.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-15T21:50:24.253Z"
+      "updatedAt": "2026-08-15T22:02:37.077Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8526,7 +8526,7 @@
       "stakeA": 104.39999999999999,
       "curA": "USD",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-15T18:15",
       "total": 104.39999999999999,
       "lucroA": 125.28000000000002,
@@ -8534,9 +8534,10 @@
       "lucro": 125.28000000000002,
       "roi": 120.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-15T20:33:13.873Z"
+      "updatedAt": "2026-08-15T22:02:37.077Z"
     },
     {
       "id": "msuu790gneq09",
@@ -8753,5 +8754,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-15T21:50:24.253Z"
+  "updatedAt": "2026-08-15T22:02:37.077Z"
 }
