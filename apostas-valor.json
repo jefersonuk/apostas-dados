@@ -4506,8 +4506,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 2055.87,
-      "updatedAt": "2026-08-16T11:05:05.693Z"
+      "value": 1955.87,
+      "updatedAt": "2026-08-16T18:50:30.333Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 400,
+      "value": 500,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T18:49:16.179Z"
+      "updatedAt": "2026-08-16T18:50:30.339Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8948,8 +8948,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T18:49:16.177Z"
+    },
+    {
+      "id": "msw5tzjum7zpc",
+      "kind": "valor",
+      "event": "Atlético-MG – Grêmio (2 mais de 3.5 cartões_",
+      "houseA": "Betnacional",
+      "oddA": 3.9,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T16:00",
+      "total": 100,
+      "lucroA": 290,
+      "lucroRed": -100,
+      "lucro": 290,
+      "roi": 290,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T18:50:30.334Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T18:49:16.179Z"
+  "updatedAt": "2026-08-16T18:50:30.339Z"
 }
