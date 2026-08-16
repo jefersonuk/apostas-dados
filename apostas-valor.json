@@ -4506,8 +4506,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1955.87,
-      "updatedAt": "2026-08-16T18:50:30.333Z"
+      "value": 1855.87,
+      "updatedAt": "2026-08-16T19:04:27.063Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 804.4,
+      "value": 904.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T19:02:35.054Z"
+      "updatedAt": "2026-08-16T19:04:27.072Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9033,8 +9033,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T19:02:35.035Z"
+    },
+    {
+      "id": "msw6bx6cc3mzs",
+      "kind": "valor",
+      "event": "Vitória – Botafogo (Acima 3.5 cartões segundo time)",
+      "houseA": "Betnacional",
+      "oddA": 3.5,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T18:30",
+      "total": 100,
+      "lucroA": 250,
+      "lucroRed": -100,
+      "lucro": 250,
+      "roi": 250,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T19:04:27.063Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T19:02:35.054Z"
+  "updatedAt": "2026-08-16T19:04:27.072Z"
 }
