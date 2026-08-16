@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1787.26,
-      "updatedAt": "2026-08-16T20:35:42.450Z"
+      "value": 1687.26,
+      "updatedAt": "2026-08-16T20:56:45.558Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 854.4,
+      "value": 954.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T20:39:56.906Z"
+      "updatedAt": "2026-08-16T20:56:45.563Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9086,8 +9086,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T19:33:21.569Z"
+    },
+    {
+      "id": "mswaccmtq990g",
+      "kind": "valor",
+      "event": "CD Choloma – Marathon (H2 -1)",
+      "houseA": "Pinnacle",
+      "oddA": 2.14,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T18:00",
+      "total": 100,
+      "lucroA": 114.00000000000001,
+      "lucroRed": -100,
+      "lucro": 114.00000000000001,
+      "roi": 114.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T20:56:45.558Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T20:39:56.906Z"
+  "updatedAt": "2026-08-16T20:56:45.563Z"
 }
