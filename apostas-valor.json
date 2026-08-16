@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1292,
+      "value": 1192,
       "currency": "BRL",
-      "updatedAt": "2026-08-16T20:39:56.906Z"
+      "updatedAt": "2026-08-16T22:49:40.213Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 821.9,
+      "value": 921.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T22:46:33.123Z"
+      "updatedAt": "2026-08-16T22:49:40.216Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9130,8 +9130,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T22:46:29.850Z"
+    },
+    {
+      "id": "mswedjzo0evbe",
+      "kind": "valor",
+      "event": "Killian Heffernan – Dylan Slevin (acima de 0.5 para 1)",
+      "houseA": "Ivibet",
+      "oddA": 2.06,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T08:00",
+      "total": 100,
+      "lucroA": 106,
+      "lucroRed": -100,
+      "lucro": 106,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T22:49:40.213Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T22:46:29.857Z"
+  "updatedAt": "2026-08-16T22:49:40.216Z"
 }
