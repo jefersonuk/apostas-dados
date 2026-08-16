@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1540.26,
-      "updatedAt": "2026-08-16T19:33:21.569Z"
+      "value": 1787.26,
+      "updatedAt": "2026-08-16T20:35:42.450Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1004.4,
+      "value": 904.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T19:33:21.572Z"
+      "updatedAt": "2026-08-16T20:35:42.452Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8989,7 +8989,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-16T16:00",
       "total": 100,
       "lucroA": 147.00000000000003,
@@ -8997,9 +8997,10 @@
       "lucro": 147.00000000000003,
       "roi": 147.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-16T18:51:55.344Z"
+      "updatedAt": "2026-08-16T20:35:42.452Z"
     },
     {
       "id": "msw63133suk1v",
@@ -9087,5 +9088,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T20:08:24.484Z"
+  "updatedAt": "2026-08-16T20:35:42.452Z"
 }
