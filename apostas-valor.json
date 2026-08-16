@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1640.26,
-      "updatedAt": "2026-08-16T19:29:41.703Z"
+      "value": 1540.26,
+      "updatedAt": "2026-08-16T19:33:21.569Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 904.4,
+      "value": 1004.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T19:29:41.706Z"
+      "updatedAt": "2026-08-16T19:33:21.572Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9062,8 +9062,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T19:29:41.703Z"
+    },
+    {
+      "id": "msw7d3j40i1uq",
+      "kind": "valor",
+      "event": "Diablos Rojos Del Mexico – Guerreros de Oaxaca",
+      "houseA": "Pinnacle",
+      "oddA": 2.06,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T17:00",
+      "total": 100,
+      "lucroA": 106,
+      "lucroRed": -100,
+      "lucro": 106,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T19:33:21.569Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T19:29:41.706Z"
+  "updatedAt": "2026-08-16T19:33:21.572Z"
 }
