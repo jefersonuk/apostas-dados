@@ -4652,8 +4652,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1840.26,
-      "updatedAt": "2026-08-15T21:50:24.244Z"
+      "value": 1740.26,
+      "updatedAt": "2026-08-16T18:51:55.344Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 500,
+      "value": 600,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T18:50:30.339Z"
+      "updatedAt": "2026-08-16T18:51:55.346Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8969,8 +8969,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T18:50:30.334Z"
+    },
+    {
+      "id": "msw5vt5br1tin",
+      "kind": "valor",
+      "event": "HC Osasco – Itatiba Esporte Clube (mais de 52.5 total)",
+      "houseA": "Pinnacle",
+      "oddA": 2.47,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T16:00",
+      "total": 100,
+      "lucroA": 147.00000000000003,
+      "lucroRed": -100,
+      "lucro": 147.00000000000003,
+      "roi": 147.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T18:51:55.344Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T18:50:30.339Z"
+  "updatedAt": "2026-08-16T18:51:55.346Z"
 }
