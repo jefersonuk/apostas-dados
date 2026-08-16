@@ -4622,9 +4622,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 132.38,
+      "value": 152.38,
       "currency": "USD",
-      "updatedAt": "2026-08-16T19:24:15.190Z"
+      "updatedAt": "2026-08-16T19:25:28.028Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1008.8,
+      "value": 904.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T19:24:15.196Z"
+      "updatedAt": "2026-08-16T19:25:28.031Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4913,6 +4913,10 @@
     {
       "id": "msuu790g45kpf",
       "at": "2026-08-15T21:22:55.166Z"
+    },
+    {
+      "id": "msw71dxvzj87c",
+      "at": "2026-08-16T19:25:28.029Z"
     }
   ],
   "surebets": [
@@ -9054,29 +9058,8 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T19:04:27.063Z"
-    },
-    {
-      "id": "msw71dxvzj87c",
-      "kind": "valor",
-      "event": "Argentina – France (1DNB)",
-      "houseA": "Thunderpick.io",
-      "oddA": 4,
-      "stakeA": 104.39999999999999,
-      "curA": "USD",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-16T17:24",
-      "total": 104.39999999999999,
-      "lucroA": 313.2,
-      "lucroRed": -104.39999999999999,
-      "lucro": 313.2,
-      "roi": 300,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-16T19:24:15.191Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T19:24:15.196Z"
+  "updatedAt": "2026-08-16T19:25:28.031Z"
 }
