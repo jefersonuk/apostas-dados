@@ -4589,8 +4589,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 47.27,
-      "currency": "USD"
+      "value": 27.27,
+      "currency": "USD",
+      "updatedAt": "2026-08-16T18:57:32.227Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4755,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 600,
+      "value": 704.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T18:51:55.346Z"
+      "updatedAt": "2026-08-16T18:57:32.236Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8990,8 +8991,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T18:51:55.344Z"
+    },
+    {
+      "id": "msw63133suk1v",
+      "kind": "valor",
+      "event": "CD Atletico Puerto Varas – CD Espanol Osorno (1)",
+      "houseA": "Casobet",
+      "oddA": 2.01,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T21:00",
+      "total": 104.39999999999999,
+      "lucroA": 105.44399999999997,
+      "lucroRed": -104.39999999999999,
+      "lucro": 105.44399999999997,
+      "roi": 100.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T18:57:32.230Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T18:51:55.346Z"
+  "updatedAt": "2026-08-16T18:57:32.236Z"
 }
