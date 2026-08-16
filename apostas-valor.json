@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 754.4,
+      "value": 821.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T22:29:37.196Z"
+      "updatedAt": "2026-08-16T22:46:33.123Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4785,9 +4785,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 610,
+      "value": 302.5,
       "currency": "BRL",
-      "updatedAt": "2026-08-16T22:29:37.196Z"
+      "updatedAt": "2026-08-16T22:46:29.848Z"
     },
     {
       "id": "msv06yohwhdnk",
@@ -9109,8 +9109,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T20:56:45.558Z"
+    },
+    {
+      "id": "mswe9h3phlcxr",
+      "kind": "valor",
+      "event": "Natus Vincere – Team Heretics (daglas -3.5 primeiro mapa)",
+      "houseA": "Esportivabet",
+      "oddA": 2,
+      "stakeA": 67.5,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T12:00",
+      "total": 67.5,
+      "lucroA": 67.5,
+      "lucroRed": -67.5,
+      "lucro": 67.5,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T22:46:29.850Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T22:29:37.196Z"
+  "updatedAt": "2026-08-16T22:46:29.857Z"
 }
