@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1740.26,
-      "updatedAt": "2026-08-16T18:51:55.344Z"
+      "value": 1640.26,
+      "updatedAt": "2026-08-16T19:29:41.703Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 804.4,
+      "value": 904.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T19:26:53.947Z"
+      "updatedAt": "2026-08-16T19:29:41.706Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9041,8 +9041,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T19:04:27.063Z"
+    },
+    {
+      "id": "msw78dvql00cz",
+      "kind": "valor",
+      "event": "Bigua (Points) – Enfoque (Points) (menos 43.5 primeiro set)",
+      "houseA": "Pinnacle",
+      "oddA": 2.2,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T17:55",
+      "total": 100,
+      "lucroA": 120.00000000000001,
+      "lucroRed": -100,
+      "lucro": 120.00000000000001,
+      "roi": 120.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T19:29:41.703Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T19:26:53.947Z"
+  "updatedAt": "2026-08-16T19:29:41.706Z"
 }
