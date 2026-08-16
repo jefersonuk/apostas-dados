@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 854.4,
+      "value": 754.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T20:57:43.463Z"
+      "updatedAt": "2026-08-16T22:29:37.196Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4785,9 +4785,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 370,
+      "value": 610,
       "currency": "BRL",
-      "updatedAt": "2026-08-16T21:56:07.314Z"
+      "updatedAt": "2026-08-16T22:29:37.196Z"
     },
     {
       "id": "msv06yohwhdnk",
@@ -8927,7 +8927,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-16T17:30",
       "total": 100,
       "lucroA": 140,
@@ -8935,9 +8935,10 @@
       "lucro": 140,
       "roi": 140,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-16T21:56:07.314Z"
+      "updatedAt": "2026-08-16T22:29:37.196Z"
     },
     {
       "id": "msw5sebzvjs18",
@@ -9111,5 +9112,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T21:56:07.314Z"
+  "updatedAt": "2026-08-16T22:29:37.196Z"
 }
