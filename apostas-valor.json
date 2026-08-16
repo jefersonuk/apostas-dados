@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1907.26,
-      "updatedAt": "2026-08-16T23:07:53.072Z"
+      "value": 1807.26,
+      "updatedAt": "2026-08-16T23:09:49.343Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1026.3,
+      "value": 1126.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T23:07:53.077Z"
+      "updatedAt": "2026-08-16T23:09:49.348Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9194,8 +9194,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T22:53:35.042Z"
+    },
+    {
+      "id": "mswf3gym0i4if",
+      "kind": "valor",
+      "event": "CA Stockolmo – Club Trouville (h2 -1 primeira metade)",
+      "houseA": "Pinnacle",
+      "oddA": 2.31,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T20:15",
+      "total": 100,
+      "lucroA": 131,
+      "lucroRed": -100,
+      "lucro": 131,
+      "roi": 131,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T23:09:49.343Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T23:07:53.077Z"
+  "updatedAt": "2026-08-16T23:09:49.348Z"
 }
