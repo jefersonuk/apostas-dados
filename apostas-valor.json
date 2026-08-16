@@ -4771,7 +4771,7 @@
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
       "value": 96.46,
-      "updatedAt": "2026-08-15T23:34:03.211Z",
+      "updatedAt": "2026-08-16T00:06:16.623Z",
       "currency": "USD"
     },
     {
@@ -8852,20 +8852,20 @@
       "event": "Tottenham vs Hoffenheim (1 não)",
       "houseA": "Kalshi",
       "oddA": 2.39,
-      "stakeA": 104.39999999999999,
+      "stakeA": 104.4,
       "curA": "USD",
       "prob": null,
       "winner": null,
-      "date": "2026-08-15T09:00",
-      "total": 104.39999999999999,
+      "date": "2026-08-16T09:00",
+      "total": 104.4,
       "lucroA": 145.116,
-      "lucroRed": -104.39999999999999,
+      "lucroRed": -104.4,
       "lucro": 145.116,
       "roi": 139,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-15T23:34:03.213Z"
+      "updatedAt": "2026-08-16T00:06:16.624Z"
     },
     {
       "id": "msv0nbsu5ft9n",
@@ -8890,5 +8890,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T00:04:28.820Z"
+  "updatedAt": "2026-08-16T00:06:16.624Z"
 }
