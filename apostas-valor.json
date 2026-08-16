@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 200,
+      "value": 300,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T18:06:22.224Z"
+      "updatedAt": "2026-08-16T18:26:44.439Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,9 +4784,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 470,
+      "value": 370,
       "currency": "BRL",
-      "updatedAt": "2026-08-16T11:05:53.397Z"
+      "updatedAt": "2026-08-16T18:26:44.438Z"
     },
     {
       "id": "msv06yohwhdnk",
@@ -8906,8 +8906,29 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-08-16T11:07:15.945Z"
+    },
+    {
+      "id": "msw4zfbpf7xwr",
+      "kind": "valor",
+      "event": "(BR)\tFC Cajamarca – Universitário de Deportes",
+      "houseA": "Esportivabet",
+      "oddA": 2.4,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T17:30",
+      "total": 100,
+      "lucroA": 140,
+      "lucroRed": -100,
+      "lucro": 140,
+      "roi": 140,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T18:26:44.438Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T18:06:22.224Z"
+  "updatedAt": "2026-08-16T18:26:44.439Z"
 }
