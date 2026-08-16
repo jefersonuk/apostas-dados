@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1192,
+      "value": 1092,
       "currency": "BRL",
-      "updatedAt": "2026-08-16T22:49:40.213Z"
+      "updatedAt": "2026-08-16T22:51:27.099Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 921.9,
+      "value": 1021.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T22:49:40.216Z"
+      "updatedAt": "2026-08-16T22:51:27.104Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9151,8 +9151,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T22:49:40.213Z"
+    },
+    {
+      "id": "mswefugoqhgpl",
+      "kind": "valor",
+      "event": "Iraklis Thessaloniki – Volos NFC (mais de 9.5 escanteios)",
+      "houseA": "Ivibet",
+      "oddA": 2.56,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T15:00",
+      "total": 100,
+      "lucroA": 156,
+      "lucroRed": -100,
+      "lucro": 156,
+      "roi": 156,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T22:51:27.099Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T22:49:40.216Z"
+  "updatedAt": "2026-08-16T22:51:27.104Z"
 }
