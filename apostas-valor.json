@@ -4723,9 +4723,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 171.86,
+      "value": 151.86,
       "currency": "USD",
-      "updatedAt": "2026-08-15T22:02:37.077Z"
+      "updatedAt": "2026-08-16T22:53:35.042Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1021.9,
+      "value": 1126.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T22:51:27.104Z"
+      "updatedAt": "2026-08-16T22:53:35.047Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9172,8 +9172,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T22:51:27.099Z"
+    },
+    {
+      "id": "msweil6pb0pif",
+      "kind": "valor",
+      "event": "Club de Fútbol América – Atlético de San Luis (menos 25.5 chutes_)",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.56,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T20:00",
+      "total": 104.39999999999999,
+      "lucroA": 162.864,
+      "lucroRed": -104.39999999999999,
+      "lucro": 162.864,
+      "roi": 156,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T22:53:35.042Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T22:51:27.104Z"
+  "updatedAt": "2026-08-16T22:53:35.047Z"
 }
