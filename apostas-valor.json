@@ -4555,9 +4555,9 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 1037.68,
+      "value": 937.68,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T21:28:19.719Z"
+      "updatedAt": "2026-08-16T19:02:35.033Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 704.4,
+      "value": 804.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-16T18:57:32.236Z"
+      "updatedAt": "2026-08-16T19:02:35.054Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9012,8 +9012,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T18:57:32.230Z"
+    },
+    {
+      "id": "msw69iq016d72",
+      "kind": "valor",
+      "event": "Nacional Fast Clube AM – Atletico Cliper Clube AM (H2 -4)",
+      "houseA": "Betsson",
+      "oddA": 2.55,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-16T16:30",
+      "total": 100,
+      "lucroA": 154.99999999999997,
+      "lucroRed": -100,
+      "lucro": 154.99999999999997,
+      "roi": 154.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-16T19:02:35.035Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-16T18:57:32.236Z"
+  "updatedAt": "2026-08-16T19:02:35.054Z"
 }
