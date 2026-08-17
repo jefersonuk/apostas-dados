@@ -4787,6 +4787,13 @@
       "value": 462.5,
       "currency": "BRL",
       "updatedAt": "2026-08-17T14:03:53.412Z"
+    },
+    {
+      "id": "msxe0rrbq4jmy",
+      "name": "Bandbet",
+      "value": 45,
+      "currency": "BRL",
+      "updatedAt": "2026-08-17T15:27:29.928Z"
     }
   ],
   "aportes": [],
@@ -9396,5 +9403,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T15:18:16.934Z"
+  "updatedAt": "2026-08-17T15:27:29.929Z"
 }
