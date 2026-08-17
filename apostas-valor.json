@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1092,
+      "value": 992,
       "currency": "BRL",
-      "updatedAt": "2026-08-16T22:51:27.099Z"
+      "updatedAt": "2026-08-17T11:15:18.718Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 567.5,
+      "value": 667.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T10:57:48.515Z"
+      "updatedAt": "2026-08-17T11:15:18.719Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9221,8 +9221,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-16T23:09:49.343Z"
+    },
+    {
+      "id": "msx50gfx258rn",
+      "kind": "valor",
+      "event": "Lucas Renard – Kristian Tumbas Kajgo (2 primeiro set)",
+      "houseA": "Ivibet",
+      "oddA": 3.9,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T09:50",
+      "total": 100,
+      "lucroA": 290,
+      "lucroRed": -100,
+      "lucro": 290,
+      "roi": 290,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T11:15:18.718Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T10:57:48.515Z"
+  "updatedAt": "2026-08-17T11:15:18.719Z"
 }
