@@ -4589,9 +4589,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 27.27,
+      "value": 67.47,
       "currency": "USD",
-      "updatedAt": "2026-08-16T18:57:32.227Z"
+      "updatedAt": "2026-08-17T04:49:26.136Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 871.9,
+      "value": 767.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T04:48:41.344Z"
+      "updatedAt": "2026-08-17T04:49:26.137Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9015,7 +9015,7 @@
       "stakeA": 104.39999999999999,
       "curA": "USD",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-16T21:00",
       "total": 104.39999999999999,
       "lucroA": 105.44399999999997,
@@ -9023,9 +9023,10 @@
       "lucro": 105.44399999999997,
       "roi": 100.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-16T18:57:32.230Z"
+      "updatedAt": "2026-08-17T04:49:26.136Z"
     },
     {
       "id": "msw6bx6cc3mzs",
@@ -9221,5 +9222,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T04:48:41.344Z"
+  "updatedAt": "2026-08-17T04:49:26.137Z"
 }
