@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 300,
-      "updatedAt": "2026-08-17T20:19:08.162Z"
+      "value": 400,
+      "updatedAt": "2026-08-17T22:16:00.204Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2129.89,
+      "value": 2029.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T22:14:00.577Z"
+      "updatedAt": "2026-08-17T22:16:00.207Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4948,6 +4948,10 @@
     {
       "id": "msxbwmnq87sf1",
       "at": "2026-08-17T20:05:10.532Z"
+    },
+    {
+      "id": "mswaccmtq990g",
+      "at": "2026-08-17T22:16:00.206Z"
     }
   ],
   "surebets": [
@@ -9291,29 +9295,6 @@
       "sport": "Beisebol"
     },
     {
-      "id": "mswaccmtq990g",
-      "kind": "valor",
-      "event": "CD Choloma – Marathon (H2 -1)",
-      "houseA": "Pinnacle",
-      "oddA": 2.14,
-      "stakeA": 100,
-      "curA": "BRL",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-17T18:00",
-      "total": 100,
-      "lucroA": 114.00000000000001,
-      "lucroRed": -100,
-      "lucro": 114.00000000000001,
-      "roi": 114.00000000000001,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
-      "market": "Handicap Asiático",
-      "sport": "Futebol"
-    },
-    {
       "id": "mswe9h3phlcxr",
       "kind": "valor",
       "event": "Natus Vincere – Team Heretics (daglas -3.5 primeiro mapa)",
@@ -10083,5 +10064,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T22:14:00.577Z"
+  "updatedAt": "2026-08-17T22:16:00.207Z"
 }
