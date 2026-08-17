@@ -4554,9 +4554,9 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 259.28,
+      "value": 331.63,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T20:02:04.868Z"
+      "updatedAt": "2026-08-17T20:05:10.532Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1698.24,
+      "value": 1625.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T20:03:47.145Z"
+      "updatedAt": "2026-08-17T20:05:10.542Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4944,6 +4944,10 @@
     {
       "id": "msxi2du7ue5o5",
       "at": "2026-08-17T19:18:30.213Z"
+    },
+    {
+      "id": "msxbwmnq87sf1",
+      "at": "2026-08-17T20:05:10.532Z"
     }
   ],
   "surebets": [
@@ -9377,27 +9381,6 @@
       "updatedAt": "2026-08-17T14:03:53.412Z"
     },
     {
-      "id": "msxbwmnq87sf1",
-      "kind": "valor",
-      "event": "Benfica vence anula aposta",
-      "houseA": "Betsson",
-      "oddA": 3.5,
-      "stakeA": 72.35,
-      "curA": "BRL",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-17T16:15",
-      "total": 72.35,
-      "lucroA": 180.875,
-      "lucroRed": -72.35,
-      "lucro": 180.875,
-      "roi": 250,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-17T14:28:17.463Z"
-    },
-    {
       "id": "msxdox2awuhv3",
       "kind": "valor",
       "event": "DN SOOPers Challengers – NSRedForce Challengers (mapa 1 mais de 31 min)",
@@ -9741,5 +9724,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T20:03:47.145Z"
+  "updatedAt": "2026-08-17T20:05:10.542Z"
 }
