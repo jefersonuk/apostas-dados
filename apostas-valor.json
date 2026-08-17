@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 992,
+      "value": 892,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T11:15:18.718Z"
+      "updatedAt": "2026-08-17T13:21:44.577Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 667.5,
+      "value": 767.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T12:53:33.092Z"
+      "updatedAt": "2026-08-17T13:21:44.579Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9266,8 +9266,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T12:24:58.846Z"
+    },
+    {
+      "id": "msx9j1q73c7ok",
+      "kind": "valor",
+      "event": "Sportivo begrano x defensores belgrano (1 abaixo de 2)",
+      "houseA": "Ivibet",
+      "oddA": 1.95,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T16:00",
+      "total": 100,
+      "lucroA": 95,
+      "lucroRed": -100,
+      "lucro": 95,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T13:21:44.577Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T12:53:33.092Z"
+  "updatedAt": "2026-08-17T13:21:44.579Z"
 }
