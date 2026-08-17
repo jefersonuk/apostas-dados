@@ -4702,8 +4702,8 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 500,
-      "updatedAt": "2026-08-17T12:39:31.973Z"
+      "value": 400,
+      "updatedAt": "2026-08-17T20:13:06.314Z"
     },
     {
       "id": "mslrzo1vux1bp",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1625.89,
+      "value": 1725.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T20:05:10.542Z"
+      "updatedAt": "2026-08-17T20:13:06.323Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9721,8 +9721,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T20:02:04.869Z"
+    },
+    {
+      "id": "msxo82a0frnq5",
+      "kind": "valor",
+      "event": "FC Midtjylland – HNK Rijeka (2 menos 2.5 escanteios)",
+      "houseA": "Sportybet",
+      "oddA": 2.75,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-20T14:00",
+      "total": 100,
+      "lucroA": 175,
+      "lucroRed": -100,
+      "lucro": 175,
+      "roi": 175,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T20:13:06.314Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T20:05:10.542Z"
+  "updatedAt": "2026-08-17T20:13:06.323Z"
 }
