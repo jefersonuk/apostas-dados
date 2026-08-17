@@ -4700,7 +4700,8 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 963.75
+      "value": 500,
+      "updatedAt": "2026-08-17T12:39:31.973Z"
     },
     {
       "id": "mslrzo1vux1bp",
@@ -9264,5 +9265,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T12:37:20.184Z"
+  "updatedAt": "2026-08-17T12:39:32.001Z"
 }
