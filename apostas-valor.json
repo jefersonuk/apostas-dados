@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 692,
+      "value": 592,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T15:28:51.391Z"
+      "updatedAt": "2026-08-17T15:50:07.610Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1252.35,
+      "value": 1352.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T15:48:31.906Z"
+      "updatedAt": "2026-08-17T15:50:07.611Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9443,8 +9443,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T15:48:31.901Z"
+    },
+    {
+      "id": "msxetvcpfdyzn",
+      "kind": "valor",
+      "event": "Spartak Varna – Septemvri Sofia (mais de 8.5 esc)",
+      "houseA": "Ivibet",
+      "oddA": 1.85,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T13:00",
+      "total": 100,
+      "lucroA": 85.00000000000001,
+      "lucroRed": -100,
+      "lucro": 85.00000000000001,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T15:50:07.610Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T15:48:31.906Z"
+  "updatedAt": "2026-08-17T15:50:07.611Z"
 }
