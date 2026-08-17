@@ -4651,8 +4651,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1807.26,
-      "updatedAt": "2026-08-17T12:29:16.384Z"
+      "value": 1707.26,
+      "updatedAt": "2026-08-17T13:25:54.028Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 767.5,
+      "value": 867.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T13:21:44.579Z"
+      "updatedAt": "2026-08-17T13:25:54.028Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9287,8 +9287,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T13:21:44.577Z"
+    },
+    {
+      "id": "msx9oe7g58s7r",
+      "kind": "valor",
+      "event": "Multipla - HKryazan (H0) + Thorlakur (menos 5 gols)",
+      "houseA": "Pinnacle",
+      "oddA": 3.795,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T17:00",
+      "total": 100,
+      "lucroA": 279.5,
+      "lucroRed": -100,
+      "lucro": 279.5,
+      "roi": 279.5,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T13:25:54.028Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T13:21:44.579Z"
+  "updatedAt": "2026-08-17T13:25:54.028Z"
 }
