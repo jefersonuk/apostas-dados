@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 536,
+      "value": 511,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T23:53:20.975Z"
+      "updatedAt": "2026-08-17T23:55:27.968Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1949.89,
+      "value": 1974.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T23:53:20.986Z"
+      "updatedAt": "2026-08-17T23:55:27.975Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10109,8 +10109,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T23:53:20.978Z"
+    },
+    {
+      "id": "msxw60ri4es9o",
+      "kind": "valor",
+      "event": "Universidad Tecnica de Cajamarca – Club Comerciantes Unidos (mais de 7.5 escanteios)",
+      "houseA": "Ivibet",
+      "oddA": 6.4,
+      "stakeA": 25,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-22T15:15",
+      "total": 25,
+      "lucroA": 135,
+      "lucroRed": -25,
+      "lucro": 135,
+      "roi": 540,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T23:55:27.969Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T23:53:20.986Z"
+  "updatedAt": "2026-08-17T23:55:27.975Z"
 }
