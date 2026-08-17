@@ -4562,8 +4562,8 @@
     {
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
-      "value": 490,
-      "updatedAt": "2026-08-17T10:57:48.514Z"
+      "value": 390,
+      "updatedAt": "2026-08-17T13:29:24.882Z"
     },
     {
       "id": "mrvd6n3x6xs48",
@@ -4757,10 +4757,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 867.5,
+      "value": 967.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T13:25:54.028Z"
+      "updatedAt": "2026-08-17T13:29:24.883Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9310,8 +9310,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T13:25:54.028Z"
+    },
+    {
+      "id": "msx9swwixjt6c",
+      "kind": "valor",
+      "event": "Nykoebing FC – Naestved BK (2)",
+      "houseA": "Meridian",
+      "oddA": 2.9,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T14:00",
+      "total": 100,
+      "lucroA": 190,
+      "lucroRed": -100,
+      "lucro": 190,
+      "roi": 190,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T13:29:24.882Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T13:28:46.274Z"
+  "updatedAt": "2026-08-17T13:29:24.883Z"
 }
