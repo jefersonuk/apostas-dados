@@ -4652,8 +4652,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 500,
-      "updatedAt": "2026-08-17T13:52:21.600Z"
+      "value": 400,
+      "updatedAt": "2026-08-17T18:14:50.134Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4757,10 +4757,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1555.61,
+      "value": 1655.61,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T17:56:28.754Z"
+      "updatedAt": "2026-08-17T18:14:50.140Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9586,8 +9586,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T17:51:52.596Z"
+    },
+    {
+      "id": "msxjzytyu4h15",
+      "kind": "valor",
+      "event": "Tristan Boyer (Games) – James Watt (Games) (h1 -4.5 games)",
+      "houseA": "Pinnacle",
+      "oddA": 2.64,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T15:15",
+      "total": 100,
+      "lucroA": 164,
+      "lucroRed": -100,
+      "lucro": 164,
+      "roi": 164,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T18:14:50.135Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T18:00:30.762Z"
+  "updatedAt": "2026-08-17T18:14:50.140Z"
 }
