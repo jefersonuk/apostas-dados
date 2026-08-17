@@ -4581,8 +4581,8 @@
     {
       "id": "ms2ghozrogav9",
       "name": "Metamask",
-      "value": 1088.45,
-      "updatedAt": "2026-08-17T12:49:47.490Z"
+      "value": 1526.36,
+      "updatedAt": "2026-08-17T17:15:05.279Z"
     },
     {
       "id": "ms573t068wk2v",
@@ -4748,9 +4748,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 188.84,
+      "value": 100,
       "currency": "USD",
-      "updatedAt": "2026-08-14T12:17:40.762Z"
+      "updatedAt": "2026-08-17T17:14:55.399Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -9488,5 +9488,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T17:05:50.236Z"
+  "updatedAt": "2026-08-17T17:15:05.279Z"
 }
