@@ -4651,8 +4651,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1807.26,
-      "updatedAt": "2026-08-16T23:09:49.343Z"
+      "value": 1707.26,
+      "updatedAt": "2026-08-17T12:24:58.846Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4754,10 +4754,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 667.5,
+      "value": 767.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T11:15:18.719Z"
+      "updatedAt": "2026-08-17T12:24:58.846Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9240,8 +9240,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T11:15:18.718Z"
+    },
+    {
+      "id": "msx7i1ulkd76m",
+      "kind": "valor",
+      "event": "Spisske Podhradie x Ruzomberok (H1 +3)",
+      "houseA": "Pinnacle",
+      "oddA": 2.16,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T12:00",
+      "total": 100,
+      "lucroA": 116.00000000000001,
+      "lucroRed": -100,
+      "lucro": 116.00000000000001,
+      "roi": 116.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T12:24:58.846Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T12:24:00.807Z"
+  "updatedAt": "2026-08-17T12:24:58.846Z"
 }
