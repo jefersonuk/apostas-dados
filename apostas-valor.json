@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2025.89,
+      "value": 2129.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T22:07:56.862Z"
+      "updatedAt": "2026-08-17T22:14:00.577Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4773,8 +4773,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 80,
-      "updatedAt": "2026-08-17T17:30:41.562Z",
+      "value": 60,
+      "updatedAt": "2026-08-17T22:14:00.565Z",
       "currency": "USD"
     },
     {
@@ -10057,8 +10057,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T22:07:56.860Z"
+    },
+    {
+      "id": "msxsjjoztj5e7",
+      "kind": "valor",
+      "event": "Andreeva / Cirstea vs Errani / Fernandez (1 não)",
+      "houseA": "Kalshi",
+      "oddA": 2.28,
+      "stakeA": 104,
+      "curA": "USD",
+      "sport": "Tennis",
+      "market": "1X2 / Resultado",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T19:30",
+      "total": 104,
+      "lucroA": 133.11999999999998,
+      "lucroRed": -104,
+      "lucro": 133.11999999999998,
+      "roi": 127.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T22:14:00.566Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T22:07:56.862Z"
+  "updatedAt": "2026-08-17T22:14:00.577Z"
 }
