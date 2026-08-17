@@ -4799,12 +4799,6 @@
       "updatedAt": "2026-08-17T15:27:29.928Z"
     },
     {
-      "id": "msxi2du7ue5o5",
-      "name": "Predictfun",
-      "value": 0,
-      "updatedAt": "2026-08-17T19:18:19.777Z"
-    },
-    {
       "id": "msxj4vdccelb7",
       "name": "Apostaganha",
       "value": 74.26,
@@ -4946,6 +4940,10 @@
     {
       "id": "msv06yohwhdnk",
       "at": "2026-08-17T12:49:14.213Z"
+    },
+    {
+      "id": "msxi2du7ue5o5",
+      "at": "2026-08-17T19:18:30.213Z"
     }
   ],
   "surebets": [
@@ -9654,5 +9652,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T19:18:19.777Z"
+  "updatedAt": "2026-08-17T19:18:30.214Z"
 }
