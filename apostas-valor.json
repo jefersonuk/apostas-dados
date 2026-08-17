@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1452.35,
+      "value": 1526.27,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T17:05:50.235Z"
+      "updatedAt": "2026-08-17T17:20:43.667Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4794,6 +4794,12 @@
       "value": 45,
       "currency": "BRL",
       "updatedAt": "2026-08-17T15:27:29.928Z"
+    },
+    {
+      "id": "msxi2du7ue5o5",
+      "name": "Predictfun",
+      "value": -73.92,
+      "updatedAt": "2026-08-17T17:20:43.663Z"
     }
   ],
   "aportes": [],
@@ -9485,8 +9491,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T17:05:50.230Z"
+    },
+    {
+      "id": "msxi2du7z6a5i",
+      "kind": "valor",
+      "event": "Unionistas de Salamanca CF – AD Alcorcon (mái 2.5 gols)",
+      "houseA": "Predictfun",
+      "oddA": 2.84,
+      "stakeA": 73.9186,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T14:00",
+      "total": 73.9186,
+      "lucroA": 136.010224,
+      "lucroRed": -73.9186,
+      "lucro": 136.010224,
+      "roi": 184,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T17:20:43.663Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T17:15:05.279Z"
+  "updatedAt": "2026-08-17T17:20:43.667Z"
 }
