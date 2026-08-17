@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 792,
+      "value": 692,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T15:18:16.930Z"
+      "updatedAt": "2026-08-17T15:28:51.391Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1119.85,
+      "value": 1219.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T15:18:16.934Z"
+      "updatedAt": "2026-08-17T15:28:51.394Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9400,8 +9400,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T15:18:16.932Z"
+    },
+    {
+      "id": "msxe2im7s0jz2",
+      "kind": "valor",
+      "event": "Al-Difaa Al-Jawi – Zakho (h1 -5.5)",
+      "houseA": "Ivibet",
+      "oddA": 2.56,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T13:00",
+      "total": 100,
+      "lucroA": 156,
+      "lucroRed": -100,
+      "lucro": 156,
+      "roi": 156,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T15:28:51.392Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T15:27:29.929Z"
+  "updatedAt": "2026-08-17T15:28:51.394Z"
 }
