@@ -4554,9 +4554,9 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 349.35,
+      "value": 259.28,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T19:59:34.869Z"
+      "updatedAt": "2026-08-17T20:02:04.868Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1733.91,
+      "value": 1823.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T19:59:34.878Z"
+      "updatedAt": "2026-08-17T20:02:04.875Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9715,8 +9715,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T19:59:34.871Z"
+    },
+    {
+      "id": "msxntvwetv38o",
+      "kind": "valor",
+      "event": "Lehetka x Fills (mais de 15.5 aces)",
+      "houseA": "Betsson",
+      "oddA": 2.5,
+      "stakeA": 90.07,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T18:25",
+      "total": 90.07,
+      "lucroA": 135.105,
+      "lucroRed": -90.07,
+      "lucro": 135.105,
+      "roi": 150,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T20:02:04.869Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T19:59:34.878Z"
+  "updatedAt": "2026-08-17T20:02:04.875Z"
 }
