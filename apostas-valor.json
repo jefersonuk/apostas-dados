@@ -4553,9 +4553,9 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 500,
+      "value": 427.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T12:37:20.148Z"
+      "updatedAt": "2026-08-17T14:28:17.463Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1047.5,
+      "value": 1119.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T14:03:53.412Z"
+      "updatedAt": "2026-08-17T14:28:17.464Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9350,8 +9350,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T14:03:53.412Z"
+    },
+    {
+      "id": "msxbwmnq87sf1",
+      "kind": "valor",
+      "event": "Benfica vence anula aposta",
+      "houseA": "Betsson",
+      "oddA": 3.5,
+      "stakeA": 72.35,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T16:15",
+      "total": 72.35,
+      "lucroA": 180.875,
+      "lucroRed": -72.35,
+      "lucro": 180.875,
+      "roi": 250,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T14:28:17.463Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T14:03:53.412Z"
+  "updatedAt": "2026-08-17T14:28:17.464Z"
 }
