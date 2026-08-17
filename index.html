@@ -360,20 +360,6 @@
     </div>
   </div>
 
-  <!-- LIST -->
-  <div class="card">
-    <div class="card-title"><span>Apostas</span><button class="btn small" id="copyBtn">Copiar p/ planilha</button></div>
-    <div class="search-box"><input type="text" id="betSearch" placeholder="Buscar por evento, casa ou mercado..."></div>
-    <div class="filter-row">
-      <div class="filter-btn active" data-filter="all">Todas</div>
-      <div class="filter-btn" data-filter="pendente">Ativas</div>
-      <div class="filter-btn" data-filter="green">Green</div>
-      <div class="filter-btn" data-filter="red">Red</div>
-    </div>
-    <div class="filter-row" id="houseFilterRow" style="display:none;"></div>
-    <div id="betsList"></div>
-  </div>
-
   <!-- SYNC -->
   <div class="card">
     <div class="card-title">Sincronização na nuvem (GitHub)</div>
@@ -612,7 +598,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260813-1900';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260817-1800';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -650,7 +636,6 @@
   function saveState(){ try{ state.updatedAt=new Date().toISOString(); localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); storageAvailable=true; }catch(e){ storageAvailable=false; } renderAutosave(); }
 
   let state=loadState();
-  let currentFilter='all';
 
   function toast(m){ const t=$('toast'); t.textContent=m; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1600); }
 
@@ -689,10 +674,9 @@
     const ap=(state.aportes||[]).reduce((s,a)=>s+a.value,0);
     return state.cfg.bankroll + ap;
   }
-  // banca atual = base + lucro realizado das apostas
+  // banca atual = base + aportes (as apostas antigas foram descontinuadas)
   function currentBankroll(){
-    const profit=state.bets.filter(b=>b.status==='resolvida').reduce((s,b)=>s+(betProfit(b)||0),0);
-    return baseCapital() + profit;
+    return baseCapital();
   }
   // fator de crescimento: mede o crescimento por apostas sobre a base (aportes elevam base e faixa juntos)
   function growthFactor(){
@@ -766,7 +750,6 @@
 
 
 
-  let searchTerm='';
   let openDetail=null;
   let editingId=null;
   let houseFilter='all';
@@ -779,193 +762,6 @@
     if(!m) return s.slice(0,16);
     return `${m[3]}/${m[2]} ${m[4]}:${m[5]||'00'}`;
   }
-
-  function allHouses(){
-    const set=new Set();
-    state.bets.forEach(b=>{ if(b.house) set.add(b.house); });
-    return [...set].sort();
-  }
-
-  function renderHouseFilter(){
-    const houses=allHouses();
-    const row=$('houseFilterRow');
-    if(houses.length<2){ row.style.display='none'; return; }
-    row.style.display='flex';
-    row.innerHTML=`<span class="house-filter ${houseFilter==='all'?'active':''}" data-house="all">Todas</span>`+
-      houses.map(h=>`<span class="house-filter ${houseFilter===h?'active':''}" data-house="${esc(h)}">${esc(h)}</span>`).join('');
-    row.querySelectorAll('.house-filter').forEach(el=>el.addEventListener('click',()=>{
-      houseFilter=el.dataset.house;
-      renderBets();
-    }));
-  }
-
-  function betRow(b){
-    const profit=betProfit(b);
-    let dot,val,valClass;
-    if(b.status!=='resolvida'){ dot='pendente'; val='—'; valClass='pend'; }
-    else if(b.result==='green'){ dot='green'; val=fmtSign(profit); valClass='pos'; }
-    else if(b.result==='red'){ dot='red'; val=fmtSign(profit); valClass='neg'; }
-    else { dot='void'; val='anul.'; valClass='pend'; }
-    const dateStr=fmtDate(b.date);
-    const sel=(b.selection)?esc(b.selection):'';
-    const houseBadge=b.house?`<span class="house-tag">${esc(b.house)}</span>`:'';
-    const sub=`${houseBadge}${sel?sel+' · ':''}@${b.odd.toFixed(2)} · ${fmt(b.stake)}`;
-    const quick = b.status==='pendente'
-      ? `<button class="qbtn g" data-res="${b.id}:green" title="Green">✓</button>
-         <button class="qbtn r" data-res="${b.id}:red" title="Red">✗</button>`
-      : '';
-    const isOpen = openDetail===b.id;
-    const isEditing = editingId===b.id;
-    const prob=(typeof b.prob==='number')?b.prob:null;
-
-    let detailContent='';
-    if(isEditing){
-      detailContent=`<div class="edit-form" id="editForm_${b.id}">
-        <label>Evento</label>
-        <input type="text" class="ed" data-f="event" value="${esc(b.event)}">
-        <label>Seleção (mercado)</label>
-        <input type="text" class="ed" data-f="selection" value="${esc(b.selection||'')}">
-        <div class="grid2">
-          <div><label>Casa de aposta</label><input type="text" class="ed" data-f="house" value="${esc(b.house||'')}"></div>
-          <div><label>Data do evento</label><input type="datetime-local" class="ed" data-f="date" value="${(b.date||'').slice(0,16)}"></div>
-        </div>
-        <div class="grid2">
-          <div><label>Odd</label><input type="number" class="ed" data-f="odd" step="0.01" value="${b.odd}"></div>
-          <div><label>Stake</label><input type="number" class="ed" data-f="stake" step="0.01" value="${b.stake}"></div>
-        </div>
-        <div class="grid2">
-          <div><label>Prob %</label><input type="number" class="ed" data-f="prob" step="0.1" value="${prob!==null?prob:''}"></div>
-          <div><label>Superval %</label><input type="number" class="ed" data-f="pot" step="0.01" value="${(typeof b.pot==='number')?b.pot:''}"></div>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:8px;">
-          <button class="btn small primary" data-save="${b.id}">Salvar</button>
-          <button class="btn small" data-cancel="${b.id}">Cancelar</button>
-        </div>
-      </div>`;
-    } else {
-      detailContent=`
-        ${prob!==null?`Prob ${prob}%`:''}${(typeof b.pot==='number')?` · Superval ${b.pot}%`:''} · Retorno ${fmt(b.stake*b.odd)} (lucro ${fmt(b.stake*(b.odd-1))})<br>
-        <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;">
-          <button class="btn small" data-edit="${b.id}">Editar</button>
-          ${b.status==='pendente'?`<button class="btn small" data-res="${b.id}:void">Anular</button>`:''}
-          ${b.status==='resolvida'?`<button class="btn small" data-reopen="${b.id}">Reabrir</button>`:''}
-          <button class="btn small" data-del="${b.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
-        </div>`;
-    }
-
-    return `<div class="bet-row ${b.status==='resolvida'?'resolved':''}">
-      <span class="bet-dot ${dot}"></span>
-      <span class="bet-date">${dateStr}</span>
-      <div class="bet-main" data-toggle="${b.id}">
-        <div class="bet-event">${esc(b.event)}</div>
-        <div class="bet-sub">${sub}</div>
-      </div>
-      <span class="bet-val ${valClass}">${val}</span>
-      ${quick}
-    </div>
-    <div class="bet-detail ${isOpen?'show':''}" data-detail="${b.id}">${detailContent}</div>`;
-  }
-
-  function renderBets(){
-    let bets=[...state.bets];
-    // filtro por busca
-    if(searchTerm){
-      const t=searchTerm.toLowerCase();
-      bets=bets.filter(b=>(b.event||'').toLowerCase().includes(t)||(b.house||'').toLowerCase().includes(t)||(b.selection||'').toLowerCase().includes(t));
-    }
-    // filtro por status
-    if(currentFilter==='pendente') bets=bets.filter(b=>b.status==='pendente');
-    else if(currentFilter==='green') bets=bets.filter(b=>b.result==='green');
-    else if(currentFilter==='red') bets=bets.filter(b=>b.result==='red');
-    // filtro por casa
-    if(houseFilter!=='all') bets=bets.filter(b=>b.house===houseFilter);
-
-    renderHouseFilter();
-
-    if(bets.length===0){ $('betsList').innerHTML='<div class="empty">Nenhuma aposta neste filtro.</div>'; return; }
-
-    // ativas: cronológica ascendente (próximo jogo no topo)
-    const sortAsc=(a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id);
-    // resolvidas: mais recente primeiro
-    const sortDesc=(a,b)=>(b.date||'').localeCompare(a.date||'')||b.id.localeCompare(a.id);
-    const pend=bets.filter(b=>b.status==='pendente').sort(sortAsc);
-    const res=bets.filter(b=>b.status!=='pendente').sort(sortDesc);
-
-    let html='';
-    if(pend.length && currentFilter==='all'){ html+=`<div class="section-label">⏳ Ativas (${pend.length})</div>`; }
-    html+=pend.map(betRow).join('');
-    if(res.length && currentFilter==='all'){
-      html+=`<div class="resolved-toggle" id="resolvedToggle"><span class="arrow ${showResolved?'open':''}">▶</span> Resolvidas (${res.length}) — ${showResolved?'recolher':'expandir'}</div>`;
-      if(showResolved) html+=res.map(betRow).join('');
-    } else {
-      html+=res.map(betRow).join('');
-    }
-    $('betsList').innerHTML=html;
-
-    // wiring
-    const togEl=$('betsList').querySelector('#resolvedToggle');
-    if(togEl) togEl.addEventListener('click',()=>{ showResolved=!showResolved; renderBets(); });
-    $('betsList').querySelectorAll('[data-toggle]').forEach(el=>el.addEventListener('click',()=>{
-      const id=el.dataset.toggle;
-      if(editingId===id) return;
-      openDetail = openDetail===id?null:id;
-      renderBets();
-    }));
-    $('betsList').querySelectorAll('[data-res]').forEach(btn=>btn.addEventListener('click',e=>{
-      e.stopPropagation(); const [id,r]=btn.dataset.res.split(':'); const b=state.bets.find(x=>x.id===id);
-      if(b){ b.status='resolvida'; b.result=r; touch(b); openDetail=null; editingId=null; saveState(); renderAll(); }
-    }));
-    $('betsList').querySelectorAll('[data-reopen]').forEach(btn=>btn.addEventListener('click',e=>{
-      e.stopPropagation(); const b=state.bets.find(x=>x.id===btn.dataset.reopen);
-      if(b){ b.status='pendente'; b.result=null; touch(b); saveState(); renderAll(); }
-    }));
-    $('betsList').querySelectorAll('[data-del]').forEach(btn=>btn.addEventListener('click',e=>{
-      e.stopPropagation(); const b=state.bets.find(x=>x.id===btn.dataset.del);
-      if(b&&confirm(`Excluir "${b.event}"?`)){ marcarExcluido(btn.dataset.del); state.bets=state.bets.filter(x=>x.id!==btn.dataset.del); openDetail=null; editingId=null; saveState(); renderAll(); }
-    }));
-    $('betsList').querySelectorAll('[data-edit]').forEach(btn=>btn.addEventListener('click',e=>{
-      e.stopPropagation(); editingId=btn.dataset.edit; openDetail=btn.dataset.edit; renderBets();
-    }));
-    $('betsList').querySelectorAll('[data-cancel]').forEach(btn=>btn.addEventListener('click',e=>{
-      e.stopPropagation(); editingId=null; renderBets();
-    }));
-    $('betsList').querySelectorAll('[data-save]').forEach(btn=>btn.addEventListener('click',e=>{
-      e.stopPropagation();
-      const b=state.bets.find(x=>x.id===btn.dataset.save); if(!b) return;
-      const form=document.getElementById('editForm_'+b.id); if(!form) return;
-      form.querySelectorAll('.ed').forEach(inp=>{
-        const f=inp.dataset.f, v=inp.value;
-        if(f==='event') b.event=v.trim()||b.event;
-        else if(f==='selection') b.selection=v.trim();
-        else if(f==='house') b.house=v.trim();
-        else if(f==='odd'){ const n=parseFloat(v); if(n>1) b.odd=n; }
-        else if(f==='stake'){ const n=parseFloat(v); if(n>0) b.stake=n; }
-        else if(f==='prob'){ const n=parseFloat(v); b.prob=isNaN(n)?null:n; }
-        else if(f==='pot'){ const n=parseFloat(v); b.pot=isNaN(n)?null:n; }
-        else if(f==='date') b.date=v||b.date;
-      });
-      touch(b);
-      editingId=null; saveState(); renderAll();
-    }));
-  }
-
-  document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
-    document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));
-    btn.classList.add('active'); currentFilter=btn.dataset.filter; renderBets();
-  }));
-  $('betSearch').addEventListener('input',e=>{ searchTerm=e.target.value.trim(); renderBets(); });
-
-  $('copyBtn').addEventListener('click',()=>{
-    const lines=[['Data','Evento','Seleção','Casa','Odd','Potencial%','ProbGreen%','Stake','Status','Resultado','Lucro'].join('\t')];
-    [...state.bets].sort((a,b)=>(a.date||'').localeCompare(b.date||'')).forEach(b=>{
-      const p=betProfit(b);
-      lines.push([(b.date||'').replace('T',' '),b.event,b.selection||'',b.house||'',b.odd.toFixed(2),(typeof b.pot==='number'?b.pot:''),(typeof b.prob==='number'?b.prob:''),b.stake.toFixed(2),b.status,b.result||'',p===null?'':p.toFixed(2)].join('\t'));
-    });
-    const resolved=state.bets.filter(b=>b.status==='resolvida');
-    const profit=resolved.reduce((s,b)=>s+(betProfit(b)||0),0);
-    lines.push('',['Base (inicial+aportes)',baseCapital().toFixed(2)].join('\t'),['Resultado apostas',profit.toFixed(2)].join('\t'),['Banca atual',(baseCapital()+profit).toFixed(2)].join('\t'));
-    navigator.clipboard.writeText(lines.join('\n')).then(()=>{ $('copyBtn').textContent='Copiado!'; $('copyBtn').classList.add('copied'); setTimeout(()=>{$('copyBtn').textContent='Copiar p/ planilha'; $('copyBtn').classList.remove('copied');},1500); });
-  });
 
   $('saveBackupBtn').addEventListener('click',()=>{
     const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob);
@@ -996,13 +792,17 @@
     if(syncCfg&&!isError){ el.textContent='☁ '+msg.replace(/<[^>]+>/g,''); el.style.color='#5C6472'; }
   }
 
-  function apiUrl(){ return 'https://api.github.com/repos/'+syncCfg.repo+'/contents/'+encodeURIComponent(syncCfg.path); }
+  const DATA_BRANCH='dados';   // dados ficam fora da branch do site -> nao dispara build do Pages
+  function apiUrl(comRef){
+    const base='https://api.github.com/repos/'+syncCfg.repo+'/contents/'+encodeURIComponent(syncCfg.path);
+    return comRef ? base+'?ref='+DATA_BRANCH : base;
+  }
   function apiHeaders(){ return { 'Authorization':'Bearer '+syncCfg.token, 'Accept':'application/vnd.github+json' }; }
   function b64encode(str){ return btoa(unescape(encodeURIComponent(str))); }
   function b64decode(b64){ return decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))); }
 
   async function cloudPull(){
-    const r=await fetch(apiUrl(),{headers:apiHeaders()});
+    const r=await fetch(apiUrl(true),{headers:apiHeaders()});
     if(r.status===404){ cloudSha=null; return null; }
     if(r.status===401||r.status===403) throw new Error('Token inválido ou sem permissão.');
     if(!r.ok) throw new Error('Erro ao ler (HTTP '+r.status+').');
@@ -1030,7 +830,7 @@
     if(!syncCfg) return;
     if(codigoDesatualizado) return;   // aba desatualizada: nunca escreve por cima da nuvem
     state.appBuild=APP_BUILD;
-    const body={ message:'sync '+new Date().toISOString(), content:b64encode(JSON.stringify(state,null,2)) };
+    const body={ message:'sync '+new Date().toISOString(), content:b64encode(JSON.stringify(state,null,2)), branch:DATA_BRANCH };
     if(cloudSha) body.sha=cloudSha;
     const r=await fetch(apiUrl(),{method:'PUT',headers:{...apiHeaders(),'Content-Type':'application/json'},body:JSON.stringify(body)});
     if((r.status===409||r.status===422)&&!retry){
@@ -2437,7 +2237,7 @@
   }
   document.querySelectorAll('.evo-opt').forEach(b=>b.addEventListener('click',()=>{ evoScope=b.dataset.evo; renderEvoDaily(); }));
 
-  function renderAll(){ renderCaixa(); renderBets(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderValorSummary(); renderValorList(); renderEvoDaily(); }
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderValorSummary(); renderValorList(); renderEvoDaily(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
