@@ -4707,7 +4707,8 @@
     {
       "id": "mslrzo1vux1bp",
       "name": "Stake",
-      "value": 0
+      "value": 100,
+      "updatedAt": "2026-08-17T18:00:30.762Z"
     },
     {
       "id": "msneebp3j8g2z",
@@ -9588,5 +9589,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T17:56:28.754Z"
+  "updatedAt": "2026-08-17T18:00:30.762Z"
 }
