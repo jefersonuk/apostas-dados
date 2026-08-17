@@ -15,7 +15,7 @@
   "bets": [
     {
       "id": "mrc7q8rzkz13a",
-      "event": "Rapid Bucuresti — FC Kosice 12:30",
+      "event": "Rapid Bucuresti \u2014 FC Kosice 12:30",
       "house": "Superbet",
       "odd": 2.07,
       "pot": 52,
@@ -28,7 +28,7 @@
     },
     {
       "id": "mrc7rd9d7pprb",
-      "event": "Lausanne Sport — Flamengo",
+      "event": "Lausanne Sport \u2014 Flamengo",
       "house": "Superbet",
       "odd": 4.2,
       "pot": 25,
@@ -41,7 +41,7 @@
     },
     {
       "id": "mrc7s8thn9gmq",
-      "event": "Jannik Sinner — Novak Djokovic",
+      "event": "Jannik Sinner \u2014 Novak Djokovic",
       "house": "Superbet",
       "odd": 4.15,
       "pot": 25,
@@ -67,7 +67,7 @@
     },
     {
       "id": "mrc7vhe9i9xnj",
-      "event": "Iryna Shymanovich — Hayu Kinoshita 14:00",
+      "event": "Iryna Shymanovich \u2014 Hayu Kinoshita 14:00",
       "house": "",
       "odd": 2.07,
       "pot": 50,
@@ -78,7 +78,7 @@
     },
     {
       "id": "mrc7wbpf2p9rp",
-      "event": "Rapid Bucuresti — FC Kosice",
+      "event": "Rapid Bucuresti \u2014 FC Kosice",
       "house": "",
       "odd": 2.2,
       "pot": 25,
@@ -89,7 +89,7 @@
     },
     {
       "id": "mrc7wucqgq3nh",
-      "event": "Alan Magadan — Matias Soto",
+      "event": "Alan Magadan \u2014 Matias Soto",
       "house": "",
       "odd": 2.07,
       "pot": 20,
@@ -100,7 +100,7 @@
     },
     {
       "id": "mrc7x5gab7yuv",
-      "event": "Alan Magadan — Matias Soto",
+      "event": "Alan Magadan \u2014 Matias Soto",
       "house": "",
       "odd": 26,
       "pot": 90,
@@ -111,7 +111,7 @@
     },
     {
       "id": "mrc7xta5iuqfn",
-      "event": "Farul Constanta — Cherno More Varna",
+      "event": "Farul Constanta \u2014 Cherno More Varna",
       "house": "",
       "odd": 2.3,
       "pot": 20,
@@ -122,7 +122,7 @@
     },
     {
       "id": "mrc7yiecbmvn1",
-      "event": "Stjarnan — Vikingur Gota",
+      "event": "Stjarnan \u2014 Vikingur Gota",
       "house": "",
       "odd": 1.53,
       "pot": 50,
@@ -170,7 +170,7 @@
     },
     {
       "id": "mrc8s27j4au6z",
-      "event": "Noruega – Inglaterra",
+      "event": "Noruega \u2013 Inglaterra",
       "house": "Superbet",
       "odd": 3.85,
       "pot": 9.69,
@@ -183,7 +183,7 @@
     },
     {
       "id": "mrc9s97fgfljr",
-      "event": "Kematen – SC Imst",
+      "event": "Kematen \u2013 SC Imst",
       "house": "Superbet",
       "odd": 2.15,
       "pot": 2.38,
@@ -195,7 +195,7 @@
     },
     {
       "id": "mrc9u69zx7kx1",
-      "event": "Amy Lee – Misa Malkin",
+      "event": "Amy Lee \u2013 Misa Malkin",
       "house": "Superbet",
       "odd": 39,
       "pot": 2.85,
@@ -208,7 +208,7 @@
     },
     {
       "id": "mrcak27jqjyc3",
-      "event": "Connah's Quay Nomads – Ballkani",
+      "event": "Connah's Quay Nomads \u2013 Ballkani",
       "house": "",
       "odd": 2.12,
       "pot": 4.87,
@@ -220,7 +220,7 @@
     },
     {
       "id": "mrcakoyinsous",
-      "event": "Lausanne Sport – Flamengo",
+      "event": "Lausanne Sport \u2013 Flamengo",
       "house": "Superbet",
       "odd": 2.2,
       "pot": 8.17,
@@ -233,7 +233,7 @@
     },
     {
       "id": "mrcan4rm72189",
-      "event": "Ponte Preta – Criciúma",
+      "event": "Ponte Preta \u2013 Crici\u00fama",
       "house": "",
       "odd": 2.25,
       "pot": 8.1,
@@ -246,7 +246,7 @@
     },
     {
       "id": "mrcaow9q0bxii",
-      "event": "Boca Juniors – Athletico Paranaense",
+      "event": "Boca Juniors \u2013 Athletico Paranaense",
       "house": "",
       "odd": 2,
       "pot": 3.7,
@@ -271,7 +271,7 @@
     },
     {
       "id": "mrcathyk23zd2",
-      "event": "Connah's Quay Nomads – Ballkani",
+      "event": "Connah's Quay Nomads \u2013 Ballkani",
       "house": "",
       "odd": 2.12,
       "pot": 5.05,
@@ -296,7 +296,7 @@
     },
     {
       "id": "mrcc20m2u8igf",
-      "event": "Sachia Vickery – Reese Brantmeier (1 VENCE 1 SET)",
+      "event": "Sachia Vickery \u2013 Reese Brantmeier (1 VENCE 1 SET)",
       "house": "Bet365",
       "odd": 3.25,
       "pot": 1.49,
@@ -309,7 +309,7 @@
     },
     {
       "id": "mrcce4wjxen33",
-      "event": "Venezuela – Colômbia (COL -2,5 2o tempo V)",
+      "event": "Venezuela \u2013 Col\u00f4mbia (COL -2,5 2o tempo V)",
       "house": "Superbet",
       "odd": 2.12,
       "pot": 7.13,
@@ -322,7 +322,7 @@
     },
     {
       "id": "mrcch4lv1zgzc",
-      "event": "Connah's Quay Nomads – Ballkani",
+      "event": "Connah's Quay Nomads \u2013 Ballkani",
       "house": "Superbet",
       "odd": 2.12,
       "pot": 5.7,
@@ -335,7 +335,7 @@
     },
     {
       "id": "mrccjzu3bmfmt",
-      "event": "ndrea Pellegrino – Raul Brancaccio",
+      "event": "ndrea Pellegrino \u2013 Raul Brancaccio",
       "house": "Superbet",
       "odd": 3.75,
       "pot": 1.33,
@@ -374,7 +374,7 @@
     },
     {
       "id": "mrcg6v9krprce",
-      "event": "Real Potosi – ABB",
+      "event": "Real Potosi \u2013 ABB",
       "house": "Superbet",
       "odd": 2,
       "pot": 10,
@@ -400,7 +400,7 @@
     },
     {
       "id": "mrcgfc1bpken8",
-      "event": "Dila Gori – SS Virtus",
+      "event": "Dila Gori \u2013 SS Virtus",
       "house": "",
       "odd": 2,
       "pot": 8.05,
@@ -413,7 +413,7 @@
     },
     {
       "id": "mrchjzmtm3kw7",
-      "event": "Qarabağ FK -1",
+      "event": "Qaraba\u011f FK -1",
       "house": "",
       "odd": 2,
       "pot": 5.34,
@@ -517,7 +517,7 @@
     },
     {
       "id": "mrcw9wmzcqazb",
-      "event": "Sérvia (F) x França (F) - SuperBet",
+      "event": "S\u00e9rvia (F) x Fran\u00e7a (F) - SuperBet",
       "house": "Superbet",
       "odd": 2,
       "pot": 8.46,
@@ -526,7 +526,7 @@
       "date": "2026-07-09T15:30",
       "status": "resolvida",
       "result": "red",
-      "selection": "França ganha 1o set Handicap + 4.5"
+      "selection": "Fran\u00e7a ganha 1o set Handicap + 4.5"
     },
     {
       "id": "mrcwchfpgnbev",
@@ -556,7 +556,7 @@
     },
     {
       "id": "mrcwh7hgvqskr",
-      "event": "França x Marrocos -",
+      "event": "Fran\u00e7a x Marrocos -",
       "house": "Superbet",
       "odd": 2.02,
       "pot": 4.47,
@@ -565,7 +565,7 @@
       "date": "2026-07-09T17:00",
       "status": "resolvida",
       "result": "red",
-      "selection": "França + 12.5 faltas"
+      "selection": "Fran\u00e7a + 12.5 faltas"
     },
     {
       "id": "mrcwnl4k9f1bz",
@@ -699,7 +699,7 @@
     },
     {
       "id": "mrditco32dmmd",
-      "event": "Livingston – Hearts",
+      "event": "Livingston \u2013 Hearts",
       "house": "Novibet",
       "odd": 1.86,
       "pot": 9.23,
@@ -712,7 +712,7 @@
     },
     {
       "id": "mrdjs4ap7kggz",
-      "event": "Liepaja – Decic Tuzi",
+      "event": "Liepaja \u2013 Decic Tuzi",
       "house": "",
       "odd": 5.5,
       "pot": 10,
@@ -725,7 +725,7 @@
     },
     {
       "id": "mrdjuj0w6s6c4",
-      "event": "JK Nomme Kalju – Linfield FC",
+      "event": "JK Nomme Kalju \u2013 Linfield FC",
       "house": "",
       "odd": 3.55,
       "pot": 31,
@@ -751,7 +751,7 @@
     },
     {
       "id": "mrdkc3n69iae9",
-      "event": "Nõmme Kalju – Linfield",
+      "event": "N\u00f5mme Kalju \u2013 Linfield",
       "house": "",
       "odd": 1.81,
       "pot": 7.92,
@@ -764,7 +764,7 @@
     },
     {
       "id": "mrdkj4wsh2nd1",
-      "event": "Dinamo Tirana – FC Astana ()",
+      "event": "Dinamo Tirana \u2013 FC Astana ()",
       "house": "Betwarrior",
       "odd": 1.77,
       "pot": 5.52,
@@ -773,7 +773,7 @@
       "date": "2026-07-09T10:49",
       "status": "resolvida",
       "result": "green",
-      "selection": "Acima 3.5 - escanteios 2º o time"
+      "selection": "Acima 3.5 - escanteios 2\u00ba o time"
     },
     {
       "id": "mrdkp44ghz1jr",
@@ -786,11 +786,11 @@
       "date": "2026-07-09T21:00",
       "status": "resolvida",
       "result": "green",
-      "selection": "Rhyne Howard Arremessos de três pontos convertidos +3"
+      "selection": "Rhyne Howard Arremessos de tr\u00eas pontos convertidos +3"
     },
     {
       "id": "mrdkw2lk34lyz",
-      "event": "() PFC Ludogorets 1945 Razgrad – FK Septemvri Sofia",
+      "event": "() PFC Ludogorets 1945 Razgrad \u2013 FK Septemvri Sofia",
       "house": "Brbet",
       "odd": 3.1,
       "pot": 41.9,
@@ -799,11 +799,11 @@
       "date": "2026-07-10T04:30",
       "status": "resolvida",
       "result": "red",
-      "selection": "Gols: igual em ambas os tempos 1º o time"
+      "selection": "Gols: igual em ambas os tempos 1\u00ba o time"
     },
     {
       "id": "mrdl0p37clz0m",
-      "event": "Ilbirs FC – FC Ozgon",
+      "event": "Ilbirs FC \u2013 FC Ozgon",
       "house": "",
       "odd": 2.7,
       "pot": 10.8,
@@ -816,7 +816,7 @@
     },
     {
       "id": "mrdl544jl5f5g",
-      "event": "- Malmo – IFK Goteborg",
+      "event": "- Malmo \u2013 IFK Goteborg",
       "house": "Novibet",
       "odd": 2.95,
       "pot": 10.3,
@@ -829,7 +829,7 @@
     },
     {
       "id": "mrdl9o67z5r41",
-      "event": "Ceará CE – Athletic Club MG ()",
+      "event": "Cear\u00e1 CE \u2013 Athletic Club MG ()",
       "house": "Novibet",
       "odd": 8.4,
       "pot": 24.1,
@@ -838,11 +838,11 @@
       "date": "2026-07-13T20:30",
       "status": "resolvida",
       "result": "red",
-      "selection": "Acima 9.5 - escanteios 1º o time"
+      "selection": "Acima 9.5 - escanteios 1\u00ba o time"
     },
     {
       "id": "mrdlxtetsf0h3",
-      "event": "FK Liepaja – FK Decic Tuzi (BetBoo)",
+      "event": "FK Liepaja \u2013 FK Decic Tuzi (BetBoo)",
       "house": "",
       "odd": 2.1,
       "pot": 5.05,
@@ -855,7 +855,7 @@
     },
     {
       "id": "mrdlzslruuir2",
-      "event": "Liepaja – Decic Tuzi (BetBoo)",
+      "event": "Liepaja \u2013 Decic Tuzi (BetBoo)",
       "house": "",
       "odd": 2.05,
       "pot": 5.05,
@@ -868,7 +868,7 @@
     },
     {
       "id": "mrdmcwnag5amd",
-      "event": "Beitar Jerusalem – Dukagjini (SuperBet)",
+      "event": "Beitar Jerusalem \u2013 Dukagjini (SuperBet)",
       "house": "",
       "odd": 1.76,
       "pot": 7.31,
@@ -881,7 +881,7 @@
     },
     {
       "id": "mrdmfmglok951",
-      "event": "França – Marrocos ()",
+      "event": "Fran\u00e7a \u2013 Marrocos ()",
       "house": "Superbet",
       "odd": 1.77,
       "pot": 7.31,
@@ -890,11 +890,11 @@
       "date": "2026-07-09T17:00",
       "status": "resolvida",
       "result": "green",
-      "selection": "França menos que 17.5 desarmes"
+      "selection": "Fran\u00e7a menos que 17.5 desarmes"
     },
     {
       "id": "mrdmvgjtfa484",
-      "event": "Bohemians Dublin – St. Joseph's FC (BetWarrior)",
+      "event": "Bohemians Dublin \u2013 St. Joseph's FC (BetWarrior)",
       "house": "",
       "odd": 3.2,
       "pot": 27.8,
@@ -920,7 +920,7 @@
     },
     {
       "id": "mrdniv4pm8cxh",
-      "event": "(BETBOO) Bohemian FC Dublin – St Joseph's FC (GIB)",
+      "event": "(BETBOO) Bohemian FC Dublin \u2013 St Joseph's FC (GIB)",
       "house": "",
       "odd": 8.75,
       "pot": 71.2,
@@ -933,7 +933,7 @@
     },
     {
       "id": "mrdnv2llv1ihf",
-      "event": "Noruega – Inglaterra",
+      "event": "Noruega \u2013 Inglaterra",
       "house": "",
       "odd": 1.82,
       "pot": 8.07,
@@ -946,7 +946,7 @@
     },
     {
       "id": "mrdo2g2izycb4",
-      "event": "Rollon Pojat – Hercules-J",
+      "event": "Rollon Pojat \u2013 Hercules-J",
       "house": "",
       "odd": 9,
       "pot": 23.4,
@@ -959,7 +959,7 @@
     },
     {
       "id": "mrdofog5x5ayq",
-      "event": "Mt Gambier Pioneers – Keilor Thunder",
+      "event": "Mt Gambier Pioneers \u2013 Keilor Thunder",
       "house": "BetBoo",
       "odd": 2.25,
       "pot": 11.1,
@@ -968,11 +968,11 @@
       "date": "2026-07-10T05:30",
       "status": "resolvida",
       "result": "green",
-      "selection": "Abaixo 38.5 1º período("
+      "selection": "Abaixo 38.5 1\u00ba per\u00edodo("
     },
     {
       "id": "mrdokpasej9l6",
-      "event": "Arthur Fery – Alexander Zverev ()",
+      "event": "Arthur Fery \u2013 Alexander Zverev ()",
       "house": "Betano",
       "odd": 2.25,
       "pot": 10.3,
@@ -985,7 +985,7 @@
     },
     {
       "id": "mrdoovooztwi6",
-      "event": "Rollon Pojat – Hercules-J (KTO)",
+      "event": "Rollon Pojat \u2013 Hercules-J (KTO)",
       "house": "",
       "odd": 2.15,
       "pot": 10.3,
@@ -998,7 +998,7 @@
     },
     {
       "id": "mrdoxfnahqv0u",
-      "event": "Bohemians Dublin – St. Joseph's FC (BetWarrior)",
+      "event": "Bohemians Dublin \u2013 St. Joseph's FC (BetWarrior)",
       "house": "",
       "odd": 2.02,
       "pot": 14.9,
@@ -1011,7 +1011,7 @@
     },
     {
       "id": "mrdursv21xy1f",
-      "event": "França x Marrocos",
+      "event": "Fran\u00e7a x Marrocos",
       "house": "Superbet",
       "odd": 3.65,
       "pot": null,
@@ -1046,11 +1046,11 @@
       "date": "2026-07-11T05:00",
       "status": "resolvida",
       "result": "green",
-      "selection": "Vitória 1"
+      "selection": "Vit\u00f3ria 1"
     },
     {
       "id": "mrdw7qlbmh9rv",
-      "event": "ydney Comets – Hornsby Spiders",
+      "event": "ydney Comets \u2013 Hornsby Spiders",
       "selection": "2 vence",
       "house": "Novibet",
       "odd": 1.95,
@@ -1063,8 +1063,8 @@
     },
     {
       "id": "mrdwsbaf6y6s0",
-      "event": "Carle M L / Selekhmeteva O – Cascino E / Fossa Huergo",
-      "selection": "Vitória 2",
+      "event": "Carle M L / Selekhmeteva O \u2013 Cascino E / Fossa Huergo",
+      "selection": "Vit\u00f3ria 2",
       "house": "Novibet",
       "odd": 2.5,
       "pot": 16.7,
@@ -1076,7 +1076,7 @@
     },
     {
       "id": "mrdx36suvbnjs",
-      "event": "Joelle Lilly Sophie Steur – Alena Kovackova",
+      "event": "Joelle Lilly Sophie Steur \u2013 Alena Kovackova",
       "selection": "1 Vence",
       "house": "KTO",
       "odd": 2.28,
@@ -1089,7 +1089,7 @@
     },
     {
       "id": "mrdxue1dmmrq6",
-      "event": "Palmeiras (W) – Paraguay (W)",
+      "event": "Palmeiras (W) \u2013 Paraguay (W)",
       "selection": "menos de 2.5 gols",
       "house": "Bet365",
       "odd": 2.5,
@@ -1102,7 +1102,7 @@
     },
     {
       "id": "mrdxxez42c0yk",
-      "event": "FS Metta/Lu – SK Speks",
+      "event": "FS Metta/Lu \u2013 SK Speks",
       "selection": "menos de 5.5 gols",
       "house": "Novibet",
       "odd": 1.93,
@@ -1128,8 +1128,8 @@
     },
     {
       "id": "mre7ll4d6ae45",
-      "event": "Espanha – Bélgica",
-      "selection": "Acima 11.5 - faltas 1º o time",
+      "event": "Espanha \u2013 B\u00e9lgica",
+      "selection": "Acima 11.5 - faltas 1\u00ba o time",
       "house": "Superbet",
       "odd": 2.47,
       "pot": 16.7,
@@ -1141,7 +1141,7 @@
     },
     {
       "id": "mre7recb54nv0",
-      "event": "Zhejiang – Qingdao Hainiu China",
+      "event": "Zhejiang \u2013 Qingdao Hainiu China",
       "selection": "2(0:4) - escanteios",
       "house": "Reidopitaco",
       "odd": 1.53,
@@ -1154,8 +1154,8 @@
     },
     {
       "id": "mre82reo0tgo3",
-      "event": "Indiana Pacers – Cleveland Cavaliers",
-      "selection": "Acima 89.5 1ª metade",
+      "event": "Indiana Pacers \u2013 Cleveland Cavaliers",
+      "selection": "Acima 89.5 1\u00aa metade",
       "house": "Betano",
       "odd": 2.25,
       "pot": 7.11,
@@ -1167,7 +1167,7 @@
     },
     {
       "id": "mre8aqg0ykw6w",
-      "event": "Manta – Orense",
+      "event": "Manta \u2013 Orense",
       "selection": "1(2:0) - escanteios",
       "house": "Reidopitaco",
       "odd": 1.53,
@@ -1180,7 +1180,7 @@
     },
     {
       "id": "mre8d2nh8zdnf",
-      "event": "Shanghai Shenhua – Beijing Guoan",
+      "event": "Shanghai Shenhua \u2013 Beijing Guoan",
       "selection": "(0:2) - escanteios",
       "house": "Reidopitaco",
       "odd": 1.56,
@@ -1193,7 +1193,7 @@
     },
     {
       "id": "mre8etz3nmqya",
-      "event": "Brommapojkarna – Sirius",
+      "event": "Brommapojkarna \u2013 Sirius",
       "selection": "2 - escanteios",
       "house": "Reidopitaco",
       "odd": 1.63,
@@ -1206,8 +1206,8 @@
     },
     {
       "id": "mre8h86d5z6dn",
-      "event": "Ind. Santa Fé – Caracas",
-      "selection": "H1(−0.75)",
+      "event": "Ind. Santa F\u00e9 \u2013 Caracas",
+      "selection": "H1(\u22120.75)",
       "house": "Reidopitaco",
       "odd": 1.7,
       "pot": 5.7,
@@ -1219,8 +1219,8 @@
     },
     {
       "id": "mre8kv550lepk",
-      "event": "Sydney Ice Dogs – Brisbane Lightning",
-      "selection": "Abaixo 3.5 2º o time",
+      "event": "Sydney Ice Dogs \u2013 Brisbane Lightning",
+      "selection": "Abaixo 3.5 2\u00ba o time",
       "house": "Betano",
       "odd": 1.88,
       "pot": 5.71,
@@ -1232,7 +1232,7 @@
     },
     {
       "id": "mre8n8q5wyojz",
-      "event": "Western Suburbs FC – Island Bay United",
+      "event": "Western Suburbs FC \u2013 Island Bay United",
       "selection": "1(0:1)",
       "house": "Reidopitaco",
       "odd": 1.88,
@@ -1245,8 +1245,8 @@
     },
     {
       "id": "mre8pfyxphieu",
-      "event": "San Martin Tucumán – Almagro",
-      "selection": "Abaixo 0.5 2º o time",
+      "event": "San Martin Tucum\u00e1n \u2013 Almagro",
+      "selection": "Abaixo 0.5 2\u00ba o time",
       "house": "Reidopitaco",
       "odd": 6.25,
       "pot": 4.82,
@@ -1258,8 +1258,8 @@
     },
     {
       "id": "mre8x9wgkfko5",
-      "event": "Miami Heat – Milwaukee Bucks",
-      "selection": "Acima 45.5 1ª metade 2º o time",
+      "event": "Miami Heat \u2013 Milwaukee Bucks",
+      "selection": "Acima 45.5 1\u00aa metade 2\u00ba o time",
       "house": "Betano",
       "odd": 2,
       "pot": 4.33,
@@ -1271,7 +1271,7 @@
     },
     {
       "id": "mre93t8pilrat",
-      "event": "Phoenix Mercury (F) – Indiana Fever (F)",
+      "event": "Phoenix Mercury (F) \u2013 Indiana Fever (F)",
       "selection": "1 Tempo Extra - cestas de dois pontos",
       "house": "Betano",
       "odd": 1.78,
@@ -1284,7 +1284,7 @@
     },
     {
       "id": "mre98s3kclyyi",
-      "event": "San Lorenzo – Deportivo Riestra",
+      "event": "San Lorenzo \u2013 Deportivo Riestra",
       "selection": "Abaixo 1.5",
       "house": "KTO",
       "odd": 2.63,
@@ -1297,7 +1297,7 @@
     },
     {
       "id": "mreag0qyrx0of",
-      "event": "Portland Fire (F) – Las Vegas Aces (F) EUA - WNBA",
+      "event": "Portland Fire (F) \u2013 Las Vegas Aces (F) EUA - WNBA",
       "selection": "Abaixo 14.5 Tempo Extra - roubos de bola",
       "house": "Betano",
       "odd": 2,
@@ -1310,8 +1310,8 @@
     },
     {
       "id": "mreaib2tugkl1",
-      "event": "Franklin Bulls – Otago Nuggets",
-      "selection": "Abaixo 92.5 1ª metade",
+      "event": "Franklin Bulls \u2013 Otago Nuggets",
+      "selection": "Abaixo 92.5 1\u00aa metade",
       "house": "Reidopitaco",
       "odd": 1.83,
       "pot": 4.53,
@@ -1323,7 +1323,7 @@
     },
     {
       "id": "mreaksx47h6uy",
-      "event": "olfsberger AC – FC Kharkiv",
+      "event": "olfsberger AC \u2013 FC Kharkiv",
       "selection": "Acima 2.5",
       "house": "Bet365",
       "odd": 1.66,
@@ -1388,7 +1388,7 @@
     },
     {
       "id": "mresl3g88gizk",
-      "event": "Shamrock Rovers – Floriana FC",
+      "event": "Shamrock Rovers \u2013 Floriana FC",
       "selection": "Floriana qualificar-se",
       "house": "Novibet",
       "odd": 4.15,
@@ -1401,7 +1401,7 @@
     },
     {
       "id": "mress5oxmzca0",
-      "event": "Espanha – Bélgica",
+      "event": "Espanha \u2013 B\u00e9lgica",
       "selection": "Espanha menos de 15.5 chutes",
       "house": "Betano",
       "odd": 2.4,
@@ -1414,8 +1414,8 @@
     },
     {
       "id": "mret0z0vxvase",
-      "event": "Harri Heliovaara/Henry Patten – Marcelo Arevalo/Mate Pavic",
-      "selection": "H1(−1.5)",
+      "event": "Harri Heliovaara/Henry Patten \u2013 Marcelo Arevalo/Mate Pavic",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.88,
       "pot": 37.7,
@@ -1427,8 +1427,8 @@
     },
     {
       "id": "mret2za8l5f1k",
-      "event": "Hanyu Guo/Kristina Mladenovic – Xinyu Jiang/Yifan Xu",
-      "selection": "H1(−1.5)",
+      "event": "Hanyu Guo/Kristina Mladenovic \u2013 Xinyu Jiang/Yifan Xu",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.25,
       "pot": 35.1,
@@ -1440,7 +1440,7 @@
     },
     {
       "id": "mreze52x8ylae",
-      "event": "Gimnasia de Chivilcoy – Gimnasia y Esgrima de Concepcion",
+      "event": "Gimnasia de Chivilcoy \u2013 Gimnasia y Esgrima de Concepcion",
       "selection": "x2",
       "house": "Reidopitaco",
       "odd": 1.61,
@@ -1453,8 +1453,8 @@
     },
     {
       "id": "mrezvm8h8xkxn",
-      "event": "Jimar Geraldine Gerald Gonzalez – Ana Candiotto",
-      "selection": "H2(−1.5)",
+      "event": "Jimar Geraldine Gerald Gonzalez \u2013 Ana Candiotto",
+      "selection": "H2(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.25,
       "pot": 28.5,
@@ -1466,7 +1466,7 @@
     },
     {
       "id": "mrezxfoy51zgv",
-      "event": "Sporting Kristina – SIF",
+      "event": "Sporting Kristina \u2013 SIF",
       "selection": "Acima 3.5 gols",
       "house": "Novibet",
       "odd": 2.06,
@@ -1479,7 +1479,7 @@
     },
     {
       "id": "mrf02pfi159po",
-      "event": "Luca Pow / Mees Rottgering – Nathan Cox / Eugenio Gonzalez Fitzmaurice",
+      "event": "Luca Pow / Mees Rottgering \u2013 Nathan Cox / Eugenio Gonzalez Fitzmaurice",
       "selection": "1 vence",
       "house": "Betano",
       "odd": 1.52,
@@ -1492,8 +1492,8 @@
     },
     {
       "id": "mrf0llbjcay2u",
-      "event": "Nicolas Mejia – Hernan Casanova",
-      "selection": "Acima 9.5 1º set",
+      "event": "Nicolas Mejia \u2013 Hernan Casanova",
+      "selection": "Acima 9.5 1\u00ba set",
       "house": "Novibet",
       "odd": 2,
       "pot": 2.17,
@@ -1505,7 +1505,7 @@
     },
     {
       "id": "mrf0qhwx4nnkg",
-      "event": "Espanha – Bélgica",
+      "event": "Espanha \u2013 B\u00e9lgica",
       "selection": "abaixo 3.5 impedimentos total",
       "house": "Betano",
       "odd": 2.4,
@@ -1531,7 +1531,7 @@
     },
     {
       "id": "mrf13xhbsksis",
-      "event": "CD Espanol De Talca – CD Universidad Catolica De Santiago",
+      "event": "CD Espanol De Talca \u2013 CD Universidad Catolica De Santiago",
       "selection": "Universidad Catolica De Santiago vence",
       "house": "Novibet",
       "odd": 1.78,
@@ -1544,8 +1544,8 @@
     },
     {
       "id": "mrf161y223670",
-      "event": "Francs Borains – Crossing Schaerbeek",
-      "selection": "Abaixo 2.5 1º o time",
+      "event": "Francs Borains \u2013 Crossing Schaerbeek",
+      "selection": "Abaixo 2.5 1\u00ba o time",
       "house": "KTO",
       "odd": 1.8,
       "pot": 4.11,
@@ -1570,8 +1570,8 @@
     },
     {
       "id": "mrgipi50jfwcd",
-      "event": "Alexis Galarneau – Jacob Fearnley",
-      "selection": "H2(−1.5)",
+      "event": "Alexis Galarneau \u2013 Jacob Fearnley",
+      "selection": "H2(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.2,
       "pot": 41.3,
@@ -1583,8 +1583,8 @@
     },
     {
       "id": "mrgirdiglnuwj",
-      "event": "Lukas Neumayer – Mili Poljicak",
-      "selection": "H1(−1.5)",
+      "event": "Lukas Neumayer \u2013 Mili Poljicak",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.1,
       "pot": 35.7,
@@ -1596,8 +1596,8 @@
     },
     {
       "id": "mrgitvdnqkhwk",
-      "event": "Florian Broska – Kimmer Coppejans",
-      "selection": "H2(−1.5)",
+      "event": "Florian Broska \u2013 Kimmer Coppejans",
+      "selection": "H2(\u22121.5)",
       "house": "Betnacional",
       "odd": 2,
       "pot": 34.4,
@@ -1609,8 +1609,8 @@
     },
     {
       "id": "mrgivvs45ehyi",
-      "event": "Qianhui Tang – Elina Nepliy",
-      "selection": "H2(−1.5)",
+      "event": "Qianhui Tang \u2013 Elina Nepliy",
+      "selection": "H2(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.1,
       "pot": 27.6,
@@ -1622,8 +1622,8 @@
     },
     {
       "id": "mrgixxeoe6kt5",
-      "event": "Qianhui Tang – Elina Nepliy",
-      "selection": "H2(−1.5)",
+      "event": "Qianhui Tang \u2013 Elina Nepliy",
+      "selection": "H2(\u22121.5)",
       "house": "Betnacional",
       "odd": 1.57,
       "pot": 24,
@@ -1635,8 +1635,8 @@
     },
     {
       "id": "mrgj08ib0uudq",
-      "event": "Viktoria Morvayova – Franziska Sziedat",
-      "selection": "H1(−1.5)",
+      "event": "Viktoria Morvayova \u2013 Franziska Sziedat",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 1.67,
       "pot": 21.5,
@@ -1661,8 +1661,8 @@
     },
     {
       "id": "mrh08nyfyk0ii",
-      "event": "Francesco Passaro – Maks Kasnikowski",
-      "selection": "H1(−1.5)",
+      "event": "Francesco Passaro \u2013 Maks Kasnikowski",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 3,
       "pot": 37.3,
@@ -1674,8 +1674,8 @@
     },
     {
       "id": "mrh0amqjl9nbj",
-      "event": "Elmer Moeller – Thomas Faurel",
-      "selection": "H1(−1.5)",
+      "event": "Elmer Moeller \u2013 Thomas Faurel",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.25,
       "pot": 34,
@@ -1687,8 +1687,8 @@
     },
     {
       "id": "mrh0cch8fiknq",
-      "event": "Federico Cina – Calvin Hemery",
-      "selection": "H1(−1.5)",
+      "event": "Federico Cina \u2013 Calvin Hemery",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 1.91,
       "pot": 28.4,
@@ -1700,7 +1700,7 @@
     },
     {
       "id": "mrh0m33du64u1",
-      "event": "LA Galaxy – CF America",
+      "event": "LA Galaxy \u2013 CF America",
       "selection": "Abaixo 2.5 gols",
       "house": "Betnacional",
       "odd": 2.25,
@@ -1713,8 +1713,8 @@
     },
     {
       "id": "mrh0quvd56zzh",
-      "event": "Clement Chidekh – Henry Searle",
-      "selection": "2(−1.5)",
+      "event": "Clement Chidekh \u2013 Henry Searle",
+      "selection": "2(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.2,
       "pot": 32.4,
@@ -1726,8 +1726,8 @@
     },
     {
       "id": "mrh0sqqxsvvd3",
-      "event": "Clement Chidekh – Henry Searle Challenger - ATP Nottingham Challenger",
-      "selection": "H2(−1.5)",
+      "event": "Clement Chidekh \u2013 Henry Searle Challenger - ATP Nottingham Challenger",
+      "selection": "H2(\u22121.5)",
       "house": "Betnacional",
       "odd": 3,
       "pot": 32.4,
@@ -1739,7 +1739,7 @@
     },
     {
       "id": "mrh163v6ul2y7",
-      "event": "Northside Wizards – Brisbane Capitals",
+      "event": "Northside Wizards \u2013 Brisbane Capitals",
       "selection": "H1(+5)",
       "house": "Pixbet",
       "odd": 1.9,
@@ -1752,7 +1752,7 @@
     },
     {
       "id": "mrh1ed7biztg6",
-      "event": "FSV Frankfurt – Rot-Weiss Walldorf",
+      "event": "FSV Frankfurt \u2013 Rot-Weiss Walldorf",
       "selection": "2 vence com handicap +2",
       "house": "Pixbet",
       "odd": 1.5,
@@ -1765,8 +1765,8 @@
     },
     {
       "id": "mrhr8rsy86qhv",
-      "event": "Nicolas Mejia – Matias Soto",
-      "selection": "H1(−1.5)",
+      "event": "Nicolas Mejia \u2013 Matias Soto",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.25,
       "pot": 38.6,
@@ -1778,8 +1778,8 @@
     },
     {
       "id": "mrhra4v562o4m",
-      "event": "Jacob Fearnley – Adam Walton",
-      "selection": "H2(−1.5)",
+      "event": "Jacob Fearnley \u2013 Adam Walton",
+      "selection": "H2(\u22121.5)",
       "house": "Betnacional",
       "odd": 3,
       "pot": 33.3,
@@ -1791,8 +1791,8 @@
     },
     {
       "id": "mrhrbjy1436kt",
-      "event": "Lukas Neumayer – Marko Topo",
-      "selection": "H1(−1.5)",
+      "event": "Lukas Neumayer \u2013 Marko Topo",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 1.91,
       "pot": 28.2,
@@ -1804,8 +1804,8 @@
     },
     {
       "id": "mrhrd8wxjlr2c",
-      "event": "Marco Cecchinato – Genaro Alberto Olivieri",
-      "selection": "H1(−1.5)",
+      "event": "Marco Cecchinato \u2013 Genaro Alberto Olivieri",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 1.73,
       "pot": 25.4,
@@ -1817,8 +1817,8 @@
     },
     {
       "id": "mrhrf9yjxncu6",
-      "event": "Hiroki Moriya – Andreja Petrovic",
-      "selection": "H1(−1.5)",
+      "event": "Hiroki Moriya \u2013 Andreja Petrovic",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 2.1,
       "pot": 23.7,
@@ -1830,8 +1830,8 @@
     },
     {
       "id": "mrhrgvcb8255c",
-      "event": "Roberto Carballes Baena – Carlos Sanchez Jover",
-      "selection": "H1(−1.5)",
+      "event": "Roberto Carballes Baena \u2013 Carlos Sanchez Jover",
+      "selection": "H1(\u22121.5)",
       "house": "Betnacional",
       "odd": 1.57,
       "pot": 21.4,
@@ -1856,8 +1856,8 @@
     },
     {
       "id": "mri7fiao26adg",
-      "event": "Juan ferreira W. – CBR B W.",
-      "selection": "Abaixo 43.5 1º set",
+      "event": "Juan ferreira W. \u2013 CBR B W.",
+      "selection": "Abaixo 43.5 1\u00ba set",
       "house": "Faz1bet",
       "odd": 2.25,
       "pot": 7,
@@ -1869,7 +1869,7 @@
     },
     {
       "id": "mri7j679xnx5h",
-      "event": "El Farolito – Sun City FC",
+      "event": "El Farolito \u2013 Sun City FC",
       "selection": "X2",
       "house": "Bet365",
       "odd": 2.4,
@@ -1882,8 +1882,8 @@
     },
     {
       "id": "mri7nge5wt94n",
-      "event": "Dallas Wings – Chicago Sky",
-      "selection": "H1(−3.5) 4º período",
+      "event": "Dallas Wings \u2013 Chicago Sky",
+      "selection": "H1(\u22123.5) 4\u00ba per\u00edodo",
       "house": "Betnacional",
       "odd": 2.5,
       "pot": 4.46,
@@ -1895,8 +1895,8 @@
     },
     {
       "id": "mri80pi3wt4gi",
-      "event": "Titans – Tornado + CD Espanol Osorno – CD Castro",
-      "selection": "Abaixo 44.5 1º set + H2(+4) 1º período",
+      "event": "Titans \u2013 Tornado + CD Espanol Osorno \u2013 CD Castro",
+      "selection": "Abaixo 44.5 1\u00ba set + H2(+4) 1\u00ba per\u00edodo",
       "house": "Faz1bet",
       "odd": 5.15,
       "pot": 2.91,
@@ -1908,7 +1908,7 @@
     },
     {
       "id": "mri9e904y2gvg",
-      "event": "São Paulo FC (Fem) – EC Taubate (Fem)",
+      "event": "S\u00e3o Paulo FC (Fem) \u2013 EC Taubate (Fem)",
       "selection": "X / HNB (casa ganha anula aposta)",
       "house": "Vbet",
       "odd": 1.52,
@@ -1921,7 +1921,7 @@
     },
     {
       "id": "mri9h00votuek",
-      "event": "Emelec – Barcelona SC",
+      "event": "Emelec \u2013 Barcelona SC",
       "selection": "1(1:0) - escanteios",
       "house": "Betwarrior",
       "odd": 1.52,
@@ -1934,7 +1934,7 @@
     },
     {
       "id": "mria86n04q5ar",
-      "event": "Pinheiros – SESI Jundiai",
+      "event": "Pinheiros \u2013 SESI Jundiai",
       "selection": "H2(0)",
       "house": "Pixbet",
       "odd": 1.82,
@@ -1947,8 +1947,8 @@
     },
     {
       "id": "mriablreiuudr",
-      "event": "França – Espanha",
-      "selection": "Acima 2.5 - cartões 2º o time",
+      "event": "Fran\u00e7a \u2013 Espanha",
+      "selection": "Acima 2.5 - cart\u00f5es 2\u00ba o time",
       "house": "Betnacional",
       "odd": 3.7,
       "pot": 12.4,
@@ -1960,7 +1960,7 @@
     },
     {
       "id": "mriae5fs4v2ww",
-      "event": "FC Ordabasy – FK Altay",
+      "event": "FC Ordabasy \u2013 FK Altay",
       "selection": "X2",
       "house": "Betnacional",
       "odd": 3.75,
@@ -1973,8 +1973,8 @@
     },
     {
       "id": "mric96t6he8da",
-      "event": "Dallas Wings – Chicago Sky",
-      "selection": "H1(−3.5) 4º período",
+      "event": "Dallas Wings \u2013 Chicago Sky",
+      "selection": "H1(\u22123.5) 4\u00ba per\u00edodo",
       "house": "Betnacional",
       "odd": 2.5,
       "pot": 4.6,
@@ -1986,8 +1986,8 @@
     },
     {
       "id": "mrici64gel5ql",
-      "event": "Kamilla Cardoso Dallas Wings (W) – Chicago Sky (W) · WNBA",
-      "selection": "Abaixo 26.5 Tempo Extra - pontos + rebotes + assistências",
+      "event": "Kamilla Cardoso Dallas Wings (W) \u2013 Chicago Sky (W) \u00b7 WNBA",
+      "selection": "Abaixo 26.5 Tempo Extra - pontos + rebotes + assist\u00eancias",
       "house": "Betwarrior",
       "odd": 2.2,
       "pot": 3.47,
@@ -1999,7 +1999,7 @@
     },
     {
       "id": "mricoa9g83o22",
-      "event": "CR Brasil AL – Goiás EC",
+      "event": "CR Brasil AL \u2013 Goi\u00e1s EC",
       "selection": "Acima 2.5",
       "house": "Betvip",
       "odd": 2.43,
@@ -2012,7 +2012,7 @@
     },
     {
       "id": "mriculrpz4cno",
-      "event": "Thitsar Arman FC (W) – Ispe FC (W)",
+      "event": "Thitsar Arman FC (W) \u2013 Ispe FC (W)",
       "selection": "2(2:0)",
       "house": "Betnacional",
       "odd": 2.6,
@@ -2038,8 +2038,8 @@
     },
     {
       "id": "mrjce5cwp19nd",
-      "event": "Minnesota Lynx – Phoenix Mercury",
-      "selection": "H2(+2.5) 3º período",
+      "event": "Minnesota Lynx \u2013 Phoenix Mercury",
+      "selection": "H2(+2.5) 3\u00ba per\u00edodo",
       "house": "Betnacional",
       "odd": 2.2,
       "pot": 5,
@@ -2051,8 +2051,8 @@
     },
     {
       "id": "mrjcsn4h8dovr",
-      "event": "Djurgårdens IF – Halmstads BK",
-      "selection": "Acima 3.5 - escanteios 2º o time",
+      "event": "Djurg\u00e5rdens IF \u2013 Halmstads BK",
+      "selection": "Acima 3.5 - escanteios 2\u00ba o time",
       "house": "Betwarrior",
       "odd": 2.45,
       "pot": 7,
@@ -2064,8 +2064,8 @@
     },
     {
       "id": "mrjcwjtq7bqll",
-      "event": "CA Atlanta – Colegiales",
-      "selection": "Acima 3.5 - escanteios 2º o time",
+      "event": "CA Atlanta \u2013 Colegiales",
+      "selection": "Acima 3.5 - escanteios 2\u00ba o time",
       "house": "Betwarrior",
       "odd": 1.96,
       "pot": 3.96,
@@ -2077,8 +2077,8 @@
     },
     {
       "id": "mrjdimeylhuyt",
-      "event": "Capitanes de Arecibo – Santeros de Aguada",
-      "selection": "H2(+1.5) 1ª metade",
+      "event": "Capitanes de Arecibo \u2013 Santeros de Aguada",
+      "selection": "H2(+1.5) 1\u00aa metade",
       "house": "Pixbet",
       "odd": 1.9,
       "pot": 4,
@@ -2090,7 +2090,7 @@
     },
     {
       "id": "mrjdm9qbq9wmv",
-      "event": "KuPS Kuopio – Vardar",
+      "event": "KuPS Kuopio \u2013 Vardar",
       "selection": "menos 10.5 escanteios",
       "house": "Pixbet",
       "odd": 1.84,
@@ -2116,7 +2116,7 @@
     },
     {
       "id": "mrjgvwdx39o23",
-      "event": "IFK Mariehamn – FC Lahti Finlândia / Veikkausliiga",
+      "event": "IFK Mariehamn \u2013 FC Lahti Finl\u00e2ndia / Veikkausliiga",
       "selection": "Lahti +0,75 asiatico",
       "house": "Betwarrior",
       "odd": 1.83,
@@ -2337,7 +2337,7 @@
     },
     {
       "id": "mrmrzqiwntstr",
-      "event": "Yelimay Semey – Alashkert",
+      "event": "Yelimay Semey \u2013 Alashkert",
       "selection": "+3.5 esc time 2",
       "house": "Betwarrior",
       "odd": 2,
@@ -2350,8 +2350,8 @@
     },
     {
       "id": "mrms17crp628w",
-      "event": "Pyunik – Marsaxlokk FC",
-      "selection": "Acima 3.5 - escanteios 2º o time",
+      "event": "Pyunik \u2013 Marsaxlokk FC",
+      "selection": "Acima 3.5 - escanteios 2\u00ba o time",
       "house": "Betwarrior",
       "odd": 2.5,
       "pot": 8.58,
@@ -2389,7 +2389,7 @@
     },
     {
       "id": "mrmtbwwo5rsav",
-      "event": "SC Wiener Neustadt – QPR",
+      "event": "SC Wiener Neustadt \u2013 QPR",
       "selection": "1(4:0)",
       "house": "Betnacional",
       "odd": 2.2,
@@ -2402,8 +2402,8 @@
     },
     {
       "id": "mrmtgjx5uggxr",
-      "event": "FC Besa Biel/Bienne – FC Biel-Bienne",
-      "selection": "Acima 0.5 1º período 1º o time",
+      "event": "FC Besa Biel/Bienne \u2013 FC Biel-Bienne",
+      "selection": "Acima 0.5 1\u00ba per\u00edodo 1\u00ba o time",
       "house": "Aposta1",
       "odd": 2.28,
       "pot": 8,
@@ -2428,8 +2428,8 @@
     },
     {
       "id": "mrne9mv0dg653",
-      "event": "Vitória - Vasco da Gama",
-      "selection": "Mais 4.5 cartões",
+      "event": "Vit\u00f3ria - Vasco da Gama",
+      "selection": "Mais 4.5 cart\u00f5es",
       "house": "Betnacional",
       "odd": 2.15,
       "pot": 7.45,
@@ -2467,8 +2467,8 @@
     },
     {
       "id": "mrnen27u30iql",
-      "event": "Saint Louis City SC – Sporting KC",
-      "selection": "Cartões 2",
+      "event": "Saint Louis City SC \u2013 Sporting KC",
+      "selection": "Cart\u00f5es 2",
       "house": "Aposta1",
       "odd": 2.25,
       "pot": 6,
@@ -2480,7 +2480,7 @@
     },
     {
       "id": "mrnepp2xv21gt",
-      "event": "CD Maxaquene – Vilankulo FC",
+      "event": "CD Maxaquene \u2013 Vilankulo FC",
       "selection": "X2",
       "house": "Betnacional",
       "odd": 1.5,
@@ -2493,7 +2493,7 @@
     },
     {
       "id": "mrneuk1zoizl8",
-      "event": "Racing Club – Defensa y Justicia",
+      "event": "Racing Club \u2013 Defensa y Justicia",
       "selection": "Abaixo 2 gols",
       "house": "Betwarrior",
       "odd": 2.9,
@@ -2506,7 +2506,7 @@
     },
     {
       "id": "mrnezgn10i5ut",
-      "event": "Leones de Ponce – Atleticos de San German",
+      "event": "Leones de Ponce \u2013 Atleticos de San German",
       "selection": "Mais de 86.5 1 rempo",
       "house": "Aposta1",
       "odd": 2.2,
@@ -2519,7 +2519,7 @@
     },
     {
       "id": "mrnf2bw5l2ish",
-      "event": "Cangrejeros de Santurce – Criollas de Caguas",
+      "event": "Cangrejeros de Santurce \u2013 Criollas de Caguas",
       "selection": "Mais de 94.5 1tempo",
       "house": "Aposta1",
       "odd": 2.5,
@@ -2532,7 +2532,7 @@
     },
     {
       "id": "mrpmfj2p10bzu",
-      "event": "NEC Nijmegen – Al Fayha FC",
+      "event": "NEC Nijmegen \u2013 Al Fayha FC",
       "selection": "Segundo temo fayha +0,5",
       "house": "Brbet",
       "odd": 2.54,
@@ -2545,7 +2545,7 @@
     },
     {
       "id": "mrpmwv5xj68hi",
-      "event": "SV Worgl – FC Kufstein World",
+      "event": "SV Worgl \u2013 FC Kufstein World",
       "selection": "Mais gols segundo tempo",
       "house": "Vbet",
       "odd": 2.43,
@@ -2598,7 +2598,7 @@
     {
       "id": "mrppkxt74aygv",
       "event": "londrina x botafogo",
-      "selection": "menos de 1.5 finalizações londrina",
+      "selection": "menos de 1.5 finaliza\u00e7\u00f5es londrina",
       "house": "Superbet",
       "odd": 2,
       "pot": 8,
@@ -2650,7 +2650,7 @@
     {
       "id": "mrppobd4s87i4",
       "event": "Londrina xBotafogo",
-      "selection": "Mais de 26.5 finalizações",
+      "selection": "Mais de 26.5 finaliza\u00e7\u00f5es",
       "house": "Superbet",
       "odd": 1.77,
       "pot": 9,
@@ -2701,7 +2701,7 @@
     },
     {
       "id": "mrpqh7vhkkhaw",
-      "event": "Otelul Galati – CFR Cluj",
+      "event": "Otelul Galati \u2013 CFR Cluj",
       "selection": "1 esc",
       "house": "Superbet",
       "odd": 2.57,
@@ -2714,8 +2714,8 @@
     },
     {
       "id": "mrpqiufu5nl12",
-      "event": "Niklas Waldner – Laslo Djere",
-      "selection": "Acima 8.5 1º set",
+      "event": "Niklas Waldner \u2013 Laslo Djere",
+      "selection": "Acima 8.5 1\u00ba set",
       "house": "Bet365",
       "odd": 2.25,
       "pot": 18.7,
@@ -2727,8 +2727,8 @@
     },
     {
       "id": "mrpqme38xt8m4",
-      "event": "Magni Grenivik – Fjolnir",
-      "selection": "Abaixo 1.5 1º o time",
+      "event": "Magni Grenivik \u2013 Fjolnir",
+      "selection": "Abaixo 1.5 1\u00ba o time",
       "house": "Aposta1",
       "odd": 2.2,
       "pot": 16.4,
@@ -2740,8 +2740,8 @@
     },
     {
       "id": "mrpqpqbze54uj",
-      "event": "Mayar Sherif – Oleksandra Oliynykova WTA - WTA Iasi,",
-      "selection": "Acima 0.5 - aces 2º o participante",
+      "event": "Mayar Sherif \u2013 Oleksandra Oliynykova WTA - WTA Iasi,",
+      "selection": "Acima 0.5 - aces 2\u00ba o participante",
       "house": "Aposta1",
       "odd": 2.8,
       "pot": 13.6,
@@ -2753,7 +2753,7 @@
     },
     {
       "id": "mrpqt1v6hyngr",
-      "event": "Evesham United FC – Cheltenham Town",
+      "event": "Evesham United FC \u2013 Cheltenham Town",
       "selection": "X / ANB",
       "house": "Vbet",
       "odd": 2.08,
@@ -2766,7 +2766,7 @@
     },
     {
       "id": "mrpquxf1h1gmh",
-      "event": "Southend United – West Ham United",
+      "event": "Southend United \u2013 West Ham United",
       "selection": "X / ANB",
       "house": "Vbet",
       "odd": 2.05,
@@ -2792,7 +2792,7 @@
     },
     {
       "id": "mrpr0jgbvf26k",
-      "event": "Monaco – AS Saint Priest",
+      "event": "Monaco \u2013 AS Saint Priest",
       "selection": "fora nao faz gol",
       "house": "Aposta1",
       "odd": 1.68,
@@ -2805,7 +2805,7 @@
     },
     {
       "id": "mrpr1r9450s1l",
-      "event": "Hartberg – First Vienna Fc 1894",
+      "event": "Hartberg \u2013 First Vienna Fc 1894",
       "selection": "x2",
       "house": "Betnacional",
       "odd": 2.3,
@@ -2818,7 +2818,7 @@
     },
     {
       "id": "mrpr4ahqj0i7h",
-      "event": "Floreat Athena – Quinns FC",
+      "event": "Floreat Athena \u2013 Quinns FC",
       "selection": "Acima 2.5",
       "house": "Bet365",
       "odd": 1.5,
@@ -2831,7 +2831,7 @@
     },
     {
       "id": "mrpr5zam3nus1",
-      "event": "Illawarra Hawks NBL1 (W) – Hills Hornets (W)",
+      "event": "Illawarra Hawks NBL1 (W) \u2013 Hills Hornets (W)",
       "selection": "menos de 83.5 segundo time",
       "house": "Bet365",
       "odd": 1.8,
@@ -2844,7 +2844,7 @@
     },
     {
       "id": "mrpr9et10hgqn",
-      "event": "Kyrian Jacquet – Goncalo Da Rosa Castro",
+      "event": "Kyrian Jacquet \u2013 Goncalo Da Rosa Castro",
       "selection": "Abaixo 17.5",
       "house": "Bet365",
       "odd": 2,
@@ -2857,7 +2857,7 @@
     },
     {
       "id": "mrprjjmtglec2",
-      "event": "Tranmere – Blackpool",
+      "event": "Tranmere \u2013 Blackpool",
       "selection": "2 / DNB",
       "house": "Bet365",
       "odd": 1.66,
@@ -2870,7 +2870,7 @@
     },
     {
       "id": "mrprq6vpx44up",
-      "event": "egia Warsaw – Pogon Grodzisk Mazowiecki Europe - Europe Friendlies",
+      "event": "egia Warsaw \u2013 Pogon Grodzisk Mazowiecki Europe - Europe Friendlies",
       "selection": "Acima 2.5",
       "house": "Bet365",
       "odd": 1.85,
@@ -2883,7 +2883,7 @@
     },
     {
       "id": "mrpsbfiu533zv",
-      "event": "Pumas UNAM – CF Pachuca",
+      "event": "Pumas UNAM \u2013 CF Pachuca",
       "selection": "2",
       "house": "Betvip",
       "odd": 3.06,
@@ -2909,8 +2909,8 @@
     },
     {
       "id": "mrqfmtxlprc6x",
-      "event": "Baldoyle United – Longford Town",
-      "selection": "Gols: igual em ambas os tempos 2º o time",
+      "event": "Baldoyle United \u2013 Longford Town",
+      "selection": "Gols: igual em ambas os tempos 2\u00ba o time",
       "house": "Vbet",
       "odd": 3.78,
       "pot": 88.5,
@@ -2922,8 +2922,8 @@
     },
     {
       "id": "mrqfthc4un3px",
-      "event": "Atyrau – Kairat Almaty",
-      "selection": "Acima 4.5 1º período - escanteios",
+      "event": "Atyrau \u2013 Kairat Almaty",
+      "selection": "Acima 4.5 1\u00ba per\u00edodo - escanteios",
       "house": "Superbet",
       "odd": 2.55,
       "pot": 18.9,
@@ -2948,7 +2948,7 @@
     },
     {
       "id": "mrqfzbsgk0z1k",
-      "event": "CFRJ Maricá – Resende",
+      "event": "CFRJ Maric\u00e1 \u2013 Resende",
       "selection": "2 / DNB",
       "house": "Betao",
       "odd": 2.77,
@@ -2961,7 +2961,7 @@
     },
     {
       "id": "mrqg2htzobbu6",
-      "event": "SC Braga – Celta de Vigo",
+      "event": "SC Braga \u2013 Celta de Vigo",
       "selection": "1 primeiro a vai conseguir 5 escanteios",
       "house": "Betano",
       "odd": 2.02,
@@ -2974,7 +2974,7 @@
     },
     {
       "id": "mrqg6npxnksjl",
-      "event": "Sporting JAX – Brooklyn FC",
+      "event": "Sporting JAX \u2013 Brooklyn FC",
       "selection": "2 / DNB",
       "house": "Bet365",
       "odd": 2,
@@ -2987,7 +2987,7 @@
     },
     {
       "id": "mrqg92iuw97zf",
-      "event": "NK Opatija – SV Austria Salzburg",
+      "event": "NK Opatija \u2013 SV Austria Salzburg",
       "selection": "Gols: mais no segundo tempo",
       "house": "Vbet",
       "odd": 2.77,
@@ -3001,7 +3001,7 @@
     {
       "id": "mrqggx8pvhlf7",
       "event": "Rot Weiss Oberhausen vs Borussia Dortmund",
-      "selection": "Abaixo 3.5 2º o time",
+      "selection": "Abaixo 3.5 2\u00ba o time",
       "house": "Betsson",
       "odd": 3.05,
       "pot": 10,
@@ -3013,8 +3013,8 @@
     },
     {
       "id": "mrqgoc3tkcoa6",
-      "event": "França vs Inglaterra",
-      "selection": "Abaixo 3.5 - defesas 2º o time",
+      "event": "Fran\u00e7a vs Inglaterra",
+      "selection": "Abaixo 3.5 - defesas 2\u00ba o time",
       "house": "Betsson",
       "odd": 2.15,
       "pot": 13.5,
@@ -3027,7 +3027,7 @@
     {
       "id": "mrqgucl7r9tkp",
       "event": "Veronika Podrez v Tereza Krejcova",
-      "selection": "2 vence o 2º game",
+      "selection": "2 vence o 2\u00ba game",
       "house": "Betnacional",
       "odd": 2.63,
       "pot": 10.3,
@@ -3039,7 +3039,7 @@
     },
     {
       "id": "mrqkjl73e2td4",
-      "event": "Gambia Prison (F) – Gambia Armed Forces (F)",
+      "event": "Gambia Prison (F) \u2013 Gambia Armed Forces (F)",
       "selection": "1",
       "house": "Superbet",
       "odd": 5.15,
@@ -3065,7 +3065,7 @@
     },
     {
       "id": "mrqsv63itiwcz",
-      "event": "Andrey Rublev – Luciano Darderi",
+      "event": "Andrey Rublev \u2013 Luciano Darderi",
       "selection": "Rublev menos 6.5 aces",
       "house": "Superbet",
       "odd": 2.4,
@@ -3078,8 +3078,8 @@
     },
     {
       "id": "mrqt38ztum0n9",
-      "event": "Chivas Guadalajara – Deportivo Toluca",
-      "selection": "Acima 3.5 - chutes no alvo 2º o time",
+      "event": "Chivas Guadalajara \u2013 Deportivo Toluca",
+      "selection": "Acima 3.5 - chutes no alvo 2\u00ba o time",
       "house": "Superbet",
       "odd": 1.61,
       "pot": 6.17,
@@ -3091,8 +3091,8 @@
     },
     {
       "id": "mrqt5oor674dk",
-      "event": "llawarra Hawks NBL1 (W) – Penrith Panthers (W)",
-      "selection": "Abaixo 64.5 Tempo Extra 2º o time",
+      "event": "llawarra Hawks NBL1 (W) \u2013 Penrith Panthers (W)",
+      "selection": "Abaixo 64.5 Tempo Extra 2\u00ba o time",
       "house": "Bet365",
       "odd": 1.8,
       "pot": 3.17,
@@ -3104,7 +3104,7 @@
     },
     {
       "id": "mrqtm8tbdnsre",
-      "event": "Espanha – Argentina",
+      "event": "Espanha \u2013 Argentina",
       "selection": "H2(+4.5) - chutes",
       "house": "Superbet",
       "odd": 1.68,
@@ -3117,8 +3117,8 @@
     },
     {
       "id": "mrqtsb1cwbv7c",
-      "event": "França – Inglaterra",
-      "selection": "H1(−3.5) - chutes",
+      "event": "Fran\u00e7a \u2013 Inglaterra",
+      "selection": "H1(\u22123.5) - chutes",
       "house": "Superbet",
       "odd": 1.88,
       "pot": 26.4,
@@ -3143,8 +3143,8 @@
     },
     {
       "id": "mrrih82zb92q9",
-      "event": "Barbora Krejcikova – Maria Sakkari",
-      "selection": "abaixo 2.5 - aces 2º o participante",
+      "event": "Barbora Krejcikova \u2013 Maria Sakkari",
+      "selection": "abaixo 2.5 - aces 2\u00ba o participante",
       "house": "Brbet",
       "odd": 2.1,
       "pot": 15.7,
@@ -3156,7 +3156,7 @@
     },
     {
       "id": "mrriq5rz6sldm",
-      "event": "Itália (F) – Austrália (F)",
+      "event": "It\u00e1lia (F) \u2013 Austr\u00e1lia (F)",
       "selection": "1 TE + DP",
       "house": "Betano",
       "odd": 3.7,
@@ -3169,8 +3169,8 @@
     },
     {
       "id": "mrrir96d2jfo2",
-      "event": "Andrey Rublev – Luciano Darderi",
-      "selection": "Acima 6.5 - aces 2º o participante",
+      "event": "Andrey Rublev \u2013 Luciano Darderi",
+      "selection": "Acima 6.5 - aces 2\u00ba o participante",
       "house": "Superbet",
       "odd": 2.37,
       "pot": 9.79,
@@ -3182,7 +3182,7 @@
     },
     {
       "id": "mrriuzudsdpcd",
-      "event": "Szombathelyi Haladas – Lecce World - Club Friendlies",
+      "event": "Szombathelyi Haladas \u2013 Lecce World - Club Friendlies",
       "selection": "X / ANB",
       "house": "Vbet",
       "odd": 1.56,
@@ -3195,7 +3195,7 @@
     },
     {
       "id": "mrrizisjuhx7p",
-      "event": "Lillestrøm – Viking",
+      "event": "Lillestr\u00f8m \u2013 Viking",
       "selection": "Abaixo 3.75",
       "house": "Betsson",
       "odd": 1.72,
@@ -3221,8 +3221,8 @@
     },
     {
       "id": "mrrj6s4t4yotv",
-      "event": "Barbora Krejcikova – Maria Sakkari",
-      "selection": "Abaixo 3.5 - aces 1º o participante",
+      "event": "Barbora Krejcikova \u2013 Maria Sakkari",
+      "selection": "Abaixo 3.5 - aces 1\u00ba o participante",
       "house": "Brbet",
       "odd": 1.71,
       "pot": 12.2,
@@ -3234,8 +3234,8 @@
     },
     {
       "id": "mrrjhxuucnp6a",
-      "event": "Stefanos Tsitsipas – Raphael Collignon",
-      "selection": "Abaixo 6.5 - aces 2º o participante",
+      "event": "Stefanos Tsitsipas \u2013 Raphael Collignon",
+      "selection": "Abaixo 6.5 - aces 2\u00ba o participante",
       "house": "Superbet",
       "odd": 2.27,
       "pot": 9.63,
@@ -3247,7 +3247,7 @@
     },
     {
       "id": "mrrjlixmb1p45",
-      "event": "Mohun Bagan Super Giant (Res) – Kalighat MS",
+      "event": "Mohun Bagan Super Giant (Res) \u2013 Kalighat MS",
       "selection": "1 (0:1)",
       "house": "Betnacional",
       "odd": 2.3,
@@ -3326,7 +3326,7 @@
     {
       "id": "mrs4x75aufbmw",
       "event": "Mohameddan SC (R) Police AC",
-      "selection": "Dupla Chance — Empate ou 2",
+      "selection": "Dupla Chance \u2014 Empate ou 2",
       "house": "Superbet",
       "odd": 2.22,
       "pot": 10,
@@ -3338,7 +3338,7 @@
     },
     {
       "id": "mrs4z04bp3eqh",
-      "event": "Stal Rzeszow — Chrobry Glogow",
+      "event": "Stal Rzeszow \u2014 Chrobry Glogow",
       "selection": "Mais de 1.5 Chrobry Glogow - Total de Gols",
       "house": "Superbet",
       "odd": 2.3,
@@ -3351,8 +3351,8 @@
     },
     {
       "id": "mrs4zzaijzto2",
-      "event": "Espanha — Argentina",
-      "selection": "Argentina (4.5) Handicap - Finalizações",
+      "event": "Espanha \u2014 Argentina",
+      "selection": "Argentina (4.5) Handicap - Finaliza\u00e7\u00f5es",
       "house": "Superbet",
       "odd": 1.68,
       "pot": 10,
@@ -3391,7 +3391,7 @@
     {
       "id": "mrs5b4gn9aenm",
       "event": "FK Mariehamn - FC Lahti",
-      "selection": "Handicap Asiático: FC Lahti -0.75",
+      "selection": "Handicap Asi\u00e1tico: FC Lahti -0.75",
       "house": "Betwarrior",
       "odd": 1.83,
       "pot": 10,
@@ -3416,7 +3416,7 @@
     },
     {
       "id": "mrs5u5lgjx8g0",
-      "event": "Lanús – Cienciano",
+      "event": "Lan\u00fas \u2013 Cienciano",
       "selection": "V - 2 escanteios",
       "house": "Superbet",
       "odd": 5.5,
@@ -3429,7 +3429,7 @@
     },
     {
       "id": "mrs5wgez6r66y",
-      "event": "Cruz Azul – Club Puebla",
+      "event": "Cruz Azul \u2013 Club Puebla",
       "selection": "2 primeiro a vai conseguir 9 escanteios",
       "house": "Betano",
       "odd": 40,
@@ -3442,8 +3442,8 @@
     },
     {
       "id": "mrs6a8plxt3im",
-      "event": "Cangrejeros de Santurce – Criollos de Caguas",
-      "selection": "Acima 89.5 1ª metade",
+      "event": "Cangrejeros de Santurce \u2013 Criollos de Caguas",
+      "selection": "Acima 89.5 1\u00aa metade",
       "house": "Betboo",
       "odd": 1.65,
       "pot": 64.8,
@@ -3455,7 +3455,7 @@
     },
     {
       "id": "mrs6cuuu65sqx",
-      "event": "Macara – Deportivo Cuenca The Americas - Ecuador LigaPro Serie A",
+      "event": "Macara \u2013 Deportivo Cuenca The Americas - Ecuador LigaPro Serie A",
       "selection": "1 / DNB",
       "house": "Bet365",
       "odd": 1.73,
@@ -3468,7 +3468,7 @@
     },
     {
       "id": "mrsiw7abgo8qi",
-      "event": "Penarol Reserves – Racing Club de Montevideo Reserves",
+      "event": "Penarol Reserves \u2013 Racing Club de Montevideo Reserves",
       "selection": "2 / DNB",
       "house": "Bet365",
       "odd": 2.63,
@@ -3481,8 +3481,8 @@
     },
     {
       "id": "mrsj155ku9tr3",
-      "event": "Nadia Podoroska – Julia Stusek",
-      "selection": "Acima 1.5 aces 1º o participante",
+      "event": "Nadia Podoroska \u2013 Julia Stusek",
+      "selection": "Acima 1.5 aces 1\u00ba o participante",
       "house": "Superbet",
       "odd": 2.22,
       "pot": 12.4,
@@ -3494,8 +3494,8 @@
     },
     {
       "id": "mrsj38ps3zoa1",
-      "event": "São Paulo – Athletico PR",
-      "selection": "Acima 2.5 - cartões 1º o time",
+      "event": "S\u00e3o Paulo \u2013 Athletico PR",
+      "selection": "Acima 2.5 - cart\u00f5es 1\u00ba o time",
       "house": "Superbet",
       "odd": 2.1,
       "pot": 10.5,
@@ -3507,8 +3507,8 @@
     },
     {
       "id": "mrsja7whzon2t",
-      "event": "Internacional RS – Cruzeiro MG",
-      "selection": "Acima 5.5 cartões",
+      "event": "Internacional RS \u2013 Cruzeiro MG",
+      "selection": "Acima 5.5 cart\u00f5es",
       "house": "Superbet",
       "odd": 2.15,
       "pot": 8.7,
@@ -3520,7 +3520,7 @@
     },
     {
       "id": "mrsjepgzqsq82",
-      "event": "Valur Reykjavik – Zrinjski",
+      "event": "Valur Reykjavik \u2013 Zrinjski",
       "selection": "1 DNB 1o tempo",
       "house": "Aposta1",
       "odd": 2.05,
@@ -3533,7 +3533,7 @@
     },
     {
       "id": "mrsjhtu33p6e9",
-      "event": "Aluminij – Dinamo Tirana",
+      "event": "Aluminij \u2013 Dinamo Tirana",
       "selection": "2 / DNB",
       "house": "Brbet",
       "odd": 2.05,
@@ -3546,8 +3546,8 @@
     },
     {
       "id": "mrsjkueqnmivk",
-      "event": "Vila Nova GO – Fortaleza",
-      "selection": "Acima 4.5 - chutes no alvo 1º o time",
+      "event": "Vila Nova GO \u2013 Fortaleza",
+      "selection": "Acima 4.5 - chutes no alvo 1\u00ba o time",
       "house": "Superbet",
       "odd": 2.17,
       "pot": 8.95,
@@ -3559,7 +3559,7 @@
     },
     {
       "id": "mrsjnv4okk2df",
-      "event": "Peñarol (URU) (R) – RC Montevideo (R)",
+      "event": "Pe\u00f1arol (URU) (R) \u2013 RC Montevideo (R)",
       "selection": "2",
       "house": "Superbet",
       "odd": 3.45,
@@ -3572,7 +3572,7 @@
     },
     {
       "id": "mrsjpogxnj301",
-      "event": "Jacob Brumm – Ilan Klein",
+      "event": "Jacob Brumm \u2013 Ilan Klein",
       "selection": "2",
       "house": "Reidopitaco",
       "odd": 5.1,
@@ -3585,8 +3585,8 @@
     },
     {
       "id": "mrsjrjoqdc2y1",
-      "event": "Justin Boulais – Johannus Monday",
-      "selection": "H2(−2.5) 1º set",
+      "event": "Justin Boulais \u2013 Johannus Monday",
+      "selection": "H2(\u22122.5) 1\u00ba set",
       "house": "Superbet",
       "odd": 3.9,
       "pot": 19,
@@ -3598,8 +3598,8 @@
     },
     {
       "id": "mrsjune3ly50c",
-      "event": "Sporting Cristal – RB Bragantino",
-      "selection": "1 primeiro a vai conseguir 3 escanteios 1º período",
+      "event": "Sporting Cristal \u2013 RB Bragantino",
+      "selection": "1 primeiro a vai conseguir 3 escanteios 1\u00ba per\u00edodo",
       "house": "Superbet",
       "odd": 3,
       "pot": 13.1,
@@ -3611,7 +3611,7 @@
     },
     {
       "id": "mrsjye40qp7wm",
-      "event": "NK Varazdin – FK Jablonec",
+      "event": "NK Varazdin \u2013 FK Jablonec",
       "selection": "1",
       "house": "Betano",
       "odd": 3.05,
@@ -3624,7 +3624,7 @@
     },
     {
       "id": "mrsk1ezh7gqn4",
-      "event": "Bodø/Glimt – Ham-Kam",
+      "event": "Bod\u00f8/Glimt \u2013 Ham-Kam",
       "selection": "2 / HNB",
       "house": "Betsson",
       "odd": 3.25,
@@ -3637,7 +3637,7 @@
     },
     {
       "id": "mrsk56hs4ya0p",
-      "event": "Dunav Ruse – PFC Ludogorets 1945 Razgrad Bulgaria - First Professional League",
+      "event": "Dunav Ruse \u2013 PFC Ludogorets 1945 Razgrad Bulgaria - First Professional League",
       "selection": "2(2:0)",
       "house": "Brbet",
       "odd": 3.33,
@@ -3650,7 +3650,7 @@
     },
     {
       "id": "mrsk97u3e623j",
-      "event": "Sporting – Strasbourg",
+      "event": "Sporting \u2013 Strasbourg",
       "selection": "Abaixo 3.25",
       "house": "Aposta1",
       "odd": 2.05,
@@ -3663,9 +3663,9 @@
     },
     {
       "id": "mrski8l81cl0j",
-      "event": "Ella Brownback – Letizia Corsini",
+      "event": "Ella Brownback \u2013 Letizia Corsini",
       "selection": "1",
-      "house": "Betão",
+      "house": "Bet\u00e3o",
       "odd": 3.1,
       "pot": 30.5,
       "prob": 42.1,
@@ -3689,7 +3689,7 @@
     },
     {
       "id": "mrskrp4ge1brp",
-      "event": "Corvinul 1921 Hunedoara – FK Csikszereda Miercurea Ciuc",
+      "event": "Corvinul 1921 Hunedoara \u2013 FK Csikszereda Miercurea Ciuc",
       "selection": "2 - escanteios",
       "house": "Betano",
       "odd": 3.4,
@@ -3702,7 +3702,7 @@
     },
     {
       "id": "mrskut6rb2hvj",
-      "event": "Peñarol (URU) (R) – RC Montevideo (R)",
+      "event": "Pe\u00f1arol (URU) (R) \u2013 RC Montevideo (R)",
       "selection": "2 dnb",
       "house": "Superbet",
       "odd": 2.47,
@@ -3715,7 +3715,7 @@
     },
     {
       "id": "mrsl1e2zm8ubf",
-      "event": "NK Bravo – Shkendija Tetovo UEFA Competitions - UEFA Conference League Qualifying",
+      "event": "NK Bravo \u2013 Shkendija Tetovo UEFA Competitions - UEFA Conference League Qualifying",
       "selection": "1",
       "house": "Bet365",
       "odd": 1.8,
@@ -3728,7 +3728,7 @@
     },
     {
       "id": "mrsl3fnzinhp5",
-      "event": "Elena Mireles – Alyson Shannon",
+      "event": "Elena Mireles \u2013 Alyson Shannon",
       "selection": "1 primeiro set",
       "house": "Bet365",
       "odd": 1.8,
@@ -3741,7 +3741,7 @@
     },
     {
       "id": "mrt2hqsd613nf",
-      "event": "Anna Bondar – Moyuka Uchijima",
+      "event": "Anna Bondar \u2013 Moyuka Uchijima",
       "selection": "Abaixo 4.5 - aces",
       "house": "Superbet",
       "odd": 2.05,
@@ -3754,7 +3754,7 @@
     },
     {
       "id": "mrt2jjny9e26u",
-      "event": "Unsw FC – Apia Leichhardt FC",
+      "event": "Unsw FC \u2013 Apia Leichhardt FC",
       "selection": "2",
       "house": "Reidopitaco",
       "odd": 2.88,
@@ -3767,7 +3767,7 @@
     },
     {
       "id": "mrt2ljcfka9sm",
-      "event": "Kaitlin Quevedo – Anhelina Kalinina",
+      "event": "Kaitlin Quevedo \u2013 Anhelina Kalinina",
       "selection": "acima de 1.5 aces para 1",
       "house": "Superbet",
       "odd": 2,
@@ -3780,7 +3780,7 @@
     },
     {
       "id": "mrt2nnplomp2t",
-      "event": "Inverness Caledonian Thistle FC – St. Johnstone FC",
+      "event": "Inverness Caledonian Thistle FC \u2013 St. Johnstone FC",
       "selection": "1x",
       "house": "Vbet",
       "odd": 2.08,
@@ -3793,8 +3793,8 @@
     },
     {
       "id": "mrt2p61jtmwvw",
-      "event": "Universidad Central Venezuela – Santos",
-      "selection": "1 cartões",
+      "event": "Universidad Central Venezuela \u2013 Santos",
+      "selection": "1 cart\u00f5es",
       "house": "Superbet",
       "odd": 2.12,
       "pot": 10.1,
@@ -3819,7 +3819,7 @@
     },
     {
       "id": "mrtelt8xa3ajl",
-      "event": "Anna Bondar – Moyuka Uchijima",
+      "event": "Anna Bondar \u2013 Moyuka Uchijima",
       "selection": "Segundo participante menos de 1.5 aces",
       "house": "Superbet",
       "odd": 2.35,
@@ -3832,8 +3832,8 @@
     },
     {
       "id": "mrtfjf3jz3ajk",
-      "event": "Botafogo x vitória",
-      "selection": "Vitória mais de 3.5 cartões",
+      "event": "Botafogo x vit\u00f3ria",
+      "selection": "Vit\u00f3ria mais de 3.5 cart\u00f5es",
       "house": "Reidopitaco",
       "odd": 2.8,
       "pot": 10.5,
@@ -3845,7 +3845,7 @@
     },
     {
       "id": "mrtfs7dmxs5xw",
-      "event": "Lagomar CC – CD Albatros",
+      "event": "Lagomar CC \u2013 CD Albatros",
       "selection": "2",
       "house": "Bandbet",
       "odd": 3.98,
@@ -3858,8 +3858,8 @@
     },
     {
       "id": "mrtfvfrkqywn3",
-      "event": "Bolívar x gremio",
-      "selection": "Bolívar menos 2.5 escanteios primeiro tempo",
+      "event": "Bol\u00edvar x gremio",
+      "selection": "Bol\u00edvar menos 2.5 escanteios primeiro tempo",
       "house": "Betano",
       "odd": 3.25,
       "pot": 22.1,
@@ -3871,8 +3871,8 @@
     },
     {
       "id": "mrtg2qbu8ul8c",
-      "event": "Atlético-MG – Bahia",
-      "selection": "Mais de 6.5 cartões",
+      "event": "Atl\u00e9tico-MG \u2013 Bahia",
+      "selection": "Mais de 6.5 cart\u00f5es",
       "house": "Betnacional",
       "odd": 3.5,
       "pot": 12,
@@ -3884,8 +3884,8 @@
     },
     {
       "id": "mrtoifjo3gu34",
-      "event": "Maria Lourdes Carle – Jule Niemeier",
-      "selection": "1° Set - Jule Niemeier - Total de Aces menos 0.5",
+      "event": "Maria Lourdes Carle \u2013 Jule Niemeier",
+      "selection": "1\u00b0 Set - Jule Niemeier - Total de Aces menos 0.5",
       "house": "Superbet",
       "odd": 2.2,
       "pot": 40,
@@ -3897,7 +3897,7 @@
     },
     {
       "id": "mrtokyu9vbwjg",
-      "event": "Elena Pridankina – Panna Udvardy",
+      "event": "Elena Pridankina \u2013 Panna Udvardy",
       "selection": "1mais de 0,5 aces",
       "house": "Superbet",
       "odd": 2.05,
@@ -3910,7 +3910,7 @@
     },
     {
       "id": "mrtoodmgilkl8",
-      "event": "Leyre Romero Gormaz – Veronika Erjavec",
+      "event": "Leyre Romero Gormaz \u2013 Veronika Erjavec",
       "selection": "2 abaix de 1 ace",
       "house": "Superbet",
       "odd": 2.22,
@@ -3923,7 +3923,7 @@
     },
     {
       "id": "mrtp5fz0unaw7",
-      "event": "Sao Gabriel – Aquidauanense",
+      "event": "Sao Gabriel \u2013 Aquidauanense",
       "selection": "Menos 2.5",
       "house": "Bet365",
       "odd": 3.75,
@@ -3936,7 +3936,7 @@
     },
     {
       "id": "mrtpldicusn9a",
-      "event": "Goiás x sport",
+      "event": "Goi\u00e1s x sport",
       "selection": "Mais de 1.5 impedimentos sport",
       "house": "Superbet",
       "odd": 2.25,
@@ -3949,7 +3949,7 @@
     },
     {
       "id": "mrtqyqm06ga0n",
-      "event": "Goiás x sport",
+      "event": "Goi\u00e1s x sport",
       "selection": "Mais de 1.5 impedimentos sport",
       "house": "Superbet",
       "odd": 2.25,
@@ -3962,7 +3962,7 @@
     },
     {
       "id": "mrtqzdfp12oug",
-      "event": "University Azzurri FC – Macarthur FC",
+      "event": "University Azzurri FC \u2013 Macarthur FC",
       "selection": "Ambas nao",
       "house": "Superbet",
       "odd": 2.22,
@@ -3975,7 +3975,7 @@
     },
     {
       "id": "mrtr1sg1gtkae",
-      "event": "Zaglebie Lubin – Piast Gliwice",
+      "event": "Zaglebie Lubin \u2013 Piast Gliwice",
       "selection": "2 dnb",
       "house": "Superbet",
       "odd": 2.2,
@@ -3988,7 +3988,7 @@
     },
     {
       "id": "mrtr4qfotnj64",
-      "event": "Diane Parry – Mai Hontama",
+      "event": "Diane Parry \u2013 Mai Hontama",
       "selection": "Menos 3.5 aces diane",
       "house": "Superbet",
       "odd": 2.1,
@@ -4001,7 +4001,7 @@
     },
     {
       "id": "mrtrhspqdqzr9",
-      "event": "Alessia Popescu – Juliana Singeorzan",
+      "event": "Alessia Popescu \u2013 Juliana Singeorzan",
       "selection": "2 primeiro set",
       "house": "Bet365",
       "odd": 1.9,
@@ -4014,7 +4014,7 @@
     },
     {
       "id": "mrtrmlsa6ggjb",
-      "event": "Volta Redonda – Sao Goncalo EC RJ",
+      "event": "Volta Redonda \u2013 Sao Goncalo EC RJ",
       "selection": "Menos 11.5 escanteios",
       "house": "Betano",
       "odd": 1.87,
@@ -4053,7 +4053,7 @@
     },
     {
       "id": "mrtwb41u5w01t",
-      "event": "Nicolas Zanellato – Nicolas Oliveira",
+      "event": "Nicolas Zanellato \u2013 Nicolas Oliveira",
       "selection": "1 primeiro set",
       "house": "Bet365",
       "odd": 2,
@@ -4066,7 +4066,7 @@
     },
     {
       "id": "mrtzmix2z2vb6",
-      "event": "Lions FC – Perth Glory",
+      "event": "Lions FC \u2013 Perth Glory",
       "selection": "1 dnb",
       "house": "Bet365",
       "odd": 3.75,
@@ -4079,7 +4079,7 @@
     },
     {
       "id": "mrtzx24ok45zt",
-      "event": "Universidad Central Venezuela – Santos",
+      "event": "Universidad Central Venezuela \u2013 Santos",
       "selection": "+25.5 chutes",
       "house": "Superbet",
       "odd": 2.27,
@@ -4092,7 +4092,7 @@
     },
     {
       "id": "mru075solfbxt",
-      "event": "Stan Wawrinka – Roman Andres Burruchaga",
+      "event": "Stan Wawrinka \u2013 Roman Andres Burruchaga",
       "selection": "H2 -2.5 primeiro set",
       "house": "Superbet",
       "odd": 3.35,
@@ -4105,7 +4105,7 @@
     },
     {
       "id": "mru0aaibeklnk",
-      "event": "Vila Nova GO – Fortaleza",
+      "event": "Vila Nova GO \u2013 Fortaleza",
       "selection": "Menos 27.5 chutes",
       "house": "Superbet",
       "odd": 1.7,
@@ -4119,7 +4119,7 @@
     {
       "id": "mru0fv5c2zc1z",
       "event": "Cruz azul x puebla",
-      "selection": "2 cartões",
+      "selection": "2 cart\u00f5es",
       "house": "Superbet",
       "odd": 1.75,
       "pot": 5.83,
@@ -4131,7 +4131,7 @@
     },
     {
       "id": "mru0k6alxypds",
-      "event": "Sturm Graz – Hearts",
+      "event": "Sturm Graz \u2013 Hearts",
       "selection": "Acima de 7.5 chutes no gol",
       "house": "Superbet",
       "odd": 1.85,
@@ -4144,7 +4144,7 @@
     },
     {
       "id": "mru3e41k4sv4q",
-      "event": "Club Trouville – CA Tabare",
+      "event": "Club Trouville \u2013 CA Tabare",
       "selection": "2",
       "house": "Bandbet",
       "odd": 3.49,
@@ -4158,7 +4158,7 @@
     {
       "id": "mru3m77yehkkc",
       "event": "Valentina Steiner Noma Akugue Noha",
-      "selection": "Acima 0.5 - aces 1º o participante",
+      "selection": "Acima 0.5 - aces 1\u00ba o participante",
       "house": "Superbet",
       "odd": 2.35,
       "pot": 14.5,
@@ -4170,8 +4170,8 @@
     },
     {
       "id": "mru3uq6wqarq5",
-      "event": "Jana Otzipka – Laura Svatikova ITF Feminino - ITF Amstetten - Feminino",
-      "selection": "H1(−2.5)",
+      "event": "Jana Otzipka \u2013 Laura Svatikova ITF Feminino - ITF Amstetten - Feminino",
+      "selection": "H1(\u22122.5)",
       "house": "Betnacional",
       "odd": 1.9,
       "pot": 11.6,
@@ -4183,7 +4183,7 @@
     },
     {
       "id": "mruivbbb5m7s8",
-      "event": "Itália (F) – Austrália (F)",
+      "event": "It\u00e1lia (F) \u2013 Austr\u00e1lia (F)",
       "selection": "abaixo 12.5 primeira metade",
       "house": "Novibet",
       "odd": 2,
@@ -4196,7 +4196,7 @@
     },
     {
       "id": "mruj7gffunubn",
-      "event": "Raith Rovers – Peterhead",
+      "event": "Raith Rovers \u2013 Peterhead",
       "selection": "2(0:3) - escanteios",
       "house": "Reidopitaco",
       "odd": 2.07,
@@ -4209,8 +4209,8 @@
     },
     {
       "id": "mrujot02qcq6c",
-      "event": "Sturm Graz – Hearts",
-      "selection": "Acima 3.5 1º período - chutes no alvo",
+      "event": "Sturm Graz \u2013 Hearts",
+      "selection": "Acima 3.5 1\u00ba per\u00edodo - chutes no alvo",
       "house": "Superbet",
       "odd": 2,
       "pot": 11.5,
@@ -4222,7 +4222,7 @@
     },
     {
       "id": "mruq0rnvchvxo",
-      "event": "Partick Thistle – Stenhousemuir",
+      "event": "Partick Thistle \u2013 Stenhousemuir",
       "selection": "Mais 3.5 esc para 2",
       "house": "Betwarrior",
       "odd": 2.12,
@@ -4235,7 +4235,7 @@
     },
     {
       "id": "mruq8j93jji7h",
-      "event": "Universidad Central Venezuela – Santos",
+      "event": "Universidad Central Venezuela \u2013 Santos",
       "selection": "Acima 22.5  faltas",
       "house": "Superbet",
       "odd": 2.17,
@@ -4261,7 +4261,7 @@
     },
     {
       "id": "mrvfugix7501n",
-      "event": "Independiente del Valle – Técnico Universitario",
+      "event": "Independiente del Valle \u2013 T\u00e9cnico Universitario",
       "selection": "mais 2.5 escanteios segundo time",
       "house": "Novibet",
       "odd": 2.3,
@@ -4274,7 +4274,7 @@
     },
     {
       "id": "mrvfx2i8ktoqj",
-      "event": "New England Revolution – Toronto FC",
+      "event": "New England Revolution \u2013 Toronto FC",
       "selection": "1 mais cartoes",
       "house": "Betano",
       "odd": 3.35,
@@ -4287,7 +4287,7 @@
     },
     {
       "id": "mrvg1hgxd1tgn",
-      "event": "Náutico PE – Londrina",
+      "event": "N\u00e1utico PE \u2013 Londrina",
       "selection": "menos 26.5 chutes",
       "house": "Superbet",
       "odd": 2.12,
@@ -4300,7 +4300,7 @@
     },
     {
       "id": "mrvg74o67t7qv",
-      "event": "Chapecoense – Flamengo",
+      "event": "Chapecoense \u2013 Flamengo",
       "selection": "2 vence e 1 menos 9.5 chtutes",
       "house": "Superbet",
       "odd": 4,
@@ -4326,7 +4326,7 @@
     },
     {
       "id": "mrvgc7jn5rxya",
-      "event": "Katarzyna Kawa – Paula Badosa",
+      "event": "Katarzyna Kawa \u2013 Paula Badosa",
       "selection": "menos 0.5 aces para 1",
       "house": "Superbet",
       "odd": 2.25,
@@ -4365,7 +4365,7 @@
     },
     {
       "id": "mrwt65jm220o4",
-      "event": "Cuala – Lucan Sarsfields",
+      "event": "Cuala \u2013 Lucan Sarsfields",
       "selection": "2",
       "house": "Novibet",
       "odd": 2.1,
@@ -4405,7 +4405,7 @@
     {
       "id": "mrwtqvp0y7k95",
       "event": "Cruc1al",
-      "selection": "Abaixo 14.5 2º mapa + Tempo Extra - abates",
+      "selection": "Abaixo 14.5 2\u00ba mapa + Tempo Extra - abates",
       "house": "Superbet",
       "odd": 2.03,
       "pot": 10,
@@ -4443,7 +4443,7 @@
     },
     {
       "id": "mrxnce6h3orp6",
-      "event": "Austrália – Hungria",
+      "event": "Austr\u00e1lia \u2013 Hungria",
       "selection": "1 vence",
       "house": "Novibet",
       "odd": 6.5,
@@ -4456,7 +4456,7 @@
     },
     {
       "id": "mrxneisc3560m",
-      "event": "Cuala – Lucan Sarsfields",
+      "event": "Cuala \u2013 Lucan Sarsfields",
       "selection": "2",
       "house": "Novibet",
       "odd": 2.5,
@@ -4470,7 +4470,7 @@
     {
       "id": "mrzlc40dz8qc5",
       "event": "Colo colo",
-      "selection": "Menos 4.5 cartões",
+      "selection": "Menos 4.5 cart\u00f5es",
       "house": "Superbet",
       "odd": 2.7,
       "pot": 17,
@@ -4548,7 +4548,7 @@
     },
     {
       "id": "mrqfw8wuhoz55",
-      "name": "Betão",
+      "name": "Bet\u00e3o",
       "value": 0
     },
     {
@@ -4658,7 +4658,7 @@
     },
     {
       "id": "mseumeeird6tj",
-      "name": "Milhão",
+      "name": "Milh\u00e3o",
       "value": 0,
       "updatedAt": "2026-08-15T12:59:14.725Z"
     },
@@ -4953,7 +4953,7 @@
   "surebets": [
     {
       "id": "mrrk2z5ufcd56",
-      "event": "Barbora Krejcikova – Maria Sakkari",
+      "event": "Barbora Krejcikova \u2013 Maria Sakkari",
       "houseA": "Brbet",
       "houseB": "Novibet",
       "oddA": 1.55,
@@ -4969,7 +4969,7 @@
     },
     {
       "id": "mrrqs4q603pgq",
-      "event": "Sebastian Baez – Miomir Kecmanovic",
+      "event": "Sebastian Baez \u2013 Miomir Kecmanovic",
       "houseA": "Superbet",
       "houseB": "Betano",
       "oddA": 1.92,
@@ -4985,7 +4985,7 @@
     },
     {
       "id": "mrrrn9aramqex",
-      "event": "G.Bianchi/C.Scampoli – V.Davidova/A.Khmil",
+      "event": "G.Bianchi/C.Scampoli \u2013 V.Davidova/A.Khmil",
       "houseA": "Betano",
       "houseB": "Pixbet",
       "oddA": 2.75,
@@ -5001,7 +5001,7 @@
     },
     {
       "id": "mrrrs3aalzov2",
-      "event": "G.Bianchi/C.Scampoli – V.Davidova/A.Khmil",
+      "event": "G.Bianchi/C.Scampoli \u2013 V.Davidova/A.Khmil",
       "houseA": "Betano",
       "houseB": "Brbet",
       "oddA": 2.75,
@@ -5033,7 +5033,7 @@
     },
     {
       "id": "mrw512da0ksel",
-      "event": "Oleksandra Oliynykova – Leyre Romero Gormaz",
+      "event": "Oleksandra Oliynykova \u2013 Leyre Romero Gormaz",
       "houseA": "Onabet",
       "houseB": "Superbet",
       "oddA": 2.75,
@@ -5049,7 +5049,7 @@
     },
     {
       "id": "mrwvq96djyjim",
-      "event": "Itália – Geórgia",
+      "event": "It\u00e1lia \u2013 Ge\u00f3rgia",
       "houseA": "Superbet",
       "houseB": "1xbet",
       "oddA": 1.27,
@@ -5065,7 +5065,7 @@
     },
     {
       "id": "mrxebb17erlcq",
-      "event": "MPS Atletico Malmi – Pakkalan Palloseura",
+      "event": "MPS Atletico Malmi \u2013 Pakkalan Palloseura",
       "houseA": "1xbet",
       "houseB": "Betnacional",
       "oddA": 3.37,
@@ -5081,7 +5081,7 @@
     },
     {
       "id": "mrxnrpkm6uuj0",
-      "event": "Marie Bouzkova – Tereza Valentova",
+      "event": "Marie Bouzkova \u2013 Tereza Valentova",
       "houseA": "Betano",
       "houseB": "Onabet",
       "oddA": 4.2,
@@ -5129,7 +5129,7 @@
     },
     {
       "id": "ms0em4eta1pme",
-      "event": "FK Aktobe – FC Okzhetpes Kokshetau",
+      "event": "FK Aktobe \u2013 FC Okzhetpes Kokshetau",
       "houseA": "Superbet",
       "houseB": "1xbet",
       "oddA": 2.1,
@@ -5177,7 +5177,7 @@
     },
     {
       "id": "ms7iqzx32epk6",
-      "event": "Francisco Cerundolo – Arthur Gea",
+      "event": "Francisco Cerundolo \u2013 Arthur Gea",
       "houseA": "Zenit",
       "houseB": "Luvabet",
       "oddA": 2.29,
@@ -5193,7 +5193,7 @@
     },
     {
       "id": "ms7lv95a7bmwu",
-      "event": "Deportivo Español – Leones de Rosario FC",
+      "event": "Deportivo Espa\u00f1ol \u2013 Leones de Rosario FC",
       "houseA": "Pitaco",
       "houseB": "Zenit",
       "oddA": 2.23,
@@ -5209,7 +5209,7 @@
     },
     {
       "id": "ms971ko36gv0x",
-      "event": "Operação sem nome",
+      "event": "Opera\u00e7\u00e3o sem nome",
       "houseA": "Blaze",
       "houseB": "Zenit",
       "oddA": 6.25,
@@ -5241,7 +5241,7 @@
     },
     {
       "id": "ms9c3hgqko9ga",
-      "event": "G3X FC – DesimpaiN",
+      "event": "G3X FC \u2013 DesimpaiN",
       "houseA": "Superbet",
       "houseB": "Bet365",
       "oddA": 3.85,
@@ -5273,7 +5273,7 @@
     },
     {
       "id": "ms9kwmguszl19",
-      "event": "Puebla – Chivas Guadalajara",
+      "event": "Puebla \u2013 Chivas Guadalajara",
       "houseA": "Betsson",
       "houseB": "Vbet",
       "oddA": 4.5,
@@ -5289,7 +5289,7 @@
     },
     {
       "id": "ms9l6akd4io31",
-      "event": "Juarez – Pumas",
+      "event": "Juarez \u2013 Pumas",
       "houseA": "Pitaco",
       "houseB": "Superbet",
       "oddA": 4.73,
@@ -5321,9 +5321,9 @@
     },
     {
       "id": "msaeyf29rb0x9",
-      "event": "Napoli (Gaga) – Bologna (borees)",
+      "event": "Napoli (Gaga) \u2013 Bologna (borees)",
       "houseA": "Betwarrior",
-      "houseB": "Betão",
+      "houseB": "Bet\u00e3o",
       "oddA": 3.1,
       "oddB": 2.1,
       "total": 50,
@@ -5411,7 +5411,7 @@
     },
     {
       "id": "msdgeesxpbd4e",
-      "event": "Nikola Bartunkova – Bianca Andreescu",
+      "event": "Nikola Bartunkova \u2013 Bianca Andreescu",
       "houseA": "Epicbet",
       "houseB": "Casinozer",
       "oddA": 2.9,
@@ -5519,7 +5519,7 @@
     },
     {
       "id": "msdrrfgra6glk",
-      "event": "Yu Hsiou Hsu – Sebastian Gorzny",
+      "event": "Yu Hsiou Hsu \u2013 Sebastian Gorzny",
       "houseA": "Betnacional",
       "houseB": "Jetcasino",
       "oddA": 1.83,
@@ -5537,7 +5537,7 @@
     },
     {
       "id": "msdsyoj8482rk",
-      "event": "Lorenzo Sonego – Tallon Griekspoor",
+      "event": "Lorenzo Sonego \u2013 Tallon Griekspoor",
       "houseA": "Casinozer",
       "houseB": "Epicbet",
       "oddA": 2.22,
@@ -5555,7 +5555,7 @@
     },
     {
       "id": "msduvvlbd50k2",
-      "event": "UMF Selfoss – Ymir",
+      "event": "UMF Selfoss \u2013 Ymir",
       "houseA": "EPICBET",
       "houseB": "CASOBET",
       "oddA": 2.4,
@@ -5573,7 +5573,7 @@
     },
     {
       "id": "mselva2cl3sb4",
-      "event": "France U20 (w) – United Kingdom U20 (w)",
+      "event": "France U20 (w) \u2013 United Kingdom U20 (w)",
       "houseA": "Casobet",
       "houseB": "Ivibet",
       "oddA": 4.9,
@@ -5647,7 +5647,7 @@
       "id": "mseuqcmxfhnam",
       "event": "ACS PROGRESUL X ACS VOINTA CREVEDIA",
       "houseA": "Jetcasino",
-      "houseB": "Milhão",
+      "houseB": "Milh\u00e3o",
       "oddA": 1.93,
       "oddB": 2.6,
       "total": 270.43,
@@ -5681,7 +5681,7 @@
     },
     {
       "id": "msewg6dkarljm",
-      "event": "2000 Sarajevo (F) – PSV (F)",
+      "event": "2000 Sarajevo (F) \u2013 PSV (F)",
       "houseA": "Aposta1",
       "houseB": "Jetcasino",
       "oddA": 2.2,
@@ -5735,7 +5735,7 @@
     },
     {
       "id": "msf6xvy3yx6lc",
-      "event": "Kim Seung Min/Lee Sang Won – Hung Kuei Chun/Lui Chun Wai",
+      "event": "Kim Seung Min/Lee Sang Won \u2013 Hung Kuei Chun/Lui Chun Wai",
       "houseA": "Casobet",
       "houseB": "Thunderpick",
       "oddA": 2.97,
@@ -5771,7 +5771,7 @@
     },
     {
       "id": "msfci7scg691e",
-      "event": "UCAM Esports Club – Movistar KOI Fenix",
+      "event": "UCAM Esports Club \u2013 Movistar KOI Fenix",
       "houseA": "Ivibet",
       "houseB": "Betsson & thunderpick",
       "oddA": 1.8,
@@ -5789,7 +5789,7 @@
     },
     {
       "id": "msfemm0e86hvg",
-      "event": "Vitor Costa Goncalves – Maximo Zeitune",
+      "event": "Vitor Costa Goncalves \u2013 Maximo Zeitune",
       "houseA": "Thunderpick",
       "houseB": "Ivibet",
       "oddA": 1.97,
@@ -5807,7 +5807,7 @@
     },
     {
       "id": "msfgbz76rezti",
-      "event": "PlayTime – Yakult's Brothers",
+      "event": "PlayTime \u2013 Yakult's Brothers",
       "houseA": "Casinozer",
       "houseB": "Pinnacle",
       "oddA": 1.57,
@@ -5861,7 +5861,7 @@
     },
     {
       "id": "msgalgtughkgt",
-      "event": "Bolivar – Oriente Petrolero",
+      "event": "Bolivar \u2013 Oriente Petrolero",
       "houseA": "Ivibet",
       "houseB": "Thunderpick",
       "oddA": 1.8,
@@ -5913,7 +5913,7 @@
     },
     {
       "id": "msgr24cyjbu69",
-      "event": "Adrian Sanchez – Bradley Swanepoel",
+      "event": "Adrian Sanchez \u2013 Bradley Swanepoel",
       "houseA": "Ivibet",
       "houseB": "Gamdom",
       "oddA": 2.68,
@@ -5985,7 +5985,7 @@
     },
     {
       "id": "mshnf2sw24wqp",
-      "event": "Alberto Mino – Sven Happek",
+      "event": "Alberto Mino \u2013 Sven Happek",
       "houseA": "Ivibet",
       "houseB": "Bet365",
       "oddA": 1.96,
@@ -6003,7 +6003,7 @@
     },
     {
       "id": "mshnp3zyijhsc",
-      "event": "Rijeka – Ilves",
+      "event": "Rijeka \u2013 Ilves",
       "houseA": "Betnacional",
       "houseB": "EGB",
       "oddA": 1.833,
@@ -6039,7 +6039,7 @@
     },
     {
       "id": "mshr1vyma4sju",
-      "event": "CA union de santa fé x CA Lanus",
+      "event": "CA union de santa f\u00e9 x CA Lanus",
       "houseA": "Betboo",
       "houseB": "Ivibet",
       "oddA": 2.25,
@@ -6075,7 +6075,7 @@
     },
     {
       "id": "msi3m9tz39i5s",
-      "event": "Castleford Tigers – Hull Kingston Rovers",
+      "event": "Castleford Tigers \u2013 Hull Kingston Rovers",
       "houseA": "Ivibet",
       "houseB": "Betsson",
       "oddA": 2.45,
@@ -6093,7 +6093,7 @@
     },
     {
       "id": "msiuzdnv5bxz9",
-      "event": "Vôlei de praia",
+      "event": "V\u00f4lei de praia",
       "houseA": "Ivibet",
       "houseB": "Betsson",
       "oddA": 1.73,
@@ -6129,7 +6129,7 @@
     },
     {
       "id": "msj3yskbceqg8",
-      "event": "Tallon Griekspoor – Matteo Arnaldi",
+      "event": "Tallon Griekspoor \u2013 Matteo Arnaldi",
       "houseA": "EGB",
       "houseB": "Pinnacle",
       "oddA": 1.628,
@@ -6147,7 +6147,7 @@
     },
     {
       "id": "msj4acsz3a7g7",
-      "event": "Saskatchewan Roughriders – Ottawa RedBlacks",
+      "event": "Saskatchewan Roughriders \u2013 Ottawa RedBlacks",
       "houseA": "Meridian",
       "houseB": "Ivibet",
       "oddA": 1.35,
@@ -6165,7 +6165,7 @@
     },
     {
       "id": "msj4n78lf5s6a",
-      "event": "FaZe – Virtus.pro",
+      "event": "FaZe \u2013 Virtus.pro",
       "houseA": "EGB",
       "houseB": "Pinnacle",
       "oddA": 2.7,
@@ -6255,7 +6255,7 @@
     },
     {
       "id": "mskhdi6kmnxim",
-      "event": "Dinamo Bucuresti – Voluntari",
+      "event": "Dinamo Bucuresti \u2013 Voluntari",
       "houseA": "Ivibet",
       "houseB": "BetMgm",
       "oddA": 2.84,
@@ -6273,7 +6273,7 @@
     },
     {
       "id": "mskm7vv4en1xk",
-      "event": "Giovanna Canuto – Carol Foro",
+      "event": "Giovanna Canuto \u2013 Carol Foro",
       "houseA": "Thunderpick",
       "houseB": "Betsson",
       "oddA": 2.37,
@@ -6291,7 +6291,7 @@
     },
     {
       "id": "mskmgajd3iwpt",
-      "event": "Kato/Samsonova – Errani/Melichar-Martinez",
+      "event": "Kato/Samsonova \u2013 Errani/Melichar-Martinez",
       "houseA": "Thunderpick",
       "houseB": "Bet365",
       "oddA": 1.88,
@@ -6309,7 +6309,7 @@
     },
     {
       "id": "mskn69guit5ns",
-      "event": "Sydney Bears – Central Coast Rhinos",
+      "event": "Sydney Bears \u2013 Central Coast Rhinos",
       "houseA": "Thunderpick",
       "houseB": "Blaze",
       "oddA": 4.59,
@@ -6330,7 +6330,7 @@
     },
     {
       "id": "msko05br1seju",
-      "event": "Cloud9 – Disguised",
+      "event": "Cloud9 \u2013 Disguised",
       "houseA": "Betsson",
       "houseB": "Casobet",
       "oddA": 1.3,
@@ -6348,7 +6348,7 @@
     },
     {
       "id": "mskoalqhnll7g",
-      "event": "Sydney Bears – Central Coast Rhinos",
+      "event": "Sydney Bears \u2013 Central Coast Rhinos",
       "houseA": "Pitaco",
       "houseB": "Thunderpick",
       "oddA": 1.29,
@@ -6369,7 +6369,7 @@
     },
     {
       "id": "mskoo49725xd9",
-      "event": "Newcastle North Stars – Sydney Ice Dogs",
+      "event": "Newcastle North Stars \u2013 Sydney Ice Dogs",
       "houseA": "Betsson",
       "houseB": "Thunderpick",
       "oddA": 1.47,
@@ -6485,7 +6485,7 @@
     },
     {
       "id": "msn7ebg4vam9a",
-      "event": "Nacional – Osasco",
+      "event": "Nacional \u2013 Osasco",
       "houseA": "Blaze",
       "houseB": "Ivibet",
       "oddA": 1.89,
@@ -6586,7 +6586,7 @@
     },
     {
       "id": "msnl9l6hnsgbe",
-      "event": "CD Santa Clara – CD Nacional",
+      "event": "CD Santa Clara \u2013 CD Nacional",
       "houseA": "Betesporte",
       "houseB": "Overtimemarkets / casinozer",
       "oddA": 1.81,
@@ -6610,7 +6610,7 @@
     },
     {
       "id": "msnyajy3wcc9y",
-      "event": "NSRedForce Challengers – Dplus Challengers",
+      "event": "NSRedForce Challengers \u2013 Dplus Challengers",
       "houseA": "Ivibet",
       "houseB": "Betsson",
       "oddA": 1.7,
@@ -6634,7 +6634,7 @@
     },
     {
       "id": "msnzi4rhkto4m",
-      "event": "Okzhetpes (Women) – Elimai (Women)",
+      "event": "Okzhetpes (Women) \u2013 Elimai (Women)",
       "houseA": "Ivibet",
       "houseB": "Casobet",
       "oddA": 8.3,
@@ -6682,7 +6682,7 @@
     },
     {
       "id": "mso22oyi2s53e",
-      "event": "Okzhetpes [W] – Yelimay Semey [W]",
+      "event": "Okzhetpes [W] \u2013 Yelimay Semey [W]",
       "houseA": "Ivibet",
       "houseB": "7games",
       "oddA": 2.88,
@@ -6723,7 +6723,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "mso2aisdh3clz",
@@ -6744,7 +6746,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -100
+      "lucroRed": -100,
+      "sport": "T\u00eanis de Mesa",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "mso2de1zp3kwp",
@@ -6765,7 +6769,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "T\u00eanis",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "mso2e62aoxbcv",
@@ -6786,11 +6792,13 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "E-sports",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msoja886pw9rk",
-      "event": "Jonathan Kunneman – Joseph Kropschot",
+      "event": "Jonathan Kunneman \u2013 Joseph Kropschot",
       "houseA": "Ivibet",
       "houseB": "Sportybet",
       "oddA": 3.77,
@@ -6814,7 +6822,7 @@
     },
     {
       "id": "msojkycvzs4ns",
-      "event": "Kairat Almaty – Levski Sofia (acima 4.5 escanteios primeiro time)",
+      "event": "Kairat Almaty \u2013 Levski Sofia (acima 4.5 escanteios primeiro time)",
       "houseA": "Stake",
       "oddA": 1.96,
       "total": 50,
@@ -6831,11 +6839,14 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "market": "Escanteios",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msojmdha27u46",
-      "event": "Slovan Bratislava – Mjällby AIF (acima 3.5 escanteios segundo time)",
+      "event": "Slovan Bratislava \u2013 Mj\u00e4llby AIF (acima 3.5 escanteios segundo time)",
       "houseA": "Stake",
       "oddA": 1.91,
       "total": 50,
@@ -6852,7 +6863,10 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "market": "Escanteios",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msop2n8jrvze7",
@@ -6873,11 +6887,13 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -100
+      "lucroRed": -100,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msoqhtuo4nas0",
-      "event": "Sk x Fenerbahçe",
+      "event": "Sk x Fenerbah\u00e7e",
       "houseA": "Betsson",
       "oddA": 1.98,
       "total": 50,
@@ -6894,7 +6910,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msoqlknd4zjod",
@@ -6915,7 +6933,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msoqu4qrx2ewt",
@@ -6936,7 +6956,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msorbz2w93bm2",
@@ -6957,7 +6979,9 @@
       },
       "kind": "valor",
       "stakeFake": 1.01,
-      "lucroRed": -23.05
+      "lucroRed": -23.05,
+      "sport": "Cr\u00edquete",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msorhheail5wa",
@@ -7026,7 +7050,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.01,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msowwsz8udlyo",
@@ -7047,7 +7073,10 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "market": "Escanteios",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msoy3uuinsjyn",
@@ -7068,11 +7097,13 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msoyg836zvpk8",
-      "event": "Anthony Wint – Matt Adams",
+      "event": "Anthony Wint \u2013 Matt Adams",
       "houseA": "Ivibet",
       "houseB": "Betnacional",
       "oddA": 2.83,
@@ -7113,7 +7144,10 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msozrxqdr6w8v",
@@ -7134,7 +7168,9 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msp709exmw5qe",
@@ -7155,12 +7191,14 @@
       },
       "kind": "valor",
       "stakeFake": 0.1,
-      "lucroRed": -50
+      "lucroRed": -50,
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq8usug0kowf",
       "kind": "valor",
-      "event": "Khimik Dzerzhinsk – Nosta Novotroitsk H1(−0.75) 1º período:",
+      "event": "Khimik Dzerzhinsk \u2013 Nosta Novotroitsk H1(\u22120.75) 1\u00ba per\u00edodo:",
       "houseA": "Pinnacle",
       "oddA": 1.952,
       "stakeA": 50,
@@ -7176,7 +7214,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "RED"
-      }
+      },
+      "market": "1\u00ba Tempo / Parcial",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq8wr6dospu4",
@@ -7197,7 +7238,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "RED"
-      }
+      },
+      "market": "Jogador / Player Props",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq97p33n7tdw",
@@ -7218,7 +7262,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "market": "Escanteios",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq9kiaevr1lr",
@@ -7239,12 +7286,15 @@
       "aplicado": {
         "stakes": true,
         "resultado": "RED"
-      }
+      },
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq9o9jb6j86y",
       "kind": "valor",
-      "event": "Hammarby – Vasteras (1)",
+      "event": "Hammarby \u2013 Vasteras (1)",
       "houseA": "Ivibet",
       "oddA": 2.52,
       "stakeA": 50,
@@ -7260,7 +7310,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "market": "1X2 / Resultado",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msqcsr0vh6t1d",
@@ -7281,7 +7334,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "RED"
-      }
+      },
+      "market": "Total (linha)",
+      "sport": "Basquete",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msqdk1u1emhqo",
@@ -7327,12 +7383,14 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "sport": "E-sports",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msqduvc9rrwhh",
       "kind": "valor",
-      "event": "Polnia x França",
+      "event": "Polnia x Fran\u00e7a",
       "houseA": "Pinnacle",
       "oddA": 1.813,
       "stakeA": 50,
@@ -7348,7 +7406,9 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq4n2ddrrf1w",
@@ -7369,7 +7429,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "market": "Abates / Kills",
+      "sport": "E-sports",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq7yt00yoco5",
@@ -7390,7 +7453,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "RED"
-      }
+      },
+      "market": "1\u00ba Tempo / Parcial",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq4iryc5lr7u",
@@ -7411,7 +7477,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msq30q6nef8tc",
@@ -7482,7 +7551,9 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-14T02:16:37.677Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Abates / Kills",
+      "sport": "E-sports"
     },
     {
       "id": "msq7voq648ixs",
@@ -7528,7 +7599,10 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msqhjuy0six1s",
@@ -7550,7 +7624,9 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T04:48:41.344Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "msqn1179xfqww",
@@ -7571,12 +7647,15 @@
       "aplicado": {
         "stakes": true,
         "resultado": "A"
-      }
+      },
+      "market": "Aces",
+      "sport": "T\u00eanis",
+      "updatedAt": "2026-08-17T20:42:38.151036Z"
     },
     {
       "id": "msqrblbariz6p",
       "kind": "sure",
-      "event": "Tampere Saints – Helsinki Roosters",
+      "event": "Tampere Saints \u2013 Helsinki Roosters",
       "houseA": "Ivibet",
       "houseB": "Betsson",
       "oddA": 17,
@@ -7601,7 +7680,7 @@
     {
       "id": "msqsncmnyxacs",
       "kind": "sure",
-      "event": "PEKA – Lautp/2",
+      "event": "PEKA \u2013 Lautp/2",
       "houseA": "Betesporte",
       "houseB": "Casinozer",
       "oddA": 2.95,
@@ -7626,7 +7705,7 @@
     {
       "id": "msrj5nsgx0bk3",
       "kind": "sure",
-      "event": "Australi x Japão",
+      "event": "Australi x Jap\u00e3o",
       "houseA": "Ivibet",
       "houseB": "Blaze",
       "oddA": 1.92,
@@ -7668,7 +7747,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-14T08:44:10.037Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Futebol Americano"
     },
     {
       "id": "msrueg4g2wpk5",
@@ -7789,7 +7870,9 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-15T14:19:57.824Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Abates / Kills",
+      "sport": "E-sports"
     },
     {
       "id": "mst19vyx0ke0c",
@@ -7811,12 +7894,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T16:22:15.717Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "mst1r2zptilie",
       "kind": "valor",
-      "event": "1X 1º tempo - Kaarinan pojat",
+      "event": "1X 1\u00ba tempo - Kaarinan pojat",
       "houseA": "Meridian",
       "oddA": 2.58,
       "stakeA": 100,
@@ -7833,7 +7918,9 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-14T16:22:39.188Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1\u00ba Tempo / Parcial",
+      "sport": "Futebol"
     },
     {
       "id": "mst27o0qjajk5",
@@ -7855,7 +7942,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T00:18:29.788Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1\u00ba Tempo / Parcial",
+      "sport": "Basquete"
     },
     {
       "id": "mst3wu644kqwt",
@@ -7877,7 +7966,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-14T17:55:11.052Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "mst3y1wn6mke8",
@@ -7899,7 +7990,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-14T15:41:06.985Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "mst3z5i0ggcup",
@@ -7921,12 +8014,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-14T15:41:08.780Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "mst550lercmzi",
       "kind": "valor",
-      "event": "B Dortmund (Glumac) – Man City (malverz)",
+      "event": "B Dortmund (Glumac) \u2013 Man City (malverz)",
       "houseA": "Meridian",
       "oddA": 3.45,
       "stakeA": 50,
@@ -7943,7 +8038,8 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-14T16:51:35.061Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "E-sports"
     },
     {
       "id": "mst580npcyj1l",
@@ -7965,7 +8061,8 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-14T16:16:06.091Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "mst58s3m4tcgv",
@@ -7987,7 +8084,8 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-14T16:14:42.606Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "mst5tcaswjjad",
@@ -8009,12 +8107,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T17:45:27.167Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1\u00ba Tempo / Parcial",
+      "sport": "Futebol Americano"
     },
     {
       "id": "mst70y3ztxxfb",
       "kind": "valor",
-      "event": "Taroona FC – Glenorchy Knights II",
+      "event": "Taroona FC \u2013 Glenorchy Knights II",
       "houseA": "Betnacional",
       "oddA": 3.3,
       "stakeA": 100,
@@ -8031,12 +8131,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T12:13:06.190Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "mst74flkldlp6",
       "kind": "valor",
-      "event": "Burnley – West Ham",
+      "event": "Burnley \u2013 West Ham",
       "houseA": "Betnacional",
       "oddA": 3.2,
       "stakeA": 100,
@@ -8053,12 +8154,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T17:37:33.380Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "mst761zu56dh0",
       "kind": "valor",
-      "event": "Atlanta Braves – Arizona Diamondbacks · Michael Harris II",
+      "event": "Atlanta Braves \u2013 Arizona Diamondbacks \u00b7 Michael Harris II",
       "houseA": "Pinnacle",
       "oddA": 1.61,
       "stakeA": 100,
@@ -8075,7 +8177,8 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T12:08:57.737Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Beisebol"
     },
     {
       "id": "mstbfnrcnq36d",
@@ -8147,7 +8250,8 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-15T12:15:56.619Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "mstdk8sid3siz",
@@ -8169,7 +8273,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T12:12:22.486Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "E-sports"
     },
     {
       "id": "mstdlusbzhbam",
@@ -8191,7 +8297,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T12:12:24.469Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "E-sports"
     },
     {
       "id": "mste0i0dtcwwq",
@@ -8213,7 +8321,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T20:39:56.906Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "mste3ruxf0cav",
@@ -8235,7 +8345,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-14T20:55:15.475Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "mstfmwg23u14q",
@@ -8257,7 +8369,8 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-14T21:20:15.142Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "mstg8cbkwkpiq",
@@ -8279,7 +8392,8 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T00:20:25.923Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Basquete"
     },
     {
       "id": "msthbk18333ey",
@@ -8301,12 +8415,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-15T12:09:21.286Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1X2 / Resultado",
+      "sport": "Futebol"
     },
     {
       "id": "msthul7vo0lxk",
       "kind": "sure",
-      "event": "Winnipeg Blue Bombers – Ottawa RedBlacks",
+      "event": "Winnipeg Blue Bombers \u2013 Ottawa RedBlacks",
       "houseA": "Pinnacle",
       "houseB": "Ivibet",
       "oddA": 2.07,
@@ -8331,7 +8447,7 @@
     {
       "id": "msti529sht96w",
       "kind": "valor",
-      "event": "New Town Eagles – Tasmania University",
+      "event": "New Town Eagles \u2013 Tasmania University",
       "houseA": "Betnacional",
       "oddA": 2.63,
       "stakeA": 100,
@@ -8348,7 +8464,8 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T12:13:11.119Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol Americano"
     },
     {
       "id": "mstj55ul3qhm4",
@@ -8370,7 +8487,9 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-14T23:23:07.378Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "mstjp5rq7bar5",
@@ -8392,12 +8511,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-15T00:56:28.249Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "msugx5gkao3z2",
       "kind": "valor",
-      "event": "Sligo Rovers – Waterford",
+      "event": "Sligo Rovers \u2013 Waterford",
       "houseA": "Ivibet",
       "oddA": 3.45,
       "stakeA": 100,
@@ -8413,12 +8534,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-15T20:26:21.264Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Futebol"
     },
     {
       "id": "msuh0nd7z4t7n",
       "kind": "valor",
-      "event": "Cinfaes – UD Sousense (1)",
+      "event": "Cinfaes \u2013 UD Sousense (1)",
       "houseA": "Ivibet",
       "oddA": 2.22,
       "stakeA": 100,
@@ -8435,12 +8558,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T18:01:38.267Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1X2 / Resultado",
+      "sport": "Futebol"
     },
     {
       "id": "msuhqrqwa9evw",
       "kind": "valor",
-      "event": "San Jose Earthquakes – St. Louis City",
+      "event": "San Jose Earthquakes \u2013 St. Louis City",
       "houseA": "Ivibet",
       "oddA": 2.06,
       "stakeA": 100,
@@ -8457,12 +8582,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T11:07:28.244Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msuhtn6t8sr1c",
       "kind": "valor",
-      "event": "A.D. Camacha – Salgueiros",
+      "event": "A.D. Camacha \u2013 Salgueiros",
       "houseA": "Ivibet",
       "oddA": 3.59,
       "stakeA": 100,
@@ -8479,12 +8605,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T17:37:37.296Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msuhvuqcd81lw",
       "kind": "valor",
-      "event": "Cinfaes – UD Sousense",
+      "event": "Cinfaes \u2013 UD Sousense",
       "houseA": "Ivibet",
       "oddA": 2.22,
       "stakeA": 100,
@@ -8501,12 +8628,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T18:01:41.017Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msupqal1cyjhm",
       "kind": "valor",
-      "event": "Riga FC – Metta",
+      "event": "Riga FC \u2013 Metta",
       "houseA": "Ivibet",
       "oddA": 2.84,
       "stakeA": 100,
@@ -8523,12 +8651,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T14:53:13.465Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msupvtxyikbil",
       "kind": "valor",
-      "event": "Santos Laguna – Guadalajara",
+      "event": "Santos Laguna \u2013 Guadalajara",
       "houseA": "Ivibet",
       "oddA": 2.1,
       "stakeA": 100,
@@ -8545,7 +8674,8 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T18:06:22.223Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msusd4nf63sw7",
@@ -8567,12 +8697,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-15T20:27:27.850Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msuu28pcs6pk2",
       "kind": "valor",
-      "event": "Guabira – Club The Strongest",
+      "event": "Guabira \u2013 Club The Strongest",
       "houseA": "Overtimemarkets",
       "oddA": 2.2,
       "stakeA": 104.39999999999999,
@@ -8589,7 +8720,8 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T22:02:37.077Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msuu790gneq09",
@@ -8611,12 +8743,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T22:28:16.980Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "E-sports"
     },
     {
       "id": "msuujbt70f8ph",
       "kind": "valor",
-      "event": "Falcons – Vici Gaming",
+      "event": "Falcons \u2013 Vici Gaming",
       "houseA": "Thunderpick.io",
       "oddA": 2.06,
       "stakeA": 104.4,
@@ -8633,12 +8766,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T11:06:42.960Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "E-sports"
     },
     {
       "id": "msuw13ieov20t",
       "kind": "sure",
-      "event": "Izuzquiza Corulla S / Moreno Matveeva T – Schoon R / Stam K",
+      "event": "Izuzquiza Corulla S / Moreno Matveeva T \u2013 Schoon R / Stam K",
       "houseA": "Blaze",
       "houseB": "Betsson",
       "oddA": 2.01,
@@ -8663,7 +8797,7 @@
     {
       "id": "msuwa94tergpi",
       "kind": "valor",
-      "event": "Baltimore Ravens – Philadelphia Eagles",
+      "event": "Baltimore Ravens \u2013 Philadelphia Eagles",
       "houseA": "Overtimemarkets",
       "oddA": 2.28,
       "stakeA": 104.39999999999999,
@@ -8680,12 +8814,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T11:04:44.902Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol Americano"
     },
     {
       "id": "msuwbq4bc98ye",
       "kind": "valor",
-      "event": "Newell's Old Boys – Deportivo Riestra",
+      "event": "Newell's Old Boys \u2013 Deportivo Riestra",
       "houseA": "Blaze",
       "oddA": 1.97,
       "stakeA": 100,
@@ -8702,12 +8837,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-15T23:55:40.593Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msuwfusk4gx5l",
       "kind": "valor",
-      "event": "Palafox menos 2.5 segundo mapa Dignitas – Shopify Rebellion",
+      "event": "Palafox menos 2.5 segundo mapa Dignitas \u2013 Shopify Rebellion",
       "houseA": "Esportivabet",
       "oddA": 2.3,
       "stakeA": 50,
@@ -8724,12 +8860,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T00:04:28.818Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "E-sports"
     },
     {
       "id": "msuwhx0dw7dq5",
       "kind": "valor",
-      "event": "Toronto FC – New England Revolution (2 mais chutes a gol)",
+      "event": "Toronto FC \u2013 New England Revolution (2 mais chutes a gol)",
       "houseA": "Betnacional",
       "oddA": 3.6,
       "stakeA": 100,
@@ -8746,12 +8884,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T11:05:05.694Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total de Chutes",
+      "sport": "Futebol"
     },
     {
       "id": "msuwljrblhaaw",
       "kind": "valor",
-      "event": "LA Angels – KC Royals - Abaixo 15.5 Tempo Extra - hits",
+      "event": "LA Angels \u2013 KC Royals - Abaixo 15.5 Tempo Extra - hits",
       "houseA": "Esportivabet",
       "oddA": 2.05,
       "stakeA": 100,
@@ -8768,12 +8908,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T11:05:53.397Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total de Hits",
+      "sport": "Beisebol"
     },
     {
       "id": "msuwnm4kmrvqp",
       "kind": "valor",
-      "event": "Athletics – TEX Rangers - menos 16.5 hits",
+      "event": "Athletics \u2013 TEX Rangers - menos 16.5 hits",
       "houseA": "Esportivabet",
       "oddA": 2.25,
       "stakeA": 100,
@@ -8790,12 +8932,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T11:05:58.896Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total de Hits",
+      "sport": "Beisebol"
     },
     {
       "id": "msuwthiqfao82",
       "kind": "valor",
-      "event": "Shopify Rebellion (Kills) – Dignitas (Kills) - mais de 28.5 abates 1 mapa",
+      "event": "Shopify Rebellion (Kills) \u2013 Dignitas (Kills) - mais de 28.5 abates 1 mapa",
       "houseA": "Pinnacle",
       "oddA": 2.69,
       "stakeA": 100,
@@ -8812,7 +8956,9 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T00:07:30.829Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Abates / Kills",
+      "sport": "E-sports"
     },
     {
       "id": "msuxfu975zszy",
@@ -8834,12 +8980,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T11:08:40.897Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "MMA"
     },
     {
       "id": "msv06yohmlceb",
       "kind": "valor",
-      "event": "Barcelona – Arsenal",
+      "event": "Barcelona \u2013 Arsenal",
       "houseA": "Thunderpick.io",
       "oddA": 2.7,
       "stakeA": 104.4,
@@ -8856,12 +9003,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T11:06:51.160Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msv09wyyz1rvm",
       "kind": "valor",
-      "event": "Yannick Hanfmann – Arthur Fils",
+      "event": "Yannick Hanfmann \u2013 Arthur Fils",
       "houseA": "Esportivabet",
       "oddA": 2.2,
       "stakeA": 100,
@@ -8878,12 +9026,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T11:05:42.199Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msv0dz2nnleol",
       "kind": "valor",
-      "event": "Sentinels – ENVY (H1 +3.5)",
+      "event": "Sentinels \u2013 ENVY (H1 +3.5)",
       "houseA": "Esportivabet",
       "oddA": 2.15,
       "stakeA": 100,
@@ -8900,12 +9049,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T00:03:26.855Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "E-sports"
     },
     {
       "id": "msv0is3twcpg9",
       "kind": "valor",
-      "event": "Tottenham vs Hoffenheim (1 não)",
+      "event": "Tottenham vs Hoffenheim (1 n\u00e3o)",
       "houseA": "Kalshi",
       "oddA": 2.39,
       "stakeA": 104.4,
@@ -8922,12 +9073,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T13:47:16.493Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msv0nbsu5ft9n",
       "kind": "valor",
-      "event": "Universidade Catolica – Club Deportes Puente Alto (1 mais de 83)",
+      "event": "Universidade Catolica \u2013 Club Deportes Puente Alto (1 mais de 83)",
       "houseA": "Ivibet",
       "oddA": 2.42,
       "stakeA": 70,
@@ -8944,12 +9096,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T11:07:15.945Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Basquete"
     },
     {
       "id": "msw4zfbpf7xwr",
       "kind": "valor",
-      "event": "(BR)\tFC Cajamarca – Universitário de Deportes",
+      "event": "(BR)\tFC Cajamarca \u2013 Universit\u00e1rio de Deportes",
       "houseA": "Esportivabet",
       "oddA": 2.4,
       "stakeA": 100,
@@ -8966,12 +9120,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T22:29:37.196Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Futebol"
     },
     {
       "id": "msw5sebzvjs18",
       "kind": "valor",
-      "event": "Alexey Chernyshov – Sergii Lugovskyi (2 menos 26.5)",
+      "event": "Alexey Chernyshov \u2013 Sergii Lugovskyi (2 menos 26.5)",
       "houseA": "Meridian",
       "oddA": 2.4,
       "stakeA": 100,
@@ -8988,12 +9143,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-17T10:57:48.514Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "T\u00eanis de Mesa"
     },
     {
       "id": "msw5tzjum7zpc",
       "kind": "valor",
-      "event": "Atlético-MG – Grêmio (2 mais de 3.5 cartões_",
+      "event": "Atl\u00e9tico-MG \u2013 Gr\u00eamio (2 mais de 3.5 cart\u00f5es_",
       "houseA": "Betnacional",
       "oddA": 3.9,
       "stakeA": 100,
@@ -9010,12 +9167,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-16T20:57:43.462Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Futebol"
     },
     {
       "id": "msw5vt5br1tin",
       "kind": "valor",
-      "event": "HC Osasco – Itatiba Esporte Clube (mais de 52.5 total)",
+      "event": "HC Osasco \u2013 Itatiba Esporte Clube (mais de 52.5 total)",
       "houseA": "Pinnacle",
       "oddA": 2.47,
       "stakeA": 100,
@@ -9032,12 +9191,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T20:35:42.452Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Handebol"
     },
     {
       "id": "msw63133suk1v",
       "kind": "valor",
-      "event": "CD Atletico Puerto Varas – CD Espanol Osorno (1)",
+      "event": "CD Atletico Puerto Varas \u2013 CD Espanol Osorno (1)",
       "houseA": "Casobet",
       "oddA": 2.01,
       "stakeA": 104.39999999999999,
@@ -9054,12 +9215,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-17T04:49:26.136Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1X2 / Resultado",
+      "sport": "Futebol"
     },
     {
       "id": "msw6bx6cc3mzs",
       "kind": "valor",
-      "event": "Vitória – Botafogo (Acima 3.5 cartões segundo time)",
+      "event": "Vit\u00f3ria \u2013 Botafogo (Acima 3.5 cart\u00f5es segundo time)",
       "houseA": "Betnacional",
       "oddA": 3.5,
       "stakeA": 100,
@@ -9076,12 +9239,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T04:44:37.055Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Futebol"
     },
     {
       "id": "msw78dvql00cz",
       "kind": "valor",
-      "event": "Bigua (Points) – Enfoque (Points) (menos 43.5 primeiro set)",
+      "event": "Bigua (Points) \u2013 Enfoque (Points) (menos 43.5 primeiro set)",
       "houseA": "Pinnacle",
       "oddA": 2.2,
       "stakeA": 100,
@@ -9098,12 +9263,14 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-16T23:07:53.075Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msw7d3j40i1uq",
       "kind": "valor",
-      "event": "Diablos Rojos Del Mexico – Guerreros de Oaxaca",
+      "event": "Diablos Rojos Del Mexico \u2013 Guerreros de Oaxaca",
       "houseA": "Pinnacle",
       "oddA": 2.06,
       "stakeA": 100,
@@ -9120,12 +9287,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T10:56:29.571Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "Beisebol"
     },
     {
       "id": "mswaccmtq990g",
       "kind": "valor",
-      "event": "CD Choloma – Marathon (H2 -1)",
+      "event": "CD Choloma \u2013 Marathon (H2 -1)",
       "houseA": "Pinnacle",
       "oddA": 2.14,
       "stakeA": 100,
@@ -9141,12 +9309,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-16T20:56:45.558Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "mswe9h3phlcxr",
       "kind": "valor",
-      "event": "Natus Vincere – Team Heretics (daglas -3.5 primeiro mapa)",
+      "event": "Natus Vincere \u2013 Team Heretics (daglas -3.5 primeiro mapa)",
       "houseA": "Esportivabet",
       "oddA": 2,
       "stakeA": 67.5,
@@ -9163,12 +9333,13 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-17T15:39:22.619Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "E-sports"
     },
     {
       "id": "mswedjzo0evbe",
       "kind": "valor",
-      "event": "Killian Heffernan – Dylan Slevin (acima de 0.5 para 1)",
+      "event": "Killian Heffernan \u2013 Dylan Slevin (acima de 0.5 para 1)",
       "houseA": "Ivibet",
       "oddA": 2.06,
       "stakeA": 100,
@@ -9185,12 +9356,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T12:53:33.091Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Dardos"
     },
     {
       "id": "mswefugoqhgpl",
       "kind": "valor",
-      "event": "Iraklis Thessaloniki – Volos NFC (mais de 9.5 escanteios)",
+      "event": "Iraklis Thessaloniki \u2013 Volos NFC (mais de 9.5 escanteios)",
       "houseA": "Ivibet",
       "oddA": 2.56,
       "stakeA": 100,
@@ -9207,12 +9380,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T19:31:49.762Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "msweil6pb0pif",
       "kind": "valor",
-      "event": "Club de Fútbol América – Atlético de San Luis (menos 25.5 chutes_)",
+      "event": "Club de F\u00fatbol Am\u00e9rica \u2013 Atl\u00e9tico de San Luis (menos 25.5 chutes_)",
       "houseA": "Overtimemarkets",
       "oddA": 2.56,
       "stakeA": 104.39999999999999,
@@ -9229,12 +9404,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T04:45:57.479Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total de Chutes",
+      "sport": "Futebol"
     },
     {
       "id": "mswf3gym0i4if",
       "kind": "valor",
-      "event": "CA Stockolmo – Club Trouville (h2 -1 primeira metade)",
+      "event": "CA Stockolmo \u2013 Club Trouville (h2 -1 primeira metade)",
       "houseA": "Pinnacle",
       "oddA": 2.31,
       "stakeA": 100,
@@ -9250,12 +9427,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-16T23:09:49.343Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1\u00ba Tempo / Parcial",
+      "sport": "Futebol"
     },
     {
       "id": "msx50gfx258rn",
       "kind": "valor",
-      "event": "Lucas Renard – Kristian Tumbas Kajgo (2 primeiro set)",
+      "event": "Lucas Renard \u2013 Kristian Tumbas Kajgo (2 primeiro set)",
       "houseA": "Ivibet",
       "oddA": 3.9,
       "stakeA": 100,
@@ -9272,7 +9451,8 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T14:30:48.906Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msx7i1ulkd76m",
@@ -9293,7 +9473,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T12:24:58.846Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "msx9j1q73c7ok",
@@ -9314,7 +9496,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T13:21:44.577Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "Futebol"
     },
     {
       "id": "msx9oe7g58s7r",
@@ -9336,12 +9520,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T19:09:17.401Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "M\u00faltipla",
+      "sport": "Futebol"
     },
     {
       "id": "msx9swwixjt6c",
       "kind": "valor",
-      "event": "Nykoebing FC – Naestved BK (2)",
+      "event": "Nykoebing FC \u2013 Naestved BK (2)",
       "houseA": "Meridian",
       "oddA": 2.9,
       "stakeA": 100,
@@ -9357,7 +9543,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T13:29:24.882Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1X2 / Resultado",
+      "sport": "Futebol"
     },
     {
       "id": "msxb18zobf5ao",
@@ -9378,12 +9566,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T14:03:53.412Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Jogador / Player Props",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msxdox2awuhv3",
       "kind": "valor",
-      "event": "DN SOOPers Challengers – NSRedForce Challengers (mapa 1 mais de 31 min)",
+      "event": "DN SOOPers Challengers \u2013 NSRedForce Challengers (mapa 1 mais de 31 min)",
       "houseA": "Ivibet",
       "oddA": 1.8,
       "stakeA": 100,
@@ -9399,12 +9589,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T15:18:16.932Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "E-sports"
     },
     {
       "id": "msxe2im7s0jz2",
       "kind": "valor",
-      "event": "Al-Difaa Al-Jawi – Zakho (h1 -5.5)",
+      "event": "Al-Difaa Al-Jawi \u2013 Zakho (h1 -5.5)",
       "houseA": "Ivibet",
       "oddA": 2.56,
       "stakeA": 100,
@@ -9421,12 +9613,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T17:56:28.753Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "msxerti2f0aen",
       "kind": "valor",
-      "event": "CSM Resita – Petrolul Ploiesti (X2)",
+      "event": "CSM Resita \u2013 Petrolul Ploiesti (X2)",
       "houseA": "Esportivabet",
       "oddA": 1.8,
       "stakeA": 100,
@@ -9442,12 +9636,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T15:48:31.901Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Dupla Chance",
+      "sport": "Futebol"
     },
     {
       "id": "msxetvcpfdyzn",
       "kind": "valor",
-      "event": "Spartak Varna – Septemvri Sofia (mais de 8.5 esc)",
+      "event": "Spartak Varna \u2013 Septemvri Sofia (mais de 8.5 esc)",
       "houseA": "Ivibet",
       "oddA": 1.85,
       "stakeA": 100,
@@ -9464,12 +9660,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T17:55:23.348Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "msxhj8gm4iqih",
       "kind": "valor",
-      "event": "Bolelli S / Vavassori A – Rinderknech A / Vacherot V (mais de 22.5 games)",
+      "event": "Bolelli S / Vavassori A \u2013 Rinderknech A / Vacherot V (mais de 22.5 games)",
       "houseA": "Meridian",
       "oddA": 2.72,
       "stakeA": 100,
@@ -9486,12 +9684,14 @@
         "stakes": true,
         "resultado": null
       },
-      "updatedAt": "2026-08-17T20:33:10.327Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total (linha)",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msxi2du7z6a5i",
       "kind": "valor",
-      "event": "Unionistas de Salamanca CF – AD Alcorcon (mái 2.5 gols)",
+      "event": "Unionistas de Salamanca CF \u2013 AD Alcorcon (m\u00e1i 2.5 gols)",
       "houseA": "Predict",
       "oddA": 2.84,
       "stakeA": 73.92,
@@ -9507,12 +9707,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T19:18:19.777Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total de Gols",
+      "sport": "Futebol"
     },
     {
       "id": "msxif76hf60yy",
       "kind": "valor",
-      "event": "Irmãs Williams vencem",
+      "event": "Irm\u00e3s Williams vencem",
       "houseA": "Kalshi",
       "oddA": 3.95,
       "stakeA": 103.6,
@@ -9528,12 +9730,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T17:30:41.562Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1X2 / Resultado",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msxihk6skpjra",
       "kind": "valor",
-      "event": "Aktobe – Torpedo Ust-Kamenogorsk (2nd time mais 6.5 gols)",
+      "event": "Aktobe \u2013 Torpedo Ust-Kamenogorsk (2nd time mais 6.5 gols)",
       "houseA": "Ivibet",
       "oddA": 3.14,
       "stakeA": 100,
@@ -9549,12 +9753,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T17:32:31.735Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Total de Gols",
+      "sport": "Futebol"
     },
     {
       "id": "msxj6fwzn4pfc",
       "kind": "valor",
-      "event": "Al-Raed Club – Al Hilal SFC (H2 -2 segundo tempo)",
+      "event": "Al-Raed Club \u2013 Al Hilal SFC (H2 -2 segundo tempo)",
       "houseA": "Apostaganha",
       "oddA": 3.2,
       "stakeA": 25.74,
@@ -9571,12 +9777,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T20:03:26.594Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1\u00ba Tempo / Parcial",
+      "sport": "Futebol"
     },
     {
       "id": "msxjzytyu4h15",
       "kind": "valor",
-      "event": "Tristan Boyer (Games) – James Watt (Games) (h1 -4.5 games)",
+      "event": "Tristan Boyer (Games) \u2013 James Watt (Games) (h1 -4.5 games)",
       "houseA": "Pinnacle",
       "oddA": 2.64,
       "stakeA": 100,
@@ -9593,12 +9801,14 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T20:03:47.145Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msxkchjprbnip",
       "kind": "valor",
-      "event": "Kevin Edengren – Andrea Bacaloni (1 primeiro set)",
+      "event": "Kevin Edengren \u2013 Andrea Bacaloni (1 primeiro set)",
       "houseA": "Ivibet",
       "oddA": 1.8,
       "stakeA": 100,
@@ -9614,12 +9824,13 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T18:24:34.266Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msxkp7486w9jc",
       "kind": "valor",
-      "event": "Felipe de Dios – Valentino Conte (2 ganha 1 set)",
+      "event": "Felipe de Dios \u2013 Valentino Conte (2 ganha 1 set)",
       "houseA": "Esportivabet",
       "oddA": 3.66,
       "stakeA": 100,
@@ -9636,12 +9847,13 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T19:23:06.844Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msxngygvgzago",
       "kind": "valor",
-      "event": "TT Gaming – LGD Gaming (1)",
+      "event": "TT Gaming \u2013 LGD Gaming (1)",
       "houseA": "Ivibet",
       "oddA": 2.2,
       "stakeA": 100,
@@ -9657,12 +9869,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T19:52:01.665Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1X2 / Resultado",
+      "sport": "E-sports"
     },
     {
       "id": "msxnp3watx1qk",
       "kind": "valor",
-      "event": "Color Esperanza – Ciclos (H1 -1)",
+      "event": "Color Esperanza \u2013 Ciclos (H1 -1)",
       "houseA": "Ivibet",
       "oddA": 2.69,
       "stakeA": 100,
@@ -9678,12 +9892,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T19:58:21.952Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     },
     {
       "id": "msxnqo5sjrest",
       "kind": "valor",
-      "event": "Sporting CP – Alverca (2 HNB)",
+      "event": "Sporting CP \u2013 Alverca (2 HNB)",
       "houseA": "Betsson",
       "oddA": 3.3,
       "stakeA": 78.3,
@@ -9699,7 +9915,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T19:59:34.871Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "1X2 / Resultado",
+      "sport": "Futebol"
     },
     {
       "id": "msxntvwetv38o",
@@ -9720,12 +9938,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T20:02:04.869Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Aces",
+      "sport": "T\u00eanis"
     },
     {
       "id": "msxo82a0frnq5",
       "kind": "valor",
-      "event": "FC Midtjylland – HNK Rijeka (2 menos 2.5 escanteios)",
+      "event": "FC Midtjylland \u2013 HNK Rijeka (2 menos 2.5 escanteios)",
       "houseA": "Sportybet",
       "oddA": 2.75,
       "stakeA": 100,
@@ -9741,12 +9961,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T20:13:06.314Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "msxobu1vg0tb1",
       "kind": "valor",
-      "event": "Hull City – Man Utd (2nd time mais de 6.5 escanteios)",
+      "event": "Hull City \u2013 Man Utd (2nd time mais de 6.5 escanteios)",
       "houseA": "Sportybet",
       "oddA": 4.75,
       "stakeA": 100,
@@ -9762,12 +9984,14 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T20:16:02.282Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Escanteios",
+      "sport": "Futebol"
     },
     {
       "id": "msxofthc0l5gm",
       "kind": "valor",
-      "event": "Lanus – Argentinos Juniors (H2 (0))",
+      "event": "Lanus \u2013 Argentinos Juniors (H2 (0))",
       "houseA": "Pinnacle",
       "oddA": 2.19,
       "stakeA": 100,
@@ -9783,9 +10007,11 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T20:19:08.164Z"
+      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "market": "Handicap Asi\u00e1tico",
+      "sport": "Futebol"
     }
   ],
   "sbBankroll": 37395.43,
-  "updatedAt": "2026-08-17T20:36:49.659Z"
+  "updatedAt": "2026-08-17T20:42:38.151036Z"
 }
