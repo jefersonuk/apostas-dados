@@ -4562,8 +4562,8 @@
     {
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
-      "value": 250,
-      "updatedAt": "2026-08-16T18:49:16.176Z"
+      "value": 490,
+      "updatedAt": "2026-08-17T10:57:48.514Z"
     },
     {
       "id": "mrvd6n3x6xs48",
@@ -4756,10 +4756,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 667.5,
+      "value": 567.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T10:56:29.572Z"
+      "updatedAt": "2026-08-17T10:57:48.515Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -8950,7 +8950,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-17T03:30",
       "total": 100,
       "lucroA": 140,
@@ -8958,9 +8958,10 @@
       "lucro": 140,
       "roi": 140,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-16T18:49:16.177Z"
+      "updatedAt": "2026-08-17T10:57:48.514Z"
     },
     {
       "id": "msw5tzjum7zpc",
@@ -9223,5 +9224,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T10:56:29.572Z"
+  "updatedAt": "2026-08-17T10:57:48.515Z"
 }
