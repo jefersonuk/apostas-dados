@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 511,
+      "value": 491,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T23:55:27.968Z"
+      "updatedAt": "2026-08-17T23:59:32.103Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1974.89,
+      "value": 1994.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T23:55:27.975Z"
+      "updatedAt": "2026-08-17T23:59:32.110Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10132,8 +10132,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T23:55:27.969Z"
+    },
+    {
+      "id": "msxwb950s8703",
+      "kind": "valor",
+      "event": "Guadalajara – Tijuana (2)",
+      "houseA": "Ivibet",
+      "oddA": 6.9,
+      "stakeA": 20,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-22T20:00",
+      "total": 20,
+      "lucroA": 118,
+      "lucroRed": -20,
+      "lucro": 118,
+      "roi": 590,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T23:59:32.104Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T23:55:27.975Z"
+  "updatedAt": "2026-08-17T23:59:32.110Z"
 }
