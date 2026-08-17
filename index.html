@@ -86,6 +86,7 @@
   .search-box{position:relative;margin-bottom:10px;}
   .search-box input{margin-bottom:0;padding-left:30px;}
   .search-box::before{content:'⌕';position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted-2);font-size:15px;}
+  .mkt-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:10px;background:#1A1230;border:1px solid #2E2350;color:#C4B5FD;margin-right:4px;vertical-align:middle;}
   .house-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:10px;background:#1A1F28;border:1px solid var(--border);color:var(--sky);margin-right:4px;vertical-align:middle;}
   .house-filter{padding:5px 9px;border-radius:14px;border:1px solid var(--border);background:#0E1116;color:var(--muted);font-size:11px;cursor:pointer;font-weight:600;white-space:nowrap;}
   .house-filter.active{background:var(--sky);color:#04121C;border-color:var(--sky);}
@@ -182,6 +183,16 @@
   .caixa-hero{text-align:center;padding:14px 0 6px;}
   .caixa-val{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--text);letter-spacing:-0.5px;}
   .caixa-sub{font-size:12px;margin-top:6px;line-height:1.7;}
+  .kpi-sub{font-family:var(--mono);font-size:10.5px;margin-top:2px;}
+  .seg-row{padding:7px 0;border-bottom:1px solid var(--border);}
+  .seg-row:last-of-type{border-bottom:none;}
+  .seg-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px;}
+  .seg-name{font-size:12.5px;font-weight:600;color:var(--text);}
+  .seg-warn{color:var(--amber);margin-left:4px;}
+  .seg-val{font-family:var(--mono);font-size:12.5px;font-weight:700;}
+  .seg-val.pos{color:var(--green);} .seg-val.neg{color:var(--red);}
+  .seg-meta{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:10px;color:var(--muted-2);margin-top:3px;}
+  .seg-meta .pos{color:var(--green);} .seg-meta .neg{color:var(--red);}
   .caixa-edit-val{cursor:pointer;border-bottom:1px dashed var(--muted-2);}
   .caixa-edit-val:hover{color:var(--sky);border-bottom-color:var(--sky);}
   .sb-open-box{margin-top:10px;padding:10px 12px;border-radius:9px;background:#2A1A08;border:1px solid #4D3010;font-size:12.5px;line-height:1.7;}
@@ -279,11 +290,21 @@
     <div class="footnote">O registro diário é <b>fixo</b>: uma vez gravado, não muda quando você atualiza os saldos por casa durante o dia. Para alterá-lo, use o botão acima (pede confirmação) ou clique no valor na tabela abaixo. Aportes e saques não alteram este acompanhamento.</div>
   </div>
 
-  <!-- EVOLUÇÃO DIÁRIA DA BANCA -->
+  <!-- EVOLUÇÃO DA BANCA -->
   <div class="card">
-    <div class="card-title">Evolução diária da banca</div>
+    <div class="card-title">📈 Evolução da banca</div>
+    <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="summary-item"><div class="k">Hoje</div><div class="v" id="kpiDia" style="font-size:15px;">—</div><div class="kpi-sub" id="kpiDiaPct"></div></div>
+      <div class="summary-item"><div class="k">Semana</div><div class="v" id="kpiSem" style="font-size:15px;">—</div><div class="kpi-sub" id="kpiSemPct"></div></div>
+      <div class="summary-item"><div class="k">Mês</div><div class="v" id="kpiMes" style="font-size:15px;">—</div><div class="kpi-sub" id="kpiMesPct"></div></div>
+    </div>
     <div class="chart-wrap"><svg id="caixaChart" viewBox="0 0 780 220" preserveAspectRatio="none"></svg></div>
     <div class="footnote" id="caixaChartNote"></div>
+    <div class="evo-seg" style="margin-top:12px;">
+      <button type="button" class="evo-opt active" data-per="dia">Diário</button>
+      <button type="button" class="evo-opt" data-per="semana">Semanal</button>
+      <button type="button" class="evo-opt" data-per="mes">Mensal</button>
+    </div>
     <div id="caixaList" style="margin-top:10px;"></div>
     <div class="grid2" style="margin-top:8px;">
       <div><label>Data</label><input type="date" id="caixaDate"></div>
@@ -521,6 +542,26 @@
 
       <div id="blocoValor" style="display:none;">
         <div class="grid2">
+          <div><label>Esporte</label>
+            <input type="text" id="vbSport" list="sportList" placeholder="Ex: Futebol" autocomplete="off">
+            <datalist id="sportList">
+              <option value="Futebol"><option value="Tênis"><option value="Basquete"><option value="E-sports">
+              <option value="Vôlei"><option value="Handebol"><option value="MMA"><option value="Beisebol">
+              <option value="Hóquei"><option value="Futebol Americano"><option value="Sinuca"><option value="Tênis de Mesa">
+            </datalist>
+          </div>
+          <div><label>Mercado</label>
+            <input type="text" id="vbMarket" list="marketList" placeholder="Ex: Escanteios" autocomplete="off">
+            <datalist id="marketList">
+              <option value="1X2 / Resultado"><option value="Handicap Asiático"><option value="Handicap Europeu">
+              <option value="Total de Gols"><option value="Escanteios"><option value="Cartões">
+              <option value="Ambas Marcam"><option value="Dupla Chance"><option value="Total de Pontos">
+              <option value="Games / Sets"><option value="Aces"><option value="Abates / Kills">
+              <option value="Total de Chutes"><option value="Jogador / Player Props"><option value="Primeiro Tempo">
+            </datalist>
+          </div>
+        </div>
+        <div class="grid2">
           <div><label>Casa de aposta</label><input type="text" id="vbHouse" placeholder="Ex: Bet365"></div>
           <div><label>Odd</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="2.10"></div>
         </div>
@@ -572,7 +613,14 @@
         <div class="filter-btn" data-vbfilter="green">✓ Green</div>
         <div class="filter-btn" data-vbfilter="red">✗ Red</div>
       </div>
-      <div id="vbList"></div>
+      <div class="k" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:14px 0 6px;font-weight:700;">Desempenho por segmento</div>
+      <div class="evo-seg" style="margin-bottom:8px;">
+        <button type="button" class="evo-opt active" data-seg="market">Mercado</button>
+        <button type="button" class="evo-opt" data-seg="sport">Esporte</button>
+        <button type="button" class="evo-opt" data-seg="house">Casa</button>
+      </div>
+      <div id="vbSegments"></div>
+      <div id="vbList" style="margin-top:14px;"></div>
     </div>
 
     <!-- LISTA DE OPERAÇÕES -->
@@ -598,7 +646,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260817-1800';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260817-2000';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1035,6 +1083,7 @@
     const op={
       id:uid(), kind:'valor', event:$('scEvent').value.trim()||'Aposta sem nome',
       houseA:$('vbHouse').value.trim(), oddA:r.odd, stakeA:r.stake, curA:r.cur,
+      sport:$('vbSport').value.trim(), market:$('vbMarket').value.trim(),
       prob:r.prob, winner:null, date:$('scDate').value||nowLocalStr()
     };
     recalcValor(op);
@@ -1042,6 +1091,7 @@
     touch(op);
     state.surebets.push(op);
     $('vbHouse').value=''; $('vbOdd').value=''; $('vbStake').value=''; $('vbProb').value='';
+    $('vbSport').value=''; $('vbMarket').value='';
     $('scEvent').value=''; $('scDate').value=nowLocalStr();
     $('scCurV').value='BRL';
     const g=$('curToggleV'); if(g) g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active',x.dataset.cur.endsWith('BRL')));
@@ -1088,6 +1138,55 @@
     $('vbAvgOdd').textContent=avgOdd?avgOdd.toFixed(2):'—';
   }
 
+
+  /* ---------- desempenho das apostas de valor por segmento ---------- */
+  let vbSegBy='market';
+
+  function renderValorSegments(){
+    document.querySelectorAll('[data-seg]').forEach(b=>b.classList.toggle('active', b.dataset.seg===vbSegBy));
+    const box=$('vbSegments');
+    const done=valorBets().filter(o=>o.winner);
+    if(!done.length){ box.innerHTML='<div class="empty" style="padding:8px;">Resolva apostas para ver o desempenho por segmento.</div>'; return; }
+
+    const rotuloVazio = vbSegBy==='market'?'(sem mercado)':vbSegBy==='sport'?'(sem esporte)':'(sem casa)';
+    const grupos={};
+    done.forEach(o=>{
+      const chave=(vbSegBy==='market'?o.market:vbSegBy==='sport'?o.sport:legHouse(o,'A'))||rotuloVazio;
+      if(!grupos[chave]) grupos[chave]={n:0,g:0,lucro:0,vol:0,oddSoma:0};
+      const g=grupos[chave];
+      g.n++; g.vol+=legStake(o,'A'); g.lucro+=sbRealProfit(o); g.oddSoma+=legOdd(o,'A');
+      if(o.winner==='A') g.g++;
+    });
+
+    const linhas=Object.entries(grupos).map(([nome,g])=>({
+      nome, ...g,
+      hit:g.n?g.g/g.n*100:0,
+      yield:g.vol>0?g.lucro/g.vol*100:0,
+      oddMedia:g.n?g.oddSoma/g.n:0
+    })).sort((a,b)=>b.lucro-a.lucro);
+
+    const maxAbs=Math.max(...linhas.map(l=>Math.abs(l.lucro)),1);
+    box.innerHTML=linhas.map(l=>{
+      const w=Math.min(50,Math.abs(l.lucro)/maxAbs*50);
+      const bar=l.lucro>=0?`<div class="day-bar pos" style="width:${w}%;"></div>`:`<div class="day-bar neg" style="width:${w}%;"></div>`;
+      const amostraPequena=l.n<5;
+      return `<div class="seg-row">
+        <div class="seg-head">
+          <span class="seg-name">${esc(l.nome)}${amostraPequena?'<span class="seg-warn" title="amostra pequena">•</span>':''}</span>
+          <span class="seg-val ${l.lucro>=0?'pos':'neg'}">${fmtSign(l.lucro)}</span>
+        </div>
+        <div class="day-bar-wrap" style="height:12px;"><div class="day-center"></div>${bar}</div>
+        <div class="seg-meta">
+          <span>${l.g}/${l.n} · ${l.hit.toFixed(0)}% acerto</span>
+          <span>odd méd ${l.oddMedia.toFixed(2)}</span>
+          <span class="${l.yield>=0?'pos':'neg'}">yield ${l.yield>=0?'+':''}${l.yield.toFixed(1)}%</span>
+        </div>
+      </div>`;
+    }).join('')+
+    `<div class="footnote" style="margin-top:6px;">O ponto <span style="color:var(--amber)">•</span> marca segmentos com menos de 5 apostas — amostra pequena demais para conclusão.</div>`;
+  }
+  document.querySelectorAll('[data-seg]').forEach(b=>b.addEventListener('click',()=>{ vbSegBy=b.dataset.seg; renderValorSegments(); }));
+
   function renderValorList(){
     const box=$('vbList');
     let arr=valorBets();
@@ -1131,6 +1230,10 @@
         ? `<div class="sb-edit" id="vbEditForm_${o.id}">
              <label>Evento</label><input type="text" class="vbed" data-f="event" value="${esc(o.event||'')}">
              <div class="grid2">
+               <div><label>Esporte</label><input type="text" class="vbed" data-f="sport" list="sportList" value="${esc(o.sport||'')}"></div>
+               <div><label>Mercado</label><input type="text" class="vbed" data-f="market" list="marketList" value="${esc(o.market||'')}"></div>
+             </div>
+             <div class="grid2">
                <div><label>Casa</label><input type="text" class="vbed" data-f="houseA" value="${esc(o.houseA||'')}"></div>
                <div><label>Odd</label><input type="number" class="vbed" data-f="oddA" step="0.01" value="${od}"></div>
              </div>
@@ -1162,7 +1265,7 @@
           <span class="bet-date">${dt}</span>
           <div class="bet-main" data-vbtoggle="${o.id}">
             <div class="bet-event">${esc(o.event||'')}</div>
-            <div class="bet-sub"><span class="house-tag">${esc(casa)}</span>@${od.toFixed(2)} · ${fmt(st)} · ${statusTxt}</div>
+            <div class="bet-sub"><span class="house-tag">${esc(casa)}</span>${o.market?`<span class="mkt-tag">${esc(o.market)}</span>`:''}@${od.toFixed(2)} · ${fmt(st)} · ${statusTxt}</div>
           </div>
           <span class="bet-val ${valCls}" style="font-size:11.5px;">${val}</span>
         </div>${det}`;
@@ -1208,6 +1311,8 @@
       form.querySelectorAll('.vbed').forEach(inp=>{
         const f=inp.dataset.f, v=inp.value;
         if(f==='event') o.event=v.trim()||o.event;
+        else if(f==='sport') o.sport=v.trim();
+        else if(f==='market') o.market=v.trim();
         else if(f==='houseA') o.houseA=v.trim();
         else if(f==='oddA'){ const n=parseFloat(v); if(n>1) o.oddA=n; }
         else if(f==='stakeA'){ const n=parseFloat(v); if(n>0) o.stakeA=n; }
@@ -1248,6 +1353,69 @@
     return hist.length?hist[hist.length-1].value:0;
   }
 
+
+  /* ---------- agregação por período (dia / semana / mês) ---------- */
+  let caixaPeriodo='dia';
+
+  function isoSemana(dateStr){
+    const d=new Date(dateStr+'T12:00:00');
+    const alvo=new Date(d.valueOf());
+    const diaSem=(d.getDay()+6)%7;              // segunda = 0
+    alvo.setDate(alvo.getDate()-diaSem+3);      // quinta da mesma semana
+    const primeiraQuinta=new Date(alvo.getFullYear(),0,4);
+    const diaSem2=(primeiraQuinta.getDay()+6)%7;
+    primeiraQuinta.setDate(primeiraQuinta.getDate()-diaSem2+3);
+    const semana=1+Math.round((alvo-primeiraQuinta)/(7*24*3600*1000));
+    return alvo.getFullYear()+'-S'+String(semana).padStart(2,'0');
+  }
+  function inicioSemana(dateStr){
+    const d=new Date(dateStr+'T12:00:00');
+    const diaSem=(d.getDay()+6)%7;
+    d.setDate(d.getDate()-diaSem);
+    return d.toISOString().slice(0,10);
+  }
+  // agrupa o histórico de caixa por período, pegando o ÚLTIMO valor de cada bloco
+  function agruparCaixa(hist,periodo){
+    if(periodo==='dia') return hist.map(h=>({rot:h.date, label:h.date.slice(8,10)+'/'+h.date.slice(5,7), value:h.value, date:h.date}));
+    const mapa=new Map();
+    hist.forEach(h=>{
+      const chave = periodo==='semana' ? isoSemana(h.date) : h.date.slice(0,7);
+      const atual=mapa.get(chave);
+      if(!atual || h.date>atual.date) mapa.set(chave,{rot:chave,value:h.value,date:h.date});
+    });
+    const meses=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+    return [...mapa.values()].sort((a,b)=>a.date.localeCompare(b.date)).map(x=>{
+      let label;
+      if(periodo==='semana'){ const ini=inicioSemana(x.date); label='sem '+ini.slice(8,10)+'/'+ini.slice(5,7); }
+      else { label=meses[parseInt(x.date.slice(5,7),10)-1]+'/'+x.date.slice(2,4); }
+      return {...x,label};
+    });
+  }
+
+  // variação do caixa desde a última referência anterior ao corte
+  function variacaoDesde(hist,corte,atual){
+    const anteriores=hist.filter(h=>h.date<corte);
+    if(!anteriores.length) return null;
+    const base=anteriores[anteriores.length-1].value;
+    if(!(base>0)) return null;
+    return {delta:atual-base, pct:(atual-base)/base*100, de:anteriores[anteriores.length-1].date};
+  }
+
+  function renderKpisPeriodo(hist,atual){
+    const hoje=todayStr();
+    const iniSem=inicioSemana(hoje);
+    const iniMes=hoje.slice(0,7)+'-01';
+    const alvos=[['kpiDia',hoje],['kpiSem',iniSem],['kpiMes',iniMes]];
+    alvos.forEach(([id,corte])=>{
+      const v=variacaoDesde(hist,corte,atual);
+      const el=$(id), sub=$(id+'Pct');
+      if(!v){ el.textContent='—'; el.className='v'; sub.textContent=''; return; }
+      el.textContent=fmtSign(v.delta);
+      el.className='v '+(v.delta>=0?'pos':'neg');
+      sub.innerHTML=`<span style="color:${v.delta>=0?'var(--green)':'var(--red)'}">${v.pct>=0?'+':''}${v.pct.toFixed(2)}%</span>`;
+    });
+  }
+
   function renderCaixa(){
     const aoVivo=caixaAtual();                 // soma atual das casas (muda o tempo todo)
     const hist=[...(state.caixa||[])].sort((a,b)=>a.date.localeCompare(b.date));
@@ -1283,27 +1451,33 @@
     }
     sub.innerHTML=linhas.join('<br>');
 
-    renderCaixaList(hist);
-    renderCaixaChart(hist);
+    renderKpisPeriodo(hist,principal);
+    const agrupado=agruparCaixa(hist,caixaPeriodo);
+    renderCaixaList(hist,agrupado);
+    renderCaixaChart(agrupado);
   }
 
-  function renderCaixaList(hist){
+  function renderCaixaList(hist,agrupado){
     const box=$('caixaList');
     if(!hist.length){ box.innerHTML='<div class="empty" style="padding:8px;">Nenhum registro diário ainda.</div>'; return; }
-    const desc=[...hist].reverse();
-    box.innerHTML='<table class="sc-table"><thead><tr><th>Dia</th><th>Caixa</th><th>Variação</th><th>%</th><th></th></tr></thead><tbody>'+
+    const rotulo = caixaPeriodo==='dia'?'Dia':(caixaPeriodo==='semana'?'Semana':'Mês');
+    const desc=[...agrupado].reverse();
+    const editavel = caixaPeriodo==='dia';
+    box.innerHTML=`<table class="sc-table"><thead><tr><th>${rotulo}</th><th>Caixa</th><th>Variação</th><th>%</th><th></th></tr></thead><tbody>`+
       desc.map((h,i)=>{
         const prev=desc[i+1];
         const delta=prev?h.value-prev.value:null;
         const pct=(prev&&prev.value>0)?(delta/prev.value*100):null;
         const cls=delta===null?'':(delta>=0?'pos':'neg');
-        const dd=h.date.slice(8,10)+'/'+h.date.slice(5,7);
+        const valCell = editavel
+          ? `<span class="caixa-edit-val" data-caixaedit="${h.date}" title="Clique para editar">${fmt(h.value)}</span>`
+          : `<span title="fechamento em ${h.date.slice(8,10)}/${h.date.slice(5,7)}">${fmt(h.value)}</span>`;
         return `<tr>
-          <td>${dd}</td>
-          <td><span class="caixa-edit-val" data-caixaedit="${h.date}" title="Clique para editar">${fmt(h.value)}</span></td>
+          <td>${h.label}</td>
+          <td>${valCell}</td>
           <td class="${cls}">${delta===null?'—':fmtSign(delta)}</td>
           <td class="${cls}">${pct===null?'—':(pct>=0?'+':'')+pct.toFixed(2)+'%'}</td>
-          <td><button class="bal-del" data-caixadel="${h.date}">×</button></td>
+          <td>${editavel?`<button class="bal-del" data-caixadel="${h.date}">×</button>`:''}</td>
         </tr>`;
       }).join('')+'</tbody></table>';
     box.querySelectorAll('[data-caixaedit]').forEach(el=>el.addEventListener('click',()=>{
@@ -1323,9 +1497,9 @@
     }));
   }
 
-  function renderCaixaChart(hist){
+  function renderCaixaChart(hist){   // recebe a série já agrupada pelo período
     const svg=$('caixaChart'), note=$('caixaChartNote');
-    if(hist.length<2){ svg.innerHTML=''; note.textContent='Registre pelo menos 2 dias para ver a curva.'; return; }
+    if(hist.length<2){ svg.innerHTML=''; note.textContent='Registre pelo menos 2 períodos para ver a curva.'; return; }
     const W=780,H=220,padL=64,padR=14,padT=14,padB=24;
     const vals=hist.map(h=>h.value);
     const min=Math.min(...vals), max=Math.max(...vals), range=(max-min)||1;
@@ -1344,7 +1518,7 @@
       `<path d="${path}" fill="none" stroke="#38BDF8" stroke-width="2"/>`+dots;
     const delta=hist[n-1].value-hist[0].value;
     const pct=hist[0].value>0?(delta/hist[0].value*100):0;
-    note.textContent=`${n} dia(s) · ${fmt(hist[0].value)} → ${fmt(hist[n-1].value)} (${delta>=0?'+':''}${fmt(delta).replace('R$ ','R$ ')} · ${pct>=0?'+':''}${pct.toFixed(2)}%)`;
+    note.textContent=`${n} ${caixaPeriodo==='dia'?'dia(s)':caixaPeriodo==='semana'?'semana(s)':'mês(es)'} · ${fmt(hist[0].value)} → ${fmt(hist[n-1].value)} (${delta>=0?'+':''}${fmt(delta).replace('R$ ','R$ ')} · ${pct>=0?'+':''}${pct.toFixed(2)}%)`;
   }
 
   function upsertCaixa(date,value){
@@ -1352,6 +1526,11 @@
     const ex=state.caixa.find(x=>x.date===date);
     if(ex){ ex.value=value; touch(ex); } else state.caixa.push(touch({date,value}));
   }
+
+  document.querySelectorAll('[data-per]').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-per]').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active'); caixaPeriodo=b.dataset.per; renderCaixa();
+  }));
 
   $('caixaSnapBtn').addEventListener('click',()=>{
     const total=caixaAtual();
@@ -2237,7 +2416,7 @@
   }
   document.querySelectorAll('.evo-opt').forEach(b=>b.addEventListener('click',()=>{ evoScope=b.dataset.evo; renderEvoDaily(); }));
 
-  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderValorSummary(); renderValorList(); renderEvoDaily(); }
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderValorSummary(); renderValorSegments(); renderValorList(); renderEvoDaily(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
