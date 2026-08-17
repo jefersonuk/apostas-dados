@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 892,
+      "value": 792,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T13:21:44.577Z"
+      "updatedAt": "2026-08-17T15:18:16.930Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1019.85,
+      "value": 1119.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T14:30:48.906Z"
+      "updatedAt": "2026-08-17T15:18:16.934Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9372,8 +9372,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T14:28:17.463Z"
+    },
+    {
+      "id": "msxdox2awuhv3",
+      "kind": "valor",
+      "event": "DN SOOPers Challengers – NSRedForce Challengers (mapa 1 mais de 31 min)",
+      "houseA": "Ivibet",
+      "oddA": 1.8,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T05:00",
+      "total": 100,
+      "lucroA": 80,
+      "lucroRed": -100,
+      "lucro": 80,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T15:18:16.932Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T14:30:48.906Z"
+  "updatedAt": "2026-08-17T15:18:16.934Z"
 }
