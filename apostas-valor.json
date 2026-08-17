@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 967.5,
+      "value": 1047.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T13:29:24.883Z"
+      "updatedAt": "2026-08-17T14:03:53.412Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,9 +4784,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 542.5,
+      "value": 462.5,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T12:48:50.099Z"
+      "updatedAt": "2026-08-17T14:03:53.412Z"
     }
   ],
   "aportes": [],
@@ -9329,8 +9329,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T13:29:24.882Z"
+    },
+    {
+      "id": "msxb18zobf5ao",
+      "kind": "valor",
+      "event": "Aryna Sabalenka mais de 2.5 DF",
+      "houseA": "Esportivabet",
+      "oddA": 2.35,
+      "stakeA": 80,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T11:00",
+      "total": 80,
+      "lucroA": 108,
+      "lucroRed": -80,
+      "lucro": 108,
+      "roi": 135,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T14:03:53.412Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T13:52:30.979Z"
+  "updatedAt": "2026-08-17T14:03:53.412Z"
 }
