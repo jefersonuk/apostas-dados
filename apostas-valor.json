@@ -4859,7 +4859,7 @@
   "usdRate": 5.2,
   "usdRateSrc": "CoinGecko",
   "usdRateAt": "2026-08-17T19:19:57.396Z",
-  "appBuild": "20260817-1800",
+  "appBuild": "20260817-2000",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
