@@ -4561,8 +4561,8 @@
     {
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
-      "value": 290,
-      "updatedAt": "2026-08-17T20:33:10.327Z"
+      "value": 562,
+      "updatedAt": "2026-08-17T20:48:21.893Z"
     },
     {
       "id": "mrvd6n3x6xs48",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1925.89,
+      "value": 1825.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T20:48:19.895Z"
+      "updatedAt": "2026-08-17T20:48:21.893Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9674,7 +9674,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-17T14:10",
       "total": 100,
       "lucroA": 172.00000000000003,
@@ -9683,9 +9683,9 @@
       "roi": 172.00000000000003,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "updatedAt": "2026-08-17T20:48:21.893Z",
       "market": "Total (linha)",
       "sport": "Tênis"
     },
@@ -10014,5 +10014,5 @@
     }
   ],
   "sbBankroll": 37395.43,
-  "updatedAt": "2026-08-17T20:48:19.895Z"
+  "updatedAt": "2026-08-17T20:48:21.893Z"
 }
