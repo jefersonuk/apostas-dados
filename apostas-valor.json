@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1152.35,
+      "value": 1252.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T15:39:22.619Z"
+      "updatedAt": "2026-08-17T15:48:31.906Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4784,9 +4784,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 597.5,
+      "value": 497.5,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T15:39:22.618Z"
+      "updatedAt": "2026-08-17T15:48:31.900Z"
     },
     {
       "id": "msxe0rrbq4jmy",
@@ -9422,8 +9422,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T15:28:51.392Z"
+    },
+    {
+      "id": "msxerti2f0aen",
+      "kind": "valor",
+      "event": "CSM Resita – Petrolul Ploiesti (X2)",
+      "houseA": "Esportivabet",
+      "oddA": 1.8,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T11:30",
+      "total": 100,
+      "lucroA": 80,
+      "lucroRed": -100,
+      "lucro": 80,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T15:48:31.901Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T15:39:22.619Z"
+  "updatedAt": "2026-08-17T15:48:31.906Z"
 }
