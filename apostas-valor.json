@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 400,
-      "updatedAt": "2026-08-17T18:14:50.134Z"
+      "value": 300,
+      "updatedAt": "2026-08-17T20:19:08.162Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1825.89,
+      "value": 1925.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T20:16:02.286Z"
+      "updatedAt": "2026-08-17T20:19:08.169Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9763,8 +9763,29 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T20:16:02.282Z"
+    },
+    {
+      "id": "msxofthc0l5gm",
+      "kind": "valor",
+      "event": "Lanus – Argentinos Juniors (H2 (0))",
+      "houseA": "Pinnacle",
+      "oddA": 2.19,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-24T21:15",
+      "total": 100,
+      "lucroA": 119,
+      "lucroRed": -100,
+      "lucro": 119,
+      "roi": 119,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T20:19:08.164Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T20:16:02.286Z"
+  "updatedAt": "2026-08-17T20:19:08.169Z"
 }
