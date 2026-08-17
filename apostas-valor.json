@@ -4639,9 +4639,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 592,
+      "value": 492,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T15:50:07.610Z"
+      "updatedAt": "2026-08-17T17:32:31.734Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4755,10 +4755,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1526.27,
+      "value": 1729.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T17:20:43.667Z"
+      "updatedAt": "2026-08-17T17:32:31.739Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4770,8 +4770,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 100,
-      "updatedAt": "2026-08-17T17:28:24.498Z",
+      "value": 80,
+      "updatedAt": "2026-08-17T17:30:41.562Z",
       "currency": "USD"
     },
     {
@@ -9512,8 +9512,50 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T17:20:43.663Z"
+    },
+    {
+      "id": "msxif76hf60yy",
+      "kind": "valor",
+      "event": "Irmãs Williams vencem",
+      "houseA": "Kalshi",
+      "oddA": 3.95,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T20:00",
+      "total": 103.6,
+      "lucroA": 305.62,
+      "lucroRed": -103.6,
+      "lucro": 305.62,
+      "roi": 295,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T17:30:41.562Z"
+    },
+    {
+      "id": "msxihk6skpjra",
+      "kind": "valor",
+      "event": "Aktobe – Torpedo Ust-Kamenogorsk (2nd time mais 6.5 gols)",
+      "houseA": "Ivibet",
+      "oddA": 3.14,
+      "stakeA": 100,
+      "curA": "BRL",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T11:00",
+      "total": 100,
+      "lucroA": 214,
+      "lucroRed": -100,
+      "lucro": 214,
+      "roi": 214,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T17:32:31.735Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T17:28:24.499Z"
+  "updatedAt": "2026-08-17T17:32:31.739Z"
 }
