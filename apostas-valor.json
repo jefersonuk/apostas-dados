@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 387,
+      "value": 287,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T20:48:19.894Z"
+      "updatedAt": "2026-08-17T22:07:56.860Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1925.89,
+      "value": 2025.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T20:51:22.991Z"
+      "updatedAt": "2026-08-17T22:07:56.862Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10034,8 +10034,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-17T20:51:22.987Z"
+    },
+    {
+      "id": "msxsbr2414i6l",
+      "kind": "valor",
+      "event": "paiN Gaming Academy – Ei Nerd Esports (1)",
+      "houseA": "Ivibet",
+      "oddA": 2.58,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T19:07",
+      "total": 100,
+      "lucroA": 158,
+      "lucroRed": -100,
+      "lucro": 158,
+      "roi": 158,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-17T22:07:56.860Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T21:11:44.590Z"
+  "updatedAt": "2026-08-17T22:07:56.862Z"
 }
