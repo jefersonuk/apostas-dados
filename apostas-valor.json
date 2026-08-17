@@ -1,18 +1,16 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-07-08",
-    "stakeMin": 1,
-    "stakeMax": 30,
+    "startDate": "2026-08-17",
+    "stakeMin": 5,
+    "stakeMax": 20,
     "oddMin": 1.5,
-    "potMin": 25,
+    "potMin": 1,
     "kellyMult": 0.5,
     "probTolerance": 3,
     "probFull": 50,
     "probFloor": 20,
-    "penMin": 0.35,
-    "oddCap": 3,
-    "potCap": 50
+    "penMin": 0.35
   },
   "bets": [
     {
@@ -4532,9 +4530,9 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 7585.78,
+      "value": 8079.25,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T12:52:41.670Z"
+      "updatedAt": "2026-08-17T13:42:36.245Z"
     },
     {
       "id": "mricm6v4hbqxz",
@@ -4841,9 +4839,9 @@
       "updatedAt": "2026-08-17T12:52:51.787Z"
     }
   ],
-  "usdRate": 5.2,
+  "usdRate": 5.21,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-17T13:28:46.274Z",
+  "usdRateAt": "2026-08-17T12:24:00.807Z",
   "appBuild": "20260813-1900",
   "deleted": [
     {
@@ -9334,5 +9332,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T13:29:24.883Z"
+  "updatedAt": "2026-08-17T13:42:36.274Z"
 }
