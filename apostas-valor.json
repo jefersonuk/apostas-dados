@@ -4787,12 +4787,6 @@
       "value": 542.5,
       "currency": "BRL",
       "updatedAt": "2026-08-17T12:48:50.099Z"
-    },
-    {
-      "id": "msv06yohwhdnk",
-      "name": "Thunderpick",
-      "value": 0,
-      "updatedAt": "2026-08-15T23:37:48.876Z"
     }
   ],
   "aportes": [],
@@ -4920,6 +4914,10 @@
     {
       "id": "msw69iq016d72",
       "at": "2026-08-16T19:26:53.946Z"
+    },
+    {
+      "id": "msv06yohwhdnk",
+      "at": "2026-08-17T12:49:14.213Z"
     }
   ],
   "surebets": [
@@ -9265,5 +9263,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-17T12:48:50.129Z"
+  "updatedAt": "2026-08-17T12:49:14.213Z"
 }
