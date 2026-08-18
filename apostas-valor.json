@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 321,
+      "value": 221,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T00:23:19.689Z"
+      "updatedAt": "2026-08-18T00:26:47.985Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2164.89,
+      "value": 2264.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T00:23:19.700Z"
+      "updatedAt": "2026-08-18T00:26:47.992Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10201,8 +10201,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T00:23:19.690Z"
+    },
+    {
+      "id": "msxxabe715cx3",
+      "kind": "valor",
+      "event": "Tiago Cacao – Goncalo Marques (1)",
+      "houseA": "Ivibet",
+      "oddA": 2.15,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-19T06:00",
+      "total": 100,
+      "lucroA": 114.99999999999999,
+      "lucroRed": -100,
+      "lucro": 114.99999999999999,
+      "roi": 114.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T00:26:47.987Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T00:23:19.700Z"
+  "updatedAt": "2026-08-18T00:26:47.992Z"
 }
