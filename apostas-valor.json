@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 740.57,
+      "value": 600.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T12:28:29.431Z"
+      "updatedAt": "2026-08-18T12:34:55.970Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2445.22,
+      "value": 2585.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T12:28:29.431Z"
+      "updatedAt": "2026-08-18T12:34:55.970Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10397,8 +10397,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T12:28:29.431Z"
+    },
+    {
+      "id": "msynap9e8g9vl",
+      "kind": "valor",
+      "event": "Urunday Universitario x Aguada (1)",
+      "houseA": "Ivibet",
+      "oddA": 3.53,
+      "stakeA": 140,
+      "curA": "BRL",
+      "sport": "Basquete",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.9,
+      "prob": 32.8,
+      "winner": null,
+      "date": "2026-08-19T20:00",
+      "total": 140,
+      "lucroA": 354.2,
+      "lucroRed": -140,
+      "lucro": 354.2,
+      "roi": 252.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T12:34:55.970Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T12:28:29.431Z"
+  "updatedAt": "2026-08-18T12:34:55.970Z"
 }
