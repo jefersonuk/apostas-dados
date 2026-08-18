@@ -4789,7 +4789,7 @@
       "name": "Esportivabet",
       "value": 397.5,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T13:19:15.412Z"
+      "updatedAt": "2026-08-18T14:53:00.102Z"
     },
     {
       "id": "msxe0rrbq4jmy",
@@ -9637,7 +9637,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "updatedAt": "2026-08-18T14:53:00.102Z",
       "market": "Dupla Chance",
       "sport": "Futebol"
     },
@@ -10677,5 +10677,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T14:13:14.775Z"
+  "updatedAt": "2026-08-18T14:53:00.102Z"
 }
