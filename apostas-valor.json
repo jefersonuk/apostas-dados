@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 4095.7,
+      "value": 4345.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T13:25:18.577Z"
+      "updatedAt": "2026-08-18T13:45:57.290Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4808,9 +4808,9 @@
     {
       "id": "msyprvso2ird4",
       "name": "F12bet",
-      "value": 250,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T13:44:16.826Z"
+      "updatedAt": "2026-08-18T13:45:57.289Z"
     }
   ],
   "aportes": [],
@@ -10626,8 +10626,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T13:25:18.576Z"
+    },
+    {
+      "id": "msypu1bdj10oo",
+      "kind": "valor",
+      "event": "Veroskronos Tsuno x Kamatamare (empate, 2 devolve aposta)",
+      "houseA": "F12bet",
+      "oddA": 1.95,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-08-19T07:00",
+      "total": 250,
+      "lucroA": 237.5,
+      "lucroRed": -250,
+      "lucro": 237.5,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T13:45:57.289Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T13:44:16.826Z"
+  "updatedAt": "2026-08-18T13:45:57.290Z"
 }
