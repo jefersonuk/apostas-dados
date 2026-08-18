@@ -4767,7 +4767,7 @@
       "id": "msrueg4hvw63f",
       "name": "Predict",
       "value": -9.7,
-      "updatedAt": "2026-08-18T08:16:19.070Z",
+      "updatedAt": "2026-08-18T16:11:28.430Z",
       "currency": "USD"
     },
     {
@@ -10271,7 +10271,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-18T08:16:19.072Z"
+      "updatedAt": "2026-08-18T16:11:28.430Z"
     },
     {
       "id": "msye80wyzelay",
@@ -10703,5 +10703,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T16:10:56.685Z"
+  "updatedAt": "2026-08-18T16:11:28.430Z"
 }
