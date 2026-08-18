@@ -4725,9 +4725,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 151.87,
+      "value": 111.87,
       "currency": "USD",
-      "updatedAt": "2026-08-17T12:47:37.394Z"
+      "updatedAt": "2026-08-18T12:40:12.147Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2585.22,
+      "value": 2793.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T12:34:55.970Z"
+      "updatedAt": "2026-08-18T12:40:12.148Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10421,8 +10421,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T12:34:55.970Z"
+    },
+    {
+      "id": "msynhh83xwzvd",
+      "kind": "valor",
+      "event": "Cristian Perez x Logan Paxton (menos 1.5 rounds)",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.23,
+      "stakeA": 208,
+      "curA": "USD",
+      "sport": "MMA",
+      "market": "Total de rounds",
+      "oddMkt": 1.9,
+      "prob": 50.1,
+      "winner": null,
+      "date": "2026-08-18T20:40",
+      "total": 208,
+      "lucroA": 255.84,
+      "lucroRed": -208,
+      "lucro": 255.84,
+      "roi": 123,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T12:40:12.147Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T12:34:55.970Z"
+  "updatedAt": "2026-08-18T12:40:12.148Z"
 }
