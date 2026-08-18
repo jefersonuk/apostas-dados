@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 221,
+      "value": 121,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T00:26:47.985Z"
+      "updatedAt": "2026-08-18T00:29:23.451Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2264.89,
+      "value": 2364.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T00:26:47.992Z"
+      "updatedAt": "2026-08-18T00:29:23.452Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10224,8 +10224,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T00:26:47.987Z"
+    },
+    {
+      "id": "msxxdncr2m24z",
+      "kind": "valor",
+      "event": "Club Atletico Gimnasia y Esgrima – Talleres de Cordoba (h2 -1 escanteio)",
+      "houseA": "Ivibet",
+      "oddA": 2.98,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-17T21:30",
+      "total": 100,
+      "lucroA": 198,
+      "lucroRed": -100,
+      "lucro": 198,
+      "roi": 198,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T00:29:23.451Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T00:26:47.992Z"
+  "updatedAt": "2026-08-18T00:29:23.453Z"
 }
