@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 524.37,
+      "value": 274.37,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T18:57:34.289Z"
+      "updatedAt": "2026-08-18T19:31:37.721Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3575.62,
+      "value": 3825.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T19:27:23.403Z"
+      "updatedAt": "2026-08-18T19:31:37.722Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10784,8 +10784,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T19:27:23.402Z"
+    },
+    {
+      "id": "msz26kqh1aj0h",
+      "kind": "valor",
+      "event": "Roman Puga x Taner Trembley",
+      "houseA": "Ivibet",
+      "oddA": 1.87,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "MMA",
+      "market": "Total de rounds",
+      "oddMkt": 1.61,
+      "prob": 59.2,
+      "winner": null,
+      "date": "2026-08-18T20:05",
+      "total": 250,
+      "lucroA": 217.50000000000003,
+      "lucroRed": -250,
+      "lucro": 217.50000000000003,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T19:31:37.721Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T19:27:23.403Z"
+  "updatedAt": "2026-08-18T19:31:37.722Z"
 }
