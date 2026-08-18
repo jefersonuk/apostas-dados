@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1010.57,
+      "value": 740.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T12:22:52.766Z"
+      "updatedAt": "2026-08-18T12:28:29.431Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2175.22,
+      "value": 2445.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T11:40:25.267Z"
+      "updatedAt": "2026-08-18T12:28:29.431Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10373,8 +10373,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T09:02:11.639Z"
+    },
+    {
+      "id": "msyn2f06sit20",
+      "kind": "valor",
+      "event": "Stegersbach - Oberwart (H2 -2)",
+      "houseA": "Ivibet",
+      "oddA": 1.94,
+      "stakeA": 270,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.51,
+      "prob": 63.1,
+      "winner": null,
+      "date": "2026-08-18T14:30",
+      "total": 270,
+      "lucroA": 253.79999999999998,
+      "lucroRed": -270,
+      "lucro": 253.79999999999998,
+      "roi": 94,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T12:28:29.431Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T12:22:52.771Z"
+  "updatedAt": "2026-08-18T12:28:29.431Z"
 }
