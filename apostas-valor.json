@@ -4643,7 +4643,7 @@
       "name": "Ivibet",
       "value": 0.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T13:53:44.424Z"
+      "updatedAt": "2026-08-18T14:13:14.775Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -9755,7 +9755,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "updatedAt": "2026-08-18T14:13:14.775Z",
       "market": "Total de Gols",
       "sport": "Futebol"
     },
@@ -10677,5 +10677,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T13:53:44.425Z"
+  "updatedAt": "2026-08-18T14:13:14.775Z"
 }
