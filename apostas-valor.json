@@ -4622,9 +4622,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 35.16,
+      "value": 9.44,
       "currency": "USD",
-      "updatedAt": "2026-08-18T19:27:23.402Z"
+      "updatedAt": "2026-08-18T19:47:58.654Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3721.62,
+      "value": 3855.36,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T19:39:12.139Z"
+      "updatedAt": "2026-08-18T19:47:58.655Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10809,8 +10809,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T19:31:37.721Z"
+    },
+    {
+      "id": "msz2rlmmuj6c3",
+      "kind": "valor",
+      "event": "Auckland x Fencibles (Auckland DNB)",
+      "houseA": "Thunderpick.io",
+      "oddA": 1.52,
+      "stakeA": 133.744,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.38,
+      "prob": 69,
+      "winner": null,
+      "date": "2026-08-19T04:30",
+      "total": 133.744,
+      "lucroA": 69.54688,
+      "lucroRed": -133.744,
+      "lucro": 69.54688,
+      "roi": 52,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T19:47:58.654Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T19:39:44.083Z"
+  "updatedAt": "2026-08-18T19:47:58.655Z"
 }
