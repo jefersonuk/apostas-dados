@@ -4725,9 +4725,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 111.87,
+      "value": 54.87,
       "currency": "USD",
-      "updatedAt": "2026-08-18T12:40:12.147Z"
+      "updatedAt": "2026-08-18T16:58:41.530Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 4125.7,
+      "value": 4422.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T16:40:16.324Z"
+      "updatedAt": "2026-08-18T16:58:41.535Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10703,8 +10703,32 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-18T15:29:28.258Z"
+    },
+    {
+      "id": "msywpwc9lt2u8",
+      "kind": "valor",
+      "event": "B8 – Team Spirit · CS2 - Shiro menos 16.5 1st map",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.78,
+      "stakeA": 296.40000000000003,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "Abates / Kills",
+      "oddMkt": 1.33,
+      "prob": 71.6,
+      "winner": null,
+      "date": "2026-08-20T11:00",
+      "total": 296.40000000000003,
+      "lucroA": 231.19200000000004,
+      "lucroRed": -296.40000000000003,
+      "lucro": 231.19200000000004,
+      "roi": 78,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T16:58:41.532Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T16:48:54.440Z"
+  "updatedAt": "2026-08-18T16:58:41.535Z"
 }
