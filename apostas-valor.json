@@ -4622,9 +4622,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 62.59,
+      "value": 35.16,
       "currency": "USD",
-      "updatedAt": "2026-08-18T13:25:18.576Z"
+      "updatedAt": "2026-08-18T19:27:23.402Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3432.98,
+      "value": 3575.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T19:07:24.072Z"
+      "updatedAt": "2026-08-18T19:27:23.403Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10760,8 +10760,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T18:16:38.059Z"
+    },
+    {
+      "id": "msz214i2xcas5",
+      "kind": "valor",
+      "event": "Giustino x Bernet (1)",
+      "houseA": "Thunderpick.io",
+      "oddA": 2.09,
+      "stakeA": 142.636,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-08-19T08:00",
+      "total": 142.636,
+      "lucroA": 155.47323999999998,
+      "lucroRed": -142.636,
+      "lucro": 155.47323999999998,
+      "roi": 108.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T19:27:23.402Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T19:07:24.072Z"
+  "updatedAt": "2026-08-18T19:27:23.403Z"
 }
