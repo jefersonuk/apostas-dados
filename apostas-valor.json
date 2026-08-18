@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 180.57,
+      "value": 0.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T13:21:57.471Z"
+      "updatedAt": "2026-08-18T13:53:44.424Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 4345.7,
+      "value": 4525.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T13:45:57.290Z"
+      "updatedAt": "2026-08-18T13:53:44.425Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10650,8 +10650,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T13:45:57.289Z"
+    },
+    {
+      "id": "msyq41rcaefsb",
+      "kind": "valor",
+      "event": "Zjednoczeni x Zryw (H1 -1)",
+      "houseA": "Ivibet",
+      "oddA": 2.8,
+      "stakeA": 180,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.95,
+      "prob": 48.8,
+      "winner": null,
+      "date": "2026-08-19T13:30",
+      "total": 180,
+      "lucroA": 323.99999999999994,
+      "lucroRed": -180,
+      "lucro": 323.99999999999994,
+      "roi": 179.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T13:53:44.424Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T13:45:57.290Z"
+  "updatedAt": "2026-08-18T13:53:44.425Z"
 }
