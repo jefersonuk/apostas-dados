@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 200,
-      "updatedAt": "2026-08-18T01:03:04.954Z"
+      "value": 100,
+      "updatedAt": "2026-08-18T08:53:41.986Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2175.22,
+      "value": 2275.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T08:51:36.641Z"
+      "updatedAt": "2026-08-18T08:53:41.993Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10325,8 +10325,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T08:51:36.613Z"
+    },
+    {
+      "id": "msyfe6zkz56i9",
+      "kind": "valor",
+      "event": "Mutilvera – Pena Sport (h2 -1)",
+      "houseA": "Pinnacle",
+      "oddA": 2.17,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T14:00",
+      "total": 100,
+      "lucroA": 117,
+      "lucroRed": -100,
+      "lucro": 117,
+      "roi": 117,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T08:53:41.987Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T08:51:36.641Z"
+  "updatedAt": "2026-08-18T08:53:41.994Z"
 }
