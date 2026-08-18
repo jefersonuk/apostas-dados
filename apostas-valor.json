@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 391,
+      "value": 321,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T00:06:50.876Z"
+      "updatedAt": "2026-08-18T00:23:19.689Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2094.89,
+      "value": 2164.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T00:06:24.485Z"
+      "updatedAt": "2026-08-18T00:23:19.700Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10178,8 +10178,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T00:06:50.876Z"
+    },
+    {
+      "id": "msxx5uo6cisy2",
+      "kind": "valor",
+      "event": "Gremio Prudente – Clube Atletico Bragantino (1x 1st period)",
+      "houseA": "Ivibet",
+      "oddA": 2.23,
+      "stakeA": 70,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T15:00",
+      "total": 70,
+      "lucroA": 86.1,
+      "lucroRed": -70,
+      "lucro": 86.1,
+      "roi": 123,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T00:23:19.690Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T00:06:50.877Z"
+  "updatedAt": "2026-08-18T00:23:19.700Z"
 }
