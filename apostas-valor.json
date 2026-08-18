@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3432.98,
+      "value": 3532.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T18:57:34.289Z"
+      "updatedAt": "2026-08-18T19:04:04.037Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9534,7 +9534,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-08-18T14:00",
       "total": 100,
       "lucroA": 190,
@@ -9543,9 +9543,9 @@
       "roi": 190,
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": null
       },
-      "updatedAt": "2026-08-18T18:50:17.594Z",
+      "updatedAt": "2026-08-18T19:04:04.036Z",
       "market": "1X2 / Resultado",
       "sport": "Futebol"
     },
@@ -10763,5 +10763,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T18:57:34.289Z"
+  "updatedAt": "2026-08-18T19:04:04.037Z"
 }
