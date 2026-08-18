@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2160.89,
+      "value": 1957.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T01:01:41.464Z"
+      "updatedAt": "2026-08-18T08:08:50.816Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9708,7 +9708,7 @@
       "stakeA": 103.6,
       "curA": "USD",
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-08-17T20:00",
       "total": 103.6,
       "lucroA": 305.62,
@@ -9716,9 +9716,10 @@
       "lucro": 305.62,
       "roi": 295,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "updatedAt": "2026-08-18T08:08:21.915Z",
       "market": "1X2 / Resultado",
       "sport": "Tênis"
     },
@@ -10219,7 +10220,7 @@
       "sport": "Futebol",
       "market": "Escanteios",
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-08-17T21:30",
       "total": 100,
       "lucroA": 198,
@@ -10227,11 +10228,12 @@
       "lucro": 198,
       "roi": 198,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-08-18T01:19:43.136Z"
+      "updatedAt": "2026-08-18T08:08:50.816Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T08:07:41.626Z"
+  "updatedAt": "2026-08-18T08:08:50.816Z"
 }
