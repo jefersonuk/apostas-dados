@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 600.57,
+      "value": 400.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T12:34:55.970Z"
+      "updatedAt": "2026-08-18T12:46:51.136Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3093.22,
+      "value": 3293.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T12:44:44.473Z"
+      "updatedAt": "2026-08-18T12:46:51.137Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10469,8 +10469,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T12:44:44.473Z"
+    },
+    {
+      "id": "msynq134btj1k",
+      "kind": "valor",
+      "event": "Atromitos x AFC Pyrgos (H1 -4)",
+      "houseA": "Ivibet",
+      "oddA": 2.16,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-08-18T13:00",
+      "total": 200,
+      "lucroA": 232.00000000000003,
+      "lucroRed": -200,
+      "lucro": 232.00000000000003,
+      "roi": 116.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T12:46:51.136Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T12:44:44.473Z"
+  "updatedAt": "2026-08-18T12:46:51.137Z"
 }
