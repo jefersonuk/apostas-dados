@@ -4643,7 +4643,7 @@
       "name": "Ivibet",
       "value": 0.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T16:48:54.439Z"
+      "updatedAt": "2026-08-18T17:17:03.442Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -10605,7 +10605,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-18T16:48:54.439Z"
+      "updatedAt": "2026-08-18T17:17:03.442Z"
     },
     {
       "id": "msyp3hiojy68s",
@@ -10730,5 +10730,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T16:58:41.535Z"
+  "updatedAt": "2026-08-18T17:17:03.442Z"
 }
