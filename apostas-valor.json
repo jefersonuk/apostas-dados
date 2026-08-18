@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 380.57,
+      "value": 180.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T13:13:58.600Z"
+      "updatedAt": "2026-08-18T13:21:57.471Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3753.22,
+      "value": 3953.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T13:13:58.600Z"
+      "updatedAt": "2026-08-18T13:21:57.471Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10571,8 +10571,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T12:58:55.133Z"
+    },
+    {
+      "id": "msyoz6cer1tp7",
+      "kind": "valor",
+      "event": "Al Jabalain x Ettifaq Dammam (menos 8.5 escanteios)",
+      "houseA": "Ivibet",
+      "oddA": 2.6,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 2.1,
+      "prob": 45.4,
+      "winner": null,
+      "date": "2026-08-18T13:15",
+      "total": 200,
+      "lucroA": 320,
+      "lucroRed": -200,
+      "lucro": 320,
+      "roi": 160,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T13:21:57.471Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T13:19:15.412Z"
+  "updatedAt": "2026-08-18T13:21:57.471Z"
 }
