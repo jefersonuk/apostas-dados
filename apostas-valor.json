@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 400,
-      "updatedAt": "2026-08-17T20:51:22.987Z"
+      "value": 670,
+      "updatedAt": "2026-08-18T11:40:25.266Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2275.22,
+      "value": 2175.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T11:29:29.200Z"
+      "updatedAt": "2026-08-18T11:40:25.267Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10014,7 +10014,7 @@
       "sport": "Futebol",
       "market": "Handicap Europeu",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-18T06:00",
       "total": 100,
       "lucroA": 170.00000000000003,
@@ -10022,9 +10022,10 @@
       "lucro": 170.00000000000003,
       "roi": 170.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-17T20:51:22.987Z"
+      "updatedAt": "2026-08-18T11:40:25.266Z"
     },
     {
       "id": "msxsbr2414i6l",
@@ -10375,5 +10376,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T11:29:29.200Z"
+  "updatedAt": "2026-08-18T11:40:25.267Z"
 }
