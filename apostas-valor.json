@@ -4758,16 +4758,16 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1867.22,
+      "value": 1919.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T08:10:08.135Z"
+      "updatedAt": "2026-08-18T08:16:19.112Z"
     },
     {
       "id": "msrueg4hvw63f",
       "name": "Predict",
-      "value": 0.3,
-      "updatedAt": "2026-08-17T19:18:19.777Z",
+      "value": -9.7,
+      "updatedAt": "2026-08-18T08:16:19.070Z",
       "currency": "USD"
     },
     {
@@ -10233,8 +10233,31 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-08-18T08:08:50.816Z"
+    },
+    {
+      "id": "msye24c0xgqer",
+      "kind": "valor",
+      "event": ". FC Heidenheim – Bayern Munich",
+      "houseA": "Predict",
+      "oddA": 4.9,
+      "stakeA": 52,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T13:00",
+      "total": 52,
+      "lucroA": 202.8,
+      "lucroRed": -52,
+      "lucro": 202.8,
+      "roi": 390.00000000000006,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T08:16:19.072Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T08:10:08.135Z"
+  "updatedAt": "2026-08-18T08:16:19.112Z"
 }
