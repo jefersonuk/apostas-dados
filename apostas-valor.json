@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 274.37,
+      "value": 4.37,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T19:31:37.721Z"
+      "updatedAt": "2026-08-18T23:39:52.839Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3318.56,
+      "value": 3588.56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T23:26:59.704Z"
+      "updatedAt": "2026-08-18T23:39:52.843Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10815,8 +10815,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T19:47:58.654Z"
+    },
+    {
+      "id": "mszb1tvqf4xkz",
+      "kind": "valor",
+      "event": "Leo Rossi/Eloi Adam – Muhammad Shohibul Fikri/Fajar Alfian",
+      "houseA": "Ivibet",
+      "oddA": 1.8,
+      "stakeA": 270,
+      "curA": "BRL",
+      "sport": "Badminton",
+      "market": "Total de Pontos",
+      "oddMkt": 1.19,
+      "prob": 80,
+      "winner": null,
+      "date": "2026-08-19T03:00",
+      "total": 270,
+      "lucroA": 216,
+      "lucroRed": -270,
+      "lucro": 216,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T23:39:52.839Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T23:26:59.704Z"
+  "updatedAt": "2026-08-18T23:39:52.843Z"
 }
