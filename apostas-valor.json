@@ -4654,7 +4654,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 340,
-      "updatedAt": "2026-08-18T14:55:00.049Z"
+      "updatedAt": "2026-08-18T16:29:05.664Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -9472,7 +9472,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-18T14:53:11.355Z",
+      "updatedAt": "2026-08-18T16:29:05.664Z",
       "market": "Handicap Asiático",
       "sport": "Futebol"
     },
@@ -10704,5 +10704,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T16:28:57.606Z"
+  "updatedAt": "2026-08-18T16:29:05.664Z"
 }
