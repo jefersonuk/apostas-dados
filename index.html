@@ -184,6 +184,12 @@
   .caixa-val{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--text);letter-spacing:-0.5px;}
   .caixa-sub{font-size:12px;margin-top:6px;line-height:1.7;}
   .kpi-sub{font-family:var(--mono);font-size:10.5px;margin-top:2px;}
+  .sug-box{background:#0E1520;border:1px solid #1A2C40;border-radius:9px;padding:10px 12px;margin:4px 0 10px;}
+  .sug-box.neg{background:#2A0E12;border-color:#5C2530;color:#FCA5A5;font-size:12.5px;font-weight:600;}
+  .sug-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;}
+  .sug-label{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);font-weight:700;}
+  .sug-val{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--sky);}
+  .sug-meta{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.6;}
   .seg-row{padding:7px 0;border-bottom:1px solid var(--border);}
   .seg-row:last-of-type{border-bottom:none;}
   .seg-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px;}
@@ -563,8 +569,13 @@
         </div>
         <div class="grid2">
           <div><label>Casa de aposta</label><input type="text" id="vbHouse" placeholder="Ex: Bet365"></div>
-          <div><label>Odd</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="2.10"></div>
+          <div><label>Odd da casa</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="7.20"></div>
         </div>
+        <div class="grid2">
+          <div><label>Odd média do mercado</label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="5.00"></div>
+          <div><label>Prob. real % (auto)</label><input type="number" id="vbProb" step="0.1" placeholder="calculada"></div>
+        </div>
+        <div id="vbSugestao"></div>
         <div class="grid2">
           <div>
             <label>Stake</label>
@@ -574,7 +585,7 @@
             </div>
             <input type="number" id="vbStake" step="0.01" min="0" placeholder="50.00">
           </div>
-          <div><label>Prob. real % (opcional)</label><input type="number" id="vbProb" step="0.1" placeholder="52.5"></div>
+          <div><label>&nbsp;</label><button class="btn small" id="vbUsarSug" style="width:100%;">Usar valor sugerido</button></div>
         </div>
         <input type="hidden" id="scCurV" value="BRL">
         <div class="risk-preview" id="vbResult">
@@ -646,7 +657,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260817-2000';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260817-2200';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1047,6 +1058,60 @@
   /* ---------- aposta de valor (uma perna) ---------- */
   let calcKind='sure', vbFilter='all';
 
+
+  /* ---------- sugestão de entrada a partir da odd de mercado ---------- */
+  const VB_TETO_MAX=300;      // teto nas apostas de maior probabilidade
+  const VB_PROB_REF=0.50;     // probabilidade de referência para o teto cheio
+  const VB_KELLY_FRAC=0.25;   // quarto de Kelly
+  const VB_MARGEM_MKT=0.05;   // margem embutida nas odds de mercado
+
+  function vbSugerir(){
+    const oddCasa=parseFloat($('vbOdd').value);
+    const oddMkt=parseFloat($('vbOddMkt').value);
+    if(!(oddCasa>1)||!(oddMkt>1)) return null;
+    const probReal=(1/oddMkt)/(1+VB_MARGEM_MKT);
+    const ev=probReal*oddCasa-1;
+    const banca=caixaAtual();
+    if(ev<=0) return {probReal,ev,kelly:0,kellyStake:0,teto:0,sugerido:0,banca};
+    const kelly=ev/(oddCasa-1);
+    const kellyStake=banca*kelly*VB_KELLY_FRAC;
+    const teto=VB_TETO_MAX*Math.min(1,probReal/VB_PROB_REF);
+    return {probReal,ev,kelly,kellyStake,teto,sugerido:Math.min(kellyStake,teto),banca,limitadoPorTeto:kellyStake>teto};
+  }
+
+  function renderSugestao(){
+    const box=$('vbSugestao');
+    const s=vbSugerir();
+    if(!s){ box.innerHTML=''; return; }
+    // preenche a probabilidade automaticamente (o campo fica só de leitura visual)
+    $('vbProb').value=(s.probReal*100).toFixed(1);
+    if(s.ev<=0){
+      box.innerHTML=`<div class="sug-box neg">⚠ Sem valor — a odd da casa não supera o mercado (EV ${(s.ev*100).toFixed(1)}%). Não entrar.</div>`;
+      return;
+    }
+    box.innerHTML=
+      `<div class="sug-box">`+
+        `<div class="sug-top">`+
+          `<span class="sug-label">Entrada sugerida</span>`+
+          `<span class="sug-val">${fmt(s.sugerido)}</span>`+
+        `</div>`+
+        `<div class="sug-meta">`+
+          `prob real <b>${(s.probReal*100).toFixed(1)}%</b> · EV <b style="color:var(--green)">+${(s.ev*100).toFixed(1)}%</b> · Kelly/4 ${fmt(s.kellyStake)} · teto ${fmt(s.teto)}`+
+          `<br><span style="color:var(--muted-2)">${s.limitadoPorTeto?'limitado pelo teto de probabilidade':'definido pelo Kelly (vantagem magra)'}</span>`+
+        `</div>`+
+      `</div>`;
+  }
+
+  $('vbUsarSug').addEventListener('click',()=>{
+    const s=vbSugerir();
+    if(!s||s.sugerido<=0){ alert('Preencha a odd da casa e a odd média do mercado.'); return; }
+    $('scCurV').value='BRL';
+    const g=$('curToggleV'); if(g) g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active',x.dataset.cur.endsWith('BRL')));
+    $('vbStake').value=s.sugerido.toFixed(2);
+    updateValorCalc();
+  });
+  ['vbOdd','vbOddMkt'].forEach(id=>$(id).addEventListener('input',renderSugestao));
+
   function vbCompute(){
     const odd=parseFloat($('vbOdd').value);
     const fat=($('scCurV').value==='USD')?usdRate():1;
@@ -1059,6 +1124,7 @@
   }
 
   function updateValorCalc(){
+    renderSugestao();
     const r=vbCompute();
     const box=$('vbResult');
     if(!r){ box.innerHTML='<span style="color:var(--muted)">Preencha a odd e o stake para ver o retorno.</span>'; return; }
@@ -1084,6 +1150,7 @@
       id:uid(), kind:'valor', event:$('scEvent').value.trim()||'Aposta sem nome',
       houseA:$('vbHouse').value.trim(), oddA:r.odd, stakeA:r.stake, curA:r.cur,
       sport:$('vbSport').value.trim(), market:$('vbMarket').value.trim(),
+      oddMkt:parseFloat($('vbOddMkt').value)||null,
       prob:r.prob, winner:null, date:$('scDate').value||nowLocalStr()
     };
     recalcValor(op);
@@ -1091,7 +1158,7 @@
     touch(op);
     state.surebets.push(op);
     $('vbHouse').value=''; $('vbOdd').value=''; $('vbStake').value=''; $('vbProb').value='';
-    $('vbSport').value=''; $('vbMarket').value='';
+    $('vbSport').value=''; $('vbMarket').value=''; $('vbOddMkt').value=''; $('vbSugestao').innerHTML='';
     $('scEvent').value=''; $('scDate').value=nowLocalStr();
     $('scCurV').value='BRL';
     const g=$('curToggleV'); if(g) g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active',x.dataset.cur.endsWith('BRL')));
