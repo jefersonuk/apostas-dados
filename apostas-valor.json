@@ -4725,9 +4725,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 54.87,
+      "value": 20.87,
       "currency": "USD",
-      "updatedAt": "2026-08-18T16:58:41.530Z"
+      "updatedAt": "2026-08-18T18:16:38.059Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3870.1,
+      "value": 4046.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T17:45:02.904Z"
+      "updatedAt": "2026-08-18T18:16:38.062Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10731,8 +10731,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T16:58:41.532Z"
+    },
+    {
+      "id": "msyzi4rvzs52i",
+      "kind": "valor",
+      "event": "Dinamo Zagreb x Viking FK (menos 25.5 chutes)",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.49,
+      "stakeA": 176.8,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Chutes",
+      "oddMkt": 2.1,
+      "prob": 45.4,
+      "winner": null,
+      "date": "2026-08-18T16:00",
+      "total": 176.8,
+      "lucroA": 263.4320000000001,
+      "lucroRed": -176.8,
+      "lucro": 263.4320000000001,
+      "roi": 149.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T18:16:38.059Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T17:48:41.668Z"
+  "updatedAt": "2026-08-18T18:16:38.062Z"
 }
