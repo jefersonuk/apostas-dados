@@ -4622,9 +4622,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 89.99,
+      "value": 62.59,
       "currency": "USD",
-      "updatedAt": "2026-08-18T08:20:54.567Z"
+      "updatedAt": "2026-08-18T13:25:18.576Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3953.22,
+      "value": 4095.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T13:21:57.471Z"
+      "updatedAt": "2026-08-18T13:25:18.577Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10595,8 +10595,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T13:21:57.471Z"
+    },
+    {
+      "id": "msyp3hiojy68s",
+      "kind": "valor",
+      "event": "Max Hans Rehberg x Kimmer Coppejans (2)",
+      "houseA": "Thunderpick.io",
+      "oddA": 2.14,
+      "stakeA": 142.48,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.86,
+      "prob": 51.2,
+      "winner": null,
+      "date": "2026-08-19T05:00",
+      "total": 142.48,
+      "lucroA": 162.4272,
+      "lucroRed": -142.48,
+      "lucro": 162.4272,
+      "roi": 114.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T13:25:18.576Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T13:21:57.471Z"
+  "updatedAt": "2026-08-18T13:25:18.577Z"
 }
