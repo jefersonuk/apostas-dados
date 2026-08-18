@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 200.57,
+      "value": 380.57,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T12:58:55.133Z"
+      "updatedAt": "2026-08-18T13:13:58.600Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3853.22,
+      "value": 3753.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T12:58:55.133Z"
+      "updatedAt": "2026-08-18T13:13:58.600Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -9809,7 +9809,7 @@
       "stakeA": 100,
       "curA": "BRL",
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-18T08:30",
       "total": 100,
       "lucroA": 80,
@@ -9817,9 +9817,10 @@
       "lucro": 80,
       "roi": 80,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "updatedAt": "2026-08-18T13:13:58.600Z",
       "sport": "Tênis"
     },
     {
@@ -10573,5 +10574,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T12:58:55.133Z"
+  "updatedAt": "2026-08-18T13:13:58.600Z"
 }
