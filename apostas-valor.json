@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 340,
-      "updatedAt": "2026-08-18T16:29:05.664Z"
+      "value": 500,
+      "updatedAt": "2026-08-18T23:26:21.661Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3678.56,
+      "value": 3518.56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T23:25:21.647Z"
+      "updatedAt": "2026-08-18T23:26:21.664Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4968,6 +4968,10 @@
     {
       "id": "msxsjjoztj5e7",
       "at": "2026-08-18T01:01:41.464Z"
+    },
+    {
+      "id": "msyo1oujap7uv",
+      "at": "2026-08-18T23:26:21.662Z"
     }
   ],
   "surebets": [
@@ -10545,30 +10549,6 @@
       "updatedAt": "2026-08-18T12:49:33.326Z"
     },
     {
-      "id": "msyo1oujap7uv",
-      "kind": "valor",
-      "event": "CUNE x Defensores de Puerto Vilelas (EMPATE)",
-      "houseA": "Pinnacle",
-      "oddA": 3.06,
-      "stakeA": 160,
-      "curA": "BRL",
-      "sport": "Futebol",
-      "market": "1X2 / Resultado",
-      "oddMkt": 2.56,
-      "prob": 37.2,
-      "winner": null,
-      "date": "2026-08-18T18:00",
-      "total": 160,
-      "lucroA": 329.6,
-      "lucroRed": -160,
-      "lucro": 329.6,
-      "roi": 206,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-18T12:55:55.147Z"
-    },
-    {
       "id": "msyo5jq53ss25",
       "kind": "valor",
       "event": "Joshua Charlton x Yusuke Takahashi (1)",
@@ -10837,5 +10817,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T23:25:21.647Z"
+  "updatedAt": "2026-08-18T23:26:21.665Z"
 }
