@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": -300,
-      "updatedAt": "2026-08-18T12:44:44.473Z"
+      "value": -500,
+      "updatedAt": "2026-08-18T12:49:33.326Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3293.22,
+      "value": 3493.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T12:46:51.137Z"
+      "updatedAt": "2026-08-18T12:49:33.327Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10493,8 +10493,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T12:46:51.136Z"
+    },
+    {
+      "id": "msynti8ew6qs4",
+      "kind": "valor",
+      "event": "Juticalpa x Motagua (H2 -2,5)",
+      "houseA": "Pinnacle",
+      "oddA": 2.11,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.88,
+      "prob": 50.7,
+      "winner": null,
+      "date": "2026-08-18T18:00",
+      "total": 200,
+      "lucroA": 221.99999999999997,
+      "lucroRed": -200,
+      "lucro": 221.99999999999997,
+      "roi": 110.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T12:49:33.326Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T12:46:51.137Z"
+  "updatedAt": "2026-08-18T12:49:33.327Z"
 }
