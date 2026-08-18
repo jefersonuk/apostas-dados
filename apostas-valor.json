@@ -4789,7 +4789,7 @@
       "name": "Esportivabet",
       "value": 397.5,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T18:34:27.278Z"
+      "updatedAt": "2026-08-18T13:19:15.412Z"
     },
     {
       "id": "msxe0rrbq4jmy",
@@ -9550,7 +9550,7 @@
       "curA": "BRL",
       "prob": null,
       "winner": null,
-      "date": "2026-08-18T11:00",
+      "date": "2026-08-18T20:00",
       "total": 80,
       "lucroA": 108,
       "lucroRed": -80,
@@ -9559,7 +9559,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
+      "updatedAt": "2026-08-18T13:19:15.412Z",
       "market": "Jogador / Player Props",
       "sport": "Tênis"
     },
@@ -10574,5 +10574,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T13:13:58.600Z"
+  "updatedAt": "2026-08-18T13:19:15.412Z"
 }
