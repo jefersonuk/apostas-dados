@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 100,
-      "updatedAt": "2026-08-18T08:53:41.986Z"
+      "value": 0,
+      "updatedAt": "2026-08-18T09:02:11.637Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2275.22,
+      "value": 2375.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-18T08:53:41.993Z"
+      "updatedAt": "2026-08-18T09:02:11.651Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10348,8 +10348,31 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T08:53:41.987Z"
+    },
+    {
+      "id": "msyfp48hf17z8",
+      "kind": "valor",
+      "event": "Weiyi Kong (Games) – Wishaya Trongcharoenchaikul (Games)",
+      "houseA": "Pinnacle",
+      "oddA": 3.42,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "Handicap Asiático",
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-18T23:00",
+      "total": 100,
+      "lucroA": 242,
+      "lucroRed": -100,
+      "lucro": 242,
+      "roi": 242,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-18T09:02:11.639Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-18T08:53:41.994Z"
+  "updatedAt": "2026-08-18T09:02:11.651Z"
 }
