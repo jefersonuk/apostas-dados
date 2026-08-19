@@ -4766,8 +4766,8 @@
     {
       "id": "msrueg4hvw63f",
       "name": "Predict",
-      "value": -9.7,
-      "updatedAt": "2026-08-18T16:11:28.430Z",
+      "value": 5,
+      "updatedAt": "2026-08-19T13:58:47.912Z",
       "currency": "USD"
     },
     {
@@ -10904,5 +10904,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T13:56:09.855Z"
+  "updatedAt": "2026-08-19T13:58:47.917Z"
 }
