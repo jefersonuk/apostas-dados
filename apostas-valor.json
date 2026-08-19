@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1585,
+      "value": 2012.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T17:04:31.566Z"
+      "updatedAt": "2026-08-19T18:21:48.878Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,9 +4588,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 67.47,
+      "value": 29.97,
       "currency": "USD",
-      "updatedAt": "2026-08-17T04:49:26.136Z"
+      "updatedAt": "2026-08-19T18:21:48.876Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4635,8 +4635,8 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 500,
-      "updatedAt": "2026-08-15T22:12:41.676Z"
+      "value": 266.36,
+      "updatedAt": "2026-08-19T18:21:48.876Z"
     },
     {
       "id": "msddu5i007wwm",
@@ -10964,8 +10964,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T16:26:27.316Z"
+    },
+    {
+      "id": "mt0f4n9oflejn",
+      "kind": "sure",
+      "event": "Bushido Wildcats",
+      "houseA": "Casobet",
+      "houseB": "Casinozer",
+      "oddA": 2.35,
+      "oddB": 1.95,
+      "total": 427.51923076923083,
+      "stakeA": 193.875,
+      "stakeB": 233.6442307692308,
+      "lucroA": 28.087019230769215,
+      "lucroB": 28.087019230769215,
+      "lucro": 28.087019230769215,
+      "roi": 6.569767441860461,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-20T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T18:21:48.876Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T17:51:28.047Z"
+  "updatedAt": "2026-08-19T18:21:48.878Z"
 }
