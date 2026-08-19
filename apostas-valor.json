@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 271.87,
+      "value": 1.87,
       "currency": "BRL",
-      "updatedAt": "2026-08-19T07:55:53.026Z"
+      "updatedAt": "2026-08-19T08:08:14.901Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2580.56,
+      "value": 2850.56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T07:55:53.027Z"
+      "updatedAt": "2026-08-19T08:08:14.902Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10872,8 +10872,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T01:27:31.954Z"
+    },
+    {
+      "id": "mszt7lf8lanyj",
+      "kind": "valor",
+      "event": "Noeli Manta x Elsa boneli",
+      "houseA": "Ivibet",
+      "oddA": 1.8,
+      "stakeA": 270,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.33,
+      "prob": 71.6,
+      "winner": null,
+      "date": "2026-08-20T05:00",
+      "total": 270,
+      "lucroA": 216,
+      "lucroRed": -270,
+      "lucro": 216,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T08:08:14.901Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T07:55:53.028Z"
+  "updatedAt": "2026-08-19T08:08:14.902Z"
 }
