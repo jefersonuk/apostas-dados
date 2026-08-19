@@ -4531,9 +4531,9 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 7733.54,
+      "value": 8181.54,
       "currency": "BRL",
-      "updatedAt": "2026-08-19T13:37:02.916Z"
+      "updatedAt": "2026-08-19T20:06:45.655Z"
     },
     {
       "id": "mricm6v4hbqxz",
@@ -4811,6 +4811,13 @@
       "value": 487.5,
       "currency": "BRL",
       "updatedAt": "2026-08-19T13:18:12.404Z"
+    },
+    {
+      "id": "mt0iuq8ibqnbd",
+      "name": "Sportmarket",
+      "value": 50,
+      "currency": "USD",
+      "updatedAt": "2026-08-19T20:06:04.626Z"
     }
   ],
   "aportes": [
@@ -4883,7 +4890,7 @@
   ],
   "usdRate": 5.18,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-19T20:05:25.347Z",
+  "usdRateAt": "2026-08-19T20:06:03.602Z",
   "appBuild": "20260818-0900",
   "deleted": [
     {
@@ -10994,5 +11001,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T20:05:25.347Z"
+  "updatedAt": "2026-08-19T20:06:45.656Z"
 }
