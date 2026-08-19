@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1.87,
+      "value": 271.87,
       "currency": "BRL",
-      "updatedAt": "2026-08-19T01:27:31.954Z"
+      "updatedAt": "2026-08-19T07:55:53.026Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2850.56,
+      "value": 2580.56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T07:54:50.875Z"
+      "updatedAt": "2026-08-19T07:55:53.027Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4972,6 +4972,10 @@
     {
       "id": "msyo1oujap7uv",
       "at": "2026-08-18T23:26:21.662Z"
+    },
+    {
+      "id": "mszb1tvqf4xkz",
+      "at": "2026-08-19T07:55:53.026Z"
     }
   ],
   "surebets": [
@@ -10822,30 +10826,6 @@
       "updatedAt": "2026-08-18T19:47:58.654Z"
     },
     {
-      "id": "mszb1tvqf4xkz",
-      "kind": "valor",
-      "event": "Leo Rossi/Eloi Adam – Muhammad Shohibul Fikri/Fajar Alfian",
-      "houseA": "Ivibet",
-      "oddA": 1.8,
-      "stakeA": 270,
-      "curA": "BRL",
-      "sport": "Badminton",
-      "market": "Total de Pontos",
-      "oddMkt": 1.19,
-      "prob": 80,
-      "winner": null,
-      "date": "2026-08-19T03:00",
-      "total": 270,
-      "lucroA": 216,
-      "lucroRed": -270,
-      "lucro": 216,
-      "roi": 80,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-18T23:39:52.839Z"
-    },
-    {
       "id": "mszd8gi4c58jp",
       "kind": "valor",
       "event": "Katarina Zavatska – Georgia Pedone",
@@ -10895,5 +10875,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T07:54:50.875Z"
+  "updatedAt": "2026-08-19T07:55:53.028Z"
 }
