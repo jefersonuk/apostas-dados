@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2516.82,
+      "value": 2266.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T13:17:10.233Z"
+      "updatedAt": "2026-08-19T13:18:12.404Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4808,9 +4808,9 @@
     {
       "id": "msyprvso2ird4",
       "name": "F12bet",
-      "value": 0,
+      "value": 487.5,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T13:45:57.289Z"
+      "updatedAt": "2026-08-19T13:18:12.404Z"
     }
   ],
   "aportes": [],
@@ -10644,7 +10644,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.5,
       "prob": 63.5,
-      "winner": null,
+      "winner": "A",
       "date": "2026-08-19T07:00",
       "total": 250,
       "lucroA": 237.5,
@@ -10652,9 +10652,10 @@
       "lucro": 237.5,
       "roi": 95,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-18T13:45:57.289Z"
+      "updatedAt": "2026-08-19T13:18:12.404Z"
     },
     {
       "id": "msyq41rcaefsb",
@@ -10902,5 +10903,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T13:17:10.233Z"
+  "updatedAt": "2026-08-19T13:18:12.404Z"
 }
