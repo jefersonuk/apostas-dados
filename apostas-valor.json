@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 500,
-      "updatedAt": "2026-08-17T12:41:39.347Z"
+      "value": 410,
+      "updatedAt": "2026-08-19T01:27:31.954Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 505,
+      "value": 765,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-17T21:12:12.726Z"
+      "updatedAt": "2026-08-19T01:27:31.956Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 171.87,
+      "value": 1.87,
       "currency": "BRL",
-      "updatedAt": "2026-08-19T00:41:01.324Z"
+      "updatedAt": "2026-08-19T01:27:31.954Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -10866,8 +10866,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T00:41:01.324Z"
+    },
+    {
+      "id": "mszew9rmxcg4v",
+      "kind": "sure",
+      "event": "Chen Hui Ho – Tai Sach",
+      "houseA": "Ivibet",
+      "houseB": "Bet365",
+      "oddA": 2.06,
+      "oddB": 4,
+      "total": 260,
+      "stakeA": 170,
+      "stakeB": 90,
+      "lucroA": 90.19999999999999,
+      "lucroB": 100,
+      "lucro": 90.19999999999999,
+      "roi": 34.692307692307686,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-19T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T01:27:31.954Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T00:41:01.325Z"
+  "updatedAt": "2026-08-19T01:27:31.956Z"
 }
