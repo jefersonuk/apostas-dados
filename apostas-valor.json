@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2850.56,
+      "value": 2750.56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T08:08:14.902Z"
+      "updatedAt": "2026-08-19T10:31:52.316Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10395,7 +10395,7 @@
       "sport": "Tênis",
       "market": "Handicap Asiático",
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-08-18T23:00",
       "total": 100,
       "lucroA": 242,
@@ -10403,9 +10403,10 @@
       "lucro": 242,
       "roi": 242,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-08-18T09:02:11.639Z"
+      "updatedAt": "2026-08-19T10:31:52.315Z"
     },
     {
       "id": "msyn2f06sit20",
@@ -10899,5 +10900,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T08:08:14.902Z"
+  "updatedAt": "2026-08-19T10:31:52.316Z"
 }
