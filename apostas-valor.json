@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-17",
+    "startDate": "2026-08-19",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3262.52,
+      "value": 3466.48,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T21:15:33.683Z"
+      "updatedAt": "2026-08-19T21:45:33.398Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,9 +4588,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 29.97,
+      "value": 37.5,
       "currency": "USD",
-      "updatedAt": "2026-08-19T18:21:48.876Z"
+      "updatedAt": "2026-08-19T21:45:02.361Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4818,6 +4818,12 @@
       "value": 50,
       "currency": "USD",
       "updatedAt": "2026-08-19T20:06:04.626Z"
+    },
+    {
+      "id": "mt0mdztl9t7mq",
+      "name": "Thunderpick",
+      "value": -49.31,
+      "updatedAt": "2026-08-19T21:45:02.361Z"
     }
   ],
   "aportes": [
@@ -4888,9 +4894,9 @@
       "updatedAt": "2026-08-19T13:59:07.592Z"
     }
   ],
-  "usdRate": 5.18,
+  "usdRate": 5.16,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-19T20:06:03.602Z",
+  "usdRateAt": "2026-08-19T13:36:39.487Z",
   "appBuild": "20260819-1000",
   "deleted": [
     {
@@ -11022,9 +11028,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T21:15:33.678Z"
+    },
+    {
+      "id": "mt0mdztkt61zt",
+      "kind": "sure",
+      "event": "River Plate (Spike) – Flamengo (Eder)",
+      "houseA": "Thunderpick",
+      "houseB": "Casobet",
+      "oddA": 5.3,
+      "oddB": 1.69,
+      "total": 203.95659396226415,
+      "stakeA": 49.31139396226415,
+      "stakeB": 154.6452,
+      "lucroA": 57.3937940377358,
+      "lucroB": 57.3937940377358,
+      "lucro": 57.3937940377358,
+      "roi": 28.140200286123008,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-19T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T21:45:02.361Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T21:15:33.683Z"
+  "updatedAt": "2026-08-19T21:45:02.367Z"
 }
