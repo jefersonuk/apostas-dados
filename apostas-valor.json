@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 471.87,
+      "value": 171.87,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T23:42:02.136Z"
+      "updatedAt": "2026-08-19T00:41:01.324Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4758,10 +4758,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3050.56,
+      "value": 3350.56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T00:28:05.989Z"
+      "updatedAt": "2026-08-19T00:41:01.325Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10842,8 +10842,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-18T23:39:52.839Z"
+    },
+    {
+      "id": "mszd8gi4c58jp",
+      "kind": "valor",
+      "event": "Katarina Zavatska – Georgia Pedone",
+      "houseA": "Ivibet",
+      "oddA": 1.87,
+      "stakeA": 300,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.42,
+      "prob": 67.1,
+      "winner": null,
+      "date": "2026-08-19T04:00",
+      "total": 300,
+      "lucroA": 261.00000000000006,
+      "lucroRed": -300,
+      "lucro": 261.00000000000006,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T00:41:01.324Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T00:28:05.989Z"
+  "updatedAt": "2026-08-19T00:41:01.325Z"
 }
