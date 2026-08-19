@@ -4499,7 +4499,7 @@
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
       "value": 100,
-      "updatedAt": "2026-08-19T16:25:04.673Z"
+      "updatedAt": "2026-08-19T16:26:27.316Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2110.81,
+      "value": 2128.03,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T16:25:04.676Z"
+      "updatedAt": "2026-08-19T16:26:27.316Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4773,8 +4773,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": -91.1,
-      "updatedAt": "2026-08-19T16:25:04.673Z",
+      "value": -94.44,
+      "updatedAt": "2026-08-19T16:26:27.316Z",
       "currency": "USD"
     },
     {
@@ -10948,13 +10948,13 @@
       "houseB": "Kalshi",
       "oddA": 2.75,
       "oddB": 1.67,
-      "total": 802.78,
+      "total": 820,
       "stakeA": 310,
-      "stakeB": 492.78000000000003,
-      "lucroA": 49.72000000000003,
-      "lucroB": 20.162599999999998,
-      "lucro": 20.162599999999998,
-      "roi": 2.5115971997309345,
+      "stakeB": 510,
+      "lucroA": 32.5,
+      "lucroB": 31.699999999999932,
+      "lucro": 31.699999999999932,
+      "roi": 3.865853658536577,
       "winner": null,
       "curA": "BRL",
       "curB": "USD",
@@ -10962,9 +10962,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-19T16:25:04.673Z"
+      "updatedAt": "2026-08-19T16:26:27.316Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T16:25:04.677Z"
+  "updatedAt": "2026-08-19T16:26:27.316Z"
 }
