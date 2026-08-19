@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 410,
-      "updatedAt": "2026-08-19T01:27:31.954Z"
+      "value": 100,
+      "updatedAt": "2026-08-19T16:25:04.673Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1308.03,
+      "value": 2110.81,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T14:28:37.453Z"
+      "updatedAt": "2026-08-19T16:25:04.676Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4773,8 +4773,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 4.4,
-      "updatedAt": "2026-08-19T14:28:37.452Z",
+      "value": -91.1,
+      "updatedAt": "2026-08-19T16:25:04.673Z",
       "currency": "USD"
     },
     {
@@ -10939,8 +10939,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T14:28:37.452Z"
+    },
+    {
+      "id": "mt0ayishr5fxw",
+      "kind": "sure",
+      "event": "Moerani Bouzige – Shunsuke Mitsui",
+      "houseA": "Bet365",
+      "houseB": "Kalshi",
+      "oddA": 2.75,
+      "oddB": 1.67,
+      "total": 802.78,
+      "stakeA": 310,
+      "stakeB": 492.78000000000003,
+      "lucroA": 49.72000000000003,
+      "lucroB": 20.162599999999998,
+      "lucro": 20.162599999999998,
+      "roi": 2.5115971997309345,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-19T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T16:25:04.673Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T15:08:16.811Z"
+  "updatedAt": "2026-08-19T16:25:04.677Z"
 }
