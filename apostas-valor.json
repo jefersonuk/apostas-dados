@@ -4813,7 +4813,15 @@
       "updatedAt": "2026-08-19T13:18:12.404Z"
     }
   ],
-  "aportes": [],
+  "aportes": [
+    {
+      "id": "mt087rcast9h5",
+      "value": 590,
+      "date": "2026-08-19",
+      "note": "Aporte",
+      "updatedAt": "2026-08-19T15:08:16.810Z"
+    }
+  ],
   "caixa": [
     {
       "date": "2026-08-05",
@@ -10934,5 +10942,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T14:55:27.988Z"
+  "updatedAt": "2026-08-19T15:08:16.811Z"
 }
