@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2012.52,
+      "value": 3262.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T18:21:48.878Z"
+      "updatedAt": "2026-08-19T21:15:33.683Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 251.87,
+      "value": 1.87,
       "currency": "BRL",
-      "updatedAt": "2026-08-19T20:07:37.257Z"
+      "updatedAt": "2026-08-19T21:15:33.678Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1023.8,
-      "updatedAt": "2026-08-19T07:53:15.821Z"
+      "value": 23.8,
+      "updatedAt": "2026-08-19T21:15:33.678Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -10998,9 +10998,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T18:21:48.876Z"
+    },
+    {
+      "id": "mt0lc33ivlowo",
+      "kind": "sure",
+      "event": "Denis Yevseyev – Jannik Maute",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.36,
+      "oddB": 4.9,
+      "total": 1250,
+      "stakeA": 1000,
+      "stakeB": 250,
+      "lucroA": 110,
+      "lucroB": -25,
+      "lucro": -25,
+      "roi": -2,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-20T06:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T21:15:33.678Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T20:07:37.257Z"
+  "updatedAt": "2026-08-19T21:15:33.683Z"
 }
