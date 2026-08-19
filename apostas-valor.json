@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 670,
-      "updatedAt": "2026-08-18T11:40:25.266Z"
+      "value": 642.97,
+      "updatedAt": "2026-08-19T14:28:37.452Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 765,
+      "value": 1308.03,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T01:27:31.956Z"
+      "updatedAt": "2026-08-19T14:28:37.453Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4773,8 +4773,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 104.4,
-      "updatedAt": "2026-08-18T15:29:28.258Z",
+      "value": 4.4,
+      "updatedAt": "2026-08-19T14:28:37.452Z",
       "currency": "USD"
     },
     {
@@ -10906,8 +10906,32 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T08:08:14.901Z"
+    },
+    {
+      "id": "mt06srezwdbhj",
+      "kind": "sure",
+      "event": "Nova Dedinka X Petrzalka",
+      "houseA": "Kalshi",
+      "houseB": "Betnacional",
+      "oddA": 1.1,
+      "oddB": 21,
+      "total": 543.0285714285715,
+      "stakeA": 516,
+      "stakeB": 27.02857142857143,
+      "lucroA": 24.571428571428555,
+      "lucroB": 24.571428571428555,
+      "lucro": 24.571428571428555,
+      "roi": 4.524886877828051,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-19T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-19T14:28:37.452Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T13:59:07.592Z"
+  "updatedAt": "2026-08-19T14:28:37.453Z"
 }
