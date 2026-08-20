@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3586.52,
+      "value": 5382.96,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T17:25:21.028Z"
+      "updatedAt": "2026-08-20T17:59:19.695Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 940.07,
+      "value": 0.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T16:39:12.326Z"
+      "updatedAt": "2026-08-20T17:59:19.694Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4705,8 +4705,8 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 0,
-      "updatedAt": "2026-08-20T16:39:12.327Z"
+      "value": -856.44,
+      "updatedAt": "2026-08-20T17:59:19.694Z"
     },
     {
       "id": "mslrzo1vux1bp",
@@ -11299,9 +11299,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T17:25:21.028Z"
+    },
+    {
+      "id": "mt1trkwex3zn6",
+      "kind": "sure",
+      "event": "Darya Astakova x Rada Zolotareva",
+      "houseA": "Ivibet",
+      "houseB": "Sportybet",
+      "oddA": 2.05,
+      "oddB": 2.25,
+      "total": 1796.4444444444443,
+      "stakeA": 940,
+      "stakeB": 856.4444444444443,
+      "lucroA": 130.55555555555543,
+      "lucroB": 130.55555555555543,
+      "lucro": 130.55555555555543,
+      "roi": 7.26744186046511,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-21T05:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T17:59:19.694Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T17:25:21.028Z"
+  "updatedAt": "2026-08-20T17:59:19.695Z"
 }
