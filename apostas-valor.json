@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2601.62,
+      "value": 3691.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T14:21:36.442Z"
+      "updatedAt": "2026-08-20T14:39:03.051Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1643.07,
+      "value": 1143.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T14:24:38.541Z"
+      "updatedAt": "2026-08-20T14:39:03.050Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 23.8,
-      "updatedAt": "2026-08-19T21:15:33.678Z"
+      "value": -566.4,
+      "updatedAt": "2026-08-20T14:39:03.050Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -11217,9 +11217,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T14:19:13.762Z"
+    },
+    {
+      "id": "mt1mm0sqdcz28",
+      "kind": "sure",
+      "event": "Samsung Lions x NC Dinos",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 3.01,
+      "oddB": 2.55,
+      "total": 1090.1960784313726,
+      "stakeA": 500,
+      "stakeB": 590.1960784313726,
+      "lucroA": 414.8039215686274,
+      "lucroB": 414.8039215686274,
+      "lucro": 414.8039215686274,
+      "roi": 38.04856115107913,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-21T07:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T14:39:03.050Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:24:38.542Z"
+  "updatedAt": "2026-08-20T14:39:03.051Z"
 }
