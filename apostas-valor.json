@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1384.89,
+      "value": 2374.69,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T12:18:44.341Z"
+      "updatedAt": "2026-08-20T12:26:23.801Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2063.07,
+      "value": 1643.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T12:18:44.341Z"
+      "updatedAt": "2026-08-20T12:26:23.800Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4728,9 +4728,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 110.01,
+      "value": 0.01,
       "currency": "USD",
-      "updatedAt": "2026-08-19T13:52:37.819Z"
+      "updatedAt": "2026-08-20T12:26:23.800Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -11140,9 +11140,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T12:17:24.540Z"
+    },
+    {
+      "id": "mt1hvfeg0p87q",
+      "kind": "sure",
+      "event": "Montreal Alouettes x Ottawa Redblacks",
+      "houseA": "Ivibet",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.5,
+      "oddB": 1.85,
+      "total": 989.8,
+      "stakeA": 420,
+      "stakeB": 569.8,
+      "lucroA": 60.200000000000045,
+      "lucroB": 64.32999999999993,
+      "lucro": 60.200000000000045,
+      "roi": 6.082036775106086,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-20T20:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T12:26:23.800Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T12:19:15.289Z"
+  "updatedAt": "2026-08-20T12:26:23.801Z"
 }
