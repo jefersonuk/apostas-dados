@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5579.92,
+      "value": 5517.92,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T18:30:32.506Z"
+      "updatedAt": "2026-08-20T18:34:17.047Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0.07,
+      "value": 28.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T17:59:19.694Z"
+      "updatedAt": "2026-08-20T18:34:17.047Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": -600.4,
-      "updatedAt": "2026-08-20T15:24:51.776Z"
+      "value": -566.4,
+      "updatedAt": "2026-08-20T18:34:17.047Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -5053,6 +5053,10 @@
     {
       "id": "mt1lwj4yxa2rp",
       "at": "2026-08-20T14:43:26.160Z"
+    },
+    {
+      "id": "mt1o8xq87jiw9",
+      "at": "2026-08-20T18:34:17.047Z"
     }
   ],
   "surebets": [
@@ -11212,30 +11216,6 @@
       "updatedAt": "2026-08-20T14:39:03.050Z"
     },
     {
-      "id": "mt1o8xq87jiw9",
-      "kind": "sure",
-      "event": "Sporty x Burgan",
-      "houseA": "Pinnacle",
-      "houseB": "Ivibet",
-      "oddA": 2.36,
-      "oddB": 2.9,
-      "total": 62,
-      "stakeA": 34,
-      "stakeB": 28,
-      "lucroA": 18.239999999999995,
-      "lucroB": 19.200000000000003,
-      "lucro": 18.239999999999995,
-      "roi": 29.419354838709673,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-20T14:10",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-20T15:24:51.776Z"
-    },
-    {
       "id": "mt1pj8akr9kfp",
       "kind": "sure",
       "event": "Maraca x Santos",
@@ -11359,5 +11339,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T18:31:59.816Z"
+  "updatedAt": "2026-08-20T18:34:17.047Z"
 }
