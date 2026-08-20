@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3467.32,
+      "value": 3871.36,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T13:47:22.744Z"
+      "updatedAt": "2026-08-20T14:18:29.389Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,9 +4588,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 128.45,
+      "value": 78.45,
       "currency": "USD",
-      "updatedAt": "2026-08-20T12:45:27.212Z"
+      "updatedAt": "2026-08-20T14:18:29.388Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4825,8 +4825,8 @@
     {
       "id": "mt0mdztl9t7mq",
       "name": "Thunderpick",
-      "value": 0,
-      "updatedAt": "2026-08-20T12:15:07.018Z"
+      "value": -145.04,
+      "updatedAt": "2026-08-20T14:18:29.388Z"
     },
     {
       "id": "mt1h1m83a2gy6",
@@ -11189,9 +11189,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T13:47:22.741Z"
+    },
+    {
+      "id": "mt1lvkwc12vsr",
+      "kind": "sure",
+      "event": "Strasbourg x PSG (e-soccer)",
+      "houseA": "Thunderpick",
+      "houseB": "Casobet",
+      "oddA": 3.3,
+      "oddB": 1.84,
+      "total": 404.03999999999996,
+      "stakeA": 145.04,
+      "stakeB": 259,
+      "lucroA": 74.59199999999998,
+      "lucroB": 72.52000000000004,
+      "lucro": 72.52000000000004,
+      "roi": 17.94871794871796,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-20T11:20",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T14:18:29.388Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T13:47:22.744Z"
+  "updatedAt": "2026-08-20T14:18:29.389Z"
 }
