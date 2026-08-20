@@ -4780,9 +4780,9 @@
     {
       "id": "msueeqdv25y1y",
       "name": "Superbet",
-      "value": 205,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-15T13:15:02.804Z"
+      "updatedAt": "2026-08-20T11:42:54.400Z"
     },
     {
       "id": "msuuloj0waoov",
@@ -11065,5 +11065,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T11:42:36.014Z"
+  "updatedAt": "2026-08-20T11:42:54.406Z"
 }
