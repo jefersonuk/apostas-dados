@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3002.52,
+      "value": 2182.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T10:42:44.042Z"
+      "updatedAt": "2026-08-20T10:42:54.104Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4773,8 +4773,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 15.56,
-      "updatedAt": "2026-08-19T17:04:31.565Z",
+      "value": 179.98,
+      "updatedAt": "2026-08-20T10:42:54.104Z",
       "currency": "USD"
     },
     {
@@ -10977,14 +10977,15 @@
       "lucroB": 31.699999999999932,
       "lucro": 31.699999999999932,
       "roi": 3.865853658536577,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-08-19T23:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-19T16:26:27.316Z"
+      "updatedAt": "2026-08-20T10:42:54.104Z"
     },
     {
       "id": "mt0f4n9oflejn",
@@ -11062,5 +11063,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T10:42:44.042Z"
+  "updatedAt": "2026-08-20T10:42:54.104Z"
 }
