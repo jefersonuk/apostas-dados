@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3082.52,
+      "value": 3144.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T14:43:26.160Z"
+      "updatedAt": "2026-08-20T15:24:51.777Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1143.07,
+      "value": 1115.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T14:39:03.050Z"
+      "updatedAt": "2026-08-20T15:24:51.776Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": -566.4,
-      "updatedAt": "2026-08-20T14:39:03.050Z"
+      "value": -600.4,
+      "updatedAt": "2026-08-20T15:24:51.776Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -11202,9 +11202,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T14:39:03.050Z"
+    },
+    {
+      "id": "mt1o8xq87jiw9",
+      "kind": "sure",
+      "event": "Sporty x Burgan",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 2.36,
+      "oddB": 2.9,
+      "total": 62,
+      "stakeA": 34,
+      "stakeB": 28,
+      "lucroA": 18.239999999999995,
+      "lucroB": 19.200000000000003,
+      "lucro": 18.239999999999995,
+      "roi": 29.419354838709673,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-20T14:10",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T15:24:51.776Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T15:12:38.360Z"
+  "updatedAt": "2026-08-20T15:24:51.777Z"
 }
