@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2182.52,
+      "value": 2564.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T10:42:54.104Z"
+      "updatedAt": "2026-08-20T12:03:49.910Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,9 +4588,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 87.95,
+      "value": 37.95,
       "currency": "USD",
-      "updatedAt": "2026-08-20T01:15:18.215Z"
+      "updatedAt": "2026-08-20T12:03:49.909Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4831,9 +4831,9 @@
     {
       "id": "mt1h1m83a2gy6",
       "name": "Wild",
-      "value": 25,
+      "value": 1.18,
       "currency": "USD",
-      "updatedAt": "2026-08-20T12:03:12.963Z"
+      "updatedAt": "2026-08-20T12:03:49.909Z"
     }
   ],
   "aportes": [
@@ -11076,9 +11076,33 @@
         "resultado": "B"
       },
       "updatedAt": "2026-08-20T01:15:04.426Z"
+    },
+    {
+      "id": "mt1h2eqdjens1",
+      "kind": "sure",
+      "event": "Hoffenheim x Bayer 04 (E-soccer)",
+      "houseA": "Casobet",
+      "houseB": "Wild",
+      "oddA": 1.81,
+      "oddB": 3.8,
+      "total": 382.3657894736842,
+      "stakeA": 259,
+      "stakeB": 123.36578947368419,
+      "lucroA": 86.42421052631585,
+      "lucroB": 86.42421052631573,
+      "lucro": 86.42421052631573,
+      "roi": 22.602495543672003,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-20T09:35",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T12:03:49.909Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T12:03:12.963Z"
+  "updatedAt": "2026-08-20T12:03:49.910Z"
 }
