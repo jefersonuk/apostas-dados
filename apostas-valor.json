@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5517.92,
+      "value": 6370.03,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T18:34:17.047Z"
+      "updatedAt": "2026-08-20T19:32:33.721Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4728,9 +4728,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 45.86,
+      "value": -48.14,
       "currency": "USD",
-      "updatedAt": "2026-08-20T18:16:12.899Z"
+      "updatedAt": "2026-08-20T19:32:33.720Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4852,8 +4852,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": -341.88,
-      "updatedAt": "2026-08-20T18:16:12.899Z"
+      "value": -707.07,
+      "updatedAt": "2026-08-20T19:32:33.720Z"
     }
   ],
   "aportes": [
@@ -11335,9 +11335,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T18:16:12.899Z"
+    },
+    {
+      "id": "mt1x3ha0mtf7n",
+      "kind": "sure",
+      "event": "Olympique de Marseille x RC Strasbourg",
+      "houseA": "Overtimemarkets",
+      "houseB": "Duelbits",
+      "oddA": 1.86,
+      "oddB": 2.48,
+      "total": 852.11,
+      "stakeA": 486.91999999999996,
+      "stakeB": 365.19000000000005,
+      "lucroA": 53.561199999999985,
+      "lucroB": 53.5612000000001,
+      "lucro": 53.561199999999985,
+      "roi": 6.285714285714283,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-21T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T19:32:33.720Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T18:34:17.047Z"
+  "updatedAt": "2026-08-20T19:32:33.721Z"
 }
