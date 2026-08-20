@@ -4543,8 +4543,8 @@
     {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
-      "value": 455.36,
-      "updatedAt": "2026-08-20T20:00:48.042Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T20:03:38.624Z"
     },
     {
       "id": "mrqfw8wuhoz55",
@@ -11394,5 +11394,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T20:00:48.049Z"
+  "updatedAt": "2026-08-20T20:03:38.631Z"
 }
