@@ -4624,7 +4624,7 @@
       "name": "Thunderpick.io",
       "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-08-20T19:57:25.043Z"
+      "updatedAt": "2026-08-20T21:43:47.632Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4636,7 +4636,7 @@
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
       "value": 673.97,
-      "updatedAt": "2026-08-20T17:25:21.028Z"
+      "updatedAt": "2026-08-20T21:43:47.632Z"
     },
     {
       "id": "msddu5i007wwm",
@@ -11290,11 +11290,11 @@
       "winner": null,
       "curA": "USD",
       "curB": "BRL",
-      "date": "2026-08-20T15:00",
+      "date": "2026-08-27T15:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-20T17:25:21.028Z"
+      "updatedAt": "2026-08-20T21:43:47.632Z"
     },
     {
       "id": "mt1trkwex3zn6",
@@ -11395,5 +11395,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T21:04:53.082Z"
+  "updatedAt": "2026-08-20T21:43:47.632Z"
 }
