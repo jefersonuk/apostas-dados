@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 100,
-      "updatedAt": "2026-08-19T16:26:27.316Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T11:42:36.008Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -11065,5 +11065,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T11:41:34.829Z"
+  "updatedAt": "2026-08-20T11:42:36.014Z"
 }
