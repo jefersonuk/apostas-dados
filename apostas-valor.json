@@ -4825,8 +4825,8 @@
     {
       "id": "mt0mdztl9t7mq",
       "name": "Thunderpick",
-      "value": -49.31,
-      "updatedAt": "2026-08-20T01:15:18.215Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T12:15:07.018Z"
     },
     {
       "id": "mt1h1m83a2gy6",
@@ -11118,5 +11118,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T12:14:53.978Z"
+  "updatedAt": "2026-08-20T12:15:07.018Z"
 }
