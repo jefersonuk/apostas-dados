@@ -4607,7 +4607,7 @@
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
       "value": 0,
-      "updatedAt": "2026-08-20T13:47:22.741Z"
+      "updatedAt": "2026-08-20T14:20:44.723Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4643,7 +4643,7 @@
       "name": "Ivibet",
       "value": 668.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T13:47:22.741Z"
+      "updatedAt": "2026-08-20T14:20:44.723Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11173,14 +11173,14 @@
       "houseA": "Ivibet",
       "houseB": "Blaze",
       "oddA": 1.95,
-      "oddB": 3.8,
+      "oddB": 1.01,
       "total": 1475,
       "stakeA": 975,
       "stakeB": 500,
       "lucroA": 426.25,
-      "lucroB": 425,
-      "lucro": 425,
-      "roi": 28.8135593220339,
+      "lucroB": -970,
+      "lucro": -970,
+      "roi": -65.76271186440678,
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
@@ -11188,7 +11188,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-20T13:47:22.741Z"
+      "updatedAt": "2026-08-20T14:20:44.723Z"
     },
     {
       "id": "mt1lvkwc12vsr",
@@ -11241,5 +11241,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:19:13.763Z"
+  "updatedAt": "2026-08-20T14:20:44.723Z"
 }
