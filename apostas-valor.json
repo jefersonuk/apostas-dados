@@ -4853,7 +4853,8 @@
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
       "value": 32.93,
-      "updatedAt": "2026-08-20T19:57:04.128Z"
+      "updatedAt": "2026-08-20T20:05:54.832Z",
+      "currency": "USD"
     },
     {
       "id": "mt1xxprjym6w0",
@@ -11394,5 +11395,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T20:05:19.223Z"
+  "updatedAt": "2026-08-20T20:05:54.833Z"
 }
