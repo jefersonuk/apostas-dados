@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6370.03,
+      "value": 9541.13,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T19:32:33.721Z"
+      "updatedAt": "2026-08-20T19:56:04.400Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4776,8 +4776,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 680.04,
-      "updatedAt": "2026-08-20T11:40:18.489Z",
+      "value": 363.65,
+      "updatedAt": "2026-08-20T19:56:04.399Z",
       "currency": "USD"
     },
     {
@@ -4854,6 +4854,12 @@
       "name": "Duelbits",
       "value": -707.07,
       "updatedAt": "2026-08-20T19:32:33.720Z"
+    },
+    {
+      "id": "mt1xxprjym6w0",
+      "name": "Bookmaker",
+      "value": -1532.19,
+      "updatedAt": "2026-08-20T19:56:04.399Z"
     }
   ],
   "aportes": [
@@ -11359,9 +11365,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T19:32:33.720Z"
+    },
+    {
+      "id": "mt1xxprjtvne5",
+      "kind": "sure",
+      "event": "Las vegas x Houston Texans",
+      "houseA": "Kalshi",
+      "houseB": "Bookmaker",
+      "oddA": 2.01,
+      "oddB": 2.15,
+      "total": 3171.1042547263683,
+      "stakeA": 1638.9120547263683,
+      "stakeB": 1532.1922,
+      "lucroA": 123.10897527363159,
+      "lucroB": 123.10897527363159,
+      "lucro": 123.10897527363159,
+      "roi": 3.8822115384615303,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-20T21:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T19:56:04.399Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T19:32:33.721Z"
+  "updatedAt": "2026-08-20T19:56:04.400Z"
 }
