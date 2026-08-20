@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5382.96,
+      "value": 6014.92,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T17:59:19.695Z"
+      "updatedAt": "2026-08-20T18:16:12.900Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4728,9 +4728,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 101.86,
+      "value": 45.86,
       "currency": "USD",
-      "updatedAt": "2026-08-20T16:01:44.814Z"
+      "updatedAt": "2026-08-20T18:16:12.899Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4848,6 +4848,12 @@
       "value": -100,
       "currency": "BRL",
       "updatedAt": "2026-08-20T16:00:51.645Z"
+    },
+    {
+      "id": "mt1udaozeymdf",
+      "name": "Duelbits",
+      "value": -341.88,
+      "updatedAt": "2026-08-20T18:16:12.899Z"
     }
   ],
   "aportes": [
@@ -11323,9 +11329,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T17:59:19.694Z"
+    },
+    {
+      "id": "mt1udaozaklbf",
+      "kind": "sure",
+      "event": "Bilbao x Sevilla",
+      "houseA": "Duelbits",
+      "houseB": "Overtimemarkets",
+      "oddA": 1.98,
+      "oddB": 2.34,
+      "total": 631.96,
+      "stakeA": 341.88,
+      "stakeB": 290.08,
+      "lucroA": 44.9624,
+      "lucroB": 46.827199999999834,
+      "lucro": 44.9624,
+      "roi": 7.114754098360655,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-22T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T18:16:12.899Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T17:59:19.695Z"
+  "updatedAt": "2026-08-20T18:16:12.900Z"
 }
