@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3871.36,
+      "value": 4076.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T14:18:29.389Z"
+      "updatedAt": "2026-08-20T14:19:13.763Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,9 +4588,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 78.45,
+      "value": 58.13,
       "currency": "USD",
-      "updatedAt": "2026-08-20T14:18:29.388Z"
+      "updatedAt": "2026-08-20T14:19:13.762Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4681,8 +4681,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 780,
-      "updatedAt": "2026-08-18T00:58:53.175Z"
+      "value": 680,
+      "updatedAt": "2026-08-20T14:19:13.762Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -11213,9 +11213,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T14:18:29.388Z"
+    },
+    {
+      "id": "mt1lwj4yxa2rp",
+      "kind": "sure",
+      "event": "Benfica x Juventus (E-soccer)",
+      "houseA": "Betesporte",
+      "houseB": "Casobet",
+      "oddA": 2.4,
+      "oddB": 2.28,
+      "total": 205.26315789473685,
+      "stakeA": 100,
+      "stakeB": 105.26315789473685,
+      "lucroA": 34.73684210526315,
+      "lucroB": 34.73684210526315,
+      "lucro": 34.73684210526315,
+      "roi": 16.92307692307692,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-20T11:32",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T14:19:13.762Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:18:29.389Z"
+  "updatedAt": "2026-08-20T14:19:13.763Z"
 }
