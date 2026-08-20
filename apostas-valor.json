@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3144.52,
+      "value": 3284.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T15:24:51.777Z"
+      "updatedAt": "2026-08-20T16:00:51.650Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1115.07,
+      "value": 1075.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T15:24:51.776Z"
+      "updatedAt": "2026-08-20T16:00:51.645Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4845,9 +4845,9 @@
     {
       "id": "mt1hgn4qd7j3a",
       "name": "Leon",
-      "value": 0,
+      "value": -100,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T12:17:24.540Z"
+      "updatedAt": "2026-08-20T16:00:51.645Z"
     }
   ],
   "aportes": [
@@ -11226,9 +11226,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T15:24:51.776Z"
+    },
+    {
+      "id": "mt1pj8akr9kfp",
+      "kind": "sure",
+      "event": "Maraca x Santos",
+      "houseA": "Ivibet",
+      "houseB": "Leon",
+      "oddA": 3.95,
+      "oddB": 1.54,
+      "total": 140,
+      "stakeA": 40,
+      "stakeB": 100,
+      "lucroA": 18,
+      "lucroB": 14,
+      "lucro": 14,
+      "roi": 10,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-20T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T16:00:51.645Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T15:59:52.061Z"
+  "updatedAt": "2026-08-20T16:00:51.650Z"
 }
