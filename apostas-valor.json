@@ -4841,6 +4841,13 @@
       "value": 20,
       "currency": "USD",
       "updatedAt": "2026-08-20T12:14:44.481Z"
+    },
+    {
+      "id": "mt1hgn4qd7j3a",
+      "name": "Leon",
+      "value": 20,
+      "currency": "BRL",
+      "updatedAt": "2026-08-20T12:14:53.978Z"
     }
   ],
   "aportes": [
@@ -11111,5 +11118,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T12:14:44.481Z"
+  "updatedAt": "2026-08-20T12:14:53.978Z"
 }
