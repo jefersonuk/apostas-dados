@@ -4692,7 +4692,9 @@
     {
       "id": "mshooqow0ee6e",
       "name": "Betadonis",
-      "value": 42.5
+      "value": 42.5,
+      "currency": "USD",
+      "updatedAt": "2026-08-20T11:55:38.707Z"
     },
     {
       "id": "mshp2yxy7igul",
@@ -11065,5 +11067,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T11:55:36.721Z"
+  "updatedAt": "2026-08-20T11:55:38.707Z"
 }
