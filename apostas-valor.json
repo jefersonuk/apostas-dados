@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3466.48,
+      "value": 3803.18,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-19T21:45:33.398Z"
+      "updatedAt": "2026-08-20T00:03:46.751Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,9 +4588,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 37.5,
+      "value": -12.5,
       "currency": "USD",
-      "updatedAt": "2026-08-19T21:45:02.361Z"
+      "updatedAt": "2026-08-20T00:03:46.749Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4822,8 +4822,8 @@
     {
       "id": "mt0mdztl9t7mq",
       "name": "Thunderpick",
-      "value": -49.31,
-      "updatedAt": "2026-08-19T21:45:02.361Z"
+      "value": -127.01,
+      "updatedAt": "2026-08-20T00:03:46.749Z"
     }
   ],
   "aportes": [
@@ -11052,9 +11052,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-19T21:45:02.361Z"
+    },
+    {
+      "id": "mt0rceyksjula",
+      "kind": "sure",
+      "event": "Flamengo x Botafogo (E-soccer)",
+      "houseA": "Casobet",
+      "houseB": "Thunderpick",
+      "oddA": 1.62,
+      "oddB": 5.3,
+      "total": 336.7,
+      "stakeA": 259,
+      "stakeB": 77.69999999999999,
+      "lucroA": 82.88000000000005,
+      "lucroB": 75.10999999999996,
+      "lucro": 75.10999999999996,
+      "roi": 22.307692307692296,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-19T21:20",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T00:03:46.749Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-19T21:45:33.781Z"
+  "updatedAt": "2026-08-20T00:03:46.751Z"
 }
