@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4076.62,
+      "value": 3101.63,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T14:19:13.763Z"
+      "updatedAt": "2026-08-20T14:21:12.054Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4607,7 +4607,7 @@
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
       "value": 0,
-      "updatedAt": "2026-08-20T14:21:02.362Z"
+      "updatedAt": "2026-08-20T14:21:12.054Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 668.07,
+      "value": 1643.06,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T14:21:02.362Z"
+      "updatedAt": "2026-08-20T14:21:12.054Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11174,13 +11174,13 @@
       "houseB": "Blaze",
       "oddA": 1.01,
       "oddB": 1.01,
-      "total": 1475,
-      "stakeA": 975,
+      "total": 500.01,
+      "stakeA": 0.01,
       "stakeB": 500,
-      "lucroA": -490.25,
-      "lucroB": -970,
-      "lucro": -970,
-      "roi": -65.76271186440678,
+      "lucroA": -499.99989999999997,
+      "lucroB": 4.990000000000009,
+      "lucro": -499.99989999999997,
+      "roi": -99.9979800403992,
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
@@ -11188,7 +11188,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-20T14:21:02.362Z"
+      "updatedAt": "2026-08-20T14:21:12.054Z"
     },
     {
       "id": "mt1lvkwc12vsr",
@@ -11241,5 +11241,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:21:02.362Z"
+  "updatedAt": "2026-08-20T14:21:12.054Z"
 }
