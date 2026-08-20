@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3292,
+      "value": 3586.51,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T16:39:12.335Z"
+      "updatedAt": "2026-08-20T17:24:59.675Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4635,8 +4635,8 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 721.97,
-      "updatedAt": "2026-08-20T16:03:12.943Z"
+      "value": 673.97,
+      "updatedAt": "2026-08-20T17:24:59.675Z"
     },
     {
       "id": "msddu5i007wwm",
@@ -4825,8 +4825,8 @@
     {
       "id": "mt0mdztl9t7mq",
       "name": "Thunderpick",
-      "value": 0,
-      "updatedAt": "2026-08-20T14:41:46.092Z"
+      "value": -246.52,
+      "updatedAt": "2026-08-20T17:24:59.675Z"
     },
     {
       "id": "mt1h1m83a2gy6",
@@ -11275,9 +11275,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T16:39:12.329Z"
+    },
+    {
+      "id": "mt1sjfdmrob42",
+      "kind": "sure",
+      "event": "KS Gornik Zabrze x Monaco",
+      "houseA": "Thunderpick",
+      "houseB": "Casinozer",
+      "oddA": 1.27,
+      "oddB": 6.6,
+      "total": 294.5162,
+      "stakeA": 246.5162,
+      "stakeB": 48,
+      "lucroA": 18.55937399999999,
+      "lucroB": 22.28379999999993,
+      "lucro": 18.55937399999999,
+      "roi": 6.301647922932589,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-20T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T17:24:59.675Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T16:39:12.335Z"
+  "updatedAt": "2026-08-20T17:24:59.675Z"
 }
