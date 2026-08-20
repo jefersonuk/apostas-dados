@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3586.51,
+      "value": 3586.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T17:24:59.675Z"
+      "updatedAt": "2026-08-20T17:25:21.028Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4622,9 +4622,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 47,
+      "value": -0.59,
       "currency": "USD",
-      "updatedAt": "2026-08-20T14:44:52.477Z"
+      "updatedAt": "2026-08-20T17:25:21.028Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4636,7 +4636,7 @@
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
       "value": 673.97,
-      "updatedAt": "2026-08-20T17:24:59.675Z"
+      "updatedAt": "2026-08-20T17:25:21.028Z"
     },
     {
       "id": "msddu5i007wwm",
@@ -4825,8 +4825,8 @@
     {
       "id": "mt0mdztl9t7mq",
       "name": "Thunderpick",
-      "value": -246.52,
-      "updatedAt": "2026-08-20T17:24:59.675Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T17:25:21.028Z"
     },
     {
       "id": "mt1h1m83a2gy6",
@@ -11280,17 +11280,17 @@
       "id": "mt1sjfdmrob42",
       "kind": "sure",
       "event": "KS Gornik Zabrze x Monaco",
-      "houseA": "Thunderpick",
+      "houseA": "Thunderpick.io",
       "houseB": "Casinozer",
       "oddA": 1.27,
       "oddB": 6.6,
-      "total": 294.5162,
-      "stakeA": 246.5162,
+      "total": 294.52,
+      "stakeA": 246.52,
       "stakeB": 48,
-      "lucroA": 18.55937399999999,
-      "lucroB": 22.28379999999993,
-      "lucro": 18.55937399999999,
-      "roi": 6.301647922932589,
+      "lucroA": 18.560400000000016,
+      "lucroB": 22.279999999999973,
+      "lucro": 18.560400000000016,
+      "roi": 6.301914980306946,
       "winner": null,
       "curA": "USD",
       "curB": "BRL",
@@ -11298,10 +11298,10 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-20T17:24:59.675Z"
+      "updatedAt": "2026-08-20T17:25:21.028Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T17:24:59.675Z"
+  "updatedAt": "2026-08-20T17:25:21.028Z"
 }
