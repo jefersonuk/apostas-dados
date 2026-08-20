@@ -4827,6 +4827,13 @@
       "name": "Thunderpick",
       "value": -49.31,
       "updatedAt": "2026-08-20T01:15:18.215Z"
+    },
+    {
+      "id": "mt1h1m83a2gy6",
+      "name": "Wild",
+      "value": 25,
+      "currency": "USD",
+      "updatedAt": "2026-08-20T12:03:12.963Z"
     }
   ],
   "aportes": [
@@ -4904,7 +4911,7 @@
   ],
   "usdRate": 5.18,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-20T11:39:22.598Z",
+  "usdRateAt": "2026-08-20T12:03:12.287Z",
   "appBuild": "20260819-1000",
   "deleted": [
     {
@@ -11073,5 +11080,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T11:56:46.819Z"
+  "updatedAt": "2026-08-20T12:03:12.963Z"
 }
