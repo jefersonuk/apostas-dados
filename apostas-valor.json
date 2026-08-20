@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3691.82,
+      "value": 3287.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T14:39:03.051Z"
+      "updatedAt": "2026-08-20T14:41:46.092Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,9 +4588,9 @@
     {
       "id": "ms573t068wk2v",
       "name": "Casobet",
-      "value": 58.13,
+      "value": 108.13,
       "currency": "USD",
-      "updatedAt": "2026-08-20T14:19:13.762Z"
+      "updatedAt": "2026-08-20T14:41:46.092Z"
     },
     {
       "id": "ms7iedf1byig1",
@@ -4825,8 +4825,8 @@
     {
       "id": "mt0mdztl9t7mq",
       "name": "Thunderpick",
-      "value": -145.04,
-      "updatedAt": "2026-08-20T14:18:29.388Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T14:41:46.092Z"
     },
     {
       "id": "mt1h1m83a2gy6",
@@ -5039,6 +5039,10 @@
     {
       "id": "mt1krkl0sbdfp",
       "at": "2026-08-20T14:24:38.542Z"
+    },
+    {
+      "id": "mt1lvkwc12vsr",
+      "at": "2026-08-20T14:41:46.092Z"
     }
   ],
   "surebets": [
@@ -11171,30 +11175,6 @@
       "updatedAt": "2026-08-20T12:26:23.800Z"
     },
     {
-      "id": "mt1lvkwc12vsr",
-      "kind": "sure",
-      "event": "Strasbourg x PSG (e-soccer)",
-      "houseA": "Thunderpick",
-      "houseB": "Casobet",
-      "oddA": 3.3,
-      "oddB": 1.84,
-      "total": 404.03999999999996,
-      "stakeA": 145.04,
-      "stakeB": 259,
-      "lucroA": 74.59199999999998,
-      "lucroB": 72.52000000000004,
-      "lucro": 72.52000000000004,
-      "roi": 17.94871794871796,
-      "winner": null,
-      "curA": "USD",
-      "curB": "USD",
-      "date": "2026-08-20T11:20",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-20T14:18:29.388Z"
-    },
-    {
       "id": "mt1lwj4yxa2rp",
       "kind": "sure",
       "event": "Benfica x Juventus (E-soccer)",
@@ -11245,5 +11225,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:39:03.051Z"
+  "updatedAt": "2026-08-20T14:41:46.092Z"
 }
