@@ -4607,7 +4607,7 @@
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
       "value": 500,
-      "updatedAt": "2026-08-20T14:21:36.442Z"
+      "updatedAt": "2026-08-20T14:24:38.542Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1143.07,
+      "value": 1643.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T14:21:32.380Z"
+      "updatedAt": "2026-08-20T14:24:38.541Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -5035,6 +5035,10 @@
     {
       "id": "mt0rceyksjula",
       "at": "2026-08-20T01:15:18.216Z"
+    },
+    {
+      "id": "mt1krkl0sbdfp",
+      "at": "2026-08-20T14:24:38.542Z"
     }
   ],
   "surebets": [
@@ -11167,31 +11171,6 @@
       "updatedAt": "2026-08-20T12:26:23.800Z"
     },
     {
-      "id": "mt1krkl0sbdfp",
-      "kind": "sure",
-      "event": "Santos x Gremio",
-      "houseA": "Ivibet",
-      "houseB": "Blaze",
-      "oddA": 1.01,
-      "oddB": 1.01,
-      "total": 500.01,
-      "stakeA": 500,
-      "stakeB": 0.01,
-      "lucroA": 4.990000000000009,
-      "lucroB": -499.99989999999997,
-      "lucro": -499.99989999999997,
-      "roi": -99.9979800403992,
-      "winner": "B",
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-20T11:05",
-      "aplicado": {
-        "stakes": true,
-        "resultado": "B"
-      },
-      "updatedAt": "2026-08-20T14:21:36.442Z"
-    },
-    {
       "id": "mt1lvkwc12vsr",
       "kind": "sure",
       "event": "Strasbourg x PSG (e-soccer)",
@@ -11242,5 +11221,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:21:36.442Z"
+  "updatedAt": "2026-08-20T14:24:38.542Z"
 }
