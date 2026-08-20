@@ -4708,8 +4708,8 @@
     {
       "id": "mslrzo1vux1bp",
       "name": "Stake",
-      "value": 100,
-      "updatedAt": "2026-08-17T18:00:30.762Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T11:47:09.009Z"
     },
     {
       "id": "msneebp3j8g2z",
@@ -11065,5 +11065,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T11:44:04.521Z"
+  "updatedAt": "2026-08-20T11:47:09.015Z"
 }
