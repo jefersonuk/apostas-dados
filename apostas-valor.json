@@ -4834,6 +4834,13 @@
       "value": 1.18,
       "currency": "USD",
       "updatedAt": "2026-08-20T12:03:49.909Z"
+    },
+    {
+      "id": "mt1hgfsx2fm5e",
+      "name": "Donbet",
+      "value": 20,
+      "currency": "USD",
+      "updatedAt": "2026-08-20T12:14:44.481Z"
     }
   ],
   "aportes": [
@@ -11104,5 +11111,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T12:03:49.910Z"
+  "updatedAt": "2026-08-20T12:14:44.481Z"
 }
