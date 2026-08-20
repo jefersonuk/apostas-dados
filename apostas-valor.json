@@ -4607,7 +4607,7 @@
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
       "value": 0,
-      "updatedAt": "2026-08-20T14:20:44.723Z"
+      "updatedAt": "2026-08-20T14:21:02.362Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4643,7 +4643,7 @@
       "name": "Ivibet",
       "value": 668.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T14:20:44.723Z"
+      "updatedAt": "2026-08-20T14:21:02.362Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11172,12 +11172,12 @@
       "event": "Santos x Gremio",
       "houseA": "Ivibet",
       "houseB": "Blaze",
-      "oddA": 1.95,
+      "oddA": 1.01,
       "oddB": 1.01,
       "total": 1475,
       "stakeA": 975,
       "stakeB": 500,
-      "lucroA": 426.25,
+      "lucroA": -490.25,
       "lucroB": -970,
       "lucro": -970,
       "roi": -65.76271186440678,
@@ -11188,7 +11188,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-20T14:20:44.723Z"
+      "updatedAt": "2026-08-20T14:21:02.362Z"
     },
     {
       "id": "mt1lvkwc12vsr",
@@ -11241,5 +11241,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:20:44.723Z"
+  "updatedAt": "2026-08-20T14:21:02.362Z"
 }
