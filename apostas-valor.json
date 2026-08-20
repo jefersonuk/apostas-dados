@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3101.63,
+      "value": 2601.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T14:21:12.054Z"
+      "updatedAt": "2026-08-20T14:21:36.442Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4606,8 +4606,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 499.99,
-      "updatedAt": "2026-08-20T14:21:32.380Z"
+      "value": 500,
+      "updatedAt": "2026-08-20T14:21:36.442Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -11181,14 +11181,15 @@
       "lucroB": -499.99989999999997,
       "lucro": -499.99989999999997,
       "roi": -99.9979800403992,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-20T11:05",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-20T14:21:32.380Z"
+      "updatedAt": "2026-08-20T14:21:36.442Z"
     },
     {
       "id": "mt1lvkwc12vsr",
@@ -11241,5 +11242,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T14:21:32.380Z"
+  "updatedAt": "2026-08-20T14:21:36.442Z"
 }
