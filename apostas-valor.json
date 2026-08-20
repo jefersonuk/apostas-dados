@@ -4801,9 +4801,9 @@
     {
       "id": "msxj4vdccelb7",
       "name": "Apostaganha",
-      "value": 74.26,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T17:51:52.596Z"
+      "updatedAt": "2026-08-20T11:51:13.926Z"
     },
     {
       "id": "msyprvso2ird4",
@@ -11065,5 +11065,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T11:47:09.015Z"
+  "updatedAt": "2026-08-20T11:51:13.926Z"
 }
