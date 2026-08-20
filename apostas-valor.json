@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2857,
+      "value": 3292,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T16:03:12.944Z"
+      "updatedAt": "2026-08-20T16:39:12.335Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1075.07,
+      "value": 940.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T16:00:51.645Z"
+      "updatedAt": "2026-08-20T16:39:12.326Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4705,8 +4705,8 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 300,
-      "updatedAt": "2026-08-17T20:16:02.279Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T16:39:12.327Z"
     },
     {
       "id": "mslrzo1vux1bp",
@@ -11251,9 +11251,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T16:00:51.645Z"
+    },
+    {
+      "id": "mt1qwjiasnekq",
+      "kind": "sure",
+      "event": "Diego Mariano Lanci A / Goncalves Oliveira Jr E – Pickett J / Schachter S",
+      "houseA": "Ivibet",
+      "houseB": "Sportybet",
+      "oddA": 3.52,
+      "oddB": 1.56,
+      "total": 435,
+      "stakeA": 135,
+      "stakeB": 300,
+      "lucroA": 40.19999999999999,
+      "lucroB": 33,
+      "lucro": 33,
+      "roi": 7.586206896551724,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-20T15:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T16:39:12.329Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T16:03:12.944Z"
+  "updatedAt": "2026-08-20T16:39:12.335Z"
 }
