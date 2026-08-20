@@ -4554,9 +4554,9 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 331.63,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-17T20:05:10.532Z"
+      "updatedAt": "2026-08-20T20:05:19.216Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -11394,5 +11394,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T20:03:38.631Z"
+  "updatedAt": "2026-08-20T20:05:19.223Z"
 }
