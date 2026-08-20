@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1992.32,
+      "value": 3467.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-20T12:45:27.212Z"
+      "updatedAt": "2026-08-20T13:47:22.744Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4606,8 +4606,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 500,
-      "updatedAt": "2026-08-18T00:59:55.955Z"
+      "value": 0,
+      "updatedAt": "2026-08-20T13:47:22.741Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1643.07,
+      "value": 668.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T12:26:23.800Z"
+      "updatedAt": "2026-08-20T13:47:22.741Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11165,9 +11165,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-20T12:26:23.800Z"
+    },
+    {
+      "id": "mt1krkl0sbdfp",
+      "kind": "sure",
+      "event": "Santos x Gremio",
+      "houseA": "Ivibet",
+      "houseB": "Blaze",
+      "oddA": 1.95,
+      "oddB": 3.8,
+      "total": 1475,
+      "stakeA": 975,
+      "stakeB": 500,
+      "lucroA": 426.25,
+      "lucroB": 425,
+      "lucro": 425,
+      "roi": 28.8135593220339,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-20T11:05",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-20T13:47:22.741Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T12:45:27.212Z"
+  "updatedAt": "2026-08-20T13:47:22.744Z"
 }
