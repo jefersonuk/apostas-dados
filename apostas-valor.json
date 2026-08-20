@@ -4859,7 +4859,8 @@
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
       "value": -1532.19,
-      "updatedAt": "2026-08-20T19:56:04.399Z"
+      "updatedAt": "2026-08-20T19:56:37.733Z",
+      "currency": "USD"
     }
   ],
   "aportes": [
@@ -11393,5 +11394,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-20T19:56:04.400Z"
+  "updatedAt": "2026-08-20T19:56:37.733Z"
 }
