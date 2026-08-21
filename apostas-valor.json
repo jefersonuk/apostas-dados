@@ -4654,7 +4654,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 1922,
-      "updatedAt": "2026-08-21T17:00:50.115Z"
+      "updatedAt": "2026-08-21T17:06:57.182Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4689,7 +4689,7 @@
       "name": "Gamdom",
       "value": 1,
       "currency": "USD",
-      "updatedAt": "2026-08-21T17:00:50.114Z"
+      "updatedAt": "2026-08-21T17:06:57.182Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -4779,7 +4779,7 @@
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
       "value": -0.02,
-      "updatedAt": "2026-08-21T16:50:14.585Z",
+      "updatedAt": "2026-08-21T17:03:52.852Z",
       "currency": "USD"
     },
     {
@@ -4862,7 +4862,7 @@
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
       "value": 475.4,
-      "updatedAt": "2026-08-21T16:50:14.586Z",
+      "updatedAt": "2026-08-21T17:03:52.852Z",
       "currency": "USD"
     },
     {
@@ -11555,21 +11555,21 @@
       "houseB": "Bookmaker",
       "oddA": 1.757,
       "oddB": 2.59,
-      "total": 1590.6616248648647,
-      "stakeA": 947.7371999999999,
-      "stakeB": 642.9244248648648,
-      "lucroA": 74.51263553513513,
-      "lucroB": 74.51263553513513,
-      "lucro": 74.51263553513513,
-      "roi": 4.6843800322061195,
+      "total": 1590.6599999999999,
+      "stakeA": 947.74,
+      "stakeB": 642.92,
+      "lucroA": 74.51918,
+      "lucroB": 74.50279999999998,
+      "lucro": 74.50279999999998,
+      "roi": 4.683766486867086,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
-      "date": "2026-08-21T11:00",
+      "date": "2026-08-22T11:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-21T16:50:14.587Z"
+      "updatedAt": "2026-08-21T17:03:52.852Z"
     },
     {
       "id": "mt3747jtsiw1t",
@@ -11589,14 +11589,14 @@
       "winner": null,
       "curA": "USD",
       "curB": "BRL",
-      "date": "2026-08-21T13:50",
+      "date": "2026-08-21T21:30",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-21T17:00:50.116Z"
+      "updatedAt": "2026-08-21T17:06:57.182Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T17:00:50.127Z"
+  "updatedAt": "2026-08-21T17:06:57.182Z"
 }
