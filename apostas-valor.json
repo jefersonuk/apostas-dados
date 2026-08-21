@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 11359.45,
+      "value": 12007.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T19:47:25.688Z"
+      "updatedAt": "2026-08-21T20:34:17.845Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4868,16 +4868,16 @@
     {
       "id": "mt2bm7uqw5ljd",
       "name": "Rollbit",
-      "value": 0.12,
+      "value": -69.87,
       "currency": "USD",
-      "updatedAt": "2026-08-21T14:49:10.878Z"
+      "updatedAt": "2026-08-21T20:34:17.837Z"
     },
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 310.27,
+      "value": 22.89,
       "currency": "BRL",
-      "updatedAt": "2026-08-21T12:23:24.525Z"
+      "updatedAt": "2026-08-21T20:34:17.836Z"
     }
   ],
   "aportes": [
@@ -11596,9 +11596,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T17:06:57.182Z"
+    },
+    {
+      "id": "mt3eqq23i50ts",
+      "kind": "sure",
+      "event": "Team WE – LGD Gaming",
+      "houseA": "Shuffle",
+      "houseB": "Rollbit",
+      "oddA": 2.35,
+      "oddB": 1.87,
+      "total": 648.5303182978723,
+      "stakeA": 287.38191829787235,
+      "stakeB": 361.1484,
+      "lucroA": 26.817189702127735,
+      "lucroB": 26.81718970212762,
+      "lucro": 26.81718970212762,
+      "roi": 4.135071090047387,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-22T04:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T20:34:17.839Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T19:47:25.688Z"
+  "updatedAt": "2026-08-21T20:34:17.845Z"
 }
