@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4065.95,
+      "value": 4649.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T13:17:39.669Z"
+      "updatedAt": "2026-08-21T13:57:45.639Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 339.07,
+      "value": 0.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-21T12:31:51.669Z"
+      "updatedAt": "2026-08-21T13:57:45.638Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4845,9 +4845,9 @@
     {
       "id": "mt1hgn4qd7j3a",
       "name": "Leon",
-      "value": 100,
+      "value": -145,
       "currency": "BRL",
-      "updatedAt": "2026-08-21T01:57:49.498Z"
+      "updatedAt": "2026-08-21T13:57:45.638Z"
     },
     {
       "id": "mt1udaozeymdf",
@@ -11438,9 +11438,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T12:31:51.669Z"
+    },
+    {
+      "id": "mt30krvqscb16",
+      "kind": "sure",
+      "event": "Juarez x Club america",
+      "houseA": "Leon",
+      "houseB": "Ivibet",
+      "oddA": 2.57,
+      "oddB": 1.87,
+      "total": 584,
+      "stakeA": 245,
+      "stakeB": 339,
+      "lucroA": 45.64999999999998,
+      "lucroB": 49.930000000000064,
+      "lucro": 45.64999999999998,
+      "roi": 7.8167808219178045,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-21T14:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T13:57:45.638Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T13:39:27.472Z"
+  "updatedAt": "2026-08-21T13:57:45.639Z"
 }
