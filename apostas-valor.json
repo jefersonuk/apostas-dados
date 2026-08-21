@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 11262.81,
+      "value": 12218.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T16:50:14.597Z"
+      "updatedAt": "2026-08-21T17:00:50.127Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2522,
-      "updatedAt": "2026-08-21T13:17:39.669Z"
+      "value": 1922,
+      "updatedAt": "2026-08-21T17:00:50.115Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4687,9 +4687,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 70,
+      "value": 1,
       "currency": "USD",
-      "updatedAt": "2026-08-21T15:36:41.061Z"
+      "updatedAt": "2026-08-21T17:00:50.114Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -11570,9 +11570,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T16:50:14.587Z"
+    },
+    {
+      "id": "mt3747jtsiw1t",
+      "kind": "sure",
+      "event": "Operação sem nome",
+      "houseA": "Gamdom",
+      "houseB": "Pinnacle",
+      "oddA": 2.46,
+      "oddB": 1.653,
+      "total": 956.04,
+      "stakeA": 356.04,
+      "stakeB": 600,
+      "lucroA": -80.18159999999989,
+      "lucroB": 35.760000000000105,
+      "lucro": -80.18159999999989,
+      "roi": -8.386845738672012,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-21T13:50",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T17:00:50.116Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T16:50:14.597Z"
+  "updatedAt": "2026-08-21T17:00:50.127Z"
 }
