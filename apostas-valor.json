@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9672.15,
+      "value": 11262.81,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T16:39:38.732Z"
+      "updatedAt": "2026-08-21T16:50:14.597Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4778,8 +4778,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 183.65,
-      "updatedAt": "2026-08-21T16:33:14.234Z",
+      "value": -0.02,
+      "updatedAt": "2026-08-21T16:50:14.585Z",
       "currency": "USD"
     },
     {
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 600,
-      "updatedAt": "2026-08-21T01:57:40.616Z",
+      "value": 475.4,
+      "updatedAt": "2026-08-21T16:50:14.586Z",
       "currency": "USD"
     },
     {
@@ -11546,9 +11546,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T16:39:38.731Z"
+    },
+    {
+      "id": "mt36ql6fvs9r8",
+      "kind": "sure",
+      "event": "Shabab Al-Ahli vs Al Dhafra: BTTS",
+      "houseA": "Kalshi",
+      "houseB": "Bookmaker",
+      "oddA": 1.757,
+      "oddB": 2.59,
+      "total": 1590.6616248648647,
+      "stakeA": 947.7371999999999,
+      "stakeB": 642.9244248648648,
+      "lucroA": 74.51263553513513,
+      "lucroB": 74.51263553513513,
+      "lucro": 74.51263553513513,
+      "roi": 4.6843800322061195,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-21T11:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T16:50:14.587Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T16:39:38.732Z"
+  "updatedAt": "2026-08-21T16:50:14.597Z"
 }
