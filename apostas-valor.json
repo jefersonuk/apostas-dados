@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 0,
-      "updatedAt": "2026-08-20T11:42:36.008Z"
+      "value": -480,
+      "updatedAt": "2026-08-21T15:26:50.564Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4925.35,
+      "value": 6405.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T14:49:10.879Z"
+      "updatedAt": "2026-08-21T15:26:50.569Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0.07,
+      "value": -999.93,
       "currency": "BRL",
-      "updatedAt": "2026-08-21T13:57:45.638Z"
+      "updatedAt": "2026-08-21T15:26:50.563Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11486,9 +11486,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T14:49:10.878Z"
+    },
+    {
+      "id": "mt33rc1ugwfhs",
+      "kind": "sure",
+      "event": "SFK Holešov x Batov",
+      "houseA": "Ivibet",
+      "houseB": "Bet365",
+      "oddA": 1.63,
+      "oddB": 3.4,
+      "total": 1480,
+      "stakeA": 1000,
+      "stakeB": 480,
+      "lucroA": 150,
+      "lucroB": 152,
+      "lucro": 150,
+      "roi": 10.135135135135135,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-22T11:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T15:26:50.564Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T14:49:10.879Z"
+  "updatedAt": "2026-08-21T15:26:50.570Z"
 }
