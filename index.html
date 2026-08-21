@@ -524,6 +524,7 @@
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixA"> Fixar A (balancear)</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixB"> Fixar B (balancear)</label>
         <label class="sc-mode-opt" id="scModeFixCWrap" style="display:none;"><input type="radio" name="scMode" value="fixC"> Fixar C (balancear)</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="lucro"> Lucro desejado</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="livre"> Manual (livre)</label>
       </div>
 
@@ -534,6 +535,10 @@
           <button type="button" class="cur-opt" data-cur="T:USD">US$</button>
         </div>
         <input type="number" id="scTotal" step="0.01" min="0" placeholder="1000">
+      </div>
+      <div id="scLucroWrap" style="display:none;">
+        <label>Lucro desejado (R$)</label>
+        <input type="number" id="scLucro" step="0.01" min="0" placeholder="150">
       </div>
       <div id="scLucroWrap" style="display:none;">
         <label>Lucro desejado (R$)</label>
@@ -1369,6 +1374,13 @@
     else if(vbFilter==='red') arr=arr.filter(o=>o.winner==='RED');
     if(!arr.length){ box.innerHTML='<div class="empty">Nenhuma aposta de valor neste filtro.</div>'; return; }
 
+    // no primeiro render, colapsar todos os dias por padrão
+    if(vbInitCollapsed && arr.length){
+      const dias=[...new Set(arr.map(o=>(o.date||'').slice(0,10)||'—'))];
+      dias.forEach(d=>vbCollapsedDays.add(d));
+      vbInitCollapsed=false;
+      $('vbCollapseBtn').textContent='▸';
+    }
     // agrupa por dia (mais recente primeiro); dentro do dia, por horário
     const byDay={};
     arr.forEach(o=>{ const d=(o.date||'').slice(0,10)||'—'; (byDay[d]=byDay[d]||[]).push(o); });
@@ -1735,9 +1747,13 @@
     // capital preso em surebets ainda não finalizadas, por casa
     const emJogo={};
     (state.surebets||[]).filter(o=>!o.winner).forEach(o=>{
-      if(o.houseA){ const k=o.houseA.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeA; }
-      if(o.houseB){ const k=o.houseB.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeB; }
-      if(o.houseC){ const k=o.houseC.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeC; }
+      if(o.houseA){ const k=o.houseA.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeA||0); }
+      if(o.houseB){ const k=o.houseB.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeB||0); }
+      if(o.houseC){ const k=o.houseC.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeC||0); }
+    });
+    // incluir invertidas em aberto
+    (state.invertidos||[]).filter(o=>!o.resultado).forEach(o=>{
+      if(o.house){ const k=o.house.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.total||0); }
     });
     // ordenar por saldo decrescente (maior primeiro), sem mutar o array original
     // ordena pelo SALDO TOTAL (disponível + o que está comprometido em apostas em andamento);
@@ -1745,6 +1761,13 @@
     const jogoDe=b=>emJogo[(b.name||'').trim().toLowerCase()]||0;
     const totalDe=b=>balBRL(b)+jogoDe(b);
     const ordenadas=[...state.balances].sort((a,b)=>{
+      // linhas automaticas ficam no final
+      if(a.auto&&!b.auto) return 1;
+      if(!a.auto&&b.auto) return -1;
+      // quem tem apostas em andamento sobe
+      const jA=jogoDe(a)>0?1:0, jB=jogoDe(b)>0?1:0;
+      if(jA!==jB) return jB-jA;
+      // dentro do grupo, ordena por saldo
       const d=totalDe(b)-totalDe(a);
       if(Math.abs(d)>0.005) return d;
       return jogoDe(b)-jogoDe(a);
@@ -1904,7 +1927,7 @@
     houseA:$('scHouseA'), houseB:$('scHouseB'), houseC:$('scHouseC'),
     total:$('scTotal'), stakeA:$('scStakeA'), stakeB:$('scStakeB'), stakeC:$('scStakeC'),
     curA:$('scCurA'), curB:$('scCurB'), curC:$('scCurC'),
-    totalWrap:$('scTotalWrap'), lucroWrap:$('scLucroWrap'), lucro:$('scLucro'), legCWrap:$('scLegCWrap'), stakeCWrap:$('scStakeCWrap'), modeFixCWrap:$('scModeFixCWrap'),
+    totalWrap:$('scTotalWrap'), lucro:$('scLucro'), lucroWrap:$('scLucroWrap'), lucro:$('scLucro'), legCWrap:$('scLegCWrap'), stakeCWrap:$('scStakeCWrap'), modeFixCWrap:$('scModeFixCWrap'),
     result:$('scResult'), event:$('scEvent'), date:$('scDate'), register:$('scRegisterBtn')
   };
   let scMode='total';       // 'total' | 'fixA' | 'fixB' | 'fixC' | 'livre'
@@ -1993,6 +2016,7 @@
   function updateSurebetCalc(){
     scMode=scGetMode(); scLegs=scGetLegs();
     scEls.totalWrap.style.display=(scMode==='total')?'block':'none';
+    $('scLucroWrap').style.display=(scMode==='lucro')?'block':'none';
     scEls.lucroWrap.style.display=(scMode==='lucro')?'block':'none';
     scEls.legCWrap.style.display=(scLegs===3)?'block':'none';
     scEls.stakeCWrap.style.display=(scLegs===3)?'block':'none';
@@ -2003,6 +2027,7 @@
     }
     const r=computeSurebet();
     if(!r){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as odds e os valores para ver o resultado de cada cenário.</span>'; scLast=null; return; }
+    if(r.semValor){ scEls.result.innerHTML='<span style="color:var(--red)">⚠ Sem surebet — a soma dos inversos ('+r.sumInv.toFixed(4)+') é ≥ 1. Não há lucro possível.</span>'; scLast=null; return; }
     if(r.semValor){
       const falta=((r.sumInv-1)*100);
       scEls.result.innerHTML=`<div style="color:var(--red);font-weight:600;">✗ Não há surebet nessas odds</div>`+
@@ -2082,7 +2107,7 @@
     aplicarStakes(novaOp);
     touch(novaOp);
     state.surebets.push(novaOp);
-    scEls.oddA.value=''; scEls.oddB.value=''; scEls.oddC.value=''; scEls.total.value='';
+    scEls.oddA.value=''; scEls.oddB.value=''; scEls.oddC.value=''; scEls.total.value=''; scEls.lucro.value='';
     scEls.stakeA.value=''; scEls.stakeB.value=''; scEls.stakeC.value='';
     ['A','B','C','T'].forEach(p=>{
       $('scCur'+p).value='BRL';
@@ -2296,6 +2321,7 @@
   let sbEditingId=null, sbOpenDetail=null, sbFilter='all';
   let vbEditingId=null, vbOpenDetail=null;
   let sbCollapsedDays=new Set(), vbCollapsedDays=new Set();
+  let sbInitCollapsed=true, vbInitCollapsed=true;
   // ao abrir, recolhe os dias em que TUDO já foi resolvido; dias com aposta em aberto ficam visíveis
   function recolherResolvidos(){
     const porDia={};
