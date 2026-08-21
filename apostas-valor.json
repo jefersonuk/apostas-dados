@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5797.59,
+      "value": 4001.15,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T02:28:45.792Z"
+      "updatedAt": "2026-08-21T11:47:48.296Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 14.07,
+      "value": 954.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T20:06:50.184Z"
+      "updatedAt": "2026-08-21T11:47:48.295Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4705,8 +4705,8 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 468,
-      "updatedAt": "2026-08-20T19:59:11.418Z"
+      "value": 1324.44,
+      "updatedAt": "2026-08-21T11:47:48.295Z"
     },
     {
       "id": "mslrzo1vux1bp",
@@ -5072,6 +5072,10 @@
     {
       "id": "mt1o8xq87jiw9",
       "at": "2026-08-20T18:34:17.047Z"
+    },
+    {
+      "id": "mt1trkwex3zn6",
+      "at": "2026-08-21T11:47:48.295Z"
     }
   ],
   "surebets": [
@@ -11307,30 +11311,6 @@
       "updatedAt": "2026-08-20T21:43:47.632Z"
     },
     {
-      "id": "mt1trkwex3zn6",
-      "kind": "sure",
-      "event": "Darya Astakova x Rada Zolotareva",
-      "houseA": "Ivibet",
-      "houseB": "Sportybet",
-      "oddA": 2.05,
-      "oddB": 2.25,
-      "total": 1796.4444444444443,
-      "stakeA": 940,
-      "stakeB": 856.4444444444443,
-      "lucroA": 130.55555555555543,
-      "lucroB": 130.55555555555543,
-      "lucro": 130.55555555555543,
-      "roi": 7.26744186046511,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-21T05:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-20T17:59:19.694Z"
-    },
-    {
       "id": "mt1udaozaklbf",
       "kind": "sure",
       "event": "Bilbao x Sevilla",
@@ -11430,5 +11410,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T11:45:43.994Z"
+  "updatedAt": "2026-08-21T11:47:48.296Z"
 }
