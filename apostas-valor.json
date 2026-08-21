@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 12218.85,
+      "value": 11943.45,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T17:00:50.127Z"
+      "updatedAt": "2026-08-21T17:34:26.908Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4840,9 +4840,9 @@
     {
       "id": "mt1hgfsx2fm5e",
       "name": "Donbet",
-      "value": 2.21,
+      "value": 58.95,
       "currency": "USD",
-      "updatedAt": "2026-08-21T14:49:10.878Z"
+      "updatedAt": "2026-08-21T17:34:26.908Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -11466,14 +11466,15 @@
       "lucroB": 15.197999999999979,
       "lucro": 15.197999999999979,
       "roi": 5.518518518518512,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-08-21T13:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-21T14:49:10.878Z"
+      "updatedAt": "2026-08-21T17:34:26.908Z"
     },
     {
       "id": "mt33rc1ugwfhs",
@@ -11598,5 +11599,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T17:06:57.182Z"
+  "updatedAt": "2026-08-21T17:34:26.908Z"
 }
