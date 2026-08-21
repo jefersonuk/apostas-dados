@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 642.97,
-      "updatedAt": "2026-08-19T14:28:37.452Z"
+      "value": 102.97,
+      "updatedAt": "2026-08-21T12:31:51.669Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4001.15,
+      "value": 5156.15,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T11:47:48.296Z"
+      "updatedAt": "2026-08-21T12:31:51.670Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 954.07,
+      "value": 339.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-21T11:47:48.295Z"
+      "updatedAt": "2026-08-21T12:31:51.669Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11413,9 +11413,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T02:28:45.789Z"
+    },
+    {
+      "id": "mt2xib1xdxalu",
+      "kind": "sure",
+      "event": "Minja Kretinga x FK Kauno Zalgiris 2",
+      "houseA": "Betnacional",
+      "houseB": "Ivibet",
+      "oddA": 2.3,
+      "oddB": 2.02,
+      "total": 1155,
+      "stakeA": 540,
+      "stakeB": 615,
+      "lucroA": 87,
+      "lucroB": 87.29999999999995,
+      "lucro": 87,
+      "roi": 7.532467532467532,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-22T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T12:31:51.669Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T12:23:24.525Z"
+  "updatedAt": "2026-08-21T12:31:51.670Z"
 }
