@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6405.35,
+      "value": 8014.15,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T15:26:50.569Z"
+      "updatedAt": "2026-08-21T16:33:14.235Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4681,8 +4681,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 680,
-      "updatedAt": "2026-08-20T14:44:47.829Z"
+      "value": 0,
+      "updatedAt": "2026-08-21T16:33:14.233Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4778,8 +4778,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 363.65,
-      "updatedAt": "2026-08-20T19:56:04.399Z",
+      "value": 183.65,
+      "updatedAt": "2026-08-21T16:33:14.234Z",
       "currency": "USD"
     },
     {
@@ -11498,9 +11498,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T15:26:50.564Z"
+    },
+    {
+      "id": "mt364pvdzqvbl",
+      "kind": "sure",
+      "event": "Shabab Al Ahli Dubai Clube x Al Dhafra SSC",
+      "houseA": "Betesporte",
+      "houseB": "Kalshi",
+      "oddA": 2.5,
+      "oddB": 1.76,
+      "total": 1608.8000000000002,
+      "stakeA": 680,
+      "stakeB": 928.8000000000001,
+      "lucroA": 91.19999999999982,
+      "lucroB": 25.88799999999992,
+      "lucro": 25.88799999999992,
+      "roi": 1.6091496767777171,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-22T11:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T16:33:14.234Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T15:46:40.072Z"
+  "updatedAt": "2026-08-21T16:33:14.235Z"
 }
