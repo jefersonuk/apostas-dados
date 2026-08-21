@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4649.95,
+      "value": 4925.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T13:57:45.639Z"
+      "updatedAt": "2026-08-21T14:49:10.879Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4838,9 +4838,9 @@
     {
       "id": "mt1hgfsx2fm5e",
       "name": "Donbet",
-      "value": 25.38,
+      "value": 2.21,
       "currency": "USD",
-      "updatedAt": "2026-08-21T01:40:18.767Z"
+      "updatedAt": "2026-08-21T14:49:10.878Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4866,9 +4866,9 @@
     {
       "id": "mt2bm7uqw5ljd",
       "name": "Rollbit",
-      "value": 30.12,
+      "value": 0.12,
       "currency": "USD",
-      "updatedAt": "2026-08-21T02:28:45.789Z"
+      "updatedAt": "2026-08-21T14:49:10.878Z"
     },
     {
       "id": "mt2x7fqlwljjc",
@@ -11462,9 +11462,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T13:57:45.638Z"
+    },
+    {
+      "id": "mt32ewguaoert",
+      "kind": "sure",
+      "event": "Frankfurter x SV Union Halle",
+      "houseA": "Donbet",
+      "houseB": "Rollbit",
+      "oddA": 2.44,
+      "oddB": 1.87,
+      "total": 275.4,
+      "stakeA": 120,
+      "stakeB": 155.39999999999998,
+      "lucroA": 17.400000000000034,
+      "lucroB": 15.197999999999979,
+      "lucro": 15.197999999999979,
+      "roi": 5.518518518518512,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-21T13:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T14:49:10.878Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T13:57:45.639Z"
+  "updatedAt": "2026-08-21T14:49:10.879Z"
 }
