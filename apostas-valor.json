@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5170.23,
+      "value": 5797.59,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T01:57:22.934Z"
+      "updatedAt": "2026-08-21T02:28:45.792Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4728,9 +4728,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 254.24,
+      "value": 203.24,
       "currency": "USD",
-      "updatedAt": "2026-08-21T01:50:23.917Z"
+      "updatedAt": "2026-08-21T02:28:45.789Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4866,9 +4866,9 @@
     {
       "id": "mt2bm7uqw5ljd",
       "name": "Rollbit",
-      "value": 100,
+      "value": 30.12,
       "currency": "USD",
-      "updatedAt": "2026-08-21T02:19:02.594Z"
+      "updatedAt": "2026-08-21T02:28:45.789Z"
     }
   ],
   "aportes": [
@@ -11402,9 +11402,33 @@
         "resultado": "B"
       },
       "updatedAt": "2026-08-21T01:57:22.934Z"
+    },
+    {
+      "id": "mt2bypukkwugu",
+      "kind": "sure",
+      "event": "Geelong Cats – Richmond",
+      "houseA": "Rollbit",
+      "houseB": "Overtimemarkets",
+      "oddA": 1.81,
+      "oddB": 2.48,
+      "total": 627.3591712707182,
+      "stakeA": 362.66917127071827,
+      "stakeB": 264.69,
+      "lucroA": 29.072028729281897,
+      "lucroB": 29.072028729281783,
+      "lucro": 29.072028729281783,
+      "roi": 4.6340326340326365,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-22T06:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-21T02:28:45.789Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T02:19:02.595Z"
+  "updatedAt": "2026-08-21T02:28:45.792Z"
 }
