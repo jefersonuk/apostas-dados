@@ -4577,7 +4577,7 @@
       "value": 11943.45,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-21T17:34:26.908Z"
+      "updatedAt": "2026-08-21T18:09:02.731Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4842,7 +4842,7 @@
       "name": "Donbet",
       "value": 58.95,
       "currency": "USD",
-      "updatedAt": "2026-08-21T17:34:26.908Z"
+      "updatedAt": "2026-08-21T18:09:02.731Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -11474,7 +11474,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-21T17:34:26.908Z"
+      "updatedAt": "2026-08-21T18:09:02.731Z"
     },
     {
       "id": "mt33rc1ugwfhs",
@@ -11599,5 +11599,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T17:34:26.908Z"
+  "updatedAt": "2026-08-21T18:09:02.731Z"
 }
