@@ -4498,8 +4498,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": -480,
-      "updatedAt": "2026-08-21T15:26:50.564Z"
+      "value": 20,
+      "updatedAt": "2026-08-21T15:36:59.118Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": -999.93,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-21T15:26:50.563Z"
+      "updatedAt": "2026-08-21T15:37:37.366Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4687,7 +4687,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 0
+      "value": 70,
+      "currency": "USD",
+      "updatedAt": "2026-08-21T15:36:41.061Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -11514,5 +11516,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-21T15:35:56.723Z"
+  "updatedAt": "2026-08-21T15:37:37.374Z"
 }
