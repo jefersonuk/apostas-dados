@@ -520,6 +520,7 @@
 
       <div class="sc-mode">
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="total" checked> Distribuir banca</label>
+        <label class="sc-mode-opt"><input type="radio" name="scMode" value="lucro"> 🎯 Lucro desejado</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixA"> Fixar A (balancear)</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixB"> Fixar B (balancear)</label>
         <label class="sc-mode-opt" id="scModeFixCWrap" style="display:none;"><input type="radio" name="scMode" value="fixC"> Fixar C (balancear)</label>
@@ -533,6 +534,11 @@
           <button type="button" class="cur-opt" data-cur="T:USD">US$</button>
         </div>
         <input type="number" id="scTotal" step="0.01" min="0" placeholder="1000">
+      </div>
+      <div id="scLucroWrap" style="display:none;">
+        <label>Lucro desejado (R$)</label>
+        <input type="number" id="scLucro" step="0.01" min="0" placeholder="150.00">
+        <div class="footnote" style="margin-top:2px;">Os stakes são calculados para render exatamente este lucro, independente de qual perna vencer.</div>
       </div>
       <input type="hidden" id="scCurA" value="BRL">
       <input type="hidden" id="scCurB" value="BRL">
@@ -758,7 +764,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260819-1000';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260819-1400';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1734,10 +1740,19 @@
       if(o.houseC){ const k=o.houseC.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+o.stakeC; }
     });
     // ordenar por saldo decrescente (maior primeiro), sem mutar o array original
-    const ordenadas=[...state.balances].sort((a,b)=>balBRL(b)-balBRL(a));
+    // ordena pelo SALDO TOTAL (disponível + o que está comprometido em apostas em andamento);
+    // com o mesmo total, quem tem aposta em aberto aparece primeiro
+    const jogoDe=b=>emJogo[(b.name||'').trim().toLowerCase()]||0;
+    const totalDe=b=>balBRL(b)+jogoDe(b);
+    const ordenadas=[...state.balances].sort((a,b)=>{
+      const d=totalDe(b)-totalDe(a);
+      if(Math.abs(d)>0.005) return d;
+      return jogoDe(b)-jogoDe(a);
+    });
     list.innerHTML=ordenadas.map((b,i)=>{
       const color=HOUSE_COLORS[i%HOUSE_COLORS.length];
       const emBRL=balBRL(b);
+      const totalCasa=emBRL+(emJogo[b.name.trim().toLowerCase()]||0);
       const pct=total>0?(emBRL/total*100):0;
       const jogo=emJogo[b.name.trim().toLowerCase()]||0;
       const isUSD=b.currency==='USD';
@@ -1889,7 +1904,7 @@
     houseA:$('scHouseA'), houseB:$('scHouseB'), houseC:$('scHouseC'),
     total:$('scTotal'), stakeA:$('scStakeA'), stakeB:$('scStakeB'), stakeC:$('scStakeC'),
     curA:$('scCurA'), curB:$('scCurB'), curC:$('scCurC'),
-    totalWrap:$('scTotalWrap'), legCWrap:$('scLegCWrap'), stakeCWrap:$('scStakeCWrap'), modeFixCWrap:$('scModeFixCWrap'),
+    totalWrap:$('scTotalWrap'), lucroWrap:$('scLucroWrap'), lucro:$('scLucro'), legCWrap:$('scLegCWrap'), stakeCWrap:$('scStakeCWrap'), modeFixCWrap:$('scModeFixCWrap'),
     result:$('scResult'), event:$('scEvent'), date:$('scDate'), register:$('scRegisterBtn')
   };
   let scMode='total';       // 'total' | 'fixA' | 'fixB' | 'fixC' | 'livre'
@@ -1916,7 +1931,15 @@
     const curA=scEls.curA.value, curB=scEls.curB.value, curC=scEls.curC.value;
     const fatA=(curA==='USD')?usdRate():1, fatB=(curB==='USD')?usdRate():1, fatC=(curC==='USD')?usdRate():1;
     let stakeA,stakeB,stakeC=0;
-    if(scMode==='total'){
+    if(scMode==='lucro'){
+      // retorno R tal que R - R*sumInv = lucro  ->  R = lucro/(1-sumInv)
+      const alvo=parseFloat(scEls.lucro.value);
+      if(!(alvo>0)) return null;
+      if(sumInv>=1) return {semValor:true, sumInv, n, oddA, oddB, oddC};   // não há surebet
+      const R=alvo/(1-sumInv);
+      stakeA=R*invA; stakeB=R*invB;
+      if(n===3) stakeC=R*invC;
+    } else if(scMode==='total'){
       const fatT=($('scCurT').value==='USD')?usdRate():1;
       const total=parseFloat(scEls.total.value)*fatT;
       if(!(total>0)) return null;
@@ -1970,6 +1993,7 @@
   function updateSurebetCalc(){
     scMode=scGetMode(); scLegs=scGetLegs();
     scEls.totalWrap.style.display=(scMode==='total')?'block':'none';
+    scEls.lucroWrap.style.display=(scMode==='lucro')?'block':'none';
     scEls.legCWrap.style.display=(scLegs===3)?'block':'none';
     scEls.stakeCWrap.style.display=(scLegs===3)?'block':'none';
     scEls.modeFixCWrap.style.display=(scLegs===3)?'flex':'none';
@@ -1979,9 +2003,17 @@
     }
     const r=computeSurebet();
     if(!r){ scEls.result.innerHTML='<span style="color:var(--muted)">Preencha as odds e os valores para ver o resultado de cada cenário.</span>'; scLast=null; return; }
+    if(r.semValor){
+      const falta=((r.sumInv-1)*100);
+      scEls.result.innerHTML=`<div style="color:var(--red);font-weight:600;">✗ Não há surebet nessas odds</div>`+
+        `<div style="font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:6px;line-height:1.7;">`+
+        `Soma dos inversos: ${r.sumInv.toFixed(4)} (precisa ser &lt; 1,0000)<br>`+
+        `Faltam ${falta.toFixed(2)}% — as odds precisam subir para gerar lucro garantido.</div>`;
+      scLast=null; return;
+    }
     scLast=r;
     // refletir stakes calculados (sem sobrescrever o campo que o usuário está editando)
-    if(scMode==='total'){
+    if(scMode==='total'||scMode==='lucro'){
       scEls.stakeA.value=(r.stakeA/r.fatA).toFixed(2); scEls.stakeB.value=(r.stakeB/r.fatB).toFixed(2);
       if(r.n===3) scEls.stakeC.value=(r.stakeC/r.fatC).toFixed(2);
     } else if(scMode==='fixA'){
@@ -2014,7 +2046,7 @@
   }
 
   // recalcula ao mudar qualquer campo
-  ['scOddA','scOddB','scOddC','scTotal','scStakeA','scStakeB','scStakeC','scHouseA','scHouseB','scHouseC'].forEach(id=>{
+  ['scOddA','scOddB','scOddC','scTotal','scLucro','scStakeA','scStakeB','scStakeC','scHouseA','scHouseB','scHouseC'].forEach(id=>{
     $(id).addEventListener('input',updateSurebetCalc);
   });
   document.querySelectorAll('.cur-opt').forEach(btn=>btn.addEventListener('click',()=>{
@@ -2264,6 +2296,23 @@
   let sbEditingId=null, sbOpenDetail=null, sbFilter='all';
   let vbEditingId=null, vbOpenDetail=null;
   let sbCollapsedDays=new Set(), vbCollapsedDays=new Set();
+  // ao abrir, recolhe os dias em que TUDO já foi resolvido; dias com aposta em aberto ficam visíveis
+  function recolherResolvidos(){
+    const porDia={};
+    (state.surebets||[]).forEach(o=>{
+      const d=(o.date||'').slice(0,10)||'—';
+      const alvo=ehValor(o)?'v':'s';
+      const k=alvo+'|'+d;
+      if(!porDia[k]) porDia[k]={abertas:0};
+      if(!o.winner) porDia[k].abertas++;
+    });
+    Object.entries(porDia).forEach(([k,v])=>{
+      const [tipo,dia]=k.split('|');
+      if(v.abertas===0){
+        if(tipo==='s') sbCollapsedDays.add(dia); else vbCollapsedDays.add(dia);
+      }
+    });
+  }
 
   function renderSurebetList(){
     const list=$('sbList');
@@ -2846,6 +2895,7 @@
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
   if(!$('ivDate').value) $('ivDate').value=nowLocalStr();
   ivRender();
+  recolherResolvidos();
   updateSurebetCalc();
   updateValorCalc();
   setCalcKind('sure');
