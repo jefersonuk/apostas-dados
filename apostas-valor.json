@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2963.9,
+      "value": 3713.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T22:25:26.885Z"
+      "updatedAt": "2026-08-22T22:30:21.917Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2005.07,
+      "value": 1605.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-22T22:25:26.878Z"
+      "updatedAt": "2026-08-22T22:30:21.912Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4875,9 +4875,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 698.24,
+      "value": 348.24,
       "currency": "BRL",
-      "updatedAt": "2026-08-22T14:23:14.298Z"
+      "updatedAt": "2026-08-22T22:30:21.913Z"
     },
     {
       "id": "mt3gkfd262zli",
@@ -11785,9 +11785,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T22:25:26.878Z"
+    },
+    {
+      "id": "mt4ybu8n487hp",
+      "kind": "sure",
+      "event": "CTBC Flying Oyster – Team Secret Whales",
+      "houseA": "Ivibet",
+      "houseB": "Shuffle",
+      "oddA": 1.96,
+      "oddB": 2.25,
+      "total": 750,
+      "stakeA": 400,
+      "stakeB": 350,
+      "lucroA": 34,
+      "lucroB": 37.5,
+      "lucro": 34,
+      "roi": 4.533333333333333,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-23T06:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T22:30:21.913Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T22:25:26.885Z"
+  "updatedAt": "2026-08-22T22:30:21.917Z"
 }
