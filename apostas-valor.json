@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8812.01,
+      "value": 9982.01,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T14:07:09.713Z"
+      "updatedAt": "2026-08-22T14:21:54.849Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1922,
-      "updatedAt": "2026-08-21T17:06:57.182Z"
+      "value": 1137,
+      "updatedAt": "2026-08-22T14:21:54.848Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4847,9 +4847,9 @@
     {
       "id": "mt1hgn4qd7j3a",
       "name": "Leon",
-      "value": 439.65,
+      "value": 54.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-21T21:25:23.269Z"
+      "updatedAt": "2026-08-22T14:21:54.848Z"
     },
     {
       "id": "mt1udaozeymdf",
@@ -11657,9 +11657,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-21T21:25:23.270Z"
+    },
+    {
+      "id": "mt4gvorjsobb3",
+      "kind": "sure",
+      "event": "OFK SIM Raslavice – Kezmarok",
+      "houseA": "Leon",
+      "houseB": "Pinnacle",
+      "oddA": 4,
+      "oddB": 1.943,
+      "total": 1170,
+      "stakeA": 385,
+      "stakeB": 785,
+      "lucroA": 370,
+      "lucroB": 355.2550000000001,
+      "lucro": 355.2550000000001,
+      "roi": 30.363675213675222,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-22T11:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T14:21:54.848Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T14:20:20.252Z"
+  "updatedAt": "2026-08-22T14:21:54.849Z"
 }
