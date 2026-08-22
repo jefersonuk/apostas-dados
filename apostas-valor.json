@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9231.24,
+      "value": 10025.03,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T14:51:05.170Z"
+      "updatedAt": "2026-08-22T15:18:29.857Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4707,8 +4707,8 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 2259.4,
-      "updatedAt": "2026-08-22T14:05:06.074Z"
+      "value": 1979.61,
+      "updatedAt": "2026-08-22T15:18:29.846Z"
     },
     {
       "id": "mslrzo1vux1bp",
@@ -4884,6 +4884,12 @@
       "name": "Sportbook",
       "value": -256.5,
       "updatedAt": "2026-08-21T21:25:23.270Z"
+    },
+    {
+      "id": "mt4iwgd3malqr",
+      "name": "Jack",
+      "value": -514,
+      "updatedAt": "2026-08-22T15:18:29.848Z"
     }
   ],
   "aportes": [
@@ -11731,9 +11737,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T14:51:05.165Z"
+    },
+    {
+      "id": "mt4iwgcy3qsxm",
+      "kind": "sure",
+      "event": "FC Cincinnati – Seattle Sounders",
+      "houseA": "Sportybet",
+      "houseB": "Jack",
+      "oddA": 3.27,
+      "oddB": 1.78,
+      "total": 793.7920489296636,
+      "stakeA": 279.79204892966357,
+      "stakeB": 514,
+      "lucroA": 121.12795107033628,
+      "lucroB": 121.1279510703364,
+      "lucro": 121.12795107033628,
+      "roi": 15.259405940594045,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-22T20:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T15:18:29.848Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T14:51:05.171Z"
+  "updatedAt": "2026-08-22T15:18:29.857Z"
 }
