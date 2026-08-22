@@ -4561,8 +4561,8 @@
     {
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
-      "value": 562,
-      "updatedAt": "2026-08-18T19:39:44.083Z"
+      "value": 0,
+      "updatedAt": "2026-08-22T22:57:32.745Z"
     },
     {
       "id": "mrvd6n3x6xs48",
@@ -11838,5 +11838,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T22:54:04.527Z"
+  "updatedAt": "2026-08-22T22:57:32.745Z"
 }
