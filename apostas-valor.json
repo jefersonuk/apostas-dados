@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9074.36,
+      "value": 9231.24,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T14:38:03.312Z"
+      "updatedAt": "2026-08-22T14:51:05.170Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4681,8 +4681,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 0,
-      "updatedAt": "2026-08-21T16:33:14.233Z"
+      "value": -75,
+      "updatedAt": "2026-08-22T14:51:05.163Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 15.93,
-      "updatedAt": "2026-08-22T14:38:03.310Z",
+      "value": 0,
+      "updatedAt": "2026-08-22T14:51:05.164Z",
       "currency": "USD"
     },
     {
@@ -11707,9 +11707,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T14:38:03.310Z"
+    },
+    {
+      "id": "mt4hx7bdu00h6",
+      "kind": "sure",
+      "event": "Athletic Bilbao – Sevilla FC",
+      "houseA": "Betesporte",
+      "houseB": "Duelbits",
+      "oddA": 2.4,
+      "oddB": 2.1,
+      "total": 156.8802,
+      "stakeA": 75,
+      "stakeB": 81.88019999999999,
+      "lucroA": 23.119799999999998,
+      "lucroB": 15.068219999999968,
+      "lucro": 15.068219999999968,
+      "roi": 9.604921462364254,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-22T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T14:51:05.165Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T14:38:03.312Z"
+  "updatedAt": "2026-08-22T14:51:05.171Z"
 }
