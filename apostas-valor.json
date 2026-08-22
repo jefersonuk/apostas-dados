@@ -4888,8 +4888,8 @@
     {
       "id": "mt4iwgd3malqr",
       "name": "Jack",
-      "value": -514,
-      "updatedAt": "2026-08-22T15:18:29.848Z"
+      "value": 0,
+      "updatedAt": "2026-08-22T21:35:58.228Z"
     }
   ],
   "aportes": [
@@ -11773,5 +11773,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T21:34:27.527Z"
+  "updatedAt": "2026-08-22T21:35:58.228Z"
 }
