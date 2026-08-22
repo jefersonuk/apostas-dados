@@ -4792,9 +4792,9 @@
     {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
-      "value": 577.5,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-18T16:28:57.606Z"
+      "updatedAt": "2026-08-22T22:54:04.527Z"
     },
     {
       "id": "msxe0rrbq4jmy",
@@ -11838,5 +11838,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T22:54:02.484Z"
+  "updatedAt": "2026-08-22T22:54:04.527Z"
 }
