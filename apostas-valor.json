@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8886.98,
+      "value": 9074.36,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T14:23:35.162Z"
+      "updatedAt": "2026-08-22T14:38:03.312Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4840,9 +4840,9 @@
     {
       "id": "mt1hgfsx2fm5e",
       "name": "Donbet",
-      "value": 58.95,
+      "value": 39.49,
       "currency": "USD",
-      "updatedAt": "2026-08-21T18:09:02.731Z"
+      "updatedAt": "2026-08-22T14:38:03.310Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 32.93,
-      "updatedAt": "2026-08-20T20:05:54.832Z",
+      "value": 15.93,
+      "updatedAt": "2026-08-22T14:38:03.310Z",
       "currency": "USD"
     },
     {
@@ -11683,9 +11683,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T14:21:54.848Z"
+    },
+    {
+      "id": "mt4hgg192sy0f",
+      "kind": "sure",
+      "event": "OGC Nice – FC Lorient",
+      "houseA": "Donbet",
+      "houseB": "Duelbits",
+      "oddA": 2.1,
+      "oddB": 2.36,
+      "total": 187.38,
+      "stakeA": 100,
+      "stakeB": 87.38,
+      "lucroA": 22.620000000000005,
+      "lucroB": 18.836799999999982,
+      "lucro": 18.836799999999982,
+      "roi": 10.052727078663668,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-22T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T14:38:03.310Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T14:23:35.162Z"
+  "updatedAt": "2026-08-22T14:38:03.312Z"
 }
