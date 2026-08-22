@@ -4606,8 +4606,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 500,
-      "updatedAt": "2026-08-20T14:24:38.542Z"
+      "value": 0,
+      "updatedAt": "2026-08-22T22:59:56.220Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -11838,5 +11838,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T22:57:32.745Z"
+  "updatedAt": "2026-08-22T22:59:56.220Z"
 }
