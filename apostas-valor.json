@@ -4868,9 +4868,9 @@
     {
       "id": "mt2bm7uqw5ljd",
       "name": "Rollbit",
-      "value": -69.87,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-08-21T20:34:17.837Z"
+      "updatedAt": "2026-08-22T21:31:55.145Z"
     },
     {
       "id": "mt2x7fqlwljjc",
@@ -11773,5 +11773,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T21:31:33.700Z"
+  "updatedAt": "2026-08-22T21:31:55.145Z"
 }
