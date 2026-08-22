@@ -4554,9 +4554,9 @@
     {
       "id": "mrqgbm24pa9kf",
       "name": "Betsson",
-      "value": 0,
+      "value": 78.3,
       "currency": "BRL",
-      "updatedAt": "2026-08-20T20:05:19.216Z"
+      "updatedAt": "2026-08-22T21:45:47.080Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4763,10 +4763,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 298.3,
+      "value": 220,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T21:45:10.168Z"
+      "updatedAt": "2026-08-22T21:45:47.081Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5115,6 +5115,10 @@
     {
       "id": "msxw60ri4es9o",
       "at": "2026-08-22T21:45:10.166Z"
+    },
+    {
+      "id": "msxnqo5sjrest",
+      "at": "2026-08-22T21:45:47.080Z"
     }
   ],
   "surebets": [
@@ -10057,29 +10061,6 @@
       "sport": "Futebol"
     },
     {
-      "id": "msxnqo5sjrest",
-      "kind": "valor",
-      "event": "Sporting CP – Alverca (2 HNB)",
-      "houseA": "Betsson",
-      "oddA": 3.3,
-      "stakeA": 78.3,
-      "curA": "BRL",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-22T16:30",
-      "total": 78.3,
-      "lucroA": 180.08999999999997,
-      "lucroRed": -78.3,
-      "lucro": 180.08999999999997,
-      "roi": 229.99999999999997,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
-      "market": "1X2 / Resultado",
-      "sport": "Futebol"
-    },
-    {
       "id": "msxntvwetv38o",
       "kind": "valor",
       "event": "Lehetka x Fills (mais de 15.5 aces)",
@@ -11759,5 +11740,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T21:45:10.168Z"
+  "updatedAt": "2026-08-22T21:45:47.081Z"
 }
