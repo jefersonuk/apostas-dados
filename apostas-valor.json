@@ -4820,9 +4820,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 50,
+      "value": 0.1,
       "currency": "USD",
-      "updatedAt": "2026-08-19T20:06:04.626Z"
+      "updatedAt": "2026-08-22T21:32:56.610Z"
     },
     {
       "id": "mt0mdztl9t7mq",
@@ -4849,7 +4849,7 @@
       "name": "Leon",
       "value": 567.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-22T14:23:35.162Z"
+      "updatedAt": "2026-08-22T21:32:56.610Z"
     },
     {
       "id": "mt1udaozeymdf",
@@ -4882,8 +4882,8 @@
     {
       "id": "mt3gkfd262zli",
       "name": "Sportbook",
-      "value": -256.5,
-      "updatedAt": "2026-08-21T21:25:23.270Z"
+      "value": 0,
+      "updatedAt": "2026-08-22T21:32:56.610Z"
     },
     {
       "id": "mt4iwgd3malqr",
@@ -11651,7 +11651,7 @@
       "kind": "sure",
       "event": "Udinese Sub 19 – Salernitana Sub 19",
       "houseA": "Leon",
-      "houseB": "Sportbook",
+      "houseB": "Sportmarket",
       "oddA": 2.7,
       "oddB": 2,
       "total": 446.5,
@@ -11669,7 +11669,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-22T14:23:35.162Z"
+      "updatedAt": "2026-08-22T21:32:56.610Z"
     },
     {
       "id": "mt4gvorjsobb3",
@@ -11773,5 +11773,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T21:31:55.145Z"
+  "updatedAt": "2026-08-22T21:32:56.610Z"
 }
