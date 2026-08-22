@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2566.31,
+      "value": 2963.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T22:20:20.415Z"
+      "updatedAt": "2026-08-22T22:25:26.885Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2245.07,
+      "value": 2005.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-22T21:46:27.871Z"
+      "updatedAt": "2026-08-22T22:25:26.878Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 204.25,
-      "updatedAt": "2026-08-22T21:31:33.700Z",
+      "value": 173.59,
+      "updatedAt": "2026-08-22T22:25:26.878Z",
       "currency": "USD"
     },
     {
@@ -11761,9 +11761,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T22:04:37.878Z"
+    },
+    {
+      "id": "mt4y5il9xocma",
+      "kind": "sure",
+      "event": "Atletico San Luis – Pachuca",
+      "houseA": "Duelbits",
+      "houseB": "Ivibet",
+      "oddA": 2.65,
+      "oddB": 1.77,
+      "total": 397.5924,
+      "stakeA": 157.5924,
+      "stakeB": 240,
+      "lucroA": 20.027459999999962,
+      "lucroB": 27.207600000000014,
+      "lucro": 20.027459999999962,
+      "roi": 5.037183809348459,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-23T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T22:25:26.878Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T22:21:03.476Z"
+  "updatedAt": "2026-08-22T22:25:26.885Z"
 }
