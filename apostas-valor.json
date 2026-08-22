@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2044.35,
+      "value": 3522.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T21:30:54.742Z"
+      "updatedAt": "2026-08-22T22:04:37.884Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4707,8 +4707,8 @@
     {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
-      "value": 1979.61,
-      "updatedAt": "2026-08-22T15:18:29.846Z"
+      "value": 1529.61,
+      "updatedAt": "2026-08-22T22:04:37.874Z"
     },
     {
       "id": "mslrzo1vux1bp",
@@ -4888,8 +4888,8 @@
     {
       "id": "mt4iwgd3malqr",
       "name": "Jack",
-      "value": 0,
-      "updatedAt": "2026-08-22T21:35:58.228Z"
+      "value": -1028,
+      "updatedAt": "2026-08-22T22:04:37.878Z"
     }
   ],
   "aportes": [
@@ -11736,9 +11736,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T15:18:29.848Z"
+    },
+    {
+      "id": "mt4xequppqqin",
+      "kind": "sure",
+      "event": "New York Red Bulls – Chicago Fire",
+      "houseA": "Sportybet",
+      "houseB": "Jack",
+      "oddA": 2.74,
+      "oddB": 1.85,
+      "total": 1478,
+      "stakeA": 450,
+      "stakeB": 1028,
+      "lucroA": -245,
+      "lucroB": 423.8000000000002,
+      "lucro": -245,
+      "roi": -16.57645466847091,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-22T20:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T22:04:37.878Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T21:47:38.215Z"
+  "updatedAt": "2026-08-22T22:04:37.884Z"
 }
