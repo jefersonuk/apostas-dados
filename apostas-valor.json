@@ -4813,9 +4813,9 @@
     {
       "id": "msyprvso2ird4",
       "name": "F12bet",
-      "value": 487.5,
+      "value": 592.5,
       "currency": "BRL",
-      "updatedAt": "2026-08-19T13:18:12.404Z"
+      "updatedAt": "2026-08-22T21:38:35.346Z"
     },
     {
       "id": "mt0iuq8ibqnbd",
@@ -11773,5 +11773,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T21:38:18.301Z"
+  "updatedAt": "2026-08-22T21:38:35.346Z"
 }
