@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3713.9,
+      "value": 4349.66,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T22:30:21.917Z"
+      "updatedAt": "2026-08-22T22:35:07.999Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4635,15 +4635,15 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 673.97,
-      "updatedAt": "2026-08-20T21:43:47.632Z"
+      "value": 288.21,
+      "updatedAt": "2026-08-22T22:35:07.994Z"
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1605.07,
+      "value": 1355.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-22T22:30:21.912Z"
+      "updatedAt": "2026-08-22T22:35:07.994Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11809,9 +11809,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T22:30:21.913Z"
+    },
+    {
+      "id": "mt4yhyzdxroev",
+      "kind": "sure",
+      "event": "Portsmouth Bombers FC – CCCUL Dublanc FC",
+      "houseA": "Casinozer",
+      "houseB": "Ivibet",
+      "oddA": 1.87,
+      "oddB": 2.85,
+      "total": 635.76,
+      "stakeA": 385.76,
+      "stakeB": 250,
+      "lucroA": 85.61120000000005,
+      "lucroB": 76.74000000000001,
+      "lucro": 76.74000000000001,
+      "roi": 12.070592676481692,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-23T19:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-22T22:35:07.994Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T22:30:21.917Z"
+  "updatedAt": "2026-08-22T22:35:07.999Z"
 }
