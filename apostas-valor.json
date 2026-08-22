@@ -4763,10 +4763,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 323.3,
+      "value": 298.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T14:05:50.399Z"
+      "updatedAt": "2026-08-22T21:44:58.398Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -10253,7 +10253,7 @@
       "sport": "Futebol",
       "market": "Escanteios",
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-08-22T15:15",
       "total": 25,
       "lucroA": 135,
@@ -10261,9 +10261,10 @@
       "lucro": 135,
       "roi": 540,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-08-17T23:55:27.969Z"
+      "updatedAt": "2026-08-22T21:44:58.398Z"
     },
     {
       "id": "msxwb950s8703",
@@ -11778,5 +11779,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T21:39:17.610Z"
+  "updatedAt": "2026-08-22T21:44:58.398Z"
 }
