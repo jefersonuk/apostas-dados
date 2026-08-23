@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6393.51,
+      "value": 5869.23,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T19:59:53.574Z"
+      "updatedAt": "2026-08-23T20:55:32.006Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4888,8 +4888,8 @@
     {
       "id": "mt642lcd1mdgd",
       "name": "Jackbit",
-      "value": 487.25,
-      "updatedAt": "2026-08-23T20:13:24.686Z",
+      "value": 593.4,
+      "updatedAt": "2026-08-23T20:55:32.005Z",
       "currency": "USD"
     }
   ],
@@ -12021,14 +12021,15 @@
       "lucroB": 21.331000000000017,
       "lucro": 19.274999999999977,
       "roi": 3.67647058823529,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "USD",
       "date": "2026-08-23T15:45",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-23T17:58:54.349Z"
+      "updatedAt": "2026-08-23T20:55:32.005Z"
     },
     {
       "id": "mt649tjmyko7d",
@@ -12081,5 +12082,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T20:15:49.128Z"
+  "updatedAt": "2026-08-23T20:55:32.006Z"
 }
