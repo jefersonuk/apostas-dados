@@ -4886,13 +4886,6 @@
       "updatedAt": "2026-08-22T21:32:56.610Z"
     },
     {
-      "id": "mt4iwgd3malqr",
-      "name": "Jack",
-      "value": 220,
-      "updatedAt": "2026-08-23T17:47:01.536Z",
-      "currency": "USD"
-    },
-    {
       "id": "mt642lcd1mdgd",
       "name": "Jackbit",
       "value": 487.25,
@@ -5140,6 +5133,10 @@
     {
       "id": "mt4y5il9xocma",
       "at": "2026-08-23T17:06:57.499Z"
+    },
+    {
+      "id": "mt4iwgd3malqr",
+      "at": "2026-08-23T20:14:30.952Z"
     }
   ],
   "surebets": [
@@ -12084,5 +12081,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T20:14:16.886Z"
+  "updatedAt": "2026-08-23T20:14:30.953Z"
 }
