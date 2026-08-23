@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4040.27,
+      "value": 6393.51,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T18:04:31.576Z"
+      "updatedAt": "2026-08-23T19:59:53.574Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3191.05,
-      "updatedAt": "2026-08-23T18:05:28.384Z"
+      "value": 1691.05,
+      "updatedAt": "2026-08-23T19:59:53.568Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4687,9 +4687,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 1,
+      "value": -165,
       "currency": "USD",
-      "updatedAt": "2026-08-21T17:06:57.182Z"
+      "updatedAt": "2026-08-23T19:59:53.570Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -12055,9 +12055,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T18:05:28.384Z"
+    },
+    {
+      "id": "mt68e6la6oair",
+      "kind": "sure",
+      "event": "Olmecas de Tabasco x Guerreros de Oaxaca",
+      "houseA": "Pinnacle",
+      "houseB": "Gamdom",
+      "oddA": 1.645,
+      "oddB": 2.9,
+      "total": 2353.24,
+      "stakeA": 1500,
+      "stakeB": 853.2399999999999,
+      "lucroA": 114.26000000000022,
+      "lucroB": 121.15599999999995,
+      "lucro": 114.26000000000022,
+      "roi": 4.855433359963294,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-23T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T19:59:53.570Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T18:05:28.384Z"
+  "updatedAt": "2026-08-23T19:59:53.574Z"
 }
