@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4049.71,
+      "value": 3652.12,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T17:06:51.741Z"
+      "updatedAt": "2026-08-23T17:06:57.499Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 583.9,
+      "value": 823.9,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T17:06:51.741Z"
+      "updatedAt": "2026-08-23T17:06:57.498Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 0.09,
-      "updatedAt": "2026-08-23T12:22:51.420Z",
+      "value": 30.75,
+      "updatedAt": "2026-08-23T17:06:57.497Z",
       "currency": "USD"
     },
     {
@@ -5124,6 +5124,10 @@
     {
       "id": "mt2xib1xdxalu",
       "at": "2026-08-23T01:19:30.119Z"
+    },
+    {
+      "id": "mt4y5il9xocma",
+      "at": "2026-08-23T17:06:57.499Z"
     }
   ],
   "surebets": [
@@ -11746,31 +11750,6 @@
       "updatedAt": "2026-08-23T01:36:18.148Z"
     },
     {
-      "id": "mt4y5il9xocma",
-      "kind": "sure",
-      "event": "Atletico San Luis – Pachuca",
-      "houseA": "Duelbits",
-      "houseB": "Ivibet",
-      "oddA": 2.65,
-      "oddB": 1.77,
-      "total": 397.5924,
-      "stakeA": 157.5924,
-      "stakeB": 240,
-      "lucroA": 20.027459999999962,
-      "lucroB": 27.207600000000014,
-      "lucro": 20.027459999999962,
-      "roi": 5.037183809348459,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-08-23T12:00",
-      "aplicado": {
-        "stakes": true,
-        "resultado": null
-      },
-      "updatedAt": "2026-08-23T17:06:51.741Z"
-    },
-    {
       "id": "mt4ybu8n487hp",
       "kind": "sure",
       "event": "CTBC Flying Oyster – Team Secret Whales",
@@ -11970,5 +11949,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:06:51.741Z"
+  "updatedAt": "2026-08-23T17:06:57.499Z"
 }
