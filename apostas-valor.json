@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 553,
-      "updatedAt": "2026-08-23T01:19:52.915Z"
+      "value": 365,
+      "updatedAt": "2026-08-23T01:22:14.580Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4648.16,
+      "value": 4971.16,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T01:19:30.121Z"
+      "updatedAt": "2026-08-23T01:22:14.583Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 440,
+      "value": 305,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T01:19:48.649Z"
+      "updatedAt": "2026-08-23T01:22:14.580Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -11837,9 +11837,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T00:22:21.068Z"
+    },
+    {
+      "id": "mt54gvjookzj3",
+      "kind": "sure",
+      "event": "Arizona Cardinals – Dallas Cowboys",
+      "houseA": "Betnacional",
+      "houseB": "Ivibet",
+      "oddA": 1.8,
+      "oddB": 2.55,
+      "total": 323,
+      "stakeA": 188,
+      "stakeB": 135,
+      "lucroA": 15.400000000000034,
+      "lucroB": 21.25,
+      "lucro": 15.400000000000034,
+      "roi": 4.76780185758515,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-22T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T01:22:14.580Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T01:19:52.916Z"
+  "updatedAt": "2026-08-23T01:22:14.583Z"
 }
