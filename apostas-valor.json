@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 930.28,
+      "value": 2240.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T17:08:33.817Z"
+      "updatedAt": "2026-08-23T17:29:10.321Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4756,9 +4756,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 300,
+      "value": 120.09,
       "currency": "USD",
-      "updatedAt": "2026-08-23T17:27:43.052Z"
+      "updatedAt": "2026-08-23T17:29:10.319Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 694.24,
-      "updatedAt": "2026-08-23T17:17:30.699Z",
+      "value": 619.24,
+      "updatedAt": "2026-08-23T17:29:10.319Z",
       "currency": "USD"
     },
     {
@@ -11953,9 +11953,33 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-23T17:15:21.951Z"
+    },
+    {
+      "id": "mt630crzrparj",
+      "kind": "sure",
+      "event": "Dino Prizmic – Cruz Hewitt",
+      "houseA": "Opinion",
+      "houseB": "Bookmaker",
+      "oddA": 1.89,
+      "oddB": 4.55,
+      "total": 1310.2374,
+      "stakeA": 924.7374,
+      "stakeB": 385.5,
+      "lucroA": 437.5162859999998,
+      "lucroB": 443.7875999999999,
+      "lucro": 437.5162859999998,
+      "roi": 33.39213840178885,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-23T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T17:29:10.319Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:27:43.052Z"
+  "updatedAt": "2026-08-23T17:29:10.321Z"
 }
