@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2240.52,
+      "value": 2759.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T17:29:10.321Z"
+      "updatedAt": "2026-08-23T17:53:03.588Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 928.65,
+      "value": 707.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T17:12:00.096Z"
+      "updatedAt": "2026-08-23T17:53:03.585Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 619.24,
-      "updatedAt": "2026-08-23T17:29:10.319Z",
+      "value": 561.2,
+      "updatedAt": "2026-08-23T17:53:03.585Z",
       "currency": "USD"
     },
     {
@@ -11977,9 +11977,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T17:29:10.319Z"
+    },
+    {
+      "id": "mt63v2ovt1k7p",
+      "kind": "sure",
+      "event": "FK Transinvest – FK Siauliai",
+      "houseA": "Ivibet",
+      "houseB": "Bookmaker",
+      "oddA": 2.43,
+      "oddB": 1.8,
+      "total": 519.3500000000001,
+      "stakeA": 221,
+      "stakeB": 298.3500000000001,
+      "lucroA": 17.67999999999995,
+      "lucroB": 17.680000000000064,
+      "lucro": 17.67999999999995,
+      "roi": 3.404255319148926,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-24T12:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T17:53:03.586Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:47:01.536Z"
+  "updatedAt": "2026-08-23T17:53:03.588Z"
 }
