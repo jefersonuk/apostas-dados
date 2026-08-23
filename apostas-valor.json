@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 553,
-      "updatedAt": "2026-08-23T01:18:29.554Z"
+      "value": 1093,
+      "updatedAt": "2026-08-23T01:19:30.119Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5803.16,
+      "value": 4648.16,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T01:19:17.780Z"
+      "updatedAt": "2026-08-23T01:19:30.121Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": -57.23,
+      "value": 557.77,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T01:19:17.780Z"
+      "updatedAt": "2026-08-23T01:19:30.119Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -5120,6 +5120,10 @@
     {
       "id": "msxnqo5sjrest",
       "at": "2026-08-22T21:45:47.080Z"
+    },
+    {
+      "id": "mt2xib1xdxalu",
+      "at": "2026-08-23T01:19:30.119Z"
     }
   ],
   "surebets": [
@@ -11391,31 +11395,6 @@
       "updatedAt": "2026-08-22T14:07:09.712Z"
     },
     {
-      "id": "mt2xib1xdxalu",
-      "kind": "sure",
-      "event": "Minja Kretinga x FK Kauno Zalgiris 2",
-      "houseA": "Betnacional",
-      "houseB": "Ivibet",
-      "oddA": 2.3,
-      "oddB": 2.02,
-      "total": 1155,
-      "stakeA": 540,
-      "stakeB": 615,
-      "lucroA": 87,
-      "lucroB": 87.29999999999995,
-      "lucro": 87,
-      "roi": 7.532467532467532,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-22T12:00",
-      "aplicado": {
-        "stakes": true,
-        "resultado": null
-      },
-      "updatedAt": "2026-08-23T01:19:17.780Z"
-    },
-    {
       "id": "mt30krvqscb16",
       "kind": "sure",
       "event": "Juarez x Club america",
@@ -11862,5 +11841,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T01:19:17.780Z"
+  "updatedAt": "2026-08-23T01:19:30.121Z"
 }
