@@ -4654,7 +4654,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 3191.05,
-      "updatedAt": "2026-08-23T18:04:31.573Z"
+      "updatedAt": "2026-08-23T18:05:28.384Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,7 +4758,7 @@
       "name": "Opinion",
       "value": 14.23,
       "currency": "USD",
-      "updatedAt": "2026-08-23T18:05:23.187Z"
+      "updatedAt": "2026-08-23T18:05:28.384Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -12040,24 +12040,24 @@
       "houseB": "Pinnacle",
       "oddA": 1.886,
       "oddB": 4.84,
-      "total": 756.1204,
-      "stakeA": 544.1204,
+      "total": 756.12,
+      "stakeA": 544.12,
       "stakeB": 212,
-      "lucroA": 270.0906743999999,
-      "lucroB": 269.9595999999999,
-      "lucro": 269.9595999999999,
-      "roi": 35.7032557248819,
+      "lucroA": 270.0903199999999,
+      "lucroB": 269.9599999999999,
+      "lucro": 269.9599999999999,
+      "roi": 35.703327514151184,
       "winner": null,
       "curA": "USD",
       "curB": "BRL",
-      "date": "2026-08-23T16:00",
+      "date": "2026-08-24T16:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-23T18:04:31.574Z"
+      "updatedAt": "2026-08-23T18:05:28.384Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T18:05:23.187Z"
+  "updatedAt": "2026-08-23T18:05:28.384Z"
 }
