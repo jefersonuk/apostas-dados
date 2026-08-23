@@ -4730,9 +4730,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 160.38,
+      "value": 420.08,
       "currency": "USD",
-      "updatedAt": "2026-08-23T12:22:51.420Z"
+      "updatedAt": "2026-08-23T17:15:21.951Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 612.5,
-      "updatedAt": "2026-08-23T17:08:33.817Z",
+      "value": 352.8,
+      "updatedAt": "2026-08-23T17:15:21.950Z",
       "currency": "USD"
     },
     {
@@ -11939,18 +11939,18 @@
       "lucroB": 113.47240860215061,
       "lucro": 113.47240860215038,
       "roi": 9.290465631929035,
-      "winner": "B",
+      "winner": "A",
       "curA": "USD",
       "curB": "USD",
       "date": "2026-08-23T12:00",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-23T17:08:30.974Z"
+      "updatedAt": "2026-08-23T17:15:21.951Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:12:00.097Z"
+  "updatedAt": "2026-08-23T17:15:21.951Z"
 }
