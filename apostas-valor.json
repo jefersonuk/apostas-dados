@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2699.37,
+      "value": 5947.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T01:42:01.894Z"
+      "updatedAt": "2026-08-23T01:52:34.959Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 300,
-      "updatedAt": "2026-08-22T22:50:51.899Z",
+      "value": 38.04,
+      "updatedAt": "2026-08-23T01:52:34.952Z",
       "currency": "USD"
     },
     {
@@ -4888,8 +4888,8 @@
     {
       "id": "mt4iwgd3malqr",
       "name": "Jack",
-      "value": 548,
-      "updatedAt": "2026-08-23T01:42:01.893Z",
+      "value": 178,
+      "updatedAt": "2026-08-23T01:52:34.950Z",
       "currency": "USD"
     }
   ],
@@ -11888,9 +11888,33 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-23T01:36:08.686Z"
+    },
+    {
+      "id": "mt55jw5hz6mb2",
+      "kind": "sure",
+      "event": "Cardinals de Arizona – Cowboys de Dallas",
+      "houseA": "Jack",
+      "houseB": "Bookmaker",
+      "oddA": 1.77,
+      "oddB": 2.5,
+      "total": 3248.2744000000002,
+      "stakeA": 1901.8,
+      "stakeB": 1346.4744,
+      "lucroA": 117.91159999999991,
+      "lucroB": 117.91159999999991,
+      "lucro": 117.91159999999991,
+      "roi": 3.62997658079625,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-22T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T01:52:34.953Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T01:42:01.894Z"
+  "updatedAt": "2026-08-23T01:52:34.959Z"
 }
