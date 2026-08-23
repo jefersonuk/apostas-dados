@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3652.12,
+      "value": 2430.73,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T17:06:57.499Z"
+      "updatedAt": "2026-08-23T17:08:30.974Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 30.75,
-      "updatedAt": "2026-08-23T17:06:57.497Z",
+      "value": 290.45,
+      "updatedAt": "2026-08-23T17:08:30.973Z",
       "currency": "USD"
     },
     {
@@ -11937,17 +11937,18 @@
       "lucroB": 113.47240860215061,
       "lucro": 113.47240860215038,
       "roi": 9.290465631929035,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "USD",
       "date": "2026-08-23T12:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-23T12:22:51.420Z"
+      "updatedAt": "2026-08-23T17:08:30.974Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:06:57.499Z"
+  "updatedAt": "2026-08-23T17:08:30.974Z"
 }
