@@ -4758,7 +4758,7 @@
       "name": "Opinion",
       "value": 14.23,
       "currency": "USD",
-      "updatedAt": "2026-08-23T18:04:31.571Z"
+      "updatedAt": "2026-08-23T18:05:23.187Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4862,7 +4862,7 @@
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
       "value": 561.2,
-      "updatedAt": "2026-08-23T17:53:03.585Z",
+      "updatedAt": "2026-08-23T18:05:23.187Z",
       "currency": "USD"
     },
     {
@@ -11968,21 +11968,21 @@
       "houseB": "Bookmaker",
       "oddA": 1.89,
       "oddB": 4.55,
-      "total": 1310.2374,
-      "stakeA": 924.7374,
+      "total": 1310.24,
+      "stakeA": 924.74,
       "stakeB": 385.5,
-      "lucroA": 437.5162859999998,
-      "lucroB": 443.7875999999999,
-      "lucro": 437.5162859999998,
-      "roi": 33.39213840178885,
+      "lucroA": 437.5185999999999,
+      "lucroB": 443.78499999999985,
+      "lucro": 437.5185999999999,
+      "roi": 33.39224874832091,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
-      "date": "2026-08-23T16:00",
+      "date": "2026-08-24T16:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-23T17:29:10.319Z"
+      "updatedAt": "2026-08-23T18:05:23.187Z"
     },
     {
       "id": "mt63v2ovt1k7p",
@@ -12059,5 +12059,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T18:04:31.576Z"
+  "updatedAt": "2026-08-23T18:05:23.187Z"
 }
