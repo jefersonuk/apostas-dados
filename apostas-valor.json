@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2828.32,
+      "value": 4049.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T12:19:43.827Z"
+      "updatedAt": "2026-08-23T12:22:51.423Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4730,9 +4730,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 300,
+      "value": 160.38,
       "currency": "USD",
-      "updatedAt": "2026-08-22T22:49:40.845Z"
+      "updatedAt": "2026-08-23T12:22:51.420Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 98.09,
-      "updatedAt": "2026-08-23T12:19:43.823Z",
+      "value": 0.09,
+      "updatedAt": "2026-08-23T12:22:51.420Z",
       "currency": "USD"
     },
     {
@@ -11940,9 +11940,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T12:19:43.823Z"
+    },
+    {
+      "id": "mt5s2fiz1o3mg",
+      "kind": "sure",
+      "event": "Club Atlético de Madrid – Villarreal CF",
+      "houseA": "Overtimemarkets",
+      "houseB": "Duelbits",
+      "oddA": 1.86,
+      "oddB": 2.65,
+      "total": 1221.3855913978493,
+      "stakeA": 717.6655913978493,
+      "stakeB": 503.71999999999997,
+      "lucroA": 113.47240860215038,
+      "lucroB": 113.47240860215061,
+      "lucro": 113.47240860215038,
+      "roi": 9.290465631929035,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-23T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T12:22:51.420Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T12:19:43.827Z"
+  "updatedAt": "2026-08-23T12:22:51.423Z"
 }
