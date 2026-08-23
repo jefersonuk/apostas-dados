@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1327.87,
+      "value": 2828.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T12:12:44.018Z"
+      "updatedAt": "2026-08-23T12:19:43.827Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 211.09,
-      "updatedAt": "2026-08-23T08:19:55.862Z",
+      "value": 98.09,
+      "updatedAt": "2026-08-23T12:19:43.823Z",
       "currency": "USD"
     },
     {
@@ -4888,8 +4888,8 @@
     {
       "id": "mt4iwgd3malqr",
       "name": "Jack",
-      "value": 178,
-      "updatedAt": "2026-08-23T01:52:34.950Z",
+      "value": -0.92,
+      "updatedAt": "2026-08-23T12:19:43.822Z",
       "currency": "USD"
     }
   ],
@@ -11916,9 +11916,33 @@
         "resultado": "B"
       },
       "updatedAt": "2026-08-23T08:22:54.917Z"
+    },
+    {
+      "id": "mt5ryery65dev",
+      "kind": "sure",
+      "event": "Le Havre AC – AS Monaco",
+      "houseA": "Jack",
+      "houseB": "Duelbits",
+      "oddA": 1.8,
+      "oddB": 2.85,
+      "total": 1500.4516666666666,
+      "stakeA": 919.6316666666667,
+      "stakeB": 580.8199999999999,
+      "lucroA": 154.8853333333334,
+      "lucroB": 154.88533333333316,
+      "lucro": 154.88533333333316,
+      "roi": 10.32258064516128,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-23T12:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T12:19:43.823Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T12:12:44.019Z"
+  "updatedAt": "2026-08-23T12:19:43.827Z"
 }
