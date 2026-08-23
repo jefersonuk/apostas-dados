@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2759.87,
+      "value": 3284.15,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T17:53:03.588Z"
+      "updatedAt": "2026-08-23T17:58:54.351Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 47.2,
-      "updatedAt": "2026-08-23T17:46:53.618Z",
+      "value": 0.2,
+      "updatedAt": "2026-08-23T17:58:54.349Z",
       "currency": "USD"
     },
     {
@@ -4891,6 +4891,12 @@
       "value": 220,
       "updatedAt": "2026-08-23T17:47:01.536Z",
       "currency": "USD"
+    },
+    {
+      "id": "mt642lcd1mdgd",
+      "name": "Jackbit",
+      "value": -282.7,
+      "updatedAt": "2026-08-23T17:58:54.349Z"
     }
   ],
   "aportes": [
@@ -12001,9 +12007,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T17:53:03.586Z"
+    },
+    {
+      "id": "mt642lcd978vy",
+      "kind": "sure",
+      "event": "Torino FC – AC Milan",
+      "houseA": "Duelbits",
+      "houseB": "Jackbit",
+      "oddA": 2.25,
+      "oddB": 1.93,
+      "total": 524.28,
+      "stakeA": 241.57999999999998,
+      "stakeB": 282.7,
+      "lucroA": 19.274999999999977,
+      "lucroB": 21.331000000000017,
+      "lucro": 19.274999999999977,
+      "roi": 3.67647058823529,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-23T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T17:58:54.349Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:53:03.588Z"
+  "updatedAt": "2026-08-23T17:58:54.351Z"
 }
