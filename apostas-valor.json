@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3284.15,
+      "value": 4040.27,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T17:58:54.351Z"
+      "updatedAt": "2026-08-23T18:04:31.576Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3403.05,
-      "updatedAt": "2026-08-23T17:15:44.229Z"
+      "value": 3191.05,
+      "updatedAt": "2026-08-23T18:04:31.573Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4756,9 +4756,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 120.09,
+      "value": 14.23,
       "currency": "USD",
-      "updatedAt": "2026-08-23T17:29:10.319Z"
+      "updatedAt": "2026-08-23T18:04:31.571Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -12031,9 +12031,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T17:58:54.349Z"
+    },
+    {
+      "id": "mt649tjmyko7d",
+      "kind": "sure",
+      "event": "Dino Prizmic x Cruz Hewitt",
+      "houseA": "Opinion",
+      "houseB": "Pinnacle",
+      "oddA": 1.886,
+      "oddB": 4.84,
+      "total": 756.1204,
+      "stakeA": 544.1204,
+      "stakeB": 212,
+      "lucroA": 270.0906743999999,
+      "lucroB": 269.9595999999999,
+      "lucro": 269.9595999999999,
+      "roi": 35.7032557248819,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-23T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T18:04:31.574Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:58:54.351Z"
+  "updatedAt": "2026-08-23T18:04:31.576Z"
 }
