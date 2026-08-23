@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4349.66,
+      "value": 4648.16,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-22T22:35:07.999Z"
+      "updatedAt": "2026-08-23T00:22:21.071Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1355.07,
+      "value": 1185.07,
       "currency": "BRL",
-      "updatedAt": "2026-08-22T22:35:07.994Z"
+      "updatedAt": "2026-08-23T00:22:21.067Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4854,8 +4854,8 @@
     {
       "id": "mt1udaozeymdf",
       "name": "Duelbits",
-      "value": 173.59,
-      "updatedAt": "2026-08-22T22:25:26.878Z",
+      "value": 148.59,
+      "updatedAt": "2026-08-23T00:22:21.066Z",
       "currency": "USD"
     },
     {
@@ -11834,9 +11834,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-22T22:35:07.994Z"
+    },
+    {
+      "id": "mt52burs0z3so",
+      "kind": "sure",
+      "event": "Hewen, Tang – Jun, Jiang",
+      "houseA": "Duelbits",
+      "houseB": "Ivibet",
+      "oddA": 2.5,
+      "oddB": 1.88,
+      "total": 298.5,
+      "stakeA": 128.5,
+      "stakeB": 170,
+      "lucroA": 22.75,
+      "lucroB": 21.099999999999966,
+      "lucro": 21.099999999999966,
+      "roi": 7.068676716917912,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-22T22:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T00:22:21.068Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-22T23:13:43.809Z"
+  "updatedAt": "2026-08-23T00:22:21.071Z"
 }
