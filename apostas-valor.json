@@ -4888,8 +4888,8 @@
     {
       "id": "mt4iwgd3malqr",
       "name": "Jack",
-      "value": -0.92,
-      "updatedAt": "2026-08-23T12:19:43.822Z",
+      "value": 220,
+      "updatedAt": "2026-08-23T17:47:01.536Z",
       "currency": "USD"
     }
   ],
@@ -11981,5 +11981,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:46:53.619Z"
+  "updatedAt": "2026-08-23T17:47:01.536Z"
 }
