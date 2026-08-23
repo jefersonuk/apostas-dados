@@ -4875,9 +4875,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 1135.74,
+      "value": 796.33,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T12:12:44.018Z"
+      "updatedAt": "2026-08-23T17:17:52.902Z"
     },
     {
       "id": "mt3gkfd262zli",
@@ -11952,5 +11952,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T17:17:30.700Z"
+  "updatedAt": "2026-08-23T17:17:52.902Z"
 }
