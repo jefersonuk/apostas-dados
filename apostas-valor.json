@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4971.16,
+      "value": 5506.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T01:22:14.583Z"
+      "updatedAt": "2026-08-23T01:25:24.181Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 305,
+      "value": 19.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T01:22:14.580Z"
+      "updatedAt": "2026-08-23T01:25:24.180Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3653.05,
-      "updatedAt": "2026-08-22T22:20:59.347Z"
+      "value": 3403.05,
+      "updatedAt": "2026-08-23T01:25:24.180Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -11861,9 +11861,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T01:22:14.580Z"
+    },
+    {
+      "id": "mt54kxuc7uhhy",
+      "kind": "sure",
+      "event": "Esbjerg fB II – Aarhus Fremad II",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 2.26,
+      "oddB": 1.98,
+      "total": 535.3535353535353,
+      "stakeA": 250,
+      "stakeB": 285.3535353535354,
+      "lucroA": 29.646464646464665,
+      "lucroB": 29.64646464646478,
+      "lucro": 29.646464646464665,
+      "roi": 5.537735849056608,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-22T09:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-23T01:25:24.180Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T01:22:14.583Z"
+  "updatedAt": "2026-08-23T01:25:24.181Z"
 }
