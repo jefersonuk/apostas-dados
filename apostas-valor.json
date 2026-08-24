@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5869.23,
+      "value": 6211.93,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T20:55:32.006Z"
+      "updatedAt": "2026-08-24T00:15:51.661Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4730,9 +4730,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 420.08,
+      "value": 392.08,
       "currency": "USD",
-      "updatedAt": "2026-08-23T17:15:21.951Z"
+      "updatedAt": "2026-08-24T00:15:51.657Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -4891,6 +4891,12 @@
       "value": 593.4,
       "updatedAt": "2026-08-23T20:55:32.005Z",
       "currency": "USD"
+    },
+    {
+      "id": "mt6hjcyvjt5je",
+      "name": "Jack",
+      "value": -198.78,
+      "updatedAt": "2026-08-24T00:15:51.656Z"
     }
   ],
   "aportes": [
@@ -12078,9 +12084,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-23T19:59:53.570Z"
+    },
+    {
+      "id": "mt6hjcyu2f2hu",
+      "kind": "sure",
+      "event": "Racing Club de Avellaneda – CA Boca Juniors",
+      "houseA": "Jack",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.02,
+      "oddB": 2.79,
+      "total": 342.70059405940594,
+      "stakeA": 198.78059405940593,
+      "stakeB": 143.92,
+      "lucroA": 58.83620594059403,
+      "lucroB": 58.83620594059403,
+      "lucro": 58.83620594059403,
+      "roi": 17.16839916839916,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-23T21:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T00:15:51.657Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-23T22:58:26.958Z"
+  "updatedAt": "2026-08-24T00:15:51.661Z"
 }
