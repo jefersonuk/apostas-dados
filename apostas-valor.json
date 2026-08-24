@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-21",
+    "startDate": "2026-08-24",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4577,7 +4577,7 @@
       "value": 8194.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T17:31:24.708Z"
+      "updatedAt": "2026-08-24T19:15:00.453Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1418.92,
+      "value": 2212.03,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T17:31:24.706Z"
+      "updatedAt": "2026-08-24T19:14:56.630Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4982,12 +4982,12 @@
       "updatedAt": "2026-08-23T20:15:49.127Z"
     }
   ],
-  "usdRate": 5.14,
+  "usdRate": 5.15,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-24T17:18:03.527Z",
-  "eurRate": 5.99,
+  "usdRateAt": "2026-08-24T13:49:38.572Z",
+  "eurRate": 6.01,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-08-24T17:18:03.824Z",
+  "eurRateAt": "2026-08-24T13:49:43.729Z",
   "appBuild": "20260819-1400",
   "deleted": [
     {
@@ -12002,7 +12002,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-24T17:19:30.261Z"
+      "updatedAt": "2026-08-24T19:14:56.630Z"
     },
     {
       "id": "mt642lcd978vy",
@@ -12327,5 +12327,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T17:31:24.708Z"
+  "updatedAt": "2026-08-24T19:14:56.630Z"
 }
