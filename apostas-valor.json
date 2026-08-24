@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7047.65,
+      "value": 8194.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T17:30:47.308Z"
+      "updatedAt": "2026-08-24T17:31:24.708Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1744.92,
+      "value": 1418.92,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T17:30:47.304Z"
+      "updatedAt": "2026-08-24T17:31:24.706Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4820,9 +4820,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 155.06,
+      "value": 18.06,
       "currency": "EUR",
-      "updatedAt": "2026-08-24T17:20:15.500Z"
+      "updatedAt": "2026-08-24T17:31:24.706Z"
     },
     {
       "id": "mt0mdztl9t7mq",
@@ -12299,9 +12299,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T17:30:47.304Z"
+    },
+    {
+      "id": "mt7ij34yl39pb",
+      "kind": "sure",
+      "event": "Arthur Weber vs. Tsung-Hao Huang",
+      "houseA": "Sportmarket",
+      "houseB": "Ivibet",
+      "oddA": 1.45,
+      "oddB": 3.65,
+      "total": 1146.633698630137,
+      "stakeA": 820.63,
+      "stakeB": 326.0036986301369,
+      "lucroA": 43.27980136986298,
+      "lucroB": 43.27980136986275,
+      "lucro": 43.27980136986275,
+      "roi": 3.7745098039215463,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-08-25T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T17:31:24.706Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T17:30:47.308Z"
+  "updatedAt": "2026-08-24T17:31:24.708Z"
 }
