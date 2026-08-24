@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 365,
-      "updatedAt": "2026-08-23T01:22:14.580Z"
+      "value": 135,
+      "updatedAt": "2026-08-24T08:41:26.853Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 813.87,
+      "value": 1343.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T08:32:57.972Z"
+      "updatedAt": "2026-08-24T08:41:26.857Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 707.65,
+      "value": 407.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T17:53:03.585Z"
+      "updatedAt": "2026-08-24T08:41:26.853Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -12071,9 +12071,33 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-24T08:14:12.254Z"
+    },
+    {
+      "id": "mt6zljr8l6aos",
+      "kind": "sure",
+      "event": "Peerless SC – The Muslim Inst Wari AC",
+      "houseA": "Betnacional",
+      "houseB": "Ivibet",
+      "oddA": 2.5,
+      "oddB": 1.93,
+      "total": 530,
+      "stakeA": 230,
+      "stakeB": 300,
+      "lucroA": 45,
+      "lucroB": 49,
+      "lucro": 45,
+      "roi": 8.49056603773585,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-24T06:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T08:41:26.854Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T08:35:44.474Z"
+  "updatedAt": "2026-08-24T08:41:26.857Z"
 }
