@@ -4643,7 +4643,7 @@
       "name": "Ivibet",
       "value": 0.1,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T09:58:32.155Z"
+      "updatedAt": "2026-08-24T10:03:45.698Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4820,9 +4820,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 105.86,
+      "value": 77.86,
       "currency": "EUR",
-      "updatedAt": "2026-08-24T10:03:09.219Z"
+      "updatedAt": "2026-08-24T10:03:45.698Z"
     },
     {
       "id": "mt0mdztl9t7mq",
@@ -4882,8 +4882,8 @@
     {
       "id": "mt3gkfd262zli",
       "name": "Sportbook",
-      "value": -167.72,
-      "updatedAt": "2026-08-24T09:45:32.066Z"
+      "value": 0,
+      "updatedAt": "2026-08-24T10:03:45.697Z"
     },
     {
       "id": "mt642lcd1mdgd",
@@ -12151,7 +12151,7 @@
       "id": "mt71vyqn55ica",
       "kind": "sure",
       "event": "Bravo – NK Brezice",
-      "houseA": "Sportbook",
+      "houseA": "Sportmarket",
       "houseB": "Ivibet",
       "oddA": 1.757,
       "oddB": 2.42,
@@ -12169,7 +12169,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-24T09:45:32.067Z"
+      "updatedAt": "2026-08-24T10:03:45.698Z"
     },
     {
       "id": "mt72conqn2bvr",
@@ -12198,5 +12198,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T10:03:09.219Z"
+  "updatedAt": "2026-08-24T10:03:45.698Z"
 }
