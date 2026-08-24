@@ -4763,10 +4763,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 100,
+      "value": 750,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-23T17:11:26.150Z"
+      "updatedAt": "2026-08-24T19:20:00.776Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4840,9 +4840,9 @@
     {
       "id": "mt1hgfsx2fm5e",
       "name": "Donbet",
-      "value": 650,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T16:24:17.469Z"
+      "updatedAt": "2026-08-24T19:20:00.775Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -12323,9 +12323,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T17:31:24.706Z"
+    },
+    {
+      "id": "mt7meqyu1vnu4",
+      "kind": "valor",
+      "event": "Roma X Fiorentina / Fulham x Chelsea",
+      "houseA": "Donbet",
+      "oddA": 1.99,
+      "stakeA": 650,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1x2",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-08-24T16:00",
+      "total": 650,
+      "lucroA": 643.5,
+      "lucroRed": -650,
+      "lucro": 643.5,
+      "roi": 99,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T19:20:00.775Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T19:14:56.630Z"
+  "updatedAt": "2026-08-24T19:20:00.776Z"
 }
