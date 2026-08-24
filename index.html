@@ -363,6 +363,13 @@
         </div>
         <div id="balRateInfo" style="font-size:10px;color:var(--muted-2);font-family:var(--mono);"></div>
       </div>
+      <div><label>Cotação EUR → BRL</label>
+        <div class="sc-stake-row" style="display:flex;gap:5px;">
+          <input type="number" id="balRateEur" step="0.01" placeholder="6.10" style="flex:1;min-width:0;">
+          <button class="btn small" id="balRateEurBtn" type="button" style="white-space:nowrap;padding:8px 10px;">↻</button>
+        </div>
+        <div id="balRateEurInfo" style="font-size:10px;color:var(--muted-2);font-family:var(--mono);"></div>
+      </div>
     </div>
     <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar casa</button>
     <div class="footnote">Ordenado pelo valor <b>convertido em reais</b> — uma conta de US$ 50 (R$ 250) fica acima de uma de R$ 200. Use o botão <b>R$ / US$</b> em cada linha para marcar a moeda da conta. A cotação segue o <b>USDT/BRL</b> de mercado e se atualiza sozinha (botão ↻ para forçar). As operações de surebet debitam e creditam estes saldos automaticamente. Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
@@ -556,6 +563,7 @@
           <div class="cur-toggle" id="curToggleA">
             <button type="button" class="cur-opt active" data-cur="A:BRL">R$</button>
             <button type="button" class="cur-opt" data-cur="A:USD">US$</button>
+            <button type="button" class="cur-opt" data-cur="A:EUR">€</button>
           </div>
           <input type="number" id="scStakeA" step="0.01" min="0" placeholder="—">
         </div>
@@ -564,6 +572,7 @@
           <div class="cur-toggle" id="curToggleB">
             <button type="button" class="cur-opt active" data-cur="B:BRL">R$</button>
             <button type="button" class="cur-opt" data-cur="B:USD">US$</button>
+            <button type="button" class="cur-opt" data-cur="B:EUR">€</button>
           </div>
           <input type="number" id="scStakeB" step="0.01" min="0" placeholder="—">
         </div>
@@ -778,11 +787,14 @@
   function todayStr(){ return new Date().toISOString().slice(0,10); }
   function nowLocalStr(){ const d=new Date(); const off=d.getTimezoneOffset(); const l=new Date(d-off*60000); return l.toISOString().slice(0,16); }
   function fmt(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return 'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function fmtEUR(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return '€ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
   function fmtUSD(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return 'US$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
   function usdRate(){ const r=state.usdRate; return (typeof r==='number'&&r>0)?r:5.19; }
+  function eurRate(){ const r=state.eurRate; return (typeof r==='number'&&r>0)?r:6.10; }
+  function curRate(cur){ return cur==='USD'?usdRate():cur==='EUR'?eurRate():1; }
   // valor de um saldo convertido para BRL
-  function balBRL(b){ return (b.currency==='USD') ? b.value*usdRate() : b.value; }
-  function fmtBal(b){ return (b.currency==='USD') ? fmtUSD(b.value) : fmt(b.value); }
+  function balBRL(b){ return b.value*curRate(b.currency||'BRL'); }
+  function fmtBal(b){ return b.currency==='USD'?fmtUSD(b.value):b.currency==='EUR'?fmtEUR(b.value):fmt(b.value); }
   function fmtSign(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return (v>=0?'+':'')+fmt(v); }
   function fmtPct(n){ return (n>=0?'+':'')+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'%'; }
   function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -797,7 +809,7 @@
 
   function normalize(p){
     const cfg=Object.assign({},DEFAULTS,p.cfg||{});
-    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5.19, usdRateSrc:p.usdRateSrc||'', usdRateAt:p.usdRateAt||'', appBuild:p.appBuild||'', deleted:Array.isArray(p.deleted)?p.deleted:[], surebets:Array.isArray(p.surebets)?p.surebets:[], invertidos:Array.isArray(p.invertidos)?p.invertidos:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5.19, usdRateSrc:p.usdRateSrc||'', usdRateAt:p.usdRateAt||'', eurRate:(typeof p.eurRate==='number'&&p.eurRate>0)?p.eurRate:6.10, eurRateSrc:p.eurRateSrc||'', eurRateAt:p.eurRateAt||'', appBuild:p.appBuild||'', deleted:Array.isArray(p.deleted)?p.deleted:[], surebets:Array.isArray(p.surebets)?p.surebets:[], invertidos:Array.isArray(p.invertidos)?p.invertidos:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
   }
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
@@ -1226,7 +1238,7 @@
 
   function vbCompute(){
     const odd=parseFloat($('vbOdd').value);
-    const fat=($('scCurV').value==='USD')?usdRate():1;
+    const fat=curRate($('scCurV').value);
     const stake=parseFloat($('vbStake').value)*fat;
     if(!(odd>1)||!(stake>0)) return null;
     const prob=parseFloat($('vbProb').value);
@@ -1743,7 +1755,11 @@
     if(!state.balances.length){ list.innerHTML='<div class="empty">Nenhuma casa cadastrada.</div>'; $('balTotal').textContent=''; return; }
     const total=state.balances.reduce((s,b)=>s+balBRL(b),0);
     const temUSD=state.balances.some(b=>b.currency==='USD');
-    $('balTotal').innerHTML='Total: '+fmt(total)+(temUSD?`<span style="font-size:10px;color:var(--muted-2);font-family:var(--mono);"> · USDT ${usdRate().toFixed(2)}</span>`:'');
+    const temEUR=state.balances.some(b=>b.currency==='EUR');
+    let cotInfo='';
+    if(temUSD) cotInfo+=' · USDT '+usdRate().toFixed(2);
+    if(temEUR) cotInfo+=' · EUR '+eurRate().toFixed(2);
+    $('balTotal').innerHTML='Total: '+fmt(total)+(cotInfo?`<span style="font-size:10px;color:var(--muted-2);font-family:var(--mono);">${cotInfo}</span>`:'');
     // capital preso em surebets ainda não finalizadas, por casa
     const emJogo={};
     (state.surebets||[]).filter(o=>!o.winner).forEach(o=>{
@@ -1778,7 +1794,7 @@
       const totalCasa=emBRL+(emJogo[b.name.trim().toLowerCase()]||0);
       const pct=total>0?(emBRL/total*100):0;
       const jogo=emJogo[b.name.trim().toLowerCase()]||0;
-      const isUSD=b.currency==='USD';
+      const isUSD=b.currency==='USD'; const isEUR=b.currency==='EUR'; const isFX=isUSD||isEUR;
       const isAuto=!!b.auto;
       const valHtml = (editingBal===b.id && !isAuto)
         ? `<input type="number" class="bal-edit" data-balsave="${b.id}" value="${b.value}" step="0.01" autofocus>`
@@ -1788,10 +1804,10 @@
       return `<div class="bal-row">
         <span class="bal-rank">${i+1}</span>
         <span class="bal-dot" style="background:${color}"></span>
-        <span class="bal-name">${esc(b.name)}${isAuto?`<span class="bal-auto">${/valor/i.test(b.name)?'VALOR':'ARB'} · AUTO</span>`:''}${isUSD?'<span class="bal-cur">USD</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">${/valor/i.test(b.name)?'apostas de valor':'surebets'} em aberto</span>`:''}</span>
+        <span class="bal-name">${esc(b.name)}${isAuto?`<span class="bal-auto">${/valor/i.test(b.name)?'VALOR':'ARB'} · AUTO</span>`:''}${b.currency==='USD'?'<span class="bal-cur">USD</span>':b.currency==='EUR'?'<span class="bal-cur eur">EUR</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):isEUR?fmtEUR(jogo/eurRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">${/valor/i.test(b.name)?'apostas de valor':'surebets'} em aberto</span>`:''}</span>
         ${valHtml}
         ${isAuto?'<span class="bal-cur-btn" style="opacity:.35;cursor:default;">R$</span>'
-                :`<button class="bal-cur-btn ${isUSD?'usd':''}" data-balcur="${b.id}" title="Clique para alternar entre Real e Dólar">${isUSD?'US$':'R$'}</button>`}
+                :`<button class="bal-cur-btn ${b.currency==='USD'?'usd':b.currency==='EUR'?'eur':''}" data-balcur="${b.id}" title="Clique para alternar moeda">${b.currency==='USD'?'US$':b.currency==='EUR'?'€':'R$'}</button>`}
         ${isAuto?'<span class="bal-del" style="opacity:.2;cursor:default;">×</span>'
                 :`<button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>`}
       </div>`;
@@ -1815,10 +1831,11 @@
     list.querySelectorAll('[data-balcur]').forEach(btn=>btn.addEventListener('click',()=>{
       const b=state.balances.find(x=>x.id===btn.dataset.balcur);
       if(!b) return;
-      b.currency = (b.currency==='USD') ? 'BRL' : 'USD';
+      b.currency = b.currency==='BRL'?'USD':b.currency==='USD'?'EUR':'BRL';
       touch(b);
       saveState(); renderAll();
-      toast(`${b.name} agora em ${b.currency==='USD'?'dólar':'real'}`);
+      const moedas={BRL:'real',USD:'dólar (USDT)',EUR:'euro'};
+      toast(`${b.name} agora em ${moedas[b.currency]||b.currency}`);
     }));
     list.querySelectorAll('[data-baldel]').forEach(btn=>btn.addEventListener('click',()=>{
       const b=state.balances.find(x=>x.id===btn.dataset.baldel);
@@ -1827,8 +1844,14 @@
   }
 
   // busca a cotação USDT/BRL em fontes públicas (sem chave de API)
-  async function buscarCotacao(){
-    const fontes=[
+  async function buscarCotacao(moeda){
+    moeda=moeda||'USDT';
+    const fontes = moeda==='EUR' ? [
+      {url:'https://economia.awesomeapi.com.br/json/last/EUR-BRL',
+       ler:j=>j&&j.EURBRL&&parseFloat(j.EURBRL.bid), nome:'AwesomeAPI'},
+      {url:'https://api.coingecko.com/api/v3/simple/price?ids=euro&vs_currencies=brl',
+       ler:j=>j&&j.euro&&j.euro.brl, nome:'CoinGecko'}
+    ] : [
       {url:'https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=brl',
        ler:j=>j&&j.tether&&j.tether.brl, nome:'CoinGecko'},
       {url:'https://api.binance.com/api/v3/ticker/price?symbol=USDTBRL',
@@ -1853,23 +1876,41 @@
       const d=new Date(state.usdRateAt);
       el.textContent=`${state.usdRateSrc||'manual'} · ${d.toLocaleDateString('pt-BR')} ${d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}`;
     } else el.textContent='definida manualmente';
+    const elE=$('balRateEurInfo'); if(!elE) return;
+    if(state.eurRateAt){
+      const d=new Date(state.eurRateAt);
+      elE.textContent=`${state.eurRateSrc||'manual'} · ${d.toLocaleDateString('pt-BR')} ${d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}`;
+    } else elE.textContent='definida manualmente';
   }
 
   async function atualizarCotacao(silencioso){
     const btn=$('balRateBtn');
     if(btn) btn.textContent='…';
-    const r=await buscarCotacao();
+    const r=await buscarCotacao('USDT');
     if(btn) btn.textContent='↻';
-    if(!r){ if(!silencioso) toast('Não foi possível buscar a cotação'); return false; }
-    state.usdRate=r.valor; state.usdRateSrc=r.fonte; state.usdRateAt=new Date().toISOString();
-    $('balRate').value=r.valor;
+    if(!r){ if(!silencioso) toast('Não foi possível buscar a cotação USDT'); }
+    else { state.usdRate=r.valor; state.usdRateSrc=r.fonte; state.usdRateAt=new Date().toISOString(); $('balRate').value=r.valor; }
+    // EUR
+    const btnE=$('balRateEurBtn');
+    if(btnE) btnE.textContent='…';
+    const rE=await buscarCotacao('EUR');
+    if(btnE) btnE.textContent='↻';
+    if(!rE){ if(!silencioso) toast('Não foi possível buscar a cotação EUR'); }
+    else { state.eurRate=rE.valor; state.eurRateSrc=rE.fonte; state.eurRateAt=new Date().toISOString(); $('balRateEur').value=rE.valor; }
     saveState(); renderAll(); mostrarInfoCotacao();
-    if(!silencioso) toast(`USDT R$ ${r.valor.toFixed(2)} · ${r.fonte} ✓`);
-    return true;
+    if(!silencioso && (r||rE)) toast(`USDT ${r?'R$ '+r.valor.toFixed(2):'—'} · EUR ${rE?'R$ '+rE.valor.toFixed(2):'—'} ✓`);
+    return !!(r||rE);
   }
 
   $('balRateBtn').addEventListener('click',()=>atualizarCotacao(false));
+  $('balRateEurBtn').addEventListener('click',()=>atualizarCotacao(false));
 
+  $('balRateEur').addEventListener('change',e=>{
+    const v=parseFloat(e.target.value);
+    state.eurRate=(isNaN(v)||v<=0)?6.10:v; state.eurRateSrc='manual'; state.eurRateAt=new Date().toISOString();
+    saveState(); renderAll(); mostrarInfoCotacao();
+    toast('Cotação EUR atualizada: '+eurRate().toFixed(2));
+  });
   $('balRate').addEventListener('change',e=>{
     const v=parseFloat(e.target.value);
     state.usdRate=(isNaN(v)||v<=0)?5.19:v; state.usdRateSrc='manual'; state.usdRateAt=new Date().toISOString();
@@ -1952,7 +1993,7 @@
     const invA=1/oddA, invB=1/oddB, invC=n===3?1/oddC:0;
     const sumInv=invA+invB+invC;
     const curA=scEls.curA.value, curB=scEls.curB.value, curC=scEls.curC.value;
-    const fatA=(curA==='USD')?usdRate():1, fatB=(curB==='USD')?usdRate():1, fatC=(curC==='USD')?usdRate():1;
+    const fatA=curRate(curA), fatB=curRate(curB), fatC=curRate(curC);
     let stakeA,stakeB,stakeC=0;
     if(scMode==='lucro'){
       // retorno R tal que R - R*sumInv = lucro  ->  R = lucro/(1-sumInv)
@@ -1963,7 +2004,7 @@
       stakeA=R*invA; stakeB=R*invB;
       if(n===3) stakeC=R*invC;
     } else if(scMode==='total'){
-      const fatT=($('scCurT').value==='USD')?usdRate():1;
+      const fatT=curRate($('scCurT').value);
       const total=parseFloat(scEls.total.value)*fatT;
       if(!(total>0)) return null;
       stakeA=total*invA/sumInv; stakeB=total*invB/sumInv;
@@ -2160,7 +2201,7 @@
   function moverSaldo(nome,deltaBRL){
     const b=acharCasa(nome);
     if(!b) return;
-    const delta = (b.currency==='USD') ? deltaBRL/usdRate() : deltaBRL;
+    const delta = deltaBRL/curRate(b.currency||'BRL');
     b.value=Math.round((b.value+delta)*100)/100;
     touch(b);
   }
@@ -2912,6 +2953,7 @@
   fillCfg();
   $('sbBankrollInput').value=state.sbBankroll||'';
   $('balRate').value=usdRate();
+  $('balRateEur').value=eurRate();
   mostrarInfoCotacao();
   // atualiza sozinho se a cotação estiver com mais de 6 horas
   (function(){
