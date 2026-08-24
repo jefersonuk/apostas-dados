@@ -4896,7 +4896,8 @@
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
       "value": -1134.15,
-      "updatedAt": "2026-08-24T14:55:35.445Z"
+      "updatedAt": "2026-08-24T14:56:43.889Z",
+      "currency": "USD"
     }
   ],
   "aportes": [
@@ -12253,5 +12254,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T14:55:49.234Z"
+  "updatedAt": "2026-08-24T14:56:43.890Z"
 }
