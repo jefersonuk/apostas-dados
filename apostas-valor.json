@@ -4891,12 +4891,6 @@
       "value": 311,
       "updatedAt": "2026-08-24T08:35:14.886Z",
       "currency": "USD"
-    },
-    {
-      "id": "mt6hjcyvjt5je",
-      "name": "Jack",
-      "value": 202.76,
-      "updatedAt": "2026-08-24T08:14:12.254Z"
     }
   ],
   "aportes": [
@@ -5154,6 +5148,10 @@
     {
       "id": "mt649tjmyko7d",
       "at": "2026-08-24T08:32:57.925Z"
+    },
+    {
+      "id": "mt6hjcyvjt5je",
+      "at": "2026-08-24T10:05:29.202Z"
     }
   ],
   "surebets": [
@@ -12198,5 +12196,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T10:04:55.616Z"
+  "updatedAt": "2026-08-24T10:05:29.202Z"
 }
