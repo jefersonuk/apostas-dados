@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5202.37,
+      "value": 5445.59,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T09:34:22.677Z"
+      "updatedAt": "2026-08-24T09:45:32.071Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 207.65,
+      "value": 132.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T08:44:21.276Z"
+      "updatedAt": "2026-08-24T09:45:32.066Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4882,8 +4882,8 @@
     {
       "id": "mt3gkfd262zli",
       "name": "Sportbook",
-      "value": 0,
-      "updatedAt": "2026-08-22T21:32:56.610Z"
+      "value": -167.72,
+      "updatedAt": "2026-08-24T09:45:32.066Z"
     },
     {
       "id": "mt642lcd1mdgd",
@@ -12146,9 +12146,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T09:34:22.673Z"
+    },
+    {
+      "id": "mt71vyqn55ica",
+      "kind": "sure",
+      "event": "Bravo – NK Brezice",
+      "houseA": "Sportbook",
+      "houseB": "Ivibet",
+      "oddA": 1.757,
+      "oddB": 2.42,
+      "total": 243.22,
+      "stakeA": 167.72,
+      "stakeB": 75.5,
+      "lucroA": 51.46403999999998,
+      "lucroB": -60.50999999999999,
+      "lucro": -60.50999999999999,
+      "roi": -24.87871063234931,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-08-24T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T09:45:32.067Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T09:35:43.648Z"
+  "updatedAt": "2026-08-24T09:45:32.071Z"
 }
