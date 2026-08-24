@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2880.23,
+      "value": 813.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T08:14:12.255Z"
+      "updatedAt": "2026-08-24T08:32:57.972Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4158.55,
-      "updatedAt": "2026-08-24T08:11:44.867Z"
+      "value": 1903.05,
+      "updatedAt": "2026-08-24T08:32:57.925Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4756,9 +4756,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 13.46,
+      "value": 299.23,
       "currency": "USD",
-      "updatedAt": "2026-08-23T20:12:51.035Z"
+      "updatedAt": "2026-08-24T08:32:57.925Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 561.08,
-      "updatedAt": "2026-08-23T20:12:24.548Z",
+      "value": 636.08,
+      "updatedAt": "2026-08-24T08:32:52.945Z",
       "currency": "USD"
     },
     {
@@ -4989,7 +4989,7 @@
   ],
   "usdRate": 5.14,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-24T08:11:06.917Z",
+  "usdRateAt": "2026-08-23T15:41:25.058Z",
   "appBuild": "20260819-1400",
   "deleted": [
     {
@@ -5143,6 +5143,14 @@
     {
       "id": "mt4iwgd3malqr",
       "at": "2026-08-23T20:14:30.952Z"
+    },
+    {
+      "id": "mt630crzrparj",
+      "at": "2026-08-24T08:32:52.945Z"
+    },
+    {
+      "id": "mt649tjmyko7d",
+      "at": "2026-08-24T08:32:57.925Z"
     }
   ],
   "surebets": [
@@ -11966,30 +11974,6 @@
       "updatedAt": "2026-08-23T17:15:21.951Z"
     },
     {
-      "id": "mt630crzrparj",
-      "kind": "sure",
-      "event": "Dino Prizmic – Cruz Hewitt",
-      "houseA": "Opinion",
-      "houseB": "Bookmaker",
-      "oddA": 1.89,
-      "oddB": 4.55,
-      "total": 1310.24,
-      "stakeA": 924.74,
-      "stakeB": 385.5,
-      "lucroA": 437.5185999999999,
-      "lucroB": 443.78499999999985,
-      "lucro": 437.5185999999999,
-      "roi": 33.39224874832091,
-      "winner": null,
-      "curA": "USD",
-      "curB": "USD",
-      "date": "2026-08-24T16:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-23T18:05:23.187Z"
-    },
-    {
       "id": "mt63v2ovt1k7p",
       "kind": "sure",
       "event": "FK Transinvest – FK Siauliai",
@@ -12037,30 +12021,6 @@
         "resultado": "B"
       },
       "updatedAt": "2026-08-23T20:55:32.005Z"
-    },
-    {
-      "id": "mt649tjmyko7d",
-      "kind": "sure",
-      "event": "Dino Prizmic x Cruz Hewitt",
-      "houseA": "Opinion",
-      "houseB": "Pinnacle",
-      "oddA": 1.886,
-      "oddB": 4.84,
-      "total": 756.12,
-      "stakeA": 544.12,
-      "stakeB": 212,
-      "lucroA": 270.0903199999999,
-      "lucroB": 269.9599999999999,
-      "lucro": 269.9599999999999,
-      "roi": 35.703327514151184,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-08-24T16:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-23T18:05:28.384Z"
     },
     {
       "id": "mt68e6la6oair",
@@ -12115,5 +12075,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T08:14:12.255Z"
+  "updatedAt": "2026-08-24T08:32:57.925Z"
 }
