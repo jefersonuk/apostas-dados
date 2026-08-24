@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3222.93,
+      "value": 2880.23,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T08:11:44.867Z"
+      "updatedAt": "2026-08-24T08:14:12.255Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4895,8 +4895,8 @@
     {
       "id": "mt6hjcyvjt5je",
       "name": "Jack",
-      "value": -198.78,
-      "updatedAt": "2026-08-24T00:15:51.656Z"
+      "value": 202.76,
+      "updatedAt": "2026-08-24T08:14:12.254Z"
     }
   ],
   "aportes": [
@@ -12102,17 +12102,18 @@
       "lucroB": 58.83620594059403,
       "lucro": 58.83620594059403,
       "roi": 17.16839916839916,
-      "winner": null,
+      "winner": "A",
       "curA": "USD",
       "curB": "USD",
       "date": "2026-08-23T21:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-24T00:15:51.657Z"
+      "updatedAt": "2026-08-24T08:14:12.254Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T08:11:44.867Z"
+  "updatedAt": "2026-08-24T08:14:12.255Z"
 }
