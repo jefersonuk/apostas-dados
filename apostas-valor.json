@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 135,
-      "updatedAt": "2026-08-24T08:41:26.853Z"
+      "value": 0,
+      "updatedAt": "2026-08-24T08:44:21.274Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1343.87,
+      "value": 1678.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T08:41:26.857Z"
+      "updatedAt": "2026-08-24T08:44:21.289Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 407.65,
+      "value": 207.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T08:41:26.853Z"
+      "updatedAt": "2026-08-24T08:44:21.276Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -12095,9 +12095,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T08:41:26.854Z"
+    },
+    {
+      "id": "mt6zpac5chxzz",
+      "kind": "sure",
+      "event": "Calcutta Police Club – Kalighat SL",
+      "houseA": "Betnacional",
+      "houseB": "Ivibet",
+      "oddA": 2.7,
+      "oddB": 1.84,
+      "total": 335,
+      "stakeA": 135,
+      "stakeB": 200,
+      "lucroA": 29.5,
+      "lucroB": 33,
+      "lucro": 29.5,
+      "roi": 8.805970149253731,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-24T06:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T08:44:21.277Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T08:41:26.857Z"
+  "updatedAt": "2026-08-24T08:44:21.289Z"
 }
