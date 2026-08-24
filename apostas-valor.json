@@ -4888,8 +4888,8 @@
     {
       "id": "mt642lcd1mdgd",
       "name": "Jackbit",
-      "value": 311,
-      "updatedAt": "2026-08-24T08:35:14.886Z",
+      "value": 0,
+      "updatedAt": "2026-08-24T14:20:42.691Z",
       "currency": "USD"
     }
   ],
@@ -12198,5 +12198,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T14:20:38.514Z"
+  "updatedAt": "2026-08-24T14:20:42.697Z"
 }
