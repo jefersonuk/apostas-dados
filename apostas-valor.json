@@ -4880,12 +4880,6 @@
       "updatedAt": "2026-08-23T22:58:26.957Z"
     },
     {
-      "id": "mt3gkfd262zli",
-      "name": "Sportbook",
-      "value": 0,
-      "updatedAt": "2026-08-24T10:03:45.697Z"
-    },
-    {
       "id": "mt642lcd1mdgd",
       "name": "Jackbit",
       "value": 0,
@@ -5159,6 +5153,10 @@
     {
       "id": "mt6hjcyvjt5je",
       "at": "2026-08-24T10:05:29.202Z"
+    },
+    {
+      "id": "mt3gkfd262zli",
+      "at": "2026-08-24T16:04:06.890Z"
     }
   ],
   "surebets": [
@@ -12278,5 +12276,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T15:49:17.999Z"
+  "updatedAt": "2026-08-24T16:04:06.890Z"
 }
