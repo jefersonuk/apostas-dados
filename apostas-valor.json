@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5505.54,
+      "value": 7047.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T17:19:30.261Z"
+      "updatedAt": "2026-08-24T17:30:47.308Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2187.03,
+      "value": 1744.92,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T17:19:47.858Z"
+      "updatedAt": "2026-08-24T17:30:47.304Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3104.55,
-      "updatedAt": "2026-08-24T15:48:58.573Z"
+      "value": 2004.55,
+      "updatedAt": "2026-08-24T17:30:47.303Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12275,9 +12275,33 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-24T16:44:53.344Z"
+    },
+    {
+      "id": "mt7iia9zo4j5z",
+      "kind": "sure",
+      "event": "Arthur Weber vs. Tsung-Hao Huang",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.467,
+      "oddB": 3.65,
+      "total": 1542.109589041096,
+      "stakeA": 1100,
+      "stakeB": 442.1095890410959,
+      "lucroA": 71.59041095890416,
+      "lucroB": 71.59041095890416,
+      "lucro": 71.59041095890416,
+      "roi": 4.642368575337115,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-25T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T17:30:47.304Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T17:20:15.500Z"
+  "updatedAt": "2026-08-24T17:30:47.308Z"
 }
