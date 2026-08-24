@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6268.11,
+      "value": 6024.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T16:44:53.344Z"
+      "updatedAt": "2026-08-24T16:45:08.442Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4820,9 +4820,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 105.86,
+      "value": 154.89,
       "currency": "EUR",
-      "updatedAt": "2026-08-24T15:05:24.170Z"
+      "updatedAt": "2026-08-24T16:45:08.442Z"
     },
     {
       "id": "mt0mdztl9t7mq",
@@ -12167,14 +12167,15 @@
       "lucroB": -60.50999999999999,
       "lucro": -60.50999999999999,
       "roi": -24.87871063234931,
-      "winner": null,
+      "winner": "A",
       "curA": "EUR",
       "curB": "BRL",
       "date": "2026-08-24T12:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-24T10:03:45.698Z"
+      "updatedAt": "2026-08-24T16:45:08.442Z"
     },
     {
       "id": "mt72conqn2bvr",
@@ -12277,5 +12278,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T16:44:53.344Z"
+  "updatedAt": "2026-08-24T16:45:08.442Z"
 }
