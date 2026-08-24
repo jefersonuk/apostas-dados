@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4935.11,
+      "value": 6268.11,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T11:44:43.777Z"
+      "updatedAt": "2026-08-24T14:23:54.017Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 947.1,
+      "value": 561.1,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T11:44:43.777Z"
+      "updatedAt": "2026-08-24T14:23:54.017Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4370.55,
-      "updatedAt": "2026-08-24T08:34:01.958Z"
+      "value": 3423.55,
+      "updatedAt": "2026-08-24T14:23:54.017Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12194,9 +12194,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T09:58:32.156Z"
+    },
+    {
+      "id": "mt7bty1svwacl",
+      "kind": "sure",
+      "event": "DRX Challengers x Youth Fearx",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.52,
+      "oddB": 3.73,
+      "total": 1333,
+      "stakeA": 947,
+      "stakeB": 386,
+      "lucroA": 106.44000000000005,
+      "lucroB": 106.77999999999997,
+      "lucro": 106.44000000000005,
+      "roi": 7.984996249062269,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-25T05:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T14:23:54.017Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T14:20:42.697Z"
+  "updatedAt": "2026-08-24T14:23:54.017Z"
 }
