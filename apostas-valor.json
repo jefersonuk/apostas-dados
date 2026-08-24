@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7744.15,
+      "value": 8979.13,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T19:24:01.784Z"
+      "updatedAt": "2026-08-24T19:36:01.881Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2212.03,
+      "value": 1492.05,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T19:14:56.630Z"
+      "updatedAt": "2026-08-24T19:36:01.880Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 635.91,
-      "updatedAt": "2026-08-24T19:24:01.783Z",
+      "value": 535.91,
+      "updatedAt": "2026-08-24T19:36:01.880Z",
       "currency": "USD"
     },
     {
@@ -12347,9 +12347,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T19:20:00.775Z"
+    },
+    {
+      "id": "mt7mzck8il331",
+      "kind": "sure",
+      "event": "Michael Antonius x Henry Searle",
+      "houseA": "Ivibet",
+      "houseB": "Bookmaker",
+      "oddA": 1.76,
+      "oddB": 2.45,
+      "total": 1234.98,
+      "stakeA": 719.98,
+      "stakeB": 515,
+      "lucroA": 32.184799999999996,
+      "lucroB": 26.769999999999982,
+      "lucro": 26.769999999999982,
+      "roi": 2.167646439618454,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-25T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T19:36:01.880Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T19:24:01.784Z"
+  "updatedAt": "2026-08-24T19:36:01.881Z"
 }
