@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6268.11,
+      "value": 7423.11,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T14:55:49.234Z"
+      "updatedAt": "2026-08-24T15:03:42.540Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 561.1,
+      "value": 286.1,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T14:23:54.017Z"
+      "updatedAt": "2026-08-24T15:03:42.540Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3423.55,
-      "updatedAt": "2026-08-24T14:23:54.017Z"
+      "value": 2543.55,
+      "updatedAt": "2026-08-24T15:03:42.540Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12250,9 +12250,33 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-24T14:55:49.234Z"
+    },
+    {
+      "id": "mt7d951ngttpj",
+      "kind": "sure",
+      "event": "Tunisia x Macedonia do norte",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 6,
+      "oddB": 1.877,
+      "total": 1155,
+      "stakeA": 275,
+      "stakeB": 880,
+      "lucroA": 495,
+      "lucroB": 496.76,
+      "lucro": 495,
+      "roi": 42.857142857142854,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-24T12:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T15:03:42.540Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T14:58:15.636Z"
+  "updatedAt": "2026-08-24T15:03:42.540Z"
 }
