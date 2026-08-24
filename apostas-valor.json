@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1678.87,
+      "value": 5202.37,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T08:44:21.289Z"
+      "updatedAt": "2026-08-24T09:34:22.677Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4749,9 +4749,9 @@
     {
       "id": "msqr1ktlw3015",
       "name": "Sxbet",
-      "value": 99.63,
+      "value": -498.3,
       "currency": "USD",
-      "updatedAt": "2026-08-14T12:00:55.972Z"
+      "updatedAt": "2026-08-24T09:34:22.671Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 636.08,
-      "updatedAt": "2026-08-24T08:32:52.945Z",
+      "value": 548.5,
+      "updatedAt": "2026-08-24T09:34:22.670Z",
       "currency": "USD"
     },
     {
@@ -12122,9 +12122,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T08:44:21.277Z"
+    },
+    {
+      "id": "mt71hm8d3i327",
+      "kind": "sure",
+      "event": "Polina Iatchenko – Julie Struplova",
+      "houseA": "Bookmaker",
+      "houseB": "Sxbet",
+      "oddA": 7.92,
+      "oddB": 1.16,
+      "total": 3523.498815151515,
+      "stakeA": 450.1386151515151,
+      "stakeB": 3073.3601999999996,
+      "lucroA": 41.59901684848501,
+      "lucroB": 41.59901684848455,
+      "lucro": 41.59901684848455,
+      "roi": 1.1806167400880974,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-24T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-24T09:34:22.673Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T09:17:21.878Z"
+  "updatedAt": "2026-08-24T09:34:22.677Z"
 }
