@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8194.28,
+      "value": 7744.15,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T19:15:00.453Z"
+      "updatedAt": "2026-08-24T19:24:01.784Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4751,7 +4751,7 @@
       "name": "Sxbet",
       "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-08-24T09:35:26.002Z"
+      "updatedAt": "2026-08-24T19:24:01.783Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4861,8 +4861,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 548.5,
-      "updatedAt": "2026-08-24T09:34:22.670Z",
+      "value": 635.91,
+      "updatedAt": "2026-08-24T19:24:01.783Z",
       "currency": "USD"
     },
     {
@@ -12137,13 +12137,13 @@
       "houseB": "Sxbet",
       "oddA": 7.92,
       "oddB": 1.16,
-      "total": 3523.498815151515,
-      "stakeA": 450.1386151515151,
-      "stakeB": 3073.3601999999996,
-      "lucroA": 41.59901684848501,
-      "lucroB": 41.59901684848455,
-      "lucro": 41.59901684848455,
-      "roi": 1.1806167400880974,
+      "total": 3073.3700000000003,
+      "stakeA": 0.01,
+      "stakeB": 3073.36,
+      "lucroA": -3073.2908,
+      "lucroB": 491.7275999999997,
+      "lucro": -3073.2908,
+      "roi": -99.99742302423724,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
@@ -12151,7 +12151,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-24T09:34:22.673Z"
+      "updatedAt": "2026-08-24T19:24:01.783Z"
     },
     {
       "id": "mt71vyqn55ica",
@@ -12351,5 +12351,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T19:20:00.776Z"
+  "updatedAt": "2026-08-24T19:24:01.784Z"
 }
