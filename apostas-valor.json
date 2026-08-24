@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 286.1,
+      "value": -274.9,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T15:05:24.170Z"
+      "updatedAt": "2026-08-24T15:48:58.573Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2543.55,
-      "updatedAt": "2026-08-24T15:03:42.540Z"
+      "value": 3104.55,
+      "updatedAt": "2026-08-24T15:48:58.573Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12206,8 +12206,8 @@
       "id": "mt7bty1svwacl",
       "kind": "sure",
       "event": "DRX Challengers x Youth Fearx",
-      "houseA": "Pinnacle",
-      "houseB": "Ivibet",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
       "oddA": 1.52,
       "oddB": 3.73,
       "total": 1333,
@@ -12224,7 +12224,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-24T14:23:54.017Z"
+      "updatedAt": "2026-08-24T15:48:58.573Z"
     },
     {
       "id": "mt7cyp79djdn2",
@@ -12278,5 +12278,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-24T15:05:24.170Z"
+  "updatedAt": "2026-08-24T15:48:58.573Z"
 }
