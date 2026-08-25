@@ -4599,8 +4599,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 3330,
-      "updatedAt": "2026-08-25T20:29:42.676Z"
+      "value": 2745,
+      "updatedAt": "2026-08-25T23:41:32.869Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4842,8 +4842,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 536.08,
-      "updatedAt": "2026-08-25T13:16:29.891Z",
+      "value": 443.85,
+      "updatedAt": "2026-08-25T23:41:32.869Z",
       "currency": "USD"
     },
     {
@@ -12669,8 +12669,47 @@
       ],
       "isSafe": true,
       "kind": "middle"
+    },
+    {
+      "id": "mt9b6xqddmb8m",
+      "kind": "middle",
+      "event": "Yidi Yang – Peangtarn Plipuech",
+      "houseA": "Bookmaker",
+      "houseB": "Blaze",
+      "market": "handicap",
+      "lineA": -3,
+      "lineB": 3.5,
+      "oddA": 2.24,
+      "oddB": 1.82,
+      "stakeA": 475,
+      "stakeB": 585,
+      "total": 1060,
+      "profitAWins": 4,
+      "profitBWins": 4.7000000000000455,
+      "profitMiddle": 0,
+      "gapIntegers": [],
+      "pushValues": [
+        3
+      ],
+      "hostileValues": [],
+      "profitPush": 479.70000000000005,
+      "midKind": "push",
+      "midValues": [
+        3
+      ],
+      "midCreditA": 475,
+      "midCreditB": 1064.7,
+      "midProfit": 479.70000000000005,
+      "worstCase": 4,
+      "isSafe": true,
+      "resultado": null,
+      "date": "2026-08-25T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T23:41:32.869Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T22:44:34.657Z"
+  "updatedAt": "2026-08-25T23:41:32.870Z"
 }
