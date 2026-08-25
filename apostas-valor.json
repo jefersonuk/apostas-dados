@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 0,
-      "updatedAt": "2026-08-24T08:44:21.274Z"
+      "value": -305,
+      "updatedAt": "2026-08-25T18:05:51.553Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10520.33,
+      "value": 11339.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T17:20:00.328Z"
+      "updatedAt": "2026-08-25T18:05:51.555Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4636,9 +4636,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 514.53,
+      "value": 0.53,
       "currency": "BRL",
-      "updatedAt": "2026-08-25T17:20:00.314Z"
+      "updatedAt": "2026-08-25T18:05:51.553Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -12571,6 +12571,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T16:59:18.546Z"
+    },
+    {
+      "id": "mt8z78lddr2zj",
+      "kind": "sure",
+      "event": "Gagra x Argvi Dusheti",
+      "houseA": "Ivibet",
+      "houseB": "Betnacional",
+      "oddA": 1.67,
+      "oddB": 2.8,
+      "total": 819,
+      "stakeA": 514,
+      "stakeB": 305,
+      "lucroA": 39.379999999999995,
+      "lucroB": 35,
+      "lucro": 35,
+      "roi": 4.273504273504273,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-26T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T18:05:51.553Z"
     }
   ],
   "invertidos": [],
@@ -12605,5 +12629,5 @@
     }
   ],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T17:35:00.000Z"
+  "updatedAt": "2026-08-25T18:05:51.555Z"
 }
