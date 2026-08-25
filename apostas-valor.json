@@ -4615,11 +4615,6 @@
       "value": 0
     },
     {
-      "id": "msd8uqystuub5",
-      "name": "Parasino",
-      "value": 0
-    },
-    {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
       "value": 0,
@@ -5181,6 +5176,10 @@
     {
       "id": "mt8dzvcf3rqal",
       "at": "2026-08-25T15:29:36.930Z"
+    },
+    {
+      "id": "msd8uqystuub5",
+      "at": "2026-08-25T16:47:32.305Z"
     }
   ],
   "surebets": [
@@ -12527,5 +12526,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T16:15:15.155Z"
+  "updatedAt": "2026-08-25T16:47:32.308Z"
 }
