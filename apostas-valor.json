@@ -4586,13 +4586,6 @@
       "updatedAt": "2026-08-25T16:12:29.908Z"
     },
     {
-      "id": "ms573t068wk2v",
-      "name": "Casobet",
-      "value": 0,
-      "currency": "USD",
-      "updatedAt": "2026-08-20T14:44:33.597Z"
-    },
-    {
       "id": "ms7iedf1byig1",
       "name": "Zenit",
       "value": 0,
@@ -5181,7 +5174,11 @@
       "id": "msd8uqystuub5",
       "at": "2026-08-25T16:47:32.305Z"
     },
-    "mt8wtnkf8ftb1"
+    "mt8wtnkf8ftb1",
+    {
+      "id": "ms573t068wk2v",
+      "at": "2026-08-25T18:12:07.680Z"
+    }
   ],
   "surebets": [
     {
@@ -12629,5 +12626,5 @@
     }
   ],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T18:11:52.594Z"
+  "updatedAt": "2026-08-25T18:12:07.680Z"
 }
