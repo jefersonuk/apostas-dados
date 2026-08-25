@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 11339.33,
+      "value": 11863.77,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T18:05:51.555Z"
+      "updatedAt": "2026-08-25T20:29:42.678Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,8 +4599,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 3700,
-      "updatedAt": "2026-08-25T15:39:02.395Z"
+      "value": 3330,
+      "updatedAt": "2026-08-25T20:29:42.676Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4870,8 +4870,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 29.99,
-      "updatedAt": "2026-08-24T14:56:51.646Z",
+      "value": 0,
+      "updatedAt": "2026-08-25T20:29:42.675Z",
       "currency": "USD"
     },
     {
@@ -12593,6 +12593,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T18:05:51.553Z"
+    },
+    {
+      "id": "mt94c8eruf6jh",
+      "kind": "sure",
+      "event": "Vincent Keymer x Wesley So",
+      "houseA": "BCgame",
+      "houseB": "Blaze",
+      "oddA": 3.75,
+      "oddB": 1.57,
+      "total": 524.4485,
+      "stakeA": 154.4485,
+      "stakeB": 370,
+      "lucroA": 54.733375000000024,
+      "lucroB": 56.45150000000001,
+      "lucro": 54.733375000000024,
+      "roi": 10.43636791791759,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-27T14:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T20:29:42.676Z"
     }
   ],
   "invertidos": [],
@@ -12627,5 +12651,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T19:41:48.131Z"
+  "updatedAt": "2026-08-25T20:29:42.678Z"
 }
