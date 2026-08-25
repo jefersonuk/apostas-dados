@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5905.76,
+      "value": 7051.06,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T19:37:55.627Z"
+      "updatedAt": "2026-08-25T08:09:17.864Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1492.05,
+      "value": 861.75,
       "currency": "BRL",
-      "updatedAt": "2026-08-24T19:36:01.880Z"
+      "updatedAt": "2026-08-25T08:09:17.861Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2004.55,
-      "updatedAt": "2026-08-24T17:30:47.303Z"
+      "value": 1489.55,
+      "updatedAt": "2026-08-25T08:09:17.861Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12373,9 +12373,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-24T19:36:01.880Z"
+    },
+    {
+      "id": "mt8dw205bc6qn",
+      "kind": "sure",
+      "event": "Preah Sihanouk Province – Kampot Province",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 2.46,
+      "oddB": 2.01,
+      "total": 1145.2985074626868,
+      "stakeA": 515,
+      "stakeB": 630.2985074626866,
+      "lucroA": 121.60149253731333,
+      "lucroB": 121.60149253731333,
+      "lucro": 121.60149253731333,
+      "roi": 10.61744966442952,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-25T05:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T08:09:17.862Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T07:59:47.303Z"
+  "updatedAt": "2026-08-25T08:09:17.864Z"
 }
