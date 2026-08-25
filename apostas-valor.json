@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7637.28,
+      "value": 8879.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T15:07:18.590Z"
+      "updatedAt": "2026-08-25T15:22:55.345Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4635,8 +4635,8 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 1011.25,
-      "updatedAt": "2026-08-25T11:49:17.953Z"
+      "value": 11.25,
+      "updatedAt": "2026-08-25T15:22:55.344Z"
     },
     {
       "id": "msddu5i007wwm",
@@ -4904,6 +4904,12 @@
       "name": "Casa B",
       "value": 0,
       "updatedAt": "2026-08-25T10:18:22.041Z"
+    },
+    {
+      "id": "mt8tdp80v21ek",
+      "name": "Cloudbet",
+      "value": -242.05,
+      "updatedAt": "2026-08-25T15:22:55.344Z"
     }
   ],
   "aportes": [
@@ -12470,9 +12476,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T15:07:18.589Z"
+    },
+    {
+      "id": "mt8tdp80co02t",
+      "kind": "sure",
+      "event": "Mees Rottgering x Tomas Machac",
+      "houseA": "Casinozer",
+      "houseB": "Cloudbet",
+      "oddA": 1.28,
+      "oddB": 5.25,
+      "total": 1242.05,
+      "stakeA": 1000,
+      "stakeB": 242.05,
+      "lucroA": 37.950000000000045,
+      "lucroB": 28.71250000000009,
+      "lucro": 28.71250000000009,
+      "roi": 2.3117024274385165,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-25T17:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T15:22:55.344Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T15:07:18.590Z"
+  "updatedAt": "2026-08-25T15:22:55.345Z"
 }
