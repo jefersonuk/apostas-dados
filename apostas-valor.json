@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3282.45,
-      "updatedAt": "2026-08-25T11:48:29.716Z"
+      "value": 3382.45,
+      "updatedAt": "2026-08-25T12:44:38.571Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4763,10 +4763,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 100,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-24T20:55:55.081Z"
+      "updatedAt": "2026-08-25T12:44:38.572Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5174,6 +5174,10 @@
     {
       "id": "mt3gkfd262zli",
       "at": "2026-08-24T16:04:06.890Z"
+    },
+    {
+      "id": "msxofthc0l5gm",
+      "at": "2026-08-25T12:44:38.571Z"
     }
   ],
   "surebets": [
@@ -10189,29 +10193,6 @@
       "sport": "Futebol"
     },
     {
-      "id": "msxofthc0l5gm",
-      "kind": "valor",
-      "event": "Lanus – Argentinos Juniors (H2 (0))",
-      "houseA": "Pinnacle",
-      "oddA": 2.19,
-      "stakeA": 100,
-      "curA": "BRL",
-      "prob": null,
-      "winner": null,
-      "date": "2026-08-24T21:15",
-      "total": 100,
-      "lucroA": 119,
-      "lucroRed": -100,
-      "lucro": 119,
-      "roi": 119,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-17T20:42:38.151036Z",
-      "market": "Handicap Asiático",
-      "sport": "Futebol"
-    },
-    {
       "id": "msxplaejbff0c",
       "kind": "valor",
       "event": "Sikkim Aakraman FC – Dzongri FC",
@@ -12445,5 +12426,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T11:59:06.010Z"
+  "updatedAt": "2026-08-25T12:44:38.572Z"
 }
