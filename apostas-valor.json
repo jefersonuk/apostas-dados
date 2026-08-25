@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5598.57,
+      "value": 7637.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T14:43:41.393Z"
+      "updatedAt": "2026-08-25T15:07:18.590Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 771.33,
+      "value": 143.72,
       "currency": "BRL",
-      "updatedAt": "2026-08-25T14:43:41.392Z"
+      "updatedAt": "2026-08-25T15:07:18.589Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4730,9 +4730,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 392.55,
+      "value": 118.55,
       "currency": "USD",
-      "updatedAt": "2026-08-24T10:04:55.616Z"
+      "updatedAt": "2026-08-25T15:07:18.589Z"
     },
     {
       "id": "msorkx0qx15s5",
@@ -12446,9 +12446,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T14:43:41.392Z"
+    },
+    {
+      "id": "mt8stmf10qbr6",
+      "kind": "sure",
+      "event": "Mario Piazzon x Guilherme Uriel",
+      "houseA": "Ivibet",
+      "houseB": "Overtimemarkets",
+      "oddA": 3.44,
+      "oddB": 1.53,
+      "total": 2038.7113372093027,
+      "stakeA": 627.6113372093024,
+      "stakeB": 1411.1000000000001,
+      "lucroA": 120.27166279069752,
+      "lucroB": 120.27166279069752,
+      "lucro": 120.27166279069752,
+      "roi": 5.899396378269609,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-25T21:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T15:07:18.589Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T14:43:41.393Z"
+  "updatedAt": "2026-08-25T15:07:18.590Z"
 }
