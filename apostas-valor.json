@@ -4826,13 +4826,6 @@
       "updatedAt": "2026-08-20T12:03:49.909Z"
     },
     {
-      "id": "mt1hgfsx2fm5e",
-      "name": "Donbet",
-      "value": 0,
-      "currency": "BRL",
-      "updatedAt": "2026-08-24T19:20:00.775Z"
-    },
-    {
       "id": "mt1hgn4qd7j3a",
       "name": "Leon",
       "value": 567.65,
@@ -5178,6 +5171,10 @@
     {
       "id": "ms573t068wk2v",
       "at": "2026-08-25T18:12:07.680Z"
+    },
+    {
+      "id": "mt1hgfsx2fm5e",
+      "at": "2026-08-25T18:46:13.468Z"
     }
   ],
   "surebets": [
@@ -12626,5 +12623,5 @@
     }
   ],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T18:13:47.554Z"
+  "updatedAt": "2026-08-25T18:46:13.469Z"
 }
