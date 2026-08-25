@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5905.76,
+      "value": 4572.76,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T10:17:13.347Z"
+      "updatedAt": "2026-08-25T11:43:52.512Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1742.67,
-      "updatedAt": "2026-08-25T10:18:22.041Z"
+      "value": 3182.45,
+      "updatedAt": "2026-08-25T11:43:52.512Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12230,14 +12230,15 @@
       "lucroB": 106.77999999999997,
       "lucro": 106.44000000000005,
       "roi": 7.984996249062269,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-25T05:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-24T15:48:58.573Z"
+      "updatedAt": "2026-08-25T11:43:52.512Z"
     },
     {
       "id": "mt7cyp79djdn2",
@@ -12439,5 +12440,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T10:18:22.042Z"
+  "updatedAt": "2026-08-25T11:43:52.512Z"
 }
