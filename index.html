@@ -697,7 +697,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260826-1600';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260826-1730';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1447,7 +1447,7 @@
       return `<div class="bal-row">
         <span class="bal-rank">${i+1}</span>
         <span class="bal-dot" style="background:${color}"></span>
-        <span class="bal-name">${esc(b.name)}${isAuto?`<span class="bal-auto">ARB · AUTO</span>`:''}${badges}${b.currency==='USD'?'<span class="bal-cur">USD</span>':b.currency==='EUR'?'<span class="bal-cur eur">EUR</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):isEUR?fmtEUR(jogo/eurRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">surebets em aberto</span>`:''}</span>
+        <span class="bal-name">${esc(b.name)}${isAuto?`<span class="bal-auto">${b.name===MID_NAME?'MIDDLE · AUTO':b.name===VAL_NAME?'VALOR · AUTO':'ARB · AUTO'}</span>`:''}${badges}${b.currency==='USD'?'<span class="bal-cur">USD</span>':b.currency==='EUR'?'<span class="bal-cur eur">EUR</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):isEUR?fmtEUR(jogo/eurRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">${b.name===MID_NAME?'middles em aberto':b.name===VAL_NAME?'valor em aberto':'surebets em aberto'}</span>`:''}</span>
         ${valHtml}
         ${isAuto?'<span class="bal-cur-btn" style="opacity:.35;cursor:default;">R$</span>'
                 :`<button class="bal-cur-btn ${b.currency==='USD'?'usd':b.currency==='EUR'?'eur':''}" data-balcur="${b.id}" title="Alternar moeda">${b.currency==='USD'?'US$':b.currency==='EUR'?'€':'R$'}</button>`}
@@ -1941,6 +1941,7 @@
   // Mantém a linha "Em arbitragem" igual ao total apostado em surebets ainda abertas
   const ARB_NAME='Em arbitragem';
   const VAL_NAME='Em apostas de valor';
+  const MID_NAME='Em middles';
 
   // mantém uma linha automática com o total apostado e ainda não resolvido
   function sincLinhaAuto(nome,total){
@@ -1961,8 +1962,13 @@
       .reduce((s,o)=>s+(o.stakeA||0)+(o.stakeB||0)+(o.stakeC||0),0);
     const emValor=abertas.filter(ehValor)
       .reduce((s,o)=>s+(o.stakeA||0),0);
+    // Middles em aberto: mesmo modelo das surebets — capital preso vira linha automática,
+    // para não sumir do caixa total quando o stake é debitado das casas.
+    const emMid=(state.middles||[]).filter(o=>!o.resultado)
+      .reduce((s,o)=>s+(o.stakeA||0)+(o.stakeB||0),0);
     sincLinhaAuto(ARB_NAME,emArb);
     sincLinhaAuto(VAL_NAME,emValor);
+    sincLinhaAuto(MID_NAME,emMid);
   }
 
   function renderSurebetSummary(){
