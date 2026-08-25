@@ -4756,9 +4756,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 182.53,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-08-25T11:58:58.129Z"
+      "updatedAt": "2026-08-25T14:14:28.613Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -12426,5 +12426,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T14:14:24.726Z"
+  "updatedAt": "2026-08-25T14:14:28.620Z"
 }
