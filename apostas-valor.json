@@ -4687,9 +4687,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 105.55,
+      "value": 104.33,
       "currency": "USD",
-      "updatedAt": "2026-08-25T16:07:48.908Z"
+      "updatedAt": "2026-08-25T16:11:21.638Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -12525,5 +12525,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T16:07:48.914Z"
+  "updatedAt": "2026-08-25T16:11:21.639Z"
 }
