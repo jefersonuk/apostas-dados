@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8879.33,
+      "value": 10061.08,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T15:22:55.345Z"
+      "updatedAt": "2026-08-25T15:39:02.395Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4606,8 +4606,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 4650,
-      "updatedAt": "2026-08-24T14:57:03.814Z"
+      "value": 3700,
+      "updatedAt": "2026-08-25T15:39:02.395Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4896,8 +4896,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 16.66,
-      "updatedAt": "2026-08-25T15:30:08.267Z",
+      "value": -28.34,
+      "updatedAt": "2026-08-25T15:39:02.395Z",
       "currency": "USD"
     }
   ],
@@ -12497,9 +12497,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T15:22:55.344Z"
+    },
+    {
+      "id": "mt8tyfeiqt7rq",
+      "kind": "sure",
+      "event": "Mess x Machac",
+      "houseA": "Blaze",
+      "houseB": "Cloudbet",
+      "oddA": 1.28,
+      "oddB": 5.25,
+      "total": 1181.75,
+      "stakeA": 950,
+      "stakeB": 231.75000000000003,
+      "lucroA": 34.25,
+      "lucroB": 34.93750000000023,
+      "lucro": 34.25,
+      "roi": 2.898244129469008,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-25T17:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T15:39:02.395Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T15:32:04.998Z"
+  "updatedAt": "2026-08-25T15:39:02.395Z"
 }
