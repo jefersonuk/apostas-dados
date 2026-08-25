@@ -203,6 +203,10 @@
   .md-leg b{color:var(--text);}
   .md-leg.legA{border-left:3px solid #38BDF8;}
   .md-leg.legB{border-left:3px solid #A78BFA;}
+  .md-explain{margin:6px 0 10px;padding:9px 12px;border-radius:9px;background:#0E1520;border:1px solid #1A2C40;font-size:12.5px;line-height:1.5;color:#BFD8F5;}
+  .md-explain b{color:#7CC4FF;}
+  .md-stakes{margin:8px 0;padding:9px 11px;border-radius:8px;background:#0E1116;border:1px solid var(--border);font-family:var(--mono);font-size:11.5px;line-height:1.7;}
+  .md-stakes .tot{border-top:1px solid var(--border);margin-top:5px;padding-top:5px;font-weight:700;color:var(--text);}
   .caixa-edit-val{cursor:pointer;border-bottom:1px dashed var(--muted-2);}
   .caixa-edit-val:hover{color:var(--sky);border-bottom-color:var(--sky);}
   .sb-open-box{margin-top:10px;padding:10px 12px;border-radius:9px;background:#2A1A08;border:1px solid #4D3010;font-size:12.5px;line-height:1.7;}
@@ -690,7 +694,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260825-2330';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260826-0010';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -2419,6 +2423,7 @@
     box.innerHTML=
       `<div class="md-verdict" style="color:${verdictColor}">${verdictText}</div>`+
       gapTxt+
+      (r.hasGap?`<div class="md-explain">🎯 ${mdMiddleExplain({...r,houseA,houseB})}</div>`:'')+
       `<div class="md-legs">`+
         `<div class="md-leg legA"><b>${esc(houseA)}</b><br>${labelA} @${r.oddA.toFixed(3)}<br>Stake: <b>${fmt(r.stakeA)}</b><br>Retorno: ${fmt(r.retA)}</div>`+
         `<div class="md-leg legB"><b>${esc(houseB)}</b><br>${labelB} @${r.oddB.toFixed(3)}<br>Stake: <b>${fmt(r.stakeB)}</b><br>Retorno: ${fmt(r.retB)}</div>`+
@@ -2440,7 +2445,7 @@
       `</div>`;
   }
 
-  ['mdLineA','mdLineB','mdOddA','mdOddB','mdStakeA','mdStakeB'].forEach(id=>$(id).addEventListener('input',mdRender));
+  ['mdLineA','mdLineB','mdOddA','mdOddB','mdStakeA','mdStakeB','mdHouseA','mdHouseB'].forEach(id=>$(id).addEventListener('input',mdRender));
   $('mdMarket').addEventListener('change',()=>{
     const mkt=$('mdMarket').value;
     $('mdLineALabel').textContent=mkt==='handicap'?'Linha A (ex: -41.5)':'Linha Over (ex: 220.5)';
@@ -2474,6 +2479,23 @@
     mdRender(); saveState(); renderAll();
     toast('Middle registrado ✓');
   });
+
+  // Explica, em linguagem de placar, qual resultado faz o middle bater
+  function mdMiddleExplain(o){
+    const mkt=o.mkt||o.market;
+    const gaps=o.gapIntegers||[];
+    if(!gaps.length) return 'Sem vão — não há middle possível (as pernas nunca ganham juntas).';
+    const first=gaps[0], last=gaps[gaps.length-1];
+    if(mkt==='handicap'){
+      const favIsA=(o.lineA<=o.lineB);
+      const favHouse=favIsA?(o.houseA||'lado A'):(o.houseB||'lado B');
+      const favLine=favIsA?o.lineA:o.lineB;
+      const alvo=gaps.length===1?`exatamente <b>${first}</b>`:`<b>${first} a ${last}</b>`;
+      return `Cai no middle se o favorito (${esc(favHouse)}, ${favLine>0?'+':''}${favLine}) vencer por ${alvo} de diferença no placar. Fora disso, só uma perna ganha.`;
+    }
+    const alvo=gaps.length===1?`exatamente <b>${first}</b>`:(gaps.length===2?`<b>${first}</b> ou <b>${last}</b>`:`entre <b>${first}</b> e <b>${last}</b>`);
+    return `Cai no middle se o total (pontos/gols) da linha for ${alvo}. Fora disso, só uma perna ganha.`;
+  }
 
   function mdRealProfit(o){
     if(o.resultado==='A') return o.profitAWins;
@@ -2546,10 +2568,16 @@
           <span class="bet-val ${!fin?'pend':(p>=0?'pos':'neg')}" style="font-size:11px;">${valTxt}</span>
         </div>
         <div class="bet-detail${isOpen?' show':''}" data-mddetail="${o.id}">
+          <div class="md-explain">🎯 ${mdMiddleExplain(o)}</div>
+          <div class="md-stakes">
+            <div><span class="house-tag">${esc(o.houseA||'A')}</span> ${labelA} @${o.oddA.toFixed(2)} · aposta <b>${fmt(o.stakeA)}</b> → retorno ${fmt(o.stakeA*o.oddA)}</div>
+            <div><span class="house-tag">${esc(o.houseB||'B')}</span> ${labelB} @${o.oddB.toFixed(2)} · aposta <b>${fmt(o.stakeB)}</b> → retorno ${fmt(o.stakeB*o.oddB)}</div>
+            <div class="tot">Total apostado: ${fmt(o.total!=null?o.total:(o.stakeA+o.stakeB))}</div>
+          </div>
           <div style="font-family:var(--mono);font-size:11.5px;line-height:1.8;">
-            <div><b>A vence:</b> <span class="${o.profitAWins>=0?'pos':'neg'}">${fmtSign(o.profitAWins)}</span> — ${esc(o.houseA||'')} ganha, ${esc(o.houseB||'')} perde</div>
-            <div><b style="color:var(--sky)">Middle (${(o.gapIntegers||[]).join(', ')}):</b> <span class="pos">${fmtSign(o.profitMiddle)}</span> — ambas ganham</div>
-            <div><b>B vence:</b> <span class="${o.profitBWins>=0?'pos':'neg'}">${fmtSign(o.profitBWins)}</span> — ${esc(o.houseA||'')} perde, ${esc(o.houseB||'')} ganha</div>
+            <div><b>A vence:</b> <span class="${o.profitAWins>=0?'pos':'neg'}">${fmtSign(o.profitAWins)}</span> — ${esc(o.houseA||'')} ganha, ${esc(o.houseB||'')} perde ${fmt(o.stakeB)}</div>
+            <div><b style="color:var(--sky)">Middle:</b> <span class="pos">${fmtSign(o.profitMiddle)}</span> — ambas ganham</div>
+            <div><b>B vence:</b> <span class="${o.profitBWins>=0?'pos':'neg'}">${fmtSign(o.profitBWins)}</span> — ${esc(o.houseB||'')} ganha, ${esc(o.houseA||'')} perde ${fmt(o.stakeA)}</div>
           </div>
           <div style="margin-top:10px;">
             <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Resultado</div>
