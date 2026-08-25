@@ -184,7 +184,25 @@
   .caixa-val{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--text);letter-spacing:-0.5px;}
   .caixa-sub{font-size:12px;margin-top:6px;line-height:1.7;}
   .kpi-sub{font-family:var(--mono);font-size:10.5px;margin-top:2px;}
-  /* (invertidos / valor bet CSS removed) */
+  /* middles */
+  .md-scenario{padding:10px 12px;border-radius:9px;margin-bottom:6px;font-family:var(--mono);font-size:12.5px;line-height:1.7;border:1px solid var(--border);background:var(--panel-2);}
+  .md-scenario.best{background:#0A2018;border-color:#1A3D2E;}
+  .md-scenario.worst{background:#2A0E12;border-color:#5C2530;}
+  .md-scenario.mid{background:#0E1520;border-color:#1A2C40;}
+  .md-scenario .sc-label{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted-2);font-weight:700;font-family:var(--sans);margin-bottom:3px;}
+  .md-scenario .sc-val{font-size:18px;font-weight:700;}
+  .md-scenario .sc-detail{font-size:11px;color:var(--muted);margin-top:2px;}
+  .md-gap-info{display:flex;gap:8px;justify-content:center;align-items:center;padding:8px 0;font-size:11px;color:var(--muted);}
+  .md-gap-pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:6px;font-family:var(--mono);}
+  .md-gap-pill.safe{background:#0A2018;border:1px solid #1A3D2E;color:#34D399;}
+  .md-gap-pill.risky{background:#2A1A08;border:1px solid #4D3010;color:#F5A524;}
+  .md-gap-pill.bad{background:#2A0E12;border:1px solid #5C2530;color:#F87171;}
+  .md-verdict{text-align:center;padding:10px 0;font-size:14px;font-weight:700;}
+  .md-legs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;}
+  .md-leg{padding:8px 10px;border-radius:8px;background:#0E1116;border:1px solid var(--border);font-family:var(--mono);font-size:11.5px;line-height:1.6;}
+  .md-leg b{color:var(--text);}
+  .md-leg.legA{border-left:3px solid #38BDF8;}
+  .md-leg.legB{border-left:3px solid #A78BFA;}
   .caixa-edit-val{cursor:pointer;border-bottom:1px dashed var(--muted-2);}
   .caixa-edit-val:hover{color:var(--sky);border-bottom-color:var(--sky);}
   .sb-open-box{margin-top:10px;padding:10px 12px;border-radius:9px;background:#2A1A08;border:1px solid #4D3010;font-size:12.5px;line-height:1.7;}
@@ -282,6 +300,7 @@
   <div class="tabs">
     <div class="tab active" data-tab="valor">💰 Banca &amp; Caixa</div>
     <div class="tab" data-tab="surebet">🎯 Surebets</div>
+    <div class="tab" data-tab="middle">🔀 Middles</div>
   </div>
 
   <!-- ============ ABA VALOR ============ -->
@@ -590,13 +609,88 @@
 
   </div><!-- /tab-surebet -->
 
+  <!-- ABA MIDDLES -->
+  <div class="tab-panel" id="tab-middle">
+
+    <!-- Resumo -->
+    <div class="card">
+      <div class="card-title">Resumo de Middles</div>
+      <div class="grid3">
+        <div class="kpi"><div class="k">Lucro</div><div class="v" id="mdProfit">—</div></div>
+        <div class="kpi"><div class="k">Operações</div><div class="v" id="mdCount">—</div></div>
+        <div class="kpi"><div class="k">Middles acertados</div><div class="v" id="mdHits">—</div></div>
+      </div>
+    </div>
+
+    <!-- Calculadora -->
+    <div class="card">
+      <div class="card-title">Calculadora de Middle</div>
+      <p style="font-size:12px;color:var(--muted);margin:0 0 10px;">Duas pernas opostas com vão. Se o resultado cair no vão, ambas ganham.</p>
+
+      <div class="grid2">
+        <div><label>Mercado</label>
+          <select id="mdMarket">
+            <option value="handicap">Handicap (pontos/gols)</option>
+            <option value="total">Total (over/under)</option>
+          </select>
+        </div>
+        <div><label>Evento (opcional)</label><input type="text" id="mdEvent" placeholder="Ex: Olimpia Kings x Capiata Bulls"></div>
+      </div>
+
+      <div class="grid2">
+        <div><label>Casa A</label><input type="text" id="mdHouseA" placeholder="Ex: IviBet"></div>
+        <div><label>Casa B</label><input type="text" id="mdHouseB" placeholder="Ex: Pinnacle"></div>
+      </div>
+
+      <div class="grid2">
+        <div><label id="mdLineALabel">Linha A (ex: -41.5)</label><input type="number" id="mdLineA" step="0.5" placeholder="-41.5"></div>
+        <div><label id="mdLineBLabel">Linha B (ex: +42.5)</label><input type="number" id="mdLineB" step="0.5" placeholder="42.5"></div>
+      </div>
+
+      <div class="grid2">
+        <div><label>Odd A</label><input type="number" id="mdOddA" step="0.001" placeholder="2.410"></div>
+        <div><label>Odd B</label><input type="number" id="mdOddB" step="0.001" placeholder="1.952"></div>
+      </div>
+
+      <div class="grid2">
+        <div><label>Stake A (R$)</label><input type="number" id="mdStakeA" step="0.01" placeholder="448.00"></div>
+        <div><label>Stake B (R$)</label><input type="number" id="mdStakeB" step="0.01" placeholder="552.00"></div>
+      </div>
+
+      <div style="text-align:right;margin-bottom:8px;">
+        <span style="font-family:var(--mono);font-size:12px;color:var(--muted);">Total: <span id="mdTotal" style="color:var(--text);font-weight:700;">—</span></span>
+      </div>
+
+      <div id="mdResult"></div>
+
+      <div class="grid2" style="margin-top:10px;">
+        <div><label>Data / horário</label><input type="datetime-local" id="mdDate"></div>
+        <div style="display:flex;align-items:flex-end;"><button class="btn primary" id="mdRegisterBtn" style="margin-bottom:8px;">Registrar middle</button></div>
+      </div>
+    </div>
+
+    <!-- Lista -->
+    <div class="card">
+      <div class="card-title">
+        <span>Operações <button class="btn small" id="mdCollapseBtn" style="margin-left:6px;padding:2px 8px;">▾</button></span>
+      </div>
+      <div class="filter-bar" style="margin-bottom:8px;">
+        <div class="filter-btn active" data-mdfilter="all">Todas</div>
+        <div class="filter-btn" data-mdfilter="open">⏳ Em aberto</div>
+        <div class="filter-btn" data-mdfilter="done">✓ Finalizadas</div>
+      </div>
+      <div id="mdList"></div>
+    </div>
+
+  </div><!-- /tab-middle -->
+
 
   <div class="toast" id="toast"></div>
 
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260825-2200';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260825-2330';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -627,7 +721,7 @@
 
   function normalize(p){
     const cfg=Object.assign({},DEFAULTS,p.cfg||{});
-    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5.19, usdRateSrc:p.usdRateSrc||'', usdRateAt:p.usdRateAt||'', eurRate:(typeof p.eurRate==='number'&&p.eurRate>0)?p.eurRate:6.10, eurRateSrc:p.eurRateSrc||'', eurRateAt:p.eurRateAt||'', appBuild:p.appBuild||'', deleted:Array.isArray(p.deleted)?p.deleted:[], surebets:Array.isArray(p.surebets)?p.surebets:[], invertidos:Array.isArray(p.invertidos)?p.invertidos:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5.19, usdRateSrc:p.usdRateSrc||'', usdRateAt:p.usdRateAt||'', eurRate:(typeof p.eurRate==='number'&&p.eurRate>0)?p.eurRate:6.10, eurRateSrc:p.eurRateSrc||'', eurRateAt:p.eurRateAt||'', appBuild:p.appBuild||'', deleted:Array.isArray(p.deleted)?p.deleted:[], surebets:Array.isArray(p.surebets)?p.surebets:[], invertidos:Array.isArray(p.invertidos)?p.invertidos:[], middles:Array.isArray(p.middles)?p.middles:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
   }
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
@@ -906,16 +1000,16 @@
 
     // listas: fusão item a item, pelo timestamp de cada registro
     novo.surebets = fundirListas(local.surebets,remoto.surebets,o=>o.id);
+    novo.middles  = fundirListas(local.middles||[],remoto.middles||[],o=>o.id);
     novo.bets     = fundirListas(local.bets,remoto.bets,o=>o.id);
     novo.aportes  = fundirListas(local.aportes,remoto.aportes,o=>o.id);
     novo.caixa    = fundirListas(local.caixa,remoto.caixa,o=>o.date);
-    // saldos casam por NOME (ids podem divergir entre dispositivos)
     novo.balances = fundirListas(local.balances,remoto.balances,b=>(b.name||'').trim().toLowerCase());
 
-    // respeita exclusões feitas em qualquer um dos lados
     novo.deleted = unirSimples(local.deleted,remoto.deleted,d=>d.id);
     const apagados=new Set((novo.deleted||[]).map(d=>d.id));
     novo.surebets=novo.surebets.filter(o=>!apagados.has(o.id));
+    novo.middles=novo.middles.filter(o=>!apagados.has(o.id));
     novo.bets=novo.bets.filter(o=>!apagados.has(o.id));
     novo.aportes=novo.aportes.filter(o=>!apagados.has(o.id));
     novo.balances=novo.balances.filter(b=>!apagados.has(b.id));
@@ -1262,6 +1356,10 @@
     });
     (state.invertidos||[]).filter(o=>!o.resultado).forEach(o=>{
       if(o.house){ const k=o.house.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.total||0); }
+    });
+    (state.middles||[]).filter(o=>!o.resultado).forEach(o=>{
+      if(o.houseA){ const k=o.houseA.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeA||0); }
+      if(o.houseB){ const k=o.houseB.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeB||0); }
     });
     const jogoDe=b=>emJogo[(b.name||'').trim().toLowerCase()]||0;
     const totalDe=b=>balBRL(b)+jogoDe(b);
@@ -2238,7 +2336,270 @@
     o.aplicado=Object.assign({},o.aplicado,{resultado:res||null});
   }
 
-  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); }
+  /* ============ ABA MIDDLES ============ */
+  let mdFilter='all', mdCollapsed=false, mdOpenDetail=null;
+
+  function mdCompute(){
+    const mkt=$('mdMarket').value;
+    const lineA=parseFloat($('mdLineA').value);
+    const lineB=parseFloat($('mdLineB').value);
+    const oddA=parseFloat($('mdOddA').value);
+    const oddB=parseFloat($('mdOddB').value);
+    const stakeA=parseFloat($('mdStakeA').value);
+    const stakeB=parseFloat($('mdStakeB').value);
+    if(!(oddA>1)||!(oddB>1)||isNaN(lineA)||isNaN(lineB)||!(stakeA>0)||!(stakeB>0)) return null;
+
+    const total=stakeA+stakeB;
+    const retA=stakeA*oddA, retB=stakeB*oddB;
+    const lucroA=retA-stakeA, lucroB=retB-stakeB;
+
+    let gapLow, gapHigh, gapIntegers=[];
+    if(mkt==='handicap'){
+      const absA=Math.abs(lineA), absB=Math.abs(lineB);
+      gapLow=Math.min(absA,absB); gapHigh=Math.max(absA,absB);
+    } else {
+      gapLow=Math.min(lineA,lineB); gapHigh=Math.max(lineA,lineB);
+    }
+    if(gapLow%1===0.5 && gapHigh%1===0.5){
+      for(let v=Math.ceil(gapLow);v<gapHigh;v++) gapIntegers.push(v);
+    } else if(gapLow%1===0 && gapHigh%1===0){
+      for(let v=gapLow;v<=gapHigh;v++) gapIntegers.push(v);
+    } else {
+      for(let v=Math.ceil(gapLow);v<=Math.floor(gapHigh);v++) gapIntegers.push(v);
+    }
+
+    const hasGap=gapIntegers.length>0 && gapHigh>gapLow;
+
+    // Cenário A vence: leg A ganha, leg B perde
+    const profitAWins=lucroA-stakeB;
+    // Cenário B vence: leg A perde, leg B ganha
+    const profitBWins=lucroB-stakeA;
+    // Cenário Middle: ambas ganham
+    const profitMiddle=lucroA+lucroB;
+
+    const worstCase=Math.min(profitAWins,profitBWins);
+    const isSafe=worstCase>=0;
+
+    return {mkt,lineA,lineB,oddA,oddB,stakeA,stakeB,total,retA,retB,lucroA,lucroB,
+            gapLow,gapHigh,gapIntegers,hasGap,
+            profitAWins,profitBWins,profitMiddle,worstCase,isSafe};
+  }
+
+  function mdRender(){
+    const box=$('mdResult');
+    const r=mdCompute();
+    const stA=parseFloat($('mdStakeA').value)||0, stB=parseFloat($('mdStakeB').value)||0;
+    $('mdTotal').textContent=(stA+stB)>0?fmt(stA+stB):'—';
+    if(!r){ box.innerHTML='<div style="color:var(--muted);font-size:12.5px;padding:6px 0;">Preencha linhas, odds e stakes para ver a análise.</div>'; return; }
+
+    const houseA=$('mdHouseA').value.trim()||'Casa A';
+    const houseB=$('mdHouseB').value.trim()||'Casa B';
+    const lineALabel=r.mkt==='handicap'?(r.lineA>0?'+':'')+r.lineA:r.lineA;
+    const lineBLabel=r.mkt==='handicap'?(r.lineB>0?'+':'')+r.lineB:r.lineB;
+    const labelA=r.mkt==='handicap'?`H1(${lineALabel})`:`Over ${r.lineA}`;
+    const labelB=r.mkt==='handicap'?`H2(${lineBLabel})`:`Under ${r.lineB}`;
+
+    let verdictText, verdictColor;
+    if(!r.hasGap){
+      verdictText='SEM VÃO — não há middle possível';
+      verdictColor='var(--red)';
+    } else if(r.isSafe){
+      verdictText='MIDDLE SEGURO — lucro garantido em todos os cenários';
+      verdictColor='var(--green)';
+    } else {
+      const evMiddle=(r.profitMiddle*r.gapIntegers.length/100) + (r.worstCase*(100-r.gapIntegers.length)/100);
+      verdictText=`MIDDLE DE RISCO — perde ${fmt(Math.abs(r.worstCase))} se errar`;
+      verdictColor='var(--amber)';
+    }
+
+    const gapTxt=r.hasGap?
+      `<div class="md-gap-info">Valores no vão: <span class="md-gap-pill ${r.isSafe?'safe':r.hasGap?'risky':'bad'}">${r.gapIntegers.join(', ')}</span></div>`
+      :'<div class="md-gap-info"><span class="md-gap-pill bad">Sem vão</span></div>';
+
+    box.innerHTML=
+      `<div class="md-verdict" style="color:${verdictColor}">${verdictText}</div>`+
+      gapTxt+
+      `<div class="md-legs">`+
+        `<div class="md-leg legA"><b>${esc(houseA)}</b><br>${labelA} @${r.oddA.toFixed(3)}<br>Stake: <b>${fmt(r.stakeA)}</b><br>Retorno: ${fmt(r.retA)}</div>`+
+        `<div class="md-leg legB"><b>${esc(houseB)}</b><br>${labelB} @${r.oddB.toFixed(3)}<br>Stake: <b>${fmt(r.stakeB)}</b><br>Retorno: ${fmt(r.retB)}</div>`+
+      `</div>`+
+      `<div class="md-scenario ${r.profitAWins>=0?'best':'worst'}">`+
+        `<div class="sc-label">${r.mkt==='handicap'?'Fora do vão (lado A vence)':'Over vence, Under perde'}</div>`+
+        `<div class="sc-val ${r.profitAWins>=0?'pos':'neg'}">${fmtSign(r.profitAWins)}</div>`+
+        `<div class="sc-detail">${esc(houseA)} ganha ${fmtSign(r.lucroA)} · ${esc(houseB)} perde ${fmt(r.stakeB)}</div>`+
+      `</div>`+
+      `<div class="md-scenario mid">`+
+        `<div class="sc-label">CAI NO MIDDLE (${r.gapIntegers.length>0?r.gapIntegers.join(', '):'—'})</div>`+
+        `<div class="sc-val pos" style="color:var(--sky)">${fmtSign(r.profitMiddle)}</div>`+
+        `<div class="sc-detail">${esc(houseA)} ganha ${fmtSign(r.lucroA)} + ${esc(houseB)} ganha ${fmtSign(r.lucroB)}</div>`+
+      `</div>`+
+      `<div class="md-scenario ${r.profitBWins>=0?'best':'worst'}">`+
+        `<div class="sc-label">${r.mkt==='handicap'?'Fora do vão (lado B vence)':'Under vence, Over perde'}</div>`+
+        `<div class="sc-val ${r.profitBWins>=0?'pos':'neg'}">${fmtSign(r.profitBWins)}</div>`+
+        `<div class="sc-detail">${esc(houseA)} perde ${fmt(r.stakeA)} · ${esc(houseB)} ganha ${fmtSign(r.lucroB)}</div>`+
+      `</div>`;
+  }
+
+  ['mdLineA','mdLineB','mdOddA','mdOddB','mdStakeA','mdStakeB'].forEach(id=>$(id).addEventListener('input',mdRender));
+  $('mdMarket').addEventListener('change',()=>{
+    const mkt=$('mdMarket').value;
+    $('mdLineALabel').textContent=mkt==='handicap'?'Linha A (ex: -41.5)':'Linha Over (ex: 220.5)';
+    $('mdLineBLabel').textContent=mkt==='handicap'?'Linha B (ex: +42.5)':'Linha Under (ex: 222.5)';
+    mdRender();
+  });
+
+  $('mdRegisterBtn').addEventListener('click',()=>{
+    const r=mdCompute();
+    if(!r){ alert('Preencha linhas, odds e stakes.'); return; }
+    if(!r.hasGap && !confirm('Sem vão detectado — não há middle. Registrar mesmo assim?')) return;
+    const op={
+      id:uid(), kind:'middle',
+      event:$('mdEvent').value.trim()||'Middle sem nome',
+      houseA:$('mdHouseA').value.trim(), houseB:$('mdHouseB').value.trim(),
+      market:r.mkt, lineA:r.lineA, lineB:r.lineB,
+      oddA:r.oddA, oddB:r.oddB, stakeA:r.stakeA, stakeB:r.stakeB, total:r.total,
+      profitAWins:r.profitAWins, profitBWins:r.profitBWins, profitMiddle:r.profitMiddle,
+      gapIntegers:r.gapIntegers, isSafe:r.isSafe,
+      resultado:null, date:$('mdDate').value||nowLocalStr()
+    };
+    if(op.houseA) moverSaldo(op.houseA, -op.stakeA);
+    if(op.houseB) moverSaldo(op.houseB, -op.stakeB);
+    op.aplicado={stakes:true};
+    touch(op);
+    state.middles.push(op);
+    $('mdEvent').value=''; $('mdHouseA').value=''; $('mdHouseB').value='';
+    $('mdLineA').value=''; $('mdLineB').value=''; $('mdOddA').value=''; $('mdOddB').value='';
+    $('mdStakeA').value=''; $('mdStakeB').value='';
+    $('mdDate').value=nowLocalStr();
+    mdRender(); saveState(); renderAll();
+    toast('Middle registrado ✓');
+  });
+
+  function mdRealProfit(o){
+    if(o.resultado==='A') return o.profitAWins;
+    if(o.resultado==='B') return o.profitBWins;
+    if(o.resultado==='MID') return o.profitMiddle;
+    return 0;
+  }
+  function mdAplicarResultado(o,res){
+    if(o.aplicado&&o.aplicado.resultado){
+      const ant=o.aplicado.resultado;
+      if(ant==='A'&&o.houseA) moverSaldo(o.houseA, -(o.stakeA*o.oddA));
+      else if(ant==='B'&&o.houseB) moverSaldo(o.houseB, -(o.stakeB*o.oddB));
+      else if(ant==='MID'){
+        if(o.houseA) moverSaldo(o.houseA, -(o.stakeA*o.oddA));
+        if(o.houseB) moverSaldo(o.houseB, -(o.stakeB*o.oddB));
+      }
+    }
+    if(res==='A'&&o.houseA) moverSaldo(o.houseA, o.stakeA*o.oddA);
+    else if(res==='B'&&o.houseB) moverSaldo(o.houseB, o.stakeB*o.oddB);
+    else if(res==='MID'){
+      if(o.houseA) moverSaldo(o.houseA, o.stakeA*o.oddA);
+      if(o.houseB) moverSaldo(o.houseB, o.stakeB*o.oddB);
+    }
+    o.aplicado=Object.assign({},o.aplicado,{resultado:res||null});
+  }
+
+  function renderMiddleSummary(){
+    const ops=state.middles||[];
+    const fin=ops.filter(o=>o.resultado);
+    const mids=fin.filter(o=>o.resultado==='MID');
+    const open=ops.filter(o=>!o.resultado);
+    const lucro=fin.reduce((s,o)=>s+mdRealProfit(o),0);
+    $('mdProfit').textContent=fin.length?fmtSign(lucro):'—';
+    $('mdProfit').className='v '+(lucro>=0?'pos':'neg');
+    $('mdCount').innerHTML=ops.length?`${fin.length} fin.${open.length?` · <span style="color:var(--amber)">${open.length} aberta${open.length>1?'s':''}</span>`:''}`:'—';
+    $('mdHits').textContent=fin.length?`${mids.length}/${fin.length} (${(mids.length/fin.length*100).toFixed(0)}%)`:'—';
+  }
+
+  function renderMiddleList(){
+    const box=$('mdList');
+    let ops=state.middles||[];
+    if(mdFilter==='open') ops=ops.filter(o=>!o.resultado);
+    else if(mdFilter==='done') ops=ops.filter(o=>!!o.resultado);
+    if(!ops.length){ box.innerHTML='<div class="empty">Nenhum middle neste filtro.</div>'; return; }
+    if(mdCollapsed){ box.innerHTML=`<div class="empty">${ops.length} middle(s) — recolhido.</div>`; return; }
+
+    box.innerHTML=[...ops].sort((a,b)=>(b.date||'').localeCompare(a.date||'')).map(o=>{
+      const fin=!!o.resultado;
+      const isMid=o.resultado==='MID';
+      const p=mdRealProfit(o);
+      const borderColor=!fin?'#F5A524':(isMid?'#38BDF8':(p>=0?'#34D399':'#F87171'));
+      const dot=!fin?'pendente':(p>=0?'green':'red');
+      const labelA=o.market==='handicap'?`H1(${o.lineA>0?'+':''}${o.lineA})`:`Over ${o.lineA}`;
+      const labelB=o.market==='handicap'?`H2(${o.lineB>0?'+':''}${o.lineB})`:`Under ${o.lineB}`;
+      const isOpen=mdOpenDetail===o.id;
+      let valTxt;
+      if(!fin) valTxt=`${fmtSign(o.profitAWins)} / ${fmtSign(o.profitMiddle)} / ${fmtSign(o.profitBWins)}`;
+      else valTxt=fmtSign(p)+(isMid?' 🎯':'');
+      return `<div class="bet-row" style="border-left:3px solid ${borderColor};">
+          <span class="bet-dot ${dot}"></span>
+          <span class="bet-date">${fmtDate(o.date)}</span>
+          <div class="bet-main" data-mdtoggle="${o.id}">
+            <div class="bet-event">${esc(o.event)}</div>
+            <div class="bet-sub">
+              <span class="house-tag">${esc(o.houseA||'')}</span>${labelA} @${o.oddA.toFixed(2)} ·
+              <span class="house-tag">${esc(o.houseB||'')}</span>${labelB} @${o.oddB.toFixed(2)} ·
+              ${fmt(o.total)}${o.gapIntegers&&o.gapIntegers.length?` · vão: ${o.gapIntegers.join(',')}`:''}
+            </div>
+          </div>
+          <span class="bet-val ${!fin?'pend':(p>=0?'pos':'neg')}" style="font-size:11px;">${valTxt}</span>
+        </div>
+        <div class="bet-detail${isOpen?' show':''}" data-mddetail="${o.id}">
+          <div style="font-family:var(--mono);font-size:11.5px;line-height:1.8;">
+            <div><b>A vence:</b> <span class="${o.profitAWins>=0?'pos':'neg'}">${fmtSign(o.profitAWins)}</span> — ${esc(o.houseA||'')} ganha, ${esc(o.houseB||'')} perde</div>
+            <div><b style="color:var(--sky)">Middle (${(o.gapIntegers||[]).join(', ')}):</b> <span class="pos">${fmtSign(o.profitMiddle)}</span> — ambas ganham</div>
+            <div><b>B vence:</b> <span class="${o.profitBWins>=0?'pos':'neg'}">${fmtSign(o.profitBWins)}</span> — ${esc(o.houseA||'')} perde, ${esc(o.houseB||'')} ganha</div>
+          </div>
+          <div style="margin-top:10px;">
+            <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Resultado</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <button class="btn small ${o.resultado==='A'?'primary':''}" data-mdres="${o.id}:A">A venceu</button>
+              <button class="btn small ${o.resultado==='MID'?'primary':''}" data-mdres="${o.id}:MID" style="${o.resultado==='MID'?'background:var(--sky);color:#04121C;border-color:var(--sky);':''}">🎯 Middle!</button>
+              <button class="btn small ${o.resultado==='B'?'primary':''}" data-mdres="${o.id}:B">B venceu</button>
+              ${o.resultado?`<button class="btn small" data-mdres="${o.id}:">Reabrir</button>`:''}
+            </div>
+          </div>
+          <div style="display:flex;gap:6px;margin-top:10px;">
+            <button class="btn small" data-mddel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
+          </div>
+        </div>`;
+    }).join('');
+
+    box.querySelectorAll('[data-mdtoggle]').forEach(el=>el.addEventListener('click',()=>{
+      mdOpenDetail = mdOpenDetail===el.dataset.mdtoggle?null:el.dataset.mdtoggle; renderMiddleList();
+    }));
+    box.querySelectorAll('[data-mdres]').forEach(b=>b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const [id,res]=b.dataset.mdres.split(':');
+      const o=state.middles.find(x=>x.id===id);
+      if(o){ o.resultado=res||null; mdAplicarResultado(o,o.resultado); touch(o); saveState(); renderAll(); }
+    }));
+    box.querySelectorAll('[data-mddel]').forEach(b=>b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const o=state.middles.find(x=>x.id===b.dataset.mddel);
+      if(o&&confirm(`Excluir "${o.event}"?\n\nO valor volta para o saldo das casas.`)){
+        mdAplicarResultado(o,null);
+        if(o.aplicado&&o.aplicado.stakes){
+          if(o.houseA) moverSaldo(o.houseA, +o.stakeA);
+          if(o.houseB) moverSaldo(o.houseB, +o.stakeB);
+        }
+        marcarExcluido(o.id);
+        state.middles=state.middles.filter(x=>x.id!==b.dataset.mddel);
+        mdOpenDetail=null; saveState(); renderAll();
+      }
+    }));
+  }
+
+  document.querySelectorAll('[data-mdfilter]').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-mdfilter]').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active'); mdFilter=b.dataset.mdfilter; renderMiddleList();
+  }));
+  $('mdCollapseBtn').addEventListener('click',()=>{
+    mdCollapsed=!mdCollapsed; $('mdCollapseBtn').textContent=mdCollapsed?'▸':'▾'; renderMiddleList();
+  });
+
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderMiddleSummary(); renderMiddleList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
@@ -2292,8 +2653,10 @@
     if(Date.now()-at > 6*3600*1000) atualizarCotacao(true);
   })();
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
+  if(!$('mdDate').value) $('mdDate').value=nowLocalStr();
   recolherResolvidos();
   updateSurebetCalc();
+  mdRender();
   renderAll();
   renderAutosave();
   renderSyncUi();
