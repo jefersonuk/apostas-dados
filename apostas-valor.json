@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 695,
-      "updatedAt": "2026-08-25T18:11:46.653Z"
+      "value": 445,
+      "updatedAt": "2026-08-25T20:34:28.728Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 11863.77,
+      "value": 12384.66,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T20:29:42.678Z"
+      "updatedAt": "2026-08-25T20:34:28.729Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4675,9 +4675,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 104.33,
+      "value": 51.73,
       "currency": "USD",
-      "updatedAt": "2026-08-25T16:11:21.638Z"
+      "updatedAt": "2026-08-25T20:34:28.728Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -12617,6 +12617,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T20:29:42.676Z"
+    },
+    {
+      "id": "mt94id4ook4r1",
+      "kind": "sure",
+      "event": "SCU TOREENSE X KOLOS KOVALIVKA",
+      "houseA": "Gamdom",
+      "houseB": "Betnacional",
+      "oddA": 2.09,
+      "oddB": 2.2,
+      "total": 520.8900000000001,
+      "stakeA": 270.89000000000004,
+      "stakeB": 250,
+      "lucroA": 45.27009999999996,
+      "lucroB": 29.1099999999999,
+      "lucro": 29.1099999999999,
+      "roi": 5.588511969897655,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-26T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T20:34:28.728Z"
     }
   ],
   "invertidos": [],
@@ -12651,5 +12675,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T20:29:42.678Z"
+  "updatedAt": "2026-08-25T20:34:28.729Z"
 }
