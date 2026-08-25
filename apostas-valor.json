@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7051.06,
+      "value": 7803.06,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T08:09:17.864Z"
+      "updatedAt": "2026-08-25T08:12:15.860Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4892,6 +4892,18 @@
       "value": 29.99,
       "updatedAt": "2026-08-24T14:56:51.646Z",
       "currency": "USD"
+    },
+    {
+      "id": "mt8dzvcedw3ti",
+      "name": "Casa A",
+      "value": -560,
+      "updatedAt": "2026-08-25T08:12:15.855Z"
+    },
+    {
+      "id": "mt8dzvcf3rqal",
+      "name": "Casa B",
+      "value": -192,
+      "updatedAt": "2026-08-25T08:12:15.855Z"
     }
   ],
   "aportes": [
@@ -12397,9 +12409,33 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T08:09:17.862Z"
+    },
+    {
+      "id": "mt8dzvccv14wz",
+      "kind": "sure",
+      "event": "Preah Sihanouk – Kampot",
+      "houseA": "",
+      "houseB": "",
+      "oddA": 1.452,
+      "oddB": 4.3,
+      "total": 752,
+      "stakeA": 560,
+      "stakeB": 192,
+      "lucroA": 61.120000000000005,
+      "lucroB": 73.59999999999991,
+      "lucro": 61.120000000000005,
+      "roi": 8.127659574468085,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-25T05:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T08:12:15.856Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T08:09:17.864Z"
+  "updatedAt": "2026-08-25T08:12:15.860Z"
 }
