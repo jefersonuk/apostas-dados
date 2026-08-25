@@ -650,18 +650,18 @@
       </div>
 
       <div class="grid2">
-        <div><label id="mdLineALabel">Linha A (ex: -41.5)</label><input type="number" id="mdLineA" step="0.5" placeholder="-41.5"></div>
-        <div><label id="mdLineBLabel">Linha B (ex: +42.5)</label><input type="number" id="mdLineB" step="0.5" placeholder="42.5"></div>
+        <div><label id="mdLineALabel">Linha A (ex: -41.5)</label><input type="text" inputmode="decimal" id="mdLineA" placeholder="-41.5"></div>
+        <div><label id="mdLineBLabel">Linha B (ex: +42.5)</label><input type="text" inputmode="decimal" id="mdLineB" placeholder="42.5"></div>
       </div>
 
       <div class="grid2">
-        <div><label>Odd A</label><input type="number" id="mdOddA" step="0.001" placeholder="2.410"></div>
-        <div><label>Odd B</label><input type="number" id="mdOddB" step="0.001" placeholder="1.952"></div>
+        <div><label>Odd A</label><input type="text" inputmode="decimal" id="mdOddA" placeholder="2.410"></div>
+        <div><label>Odd B</label><input type="text" inputmode="decimal" id="mdOddB" placeholder="1.952"></div>
       </div>
 
       <div class="grid2">
-        <div><label>Stake A (R$)</label><input type="number" id="mdStakeA" step="0.01" placeholder="448.00"></div>
-        <div><label>Stake B (R$)</label><input type="number" id="mdStakeB" step="0.01" placeholder="552.00"></div>
+        <div><label>Stake A (R$)</label><input type="text" inputmode="decimal" id="mdStakeA" placeholder="448.00"></div>
+        <div><label>Stake B (R$)</label><input type="text" inputmode="decimal" id="mdStakeB" placeholder="552.00"></div>
       </div>
 
       <div style="text-align:right;margin-bottom:8px;">
@@ -697,7 +697,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260826-1450';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260826-1600';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -2389,14 +2389,17 @@
   /* ============ ABA MIDDLES ============ */
   let mdFilter='all', mdCollapsed=false, mdOpenDetail=null;
 
+  // Aceita vírgula OU ponto como decimal (teclado BR digita vírgula)
+  const numBR=(v)=>{ if(v==null) return NaN; const s=String(v).trim().replace(/\s/g,'').replace(',','.'); return s===''?NaN:parseFloat(s); };
+
   function mdCompute(){
     const mkt=$('mdMarket').value;
-    const lineA=parseFloat($('mdLineA').value);
-    const lineB=parseFloat($('mdLineB').value);
-    const oddA=parseFloat($('mdOddA').value);
-    const oddB=parseFloat($('mdOddB').value);
-    const stakeA=parseFloat($('mdStakeA').value);
-    const stakeB=parseFloat($('mdStakeB').value);
+    const lineA=numBR($('mdLineA').value);
+    const lineB=numBR($('mdLineB').value);
+    const oddA=numBR($('mdOddA').value);
+    const oddB=numBR($('mdOddB').value);
+    const stakeA=numBR($('mdStakeA').value);
+    const stakeB=numBR($('mdStakeB').value);
     if(!(oddA>1)||!(oddB>1)||isNaN(lineA)||isNaN(lineB)||!(stakeA>0)||!(stakeB>0)) return null;
 
     const total=stakeA+stakeB;
@@ -2440,18 +2443,33 @@
     const profitMiddle=hasGap?Math.min(...cenarios.filter(c=>c.sA==='win'&&c.sB==='win').map(c=>c.profit)):0;
     const profitPush=pushValues.length?Math.min(...cenarios.filter(c=>pushValues.includes(c.v)).map(c=>c.profit)):null;
 
+    // Cenário "do meio": middle cheio (as duas ganham) OU empate de linha (uma devolve stake).
+    // Guarda o retorno exato de cada casa nesse cenário — no push a casa devolve só o stake.
+    let midScenario=null, midKind=null, midValues=[];
+    if(hasGap){
+      midScenario=cenarios.filter(c=>c.sA==='win'&&c.sB==='win').reduce((a,c)=>(a===null||c.profit<a.profit)?c:a,null);
+      midKind='full'; midValues=gapIntegers.slice();
+    } else if(pushValues.length){
+      midScenario=cenarios.filter(c=>pushValues.includes(c.v)).reduce((a,c)=>(a===null||c.profit<a.profit)?c:a,null);
+      midKind='push'; midValues=pushValues.slice();
+    }
+    const midCreditA=midScenario?(midScenario.sA==='win'?retA:midScenario.sA==='push'?stakeA:0):0;
+    const midCreditB=midScenario?(midScenario.sB==='win'?retB:midScenario.sB==='push'?stakeB:0):0;
+    const midProfit =midScenario?midScenario.profit:0;
+
     const worstCase=Math.min(profitAWins,profitBWins,...cenarios.map(c=>c.profit));
     const isSafe=worstCase>=0;
 
     return {mkt,lineA,lineB,oddA,oddB,stakeA,stakeB,total,retA,retB,lucroA,lucroB,
             gapLow,gapHigh,gapIntegers,pushValues,hostileValues,cenarios,hasGap,
-            profitAWins,profitBWins,profitMiddle,profitPush,worstCase,isSafe};
+            profitAWins,profitBWins,profitMiddle,profitPush,
+            midKind,midValues,midCreditA,midCreditB,midProfit,worstCase,isSafe};
   }
 
   function mdRender(){
     const box=$('mdResult');
     const r=mdCompute();
-    const stA=parseFloat($('mdStakeA').value)||0, stB=parseFloat($('mdStakeB').value)||0;
+    const stA=numBR($('mdStakeA').value)||0, stB=numBR($('mdStakeB').value)||0;
     $('mdTotal').textContent=(stA+stB)>0?fmt(stA+stB):'—';
     if(!r){ box.innerHTML='<div style="color:var(--muted);font-size:12.5px;padding:6px 0;">Preencha linhas, odds e stakes para ver a análise.</div>'; return; }
 
@@ -2488,7 +2506,7 @@
     box.innerHTML=
       `<div class="md-verdict" style="color:${verdictColor}">${verdictText}</div>`+
       gapTxt+
-      (r.hasGap?`<div class="md-explain">🎯 ${mdMiddleExplain({...r,houseA,houseB})}</div>`:'')+
+      ((r.hasGap||r.pushValues.length)?`<div class="md-explain">🎯 ${mdMiddleExplain({...r,houseA,houseB})}</div>`:'')+
       `<div class="md-legs">`+
         `<div class="md-leg legA"><b>${esc(houseA)}</b><br>${labelA} @${r.oddA.toFixed(3)}<br>Stake: <b>${fmt(r.stakeA)}</b><br>Retorno: ${fmt(r.retA)}</div>`+
         `<div class="md-leg legB"><b>${esc(houseB)}</b><br>${labelB} @${r.oddB.toFixed(3)}<br>Stake: <b>${fmt(r.stakeB)}</b><br>Retorno: ${fmt(r.retB)}</div>`+
@@ -2527,9 +2545,20 @@
 
   $('mdRegisterBtn').addEventListener('click',()=>{
     const r=mdCompute();
-    if(!r){ alert('Preencha linhas, odds e stakes.'); return; }
+    if(!r){
+      const falta=[];
+      if(isNaN(numBR($('mdLineA').value))) falta.push('Linha A');
+      if(isNaN(numBR($('mdLineB').value))) falta.push('Linha B');
+      if(!(numBR($('mdOddA').value)>1)) falta.push('Odd A');
+      if(!(numBR($('mdOddB').value)>1)) falta.push('Odd B');
+      if(!(numBR($('mdStakeA').value)>0)) falta.push('Stake A');
+      if(!(numBR($('mdStakeB').value)>0)) falta.push('Stake B');
+      alert('Falta preencher (ou valor inválido): '+falta.join(', ')+'.\n\nDica: no decimal pode usar vírgula ou ponto (ex: 3,5). Odd tem que ser maior que 1.');
+      return;
+    }
     if(r.hostileValues.length && !confirm(`VÃO HOSTIL em ${r.hostileValues.join(', ')}: nenhuma perna ganha e você perde ${fmt(Math.abs(r.worstCase))}. Registrar mesmo assim?`)) return;
-    if(!r.hasGap && !r.hostileValues.length && !confirm('Sem vão detectado — não há middle. Registrar mesmo assim?')) return;
+    // Push-middle (empate de linha, ex.: H1-3/H2+3.5) é operação válida — registra sem susto.
+    if(!r.hasGap && !r.pushValues.length && !r.hostileValues.length && !confirm('Sem vão nem empate de linha — não há middle. Registrar mesmo assim?')) return;
     const op={
       id:uid(), kind:'middle',
       event:$('mdEvent').value.trim()||'Middle sem nome',
@@ -2538,7 +2567,9 @@
       oddA:r.oddA, oddB:r.oddB, stakeA:r.stakeA, stakeB:r.stakeB, total:r.total,
       profitAWins:r.profitAWins, profitBWins:r.profitBWins, profitMiddle:r.profitMiddle,
       gapIntegers:r.gapIntegers, pushValues:r.pushValues, hostileValues:r.hostileValues,
-      profitPush:r.profitPush, worstCase:r.worstCase, isSafe:r.isSafe,
+      profitPush:r.profitPush, midKind:r.midKind, midValues:r.midValues,
+      midCreditA:r.midCreditA, midCreditB:r.midCreditB, midProfit:r.midProfit,
+      worstCase:r.worstCase, isSafe:r.isSafe,
       resultado:null, date:$('mdDate').value||nowLocalStr()
     };
     if(op.houseA) moverSaldo(op.houseA, -op.stakeA);
@@ -2558,11 +2589,20 @@
   function mdMiddleExplain(o){
     const mkt=o.mkt||o.market;
     const gaps=o.gapIntegers||[];
+    const pushes=o.pushValues||[];
+    const favIsA=(o.lineA<=o.lineB);
+    const favHouse=favIsA?(o.houseA||'lado A'):(o.houseB||'lado B');
+    // Sem middle cheio, mas com empate de linha (ex.: H1-3 / H2+3.5) — ainda é operação boa
+    if(!gaps.length && pushes.length){
+      const p=pushes.length===1?`exatamente <b>${pushes[0]}</b>`:`<b>${pushes.join(' ou ')}</b>`;
+      const tail=(o.profitPush!=null)?` — nesse placar você lucra ${fmtSign(o.profitPush)} (uma casa devolve o stake, a outra ganha).`:'';
+      if(mkt==='handicap')
+        return `Não é middle cheio, é empate de linha: se o favorito (${esc(favHouse)}) vencer por ${p} de diferença, cai no empate${tail} Fora disso, o lucro pequeno dos dois lados fica garantido.`;
+      return `Não é middle cheio, é empate de linha: se o total for ${p}, cai no empate${tail} Fora disso, lucro pequeno garantido.`;
+    }
     if(!gaps.length) return 'Sem vão — não há middle possível (as pernas nunca ganham juntas).';
     const first=gaps[0], last=gaps[gaps.length-1];
     if(mkt==='handicap'){
-      const favIsA=(o.lineA<=o.lineB);
-      const favHouse=favIsA?(o.houseA||'lado A'):(o.houseB||'lado B');
       const favLine=favIsA?o.lineA:o.lineB;
       const alvo=gaps.length===1?`exatamente <b>${first}</b>`:`<b>${first} a ${last}</b>`;
       return `Cai no middle se o favorito (${esc(favHouse)}, ${favLine>0?'+':''}${favLine}) vencer por ${alvo} de diferença no placar. Fora disso, só uma perna ganha.`;
@@ -2571,27 +2611,35 @@
     return `Cai no middle se o total (pontos/gols) da linha for ${alvo}. Fora disso, só uma perna ganha.`;
   }
 
+  // Retorno de cada casa quando o "meio" bate (middle cheio ou empate de linha).
+  // No push, a casa que empatou devolve só o stake — por isso não usar stake*odd cego.
+  function mdMidCredit(o){
+    const a=(o.midCreditA!=null)?o.midCreditA:o.stakeA*o.oddA;
+    const b=(o.midCreditB!=null)?o.midCreditB:o.stakeB*o.oddB;
+    return {a,b};
+  }
   function mdRealProfit(o){
     if(o.resultado==='A') return o.profitAWins;
     if(o.resultado==='B') return o.profitBWins;
-    if(o.resultado==='MID') return o.profitMiddle;
+    if(o.resultado==='MID') return (o.midProfit!=null)?o.midProfit:o.profitMiddle;
     return 0;
   }
   function mdAplicarResultado(o,res){
+    const mc=mdMidCredit(o);
     if(o.aplicado&&o.aplicado.resultado){
       const ant=o.aplicado.resultado;
       if(ant==='A'&&o.houseA) moverSaldo(o.houseA, -(o.stakeA*o.oddA));
       else if(ant==='B'&&o.houseB) moverSaldo(o.houseB, -(o.stakeB*o.oddB));
       else if(ant==='MID'){
-        if(o.houseA) moverSaldo(o.houseA, -(o.stakeA*o.oddA));
-        if(o.houseB) moverSaldo(o.houseB, -(o.stakeB*o.oddB));
+        if(o.houseA) moverSaldo(o.houseA, -mc.a);
+        if(o.houseB) moverSaldo(o.houseB, -mc.b);
       }
     }
     if(res==='A'&&o.houseA) moverSaldo(o.houseA, o.stakeA*o.oddA);
     else if(res==='B'&&o.houseB) moverSaldo(o.houseB, o.stakeB*o.oddB);
     else if(res==='MID'){
-      if(o.houseA) moverSaldo(o.houseA, o.stakeA*o.oddA);
-      if(o.houseB) moverSaldo(o.houseB, o.stakeB*o.oddB);
+      if(o.houseA) moverSaldo(o.houseA, mc.a);
+      if(o.houseB) moverSaldo(o.houseB, mc.b);
     }
     o.aplicado=Object.assign({},o.aplicado,{resultado:res||null});
   }
@@ -2625,8 +2673,11 @@
       const labelA=o.market==='handicap'?`H1(${o.lineA>0?'+':''}${o.lineA})`:`Over ${o.lineA}`;
       const labelB=o.market==='handicap'?`H2(${o.lineB>0?'+':''}${o.lineB})`:`Under ${o.lineB}`;
       const isOpen=mdOpenDetail===o.id;
+      const mp=(o.midProfit!=null)?o.midProfit:o.profitMiddle;
+      const midVals=(o.midValues&&o.midValues.length)?o.midValues:(o.gapIntegers||[]);
+      const isPushMid=o.midKind==='push';
       let valTxt;
-      if(!fin) valTxt=`${fmtSign(o.profitAWins)} / ${fmtSign(o.profitMiddle)} / ${fmtSign(o.profitBWins)}`;
+      if(!fin) valTxt=`${fmtSign(o.profitAWins)} / ${fmtSign(mp)} / ${fmtSign(o.profitBWins)}`;
       else valTxt=fmtSign(p)+(isMid?' 🎯':'');
       return `<div class="bet-row" style="border-left:3px solid ${borderColor};">
           <span class="bet-dot ${dot}"></span>
@@ -2636,7 +2687,7 @@
             <div class="bet-sub">
               <span class="house-tag">${esc(o.houseA||'')}</span>${labelA} @${o.oddA.toFixed(2)} ·
               <span class="house-tag">${esc(o.houseB||'')}</span>${labelB} @${o.oddB.toFixed(2)} ·
-              ${fmt(o.total)}${o.gapIntegers&&o.gapIntegers.length?` · vão: ${o.gapIntegers.join(',')}`:''}
+              ${fmt(o.total)}${midVals.length?` · ${isPushMid?'empate':'vão'}: ${midVals.join(',')}`:''}
             </div>
           </div>
           <span class="bet-val ${!fin?'pend':(p>=0?'pos':'neg')}" style="font-size:11px;">${valTxt}</span>
@@ -2650,7 +2701,11 @@
           </div>
           <div style="font-family:var(--mono);font-size:11.5px;line-height:1.8;">
             <div><b>A vence:</b> <span class="${o.profitAWins>=0?'pos':'neg'}">${fmtSign(o.profitAWins)}</span> — ${esc(o.houseA||'')} ganha, ${esc(o.houseB||'')} perde ${fmt(o.stakeB)}</div>
-            <div><b style="color:var(--sky)">Middle:</b> <span class="pos">${fmtSign(o.profitMiddle)}</span> — ambas ganham</div>
+            ${midVals.length
+              ? (isPushMid
+                  ? `<div><b style="color:var(--amber)">Empate de linha (${midVals.join(', ')}):</b> <span class="${mp>=0?'pos':'neg'}">${fmtSign(mp)}</span> — uma casa devolve o stake, a outra ganha</div>`
+                  : `<div><b style="color:var(--sky)">Middle (${midVals.join(', ')}):</b> <span class="${mp>=0?'pos':'neg'}">${fmtSign(mp)}</span> — ambas ganham</div>`)
+              : `<div><b style="color:var(--muted-2)">Meio:</b> sem cenário de middle — só ${esc(o.houseA||'A')} ou ${esc(o.houseB||'B')} resolve</div>`}
             <div><b>B vence:</b> <span class="${o.profitBWins>=0?'pos':'neg'}">${fmtSign(o.profitBWins)}</span> — ${esc(o.houseB||'')} ganha, ${esc(o.houseA||'')} perde ${fmt(o.stakeA)}</div>
           </div>
           <div style="margin-top:10px;">
