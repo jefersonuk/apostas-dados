@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7803.06,
+      "value": 5905.76,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T08:12:15.860Z"
+      "updatedAt": "2026-08-25T10:17:13.347Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 861.75,
+      "value": 1936.65,
       "currency": "BRL",
-      "updatedAt": "2026-08-25T08:09:17.861Z"
+      "updatedAt": "2026-08-25T10:18:22.041Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1489.55,
-      "updatedAt": "2026-08-25T08:09:17.861Z"
+      "value": 1742.67,
+      "updatedAt": "2026-08-25T10:18:22.041Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4896,14 +4896,14 @@
     {
       "id": "mt8dzvcedw3ti",
       "name": "Casa A",
-      "value": -560,
-      "updatedAt": "2026-08-25T08:12:15.855Z"
+      "value": 0,
+      "updatedAt": "2026-08-25T10:18:22.041Z"
     },
     {
       "id": "mt8dzvcf3rqal",
       "name": "Casa B",
-      "value": -192,
-      "updatedAt": "2026-08-25T08:12:15.855Z"
+      "value": 0,
+      "updatedAt": "2026-08-25T10:18:22.041Z"
     }
   ],
   "aportes": [
@@ -12401,21 +12401,22 @@
       "lucroB": 121.60149253731333,
       "lucro": 121.60149253731333,
       "roi": 10.61744966442952,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-25T05:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-25T08:09:17.862Z"
+      "updatedAt": "2026-08-25T10:17:13.347Z"
     },
     {
       "id": "mt8dzvccv14wz",
       "kind": "sure",
       "event": "Preah Sihanouk – Kampot",
-      "houseA": "",
-      "houseB": "",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
       "oddA": 1.452,
       "oddB": 4.3,
       "total": 752,
@@ -12425,17 +12426,18 @@
       "lucroB": 73.59999999999991,
       "lucro": 61.120000000000005,
       "roi": 8.127659574468085,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-25T05:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-25T08:12:15.856Z"
+      "updatedAt": "2026-08-25T10:18:22.041Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T10:16:25.269Z"
+  "updatedAt": "2026-08-25T10:18:22.042Z"
 }
