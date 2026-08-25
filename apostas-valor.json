@@ -4880,6 +4880,13 @@
       "value": 191.06,
       "updatedAt": "2026-08-25T15:39:11.869Z",
       "currency": "USD"
+    },
+    {
+      "id": "mt91nsdn215s7",
+      "name": "Coins Game",
+      "value": 0,
+      "currency": "BRL",
+      "updatedAt": "2026-08-25T19:14:42.923Z"
     }
   ],
   "aportes": [
@@ -12623,5 +12630,5 @@
     }
   ],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T18:46:13.469Z"
+  "updatedAt": "2026-08-25T19:14:42.924Z"
 }
