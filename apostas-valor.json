@@ -4894,18 +4894,6 @@
       "currency": "USD"
     },
     {
-      "id": "mt8dzvcedw3ti",
-      "name": "Casa A",
-      "value": 0,
-      "updatedAt": "2026-08-25T10:18:22.041Z"
-    },
-    {
-      "id": "mt8dzvcf3rqal",
-      "name": "Casa B",
-      "value": 0,
-      "updatedAt": "2026-08-25T10:18:22.041Z"
-    },
-    {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
       "value": -242.05,
@@ -5184,6 +5172,14 @@
     {
       "id": "msxofthc0l5gm",
       "at": "2026-08-25T12:44:38.571Z"
+    },
+    {
+      "id": "mt8dzvcedw3ti",
+      "at": "2026-08-25T15:29:35.351Z"
+    },
+    {
+      "id": "mt8dzvcf3rqal",
+      "at": "2026-08-25T15:29:36.930Z"
     }
   ],
   "surebets": [
@@ -12504,5 +12500,5 @@
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T15:22:55.345Z"
+  "updatedAt": "2026-08-25T15:29:36.930Z"
 }
