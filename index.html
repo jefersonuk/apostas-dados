@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title>Apostas de Valor — Banca & Escalonamento por Risco</title>
+<title>Central de Apostas — Banca & Surebets</title>
 <style>
   :root{
     --bg:#0B0D10; --panel:#12161C; --panel-2:#171C23; --border:#232933;
@@ -184,46 +184,7 @@
   .caixa-val{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--text);letter-spacing:-0.5px;}
   .caixa-sub{font-size:12px;margin-top:6px;line-height:1.7;}
   .kpi-sub{font-family:var(--mono);font-size:10.5px;margin-top:2px;}
-  .iv-box{border-radius:10px;padding:12px 14px;margin:10px 0;border:1px solid var(--border);background:#0E1116;}
-  .iv-box.iv-otimo{background:#0A2018;border-color:#1A3D2E;}
-  .iv-box.iv-bom{background:#0E1A16;border-color:#1A3D2E;}
-  .iv-box.iv-medio{background:#2A1A08;border-color:#4D3010;}
-  .iv-box.iv-ruim{background:#2A0E12;border-color:#5C2530;}
-  .iv-verdict{font-size:14px;font-weight:700;margin-bottom:10px;}
-  .iv-otimo .iv-verdict,.iv-bom .iv-verdict{color:var(--green);}
-  .iv-medio .iv-verdict{color:var(--amber);}
-  .iv-ruim .iv-verdict{color:var(--red);}
-  .iv-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;}
-  .iv-grid>div{display:flex;justify-content:space-between;gap:6px;}
-  .iv-k{font-size:10.5px;color:var(--muted-2);}
-  .iv-v{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--text);}
-  .iv-v.pos{color:var(--green);} .iv-v.neg{color:var(--red);}
-  .iv-sep{height:1px;background:var(--border);margin:10px 0;}
-  .iv-stakes{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-  .iv-leg{font-size:11.5px;font-family:var(--mono);padding-left:8px;}
-  .iv-leg.legA{border-left:3px solid #38BDF8;}
-  .iv-leg.legB{border-left:3px solid #A78BFA;}
-  .iv-sub{color:var(--muted-2);font-size:10px;}
-  .iv-cenarios{display:flex;flex-direction:column;gap:4px;font-family:var(--mono);font-size:11.5px;}
-  .iv-cen{display:flex;justify-content:space-between;gap:8px;}
-  .iv-cen.tot{border-top:1px solid var(--border);padding-top:5px;margin-top:2px;font-size:12.5px;}
-  .iv-cen .pos{color:var(--green);} .iv-cen .neg{color:var(--red);}
-  .iv-nota{font-size:10.5px;color:var(--muted-2);margin-top:9px;font-family:var(--mono);line-height:1.5;}
-  .sug-box{background:#0E1520;border:1px solid #1A2C40;border-radius:9px;padding:10px 12px;margin:4px 0 10px;}
-  .sug-box.neg{background:#2A0E12;border-color:#5C2530;color:#FCA5A5;font-size:12.5px;font-weight:600;}
-  .sug-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;}
-  .sug-label{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);font-weight:700;}
-  .sug-val{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--sky);}
-  .sug-meta{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.6;}
-  .seg-row{padding:7px 0;border-bottom:1px solid var(--border);}
-  .seg-row:last-of-type{border-bottom:none;}
-  .seg-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px;}
-  .seg-name{font-size:12.5px;font-weight:600;color:var(--text);}
-  .seg-warn{color:var(--amber);margin-left:4px;}
-  .seg-val{font-family:var(--mono);font-size:12.5px;font-weight:700;}
-  .seg-val.pos{color:var(--green);} .seg-val.neg{color:var(--red);}
-  .seg-meta{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:10px;color:var(--muted-2);margin-top:3px;}
-  .seg-meta .pos{color:var(--green);} .seg-meta .neg{color:var(--red);}
+  /* (invertidos / valor bet CSS removed) */
   .caixa-edit-val{cursor:pointer;border-bottom:1px dashed var(--muted-2);}
   .caixa-edit-val:hover{color:var(--sky);border-bottom-color:var(--sky);}
   .sb-open-box{margin-top:10px;padding:10px 12px;border-radius:9px;background:#2A1A08;border:1px solid #4D3010;font-size:12.5px;line-height:1.7;}
@@ -292,6 +253,24 @@
 
   .cfg-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px;}
   @media(max-width:520px){.cfg-grid{grid-template-columns:1fr;}}
+  .tier-badge{display:inline-block;font-size:8.5px;font-weight:800;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle;letter-spacing:.04em;line-height:1.5;}
+  .tier-1{background:#0A2018;border:1px solid #1A3D2E;color:#34D399;}
+  .tier-2{background:#0E1520;border:1px solid #1A2C40;color:#38BDF8;}
+  .tier-3{background:#2A1A08;border:1px solid #4D3010;color:#F5A524;}
+  .tier-E{background:#1A1230;border:1px solid #2E2350;color:#C4B5FD;}
+  .tier-B{background:#1A1F28;border:1px solid var(--border);color:var(--muted);}
+  .vpn-badge{display:inline-block;font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px;margin-left:4px;vertical-align:middle;background:#1A1230;border:1px solid #2E2350;color:#C4B5FD;letter-spacing:.03em;}
+  .bal-section-title{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:14px 0 6px;font-weight:700;display:flex;align-items:center;gap:6px;}
+  .bal-section-title:first-child{margin-top:4px;}
+  .bal-section-title .icon{font-size:13px;}
+  .recommended-houses{margin-top:12px;padding:10px 12px;border-radius:9px;background:#0E1520;border:1px solid #1A2C40;}
+  .recommended-houses .rh-title{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--sky);font-weight:700;margin-bottom:8px;}
+  .rh-item{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border);font-size:12px;}
+  .rh-item:last-child{border-bottom:none;}
+  .rh-name{font-weight:600;color:var(--text);min-width:100px;}
+  .rh-info{color:var(--muted-2);font-size:11px;flex:1;}
+  .rh-add{background:none;border:1px solid var(--sky);color:var(--sky);font-size:10px;font-weight:700;padding:3px 8px;border-radius:5px;cursor:pointer;white-space:nowrap;}
+  .rh-add:hover{background:var(--sky);color:#04121C;}
 </style>
 </head>
 <body>
@@ -303,7 +282,6 @@
   <div class="tabs">
     <div class="tab active" data-tab="valor">💰 Banca &amp; Caixa</div>
     <div class="tab" data-tab="surebet">🎯 Surebets</div>
-    <div class="tab" data-tab="invert">🔀 Invertidos</div>
   </div>
 
   <!-- ============ ABA VALOR ============ -->
@@ -346,12 +324,14 @@
   </div>
 
 
-  <!-- SALDO POR CASA -->
+  <!-- SALDO POR CASA & BANCOS -->
   <div class="card">
-    <div class="card-title"><span>Saldo por casa de aposta</span><span id="balTotal" style="font-family:var(--mono);font-size:13px;color:var(--text);"></span></div>
-    <div id="balList"></div>
-    <div class="grid2" style="margin-top:8px;">
-      <div><label>Casa</label><input type="text" id="balName" placeholder="Ex: Bet365"></div>
+    <div class="card-title"><span>Saldos</span><span id="balTotal" style="font-family:var(--mono);font-size:13px;color:var(--text);"></span></div>
+    <div id="balBankList"></div>
+    <div id="balHouseList"></div>
+    <div id="balRecommended"></div>
+    <div class="grid2" style="margin-top:10px;">
+      <div><label>Nome</label><input type="text" id="balName" placeholder="Ex: Bet365"></div>
       <div><label>Saldo</label><input type="number" id="balValue" step="0.01" placeholder="0.00"></div>
     </div>
     <div class="grid2">
@@ -371,8 +351,8 @@
         <div id="balRateEurInfo" style="font-size:10px;color:var(--muted-2);font-family:var(--mono);"></div>
       </div>
     </div>
-    <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar casa</button>
-    <div class="footnote">Ordenado pelo valor <b>convertido em reais</b> — uma conta de US$ 50 (R$ 250) fica acima de uma de R$ 200. Use o botão <b>R$ / US$</b> em cada linha para marcar a moeda da conta. A cotação segue o <b>USDT/BRL</b> de mercado e se atualiza sozinha (botão ↻ para forçar). As operações de surebet debitam e creditam estes saldos automaticamente. Controle manual de quanto você tem depositado em cada casa. Independente do lucro/prejuízo das apostas — é o saldo real que você vê na conta da casa. Atualize manualmente quando fizer depósitos, saques ou conferir o saldo.</div>
+    <button class="btn small" id="balAddBtn" style="width:100%;">+ Adicionar</button>
+    <div class="footnote">Bancos e carteiras ficam separados das casas. A cotação segue o <b>USDT/BRL</b> de mercado e se atualiza sozinha. As operações de surebet debitam e creditam os saldos automaticamente.</div>
   </div>
 
   <!-- APORTES -->
@@ -459,14 +439,9 @@
   <!-- ============ ABA SUREBET ============ -->
   <div class="tab-panel" id="tab-surebet">
 
-    <!-- EVOLUÇÃO DIÁRIA COMBINADA -->
+    <!-- EVOLUÇÃO DIÁRIA -->
     <div class="card">
       <div class="card-title">📊 Evolução Diária</div>
-      <div class="evo-seg">
-        <button type="button" class="evo-opt" data-evo="sure">🎯 Surebet</button>
-        <button type="button" class="evo-opt" data-evo="valor">📈 Valor</button>
-        <button type="button" class="evo-opt active" data-evo="both">Ambos</button>
-      </div>
       <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
         <div class="summary-item"><div class="k">Lucro do período</div><div class="v" id="evoProfit">—</div></div>
         <div class="summary-item"><div class="k">Yield</div><div class="v" id="evoYield">—</div></div>
@@ -497,10 +472,6 @@
     <!-- CALCULADORA -->
     <div class="card">
       <div class="card-title" id="calcTitle">Calculadora de Surebet</div>
-      <div class="cur-toggle" style="margin-bottom:10px;">
-        <button type="button" class="cur-opt active" id="kindSure" style="flex:1;">🎯 Surebet</button>
-        <button type="button" class="cur-opt" id="kindValor" style="flex:1;">📈 Aposta de Valor</button>
-      </div>
       <div id="blocoSurebet">
       <div class="footnote" style="margin-top:0;">Informe as odds e escolha o modo. Cada perna pode ser em <b>R$ ou US$</b> (convertido pela cotação configurada na aba de banca). Edite qualquer campo e tudo recalcula.</div>
 
@@ -592,52 +563,6 @@
 
       </div><!-- /blocoSurebet -->
 
-      <div id="blocoValor" style="display:none;">
-        <div class="grid2">
-          <div><label>Esporte</label>
-            <input type="text" id="vbSport" list="sportList" placeholder="Ex: Futebol" autocomplete="off">
-            <datalist id="sportList">
-              <option value="Futebol"><option value="Tênis"><option value="Basquete"><option value="E-sports">
-              <option value="Vôlei"><option value="Handebol"><option value="MMA"><option value="Beisebol">
-              <option value="Hóquei"><option value="Futebol Americano"><option value="Sinuca"><option value="Tênis de Mesa">
-            </datalist>
-          </div>
-          <div><label>Mercado</label>
-            <input type="text" id="vbMarket" list="marketList" placeholder="Ex: Escanteios" autocomplete="off">
-            <datalist id="marketList">
-              <option value="1X2 / Resultado"><option value="Handicap Asiático"><option value="Handicap Europeu">
-              <option value="Total de Gols"><option value="Escanteios"><option value="Cartões">
-              <option value="Ambas Marcam"><option value="Dupla Chance"><option value="Total de Pontos">
-              <option value="Games / Sets"><option value="Aces"><option value="Abates / Kills">
-              <option value="Total de Chutes"><option value="Jogador / Player Props"><option value="Primeiro Tempo">
-            </datalist>
-          </div>
-        </div>
-        <div class="grid2">
-          <div><label>Casa de aposta</label><input type="text" id="vbHouse" placeholder="Ex: Bet365"></div>
-          <div><label>Odd da casa</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="7.20"></div>
-        </div>
-        <div class="grid2">
-          <div><label>Odd média do mercado</label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="5.00"></div>
-          <div><label>Prob. real % (auto)</label><input type="number" id="vbProb" step="0.1" placeholder="calculada"></div>
-        </div>
-        <div id="vbSugestao"></div>
-        <div class="grid2">
-          <div>
-            <label>Stake</label>
-            <div class="cur-toggle" id="curToggleV">
-              <button type="button" class="cur-opt active" data-cur="V:BRL">R$</button>
-              <button type="button" class="cur-opt" data-cur="V:USD">US$</button>
-            </div>
-            <input type="number" id="vbStake" step="0.01" min="0" placeholder="50.00">
-          </div>
-          <div><label>&nbsp;</label><button class="btn small" id="vbUsarSug" style="width:100%;">Usar valor sugerido</button></div>
-        </div>
-        <input type="hidden" id="scCurV" value="BRL">
-        <div class="risk-preview" id="vbResult">
-          <span style="color:var(--muted)">Preencha a odd e o stake para ver o retorno.</span>
-        </div>
-      </div>
 
       <div class="grid2">
         <div><label>Evento (opcional)</label><input type="text" id="scEvent" placeholder="Ex: Sport × Santa Cruz"></div>
@@ -646,39 +571,6 @@
       <button class="btn primary" id="scRegisterBtn">Registrar operação</button>
     </div>
 
-    <!-- APOSTAS DE VALOR -->
-    <div class="card">
-      <div class="card-title"><span>📈 Apostas de Valor</span>
-        <div style="display:flex;align-items:center;gap:8px;">
-          <span id="vbTotalHead" style="font-family:var(--mono);font-size:12px;"></span>
-          <button class="btn small" id="vbCollapseBtn">▾</button>
-        </div>
-      </div>
-      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
-        <div class="summary-item"><div class="k">Lucro realizado</div><div class="v" id="vbProfit" style="font-size:15px;">—</div></div>
-        <div class="summary-item"><div class="k">Yield</div><div class="v" id="vbYield" style="font-size:15px;">—</div></div>
-        <div class="summary-item"><div class="k">Taxa de acerto</div><div class="v" id="vbHit" style="font-size:15px;">—</div></div>
-      </div>
-      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
-        <div class="summary-item"><div class="k">Apostas</div><div class="v" id="vbCount" style="font-size:13px;">—</div></div>
-        <div class="summary-item"><div class="k">Volume</div><div class="v" id="vbVolume" style="font-size:13px;">—</div></div>
-        <div class="summary-item"><div class="k">Odd média</div><div class="v" id="vbAvgOdd" style="font-size:13px;">—</div></div>
-      </div>
-      <div class="filter-row" style="margin-top:14px;">
-        <div class="filter-btn active" data-vbfilter="all">Todas</div>
-        <div class="filter-btn" data-vbfilter="open">⏳ Em aberto</div>
-        <div class="filter-btn" data-vbfilter="green">✓ Green</div>
-        <div class="filter-btn" data-vbfilter="red">✗ Red</div>
-      </div>
-      <div class="k" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:14px 0 6px;font-weight:700;">Desempenho por segmento</div>
-      <div class="evo-seg" style="margin-bottom:8px;">
-        <button type="button" class="evo-opt active" data-seg="market">Mercado</button>
-        <button type="button" class="evo-opt" data-seg="sport">Esporte</button>
-        <button type="button" class="evo-opt" data-seg="house">Casa</button>
-      </div>
-      <div id="vbSegments"></div>
-      <div id="vbList" style="margin-top:14px;"></div>
-    </div>
 
     <!-- LISTA DE OPERAÇÕES -->
     <div class="card">
@@ -698,87 +590,13 @@
 
   </div><!-- /tab-surebet -->
 
-  <!-- ============ ABA INVERTIDOS ============ -->
-  <div class="tab-panel" id="tab-invert">
-
-    <!-- RESUMO -->
-    <div class="card">
-      <div class="card-title">🔀 Apostas Invertidas</div>
-      <div class="footnote" style="margin-top:0;">Duas pernas com um <b>vão</b> entre elas. Você ganha na maioria dos cenários e perde tudo só se o resultado cair exatamente no vão. Vale a pena quando a soma dos inversos das odds fica abaixo de <b>1 − probabilidade do vão</b>.</div>
-      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);margin-top:12px;">
-        <div class="summary-item"><div class="k">Lucro realizado</div><div class="v" id="ivProfit" style="font-size:15px;">—</div></div>
-        <div class="summary-item"><div class="k">Taxa de vão real</div><div class="v" id="ivGapReal" style="font-size:15px;">—</div></div>
-        <div class="summary-item"><div class="k">Operações</div><div class="v" id="ivCount" style="font-size:14px;">—</div></div>
-      </div>
-      <div id="ivAviso"></div>
-    </div>
-
-    <!-- CALCULADORA -->
-    <div class="card">
-      <div class="card-title">Calculadora de Invertida</div>
-
-      <label>Mercado (define a probabilidade do vão)</label>
-      <select id="ivPreset">
-        <option value="1.2">🏀 Basquete — pontos totais (vão ~1,2%)</option>
-        <option value="2.7">🏈 NFL — pontos totais (vão ~2,7%)</option>
-        <option value="8.0">⚽ Finalizações totais (vão ~8,0%)</option>
-        <option value="8.5">🎾 Tênis — games da partida (vão ~8,5%)</option>
-        <option value="10.6">🎾 Tênis — aces (vão ~10,6%)</option>
-        <option value="12.5">⚽ Escanteios totais (vão ~12,5%)</option>
-        <option value="15.0" selected>🎾 Tênis — games do 1º set / vão em 6-2 (~15%)</option>
-        <option value="17.0">🎾 Tênis — games do set / vão em 6-3 (~17%)</option>
-        <option value="19.0">⚽ Cartões totais (vão ~19,0%)</option>
-        <option value="22.0">⚽ Gols totais (vão ~22,0%)</option>
-        <option value="custom">✏️ Personalizado</option>
-      </select>
-
-      <div class="grid2">
-        <div><label>Prob. do vão %</label><input type="number" id="ivGap" step="0.1" min="0" max="99" value="15.0"></div>
-        <div><label>Banca a distribuir (R$)</label><input type="number" id="ivTotal" step="0.01" min="0" placeholder="260.00"></div>
-      </div>
-
-      <div class="grid2">
-        <div><label>Odd A — perna "mais de"</label><input type="number" id="ivOddA" step="0.01" min="1.01" placeholder="2.06"></div>
-        <div><label>Odd B — perna "menos de"</label><input type="number" id="ivOddB" step="0.01" min="1.01" placeholder="4.00"></div>
-      </div>
-
-      <div id="ivResult"></div>
-
-      <div class="grid2" style="margin-top:10px;">
-        <div><label>Evento</label><input type="text" id="ivEvent" placeholder="Ex: Chen Hui Ho – Tai Sach"></div>
-        <div><label>Casa de aposta</label><input type="text" id="ivHouse" placeholder="Ex: Bet365"></div>
-      </div>
-      <div class="grid2">
-        <div><label>Descrição do vão</label><input type="text" id="ivGapDesc" placeholder="Ex: 8 games (6-2)"></div>
-        <div><label>Data / horário</label><input type="datetime-local" id="ivDate"></div>
-      </div>
-      <button class="btn primary" id="ivRegisterBtn">Registrar operação</button>
-    </div>
-
-    <!-- LISTA -->
-    <div class="card">
-      <div class="card-title"><span>Operações</span>
-        <div style="display:flex;gap:6px;">
-          <button class="btn small" id="ivCollapseBtn">▾</button>
-        </div>
-      </div>
-      <div class="filter-row">
-        <div class="filter-btn active" data-ivfilter="all">Todas</div>
-        <div class="filter-btn" data-ivfilter="open">⏳ Em aberto</div>
-        <div class="filter-btn" data-ivfilter="win">✓ Acertou</div>
-        <div class="filter-btn" data-ivfilter="gap">✗ Caiu no vão</div>
-      </div>
-      <div id="ivList"></div>
-    </div>
-
-  </div><!-- /tab-invert -->
 
   <div class="toast" id="toast"></div>
 
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260819-1400';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260825-2200';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -814,7 +632,7 @@
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
     catch(e){ storageAvailable=false; }
-    return { cfg:Object.assign({},DEFAULTS), bets:[], updatedAt:'' };
+    return normalize({ cfg:Object.assign({},DEFAULTS), bets:[] });
   }
   function saveState(){ try{ state.updatedAt=new Date().toISOString(); localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); storageAvailable=true; }catch(e){ storageAvailable=false; } renderAutosave(); }
 
@@ -1179,367 +997,43 @@
   }
 
 
-  /* ---------- aposta de valor (uma perna) ---------- */
-  let calcKind='sure', vbFilter='all';
-
-
-  /* ---------- sugestão de entrada a partir da odd de mercado ---------- */
-  const VB_TETO_MAX=300;      // teto nas apostas de maior probabilidade
-  const VB_PROB_REF=0.70;     // entrada cheia só a partir de 70% de probabilidade
-  const VB_KELLY_FRAC=0.25;   // quarto de Kelly
-  const VB_MARGEM_MKT=0.05;   // margem embutida nas odds de mercado
-
-  function vbSugerir(){
-    const oddCasa=parseFloat($('vbOdd').value);
-    const oddMkt=parseFloat($('vbOddMkt').value);
-    if(!(oddCasa>1)||!(oddMkt>1)) return null;
-    const probReal=(1/oddMkt)/(1+VB_MARGEM_MKT);
-    const ev=probReal*oddCasa-1;
-    const banca=caixaAtual();
-    if(ev<=0) return {probReal,ev,kelly:0,kellyStake:0,teto:0,sugerido:0,banca};
-    const kelly=ev/(oddCasa-1);
-    const kellyStake=banca*kelly*VB_KELLY_FRAC;
-    const teto=VB_TETO_MAX*Math.min(1,probReal/VB_PROB_REF);
-    return {probReal,ev,kelly,kellyStake,teto,sugerido:Math.min(kellyStake,teto),banca,limitadoPorTeto:kellyStake>teto};
-  }
-
-  function renderSugestao(){
-    const box=$('vbSugestao');
-    const s=vbSugerir();
-    if(!s){ box.innerHTML=''; return; }
-    // preenche a probabilidade automaticamente (o campo fica só de leitura visual)
-    $('vbProb').value=(s.probReal*100).toFixed(1);
-    if(s.ev<=0){
-      box.innerHTML=`<div class="sug-box neg">⚠ Sem valor — a odd da casa não supera o mercado (EV ${(s.ev*100).toFixed(1)}%). Não entrar.</div>`;
-      return;
-    }
-    box.innerHTML=
-      `<div class="sug-box">`+
-        `<div class="sug-top">`+
-          `<span class="sug-label">Entrada sugerida</span>`+
-          `<span class="sug-val">${fmt(s.sugerido)}</span>`+
-        `</div>`+
-        `<div class="sug-meta">`+
-          `prob real <b>${(s.probReal*100).toFixed(1)}%</b> · EV <b style="color:var(--green)">+${(s.ev*100).toFixed(1)}%</b> · Kelly/4 ${fmt(s.kellyStake)} · teto ${fmt(s.teto)}`+
-          `<br><span style="color:var(--muted-2)">${s.limitadoPorTeto?'limitado pelo teto de probabilidade':'definido pelo Kelly (vantagem magra)'}</span>`+
-        `</div>`+
-      `</div>`;
-  }
-
-  $('vbUsarSug').addEventListener('click',()=>{
-    const s=vbSugerir();
-    if(!s||s.sugerido<=0){ alert('Preencha a odd da casa e a odd média do mercado.'); return; }
-    $('scCurV').value='BRL';
-    const g=$('curToggleV'); if(g) g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active',x.dataset.cur.endsWith('BRL')));
-    $('vbStake').value=s.sugerido.toFixed(2);
-    updateValorCalc();
-  });
-  ['vbOdd','vbOddMkt'].forEach(id=>$(id).addEventListener('input',renderSugestao));
-
-  function vbCompute(){
-    const odd=parseFloat($('vbOdd').value);
-    const fat=curRate($('scCurV').value);
-    const stake=parseFloat($('vbStake').value)*fat;
-    if(!(odd>1)||!(stake>0)) return null;
-    const prob=parseFloat($('vbProb').value);
-    const retorno=stake*odd, lucro=stake*(odd-1);
-    const ev=(!isNaN(prob))?((prob/100*odd-1)*100):null;
-    return {odd,stake,retorno,lucro,prob:isNaN(prob)?null:prob,ev,cur:$('scCurV').value,fat};
-  }
-
-  function updateValorCalc(){
-    renderSugestao();
-    const r=vbCompute();
-    const box=$('vbResult');
-    if(!r){ box.innerHTML='<span style="color:var(--muted)">Preencha a odd e o stake para ver o retorno.</span>'; return; }
-    const casa=$('vbHouse').value.trim()||'Casa';
-    let evLine='';
-    if(r.ev!==null){
-      const cls=r.ev>=0?'green':'red';
-      evLine=`<br><span style="color:var(--muted-2)">Prob ${r.prob}% × odd ${r.odd.toFixed(2)} → EV </span><span style="color:var(--${cls})">${r.ev>=0?'+':''}${r.ev.toFixed(1)}%</span>`;
-    }
-    box.innerHTML=
-      `<div style="font-family:var(--mono);font-size:13px;line-height:1.85;">`+
-      `<b>${esc(casa)}</b> @${r.odd.toFixed(2)} · aposta <b>${r.cur==='USD'?fmtUSD(r.stake/r.fat):fmt(r.stake)}</b>`+
-      `${r.cur==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(r.stake)}</span>`:''}<br>`+
-      `<span style="color:var(--green)">Se GREEN: retorno ${fmt(r.retorno)} · lucro ${fmtSign(r.lucro)}</span><br>`+
-      `<span style="color:var(--red)">Se RED: perde ${fmt(r.stake)}</span>`+evLine+
-      `</div>`;
-  }
-
-  function registrarValor(){
-    const r=vbCompute();
-    if(!r){ alert('Preencha a odd e o stake.'); return; }
-    const op={
-      id:uid(), kind:'valor', event:$('scEvent').value.trim()||'Aposta sem nome',
-      houseA:$('vbHouse').value.trim(), oddA:r.odd, stakeA:r.stake, curA:r.cur,
-      sport:$('vbSport').value.trim(), market:$('vbMarket').value.trim(),
-      oddMkt:parseFloat($('vbOddMkt').value)||null,
-      prob:r.prob, winner:null, date:$('scDate').value||nowLocalStr()
-    };
-    recalcValor(op);
-    aplicarStakes(op);
-    touch(op);
-    state.surebets.push(op);
-    $('vbHouse').value=''; $('vbOdd').value=''; $('vbStake').value=''; $('vbProb').value='';
-    $('vbSport').value=''; $('vbMarket').value=''; $('vbOddMkt').value=''; $('vbSugestao').innerHTML='';
-    $('scEvent').value=''; $('scDate').value=nowLocalStr();
-    $('scCurV').value='BRL';
-    const g=$('curToggleV'); if(g) g.querySelectorAll('.cur-opt').forEach(x=>x.classList.toggle('active',x.dataset.cur.endsWith('BRL')));
-    updateValorCalc(); saveState(); renderAll();
-    toast('Aposta de valor registrada ✓');
-  }
-
-  ['vbHouse','vbOdd','vbStake','vbProb'].forEach(id=>$(id).addEventListener('input',updateValorCalc));
-
-  function setCalcKind(k){
-    calcKind=k;
-    $('kindSure').classList.toggle('active',k==='sure');
-    $('kindValor').classList.toggle('active',k==='valor');
-    $('blocoSurebet').style.display=(k==='sure')?'block':'none';
-    $('blocoValor').style.display=(k==='valor')?'block':'none';
-    $('calcTitle').textContent=(k==='sure')?'Calculadora de Surebet':'Registrar Aposta de Valor';
-    $('scRegisterBtn').textContent=(k==='sure')?'Registrar operação':'Registrar aposta de valor';
-  }
-  $('kindSure').addEventListener('click',()=>setCalcKind('sure'));
-  $('kindValor').addEventListener('click',()=>setCalcKind('valor'));
-
   function valorBets(){ return (state.surebets||[]).filter(ehValor); }
-
-  function renderValorSummary(){
-    const all=valorBets();
-    const done=all.filter(o=>o.winner);
-    const greens=done.filter(o=>o.winner==='A');
-    const open=all.filter(o=>!o.winner);
-    const profit=done.reduce((s,o)=>s+sbRealProfit(o),0);
-    const volume=done.reduce((s,o)=>s+legStake(o,'A'),0);
-    const yld=volume>0?(profit/volume*100):0;
-    const hit=done.length?(greens.length/done.length*100):0;
-    const avgOdd=all.length?all.reduce((s,o)=>s+legOdd(o,'A'),0)/all.length:0;
-    const openVol=open.reduce((s,o)=>s+legStake(o,'A'),0);
-
-    $('vbTotalHead').innerHTML=open.length?`<span style="color:var(--amber)">⏳ ${fmt(openVol)} em aberto</span>`:'';
-    $('vbProfit').textContent=done.length?fmtSign(profit):'—';
-    $('vbProfit').className='v '+(profit>=0?'pos':'neg');
-    $('vbYield').textContent=volume>0?(yld>=0?'+':'')+yld.toFixed(2)+'%':'—';
-    $('vbYield').className='v '+(yld>=0?'pos':'neg');
-    $('vbHit').textContent=done.length?`${hit.toFixed(1)}%`:'—';
-    $('vbCount').innerHTML=all.length?`${greens.length}G / ${done.length-greens.length}R${open.length?` · <span style="color:var(--amber)">${open.length} aberta${open.length>1?'s':''}</span>`:''}`:'—';
-    $('vbVolume').textContent=volume>0?fmt(volume):'—';
-    $('vbAvgOdd').textContent=avgOdd?avgOdd.toFixed(2):'—';
-  }
-
-
-  /* ---------- desempenho das apostas de valor por segmento ---------- */
-  let vbSegBy='market';
-
-  function renderValorSegments(){
-    document.querySelectorAll('[data-seg]').forEach(b=>b.classList.toggle('active', b.dataset.seg===vbSegBy));
-    const box=$('vbSegments');
-    const done=valorBets().filter(o=>o.winner);
-    if(!done.length){ box.innerHTML='<div class="empty" style="padding:8px;">Resolva apostas para ver o desempenho por segmento.</div>'; return; }
-
-    const rotuloVazio = vbSegBy==='market'?'(sem mercado)':vbSegBy==='sport'?'(sem esporte)':'(sem casa)';
-    const grupos={};
-    done.forEach(o=>{
-      const chave=(vbSegBy==='market'?o.market:vbSegBy==='sport'?o.sport:legHouse(o,'A'))||rotuloVazio;
-      if(!grupos[chave]) grupos[chave]={n:0,g:0,lucro:0,vol:0,oddSoma:0};
-      const g=grupos[chave];
-      g.n++; g.vol+=legStake(o,'A'); g.lucro+=sbRealProfit(o); g.oddSoma+=legOdd(o,'A');
-      if(o.winner==='A') g.g++;
-    });
-
-    const linhas=Object.entries(grupos).map(([nome,g])=>({
-      nome, ...g,
-      hit:g.n?g.g/g.n*100:0,
-      yield:g.vol>0?g.lucro/g.vol*100:0,
-      oddMedia:g.n?g.oddSoma/g.n:0
-    })).sort((a,b)=>b.lucro-a.lucro);
-
-    const maxAbs=Math.max(...linhas.map(l=>Math.abs(l.lucro)),1);
-    box.innerHTML=linhas.map(l=>{
-      const w=Math.min(50,Math.abs(l.lucro)/maxAbs*50);
-      const bar=l.lucro>=0?`<div class="day-bar pos" style="width:${w}%;"></div>`:`<div class="day-bar neg" style="width:${w}%;"></div>`;
-      const amostraPequena=l.n<5;
-      return `<div class="seg-row">
-        <div class="seg-head">
-          <span class="seg-name">${esc(l.nome)}${amostraPequena?'<span class="seg-warn" title="amostra pequena">•</span>':''}</span>
-          <span class="seg-val ${l.lucro>=0?'pos':'neg'}">${fmtSign(l.lucro)}</span>
-        </div>
-        <div class="day-bar-wrap" style="height:12px;"><div class="day-center"></div>${bar}</div>
-        <div class="seg-meta">
-          <span>${l.g}/${l.n} · ${l.hit.toFixed(0)}% acerto</span>
-          <span>odd méd ${l.oddMedia.toFixed(2)}</span>
-          <span class="${l.yield>=0?'pos':'neg'}">yield ${l.yield>=0?'+':''}${l.yield.toFixed(1)}%</span>
-        </div>
-      </div>`;
-    }).join('')+
-    `<div class="footnote" style="margin-top:6px;">O ponto <span style="color:var(--amber)">•</span> marca segmentos com menos de 5 apostas — amostra pequena demais para conclusão.</div>`;
-  }
-  document.querySelectorAll('[data-seg]').forEach(b=>b.addEventListener('click',()=>{ vbSegBy=b.dataset.seg; renderValorSegments(); }));
-
-  function renderValorList(){
-    const box=$('vbList');
-    let arr=valorBets();
-    if(vbFilter==='open') arr=arr.filter(o=>!o.winner);
-    else if(vbFilter==='green') arr=arr.filter(o=>o.winner==='A');
-    else if(vbFilter==='red') arr=arr.filter(o=>o.winner==='RED');
-    if(!arr.length){ box.innerHTML='<div class="empty">Nenhuma aposta de valor neste filtro.</div>'; return; }
-
-    // no primeiro render, colapsar todos os dias por padrão
-    if(vbInitCollapsed && arr.length){
-      const dias=[...new Set(arr.map(o=>(o.date||'').slice(0,10)||'—'))];
-      dias.forEach(d=>vbCollapsedDays.add(d));
-      vbInitCollapsed=false;
-      $('vbCollapseBtn').textContent='▸';
-    }
-    // agrupa por dia (mais recente primeiro); dentro do dia, por horário
-    const byDay={};
-    arr.forEach(o=>{ const d=(o.date||'').slice(0,10)||'—'; (byDay[d]=byDay[d]||[]).push(o); });
-    const dias=Object.keys(byDay).sort((a,b)=>b.localeCompare(a));
-    const semana=['dom','seg','ter','qua','qui','sex','sáb'];
-
-    box.innerHTML=dias.map(dia=>{
-      const doDia=byDay[dia].sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
-      const fin=doDia.filter(o=>o.winner);
-      const lucroDia=fin.reduce((s,o)=>s+sbRealProfit(o),0);
-      const gDia=fin.filter(o=>o.winner==='A').length;
-      const volDia=fin.reduce((s,o)=>s+legStake(o,'A'),0);
-      const yldDia=volDia>0?(lucroDia/volDia*100):0;
-      const dd=dia==='—'?'Sem data':(dia.slice(8,10)+'/'+dia.slice(5,7)+'/'+dia.slice(0,4));
-      let wd=''; if(dia!=='—'){ const dt2=new Date(dia+'T12:00:00'); wd=semana[dt2.getDay()]; }
-      const abertas=doDia.length-fin.length;
-      const colapsado=vbCollapsedDays.has(dia);
-      const head=`<div class="sb-day-header" data-vbdaytoggle="${dia}" style="cursor:pointer;">
-        <div class="sb-day-title"><span class="day-chevron ${colapsado?'':'open'}">▸</span>${dd}${wd?`<span class="weekday">${wd}</span>`:''}</div>
-        <div class="sb-day-sum ${lucroDia>=0?'pos':'neg'}">${fin.length?`${fmtSign(lucroDia)} · ${gDia}/${fin.length}G · ${yldDia>=0?'+':''}${yldDia.toFixed(1)}%`:''}${abertas?`<span style="color:var(--amber)"> · ${abertas} aberta${abertas>1?'s':''}</span>`:''}</div>
-      </div>`;
-      if(colapsado) return head;
-      return head+doDia.map(o=>{
-      const st=legStake(o,'A'), od=legOdd(o,'A');
-      const casa=legHouse(o,'A');
-      const dt=fmtDate(o.date);
-      let dot,val,valCls,statusTxt;
-      if(!o.winner){ dot='pendente'; val=`+${fmt(st*(od-1)).replace('R$ ','R$ ')} / −${fmt(st).replace('R$ ','R$ ')}`; valCls='pend'; statusTxt='aguardando'; }
-      else if(o.winner==='A'){ dot='green'; val=fmtSign(st*(od-1)); valCls='pos'; statusTxt='green'; }
-      else { dot='red'; val=fmtSign(-st); valCls='neg'; statusTxt='red'; }
-      const isEd=vbEditingId===o.id;
-      const det = isEd
-        ? `<div class="sb-edit" id="vbEditForm_${o.id}">
-             <label>Evento</label><input type="text" class="vbed" data-f="event" value="${esc(o.event||'')}">
-             <div class="grid2">
-               <div><label>Esporte</label><input type="text" class="vbed" data-f="sport" list="sportList" value="${esc(o.sport||'')}"></div>
-               <div><label>Mercado</label><input type="text" class="vbed" data-f="market" list="marketList" value="${esc(o.market||'')}"></div>
-             </div>
-             <div class="grid2">
-               <div><label>Casa</label><input type="text" class="vbed" data-f="houseA" value="${esc(o.houseA||'')}"></div>
-               <div><label>Odd</label><input type="number" class="vbed" data-f="oddA" step="0.01" value="${od}"></div>
-             </div>
-             <div class="grid2">
-               <div><label>Stake (R$)</label><input type="number" class="vbed" data-f="stakeA" step="0.01" value="${st.toFixed(2)}"></div>
-               <div><label>Prob %</label><input type="number" class="vbed" data-f="prob" step="0.1" value="${(typeof o.prob==='number')?o.prob:''}"></div>
-             </div>
-             <label>Data / horário</label><input type="datetime-local" class="vbed" data-f="date" value="${(o.date||'').slice(0,16)}">
-             <div style="display:flex;gap:6px;margin-top:8px;">
-               <button class="btn small primary" data-vbsave="${o.id}">Salvar</button>
-               <button class="btn small" data-vbcancel="${o.id}">Cancelar</button>
-             </div>
-           </div>`
-        : `<div class="bet-detail${vbOpenDetail===o.id?' show':''}" data-vbdetail="${o.id}">
-             Retorno se green: ${fmt(st*od)} · lucro ${fmtSign(st*(od-1))}<br>
-             Perda se red: ${fmt(st)}${(typeof o.prob==='number')?`<br>Prob informada ${o.prob}% → EV ${((o.prob/100*od-1)*100).toFixed(1)}%`:''}
-             <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">
-               <button class="btn small ${o.winner==='A'?'primary':''}" data-vbres="${o.id}:A">✓ Green</button>
-               <button class="btn small ${o.winner==='RED'?'primary':''}" data-vbres="${o.id}:RED">✗ Red</button>
-               ${o.winner?`<button class="btn small" data-vbres="${o.id}:">Reabrir</button>`:''}
-             </div>
-             <div style="display:flex;gap:6px;margin-top:8px;">
-               <button class="btn small" data-vbedit="${o.id}">Editar</button>
-               <button class="btn small" data-vbdel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
-             </div>
-           </div>`;
-      return `<div class="bet-row" style="border-left:3px solid ${o.winner==='A'?'#34D399':o.winner==='RED'?'#F87171':'#F5A524'};">
-          <span class="bet-dot ${dot}"></span>
-          <span class="bet-date">${dt}</span>
-          <div class="bet-main" data-vbtoggle="${o.id}">
-            <div class="bet-event">${esc(o.event||'')}</div>
-            <div class="bet-sub"><span class="house-tag">${esc(casa)}</span>${o.market?`<span class="mkt-tag">${esc(o.market)}</span>`:''}@${od.toFixed(2)} · ${fmt(st)} · ${statusTxt}</div>
-          </div>
-          <span class="bet-val ${valCls}" style="font-size:11.5px;">${val}</span>
-        </div>${det}`;
-      }).join('');
-    }).join('');
-
-    box.querySelectorAll('[data-vbdaytoggle]').forEach(el=>el.addEventListener('click',()=>{
-      const d=el.dataset.vbdaytoggle;
-      if(vbCollapsedDays.has(d)) vbCollapsedDays.delete(d); else vbCollapsedDays.add(d);
-      renderValorList();
-    }));
-    box.querySelectorAll('[data-vbtoggle]').forEach(el=>el.addEventListener('click',()=>{
-      const id=el.dataset.vbtoggle;
-      if(vbEditingId===id) return;
-      vbOpenDetail = vbOpenDetail===id?null:id;
-      renderValorList();
-    }));
-    box.querySelectorAll('[data-vbres]').forEach(b=>b.addEventListener('click',e=>{
-      e.stopPropagation();
-      const [id,res]=b.dataset.vbres.split(':');
-      const o=state.surebets.find(x=>x.id===id);
-      if(o){ o.winner=res||null; aplicarResultado(o,o.winner); touch(o); saveState(); renderAll(); }
-    }));
-    box.querySelectorAll('[data-vbedit]').forEach(b=>b.addEventListener('click',e=>{
-      e.stopPropagation(); vbEditingId=b.dataset.vbedit; vbOpenDetail=b.dataset.vbedit; renderValorList();
-    }));
-    box.querySelectorAll('[data-vbcancel]').forEach(b=>b.addEventListener('click',e=>{
-      e.stopPropagation(); vbEditingId=null; renderValorList();
-    }));
-    box.querySelectorAll('[data-vbdel]').forEach(b=>b.addEventListener('click',e=>{
-      e.stopPropagation(); const o=state.surebets.find(x=>x.id===b.dataset.vbdel);
-      if(o&&confirm(`Excluir "${o.event}"?\n\nO valor volta para o saldo da casa.`)){
-        reverterTudo(o); marcarExcluido(o.id); state.surebets=state.surebets.filter(x=>x.id!==b.dataset.vbdel);
-        vbOpenDetail=null; vbEditingId=null; saveState(); renderAll();
-      }
-    }));
-    box.querySelectorAll('[data-vbsave]').forEach(b=>b.addEventListener('click',e=>{
-      e.stopPropagation();
-      const o=state.surebets.find(x=>x.id===b.dataset.vbsave); if(!o) return;
-      const form=document.getElementById('vbEditForm_'+o.id); if(!form) return;
-      const tinha=o.winner;
-      reverterTudo(o);
-      form.querySelectorAll('.vbed').forEach(inp=>{
-        const f=inp.dataset.f, v=inp.value;
-        if(f==='event') o.event=v.trim()||o.event;
-        else if(f==='sport') o.sport=v.trim();
-        else if(f==='market') o.market=v.trim();
-        else if(f==='houseA') o.houseA=v.trim();
-        else if(f==='oddA'){ const n=parseFloat(v); if(n>1) o.oddA=n; }
-        else if(f==='stakeA'){ const n=parseFloat(v); if(n>0) o.stakeA=n; }
-        else if(f==='prob'){ const n=parseFloat(v); o.prob=isNaN(n)?null:n; }
-        else if(f==='date') o.date=v||o.date;
-      });
-      recalcValor(o);
-      aplicarStakes(o);
-      if(tinha) aplicarResultado(o,tinha);
-      touch(o);
-      vbEditingId=null; saveState(); renderAll();
-      toast('Aposta atualizada ✓');
-    }));
-  }
-
-  $('vbCollapseBtn').addEventListener('click',()=>{
-    const dias=[...new Set(valorBets().map(o=>(o.date||'').slice(0,10)||'—'))];
-    const todosColapsados = dias.length>0 && dias.every(d=>vbCollapsedDays.has(d));
-    if(todosColapsados){ vbCollapsedDays.clear(); $('vbCollapseBtn').textContent='▾'; $('vbCollapseBtn').title='Recolher tudo'; }
-    else { dias.forEach(d=>vbCollapsedDays.add(d)); $('vbCollapseBtn').textContent='▸'; $('vbCollapseBtn').title='Expandir tudo'; }
-    renderValorList();
-  });
-  document.querySelectorAll('[data-vbfilter]').forEach(btn=>btn.addEventListener('click',()=>{
-    document.querySelectorAll('[data-vbfilter]').forEach(x=>x.classList.remove('active'));
-    btn.classList.add('active'); vbFilter=btn.dataset.vbfilter; vbEditingId=null; renderValorList();
-  }));
 
   /* ---------- saldo por casa (manual) ---------- */
   const HOUSE_COLORS=['#38BDF8','#F5A524','#34D399','#A78BFA','#F472B6','#F87171','#22D3EE','#FACC15','#FB923C','#4ADE80'];
+  const BANK_NAMES=new Set(['binance','pipay','metamask','nubank','inter','itaú','bradesco','banestes','c6','picpay','mercado pago','coinbase','bybit','trust wallet']);
+  const HOUSE_META={
+    'bet365':{tier:1,vpn:null},'betano':{tier:1,vpn:null},'betnacional':{tier:1,vpn:null},
+    'sportybet':{tier:1,vpn:null},'meridian':{tier:1,vpn:null},'vbet':{tier:1,vpn:null},
+    'betesporte':{tier:1,vpn:null},'pinnacle':{tier:1,vpn:null},'bc.game':{tier:1,vpn:null},
+    'rollbit':{tier:1,vpn:null},'shuffle':{tier:1,vpn:null},'sportmarket':{tier:1,vpn:null},
+    'stake':{tier:1,vpn:null},'stake.bet':{tier:1,vpn:null},
+    'betonline':{tier:2,vpn:'CA'},'sportsbetting':{tier:2,vpn:'CA'},'sportsbetting.ag':{tier:2,vpn:'CA'},
+    'gamdom':{tier:2,vpn:'CA'},'betcoin':{tier:2,vpn:'CA'},'bookmakerxyz':{tier:2,vpn:'CA'},
+    'betfury':{tier:2,vpn:null},'coins game':{tier:2,vpn:null},'jackbit':{tier:2,vpn:null},
+    'marathon':{tier:2,vpn:'CY'},'marathonbet':{tier:2,vpn:'CY'},
+    'donbet':{tier:3,vpn:null},'casobet':{tier:3,vpn:null},'duelbits':{tier:3,vpn:null},
+    'leon':{tier:3,vpn:null},'wild.io':{tier:3,vpn:null},
+    'betfair':{tier:'E',vpn:null},'smarkets':{tier:'E',vpn:'UK'},'betdaq':{tier:'E',vpn:'UK'},
+    'orbit exchange':{tier:'E',vpn:null},'matchbook':{tier:'E',vpn:'UK'},
+  };
+  const TIER_LABELS={1:'T1',2:'T2',3:'T3','E':'EX','B':'BK'};
+  const RECOMMENDED_HOUSES=[
+    {name:'Rollbit',tier:1,vpn:null,info:'Cripto, Betby odds, América do Sul'},
+    {name:'BetOnline',tier:2,vpn:'CA',info:'Desde 2004, cripto, offshore sólida'},
+    {name:'SportsBetting.ag',tier:2,vpn:'CA',info:'Mesmo grupo BetOnline'},
+    {name:'BetFury',tier:2,vpn:null,info:'Cripto nativa, BTC/ETH/USDT'},
+    {name:'Coins Game',tier:2,vpn:null,info:'Cripto, Betby odds'},
+    {name:'Jackbit',tier:2,vpn:null,info:'Ryker group, cripto, rápida'},
+    {name:'Smarkets',tier:'E',vpn:'UK',info:'Exchange, sem Premium Charge'},
+  ];
+  function getHouseMeta(name){
+    if(!name) return null;
+    const k=name.trim().toLowerCase();
+    if(BANK_NAMES.has(k)) return {tier:'B',vpn:null};
+    return HOUSE_META[k]||null;
+  }
+  function isBank(name){ return BANK_NAMES.has((name||'').trim().toLowerCase()); }
   let editingBal=null;
 
   /* ---------- caixa total & evolução diária ---------- */
@@ -1751,8 +1245,8 @@
 
   function renderBalances(){
     sincronizarArbitragem();
-    const list=$('balList');
-    if(!state.balances.length){ list.innerHTML='<div class="empty">Nenhuma casa cadastrada.</div>'; $('balTotal').textContent=''; return; }
+    const bankList=$('balBankList'), houseList=$('balHouseList'), recBox=$('balRecommended');
+    if(!state.balances.length){ bankList.innerHTML=''; houseList.innerHTML='<div class="empty">Nenhuma casa cadastrada.</div>'; recBox.innerHTML=''; $('balTotal').textContent=''; renderRecommended(); return; }
     const total=state.balances.reduce((s,b)=>s+balBRL(b),0);
     const temUSD=state.balances.some(b=>b.currency==='USD');
     const temEUR=state.balances.some(b=>b.currency==='EUR');
@@ -1760,42 +1254,45 @@
     if(temUSD) cotInfo+=' · USDT '+usdRate().toFixed(2);
     if(temEUR) cotInfo+=' · EUR '+eurRate().toFixed(2);
     $('balTotal').innerHTML='Total: '+fmt(total)+(cotInfo?`<span style="font-size:10px;color:var(--muted-2);font-family:var(--mono);">${cotInfo}</span>`:'');
-    // capital preso em surebets ainda não finalizadas, por casa
     const emJogo={};
     (state.surebets||[]).filter(o=>!o.winner).forEach(o=>{
       if(o.houseA){ const k=o.houseA.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeA||0); }
       if(o.houseB){ const k=o.houseB.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeB||0); }
       if(o.houseC){ const k=o.houseC.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.stakeC||0); }
     });
-    // incluir invertidas em aberto
     (state.invertidos||[]).filter(o=>!o.resultado).forEach(o=>{
       if(o.house){ const k=o.house.trim().toLowerCase(); emJogo[k]=(emJogo[k]||0)+(o.total||0); }
     });
-    // ordenar por saldo decrescente (maior primeiro), sem mutar o array original
-    // ordena pelo SALDO TOTAL (disponível + o que está comprometido em apostas em andamento);
-    // com o mesmo total, quem tem aposta em aberto aparece primeiro
     const jogoDe=b=>emJogo[(b.name||'').trim().toLowerCase()]||0;
     const totalDe=b=>balBRL(b)+jogoDe(b);
     const ordenadas=[...state.balances].sort((a,b)=>{
-      // linhas automaticas ficam no final
-      if(a.auto&&!b.auto) return 1;
-      if(!a.auto&&b.auto) return -1;
-      // quem tem apostas em andamento sobe
+      if(a.auto&&!b.auto) return 1; if(!a.auto&&b.auto) return -1;
       const jA=jogoDe(a)>0?1:0, jB=jogoDe(b)>0?1:0;
       if(jA!==jB) return jB-jA;
-      // dentro do grupo, ordena por saldo
       const d=totalDe(b)-totalDe(a);
       if(Math.abs(d)>0.005) return d;
       return jogoDe(b)-jogoDe(a);
     });
-    list.innerHTML=ordenadas.map((b,i)=>{
+    const banks=ordenadas.filter(b=>isBank(b.name));
+    const houses=ordenadas.filter(b=>!isBank(b.name));
+    const totalBanks=banks.reduce((s,b)=>s+balBRL(b),0);
+    const totalHouses=houses.reduce((s,b)=>s+balBRL(b),0);
+
+    function renderBalRow(b,i,sectionTotal){
       const color=HOUSE_COLORS[i%HOUSE_COLORS.length];
       const emBRL=balBRL(b);
-      const totalCasa=emBRL+(emJogo[b.name.trim().toLowerCase()]||0);
-      const pct=total>0?(emBRL/total*100):0;
+      const pct=sectionTotal>0?(emBRL/sectionTotal*100):0;
       const jogo=emJogo[b.name.trim().toLowerCase()]||0;
-      const isUSD=b.currency==='USD'; const isEUR=b.currency==='EUR'; const isFX=isUSD||isEUR;
+      const isUSD=b.currency==='USD'; const isEUR=b.currency==='EUR';
       const isAuto=!!b.auto;
+      const meta=getHouseMeta(b.name);
+      let badges='';
+      if(meta&&meta.tier!=='B'){
+        const tl=TIER_LABELS[meta.tier]||'';
+        if(tl) badges+=`<span class="tier-badge tier-${meta.tier}">${tl}</span>`;
+        if(meta.vpn) badges+=`<span class="vpn-badge">VPN ${esc(meta.vpn)}</span>`;
+        else badges+=`<span class="vpn-badge" style="background:#0A2018;border-color:#1A3D2E;color:#34D399;">IP BR</span>`;
+      }
       const valHtml = (editingBal===b.id && !isAuto)
         ? `<input type="number" class="bal-edit" data-balsave="${b.id}" value="${b.value}" step="0.01" autofocus>`
         : (isAuto
@@ -1804,42 +1301,71 @@
       return `<div class="bal-row">
         <span class="bal-rank">${i+1}</span>
         <span class="bal-dot" style="background:${color}"></span>
-        <span class="bal-name">${esc(b.name)}${isAuto?`<span class="bal-auto">${/valor/i.test(b.name)?'VALOR':'ARB'} · AUTO</span>`:''}${b.currency==='USD'?'<span class="bal-cur">USD</span>':b.currency==='EUR'?'<span class="bal-cur eur">EUR</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):isEUR?fmtEUR(jogo/eurRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">${/valor/i.test(b.name)?'apostas de valor':'surebets'} em aberto</span>`:''}</span>
+        <span class="bal-name">${esc(b.name)}${isAuto?`<span class="bal-auto">ARB · AUTO</span>`:''}${badges}${b.currency==='USD'?'<span class="bal-cur">USD</span>':b.currency==='EUR'?'<span class="bal-cur eur">EUR</span>':''}<span class="bal-pct">${pct.toFixed(1)}%</span>${(jogo>0&&!isAuto)?`<span class="bal-jogo">⏳ ${isUSD?fmtUSD(jogo/usdRate()):isEUR?fmtEUR(jogo/eurRate()):fmt(jogo)} em jogo</span>`:''}${isAuto?`<span class="bal-jogo">surebets em aberto</span>`:''}</span>
         ${valHtml}
         ${isAuto?'<span class="bal-cur-btn" style="opacity:.35;cursor:default;">R$</span>'
-                :`<button class="bal-cur-btn ${b.currency==='USD'?'usd':b.currency==='EUR'?'eur':''}" data-balcur="${b.id}" title="Clique para alternar moeda">${b.currency==='USD'?'US$':b.currency==='EUR'?'€':'R$'}</button>`}
+                :`<button class="bal-cur-btn ${b.currency==='USD'?'usd':b.currency==='EUR'?'eur':''}" data-balcur="${b.id}" title="Alternar moeda">${b.currency==='USD'?'US$':b.currency==='EUR'?'€':'R$'}</button>`}
         ${isAuto?'<span class="bal-del" style="opacity:.2;cursor:default;">×</span>'
                 :`<button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>`}
       </div>`;
-    }).join('');
-    // wiring: click no valor -> editar
-    list.querySelectorAll('[data-baledit]').forEach(el=>el.addEventListener('click',()=>{
-      editingBal=el.dataset.baledit; renderBalances();
-      const inp=list.querySelector('.bal-edit'); if(inp){ inp.focus(); inp.select(); }
-    }));
-    // wiring: input de edição -> salvar ao perder foco ou Enter
-    list.querySelectorAll('[data-balsave]').forEach(inp=>{
-      const save=()=>{
-        const b=state.balances.find(x=>x.id===inp.dataset.balsave);
-        if(b){ const v=parseFloat(inp.value); if(!isNaN(v)&&v!==b.value){ b.value=v; touch(b); } }
-        editingBal=null; saveState(); renderAll();
-      };
-      inp.addEventListener('blur',save);
-      inp.addEventListener('keydown',e=>{ if(e.key==='Enter') save(); if(e.key==='Escape'){ editingBal=null; renderBalances(); } });
+    }
+
+    if(banks.length){
+      bankList.innerHTML=`<div class="bal-section-title"><span class="icon">🏦</span>Bancos & Carteiras<span style="font-family:var(--mono);font-size:11px;color:var(--text);margin-left:auto;">${fmt(totalBanks)}</span></div>`+banks.map((b,i)=>renderBalRow(b,i,totalBanks)).join('');
+    } else bankList.innerHTML='';
+
+    houseList.innerHTML=`<div class="bal-section-title"><span class="icon">🎰</span>Casas de Aposta<span style="font-family:var(--mono);font-size:11px;color:var(--text);margin-left:auto;">${fmt(totalHouses)}</span></div>`+(houses.length?houses.map((b,i)=>renderBalRow(b,i,totalHouses)).join(''):'<div class="empty">Nenhuma casa cadastrada.</div>');
+
+    renderRecommended();
+
+    [bankList,houseList].forEach(container=>{
+      container.querySelectorAll('[data-baledit]').forEach(el=>el.addEventListener('click',()=>{
+        editingBal=el.dataset.baledit; renderBalances();
+        const inp=document.querySelector('.bal-edit'); if(inp){ inp.focus(); inp.select(); }
+      }));
+      container.querySelectorAll('[data-balsave]').forEach(inp=>{
+        const save=()=>{
+          const b=state.balances.find(x=>x.id===inp.dataset.balsave);
+          if(b){ const v=parseFloat(inp.value); if(!isNaN(v)&&v!==b.value){ b.value=v; touch(b); } }
+          editingBal=null; saveState(); renderAll();
+        };
+        inp.addEventListener('blur',save);
+        inp.addEventListener('keydown',e=>{ if(e.key==='Enter') save(); if(e.key==='Escape'){ editingBal=null; renderBalances(); } });
+      });
+      container.querySelectorAll('[data-balcur]').forEach(btn=>btn.addEventListener('click',()=>{
+        const b=state.balances.find(x=>x.id===btn.dataset.balcur);
+        if(!b) return;
+        b.currency = b.currency==='BRL'?'USD':b.currency==='USD'?'EUR':'BRL';
+        touch(b); saveState(); renderAll();
+        toast(`${b.name} agora em ${{BRL:'real',USD:'dólar',EUR:'euro'}[b.currency]||b.currency}`);
+      }));
+      container.querySelectorAll('[data-baldel]').forEach(btn=>btn.addEventListener('click',()=>{
+        const b=state.balances.find(x=>x.id===btn.dataset.baldel);
+        if(b&&confirm(`Remover "${b.name}"?`)){ marcarExcluido(b.id); state.balances=state.balances.filter(x=>x.id!==btn.dataset.baldel); saveState(); renderBalances(); }
+      }));
     });
-    // wiring: excluir
-    list.querySelectorAll('[data-balcur]').forEach(btn=>btn.addEventListener('click',()=>{
-      const b=state.balances.find(x=>x.id===btn.dataset.balcur);
-      if(!b) return;
-      b.currency = b.currency==='BRL'?'USD':b.currency==='USD'?'EUR':'BRL';
-      touch(b);
-      saveState(); renderAll();
-      const moedas={BRL:'real',USD:'dólar (USDT)',EUR:'euro'};
-      toast(`${b.name} agora em ${moedas[b.currency]||b.currency}`);
-    }));
-    list.querySelectorAll('[data-baldel]').forEach(btn=>btn.addEventListener('click',()=>{
-      const b=state.balances.find(x=>x.id===btn.dataset.baldel);
-      if(b&&confirm(`Remover "${b.name}"?`)){ marcarExcluido(b.id); state.balances=state.balances.filter(x=>x.id!==btn.dataset.baldel); saveState(); renderBalances(); }
+  }
+  function renderRecommended(){
+    const box=$('balRecommended');
+    const existentes=new Set((state.balances||[]).map(b=>b.name.trim().toLowerCase()));
+    const novas=RECOMMENDED_HOUSES.filter(h=>!existentes.has(h.name.toLowerCase()));
+    if(!novas.length){ box.innerHTML=''; return; }
+    box.innerHTML=`<div class="recommended-houses">
+      <div class="rh-title">Casas recomendadas para adicionar</div>
+      ${novas.map(h=>{
+        const tl=TIER_LABELS[h.tier]||'';
+        return `<div class="rh-item">
+          <span class="rh-name">${esc(h.name)}<span class="tier-badge tier-${h.tier}">${tl}</span>${h.vpn?`<span class="vpn-badge">VPN ${esc(h.vpn)}</span>`:''}</span>
+          <span class="rh-info">${esc(h.info)}</span>
+          <button class="rh-add" data-rhadd="${esc(h.name)}">+ Adicionar</button>
+        </div>`;
+      }).join('')}
+    </div>`;
+    box.querySelectorAll('[data-rhadd]').forEach(btn=>btn.addEventListener('click',()=>{
+      const name=btn.dataset.rhadd;
+      if(state.balances.some(b=>b.name.toLowerCase()===name.toLowerCase())){ toast('Já existe'); return; }
+      state.balances.push(touch({id:uid(),name,value:0,currency:'BRL'}));
+      saveState(); renderAll(); toast(name+' adicionada ✓');
     }));
   }
 
@@ -2131,7 +1657,6 @@
   }));
 
   scEls.register.addEventListener('click',()=>{
-    if(calcKind==='valor'){ registrarValor(); return; }
     const r=scLast||computeSurebet();
     if(!r){ alert('Preencha as odds e a banca (ou o stake de cada perna).'); return; }
     const novaOp={
@@ -2360,24 +1885,18 @@
   }
 
   let sbEditingId=null, sbOpenDetail=null, sbFilter='all';
-  let vbEditingId=null, vbOpenDetail=null;
-  let sbCollapsedDays=new Set(), vbCollapsedDays=new Set();
-  let sbInitCollapsed=true, vbInitCollapsed=true;
+  let sbCollapsedDays=new Set();
+  let sbInitCollapsed=true;
   // ao abrir, recolhe os dias em que TUDO já foi resolvido; dias com aposta em aberto ficam visíveis
   function recolherResolvidos(){
     const porDia={};
-    (state.surebets||[]).forEach(o=>{
+    (state.surebets||[]).filter(o=>!ehValor(o)).forEach(o=>{
       const d=(o.date||'').slice(0,10)||'—';
-      const alvo=ehValor(o)?'v':'s';
-      const k=alvo+'|'+d;
-      if(!porDia[k]) porDia[k]={abertas:0};
-      if(!o.winner) porDia[k].abertas++;
+      if(!porDia[d]) porDia[d]={abertas:0};
+      if(!o.winner) porDia[d].abertas++;
     });
-    Object.entries(porDia).forEach(([k,v])=>{
-      const [tipo,dia]=k.split('|');
-      if(v.abertas===0){
-        if(tipo==='s') sbCollapsedDays.add(dia); else vbCollapsedDays.add(dia);
-      }
+    Object.entries(porDia).forEach(([d,v])=>{
+      if(v.abertas===0) sbCollapsedDays.add(d);
     });
   }
 
@@ -2623,7 +2142,7 @@
 
 
   /* ---------- evolução diária combinada (surebet / valor / ambos) ---------- */
-  let evoScope='both';
+  let evoScope='sure';
 
   function computeDailyRaw(){
     const ops=(state.surebets||[]).filter(o=>o.winner);
@@ -2701,98 +2220,7 @@
   document.querySelectorAll('.evo-opt').forEach(b=>b.addEventListener('click',()=>{ evoScope=b.dataset.evo; renderEvoDaily(); }));
 
 
-  /* ============ ABA INVERTIDOS ============ */
-  let ivFilter='all', ivEditingId=null, ivOpenDetail=null, ivCollapsed=false;
-
-  function ivCompute(){
-    const oA=parseFloat($('ivOddA').value), oB=parseFloat($('ivOddB').value);
-    const T=parseFloat($('ivTotal').value);
-    const pGap=parseFloat($('ivGap').value)/100;
-    if(!(oA>1)||!(oB>1)||!(T>0)||isNaN(pGap)) return null;
-
-    const S=1/oA+1/oB;                    // soma dos inversos
-    const limite=1-S;                      // probabilidade máxima de vão tolerável
-    const margem=limite-pGap;              // folga de segurança
-    // distribui para retorno equilibrado nas duas pernas vencedoras
-    const sA=T*(1/oA)/S, sB=T*(1/oB)/S;
-    const retA=sA*oA, retB=sB*oB;
-    const lucroA=retA-T, lucroB=retB-T;
-    const retornoMedio=(retA+retB)/2;
-    const lucroMedio=retornoMedio-T;
-    // EV: fora do vão ganha (média dos dois lados), dentro do vão perde tudo
-    const ev=(1-pGap)*lucroMedio - pGap*T;
-    return {oA,oB,T,pGap,S,limite,margem,sA,sB,retA,retB,lucroA,lucroB,lucroMedio,ev,
-            roi:lucroMedio/T*100, evPct:ev/T*100, vale:margem>0};
-  }
-
-  function ivRender(){
-    const box=$('ivResult');
-    const r=ivCompute();
-    if(!r){ box.innerHTML='<div class="sug-box" style="background:#0E1116;"><span style="color:var(--muted)">Preencha as duas odds e a banca para ver a análise.</span></div>'; return; }
-
-    let veredito, cls, nota;
-    if(r.margem>0.10){ veredito='✓ EXCELENTE — margem folgada'; cls='iv-otimo'; }
-    else if(r.margem>0.05){ veredito='✓ BOA — margem confortável'; cls='iv-bom'; }
-    else if(r.margem>0.02){ veredito='⚠ APERTADA — margem pequena'; cls='iv-medio'; }
-    else if(r.margem>0){ veredito='⚠ NO LIMITE — quase sem folga'; cls='iv-medio'; }
-    else { veredito='✗ NÃO VALE — o vão é maior que a margem'; cls='iv-ruim'; }
-
-    box.innerHTML=
-      `<div class="iv-box ${cls}">`+
-        `<div class="iv-verdict">${veredito}</div>`+
-        `<div class="iv-grid">`+
-          `<div><span class="iv-k">Soma inversos (S)</span><span class="iv-v">${r.S.toFixed(4)}</span></div>`+
-          `<div><span class="iv-k">Vão tolerável</span><span class="iv-v">${(r.limite*100).toFixed(1)}%</span></div>`+
-          `<div><span class="iv-k">Vão real</span><span class="iv-v">${(r.pGap*100).toFixed(1)}%</span></div>`+
-          `<div><span class="iv-k">Margem de segurança</span><span class="iv-v ${r.margem>0?'pos':'neg'}">${(r.margem*100).toFixed(1)}pp</span></div>`+
-        `</div>`+
-        `<div class="iv-sep"></div>`+
-        `<div class="iv-stakes">`+
-          `<div class="iv-leg legA"><b>Perna A</b> @${r.oA.toFixed(2)} → <b>${fmt(r.sA)}</b><br><span class="iv-sub">retorno ${fmt(r.retA)} · lucro ${fmtSign(r.lucroA)}</span></div>`+
-          `<div class="iv-leg legB"><b>Perna B</b> @${r.oB.toFixed(2)} → <b>${fmt(r.sB)}</b><br><span class="iv-sub">retorno ${fmt(r.retB)} · lucro ${fmtSign(r.lucroB)}</span></div>`+
-        `</div>`+
-        `<div class="iv-sep"></div>`+
-        `<div class="iv-cenarios">`+
-          `<div class="iv-cen ok"><span>Fora do vão (${((1-r.pGap)*100).toFixed(1)}%)</span><span class="pos">${fmtSign(r.lucroMedio)} · ${r.roi>=0?'+':''}${r.roi.toFixed(1)}%</span></div>`+
-          `<div class="iv-cen bad"><span>Cai no vão (${(r.pGap*100).toFixed(1)}%)</span><span class="neg">−${fmt(r.T).replace('R$ ','R$ ')}</span></div>`+
-          `<div class="iv-cen tot"><span><b>Valor esperado</b></span><span class="${r.ev>=0?'pos':'neg'}"><b>${fmtSign(r.ev)} · ${r.evPct>=0?'+':''}${r.evPct.toFixed(1)}%</b></span></div>`+
-        `</div>`+
-        `<div class="iv-nota">Erra 1 a cada ${(1/Math.max(r.pGap,0.0001)).toFixed(0)} operações. Precisa de ${(r.T/Math.max(r.lucroMedio,0.01)).toFixed(1)} acertos para cobrir 1 vão.</div>`+
-      `</div>`;
-  }
-
-  ['ivOddA','ivOddB','ivTotal','ivGap'].forEach(id=>$(id).addEventListener('input',ivRender));
-  $('ivPreset').addEventListener('change',e=>{
-    const v=e.target.value;
-    if(v!=='custom'){ $('ivGap').value=v; }
-    ivRender();
-  });
-
-  $('ivRegisterBtn').addEventListener('click',()=>{
-    const r=ivCompute();
-    if(!r){ alert('Preencha as duas odds e a banca.'); return; }
-    if(!r.vale && !confirm('A análise indica que NÃO vale a pena (margem negativa).\n\nRegistrar mesmo assim?')) return;
-    const preset=$('ivPreset');
-    const op={
-      id:uid(), event:$('ivEvent').value.trim()||'Operação sem nome',
-      house:$('ivHouse').value.trim(), gapDesc:$('ivGapDesc').value.trim(),
-      mercado:preset.options[preset.selectedIndex].text.replace(/\s*\(vão.*$/,''),
-      oddA:r.oA, oddB:r.oB, stakeA:r.sA, stakeB:r.sB, total:r.T,
-      pGap:r.pGap, S:r.S, margem:r.margem, lucroA:r.lucroA, lucroB:r.lucroB, ev:r.ev,
-      resultado:null, date:$('ivDate').value||nowLocalStr()
-    };
-    if(op.house){ moverSaldo(op.house, -op.total); }
-    op.aplicado={stakes:true};
-    touch(op);
-    state.invertidos.push(op);
-    $('ivEvent').value=''; $('ivHouse').value=''; $('ivGapDesc').value='';
-    $('ivOddA').value=''; $('ivOddB').value=''; $('ivTotal').value='';
-    $('ivDate').value=nowLocalStr();
-    ivRender(); saveState(); renderAll();
-    toast('Invertida registrada ✓');
-  });
-
-  // resultado real de uma invertida
+  // invertidos: mantém ivRealProfit e ivAplicar para compatibilidade de dados
   function ivRealProfit(o){
     if(o.resultado==='A') return o.lucroA;
     if(o.resultado==='B') return o.lucroB;
@@ -2800,7 +2228,6 @@
     return 0;
   }
   function ivAplicar(o,res){
-    // estorna crédito anterior
     if(o.aplicado&&o.aplicado.resultado&&o.house){
       const ant=o.aplicado.resultado;
       if(ant==='A') moverSaldo(o.house,-(o.stakeA*o.oddA));
@@ -2811,103 +2238,7 @@
     o.aplicado=Object.assign({},o.aplicado,{resultado:res||null});
   }
 
-  function renderInvertSummary(){
-    const ops=state.invertidos||[];
-    const fin=ops.filter(o=>o.resultado);
-    const vaos=fin.filter(o=>o.resultado==='VAO');
-    const abertas=ops.filter(o=>!o.resultado);
-    const lucro=fin.reduce((s,o)=>s+ivRealProfit(o),0);
-    $('ivProfit').textContent=fin.length?fmtSign(lucro):'—';
-    $('ivProfit').className='v '+(lucro>=0?'pos':'neg');
-    const taxaReal=fin.length?vaos.length/fin.length*100:0;
-    const teorica=fin.length?fin.reduce((s,o)=>s+o.pGap,0)/fin.length*100:0;
-    $('ivGapReal').innerHTML=fin.length?`${taxaReal.toFixed(0)}% <span style="font-size:10px;color:var(--muted-2)">(prev. ${teorica.toFixed(0)}%)</span>`:'—';
-    $('ivCount').innerHTML=ops.length?`${fin.length} fin.${abertas.length?` · <span style="color:var(--amber)">${abertas.length} aberta${abertas.length>1?'s':''}</span>`:''}`:'—';
-
-    const av=$('ivAviso');
-    if(fin.length>=5 && taxaReal>teorica+10){
-      av.innerHTML=`<div class="insight bad" style="margin-top:10px;">⚠ Taxa de vão real (${taxaReal.toFixed(0)}%) bem acima da prevista (${teorica.toFixed(0)}%). Reveja as estimativas de probabilidade ou reduza o volume nessa estratégia.</div>`;
-    } else if(fin.length>=5 && lucro<0){
-      av.innerHTML=`<div class="insight warn" style="margin-top:10px;">Resultado negativo em ${fin.length} operações. Amostra ainda pequena, mas vale acompanhar de perto.</div>`;
-    } else av.innerHTML='';
-  }
-
-  function renderInvertList(){
-    const box=$('ivList');
-    let ops=state.invertidos||[];
-    if(ivFilter==='open') ops=ops.filter(o=>!o.resultado);
-    else if(ivFilter==='win') ops=ops.filter(o=>o.resultado==='A'||o.resultado==='B');
-    else if(ivFilter==='gap') ops=ops.filter(o=>o.resultado==='VAO');
-    if(!ops.length){ box.innerHTML='<div class="empty">Nenhuma operação neste filtro.</div>'; return; }
-    if(ivCollapsed){ box.innerHTML=`<div class="empty">${ops.length} operação(ões) — recolhido.</div>`; return; }
-
-    box.innerHTML=[...ops].sort((a,b)=>(b.date||'').localeCompare(a.date||'')).map(o=>{
-      const fin=!!o.resultado;
-      const gap=o.resultado==='VAO';
-      const p=ivRealProfit(o);
-      const dot=!fin?'pendente':(gap?'red':'green');
-      const val=!fin?`${fmtSign(o.lucroA)} / −${fmt(o.total).replace('R$ ','R$ ')}`:fmtSign(p);
-      const cls=!fin?'pend':(gap?'neg':'pos');
-      const isOpen=ivOpenDetail===o.id;
-      return `<div class="bet-row" style="border-left:3px solid ${!fin?'#F5A524':(gap?'#F87171':'#34D399')};">
-          <span class="bet-dot ${dot}"></span>
-          <span class="bet-date">${fmtDate(o.date)}</span>
-          <div class="bet-main" data-ivtoggle="${o.id}">
-            <div class="bet-event">${esc(o.event)}</div>
-            <div class="bet-sub">${o.house?`<span class="house-tag">${esc(o.house)}</span>`:''}${o.oddA.toFixed(2)} / ${o.oddB.toFixed(2)} · vão ${(o.pGap*100).toFixed(0)}%${o.gapDesc?` (${esc(o.gapDesc)})`:''}</div>
-          </div>
-          <span class="bet-val ${cls}" style="font-size:11px;">${val}</span>
-        </div>
-        <div class="bet-detail${isOpen?' show':''}" data-ivdetail="${o.id}">
-          ${esc(o.mercado||'')}<br>
-          Perna A @${o.oddA.toFixed(2)}: ${fmt(o.stakeA)} · lucro ${fmtSign(o.lucroA)}<br>
-          Perna B @${o.oddB.toFixed(2)}: ${fmt(o.stakeB)} · lucro ${fmtSign(o.lucroB)}<br>
-          Total ${fmt(o.total)} · S ${o.S.toFixed(4)} · margem ${(o.margem*100).toFixed(1)}pp · EV ${fmtSign(o.ev)}
-          <div style="margin-top:10px;">
-            <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Resultado</div>
-            <div style="display:flex;gap:6px;flex-wrap:wrap;">
-              <button class="btn small ${o.resultado==='A'?'primary':''}" data-ivres="${o.id}:A">Ganhou A</button>
-              <button class="btn small ${o.resultado==='B'?'primary':''}" data-ivres="${o.id}:B">Ganhou B</button>
-              <button class="btn small ${o.resultado==='VAO'?'primary':''}" data-ivres="${o.id}:VAO" style="border-color:#5C2530;">Caiu no vão</button>
-              ${o.resultado?`<button class="btn small" data-ivres="${o.id}:">Reabrir</button>`:''}
-            </div>
-          </div>
-          <div style="display:flex;gap:6px;margin-top:10px;">
-            <button class="btn small" data-ivdel="${o.id}" style="border-color:#5C2530;color:#F87171;">Excluir</button>
-          </div>
-        </div>`;
-    }).join('');
-
-    box.querySelectorAll('[data-ivtoggle]').forEach(el=>el.addEventListener('click',()=>{
-      ivOpenDetail = ivOpenDetail===el.dataset.ivtoggle?null:el.dataset.ivtoggle; renderInvertList();
-    }));
-    box.querySelectorAll('[data-ivres]').forEach(b=>b.addEventListener('click',e=>{
-      e.stopPropagation();
-      const [id,res]=b.dataset.ivres.split(':');
-      const o=state.invertidos.find(x=>x.id===id);
-      if(o){ o.resultado=res||null; ivAplicar(o,o.resultado); touch(o); saveState(); renderAll(); }
-    }));
-    box.querySelectorAll('[data-ivdel]').forEach(b=>b.addEventListener('click',e=>{
-      e.stopPropagation();
-      const o=state.invertidos.find(x=>x.id===b.dataset.ivdel);
-      if(o&&confirm(`Excluir "${o.event}"?\n\nO valor volta para o saldo da casa.`)){
-        if(o.house){ ivAplicar(o,null); if(o.aplicado&&o.aplicado.stakes) moverSaldo(o.house,+o.total); }
-        marcarExcluido(o.id);
-        state.invertidos=state.invertidos.filter(x=>x.id!==b.dataset.ivdel);
-        ivOpenDetail=null; saveState(); renderAll();
-      }
-    }));
-  }
-
-  document.querySelectorAll('[data-ivfilter]').forEach(b=>b.addEventListener('click',()=>{
-    document.querySelectorAll('[data-ivfilter]').forEach(x=>x.classList.remove('active'));
-    b.classList.add('active'); ivFilter=b.dataset.ivfilter; renderInvertList();
-  }));
-  $('ivCollapseBtn').addEventListener('click',()=>{
-    ivCollapsed=!ivCollapsed; $('ivCollapseBtn').textContent=ivCollapsed?'▸':'▾'; renderInvertList();
-  });
-
-  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderValorSummary(); renderValorSegments(); renderValorList(); renderEvoDaily(); renderInvertSummary(); renderInvertList(); }
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
@@ -2961,12 +2292,8 @@
     if(Date.now()-at > 6*3600*1000) atualizarCotacao(true);
   })();
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
-  if(!$('ivDate').value) $('ivDate').value=nowLocalStr();
-  ivRender();
   recolherResolvidos();
   updateSurebetCalc();
-  updateValorCalc();
-  setCalcKind('sure');
   renderAll();
   renderAutosave();
   renderSyncUi();
