@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4572.76,
+      "value": 5598.57,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T11:43:52.512Z"
+      "updatedAt": "2026-08-25T14:43:41.393Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4641,9 +4641,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1266.33,
+      "value": 771.33,
       "currency": "BRL",
-      "updatedAt": "2026-08-25T13:16:38.744Z"
+      "updatedAt": "2026-08-25T14:43:41.392Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4653,8 +4653,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3282.45,
-      "updatedAt": "2026-08-25T12:44:55.151Z"
+      "value": 2751.64,
+      "updatedAt": "2026-08-25T14:43:41.392Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12422,9 +12422,33 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-25T10:18:22.041Z"
+    },
+    {
+      "id": "mt8rz8wfeh1e2",
+      "kind": "sure",
+      "event": "Anyang x Incheon united",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.97,
+      "oddB": 2.12,
+      "total": 1025.81,
+      "stakeA": 530.81,
+      "stakeB": 495,
+      "lucroA": 19.885700000000043,
+      "lucroB": 23.590000000000146,
+      "lucro": 19.885700000000043,
+      "roi": 1.9385363761320364,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-26T07:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-25T14:43:41.392Z"
     }
   ],
   "invertidos": [],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T14:14:28.620Z"
+  "updatedAt": "2026-08-25T14:43:41.393Z"
 }
