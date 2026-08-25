@@ -4531,9 +4531,9 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 8279.35,
+      "value": 7279.35,
       "currency": "BRL",
-      "updatedAt": "2026-08-25T11:50:20.897Z"
+      "updatedAt": "2026-08-25T18:11:52.588Z"
     },
     {
       "id": "mricm6v4hbqxz",
@@ -12629,5 +12629,5 @@
     }
   ],
   "sbBankroll": 35000,
-  "updatedAt": "2026-08-25T18:11:49.655Z"
+  "updatedAt": "2026-08-25T18:11:52.594Z"
 }
