@@ -4514,11 +4514,6 @@
       "updatedAt": "2026-08-20T11:44:04.512Z"
     },
     {
-      "id": "mrgvmrccr6mld",
-      "name": "Pitaco",
-      "value": 0
-    },
-    {
       "id": "mrgvnqkej651m",
       "name": "Betwarrior",
       "value": 0
@@ -5192,6 +5187,10 @@
     {
       "id": "mt1h1m83a2gy6",
       "at": "2026-08-26T13:22:57.156Z"
+    },
+    {
+      "id": "mrgvmrccr6mld",
+      "at": "2026-08-26T13:23:00.178Z"
     }
   ],
   "surebets": [
@@ -12723,5 +12722,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:22:57.156Z"
+  "updatedAt": "2026-08-26T13:23:00.178Z"
 }
