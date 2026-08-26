@@ -4794,8 +4794,8 @@
     {
       "id": "mtack9k6bppn8",
       "name": "Megapari",
-      "value": -41.28,
-      "updatedAt": "2026-08-26T17:28:11.649Z",
+      "value": 2,
+      "updatedAt": "2026-08-26T17:28:21.959Z",
       "currency": "USD"
     },
     {
@@ -12835,5 +12835,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T17:28:16.870Z"
+  "updatedAt": "2026-08-26T17:28:21.959Z"
 }
