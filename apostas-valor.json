@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5200.79,
+      "value": 5642.25,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T14:29:10.167Z"
+      "updatedAt": "2026-08-26T14:41:07.751Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4880.02,
-      "updatedAt": "2026-08-26T08:14:31.915Z"
+      "value": 4658.02,
+      "updatedAt": "2026-08-26T14:41:07.751Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4635,9 +4635,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 51.73,
+      "value": 9.2,
       "currency": "USD",
-      "updatedAt": "2026-08-25T20:34:28.728Z"
+      "updatedAt": "2026-08-26T14:41:07.751Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -12687,6 +12687,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T14:29:10.167Z"
+    },
+    {
+      "id": "mta7bt0mkfb5e",
+      "kind": "sure",
+      "event": "III Keruleti Tve x Bekescsaba II",
+      "houseA": "Gamdom",
+      "houseB": "Pinnacle",
+      "oddA": 2.06,
+      "oddB": 2.04,
+      "total": 441.4548,
+      "stakeA": 219.4548,
+      "stakeB": 222,
+      "lucroA": 10.62208800000002,
+      "lucroB": 11.425200000000018,
+      "lucro": 10.62208800000002,
+      "roi": 2.406155284753959,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-26T12:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T14:41:07.751Z"
     }
   ],
   "invertidos": [],
@@ -12773,5 +12797,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T14:31:44.112Z"
+  "updatedAt": "2026-08-26T14:41:07.751Z"
 }
