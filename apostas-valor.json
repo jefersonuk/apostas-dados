@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8451.13,
+      "value": 6136.13,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T21:04:30.562Z"
+      "updatedAt": "2026-08-26T21:06:22.381Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 577.25,
+      "value": 1892.25,
       "currency": "BRL",
-      "updatedAt": "2026-08-26T20:12:16.652Z"
+      "updatedAt": "2026-08-26T21:06:22.379Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2808.02,
-      "updatedAt": "2026-08-26T18:41:40.577Z"
+      "value": 3808.02,
+      "updatedAt": "2026-08-26T21:06:22.379Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -5184,6 +5184,10 @@
     {
       "id": "msxj4vdccelb7",
       "at": "2026-08-26T13:23:46.415Z"
+    },
+    {
+      "id": "mtaezbx8yrc3y",
+      "at": "2026-08-26T21:06:22.380Z"
     }
   ],
   "surebets": [
@@ -12781,30 +12785,6 @@
       "updatedAt": "2026-08-26T18:04:39.387Z"
     },
     {
-      "id": "mtaezbx8yrc3y",
-      "kind": "sure",
-      "event": "Crusaders x Ballymena United",
-      "houseA": "Pinnacle",
-      "houseB": "Ivibet",
-      "oddA": 2.68,
-      "oddB": 2.04,
-      "total": 2315,
-      "stakeA": 1000,
-      "stakeB": 1315,
-      "lucroA": 365,
-      "lucroB": 367.5999999999999,
-      "lucro": 365,
-      "roi": 15.766738660907128,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-26T16:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-26T18:15:22.652Z"
-    },
-    {
       "id": "mtafqzj38haf2",
       "kind": "sure",
       "event": "Celta de Vigo x Osasuna",
@@ -12961,5 +12941,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T21:04:30.562Z"
+  "updatedAt": "2026-08-26T21:06:22.381Z"
 }
