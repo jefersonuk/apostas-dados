@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2158.86,
+      "value": 4147.86,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T11:56:15.018Z"
+      "updatedAt": "2026-08-26T14:00:54.825Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1049.93,
+      "value": 0.93,
       "currency": "BRL",
-      "updatedAt": "2026-08-26T13:13:44.002Z"
+      "updatedAt": "2026-08-26T14:00:54.823Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4629,8 +4629,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 0,
-      "updatedAt": "2026-08-22T23:13:33.334Z"
+      "value": -940,
+      "updatedAt": "2026-08-26T14:00:54.823Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -12615,6 +12615,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T20:34:28.728Z"
+    },
+    {
+      "id": "mta5w36vujn66",
+      "kind": "sure",
+      "event": "PCIFIC x Tem Phoenix (LOL)",
+      "houseA": "Ivibet",
+      "houseB": "Betesporte",
+      "oddA": 2.06,
+      "oddB": 2.3,
+      "total": 1989,
+      "stakeA": 1049,
+      "stakeB": 940,
+      "lucroA": 171.94000000000005,
+      "lucroB": 173,
+      "lucro": 171.94000000000005,
+      "roi": 8.644544997486177,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-26T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T14:00:54.823Z"
     }
   ],
   "invertidos": [],
@@ -12701,5 +12725,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:41:53.789Z"
+  "updatedAt": "2026-08-26T14:00:54.825Z"
 }
