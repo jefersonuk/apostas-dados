@@ -4574,7 +4574,8 @@
     {
       "id": "msan29jv5dft4",
       "name": "BetMGM",
-      "value": 0
+      "value": 500,
+      "updatedAt": "2026-08-26T13:41:47.216Z"
     },
     {
       "id": "msd9ei033vtoe",
@@ -12700,5 +12701,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:23:46.415Z"
+  "updatedAt": "2026-08-26T13:41:47.227Z"
 }
