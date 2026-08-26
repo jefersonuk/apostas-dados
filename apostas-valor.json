@@ -4599,8 +4599,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 3961,
-      "updatedAt": "2026-08-25T23:45:29.325Z"
+      "value": 5025.7,
+      "updatedAt": "2026-08-26T08:14:39.397Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4641,8 +4641,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3824.71,
-      "updatedAt": "2026-08-26T07:56:13.878Z"
+      "value": 4880.02,
+      "updatedAt": "2026-08-26T08:14:31.915Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4871,10 +4871,10 @@
     {
       "id": "mt9c1gc5rf9ra",
       "name": "Em middles",
-      "value": 2035.63,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T08:14:01.145Z"
+      "updatedAt": "2026-08-26T08:14:39.397Z"
     }
   ],
   "aportes": [
@@ -4972,10 +4972,10 @@
   ],
   "usdRate": 5.15,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-26T08:14:00.563Z",
+  "usdRateAt": "2026-08-26T08:16:27.459Z",
   "eurRate": 6.01,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-08-26T08:14:00.709Z",
+  "eurRateAt": "2026-08-26T08:16:27.498Z",
   "appBuild": "20260826-1730",
   "deleted": [
     {
@@ -12670,12 +12670,13 @@
       "midProfit": 479.70000000000005,
       "worstCase": 4,
       "isSafe": true,
-      "resultado": null,
+      "resultado": "B",
       "date": "2026-08-25T23:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-25T23:41:32.869Z"
+      "updatedAt": "2026-08-26T08:14:39.397Z"
     },
     {
       "id": "olimpiamid260826a",
@@ -12709,14 +12710,15 @@
       "midProfit": 1128.03,
       "worstCase": 72.72,
       "isSafe": true,
-      "resultado": null,
+      "resultado": "B",
       "date": "2026-08-25T21:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-26T08:09:55.000Z"
+      "updatedAt": "2026-08-26T08:14:31.915Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T08:14:00.709Z"
+  "updatedAt": "2026-08-26T08:16:27.499Z"
 }
