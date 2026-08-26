@@ -4574,10 +4574,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8887.75,
+      "value": 7912.12,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-25T23:45:29.325Z"
+      "updatedAt": "2026-08-26T00:23:12.610Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4629,9 +4629,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0.53,
+      "value": 435.53,
       "currency": "BRL",
-      "updatedAt": "2026-08-25T18:05:51.553Z"
+      "updatedAt": "2026-08-26T00:23:12.606Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4641,8 +4641,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2211.01,
-      "updatedAt": "2026-08-25T16:59:18.545Z"
+      "value": 2751.64,
+      "updatedAt": "2026-08-26T00:23:12.606Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -5184,6 +5184,10 @@
     {
       "id": "mt642lcd1mdgd",
       "at": "2026-08-25T22:44:34.651Z"
+    },
+    {
+      "id": "mt8wtnkf8ftb1",
+      "at": "2026-08-26T00:23:12.608Z"
     }
   ],
   "surebets": [
@@ -12625,30 +12629,6 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T20:34:28.728Z"
-    },
-    {
-      "id": "mt8wtnkf8ftb1",
-      "kind": "sure",
-      "event": "Olimpia Kings – Capiata Bulls",
-      "houseA": "Ivibet",
-      "houseB": "Pinnacle",
-      "oddA": 2.41,
-      "oddB": 1.952,
-      "total": 975.63,
-      "stakeA": 435,
-      "stakeB": 540.63,
-      "lucroA": 72.72000000000014,
-      "lucroB": 79.67975999999987,
-      "lucro": 72.72000000000014,
-      "roi": 7.4536453368592746,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-25T21:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-25T16:59:18.546Z"
     }
   ],
   "invertidos": [],
@@ -12750,5 +12730,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-25T23:57:54.000Z"
+  "updatedAt": "2026-08-26T00:23:12.611Z"
 }
