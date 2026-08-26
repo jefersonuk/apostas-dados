@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 192.07,
-      "updatedAt": "2026-08-26T14:28:07.891Z"
+      "value": -61.24,
+      "updatedAt": "2026-08-26T14:29:10.167Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4674.27,
+      "value": 5200.79,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T14:28:07.892Z"
+      "updatedAt": "2026-08-26T14:29:10.167Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4730,9 +4730,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 793.44,
+      "value": 747.98,
       "currency": "EUR",
-      "updatedAt": "2026-08-26T08:17:54.232Z"
+      "updatedAt": "2026-08-26T14:29:10.167Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -12663,6 +12663,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T14:28:07.891Z"
+    },
+    {
+      "id": "mta6wfbrynf76",
+      "kind": "sure",
+      "event": "Al Ahly x Auckland",
+      "houseA": "Betnacional",
+      "houseB": "Sportmarket",
+      "oddA": 2.1,
+      "oddB": 1.947,
+      "total": 526.5235648571429,
+      "stakeA": 253.30896485714288,
+      "stakeB": 273.2146,
+      "lucroA": 5.425261342857198,
+      "lucroB": 5.425261342857198,
+      "lucro": 5.425261342857198,
+      "roi": 1.0303928836175047,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "EUR",
+      "date": "2026-08-26T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T14:29:10.167Z"
     }
   ],
   "invertidos": [],
@@ -12749,5 +12773,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T14:28:07.892Z"
+  "updatedAt": "2026-08-26T14:29:10.167Z"
 }
