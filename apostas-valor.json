@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7627.25,
+      "value": 10024.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T18:41:40.578Z"
+      "updatedAt": "2026-08-26T19:16:57.725Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": -32.81,
+      "value": -277.81,
       "currency": "BRL",
-      "updatedAt": "2026-08-26T18:41:40.577Z"
+      "updatedAt": "2026-08-26T19:16:57.723Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4751,8 +4751,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 444.08,
-      "updatedAt": "2026-08-26T13:16:49.946Z",
+      "value": 26.08,
+      "updatedAt": "2026-08-26T19:16:57.723Z",
       "currency": "USD"
     },
     {
@@ -12848,6 +12848,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T18:41:40.577Z"
+    },
+    {
+      "id": "mtah6j22v2lld",
+      "kind": "sure",
+      "event": "Wigan Warriors x Hull Kingston Rovers",
+      "houseA": "Ivibet",
+      "houseB": "Bookmaker",
+      "oddA": 10.8,
+      "oddB": 1.23,
+      "total": 2397.7000000000003,
+      "stakeA": 245,
+      "stakeB": 2152.7000000000003,
+      "lucroA": 248.29999999999973,
+      "lucroB": 250.1210000000001,
+      "lucro": 248.29999999999973,
+      "roi": 10.35575760103431,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-27T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T19:16:57.723Z"
     }
   ],
   "invertidos": [],
@@ -12934,5 +12958,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T18:41:40.578Z"
+  "updatedAt": "2026-08-26T19:16:57.725Z"
 }
