@@ -4646,12 +4646,6 @@
       "updatedAt": "2026-08-20T11:55:44.090Z"
     },
     {
-      "id": "mshp2yxy7igul",
-      "name": "hiperbet",
-      "value": 0,
-      "updatedAt": "2026-08-20T11:56:07.019Z"
-    },
-    {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
       "value": 0,
@@ -5183,6 +5177,10 @@
     {
       "id": "msewm3oh3mb30",
       "at": "2026-08-26T13:23:26.687Z"
+    },
+    {
+      "id": "mshp2yxy7igul",
+      "at": "2026-08-26T13:23:29.123Z"
     }
   ],
   "surebets": [
@@ -12714,5 +12712,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:23:26.687Z"
+  "updatedAt": "2026-08-26T13:23:29.123Z"
 }
