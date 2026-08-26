@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6497.25,
+      "value": 7627.25,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T18:36:52.962Z"
+      "updatedAt": "2026-08-26T18:41:40.578Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 247.19,
+      "value": -32.81,
       "currency": "BRL",
-      "updatedAt": "2026-08-26T18:36:52.959Z"
+      "updatedAt": "2026-08-26T18:41:40.577Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3658.02,
-      "updatedAt": "2026-08-26T18:15:22.652Z"
+      "value": 2808.02,
+      "updatedAt": "2026-08-26T18:41:40.577Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12824,6 +12824,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T18:36:52.959Z"
+    },
+    {
+      "id": "mtafx5gh1o9sv",
+      "kind": "sure",
+      "event": "77 futbol x Asociacion Esculela Cangallo",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 4.2,
+      "oddB": 1.386,
+      "total": 1130,
+      "stakeA": 280,
+      "stakeB": 850,
+      "lucroA": 46,
+      "lucroB": 48.09999999999991,
+      "lucro": 46,
+      "roi": 4.070796460176991,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-26T21:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T18:41:40.577Z"
     }
   ],
   "invertidos": [],
@@ -12910,5 +12934,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T18:36:52.962Z"
+  "updatedAt": "2026-08-26T18:41:40.578Z"
 }
