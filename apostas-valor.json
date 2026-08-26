@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6136.13,
+      "value": 7231.79,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T21:06:22.381Z"
+      "updatedAt": "2026-08-26T21:40:22.114Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1892.25,
+      "value": 1373.39,
       "currency": "BRL",
-      "updatedAt": "2026-08-26T21:06:22.379Z"
+      "updatedAt": "2026-08-26T21:40:22.111Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4666,9 +4666,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 478.52,
+      "value": 366.52,
       "currency": "USD",
-      "updatedAt": "2026-08-26T18:36:52.959Z"
+      "updatedAt": "2026-08-26T21:40:22.112Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -12855,6 +12855,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T19:16:57.723Z"
+    },
+    {
+      "id": "mtamay8v10dih",
+      "kind": "sure",
+      "event": "PFK CSKA Sofia – OFI FC",
+      "houseA": "Ivibet",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.19,
+      "oddB": 1.97,
+      "total": 1095.6566210045664,
+      "stakeA": 518.8566210045664,
+      "stakeB": 576.8000000000001,
+      "lucroA": 40.639378995433844,
+      "lucroB": 40.63937899543362,
+      "lucro": 40.63937899543362,
+      "roi": 3.709134615384599,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-27T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T21:40:22.112Z"
     }
   ],
   "invertidos": [],
@@ -12941,5 +12965,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T21:06:22.381Z"
+  "updatedAt": "2026-08-26T21:40:22.114Z"
 }
