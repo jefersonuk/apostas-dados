@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 445,
-      "updatedAt": "2026-08-25T20:34:28.728Z"
+      "value": 192.07,
+      "updatedAt": "2026-08-26T14:28:07.891Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4147.86,
+      "value": 4674.27,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T14:00:54.825Z"
+      "updatedAt": "2026-08-26T14:28:07.892Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4765,9 +4765,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 0,
+      "value": -273.48,
       "currency": "BRL",
-      "updatedAt": "2026-08-23T22:58:26.957Z"
+      "updatedAt": "2026-08-26T14:28:07.891Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -12639,6 +12639,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T14:00:54.823Z"
+    },
+    {
+      "id": "mta6v39vuuzf9",
+      "kind": "sure",
+      "event": "Al ahli - Auckland",
+      "houseA": "Betnacional",
+      "houseB": "Shuffle",
+      "oddA": 2.1,
+      "oddB": 1.95,
+      "total": 526.4100000000001,
+      "stakeA": 252.93,
+      "stakeB": 273.48,
+      "lucroA": 4.742999999999938,
+      "lucroB": 6.875999999999976,
+      "lucro": 4.742999999999938,
+      "roi": 0.9010087194392086,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-26T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T14:28:07.891Z"
     }
   ],
   "invertidos": [],
@@ -12725,5 +12749,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T14:09:18.380Z"
+  "updatedAt": "2026-08-26T14:28:07.892Z"
 }
