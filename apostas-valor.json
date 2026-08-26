@@ -4720,13 +4720,6 @@
       "updatedAt": "2026-08-20T11:55:36.715Z"
     },
     {
-      "id": "msxj4vdccelb7",
-      "name": "Apostaganha",
-      "value": 0,
-      "currency": "BRL",
-      "updatedAt": "2026-08-20T11:51:13.926Z"
-    },
-    {
       "id": "msyprvso2ird4",
       "name": "F12bet",
       "value": 0,
@@ -5172,6 +5165,10 @@
     {
       "id": "msueeqdv25y1y",
       "at": "2026-08-26T13:23:40.396Z"
+    },
+    {
+      "id": "msxj4vdccelb7",
+      "at": "2026-08-26T13:23:46.415Z"
     }
   ],
   "surebets": [
@@ -12703,5 +12700,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:23:40.396Z"
+  "updatedAt": "2026-08-26T13:23:46.415Z"
 }
