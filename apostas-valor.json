@@ -4620,16 +4620,6 @@
       "updatedAt": "2026-08-15T12:59:14.725Z"
     },
     {
-      "id": "mseutuzodhxpd",
-      "name": "Jogo de ouro",
-      "value": 0
-    },
-    {
-      "id": "msewm3oh3mb30",
-      "name": "Aposta1",
-      "value": 0
-    },
-    {
       "id": "msfgf86ojrke9",
       "name": "Egb",
       "value": 243.12,
@@ -5185,6 +5175,14 @@
     {
       "id": "ms7irn12hybsq",
       "at": "2026-08-26T13:23:21.265Z"
+    },
+    {
+      "id": "mseutuzodhxpd",
+      "at": "2026-08-26T13:23:24.255Z"
+    },
+    {
+      "id": "msewm3oh3mb30",
+      "at": "2026-08-26T13:23:26.687Z"
     }
   ],
   "surebets": [
@@ -12716,5 +12714,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:23:21.265Z"
+  "updatedAt": "2026-08-26T13:23:26.687Z"
 }
