@@ -4813,12 +4813,6 @@
       "updatedAt": "2026-08-25T16:11:55.549Z"
     },
     {
-      "id": "mt0mdztl9t7mq",
-      "name": "Thunderpick",
-      "value": 0,
-      "updatedAt": "2026-08-20T17:25:21.028Z"
-    },
-    {
       "id": "mt1h1m83a2gy6",
       "name": "Wild",
       "value": 1.18,
@@ -5192,6 +5186,10 @@
     {
       "id": "mid8olimpiakb1",
       "at": "2026-08-26T00:23:31.747Z"
+    },
+    {
+      "id": "mt0mdztl9t7mq",
+      "at": "2026-08-26T00:27:27.172Z"
     }
   ],
   "surebets": [
@@ -12706,5 +12704,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T00:23:59.748Z"
+  "updatedAt": "2026-08-26T00:27:27.178Z"
 }
