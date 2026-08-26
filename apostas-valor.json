@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8297.53,
+      "value": 10334.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T21:57:42.049Z"
+      "updatedAt": "2026-08-26T22:07:08.715Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3808.02,
-      "updatedAt": "2026-08-26T21:06:22.379Z"
+      "value": 2831.63,
+      "updatedAt": "2026-08-26T22:07:08.712Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4635,9 +4635,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 206.91,
+      "value": 0.91,
       "currency": "USD",
-      "updatedAt": "2026-08-26T21:04:30.561Z"
+      "updatedAt": "2026-08-26T22:07:08.712Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -12903,6 +12903,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T21:57:42.045Z"
+    },
+    {
+      "id": "mtan9dwnpun1f",
+      "kind": "sure",
+      "event": "Germany – Netherlands",
+      "houseA": "Pinnacle",
+      "houseB": "Gamdom",
+      "oddA": 2.17,
+      "oddB": 1.99,
+      "total": 2037.29,
+      "stakeA": 976.39,
+      "stakeB": 1060.9,
+      "lucroA": 81.47629999999981,
+      "lucroB": 73.9010000000003,
+      "lucro": 73.9010000000003,
+      "roi": 3.627416813512082,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-27T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T22:07:08.712Z"
     }
   ],
   "invertidos": [],
@@ -12989,5 +13013,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T21:57:42.049Z"
+  "updatedAt": "2026-08-26T22:07:08.715Z"
 }
