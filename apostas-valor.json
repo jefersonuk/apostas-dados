@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3074.35,
+      "value": 5389.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T18:04:42.727Z"
+      "updatedAt": "2026-08-26T18:15:22.653Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1815.19,
+      "value": 500.19,
       "currency": "BRL",
-      "updatedAt": "2026-08-26T18:04:39.387Z"
+      "updatedAt": "2026-08-26T18:15:22.652Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4658.02,
-      "updatedAt": "2026-08-26T14:41:07.751Z"
+      "value": 3658.02,
+      "updatedAt": "2026-08-26T18:15:22.652Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12776,6 +12776,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T18:04:39.387Z"
+    },
+    {
+      "id": "mtaezbx8yrc3y",
+      "kind": "sure",
+      "event": "Crusaders x Ballymena United",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 2.68,
+      "oddB": 2.04,
+      "total": 2315,
+      "stakeA": 1000,
+      "stakeB": 1315,
+      "lucroA": 365,
+      "lucroB": 367.5999999999999,
+      "lucro": 365,
+      "roi": 15.766738660907128,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-26T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T18:15:22.652Z"
     }
   ],
   "invertidos": [],
@@ -12862,5 +12886,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T18:04:39.390Z"
+  "updatedAt": "2026-08-26T18:15:22.653Z"
 }
