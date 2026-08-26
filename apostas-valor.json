@@ -4521,11 +4521,6 @@
       "updatedAt": "2026-08-26T13:12:44.114Z"
     },
     {
-      "id": "mricm6v4hbqxz",
-      "name": "Betvip",
-      "value": 0
-    },
-    {
       "id": "mrqepyieyl3gk",
       "name": "Vbet",
       "value": 0,
@@ -5189,6 +5184,10 @@
     {
       "id": "mrgvrivsc6dqm",
       "at": "2026-08-26T13:23:05.189Z"
+    },
+    {
+      "id": "mricm6v4hbqxz",
+      "at": "2026-08-26T13:23:10.407Z"
     }
   ],
   "surebets": [
@@ -12720,5 +12719,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:23:05.189Z"
+  "updatedAt": "2026-08-26T13:23:10.407Z"
 }
