@@ -4706,13 +4706,6 @@
       "currency": "USD"
     },
     {
-      "id": "msueeqdv25y1y",
-      "name": "Superbet",
-      "value": 0,
-      "currency": "BRL",
-      "updatedAt": "2026-08-20T11:42:54.400Z"
-    },
-    {
       "id": "msuuloj0waoov",
       "name": "Esportivabet",
       "value": 0,
@@ -5175,6 +5168,10 @@
     {
       "id": "msqmzms2hzjnb",
       "at": "2026-08-26T13:23:36.552Z"
+    },
+    {
+      "id": "msueeqdv25y1y",
+      "at": "2026-08-26T13:23:40.396Z"
     }
   ],
   "surebets": [
@@ -12706,5 +12703,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T13:23:36.552Z"
+  "updatedAt": "2026-08-26T13:23:40.396Z"
 }
