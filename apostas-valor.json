@@ -4871,10 +4871,10 @@
     {
       "id": "mt9c1gc5rf9ra",
       "name": "Em middles",
-      "value": 2035.63,
+      "value": 1060,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T00:23:31.748Z"
+      "updatedAt": "2026-08-26T00:29:46.012Z"
     }
   ],
   "aportes": [
@@ -12673,34 +12673,6 @@
         "stakes": true
       },
       "updatedAt": "2026-08-25T23:41:32.869Z"
-    },
-    {
-      "id": "mt8wtnkf8ftb1",
-      "market": "handicap",
-      "event": "Olimpia Kings – Capiata Bulls",
-      "houseA": "Ivibet",
-      "houseB": "Pinnacle",
-      "lineA": -41.5,
-      "lineB": 42.5,
-      "oddA": 2.41,
-      "oddB": 1.952,
-      "stakeA": 435,
-      "stakeB": 540.63,
-      "total": 975.63,
-      "resultado": null,
-      "date": "2026-08-25T21:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-25T17:35:00.000Z",
-      "profitAWins": 72.72,
-      "profitBWins": 79.68,
-      "profitMiddle": 1128.03,
-      "gapIntegers": [
-        42
-      ],
-      "isSafe": true,
-      "kind": "middle"
     }
   ],
   "sbBankroll": 0,
