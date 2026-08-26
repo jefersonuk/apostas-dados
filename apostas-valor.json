@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7231.79,
+      "value": 8297.53,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T21:40:22.114Z"
+      "updatedAt": "2026-08-26T21:57:42.049Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1373.39,
+      "value": 968.39,
       "currency": "BRL",
-      "updatedAt": "2026-08-26T21:40:22.111Z"
+      "updatedAt": "2026-08-26T21:57:42.044Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4730,9 +4730,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 836.49,
+      "value": 726.55,
       "currency": "EUR",
-      "updatedAt": "2026-08-26T20:05:06.045Z"
+      "updatedAt": "2026-08-26T21:57:42.043Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -12879,6 +12879,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T21:40:22.112Z"
+    },
+    {
+      "id": "mtamx8ntf1zts",
+      "kind": "sure",
+      "event": "Coquimbo Unido – CD Universidad Catolica (CHL)",
+      "houseA": "Sportmarket",
+      "houseB": "Ivibet",
+      "oddA": 1.704,
+      "oddB": 2.78,
+      "total": 1065.7394366197182,
+      "stakeA": 660.7394366197183,
+      "stakeB": 405,
+      "lucroA": 60.1605633802817,
+      "lucroB": 60.1605633802817,
+      "lucro": 60.1605633802817,
+      "roi": 5.644959857270297,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-08-26T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-26T21:57:42.045Z"
     }
   ],
   "invertidos": [],
@@ -12965,5 +12989,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-26T21:40:22.114Z"
+  "updatedAt": "2026-08-26T21:57:42.049Z"
 }
