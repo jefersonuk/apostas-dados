@@ -29,11 +29,11 @@
   .card-title{font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:10px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px;}
 
   label{display:block;font-size:11px;color:var(--muted);margin-bottom:4px;font-weight:600;}
-  input[type=text],input[type=number],input[type=date],input[type=datetime-local],select{
+  input[type=text],input[type=number],input[type=date],input[type=time],input[type=datetime-local],select{
     width:100%;background:#0E1116;border:1px solid var(--border);color:var(--text);
     padding:8px 10px;border-radius:6px;font-size:14px;font-family:var(--sans);margin-bottom:8px;
   }
-  input[type=number],input[type=date],input[type=datetime-local]{font-family:var(--mono);}
+  input[type=number],input[type=date],input[type=time],input[type=datetime-local]{font-family:var(--mono);}
   input:focus,select:focus{outline:none;border-color:var(--sky);}
 
   .empty{color:var(--muted-2);font-size:12.5px;padding:8px 0;}
@@ -207,6 +207,7 @@
   .md-explain b{color:#7CC4FF;}
   .md-stakes{margin:8px 0;padding:9px 11px;border-radius:8px;background:#0E1116;border:1px solid var(--border);font-family:var(--mono);font-size:11.5px;line-height:1.7;}
   .md-stakes .tot{border-top:1px solid var(--border);margin-top:5px;padding-top:5px;font-weight:700;color:var(--text);}
+  .cx-badge{display:inline-block;margin-left:6px;padding:0 5px;border-radius:8px;font-family:var(--mono);font-size:9px;line-height:15px;background:rgba(56,189,248,.15);color:var(--sky);vertical-align:middle;}
   .caixa-edit-val{cursor:pointer;border-bottom:1px dashed var(--muted-2);}
   .caixa-edit-val:hover{color:var(--sky);border-bottom-color:var(--sky);}
   .sb-open-box{margin-top:10px;padding:10px 12px;border-radius:9px;background:#2A1A08;border:1px solid #4D3010;font-size:12.5px;line-height:1.7;}
@@ -321,9 +322,9 @@
       <div class="caixa-sub" id="caixaSub"></div>
     </div>
     <div class="btn-row" style="margin-top:10px;">
-      <button class="btn primary" id="caixaSnapBtn">Registrar caixa de hoje</button>
+      <button class="btn primary" id="caixaSnapBtn">Registrar caixa agora</button>
     </div>
-    <div class="footnote">O registro diário é <b>fixo</b>: uma vez gravado, não muda quando você atualiza os saldos por casa durante o dia. Para alterá-lo, use o botão acima (pede confirmação) ou clique no valor na tabela abaixo. Aportes e saques não alteram este acompanhamento.</div>
+    <div class="footnote">Cada registro é <b>fixo</b> e carimbado com <b>data e hora</b>: uma vez gravado, não muda quando você atualiza os saldos por casa. Você pode registrar <b>várias vezes no mesmo dia</b> — na visão Diário/Semanal/Mensal vale sempre o <b>último</b> registro do período. Clique no valor na tabela para editar. Aportes e saques não alteram este acompanhamento.</div>
   </div>
 
   <!-- EVOLUÇÃO DA BANCA -->
@@ -337,16 +338,18 @@
     <div class="chart-wrap"><svg id="caixaChart" viewBox="0 0 780 220" preserveAspectRatio="none"></svg></div>
     <div class="footnote" id="caixaChartNote"></div>
     <div class="evo-seg" style="margin-top:12px;">
+      <button type="button" class="evo-opt" data-per="registro">Registros</button>
       <button type="button" class="evo-opt active" data-per="dia">Diário</button>
       <button type="button" class="evo-opt" data-per="semana">Semanal</button>
       <button type="button" class="evo-opt" data-per="mes">Mensal</button>
     </div>
     <div id="caixaList" style="margin-top:10px;"></div>
-    <div class="grid2" style="margin-top:8px;">
+    <div class="grid3" style="margin-top:8px;">
       <div><label>Data</label><input type="date" id="caixaDate"></div>
+      <div><label>Hora</label><input type="time" id="caixaTime"></div>
       <div><label>Valor em caixa (R$)</label><input type="number" id="caixaValue" step="0.01" placeholder="37375.43"></div>
     </div>
-    <button class="btn small" id="caixaAddBtn" style="width:100%;">+ Adicionar / atualizar dia</button>
+    <button class="btn small" id="caixaAddBtn" style="width:100%;">+ Adicionar / atualizar registro</button>
   </div>
 
 
@@ -726,9 +729,22 @@
     probFull:50, probFloor:20, penMin:0.35
   };
 
+  /* ---------- caixa: registros com data + hora ---------- */
+  // legado: registros sem hora viram fechamento do dia (23:59), mantendo a ordem histórica
+  function migrarCaixa(lista){
+    return (Array.isArray(lista)?lista:[]).map(c=>{
+      const time = /^\d{2}:\d{2}$/.test(c.time||'') ? c.time : '23:59';
+      return Object.assign({},c,{time});
+    });
+  }
+  function cxTs(h){ return h.date+'T'+(h.time||'23:59'); }               // chave de ordenação e de fusão
+  function cxSort(lista){ return [...(lista||[])].sort((a,b)=>cxTs(a).localeCompare(cxTs(b))); }
+  function nowHM(){ const d=new Date(); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
+  function cxLabelDia(d){ return d.slice(8,10)+'/'+d.slice(5,7); }
+
   function normalize(p){
     const cfg=Object.assign({},DEFAULTS,p.cfg||{});
-    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:Array.isArray(p.caixa)?p.caixa:[], usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5.19, usdRateSrc:p.usdRateSrc||'', usdRateAt:p.usdRateAt||'', eurRate:(typeof p.eurRate==='number'&&p.eurRate>0)?p.eurRate:6.10, eurRateSrc:p.eurRateSrc||'', eurRateAt:p.eurRateAt||'', appBuild:p.appBuild||'', deleted:Array.isArray(p.deleted)?p.deleted:[], surebets:Array.isArray(p.surebets)?p.surebets:[], invertidos:Array.isArray(p.invertidos)?p.invertidos:[], middles:Array.isArray(p.middles)?p.middles:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
+    return { cfg, bets:Array.isArray(p.bets)?p.bets:[], balances:Array.isArray(p.balances)?p.balances:[], aportes:Array.isArray(p.aportes)?p.aportes:[], caixa:migrarCaixa(p.caixa), usdRate:(typeof p.usdRate==='number'&&p.usdRate>0)?p.usdRate:5.19, usdRateSrc:p.usdRateSrc||'', usdRateAt:p.usdRateAt||'', eurRate:(typeof p.eurRate==='number'&&p.eurRate>0)?p.eurRate:6.10, eurRateSrc:p.eurRateSrc||'', eurRateAt:p.eurRateAt||'', appBuild:p.appBuild||'', deleted:Array.isArray(p.deleted)?p.deleted:[], surebets:Array.isArray(p.surebets)?p.surebets:[], invertidos:Array.isArray(p.invertidos)?p.invertidos:[], middles:Array.isArray(p.middles)?p.middles:[], sbBankroll:(typeof p.sbBankroll==='number')?p.sbBankroll:0, updatedAt:p.updatedAt||'' };
   }
   function loadState(){
     try{ const raw=localStorage.getItem(STORAGE_KEY); if(raw){ const p=JSON.parse(raw); if(p&&Array.isArray(p.bets)) return normalize(p); } }
@@ -1010,7 +1026,7 @@
     novo.middles  = fundirListas(local.middles||[],remoto.middles||[],o=>o.id);
     novo.bets     = fundirListas(local.bets,remoto.bets,o=>o.id);
     novo.aportes  = fundirListas(local.aportes,remoto.aportes,o=>o.id);
-    novo.caixa    = fundirListas(local.caixa,remoto.caixa,o=>o.date);
+    novo.caixa    = fundirListas(local.caixa,remoto.caixa,cxTs);
     novo.balances = fundirListas(local.balances,remoto.balances,b=>(b.name||'').trim().toLowerCase());
 
     novo.deleted = unirSimples(local.deleted,remoto.deleted,d=>d.id);
@@ -1020,6 +1036,7 @@
     novo.bets=novo.bets.filter(o=>!apagados.has(o.id));
     novo.aportes=novo.aportes.filter(o=>!apagados.has(o.id));
     novo.balances=novo.balances.filter(b=>!apagados.has(b.id));
+    novo.caixa=novo.caixa.filter(h=>!apagados.has('caixa:'+cxTs(h)));   // registro apagado não volta pelo sync
 
     novo.updatedAt = tL>tR?tL:tR;
     return normalize(novo);
@@ -1182,7 +1199,7 @@
     // soma dos saldos por casa; se não houver, usa o último registro diário
     const bal=(state.balances||[]).reduce((s,b)=>s+balBRL(b),0);
     if((state.balances||[]).length) return bal;
-    const hist=[...(state.caixa||[])].sort((a,b)=>a.date.localeCompare(b.date));
+    const hist=cxSort(state.caixa);
     return hist.length?hist[hist.length-1].value:0;
   }
 
@@ -1209,17 +1226,22 @@
   }
   // agrupa o histórico de caixa por período, pegando o ÚLTIMO valor de cada bloco
   function agruparCaixa(hist,periodo){
-    if(periodo==='dia') return hist.map(h=>({rot:h.date, label:h.date.slice(8,10)+'/'+h.date.slice(5,7), value:h.value, date:h.date}));
+    // 'registro' = granularidade máxima: um ponto por lançamento (vários por dia)
+    if(periodo==='registro') return hist.map(h=>({rot:cxTs(h), label:cxLabelDia(h.date)+' '+h.time, value:h.value, date:h.date, time:h.time, ts:cxTs(h), n:1}));
     const mapa=new Map();
     hist.forEach(h=>{
-      const chave = periodo==='semana' ? isoSemana(h.date) : h.date.slice(0,7);
+      const chave = periodo==='dia' ? h.date : (periodo==='semana' ? isoSemana(h.date) : h.date.slice(0,7));
       const atual=mapa.get(chave);
-      if(!atual || h.date>atual.date) mapa.set(chave,{rot:chave,value:h.value,date:h.date});
+      const ts=cxTs(h);
+      if(!atual){ mapa.set(chave,{rot:chave,value:h.value,date:h.date,time:h.time,ts,n:1}); return; }
+      atual.n++;
+      if(ts>atual.ts){ atual.value=h.value; atual.date=h.date; atual.time=h.time; atual.ts=ts; }  // vale o último do bloco
     });
     const meses=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
-    return [...mapa.values()].sort((a,b)=>a.date.localeCompare(b.date)).map(x=>{
+    return [...mapa.values()].sort((a,b)=>a.ts.localeCompare(b.ts)).map(x=>{
       let label;
-      if(periodo==='semana'){ const ini=inicioSemana(x.date); label='sem '+ini.slice(8,10)+'/'+ini.slice(5,7); }
+      if(periodo==='dia'){ label=cxLabelDia(x.date); }
+      else if(periodo==='semana'){ const ini=inicioSemana(x.date); label='sem '+ini.slice(8,10)+'/'+ini.slice(5,7); }
       else { label=meses[parseInt(x.date.slice(5,7),10)-1]+'/'+x.date.slice(2,4); }
       return {...x,label};
     });
@@ -1229,9 +1251,10 @@
   function variacaoDesde(hist,corte,atual){
     const anteriores=hist.filter(h=>h.date<corte);
     if(!anteriores.length) return null;
-    const base=anteriores[anteriores.length-1].value;
+    const ref=anteriores[anteriores.length-1];
+    const base=ref.value;
     if(!(base>0)) return null;
-    return {delta:atual-base, pct:(atual-base)/base*100, de:anteriores[anteriores.length-1].date};
+    return {delta:atual-base, pct:(atual-base)/base*100, de:ref.date, hora:ref.time};
   }
 
   function renderKpisPeriodo(hist,atual){
@@ -1251,11 +1274,12 @@
 
   function renderCaixa(){
     const aoVivo=caixaAtual();                 // soma atual das casas (muda o tempo todo)
-    const hist=[...(state.caixa||[])].sort((a,b)=>a.date.localeCompare(b.date));
+    const hist=cxSort(state.caixa);
     const hoje=todayStr();
-    const regHoje=hist.find(h=>h.date===hoje); // registro FIXO do dia
+    const doDia=hist.filter(h=>h.date===hoje);
+    const regHoje=doDia.length?doDia[doDia.length-1]:null;   // ÚLTIMO registro fixo de hoje
 
-    // número grande = o registro fixo do dia, se houver; senão o ao vivo
+    // número grande = o último registro fixo do dia, se houver; senão o ao vivo
     const principal = regHoje ? regHoje.value : aoVivo;
     $('caixaTotal').textContent=fmt(principal);
 
@@ -1263,7 +1287,8 @@
     let linhas=[];
 
     if(regHoje){
-      linhas.push(`<span style="color:var(--green)">● Registro fixo de hoje</span>`);
+      const quantos = doDia.length>1 ? ` · ${doDia.length} registros hoje` : '';
+      linhas.push(`<span style="color:var(--green)">● Registro fixo das ${regHoje.time}</span><span style="color:var(--muted-2)">${quantos}</span>`);
       const dif=aoVivo-regHoje.value;
       if(Math.abs(dif)>=0.01){
         const cls=dif>=0?'var(--green)':'var(--red)';
@@ -1280,7 +1305,7 @@
       const delta=principal-prev.value;
       const pct=prev.value>0?(delta/prev.value*100):0;
       const cls=delta>=0?'var(--green)':'var(--red)';
-      linhas.push(`<span style="color:${cls}">${fmtSign(delta)} (${pct>=0?'+':''}${pct.toFixed(2)}%)</span> <span style="color:var(--muted-2)">desde ${prev.date.slice(8,10)}/${prev.date.slice(5,7)}</span>`);
+      linhas.push(`<span style="color:${cls}">${fmtSign(delta)} (${pct>=0?'+':''}${pct.toFixed(2)}%)</span> <span style="color:var(--muted-2)">desde ${cxLabelDia(prev.date)} ${prev.time}</span>`);
     }
     sub.innerHTML=linhas.join('<br>');
 
@@ -1292,40 +1317,47 @@
 
   function renderCaixaList(hist,agrupado){
     const box=$('caixaList');
-    if(!hist.length){ box.innerHTML='<div class="empty" style="padding:8px;">Nenhum registro diário ainda.</div>'; return; }
-    const rotulo = caixaPeriodo==='dia'?'Dia':(caixaPeriodo==='semana'?'Semana':'Mês');
+    if(!hist.length){ box.innerHTML='<div class="empty" style="padding:8px;">Nenhum registro ainda.</div>'; return; }
+    const rotulo = caixaPeriodo==='registro'?'Registro':(caixaPeriodo==='dia'?'Dia':(caixaPeriodo==='semana'?'Semana':'Mês'));
     const desc=[...agrupado].reverse();
-    const editavel = caixaPeriodo==='dia';
+    // em 'registro' cada linha é um lançamento (editável/removível direto);
+    // em 'dia' a linha representa o ÚLTIMO lançamento do dia — é esse que se edita
+    const editavel = caixaPeriodo==='registro' || caixaPeriodo==='dia';
     box.innerHTML=`<table class="sc-table"><thead><tr><th>${rotulo}</th><th>Caixa</th><th>Variação</th><th>%</th><th></th></tr></thead><tbody>`+
       desc.map((h,i)=>{
         const prev=desc[i+1];
         const delta=prev?h.value-prev.value:null;
         const pct=(prev&&prev.value>0)?(delta/prev.value*100):null;
         const cls=delta===null?'':(delta>=0?'pos':'neg');
+        const marca = (caixaPeriodo==='dia'&&h.n>1) ? `<span class="cx-badge" title="${h.n} lançamentos neste dia — vale o das ${h.time}">${h.n}×</span>` : '';
         const valCell = editavel
-          ? `<span class="caixa-edit-val" data-caixaedit="${h.date}" title="Clique para editar">${fmt(h.value)}</span>`
-          : `<span title="fechamento em ${h.date.slice(8,10)}/${h.date.slice(5,7)}">${fmt(h.value)}</span>`;
+          ? `<span class="caixa-edit-val" data-caixaedit="${h.ts}" title="Clique para editar o lançamento de ${cxLabelDia(h.date)} ${h.time}">${fmt(h.value)}</span>`
+          : `<span title="fechamento em ${cxLabelDia(h.date)} ${h.time}">${fmt(h.value)}</span>`;
         return `<tr>
-          <td>${h.label}</td>
+          <td>${h.label}${marca}</td>
           <td>${valCell}</td>
           <td class="${cls}">${delta===null?'—':fmtSign(delta)}</td>
           <td class="${cls}">${pct===null?'—':(pct>=0?'+':'')+pct.toFixed(2)+'%'}</td>
-          <td>${editavel?`<button class="bal-del" data-caixadel="${h.date}">×</button>`:''}</td>
+          <td>${editavel?`<button class="bal-del" data-caixadel="${h.ts}">×</button>`:''}</td>
         </tr>`;
       }).join('')+'</tbody></table>';
     box.querySelectorAll('[data-caixaedit]').forEach(el=>el.addEventListener('click',()=>{
-      const d=el.dataset.caixaedit;
-      const atual=(state.caixa.find(x=>x.date===d)||{}).value||0;
-      const novo=prompt(`Valor em caixa de ${d.slice(8,10)}/${d.slice(5,7)}:`, atual.toFixed(2));
+      const ts=el.dataset.caixaedit;
+      const reg=(state.caixa||[]).find(x=>cxTs(x)===ts);
+      if(!reg) return;
+      const novo=prompt(`Valor em caixa de ${cxLabelDia(reg.date)} às ${reg.time}:`, (reg.value||0).toFixed(2));
       if(novo===null) return;
       const v=parseFloat(String(novo).replace(',','.'));
       if(isNaN(v)){ alert('Valor inválido.'); return; }
-      upsertCaixa(d,v); saveState(); renderAll(); toast('Registro atualizado ✓');
+      upsertCaixa(reg.date,reg.time,v); saveState(); renderAll(); toast('Registro atualizado ✓');
     }));
     box.querySelectorAll('[data-caixadel]').forEach(btn=>btn.addEventListener('click',()=>{
-      const d=btn.dataset.caixadel;
-      if(confirm(`Remover o registro de ${d.slice(8,10)}/${d.slice(5,7)}?`)){
-        state.caixa=state.caixa.filter(x=>x.date!==d); saveState(); renderAll();
+      const ts=btn.dataset.caixadel;
+      const reg=(state.caixa||[]).find(x=>cxTs(x)===ts);
+      if(!reg) return;
+      if(confirm(`Remover o registro de ${cxLabelDia(reg.date)} às ${reg.time} (${fmt(reg.value)})?`)){
+        marcarExcluido('caixa:'+ts);
+        state.caixa=state.caixa.filter(x=>cxTs(x)!==ts); saveState(); renderAll();
       }
     }));
   }
@@ -1351,13 +1383,19 @@
       `<path d="${path}" fill="none" stroke="#38BDF8" stroke-width="2"/>`+dots;
     const delta=hist[n-1].value-hist[0].value;
     const pct=hist[0].value>0?(delta/hist[0].value*100):0;
-    note.textContent=`${n} ${caixaPeriodo==='dia'?'dia(s)':caixaPeriodo==='semana'?'semana(s)':'mês(es)'} · ${fmt(hist[0].value)} → ${fmt(hist[n-1].value)} (${delta>=0?'+':''}${fmt(delta).replace('R$ ','R$ ')} · ${pct>=0?'+':''}${pct.toFixed(2)}%)`;
+    const unidade = caixaPeriodo==='registro'?'registro(s)':caixaPeriodo==='dia'?'dia(s)':caixaPeriodo==='semana'?'semana(s)':'mês(es)';
+    note.textContent=`${n} ${unidade} · ${fmt(hist[0].value)} → ${fmt(hist[n-1].value)} (${delta>=0?'+':''}${fmt(delta).replace('R$ ','R$ ')} · ${pct>=0?'+':''}${pct.toFixed(2)}%)`;
   }
 
-  function upsertCaixa(date,value){
+  // um registro é identificado por data + hora: mesma data com horas diferentes = registros distintos
+  function upsertCaixa(date,time,value){
     state.caixa=state.caixa||[];
-    const ex=state.caixa.find(x=>x.date===date);
-    if(ex){ ex.value=value; touch(ex); } else state.caixa.push(touch({date,value}));
+    const hm = /^\d{2}:\d{2}$/.test(time||'') ? time : '23:59';
+    const marca='caixa:'+date+'T'+hm;
+    if((state.deleted||[]).some(d=>d.id===marca)) state.deleted=state.deleted.filter(d=>d.id!==marca);
+    const ex=state.caixa.find(x=>x.date===date && (x.time||'23:59')===hm);
+    if(ex){ ex.value=value; touch(ex); } else state.caixa.push(touch({date,time:hm,value}));
+    return !!ex;
   }
 
   document.querySelectorAll('[data-per]').forEach(b=>b.addEventListener('click',()=>{
@@ -1368,20 +1406,22 @@
   $('caixaSnapBtn').addEventListener('click',()=>{
     const total=caixaAtual();
     if(!(total>0)){ alert('Cadastre os saldos por casa (ou informe um valor manual abaixo) antes de registrar.'); return; }
-    const hoje=todayStr();
-    const ex=(state.caixa||[]).find(x=>x.date===hoje);
-    if(ex && !confirm(`Já existe registro de hoje: ${fmt(ex.value)}.\n\nSubstituir por ${fmt(total)}?`)) return;
-    upsertCaixa(hoje,total);
-    saveState(); renderAll(); toast(ex?'Registro de hoje atualizado ✓':'Caixa de hoje registrado ✓');
+    const hoje=todayStr(), hm=nowHM();
+    // só pede confirmação se já existir registro no MESMO minuto — vários registros por dia são o normal
+    const mesmoMin=(state.caixa||[]).find(x=>x.date===hoje && (x.time||'23:59')===hm);
+    if(mesmoMin && !confirm(`Já existe registro de hoje às ${hm}: ${fmt(mesmoMin.value)}.\n\nSubstituir por ${fmt(total)}?`)) return;
+    upsertCaixa(hoje,hm,total);
+    saveState(); renderAll(); toast(`Caixa registrado às ${hm} ✓`);
   });
 
   $('caixaAddBtn').addEventListener('click',()=>{
     const d=$('caixaDate').value||todayStr();
-    const v=parseFloat($('caixaValue').value);
+    const t=$('caixaTime').value||nowHM();
+    const v=parseFloat(String($('caixaValue').value).replace(',','.'));
     if(isNaN(v)){ alert('Informe o valor em caixa.'); return; }
-    upsertCaixa(d,v);
+    const atualizou=upsertCaixa(d,t,v);
     $('caixaValue').value='';
-    saveState(); renderAll(); toast('Registro salvo ✓');
+    saveState(); renderAll(); toast(atualizou?'Registro atualizado ✓':'Registro salvo ✓');
   });
 
   function renderBalances(){
@@ -2761,6 +2801,13 @@
   $('mdCollapseBtn').addEventListener('click',()=>{
     mdCollapsed=!mdCollapsed; $('mdCollapseBtn').textContent=mdCollapsed?'▸':'▾'; renderMiddleList();
   });
+
+  // pré-preenche data/hora do lançamento manual com o momento atual
+  (function prefillCaixaForm(){
+    const d=$('caixaDate'), t=$('caixaTime');
+    if(d && !d.value) d.value=todayStr();
+    if(t && !t.value) t.value=nowHM();
+  })();
 
   function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderMiddleSummary(); renderMiddleList(); }
 
