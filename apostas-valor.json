@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8678.4,
+      "value": 10054.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T10:11:22.498Z"
+      "updatedAt": "2026-08-27T10:24:56.239Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2256.39,
+      "value": 1691.39,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T10:11:22.498Z"
+      "updatedAt": "2026-08-27T10:24:56.237Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4009.73,
-      "updatedAt": "2026-08-27T10:06:06.905Z"
+      "value": 3198.73,
+      "updatedAt": "2026-08-27T10:24:56.237Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12951,6 +12951,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T02:20:31.980Z"
+    },
+    {
+      "id": "mtbdm6y4b1s04",
+      "kind": "sure",
+      "event": "Hapoel nir hamat x Jerusalém",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.793,
+      "oddB": 2.58,
+      "total": 1376,
+      "stakeA": 811,
+      "stakeB": 565,
+      "lucroA": 78.12300000000005,
+      "lucroB": 81.70000000000005,
+      "lucro": 78.12300000000005,
+      "roi": 5.6775436046511665,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-27T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T10:24:56.237Z"
     }
   ],
   "invertidos": [],
@@ -13037,5 +13061,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T10:11:22.499Z"
+  "updatedAt": "2026-08-27T10:24:56.239Z"
 }
