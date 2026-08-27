@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5607.57,
+      "value": 6004.94,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T23:34:13.089Z"
+      "updatedAt": "2026-08-27T23:37:24.099Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4594,15 +4594,15 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 398.25,
-      "updatedAt": "2026-08-27T13:01:44.516Z"
+      "value": 0.98,
+      "updatedAt": "2026-08-27T23:37:24.093Z"
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1076.25,
+      "value": 1076.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T23:34:13.089Z"
+      "updatedAt": "2026-08-27T23:37:24.092Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -13274,6 +13274,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T22:06:30.800Z"
+    },
+    {
+      "id": "mtc5xb3v3v352",
+      "kind": "sure",
+      "event": "Tabor Sezana – NK Brezice 1919",
+      "houseA": "Ivibet",
+      "houseB": "Casinozer",
+      "oddA": 1.01,
+      "oddB": 1.75,
+      "total": 397.37,
+      "stakeA": 0.1,
+      "stakeB": 397.27,
+      "lucroA": -397.269,
+      "lucroB": 297.85249999999996,
+      "lucro": -397.269,
+      "roi": -99.97458288245213,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-28T15:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T23:37:24.093Z"
     }
   ],
   "invertidos": [],
@@ -13360,5 +13384,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T23:34:13.090Z"
+  "updatedAt": "2026-08-27T23:37:24.099Z"
 }
