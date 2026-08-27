@@ -137,6 +137,9 @@
   .evo-opt.active[data-evo="valor"]{background:#34D399;border-color:#34D399;color:#04231A;}
   .evo-opt.active[data-evo="both"]{background:#A78BFA;border-color:#A78BFA;color:#1E1633;}
   .cur-toggle{display:flex;gap:4px;margin-bottom:5px;}
+  .lay-col{border:1px solid var(--border);border-radius:9px;padding:10px;background:var(--panel-2);}
+  .lay-col-title{font-size:10px;font-weight:800;letter-spacing:.06em;margin-bottom:8px;}
+
   .cur-opt{flex:1;padding:6px 4px;border-radius:6px;border:1px solid var(--border);background:#0E1116;
            color:var(--muted-2);font-family:var(--mono);font-size:12px;font-weight:700;cursor:pointer;}
   .cur-opt.active{background:var(--sky);color:#04121C;border-color:var(--sky);}
@@ -531,7 +534,6 @@
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixA"> Fixar A (balancear)</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="fixB"> Fixar B (balancear)</label>
         <label class="sc-mode-opt" id="scModeFixCWrap" style="display:none;"><input type="radio" name="scMode" value="fixC"> Fixar C (balancear)</label>
-        <label class="sc-mode-opt"><input type="radio" name="scMode" value="lucro"> Lucro desejado</label>
         <label class="sc-mode-opt"><input type="radio" name="scMode" value="livre"> Manual (livre)</label>
       </div>
 
@@ -540,12 +542,9 @@
         <div class="cur-toggle" id="curToggleT">
           <button type="button" class="cur-opt active" data-cur="T:BRL">R$</button>
           <button type="button" class="cur-opt" data-cur="T:USD">US$</button>
+          <button type="button" class="cur-opt" data-cur="T:EUR">€</button>
         </div>
         <input type="number" id="scTotal" step="0.01" min="0" placeholder="1000">
-      </div>
-      <div id="scLucroWrap" style="display:none;">
-        <label>Lucro desejado (R$)</label>
-        <input type="number" id="scLucro" step="0.01" min="0" placeholder="150">
       </div>
       <div id="scLucroWrap" style="display:none;">
         <label>Lucro desejado (R$)</label>
@@ -582,6 +581,7 @@
         <div class="cur-toggle" id="curToggleC">
           <button type="button" class="cur-opt active" data-cur="C:BRL">R$</button>
           <button type="button" class="cur-opt" data-cur="C:USD">US$</button>
+          <button type="button" class="cur-opt" data-cur="C:EUR">€</button>
         </div>
         <input type="number" id="scStakeC" step="0.01" min="0" placeholder="—">
       </div>
@@ -605,7 +605,7 @@
     <div class="card">
       <div class="card-title">Calculadora Lay (Exchange)</div>
       <div class="footnote" style="margin-top:0;line-height:1.55;">
-        <b>Lay = apostar CONTRA</b> uma seleção na exchange (você vira a banca). Você <b>ganha se a seleção NÃO acontecer</b>; se acontecer, você paga a <b>responsabilidade</b>. Combine com uma aposta <b>a favor (back)</b> numa casa normal para travar lucro nos dois lados. Valores numa moeda só (use tudo em R$, ou tudo na moeda da exchange).
+        <b>Lay = apostar CONTRA</b> uma seleção na exchange (você vira a banca). Você <b>ganha se a seleção NÃO acontecer</b>; se acontecer, você paga a <b>responsabilidade</b>. Combine com uma aposta <b>a favor (back)</b> numa casa normal para travar lucro nos dois lados. Cada lado tem <b>sua própria moeda</b> — a casa pode ser em R$ e a exchange em US$, por exemplo; a conversão usa as cotações da aba de banca.
       </div>
 
       <details style="margin:8px 0;border:1px solid var(--border);border-radius:9px;background:var(--panel-2);">
@@ -623,41 +623,58 @@
         </div>
       </details>
 
-      <div style="margin-top:8px;">
-        <label>Moeda desta operação</label>
-        <div class="cur-toggle" id="layCurToggle">
-          <button type="button" class="cur-opt active" data-laycur="BRL">R$</button>
-          <button type="button" class="cur-opt" data-laycur="USD">US$</button>
-          <button type="button" class="cur-opt" data-laycur="EUR">€</button>
+      <div class="grid2" style="margin-top:10px;">
+        <div class="lay-col">
+          <div class="lay-col-title" style="color:var(--sky);">A FAVOR (BACK)</div>
+          <label>Casa do back</label>
+          <input type="text" id="layHouseBack" placeholder="Ex: Bet365">
+          <label>Moeda da casa</label>
+          <div class="cur-toggle" id="layCurToggleBack">
+            <button type="button" class="cur-opt active" data-laycur="back:BRL">R$</button>
+            <button type="button" class="cur-opt" data-laycur="back:USD">US$</button>
+            <button type="button" class="cur-opt" data-laycur="back:EUR">€</button>
+          </div>
+          <label>Odd do back</label>
+          <input type="text" inputmode="decimal" id="layOddBack" placeholder="2.10">
+          <label>Stake do back <span id="layStakeBackCur" style="color:var(--muted-2);font-weight:500;"></span></label>
+          <input type="text" inputmode="decimal" id="layStakeBack" placeholder="100">
+        </div>
+        <div class="lay-col">
+          <div class="lay-col-title" style="color:#C4B5FD;">CONTRA (LAY)</div>
+          <label>Exchange</label>
+          <input type="text" id="layHouseLay" placeholder="Ex: Betfair">
+          <label>Moeda da exchange</label>
+          <div class="cur-toggle" id="layCurToggleLay">
+            <button type="button" class="cur-opt active" data-laycur="lay:BRL">R$</button>
+            <button type="button" class="cur-opt" data-laycur="lay:USD">US$</button>
+            <button type="button" class="cur-opt" data-laycur="lay:EUR">€</button>
+          </div>
+          <label>Odd do lay</label>
+          <input type="text" inputmode="decimal" id="layOddLay" placeholder="2.14">
+          <label>Comissão da exchange (%)</label>
+          <input type="text" inputmode="decimal" id="layComm" placeholder="4.5">
         </div>
       </div>
-
-      <div class="grid2" style="margin-top:10px;">
-        <div><label>Casa do back (a favor)</label><input type="text" id="layHouseBack" placeholder="Ex: Bet365"></div>
-        <div><label>Exchange (lay)</label><input type="text" id="layHouseLay" placeholder="Ex: Betfair"></div>
-      </div>
-      <div class="grid2">
-        <div><label>Odd do back (a favor)</label><input type="text" inputmode="decimal" id="layOddBack" placeholder="2.10"></div>
-        <div><label>Stake do back</label><input type="text" inputmode="decimal" id="layStakeBack" placeholder="100"></div>
-      </div>
-      <div class="grid2">
-        <div><label>Odd do lay (exchange)</label><input type="text" inputmode="decimal" id="layOddLay" placeholder="2.14"></div>
-        <div><label>Comissão da exchange (%)</label><input type="text" inputmode="decimal" id="layComm" placeholder="4.5"></div>
-      </div>
+      <div class="footnote" id="layCurNote" style="margin-top:2px;"></div>
 
       <div class="sc-mode" style="margin-top:4px;">
         <label class="sc-mode-opt"><input type="radio" name="layMode" value="lock" checked> Travar lucro (calcula a aposta lay)</label>
         <label class="sc-mode-opt"><input type="radio" name="layMode" value="manual"> Aposta lay manual</label>
       </div>
       <div id="layManualWrap" style="display:none;">
-        <label>Aposta lay (stake do apostador na exchange)</label>
+        <label>Aposta lay (stake do apostador na exchange) <span id="layStakeLayCur" style="color:var(--muted-2);font-weight:500;"></span></label>
         <input type="text" inputmode="decimal" id="layStakeLay" placeholder="—">
       </div>
 
       <div class="risk-preview" id="layResult">
         <span style="color:var(--muted)">Preencha as odds, o stake do back e a comissão para ver o resultado.</span>
       </div>
-      <div class="footnote" style="margin-top:8px;">Calculadora independente — não registra na lista nem debita saldos (é só para dimensionar a operação).</div>
+      <div class="grid2" style="margin-top:10px;">
+        <div><label>Evento (opcional)</label><input type="text" id="layEvent" placeholder="Ex: Flamengo × Palmeiras"></div>
+        <div><label>Data / horário do jogo</label><input type="datetime-local" id="layDate"></div>
+      </div>
+      <button class="btn primary" id="layRegisterBtn" style="width:100%;margin-top:8px;">Registrar operação lay</button>
+      <div class="footnote" style="margin-top:8px;">Ao registrar, a operação entra na lista de surebets como <b>duas pernas</b>: o back na casa e o lay na exchange, este último lançado pela <b>responsabilidade</b> (o valor que fica realmente preso) na <b>odd equivalente</b>. Os saldos das duas casas são debitados na moeda de cada uma.</div>
     </div>
 
 
@@ -772,7 +789,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260827-1330';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260827-1556';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1834,8 +1851,8 @@
     const pct=r['pct'+letra];
     const cls=lucro>=0?'green':'red';
     return `<div style="border-left:3px solid ${cor};padding-left:8px;margin-bottom:6px;">`+
-      `<b>${esc(house)}</b> @${odd.toFixed(2)} · aposta <b>${cur==='USD'?fmtUSD(stake/fat):fmt(stake)}</b>`+
-      `${cur==='USD'?` <span style="color:var(--muted-2)">≈ ${fmt(stake)}</span>`:''} <span style="color:var(--muted-2)">(${pct.toFixed(1)}%)</span><br>`+
+      `<b>${esc(house)}</b> @${odd.toFixed(2)} · aposta <b>${cur==='BRL'?fmt(stake):fmtCur(stake/fat,cur)}</b>`+
+      `${cur!=='BRL'?` <span style="color:var(--muted-2)">≈ ${fmt(stake)}</span>`:''} <span style="color:var(--muted-2)">(${pct.toFixed(1)}%)</span><br>`+
       `<span style="color:var(--muted-2)">Se ${esc(house)} vencer:</span> retorno ${fmt(ret)} · <span style="color:var(--${cls})">lucro ${fmtSign(lucro)}</span>`+
     `</div>`;
   }
@@ -1901,7 +1918,9 @@
   ['scOddA','scOddB','scOddC','scTotal','scLucro','scStakeA','scStakeB','scStakeC','scHouseA','scHouseB','scHouseC'].forEach(id=>{
     $(id).addEventListener('input',updateSurebetCalc);
   });
-  document.querySelectorAll('.cur-opt').forEach(btn=>btn.addEventListener('click',()=>{
+  // só os toggles da calculadora de surebet (data-cur). Os do lay usam data-laycur
+  // e têm o seu próprio handler — sem o filtro, clicar neles quebrava aqui.
+  document.querySelectorAll('.cur-opt[data-cur]').forEach(btn=>btn.addEventListener('click',()=>{
     const [perna,moeda]=btn.dataset.cur.split(':');
     // ativa o botão clicado dentro do seu grupo
     btn.parentElement.querySelectorAll('.cur-opt').forEach(x=>x.classList.remove('active'));
@@ -2203,9 +2222,10 @@
         const realProfit=sbRealProfit(o);
         const resolved=!!o.winner;
         const isEditing=sbEditingId===o.id;
-        const badge=resolved
+        const badge=(resolved
           ? `<span class="sb-status-badge done">✓ finalizada</span>`
-          : `<span class="sb-status-badge pending">⏳ em aberto</span>`;
+          : `<span class="sb-status-badge pending">⏳ em aberto</span>`)
+          +(o.lay?`<span class="sb-status-badge" style="background:#1A1230;color:#C4B5FD;">lay</span>`:'');
         const lucroCls=resolved?'lucro':'lucro pend';
         const lucroTxt=resolved?fmtSign(realProfit):
           (has3?`${fmtSign(legLucro(o,'A'))} · ${fmtSign(legLucro(o,'B'))} · ${fmtSign(legLucro(o,'C'))}`
@@ -2244,9 +2264,14 @@
           </div>`;
         } else {
           const legRows=[['A',hA],['B',hB]]; if(has3) legRows.push(['C',hC]);
-          const legLines=legRows.map(([l,h])=>
-            `<div class="leg leg${l}"><span>${h} · aposta @${legOdd(o,l).toFixed(2)}</span><span>${legCur(o,l)==='USD'?fmtUSD(legStake(o,l)/usdRate())+' ('+fmt(legStake(o,l))+')':fmt(legStake(o,l))}</span></div>`
-          ).join('');
+          const legLines=legRows.map(([l,h])=>{
+            const cur=legCur(o,l), st=legStake(o,l);
+            const val=cur==='BRL'?fmt(st):`${fmtCur(st/curRate(cur),cur)} (${fmt(st)})`;
+            const rot=(o.lay&&l==='B')?'responsabilidade @'+legOdd(o,l).toFixed(2)+' equiv.':'aposta @'+legOdd(o,l).toFixed(2);
+            return `<div class="leg leg${l}"><span>${h} · ${rot}</span><span>${val}</span></div>`;
+          }).join('');
+          // operação de lay: mostra os termos reais da exchange, não só a odd equivalente
+          const layLine=o.lay?`<div class="leg" style="color:var(--amber);"><span>Lay real @${o.lay.oddLay.toFixed(2)} · com. ${o.lay.commPct}%</span><span>aposta ${legCur(o,'B')==='BRL'?fmt(o.lay.stakeLay):fmtCur(o.lay.stakeLay/curRate(legCur(o,'B')),legCur(o,'B'))}</span></div>`:'';
           const cenarioLines=legRows.map(([l,h])=>
             `<div class="leg"><span>Se ${h} vencer</span><span style="color:${legLucro(o,l)>=0?'var(--green)':'var(--red)'}">${fmtSign(legLucro(o,l))}</span></div>`
           ).join('');
@@ -2254,7 +2279,7 @@
             `<button class="btn small ${o.winner===l?'primary':''}" data-sbwin="${o.id}:${l}">${h} venceu</button>`
           ).join('');
           detailInner=`<div class="sb-op-detail${sbOpenDetail===o.id?' show':''}" data-sbdetail="${o.id}">
-            ${legLines}
+            ${legLines}${layLine}
             <div class="leg" style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Total investido</span><span>${fmt(o.total)}</span></div>
             ${cenarioLines}
             <div class="leg" style="color:var(--sky);border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Resultado real</span><span>${resolved?fmtSign(realProfit):'aguardando'}</span></div>
@@ -2346,6 +2371,12 @@
         else if(f==='stakeC'){ const n=parseFloat(v); if(n>0) o.stakeC=n; }
         else if(f==='date') o.date=v||o.date;
       });
+      // operação de lay: a perna B é a responsabilidade; refaz os termos reais a partir dela
+      if(o.lay && o.lay.oddLay>1){
+        o.lay.liability=o.stakeB;
+        o.lay.stakeLay=o.stakeB/(o.lay.oddLay-1);
+        o.lay.equivOdd=o.oddB;
+      }
       // recalcula os derivados com os novos valores
       const has3=typeof o.oddC==='number';
       o.total=o.stakeA+o.stakeB+(has3?o.stakeC:0);
@@ -2654,25 +2685,39 @@
   }
 
   /* ---------- calculadora LAY (exchange) ---------- */
-  let layCur='BRL';
-  function layFmt(n){ return layCur==='USD'?fmtUSD(n):layCur==='EUR'?fmtEUR(n):fmt(n); }
-  function layFmtSign(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return (v>=0?'+':'')+layFmt(v); }
+  // Cada perna tem a sua moeda: a casa do back pode ser R$ e a exchange US$, por exemplo.
+  // Todo o cálculo roda em BRL; a exibição volta para a moeda de cada perna.
+  let layCurBack='BRL', layCurLay='BRL';
+  let layLast=null;                 // último cálculo válido (para registrar)
+  function curSimbolo(c){ return c==='USD'?'US$':c==='EUR'?'€':'R$'; }
+  function fmtCur(n,cur){ return cur==='USD'?fmtUSD(n):cur==='EUR'?fmtEUR(n):fmt(n); }
+  function fmtCurSign(n,cur){ const v=(typeof n==='number'&&isFinite(n))?n:0; return (v>=0?'+':'')+fmtCur(v,cur); }
+  // valor em BRL exibido na moeda da perna, com o equivalente em R$ ao lado quando não for R$
+  function layNat(brl,cur){
+    if(cur==='BRL') return fmt(brl);
+    return `${fmtCur(brl/curRate(cur),cur)} <span style="color:var(--muted-2);font-weight:400;">≈ ${fmt(brl)}</span>`;
+  }
   function layCompute(){
-    const bo=numBR($('layOddBack').value);    // odd do back (a favor)
-    const bs=numBR($('layStakeBack').value);  // stake do back
-    const lo=numBR($('layOddLay').value);      // odd do lay (exchange)
-    const cPct=numBR($('layComm').value);      // comissão %
+    const bo=numBR($('layOddBack').value);      // odd do back (a favor)
+    const bsIn=numBR($('layStakeBack').value);  // stake do back, na moeda da casa
+    const lo=numBR($('layOddLay').value);       // odd do lay (exchange)
+    const cPct=numBR($('layComm').value);       // comissão %
     const c=(isNaN(cPct)?0:cPct)/100;
+    const curBack=layCurBack, curLay=layCurLay;
+    const fatBack=curRate(curBack), fatLay=curRate(curLay);
     const mode=(document.querySelector('input[name="layMode"]:checked')||{}).value||'lock';
-    if(!(bo>1)||!(bs>0)||!(lo>1)) return null;
-    // stake lay que iguala os dois cenários (trava o lucro)
+    if(!(bo>1)||!(bsIn>0)||!(lo>1)) return null;
+    const bs=bsIn*fatBack;                      // stake do back em BRL
+    // stake lay (BRL) que iguala os dois cenários — a conversão entra aqui:
+    // bs_BRL*bo = ls_BRL*(lo-c), então as moedas diferentes já ficam compatibilizadas
     const lockStake=bs*bo/(lo-c);
     let ls=lockStake;
     if(mode==='manual'){
-      ls=numBR($('layStakeLay').value);
-      if(!(ls>0)) return null;
+      const lsIn=numBR($('layStakeLay').value); // digitado na moeda da exchange
+      if(!(lsIn>0)) return null;
+      ls=lsIn*fatLay;
     }
-    const liability=ls*(lo-1);                 // responsabilidade na exchange
+    const liability=ls*(lo-1);                 // responsabilidade na exchange (BRL)
     // Seleção ACONTECE: back ganha o lucro, lay paga a responsabilidade
     const netWin=bs*(bo-1)-liability;
     // Seleção NÃO acontece: back perde o stake, lay ganha (menos comissão)
@@ -2681,45 +2726,61 @@
     const capital=bs+liability;                // capital que fica preso (back + responsabilidade)
     const roi=capital>0?locked/capital*100:0;
     const equivOdd=1+(1-c)/(lo-1);             // odd equivalente do lay (como se fosse back)
-    return {bo,bs,lo,c,cPct,mode,ls,lockStake,liability,netWin,netLose,locked,capital,roi,equivOdd};
+    const mista=curBack!==curLay;              // pernas em moedas diferentes
+    return {bo,bs,lo,c,cPct,mode,ls,lockStake,liability,netWin,netLose,locked,capital,roi,equivOdd,
+            curBack,curLay,fatBack,fatLay,mista};
   }
 
   function layRender(){
     const box=$('layResult');
+    // rótulos de moeda nos campos de stake
+    $('layStakeBackCur').textContent='('+curSimbolo(layCurBack)+')';
+    $('layStakeLayCur').textContent='('+curSimbolo(layCurLay)+')';
+    $('layCurNote').innerHTML = (layCurBack===layCurLay)
+      ? `Ambas as pernas em <b>${curSimbolo(layCurBack)}</b>.`
+      : `Pernas em moedas diferentes — back em <b>${curSimbolo(layCurBack)}</b>, exchange em <b>${curSimbolo(layCurLay)}</b>. `+
+        `Os dois lados são compatibilizados pelas cotações da aba de banca `+
+        `(US$ ${usdRate().toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})} · € ${eurRate().toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}). `+
+        `<b>O lucro travado vale na cotação de hoje</b>: se ela virar antes de você liquidar, o resultado muda.`;
     const r=layCompute();
     if(!r){ box.innerHTML='<span style="color:var(--muted)">Preencha as odds, o stake do back e a comissão para ver o resultado.</span>'; return; }
+    layLast=r;
     const back=$('layHouseBack').value.trim()||'Back';
     const exch=$('layHouseLay').value.trim()||'Exchange';
     const trava=r.locked>=-0.005;
-    const verdictText=trava?`✓ TRAVA LUCRO — garante ${layFmtSign(r.locked)} nos dois lados`:`⚠ NÃO TRAVA — pode perder ${layFmt(Math.abs(r.locked))} num dos lados`;
+    // back e lay saem cada um na sua moeda; agregados (lucro, capital) saem em R$, o denominador comum
+    const B=v=>layNat(v,r.curBack), L=v=>layNat(v,r.curLay);
+    const Bp=v=>fmtCur(v/r.fatBack,r.curBack), Lp=v=>fmtCur(v/r.fatLay,r.curLay);
+    const verdictText=trava?`✓ TRAVA LUCRO — garante ${fmtSign(r.locked)} nos dois lados`:`⚠ NÃO TRAVA — pode perder ${fmt(Math.abs(r.locked))} num dos lados`;
     const verdictColor=trava?'var(--green)':'var(--amber)';
     box.innerHTML=
       `<div class="md-verdict" style="color:${verdictColor}">${verdictText}</div>`+
-      // Os dois números para a exchange — use o que a casa pedir
+      // Os dois números para a exchange — use o que a casa pedir, sempre na moeda dela
       `<div class="md-legs">`+
-        `<div class="md-leg" style="border-left:3px solid var(--sky);">Aposta lay <span style="color:var(--muted-2);font-size:10.5px;">(campo "Profit" / stake)</span><br><b style="font-size:16px;color:var(--sky)">${layFmt(r.ls)}</b></div>`+
-        `<div class="md-leg" style="border-left:3px solid var(--amber);">Responsabilidade <span style="color:var(--muted-2);font-size:10.5px;">(campo "Risk" / liability)</span><br><b style="font-size:16px;color:var(--amber)">${layFmt(r.liability)}</b></div>`+
+        `<div class="md-leg" style="border-left:3px solid var(--sky);">Aposta lay <span style="color:var(--muted-2);font-size:10.5px;">(campo "Profit" / stake)</span><br><b style="font-size:16px;color:var(--sky)">${Lp(r.ls)}</b>${r.curLay!=='BRL'?`<br><span style="color:var(--muted-2);font-size:10.5px;">≈ ${fmt(r.ls)}</span>`:''}</div>`+
+        `<div class="md-leg" style="border-left:3px solid var(--amber);">Responsabilidade <span style="color:var(--muted-2);font-size:10.5px;">(campo "Risk" / liability)</span><br><b style="font-size:16px;color:var(--amber)">${Lp(r.liability)}</b>${r.curLay!=='BRL'?`<br><span style="color:var(--muted-2);font-size:10.5px;">≈ ${fmt(r.liability)}</span>`:''}</div>`+
       `</div>`+
-      `<div class="md-explain">🎯 Na exchange, use <b>o campo que ela pedir</b>: se for <b>aposta/stake/"Profit"</b> digite ${layFmt(r.ls)}; se for <b>responsabilidade/"Risk"</b> digite ${layFmt(r.liability)}. Os dois montam a mesma aposta lay.</div>`+
+      `<div class="md-explain">🎯 Na exchange, use <b>o campo que ela pedir</b>, no valor em <b>${curSimbolo(r.curLay)}</b>: se for <b>aposta/stake/"Profit"</b> digite ${Lp(r.ls)}; se for <b>responsabilidade/"Risk"</b> digite ${Lp(r.liability)}. Os dois montam a mesma aposta lay.</div>`+
       `<div class="md-legs">`+
-        `<div class="md-leg legA"><b>${esc(back)}</b> · a favor<br>Odd ${r.bo.toFixed(2)}<br>Aposta: <b>${layFmt(r.bs)}</b></div>`+
-        `<div class="md-leg legB"><b>${esc(exch)}</b> · lay<br>Odd ${r.lo.toFixed(2)} · com. ${(r.cPct||0)}%<br>Aposta lay: <b>${layFmt(r.ls)}</b></div>`+
+        `<div class="md-leg legA"><b>${esc(back)}</b> · a favor<br>Odd ${r.bo.toFixed(2)}<br>Aposta: <b>${B(r.bs)}</b></div>`+
+        `<div class="md-leg legB"><b>${esc(exch)}</b> · lay<br>Odd ${r.lo.toFixed(2)} · com. ${(r.cPct||0)}%<br>Aposta lay: <b>${L(r.ls)}</b></div>`+
       `</div>`+
       `<div class="md-scenario ${r.netWin>=0?'best':'worst'}">`+
         `<div class="sc-label">Seleção ACONTECE (o back ganha, o lay perde)</div>`+
-        `<div class="sc-val ${r.netWin>=0?'pos':'neg'}">${layFmtSign(r.netWin)}</div>`+
-        `<div class="sc-detail">${esc(back)} paga ${layFmt(r.bs*r.bo)} (lucro ${layFmtSign(r.bs*(r.bo-1))}) · ${esc(exch)} cobra a responsabilidade ${layFmt(r.liability)}</div>`+
+        `<div class="sc-val ${r.netWin>=0?'pos':'neg'}">${fmtSign(r.netWin)}</div>`+
+        `<div class="sc-detail">${esc(back)} paga ${Bp(r.bs*r.bo)} (lucro ${fmtCurSign(r.bs*(r.bo-1)/r.fatBack,r.curBack)}) · ${esc(exch)} cobra a responsabilidade ${Lp(r.liability)}</div>`+
       `</div>`+
       `<div class="md-scenario ${r.netLose>=0?'best':'worst'}">`+
         `<div class="sc-label">Seleção NÃO acontece (o back perde, o lay ganha)</div>`+
-        `<div class="sc-val ${r.netLose>=0?'pos':'neg'}">${layFmtSign(r.netLose)}</div>`+
-        `<div class="sc-detail">${esc(back)} perde ${layFmt(r.bs)} · ${esc(exch)} paga ${layFmt(r.ls*(1-r.c))} (aposta ${layFmt(r.ls)} − comissão ${layFmt(r.ls*r.c)})</div>`+
+        `<div class="sc-val ${r.netLose>=0?'pos':'neg'}">${fmtSign(r.netLose)}</div>`+
+        `<div class="sc-detail">${esc(back)} perde ${Bp(r.bs)} · ${esc(exch)} paga ${Lp(r.ls*(1-r.c))} (aposta ${Lp(r.ls)} − comissão ${Lp(r.ls*r.c)})</div>`+
       `</div>`+
       `<div class="md-stakes">`+
-        `<div>Lucro líquido travado: <b class="${r.locked>=0?'pos':'neg'}">${layFmtSign(r.locked)}</b></div>`+
-        `<div>Capital necessário: <b>${layFmt(r.capital)}</b> (${layFmt(r.bs)} no back + ${layFmt(r.liability)} de responsabilidade)</div>`+
+        `<div>Lucro líquido travado: <b class="${r.locked>=0?'pos':'neg'}">${fmtSign(r.locked)}</b></div>`+
+        `<div>Capital necessário: <b>${fmt(r.capital)}</b> (${B(r.bs)} no back + ${L(r.liability)} de responsabilidade)</div>`+
         `<div class="tot">ROI sobre o capital: <b class="${r.roi>=0?'pos':'neg'}">${r.roi.toFixed(2)}%</b></div>`+
       `</div>`+
+      (r.mista?`<div class="footnote" style="margin-top:6px;color:var(--amber);">⚠ Operação em duas moedas: o lucro acima está em R$ pela cotação de agora. A trava é <b>perfeita na moeda de cada perna</b>, mas o valor em R$ oscila com o câmbio até a liquidação.</div>`:'')+
       `<div class="footnote" style="margin-top:6px;">Fazer lay a <b>${r.lo.toFixed(2)}</b> com ${(r.cPct||0)}% de comissão rende o mesmo que apostar <b>a favor do resultado contrário</b> na odd <b>${r.equivOdd.toFixed(3)}</b>. Use isso para comparar com uma casa comum: se o back adversário pagar mais que ${r.equivOdd.toFixed(3)}, backear lá é melhor que este lay. ${r.mode==='lock'?'Aposta lay dimensionada para igualar os dois lados.':'Aposta lay manual — os lados podem ficar diferentes.'}</div>`;
   }
 
@@ -2728,12 +2789,56 @@
     $('layManualWrap').style.display=(document.querySelector('input[name="layMode"]:checked').value==='manual')?'block':'none';
     layRender();
   }));
-  document.querySelectorAll('#layCurToggle .cur-opt').forEach(btn=>btn.addEventListener('click',()=>{
-    document.querySelectorAll('#layCurToggle .cur-opt').forEach(b=>b.classList.remove('active'));
+  // um toggle de moeda por perna: back e lay são independentes
+  document.querySelectorAll('#layCurToggleBack .cur-opt, #layCurToggleLay .cur-opt').forEach(btn=>btn.addEventListener('click',()=>{
+    const [perna,moeda]=btn.dataset.laycur.split(':');
+    btn.parentElement.querySelectorAll('.cur-opt').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
-    layCur=btn.dataset.laycur;
+    if(perna==='back') layCurBack=moeda; else layCurLay=moeda;
     layRender();
   }));
+
+  $('layRegisterBtn').addEventListener('click',()=>{
+    const r=layCompute();
+    if(!r){
+      const falta=[];
+      if(!(numBR($('layOddBack').value)>1)) falta.push('Odd do back');
+      if(!(numBR($('layStakeBack').value)>0)) falta.push('Stake do back');
+      if(!(numBR($('layOddLay').value)>1)) falta.push('Odd do lay');
+      if(r===null && (document.querySelector('input[name="layMode"]:checked')||{}).value==='manual'
+         && !(numBR($('layStakeLay').value)>0)) falta.push('Aposta lay');
+      alert('Falta preencher (ou valor inválido): '+(falta.join(', ')||'dados da operação')+'.\n\nNo decimal pode usar vírgula ou ponto. As odds têm que ser maiores que 1.');
+      return;
+    }
+    const back=$('layHouseBack').value.trim(), exch=$('layHouseLay').value.trim();
+    if(!back||!exch){ alert('Informe a casa do back e a exchange — é por elas que os saldos são debitados.'); return; }
+    if(r.locked<-0.005 && !confirm(`Esta operação NÃO trava lucro: no pior caso você perde ${fmt(Math.abs(r.locked))}. Registrar mesmo assim?`)) return;
+
+    // A perna de lay entra pela RESPONSABILIDADE (o que fica preso na exchange) na ODD EQUIVALENTE.
+    // Assim ela se comporta exatamente como um back: stake*odd devolvido se vencer.
+    //   stakeB*equivOdd = resp + aposta*(1-comissão)  ✓ mesma matemática do lay
+    const op={
+      id:uid(), kind:'sure',
+      event:$('layEvent').value.trim()||'Operação lay sem nome',
+      houseA:back, houseB:exch,
+      oddA:r.bo,  oddB:r.equivOdd,
+      stakeA:r.bs, stakeB:r.liability,      // em BRL, como todas as operações
+      curA:r.curBack, curB:r.curLay,        // moeda de cada perna, independentes
+      total:r.capital,
+      lucroA:r.netWin, lucroB:r.netLose,
+      lucro:r.locked, roi:r.roi, winner:null,
+      lay:{ oddLay:r.lo, commPct:r.cPct||0, stakeLay:r.ls, liability:r.liability, equivOdd:r.equivOdd },
+      date:$('layDate').value||nowLocalStr()
+    };
+    aplicarStakes(op);
+    touch(op);
+    state.surebets.push(op);
+    $('layOddBack').value=''; $('layStakeBack').value=''; $('layOddLay').value=''; $('layStakeLay').value='';
+    $('layHouseBack').value=''; $('layHouseLay').value=''; $('layEvent').value='';
+    $('layDate').value=nowLocalStr();
+    layLast=null; layRender(); saveState(); renderAll();
+    toast('Operação lay registrada ✓');
+  });
 
   // Calcula os stakes complementares (balanceados: stakeA*oddA = stakeB*oddB)
   const mdRound=x=>(Math.round(x*100)/100).toFixed(2);
@@ -3041,6 +3146,7 @@
   })();
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
   if(!$('mdDate').value) $('mdDate').value=nowLocalStr();
+  if(!$('layDate').value) $('layDate').value=nowLocalStr();
   mdSync();
   recolherResolvidos();
   updateSurebetCalc();
