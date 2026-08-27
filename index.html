@@ -605,8 +605,23 @@
     <div class="card">
       <div class="card-title">Calculadora Lay (Exchange)</div>
       <div class="footnote" style="margin-top:0;line-height:1.55;">
-        <b>Lay = apostar CONTRA</b> uma seleção na exchange (você vira a banca). Você <b>ganha se a seleção NÃO acontecer</b>; se acontecer, você paga a <b>responsabilidade</b>. Combine com uma aposta <b>a favor (back)</b> numa casa normal para travar lucro nos dois lados. A <b>comissão</b> da exchange incide só sobre o lucro do lay. Valores numa moeda só (use tudo em R$, ou tudo na moeda da exchange).
+        <b>Lay = apostar CONTRA</b> uma seleção na exchange (você vira a banca). Você <b>ganha se a seleção NÃO acontecer</b>; se acontecer, você paga a <b>responsabilidade</b>. Combine com uma aposta <b>a favor (back)</b> numa casa normal para travar lucro nos dois lados. Valores numa moeda só (use tudo em R$, ou tudo na moeda da exchange).
       </div>
+
+      <details style="margin:8px 0;border:1px solid var(--border);border-radius:9px;background:var(--panel-2);">
+        <summary style="cursor:pointer;padding:10px 12px;font-weight:700;font-size:13px;color:var(--sky);">❓ Como funciona o lay — guia rápido</summary>
+        <div style="padding:0 12px 12px;font-size:12.5px;line-height:1.65;color:var(--muted);">
+          <p style="margin:6px 0;"><b style="color:var(--text)">1. Lay = apostar CONTRA.</b> Você banca a aposta de outra pessoa: ganha se a seleção <b>NÃO</b> acontecer, perde se acontecer. Ex.: lay em "Under 5.5" → ganha se saírem 6+ gols, perde se saírem ≤5.</p>
+          <p style="margin:6px 0;"><b style="color:var(--text)">2. Responsabilidade.</b> É o risco máximo daquela perna: <b>aposta × (odd − 1)</b>. Ex.: aposta 100 na odd 1,99 → responsabilidade 99. É o valor que fica bloqueado na conta.</p>
+          <p style="margin:6px 0;"><b style="color:var(--text)">3. Cada exchange pede um campo diferente:</b></p>
+          <ul style="margin:4px 0 6px;padding-left:18px;">
+            <li>Pede a <b>aposta / stake / "Profit"</b> → digite o valor <b style="color:var(--sky)">Aposta lay</b> que aparece abaixo.</li>
+            <li>Pede a <b>responsabilidade / "Risk" / liability</b> → digite o valor <b style="color:var(--amber)">Responsabilidade</b>.</li>
+          </ul>
+          <p style="margin:6px 0;"><b style="color:#F87171">Cuidado:</b> o campo "Profit" de algumas exchanges <b>não</b> é o seu lucro — é o stake do lay. Seu lucro real travado é o <b>"Lucro líquido travado"</b> lá embaixo.</p>
+          <p style="margin:6px 0;"><b style="color:var(--text)">4. Comissão.</b> Incide só sobre o lucro do lay, e só quando ele ganha. Se a exchange não cobra (nem mostra o campo), use <b>0%</b>.</p>
+        </div>
+      </details>
 
       <div class="grid2" style="margin-top:10px;">
         <div><label>Casa do back (a favor)</label><input type="text" id="layHouseBack" placeholder="Ex: Bet365"></div>
@@ -736,7 +751,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260827-1030';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260827-1130';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -2660,7 +2675,7 @@
         `<div class="md-leg legA"><b>${esc(back)}</b> · a favor<br>Odd ${r.bo.toFixed(2)}<br>Aposta: <b>${fmt(r.bs)}</b></div>`+
         `<div class="md-leg legB"><b>${esc(exch)}</b> · lay<br>Odd ${r.lo.toFixed(2)} · com. ${(r.cPct||0)}%<br>Aposta lay: <b>${fmt(r.ls)}</b></div>`+
       `</div>`+
-      `<div class="md-explain">🎯 Na exchange, coloque uma aposta lay de <b>${fmt(r.ls)}</b>. Isso reserva uma <b>responsabilidade de ${fmt(r.liability)}</b> (o máximo que a exchange segura se a seleção acontecer).</div>`+
+      `<div class="md-explain">🎯 Na exchange, dependendo do campo que ela pede:<br>• pede a <b>aposta / stake / "Profit"</b> → digite <b style="color:var(--sky)">${fmt(r.ls)}</b><br>• pede a <b>responsabilidade / "Risk"</b> → digite <b style="color:var(--amber)">${fmt(r.liability)}</b><br>Qualquer um dos dois monta a mesma aposta lay.</div>`+
       `<div class="md-scenario ${r.netWin>=0?'best':'worst'}">`+
         `<div class="sc-label">Seleção ACONTECE (o back ganha, o lay perde)</div>`+
         `<div class="sc-val ${r.netWin>=0?'pos':'neg'}">${fmtSign(r.netWin)}</div>`+
