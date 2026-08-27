@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 13900.42,
+      "value": 14310.42,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T11:24:36.899Z"
+      "updatedAt": "2026-08-27T13:01:44.517Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4574,8 +4574,8 @@
     {
       "id": "msan29jv5dft4",
       "name": "BetMGM",
-      "value": 500,
-      "updatedAt": "2026-08-26T13:41:47.216Z"
+      "value": 310,
+      "updatedAt": "2026-08-27T13:01:44.516Z"
     },
     {
       "id": "msd9ei033vtoe",
@@ -4593,8 +4593,8 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 618.25,
-      "updatedAt": "2026-08-27T02:20:31.980Z"
+      "value": 398.25,
+      "updatedAt": "2026-08-27T13:01:44.516Z"
     },
     {
       "id": "msddu5i007wwm",
@@ -13052,6 +13052,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T11:24:36.892Z"
+    },
+    {
+      "id": "mtbj7uf8g1no9",
+      "kind": "sure",
+      "event": "Barcelona x Rayo Vallecano",
+      "houseA": "Casinozer",
+      "houseB": "BetMGM",
+      "oddA": 1.95,
+      "oddB": 2.3,
+      "total": 410,
+      "stakeA": 220,
+      "stakeB": 190,
+      "lucroA": 19,
+      "lucroB": 26.999999999999943,
+      "lucro": 19,
+      "roi": 4.634146341463414,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-31T16:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T13:01:44.516Z"
     }
   ],
   "invertidos": [],
@@ -13138,5 +13162,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T12:47:46.859Z"
+  "updatedAt": "2026-08-27T13:01:44.517Z"
 }
