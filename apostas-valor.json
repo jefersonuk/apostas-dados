@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 15686.12,
+      "value": 16190.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T13:37:22.241Z"
+      "updatedAt": "2026-08-27T14:46:56.032Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2607.96,
-      "updatedAt": "2026-08-27T13:26:45.561Z"
+      "value": 2350.06,
+      "updatedAt": "2026-08-27T14:46:56.032Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4758,9 +4758,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 103.55,
+      "value": 55.55,
       "currency": "USD",
-      "updatedAt": "2026-08-26T20:05:03.072Z"
+      "updatedAt": "2026-08-27T14:46:56.032Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -13130,6 +13130,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T13:37:22.241Z"
+    },
+    {
+      "id": "mtbmz4f37n6cf",
+      "kind": "sure",
+      "event": "Aftanes xIH hafnarjordur",
+      "houseA": "Pinnacle",
+      "houseB": "Shuffle",
+      "oddA": 2.04,
+      "oddB": 2.14,
+      "total": 504.61999999999995,
+      "stakeA": 257.9,
+      "stakeB": 246.71999999999997,
+      "lucroA": 21.496000000000038,
+      "lucroB": 23.360799999999983,
+      "lucro": 21.496000000000038,
+      "roi": 4.259839086837628,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-27T16:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T14:46:56.032Z"
     }
   ],
   "invertidos": [],
@@ -13216,5 +13240,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T13:38:29.083Z"
+  "updatedAt": "2026-08-27T14:46:56.032Z"
 }
