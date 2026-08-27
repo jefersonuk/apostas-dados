@@ -601,6 +601,42 @@
     </div>
 
 
+    <!-- CALCULADORA LAY (EXCHANGE) -->
+    <div class="card">
+      <div class="card-title">Calculadora Lay (Exchange)</div>
+      <div class="footnote" style="margin-top:0;line-height:1.55;">
+        <b>Lay = apostar CONTRA</b> uma seleção na exchange (você vira a banca). Você <b>ganha se a seleção NÃO acontecer</b>; se acontecer, você paga a <b>responsabilidade</b>. Combine com uma aposta <b>a favor (back)</b> numa casa normal para travar lucro nos dois lados. A <b>comissão</b> da exchange incide só sobre o lucro do lay. Valores numa moeda só (use tudo em R$, ou tudo na moeda da exchange).
+      </div>
+
+      <div class="grid2" style="margin-top:10px;">
+        <div><label>Casa do back (a favor)</label><input type="text" id="layHouseBack" placeholder="Ex: Bet365"></div>
+        <div><label>Exchange (lay)</label><input type="text" id="layHouseLay" placeholder="Ex: Betfair"></div>
+      </div>
+      <div class="grid2">
+        <div><label>Odd do back (a favor)</label><input type="text" inputmode="decimal" id="layOddBack" placeholder="2.10"></div>
+        <div><label>Stake do back</label><input type="text" inputmode="decimal" id="layStakeBack" placeholder="100"></div>
+      </div>
+      <div class="grid2">
+        <div><label>Odd do lay (exchange)</label><input type="text" inputmode="decimal" id="layOddLay" placeholder="2.14"></div>
+        <div><label>Comissão da exchange (%)</label><input type="text" inputmode="decimal" id="layComm" placeholder="4.5"></div>
+      </div>
+
+      <div class="sc-mode" style="margin-top:4px;">
+        <label class="sc-mode-opt"><input type="radio" name="layMode" value="lock" checked> Travar lucro (calcula a aposta lay)</label>
+        <label class="sc-mode-opt"><input type="radio" name="layMode" value="manual"> Aposta lay manual</label>
+      </div>
+      <div id="layManualWrap" style="display:none;">
+        <label>Aposta lay (stake do apostador na exchange)</label>
+        <input type="text" inputmode="decimal" id="layStakeLay" placeholder="—">
+      </div>
+
+      <div class="risk-preview" id="layResult">
+        <span style="color:var(--muted)">Preencha as odds, o stake do back e a comissão para ver o resultado.</span>
+      </div>
+      <div class="footnote" style="margin-top:8px;">Calculadora independente — não registra na lista nem debita saldos (é só para dimensionar a operação).</div>
+    </div>
+
+
     <!-- LISTA DE OPERAÇÕES -->
     <div class="card">
       <div class="card-title"><span>🎯 Operações de Surebet</span>
@@ -700,7 +736,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260827-1004';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260827-1030';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -2581,6 +2617,74 @@
       `</div>`;
   }
 
+  /* ---------- calculadora LAY (exchange) ---------- */
+  function layCompute(){
+    const bo=numBR($('layOddBack').value);    // odd do back (a favor)
+    const bs=numBR($('layStakeBack').value);  // stake do back
+    const lo=numBR($('layOddLay').value);      // odd do lay (exchange)
+    const cPct=numBR($('layComm').value);      // comissão %
+    const c=(isNaN(cPct)?0:cPct)/100;
+    const mode=(document.querySelector('input[name="layMode"]:checked')||{}).value||'lock';
+    if(!(bo>1)||!(bs>0)||!(lo>1)) return null;
+    // stake lay que iguala os dois cenários (trava o lucro)
+    const lockStake=bs*bo/(lo-c);
+    let ls=lockStake;
+    if(mode==='manual'){
+      ls=numBR($('layStakeLay').value);
+      if(!(ls>0)) return null;
+    }
+    const liability=ls*(lo-1);                 // responsabilidade na exchange
+    // Seleção ACONTECE: back ganha o lucro, lay paga a responsabilidade
+    const netWin=bs*(bo-1)-liability;
+    // Seleção NÃO acontece: back perde o stake, lay ganha (menos comissão)
+    const netLose=ls*(1-c)-bs;
+    const locked=Math.min(netWin,netLose);
+    const capital=bs+liability;                // capital que fica preso (back + responsabilidade)
+    const roi=capital>0?locked/capital*100:0;
+    const equivOdd=1+(1-c)/(lo-1);             // odd equivalente do lay (como se fosse back)
+    return {bo,bs,lo,c,cPct,mode,ls,lockStake,liability,netWin,netLose,locked,capital,roi,equivOdd};
+  }
+
+  function layRender(){
+    const box=$('layResult');
+    const r=layCompute();
+    if(!r){ box.innerHTML='<span style="color:var(--muted)">Preencha as odds, o stake do back e a comissão para ver o resultado.</span>'; return; }
+    const back=$('layHouseBack').value.trim()||'Back';
+    const exch=$('layHouseLay').value.trim()||'Exchange';
+    const trava=r.locked>=-0.005;
+    const verdictText=trava?`✓ TRAVA LUCRO — garante ${fmtSign(r.locked)} nos dois lados`:`⚠ NÃO TRAVA — pode perder ${fmt(Math.abs(r.locked))} num dos lados`;
+    const verdictColor=trava?'var(--green)':'var(--amber)';
+    box.innerHTML=
+      `<div class="md-verdict" style="color:${verdictColor}">${verdictText}</div>`+
+      `<div class="md-legs">`+
+        `<div class="md-leg legA"><b>${esc(back)}</b> · a favor<br>Odd ${r.bo.toFixed(2)}<br>Aposta: <b>${fmt(r.bs)}</b></div>`+
+        `<div class="md-leg legB"><b>${esc(exch)}</b> · lay<br>Odd ${r.lo.toFixed(2)} · com. ${(r.cPct||0)}%<br>Aposta lay: <b>${fmt(r.ls)}</b></div>`+
+      `</div>`+
+      `<div class="md-explain">🎯 Na exchange, coloque uma aposta lay de <b>${fmt(r.ls)}</b>. Isso reserva uma <b>responsabilidade de ${fmt(r.liability)}</b> (o máximo que a exchange segura se a seleção acontecer).</div>`+
+      `<div class="md-scenario ${r.netWin>=0?'best':'worst'}">`+
+        `<div class="sc-label">Seleção ACONTECE (o back ganha, o lay perde)</div>`+
+        `<div class="sc-val ${r.netWin>=0?'pos':'neg'}">${fmtSign(r.netWin)}</div>`+
+        `<div class="sc-detail">${esc(back)} paga ${fmt(r.bs*r.bo)} (lucro ${fmtSign(r.bs*(r.bo-1))}) · ${esc(exch)} cobra a responsabilidade ${fmt(r.liability)}</div>`+
+      `</div>`+
+      `<div class="md-scenario ${r.netLose>=0?'best':'worst'}">`+
+        `<div class="sc-label">Seleção NÃO acontece (o back perde, o lay ganha)</div>`+
+        `<div class="sc-val ${r.netLose>=0?'pos':'neg'}">${fmtSign(r.netLose)}</div>`+
+        `<div class="sc-detail">${esc(back)} perde ${fmt(r.bs)} · ${esc(exch)} paga ${fmt(r.ls*(1-r.c))} (aposta ${fmt(r.ls)} − comissão ${fmt(r.ls*r.c)})</div>`+
+      `</div>`+
+      `<div class="md-stakes">`+
+        `<div>Lucro líquido travado: <b class="${r.locked>=0?'pos':'neg'}">${fmtSign(r.locked)}</b></div>`+
+        `<div>Capital necessário: <b>${fmt(r.capital)}</b> (${fmt(r.bs)} no back + ${fmt(r.liability)} de responsabilidade)</div>`+
+        `<div class="tot">ROI sobre o capital: <b class="${r.roi>=0?'pos':'neg'}">${r.roi.toFixed(2)}%</b></div>`+
+      `</div>`+
+      `<div class="footnote" style="margin-top:6px;">Fazer lay a <b>${r.lo.toFixed(2)}</b> com ${(r.cPct||0)}% de comissão rende o mesmo que apostar <b>a favor do resultado contrário</b> na odd <b>${r.equivOdd.toFixed(3)}</b>. Use isso para comparar com uma casa comum: se o back adversário pagar mais que ${r.equivOdd.toFixed(3)}, backear lá é melhor que este lay. ${r.mode==='lock'?'Aposta lay dimensionada para igualar os dois lados.':'Aposta lay manual — os lados podem ficar diferentes.'}</div>`;
+  }
+
+  ['layOddBack','layStakeBack','layOddLay','layComm','layStakeLay','layHouseBack','layHouseLay'].forEach(id=>$(id).addEventListener('input',layRender));
+  document.querySelectorAll('input[name="layMode"]').forEach(r=>r.addEventListener('change',()=>{
+    $('layManualWrap').style.display=(document.querySelector('input[name="layMode"]:checked').value==='manual')?'block':'none';
+    layRender();
+  }));
+
   ['mdLineA','mdLineB','mdOddA','mdOddB','mdStakeA','mdStakeB','mdHouseA','mdHouseB'].forEach(id=>$(id).addEventListener('input',mdRender));
   $('mdMarket').addEventListener('change',()=>{
     const mkt=$('mdMarket').value;
@@ -2867,6 +2971,7 @@
   recolherResolvidos();
   updateSurebetCalc();
   mdRender();
+  layRender();
   renderAll();
   renderAutosave();
   renderSyncUi();
