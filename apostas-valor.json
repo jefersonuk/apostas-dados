@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7134.27,
+      "value": 6609.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T22:06:30.803Z"
+      "updatedAt": "2026-08-27T22:40:26.634Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4568,8 +4568,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 4339.39,
-      "updatedAt": "2026-08-27T22:06:30.800Z"
+      "value": 4709.39,
+      "updatedAt": "2026-08-27T22:40:26.634Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4766,8 +4766,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 29.87,
-      "updatedAt": "2026-08-27T22:40:08.460Z",
+      "value": 59.74,
+      "updatedAt": "2026-08-27T22:40:26.634Z",
       "currency": "USD"
     },
     {
@@ -5244,6 +5244,10 @@
     {
       "id": "mtbdm6y4b1s04",
       "at": "2026-08-27T18:02:35.420Z"
+    },
+    {
+      "id": "mt94c8eruf6jh",
+      "at": "2026-08-27T22:40:26.634Z"
     }
   ],
   "surebets": [
@@ -12645,31 +12649,6 @@
       "updatedAt": "2026-08-26T17:58:04.985Z"
     },
     {
-      "id": "mt94c8eruf6jh",
-      "kind": "sure",
-      "event": "Vincent Keymer x Wesley So",
-      "houseA": "BCgame",
-      "houseB": "Blaze",
-      "oddA": 3.75,
-      "oddB": 1.57,
-      "total": 524.4485,
-      "stakeA": 154.4485,
-      "stakeB": 370,
-      "lucroA": 54.733375000000024,
-      "lucroB": 56.45150000000001,
-      "lucro": 54.733375000000024,
-      "roi": 10.43636791791759,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-08-27T14:00",
-      "aplicado": {
-        "stakes": true,
-        "resultado": null
-      },
-      "updatedAt": "2026-08-27T21:47:11.865Z"
-    },
-    {
       "id": "mt94id4ook4r1",
       "kind": "sure",
       "event": "SCU TOREENSE X KOLOS KOVALIVKA",
@@ -13374,5 +13353,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T22:40:08.461Z"
+  "updatedAt": "2026-08-27T22:40:26.634Z"
 }
