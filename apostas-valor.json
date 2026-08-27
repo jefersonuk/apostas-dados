@@ -4601,7 +4601,7 @@
       "name": "Ivibet",
       "value": 0.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T18:59:17.212Z"
+      "updatedAt": "2026-08-27T19:46:04.947Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4612,7 +4612,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 3432.02,
-      "updatedAt": "2026-08-27T18:59:17.212Z"
+      "updatedAt": "2026-08-27T19:46:04.947Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13249,7 +13249,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-27T18:59:17.212Z"
+      "updatedAt": "2026-08-27T19:46:04.947Z"
     }
   ],
   "invertidos": [],
@@ -13336,5 +13336,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T19:42:53.680Z"
+  "updatedAt": "2026-08-27T19:46:04.947Z"
 }
