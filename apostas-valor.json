@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6003.33,
+      "value": 7134.27,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T21:58:18.219Z"
+      "updatedAt": "2026-08-27T22:06:30.803Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4568,8 +4568,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 5026.31,
-      "updatedAt": "2026-08-26T13:13:37.522Z"
+      "value": 4339.39,
+      "updatedAt": "2026-08-27T22:06:30.800Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4328.9,
-      "updatedAt": "2026-08-27T21:58:18.216Z"
+      "value": 3884.88,
+      "updatedAt": "2026-08-27T22:06:30.800Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13264,6 +13264,30 @@
         "resultado": "B"
       },
       "updatedAt": "2026-08-27T21:58:18.218Z"
+    },
+    {
+      "id": "mtc2ofbj0dkt5",
+      "kind": "sure",
+      "event": "Kristjan Tamm (Games) – Matthew Dellavedova (Games)",
+      "houseA": "Pinnacle",
+      "houseB": "Blaze",
+      "oddA": 2.63,
+      "oddB": 1.7,
+      "total": 1130.9367300380227,
+      "stakeA": 444.0167300380228,
+      "stakeB": 686.92,
+      "lucroA": 36.82726996197721,
+      "lucroB": 36.82726996197721,
+      "lucro": 36.82726996197721,
+      "roi": 3.2563510392609727,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-27T23:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T22:06:30.800Z"
     }
   ],
   "invertidos": [],
@@ -13350,5 +13374,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T22:02:26.347Z"
+  "updatedAt": "2026-08-27T22:06:30.803Z"
 }
