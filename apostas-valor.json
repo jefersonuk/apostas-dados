@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 14500.05,
+      "value": 15502.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T18:02:35.420Z"
+      "updatedAt": "2026-08-27T18:44:53.555Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 705.15,
+      "value": 494.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T18:02:35.419Z"
+      "updatedAt": "2026-08-27T18:44:53.551Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4804,6 +4804,12 @@
       "value": 30,
       "currency": "USD",
       "updatedAt": "2026-08-27T15:08:20.959Z"
+    },
+    {
+      "id": "mtbvh50wqy903",
+      "name": "Matchbook",
+      "value": -791.25,
+      "updatedAt": "2026-08-27T18:44:53.552Z"
     }
   ],
   "aportes": [
@@ -13192,6 +13198,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T16:32:53.742Z"
+    },
+    {
+      "id": "mtbvh50v27v3k",
+      "kind": "sure",
+      "event": "Club Nacional – Albion FC",
+      "houseA": "Ivibet",
+      "houseB": "Matchbook",
+      "oddA": 5.1,
+      "oddB": 1.36,
+      "total": 1002.2499999999999,
+      "stakeA": 211,
+      "stakeB": 791.2499999999999,
+      "lucroA": 73.85000000000002,
+      "lucroB": 73.85000000000002,
+      "lucro": 73.85000000000002,
+      "roi": 7.368421052631582,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-27T18:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T18:44:53.552Z"
     }
   ],
   "invertidos": [],
@@ -13278,5 +13308,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T18:22:55.242Z"
+  "updatedAt": "2026-08-27T18:44:53.555Z"
 }
