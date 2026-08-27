@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 15502.3,
+      "value": 15409.42,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T18:44:53.555Z"
+      "updatedAt": "2026-08-27T18:46:19.617Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4794,8 +4794,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 0,
-      "updatedAt": "2026-08-26T17:28:16.864Z",
+      "value": 19.36,
+      "updatedAt": "2026-08-27T18:46:19.616Z",
       "currency": "USD"
     },
     {
@@ -12800,14 +12800,15 @@
       "lucroB": 7.224000000000004,
       "lucro": 7.224000000000004,
       "roi": 7.777777777777782,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "USD",
       "date": "2026-08-27T12:45",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-26T17:07:40.519Z"
+      "updatedAt": "2026-08-27T18:46:19.616Z"
     },
     {
       "id": "mtaeljkq6uf9h",
@@ -13308,5 +13309,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T18:44:53.555Z"
+  "updatedAt": "2026-08-27T18:46:19.617Z"
 }
