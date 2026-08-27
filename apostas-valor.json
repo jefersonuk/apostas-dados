@@ -4601,7 +4601,7 @@
       "name": "Ivibet",
       "value": 140.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T13:26:36.219Z"
+      "updatedAt": "2026-08-27T13:26:45.561Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4612,7 +4612,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 2607.96,
-      "updatedAt": "2026-08-27T13:26:36.219Z"
+      "updatedAt": "2026-08-27T13:26:45.561Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13067,21 +13067,21 @@
       "houseB": "Pinnacle",
       "oddA": 2.99,
       "oddB": 1.584,
-      "total": 262.77398989898984,
+      "total": 262.77,
       "stakeA": 91,
-      "stakeB": 171.77398989898987,
-      "lucroA": 9.316010101010193,
-      "lucroB": 9.316010101010136,
-      "lucro": 9.316010101010136,
-      "roi": 3.545255793616105,
+      "stakeB": 171.77,
+      "lucroA": 9.32000000000005,
+      "lucroB": 9.313680000000033,
+      "lucro": 9.313680000000033,
+      "roi": 3.544422879324137,
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
-      "date": "2026-08-27T09:30",
+      "date": "2026-08-27T12:30",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-27T11:24:36.892Z"
+      "updatedAt": "2026-08-27T13:26:45.561Z"
     },
     {
       "id": "mtbj7uf8g1no9",
@@ -13192,5 +13192,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T13:26:36.219Z"
+  "updatedAt": "2026-08-27T13:26:45.561Z"
 }
