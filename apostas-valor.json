@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 15409.42,
+      "value": 15114.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T18:46:19.617Z"
+      "updatedAt": "2026-08-27T18:49:36.819Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4580,9 +4580,9 @@
     {
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
-      "value": 0,
+      "value": 60.56,
       "currency": "USD",
-      "updatedAt": "2026-08-20T21:43:47.632Z"
+      "updatedAt": "2026-08-27T18:49:36.819Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -11377,14 +11377,15 @@
       "lucroB": 22.279999999999973,
       "lucro": 18.560400000000016,
       "roi": 6.301914980306946,
-      "winner": null,
+      "winner": "A",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-27T15:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-20T21:43:47.632Z"
+      "updatedAt": "2026-08-27T18:49:36.819Z"
     },
     {
       "id": "mt1udaozaklbf",
@@ -13309,5 +13310,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T18:46:19.617Z"
+  "updatedAt": "2026-08-27T18:49:36.819Z"
 }
