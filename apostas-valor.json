@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 15876.05,
+      "value": 14500.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T16:32:53.743Z"
+      "updatedAt": "2026-08-27T18:02:35.420Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 140.15,
+      "value": 705.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T13:26:45.561Z"
+      "updatedAt": "2026-08-27T18:02:35.419Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2986.73,
-      "updatedAt": "2026-08-27T16:32:53.742Z"
+      "value": 3797.73,
+      "updatedAt": "2026-08-27T18:02:35.419Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -5227,6 +5227,10 @@
     {
       "id": "caixa:2026-08-27T23:59",
       "at": "2026-08-27T13:10:19.231Z"
+    },
+    {
+      "id": "mtbdm6y4b1s04",
+      "at": "2026-08-27T18:02:35.420Z"
     }
   ],
   "surebets": [
@@ -12995,30 +12999,6 @@
       "updatedAt": "2026-08-27T02:20:31.980Z"
     },
     {
-      "id": "mtbdm6y4b1s04",
-      "kind": "sure",
-      "event": "Hapoel nir hamat x Jerusalém",
-      "houseA": "Pinnacle",
-      "houseB": "Ivibet",
-      "oddA": 1.793,
-      "oddB": 2.58,
-      "total": 1376,
-      "stakeA": 811,
-      "stakeB": 565,
-      "lucroA": 78.12300000000005,
-      "lucroB": 81.70000000000005,
-      "lucro": 78.12300000000005,
-      "roi": 5.6775436046511665,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-27T13:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-27T10:24:56.237Z"
-    },
-    {
       "id": "mtbf19plxzc3e",
       "kind": "sure",
       "event": "Betlemi Qeda – Guria Lanchkhuti",
@@ -13298,5 +13278,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T17:43:34.752Z"
+  "updatedAt": "2026-08-27T18:02:35.420Z"
 }
