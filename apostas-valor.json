@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9269.08,
+      "value": 10397.08,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T00:14:51.643Z"
+      "updatedAt": "2026-08-27T02:20:31.982Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4593,15 +4593,15 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 1291.25,
-      "updatedAt": "2026-08-25T23:45:09.207Z"
+      "value": 618.25,
+      "updatedAt": "2026-08-27T02:20:31.980Z"
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2094.29,
+      "value": 1639.29,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T00:14:51.643Z"
+      "updatedAt": "2026-08-27T02:20:31.980Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -12925,6 +12925,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-26T22:07:08.712Z"
+    },
+    {
+      "id": "mtawb8tocm4po",
+      "kind": "sure",
+      "event": "Victoria barros",
+      "houseA": "Casinozer",
+      "houseB": "Ivibet",
+      "oddA": 1.83,
+      "oddB": 2.71,
+      "total": 1128,
+      "stakeA": 673,
+      "stakeB": 455,
+      "lucroA": 103.59000000000015,
+      "lucroB": 105.04999999999995,
+      "lucro": 103.59000000000015,
+      "roi": 9.183510638297886,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-27T17:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T02:20:31.980Z"
     }
   ],
   "invertidos": [],
@@ -13011,5 +13035,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T00:22:41.823Z"
+  "updatedAt": "2026-08-27T02:20:31.982Z"
 }
