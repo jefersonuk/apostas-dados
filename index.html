@@ -722,12 +722,24 @@
         <div><label>Odd B</label><input type="text" inputmode="decimal" id="mdOddB" placeholder="1.952"></div>
       </div>
 
-      <div class="grid2">
-        <div><label>Stake A (R$)</label><input type="text" inputmode="decimal" id="mdStakeA" placeholder="448.00"></div>
-        <div><label>Stake B (R$)</label><input type="text" inputmode="decimal" id="mdStakeB" placeholder="552.00"></div>
+      <div class="sc-mode" style="margin-top:4px;">
+        <label class="sc-mode-opt"><input type="radio" name="mdMode" value="total" checked> Distribuir banca</label>
+        <label class="sc-mode-opt"><input type="radio" name="mdMode" value="fixA"> Fixar A</label>
+        <label class="sc-mode-opt"><input type="radio" name="mdMode" value="fixB"> Fixar B</label>
+        <label class="sc-mode-opt"><input type="radio" name="mdMode" value="livre"> Manual</label>
+      </div>
+      <div id="mdTotalWrap" style="margin-top:6px;">
+        <label>Banca total a distribuir</label>
+        <input type="text" inputmode="decimal" id="mdTotalInput" placeholder="1000">
+      </div>
+
+      <div class="grid2" style="margin-top:6px;">
+        <div><label>Stake A</label><input type="text" inputmode="decimal" id="mdStakeA" placeholder="448.00"></div>
+        <div><label>Stake B</label><input type="text" inputmode="decimal" id="mdStakeB" placeholder="552.00"></div>
       </div>
 
       <div style="text-align:right;margin-bottom:8px;">
+        <span style="font-family:var(--mono);font-size:11px;color:var(--muted-2);">Stakes balanceados por <b>odd A × odd B</b> — os dois lados fora do vão rendem igual.</span><br>
         <span style="font-family:var(--mono);font-size:12px;color:var(--muted);">Total: <span id="mdTotal" style="color:var(--text);font-weight:700;">—</span></span>
       </div>
 
@@ -760,7 +772,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260827-1230';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260827-1330';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -2723,7 +2735,30 @@
     layRender();
   }));
 
-  ['mdLineA','mdLineB','mdOddA','mdOddB','mdStakeA','mdStakeB','mdHouseA','mdHouseB'].forEach(id=>$(id).addEventListener('input',mdRender));
+  // Calcula os stakes complementares (balanceados: stakeA*oddA = stakeB*oddB)
+  const mdRound=x=>(Math.round(x*100)/100).toFixed(2);
+  function mdSync(){
+    const mode=(document.querySelector('input[name="mdMode"]:checked')||{}).value||'total';
+    const oddA=numBR($('mdOddA').value), oddB=numBR($('mdOddB').value);
+    const A=$('mdStakeA'), B=$('mdStakeB');
+    $('mdTotalWrap').style.display=(mode==='total')?'block':'none';
+    A.readOnly=(mode==='total'||mode==='fixB');
+    B.readOnly=(mode==='total'||mode==='fixA');
+    if(oddA>1 && oddB>1){
+      if(mode==='total'){
+        const T=numBR($('mdTotalInput').value);
+        if(T>0){ A.value=mdRound(T*oddB/(oddA+oddB)); B.value=mdRound(T*oddA/(oddA+oddB)); }
+      } else if(mode==='fixA'){
+        const sa=numBR(A.value); if(sa>0) B.value=mdRound(sa*oddA/oddB);
+      } else if(mode==='fixB'){
+        const sb=numBR(B.value); if(sb>0) A.value=mdRound(sb*oddB/oddA);
+      }
+    }
+    mdRender();
+  }
+  ['mdOddA','mdOddB','mdStakeA','mdStakeB','mdTotalInput'].forEach(id=>$(id).addEventListener('input',mdSync));
+  ['mdLineA','mdLineB','mdHouseA','mdHouseB'].forEach(id=>$(id).addEventListener('input',mdRender));
+  document.querySelectorAll('input[name="mdMode"]').forEach(rd=>rd.addEventListener('change',mdSync));
   $('mdMarket').addEventListener('change',()=>{
     const mkt=$('mdMarket').value;
     $('mdLineALabel').textContent=mkt==='handicap'?'Linha A (ex: -41.5)':'Linha Over (ex: 220.5)';
@@ -2767,9 +2802,9 @@
     state.middles.push(op);
     $('mdEvent').value=''; $('mdHouseA').value=''; $('mdHouseB').value='';
     $('mdLineA').value=''; $('mdLineB').value=''; $('mdOddA').value=''; $('mdOddB').value='';
-    $('mdStakeA').value=''; $('mdStakeB').value='';
+    $('mdStakeA').value=''; $('mdStakeB').value=''; $('mdTotalInput').value='';
     $('mdDate').value=nowLocalStr();
-    mdRender(); saveState(); renderAll();
+    mdSync(); saveState(); renderAll();
     toast('Middle registrado ✓');
   });
 
@@ -3006,6 +3041,7 @@
   })();
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
   if(!$('mdDate').value) $('mdDate').value=nowLocalStr();
+  mdSync();
   recolherResolvidos();
   updateSurebetCalc();
   mdRender();
