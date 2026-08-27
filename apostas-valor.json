@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 14878.95,
+      "value": 13503.25,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T18:59:17.216Z"
+      "updatedAt": "2026-08-27T19:42:53.679Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4723,9 +4723,9 @@
     {
       "id": "msyprvso2ird4",
       "name": "F12bet",
-      "value": 410.72,
+      "value": 1824.99,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T13:38:29.077Z"
+      "updatedAt": "2026-08-27T19:42:53.679Z"
     },
     {
       "id": "mt0iuq8ibqnbd",
@@ -13120,14 +13120,15 @@
       "lucroB": 39.85600000000022,
       "lucro": 38.572000000000116,
       "roi": 2.803808969978929,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-08-27T15:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-27T13:37:22.241Z"
+      "updatedAt": "2026-08-27T19:42:53.679Z"
     },
     {
       "id": "mtbmz4f37n6cf",
@@ -13335,5 +13336,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T18:59:17.216Z"
+  "updatedAt": "2026-08-27T19:42:53.680Z"
 }
