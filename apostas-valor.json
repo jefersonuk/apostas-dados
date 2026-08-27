@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 14019.24,
+      "value": 14878.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T18:50:47.396Z"
+      "updatedAt": "2026-08-27T18:59:17.216Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 494.15,
+      "value": 0.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T18:44:53.551Z"
+      "updatedAt": "2026-08-27T18:59:17.212Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3797.73,
-      "updatedAt": "2026-08-27T18:02:35.419Z"
+      "value": 3432.02,
+      "updatedAt": "2026-08-27T18:59:17.212Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13225,6 +13225,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T18:44:53.552Z"
+    },
+    {
+      "id": "mtbvznfgz0rze",
+      "kind": "sure",
+      "event": "Wilstermann Cooperativa – Atletico Juniors De Yotala",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 1.91,
+      "oddB": 2.54,
+      "total": 859.71,
+      "stakeA": 494,
+      "stakeB": 365.71,
+      "lucroA": 83.82999999999993,
+      "lucroB": 69.19339999999988,
+      "lucro": 69.19339999999988,
+      "roi": 8.04845820102126,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-27T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T18:59:17.212Z"
     }
   ],
   "invertidos": [],
@@ -13311,5 +13335,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T18:50:47.396Z"
+  "updatedAt": "2026-08-27T18:59:17.216Z"
 }
