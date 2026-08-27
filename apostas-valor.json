@@ -4742,13 +4742,6 @@
       "updatedAt": "2026-08-22T21:32:56.610Z"
     },
     {
-      "id": "mt1udaozeymdf",
-      "name": "Duelbits",
-      "value": 0,
-      "updatedAt": "2026-08-26T13:19:31.433Z",
-      "currency": "USD"
-    },
-    {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
       "value": 26.08,
@@ -5188,6 +5181,10 @@
     {
       "id": "mtaezbx8yrc3y",
       "at": "2026-08-26T21:06:22.380Z"
+    },
+    {
+      "id": "mt1udaozeymdf",
+      "at": "2026-08-27T00:22:41.822Z"
     }
   ],
   "surebets": [
@@ -13014,5 +13011,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T00:14:51.643Z"
+  "updatedAt": "2026-08-27T00:22:41.823Z"
 }
