@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10699.01,
+      "value": 13637.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T11:04:39.278Z"
+      "updatedAt": "2026-08-27T11:10:46.791Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1465.77,
+      "value": 225.13,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T11:04:39.274Z"
+      "updatedAt": "2026-08-27T11:10:46.780Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4730,9 +4730,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 726.55,
+      "value": 443.55,
       "currency": "EUR",
-      "updatedAt": "2026-08-26T21:57:42.043Z"
+      "updatedAt": "2026-08-27T11:10:46.779Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -12999,6 +12999,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T11:04:39.274Z"
+    },
+    {
+      "id": "mtbf959yj4eyd",
+      "kind": "sure",
+      "event": "CF Alebrijes de Oaxaca – CD Tapatio",
+      "houseA": "Sportmarket",
+      "houseB": "Ivibet",
+      "oddA": 1.812,
+      "oddB": 2.48,
+      "total": 2938.6354838709676,
+      "stakeA": 1698,
+      "stakeB": 1240.6354838709678,
+      "lucroA": 138.14051612903268,
+      "lucroB": 138.14051612903268,
+      "lucro": 138.14051612903268,
+      "roi": 4.700838769804302,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-08-27T22:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T11:10:46.782Z"
     }
   ],
   "invertidos": [],
@@ -13085,5 +13109,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T11:04:39.278Z"
+  "updatedAt": "2026-08-27T11:10:46.791Z"
 }
