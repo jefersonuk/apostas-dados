@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 14310.42,
+      "value": 15686.12,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T13:01:44.517Z"
+      "updatedAt": "2026-08-27T13:37:22.241Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4666,9 +4666,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 366.52,
+      "value": 213.52,
       "currency": "USD",
-      "updatedAt": "2026-08-26T21:40:22.112Z"
+      "updatedAt": "2026-08-27T13:37:22.241Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4723,9 +4723,9 @@
     {
       "id": "msyprvso2ird4",
       "name": "F12bet",
-      "value": 0,
+      "value": -589.28,
       "currency": "BRL",
-      "updatedAt": "2026-08-22T22:54:02.481Z"
+      "updatedAt": "2026-08-27T13:37:22.241Z"
     },
     {
       "id": "mt0iuq8ibqnbd",
@@ -13106,6 +13106,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T13:01:44.516Z"
+    },
+    {
+      "id": "mtbkhnwgxvoqy",
+      "kind": "sure",
+      "event": "Celta de vigo x Osasuna",
+      "houseA": "F12bet",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.4,
+      "oddB": 1.8,
+      "total": 1375.6999999999998,
+      "stakeA": 589.28,
+      "stakeB": 786.42,
+      "lucroA": 38.572000000000116,
+      "lucroB": 39.85600000000022,
+      "lucro": 38.572000000000116,
+      "roi": 2.803808969978929,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-27T15:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T13:37:22.241Z"
     }
   ],
   "invertidos": [],
@@ -13192,5 +13216,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T13:26:45.561Z"
+  "updatedAt": "2026-08-27T13:37:22.241Z"
 }
