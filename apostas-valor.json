@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10054.4,
+      "value": 10699.01,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-27T10:24:56.239Z"
+      "updatedAt": "2026-08-27T11:04:39.278Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1691.39,
+      "value": 1465.77,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T10:24:56.237Z"
+      "updatedAt": "2026-08-27T11:04:39.274Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4611,8 +4611,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3198.73,
-      "updatedAt": "2026-08-27T10:24:56.237Z"
+      "value": 2779.73,
+      "updatedAt": "2026-08-27T11:04:39.274Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -12975,6 +12975,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T10:24:56.237Z"
+    },
+    {
+      "id": "mtbf19plxzc3e",
+      "kind": "sure",
+      "event": "Betlemi Qeda – Guria Lanchkhuti",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 2.99,
+      "oddB": 1.61,
+      "total": 644.6153846153846,
+      "stakeA": 225.6153846153846,
+      "stakeB": 419,
+      "lucroA": 29.97461538461539,
+      "lucroB": 29.97461538461539,
+      "lucro": 29.97461538461539,
+      "roi": 4.65,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-27T09:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-27T11:04:39.274Z"
     }
   ],
   "invertidos": [],
@@ -13061,5 +13085,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T11:01:43.757Z"
+  "updatedAt": "2026-08-27T11:04:39.278Z"
 }
