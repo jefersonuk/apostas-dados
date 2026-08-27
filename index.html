@@ -623,6 +623,15 @@
         </div>
       </details>
 
+      <div style="margin-top:8px;">
+        <label>Moeda desta operação</label>
+        <div class="cur-toggle" id="layCurToggle">
+          <button type="button" class="cur-opt active" data-laycur="BRL">R$</button>
+          <button type="button" class="cur-opt" data-laycur="USD">US$</button>
+          <button type="button" class="cur-opt" data-laycur="EUR">€</button>
+        </div>
+      </div>
+
       <div class="grid2" style="margin-top:10px;">
         <div><label>Casa do back (a favor)</label><input type="text" id="layHouseBack" placeholder="Ex: Bet365"></div>
         <div><label>Exchange (lay)</label><input type="text" id="layHouseLay" placeholder="Ex: Betfair"></div>
@@ -751,7 +760,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260827-1130';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260827-1230';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -2633,6 +2642,9 @@
   }
 
   /* ---------- calculadora LAY (exchange) ---------- */
+  let layCur='BRL';
+  function layFmt(n){ return layCur==='USD'?fmtUSD(n):layCur==='EUR'?fmtEUR(n):fmt(n); }
+  function layFmtSign(n){ const v=(typeof n==='number'&&isFinite(n))?n:0; return (v>=0?'+':'')+layFmt(v); }
   function layCompute(){
     const bo=numBR($('layOddBack').value);    // odd do back (a favor)
     const bs=numBR($('layStakeBack').value);  // stake do back
@@ -2667,28 +2679,33 @@
     const back=$('layHouseBack').value.trim()||'Back';
     const exch=$('layHouseLay').value.trim()||'Exchange';
     const trava=r.locked>=-0.005;
-    const verdictText=trava?`✓ TRAVA LUCRO — garante ${fmtSign(r.locked)} nos dois lados`:`⚠ NÃO TRAVA — pode perder ${fmt(Math.abs(r.locked))} num dos lados`;
+    const verdictText=trava?`✓ TRAVA LUCRO — garante ${layFmtSign(r.locked)} nos dois lados`:`⚠ NÃO TRAVA — pode perder ${layFmt(Math.abs(r.locked))} num dos lados`;
     const verdictColor=trava?'var(--green)':'var(--amber)';
     box.innerHTML=
       `<div class="md-verdict" style="color:${verdictColor}">${verdictText}</div>`+
+      // Os dois números para a exchange — use o que a casa pedir
       `<div class="md-legs">`+
-        `<div class="md-leg legA"><b>${esc(back)}</b> · a favor<br>Odd ${r.bo.toFixed(2)}<br>Aposta: <b>${fmt(r.bs)}</b></div>`+
-        `<div class="md-leg legB"><b>${esc(exch)}</b> · lay<br>Odd ${r.lo.toFixed(2)} · com. ${(r.cPct||0)}%<br>Aposta lay: <b>${fmt(r.ls)}</b></div>`+
+        `<div class="md-leg" style="border-left:3px solid var(--sky);">Aposta lay <span style="color:var(--muted-2);font-size:10.5px;">(campo "Profit" / stake)</span><br><b style="font-size:16px;color:var(--sky)">${layFmt(r.ls)}</b></div>`+
+        `<div class="md-leg" style="border-left:3px solid var(--amber);">Responsabilidade <span style="color:var(--muted-2);font-size:10.5px;">(campo "Risk" / liability)</span><br><b style="font-size:16px;color:var(--amber)">${layFmt(r.liability)}</b></div>`+
       `</div>`+
-      `<div class="md-explain">🎯 Na exchange, dependendo do campo que ela pede:<br>• pede a <b>aposta / stake / "Profit"</b> → digite <b style="color:var(--sky)">${fmt(r.ls)}</b><br>• pede a <b>responsabilidade / "Risk"</b> → digite <b style="color:var(--amber)">${fmt(r.liability)}</b><br>Qualquer um dos dois monta a mesma aposta lay.</div>`+
+      `<div class="md-explain">🎯 Na exchange, use <b>o campo que ela pedir</b>: se for <b>aposta/stake/"Profit"</b> digite ${layFmt(r.ls)}; se for <b>responsabilidade/"Risk"</b> digite ${layFmt(r.liability)}. Os dois montam a mesma aposta lay.</div>`+
+      `<div class="md-legs">`+
+        `<div class="md-leg legA"><b>${esc(back)}</b> · a favor<br>Odd ${r.bo.toFixed(2)}<br>Aposta: <b>${layFmt(r.bs)}</b></div>`+
+        `<div class="md-leg legB"><b>${esc(exch)}</b> · lay<br>Odd ${r.lo.toFixed(2)} · com. ${(r.cPct||0)}%<br>Aposta lay: <b>${layFmt(r.ls)}</b></div>`+
+      `</div>`+
       `<div class="md-scenario ${r.netWin>=0?'best':'worst'}">`+
         `<div class="sc-label">Seleção ACONTECE (o back ganha, o lay perde)</div>`+
-        `<div class="sc-val ${r.netWin>=0?'pos':'neg'}">${fmtSign(r.netWin)}</div>`+
-        `<div class="sc-detail">${esc(back)} paga ${fmt(r.bs*r.bo)} (lucro ${fmtSign(r.bs*(r.bo-1))}) · ${esc(exch)} cobra a responsabilidade ${fmt(r.liability)}</div>`+
+        `<div class="sc-val ${r.netWin>=0?'pos':'neg'}">${layFmtSign(r.netWin)}</div>`+
+        `<div class="sc-detail">${esc(back)} paga ${layFmt(r.bs*r.bo)} (lucro ${layFmtSign(r.bs*(r.bo-1))}) · ${esc(exch)} cobra a responsabilidade ${layFmt(r.liability)}</div>`+
       `</div>`+
       `<div class="md-scenario ${r.netLose>=0?'best':'worst'}">`+
         `<div class="sc-label">Seleção NÃO acontece (o back perde, o lay ganha)</div>`+
-        `<div class="sc-val ${r.netLose>=0?'pos':'neg'}">${fmtSign(r.netLose)}</div>`+
-        `<div class="sc-detail">${esc(back)} perde ${fmt(r.bs)} · ${esc(exch)} paga ${fmt(r.ls*(1-r.c))} (aposta ${fmt(r.ls)} − comissão ${fmt(r.ls*r.c)})</div>`+
+        `<div class="sc-val ${r.netLose>=0?'pos':'neg'}">${layFmtSign(r.netLose)}</div>`+
+        `<div class="sc-detail">${esc(back)} perde ${layFmt(r.bs)} · ${esc(exch)} paga ${layFmt(r.ls*(1-r.c))} (aposta ${layFmt(r.ls)} − comissão ${layFmt(r.ls*r.c)})</div>`+
       `</div>`+
       `<div class="md-stakes">`+
-        `<div>Lucro líquido travado: <b class="${r.locked>=0?'pos':'neg'}">${fmtSign(r.locked)}</b></div>`+
-        `<div>Capital necessário: <b>${fmt(r.capital)}</b> (${fmt(r.bs)} no back + ${fmt(r.liability)} de responsabilidade)</div>`+
+        `<div>Lucro líquido travado: <b class="${r.locked>=0?'pos':'neg'}">${layFmtSign(r.locked)}</b></div>`+
+        `<div>Capital necessário: <b>${layFmt(r.capital)}</b> (${layFmt(r.bs)} no back + ${layFmt(r.liability)} de responsabilidade)</div>`+
         `<div class="tot">ROI sobre o capital: <b class="${r.roi>=0?'pos':'neg'}">${r.roi.toFixed(2)}%</b></div>`+
       `</div>`+
       `<div class="footnote" style="margin-top:6px;">Fazer lay a <b>${r.lo.toFixed(2)}</b> com ${(r.cPct||0)}% de comissão rende o mesmo que apostar <b>a favor do resultado contrário</b> na odd <b>${r.equivOdd.toFixed(3)}</b>. Use isso para comparar com uma casa comum: se o back adversário pagar mais que ${r.equivOdd.toFixed(3)}, backear lá é melhor que este lay. ${r.mode==='lock'?'Aposta lay dimensionada para igualar os dois lados.':'Aposta lay manual — os lados podem ficar diferentes.'}</div>`;
@@ -2697,6 +2714,12 @@
   ['layOddBack','layStakeBack','layOddLay','layComm','layStakeLay','layHouseBack','layHouseLay'].forEach(id=>$(id).addEventListener('input',layRender));
   document.querySelectorAll('input[name="layMode"]').forEach(r=>r.addEventListener('change',()=>{
     $('layManualWrap').style.display=(document.querySelector('input[name="layMode"]:checked').value==='manual')?'block':'none';
+    layRender();
+  }));
+  document.querySelectorAll('#layCurToggle .cur-opt').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('#layCurToggle .cur-opt').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    layCur=btn.dataset.laycur;
     layRender();
   }));
 
