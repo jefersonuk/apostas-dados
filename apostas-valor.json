@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1163.95,
+      "value": 0.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-27T20:49:53.769Z"
+      "updatedAt": "2026-08-27T20:50:53.954Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4666,9 +4666,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 433.31,
+      "value": 658.2,
       "currency": "USD",
-      "updatedAt": "2026-08-27T18:50:47.396Z"
+      "updatedAt": "2026-08-27T20:50:53.955Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -12851,15 +12851,15 @@
       "lucroB": 55.899999999999864,
       "lucro": 54.764000000000124,
       "roi": 4.943045401209506,
-      "winner": "B",
+      "winner": "A",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-27T15:30",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-27T20:49:53.769Z"
+      "updatedAt": "2026-08-27T20:50:53.956Z"
     },
     {
       "id": "mtafx5gh1o9sv",
@@ -13339,5 +13339,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-27T20:49:53.769Z"
+  "updatedAt": "2026-08-27T20:50:53.958Z"
 }
