@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1249.98,
+      "value": 1392.53,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T10:52:39.605Z"
+      "updatedAt": "2026-08-28T10:55:15.301Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4600,9 +4600,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 851.15,
+      "value": 786.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-28T10:52:36.300Z"
+      "updatedAt": "2026-08-28T10:55:15.295Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4636,9 +4636,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 208.45,
+      "value": 193.45,
       "currency": "USD",
-      "updatedAt": "2026-08-27T21:46:25.702Z"
+      "updatedAt": "2026-08-28T10:55:15.295Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -13304,6 +13304,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T10:52:36.301Z"
+    },
+    {
+      "id": "mtcu517gls7et",
+      "kind": "sure",
+      "event": "Necaxa – Cruz Azul | U21",
+      "houseA": "Gamdom",
+      "houseB": "Ivibet",
+      "oddA": 2.04,
+      "oddB": 2.38,
+      "total": 142.55,
+      "stakeA": 77.55,
+      "stakeB": 65,
+      "lucroA": 15.651999999999987,
+      "lucroB": 12.149999999999977,
+      "lucro": 12.149999999999977,
+      "roi": 8.523325149070486,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-28T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T10:55:15.296Z"
     }
   ],
   "invertidos": [],
@@ -13390,5 +13414,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T10:52:36.308Z"
+  "updatedAt": "2026-08-28T10:55:15.301Z"
 }
