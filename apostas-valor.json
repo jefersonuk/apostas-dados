@@ -4581,8 +4581,8 @@
       "id": "msd9ei033vtoe",
       "name": "Thunderpick.io",
       "value": 30.56,
-      "currency": "USD",
-      "updatedAt": "2026-08-27T21:48:56.037Z"
+      "currency": "EUR",
+      "updatedAt": "2026-08-28T19:24:25.328Z"
     },
     {
       "id": "msddfl9dohdf9",
@@ -4649,8 +4649,9 @@
     {
       "id": "msneebp3j8g2z",
       "name": "Asianodds",
-      "value": 20,
-      "currency": "USD"
+      "value": 101,
+      "currency": "USD",
+      "updatedAt": "2026-08-28T19:24:24.718Z"
     },
     {
       "id": "mso22oyjdi55r",
@@ -13534,5 +13535,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T19:23:37.894Z"
+  "updatedAt": "2026-08-28T19:24:25.328Z"
 }
