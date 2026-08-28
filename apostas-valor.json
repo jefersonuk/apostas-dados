@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": -500,
-      "updatedAt": "2026-08-28T17:00:09.619Z"
+      "value": -698,
+      "updatedAt": "2026-08-28T17:12:36.515Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2747.83,
+      "value": 3125.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T17:08:44.676Z"
+      "updatedAt": "2026-08-28T17:12:36.523Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4745,8 +4745,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 543.65,
-      "updatedAt": "2026-08-27T21:48:23.088Z",
+      "value": 508.9,
+      "updatedAt": "2026-08-28T17:12:36.514Z",
       "currency": "USD"
     },
     {
@@ -13377,6 +13377,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T17:00:09.621Z"
+    },
+    {
+      "id": "mtd7mba7jmxhf",
+      "kind": "sure",
+      "event": "Cadence Brace – Ana Candiotto",
+      "houseA": "Bookmaker",
+      "houseB": "Betnacional",
+      "oddA": 2.2,
+      "oddB": 2,
+      "total": 378,
+      "stakeA": 180,
+      "stakeB": 198,
+      "lucroA": 18.000000000000057,
+      "lucroB": 18,
+      "lucro": 18,
+      "roi": 4.761904761904762,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-28T14:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T17:12:36.516Z"
     }
   ],
   "invertidos": [],
@@ -13463,5 +13487,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T17:08:44.676Z"
+  "updatedAt": "2026-08-28T17:12:36.523Z"
 }
