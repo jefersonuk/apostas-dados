@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1687.43,
+      "value": 1392.53,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T15:08:11.048Z"
+      "updatedAt": "2026-08-28T15:08:20.616Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4595,14 +4595,14 @@
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
       "value": 0.98,
-      "updatedAt": "2026-08-28T15:08:11.048Z"
+      "updatedAt": "2026-08-28T15:08:20.615Z"
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2935.1,
+      "value": 3230,
       "currency": "BRL",
-      "updatedAt": "2026-08-28T15:08:11.048Z"
+      "updatedAt": "2026-08-28T15:08:20.615Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -13265,13 +13265,13 @@
       "houseB": "Casinozer",
       "oddA": 2.33,
       "oddB": 1.75,
-      "total": 692.27,
-      "stakeA": 295,
+      "total": 397.37,
+      "stakeA": 0.1,
       "stakeB": 397.27,
-      "lucroA": -4.919999999999959,
-      "lucroB": 2.9524999999999864,
-      "lucro": -4.919999999999959,
-      "roi": -0.7107053606251837,
+      "lucroA": -397.137,
+      "lucroB": 297.85249999999996,
+      "lucro": -397.137,
+      "roi": -99.94136447139945,
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
@@ -13279,7 +13279,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-28T15:08:11.048Z"
+      "updatedAt": "2026-08-28T15:08:20.615Z"
     },
     {
       "id": "mtcu1miwtgh97",
@@ -13414,5 +13414,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T15:08:11.048Z"
+  "updatedAt": "2026-08-28T15:08:20.616Z"
 }
