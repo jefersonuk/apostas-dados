@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1392.53,
+      "value": 1690.38,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T15:08:20.616Z"
+      "updatedAt": "2026-08-28T15:33:27.836Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4795,16 +4795,16 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 104,
-      "updatedAt": "2026-08-27T20:32:04.708Z",
+      "value": 76.5,
+      "updatedAt": "2026-08-28T15:33:27.833Z",
       "currency": "USD"
     },
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 30,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-08-27T15:08:20.959Z"
+      "updatedAt": "2026-08-28T15:33:27.833Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13328,6 +13328,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T10:55:15.296Z"
+    },
+    {
+      "id": "mtd42t949geuo",
+      "kind": "sure",
+      "event": "Klim Sani4 – RE.Arise",
+      "houseA": "Betonline",
+      "houseB": "Vave",
+      "oddA": 1.98,
+      "oddB": 2.16,
+      "total": 297.8499999999999,
+      "stakeA": 155.39999999999998,
+      "stakeB": 142.44999999999996,
+      "lucroA": 9.842000000000041,
+      "lucroB": 9.842000000000041,
+      "lucro": 9.842000000000041,
+      "roi": 3.3043478260869716,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-28T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T15:33:27.833Z"
     }
   ],
   "invertidos": [],
@@ -13414,5 +13438,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T15:08:20.616Z"
+  "updatedAt": "2026-08-28T15:33:27.836Z"
 }
