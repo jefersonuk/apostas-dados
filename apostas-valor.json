@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5091.83,
+      "value": 6758.26,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T17:29:50.320Z"
+      "updatedAt": "2026-08-28T18:34:09.680Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4766,8 +4766,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 0,
-      "updatedAt": "2026-08-27T22:40:49.695Z",
+      "value": -149.3,
+      "updatedAt": "2026-08-28T18:34:09.680Z",
       "currency": "USD"
     },
     {
@@ -4802,9 +4802,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 0,
+      "value": -169.94,
       "currency": "USD",
-      "updatedAt": "2026-08-28T15:33:27.833Z"
+      "updatedAt": "2026-08-28T18:34:09.680Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13425,6 +13425,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T17:29:50.313Z"
+    },
+    {
+      "id": "mtdaj6vj5xb4m",
+      "kind": "sure",
+      "event": "?Louisvill Bats x Gwinett Stripers",
+      "houseA": "Betonline",
+      "houseB": "BCgame",
+      "oddA": 1.95,
+      "oddB": 2.24,
+      "total": 1666.4328,
+      "stakeA": 887.0867999999999,
+      "stakeB": 779.346,
+      "lucroA": 63.386459999999715,
+      "lucroB": 79.30224000000021,
+      "lucro": 63.386459999999715,
+      "roi": 3.8037213381781556,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-28T20:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T18:34:09.680Z"
     }
   ],
   "invertidos": [],
@@ -13511,5 +13535,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T18:15:31.355Z"
+  "updatedAt": "2026-08-28T18:34:09.680Z"
 }
