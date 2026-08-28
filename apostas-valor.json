@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 802,
-      "updatedAt": "2026-08-28T18:15:31.350Z"
+      "value": 127,
+      "updatedAt": "2026-08-28T19:36:28.860Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5160.89,
+      "value": 6237.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T19:08:45.416Z"
+      "updatedAt": "2026-08-28T19:36:28.861Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4789,8 +4789,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 76.5,
-      "updatedAt": "2026-08-28T15:33:27.833Z",
+      "value": -0.5,
+      "updatedAt": "2026-08-28T19:36:28.860Z",
       "currency": "USD"
     },
     {
@@ -13455,6 +13455,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T18:34:09.680Z"
+    },
+    {
+      "id": "mtdcrc1oa5vff",
+      "kind": "sure",
+      "event": "Shelton x Griekspor",
+      "houseA": "Betnacional",
+      "houseB": "Vave",
+      "oddA": 1.67,
+      "oddB": 2.8,
+      "total": 1076.94,
+      "stakeA": 675,
+      "stakeB": 401.94,
+      "lucroA": 50.309999999999945,
+      "lucroB": 48.49199999999996,
+      "lucro": 48.49199999999996,
+      "roi": 4.502757813805779,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-30T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T19:36:28.860Z"
     }
   ],
   "invertidos": [],
@@ -13541,5 +13565,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T19:27:52.011Z"
+  "updatedAt": "2026-08-28T19:36:28.861Z"
 }
