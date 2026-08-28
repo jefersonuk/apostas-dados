@@ -4650,8 +4650,8 @@
       "id": "msneebp3j8g2z",
       "name": "Asianodds",
       "value": 101,
-      "currency": "USD",
-      "updatedAt": "2026-08-28T19:24:24.718Z"
+      "currency": "EUR",
+      "updatedAt": "2026-08-28T19:24:41.547Z"
     },
     {
       "id": "mso22oyjdi55r",
@@ -13535,5 +13535,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T19:24:35.485Z"
+  "updatedAt": "2026-08-28T19:24:41.547Z"
 }
