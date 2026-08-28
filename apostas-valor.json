@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3746.01,
+      "value": 807.37,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T10:29:32.188Z"
+      "updatedAt": "2026-08-28T10:30:43.104Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4600,9 +4600,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2309.2,
+      "value": 3549.84,
       "currency": "BRL",
-      "updatedAt": "2026-08-28T10:29:32.187Z"
+      "updatedAt": "2026-08-28T10:30:43.103Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4731,9 +4731,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 443.55,
+      "value": 725.61,
       "currency": "EUR",
-      "updatedAt": "2026-08-28T10:27:39.939Z"
+      "updatedAt": "2026-08-28T10:30:43.103Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5254,6 +5254,10 @@
     {
       "id": "mt94c8eruf6jh",
       "at": "2026-08-27T22:40:26.634Z"
+    },
+    {
+      "id": "mtbf959yj4eyd",
+      "at": "2026-08-28T10:30:43.103Z"
     }
   ],
   "surebets": [
@@ -13030,31 +13034,6 @@
       "updatedAt": "2026-08-27T16:12:19.077Z"
     },
     {
-      "id": "mtbf959yj4eyd",
-      "kind": "sure",
-      "event": "CF Alebrijes de Oaxaca – CD Tapatio",
-      "houseA": "Sportmarket",
-      "houseB": "Ivibet",
-      "oddA": 1.812,
-      "oddB": 2.48,
-      "total": 2938.6354838709676,
-      "stakeA": 1698,
-      "stakeB": 1240.6354838709678,
-      "lucroA": 138.14051612903268,
-      "lucroB": 138.14051612903268,
-      "lucro": 138.14051612903268,
-      "roi": 4.700838769804302,
-      "winner": null,
-      "curA": "EUR",
-      "curB": "BRL",
-      "date": "2026-08-27T22:00",
-      "aplicado": {
-        "stakes": true,
-        "resultado": null
-      },
-      "updatedAt": "2026-08-28T10:29:32.187Z"
-    },
-    {
       "id": "mtbfqxsrot0h7",
       "kind": "sure",
       "event": "Betlemi Qeda – Guria Lanchkhuti",
@@ -13387,5 +13366,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T10:29:32.188Z"
+  "updatedAt": "2026-08-28T10:30:43.104Z"
 }
