@@ -4505,7 +4505,7 @@
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
       "value": 127,
-      "updatedAt": "2026-08-28T19:36:28.860Z"
+      "updatedAt": "2026-08-28T19:37:18.102Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4790,7 +4790,7 @@
       "id": "mtack9k79qsdy",
       "name": "Vave",
       "value": -0.5,
-      "updatedAt": "2026-08-28T19:36:28.860Z",
+      "updatedAt": "2026-08-28T19:37:18.102Z",
       "currency": "USD"
     },
     {
@@ -13478,7 +13478,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-28T19:36:28.860Z"
+      "updatedAt": "2026-08-28T19:37:18.102Z"
     }
   ],
   "invertidos": [],
@@ -13565,5 +13565,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T19:36:28.861Z"
+  "updatedAt": "2026-08-28T19:37:18.102Z"
 }
