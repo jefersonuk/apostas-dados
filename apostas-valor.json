@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 0,
-      "updatedAt": "2026-08-26T20:13:43.465Z"
+      "value": -500,
+      "updatedAt": "2026-08-28T17:00:09.619Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1690.38,
+      "value": 2890.38,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T15:33:27.836Z"
+      "updatedAt": "2026-08-28T17:00:09.628Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3667.27,
-      "updatedAt": "2026-08-28T10:52:36.300Z"
+      "value": 2967.27,
+      "updatedAt": "2026-08-28T17:00:09.620Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13352,6 +13352,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T15:33:27.833Z"
+    },
+    {
+      "id": "mtd76az1esmec",
+      "kind": "sure",
+      "event": "SV Wildon – FC Schladming",
+      "houseA": "Betnacional",
+      "houseB": "Pinnacle",
+      "oddA": 2.5,
+      "oddB": 1.8,
+      "total": 1200,
+      "stakeA": 500,
+      "stakeB": 700,
+      "lucroA": 50,
+      "lucroB": 60,
+      "lucro": 50,
+      "roi": 4.166666666666666,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-28T14:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T17:00:09.621Z"
     }
   ],
   "invertidos": [],
@@ -13438,5 +13462,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T15:33:27.836Z"
+  "updatedAt": "2026-08-28T17:00:09.628Z"
 }
