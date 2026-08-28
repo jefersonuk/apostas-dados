@@ -4600,9 +4600,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 5385.98,
+      "value": 2309.2,
       "currency": "BRL",
-      "updatedAt": "2026-08-28T10:24:15.370Z"
+      "updatedAt": "2026-08-28T10:25:45.927Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4731,9 +4731,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 443.55,
+      "value": 954.64,
       "currency": "EUR",
-      "updatedAt": "2026-08-27T11:10:46.779Z"
+      "updatedAt": "2026-08-28T10:25:45.927Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -13044,15 +13044,15 @@
       "lucroB": 138.14051612903268,
       "lucro": 138.14051612903268,
       "roi": 4.700838769804302,
-      "winner": "B",
+      "winner": "A",
       "curA": "EUR",
       "curB": "BRL",
       "date": "2026-08-27T22:00",
       "aplicado": {
         "stakes": true,
-        "resultado": "B"
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-28T10:24:15.370Z"
+      "updatedAt": "2026-08-28T10:25:45.927Z"
     },
     {
       "id": "mtbfqxsrot0h7",
@@ -13387,5 +13387,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T10:24:40.169Z"
+  "updatedAt": "2026-08-28T10:25:45.927Z"
 }
