@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3125.83,
+      "value": 5091.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T17:12:36.523Z"
+      "updatedAt": "2026-08-28T17:29:50.320Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2967.27,
-      "updatedAt": "2026-08-28T17:00:09.620Z"
+      "value": 2037.27,
+      "updatedAt": "2026-08-28T17:29:50.311Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4636,9 +4636,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 223.99,
+      "value": 23.99,
       "currency": "USD",
-      "updatedAt": "2026-08-28T17:08:44.676Z"
+      "updatedAt": "2026-08-28T17:29:50.312Z"
     },
     {
       "id": "mshooqow0ee6e",
@@ -13401,6 +13401,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T17:12:36.516Z"
+    },
+    {
+      "id": "mtd88gym4pzb6",
+      "kind": "sure",
+      "event": "Serbia – Iceland",
+      "houseA": "Pinnacle",
+      "houseB": "Gamdom",
+      "oddA": 2.18,
+      "oddB": 2.01,
+      "total": 1966,
+      "stakeA": 930,
+      "stakeB": 1036,
+      "lucroA": 61.40000000000009,
+      "lucroB": 116.35999999999967,
+      "lucro": 61.40000000000009,
+      "roi": 3.1230925737538193,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-28T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T17:29:50.313Z"
     }
   ],
   "invertidos": [],
@@ -13487,5 +13511,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T17:12:36.523Z"
+  "updatedAt": "2026-08-28T17:29:50.320Z"
 }
