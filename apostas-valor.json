@@ -4641,13 +4641,6 @@
       "updatedAt": "2026-08-28T17:29:50.312Z"
     },
     {
-      "id": "mshooqow0ee6e",
-      "name": "Betadonis",
-      "value": 8.5,
-      "currency": "USD",
-      "updatedAt": "2026-08-20T11:55:44.090Z"
-    },
-    {
       "id": "msiybd3uy2l7d",
       "name": "sportybet",
       "value": 0,
@@ -5258,6 +5251,10 @@
     {
       "id": "mtbf959yj4eyd",
       "at": "2026-08-28T10:30:43.103Z"
+    },
+    {
+      "id": "mshooqow0ee6e",
+      "at": "2026-08-28T19:23:37.894Z"
     }
   ],
   "surebets": [
@@ -13537,5 +13534,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T19:20:43.198Z"
+  "updatedAt": "2026-08-28T19:23:37.894Z"
 }
