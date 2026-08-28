@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 807.37,
+      "value": 1249.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T10:30:43.104Z"
+      "updatedAt": "2026-08-28T10:52:39.605Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4600,9 +4600,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 3549.84,
+      "value": 851.15,
       "currency": "BRL",
-      "updatedAt": "2026-08-28T10:30:43.103Z"
+      "updatedAt": "2026-08-28T10:52:36.300Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3884.88,
-      "updatedAt": "2026-08-27T22:06:30.800Z"
+      "value": 3667.27,
+      "updatedAt": "2026-08-28T10:52:36.300Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4954,12 +4954,12 @@
       "updatedAt": "2026-08-27T22:41:40.325Z"
     }
   ],
-  "usdRate": 5.16,
+  "usdRate": 5.17,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-28T10:23:37.859Z",
-  "eurRate": 6.02,
+  "usdRateAt": "2026-08-27T17:43:34.513Z",
+  "eurRate": 6,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-08-28T10:23:38.158Z",
+  "eurRateAt": "2026-08-27T18:22:55.242Z",
   "appBuild": "20260827-1556",
   "deleted": [
     {
@@ -13280,6 +13280,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-27T23:37:24.093Z"
+    },
+    {
+      "id": "mtcu1miwtgh97",
+      "kind": "sure",
+      "event": "Skjold – Frederikssund",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 2.13,
+      "oddB": 2.06,
+      "total": 442.6056338028169,
+      "stakeA": 217.6056338028169,
+      "stakeB": 225,
+      "lucroA": 20.894366197183047,
+      "lucroB": 20.894366197183103,
+      "lucro": 20.894366197183047,
+      "roi": 4.7207637231503465,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-28T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-28T10:52:36.301Z"
     }
   ],
   "invertidos": [],
@@ -13366,5 +13390,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-28T10:30:43.104Z"
+  "updatedAt": "2026-08-28T10:52:36.308Z"
 }
