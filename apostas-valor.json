@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3404.81,
+      "value": 3237.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:47:59.958Z"
+      "updatedAt": "2026-08-29T22:48:03.540Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5431.14,
-      "updatedAt": "2026-08-29T22:47:59.957Z"
+      "value": 5672.14,
+      "updatedAt": "2026-08-29T22:48:01.673Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 112,
+      "value": 142.42,
       "currency": "USD",
-      "updatedAt": "2026-08-29T22:26:29.728Z"
+      "updatedAt": "2026-08-29T22:48:03.540Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13746,14 +13746,15 @@
       "lucroB": -99.99990000000001,
       "lucro": -99.99990000000001,
       "roi": -99.98990100989901,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-08-29T20:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-29T16:02:45.134Z"
+      "updatedAt": "2026-08-29T22:48:01.673Z"
     },
     {
       "id": "mtey9tr47x6xv",
@@ -13770,14 +13771,15 @@
       "lucroB": -67.46990000000001,
       "lucro": -67.46990000000001,
       "roi": -99.98503260225253,
-      "winner": null,
+      "winner": "A",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-29T20:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-29T22:26:29.728Z"
+      "updatedAt": "2026-08-29T22:48:03.540Z"
     },
     {
       "id": "mteyqig2va53u",
@@ -13912,5 +13914,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:47:59.958Z"
+  "updatedAt": "2026-08-29T22:48:03.540Z"
 }
