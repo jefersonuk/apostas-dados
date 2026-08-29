@@ -4630,8 +4630,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 60,
-      "updatedAt": "2026-08-26T14:09:11.414Z"
+      "value": -0.01,
+      "updatedAt": "2026-08-29T16:01:19.250Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4796,9 +4796,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 321.74,
+      "value": 333.3,
       "currency": "USD",
-      "updatedAt": "2026-08-29T16:00:58.467Z"
+      "updatedAt": "2026-08-29T16:01:19.250Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13704,8 +13704,8 @@
       "id": "mteki1k2dwfvg",
       "kind": "sure",
       "event": "Legacy – Team Falcons",
-      "houseA": "Betonline",
-      "houseB": "Betonline",
+      "houseA": "Betesporte",
+      "houseB": "Betesporte",
       "oddA": 2.35,
       "oddB": 1.01,
       "total": 60.01,
@@ -13722,7 +13722,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-29T16:00:58.467Z"
+      "updatedAt": "2026-08-29T16:01:19.250Z"
     }
   ],
   "invertidos": [],
@@ -13809,5 +13809,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T16:00:58.469Z"
+  "updatedAt": "2026-08-29T16:01:19.250Z"
 }
