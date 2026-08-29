@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4675.99,
+      "value": 4776,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T13:56:07.166Z"
+      "updatedAt": "2026-08-29T15:36:00.979Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5788.17,
-      "updatedAt": "2026-08-28T21:19:26.635Z"
+      "value": 5688.17,
+      "updatedAt": "2026-08-29T15:36:00.975Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4638,7 +4638,7 @@
       "name": "Gamdom",
       "value": -75.76,
       "currency": "USD",
-      "updatedAt": "2026-08-29T13:56:07.155Z"
+      "updatedAt": "2026-08-29T15:36:00.976Z"
     },
     {
       "id": "msiybd3uy2l7d",
@@ -13579,6 +13579,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T13:56:07.156Z"
+    },
+    {
+      "id": "mtejly330d0oj",
+      "kind": "sure",
+      "event": "Savoia x Casertana",
+      "houseA": "Pinnacle",
+      "houseB": "Gamdom",
+      "oddA": 2.43,
+      "oddB": 1.01,
+      "total": 100.01,
+      "stakeA": 100,
+      "stakeB": 0.01,
+      "lucroA": 142.99,
+      "lucroB": -99.99990000000001,
+      "lucro": -99.99990000000001,
+      "roi": -99.98990100989901,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-29T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T15:36:00.976Z"
     }
   ],
   "invertidos": [],
@@ -13665,5 +13689,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T13:56:07.166Z"
+  "updatedAt": "2026-08-29T15:36:00.979Z"
 }
