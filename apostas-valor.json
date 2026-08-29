@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3486.74,
+      "value": 3616.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:57:03.929Z"
+      "updatedAt": "2026-08-29T22:58:30.643Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4767,8 +4767,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 175.54,
-      "updatedAt": "2026-08-29T13:48:16.560Z",
+      "value": 150.54,
+      "updatedAt": "2026-08-29T22:58:30.642Z",
       "currency": "USD"
     },
     {
@@ -13858,6 +13858,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T22:57:03.928Z"
+    },
+    {
+      "id": "mtezezxu4v5o2",
+      "kind": "sure",
+      "event": "New Zealand – Syria",
+      "houseA": "Cloudbet",
+      "houseB": "Cloudbet",
+      "oddA": 2.25,
+      "oddB": 1.01,
+      "total": 129.76,
+      "stakeA": 129.75,
+      "stakeB": 0.01,
+      "lucroA": 162.1775,
+      "lucroB": -129.7499,
+      "lucro": -129.7499,
+      "roi": -99.99221639950679,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-30T03:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T22:58:30.642Z"
     }
   ],
   "invertidos": [],
@@ -13944,5 +13968,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:57:03.929Z"
+  "updatedAt": "2026-08-29T22:58:30.643Z"
 }
