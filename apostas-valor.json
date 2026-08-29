@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 523,
-      "updatedAt": "2026-08-28T21:16:59.600Z"
+      "value": 166,
+      "updatedAt": "2026-08-29T13:00:10.093Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3451.22,
+      "value": 4083.41,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-28T21:19:26.635Z"
+      "updatedAt": "2026-08-29T13:00:10.098Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4739,8 +4739,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 200,
-      "updatedAt": "2026-08-28T18:55:34.578Z",
+      "value": 146.98,
+      "updatedAt": "2026-08-29T13:00:10.093Z",
       "currency": "USD"
     },
     {
@@ -13482,6 +13482,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-28T19:37:18.102Z"
+    },
+    {
+      "id": "mtee1iwcgxum5",
+      "kind": "sure",
+      "event": "Suwon City FC - Busan I Park",
+      "houseA": "Betnacional",
+      "houseB": "Bookmaker",
+      "oddA": 1.85,
+      "oddB": 2.4,
+      "total": 632.1875,
+      "stakeA": 357,
+      "stakeB": 275.18750000000006,
+      "lucroA": 28.262500000000045,
+      "lucroB": 28.26250000000016,
+      "lucro": 28.262500000000045,
+      "roi": 4.470588235294125,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-30T07:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T13:00:10.093Z"
     }
   ],
   "invertidos": [],
@@ -13568,5 +13592,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T12:48:16.788Z"
+  "updatedAt": "2026-08-29T13:00:10.099Z"
 }
