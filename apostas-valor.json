@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 166,
-      "updatedAt": "2026-08-29T13:00:10.093Z"
+      "value": 0,
+      "updatedAt": "2026-08-29T13:17:03.711Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2416.98,
+      "value": 2837.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T13:07:15.108Z"
+      "updatedAt": "2026-08-29T13:17:03.718Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 200,
+      "value": 151,
       "currency": "USD",
-      "updatedAt": "2026-08-28T18:44:46.985Z"
+      "updatedAt": "2026-08-29T13:17:03.711Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13507,6 +13507,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T13:00:10.093Z"
+    },
+    {
+      "id": "mteen90d6i0pd",
+      "kind": "sure",
+      "event": "SC Fotbal Club FCSB SA – AFC UTA Arad",
+      "houseA": "Betnacional",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.6,
+      "oddB": 1.71,
+      "total": 420.31000000000006,
+      "stakeA": 166,
+      "stakeB": 254.31000000000003,
+      "lucroA": 11.289999999999964,
+      "lucroB": 14.560099999999977,
+      "lucro": 11.289999999999964,
+      "roi": 2.6861126311531875,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-30T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T13:17:03.713Z"
     }
   ],
   "invertidos": [],
@@ -13593,5 +13617,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T13:07:15.108Z"
+  "updatedAt": "2026-08-29T13:17:03.718Z"
 }
