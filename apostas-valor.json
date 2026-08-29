@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3356.98,
+      "value": 3486.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:55:11.867Z"
+      "updatedAt": "2026-08-29T22:57:03.929Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 112,
+      "value": 87,
       "currency": "USD",
-      "updatedAt": "2026-08-29T22:48:20.057Z"
+      "updatedAt": "2026-08-29T22:57:03.928Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13834,6 +13834,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T22:55:11.863Z"
+    },
+    {
+      "id": "mtezd514gxky8",
+      "kind": "sure",
+      "event": "Stanford – Hawaii",
+      "houseA": "Overtimemarkets",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.41,
+      "oddB": 1.01,
+      "total": 129.76,
+      "stakeA": 129.75,
+      "stakeB": 0.01,
+      "lucroA": 182.9375,
+      "lucroB": -129.7499,
+      "lucro": -129.7499,
+      "roi": -99.99221639950679,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T22:57:03.928Z"
     }
   ],
   "invertidos": [],
@@ -13920,5 +13944,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:55:11.867Z"
+  "updatedAt": "2026-08-29T22:57:03.929Z"
 }
