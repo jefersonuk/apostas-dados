@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4976.02,
+      "value": 5079.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T15:41:37.861Z"
+      "updatedAt": "2026-08-29T15:43:04.675Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 151,
+      "value": 131,
       "currency": "USD",
-      "updatedAt": "2026-08-29T15:38:25.540Z"
+      "updatedAt": "2026-08-29T15:43:04.673Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13651,6 +13651,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T15:41:37.859Z"
+    },
+    {
+      "id": "mtejv10hofl40",
+      "kind": "sure",
+      "event": "TCU – North Carolina",
+      "houseA": "Overtimemarkets",
+      "houseB": "Overtimemarkets",
+      "oddA": 3.75,
+      "oddB": 1.01,
+      "total": 103.81000000000002,
+      "stakeA": 103.80000000000001,
+      "stakeB": 0.01,
+      "lucroA": 285.44000000000005,
+      "lucroB": -103.79990000000002,
+      "lucro": -103.79990000000002,
+      "roi": -99.99027068683172,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T15:43:04.673Z"
     }
   ],
   "invertidos": [],
@@ -13737,5 +13761,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T15:41:37.861Z"
+  "updatedAt": "2026-08-29T15:43:04.675Z"
 }
