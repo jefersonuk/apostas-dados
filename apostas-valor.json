@@ -4636,9 +4636,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 302.25,
+      "value": 179.56,
       "currency": "USD",
-      "updatedAt": "2026-08-29T22:19:15.044Z"
+      "updatedAt": "2026-08-29T22:19:34.611Z"
     },
     {
       "id": "msiybd3uy2l7d",
@@ -4727,7 +4727,7 @@
       "name": "Sportmarket",
       "value": 120.68,
       "currency": "EUR",
-      "updatedAt": "2026-08-29T22:19:15.044Z"
+      "updatedAt": "2026-08-29T22:19:34.611Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -13563,15 +13563,15 @@
       "event": "Atlas – Queretaro",
       "houseA": "Sportmarket",
       "houseB": "Gamdom",
-      "oddA": 1.8,
-      "oddB": 3.03,
-      "total": 995.1999999999999,
+      "oddA": 3.03,
+      "oddB": 1.8,
+      "total": 995.2,
       "stakeA": 477.48,
-      "stakeB": 517.7199999999999,
-      "lucroA": -135.73599999999988,
-      "lucroB": 573.4915999999997,
-      "lucro": -135.73599999999988,
-      "roi": -13.639067524115745,
+      "stakeB": 517.72,
+      "lucroA": 451.5644,
+      "lucroB": -63.303999999999974,
+      "lucro": -63.303999999999974,
+      "roi": -6.360932475884241,
       "winner": "B",
       "curA": "USD",
       "curB": "EUR",
@@ -13580,7 +13580,7 @@
         "stakes": true,
         "resultado": "B"
       },
-      "updatedAt": "2026-08-29T22:19:15.044Z"
+      "updatedAt": "2026-08-29T22:19:34.611Z"
     },
     {
       "id": "mtejly330d0oj",
@@ -13839,5 +13839,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:19:15.045Z"
+  "updatedAt": "2026-08-29T22:19:34.611Z"
 }
