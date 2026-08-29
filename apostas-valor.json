@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3354.81,
+      "value": 3504.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:39:28.231Z"
+      "updatedAt": "2026-08-29T22:40:59.176Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5338.15,
-      "updatedAt": "2026-08-29T22:39:28.227Z"
+      "value": 5188.14,
+      "updatedAt": "2026-08-29T22:40:59.174Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13801,6 +13801,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T22:39:28.228Z"
+    },
+    {
+      "id": "mteysgmemg3gg",
+      "kind": "sure",
+      "event": "Togan Tokac – Ergi Kirkin",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 1.546,
+      "oddB": 1.01,
+      "total": 150.01,
+      "stakeA": 150,
+      "stakeB": 0.01,
+      "lucroA": 81.89000000000001,
+      "lucroB": -149.9999,
+      "lucro": -149.9999,
+      "roi": -99.99326711552563,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-30T05:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T22:40:59.174Z"
     }
   ],
   "invertidos": [],
@@ -13887,5 +13911,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:39:28.231Z"
+  "updatedAt": "2026-08-29T22:40:59.176Z"
 }
