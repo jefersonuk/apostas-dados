@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3206.97,
+      "value": 3356.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:48:35.900Z"
+      "updatedAt": "2026-08-29T22:55:11.867Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5188.14,
-      "updatedAt": "2026-08-29T22:48:22.507Z"
+      "value": 5038.13,
+      "updatedAt": "2026-08-29T22:55:11.863Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13810,6 +13810,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T22:40:59.174Z"
+    },
+    {
+      "id": "mtezaqk5bmhjb",
+      "kind": "sure",
+      "event": "Lagomar – Defensor Sporting",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 2.26,
+      "oddB": 1.01,
+      "total": 150.01,
+      "stakeA": 150,
+      "stakeB": 0.01,
+      "lucroA": 188.98999999999995,
+      "lucroB": -149.9999,
+      "lucro": -149.9999,
+      "roi": -99.99326711552563,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-30T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T22:55:11.863Z"
     }
   ],
   "invertidos": [],
@@ -13896,5 +13920,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:52:44.070Z"
+  "updatedAt": "2026-08-29T22:55:11.867Z"
 }
