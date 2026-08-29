@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4776,
+      "value": 4876.01,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T15:36:00.979Z"
+      "updatedAt": "2026-08-29T15:38:25.544Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5688.17,
-      "updatedAt": "2026-08-29T15:36:00.975Z"
+      "value": 5588.17,
+      "updatedAt": "2026-08-29T15:38:25.540Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -4663,7 +4663,7 @@
       "name": "Overtimemarkets",
       "value": 151,
       "currency": "USD",
-      "updatedAt": "2026-08-29T13:17:03.711Z"
+      "updatedAt": "2026-08-29T15:38:25.540Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13603,6 +13603,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T15:36:00.976Z"
+    },
+    {
+      "id": "mtejp1mrefw8m",
+      "kind": "sure",
+      "event": "LYON – Cloud9",
+      "houseA": "Pinnacle",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.43,
+      "oddB": 1.85,
+      "total": 100.01,
+      "stakeA": 100,
+      "stakeB": 0.01,
+      "lucroA": 142.99,
+      "lucroB": -99.9915,
+      "lucro": -99.9915,
+      "roi": -99.98150184981502,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-29T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T15:38:25.540Z"
     }
   ],
   "invertidos": [],
@@ -13689,5 +13713,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T15:36:00.979Z"
+  "updatedAt": "2026-08-29T15:38:25.544Z"
 }
