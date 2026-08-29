@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3747.26,
+      "value": 3877.02,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T23:01:56.362Z"
+      "updatedAt": "2026-08-29T23:04:46.345Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4767,8 +4767,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 150.54,
-      "updatedAt": "2026-08-29T22:58:30.642Z",
+      "value": 125.54,
+      "updatedAt": "2026-08-29T23:04:46.343Z",
       "currency": "USD"
     },
     {
@@ -13906,6 +13906,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T23:01:56.360Z"
+    },
+    {
+      "id": "mtezn1tz9170x",
+      "kind": "sure",
+      "event": "NY Yankees – BOS Red Sox",
+      "houseA": "Cloudbet",
+      "houseB": "Cloudbet",
+      "oddA": 2.25,
+      "oddB": 1.01,
+      "total": 129.76,
+      "stakeA": 129.75,
+      "stakeB": 0.01,
+      "lucroA": 162.1775,
+      "lucroB": -129.7499,
+      "lucro": -129.7499,
+      "roi": -99.99221639950679,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T20:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T23:04:46.343Z"
     }
   ],
   "invertidos": [],
@@ -13992,5 +14016,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T23:01:56.362Z"
+  "updatedAt": "2026-08-29T23:04:46.345Z"
 }
