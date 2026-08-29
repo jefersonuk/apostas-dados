@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5110.98,
+      "value": 5170.99,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T15:44:33.426Z"
+      "updatedAt": "2026-08-29T16:00:58.469Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4796,9 +4796,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 333.3,
+      "value": 321.74,
       "currency": "USD",
-      "updatedAt": "2026-08-29T13:07:15.107Z"
+      "updatedAt": "2026-08-29T16:00:58.467Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13699,6 +13699,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T15:44:33.425Z"
+    },
+    {
+      "id": "mteki1k2dwfvg",
+      "kind": "sure",
+      "event": "Legacy – Team Falcons",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 2.35,
+      "oddB": 1.01,
+      "total": 60.01,
+      "stakeA": 60,
+      "stakeB": 0.01,
+      "lucroA": 80.99000000000001,
+      "lucroB": -59.9999,
+      "lucro": -59.9999,
+      "roi": -99.9831694717547,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-29T13:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T16:00:58.467Z"
     }
   ],
   "invertidos": [],
@@ -13785,5 +13809,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T15:44:33.426Z"
+  "updatedAt": "2026-08-29T16:00:58.469Z"
 }
