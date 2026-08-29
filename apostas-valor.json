@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3137.32,
+      "value": 3204.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:18:11.344Z"
+      "updatedAt": "2026-08-29T22:26:29.731Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 125,
+      "value": 112,
       "currency": "USD",
-      "updatedAt": "2026-08-29T22:17:56.060Z"
+      "updatedAt": "2026-08-29T22:26:29.728Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13753,6 +13753,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T16:02:45.134Z"
+    },
+    {
+      "id": "mtey9tr47x6xv",
+      "kind": "sure",
+      "event": "DC United – Los Angeles FC",
+      "houseA": "Overtimemarkets",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.34,
+      "oddB": 1.01,
+      "total": 67.48,
+      "stakeA": 67.47,
+      "stakeB": 0.01,
+      "lucroA": 90.39979999999998,
+      "lucroB": -67.46990000000001,
+      "lucro": -67.46990000000001,
+      "roi": -99.98503260225253,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T20:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T22:26:29.728Z"
     }
   ],
   "invertidos": [],
@@ -13839,5 +13863,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:19:34.611Z"
+  "updatedAt": "2026-08-29T22:26:29.731Z"
 }
