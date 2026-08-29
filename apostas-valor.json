@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3980.83,
+      "value": 4137.54,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T23:05:57.311Z"
+      "updatedAt": "2026-08-29T23:06:50.929Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4796,9 +4796,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 343.24,
+      "value": 313.05,
       "currency": "USD",
-      "updatedAt": "2026-08-29T23:05:57.310Z"
+      "updatedAt": "2026-08-29T23:06:50.928Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13954,6 +13954,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T23:05:57.310Z"
+    },
+    {
+      "id": "mtezppyn4wd0l",
+      "kind": "sure",
+      "event": "Texas A&M – Cal Poly",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 1.69,
+      "oddB": 1.01,
+      "total": 156.71,
+      "stakeA": 155.70000000000002,
+      "stakeB": 1.01,
+      "lucroA": 106.42300000000003,
+      "lucroB": -155.6899,
+      "lucro": -155.6899,
+      "roi": -99.34905238976452,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T21:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T23:06:50.928Z"
     }
   ],
   "invertidos": [],
@@ -14040,5 +14064,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T23:05:57.311Z"
+  "updatedAt": "2026-08-29T23:06:50.929Z"
 }
