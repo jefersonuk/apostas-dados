@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5170.99,
+      "value": 5271,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T16:00:58.469Z"
+      "updatedAt": "2026-08-29T16:02:45.135Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5588.17,
-      "updatedAt": "2026-08-29T15:38:25.540Z"
+      "value": 5488.16,
+      "updatedAt": "2026-08-29T16:02:45.134Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13723,6 +13723,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T16:01:19.250Z"
+    },
+    {
+      "id": "mtekkbv1ajl5l",
+      "kind": "sure",
+      "event": "Cloud9 (Kills) – LYON (Kills)",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 2.41,
+      "oddB": 1.01,
+      "total": 100.01,
+      "stakeA": 100,
+      "stakeB": 0.01,
+      "lucroA": 140.99,
+      "lucroB": -99.99990000000001,
+      "lucro": -99.99990000000001,
+      "roi": -99.98990100989901,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-29T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T16:02:45.134Z"
     }
   ],
   "invertidos": [],
@@ -13809,5 +13833,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T16:01:19.250Z"
+  "updatedAt": "2026-08-29T16:02:45.135Z"
 }
