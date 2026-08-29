@@ -4636,9 +4636,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 0,
+      "value": 302.25,
       "currency": "USD",
-      "updatedAt": "2026-08-29T22:15:56.578Z"
+      "updatedAt": "2026-08-29T22:19:15.044Z"
     },
     {
       "id": "msiybd3uy2l7d",
@@ -4725,9 +4725,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 263.69,
+      "value": 120.68,
       "currency": "EUR",
-      "updatedAt": "2026-08-29T22:18:13.209Z"
+      "updatedAt": "2026-08-29T22:19:15.044Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -13572,15 +13572,15 @@
       "lucroB": 573.4915999999997,
       "lucro": -135.73599999999988,
       "roi": -13.639067524115745,
-      "winner": "A",
+      "winner": "B",
       "curA": "USD",
       "curB": "EUR",
       "date": "2026-08-29T12:00",
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-29T22:18:13.209Z"
+      "updatedAt": "2026-08-29T22:19:15.044Z"
     },
     {
       "id": "mtejly330d0oj",
@@ -13839,5 +13839,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:18:13.209Z"
+  "updatedAt": "2026-08-29T22:19:15.045Z"
 }
