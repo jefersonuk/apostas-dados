@@ -4727,7 +4727,7 @@
       "name": "Sportmarket",
       "value": 263.69,
       "currency": "EUR",
-      "updatedAt": "2026-08-29T22:18:11.344Z"
+      "updatedAt": "2026-08-29T22:18:13.209Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -13580,7 +13580,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-29T22:18:11.344Z"
+      "updatedAt": "2026-08-29T22:18:13.209Z"
     },
     {
       "id": "mtejly330d0oj",
@@ -13839,5 +13839,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:18:11.344Z"
+  "updatedAt": "2026-08-29T22:18:13.209Z"
 }
