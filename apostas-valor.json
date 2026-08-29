@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3616.5,
+      "value": 3747.26,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:58:30.643Z"
+      "updatedAt": "2026-08-29T23:01:56.362Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 87,
+      "value": 61.81,
       "currency": "USD",
-      "updatedAt": "2026-08-29T22:57:03.928Z"
+      "updatedAt": "2026-08-29T23:01:56.360Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13882,6 +13882,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T22:58:30.642Z"
+    },
+    {
+      "id": "mtezjeo8q9go5",
+      "kind": "sure",
+      "event": "Toronto FC – New York City Football Club",
+      "houseA": "Overtimemarkets",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.2,
+      "oddB": 1.01,
+      "total": 130.76,
+      "stakeA": 129.75,
+      "stakeB": 1.01,
+      "lucroA": 154.69000000000005,
+      "lucroB": -129.73989999999998,
+      "lucro": -129.73989999999998,
+      "roi": -99.21986846130314,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T20:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T23:01:56.360Z"
     }
   ],
   "invertidos": [],
@@ -13968,5 +13992,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:58:30.643Z"
+  "updatedAt": "2026-08-29T23:01:56.362Z"
 }
