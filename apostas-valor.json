@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3504.82,
+      "value": 3206.97,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:48:24.140Z"
+      "updatedAt": "2026-08-29T22:48:35.900Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4789,16 +4789,16 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": -0.5,
-      "updatedAt": "2026-08-28T19:37:18.102Z",
+      "value": 26.95,
+      "updatedAt": "2026-08-29T22:48:35.896Z",
       "currency": "USD"
     },
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 333.3,
+      "value": 363.24,
       "currency": "USD",
-      "updatedAt": "2026-08-29T16:01:19.250Z"
+      "updatedAt": "2026-08-29T22:48:35.896Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -5262,6 +5262,10 @@
     {
       "id": "mshooqow0ee6e",
       "at": "2026-08-28T19:23:37.894Z"
+    },
+    {
+      "id": "mtd42t949geuo",
+      "at": "2026-08-29T22:48:35.899Z"
     }
   ],
   "surebets": [
@@ -13337,30 +13341,6 @@
       "updatedAt": "2026-08-28T17:08:44.676Z"
     },
     {
-      "id": "mtd42t949geuo",
-      "kind": "sure",
-      "event": "Klim Sani4 – RE.Arise",
-      "houseA": "Betonline",
-      "houseB": "Vave",
-      "oddA": 1.98,
-      "oddB": 2.16,
-      "total": 297.8499999999999,
-      "stakeA": 155.39999999999998,
-      "stakeB": 142.44999999999996,
-      "lucroA": 9.842000000000041,
-      "lucroB": 9.842000000000041,
-      "lucro": 9.842000000000041,
-      "roi": 3.3043478260869716,
-      "winner": null,
-      "curA": "USD",
-      "curB": "USD",
-      "date": "2026-08-28T15:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-28T15:33:27.833Z"
-    },
-    {
       "id": "mtd76az1esmec",
       "kind": "sure",
       "event": "SV Wildon – FC Schladming",
@@ -13916,5 +13896,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:48:24.140Z"
+  "updatedAt": "2026-08-29T22:48:35.900Z"
 }
