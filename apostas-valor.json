@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3877.02,
+      "value": 3980.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T23:04:46.345Z"
+      "updatedAt": "2026-08-29T23:05:57.311Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4796,9 +4796,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 363.24,
+      "value": 343.24,
       "currency": "USD",
-      "updatedAt": "2026-08-29T22:48:35.896Z"
+      "updatedAt": "2026-08-29T23:05:57.310Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13930,6 +13930,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T23:04:46.343Z"
+    },
+    {
+      "id": "mtezokladf44g",
+      "kind": "sure",
+      "event": "UCLA – Long Beach State",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 2.55,
+      "oddB": 1.01,
+      "total": 103.81000000000002,
+      "stakeA": 103.80000000000001,
+      "stakeB": 0.01,
+      "lucroA": 160.88,
+      "lucroB": -103.79990000000002,
+      "lucro": -103.79990000000002,
+      "roi": -99.99027068683172,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T21:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T23:05:57.310Z"
     }
   ],
   "invertidos": [],
@@ -14016,5 +14040,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T23:04:46.345Z"
+  "updatedAt": "2026-08-29T23:05:57.311Z"
 }
