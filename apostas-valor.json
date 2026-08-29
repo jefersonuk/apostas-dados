@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5079.83,
+      "value": 5110.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T15:43:04.675Z"
+      "updatedAt": "2026-08-29T15:44:33.426Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 131,
+      "value": 125,
       "currency": "USD",
-      "updatedAt": "2026-08-29T15:43:04.673Z"
+      "updatedAt": "2026-08-29T15:44:33.425Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13675,6 +13675,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T15:43:04.673Z"
+    },
+    {
+      "id": "mtejwxhsm786y",
+      "kind": "sure",
+      "event": "FC Lorient – Espérance Sportive Troyes Aube Champagne",
+      "houseA": "Overtimemarkets",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.03,
+      "oddB": 1.01,
+      "total": 31.150000000000002,
+      "stakeA": 31.14,
+      "stakeB": 0.01,
+      "lucroA": 32.0642,
+      "lucroB": -31.1399,
+      "lucro": -31.1399,
+      "roi": -99.96757624398074,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-29T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T15:44:33.425Z"
     }
   ],
   "invertidos": [],
@@ -13761,5 +13785,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T15:43:04.675Z"
+  "updatedAt": "2026-08-29T15:44:33.426Z"
 }
