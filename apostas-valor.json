@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3204.8,
+      "value": 3354.81,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-29T22:26:29.731Z"
+      "updatedAt": "2026-08-29T22:39:28.231Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5488.16,
-      "updatedAt": "2026-08-29T16:02:45.134Z"
+      "value": 5338.15,
+      "updatedAt": "2026-08-29T22:39:28.227Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -13777,6 +13777,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-29T22:26:29.728Z"
+    },
+    {
+      "id": "mteyqig2va53u",
+      "kind": "sure",
+      "event": "CDV (Points) – Olimpia (Points)",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 1.97,
+      "oddB": 1.01,
+      "total": 150.01,
+      "stakeA": 150,
+      "stakeB": 0.01,
+      "lucroA": 145.49,
+      "lucroB": -149.9999,
+      "lucro": -149.9999,
+      "roi": -99.99326711552563,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-29T21:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-29T22:39:28.228Z"
     }
   ],
   "invertidos": [],
@@ -13863,5 +13887,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-29T22:26:29.731Z"
+  "updatedAt": "2026-08-29T22:39:28.231Z"
 }
