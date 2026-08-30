@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3302.8,
+      "value": 3147.09,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T11:34:19.296Z"
+      "updatedAt": "2026-08-30T11:34:46.503Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4767,8 +4767,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 119.54,
-      "updatedAt": "2026-08-30T11:34:19.294Z",
+      "value": 149.54,
+      "updatedAt": "2026-08-30T11:34:46.501Z",
       "currency": "USD"
     },
     {
@@ -5270,6 +5270,10 @@
     {
       "id": "mtejt60zo2ekq",
       "at": "2026-08-30T08:21:32.976Z"
+    },
+    {
+      "id": "mtfqez6m3dg2w",
+      "at": "2026-08-30T11:34:46.502Z"
     }
   ],
   "surebets": [
@@ -14060,30 +14064,6 @@
         "stakes": true
       },
       "updatedAt": "2026-08-30T11:31:45.061Z"
-    },
-    {
-      "id": "mtfqez6m3dg2w",
-      "kind": "sure",
-      "event": "Republic of Korea – Saudi Arabia",
-      "houseA": "Cloudbet",
-      "houseB": "Cloudbet",
-      "oddA": 2.01,
-      "oddB": 1.01,
-      "total": 155.71,
-      "stakeA": 155.70000000000002,
-      "stakeB": 0.01,
-      "lucroA": 157.24699999999999,
-      "lucroB": -155.6999,
-      "lucro": -155.6999,
-      "roi": -99.99351358294265,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-08-31T07:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-30T11:34:19.294Z"
     }
   ],
   "invertidos": [],
@@ -14170,5 +14150,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T11:34:19.296Z"
+  "updatedAt": "2026-08-30T11:34:46.503Z"
 }
