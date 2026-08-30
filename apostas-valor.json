@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3147.09,
+      "value": 3250.94,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T11:34:46.503Z"
+      "updatedAt": "2026-08-30T11:43:25.723Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4805,6 +4805,12 @@
       "name": "Matchbook",
       "value": 208.99,
       "updatedAt": "2026-08-27T21:45:06.545Z"
+    },
+    {
+      "id": "mtfqqot0vqwy5",
+      "name": "Betfury",
+      "value": -103.85,
+      "updatedAt": "2026-08-30T11:43:25.718Z"
     }
   ],
   "aportes": [
@@ -14064,6 +14070,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-30T11:31:45.061Z"
+    },
+    {
+      "id": "mtfqqosvw7l74",
+      "kind": "sure",
+      "event": "Italy – Turkiye",
+      "houseA": "Betfury",
+      "houseB": "Betfury",
+      "oddA": 1.01,
+      "oddB": 1.69,
+      "total": 103.85190000000001,
+      "stakeA": 0.0519,
+      "stakeB": 103.80000000000001,
+      "lucroA": -103.79948100000001,
+      "lucroB": 71.57010000000001,
+      "lucro": -103.79948100000001,
+      "roi": -99.94952523738131,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-08-30T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-30T11:43:25.719Z"
     }
   ],
   "invertidos": [],
@@ -14150,5 +14180,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T11:34:46.503Z"
+  "updatedAt": "2026-08-30T11:43:25.724Z"
 }
