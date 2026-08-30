@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2943.27,
+      "value": 3047.08,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T11:25:37.495Z"
+      "updatedAt": "2026-08-30T11:26:57.963Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4796,9 +4796,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 293.25,
+      "value": 273.25,
       "currency": "USD",
-      "updatedAt": "2026-08-30T11:25:37.494Z"
+      "updatedAt": "2026-08-30T11:26:57.961Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -14012,6 +14012,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-30T11:25:37.494Z"
+    },
+    {
+      "id": "mtfq5indupwx8",
+      "kind": "sure",
+      "event": "Tacinec, Martin – Briska, Jan",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 2.36,
+      "oddB": 1.01,
+      "total": 103.81000000000002,
+      "stakeA": 103.80000000000001,
+      "stakeB": 0.01,
+      "lucroA": 141.15800000000002,
+      "lucroB": -103.79990000000002,
+      "lucro": -103.79990000000002,
+      "roi": -99.99027068683172,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-30T08:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-30T11:26:57.961Z"
     }
   ],
   "invertidos": [],
@@ -14098,5 +14122,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T11:25:37.495Z"
+  "updatedAt": "2026-08-30T11:26:57.963Z"
 }
