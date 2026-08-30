@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2057.26,
+      "value": 1636.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T19:04:06.323Z"
+      "updatedAt": "2026-08-30T19:04:08.809Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4661,9 +4661,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 147.23,
+      "value": 231.02,
       "currency": "USD",
-      "updatedAt": "2026-08-30T08:20:39.504Z"
+      "updatedAt": "2026-08-30T19:04:08.809Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -13518,14 +13518,15 @@
       "lucroB": 14.560099999999977,
       "lucro": 11.289999999999964,
       "roi": 2.6861126311531875,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-08-30T15:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-29T13:17:03.713Z"
+      "updatedAt": "2026-08-30T19:04:08.809Z"
     },
     {
       "id": "mtefre3za1vc0",
@@ -14211,5 +14212,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T19:04:06.323Z"
+  "updatedAt": "2026-08-30T19:04:08.809Z"
 }
