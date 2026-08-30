@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3047.08,
+      "value": 3147.09,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T11:26:57.963Z"
+      "updatedAt": "2026-08-30T11:31:45.067Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4612,8 +4612,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5333.64,
-      "updatedAt": "2026-08-30T08:18:48.415Z"
+      "value": 5233.63,
+      "updatedAt": "2026-08-30T11:31:45.061Z"
     },
     {
       "id": "mseumeeird6tj",
@@ -14036,6 +14036,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-30T11:26:57.961Z"
+    },
+    {
+      "id": "mtfqbo6ch3mif",
+      "kind": "sure",
+      "event": "Atletico Club Pueblonuevo – Badajoz",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 3.6,
+      "oddB": 1.01,
+      "total": 100.01,
+      "stakeA": 100,
+      "stakeB": 0.01,
+      "lucroA": 259.99,
+      "lucroB": -99.99990000000001,
+      "lucro": -99.99990000000001,
+      "roi": -99.98990100989901,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-30T14:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-30T11:31:45.061Z"
     }
   ],
   "invertidos": [],
@@ -14122,5 +14146,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T11:26:57.963Z"
+  "updatedAt": "2026-08-30T11:31:45.067Z"
 }
