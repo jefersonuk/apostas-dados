@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3250.94,
+      "value": 3769.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T11:43:25.723Z"
+      "updatedAt": "2026-08-30T12:12:53.477Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4767,8 +4767,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 149.54,
-      "updatedAt": "2026-08-30T11:34:46.501Z",
+      "value": 49.54,
+      "updatedAt": "2026-08-30T12:12:53.474Z",
       "currency": "USD"
     },
     {
@@ -14094,6 +14094,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-30T11:43:25.719Z"
+    },
+    {
+      "id": "mtfrsktctwfsa",
+      "kind": "sure",
+      "event": "Estral E-sports – Vivo Keyd Stars Academy",
+      "houseA": "cloudbet",
+      "houseB": "cloudbet",
+      "oddA": 1.73,
+      "oddB": 2.54,
+      "total": 519.01,
+      "stakeA": 519,
+      "stakeB": 0.01,
+      "lucroA": 378.86,
+      "lucroB": -518.9846,
+      "lucro": -518.9846,
+      "roi": -99.99510606732048,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-30T17:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-30T12:12:53.474Z"
     }
   ],
   "invertidos": [],
@@ -14180,5 +14204,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T11:43:25.724Z"
+  "updatedAt": "2026-08-30T12:12:53.477Z"
 }
