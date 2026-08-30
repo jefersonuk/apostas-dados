@@ -4505,7 +4505,7 @@
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
       "value": 660.45,
-      "updatedAt": "2026-08-30T15:14:18.634Z"
+      "updatedAt": "2026-08-30T16:07:05.691Z"
     },
     {
       "id": "mrgvkcbyx38ge",
@@ -4790,7 +4790,7 @@
       "id": "mtack9k79qsdy",
       "name": "Vave",
       "value": 26.95,
-      "updatedAt": "2026-08-29T22:48:35.896Z",
+      "updatedAt": "2026-08-30T16:07:05.691Z",
       "currency": "USD"
     },
     {
@@ -13472,11 +13472,11 @@
       "winner": null,
       "curA": "BRL",
       "curB": "USD",
-      "date": "2026-08-30T12:00",
+      "date": "2026-08-31T20:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-08-28T19:37:18.102Z"
+      "updatedAt": "2026-08-30T16:07:05.691Z"
     },
     {
       "id": "mtee1iwcgxum5",
@@ -14208,5 +14208,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T15:51:49.122Z"
+  "updatedAt": "2026-08-30T16:07:05.692Z"
 }
