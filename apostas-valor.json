@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2839.46,
+      "value": 2943.27,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T08:23:53.999Z"
+      "updatedAt": "2026-08-30T11:25:37.495Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4796,9 +4796,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 313.25,
+      "value": 293.25,
       "currency": "USD",
-      "updatedAt": "2026-08-30T08:22:20.248Z"
+      "updatedAt": "2026-08-30T11:25:37.494Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13988,6 +13988,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-08-30T08:23:45.497Z"
+    },
+    {
+      "id": "mtfq3sk6eodhx",
+      "kind": "sure",
+      "event": "Heczko, Marcel – Machander, Dalimil",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 2.36,
+      "oddB": 1.01,
+      "total": 103.81000000000002,
+      "stakeA": 103.80000000000001,
+      "stakeB": 0.01,
+      "lucroA": 141.15800000000002,
+      "lucroB": -103.79990000000002,
+      "lucro": -103.79990000000002,
+      "roi": -99.99027068683172,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-30T08:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-30T11:25:37.494Z"
     }
   ],
   "invertidos": [],
@@ -14074,5 +14098,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T08:23:53.999Z"
+  "updatedAt": "2026-08-30T11:25:37.495Z"
 }
