@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3567.11,
+      "value": 3463.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T08:21:32.977Z"
+      "updatedAt": "2026-08-30T08:22:16.852Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4798,7 +4798,7 @@
       "name": "BetOnline",
       "value": 313.05,
       "currency": "USD",
-      "updatedAt": "2026-08-29T23:06:50.928Z"
+      "updatedAt": "2026-08-30T08:22:16.851Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -13927,14 +13927,15 @@
       "lucroB": -103.79990000000002,
       "lucro": -103.79990000000002,
       "roi": -99.99027068683172,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-29T21:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-29T23:05:57.310Z"
+      "updatedAt": "2026-08-30T08:22:16.852Z"
     },
     {
       "id": "mtezppyn4wd0l",
@@ -14069,5 +14070,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T08:21:32.977Z"
+  "updatedAt": "2026-08-30T08:22:16.852Z"
 }
