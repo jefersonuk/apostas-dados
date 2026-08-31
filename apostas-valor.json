@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8492.75,
+      "value": 9430.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T14:36:39.330Z"
+      "updatedAt": "2026-08-31T14:58:58.294Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1787.06,
+      "value": 1337.06,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T14:27:01.067Z"
+      "updatedAt": "2026-08-31T14:58:58.284Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 282.3,
+      "value": 188.26,
       "currency": "USD",
-      "updatedAt": "2026-08-31T13:44:34.675Z"
+      "updatedAt": "2026-08-31T14:58:58.284Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -14342,6 +14342,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T14:27:01.067Z"
+    },
+    {
+      "id": "mthd60dihqphp",
+      "kind": "sure",
+      "event": "Mansão Maromba vs Semente do Mal",
+      "houseA": "Ivibet",
+      "houseB": "Opinion",
+      "oddA": 2.54,
+      "oddB": 2.32,
+      "total": 938.0676000000001,
+      "stakeA": 450,
+      "stakeB": 488.0676000000001,
+      "lucroA": 204.93239999999992,
+      "lucroB": 194.24923200000012,
+      "lucro": 194.24923200000012,
+      "roi": 20.707381003245406,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-31T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T14:58:58.285Z"
     }
   ],
   "invertidos": [],
@@ -14428,5 +14452,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T14:36:39.330Z"
+  "updatedAt": "2026-08-31T14:58:58.294Z"
 }
