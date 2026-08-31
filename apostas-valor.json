@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5906.74,
+      "value": 7197.34,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T13:35:38.883Z"
+      "updatedAt": "2026-08-31T13:42:06.269Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 167.33,
-      "updatedAt": "2026-08-31T00:57:57.115Z",
+      "value": -0.03,
+      "updatedAt": "2026-08-31T13:42:06.261Z",
       "currency": "USD"
     },
     {
@@ -4755,8 +4755,8 @@
     {
       "id": "mtbvh50wqy903",
       "name": "Matchbook",
-      "value": 208.99,
-      "updatedAt": "2026-08-27T21:45:06.545Z"
+      "value": -213.01,
+      "updatedAt": "2026-08-31T13:42:06.262Z"
     },
     {
       "id": "mtfqqot0vqwy5",
@@ -14244,6 +14244,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T13:35:38.877Z"
+    },
+    {
+      "id": "mthaf5pt7rtgh",
+      "kind": "sure",
+      "event": "Forest Green Rovers – Altrincham FC",
+      "houseA": "Bookmaker",
+      "houseB": "Matchbook",
+      "oddA": 1.53,
+      "oddB": 3.15,
+      "total": 1290.5984,
+      "stakeA": 868.5984000000001,
+      "stakeB": 422,
+      "lucroA": 38.35715200000004,
+      "lucroB": 38.70159999999987,
+      "lucro": 38.35715200000004,
+      "roi": 2.972043975879719,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-31T11:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T13:42:06.263Z"
     }
   ],
   "invertidos": [],
@@ -14330,5 +14354,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T13:35:38.883Z"
+  "updatedAt": "2026-08-31T13:42:06.270Z"
 }
