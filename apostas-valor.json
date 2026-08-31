@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8140.22,
+      "value": 7792.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T16:05:46.131Z"
+      "updatedAt": "2026-08-31T16:16:50.476Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1337.06,
+      "value": 1469.06,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T14:58:58.284Z"
+      "updatedAt": "2026-08-31T16:16:50.476Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4697.55,
-      "updatedAt": "2026-08-31T14:18:29.386Z"
+      "value": 4913.55,
+      "updatedAt": "2026-08-31T16:16:50.476Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -5301,6 +5301,10 @@
     {
       "id": "mth7wrsw8u543",
       "at": "2026-08-31T14:36:39.328Z"
+    },
+    {
+      "id": "mthbpy8a0mks8",
+      "at": "2026-08-31T16:16:50.476Z"
     }
   ],
   "surebets": [
@@ -14297,30 +14301,6 @@
       "updatedAt": "2026-08-31T13:57:54.309Z"
     },
     {
-      "id": "mthbpy8a0mks8",
-      "kind": "sure",
-      "event": "Tikvesh – Vardar",
-      "houseA": "Pinnacle",
-      "houseB": "Ivibet",
-      "oddA": 1.709,
-      "oddB": 2.82,
-      "total": 348,
-      "stakeA": 216,
-      "stakeB": 132,
-      "lucroA": 21.144000000000005,
-      "lucroB": 24.239999999999952,
-      "lucro": 21.144000000000005,
-      "roi": 6.0758620689655185,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-31T12:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-31T14:18:29.387Z"
-    },
-    {
       "id": "mthc0x1ic6xcv",
       "kind": "sure",
       "event": "Montenegro – Ukraine",
@@ -14453,5 +14433,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T16:05:46.131Z"
+  "updatedAt": "2026-08-31T16:16:50.476Z"
 }
