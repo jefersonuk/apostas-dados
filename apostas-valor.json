@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2525.96,
+      "value": 5105.48,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T00:42:17.508Z"
+      "updatedAt": "2026-08-31T00:45:31.152Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4600,9 +4600,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 3070,
+      "value": 1570,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T00:42:17.503Z"
+      "updatedAt": "2026-08-31T00:45:31.148Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4753,9 +4753,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 226.27,
+      "value": 18.27,
       "currency": "USD",
-      "updatedAt": "2026-08-27T21:44:18.027Z"
+      "updatedAt": "2026-08-31T00:45:31.148Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -14151,6 +14151,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T00:42:17.503Z"
+    },
+    {
+      "id": "mtgiogp8u1whe",
+      "kind": "sure",
+      "event": "NSRedForce Challengers – DN SOOPers Challengers",
+      "houseA": "Ivibet",
+      "houseB": "Shuffle",
+      "oddA": 1.8,
+      "oddB": 2.5,
+      "total": 2579.52,
+      "stakeA": 1500,
+      "stakeB": 1079.52,
+      "lucroA": 120.48000000000002,
+      "lucroB": 119.2800000000002,
+      "lucro": 119.2800000000002,
+      "roi": 4.624116114625985,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-08-31T05:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T00:45:31.148Z"
     }
   ],
   "invertidos": [],
@@ -14237,5 +14261,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T00:42:17.508Z"
+  "updatedAt": "2026-08-31T00:45:31.152Z"
 }
