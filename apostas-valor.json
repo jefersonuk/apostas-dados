@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7640.17,
+      "value": 8364.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T14:18:29.391Z"
+      "updatedAt": "2026-08-31T14:19:25.777Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4770,6 +4770,18 @@
       "value": 0,
       "currency": "BRL",
       "updatedAt": "2026-08-31T13:35:38.876Z"
+    },
+    {
+      "id": "mthbr5qnw0pdw",
+      "name": "Casa A",
+      "value": -294.15,
+      "updatedAt": "2026-08-31T14:19:25.775Z"
+    },
+    {
+      "id": "mthbr5qnzazvg",
+      "name": "Casa B",
+      "value": -429.9,
+      "updatedAt": "2026-08-31T14:19:25.775Z"
     }
   ],
   "aportes": [
@@ -14316,6 +14328,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T14:18:29.387Z"
+    },
+    {
+      "id": "mthbr5qmxtzc5",
+      "kind": "sure",
+      "event": "Operação sem nome",
+      "houseA": "",
+      "houseB": "",
+      "oddA": 2.79,
+      "oddB": 1.909,
+      "total": 724.0502150537634,
+      "stakeA": 294.1502150537635,
+      "stakeB": 429.9,
+      "lucroA": 96.62888494623667,
+      "lucroB": 96.62888494623655,
+      "lucro": 96.62888494623655,
+      "roi": 13.345605447967653,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-31T11:18",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T14:19:25.775Z"
     }
   ],
   "invertidos": [],
@@ -14402,5 +14438,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T14:18:29.391Z"
+  "updatedAt": "2026-08-31T14:19:25.777Z"
 }
