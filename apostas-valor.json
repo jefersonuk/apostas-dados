@@ -4789,8 +4789,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 26.95,
-      "updatedAt": "2026-08-30T16:07:05.691Z",
+      "value": 0.41,
+      "updatedAt": "2026-08-31T00:57:01.839Z",
       "currency": "USD"
     },
     {
@@ -14261,5 +14261,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T00:55:57.643Z"
+  "updatedAt": "2026-08-31T00:57:01.840Z"
 }
