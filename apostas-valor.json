@@ -4508,28 +4508,11 @@
       "updatedAt": "2026-08-31T00:55:57.642Z"
     },
     {
-      "id": "mrgvkcbyx38ge",
-      "name": "Betboo",
-      "value": 0,
-      "updatedAt": "2026-08-20T11:44:04.512Z"
-    },
-    {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
       "value": 10792.4,
       "currency": "BRL",
       "updatedAt": "2026-08-31T00:55:34.992Z"
-    },
-    {
-      "id": "mrqepyieyl3gk",
-      "name": "Vbet",
-      "value": 0,
-      "updatedAt": "2026-08-20T20:03:38.624Z"
-    },
-    {
-      "id": "mrqfw8wuhoz55",
-      "name": "Betão",
-      "value": 0
     },
     {
       "id": "mrqgbm24pa9kf",
@@ -5280,6 +5263,18 @@
     {
       "id": "mtfqez6m3dg2w",
       "at": "2026-08-30T11:34:46.502Z"
+    },
+    {
+      "id": "mrgvkcbyx38ge",
+      "at": "2026-08-31T10:49:13.168Z"
+    },
+    {
+      "id": "mrqepyieyl3gk",
+      "at": "2026-08-31T10:49:15.462Z"
+    },
+    {
+      "id": "mrqfw8wuhoz55",
+      "at": "2026-08-31T10:49:18.576Z"
     }
   ],
   "surebets": [
@@ -14261,5 +14256,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T10:45:33.285Z"
+  "updatedAt": "2026-08-31T10:49:18.576Z"
 }
