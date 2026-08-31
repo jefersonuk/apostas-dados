@@ -4763,6 +4763,13 @@
       "name": "Betfury",
       "value": 0,
       "updatedAt": "2026-08-31T00:59:32.353Z"
+    },
+    {
+      "id": "mth4p8xkc69x8",
+      "name": "Sportingbet",
+      "value": 1000,
+      "currency": "BRL",
+      "updatedAt": "2026-08-31T11:01:59.289Z"
     }
   ],
   "aportes": [
@@ -14245,5 +14252,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T10:49:34.527Z"
+  "updatedAt": "2026-08-31T11:01:59.290Z"
 }
