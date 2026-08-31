@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8992.76,
+      "value": 8492.75,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T14:27:01.077Z"
+      "updatedAt": "2026-08-31T14:36:39.330Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4767,9 +4767,9 @@
     {
       "id": "mth4p8xkc69x8",
       "name": "Sportingbet",
-      "value": 0,
+      "value": 500,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T13:35:38.876Z"
+      "updatedAt": "2026-08-31T14:36:39.323Z"
     },
     {
       "id": "mthbr5qnw0pdw",
@@ -4782,6 +4782,12 @@
       "name": "Casa B",
       "value": 0,
       "updatedAt": "2026-08-31T14:19:46.179Z"
+    },
+    {
+      "id": "mthcdb8cf914h",
+      "name": "Tivobet",
+      "value": 0.01,
+      "updatedAt": "2026-08-31T14:36:39.326Z"
     }
   ],
   "aportes": [
@@ -5291,6 +5297,10 @@
     {
       "id": "mthbr5qmxtzc5",
       "at": "2026-08-31T14:19:46.181Z"
+    },
+    {
+      "id": "mth7wrsw8u543",
+      "at": "2026-08-31T14:36:39.328Z"
     }
   ],
   "surebets": [
@@ -14190,30 +14200,6 @@
       "updatedAt": "2026-08-31T12:41:33.709Z"
     },
     {
-      "id": "mth7wrsw8u543",
-      "kind": "sure",
-      "event": "SL Benfica – Estoril Praia",
-      "houseA": "Sportingbet",
-      "houseB": "Tivobet",
-      "oddA": 1.62,
-      "oddB": 1.01,
-      "total": 500.01,
-      "stakeA": 500,
-      "stakeB": 0.01,
-      "lucroA": 309.99,
-      "lucroB": -499.99989999999997,
-      "lucro": -499.99989999999997,
-      "roi": -99.9979800403992,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-08-31T16:15",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-31T12:31:49.185Z"
-    },
-    {
       "id": "mth9c5kq3sbv3",
       "kind": "sure",
       "event": "BESTIA Academy – Blitzkrieg",
@@ -14442,5 +14428,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T14:27:01.077Z"
+  "updatedAt": "2026-08-31T14:36:39.330Z"
 }
