@@ -4554,10 +4554,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2155.96,
+      "value": 2525.96,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-30T22:24:23.795Z"
+      "updatedAt": "2026-08-31T00:42:17.508Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4594,15 +4594,15 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 580.99,
-      "updatedAt": "2026-08-30T08:21:32.975Z"
+      "value": 370.99,
+      "updatedAt": "2026-08-31T00:42:17.502Z"
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 3230,
+      "value": 3070,
       "currency": "BRL",
-      "updatedAt": "2026-08-28T19:07:23.135Z"
+      "updatedAt": "2026-08-31T00:42:17.503Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -14127,6 +14127,30 @@
         "resultado": null
       },
       "updatedAt": "2026-08-30T22:24:23.795Z"
+    },
+    {
+      "id": "mtgikba61yn4o",
+      "kind": "sure",
+      "event": "Altay FK – Okzhetpes Kokshetau",
+      "houseA": "Casinozer",
+      "houseB": "Ivibet",
+      "oddA": 1.91,
+      "oddB": 2.49,
+      "total": 370,
+      "stakeA": 210,
+      "stakeB": 160,
+      "lucroA": 31.099999999999966,
+      "lucroB": 28.400000000000034,
+      "lucro": 28.400000000000034,
+      "roi": 7.675675675675684,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-31T05:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T00:42:17.503Z"
     }
   ],
   "invertidos": [],
@@ -14213,5 +14237,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-30T22:24:23.795Z"
+  "updatedAt": "2026-08-31T00:42:17.508Z"
 }
