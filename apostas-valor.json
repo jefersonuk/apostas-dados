@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-31",
+    "startDate": "2026-08-21",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4523,17 +4523,17 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 12629.17,
+      "value": 12580.55,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T16:04:55.717Z"
+      "updatedAt": "2026-08-31T13:43:48.467Z"
     },
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7792.22,
+      "value": 9430.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T16:16:50.476Z"
+      "updatedAt": "2026-08-31T14:58:58.294Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1469.06,
+      "value": 1337.06,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T16:16:50.476Z"
+      "updatedAt": "2026-08-31T14:58:58.284Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4913.55,
-      "updatedAt": "2026-08-31T16:16:50.476Z"
+      "value": 4697.55,
+      "updatedAt": "2026-08-31T14:18:29.386Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 355.17,
-      "updatedAt": "2026-08-31T16:05:46.131Z",
+      "value": 0,
+      "updatedAt": "2026-08-31T13:44:56.710Z",
       "currency": "USD"
     },
     {
@@ -4937,12 +4937,12 @@
       "updatedAt": "2026-08-28T19:27:52.011Z"
     }
   ],
-  "usdRate": 5.17,
+  "usdRate": 5.18,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-31T15:50:54.669Z",
-  "eurRate": 6.03,
+  "usdRateAt": "2026-08-31T16:48:11.333Z",
+  "eurRate": 6.02,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-08-31T15:50:54.947Z",
+  "eurRateAt": "2026-08-31T16:48:14.983Z",
   "appBuild": "20260827-1556",
   "deleted": [
     {
@@ -5301,10 +5301,6 @@
     {
       "id": "mth7wrsw8u543",
       "at": "2026-08-31T14:36:39.328Z"
-    },
-    {
-      "id": "mthbpy8a0mks8",
-      "at": "2026-08-31T16:16:50.476Z"
     }
   ],
   "surebets": [
@@ -14266,15 +14262,14 @@
       "lucroB": 38.70159999999987,
       "lucro": 38.35715200000004,
       "roi": 2.972043975879719,
-      "winner": "A",
+      "winner": null,
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-31T11:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "A"
+        "stakes": true
       },
-      "updatedAt": "2026-08-31T16:05:46.131Z"
+      "updatedAt": "2026-08-31T13:42:06.263Z"
     },
     {
       "id": "mthazh8lf77hd",
@@ -14299,6 +14294,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T13:57:54.309Z"
+    },
+    {
+      "id": "mthbpy8a0mks8",
+      "kind": "sure",
+      "event": "Tikvesh – Vardar",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.709,
+      "oddB": 2.82,
+      "total": 348,
+      "stakeA": 216,
+      "stakeB": 132,
+      "lucroA": 21.144000000000005,
+      "lucroB": 24.239999999999952,
+      "lucro": 21.144000000000005,
+      "roi": 6.0758620689655185,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-31T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T14:18:29.387Z"
     },
     {
       "id": "mthc0x1ic6xcv",
@@ -14433,5 +14452,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T16:16:50.476Z"
+  "updatedAt": "2026-08-31T16:48:14.983Z"
 }
