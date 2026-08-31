@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-21",
+    "startDate": "2026-08-31",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4533,7 +4533,7 @@
       "value": 8261.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T17:14:37.267Z"
+      "updatedAt": "2026-08-31T17:53:40.632Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 742.71,
+      "value": 743.79,
       "currency": "USD",
-      "updatedAt": "2026-08-31T17:14:37.266Z"
+      "updatedAt": "2026-08-31T17:53:36.168Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4937,12 +4937,12 @@
       "updatedAt": "2026-08-28T19:27:52.011Z"
     }
   ],
-  "usdRate": 5.18,
+  "usdRate": 5.17,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-08-31T16:48:11.333Z",
-  "eurRate": 6.02,
+  "usdRateAt": "2026-08-31T15:50:54.669Z",
+  "eurRate": 6.03,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-08-31T16:48:14.983Z",
+  "eurRateAt": "2026-08-31T15:50:54.947Z",
   "appBuild": "20260827-1556",
   "deleted": [
     {
@@ -14226,7 +14226,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-08-31T17:14:37.266Z"
+      "updatedAt": "2026-08-31T17:53:36.168Z"
     },
     {
       "id": "mtha6ut4gmqg5",
@@ -14458,5 +14458,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T17:14:37.267Z"
+  "updatedAt": "2026-08-31T17:53:36.168Z"
 }
