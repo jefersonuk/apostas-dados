@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7640.17,
+      "value": 8992.76,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T14:19:46.182Z"
+      "updatedAt": "2026-08-31T14:27:01.077Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2340.39,
+      "value": 1787.06,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T14:18:29.387Z"
+      "updatedAt": "2026-08-31T14:27:01.067Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4606,9 +4606,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 154.93,
+      "value": 0.93,
       "currency": "USD",
-      "updatedAt": "2026-08-31T00:57:30.725Z"
+      "updatedAt": "2026-08-31T14:27:01.066Z"
     },
     {
       "id": "msneebp3j8g2z",
@@ -14332,6 +14332,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T14:18:29.387Z"
+    },
+    {
+      "id": "mthc0x1ic6xcv",
+      "kind": "sure",
+      "event": "Montenegro – Ukraine",
+      "houseA": "Gamdom",
+      "houseB": "Ivibet",
+      "oddA": 1.8,
+      "oddB": 2.6,
+      "total": 1352.5938461538462,
+      "stakeA": 799.2600000000001,
+      "stakeB": 553.3338461538461,
+      "lucroA": 86.07415384615388,
+      "lucroB": 86.07415384615388,
+      "lucro": 86.07415384615388,
+      "roi": 6.363636363636366,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-31T15:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T14:27:01.067Z"
     }
   ],
   "invertidos": [],
@@ -14418,5 +14442,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T14:19:46.182Z"
+  "updatedAt": "2026-08-31T14:27:01.077Z"
 }
