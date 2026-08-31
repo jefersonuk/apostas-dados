@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4955.47,
+      "value": 5455.48,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T00:53:25.845Z"
+      "updatedAt": "2026-08-31T12:31:49.190Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4767,9 +4767,15 @@
     {
       "id": "mth4p8xkc69x8",
       "name": "Sportingbet",
-      "value": 1000,
+      "value": 500,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T11:01:59.289Z"
+      "updatedAt": "2026-08-31T12:31:49.184Z"
+    },
+    {
+      "id": "mth7wrsw198y2",
+      "name": "Tivobet",
+      "value": -0.01,
+      "updatedAt": "2026-08-31T12:31:49.185Z"
     }
   ],
   "aportes": [
@@ -14166,6 +14172,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T00:45:31.148Z"
+    },
+    {
+      "id": "mth7wrsw8u543",
+      "kind": "sure",
+      "event": "SL Benfica – Estoril Praia",
+      "houseA": "Sportingbet",
+      "houseB": "Tivobet",
+      "oddA": 1.62,
+      "oddB": 1.01,
+      "total": 500.01,
+      "stakeA": 500,
+      "stakeB": 0.01,
+      "lucroA": 309.99,
+      "lucroB": -499.99989999999997,
+      "lucro": -499.99989999999997,
+      "roi": -99.9979800403992,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-31T16:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T12:31:49.185Z"
     }
   ],
   "invertidos": [],
@@ -14252,5 +14282,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T11:01:59.290Z"
+  "updatedAt": "2026-08-31T12:31:49.190Z"
 }
