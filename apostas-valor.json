@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9430.82,
+      "value": 8140.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T16:00:58.180Z"
+      "updatedAt": "2026-08-31T16:05:46.131Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 98.12,
-      "updatedAt": "2026-08-31T16:01:11.485Z",
+      "value": 355.17,
+      "updatedAt": "2026-08-31T16:05:46.131Z",
       "currency": "USD"
     },
     {
@@ -14262,15 +14262,15 @@
       "lucroB": 38.70159999999987,
       "lucro": 38.35715200000004,
       "roi": 2.972043975879719,
-      "winner": null,
+      "winner": "A",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-31T11:00",
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-31T16:00:58.180Z"
+      "updatedAt": "2026-08-31T16:05:46.131Z"
     },
     {
       "id": "mthazh8lf77hd",
@@ -14453,5 +14453,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T16:04:55.723Z"
+  "updatedAt": "2026-08-31T16:05:46.131Z"
 }
