@@ -4515,13 +4515,6 @@
       "updatedAt": "2026-08-31T00:55:34.992Z"
     },
     {
-      "id": "mrqgbm24pa9kf",
-      "name": "Betsson",
-      "value": 0,
-      "currency": "BRL",
-      "updatedAt": "2026-08-22T23:05:22.723Z"
-    },
-    {
       "id": "mrskg1h6rlv1s",
       "name": "Meridian",
       "value": 200,
@@ -5275,6 +5268,10 @@
     {
       "id": "mrqfw8wuhoz55",
       "at": "2026-08-31T10:49:18.576Z"
+    },
+    {
+      "id": "mrqgbm24pa9kf",
+      "at": "2026-08-31T10:49:21.693Z"
     }
   ],
   "surebets": [
@@ -14256,5 +14253,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T10:49:18.576Z"
+  "updatedAt": "2026-08-31T10:49:21.693Z"
 }
