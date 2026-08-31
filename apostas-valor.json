@@ -4770,12 +4770,6 @@
       "value": 500,
       "currency": "BRL",
       "updatedAt": "2026-08-31T12:31:49.184Z"
-    },
-    {
-      "id": "mth7wrsw198y2",
-      "name": "Tivobet",
-      "value": -0.01,
-      "updatedAt": "2026-08-31T12:31:49.185Z"
     }
   ],
   "aportes": [
@@ -5277,6 +5271,10 @@
     {
       "id": "msuuloj0waoov",
       "at": "2026-08-31T10:49:34.526Z"
+    },
+    {
+      "id": "mth7wrsw198y2",
+      "at": "2026-08-31T12:34:33.570Z"
     }
   ],
   "surebets": [
@@ -14282,5 +14280,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T12:31:49.190Z"
+  "updatedAt": "2026-08-31T12:34:33.574Z"
 }
