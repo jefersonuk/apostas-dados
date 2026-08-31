@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7197.34,
+      "value": 7292.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T13:42:06.269Z"
+      "updatedAt": "2026-08-31T13:57:54.312Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4705,9 +4705,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 18.27,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-08-31T00:45:31.148Z"
+      "updatedAt": "2026-08-31T13:57:54.309Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -14268,6 +14268,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T13:42:06.263Z"
+    },
+    {
+      "id": "mthazh8lf77hd",
+      "kind": "sure",
+      "event": "Mansao Maromba – Sementes do Mal",
+      "houseA": "Shuffle",
+      "houseB": "Shuffle",
+      "oddA": 1.75,
+      "oddB": 1.01,
+      "total": 94.83130000000001,
+      "stakeA": 94.82130000000001,
+      "stakeB": 0.01,
+      "lucroA": 71.10597499999999,
+      "lucroB": -94.82120000000002,
+      "lucro": -94.82120000000002,
+      "roi": -99.98934950802109,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-31T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T13:57:54.309Z"
     }
   ],
   "invertidos": [],
@@ -14354,5 +14378,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T13:45:20.172Z"
+  "updatedAt": "2026-08-31T13:57:54.312Z"
 }
