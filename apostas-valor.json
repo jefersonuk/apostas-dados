@@ -4592,12 +4592,6 @@
       "updatedAt": "2026-08-31T00:53:25.843Z"
     },
     {
-      "id": "mseumeeird6tj",
-      "name": "Milhão",
-      "value": 0,
-      "updatedAt": "2026-08-15T12:59:14.725Z"
-    },
-    {
       "id": "msfgf86ojrke9",
       "name": "Egb",
       "value": 243.12,
@@ -4617,22 +4611,11 @@
       "updatedAt": "2026-08-31T00:57:30.725Z"
     },
     {
-      "id": "msiybd3uy2l7d",
-      "name": "sportybet",
-      "value": 0,
-      "updatedAt": "2026-08-22T22:43:31.064Z"
-    },
-    {
       "id": "msneebp3j8g2z",
       "name": "Asianodds",
       "value": 101.9,
       "currency": "EUR",
       "updatedAt": "2026-08-28T19:24:48.107Z"
-    },
-    {
-      "id": "mso22oyjdi55r",
-      "name": "7games",
-      "value": 0
     },
     {
       "id": "msoqu4qsf39md",
@@ -5272,6 +5255,18 @@
     {
       "id": "mrqgbm24pa9kf",
       "at": "2026-08-31T10:49:21.693Z"
+    },
+    {
+      "id": "mseumeeird6tj",
+      "at": "2026-08-31T10:49:25.610Z"
+    },
+    {
+      "id": "msiybd3uy2l7d",
+      "at": "2026-08-31T10:49:27.760Z"
+    },
+    {
+      "id": "mso22oyjdi55r",
+      "at": "2026-08-31T10:49:30.710Z"
     }
   ],
   "surebets": [
@@ -14253,5 +14248,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T10:49:21.693Z"
+  "updatedAt": "2026-08-31T10:49:30.710Z"
 }
