@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2505.96,
+      "value": 4854.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T12:41:33.709Z"
+      "updatedAt": "2026-08-31T13:11:46.497Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2944,
+      "value": 2472.39,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T12:41:33.709Z"
+      "updatedAt": "2026-08-31T13:11:46.492Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 0,
+      "value": -361.69,
       "currency": "USD",
-      "updatedAt": "2026-08-25T14:14:28.613Z"
+      "updatedAt": "2026-08-31T13:11:46.492Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -14196,6 +14196,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T12:31:49.185Z"
+    },
+    {
+      "id": "mth9c5kq3sbv3",
+      "kind": "sure",
+      "event": "BESTIA Academy – Blitzkrieg",
+      "houseA": "Opinion",
+      "houseB": "Ivibet",
+      "oddA": 1.53,
+      "oddB": 6.1,
+      "total": 2348.7811,
+      "stakeA": 1877.1711,
+      "stakeB": 471.61,
+      "lucroA": 523.2906829999997,
+      "lucroB": 528.0398999999998,
+      "lucro": 523.2906829999997,
+      "roi": 22.279244455773238,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-08-31T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T13:11:46.492Z"
     }
   ],
   "invertidos": [],
@@ -14282,5 +14306,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T12:41:33.709Z"
+  "updatedAt": "2026-08-31T13:11:46.498Z"
 }
