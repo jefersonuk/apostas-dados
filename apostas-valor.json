@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4854.74,
+      "value": 5906.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-31T13:11:46.497Z"
+      "updatedAt": "2026-08-31T13:35:38.883Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 5465.55,
-      "updatedAt": "2026-08-31T00:53:25.843Z"
+      "value": 4913.55,
+      "updatedAt": "2026-08-31T13:35:38.875Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4767,9 +4767,9 @@
     {
       "id": "mth4p8xkc69x8",
       "name": "Sportingbet",
-      "value": 500,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T12:31:49.184Z"
+      "updatedAt": "2026-08-31T13:35:38.876Z"
     }
   ],
   "aportes": [
@@ -14220,6 +14220,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T13:11:46.492Z"
+    },
+    {
+      "id": "mtha6ut4gmqg5",
+      "kind": "sure",
+      "event": "Italy – Serbia",
+      "houseA": "Pinnacle",
+      "houseB": "Sportingbet",
+      "oddA": 1.99,
+      "oddB": 2.2,
+      "total": 1052,
+      "stakeA": 552,
+      "stakeB": 500,
+      "lucroA": 46.48000000000002,
+      "lucroB": 48,
+      "lucro": 46.48000000000002,
+      "roi": 4.418250950570344,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-08-31T14:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-08-31T13:35:38.877Z"
     }
   ],
   "invertidos": [],
@@ -14306,5 +14330,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-08-31T13:11:46.498Z"
+  "updatedAt": "2026-08-31T13:35:38.883Z"
 }
