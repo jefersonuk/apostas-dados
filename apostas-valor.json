@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3699.37,
+      "value": 4773.37,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T08:11:52.587Z"
+      "updatedAt": "2026-09-01T12:38:16.877Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4550,8 +4550,8 @@
     {
       "id": "msan29jv5dft4",
       "name": "BetMGM",
-      "value": 854.95,
-      "updatedAt": "2026-09-01T12:22:35.503Z"
+      "value": 0.95,
+      "updatedAt": "2026-09-01T12:38:16.876Z"
     },
     {
       "id": "msd9ei033vtoe",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1485,
+      "value": 1265,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T12:19:26.952Z"
+      "updatedAt": "2026-09-01T12:38:16.877Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -14419,6 +14419,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T08:11:52.586Z"
+    },
+    {
+      "id": "mtinkxm47hdry",
+      "kind": "sure",
+      "event": "Gabriel Lourenco x Charlie Cleveland",
+      "houseA": "Betmgm",
+      "houseB": "Ivibet",
+      "oddA": 1.33,
+      "oddB": 5.2,
+      "total": 1074,
+      "stakeA": 854,
+      "stakeB": 220,
+      "lucroA": 61.820000000000164,
+      "lucroB": 70,
+      "lucro": 61.820000000000164,
+      "roi": 5.756052141527017,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-01T20:20",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T12:38:16.877Z"
     }
   ],
   "invertidos": [],
@@ -14505,5 +14529,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T12:22:35.512Z"
+  "updatedAt": "2026-09-01T12:38:16.877Z"
 }
