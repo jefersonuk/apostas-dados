@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1984.05,
-      "updatedAt": "2026-09-01T08:04:36.583Z"
+      "value": 1583.05,
+      "updatedAt": "2026-09-01T15:01:56.895Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7612.84,
+      "value": 8513.84,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T14:48:36.628Z"
+      "updatedAt": "2026-09-01T15:01:56.896Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 668,
+      "value": 168,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T14:48:36.628Z"
+      "updatedAt": "2026-09-01T15:01:56.895Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -14539,6 +14539,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T14:48:36.628Z"
+    },
+    {
+      "id": "mtispov3ac2hd",
+      "kind": "sure",
+      "event": "Brandon Holmes x Modestino Rodrigues",
+      "houseA": "Ivibet",
+      "houseB": "Betnacional",
+      "oddA": 2.78,
+      "oddB": 2.88,
+      "total": 901,
+      "stakeA": 500,
+      "stakeB": 401,
+      "lucroA": 489,
+      "lucroB": 253.87999999999988,
+      "lucro": 253.87999999999988,
+      "roi": 28.17758046614871,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-01T21:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T15:01:56.895Z"
     }
   ],
   "invertidos": [],
@@ -14625,5 +14649,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T14:48:36.628Z"
+  "updatedAt": "2026-09-01T15:01:56.896Z"
 }
