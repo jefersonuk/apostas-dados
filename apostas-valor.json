@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4773.37,
+      "value": 5838.37,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T12:38:16.877Z"
+      "updatedAt": "2026-09-01T12:45:38.829Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4570,15 +4570,15 @@
     {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
-      "value": 772.09,
-      "updatedAt": "2026-08-31T12:40:52.809Z"
+      "value": 132.09,
+      "updatedAt": "2026-09-01T12:45:38.828Z"
     },
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1265,
+      "value": 840,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T12:38:16.877Z"
+      "updatedAt": "2026-09-01T12:45:38.828Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -14443,6 +14443,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T12:38:16.877Z"
+    },
+    {
+      "id": "mtinuemk1xxvo",
+      "kind": "sure",
+      "event": "Poland x Italy U19",
+      "houseA": "Ivibet",
+      "houseB": "Casinozer",
+      "oddA": 2.7,
+      "oddB": 1.8,
+      "total": 1065,
+      "stakeA": 425,
+      "stakeB": 640,
+      "lucroA": 82.5,
+      "lucroB": 87,
+      "lucro": 82.5,
+      "roi": 7.746478873239436,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-01T11:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T12:45:38.828Z"
     }
   ],
   "invertidos": [],
@@ -14529,5 +14553,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T12:38:16.877Z"
+  "updatedAt": "2026-09-01T12:45:38.829Z"
 }
