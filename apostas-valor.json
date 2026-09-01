@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9752.22,
+      "value": 7448.84,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T15:42:39.884Z"
+      "updatedAt": "2026-09-01T16:17:04.264Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 168,
+      "value": 1315.5,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T15:01:56.895Z"
+      "updatedAt": "2026-09-01T16:13:08.253Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 2.85,
+      "value": 202.3,
       "currency": "USD",
-      "updatedAt": "2026-09-01T15:42:39.883Z"
+      "updatedAt": "2026-09-01T16:17:04.263Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 159,
-      "updatedAt": "2026-09-01T15:42:39.883Z",
+      "value": 200.48,
+      "updatedAt": "2026-09-01T16:17:04.263Z",
       "currency": "USD"
     },
     {
@@ -5322,6 +5322,10 @@
     {
       "id": "mthlkclddd5l0",
       "at": "2026-09-01T01:19:34.542Z"
+    },
+    {
+      "id": "mtiu61vvhw3fe",
+      "at": "2026-09-01T16:17:04.263Z"
     }
   ],
   "surebets": [
@@ -14459,14 +14463,15 @@
       "lucroB": 87,
       "lucro": 82.5,
       "roi": 7.746478873239436,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-09-01T11:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-01T12:45:38.828Z"
+      "updatedAt": "2026-09-01T16:13:08.253Z"
     },
     {
       "id": "mtiog5yg2pb2j",
@@ -14563,30 +14568,6 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T15:01:56.895Z"
-    },
-    {
-      "id": "mtiu61vvhw3fe",
-      "kind": "sure",
-      "event": "Jodar x Kokkinakis",
-      "houseA": "Opinion",
-      "houseB": "Bookmaker",
-      "oddA": 1.88,
-      "oddB": 9.1,
-      "total": 1238.38,
-      "stakeA": 1025.18,
-      "stakeB": 213.20000000000002,
-      "lucroA": 688.9584,
-      "lucroB": 701.74,
-      "lucro": 688.9584,
-      "roi": 55.63384421583035,
-      "winner": null,
-      "curA": "USD",
-      "curB": "USD",
-      "date": "2026-09-01T15:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-01T15:42:39.883Z"
     }
   ],
   "invertidos": [],
@@ -14673,5 +14654,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T16:12:53.090Z"
+  "updatedAt": "2026-09-01T16:17:04.264Z"
 }
