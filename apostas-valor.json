@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9531.43,
+      "value": 9946.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T16:20:26.890Z"
+      "updatedAt": "2026-09-01T17:39:58.829Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 246.48,
+      "value": 1.48,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T16:20:26.887Z"
+      "updatedAt": "2026-09-01T17:39:58.828Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 348.39,
+      "value": 315.38,
       "currency": "USD",
-      "updatedAt": "2026-08-31T00:57:13.987Z"
+      "updatedAt": "2026-09-01T17:39:58.828Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -14592,6 +14592,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T16:20:26.887Z"
+    },
+    {
+      "id": "mtiycx639ge03",
+      "kind": "sure",
+      "event": "Oie Miss x Ohio State",
+      "houseA": "Betonline",
+      "houseB": "Ivibet",
+      "oddA": 3.22,
+      "oddB": 2.23,
+      "total": 414.67391304347825,
+      "stakeA": 169.67391304347825,
+      "stakeB": 245,
+      "lucroA": 131.67608695652177,
+      "lucroB": 131.67608695652177,
+      "lucro": 131.67608695652177,
+      "roi": 31.75412844036698,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-02T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T17:39:58.828Z"
     }
   ],
   "invertidos": [],
@@ -14678,5 +14702,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T16:20:26.890Z"
+  "updatedAt": "2026-09-01T17:39:58.829Z"
 }
