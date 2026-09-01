@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7424.07,
+      "value": 5857.39,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T01:15:11.821Z"
+      "updatedAt": "2026-09-01T01:19:34.543Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4401.55,
-      "updatedAt": "2026-08-31T18:54:04.225Z"
+      "value": 4913.55,
+      "updatedAt": "2026-09-01T01:19:34.541Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4620,9 +4620,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 7,
+      "value": 210.61,
       "currency": "USD",
-      "updatedAt": "2026-08-31T18:54:04.225Z"
+      "updatedAt": "2026-09-01T01:19:34.542Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -5305,6 +5305,10 @@
     {
       "id": "mthbpy8a0mks8",
       "at": "2026-08-31T16:16:50.476Z"
+    },
+    {
+      "id": "mthlkclddd5l0",
+      "at": "2026-09-01T01:19:34.542Z"
     }
   ],
   "surebets": [
@@ -14374,30 +14378,6 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T17:05:36.781Z"
-    },
-    {
-      "id": "mthlkclddd5l0",
-      "kind": "sure",
-      "event": "Teruel x Real madrid castilha",
-      "houseA": "Pinnacle",
-      "houseB": "Overtimemarkets",
-      "oddA": 2.82,
-      "oddB": 1.37,
-      "total": 1566.68,
-      "stakeA": 512,
-      "stakeB": 1054.68,
-      "lucroA": -122.84000000000015,
-      "lucroB": -121.76839999999993,
-      "lucro": -122.84000000000015,
-      "roi": -7.84078433375036,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "USD",
-      "date": "2026-08-31T16:15",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-08-31T18:54:04.225Z"
     }
   ],
   "invertidos": [],
@@ -14484,5 +14464,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T01:15:11.821Z"
+  "updatedAt": "2026-09-01T01:19:34.543Z"
 }
