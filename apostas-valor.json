@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 856.8,
-      "updatedAt": "2026-08-31T00:55:57.642Z"
+      "value": 1984.05,
+      "updatedAt": "2026-09-01T08:04:36.583Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4509.32,
+      "value": 3337.55,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T01:23:07.531Z"
+      "updatedAt": "2026-09-01T08:04:36.583Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4707,7 +4707,7 @@
       "name": "Shuffle",
       "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-08-31T13:57:54.309Z"
+      "updatedAt": "2026-09-01T08:04:21.883Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -13499,14 +13499,15 @@
       "lucroB": 48.49199999999996,
       "lucro": 48.49199999999996,
       "roi": 4.502757813805779,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-08-31T20:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-08-30T16:07:05.691Z"
+      "updatedAt": "2026-09-01T08:04:36.583Z"
     },
     {
       "id": "mtee1iwcgxum5",
@@ -14298,14 +14299,15 @@
       "lucroB": -94.82120000000002,
       "lucro": -94.82120000000002,
       "roi": -99.98934950802109,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-08-31T19:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-08-31T13:57:54.309Z"
+      "updatedAt": "2026-09-01T08:04:21.884Z"
     },
     {
       "id": "mthc0x1ic6xcv",
@@ -14466,5 +14468,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T08:03:37.797Z"
+  "updatedAt": "2026-09-01T08:04:36.583Z"
 }
