@@ -4578,7 +4578,7 @@
       "name": "Ivibet",
       "value": 1872.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T22:43:34.280Z"
+      "updatedAt": "2026-09-01T22:43:52.754Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4589,7 +4589,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 3931.15,
-      "updatedAt": "2026-09-01T22:43:34.281Z"
+      "updatedAt": "2026-09-01T22:43:52.754Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14661,11 +14661,11 @@
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
-      "date": "2026-09-01T19:39",
+      "date": "2026-09-02T14:30",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-01T22:43:34.281Z"
+      "updatedAt": "2026-09-01T22:43:52.754Z"
     }
   ],
   "invertidos": [],
@@ -14752,5 +14752,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T22:43:34.288Z"
+  "updatedAt": "2026-09-01T22:43:52.755Z"
 }
