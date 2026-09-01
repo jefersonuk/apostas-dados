@@ -4767,9 +4767,9 @@
     {
       "id": "mth4p8xkc69x8",
       "name": "Sportingbet",
-      "value": 1600,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T18:31:30.427Z"
+      "updatedAt": "2026-09-01T12:20:02.440Z"
     },
     {
       "id": "mthbr5qnw0pdw",
@@ -14505,5 +14505,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T12:19:26.959Z"
+  "updatedAt": "2026-09-01T12:20:02.446Z"
 }
