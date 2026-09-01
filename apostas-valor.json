@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3337.55,
+      "value": 3699.37,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T08:04:36.583Z"
+      "updatedAt": "2026-09-01T08:11:52.587Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1632.06,
+      "value": 1480.06,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T01:23:07.530Z"
+      "updatedAt": "2026-09-01T08:11:52.586Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4913.55,
-      "updatedAt": "2026-09-01T01:19:34.541Z"
+      "value": 4703.73,
+      "updatedAt": "2026-09-01T08:11:52.586Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14388,6 +14388,30 @@
         "stakes": true
       },
       "updatedAt": "2026-08-31T17:05:36.781Z"
+    },
+    {
+      "id": "mtie2c2240q8o",
+      "kind": "sure",
+      "event": "Vincent Dullinger – Bruno Fernandez",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.869,
+      "oddB": 2.58,
+      "total": 361.82343499197435,
+      "stakeA": 209.82343499197435,
+      "stakeB": 152,
+      "lucroA": 30.33656500802573,
+      "lucroB": 30.336565008025673,
+      "lucro": 30.336565008025673,
+      "roi": 8.384356035064055,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T06:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T08:11:52.586Z"
     }
   ],
   "invertidos": [],
@@ -14474,5 +14498,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T08:09:19.108Z"
+  "updatedAt": "2026-09-01T08:11:52.588Z"
 }
