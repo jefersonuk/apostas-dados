@@ -4510,9 +4510,9 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 9492.4,
+      "value": 1789.67,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T13:45:20.172Z"
+      "updatedAt": "2026-09-01T12:14:59.184Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4523,9 +4523,9 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 12629.17,
+      "value": 12653.55,
       "currency": "BRL",
-      "updatedAt": "2026-08-31T16:04:55.717Z"
+      "updatedAt": "2026-09-01T12:15:15.431Z"
     },
     {
       "id": "mrzmpfmzgil2s",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4703.73,
-      "updatedAt": "2026-09-01T08:11:52.586Z"
+      "value": 4702.55,
+      "updatedAt": "2026-09-01T12:18:35.183Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4797,6 +4797,13 @@
       "date": "2026-08-19",
       "note": "Aporte",
       "updatedAt": "2026-08-19T15:08:16.810Z"
+    },
+    {
+      "id": "mtimqogjigt72",
+      "value": -9301.73,
+      "date": "2026-09-01",
+      "note": "Retirada Picpay",
+      "updatedAt": "2026-09-01T12:14:45.331Z"
     }
   ],
   "caixa": [
@@ -14498,5 +14505,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T12:14:03.435Z"
+  "updatedAt": "2026-09-01T12:18:38.213Z"
 }
