@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5285.06,
+      "value": 5807.06,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T22:39:37.466Z"
+      "updatedAt": "2026-09-01T22:43:34.288Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2062.86,
+      "value": 1872.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T22:39:37.459Z"
+      "updatedAt": "2026-09-01T22:43:34.280Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4263.15,
-      "updatedAt": "2026-09-01T14:48:36.628Z"
+      "value": 3931.15,
+      "updatedAt": "2026-09-01T22:43:34.281Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14642,6 +14642,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T22:39:37.460Z"
+    },
+    {
+      "id": "mtj97catn97tk",
+      "kind": "sure",
+      "event": "Borussia Dortmund – Neckarsulmer SU",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 3.16,
+      "oddB": 1.775,
+      "total": 522,
+      "stakeA": 190,
+      "stakeB": 332,
+      "lucroA": 78.39999999999998,
+      "lucroB": 67.29999999999995,
+      "lucro": 67.29999999999995,
+      "roi": 12.8927203065134,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-01T19:39",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T22:43:34.281Z"
     }
   ],
   "invertidos": [],
@@ -14728,5 +14752,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T22:39:37.466Z"
+  "updatedAt": "2026-09-01T22:43:34.288Z"
 }
