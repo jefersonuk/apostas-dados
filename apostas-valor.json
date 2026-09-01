@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8513.84,
+      "value": 9752.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T15:01:56.896Z"
+      "updatedAt": "2026-09-01T15:42:39.884Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 200,
+      "value": 2.85,
       "currency": "USD",
-      "updatedAt": "2026-09-01T12:53:56.444Z"
+      "updatedAt": "2026-09-01T15:42:39.883Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 200,
-      "updatedAt": "2026-09-01T12:49:54.846Z",
+      "value": 159,
+      "updatedAt": "2026-09-01T15:42:39.883Z",
       "currency": "USD"
     },
     {
@@ -14563,6 +14563,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T15:01:56.895Z"
+    },
+    {
+      "id": "mtiu61vvhw3fe",
+      "kind": "sure",
+      "event": "Jodar x Kokkinakis",
+      "houseA": "Opinion",
+      "houseB": "Bookmaker",
+      "oddA": 1.88,
+      "oddB": 9.1,
+      "total": 1238.38,
+      "stakeA": 1025.18,
+      "stakeB": 213.20000000000002,
+      "lucroA": 688.9584,
+      "lucroB": 701.74,
+      "lucro": 688.9584,
+      "roi": 55.63384421583035,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-09-01T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T15:42:39.883Z"
     }
   ],
   "invertidos": [],
@@ -14649,5 +14673,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T15:01:56.896Z"
+  "updatedAt": "2026-09-01T15:42:39.884Z"
 }
