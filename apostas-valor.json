@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5838.37,
+      "value": 6109.37,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T12:45:38.829Z"
+      "updatedAt": "2026-09-01T13:02:34.025Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 840,
+      "value": 779,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T12:45:38.828Z"
+      "updatedAt": "2026-09-01T13:02:34.024Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4702.55,
-      "updatedAt": "2026-09-01T12:18:35.183Z"
+      "value": 4492.55,
+      "updatedAt": "2026-09-01T13:02:34.024Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14467,6 +14467,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T12:45:38.828Z"
+    },
+    {
+      "id": "mtiog5yg2pb2j",
+      "kind": "sure",
+      "event": "Yassini Dimi x Younes Lalami",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.454,
+      "oddB": 4.9,
+      "total": 271,
+      "stakeA": 210,
+      "stakeB": 61,
+      "lucroA": 34.339999999999975,
+      "lucroB": 27.900000000000034,
+      "lucro": 27.900000000000034,
+      "roi": 10.295202952029534,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T06:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T13:02:34.024Z"
     }
   ],
   "invertidos": [],
@@ -14553,5 +14577,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T12:57:39.964Z"
+  "updatedAt": "2026-09-01T13:02:34.025Z"
 }
