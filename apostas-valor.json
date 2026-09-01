@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7448.84,
+      "value": 9531.43,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T16:17:04.264Z"
+      "updatedAt": "2026-09-01T16:20:26.890Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1315.5,
+      "value": 246.48,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T16:13:08.253Z"
+      "updatedAt": "2026-09-01T16:20:26.887Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 200.48,
-      "updatedAt": "2026-09-01T16:17:04.263Z",
+      "value": 3.29,
+      "updatedAt": "2026-09-01T16:20:26.886Z",
       "currency": "USD"
     },
     {
@@ -14568,6 +14568,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T15:01:56.895Z"
+    },
+    {
+      "id": "mtivin46enfqb",
+      "kind": "sure",
+      "event": "Hamburg Eimsbutteler BC – Borussia Dortmund",
+      "houseA": "Bookmaker",
+      "houseB": "Ivibet",
+      "oddA": 2.12,
+      "oddB": 2.01,
+      "total": 2082.581471641791,
+      "stakeA": 1013.5565999999999,
+      "stakeB": 1069.0248716417912,
+      "lucroA": 66.15852035820899,
+      "lucroB": 66.15852035820899,
+      "lucro": 66.15852035820899,
+      "roi": 3.1767554479418902,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-01T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T16:20:26.887Z"
     }
   ],
   "invertidos": [],
@@ -14654,5 +14678,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T16:17:04.264Z"
+  "updatedAt": "2026-09-01T16:20:26.890Z"
 }
