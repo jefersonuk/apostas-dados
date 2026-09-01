@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7272.44,
+      "value": 7612.84,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T14:41:22.760Z"
+      "updatedAt": "2026-09-01T14:48:36.628Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 779,
+      "value": 668,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T13:02:34.024Z"
+      "updatedAt": "2026-09-01T14:48:36.628Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 4492.55,
-      "updatedAt": "2026-09-01T13:02:34.024Z"
+      "value": 4263.15,
+      "updatedAt": "2026-09-01T14:48:36.628Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14515,6 +14515,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T14:41:22.759Z"
+    },
+    {
+      "id": "mtis8jdg4n2nb",
+      "kind": "sure",
+      "event": "Dimitris Sakellaridis x Tim Hammes",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.529,
+      "oddB": 3.16,
+      "total": 340.40483976455204,
+      "stakeA": 229.40483976455204,
+      "stakeB": 111,
+      "lucroA": 10.355160235448011,
+      "lucroB": 10.355160235447954,
+      "lucro": 10.355160235447954,
+      "roi": 3.0420132224354717,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T06:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-01T14:48:36.628Z"
     }
   ],
   "invertidos": [],
@@ -14601,5 +14625,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-01T14:41:22.760Z"
+  "updatedAt": "2026-09-01T14:48:36.628Z"
 }
