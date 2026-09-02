@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1419.73,
-      "updatedAt": "2026-09-02T09:58:12.950Z"
+      "value": 884.73,
+      "updatedAt": "2026-09-02T10:06:52.384Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8416.29,
+      "value": 9924.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T10:00:12.921Z"
+      "updatedAt": "2026-09-02T10:06:52.391Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2194.99,
-      "updatedAt": "2026-09-02T10:00:12.921Z"
+      "value": 1221.99,
+      "updatedAt": "2026-09-02T10:06:52.385Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -15009,6 +15009,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T09:38:38.831Z"
+    },
+    {
+      "id": "mtjxm2n256nto",
+      "kind": "sure",
+      "event": "Burnley – Middlesbrough",
+      "houseA": "Betnacional",
+      "houseB": "Pinnacle",
+      "oddA": 2.88,
+      "oddB": 1.584,
+      "total": 1508,
+      "stakeA": 535,
+      "stakeB": 973,
+      "lucroA": 32.799999999999955,
+      "lucroB": 33.23199999999997,
+      "lucro": 32.799999999999955,
+      "roi": 2.1750663129973447,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T10:06:52.385Z"
     }
   ],
   "invertidos": [],
@@ -15134,5 +15158,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T10:00:12.921Z"
+  "updatedAt": "2026-09-02T10:06:52.391Z"
 }
