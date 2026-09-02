@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7336.51,
+      "value": 7698.51,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T20:09:56.066Z"
+      "updatedAt": "2026-09-02T20:13:18.361Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1308.5,
+      "value": 1141.5,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T20:09:56.063Z"
+      "updatedAt": "2026-09-02T20:13:18.361Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4600,8 +4600,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 590,
-      "updatedAt": "2026-09-02T20:09:56.063Z"
+      "value": 395,
+      "updatedAt": "2026-09-02T20:13:18.361Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -15309,6 +15309,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T20:09:56.063Z"
+    },
+    {
+      "id": "mtkj9y8pssvl9",
+      "kind": "sure",
+      "event": "Duhok x Al quwa",
+      "houseA": "Betesporte",
+      "houseB": "Ivibet",
+      "oddA": 2.09,
+      "oddB": 2.43,
+      "total": 362,
+      "stakeA": 195,
+      "stakeB": 167,
+      "lucroA": 45.549999999999955,
+      "lucroB": 43.81,
+      "lucro": 43.81,
+      "roi": 12.102209944751381,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-03T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T20:13:18.361Z"
     }
   ],
   "invertidos": [],
@@ -15434,5 +15458,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T20:09:56.067Z"
+  "updatedAt": "2026-09-02T20:13:18.361Z"
 }
