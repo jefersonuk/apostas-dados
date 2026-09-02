@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3884.34,
+      "value": 3190.64,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T00:49:27.849Z"
+      "updatedAt": "2026-09-02T07:26:01.238Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4606,9 +4606,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": -12.51,
+      "value": 130.95,
       "currency": "USD",
-      "updatedAt": "2026-09-02T00:12:45.592Z"
+      "updatedAt": "2026-09-02T07:26:01.237Z"
     },
     {
       "id": "msneebp3j8g2z",
@@ -14709,14 +14709,15 @@
       "lucroB": 41.30150000000003,
       "lucro": 41.30150000000003,
       "roi": 5.95381134599542,
-      "winner": null,
+      "winner": "A",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-09-01T22:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-02T00:11:49.909Z"
+      "updatedAt": "2026-09-02T07:26:01.237Z"
     }
   ],
   "invertidos": [],
@@ -14803,5 +14804,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T07:24:53.619Z"
+  "updatedAt": "2026-09-02T07:26:01.238Z"
 }
