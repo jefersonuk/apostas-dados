@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 884.73,
-      "updatedAt": "2026-09-02T10:06:52.384Z"
+      "value": 617.73,
+      "updatedAt": "2026-09-02T10:09:15.394Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9924.29,
+      "value": 10420.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T10:06:52.391Z"
+      "updatedAt": "2026-09-02T10:09:15.396Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1221.99,
-      "updatedAt": "2026-09-02T10:06:52.385Z"
+      "value": 992.99,
+      "updatedAt": "2026-09-02T10:09:15.394Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -15033,6 +15033,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T10:06:52.385Z"
+    },
+    {
+      "id": "mtjxp4zmllsre",
+      "kind": "sure",
+      "event": "Leonardo Primucci – Davide Ciaschetti",
+      "houseA": "Pinnacle",
+      "houseB": "Betnacional",
+      "oddA": 2.23,
+      "oddB": 1.91,
+      "total": 496,
+      "stakeA": 229,
+      "stakeB": 267,
+      "lucroA": 14.670000000000016,
+      "lucroB": 13.96999999999997,
+      "lucro": 13.96999999999997,
+      "roi": 2.8165322580645102,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T08:05",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T10:09:15.394Z"
     }
   ],
   "invertidos": [],
@@ -15158,5 +15182,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T10:06:52.391Z"
+  "updatedAt": "2026-09-02T10:09:15.396Z"
 }
