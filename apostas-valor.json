@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 602.13,
-      "updatedAt": "2026-09-02T12:07:47.626Z"
+      "value": 122.13,
+      "updatedAt": "2026-09-02T12:16:36.037Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9089.47,
+      "value": 10223.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T12:04:20.174Z"
+      "updatedAt": "2026-09-02T12:16:36.038Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4620,9 +4620,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 231.68,
+      "value": 104.68,
       "currency": "USD",
-      "updatedAt": "2026-09-02T09:34:52.484Z"
+      "updatedAt": "2026-09-02T12:16:36.037Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -15083,6 +15083,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T10:14:26.929Z"
+    },
+    {
+      "id": "mtk28wjp5r3ar",
+      "kind": "sure",
+      "event": "Celtic x Aberdeen",
+      "houseA": "Betnacional",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.4,
+      "oddB": 1.77,
+      "total": 1134.0500000000002,
+      "stakeA": 480,
+      "stakeB": 654.0500000000001,
+      "lucroA": 17.949999999999818,
+      "lucroB": 23.61850000000004,
+      "lucro": 17.949999999999818,
+      "roi": 1.5828226268682875,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-02T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T12:16:36.037Z"
     }
   ],
   "invertidos": [],
@@ -15208,5 +15232,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T12:08:08.417Z"
+  "updatedAt": "2026-09-02T12:16:36.038Z"
 }
