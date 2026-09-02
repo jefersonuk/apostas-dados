@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1441.93,
-      "updatedAt": "2026-09-02T09:24:11.546Z"
+      "value": 961.93,
+      "updatedAt": "2026-09-02T09:34:52.486Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8300.47,
+      "value": 9417.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T09:26:24.549Z"
+      "updatedAt": "2026-09-02T09:34:52.492Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4620,9 +4620,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 355.43,
+      "value": 231.68,
       "currency": "USD",
-      "updatedAt": "2026-09-02T00:48:58.162Z"
+      "updatedAt": "2026-09-02T09:34:52.484Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -14958,6 +14958,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T09:26:24.547Z"
+    },
+    {
+      "id": "mtjwgx8hkjebi",
+      "kind": "sure",
+      "event": "Celtic FC – Aberdeen FC",
+      "houseA": "Overtimemarkets",
+      "houseB": "Betnacional",
+      "oddA": 1.8,
+      "oddB": 2.4,
+      "total": 1117.3125,
+      "stakeA": 637.3125,
+      "stakeB": 480,
+      "lucroA": 29.850000000000136,
+      "lucroB": 34.6875,
+      "lucro": 29.850000000000136,
+      "roi": 2.6715891928175988,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-02T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T09:34:52.486Z"
     }
   ],
   "invertidos": [],
@@ -15083,5 +15107,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T09:26:24.549Z"
+  "updatedAt": "2026-09-02T09:34:52.492Z"
 }
