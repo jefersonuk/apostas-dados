@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6747.51,
+      "value": 7336.51,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T20:00:30.145Z"
+      "updatedAt": "2026-09-02T20:09:56.066Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1687.5,
+      "value": 1308.5,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T19:21:23.891Z"
+      "updatedAt": "2026-09-02T20:09:56.063Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4600,8 +4600,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 800,
-      "updatedAt": "2026-09-02T09:02:44.605Z"
+      "value": 590,
+      "updatedAt": "2026-09-02T20:09:56.063Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -15285,6 +15285,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T19:16:05.898Z"
+    },
+    {
+      "id": "mtkj5m5bhd0rd",
+      "kind": "sure",
+      "event": "Duhok FC - Al Quwa Al Jawiya",
+      "houseA": "Betesporte",
+      "houseB": "Ivibet",
+      "oddA": 2.95,
+      "oddB": 1.63,
+      "total": 589,
+      "stakeA": 210,
+      "stakeB": 379,
+      "lucroA": 30.5,
+      "lucroB": 28.769999999999982,
+      "lucro": 28.769999999999982,
+      "roi": 4.88455008488964,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-03T15:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T20:09:56.063Z"
     }
   ],
   "invertidos": [],
@@ -15410,5 +15434,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T20:00:30.145Z"
+  "updatedAt": "2026-09-02T20:09:56.067Z"
 }
