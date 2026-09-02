@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 2011.93,
-      "updatedAt": "2026-09-02T09:18:40.181Z"
+      "value": 1441.93,
+      "updatedAt": "2026-09-02T09:24:11.546Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6920.77,
+      "value": 7690.77,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T09:02:21.431Z"
+      "updatedAt": "2026-09-02T09:24:11.551Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 170.86,
+      "value": -29.14,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T09:18:40.180Z"
+      "updatedAt": "2026-09-02T09:24:11.547Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -14910,6 +14910,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T09:01:56.680Z"
+    },
+    {
+      "id": "mtjw36ooiaped",
+      "kind": "sure",
+      "event": "Mansilla Diez/Ribeiro – Jans/Visker",
+      "houseA": "Betnacional",
+      "houseB": "Ivibet",
+      "oddA": 1.4,
+      "oddB": 4,
+      "total": 770,
+      "stakeA": 570,
+      "stakeB": 200,
+      "lucroA": 28,
+      "lucroB": 30,
+      "lucro": 28,
+      "roi": 3.6363636363636362,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T09:10",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T09:24:11.547Z"
     }
   ],
   "invertidos": [],
@@ -15035,5 +15059,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T09:18:40.183Z"
+  "updatedAt": "2026-09-02T09:24:11.551Z"
 }
