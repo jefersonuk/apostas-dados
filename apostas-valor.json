@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10915.34,
+      "value": 10396.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T17:58:58.930Z"
+      "updatedAt": "2026-09-02T17:59:14.656Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": -50.46,
-      "updatedAt": "2026-09-02T17:58:58.928Z",
+      "value": 51.3,
+      "updatedAt": "2026-09-02T17:59:14.656Z",
       "currency": "USD"
     },
     {
@@ -5335,6 +5335,10 @@
     {
       "id": "mtkac43vau63w",
       "at": "2026-09-02T16:03:28.917Z"
+    },
+    {
+      "id": "mtfrsktctwfsa",
+      "at": "2026-09-02T17:59:14.656Z"
     }
   ],
   "surebets": [
@@ -14161,31 +14165,6 @@
       "updatedAt": "2026-08-30T18:43:00.008Z"
     },
     {
-      "id": "mtfrsktctwfsa",
-      "kind": "sure",
-      "event": "Estral E-sports – Vivo Keyd Stars Academy",
-      "houseA": "cloudbet",
-      "houseB": "cloudbet",
-      "oddA": 1.73,
-      "oddB": 2.54,
-      "total": 519.01,
-      "stakeA": 519,
-      "stakeB": 0.01,
-      "lucroA": 378.86,
-      "lucroB": -518.9846,
-      "lucro": -518.9846,
-      "roi": -99.99510606732048,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-09-02T17:00",
-      "aplicado": {
-        "stakes": true,
-        "resultado": null
-      },
-      "updatedAt": "2026-09-02T15:50:57.392Z"
-    },
-    {
       "id": "mtgikba61yn4o",
       "kind": "sure",
       "event": "Altay FK – Okzhetpes Kokshetau",
@@ -15390,5 +15369,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T17:58:58.930Z"
+  "updatedAt": "2026-09-02T17:59:14.656Z"
 }
