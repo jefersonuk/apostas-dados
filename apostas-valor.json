@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 237.13,
-      "updatedAt": "2026-09-02T13:26:00.571Z"
+      "value": 53.13,
+      "updatedAt": "2026-09-02T15:33:37.981Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9580.5,
+      "value": 10076.55,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T15:19:04.787Z"
+      "updatedAt": "2026-09-02T15:33:37.989Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1586.6,
+      "value": 1274.55,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T15:19:04.780Z"
+      "updatedAt": "2026-09-02T15:33:37.982Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -15192,6 +15192,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T15:19:04.781Z"
+    },
+    {
+      "id": "mtk9aaeymhaho",
+      "kind": "sure",
+      "event": "Rosenborg BK (W) – SeaSters Odesa (W)",
+      "houseA": "Betnacional",
+      "houseB": "Ivibet",
+      "oddA": 2.9,
+      "oddB": 1.71,
+      "total": 496.04678362573094,
+      "stakeA": 184,
+      "stakeB": 312.04678362573094,
+      "lucroA": 37.553216374269084,
+      "lucroB": 37.55321637426897,
+      "lucro": 37.55321637426897,
+      "roi": 7.570498915401296,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T15:33:37.983Z"
     }
   ],
   "invertidos": [],
@@ -15317,5 +15341,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T15:19:04.787Z"
+  "updatedAt": "2026-09-02T15:33:37.989Z"
 }
