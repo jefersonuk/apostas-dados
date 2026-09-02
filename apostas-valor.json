@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 2111.93,
-      "updatedAt": "2026-09-02T08:31:53.312Z"
+      "value": 2011.93,
+      "updatedAt": "2026-09-02T09:18:40.181Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 441.86,
+      "value": 170.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T08:13:01.383Z"
+      "updatedAt": "2026-09-02T09:18:40.180Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4726,10 +4726,10 @@
     {
       "id": "mt9c1gc5rf9ra",
       "name": "Em middles",
-      "value": 0,
+      "value": 371,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-08-26T08:14:39.397Z"
+      "updatedAt": "2026-09-02T09:18:40.183Z"
     },
     {
       "id": "mtack9k6bppn8",
@@ -14993,8 +14993,47 @@
         "resultado": "B"
       },
       "updatedAt": "2026-08-26T08:14:31.915Z"
+    },
+    {
+      "id": "mtjvw304dfle7",
+      "kind": "middle",
+      "event": "Millwall – Wrexham",
+      "houseA": "Ivibet",
+      "houseB": "Betnacional",
+      "market": "total",
+      "lineA": 13,
+      "lineB": 13.5,
+      "oddA": 1.38,
+      "oddB": 3.75,
+      "stakeA": 271,
+      "stakeB": 100,
+      "total": 371,
+      "profitAWins": 2.9799999999999613,
+      "profitBWins": 4,
+      "profitMiddle": 0,
+      "gapIntegers": [],
+      "pushValues": [
+        13
+      ],
+      "hostileValues": [],
+      "profitPush": 275,
+      "midKind": "push",
+      "midValues": [
+        13
+      ],
+      "midCreditA": 271,
+      "midCreditB": 375,
+      "midProfit": 275,
+      "worstCase": 2.9799999999999613,
+      "isSafe": true,
+      "resultado": null,
+      "date": "2026-09-02T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T09:18:40.181Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T09:02:53.934Z"
+  "updatedAt": "2026-09-02T09:18:40.183Z"
 }
