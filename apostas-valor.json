@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8928.32,
+      "value": 9197.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T14:50:21.616Z"
+      "updatedAt": "2026-09-02T15:08:58.970Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1775.6,
+      "value": 1731.6,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T14:52:07.626Z"
+      "updatedAt": "2026-09-02T15:08:58.966Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1754.31,
-      "updatedAt": "2026-09-02T14:52:07.626Z"
+      "value": 1529.31,
+      "updatedAt": "2026-09-02T15:08:58.966Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -15144,6 +15144,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T13:59:26.388Z"
+    },
+    {
+      "id": "mtk8el7a3zdcn",
+      "kind": "sure",
+      "event": "Sara Milanese – Eva Marie Voracek",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 6.4,
+      "oddB": 1.263,
+      "total": 269,
+      "stakeA": 44,
+      "stakeB": 225,
+      "lucroA": 12.600000000000023,
+      "lucroB": 15.174999999999955,
+      "lucro": 12.600000000000023,
+      "roi": 4.684014869888484,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-03T05:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T15:08:58.966Z"
     }
   ],
   "invertidos": [],
@@ -15269,5 +15293,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T15:06:37.699Z"
+  "updatedAt": "2026-09-02T15:08:58.970Z"
 }
