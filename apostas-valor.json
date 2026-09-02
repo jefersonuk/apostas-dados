@@ -4777,14 +4777,16 @@
       "value": 590,
       "date": "2026-08-19",
       "note": "Aporte",
-      "updatedAt": "2026-08-19T15:08:16.810Z"
+      "updatedAt": "2026-08-19T15:08:16.810Z",
+      "time": "12:08"
     },
     {
       "id": "mtimqogjigt72",
       "value": -9301.73,
       "date": "2026-09-01",
       "note": "Retirada Picpay",
-      "updatedAt": "2026-09-01T12:14:45.331Z"
+      "updatedAt": "2026-09-01T12:14:45.331Z",
+      "time": "09:14"
     }
   ],
   "caixa": [
@@ -4943,7 +4945,7 @@
   "eurRate": 5.97,
   "eurRateSrc": "AwesomeAPI",
   "eurRateAt": "2026-09-02T16:42:33.218Z",
-  "appBuild": "20260827-1556",
+  "appBuild": "20260902-1337",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
