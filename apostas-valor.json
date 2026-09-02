@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6889.58,
+      "value": 7439.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T08:31:53.319Z"
+      "updatedAt": "2026-09-02T09:01:56.683Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4600,8 +4600,8 @@
     {
       "id": "msg7v7zbl5xz5",
       "name": "Betesporte",
-      "value": 0,
-      "updatedAt": "2026-08-29T22:17:48.542Z"
+      "value": -200,
+      "updatedAt": "2026-09-02T09:01:56.679Z"
     },
     {
       "id": "msgew6ic764xc",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 544,
-      "updatedAt": "2026-09-02T07:39:34.712Z",
+      "value": 476,
+      "updatedAt": "2026-09-02T09:01:56.678Z",
       "currency": "USD"
     },
     {
@@ -14886,6 +14886,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T08:31:53.314Z"
+    },
+    {
+      "id": "mtjvakp0s5pyy",
+      "kind": "sure",
+      "event": "Torpedo Ust-Kamenogorsk – HC Almaty",
+      "houseA": "Bookmaker",
+      "houseB": "Betesporte",
+      "oddA": 1.63,
+      "oddB": 2.85,
+      "total": 550.2,
+      "stakeA": 350.20000000000005,
+      "stakeB": 200,
+      "lucroA": 20.625999999999976,
+      "lucroB": 19.799999999999955,
+      "lucro": 19.799999999999955,
+      "roi": 3.598691384950918,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-02T10:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T09:01:56.680Z"
     }
   ],
   "invertidos": [],
@@ -14972,5 +14996,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T08:31:53.319Z"
+  "updatedAt": "2026-09-02T09:01:56.683Z"
 }
