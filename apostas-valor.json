@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4379.45,
+      "value": 4920.46,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T07:50:43.082Z"
+      "updatedAt": "2026-09-02T08:01:19.077Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1237.86,
+      "value": 907.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T07:50:43.078Z"
+      "updatedAt": "2026-09-02T08:01:19.067Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3241.69,
-      "updatedAt": "2026-09-02T07:50:43.077Z"
+      "value": 3030.69,
+      "updatedAt": "2026-09-02T08:01:19.068Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14790,6 +14790,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T07:50:43.078Z"
+    },
+    {
+      "id": "mtjt4lw7cdosa",
+      "kind": "sure",
+      "event": "Kandal Province – Kampong Speu Province",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 1.72,
+      "oddB": 2.69,
+      "total": 541.003717472119,
+      "stakeA": 330,
+      "stakeB": 211.00371747211898,
+      "lucroA": 26.596282527881044,
+      "lucroB": 26.596282527881044,
+      "lucro": 26.596282527881044,
+      "roi": 4.916099773242631,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T05:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T08:01:19.069Z"
     }
   ],
   "invertidos": [],
@@ -14876,5 +14900,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T07:50:43.082Z"
+  "updatedAt": "2026-09-02T08:01:19.077Z"
 }
