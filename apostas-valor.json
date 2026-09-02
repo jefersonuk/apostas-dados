@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 11205.2,
+      "value": 10673.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T19:16:05.900Z"
+      "updatedAt": "2026-09-02T19:17:48.525Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": -76.88,
+      "value": 13.12,
       "currency": "EUR",
-      "updatedAt": "2026-09-02T19:16:05.898Z"
+      "updatedAt": "2026-09-02T19:17:48.524Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4773,8 +4773,8 @@
     {
       "id": "mtkfqvhinx5nl",
       "name": "Casa B",
-      "value": -0.01,
-      "updatedAt": "2026-09-02T18:34:29.478Z"
+      "value": 0,
+      "updatedAt": "2026-09-02T19:17:48.524Z"
     }
   ],
   "aportes": [
@@ -5345,6 +5345,10 @@
     {
       "id": "mtfrsktctwfsa",
       "at": "2026-09-02T17:59:14.656Z"
+    },
+    {
+      "id": "mtkfqvhi1o8ms",
+      "at": "2026-09-02T19:17:48.524Z"
     }
   ],
   "surebets": [
@@ -15254,30 +15258,6 @@
       "updatedAt": "2026-09-02T17:58:58.928Z"
     },
     {
-      "id": "mtkfqvhi1o8ms",
-      "kind": "sure",
-      "event": "Pinheiros x Franca",
-      "houseA": "Sportmarket",
-      "houseB": "",
-      "oddA": 2.07,
-      "oddB": 1.01,
-      "total": 531.91,
-      "stakeA": 531.9,
-      "stakeB": 0.01,
-      "lucroA": 569.1229999999999,
-      "lucroB": -531.8999,
-      "lucro": -531.8999,
-      "roi": -99.99810118253089,
-      "winner": null,
-      "curA": "EUR",
-      "curB": "BRL",
-      "date": "2026-09-02T20:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-02T18:34:29.478Z"
-    },
-    {
       "id": "mtkh8dqhps1rk",
       "kind": "sure",
       "event": "Pinheiros x Franca",
@@ -15425,5 +15405,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T19:16:05.900Z"
+  "updatedAt": "2026-09-02T19:17:48.525Z"
 }
