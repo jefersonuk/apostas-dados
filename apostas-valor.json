@@ -4608,7 +4608,7 @@
       "name": "Gamdom",
       "value": -12.51,
       "currency": "USD",
-      "updatedAt": "2026-09-02T00:11:49.908Z"
+      "updatedAt": "2026-09-02T00:12:45.592Z"
     },
     {
       "id": "msneebp3j8g2z",
@@ -4622,7 +4622,7 @@
       "name": "Overtimemarkets",
       "value": 122.59,
       "currency": "USD",
-      "updatedAt": "2026-09-01T14:41:22.759Z"
+      "updatedAt": "2026-09-02T00:12:45.592Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -14507,13 +14507,13 @@
       "houseB": "Overtimemarkets",
       "oddA": 1.7,
       "oddB": 2.62,
-      "total": 1163.0693129770993,
-      "stakeA": 705.3800000000001,
-      "stakeB": 457.6893129770993,
-      "lucroA": 36.07668702290084,
-      "lucroB": 36.07668702290084,
-      "lucro": 36.07668702290084,
-      "roi": 3.1018518518518583,
+      "total": 1163.07,
+      "stakeA": 705.38,
+      "stakeB": 457.69,
+      "lucroA": 36.07600000000002,
+      "lucroB": 36.077800000000025,
+      "lucro": 36.07600000000002,
+      "roi": 3.1017909498138567,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
@@ -14521,7 +14521,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-01T14:41:22.759Z"
+      "updatedAt": "2026-09-02T00:12:45.592Z"
     },
     {
       "id": "mtis8jdg4n2nb",
@@ -14801,5 +14801,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T00:12:35.686Z"
+  "updatedAt": "2026-09-02T00:12:45.592Z"
 }
