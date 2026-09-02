@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7690.77,
+      "value": 8300.47,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T09:24:11.551Z"
+      "updatedAt": "2026-09-02T09:26:24.549Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": -29.14,
+      "value": -365.84,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T09:24:11.547Z"
+      "updatedAt": "2026-09-02T09:26:24.547Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2617.99,
-      "updatedAt": "2026-09-02T08:13:01.382Z"
+      "value": 2344.99,
+      "updatedAt": "2026-09-02T09:26:24.546Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14934,6 +14934,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T09:24:11.547Z"
+    },
+    {
+      "id": "mtjw61b6g8eh7",
+      "kind": "sure",
+      "event": "Taylor Fritz (Games) – Mattia Bellucci (Games)",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 2.31,
+      "oddB": 1.87,
+      "total": 609.7,
+      "stakeA": 273,
+      "stakeB": 336.7,
+      "lucroA": 20.92999999999995,
+      "lucroB": 19.928999999999974,
+      "lucro": 19.928999999999974,
+      "roi": 3.268656716417906,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T09:26:24.547Z"
     }
   ],
   "invertidos": [],
@@ -15059,5 +15083,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T09:24:11.551Z"
+  "updatedAt": "2026-09-02T09:26:24.549Z"
 }
