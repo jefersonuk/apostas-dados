@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6944.69,
+      "value": 6457.99,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T21:39:49.805Z"
+      "updatedAt": "2026-09-02T21:39:51.441Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1558.57,
+      "value": 2083.78,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T21:39:49.804Z"
+      "updatedAt": "2026-09-02T21:39:51.441Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -14863,14 +14863,15 @@
       "lucroB": 38.51038022813691,
       "lucro": 38.51038022813691,
       "roi": 7.912556053811665,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-09-02T15:45",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-09-02T08:13:01.383Z"
+      "updatedAt": "2026-09-02T21:39:51.441Z"
     },
     {
       "id": "mtju7x7imtska",
@@ -15459,5 +15460,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T21:39:49.805Z"
+  "updatedAt": "2026-09-02T21:39:51.441Z"
 }
