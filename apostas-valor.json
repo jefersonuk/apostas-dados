@@ -4765,25 +4765,6 @@
       "updatedAt": "2026-08-31T00:59:32.353Z"
     },
     {
-      "id": "mth4p8xkc69x8",
-      "name": "Sportingbet",
-      "value": 0,
-      "currency": "BRL",
-      "updatedAt": "2026-09-01T12:20:02.440Z"
-    },
-    {
-      "id": "mthbr5qnw0pdw",
-      "name": "Casa A",
-      "value": 0,
-      "updatedAt": "2026-08-31T14:19:46.179Z"
-    },
-    {
-      "id": "mthbr5qnzazvg",
-      "name": "Casa B",
-      "value": 0,
-      "updatedAt": "2026-08-31T14:19:46.179Z"
-    },
-    {
       "id": "mthcdb8cf914h",
       "name": "Tivobet",
       "value": 0.01,
@@ -5336,6 +5317,18 @@
     {
       "id": "mtjwgx8hkjebi",
       "at": "2026-09-02T12:17:10.263Z"
+    },
+    {
+      "id": "mthbr5qnzazvg",
+      "at": "2026-09-02T15:51:29.313Z"
+    },
+    {
+      "id": "mthbr5qnw0pdw",
+      "at": "2026-09-02T15:51:31.201Z"
+    },
+    {
+      "id": "mth4p8xkc69x8",
+      "at": "2026-09-02T15:51:33.266Z"
     }
   ],
   "surebets": [
@@ -15366,5 +15359,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T15:50:57.392Z"
+  "updatedAt": "2026-09-02T15:51:33.266Z"
 }
