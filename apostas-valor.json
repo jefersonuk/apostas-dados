@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 2519.93,
-      "updatedAt": "2026-09-02T07:39:34.711Z"
+      "value": 2111.93,
+      "updatedAt": "2026-09-02T08:31:53.312Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5799.16,
+      "value": 6889.58,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T08:13:01.389Z"
+      "updatedAt": "2026-09-02T08:31:53.319Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 114.31,
+      "value": 0,
       "currency": "EUR",
-      "updatedAt": "2026-08-29T22:52:44.070Z"
+      "updatedAt": "2026-09-02T08:31:53.313Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -14862,6 +14862,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T08:13:01.383Z"
+    },
+    {
+      "id": "mtju7x7imtska",
+      "kind": "sure",
+      "event": "Renofa Yamaguchi – Fujieda Myfc",
+      "houseA": "Betnacional",
+      "houseB": "Sportmarket",
+      "oddA": 2.8,
+      "oddB": 1.674,
+      "total": 1090.4267685,
+      "stakeA": 407.9960685,
+      "stakeB": 682.4307,
+      "lucroA": 51.96222329999978,
+      "lucroB": 51.962223300000005,
+      "lucro": 51.96222329999978,
+      "roi": 4.7653106839517,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "EUR",
+      "date": "2026-09-02T07:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T08:31:53.314Z"
     }
   ],
   "invertidos": [],
@@ -14948,5 +14972,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T08:13:01.389Z"
+  "updatedAt": "2026-09-02T08:31:53.319Z"
 }
