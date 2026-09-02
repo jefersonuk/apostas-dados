@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3983.54,
+      "value": 4379.45,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T07:42:54.050Z"
+      "updatedAt": "2026-09-02T07:50:43.082Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1407.86,
+      "value": 1237.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T07:42:54.045Z"
+      "updatedAt": "2026-09-02T07:50:43.078Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3467.6,
-      "updatedAt": "2026-09-02T07:42:54.046Z"
+      "value": 3241.69,
+      "updatedAt": "2026-09-02T07:50:43.077Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14766,6 +14766,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T07:42:54.046Z"
+    },
+    {
+      "id": "mtjsqz5vs9c1x",
+      "kind": "sure",
+      "event": "Tanjong Pagar United II – Young Lions II",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.806,
+      "oddB": 2.4,
+      "total": 395.9136212624585,
+      "stakeA": 225.91362126245846,
+      "stakeB": 170,
+      "lucroA": 12.086378737541509,
+      "lucroB": 12.086378737541509,
+      "lucro": 12.086378737541509,
+      "roi": 3.0527817403708934,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T08:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T07:50:43.078Z"
     }
   ],
   "invertidos": [],
@@ -14852,5 +14876,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T07:42:54.050Z"
+  "updatedAt": "2026-09-02T07:50:43.082Z"
 }
