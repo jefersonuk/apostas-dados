@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10048.34,
+      "value": 10915.34,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T17:32:55.901Z"
+      "updatedAt": "2026-09-02T17:58:58.930Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 49.54,
-      "updatedAt": "2026-09-02T15:50:57.392Z",
+      "value": -50.46,
+      "updatedAt": "2026-09-02T17:58:58.928Z",
       "currency": "USD"
     },
     {
@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 0,
+      "value": -70,
       "currency": "USD",
-      "updatedAt": "2026-09-02T15:19:04.780Z"
+      "updatedAt": "2026-09-02T17:58:58.928Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -15241,6 +15241,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T15:37:56.927Z"
+    },
+    {
+      "id": "mtkeh7jkvnjrm",
+      "kind": "sure",
+      "event": "Estral x Vivokeyd",
+      "houseA": "Cloudbet",
+      "houseB": "Betonline",
+      "oddA": 1.73,
+      "oddB": 2.44,
+      "total": 867,
+      "stakeA": 509.99999999999994,
+      "stakeB": 357,
+      "lucroA": 15.29999999999984,
+      "lucroB": 4.079999999999927,
+      "lucro": 4.079999999999927,
+      "roi": 0.47058823529410926,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-09-02T17:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T17:58:58.928Z"
     }
   ],
   "invertidos": [],
@@ -15366,5 +15390,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T17:32:55.901Z"
+  "updatedAt": "2026-09-02T17:58:58.930Z"
 }
