@@ -4498,14 +4498,14 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 20,
-      "updatedAt": "2026-08-21T15:36:59.118Z"
+      "value": -580,
+      "updatedAt": "2026-09-02T13:26:00.571Z"
     },
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 602.13,
-      "updatedAt": "2026-09-02T12:17:10.263Z"
+      "value": 237.13,
+      "updatedAt": "2026-09-02T13:26:00.571Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9229.31,
+      "value": 10194.31,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T12:50:11.267Z"
+      "updatedAt": "2026-09-02T13:26:00.572Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -15094,6 +15094,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T12:16:36.037Z"
+    },
+    {
+      "id": "mtk4q5x5jxzi6",
+      "kind": "sure",
+      "event": "Santos x Palmeiras",
+      "houseA": "Betnacional",
+      "houseB": "Bet365",
+      "oddA": 2.8,
+      "oddB": 1.72,
+      "total": 965,
+      "stakeA": 365,
+      "stakeB": 600,
+      "lucroA": 56.999999999999886,
+      "lucroB": 67,
+      "lucro": 56.999999999999886,
+      "roi": 5.906735751295325,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T21:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T13:26:00.571Z"
     }
   ],
   "invertidos": [],
@@ -15219,5 +15243,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T12:50:11.267Z"
+  "updatedAt": "2026-09-02T13:26:00.572Z"
 }
