@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6328.71,
+      "value": 7022.41,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-01T22:46:23.510Z"
+      "updatedAt": "2026-09-02T00:11:49.913Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1657.86,
+      "value": 1607.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-01T22:46:23.502Z"
+      "updatedAt": "2026-09-02T00:11:49.909Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4606,9 +4606,9 @@
     {
       "id": "msgew6ic764xc",
       "name": "Gamdom",
-      "value": 112.48,
+      "value": -12.51,
       "currency": "USD",
-      "updatedAt": "2026-09-01T22:39:37.460Z"
+      "updatedAt": "2026-09-02T00:11:49.908Z"
     },
     {
       "id": "msneebp3j8g2z",
@@ -14690,6 +14690,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-01T22:46:23.502Z"
+    },
+    {
+      "id": "mtjccufo4qjip",
+      "kind": "sure",
+      "event": "Sun, Chao – Lei, Ci Fu",
+      "houseA": "Gamdom",
+      "houseB": "Ivibet",
+      "oddA": 1.15,
+      "oddB": 14.7,
+      "total": 693.6985,
+      "stakeA": 643.6985,
+      "stakeB": 50,
+      "lucroA": 46.55477499999995,
+      "lucroB": 41.30150000000003,
+      "lucro": 41.30150000000003,
+      "roi": 5.95381134599542,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-01T22:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T00:11:49.909Z"
     }
   ],
   "invertidos": [],
@@ -14776,5 +14800,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T00:08:21.612Z"
+  "updatedAt": "2026-09-02T00:11:49.913Z"
 }
