@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 2737.93,
-      "updatedAt": "2026-09-02T00:49:27.848Z"
+      "value": 2519.93,
+      "updatedAt": "2026-09-02T07:39:34.711Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3190.64,
+      "value": 3626.64,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T07:26:01.238Z"
+      "updatedAt": "2026-09-02T07:39:34.715Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 586.33,
-      "updatedAt": "2026-09-01T22:05:06.204Z",
+      "value": 544,
+      "updatedAt": "2026-09-02T07:39:34.712Z",
       "currency": "USD"
     },
     {
@@ -14718,6 +14718,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-02T07:26:01.237Z"
+    },
+    {
+      "id": "mtjscng594lfg",
+      "kind": "sure",
+      "event": "Alice Tubello – Sarah Iliev",
+      "houseA": "Betnacional",
+      "houseB": "Bookmaker",
+      "oddA": 2.1,
+      "oddB": 2.1,
+      "total": 436,
+      "stakeA": 218,
+      "stakeB": 218,
+      "lucroA": 21.80000000000001,
+      "lucroB": 21.80000000000001,
+      "lucro": 21.80000000000001,
+      "roi": 5.000000000000003,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-02T05:05",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T07:39:34.712Z"
     }
   ],
   "invertidos": [],
@@ -14804,5 +14828,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T07:36:23.447Z"
+  "updatedAt": "2026-09-02T07:39:34.715Z"
 }
