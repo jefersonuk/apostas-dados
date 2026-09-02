@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10161.19,
+      "value": 11205.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T18:38:58.951Z"
+      "updatedAt": "2026-09-02T19:16:05.900Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 99.77,
+      "value": -76.88,
       "currency": "EUR",
-      "updatedAt": "2026-09-02T18:34:29.478Z"
+      "updatedAt": "2026-09-02T19:16:05.898Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -15276,6 +15276,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T18:34:29.478Z"
+    },
+    {
+      "id": "mtkh8dqhps1rk",
+      "kind": "sure",
+      "event": "Pinheiros x Franca",
+      "houseA": "Sportmarket",
+      "houseB": "Sportmarket",
+      "oddA": 2.07,
+      "oddB": 2.15,
+      "total": 1044.0083720930231,
+      "stakeA": 531.9,
+      "stakeB": 512.1083720930231,
+      "lucroA": 57.024627906976775,
+      "lucroB": 57.02462790697655,
+      "lucro": 57.02462790697655,
+      "roi": 5.462085308056854,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "EUR",
+      "date": "2026-09-02T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T19:16:05.898Z"
     }
   ],
   "invertidos": [],
@@ -15401,5 +15425,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T18:38:58.951Z"
+  "updatedAt": "2026-09-02T19:16:05.900Z"
 }
