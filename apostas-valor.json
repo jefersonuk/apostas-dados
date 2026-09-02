@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10076.55,
+      "value": 10381.55,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T15:33:37.989Z"
+      "updatedAt": "2026-09-02T15:37:56.930Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1235.9,
+      "value": 1153.9,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T15:33:52.426Z"
+      "updatedAt": "2026-09-02T15:38:24.794Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1529.31,
-      "updatedAt": "2026-09-02T15:08:58.966Z"
+      "value": 1306.31,
+      "updatedAt": "2026-09-02T15:38:24.794Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14433,7 +14433,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-02T10:00:12.921Z"
+      "updatedAt": "2026-09-02T15:38:24.794Z"
     },
     {
       "id": "mtinkxm47hdry",
@@ -15216,6 +15216,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T15:33:37.983Z"
+    },
+    {
+      "id": "mtk9fu7yfvltv",
+      "kind": "sure",
+      "event": "Eric Martins – Gabriel Schenekenberg",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 3.89,
+      "oddB": 1.432,
+      "total": 305,
+      "stakeA": 82,
+      "stakeB": 223,
+      "lucroA": 13.980000000000018,
+      "lucroB": 14.336000000000013,
+      "lucro": 13.980000000000018,
+      "roi": 4.583606557377055,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-03T11:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T15:37:56.927Z"
     }
   ],
   "invertidos": [],
@@ -15341,5 +15365,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T15:33:52.426Z"
+  "updatedAt": "2026-09-02T15:38:24.794Z"
 }
