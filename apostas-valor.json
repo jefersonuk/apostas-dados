@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9197.32,
+      "value": 9580.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T15:08:58.970Z"
+      "updatedAt": "2026-09-02T15:19:04.787Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1731.6,
+      "value": 1586.6,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T15:08:58.966Z"
+      "updatedAt": "2026-09-02T15:19:04.780Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 46.61,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-09-02T10:38:28.597Z"
+      "updatedAt": "2026-09-02T15:19:04.780Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -15168,6 +15168,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T15:08:58.966Z"
+    },
+    {
+      "id": "mtk8rkndwcqol",
+      "kind": "sure",
+      "event": "Ohio State – Ole Miss",
+      "houseA": "Ivibet",
+      "houseB": "Betonline",
+      "oddA": 2.86,
+      "oddB": 1.77,
+      "total": 383.1771,
+      "stakeA": 145,
+      "stakeB": 238.17710000000002,
+      "lucroA": 31.522899999999993,
+      "lucroB": 38.396367000000055,
+      "lucro": 31.522899999999993,
+      "roi": 8.226718141559083,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-02T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T15:19:04.781Z"
     }
   ],
   "invertidos": [],
@@ -15293,5 +15317,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T15:08:58.970Z"
+  "updatedAt": "2026-09-02T15:19:04.787Z"
 }
