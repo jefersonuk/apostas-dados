@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 9106.21,
+      "value": 9625.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T12:17:10.263Z"
+      "updatedAt": "2026-09-02T12:27:29.224Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 223.88,
-      "updatedAt": "2026-09-02T09:02:27.909Z",
+      "value": 49.54,
+      "updatedAt": "2026-09-02T12:27:29.224Z",
       "currency": "USD"
     },
     {
@@ -14170,15 +14170,15 @@
       "lucroB": -518.9846,
       "lucro": -518.9846,
       "roi": -99.99510606732048,
-      "winner": "A",
+      "winner": null,
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-09-02T17:00",
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": null
       },
-      "updatedAt": "2026-09-02T09:02:27.909Z"
+      "updatedAt": "2026-09-02T12:27:29.224Z"
     },
     {
       "id": "mtgikba61yn4o",
@@ -15212,5 +15212,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T12:19:26.705Z"
+  "updatedAt": "2026-09-02T12:27:29.224Z"
 }
