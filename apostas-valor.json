@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4920.46,
+      "value": 5312.46,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T08:01:19.077Z"
+      "updatedAt": "2026-09-02T08:10:42.354Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 907.86,
+      "value": 728.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T08:01:19.067Z"
+      "updatedAt": "2026-09-02T08:10:42.348Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3030.69,
-      "updatedAt": "2026-09-02T08:01:19.068Z"
+      "value": 2817.69,
+      "updatedAt": "2026-09-02T08:10:42.347Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14814,6 +14814,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T08:01:19.069Z"
+    },
+    {
+      "id": "mtjtgoiwrp6e0",
+      "kind": "sure",
+      "event": "St. James Swifts – Greenisland",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.952,
+      "oddB": 2.33,
+      "total": 392,
+      "stakeA": 213,
+      "stakeB": 179,
+      "lucroA": 23.77600000000001,
+      "lucroB": 25.069999999999993,
+      "lucro": 23.77600000000001,
+      "roi": 6.065306122448982,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-02T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T08:10:42.349Z"
     }
   ],
   "invertidos": [],
@@ -14900,5 +14924,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T08:01:19.077Z"
+  "updatedAt": "2026-09-02T08:10:42.354Z"
 }
