@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 10420.29,
+      "value": 10520.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T10:09:15.396Z"
+      "updatedAt": "2026-09-02T10:14:26.931Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 992.99,
-      "updatedAt": "2026-09-02T10:09:15.394Z"
+      "value": 892.98,
+      "updatedAt": "2026-09-02T10:14:26.929Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -15057,6 +15057,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T10:09:15.394Z"
+    },
+    {
+      "id": "mtjxvtddbw9sb",
+      "kind": "sure",
+      "event": "Tristan Schoolkate – Flavio Cobolli",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 2.3,
+      "oddB": 1.01,
+      "total": 100.01,
+      "stakeA": 100,
+      "stakeB": 0.01,
+      "lucroA": 129.98999999999995,
+      "lucroB": -99.99990000000001,
+      "lucro": -99.99990000000001,
+      "roi": -99.98990100989901,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-03T12:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T10:14:26.929Z"
     }
   ],
   "invertidos": [],
@@ -15182,5 +15206,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T10:09:15.396Z"
+  "updatedAt": "2026-09-02T10:14:26.931Z"
 }
