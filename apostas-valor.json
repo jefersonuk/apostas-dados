@@ -4551,7 +4551,7 @@
       "id": "msan29jv5dft4",
       "name": "BetMGM",
       "value": 0.95,
-      "updatedAt": "2026-09-01T12:38:16.876Z"
+      "updatedAt": "2026-09-02T00:12:10.878Z"
     },
     {
       "id": "msd9ei033vtoe",
@@ -4578,7 +4578,7 @@
       "name": "Ivibet",
       "value": 1607.86,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T00:11:49.909Z"
+      "updatedAt": "2026-09-02T00:12:10.878Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -14447,7 +14447,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-01T12:38:16.877Z"
+      "updatedAt": "2026-09-02T00:12:10.878Z"
     },
     {
       "id": "mtinuemk1xxvo",
@@ -14800,5 +14800,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T00:11:49.913Z"
+  "updatedAt": "2026-09-02T00:12:10.878Z"
 }
