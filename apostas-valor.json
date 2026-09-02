@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 8416.3,
+      "value": 8416.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T09:59:35.498Z"
+      "updatedAt": "2026-09-02T10:00:12.921Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4578,7 +4578,7 @@
       "name": "Ivibet",
       "value": 565.76,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T09:59:35.497Z"
+      "updatedAt": "2026-09-02T10:00:12.921Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4589,7 +4589,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 2194.99,
-      "updatedAt": "2026-09-02T09:38:38.830Z"
+      "updatedAt": "2026-09-02T10:00:12.921Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -14409,21 +14409,21 @@
       "houseB": "Ivibet",
       "oddA": 1.869,
       "oddB": 2.58,
-      "total": 361.82343499197435,
-      "stakeA": 209.82343499197435,
+      "total": 361.82,
+      "stakeA": 209.82,
       "stakeB": 152,
-      "lucroA": 30.33656500802573,
-      "lucroB": 30.336565008025673,
-      "lucro": 30.336565008025673,
-      "roi": 8.384356035064055,
+      "lucroA": 30.333579999999984,
+      "lucroB": 30.340000000000032,
+      "lucro": 30.333579999999984,
+      "roi": 8.383610635122432,
       "winner": null,
       "curA": "BRL",
       "curB": "BRL",
-      "date": "2026-09-02T06:00",
+      "date": "2026-09-02T10:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-01T08:11:52.586Z"
+      "updatedAt": "2026-09-02T10:00:12.921Z"
     },
     {
       "id": "mtinkxm47hdry",
@@ -15134,5 +15134,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T09:59:35.498Z"
+  "updatedAt": "2026-09-02T10:00:12.921Z"
 }
