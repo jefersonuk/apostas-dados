@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 315.38,
+      "value": 46.61,
       "currency": "USD",
-      "updatedAt": "2026-09-01T17:39:58.828Z"
+      "updatedAt": "2026-09-02T10:38:28.597Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -15206,5 +15206,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T10:38:24.055Z"
+  "updatedAt": "2026-09-02T10:38:28.598Z"
 }
