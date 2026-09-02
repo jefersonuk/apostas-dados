@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6457.99,
+      "value": 6713,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T21:39:51.441Z"
+      "updatedAt": "2026-09-02T22:13:51.571Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 187.78,
+      "value": 137.78,
       "currency": "USD",
-      "updatedAt": "2026-09-02T12:33:30.510Z"
+      "updatedAt": "2026-09-02T22:13:51.567Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4773,8 +4773,8 @@
     {
       "id": "mtkfqvhinx5nl",
       "name": "Casa B",
-      "value": 0,
-      "updatedAt": "2026-09-02T19:17:48.524Z"
+      "value": -0.01,
+      "updatedAt": "2026-09-02T22:13:51.567Z"
     }
   ],
   "aportes": [
@@ -15335,6 +15335,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T20:13:18.361Z"
+    },
+    {
+      "id": "mtknkzf2i3lqm",
+      "kind": "sure",
+      "event": "BORRACHEIROS vs Mansão Maromba",
+      "houseA": "Opinion",
+      "houseB": "",
+      "oddA": 1.88,
+      "oddB": 1.01,
+      "total": 255.00999999999996,
+      "stakeA": 254.99999999999997,
+      "stakeB": 0.01,
+      "lucroA": 224.38999999999996,
+      "lucroB": -254.99989999999997,
+      "lucro": -254.99989999999997,
+      "roi": -99.99603937100507,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-02T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-02T22:13:51.567Z"
     }
   ],
   "invertidos": [],
@@ -15460,5 +15484,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-02T21:56:28.499Z"
+  "updatedAt": "2026-09-02T22:13:51.571Z"
 }
