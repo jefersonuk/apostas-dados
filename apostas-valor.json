@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3987.23,
+      "value": 5329.59,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T19:45:30.323Z"
+      "updatedAt": "2026-09-03T19:54:35.384Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1248.98,
+      "value": 373.98,
       "currency": "BRL",
-      "updatedAt": "2026-09-03T19:46:19.543Z"
+      "updatedAt": "2026-09-03T19:54:35.383Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 0.06,
+      "value": -91.94,
       "currency": "USD",
-      "updatedAt": "2026-09-03T13:45:47.966Z"
+      "updatedAt": "2026-09-03T19:54:35.383Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -15472,6 +15472,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-03T19:04:51.899Z"
+    },
+    {
+      "id": "mtly1qevd1ymj",
+      "kind": "sure",
+      "event": "Buddha Hanchard x Sean Clabough",
+      "houseA": "Ivibet",
+      "houseB": "Betonline",
+      "oddA": 1.63,
+      "oddB": 3.05,
+      "total": 1342.3600000000001,
+      "stakeA": 875,
+      "stakeB": 467.36,
+      "lucroA": 83.88999999999987,
+      "lucroB": 83.08799999999974,
+      "lucro": 83.08799999999974,
+      "roi": 6.1896957597067646,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-04T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-03T19:54:35.383Z"
     }
   ],
   "invertidos": [],
@@ -15637,5 +15661,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T19:48:30.633Z"
+  "updatedAt": "2026-09-03T19:54:35.384Z"
 }
