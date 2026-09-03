@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-08-21",
+    "startDate": "2026-09-03",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2784.13,
+      "value": 2515.13,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T11:31:47.437Z"
+      "updatedAt": "2026-09-03T13:02:48.148Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2000,
-      "updatedAt": "2026-09-03T11:37:48.184Z"
+      "value": 2284.18,
+      "updatedAt": "2026-09-03T13:02:48.148Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4967,10 +4967,10 @@
   ],
   "usdRate": 5.08,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-03T12:35:53.256Z",
-  "eurRate": 5.91,
+  "usdRateAt": "2026-09-03T12:21:40.154Z",
+  "eurRate": 5.92,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-03T12:35:53.402Z",
+  "eurRateAt": "2026-09-03T12:21:40.346Z",
   "appBuild": "20260902-1337",
   "deleted": [
     {
@@ -15184,14 +15184,15 @@
       "lucroB": 15.174999999999955,
       "lucro": 12.600000000000023,
       "roi": 4.684014869888484,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-09-03T05:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-09-02T15:08:58.966Z"
+      "updatedAt": "2026-09-03T13:02:48.148Z"
     },
     {
       "id": "mtk8rkndwcqol",
@@ -15489,5 +15490,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T12:35:53.403Z"
+  "updatedAt": "2026-09-03T13:02:48.148Z"
 }
