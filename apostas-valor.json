@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4479.99,
+      "value": 3987.23,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T19:34:43.204Z"
+      "updatedAt": "2026-09-03T19:45:30.323Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4656,8 +4656,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": -52,
-      "updatedAt": "2026-09-03T19:41:04.791Z",
+      "value": 0,
+      "updatedAt": "2026-09-03T19:45:30.322Z",
       "currency": "USD"
     },
     {
@@ -4719,8 +4719,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 151.06,
-      "updatedAt": "2026-09-03T19:41:04.791Z",
+      "value": 196.06,
+      "updatedAt": "2026-09-03T19:45:30.322Z",
       "currency": "USD"
     },
     {
@@ -5377,6 +5377,10 @@
     {
       "id": "mtlkj1vrjw8mk",
       "at": "2026-09-03T18:50:54.963Z"
+    },
+    {
+      "id": "mtlxc6irxaenp",
+      "at": "2026-09-03T19:45:30.323Z"
     }
   ],
   "surebets": [
@@ -15468,30 +15472,6 @@
         "stakes": true
       },
       "updatedAt": "2026-09-03T19:04:51.899Z"
-    },
-    {
-      "id": "mtlxc6irxaenp",
-      "kind": "sure",
-      "event": "Ohio x Ball State",
-      "houseA": "Cloudbet",
-      "houseB": "Kalshi",
-      "oddA": 2.2,
-      "oddB": 1.7,
-      "total": 492.76,
-      "stakeA": 228.6,
-      "stakeB": 264.16,
-      "lucroA": 10.160000000000025,
-      "lucroB": -43.68799999999999,
-      "lucro": -43.68799999999999,
-      "roi": -8.865979381443296,
-      "winner": null,
-      "curA": "USD",
-      "curB": "USD",
-      "date": "2026-09-05T12:30",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-03T19:41:04.791Z"
     }
   ],
   "invertidos": [],
@@ -15617,5 +15597,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T19:41:04.791Z"
+  "updatedAt": "2026-09-03T19:45:30.323Z"
 }
