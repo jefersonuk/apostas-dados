@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6713,
+      "value": 3749.13,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T22:13:51.571Z"
+      "updatedAt": "2026-09-03T01:07:15.376Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2083.78,
+      "value": 3044.83,
       "currency": "BRL",
-      "updatedAt": "2026-09-02T21:39:51.441Z"
+      "updatedAt": "2026-09-03T01:01:56.100Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 137.78,
+      "value": 187.78,
       "currency": "USD",
-      "updatedAt": "2026-09-02T22:13:51.567Z"
+      "updatedAt": "2026-09-03T01:04:44.931Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 13.12,
+      "value": 199.74,
       "currency": "EUR",
-      "updatedAt": "2026-09-02T19:17:48.524Z"
+      "updatedAt": "2026-09-03T01:06:26.825Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 580.53,
-      "updatedAt": "2026-09-02T15:57:26.840Z",
+      "value": 200,
+      "updatedAt": "2026-09-03T11:28:55.078Z",
       "currency": "USD"
     },
     {
@@ -4719,8 +4719,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 72.06,
-      "updatedAt": "2026-09-02T19:22:34.754Z",
+      "value": 245.06,
+      "updatedAt": "2026-09-03T01:07:15.375Z",
       "currency": "USD"
     },
     {
@@ -4773,8 +4773,8 @@
     {
       "id": "mtkfqvhinx5nl",
       "name": "Casa B",
-      "value": -0.01,
-      "updatedAt": "2026-09-02T22:13:51.567Z"
+      "value": 0,
+      "updatedAt": "2026-09-03T01:04:44.931Z"
     }
   ],
   "aportes": [
@@ -5349,6 +5349,10 @@
     {
       "id": "mtkfqvhi1o8ms",
       "at": "2026-09-02T19:17:48.524Z"
+    },
+    {
+      "id": "mtknkzf2i3lqm",
+      "at": "2026-09-03T01:04:44.932Z"
     }
   ],
   "surebets": [
@@ -14614,14 +14618,15 @@
       "lucroB": 131.67608695652177,
       "lucro": 131.67608695652177,
       "roi": 31.75412844036698,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-09-02T19:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-09-01T17:39:58.828Z"
+      "updatedAt": "2026-09-03T01:01:49.635Z"
     },
     {
       "id": "mtj929kirpt0q",
@@ -15182,14 +15187,15 @@
       "lucroB": 38.396367000000055,
       "lucro": 31.522899999999993,
       "roi": 8.226718141559083,
-      "winner": null,
+      "winner": "A",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-09-02T19:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-02T15:19:04.781Z"
+      "updatedAt": "2026-09-03T01:01:56.100Z"
     },
     {
       "id": "mtk9aaeymhaho",
@@ -15255,14 +15261,15 @@
       "lucroB": 4.079999999999927,
       "lucro": 4.079999999999927,
       "roi": 0.47058823529410926,
-      "winner": null,
+      "winner": "A",
       "curA": "USD",
       "curB": "USD",
       "date": "2026-09-02T17:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-02T17:58:58.928Z"
+      "updatedAt": "2026-09-03T01:07:15.375Z"
     },
     {
       "id": "mtkh8dqhps1rk",
@@ -15279,14 +15286,15 @@
       "lucroB": 57.02462790697655,
       "lucro": 57.02462790697655,
       "roi": 5.462085308056854,
-      "winner": null,
+      "winner": "B",
       "curA": "EUR",
       "curB": "EUR",
       "date": "2026-09-02T20:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-09-02T19:16:05.898Z"
+      "updatedAt": "2026-09-03T01:06:26.825Z"
     },
     {
       "id": "mtkj5m5bhd0rd",
@@ -15335,30 +15343,6 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T20:13:18.361Z"
-    },
-    {
-      "id": "mtknkzf2i3lqm",
-      "kind": "sure",
-      "event": "BORRACHEIROS vs Mansão Maromba",
-      "houseA": "Opinion",
-      "houseB": "",
-      "oddA": 1.88,
-      "oddB": 1.01,
-      "total": 255.00999999999996,
-      "stakeA": 254.99999999999997,
-      "stakeB": 0.01,
-      "lucroA": 224.38999999999996,
-      "lucroB": -254.99989999999997,
-      "lucro": -254.99989999999997,
-      "roi": -99.99603937100507,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-09-02T19:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-02T22:13:51.567Z"
     }
   ],
   "invertidos": [],
@@ -15484,5 +15468,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T11:17:31.090Z"
+  "updatedAt": "2026-09-03T11:28:55.078Z"
 }
