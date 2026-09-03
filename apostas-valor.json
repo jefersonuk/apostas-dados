@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3247.57,
+      "value": 4405.61,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T14:16:34.823Z"
+      "updatedAt": "2026-09-03T14:19:24.413Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 155.14,
+      "value": -1.86,
       "currency": "EUR",
-      "updatedAt": "2026-09-03T14:16:34.822Z"
+      "updatedAt": "2026-09-03T14:19:24.412Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 241.06,
-      "updatedAt": "2026-09-03T14:16:34.822Z",
+      "value": 196.06,
+      "updatedAt": "2026-09-03T14:19:24.412Z",
       "currency": "USD"
     },
     {
@@ -15437,6 +15437,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-03T14:16:34.822Z"
+    },
+    {
+      "id": "mtlm2oos5vldp",
+      "kind": "sure",
+      "event": "Kirguistão x Libano",
+      "houseA": "Cloudbet",
+      "houseB": "Sportmarket",
+      "oddA": 6.3,
+      "oddB": 1.552,
+      "total": 1158.04,
+      "stakeA": 228.6,
+      "stakeB": 929.4399999999999,
+      "lucroA": 282.1399999999999,
+      "lucroB": 284.4508800000001,
+      "lucro": 282.1399999999999,
+      "roi": 24.363579841801656,
+      "winner": null,
+      "curA": "USD",
+      "curB": "EUR",
+      "date": "2026-09-03T11:16",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-03T14:19:24.412Z"
     }
   ],
   "invertidos": [],
@@ -15562,5 +15586,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T14:16:34.823Z"
+  "updatedAt": "2026-09-03T14:19:24.413Z"
 }
