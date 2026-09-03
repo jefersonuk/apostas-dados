@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2515.13,
+      "value": 2759.99,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T13:02:48.148Z"
+      "updatedAt": "2026-09-03T13:36:08.778Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2000,
+      "value": 1909,
       "currency": "BRL",
-      "updatedAt": "2026-09-03T13:12:13.159Z"
+      "updatedAt": "2026-09-03T13:36:08.776Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 199.74,
+      "value": 173.75,
       "currency": "EUR",
-      "updatedAt": "2026-09-03T01:06:26.825Z"
+      "updatedAt": "2026-09-03T13:36:08.776Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -15365,6 +15365,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-02T20:13:18.361Z"
+    },
+    {
+      "id": "mtlkj1vrjw8mk",
+      "kind": "sure",
+      "event": "Fenix Pilar x Juventud Unida",
+      "houseA": "Sportmarket",
+      "houseB": "Ivibet",
+      "oddA": 1.662,
+      "oddB": 2.81,
+      "total": 244.85679903730446,
+      "stakeA": 153.85679903730446,
+      "stakeB": 91,
+      "lucroA": 10.853200962695524,
+      "lucroB": 10.853200962695553,
+      "lucro": 10.853200962695524,
+      "roi": 4.432468694096592,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-09-03T14:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-03T13:36:08.776Z"
     }
   ],
   "invertidos": [],
@@ -15490,5 +15514,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T13:15:07.695Z"
+  "updatedAt": "2026-09-03T13:36:08.778Z"
 }
