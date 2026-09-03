@@ -4656,8 +4656,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 0,
-      "updatedAt": "2026-09-03T19:45:30.322Z",
+      "value": -55.19,
+      "updatedAt": "2026-09-03T19:48:30.632Z",
       "currency": "USD"
     },
     {
@@ -4719,17 +4719,17 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 196.06,
-      "updatedAt": "2026-09-03T19:45:30.322Z",
+      "value": 150.88,
+      "updatedAt": "2026-09-03T19:48:30.632Z",
       "currency": "USD"
     },
     {
       "id": "mt9c1gc5rf9ra",
       "name": "Em middles",
-      "value": 0,
+      "value": 509.84,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T19:46:19.543Z"
+      "updatedAt": "2026-09-03T19:48:30.633Z"
     },
     {
       "id": "mtack9k6bppn8",
@@ -15595,8 +15595,47 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-03T19:46:19.543Z"
+    },
+    {
+      "id": "mtlxtwyw0w1sp",
+      "kind": "middle",
+      "event": "Ohio x Ball state",
+      "houseA": "Cloudbet",
+      "houseB": "Kalshi",
+      "market": "total",
+      "lineA": 1.5,
+      "lineB": 2.5,
+      "oddA": 2.2,
+      "oddB": 1.7,
+      "stakeA": 229.5,
+      "stakeB": 280.34,
+      "total": 509.84,
+      "profitAWins": -4.939999999999941,
+      "profitBWins": -33.26200000000006,
+      "profitMiddle": 471.638,
+      "gapIntegers": [
+        2
+      ],
+      "pushValues": [],
+      "hostileValues": [],
+      "profitPush": null,
+      "midKind": "full",
+      "midValues": [
+        2
+      ],
+      "midCreditA": 504.90000000000003,
+      "midCreditB": 476.5779999999999,
+      "midProfit": 471.638,
+      "worstCase": -33.26200000000006,
+      "isSafe": false,
+      "resultado": null,
+      "date": "2026-09-05T12:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-03T19:48:30.632Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T19:46:19.543Z"
+  "updatedAt": "2026-09-03T19:48:30.633Z"
 }
