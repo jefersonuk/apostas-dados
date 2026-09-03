@@ -4657,7 +4657,7 @@
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
       "value": -52,
-      "updatedAt": "2026-09-03T19:34:43.203Z",
+      "updatedAt": "2026-09-03T19:41:04.791Z",
       "currency": "USD"
     },
     {
@@ -4720,7 +4720,7 @@
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
       "value": 151.06,
-      "updatedAt": "2026-09-03T19:34:43.203Z",
+      "updatedAt": "2026-09-03T19:41:04.791Z",
       "currency": "USD"
     },
     {
@@ -15476,14 +15476,14 @@
       "houseA": "Cloudbet",
       "houseB": "Kalshi",
       "oddA": 2.2,
-      "oddB": 1.92,
+      "oddB": 1.7,
       "total": 492.76,
       "stakeA": 228.6,
       "stakeB": 264.16,
       "lucroA": 10.160000000000025,
-      "lucroB": 14.427200000000028,
-      "lucro": 10.160000000000025,
-      "roi": 2.061855670103098,
+      "lucroB": -43.68799999999999,
+      "lucro": -43.68799999999999,
+      "roi": -8.865979381443296,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
@@ -15491,7 +15491,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-03T19:34:43.203Z"
+      "updatedAt": "2026-09-03T19:41:04.791Z"
     }
   ],
   "invertidos": [],
@@ -15617,5 +15617,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T19:34:43.204Z"
+  "updatedAt": "2026-09-03T19:41:04.791Z"
 }
