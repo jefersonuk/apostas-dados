@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2567.23,
+      "value": 3987.23,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T18:52:01.670Z"
+      "updatedAt": "2026-09-03T19:04:51.900Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1795,
+      "value": 875,
       "currency": "BRL",
-      "updatedAt": "2026-09-03T18:50:54.963Z"
+      "updatedAt": "2026-09-03T19:04:51.898Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2603.52,
-      "updatedAt": "2026-09-03T18:52:01.670Z"
+      "value": 2103.52,
+      "updatedAt": "2026-09-03T19:04:51.898Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -15444,6 +15444,30 @@
         "resultado": "B"
       },
       "updatedAt": "2026-09-03T14:58:13.121Z"
+    },
+    {
+      "id": "mtlw9scaizzio",
+      "kind": "sure",
+      "event": "Pegula x Leylah Fernandes",
+      "houseA": "Ivibet",
+      "houseB": "Pinnacle",
+      "oddA": 1.59,
+      "oddB": 2.92,
+      "total": 1420,
+      "stakeA": 920,
+      "stakeB": 500,
+      "lucroA": 42.80000000000018,
+      "lucroB": 40,
+      "lucro": 40,
+      "roi": 2.8169014084507045,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-04T12:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-03T19:04:51.899Z"
     }
   ],
   "invertidos": [],
@@ -15569,5 +15593,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T18:52:01.670Z"
+  "updatedAt": "2026-09-03T19:04:51.900Z"
 }
