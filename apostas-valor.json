@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3117.08,
+      "value": 2872.23,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T14:58:13.121Z"
+      "updatedAt": "2026-09-03T18:50:54.963Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1704,
+      "value": 1795,
       "currency": "BRL",
-      "updatedAt": "2026-09-03T13:45:47.966Z"
+      "updatedAt": "2026-09-03T18:50:54.963Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 285.38,
+      "value": 311.37,
       "currency": "EUR",
-      "updatedAt": "2026-09-03T18:00:23.865Z"
+      "updatedAt": "2026-09-03T18:50:54.963Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4965,12 +4965,12 @@
       "updatedAt": "2026-09-03T12:24:46.669Z"
     }
   ],
-  "usdRate": 5.1,
+  "usdRate": 5.08,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-03T18:46:52.922Z",
-  "eurRate": 5.89,
+  "usdRateAt": "2026-09-03T12:21:40.154Z",
+  "eurRate": 5.92,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-03T18:46:53.092Z",
+  "eurRateAt": "2026-09-03T12:21:40.346Z",
   "appBuild": "20260902-1337",
   "deleted": [
     {
@@ -5373,6 +5373,10 @@
     {
       "id": "mtknkzf2i3lqm",
       "at": "2026-09-03T01:04:44.932Z"
+    },
+    {
+      "id": "mtlkj1vrjw8mk",
+      "at": "2026-09-03T18:50:54.963Z"
     }
   ],
   "surebets": [
@@ -15367,30 +15371,6 @@
       "updatedAt": "2026-09-02T20:13:18.361Z"
     },
     {
-      "id": "mtlkj1vrjw8mk",
-      "kind": "sure",
-      "event": "Fenix Pilar x Juventud Unida",
-      "houseA": "Sportmarket",
-      "houseB": "Ivibet",
-      "oddA": 1.662,
-      "oddB": 2.81,
-      "total": 244.85679903730446,
-      "stakeA": 153.85679903730446,
-      "stakeB": 91,
-      "lucroA": 10.853200962695524,
-      "lucroB": 10.853200962695553,
-      "lucro": 10.853200962695524,
-      "roi": 4.432468694096592,
-      "winner": null,
-      "curA": "EUR",
-      "curB": "BRL",
-      "date": "2026-09-03T14:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-03T13:36:08.776Z"
-    },
-    {
       "id": "mtlkvgse1iq2f",
       "kind": "sure",
       "event": "Ferrari Fairtex x Akif Guluzada",
@@ -15588,5 +15568,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T18:46:53.092Z"
+  "updatedAt": "2026-09-03T18:50:54.964Z"
 }
