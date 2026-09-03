@@ -4793,6 +4793,14 @@
       "note": "Retirada Picpay",
       "updatedAt": "2026-09-01T12:14:45.331Z",
       "time": "09:14"
+    },
+    {
+      "id": "mtlhx4ny50se5",
+      "value": -11837.31,
+      "date": "2026-09-03",
+      "time": "09:21",
+      "note": "Saque viagem",
+      "updatedAt": "2026-09-03T12:23:06.718Z"
     }
   ],
   "caixa": [
@@ -15475,5 +15483,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T12:21:40.346Z"
+  "updatedAt": "2026-09-03T12:23:06.721Z"
 }
