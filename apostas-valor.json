@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2759.99,
+      "value": 3117.08,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T13:36:08.778Z"
+      "updatedAt": "2026-09-03T13:45:47.968Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1909,
+      "value": 1704,
       "currency": "BRL",
-      "updatedAt": "2026-09-03T13:36:08.776Z"
+      "updatedAt": "2026-09-03T13:45:47.966Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 30,
+      "value": 0.06,
       "currency": "USD",
-      "updatedAt": "2026-09-02T17:59:38.527Z"
+      "updatedAt": "2026-09-03T13:45:47.966Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -15389,6 +15389,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-03T13:36:08.776Z"
+    },
+    {
+      "id": "mtlkvgse1iq2f",
+      "kind": "sure",
+      "event": "Ferrari Fairtex x Akif Guluzada",
+      "houseA": "Ivibet",
+      "houseB": "Betonline",
+      "oddA": 1.8,
+      "oddB": 2.42,
+      "total": 357.0952,
+      "stakeA": 205,
+      "stakeB": 152.0952,
+      "lucroA": 11.904800000000023,
+      "lucroB": 10.975184000000013,
+      "lucro": 10.975184000000013,
+      "roi": 3.0734616427216084,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-04T10:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-03T13:45:47.966Z"
     }
   ],
   "invertidos": [],
@@ -15514,5 +15538,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T13:36:08.778Z"
+  "updatedAt": "2026-09-03T13:45:47.968Z"
 }
