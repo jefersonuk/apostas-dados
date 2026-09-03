@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 875,
+      "value": 1248.98,
       "currency": "BRL",
-      "updatedAt": "2026-09-03T19:04:51.898Z"
+      "updatedAt": "2026-09-03T19:46:19.543Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4726,10 +4726,10 @@
     {
       "id": "mt9c1gc5rf9ra",
       "name": "Em middles",
-      "value": 371,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-02T09:18:40.183Z"
+      "updatedAt": "2026-09-03T19:46:19.543Z"
     },
     {
       "id": "mtack9k6bppn8",
@@ -15588,14 +15588,15 @@
       "midProfit": 275,
       "worstCase": 2.9799999999999613,
       "isSafe": true,
-      "resultado": null,
+      "resultado": "A",
       "date": "2026-09-02T15:45",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-02T09:18:40.181Z"
+      "updatedAt": "2026-09-03T19:46:19.543Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-03T19:45:30.323Z"
+  "updatedAt": "2026-09-03T19:46:19.543Z"
 }
