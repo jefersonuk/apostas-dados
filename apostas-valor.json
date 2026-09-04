@@ -4505,7 +4505,7 @@
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
       "value": 770,
-      "updatedAt": "2026-09-04T12:07:38.530Z"
+      "updatedAt": "2026-09-04T14:35:05.723Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4692,7 +4692,7 @@
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
       "value": 170.92,
-      "updatedAt": "2026-09-04T11:56:52.841Z",
+      "updatedAt": "2026-09-04T14:35:05.723Z",
       "currency": "USD"
     },
     {
@@ -15513,21 +15513,21 @@
       "houseB": "Bookmaker",
       "oddA": 2.5,
       "oddB": 1.8,
-      "total": 253.308,
+      "total": 253.31,
       "stakeA": 105,
-      "stakeB": 148.308,
-      "lucroA": 9.192000000000007,
-      "lucroB": 13.646400000000028,
-      "lucro": 9.192000000000007,
-      "roi": 3.6287839310246843,
+      "stakeB": 148.31,
+      "lucroA": 9.189999999999998,
+      "lucroB": 13.648000000000025,
+      "lucro": 9.189999999999998,
+      "roi": 3.6279657336859965,
       "winner": null,
       "curA": "BRL",
       "curB": "USD",
-      "date": "2026-09-04T08:56",
+      "date": "2026-09-05T07:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-04T11:56:52.841Z"
+      "updatedAt": "2026-09-04T14:35:05.723Z"
     },
     {
       "id": "mtmwt34v4yh8c",
@@ -15717,5 +15717,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T14:33:01.831Z"
+  "updatedAt": "2026-09-04T14:35:05.723Z"
 }
