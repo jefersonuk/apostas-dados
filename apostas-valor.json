@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1000,
-      "updatedAt": "2026-09-03T11:32:46.556Z"
+      "value": 895,
+      "updatedAt": "2026-09-04T11:56:52.840Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4830.48,
+      "value": 5083.79,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T11:53:43.835Z"
+      "updatedAt": "2026-09-04T11:56:52.842Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 200,
-      "updatedAt": "2026-09-03T11:28:55.078Z",
+      "value": 170.92,
+      "updatedAt": "2026-09-04T11:56:52.841Z",
       "currency": "USD"
     },
     {
@@ -15524,6 +15524,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T11:53:43.833Z"
+    },
+    {
+      "id": "mtmwf8x4iyv6s",
+      "kind": "sure",
+      "event": "Yongin FC – Suwon FC",
+      "houseA": "Betnacional",
+      "houseB": "Bookmaker",
+      "oddA": 2.5,
+      "oddB": 1.8,
+      "total": 253.308,
+      "stakeA": 105,
+      "stakeB": 148.308,
+      "lucroA": 9.192000000000007,
+      "lucroB": 13.646400000000028,
+      "lucro": 9.192000000000007,
+      "roi": 3.6287839310246843,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-04T08:56",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T11:56:52.841Z"
     }
   ],
   "invertidos": [],
@@ -15689,5 +15713,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T11:53:43.835Z"
+  "updatedAt": "2026-09-04T11:56:52.843Z"
 }
