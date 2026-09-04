@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6178.62,
+      "value": 5821.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T12:07:38.535Z"
+      "updatedAt": "2026-09-04T14:32:02.596Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 373.98,
+      "value": 578.98,
       "currency": "BRL",
-      "updatedAt": "2026-09-03T19:54:35.383Z"
+      "updatedAt": "2026-09-04T14:32:02.596Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 8,
+      "value": 37.71,
       "currency": "USD",
-      "updatedAt": "2026-09-04T14:29:50.841Z"
+      "updatedAt": "2026-09-04T14:32:02.596Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -5381,6 +5381,10 @@
     {
       "id": "mtlxc6irxaenp",
       "at": "2026-09-03T19:45:30.323Z"
+    },
+    {
+      "id": "mtlkvgse1iq2f",
+      "at": "2026-09-04T14:32:02.596Z"
     }
   ],
   "surebets": [
@@ -15380,30 +15384,6 @@
       "updatedAt": "2026-09-03T19:58:31.314Z"
     },
     {
-      "id": "mtlkvgse1iq2f",
-      "kind": "sure",
-      "event": "Ferrari Fairtex x Akif Guluzada",
-      "houseA": "Ivibet",
-      "houseB": "Betonline",
-      "oddA": 1.8,
-      "oddB": 2.42,
-      "total": 357.0952,
-      "stakeA": 205,
-      "stakeB": 152.0952,
-      "lucroA": 11.904800000000023,
-      "lucroB": 10.975184000000013,
-      "lucro": 10.975184000000013,
-      "roi": 3.0734616427216084,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "USD",
-      "date": "2026-09-04T10:00",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-03T13:45:47.966Z"
-    },
-    {
       "id": "mtllz1tyge5lk",
       "kind": "sure",
       "event": "Kirguistão x Libano",
@@ -15737,5 +15717,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T14:30:53.762Z"
+  "updatedAt": "2026-09-04T14:32:02.596Z"
 }
