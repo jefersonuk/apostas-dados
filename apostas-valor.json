@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3436.48,
+      "value": 4830.48,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T19:58:31.314Z"
+      "updatedAt": "2026-09-04T11:53:43.835Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4544,8 +4544,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 0,
-      "updatedAt": "2026-08-28T11:27:03.777Z"
+      "value": -871.96,
+      "updatedAt": "2026-09-04T11:53:43.833Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4712,8 +4712,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 0,
-      "updatedAt": "2026-08-28T18:59:19.080Z",
+      "value": -102.36,
+      "updatedAt": "2026-09-04T11:53:43.833Z",
       "currency": "USD"
     },
     {
@@ -15500,6 +15500,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-03T19:54:35.383Z"
+    },
+    {
+      "id": "mtmwb72xbcccv",
+      "kind": "sure",
+      "event": "Firouzja, Alireza – Nepomniachtchi, Ian",
+      "houseA": "BCgame",
+      "houseB": "Blaze",
+      "oddA": 3.09,
+      "oddB": 1.85,
+      "total": 1394.0072491909386,
+      "stakeA": 522.0472491909386,
+      "stakeB": 871.96,
+      "lucroA": 219.11875080906157,
+      "lucroB": 219.11875080906157,
+      "lucro": 219.11875080906157,
+      "roi": 15.71862348178138,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-05T08:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T11:53:43.833Z"
     }
   ],
   "invertidos": [],
@@ -15665,5 +15689,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T11:43:54.760Z"
+  "updatedAt": "2026-09-04T11:53:43.835Z"
 }
