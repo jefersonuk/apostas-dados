@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7011.96,
+      "value": 6794.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T16:30:39.922Z"
+      "updatedAt": "2026-09-04T16:31:29.303Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2851.15,
-      "updatedAt": "2026-09-04T14:49:24.969Z"
+      "value": 3068.16,
+      "updatedAt": "2026-09-04T16:31:29.301Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -5401,6 +5401,10 @@
     {
       "id": "mtkfqvhinx5nl",
       "at": "2026-09-04T15:18:05.597Z"
+    },
+    {
+      "id": "mtk5x5mc8waze",
+      "at": "2026-09-04T16:31:29.302Z"
     }
   ],
   "surebets": [
@@ -15176,30 +15180,6 @@
       "updatedAt": "2026-09-03T11:31:47.437Z"
     },
     {
-      "id": "mtk5x5mc8waze",
-      "kind": "sure",
-      "event": "Ismaily x Al Nasr Cairo (H2 +0)",
-      "houseA": "Pinnacle",
-      "houseB": "Pinnacle",
-      "oddA": 1.01,
-      "oddB": 1.943,
-      "total": 217.01,
-      "stakeA": 0.01,
-      "stakeB": 217,
-      "lucroA": -216.9999,
-      "lucroB": 204.62100000000004,
-      "lucro": -216.9999,
-      "roi": -99.9953458365974,
-      "winner": null,
-      "curA": "BRL",
-      "curB": "BRL",
-      "date": "2026-09-04T10:30",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-04T14:35:51.998Z"
-    },
-    {
       "id": "mtk8el7a3zdcn",
       "kind": "sure",
       "event": "Sara Milanese – Eva Marie Voracek",
@@ -15781,5 +15761,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T16:30:39.923Z"
+  "updatedAt": "2026-09-04T16:31:29.304Z"
 }
