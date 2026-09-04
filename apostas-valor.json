@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6151.52,
+      "value": 7011.96,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T14:49:24.969Z"
+      "updatedAt": "2026-09-04T16:30:39.922Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4769,6 +4769,18 @@
       "name": "Tivobet",
       "value": 0.01,
       "updatedAt": "2026-08-31T14:36:39.326Z"
+    },
+    {
+      "id": "mtn67c4uwdaz0",
+      "name": "Casa A",
+      "value": -249.24,
+      "updatedAt": "2026-09-04T16:30:39.918Z"
+    },
+    {
+      "id": "mtn67c4uibvxb",
+      "name": "Casa B",
+      "value": -611.2,
+      "updatedAt": "2026-09-04T16:30:39.918Z"
     }
   ],
   "aportes": [
@@ -15580,6 +15592,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T14:49:24.969Z"
+    },
+    {
+      "id": "mtn67c4ub93ks",
+      "kind": "sure",
+      "event": "Triveni Continental Kings – FYERS American Gambits",
+      "houseA": "",
+      "houseB": "",
+      "oddA": 3.85,
+      "oddB": 1.57,
+      "total": 860.4391541401274,
+      "stakeA": 249.2416,
+      "stakeB": 611.1975541401274,
+      "lucroA": 99.14100585987273,
+      "lucroB": 99.14100585987273,
+      "lucro": 99.14100585987273,
+      "roi": 11.522140221402228,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-09-05T11:31",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T16:30:39.918Z"
     }
   ],
   "invertidos": [],
@@ -15745,5 +15781,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T15:19:27.999Z"
+  "updatedAt": "2026-09-04T16:30:39.923Z"
 }
