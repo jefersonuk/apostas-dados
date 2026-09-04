@@ -4769,12 +4769,6 @@
       "name": "Tivobet",
       "value": 0.01,
       "updatedAt": "2026-08-31T14:36:39.326Z"
-    },
-    {
-      "id": "mtkfqvhinx5nl",
-      "name": "Casa B",
-      "value": 0,
-      "updatedAt": "2026-09-03T01:04:44.931Z"
     }
   ],
   "aportes": [
@@ -5385,6 +5379,10 @@
     {
       "id": "mtlkvgse1iq2f",
       "at": "2026-09-04T14:32:02.596Z"
+    },
+    {
+      "id": "mtkfqvhinx5nl",
+      "at": "2026-09-04T15:18:05.597Z"
     }
   ],
   "surebets": [
@@ -15741,5 +15739,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T15:17:58.761Z"
+  "updatedAt": "2026-09-04T15:18:05.597Z"
 }
