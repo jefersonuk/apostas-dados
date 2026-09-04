@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7401.47,
+      "value": 7758.09,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T16:41:32.112Z"
+      "updatedAt": "2026-09-04T16:45:34.129Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2953.16,
-      "updatedAt": "2026-09-04T16:41:32.109Z"
+      "value": 2789.16,
+      "updatedAt": "2026-09-04T16:45:34.127Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 170.92,
-      "updatedAt": "2026-09-04T14:35:05.723Z",
+      "value": 133.3,
+      "updatedAt": "2026-09-04T16:45:34.127Z",
       "currency": "USD"
     },
     {
@@ -15645,6 +15645,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T16:41:32.109Z"
+    },
+    {
+      "id": "mtn6qi3yfa2lk",
+      "kind": "sure",
+      "event": "Waterford – Sligo Rovers",
+      "houseA": "Bookmaker",
+      "houseB": "Pinnacle",
+      "oddA": 1.91,
+      "oddB": 2.26,
+      "total": 356.6144,
+      "stakeA": 192.6144,
+      "stakeB": 164,
+      "lucroA": 11.279103999999961,
+      "lucroB": 14.025599999999997,
+      "lucro": 11.279103999999961,
+      "roi": 3.162829094955213,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-04T15:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T16:45:34.127Z"
     }
   ],
   "invertidos": [],
@@ -15810,5 +15834,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T16:41:32.112Z"
+  "updatedAt": "2026-09-04T16:45:34.129Z"
 }
