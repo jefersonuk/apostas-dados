@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 770,
-      "updatedAt": "2026-09-04T14:35:05.723Z"
+      "value": 560,
+      "updatedAt": "2026-09-04T18:21:48.806Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6338.09,
+      "value": 7101.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T18:02:58.199Z"
+      "updatedAt": "2026-09-04T18:21:48.807Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4705,9 +4705,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 200,
+      "value": 92,
       "currency": "USD",
-      "updatedAt": "2026-09-04T15:17:58.753Z"
+      "updatedAt": "2026-09-04T18:21:48.806Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -15670,6 +15670,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T16:45:34.127Z"
+    },
+    {
+      "id": "mtna69vq9yvz0",
+      "kind": "sure",
+      "event": "Sibbo Vargarna x IF gnistan",
+      "houseA": "Shuffle",
+      "houseB": "Betnacional",
+      "oddA": 1.43,
+      "oddB": 3.75,
+      "total": 762.96,
+      "stakeA": 552.96,
+      "stakeB": 210,
+      "lucroA": 27.77279999999996,
+      "lucroB": 24.539999999999964,
+      "lucro": 24.539999999999964,
+      "roi": 3.2164202579427448,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-05T07:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T18:21:48.806Z"
     }
   ],
   "invertidos": [],
@@ -15835,5 +15859,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T18:02:58.199Z"
+  "updatedAt": "2026-09-04T18:21:48.807Z"
 }
