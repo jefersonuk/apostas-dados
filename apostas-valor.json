@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5821.52,
+      "value": 6151.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T14:32:02.596Z"
+      "updatedAt": "2026-09-04T14:49:24.969Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 205,
+      "value": 100,
       "currency": "BRL",
-      "updatedAt": "2026-09-04T14:33:01.830Z"
+      "updatedAt": "2026-09-04T14:49:24.969Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3076.15,
-      "updatedAt": "2026-09-04T14:35:51.998Z"
+      "value": 2851.15,
+      "updatedAt": "2026-09-04T14:49:24.969Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -15552,6 +15552,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T12:07:38.531Z"
+    },
+    {
+      "id": "mtn2l4o9y6nrs",
+      "kind": "sure",
+      "event": "VRI x Holstebro",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.531,
+      "oddB": 3.24,
+      "total": 330,
+      "stakeA": 225,
+      "stakeB": 105,
+      "lucroA": 14.474999999999966,
+      "lucroB": 10.200000000000045,
+      "lucro": 10.200000000000045,
+      "roi": 3.0909090909091046,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-04T14:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T14:49:24.969Z"
     }
   ],
   "invertidos": [],
@@ -15717,5 +15741,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T14:35:51.999Z"
+  "updatedAt": "2026-09-04T14:49:24.970Z"
 }
