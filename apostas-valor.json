@@ -4712,8 +4712,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 38,
-      "updatedAt": "2026-09-04T14:30:12.521Z",
+      "value": -10.68,
+      "updatedAt": "2026-09-04T16:35:40.893Z",
       "currency": "USD"
     },
     {
@@ -4761,8 +4761,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": -189.44,
-      "updatedAt": "2026-09-04T16:35:15.692Z"
+      "value": -800.64,
+      "updatedAt": "2026-09-04T16:35:40.893Z"
     },
     {
       "id": "mthcdb8cf914h",
@@ -4773,14 +4773,14 @@
     {
       "id": "mtn67c4uwdaz0",
       "name": "Casa A",
-      "value": -249.24,
-      "updatedAt": "2026-09-04T16:30:39.918Z"
+      "value": 0,
+      "updatedAt": "2026-09-04T16:35:40.893Z"
     },
     {
       "id": "mtn67c4uibvxb",
       "name": "Casa B",
-      "value": -611.2,
-      "updatedAt": "2026-09-04T16:30:39.918Z"
+      "value": 0,
+      "updatedAt": "2026-09-04T16:35:40.893Z"
     }
   ],
   "aportes": [
@@ -15577,17 +15577,17 @@
       "id": "mtn67c4ub93ks",
       "kind": "sure",
       "event": "Triveni Continental Kings – FYERS American Gambits",
-      "houseA": "",
-      "houseB": "",
+      "houseA": "BCgame",
+      "houseB": "Betfury",
       "oddA": 3.85,
       "oddB": 1.57,
-      "total": 860.4391541401274,
-      "stakeA": 249.2416,
-      "stakeB": 611.1975541401274,
-      "lucroA": 99.14100585987273,
-      "lucroB": 99.14100585987273,
-      "lucro": 99.14100585987273,
-      "roi": 11.522140221402228,
+      "total": 860.44,
+      "stakeA": 249.24,
+      "stakeB": 611.2,
+      "lucroA": 99.13400000000001,
+      "lucroB": 99.144,
+      "lucro": 99.13400000000001,
+      "roi": 11.521314676212171,
       "winner": null,
       "curA": "USD",
       "curB": "USD",
@@ -15595,7 +15595,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-04T16:30:39.918Z"
+      "updatedAt": "2026-09-04T16:35:40.893Z"
     },
     {
       "id": "mtn6d8x7djx2j",
@@ -15785,5 +15785,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T16:35:15.696Z"
+  "updatedAt": "2026-09-04T16:35:40.893Z"
 }
