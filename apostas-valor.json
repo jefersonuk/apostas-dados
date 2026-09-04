@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 7112.39,
+      "value": 7401.47,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T16:35:15.696Z"
+      "updatedAt": "2026-09-04T16:41:32.112Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4588,8 +4588,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3068.16,
-      "updatedAt": "2026-09-04T16:31:29.301Z"
+      "value": 2953.16,
+      "updatedAt": "2026-09-04T16:41:32.109Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4761,8 +4761,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 43,
-      "updatedAt": "2026-09-04T16:36:05.220Z",
+      "value": 9,
+      "updatedAt": "2026-09-04T16:41:32.109Z",
       "currency": "USD"
     },
     {
@@ -15621,6 +15621,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T16:35:15.692Z"
+    },
+    {
+      "id": "mtn6lbd8fmkqg",
+      "kind": "sure",
+      "event": "Zagorec Krapina – NK Vrapce",
+      "houseA": "Betfury",
+      "houseB": "Pinnacle",
+      "oddA": 1.75,
+      "oddB": 2.67,
+      "total": 289.08000000000004,
+      "stakeA": 174.08,
+      "stakeB": 115,
+      "lucroA": 15.560000000000002,
+      "lucroB": 17.96999999999997,
+      "lucro": 15.560000000000002,
+      "roi": 5.38259305382593,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-04T14:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T16:41:32.109Z"
     }
   ],
   "invertidos": [],
@@ -15786,5 +15810,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T16:36:05.220Z"
+  "updatedAt": "2026-09-04T16:41:32.112Z"
 }
