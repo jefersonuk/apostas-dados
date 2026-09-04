@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 895,
-      "updatedAt": "2026-09-04T11:56:52.840Z"
+      "value": 770,
+      "updatedAt": "2026-09-04T12:07:38.530Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5083.79,
+      "value": 6178.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T11:56:52.842Z"
+      "updatedAt": "2026-09-04T12:07:38.535Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4620,9 +4620,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 218.77,
+      "value": 28.61,
       "currency": "USD",
-      "updatedAt": "2026-09-02T12:17:43.633Z"
+      "updatedAt": "2026-09-04T12:07:38.530Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -15548,6 +15548,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T11:56:52.841Z"
+    },
+    {
+      "id": "mtmwt34v4yh8c",
+      "kind": "sure",
+      "event": "Nottingham Forest FC – Tottenham Hotspur FC",
+      "houseA": "Overtimemarkets",
+      "houseB": "Betnacional",
+      "oddA": 1.16,
+      "oddB": 9,
+      "total": 1094.8275862068967,
+      "stakeA": 969.8275862068966,
+      "stakeB": 125,
+      "lucroA": 30.17241379310326,
+      "lucroB": 30.17241379310326,
+      "lucro": 30.17241379310326,
+      "roi": 2.755905511811006,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-05T11:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T12:07:38.531Z"
     }
   ],
   "invertidos": [],
@@ -15713,5 +15737,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T11:56:52.843Z"
+  "updatedAt": "2026-09-04T12:07:38.535Z"
 }
