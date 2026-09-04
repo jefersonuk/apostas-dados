@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6794.95,
+      "value": 7112.39,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-04T16:31:29.303Z"
+      "updatedAt": "2026-09-04T16:35:15.696Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4544,8 +4544,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 130,
-      "updatedAt": "2026-09-04T14:30:01.345Z"
+      "value": 2,
+      "updatedAt": "2026-09-04T16:35:15.691Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4761,8 +4761,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 0,
-      "updatedAt": "2026-08-31T00:59:32.353Z"
+      "value": -189.44,
+      "updatedAt": "2026-09-04T16:35:15.692Z"
     },
     {
       "id": "mthcdb8cf914h",
@@ -15596,6 +15596,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-04T16:30:39.918Z"
+    },
+    {
+      "id": "mtn6d8x7djx2j",
+      "kind": "sure",
+      "event": "FYERS American Gambits – Triveni Continental Kings",
+      "houseA": "Blaze",
+      "houseB": "Betfury",
+      "oddA": 2.85,
+      "oddB": 1.9,
+      "total": 317.44,
+      "stakeA": 128,
+      "stakeB": 189.44,
+      "lucroA": 47.360000000000014,
+      "lucroB": 42.49599999999998,
+      "lucro": 42.49599999999998,
+      "roi": 13.387096774193544,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-05T11:31",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-04T16:35:15.692Z"
     }
   ],
   "invertidos": [],
@@ -15761,5 +15785,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-04T16:31:29.304Z"
+  "updatedAt": "2026-09-04T16:35:15.696Z"
 }
