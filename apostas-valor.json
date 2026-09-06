@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 560,
-      "updatedAt": "2026-09-04T18:21:48.806Z"
+      "value": 405,
+      "updatedAt": "2026-09-06T14:03:51.474Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 0,
+      "value": 739.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-06T13:57:11.106Z"
+      "updatedAt": "2026-09-06T14:03:51.476Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4620,9 +4620,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 247.91,
+      "value": 133.91,
       "currency": "USD",
-      "updatedAt": "2026-09-06T13:56:35.587Z"
+      "updatedAt": "2026-09-06T14:03:51.474Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -15684,6 +15684,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-06T13:55:22.764Z"
+    },
+    {
+      "id": "mtpvu8ttwjg4s",
+      "kind": "sure",
+      "event": "GETAFE CF - REAL CLUB CELTA DE VIGO",
+      "houseA": "Overtimemarkets",
+      "houseB": "Betnacional",
+      "oddA": 1.33,
+      "oddB": 5,
+      "total": 739.8199999999999,
+      "stakeA": 584.8199999999999,
+      "stakeB": 155,
+      "lucroA": 37.99059999999997,
+      "lucroB": 35.180000000000064,
+      "lucro": 35.180000000000064,
+      "roi": 4.755210726933588,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-07T14:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-06T14:03:51.474Z"
     }
   ],
   "invertidos": [],
@@ -15849,5 +15873,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-06T13:57:11.106Z"
+  "updatedAt": "2026-09-06T14:03:51.476Z"
 }
