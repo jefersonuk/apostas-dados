@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1532.09,
+      "value": 2004.36,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-06T14:08:28.733Z"
+      "updatedAt": "2026-09-06T21:23:50.188Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4544,8 +4544,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 1238.76,
-      "updatedAt": "2026-09-06T13:56:57.877Z"
+      "value": 1063.48,
+      "updatedAt": "2026-09-06T21:23:50.182Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2989.05,
+      "value": 2692.05,
       "currency": "BRL",
-      "updatedAt": "2026-09-06T13:54:34.984Z"
+      "updatedAt": "2026-09-06T21:23:50.182Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -15732,6 +15732,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-06T14:08:28.731Z"
+    },
+    {
+      "id": "mtqbk27auwpbx",
+      "kind": "sure",
+      "event": "Aliesia Reva – Victoria Gomez",
+      "houseA": "Blaze",
+      "houseB": "Ivibet",
+      "oddA": 3.05,
+      "oddB": 1.8,
+      "total": 472.27868852459017,
+      "stakeA": 175.2786885245902,
+      "stakeB": 297,
+      "lucroA": 62.32131147540986,
+      "lucroB": 62.32131147540986,
+      "lucro": 62.32131147540986,
+      "roi": 13.195876288659797,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-07T06:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-06T21:23:50.183Z"
     }
   ],
   "invertidos": [],
@@ -15897,5 +15921,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-06T21:21:34.084Z"
+  "updatedAt": "2026-09-06T21:23:50.188Z"
 }
