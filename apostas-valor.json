@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2004.36,
+      "value": 2479.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-06T21:23:50.188Z"
+      "updatedAt": "2026-09-06T21:28:38.300Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2692.05,
+      "value": 2412,
       "currency": "BRL",
-      "updatedAt": "2026-09-06T21:23:50.182Z"
+      "updatedAt": "2026-09-06T21:28:38.295Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4748,9 +4748,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 37.71,
+      "value": -0.23,
       "currency": "USD",
-      "updatedAt": "2026-09-04T14:32:02.596Z"
+      "updatedAt": "2026-09-06T21:28:38.296Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -15756,6 +15756,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-06T21:23:50.183Z"
+    },
+    {
+      "id": "mtqbq8idcmomy",
+      "kind": "sure",
+      "event": "Lyon Gaming – Disguised",
+      "houseA": "Ivibet",
+      "houseB": "Betonline",
+      "oddA": 1.8,
+      "oddB": 2.59,
+      "total": 474.68630999999993,
+      "stakeA": 280.05411,
+      "stakeB": 194.63219999999998,
+      "lucroA": 29.411088000000063,
+      "lucroB": 29.411088000000007,
+      "lucro": 29.411088000000007,
+      "roi": 6.19589977220957,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-06T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-06T21:28:38.296Z"
     }
   ],
   "invertidos": [],
@@ -15921,5 +15945,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-06T21:23:50.188Z"
+  "updatedAt": "2026-09-06T21:28:38.300Z"
 }
