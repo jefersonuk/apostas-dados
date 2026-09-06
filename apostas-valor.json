@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 405,
-      "updatedAt": "2026-09-06T14:03:51.474Z"
+      "value": 300,
+      "updatedAt": "2026-09-06T14:08:28.731Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 739.82,
+      "value": 1532.09,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-06T14:03:51.476Z"
+      "updatedAt": "2026-09-06T14:08:28.733Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4620,9 +4620,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 133.91,
+      "value": -0.06,
       "currency": "USD",
-      "updatedAt": "2026-09-06T14:03:51.474Z"
+      "updatedAt": "2026-09-06T14:08:28.731Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -15708,6 +15708,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-06T14:03:51.474Z"
+    },
+    {
+      "id": "mtpw06rekf72d",
+      "kind": "sure",
+      "event": "Elche x real sociedad",
+      "houseA": "Betnacional",
+      "houseB": "Overtimemarkets",
+      "oddA": 8,
+      "oddB": 1.24,
+      "total": 792.2660999999999,
+      "stakeA": 105,
+      "stakeB": 687.2660999999999,
+      "lucroA": 47.73390000000006,
+      "lucroB": 59.94386399999996,
+      "lucro": 47.73390000000006,
+      "roi": 6.024983272665594,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-07T16:31",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-06T14:08:28.731Z"
     }
   ],
   "invertidos": [],
@@ -15873,5 +15897,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-06T14:03:51.476Z"
+  "updatedAt": "2026-09-06T14:08:28.733Z"
 }
