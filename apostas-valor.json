@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5670.37,
+      "value": 5892.38,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T14:31:28.389Z"
+      "updatedAt": "2026-09-07T14:44:43.424Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 222.44,
+      "value": 0.43,
       "currency": "BRL",
-      "updatedAt": "2026-09-07T14:12:38.950Z"
+      "updatedAt": "2026-09-07T14:44:43.421Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -15975,6 +15975,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T14:31:28.387Z"
+    },
+    {
+      "id": "mtrcqnffxt559",
+      "kind": "sure",
+      "event": "Alabama – Grambling (H1 -2.5)",
+      "houseA": "Ivibet",
+      "houseB": "Ivibet",
+      "oddA": 1.33,
+      "oddB": 1.01,
+      "total": 222.01,
+      "stakeA": 222,
+      "stakeB": 0.01,
+      "lucroA": 73.25,
+      "lucroB": -221.9999,
+      "lucro": -221.9999,
+      "roi": -99.99545065537589,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-07T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T14:44:43.422Z"
     }
   ],
   "invertidos": [],
@@ -16141,5 +16165,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T14:31:28.389Z"
+  "updatedAt": "2026-09-07T14:44:43.424Z"
 }
