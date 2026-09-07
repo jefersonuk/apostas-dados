@@ -4561,13 +4561,6 @@
       "updatedAt": "2026-09-02T00:15:07.299Z"
     },
     {
-      "id": "msddfl9dohdf9",
-      "name": "Epicbet",
-      "value": 18,
-      "currency": "USD",
-      "updatedAt": "2026-08-27T21:49:06.056Z"
-    },
-    {
       "id": "msddfxwzvj74u",
       "name": "Casinozer",
       "value": 132.09,
@@ -5421,6 +5414,10 @@
     {
       "id": "mtrc9lz7d6s7c",
       "at": "2026-09-07T14:50:25.651Z"
+    },
+    {
+      "id": "msddfl9dohdf9",
+      "at": "2026-09-07T16:55:14.360Z"
     }
   ],
   "surebets": [
@@ -16201,5 +16198,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T15:33:25.689Z"
+  "updatedAt": "2026-09-07T16:55:14.361Z"
 }
