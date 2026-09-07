@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 0,
-      "updatedAt": "2026-09-07T15:02:44.366Z"
+      "value": 775,
+      "updatedAt": "2026-09-07T18:47:48.103Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6484.13,
+      "value": 5744.31,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T18:46:40.371Z"
+      "updatedAt": "2026-09-07T18:47:48.105Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -15708,14 +15708,15 @@
       "lucroB": 35.180000000000064,
       "lucro": 35.180000000000064,
       "roi": 4.755210726933588,
-      "winner": null,
+      "winner": "B",
       "curA": "USD",
       "curB": "BRL",
       "date": "2026-09-07T14:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-09-06T14:03:51.474Z"
+      "updatedAt": "2026-09-07T18:47:48.103Z"
     },
     {
       "id": "mtpw06rekf72d",
@@ -16248,5 +16249,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T18:46:40.371Z"
+  "updatedAt": "2026-09-07T18:47:48.106Z"
 }
