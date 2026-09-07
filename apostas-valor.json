@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5256.84,
+      "value": 5477.37,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T14:12:38.953Z"
+      "updatedAt": "2026-09-07T14:26:37.734Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4677,9 +4677,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 311.37,
+      "value": 274.37,
       "currency": "EUR",
-      "updatedAt": "2026-09-03T18:50:54.963Z"
+      "updatedAt": "2026-09-07T14:26:37.725Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -15927,6 +15927,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T14:12:38.950Z"
+    },
+    {
+      "id": "mtrc3dp5y67hb",
+      "kind": "sure",
+      "event": "FK Vardar – FK Arsimi 1973 (h2+3)",
+      "houseA": "Sportmarket",
+      "houseB": "Sportmarket",
+      "oddA": 1.62,
+      "oddB": 1.01,
+      "total": 220.53,
+      "stakeA": 220.52,
+      "stakeB": 0.01,
+      "lucroA": 136.71240000000003,
+      "lucroB": -220.5199,
+      "lucro": -220.5199,
+      "roi": -99.99542012424614,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-09-07T14:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T14:26:37.727Z"
     }
   ],
   "invertidos": [],
@@ -16093,5 +16117,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T14:12:38.953Z"
+  "updatedAt": "2026-09-07T14:26:37.734Z"
 }
