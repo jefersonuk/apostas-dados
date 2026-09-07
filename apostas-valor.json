@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-03",
+    "startDate": "2026-09-04",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3023.13,
+      "value": 4958.09,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-06T21:44:22.759Z"
+      "updatedAt": "2026-09-07T00:35:46.820Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 2412,
+      "value": 1192,
       "currency": "BRL",
-      "updatedAt": "2026-09-06T21:28:38.295Z"
+      "updatedAt": "2026-09-07T00:35:46.794Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4705,9 +4705,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 246.14,
+      "value": 106.77,
       "currency": "USD",
-      "updatedAt": "2026-09-06T13:55:22.764Z"
+      "updatedAt": "2026-09-07T00:35:46.796Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -4980,10 +4980,10 @@
   ],
   "usdRate": 5.13,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-06T23:40:52.778Z",
+  "usdRateAt": "2026-09-06T21:21:33.820Z",
   "eurRate": 5.95,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-06T23:40:53.037Z",
+  "eurRateAt": "2026-09-06T21:21:34.084Z",
   "appBuild": "20260902-1337",
   "deleted": [
     {
@@ -15804,6 +15804,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-06T21:44:22.749Z"
+    },
+    {
+      "id": "mtqiewgxs81tz",
+      "kind": "sure",
+      "event": "Nova Zelândia – China",
+      "houseA": "Ivibet",
+      "houseB": "Shuffle",
+      "oddA": 1.95,
+      "oddB": 2.32,
+      "total": 1934.9681,
+      "stakeA": 1220,
+      "stakeB": 714.9681,
+      "lucroA": 444.03189999999995,
+      "lucroB": -276.24210800000014,
+      "lucro": -276.24210800000014,
+      "roi": -14.276313289092474,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-07T01:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T00:35:46.796Z"
     }
   ],
   "invertidos": [],
@@ -15969,5 +15993,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-06T23:40:53.037Z"
+  "updatedAt": "2026-09-07T00:35:46.821Z"
 }
