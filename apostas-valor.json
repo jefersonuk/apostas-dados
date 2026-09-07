@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5401.31,
+      "value": 6115.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T14:57:59.660Z"
+      "updatedAt": "2026-09-07T15:33:25.689Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4706,9 +4706,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 430.11,
+      "value": 355.82,
       "currency": "USD",
-      "updatedAt": "2026-09-07T12:25:50.431Z"
+      "updatedAt": "2026-09-07T15:33:25.683Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 98.03,
+      "value": 33.03,
       "currency": "USD",
-      "updatedAt": "2026-09-07T00:38:44.703Z"
+      "updatedAt": "2026-09-07T15:33:25.682Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16011,6 +16011,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T14:57:59.656Z"
+    },
+    {
+      "id": "mtreha9dlghty",
+      "kind": "sure",
+      "event": "Nigeria U20 – Spain U20",
+      "houseA": "Betonline",
+      "houseB": "Shuffle",
+      "oddA": 2.19,
+      "oddB": 1.93,
+      "total": 714.5577000000001,
+      "stakeA": 333.45,
+      "stakeB": 381.1077,
+      "lucroA": 15.697799999999916,
+      "lucroB": 20.980160999999953,
+      "lucro": 15.697799999999916,
+      "roi": 2.196855481369792,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-09-07T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T15:33:25.683Z"
     }
   ],
   "invertidos": [],
@@ -16177,5 +16201,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T15:07:04.841Z"
+  "updatedAt": "2026-09-07T15:33:25.689Z"
 }
