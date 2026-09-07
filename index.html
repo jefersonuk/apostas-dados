@@ -221,9 +221,11 @@
   /* status pendente vs finalizada */
   .sb-op.pending{border-left:4px solid var(--amber);background:#16120B;}
   .sb-op.done{border-left:4px solid var(--green);opacity:.82;}
+  .sb-op.void{border-left:4px solid var(--muted-2);opacity:.7;}
   .sb-status-badge{display:inline-block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:10px;white-space:nowrap;}
   .sb-status-badge.pending{background:#4D3010;color:var(--amber);}
   .sb-status-badge.done{background:#1A3D2E;color:var(--green);}
+  .sb-status-badge.void{background:#1A1D24;color:var(--muted);}
   .sb-op-val .lucro.pend{color:var(--amber);}
   .sb-edit{padding:10px 12px;border-top:1px solid var(--border);background:#0E1116;}
   .sb-edit label{font-size:10px;}
@@ -791,7 +793,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260902-1337';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260907-1220';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -2025,6 +2027,7 @@
 
   // lucro real: se o vencedor foi marcado, usa o cenário real; senão usa o pior caso (garantido/teórico)
   function sbRealProfit(o){
+    if(o.winner==='VOID') return 0;                                   // reembolso: stakes devolvidos, resultado zero
     if(ehValor(o)){
       if(o.winner==='A') return legStake(o,'A')*(legOdd(o,'A')-1);   // green
       if(o.winner==='RED') return -legStake(o,'A');                   // red
@@ -2083,7 +2086,9 @@
   function aplicarResultado(o,vencedor){
     if(o.aplicado&&o.aplicado.resultado) reverterResultado(o);
     if(!vencedor) return;
-    if(vencedor!=='RED'){                       // RED (aposta de valor perdida) não devolve nada
+    if(vencedor==='VOID'){                      // reembolso: cada casa devolve o próprio stake, sem lucro
+      opLegs(o).forEach(l=>moverSaldo(legHouse(o,l),+legStake(o,l)));
+    } else if(vencedor!=='RED'){                // RED (aposta de valor perdida) não devolve nada
       const casa=legHouse(o,vencedor), retorno=legStake(o,vencedor)*legOdd(o,vencedor);
       moverSaldo(casa,+retorno);
     }
@@ -2092,7 +2097,9 @@
   function reverterResultado(o){
     if(!(o.aplicado&&o.aplicado.resultado)) return;
     const v=o.aplicado.resultado;
-    if(v!=='RED'){
+    if(v==='VOID'){
+      opLegs(o).forEach(l=>moverSaldo(legHouse(o,l),-legStake(o,l)));
+    } else if(v!=='RED'){
       const casa=legHouse(o,v), retorno=legStake(o,v)*legOdd(o,v);
       moverSaldo(casa,-retorno);
     }
@@ -2165,18 +2172,21 @@
     const ops=(state.surebets||[]).filter(o=>!ehValor(o));
     const open=ops.filter(o=>!o.winner);
     const done=ops.filter(o=>!!o.winner);
-    // lucro realizado: só das finalizadas
-    const profit=done.reduce((s,o)=>s+sbRealProfit(o),0);
-    const volume=ops.reduce((s,o)=>s+o.total,0);
+    // reembolsadas: evento anulado, dinheiro devolvido — não são resultado nem volume
+    const anuladas=done.filter(o=>o.winner==='VOID');
+    const liq=done.filter(o=>o.winner!=='VOID');
+    // lucro realizado: só das finalizadas que de fato liquidaram
+    const profit=liq.reduce((s,o)=>s+sbRealProfit(o),0);
+    const volume=ops.filter(o=>o.winner!=='VOID').reduce((s,o)=>s+o.total,0);
     const banca=(state.sbBankroll||0)+profit;
-    const avgRoi=done.length?done.reduce((s,o)=>s+o.roi,0)/done.length:0;
-    const avgLock=done.length?profit/done.length:0;
+    const avgRoi=liq.length?liq.reduce((s,o)=>s+o.roi,0)/liq.length:0;
+    const avgLock=liq.length?profit/liq.length:0;
     $('sbBanca').textContent=fmt(banca);
     $('sbProfit').textContent=fmtSign(profit); $('sbProfit').className='v '+(profit>=0?'pos':'neg');
-    $('sbRoi').textContent=done.length?avgRoi.toFixed(2)+'%':'—'; $('sbRoi').className='v '+(avgRoi>=0?'pos':'neg');
-    $('sbCount').innerHTML=ops.length?`${done.length} <span style="font-size:11px;color:var(--muted-2)">fin.</span> · <span style="color:var(--amber)">${open.length}</span> <span style="font-size:11px;color:var(--muted-2)">aberto</span>`:'—';
-    $('sbAvgLock').textContent=done.length?fmtSign(avgLock):'—';
-    $('sbVolume').textContent=ops.length?fmt(volume):'—';
+    $('sbRoi').textContent=liq.length?avgRoi.toFixed(2)+'%':'—'; $('sbRoi').className='v '+(avgRoi>=0?'pos':'neg');
+    $('sbCount').innerHTML=ops.length?`${liq.length} <span style="font-size:11px;color:var(--muted-2)">fin.</span> · <span style="color:var(--amber)">${open.length}</span> <span style="font-size:11px;color:var(--muted-2)">aberto</span>`+(anuladas.length?` · <span style="color:var(--muted-2)">${anuladas.length} anul.</span>`:''):'—';
+    $('sbAvgLock').textContent=liq.length?fmtSign(avgLock):'—';
+    $('sbVolume').textContent=liq.length?fmt(volume):'—';
 
     // caixa de capital em aberto
     const box=$('sbOpenBox');
@@ -2206,7 +2216,7 @@
 
   function renderSurebetChart(){
     const svg=$('sbChartSvg');
-    const ops=[...(state.surebets||[])].filter(o=>!!o.winner&&!ehValor(o)).sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
+    const ops=[...(state.surebets||[])].filter(o=>!!o.winner&&o.winner!=='VOID'&&!ehValor(o)).sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.id.localeCompare(b.id));
     const base=state.sbBankroll||0;
     if(!ops.length){ svg.innerHTML=''; $('sbChartNote').textContent='Finalize operações (marque a casa vencedora) para ver a evolução real.'; return; }
     const pts=[{x:0,val:base}]; let run=base;
@@ -2280,17 +2290,20 @@
         const hC=has3?(o.houseC?esc(o.houseC):'Casa C'):null;
         const realProfit=sbRealProfit(o);
         const resolved=!!o.winner;
+        const anulada=o.winner==='VOID';
         const isEditing=sbEditingId===o.id;
-        const badge=(resolved
+        const badge=(anulada
+          ? `<span class="sb-status-badge void">↩ reembolsada</span>`
+          : resolved
           ? `<span class="sb-status-badge done">✓ finalizada</span>`
           : `<span class="sb-status-badge pending">⏳ em aberto</span>`)
           +(o.lay?`<span class="sb-status-badge" style="background:#1A1230;color:#C4B5FD;">lay</span>`:'');
-        const lucroCls=resolved?'lucro':'lucro pend';
-        const lucroTxt=resolved?fmtSign(realProfit):
+        const lucroCls=(resolved&&!anulada)?'lucro':'lucro pend';
+        const lucroTxt=anulada?fmt(0):(resolved?fmtSign(realProfit):
           (has3?`${fmtSign(legLucro(o,'A'))} · ${fmtSign(legLucro(o,'B'))} · ${fmtSign(legLucro(o,'C'))}`
-               :`${fmtSign(legLucro(o,'A'))} a ${fmtSign(legLucro(o,'B'))}`);
-        const winnerHouse=o.winner?(o.winner==='A'?hA:o.winner==='B'?hB:hC):null;
-        const subTxt=resolved?`ganhou ${winnerHouse}`:'aguardando resultado';
+               :`${fmtSign(legLucro(o,'A'))} a ${fmtSign(legLucro(o,'B'))}`));
+        const winnerHouse=(resolved&&!anulada)?(o.winner==='A'?hA:o.winner==='B'?hB:hC):null;
+        const subTxt=anulada?'anulada · stakes devolvidos':(resolved?`ganhou ${winnerHouse}`:'aguardando resultado');
 
         let detailInner;
         if(isEditing){
@@ -2337,15 +2350,18 @@
           const winBtns=legRows.map(([l,h])=>
             `<button class="btn small ${o.winner===l?'primary':''}" data-sbwin="${o.id}:${l}">${h} venceu</button>`
           ).join('');
+          // evento anulado/adiado: nenhuma perna resolve e todas as casas devolvem o stake
+          const voidBtn=`<button class="btn small" data-sbwin="${o.id}:VOID" title="Evento anulado, adiado ou empate de linha nas duas pernas: cada casa devolve o stake" style="${anulada?'background:var(--muted-2);color:#0B0D10;border-color:var(--muted-2);':''}">↩ Reembolso</button>`;
           detailInner=`<div class="sb-op-detail${sbOpenDetail===o.id?' show':''}" data-sbdetail="${o.id}">
             ${legLines}${layLine}
             <div class="leg" style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Total investido</span><span>${fmt(o.total)}</span></div>
             ${cenarioLines}
-            <div class="leg" style="color:var(--sky);border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Resultado real</span><span>${resolved?fmtSign(realProfit):'aguardando'}</span></div>
+            <div class="leg" style="color:var(--sky);border-top:1px solid var(--border);margin-top:4px;padding-top:4px;"><span>Resultado real</span><span>${anulada?'anulada — reembolso total':(resolved?fmtSign(realProfit):'aguardando')}</span></div>
             <div style="margin-top:10px;">
-              <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Marcar casa vencedora</div>
+              <div style="font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">Marcar resultado</div>
               <div style="display:flex;gap:6px;flex-wrap:wrap;">
                 ${winBtns}
+                ${voidBtn}
                 ${o.winner?`<button class="btn small" data-sbwin="${o.id}:">Reabrir</button>`:''}
               </div>
             </div>
@@ -2361,7 +2377,7 @@
               <span class="sb-house hB${o.winner==='B'?' winner':''}"><span class="hname">${hB}${o.winner==='B'?' ✓':''}</span><span class="hodd">@${legOdd(o,'B').toFixed(2)}</span></span>
               ${has3?`<span class="sb-house hC${o.winner==='C'?' winner':''}"><span class="hname">${hC}${o.winner==='C'?' ✓':''}</span><span class="hodd">@${legOdd(o,'C').toFixed(2)}</span></span>`:''}`;
 
-        html+=`<div class="sb-op ${resolved?'done':'pending'}">
+        html+=`<div class="sb-op ${anulada?'void':(resolved?'done':'pending')}">
           <div class="sb-op-top" data-sbtoggle="${o.id}">
             <div class="sb-op-head">
               <span class="sb-time"><span class="hh">${hh}</span><span class="label">jogo</span></span>
@@ -2477,7 +2493,7 @@
         o.houseA||'', num(legOdd(o,'A')), num(legStake(o,'A')),
         o.houseB||'', num(legOdd(o,'B')), num(legStake(o,'B')),
         has3?(o.houseC||''):'', has3?num(legOdd(o,'C')):'', has3?num(legStake(o,'C')):'',
-        num(o.total), o.winner||'pendente', num(sbRealProfit(o)), num(o.roi)
+        num(o.total), (o.winner==='VOID'?'anulada':(o.winner||'pendente')), num(sbRealProfit(o)), num(o.roi)
       ].join('\t'));
     });
     navigator.clipboard.writeText(lines.join('\n')).then(()=>toast('Copiado ✓')).catch(()=>alert('Não foi possível copiar.'));
@@ -2501,7 +2517,7 @@
   let evoScope='sure';
 
   function computeDailyRaw(){
-    const ops=(state.surebets||[]).filter(o=>o.winner);
+    const ops=(state.surebets||[]).filter(o=>o.winner&&o.winner!=='VOID');   // reembolso não é resultado nem volume
     const days={};
     ops.forEach(o=>{
       const d=(o.date||'').slice(0,10)||'—';
@@ -3006,6 +3022,7 @@
     return {a,b};
   }
   function mdRealProfit(o){
+    if(o.resultado==='VOID') return 0;                 // reembolso: as duas casas devolvem o stake
     if(o.resultado==='A') return o.profitAWins;
     if(o.resultado==='B') return o.profitBWins;
     if(o.resultado==='MID') return (o.midProfit!=null)?o.midProfit:o.profitMiddle;
@@ -3021,6 +3038,10 @@
         if(o.houseA) moverSaldo(o.houseA, -mc.a);
         if(o.houseB) moverSaldo(o.houseB, -mc.b);
       }
+      else if(ant==='VOID'){
+        if(o.houseA) moverSaldo(o.houseA, -o.stakeA);
+        if(o.houseB) moverSaldo(o.houseB, -o.stakeB);
+      }
     }
     if(res==='A'&&o.houseA) moverSaldo(o.houseA, o.stakeA*o.oddA);
     else if(res==='B'&&o.houseB) moverSaldo(o.houseB, o.stakeB*o.oddB);
@@ -3028,19 +3049,25 @@
       if(o.houseA) moverSaldo(o.houseA, mc.a);
       if(o.houseB) moverSaldo(o.houseB, mc.b);
     }
+    else if(res==='VOID'){                 // evento anulado: cada casa devolve o próprio stake
+      if(o.houseA) moverSaldo(o.houseA, o.stakeA);
+      if(o.houseB) moverSaldo(o.houseB, o.stakeB);
+    }
     o.aplicado=Object.assign({},o.aplicado,{resultado:res||null});
   }
 
   function renderMiddleSummary(){
     const ops=state.middles||[];
     const fin=ops.filter(o=>o.resultado);
-    const mids=fin.filter(o=>o.resultado==='MID');
+    const anuladas=fin.filter(o=>o.resultado==='VOID');
+    const liq=fin.filter(o=>o.resultado!=='VOID');   // reembolso não conta como operação liquidada
+    const mids=liq.filter(o=>o.resultado==='MID');
     const open=ops.filter(o=>!o.resultado);
-    const lucro=fin.reduce((s,o)=>s+mdRealProfit(o),0);
-    $('mdProfit').textContent=fin.length?fmtSign(lucro):'—';
+    const lucro=liq.reduce((s,o)=>s+mdRealProfit(o),0);
+    $('mdProfit').textContent=liq.length?fmtSign(lucro):'—';
     $('mdProfit').className='v '+(lucro>=0?'pos':'neg');
-    $('mdCount').innerHTML=ops.length?`${fin.length} fin.${open.length?` · <span style="color:var(--amber)">${open.length} aberta${open.length>1?'s':''}</span>`:''}`:'—';
-    $('mdHits').textContent=fin.length?`${mids.length}/${fin.length} (${(mids.length/fin.length*100).toFixed(0)}%)`:'—';
+    $('mdCount').innerHTML=ops.length?`${liq.length} fin.${open.length?` · <span style="color:var(--amber)">${open.length} aberta${open.length>1?'s':''}</span>`:''}${anuladas.length?` · <span style="color:var(--muted-2)">${anuladas.length} anul.</span>`:''}`:'—';
+    $('mdHits').textContent=liq.length?`${mids.length}/${liq.length} (${(mids.length/liq.length*100).toFixed(0)}%)`:'—';
   }
 
   function renderMiddleList(){
@@ -3054,9 +3081,10 @@
     box.innerHTML=[...ops].sort((a,b)=>(b.date||'').localeCompare(a.date||'')).map(o=>{
       const fin=!!o.resultado;
       const isMid=o.resultado==='MID';
+      const anul=o.resultado==='VOID';
       const p=mdRealProfit(o);
-      const borderColor=!fin?'#F5A524':(isMid?'#38BDF8':(p>=0?'#34D399':'#F87171'));
-      const dot=!fin?'pendente':(p>=0?'green':'red');
+      const borderColor=!fin?'#F5A524':(anul?'#5C6472':(isMid?'#38BDF8':(p>=0?'#34D399':'#F87171')));
+      const dot=!fin?'pendente':(anul?'void':(p>=0?'green':'red'));
       const labelA=o.market==='handicap'?`H1(${o.lineA>0?'+':''}${o.lineA})`:`Over ${o.lineA}`;
       const labelB=o.market==='handicap'?`H2(${o.lineB>0?'+':''}${o.lineB})`:`Under ${o.lineB}`;
       const isOpen=mdOpenDetail===o.id;
@@ -3065,6 +3093,7 @@
       const isPushMid=o.midKind==='push';
       let valTxt;
       if(!fin) valTxt=`${fmtSign(o.profitAWins)} / ${fmtSign(mp)} / ${fmtSign(o.profitBWins)}`;
+      else if(anul) valTxt=`↩ ${fmt(0)}`;
       else valTxt=fmtSign(p)+(isMid?' 🎯':'');
       return `<div class="bet-row" style="border-left:3px solid ${borderColor};">
           <span class="bet-dot ${dot}"></span>
@@ -3077,7 +3106,7 @@
               ${fmt(o.total)}${midVals.length?` · ${isPushMid?'empate':'vão'}: ${midVals.join(',')}`:''}
             </div>
           </div>
-          <span class="bet-val ${!fin?'pend':(p>=0?'pos':'neg')}" style="font-size:11px;">${valTxt}</span>
+          <span class="bet-val ${(!fin||anul)?'pend':(p>=0?'pos':'neg')}" style="font-size:11px;">${valTxt}</span>
         </div>
         <div class="bet-detail${isOpen?' show':''}" data-mddetail="${o.id}">
           <div class="md-explain">🎯 ${mdMiddleExplain(o)}</div>
@@ -3101,6 +3130,7 @@
               <button class="btn small ${o.resultado==='A'?'primary':''}" data-mdres="${o.id}:A">A venceu</button>
               <button class="btn small ${o.resultado==='MID'?'primary':''}" data-mdres="${o.id}:MID" style="${o.resultado==='MID'?'background:var(--sky);color:#04121C;border-color:var(--sky);':''}">🎯 Middle!</button>
               <button class="btn small ${o.resultado==='B'?'primary':''}" data-mdres="${o.id}:B">B venceu</button>
+              <button class="btn small" data-mdres="${o.id}:VOID" title="Evento anulado ou adiado: as duas casas devolvem o stake" style="${anul?'background:var(--muted-2);color:#0B0D10;border-color:var(--muted-2);':''}">↩ Reembolso</button>
               ${o.resultado?`<button class="btn small" data-mdres="${o.id}:">Reabrir</button>`:''}
             </div>
           </div>
