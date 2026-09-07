@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2944.49,
+      "value": 3294.64,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T13:25:01.024Z"
+      "updatedAt": "2026-09-07T14:06:09.402Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1726.6,
+      "value": 1569.44,
       "currency": "BRL",
-      "updatedAt": "2026-09-07T12:26:06.815Z"
+      "updatedAt": "2026-09-07T14:06:09.400Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 257.05,
-      "updatedAt": "2026-09-06T13:55:20.467Z",
+      "value": 219.43,
+      "updatedAt": "2026-09-07T14:06:09.399Z",
       "currency": "USD"
     },
     {
@@ -15879,6 +15879,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T13:25:01.022Z"
+    },
+    {
+      "id": "mtrbd1x3tdg9i",
+      "kind": "sure",
+      "event": "Atlant - MHC Spartak MAH Moscow",
+      "houseA": "Bookmaker",
+      "houseB": "Ivibet",
+      "oddA": 1.93,
+      "oddB": 2.37,
+      "total": 350.15172151898724,
+      "stakeA": 192.99059999999997,
+      "stakeB": 157.16112151898727,
+      "lucroA": 22.320136481012696,
+      "lucroB": 22.320136481012582,
+      "lucro": 22.320136481012582,
+      "roi": 6.374418604651143,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-08T13:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T14:06:09.400Z"
     }
   ],
   "invertidos": [],
@@ -16045,5 +16069,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T14:04:15.270Z"
+  "updatedAt": "2026-09-07T14:06:09.402Z"
 }
