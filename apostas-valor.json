@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5523.78,
+      "value": 5610.84,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T18:49:33.921Z"
+      "updatedAt": "2026-09-07T20:19:24.832Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4749,8 +4749,8 @@
     {
       "id": "mtbvh50wqy903",
       "name": "Matchbook",
-      "value": 87.02,
-      "updatedAt": "2026-08-31T13:44:46.233Z"
+      "value": -0.04,
+      "updatedAt": "2026-09-07T20:19:24.828Z"
     },
     {
       "id": "mtfqqot0vqwy5",
@@ -16084,6 +16084,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T18:20:10.349Z"
+    },
+    {
+      "id": "mtrop2ccheatd",
+      "kind": "sure",
+      "event": "Psg x Bratislava (h2+0,5)",
+      "houseA": "Matchbook",
+      "houseB": "Matchbook",
+      "oddA": 1.1,
+      "oddB": 17.7,
+      "total": 87.0596,
+      "stakeA": 0.0596,
+      "stakeB": 87,
+      "lucroA": -86.99404,
+      "lucroB": 1452.8403999999998,
+      "lucro": -86.99404,
+      "roi": -99.9246952662314,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-09-09T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T20:19:24.828Z"
     }
   ],
   "invertidos": [],
@@ -16250,5 +16274,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T18:49:33.922Z"
+  "updatedAt": "2026-09-07T20:19:24.833Z"
 }
