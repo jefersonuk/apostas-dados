@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-04",
+    "startDate": "2026-09-03",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4719,17 +4719,17 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 150.88,
-      "updatedAt": "2026-09-03T19:48:30.632Z",
+      "value": 249.3,
+      "updatedAt": "2026-09-06T23:41:34.726Z",
       "currency": "USD"
     },
     {
       "id": "mt9c1gc5rf9ra",
       "name": "Em middles",
-      "value": 509.84,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-03T19:48:30.633Z"
+      "updatedAt": "2026-09-06T23:41:34.727Z"
     },
     {
       "id": "mtack9k6bppn8",
@@ -4980,10 +4980,10 @@
   ],
   "usdRate": 5.13,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-06T21:21:33.820Z",
+  "usdRateAt": "2026-09-07T12:24:42.674Z",
   "eurRate": 5.95,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-06T21:21:34.084Z",
+  "eurRateAt": "2026-09-07T12:24:42.916Z",
   "appBuild": "20260902-1337",
   "deleted": [
     {
@@ -16009,14 +16009,15 @@
       "midProfit": 471.638,
       "worstCase": -33.26200000000006,
       "isSafe": false,
-      "resultado": null,
+      "resultado": "A",
       "date": "2026-09-05T12:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-03T19:48:30.632Z"
+      "updatedAt": "2026-09-06T23:41:34.726Z"
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T00:42:37.026Z"
+  "updatedAt": "2026-09-07T12:24:42.917Z"
 }
