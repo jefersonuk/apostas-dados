@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 6115.87,
+      "value": 7315.96,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T15:33:25.689Z"
+      "updatedAt": "2026-09-07T17:56:25.807Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4544,8 +4544,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 1229.8,
-      "updatedAt": "2026-09-07T15:01:41.874Z"
+      "value": 701.74,
+      "updatedAt": "2026-09-07T17:56:25.802Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4706,8 +4706,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 278.13,
-      "updatedAt": "2026-09-06T13:57:11.106Z",
+      "value": 147.13,
+      "updatedAt": "2026-09-07T17:56:25.802Z",
       "currency": "USD"
     },
     {
@@ -16032,6 +16032,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T15:33:25.683Z"
+    },
+    {
+      "id": "mtrjl6q1x9dck",
+      "kind": "sure",
+      "event": "Mendonca, Leon Luke – Mishra, Abhimanyu",
+      "houseA": "Blaze",
+      "houseB": "BCgame",
+      "oddA": 2.41,
+      "oddB": 1.9,
+      "total": 1200.09,
+      "stakeA": 528.06,
+      "stakeB": 672.03,
+      "lucroA": 72.53459999999995,
+      "lucroB": 76.76700000000005,
+      "lucro": 72.53459999999995,
+      "roi": 6.04409669274804,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-08T07:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T17:56:25.802Z"
     }
   ],
   "invertidos": [],
@@ -16198,5 +16222,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T16:55:14.361Z"
+  "updatedAt": "2026-09-07T17:56:25.807Z"
 }
