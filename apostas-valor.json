@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 3294.64,
+      "value": 5256.84,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T14:06:09.402Z"
+      "updatedAt": "2026-09-07T14:12:38.953Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4576,9 +4576,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1569.44,
+      "value": 222.44,
       "currency": "BRL",
-      "updatedAt": "2026-09-07T14:06:09.400Z"
+      "updatedAt": "2026-09-07T14:12:38.950Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 249.3,
-      "updatedAt": "2026-09-06T23:41:34.726Z",
+      "value": 129.38,
+      "updatedAt": "2026-09-07T14:12:38.950Z",
       "currency": "USD"
     },
     {
@@ -15903,6 +15903,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T14:06:09.400Z"
+    },
+    {
+      "id": "mtrblehxrypfo",
+      "kind": "sure",
+      "event": "Furia Esports v Team Gamerlegion",
+      "houseA": "Ivibet",
+      "houseB": "Cloudbet",
+      "oddA": 1.53,
+      "oddB": 3.35,
+      "total": 1962.197014925373,
+      "stakeA": 1347,
+      "stakeB": 615.1970149253731,
+      "lucroA": 98.71298507462689,
+      "lucroB": 98.71298507462689,
+      "lucro": 98.71298507462689,
+      "roi": 5.030737704918034,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "USD",
+      "date": "2026-09-08T09:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T14:12:38.950Z"
     }
   ],
   "invertidos": [],
@@ -16069,5 +16093,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T14:06:09.402Z"
+  "updatedAt": "2026-09-07T14:12:38.953Z"
 }
