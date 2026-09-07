@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4931.49,
+      "value": 2996.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T00:42:37.026Z"
+      "updatedAt": "2026-09-07T12:25:50.432Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4705,9 +4705,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 106.77,
+      "value": 430.11,
       "currency": "USD",
-      "updatedAt": "2026-09-07T00:35:46.796Z"
+      "updatedAt": "2026-09-07T12:25:50.431Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -15821,14 +15821,15 @@
       "lucroB": -276.24210800000014,
       "lucro": -276.24210800000014,
       "roi": -14.276313289092474,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "USD",
       "date": "2026-09-07T01:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-09-07T00:35:46.796Z"
+      "updatedAt": "2026-09-07T12:25:50.431Z"
     },
     {
       "id": "mtqinp0dyiemn",
@@ -16019,5 +16020,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T12:24:42.917Z"
+  "updatedAt": "2026-09-07T12:25:50.432Z"
 }
