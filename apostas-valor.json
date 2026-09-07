@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2524.24,
+      "value": 2944.49,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T12:26:06.816Z"
+      "updatedAt": "2026-09-07T13:25:01.024Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4620,16 +4620,16 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": -0.06,
+      "value": -37.98,
       "currency": "USD",
-      "updatedAt": "2026-09-06T14:08:28.731Z"
+      "updatedAt": "2026-09-07T13:25:01.022Z"
     },
     {
       "id": "msqr1ktlw3015",
       "name": "Sxbet",
-      "value": 0,
+      "value": -44,
       "currency": "USD",
-      "updatedAt": "2026-09-03T11:41:27.253Z"
+      "updatedAt": "2026-09-07T13:25:01.022Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -15855,6 +15855,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T00:42:37.023Z"
+    },
+    {
+      "id": "mtr9w5b18geyb",
+      "kind": "sure",
+      "event": "Ultretch x go ahead",
+      "houseA": "Sxbet",
+      "houseB": "Overtimemarkets",
+      "oddA": 2.42,
+      "oddB": 2.79,
+      "total": 420.2496,
+      "stakeA": 225.72,
+      "stakeB": 194.52960000000002,
+      "lucroA": 125.99279999999999,
+      "lucroB": 122.4879840000001,
+      "lucro": 122.4879840000001,
+      "roi": 29.146484375000025,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-09-08T09:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T13:25:01.022Z"
     }
   ],
   "invertidos": [],
@@ -16021,5 +16045,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T12:26:06.816Z"
+  "updatedAt": "2026-09-07T13:25:01.024Z"
 }
