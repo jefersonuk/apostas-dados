@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5444.3,
+      "value": 5251.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T14:49:13.437Z"
+      "updatedAt": "2026-09-07T14:50:25.653Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4691,8 +4691,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 181.81,
-      "updatedAt": "2026-09-07T14:31:28.387Z",
+      "value": 219.43,
+      "updatedAt": "2026-09-07T14:50:25.650Z",
       "currency": "USD"
     },
     {
@@ -5410,6 +5410,10 @@
     {
       "id": "mtmwb72xbcccv",
       "at": "2026-09-06T13:56:28.190Z"
+    },
+    {
+      "id": "mtrc9lz7d6s7c",
+      "at": "2026-09-07T14:50:25.651Z"
     }
   ],
   "surebets": [
@@ -15954,30 +15958,6 @@
       "updatedAt": "2026-09-07T14:26:37.727Z"
     },
     {
-      "id": "mtrc9lz7d6s7c",
-      "kind": "sure",
-      "event": "FC Voluntari – FC Arges Pitesti (mais de 8.5 escanteios)",
-      "houseA": "Bookmaker",
-      "houseB": "Bookmaker",
-      "oddA": 2.59,
-      "oddB": 1.01,
-      "total": 193.00059999999996,
-      "stakeA": 192.99059999999997,
-      "stakeB": 0.01,
-      "lucroA": 306.84505399999995,
-      "lucroB": -192.99049999999997,
-      "lucro": -192.99049999999997,
-      "roi": -99.99476685564709,
-      "winner": null,
-      "curA": "USD",
-      "curB": "BRL",
-      "date": "2026-09-07T11:30",
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-07T14:31:28.387Z"
-    },
-    {
       "id": "mtrcqnffxt559",
       "kind": "sure",
       "event": "Alabama – Grambling (H1 -2.5)",
@@ -16166,5 +16146,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T14:49:13.437Z"
+  "updatedAt": "2026-09-07T14:50:25.653Z"
 }
