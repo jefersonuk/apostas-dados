@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 150,
-      "updatedAt": "2026-09-07T00:42:37.023Z"
+      "value": -0.01,
+      "updatedAt": "2026-09-07T14:57:59.655Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5251.3,
+      "value": 5401.31,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T14:50:25.653Z"
+      "updatedAt": "2026-09-07T14:57:59.660Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -15980,6 +15980,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T14:44:43.422Z"
+    },
+    {
+      "id": "mtrd7psz9k9dz",
+      "kind": "sure",
+      "event": "Millwall – Newcastle (mais 9 escanteios)",
+      "houseA": "Betnacional",
+      "houseB": "Betnacional",
+      "oddA": 1.01,
+      "oddB": 1.8,
+      "total": 150.01,
+      "stakeA": 0.01,
+      "stakeB": 150,
+      "lucroA": -149.9999,
+      "lucroB": 119.99000000000001,
+      "lucro": -149.9999,
+      "roi": -99.99326711552563,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-08T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-07T14:57:59.656Z"
     }
   ],
   "invertidos": [],
@@ -16146,5 +16170,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-07T14:50:25.653Z"
+  "updatedAt": "2026-09-07T14:57:59.660Z"
 }
