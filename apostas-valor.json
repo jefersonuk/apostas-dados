@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2491.68,
+      "value": 2644.09,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T22:05:52.012Z"
+      "updatedAt": "2026-09-08T22:33:31.473Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 78.03,
+      "value": 48.03,
       "currency": "USD",
-      "updatedAt": "2026-09-08T19:55:28.645Z"
+      "updatedAt": "2026-09-08T22:33:31.471Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16469,6 +16469,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T21:33:11.839Z"
+    },
+    {
+      "id": "mtt8xdu63nuvf",
+      "kind": "sure",
+      "event": "Hradecky, Jakub – Sedlak, Marek",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 1.91,
+      "oddB": 1.01,
+      "total": 152.41,
+      "stakeA": 152.4,
+      "stakeB": 0.01,
+      "lucroA": 138.674,
+      "lucroB": -152.3999,
+      "lucro": -152.3999,
+      "roi": -99.99337313824552,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-09T13:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T22:33:31.471Z"
     }
   ],
   "invertidos": [],
@@ -16635,5 +16659,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T22:05:52.013Z"
+  "updatedAt": "2026-09-08T22:33:31.474Z"
 }
