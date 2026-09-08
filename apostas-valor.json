@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2526.3,
+      "value": 2705.11,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T19:47:56.198Z"
+      "updatedAt": "2026-09-08T19:52:00.568Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4671,9 +4671,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 358.91,
+      "value": 328.91,
       "currency": "EUR",
-      "updatedAt": "2026-09-08T19:47:56.196Z"
+      "updatedAt": "2026-09-08T19:52:00.563Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -16298,6 +16298,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T19:47:56.196Z"
+    },
+    {
+      "id": "mtt35oa9j2mp7",
+      "kind": "sure",
+      "event": "Moreirense FC v SL Benfica (menos de 10 escanteios)",
+      "houseA": "Sportmarket",
+      "houseB": "Sportmarket",
+      "oddA": 1.86,
+      "oddB": 1.01,
+      "total": 178.81,
+      "stakeA": 178.8,
+      "stakeB": 0.01,
+      "lucroA": 153.75800000000004,
+      "lucroB": -178.7999,
+      "lucro": -178.7999,
+      "roi": -99.9943515463341,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-09-09T16:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T19:52:00.564Z"
     }
   ],
   "invertidos": [],
@@ -16464,5 +16488,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T19:47:56.198Z"
+  "updatedAt": "2026-09-08T19:52:00.568Z"
 }
