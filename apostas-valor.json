@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-08",
+    "startDate": "2026-09-04",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1615,
-      "updatedAt": "2026-09-07T21:46:47.288Z"
+      "value": 1594.99,
+      "updatedAt": "2026-09-08T19:44:15.436Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2357.28,
+      "value": 2377.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T19:11:02.287Z"
+      "updatedAt": "2026-09-08T19:44:19.337Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4992,12 +4992,12 @@
       "updatedAt": "2026-09-08T16:39:20.480Z"
     }
   ],
-  "usdRate": 5.08,
+  "usdRate": 5.13,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-08T15:59:47.581Z",
-  "eurRate": 5.95,
+  "usdRateAt": "2026-09-08T11:33:45.439Z",
+  "eurRate": 5.96,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-08T15:59:48.035Z",
+  "eurRateAt": "2026-09-08T11:33:45.952Z",
   "appBuild": "20260907-1220",
   "deleted": [
     {
@@ -16250,6 +16250,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T18:09:47.689Z"
+    },
+    {
+      "id": "mtt2vpe1jj30x",
+      "kind": "sure",
+      "event": "PSG – Bratislava",
+      "houseA": "Betnacional",
+      "houseB": "Betnacional",
+      "oddA": 10,
+      "oddB": 1.01,
+      "total": 20.01,
+      "stakeA": 20,
+      "stakeB": 0.01,
+      "lucroA": 179.99,
+      "lucroB": -19.9999,
+      "lucro": -19.9999,
+      "roi": -99.9495252373813,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-09T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T19:44:15.437Z"
     }
   ],
   "invertidos": [],
@@ -16416,5 +16440,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T19:19:10.742Z"
+  "updatedAt": "2026-09-08T19:44:15.446Z"
 }
