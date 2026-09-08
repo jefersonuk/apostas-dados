@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2807.72,
+      "value": 2827.73,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T19:55:28.646Z"
+      "updatedAt": "2026-09-08T19:57:03.260Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4582,8 +4582,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2677.41,
-      "updatedAt": "2026-09-08T11:35:04.513Z"
+      "value": 2657.4,
+      "updatedAt": "2026-09-08T19:57:03.258Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -16346,6 +16346,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T19:55:28.645Z"
+    },
+    {
+      "id": "mtt3c5uiq4yoc",
+      "kind": "sure",
+      "event": "Once Caldas – Alianza Valledupar (2 DNB)",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 6.18,
+      "oddB": 1.01,
+      "total": 20.01,
+      "stakeA": 20,
+      "stakeB": 0.01,
+      "lucroA": 103.58999999999999,
+      "lucroB": -19.9999,
+      "lucro": -19.9999,
+      "roi": -99.9495252373813,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-09T21:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T19:57:03.258Z"
     }
   ],
   "invertidos": [],
@@ -16512,5 +16536,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T19:55:28.646Z"
+  "updatedAt": "2026-09-08T19:57:03.260Z"
 }
