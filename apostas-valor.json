@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2727.73,
+      "value": 2906.54,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T20:07:12.584Z"
+      "updatedAt": "2026-09-08T20:11:12.069Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4671,9 +4671,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 328.91,
+      "value": 298.91,
       "currency": "EUR",
-      "updatedAt": "2026-09-08T19:52:00.563Z"
+      "updatedAt": "2026-09-08T20:11:12.063Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -16395,6 +16395,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T20:07:08.329Z"
+    },
+    {
+      "id": "mtt3ucsdgi0br",
+      "kind": "sure",
+      "event": "Millwall vs. Newcastle United (2)",
+      "houseA": "Sportmarket",
+      "houseB": "Sportmarket",
+      "oddA": 1.82,
+      "oddB": 1.01,
+      "total": 178.81,
+      "stakeA": 178.8,
+      "stakeB": 0.01,
+      "lucroA": 146.60600000000005,
+      "lucroB": -178.7999,
+      "lucro": -178.7999,
+      "roi": -99.9943515463341,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-09-08T16:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T20:11:12.064Z"
     }
   ],
   "invertidos": [],
@@ -16561,5 +16585,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T20:07:08.334Z"
+  "updatedAt": "2026-09-08T20:11:12.069Z"
 }
