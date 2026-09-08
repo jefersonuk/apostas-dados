@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1996.44,
+      "value": 2146.45,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T23:03:05.036Z"
+      "updatedAt": "2026-09-08T23:04:23.257Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4582,8 +4582,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2207.36,
-      "updatedAt": "2026-09-08T23:00:03.064Z"
+      "value": 2057.35,
+      "updatedAt": "2026-09-08T23:04:23.254Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -16590,6 +16590,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T23:03:05.029Z"
+    },
+    {
+      "id": "mtta12omog8c2",
+      "kind": "sure",
+      "event": "Real Frontera – Zamora (h1 +1)",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 2.35,
+      "oddB": 1.01,
+      "total": 150.01,
+      "stakeA": 150,
+      "stakeB": 0.01,
+      "lucroA": 202.49,
+      "lucroB": -149.9999,
+      "lucro": -149.9999,
+      "roi": -99.99326711552563,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-09T16:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T23:04:23.255Z"
     }
   ],
   "invertidos": [],
@@ -16756,5 +16780,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T23:03:05.036Z"
+  "updatedAt": "2026-09-08T23:04:23.257Z"
 }
