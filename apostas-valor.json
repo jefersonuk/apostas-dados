@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2705.11,
+      "value": 2807.72,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T19:52:00.568Z"
+      "updatedAt": "2026-09-08T19:55:28.646Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 98.03,
+      "value": 78.03,
       "currency": "USD",
-      "updatedAt": "2026-09-07T18:46:40.370Z"
+      "updatedAt": "2026-09-08T19:55:28.645Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16322,6 +16322,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T19:52:00.564Z"
+    },
+    {
+      "id": "mtt3a4udtfilg",
+      "kind": "sure",
+      "event": "Pusch, Frantisek – Saleny, Petr (2)",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 2.36,
+      "oddB": 1.01,
+      "total": 102.61,
+      "stakeA": 102.6,
+      "stakeB": 0.01,
+      "lucroA": 139.52599999999995,
+      "lucroB": -102.5999,
+      "lucro": -102.5999,
+      "roi": -99.99015690478511,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-09T03:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T19:55:28.645Z"
     }
   ],
   "invertidos": [],
@@ -16488,5 +16512,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T19:52:00.568Z"
+  "updatedAt": "2026-09-08T19:55:28.646Z"
 }
