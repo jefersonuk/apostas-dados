@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 5089.88,
+      "value": 5243.79,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T12:24:28.387Z"
+      "updatedAt": "2026-09-08T12:26:28.081Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4628,9 +4628,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 157.78,
+      "value": 127.78,
       "currency": "USD",
-      "updatedAt": "2026-09-08T12:24:28.382Z"
+      "updatedAt": "2026-09-08T12:26:28.079Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -16183,6 +16183,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T12:24:28.382Z"
+    },
+    {
+      "id": "mtsn8pdb7p8tv",
+      "kind": "sure",
+      "event": "G2 Ares vs ex-Zero Tenacity (2)",
+      "houseA": "Opinion",
+      "houseB": "Opinion",
+      "oddA": 1.36,
+      "oddB": 1.01,
+      "total": 153.91,
+      "stakeA": 153.9,
+      "stakeB": 0.01,
+      "lucroA": 55.394000000000034,
+      "lucroB": -153.8999,
+      "lucro": -153.8999,
+      "roi": -99.99343772334481,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-08T11:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T12:26:28.079Z"
     }
   ],
   "invertidos": [],
@@ -16349,5 +16373,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T12:24:28.387Z"
+  "updatedAt": "2026-09-08T12:26:28.081Z"
 }
