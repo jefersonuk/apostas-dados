@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1694.02,
+      "value": 1846.43,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T23:00:03.068Z"
+      "updatedAt": "2026-09-08T23:01:33.430Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 48.03,
+      "value": 18.03,
       "currency": "USD",
-      "updatedAt": "2026-09-08T22:33:31.471Z"
+      "updatedAt": "2026-09-08T23:01:33.423Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16542,6 +16542,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T23:00:03.064Z"
+    },
+    {
+      "id": "mtt9xfn17pwny",
+      "kind": "sure",
+      "event": "Salt Lake Bees – Round Rock Express (over 13 points)",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 1.99,
+      "oddB": 1.01,
+      "total": 152.41,
+      "stakeA": 152.4,
+      "stakeB": 0.01,
+      "lucroA": 150.866,
+      "lucroB": -152.3999,
+      "lucro": -152.3999,
+      "roi": -99.99337313824552,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-08T21:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T23:01:33.424Z"
     }
   ],
   "invertidos": [],
@@ -16708,5 +16732,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T23:00:03.068Z"
+  "updatedAt": "2026-09-08T23:01:33.430Z"
 }
