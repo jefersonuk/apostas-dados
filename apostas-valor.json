@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1846.43,
+      "value": 1996.44,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T23:01:33.430Z"
+      "updatedAt": "2026-09-08T23:03:05.036Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4544,8 +4544,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 1924.35,
-      "updatedAt": "2026-09-08T22:50:10.640Z"
+      "value": 1774.34,
+      "updatedAt": "2026-09-08T23:03:05.028Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -16566,6 +16566,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T23:01:33.424Z"
+    },
+    {
+      "id": "mtt9zebjheh13",
+      "kind": "sure",
+      "event": "irouzja, Alireza – Vachier-Lagrave, Maxime",
+      "houseA": "Blaze",
+      "houseB": "Blaze",
+      "oddA": 1.45,
+      "oddB": 1.01,
+      "total": 150.01,
+      "stakeA": 150,
+      "stakeB": 0.01,
+      "lucroA": 67.49000000000001,
+      "lucroB": -149.9999,
+      "lucro": -149.9999,
+      "roi": -99.99326711552563,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-10T08:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T23:03:05.029Z"
     }
   ],
   "invertidos": [],
@@ -16732,5 +16756,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T23:01:33.430Z"
+  "updatedAt": "2026-09-08T23:03:05.036Z"
 }
