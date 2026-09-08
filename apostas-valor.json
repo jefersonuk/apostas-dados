@@ -4571,7 +4571,7 @@
       "name": "Ivibet",
       "value": 0.69,
       "currency": "BRL",
-      "updatedAt": "2026-09-08T12:11:59.565Z"
+      "updatedAt": "2026-09-08T19:19:10.742Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4707,7 +4707,7 @@
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
       "value": 84.8,
-      "updatedAt": "2026-09-08T17:57:54.445Z",
+      "updatedAt": "2026-09-08T19:19:10.742Z",
       "currency": "USD"
     },
     {
@@ -16161,21 +16161,21 @@
       "houseB": "Ivibet",
       "oddA": 1.82,
       "oddB": 2.47,
-      "total": 436.07142857142856,
-      "stakeA": 251.07142857142853,
+      "total": 436.07,
+      "stakeA": 251.07,
       "stakeB": 185,
-      "lucroA": 20.878571428571377,
-      "lucroB": 20.87857142857149,
-      "lucro": 20.878571428571377,
-      "roi": 4.7878787878787765,
+      "lucroA": 20.877400000000023,
+      "lucroB": 20.880000000000052,
+      "lucro": 20.877400000000023,
+      "roi": 4.787625839888097,
       "winner": null,
       "curA": "USD",
       "curB": "BRL",
-      "date": "2026-09-08T14:00",
+      "date": "2026-09-08T17:00",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-08T12:11:59.565Z"
+      "updatedAt": "2026-09-08T19:19:10.742Z"
     },
     {
       "id": "mtsn650cq1v9l",
@@ -16416,5 +16416,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T19:11:37.093Z"
+  "updatedAt": "2026-09-08T19:19:10.742Z"
 }
