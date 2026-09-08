@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1444,
+      "value": 1544.01,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-08T22:50:10.641Z"
+      "updatedAt": "2026-09-08T22:53:37.331Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4582,8 +4582,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2457.38,
-      "updatedAt": "2026-09-08T21:33:11.839Z"
+      "value": 2357.37,
+      "updatedAt": "2026-09-08T22:53:37.324Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -16494,6 +16494,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T22:33:31.471Z"
+    },
+    {
+      "id": "mtt9n8a334tgx",
+      "kind": "sure",
+      "event": "Boca Juniors – Sao Paulo (SP faz 1st gol)",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 3.61,
+      "oddB": 1.01,
+      "total": 100.01,
+      "stakeA": 100,
+      "stakeB": 0.01,
+      "lucroA": 260.99,
+      "lucroB": -99.99990000000001,
+      "lucro": -99.99990000000001,
+      "roi": -99.98990100989901,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-08T21:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T22:53:37.324Z"
     }
   ],
   "invertidos": [],
@@ -16660,5 +16684,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T22:50:10.641Z"
+  "updatedAt": "2026-09-08T22:53:37.331Z"
 }
