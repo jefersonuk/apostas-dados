@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 4169.76,
+      "value": 4499.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-07T22:16:00.858Z"
+      "updatedAt": "2026-09-08T11:35:04.514Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4569,9 +4569,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 295.69,
+      "value": 185.69,
       "currency": "BRL",
-      "updatedAt": "2026-09-07T22:16:00.858Z"
+      "updatedAt": "2026-09-08T11:35:04.513Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4582,8 +4582,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2897.55,
-      "updatedAt": "2026-09-07T18:20:10.349Z"
+      "value": 2677.41,
+      "updatedAt": "2026-09-08T11:35:04.513Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -16111,6 +16111,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-07T20:19:24.828Z"
+    },
+    {
+      "id": "mtslem2pv37dd",
+      "kind": "sure",
+      "event": "Alexandre Reco – Samir Banerjee",
+      "houseA": "Pinnacle",
+      "houseB": "Ivibet",
+      "oddA": 1.579,
+      "oddB": 3.16,
+      "total": 330.13932868904374,
+      "stakeA": 220.13932868904374,
+      "stakeB": 110,
+      "lucroA": 17.460671310956286,
+      "lucroB": 17.460671310956286,
+      "lucro": 17.460671310956286,
+      "roi": 5.288879510445237,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-09T05:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-08T11:35:04.513Z"
     }
   ],
   "invertidos": [],
@@ -16277,5 +16301,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-08T11:33:45.953Z"
+  "updatedAt": "2026-09-08T11:35:04.514Z"
 }
