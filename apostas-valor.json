@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2329.87,
+      "value": 2482.58,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T12:40:03.154Z"
+      "updatedAt": "2026-09-09T12:42:57.563Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4713,8 +4713,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 432.06,
-      "updatedAt": "2026-09-09T11:53:50.611Z",
+      "value": 402.06,
+      "updatedAt": "2026-09-09T12:42:57.561Z",
       "currency": "USD"
     },
     {
@@ -16693,6 +16693,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T12:40:03.147Z"
+    },
+    {
+      "id": "mtu39riw4u96x",
+      "kind": "sure",
+      "event": "Ilves Tampere U20 – Assat U20 (H1 - 1.5)",
+      "houseA": "Cloudbet",
+      "houseB": "Cloudbet",
+      "oddA": 2.2,
+      "oddB": 1.01,
+      "total": 152.70999999999998,
+      "stakeA": 152.7,
+      "stakeB": 0.01,
+      "lucroA": 183.23000000000002,
+      "lucroB": -152.69989999999999,
+      "lucro": -152.69989999999999,
+      "roi": -99.99338615676774,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-09T12:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T12:42:57.561Z"
     }
   ],
   "invertidos": [],
@@ -16859,5 +16883,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T12:40:03.154Z"
+  "updatedAt": "2026-09-09T12:42:57.563Z"
 }
