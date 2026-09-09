@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-04",
+    "startDate": "2026-09-09",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4527,9 +4527,9 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 4440.31,
+      "value": 5926.98,
       "currency": "BRL",
-      "updatedAt": "2026-09-09T15:04:56.437Z"
+      "updatedAt": "2026-09-09T20:16:41.741Z"
     },
     {
       "id": "mrzmpfmzgil2s",
@@ -5002,12 +5002,12 @@
       "updatedAt": "2026-09-09T15:16:15.120Z"
     }
   ],
-  "usdRate": 5.11,
+  "usdRate": 5.1,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-09T19:46:32.899Z",
-  "eurRate": 5.92,
+  "usdRateAt": "2026-09-09T17:57:32.577Z",
+  "eurRate": 5.94,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-09T19:46:33.063Z",
+  "eurRateAt": "2026-09-09T17:57:32.780Z",
   "appBuild": "20260909-1434",
   "deleted": [
     {
@@ -16937,5 +16937,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T19:46:33.064Z"
+  "updatedAt": "2026-09-09T20:16:41.753Z"
 }
