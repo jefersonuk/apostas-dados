@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-04",
+    "startDate": "2026-09-09",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1395.92,
+      "value": 1018,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T14:57:58.234Z"
+      "updatedAt": "2026-09-09T15:02:27.679Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4635,10 +4635,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1464.58,
+      "value": 1540.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T14:57:57.138Z"
+      "updatedAt": "2026-09-09T15:02:27.679Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4994,10 +4994,10 @@
   ],
   "usdRate": 5.09,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-09T11:51:36.140Z",
-  "eurRate": 5.92,
+  "usdRateAt": "2026-09-09T13:12:59.791Z",
+  "eurRate": 5.93,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-09T11:51:36.336Z",
+  "eurRateAt": "2026-09-09T13:12:59.970Z",
   "appBuild": "20260909-0945",
   "deleted": [
     {
@@ -6142,7 +6142,7 @@
       "kind": "valor",
       "stakeFake": 1,
       "lucroRed": -269.43,
-      "updatedAt": "2026-09-09T14:57:57.137Z"
+      "updatedAt": "2026-09-09T15:02:27.679Z"
     },
     {
       "id": "mseuzicagj8rh",
@@ -6517,7 +6517,7 @@
       "kind": "valor",
       "stakeFake": 1,
       "lucroRed": -250,
-      "updatedAt": "2026-09-09T14:57:57.137Z"
+      "updatedAt": "2026-09-09T15:02:27.679Z"
     },
     {
       "id": "mshr1vyma4sju",
@@ -12398,7 +12398,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -3073.36
     },
@@ -13320,7 +13320,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -226.48
     },
@@ -13442,7 +13442,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.1,
       "lucroRed": -397.27
     },
@@ -13739,7 +13739,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -13761,7 +13761,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -13783,7 +13783,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -13805,7 +13805,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -31.14
     },
@@ -13827,7 +13827,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -60
     },
@@ -13849,7 +13849,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -13871,7 +13871,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -67.47
     },
@@ -13893,7 +13893,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -13915,7 +13915,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -13937,7 +13937,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -13959,7 +13959,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -129.75
     },
@@ -13981,7 +13981,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -129.75
     },
@@ -14003,7 +14003,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 1.01,
       "lucroRed": -129.75
     },
@@ -14025,7 +14025,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -129.75
     },
@@ -14047,7 +14047,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -14069,7 +14069,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 1.01,
       "lucroRed": -155.70000000000002
     },
@@ -14091,7 +14091,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -207.60000000000002
     },
@@ -14113,7 +14113,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -14135,7 +14135,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -14157,7 +14157,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -14179,7 +14179,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.0519,
       "lucroRed": -103.80000000000001
     },
@@ -14326,7 +14326,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -94.82130000000001
     },
@@ -15073,7 +15073,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -15895,7 +15895,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -220.52
     },
@@ -15917,7 +15917,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -222
     },
@@ -15939,7 +15939,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16035,7 +16035,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.0596,
       "lucroRed": -87
     },
@@ -16107,7 +16107,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -153.9
     },
@@ -16129,7 +16129,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -153.9
     },
@@ -16151,7 +16151,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -153.9
     },
@@ -16172,7 +16172,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -20
     },
@@ -16187,13 +16187,14 @@
       "lucroA": 132.908,
       "lucro": 132.908,
       "roi": 89.19999999999999,
-      "winner": null,
+      "winner": "A",
       "curA": "EUR",
       "date": "2026-09-09T10:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -149
     },
@@ -16214,7 +16215,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -178.8
     },
@@ -16236,7 +16237,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -102.6
     },
@@ -16257,7 +16258,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -20
     },
@@ -16278,7 +16279,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -50
     },
@@ -16300,7 +16301,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -178.8
     },
@@ -16321,7 +16322,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -16343,7 +16344,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -16364,7 +16365,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -152.4
     },
@@ -16386,7 +16387,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -16408,7 +16409,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16430,7 +16431,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -152.4
     },
@@ -16451,7 +16452,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16472,7 +16473,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16511,13 +16512,14 @@
       "lucroA": 244.32,
       "lucro": 244.32,
       "roi": 160,
-      "winner": null,
+      "winner": "VOID",
       "curA": "USD",
       "date": "2026-09-09T11:30",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -152.7
     },
@@ -16538,7 +16540,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -101.8
     },
@@ -16559,57 +16561,51 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:57:57.137Z",
+      "updatedAt": "2026-09-09T15:02:27.679Z",
       "stakeFake": 0.01,
       "lucroRed": -152.7
     },
     {
       "id": "mtu7i1cam3gur",
-      "kind": "sure",
+      "kind": "valor",
       "event": "Sturtgard x Vikings (menos 10.5 corners)",
       "houseA": "Sportmarket",
-      "houseB": "Sportmarket",
       "oddA": 1.86,
-      "oddB": 1.01,
-      "total": 177.90999999999997,
+      "total": 177.89999999999998,
       "stakeA": 177.89999999999998,
-      "stakeB": 0.01,
-      "lucroA": 152.98399999999998,
-      "lucroB": -177.89989999999997,
-      "lucro": -177.89989999999997,
-      "roi": -99.99432297228937,
+      "lucroA": 152.994,
+      "lucro": 152.994,
+      "roi": 86.00000000000001,
       "winner": null,
       "curA": "EUR",
-      "curB": "BRL",
       "date": "2026-09-09T13:45",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:41:21.995Z"
+      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "stakeFake": 0.01,
+      "lucroRed": -177.89999999999998
     },
     {
       "id": "mtu7qqw4buq6i",
-      "kind": "sure",
+      "kind": "valor",
       "event": "Dicken x Sjundea (H1 -2)",
       "houseA": "Pinnacle",
-      "houseB": "Pinnacle",
       "oddA": 1.81,
-      "oddB": 1.01,
-      "total": 200.01,
+      "total": 200,
       "stakeA": 200,
-      "stakeB": 0.01,
-      "lucroA": 161.99,
-      "lucroB": -199.9999,
-      "lucro": -199.9999,
-      "roi": -99.99495025248739,
+      "lucroA": 162,
+      "lucro": 162,
+      "roi": 81,
       "winner": null,
       "curA": "BRL",
-      "curB": "BRL",
       "date": "2026-09-09T13:15",
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T14:48:08.359Z"
+      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "stakeFake": 0.01,
+      "lucroRed": -200
     }
   ],
   "invertidos": [],
@@ -16776,5 +16772,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T14:57:57.138Z"
+  "updatedAt": "2026-09-09T15:02:27.679Z"
 }
