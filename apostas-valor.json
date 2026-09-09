@@ -4504,8 +4504,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1865,
-      "updatedAt": "2026-09-09T15:06:46.393Z"
+      "value": 1765,
+      "updatedAt": "2026-09-09T17:24:13.184Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4635,10 +4635,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2357.51,
+      "value": 2457.51,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T17:20:19.251Z"
+      "updatedAt": "2026-09-09T17:24:13.186Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -16738,6 +16738,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T17:20:19.246Z"
+    },
+    {
+      "id": "mtudbgu75vi0l",
+      "kind": "valor",
+      "event": "Independiente Yumbo – Quindio (mais de 1.5 gols 1st half)",
+      "houseA": "Betnacional",
+      "oddA": 3.3,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.7,
+      "prob": 35.3,
+      "winner": null,
+      "date": "2026-09-09T17:30",
+      "total": 100,
+      "lucroA": 229.99999999999997,
+      "lucroRed": -100,
+      "lucro": 229.99999999999997,
+      "roi": 229.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T17:24:13.184Z"
     }
   ],
   "invertidos": [],
@@ -16904,5 +16928,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T17:20:19.251Z"
+  "updatedAt": "2026-09-09T17:24:13.186Z"
 }
