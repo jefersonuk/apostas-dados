@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-09",
+    "startDate": "2026-09-04",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4533,7 +4533,7 @@
       "value": 1018,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T15:02:27.679Z"
+      "updatedAt": "2026-09-09T17:07:55.622Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4638,7 +4638,7 @@
       "value": 2225.88,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T16:18:38.056Z"
+      "updatedAt": "2026-09-09T17:07:57.082Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5000,11 +5000,11 @@
   ],
   "usdRate": 5.09,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-09T13:12:59.791Z",
-  "eurRate": 5.93,
+  "usdRateAt": "2026-09-09T11:51:36.140Z",
+  "eurRate": 5.92,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-09T13:12:59.970Z",
-  "appBuild": "20260909-0945",
+  "eurRateAt": "2026-09-09T11:51:36.336Z",
+  "appBuild": "20260909-1234",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -16591,7 +16591,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T17:07:55.622Z",
       "stakeFake": 0.01,
       "lucroRed": -177.89999999999998
     },
@@ -16612,7 +16612,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T17:07:55.622Z",
       "stakeFake": 0.01,
       "lucroRed": -200
     },
@@ -16877,5 +16877,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T16:38:24.458Z"
+  "updatedAt": "2026-09-09T17:07:55.622Z"
 }
