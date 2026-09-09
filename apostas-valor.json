@@ -4754,7 +4754,7 @@
       "id": "mtbvh50wqy903",
       "name": "Matchbook",
       "value": 0,
-      "updatedAt": "2026-09-08T16:19:15.705Z"
+      "updatedAt": "2026-09-09T19:15:28.592Z"
     },
     {
       "id": "mtfqqot0vqwy5",
@@ -16045,9 +16045,12 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:15:28.592Z",
       "stakeFake": 0.0596,
-      "lucroRed": -87
+      "lucroRed": -87,
+      "sport": "",
+      "market": "",
+      "oddMkt": null
     },
     {
       "id": "mtslem2pv37dd",
@@ -16941,5 +16944,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T18:56:44.450Z"
+  "updatedAt": "2026-09-09T19:15:28.592Z"
 }
