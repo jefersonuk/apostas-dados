@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1693.81,
+      "value": 2711.81,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T08:03:29.314Z"
+      "updatedAt": "2026-09-09T11:53:50.614Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4699,9 +4699,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 430.11,
+      "value": 330.11,
       "currency": "USD",
-      "updatedAt": "2026-09-07T18:46:40.370Z"
+      "updatedAt": "2026-09-09T11:53:50.611Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -4713,8 +4713,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 532.06,
-      "updatedAt": "2026-09-08T16:07:45.863Z",
+      "value": 432.06,
+      "updatedAt": "2026-09-09T11:53:50.611Z",
       "currency": "USD"
     },
     {
@@ -16619,6 +16619,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-08T23:04:23.255Z"
+    },
+    {
+      "id": "mtu1iln7cyuer",
+      "kind": "sure",
+      "event": "Inner Circle – Nemiga Gaming",
+      "houseA": "Cloudbet",
+      "houseB": "Shuffle",
+      "oddA": 2.2,
+      "oddB": 2.2,
+      "total": 1018,
+      "stakeA": 509,
+      "stakeB": 508.99999999999994,
+      "lucroA": 101.80000000000018,
+      "lucroB": 101.79999999999995,
+      "lucro": 101.79999999999995,
+      "roi": 9.999999999999995,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-09-09T14:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T11:53:50.611Z"
     }
   ],
   "invertidos": [],
@@ -16785,5 +16809,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T11:51:36.336Z"
+  "updatedAt": "2026-09-09T11:53:50.614Z"
 }
