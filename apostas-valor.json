@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2228.06,
+      "value": 2329.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T12:34:05.143Z"
+      "updatedAt": "2026-09-09T12:40:03.154Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4628,9 +4628,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 128.02,
+      "value": 108.02,
       "currency": "USD",
-      "updatedAt": "2026-09-09T12:28:24.909Z"
+      "updatedAt": "2026-09-09T12:40:03.145Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -16669,6 +16669,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T12:34:05.142Z"
+    },
+    {
+      "id": "mtu360xzo5gqg",
+      "kind": "sure",
+      "event": "FLXRE vs valarmorghulis (2)",
+      "houseA": "Opinion",
+      "houseB": "Opinion",
+      "oddA": 3.12,
+      "oddB": 1.01,
+      "total": 101.81,
+      "stakeA": 101.8,
+      "stakeB": 0.01,
+      "lucroA": 215.80599999999998,
+      "lucroB": -101.79990000000001,
+      "lucro": -101.79990000000001,
+      "roi": -99.99007955996466,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-09T12:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T12:40:03.147Z"
     }
   ],
   "invertidos": [],
@@ -16835,5 +16859,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T12:34:05.143Z"
+  "updatedAt": "2026-09-09T12:40:03.154Z"
 }
