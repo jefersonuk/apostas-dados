@@ -792,7 +792,10 @@
           </div>
           <input type="number" id="vbStake" step="0.01" min="0" placeholder="50.00">
         </div>
-        <div><label>&nbsp;</label><button class="btn small" id="vbUsarSug" style="width:100%;">Usar valor sugerido</button></div>
+        <div><label>&nbsp;</label>
+          <button class="btn small" id="vbUsarEsc" style="width:100%;">Usar escada</button>
+          <button class="btn small" id="vbUsarSug" style="width:100%;margin-top:4px;">Usar valor sugerido</button>
+        </div>
       </div>
       <input type="hidden" id="scCurV" value="BRL">
       <div class="risk-preview" id="vbResult">
@@ -826,6 +829,19 @@
       </div>
       <div class="meta-out" id="mtOut"></div>
       <div class="footnote" id="mtNota"></div>
+
+      <div class="card-title" style="margin:18px 0 6px;">📐 Escada de stake por odd</div>
+      <div class="footnote" style="margin-top:0;">Kelly manda <b>stake &prop; 1/(odd&minus;1)</b>: para o mesmo edge, quanto maior a odd, menor a entrada. Com stake fixa, o desvio por aposta quase dobra da odd 2 para a odd 5 — a escada corrige isso. A âncora é sempre a entrada na <b>odd 2,00</b>.</div>
+      <div class="evo-seg" style="margin:8px 0 4px;">
+        <button type="button" class="evo-opt active" data-esc="1">Kelly · risco cai com a odd</button>
+        <button type="button" class="evo-opt" data-esc="0.5">Risco constante</button>
+      </div>
+      <div class="grid3" style="margin-top:8px;">
+        <div><label>Âncora @ odd 2,00 (R$)</label><input type="number" id="escAnc" step="10" min="1"></div>
+        <div><label>Teto (R$)</label><input type="number" id="escTeto" step="10" min="1"></div>
+        <div><label>Piso (R$)</label><input type="number" id="escPiso" step="5" min="1"></div>
+      </div>
+      <div id="escTabela"></div>
     </div>
 
     <!-- CALIBRAÇÃO DO FILTRO -->
@@ -965,7 +981,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-1234';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-1434';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -991,7 +1007,8 @@
     stakeMin:5, stakeMax:20,
     oddMin:1.5, potMin:1,
     kellyMult:0.50, probTolerance:3,
-    probFull:50, probFloor:20, penMin:0.35
+    probFull:50, probFloor:20, penMin:0.35,
+    escAnc:200, escTeto:400, escPiso:25, escExp:1   // escada: stake = anc/(odd-1)^expoente
   };
 
   /* ---------- caixa: registros com data + hora ---------- */
@@ -3491,8 +3508,18 @@
       '<b>'+esc(casa)+'</b> @'+r.odd.toFixed(2)+' · aposta <b>'+fmtCur(r.stake/r.fat,r.cur)+'</b>'+
       (r.cur!=='BRL'?' <span style="color:var(--muted-2)">≈ '+fmt(r.stake)+'</span>':'')+'<br>'+
       '<span style="color:var(--green)">Se GREEN: retorno '+fmt(r.retorno)+' · lucro '+fmtSign(r.lucro)+'</span><br>'+
-      '<span style="color:var(--red)">Se RED: perde '+fmt(r.stake)+'</span>'+evLine+
+      '<span style="color:var(--red)">Se RED: perde '+fmt(r.stake)+'</span>'+evLine+escLine(r)+
       '</div>';
+  }
+
+  // compara a entrada digitada com o que a escada mandaria naquela odd
+  function escLine(r){
+    const alvo=escadaStake(r.odd);
+    if(!alvo) return '';
+    const dif=r.stake/alvo;
+    if(dif>1.25) return '<br><span style="color:var(--amber)">Escada nesta odd: '+fmt(alvo)+' — você está '+dif.toFixed(1)+'x acima</span>';
+    if(dif<0.75) return '<br><span style="color:var(--muted-2)">Escada nesta odd: '+fmt(alvo)+' — você está abaixo</span>';
+    return '<br><span style="color:var(--muted-2)">Escada nesta odd: '+fmt(alvo)+' ✓</span>';
   }
 
   function vbResetCur(){
@@ -3551,6 +3578,77 @@
     el.innerHTML='<span class="sv-tag'+(sv>=20?' alto':'')+'">'+(sv>=0?'+':'')+sv.toFixed(1)+'%'+(sv>=20?' ⚠':'')+'</span>';
   }
   ['vbOdd','vbOddMkt'].forEach(id=>$(id).addEventListener('input',renderSvTag));
+
+  /* ---------- escada de stake por odd ----------
+     Kelly para edge constante: f* = edge/(odd-1)  ->  stake proporcional a 1/(odd-1).
+     A âncora é a entrada na odd 2,00 (onde odd-1 = 1), então stake = ancora/(odd-1),
+     limitada por teto (proteção contra a odd baixa pedir entrada gigante) e piso. */
+  // Dois regimes, ambos ancorados na odd 2,00 (onde odd-1 = 1, então stake = âncora):
+  //   expoente 1,0  -> stake = anc/(odd-1)      Kelly puro para edge constante.
+  //                    O desvio por aposta fica anc/raiz(odd-1): CAI com a odd.
+  //   expoente 0,5  -> stake = anc/raiz(odd-1)  desvio por aposta constante em toda odd.
+  // Kelly maximiza o crescimento se o edge for mesmo igual em todas as faixas — coisa que
+  // a amostra não consegue confirmar nem desmentir. Risco constante é o meio-termo honesto.
+  function escadaStake(odd){
+    const c=state.cfg||{};
+    const anc=(c.escAnc>0)?c.escAnc:200, teto=(c.escTeto>0)?c.escTeto:400, piso=(c.escPiso>0)?c.escPiso:25;
+    const exp=(c.escExp>0)?c.escExp:1;
+    if(!(odd>1)) return null;
+    return Math.max(piso, Math.min(teto, anc/Math.pow(odd-1,exp)));
+  }
+  // desvio-padrão do resultado de uma aposta, na prob de equilíbrio (p = 1/odd):
+  // SD = stake * odd * raiz(p(1-p)) = stake * raiz(odd-1)
+  function sdAposta(stake,odd){ return stake*Math.sqrt(odd-1); }
+  function renderEscada(){
+    const c=state.cfg||{};
+    [['escAnc',200],['escTeto',400],['escPiso',25]].forEach(([id,dflt])=>{
+      if(document.activeElement!==$(id)) $(id).value=(c[id]>0)?c[id]:dflt;
+    });
+    const exp=(c.escExp>0)?c.escExp:1;
+    document.querySelectorAll('[data-esc]').forEach(b=>b.classList.toggle('active', parseFloat(b.dataset.esc)===exp));
+    const banca=parseFloat($('mtBanca').value)||caixaAtual();
+    const anc=(c.escAnc>0)?c.escAnc:200;
+    const linhas=[1.30,1.50,1.80,2.00,2.30,2.60,3.00,3.50,4.50,6.00,10.00].map(o=>({
+      o, st:escadaStake(o), sdEsc:sdAposta(escadaStake(o),o), sdFlat:sdAposta(anc,o)
+    }));
+    const maxSd=Math.max.apply(null,linhas.map(l=>Math.max(l.sdEsc,l.sdFlat)));
+    $('escTabela').innerHTML=
+      '<div class="cal-line" style="display:grid;grid-template-columns:46px 74px 1fr 66px;gap:6px;color:var(--muted-2);font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;margin-top:6px;">'+
+        '<span>odd</span><span style="text-align:right">stake</span><span>risco por aposta (±desvio)</span><span style="text-align:right">se fixa</span></div>'+
+      linhas.map(l=>
+        '<div class="cal-line" style="display:grid;grid-template-columns:46px 74px 1fr 66px;gap:6px;align-items:center;">'+
+          '<span><b>'+l.o.toFixed(2)+'</b></span>'+
+          '<span style="text-align:right;color:var(--sky)"><b>'+fmt(l.st).replace('R$ ','R$')+'</b></span>'+
+          '<span class="prog" style="margin:0;" title="±'+fmt(l.sdEsc)+'"><i style="width:'+(100*l.sdEsc/maxSd).toFixed(0)+'%"></i></span>'+
+          '<span style="text-align:right;color:var(--muted-2);font-size:10.5px;">±'+fmt(l.sdFlat).replace('R$ ','R$')+'</span>'+
+        '</div>').join('')+
+      '<div class="footnote" style="margin-top:8px;">'+
+        (exp>=0.9
+          ? 'Regime <b>Kelly</b>: stake = âncora ÷ (odd−1). O risco por aposta <b>cai</b> conforme a odd sobe — a barra encurta. É o que maximiza crescimento <i>se</i> o edge for igual em todas as faixas.'
+          : 'Regime <b>risco constante</b>: stake = âncora ÷ √(odd−1). A barra fica reta — você arrisca o mesmo em toda odd. Meio-termo entre stake fixa e Kelly, para quando não se confia que o edge seja igual em toda faixa.')+
+        ' A coluna da direita é o desvio que você teria mantendo '+fmt(anc)+' <b>em toda odd</b>: '+
+        '±'+fmt(sdAposta(anc,2)).replace('R$ ','R$')+' na odd 2 contra ±'+fmt(sdAposta(anc,10)).replace('R$ ','R$')+' na odd 10.'+
+      '</div>'+
+      '<div class="footnote">Âncora de '+fmt(anc)+' na odd 2,00 = <b>¼ de Kelly sobre um edge de '+
+        (100*(anc*4/Math.max(1,banca))).toFixed(1)+'%</b> sobre a banca de '+fmt(banca)+'. Abaixo do que você mede hoje — que é a postura certa enquanto o edge não tem significância.</div>';
+  }
+  ['escAnc','escTeto','escPiso'].forEach(id=>$(id).addEventListener('input',()=>{
+    const v=parseFloat($(id).value);
+    if(v>0){ state.cfg[id]=v; saveState(); }
+    renderEscada(); updateValorCalc();
+  }));
+  document.querySelectorAll('[data-esc]').forEach(b=>b.addEventListener('click',()=>{
+    state.cfg.escExp=parseFloat(b.dataset.esc); saveState(); renderEscada(); updateValorCalc();
+  }));
+  $('vbUsarEsc').addEventListener('click',()=>{
+    const odd=parseFloat($('vbOdd').value);
+    const st=escadaStake(odd);
+    if(!st){ alert('Preencha a odd da casa primeiro.'); return; }
+    vbResetCur();
+    $('vbStake').value=st.toFixed(2);
+    updateValorCalc();
+    toast('Escada: '+fmt(st)+' na odd '+odd.toFixed(2));
+  });
 
   /* ---------- meta & dimensionamento ---------- */
   // Kelly: f* = yield/(odd-1). A stake sai da banca e do edge, nunca da meta.
@@ -3934,7 +4032,7 @@
     btn.classList.add('active'); vbFilter=btn.dataset.vbfilter; vbEditingId=null; renderValorList();
   }));
 
-  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMeta(); renderCalibracao(); renderMiddleSummary(); renderMiddleList(); }
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMeta(); renderEscada(); renderCalibracao(); renderMiddleSummary(); renderMiddleList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
