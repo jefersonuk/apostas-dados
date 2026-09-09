@@ -146,6 +146,23 @@
   .sug-meta{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.6;}
   .bet-val .vb-cen{display:block;font-size:11px;line-height:1.35;}
   .bet-val .vb-cen.g{color:var(--green);} .bet-val .vb-cen.r{color:var(--red);}
+  /* meta & calibração */
+  .meta-out{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px;}
+  @media(max-width:520px){.meta-out{grid-template-columns:1fr;}}
+  .meta-item{background:#0E1116;border:1px solid var(--border);border-radius:8px;padding:9px 11px;}
+  .meta-item .k{font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);font-weight:700;}
+  .meta-item .v{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--text);margin-top:2px;}
+  .meta-item .s{font-family:var(--mono);font-size:10px;color:var(--muted-2);margin-top:2px;line-height:1.45;}
+  .meta-item.alvo{background:#0E1520;border-color:#1A2C40;} .meta-item.alvo .v{color:var(--sky);}
+  .meta-item.risco{background:#2A1A08;border-color:#4D3010;} .meta-item.risco .v{color:var(--amber);}
+  .prog{height:8px;border-radius:4px;background:#0E1116;border:1px solid var(--border);overflow:hidden;margin:6px 0 4px;}
+  .prog > i{display:block;height:100%;background:linear-gradient(90deg,#1A3D2E,#34D399);}
+  .prog.pouco > i{background:linear-gradient(90deg,#4D3010,#F5A524);}
+  .cal-line{font-family:var(--mono);font-size:11.5px;line-height:1.75;color:var(--muted);}
+  .cal-line b{color:var(--text);}
+  .sv-tag{display:inline-block;font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:10px;margin-left:6px;
+          background:#0E1520;border:1px solid #1A2C40;color:var(--sky);}
+  .sv-tag.alto{background:#2A1A08;border-color:#4D3010;color:var(--amber);}
   /* desempenho por segmento */
   .seg-row{padding:7px 0;border-bottom:1px solid var(--border);}
   .seg-row:last-of-type{border-bottom:none;}
@@ -761,7 +778,7 @@
         <div><label>Odd da casa</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="2.10"></div>
       </div>
       <div class="grid2">
-        <div><label>Odd média do mercado</label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="1.90"></div>
+        <div><label>Odd média do mercado <span id="vbSvTag"></span></label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="1.90"></div>
         <div><label>Prob. real % (auto)</label><input type="number" id="vbProb" step="0.1" placeholder="calculada"></div>
       </div>
       <div id="vbSugestao"></div>
@@ -786,6 +803,36 @@
         <div><label>Data / horário</label><input type="datetime-local" id="vbDate"></div>
       </div>
       <button class="btn primary" id="vbRegisterBtn" style="width:100%;">Registrar aposta de valor</button>
+    </div>
+
+    <!-- META & DIMENSIONAMENTO -->
+    <div class="card">
+      <div class="card-title">🎯 Meta &amp; dimensionamento</div>
+      <div class="footnote" style="margin-top:0;">Só existe uma equação: <b>lucro = giro × yield</b>. Com a stake limitada pelo Kelly, a meta define o <b>volume de apostas</b>, não o tamanho da entrada. Mexa nos campos e veja o que a meta exige.</div>
+      <div class="grid2" style="margin-top:10px;">
+        <div><label>Meta de lucro mensal (R$)</label><input type="number" id="mtAlvo" step="100" value="30000"></div>
+        <div><label>Banca de trabalho (R$)</label><input type="number" id="mtBanca" step="100" placeholder="32000"></div>
+      </div>
+      <div class="grid2">
+        <div><label>Yield de planejamento (%)</label><input type="number" id="mtYield" step="0.5" value="5"></div>
+        <div><label>Odd média de trabalho</label><input type="number" id="mtOdd" step="0.01" value="1.98"></div>
+      </div>
+      <div><label>Fração de Kelly</label>
+        <div class="evo-seg" style="margin:4px 0 0;">
+          <button type="button" class="evo-opt" data-kf="0.125">⅛ Kelly</button>
+          <button type="button" class="evo-opt active" data-kf="0.25">¼ Kelly</button>
+          <button type="button" class="evo-opt" data-kf="0.5">½ Kelly</button>
+        </div>
+      </div>
+      <div class="meta-out" id="mtOut"></div>
+      <div class="footnote" id="mtNota"></div>
+    </div>
+
+    <!-- CALIBRAÇÃO DO FILTRO -->
+    <div class="card">
+      <div class="card-title">🔬 Calibração do filtro</div>
+      <div class="footnote" style="margin-top:0;">A pergunta que decide tudo: <b>quanto da supervalorização anunciada vira lucro de verdade?</b> Medir isso exige registrar a <b>odd média do mercado</b> em cada aposta — é um número só para a operação inteira, muito mais rápido de medir do que o yield de cada mercado separado.</div>
+      <div id="calBox"></div>
     </div>
 
     <!-- APOSTAS DE VALOR -->
@@ -918,7 +965,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-0945';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-1234';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3487,6 +3534,150 @@
   });
   $('vbRegisterBtn').addEventListener('click',registrarValor);
 
+  /* ---------- supervalorização: o que o filtro anunciou naquela aposta ---------- */
+  // sv = odd da casa / odd média do mercado - 1. É o yield PREVISTO daquela entrada.
+  function svDe(o){
+    const om=o.oddMkt;
+    if(!(typeof om==='number'&&om>1)) return null;
+    const od=legOdd(o,'A');
+    if(!(od>1)) return null;
+    return od/om-1;
+  }
+  function renderSvTag(){
+    const el=$('vbSvTag'); if(!el) return;
+    const od=parseFloat($('vbOdd').value), om=parseFloat($('vbOddMkt').value);
+    if(!(od>1)||!(om>1)){ el.innerHTML=''; return; }
+    const sv=(od/om-1)*100;
+    el.innerHTML='<span class="sv-tag'+(sv>=20?' alto':'')+'">'+(sv>=0?'+':'')+sv.toFixed(1)+'%'+(sv>=20?' ⚠':'')+'</span>';
+  }
+  ['vbOdd','vbOddMkt'].forEach(id=>$(id).addEventListener('input',renderSvTag));
+
+  /* ---------- meta & dimensionamento ---------- */
+  // Kelly: f* = yield/(odd-1). A stake sai da banca e do edge, nunca da meta.
+  // O que a meta define é o GIRO — e portanto o número de apostas.
+  let mtKf=0.25;
+  function renderMeta(){
+    document.querySelectorAll('[data-kf]').forEach(b=>b.classList.toggle('active', parseFloat(b.dataset.kf)===mtKf));
+    const alvo=parseFloat($('mtAlvo').value)||0;
+    const banca=parseFloat($('mtBanca').value)||caixaAtual();
+    const y=(parseFloat($('mtYield').value)||0)/100;
+    const odd=parseFloat($('mtOdd').value)||1.98;
+    const box=$('mtOut');
+    if(!(alvo>0)||!(banca>0)||!(y>0)||!(odd>1)){
+      box.innerHTML='<div class="meta-item"><div class="s">Preencha meta, banca, yield e odd.</div></div>';
+      $('mtNota').textContent=''; return;
+    }
+    const fFull=y/(odd-1);              // Kelly cheio
+    const stake=banca*fFull*mtKf;
+    const giro=alvo/y;                  // giro mensal exigido pela meta
+    const nMes=giro/stake, nDia=nMes/30;
+    // risco: p que gera esse yield nessa odd
+    const p=(1+y)/odd;
+    const sdBet=stake*odd*Math.sqrt(p*(1-p));
+    const sdDia=sdBet*Math.sqrt(nDia), sdMes=sdBet*Math.sqrt(nMes);
+    const pDiaNeg=1-normCdf((alvo/30)/sdDia);
+    const pMesNeg=1-normCdf(alvo/sdMes);
+    const expo=nDia*stake;              // capital exposto por dia, se tudo do dia estiver aberto junto
+    box.innerHTML=
+      item('alvo','Stake por aposta',fmt(stake),(mtKf*100).toFixed(1)+'% do Kelly cheio · '+(fFull*mtKf*100).toFixed(2)+'% da banca')+
+      item('alvo','Apostas por dia',nDia.toFixed(0),nMes.toFixed(0)+'/mês · giro de '+fmt(giro))+
+      item('','Dias negativos',(100*pDiaNeg).toFixed(0)+'%',(pDiaNeg*30).toFixed(0)+' dias por mês no vermelho — é o formato da distribuição, não sintoma')+
+      item(pMesNeg>0.15?'risco':'','Meses negativos',(100*pMesNeg).toFixed(0)+'%','1 a cada '+(pMesNeg>0?(1/pMesNeg).toFixed(0):'∞')+' meses fecha no vermelho')+
+      item(expo>banca*0.6?'risco':'','Capital exposto/dia',fmt(expo),(100*expo/banca).toFixed(0)+'% da banca, se as apostas do dia ficarem abertas ao mesmo tempo')+
+      item('','Lucro por aposta',fmt(stake*y),'desvio de '+fmt(sdBet)+' por aposta — '+(sdBet/(stake*y)).toFixed(0)+'x o lucro esperado');
+    const avisos=[];
+    if(expo>banca*0.6) avisos.push('<b style="color:var(--amber)">O capital exposto passa de 60% da banca.</b> Só funciona se as apostas do dia não ficarem todas abertas ao mesmo tempo — distribua os horários.');
+    if(nDia>50) avisos.push('<b style="color:var(--amber)">'+nDia.toFixed(0)+' apostas por dia</b> é volume de operação automatizada. Sem feed filtrado, não fecha na mão.');
+    if(mtKf>=0.5) avisos.push('<b style="color:#F87171">½ Kelly com yield estimado é agressivo.</b> Se o yield real for metade do planejado, ½ Kelly vira Kelly cheio — o ponto onde o crescimento esperado zera.');
+    avisos.push('O yield de planejamento é a variável mais perigosa desta tela: metade dele dobra o volume exigido. Use o painel de calibração para substituí-lo por um número medido.');
+    $('mtNota').innerHTML=avisos.join('<br>');
+  }
+  function item(cls,k,v,s){ return '<div class="meta-item '+cls+'"><div class="k">'+k+'</div><div class="v">'+v+'</div><div class="s">'+s+'</div></div>'; }
+  function normCdf(x){ return 0.5*(1+erf(x/Math.SQRT2)); }
+  function erf(x){                                   // Abramowitz-Stegun 7.1.26
+    const s=x<0?-1:1; x=Math.abs(x);
+    const t=1/(1+0.3275911*x);
+    const y=1-((((1.061405429*t-1.453152027)*t+1.421413741)*t-0.284496736)*t+0.254829592)*t*Math.exp(-x*x);
+    return s*y;
+  }
+  ['mtAlvo','mtBanca','mtYield','mtOdd'].forEach(id=>$(id).addEventListener('input',renderMeta));
+  document.querySelectorAll('[data-kf]').forEach(b=>b.addEventListener('click',()=>{ mtKf=parseFloat(b.dataset.kf); renderMeta(); }));
+
+  /* ---------- calibração: quanto do edge anunciado se realiza ---------- */
+  // Regressão r = alfa + beta*sv, onde r = retorno por R$1 e sv = supervalorização anunciada.
+  // beta = 1  -> o filtro é honesto; beta = 0,5 -> metade do edge é real; beta < 0 -> sinal invertido.
+  // Estimar UM beta da amostra inteira é muito mais rápido que estimar o yield de cada mercado.
+  function calcCalibracao(){
+    const arr=valorBets().filter(o=>o.winner==='A'||o.winner==='RED');
+    const com=arr.map(o=>({sv:svDe(o), r:(o.winner==='A'?legOdd(o,'A')-1:-1)})).filter(x=>x.sv!==null);
+    const n=com.length;
+    if(n<3) return {n, total:arr.length, ok:false};
+    const mx=com.reduce((s,x)=>s+x.sv,0)/n, my=com.reduce((s,x)=>s+x.r,0)/n;
+    let sxy=0,sxx=0;
+    com.forEach(x=>{ sxy+=(x.sv-mx)*(x.r-my); sxx+=(x.sv-mx)*(x.sv-mx); });
+    if(sxx<=0) return {n, total:arr.length, ok:false};
+    const beta=sxy/sxx, alfa=my-beta*mx;
+    let sse=0; com.forEach(x=>{ const e=x.r-(alfa+beta*x.sv); sse+=e*e; });
+    const sdRes=Math.sqrt(sse/Math.max(1,n-2));
+    const seBeta=sdRes/Math.sqrt(sxx);
+    const sdSv=Math.sqrt(sxx/n);
+    // N para medir beta=1 com t=2, mantendo a mesma dispersão de supervalorização
+    const nNec=sdSv>0?Math.ceil(Math.pow(2*sdRes/sdSv,2)):null;
+    return {n, total:arr.length, ok:true, beta, seBeta, alfa, sdSv, sdRes, nNec, mx, my};
+  }
+
+  function renderCalibracao(){
+    const box=$('calBox');
+    const arr=valorBets().filter(o=>o.winner==='A'||o.winner==='RED');
+    // yield global observado, por R$1 apostado (estimador não-enviesado — não pondera por stake)
+    const rs=arr.map(o=>o.winner==='A'?legOdd(o,'A')-1:-1);
+    let globalHtml='';
+    if(rs.length>1){
+      const m=rs.reduce((a,b)=>a+b,0)/rs.length;
+      const sd=Math.sqrt(rs.reduce((a,b)=>a+(b-m)*(b-m),0)/rs.length);
+      const se=sd/Math.sqrt(rs.length), t=se>0?m/se:0;
+      const lo=(m-1.96*se)*100, hi=(m+1.96*se)*100;
+      const nProva=y=>Math.ceil(Math.pow(2*sd/y,2));
+      globalHtml='<div class="cal-line" style="margin-bottom:10px;">'+
+        'Edge global por R$1 apostado: <b>'+(m>=0?'+':'')+(m*100).toFixed(2)+'%</b>'+
+        ' · IC95 <b>['+(lo>=0?'+':'')+lo.toFixed(1)+'% , '+(hi>=0?'+':'')+hi.toFixed(1)+'%]</b>'+
+        ' · t = <b>'+(t>=0?'+':'')+t.toFixed(2)+'</b> em '+rs.length+' apostas<br>'+
+        '<span style="color:'+(Math.abs(t)>1.96?'var(--green)':'var(--amber)')+'">'+
+        (Math.abs(t)>1.96?'Edge distinguível de zero.':'Ainda indistinguível de sorte — o IC cruza o zero.')+'</span>'+
+        ' Para provar 5% seriam '+nProva(0.05)+' apostas; 8%, '+nProva(0.08)+'.'+
+        '</div>';
+    }
+    const c=calcCalibracao();
+    const pct=Math.min(100,100*c.n/Math.max(1,c.total));
+    let html=globalHtml+
+      '<div class="cal-line">Apostas com odd de mercado registrada: <b>'+c.n+' de '+c.total+'</b> ('+pct.toFixed(0)+'%)</div>'+
+      '<div class="prog'+(pct<60?' pouco':'')+'"><i style="width:'+pct.toFixed(1)+'%"></i></div>';
+    if(!c.ok){
+      html+='<div class="cal-line" style="color:var(--amber)">Sem amostra para calibrar. Preencha <b>Odd média do mercado</b> nas próximas entradas — e retroativamente pelo botão Editar nas que já existem.</div>';
+      box.innerHTML=html; return;
+    }
+    const t=c.seBeta>0?c.beta/c.seBeta:0;
+    const lo=c.beta-1.96*c.seBeta, hi=c.beta+1.96*c.seBeta;
+    const prog=Math.min(100,100*c.n/c.nNec);
+    let leitura;
+    if(Math.abs(t)<2) leitura='<span style="color:var(--amber)">Amostra insuficiente para concluir.</span> O intervalo ainda cabe tanto "filtro honesto" quanto "sinal inútil".';
+    else if(c.beta>=0.8) leitura='<span style="color:var(--green)">Filtro honesto:</span> quase todo o edge anunciado se realiza.';
+    else if(c.beta>=0.3) leitura='<span style="color:var(--amber)">Filtro parcial:</span> use <b>'+(c.beta*100).toFixed(0)+'%</b> da supervalorização anunciada como edge real no dimensionamento.';
+    else if(c.beta>=0) leitura='<span style="color:#F87171">Filtro sem poder:</span> a supervalorização anunciada quase não prevê o resultado.';
+    else leitura='<span style="color:#F87171">Sinal invertido:</span> quanto maior a supervalorização, pior o resultado — é a marca da linha desatualizada.';
+    html+=
+      '<div class="cal-line" style="margin-top:8px;">'+
+        'β = <b>'+c.beta.toFixed(2)+'</b> ± '+c.seBeta.toFixed(2)+' · IC95 [<b>'+lo.toFixed(2)+'</b> , <b>'+hi.toFixed(2)+'</b>] · t = '+t.toFixed(2)+'<br>'+
+        'α = '+(c.alfa*100).toFixed(1)+'% (custo fixo por aposta, independente do edge anunciado)<br>'+
+        'supervalorização média da amostra: '+(c.mx*100).toFixed(1)+'% · dispersão '+(c.sdSv*100).toFixed(1)+' pp<br>'+
+        leitura+
+      '</div>'+
+      '<div class="cal-line" style="margin-top:8px;color:var(--muted-2)">Amostra para medir β com t=2: <b>'+c.nNec+'</b> apostas ('+c.n+' feitas, '+prog.toFixed(0)+'%)</div>'+
+      '<div class="prog'+(prog<60?' pouco':'')+'"><i style="width:'+prog.toFixed(1)+'%"></i></div>'+
+      '<div class="footnote" style="margin-top:8px;">A dispersão da supervalorização é o que dá poder ao teste: aceitar <b>só</b> entradas de 8–12% torna β quase impossível de medir. Variar de propósito entre 3% e 25% reduz a amostra necessária.</div>';
+    box.innerHTML=html;
+  }
+
   /* ---------- KPIs ---------- */
   function renderValorSummary(){
     const all=valorBets();
@@ -3634,7 +3825,7 @@
               '</div>'+
               '<div class="grid2">'+
                 '<div><label>Stake (R$)</label><input type="number" class="vbed" data-f="stakeA" step="0.01" value="'+st.toFixed(2)+'"></div>'+
-                '<div><label>Prob %</label><input type="number" class="vbed" data-f="prob" step="0.1" value="'+((typeof o.prob==='number')?o.prob:'')+'"></div>'+
+                '<div><label>Odd média do mercado</label><input type="number" class="vbed" data-f="oddMkt" step="0.01" value="'+((typeof o.oddMkt==='number')?o.oddMkt:'')+'"></div>'+
               '</div>'+
               '<label>Data / horário</label><input type="datetime-local" class="vbed" data-f="date" value="'+(o.date||'').slice(0,16)+'">'+
               '<div style="display:flex;gap:6px;margin-top:8px;">'+
@@ -3645,7 +3836,7 @@
           : '<div class="bet-detail'+(vbOpenDetail===o.id?' show':'')+'" data-vbdetail="'+o.id+'">'+
               'Retorno se green: '+fmt(st*od)+' · lucro '+fmtSign(st*(od-1))+'<br>'+
               'Perda se red: '+fmt(st)+
-              ((typeof o.prob==='number')?'<br>Prob informada '+o.prob+'% → EV '+((o.prob/100*od-1)*100).toFixed(1)+'%':'')+
+              (svDe(o)!==null?'<br>Supervalorização anunciada '+(svDe(o)*100).toFixed(1)+'% (odd mercado '+o.oddMkt.toFixed(2)+')':'<br><span style="color:var(--amber)">sem odd de mercado — esta aposta não entra na calibração</span>')+
               (o.stakeFake?'<br><span style="color:var(--muted-2)">convertida de surebet · perna simbólica de '+fmt(o.stakeFake)+' já debitada</span>':'')+
               '<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">'+
                 '<button class="btn small'+(o.winner==='A'?' primary':'')+'" data-vbres="'+o.id+':A">✓ Green</button>'+
@@ -3719,7 +3910,7 @@
         else if(f==='houseA') o.houseA=v.trim();
         else if(f==='oddA'){ const n=parseFloat(v); if(n>1) o.oddA=n; }
         else if(f==='stakeA'){ const n=parseFloat(v); if(n>0) o.stakeA=n; }
-        else if(f==='prob'){ const n=parseFloat(v); o.prob=isNaN(n)?null:n; }
+        else if(f==='oddMkt'){ const n=parseFloat(v); o.oddMkt=(n>1)?n:null; }
         else if(f==='date') o.date=v||o.date;
       });
       recalcValor(o);
@@ -3743,7 +3934,7 @@
     btn.classList.add('active'); vbFilter=btn.dataset.vbfilter; vbEditingId=null; renderValorList();
   }));
 
-  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMiddleSummary(); renderMiddleList(); }
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMeta(); renderCalibracao(); renderMiddleSummary(); renderMiddleList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
@@ -3798,6 +3989,7 @@
   })();
   if(!scEls.date.value) scEls.date.value=nowLocalStr();
   if(!$('vbDate').value) $('vbDate').value=nowLocalStr();
+  if(!$('mtBanca').value) $('mtBanca').value=Math.round(caixaAtual());
   if(!$('mdDate').value) $('mdDate').value=nowLocalStr();
   if(!$('layDate').value) $('layDate').value=nowLocalStr();
   mdSync();
