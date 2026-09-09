@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-09",
+    "startDate": "2026-09-04",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4537,7 +4537,7 @@
       "value": 1018,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T17:07:55.622Z"
+      "updatedAt": "2026-09-09T19:46:33.978Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1141.15,
+      "value": 1798.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T18:56:44.450Z"
+      "updatedAt": "2026-09-09T19:46:33.978Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5002,12 +5002,12 @@
       "updatedAt": "2026-09-09T15:16:15.120Z"
     }
   ],
-  "usdRate": 5.1,
+  "usdRate": 5.11,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-09T17:57:32.577Z",
-  "eurRate": 5.94,
+  "usdRateAt": "2026-09-09T19:46:32.899Z",
+  "eurRate": 5.92,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-09T17:57:32.780Z",
+  "eurRateAt": "2026-09-09T19:46:33.063Z",
   "appBuild": "20260909-1434",
   "deleted": [
     {
@@ -6152,7 +6152,7 @@
       "kind": "valor",
       "stakeFake": 1,
       "lucroRed": -269.43,
-      "updatedAt": "2026-09-09T15:02:27.679Z"
+      "updatedAt": "2026-09-09T19:46:32.611Z"
     },
     {
       "id": "mseuzicagj8rh",
@@ -6527,7 +6527,7 @@
       "kind": "valor",
       "stakeFake": 1,
       "lucroRed": -250,
-      "updatedAt": "2026-09-09T15:02:27.679Z"
+      "updatedAt": "2026-09-09T19:46:32.611Z"
     },
     {
       "id": "mshr1vyma4sju",
@@ -12408,7 +12408,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -3073.36
     },
@@ -13330,7 +13330,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -226.48
     },
@@ -13452,7 +13452,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.1,
       "lucroRed": -397.27
     },
@@ -13749,7 +13749,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -13771,7 +13771,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -13793,7 +13793,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -13815,7 +13815,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -31.14
     },
@@ -13837,7 +13837,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -60
     },
@@ -13859,7 +13859,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -13881,7 +13881,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -67.47
     },
@@ -13903,7 +13903,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -13925,7 +13925,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -13947,7 +13947,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -13969,7 +13969,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -129.75
     },
@@ -13991,7 +13991,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -129.75
     },
@@ -14013,7 +14013,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 1.01,
       "lucroRed": -129.75
     },
@@ -14035,7 +14035,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -129.75
     },
@@ -14057,7 +14057,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -14079,7 +14079,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 1.01,
       "lucroRed": -155.70000000000002
     },
@@ -14101,7 +14101,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -207.60000000000002
     },
@@ -14123,7 +14123,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -14145,7 +14145,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -103.80000000000001
     },
@@ -14167,7 +14167,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -14189,7 +14189,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.0519,
       "lucroRed": -103.80000000000001
     },
@@ -14336,7 +14336,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -94.82130000000001
     },
@@ -15083,7 +15083,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -15905,7 +15905,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -220.52
     },
@@ -15927,7 +15927,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -222
     },
@@ -15949,7 +15949,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16045,12 +16045,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T19:15:28.592Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.0596,
-      "lucroRed": -87,
-      "sport": "",
-      "market": "",
-      "oddMkt": null
+      "lucroRed": -87
     },
     {
       "id": "mtslem2pv37dd",
@@ -16120,7 +16117,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -153.9
     },
@@ -16142,7 +16139,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -153.9
     },
@@ -16157,21 +16154,20 @@
       "lucroA": 135.432,
       "lucro": 135.432,
       "roi": 87.99999999999999,
-      "winner": "VOID",
+      "winner": null,
       "curA": "USD",
       "date": "2026-09-09T08:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "VOID"
+        "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -153.9
     },
     {
       "id": "mtt2vpe1jj30x",
       "kind": "valor",
-      "event": "PSG – Bratislava (terá um cartão vermelho)",
+      "event": "PSG – Bratislava",
       "houseA": "Betnacional",
       "oddA": 10,
       "total": 20,
@@ -16185,12 +16181,9 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T19:15:44.338Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
-      "lucroRed": -20,
-      "sport": "",
-      "market": "",
-      "oddMkt": null
+      "lucroRed": -20
     },
     {
       "id": "mtt30fqb1hezu",
@@ -16203,14 +16196,13 @@
       "lucroA": 132.908,
       "lucro": 132.908,
       "roi": 89.19999999999999,
-      "winner": "A",
+      "winner": null,
       "curA": "EUR",
       "date": "2026-09-09T10:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "A"
+        "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -149
     },
@@ -16231,7 +16223,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -178.8
     },
@@ -16253,7 +16245,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -102.6
     },
@@ -16274,7 +16266,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -20
     },
@@ -16289,14 +16281,13 @@
       "lucroA": 150,
       "lucro": 150,
       "roi": 300,
-      "winner": "A",
+      "winner": null,
       "curA": "BRL",
-      "date": "2026-09-09T13:30",
+      "date": "2026-09-09T04:00",
       "aplicado": {
-        "stakes": true,
-        "resultado": "A"
+        "stakes": true
       },
-      "updatedAt": "2026-09-09T18:49:50.864Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -50
     },
@@ -16318,7 +16309,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -178.8
     },
@@ -16339,7 +16330,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -16361,7 +16352,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -16376,14 +16367,13 @@
       "lucroA": 138.684,
       "lucro": 138.684,
       "roi": 90.99999999999999,
-      "winner": "RED",
+      "winner": null,
       "curA": "USD",
       "date": "2026-09-09T13:30",
       "aplicado": {
-        "stakes": true,
-        "resultado": "RED"
+        "stakes": true
       },
-      "updatedAt": "2026-09-09T18:56:44.450Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -152.4
     },
@@ -16405,7 +16395,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -100
     },
@@ -16427,7 +16417,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16442,14 +16432,14 @@
       "lucroA": 150.876,
       "lucro": 150.876,
       "roi": 99,
-      "winner": "RED",
+      "winner": null,
       "curA": "USD",
       "date": "2026-09-09T21:30",
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": null
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -152.4
     },
@@ -16470,7 +16460,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16491,7 +16481,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:46:32.612Z",
       "stakeFake": 0.01,
       "lucroRed": -150
     },
@@ -16947,5 +16937,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T19:15:44.338Z"
+  "updatedAt": "2026-09-09T19:46:33.064Z"
 }
