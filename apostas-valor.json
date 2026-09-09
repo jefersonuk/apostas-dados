@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2666.97,
-      "updatedAt": "2026-09-09T20:28:46.712Z"
+      "value": 2466.97,
+      "updatedAt": "2026-09-09T23:27:34.799Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 757.67,
+      "value": 957.67,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T22:24:49.456Z"
+      "updatedAt": "2026-09-09T23:27:34.807Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -16789,6 +16789,30 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-09-09T22:24:45.956Z"
+    },
+    {
+      "id": "mtuqar2n42e2v",
+      "kind": "valor",
+      "event": "CF Montreal (Bookings) – Charlotte FC (Bookings)",
+      "houseA": "Pinnacle",
+      "oddA": 2.23,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Cartões",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-09T20:30",
+      "total": 200,
+      "lucroA": 246,
+      "lucroRed": -200,
+      "lucro": 246,
+      "roi": 123,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T23:27:34.801Z"
     }
   ],
   "invertidos": [],
@@ -16955,5 +16979,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T23:23:30.099Z"
+  "updatedAt": "2026-09-09T23:27:34.807Z"
 }
