@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1699.88,
+      "value": 1496.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T18:47:49.063Z"
+      "updatedAt": "2026-09-09T18:49:10.006Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4703,9 +4703,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 292.3,
+      "value": 384.12,
       "currency": "USD",
-      "updatedAt": "2026-09-09T15:44:30.366Z"
+      "updatedAt": "2026-09-09T18:49:10.006Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -16663,7 +16663,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.76,
       "prob": 54.1,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-09T13:45",
       "total": 203.6,
       "lucroA": 264.67999999999995,
@@ -16671,9 +16671,10 @@
       "lucro": 264.67999999999995,
       "roi": 129.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-09T15:44:30.366Z"
+      "updatedAt": "2026-09-09T18:49:10.006Z"
     },
     {
       "id": "mtua2abkmh5x6",
@@ -16937,5 +16938,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T18:47:49.063Z"
+  "updatedAt": "2026-09-09T18:49:10.006Z"
 }
