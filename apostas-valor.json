@@ -4744,7 +4744,7 @@
       "name": "BetOnline",
       "value": 18.03,
       "currency": "USD",
-      "updatedAt": "2026-09-09T00:53:48.289Z"
+      "updatedAt": "2026-09-09T02:19:58.131Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16564,12 +16564,12 @@
       "winner": null,
       "curA": "USD",
       "curB": "BRL",
-      "date": "2026-09-08T21:30",
+      "date": "2026-09-09T21:30",
       "aplicado": {
         "stakes": true,
         "resultado": null
       },
-      "updatedAt": "2026-09-09T00:53:48.289Z"
+      "updatedAt": "2026-09-09T02:19:58.131Z"
     },
     {
       "id": "mtt9zebjheh13",
@@ -16784,5 +16784,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T02:18:50.227Z"
+  "updatedAt": "2026-09-09T02:19:58.132Z"
 }
