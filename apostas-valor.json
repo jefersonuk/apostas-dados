@@ -4509,7 +4509,7 @@
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
       "value": 1765,
-      "updatedAt": "2026-09-09T17:24:13.184Z"
+      "updatedAt": "2026-09-09T19:15:44.338Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -16171,7 +16171,7 @@
     {
       "id": "mtt2vpe1jj30x",
       "kind": "valor",
-      "event": "PSG – Bratislava",
+      "event": "PSG – Bratislava (terá um cartão vermelho)",
       "houseA": "Betnacional",
       "oddA": 10,
       "total": 20,
@@ -16185,9 +16185,12 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T19:15:44.338Z",
       "stakeFake": 0.01,
-      "lucroRed": -20
+      "lucroRed": -20,
+      "sport": "",
+      "market": "",
+      "oddMkt": null
     },
     {
       "id": "mtt30fqb1hezu",
@@ -16944,5 +16947,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T19:15:28.592Z"
+  "updatedAt": "2026-09-09T19:15:44.338Z"
 }
