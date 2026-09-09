@@ -4630,7 +4630,7 @@
       "name": "Opinion",
       "value": 187.3,
       "currency": "USD",
-      "updatedAt": "2026-09-09T15:09:51.466Z"
+      "updatedAt": "2026-09-09T16:38:24.458Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -16546,9 +16546,12 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:02:27.679Z",
+      "updatedAt": "2026-09-09T16:38:24.458Z",
       "stakeFake": 0.01,
-      "lucroRed": -101.8
+      "lucroRed": -101.8,
+      "sport": "",
+      "market": "",
+      "prob": null
     },
     {
       "id": "mtu39riw4u96x",
@@ -16874,5 +16877,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T16:18:38.056Z"
+  "updatedAt": "2026-09-09T16:38:24.458Z"
 }
