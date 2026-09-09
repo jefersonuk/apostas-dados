@@ -4635,10 +4635,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2225.88,
+      "value": 2357.51,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T17:07:57.082Z"
+      "updatedAt": "2026-09-09T17:20:19.251Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 25.6,
+      "value": -0.26,
       "currency": "USD",
-      "updatedAt": "2026-09-09T16:18:38.053Z"
+      "updatedAt": "2026-09-09T17:20:19.246Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16714,6 +16714,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T16:18:38.053Z"
+    },
+    {
+      "id": "mtud6gby5vefn",
+      "kind": "valor",
+      "event": "Rigo Ntumba – Boyka Botha (2)",
+      "houseA": "Betonline",
+      "oddA": 2.35,
+      "stakeA": 131.6274,
+      "curA": "USD",
+      "sport": "MMA",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.64,
+      "prob": 58.1,
+      "winner": null,
+      "date": "2026-09-10T07:00",
+      "total": 131.6274,
+      "lucroA": 177.69699,
+      "lucroRed": -131.6274,
+      "lucro": 177.69699,
+      "roi": 135,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T17:20:19.246Z"
     }
   ],
   "invertidos": [],
@@ -16880,5 +16904,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T17:12:58.875Z"
+  "updatedAt": "2026-09-09T17:20:19.251Z"
 }
