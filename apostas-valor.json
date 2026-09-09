@@ -4635,10 +4635,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2022.28,
+      "value": 2225.88,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T15:53:05.984Z"
+      "updatedAt": "2026-09-09T16:18:38.056Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 65.6,
+      "value": 25.6,
       "currency": "USD",
-      "updatedAt": "2026-09-09T14:42:48.351Z"
+      "updatedAt": "2026-09-09T16:18:38.053Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16684,6 +16684,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T15:53:05.984Z"
+    },
+    {
+      "id": "mtuaz4h15cmjh",
+      "kind": "valor",
+      "event": "Worcester Red Sox x Lehigh Valley Ironpigs",
+      "houseA": "Betonline",
+      "oddA": 2,
+      "stakeA": 203.6,
+      "curA": "USD",
+      "sport": "Beisebol",
+      "market": "Total de Pontos",
+      "oddMkt": 1.57,
+      "prob": 60.7,
+      "winner": null,
+      "date": "2026-09-09T19:45",
+      "total": 203.6,
+      "lucroA": 203.6,
+      "lucroRed": -203.6,
+      "lucro": 203.6,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T16:18:38.053Z"
     }
   ],
   "invertidos": [],
@@ -16850,5 +16874,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T15:53:05.984Z"
+  "updatedAt": "2026-09-09T16:18:38.056Z"
 }
