@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-04",
+    "startDate": "2026-09-09",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -10,7 +10,11 @@
     "probTolerance": 3,
     "probFull": 50,
     "probFloor": 20,
-    "penMin": 0.35
+    "penMin": 0.35,
+    "escAnc": 200,
+    "escTeto": 400,
+    "escPiso": 25,
+    "escExp": 1
   },
   "bets": [
     {
@@ -4998,13 +5002,13 @@
       "updatedAt": "2026-09-09T15:16:15.120Z"
     }
   ],
-  "usdRate": 5.09,
+  "usdRate": 5.1,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-09T11:51:36.140Z",
-  "eurRate": 5.92,
+  "usdRateAt": "2026-09-09T17:57:32.577Z",
+  "eurRate": 5.94,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-09T11:51:36.336Z",
-  "appBuild": "20260909-1234",
+  "eurRateAt": "2026-09-09T17:57:32.780Z",
+  "appBuild": "20260909-1434",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -16928,5 +16932,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T17:24:13.186Z"
+  "updatedAt": "2026-09-09T17:57:32.780Z"
 }
