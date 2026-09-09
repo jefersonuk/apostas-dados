@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2482.58,
+      "value": 2660.49,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T12:42:57.563Z"
+      "updatedAt": "2026-09-09T14:41:21.997Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4671,9 +4671,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 353.51,
+      "value": 323.51,
       "currency": "EUR",
-      "updatedAt": "2026-09-08T20:50:17.357Z"
+      "updatedAt": "2026-09-09T14:41:21.995Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -16717,6 +16717,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T12:42:57.561Z"
+    },
+    {
+      "id": "mtu7i1cam3gur",
+      "kind": "sure",
+      "event": "Sturtgard x Vikings (menos 10.5 corners)",
+      "houseA": "Sportmarket",
+      "houseB": "Sportmarket",
+      "oddA": 1.86,
+      "oddB": 1.01,
+      "total": 177.90999999999997,
+      "stakeA": 177.89999999999998,
+      "stakeB": 0.01,
+      "lucroA": 152.98399999999998,
+      "lucroB": -177.89989999999997,
+      "lucro": -177.89989999999997,
+      "roi": -99.99432297228937,
+      "winner": null,
+      "curA": "EUR",
+      "curB": "BRL",
+      "date": "2026-09-09T13:45",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T14:41:21.995Z"
     }
   ],
   "invertidos": [],
@@ -16883,5 +16907,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T13:12:59.970Z"
+  "updatedAt": "2026-09-09T14:41:21.997Z"
 }
