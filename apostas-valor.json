@@ -4673,7 +4673,7 @@
       "name": "Sportmarket",
       "value": 340.79,
       "currency": "EUR",
-      "updatedAt": "2026-09-09T15:39:35.878Z"
+      "updatedAt": "2026-09-09T15:40:11.100Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -16616,10 +16616,10 @@
     {
       "id": "mtu9kx8lkqqfd",
       "kind": "valor",
-      "event": "Barket Brno x BC Slovan Bratislava",
+      "event": "Barket Brno x BC Slovan Bratislava (H1 +14.5)",
       "houseA": "Sportmarket",
       "oddA": 1.892,
-      "stakeA": 177.89999999999998,
+      "stakeA": 177.9,
       "curA": "EUR",
       "sport": "Basquete",
       "market": "Handicap Asiático",
@@ -16627,15 +16627,15 @@
       "prob": 59.5,
       "winner": null,
       "date": "2026-09-09T13:00",
-      "total": 177.89999999999998,
+      "total": 177.9,
       "lucroA": 158.68679999999998,
-      "lucroRed": -177.89999999999998,
+      "lucroRed": -177.9,
       "lucro": 158.68679999999998,
       "roi": 89.19999999999999,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T15:39:35.878Z"
+      "updatedAt": "2026-09-09T15:40:11.100Z"
     }
   ],
   "invertidos": [],
@@ -16802,5 +16802,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T15:39:35.880Z"
+  "updatedAt": "2026-09-09T15:40:11.100Z"
 }
