@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2075.35,
+      "value": 2228.06,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T12:28:24.909Z"
+      "updatedAt": "2026-09-09T12:34:05.143Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 65.6,
+      "value": 35.6,
       "currency": "USD",
-      "updatedAt": "2026-09-09T11:58:53.936Z"
+      "updatedAt": "2026-09-09T12:34:05.142Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16645,6 +16645,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T11:53:50.611Z"
+    },
+    {
+      "id": "mtu2ycpirsmnb",
+      "kind": "sure",
+      "event": "Grundel, Matej – Kratochvil, Michal (2)",
+      "houseA": "Betonline",
+      "houseB": "Betonline",
+      "oddA": 2.6,
+      "oddB": 1.01,
+      "total": 152.70999999999998,
+      "stakeA": 152.7,
+      "stakeB": 0.01,
+      "lucroA": 244.31,
+      "lucroB": -152.69989999999999,
+      "lucro": -152.69989999999999,
+      "roi": -99.99338615676774,
+      "winner": null,
+      "curA": "USD",
+      "curB": "BRL",
+      "date": "2026-09-09T11:30",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T12:34:05.142Z"
     }
   ],
   "invertidos": [],
@@ -16811,5 +16835,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T12:28:24.909Z"
+  "updatedAt": "2026-09-09T12:34:05.143Z"
 }
