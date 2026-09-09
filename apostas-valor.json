@@ -4530,10 +4530,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 2358.77,
+      "value": 2558.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-09T14:42:48.351Z"
+      "updatedAt": "2026-09-09T14:48:08.360Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4582,8 +4582,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2504.98,
-      "updatedAt": "2026-09-09T12:26:12.852Z"
+      "value": 2304.97,
+      "updatedAt": "2026-09-09T14:48:08.359Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -16743,6 +16743,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-09T14:41:21.995Z"
+    },
+    {
+      "id": "mtu7qqw4buq6i",
+      "kind": "sure",
+      "event": "Dicken x Sjundea (H1 -2)",
+      "houseA": "Pinnacle",
+      "houseB": "Pinnacle",
+      "oddA": 1.81,
+      "oddB": 1.01,
+      "total": 200.01,
+      "stakeA": 200,
+      "stakeB": 0.01,
+      "lucroA": 161.99,
+      "lucroB": -199.9999,
+      "lucro": -199.9999,
+      "roi": -99.99495025248739,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-09T13:15",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-09T14:48:08.359Z"
     }
   ],
   "invertidos": [],
@@ -16909,5 +16933,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-09T14:42:48.351Z"
+  "updatedAt": "2026-09-09T14:48:08.360Z"
 }
