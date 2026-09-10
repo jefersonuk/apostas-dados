@@ -4748,7 +4748,7 @@
       "name": "BetOnline",
       "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-09-10T00:48:52.741Z"
+      "updatedAt": "2026-09-10T01:16:26.797Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16455,9 +16455,12 @@
         "stakes": true,
         "resultado": null
       },
-      "updatedAt": "2026-09-09T19:46:32.612Z",
+      "updatedAt": "2026-09-10T01:16:26.797Z",
       "stakeFake": 0.01,
-      "lucroRed": -152.4
+      "lucroRed": -152.4,
+      "sport": "",
+      "market": "",
+      "oddMkt": null
     },
     {
       "id": "mtt9zebjheh13",
@@ -16982,5 +16985,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T01:15:57.978Z"
+  "updatedAt": "2026-09-10T01:16:26.797Z"
 }
