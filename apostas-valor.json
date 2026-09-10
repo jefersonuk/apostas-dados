@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1601.93,
+      "value": 1780.13,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T11:58:54.480Z"
+      "updatedAt": "2026-09-10T12:00:09.579Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 456.65,
+      "value": 426.65,
       "currency": "EUR",
-      "updatedAt": "2026-09-10T11:58:54.478Z"
+      "updatedAt": "2026-09-10T12:00:09.578Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -16967,6 +16967,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T11:58:54.478Z"
+    },
+    {
+      "id": "mtvh6kq2w9gli",
+      "kind": "valor",
+      "event": "China x França (h2 -25.5)",
+      "houseA": "Sportmarket",
+      "oddA": 2,
+      "stakeA": 178.20000000000002,
+      "curA": "EUR",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-10T09:30",
+      "total": 178.20000000000002,
+      "lucroA": 178.20000000000002,
+      "lucroRed": -178.20000000000002,
+      "lucro": 178.20000000000002,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T12:00:09.578Z"
     }
   ],
   "invertidos": [],
@@ -17133,5 +17157,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T11:58:54.480Z"
+  "updatedAt": "2026-09-10T12:00:09.579Z"
 }
