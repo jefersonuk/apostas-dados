@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1320.29,
+      "value": 1498.49,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T14:20:38.306Z"
+      "updatedAt": "2026-09-10T14:47:45.590Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 486.65,
+      "value": 456.65,
       "currency": "EUR",
-      "updatedAt": "2026-09-10T14:20:38.306Z"
+      "updatedAt": "2026-09-10T14:47:45.590Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -17000,6 +17000,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-10T14:20:38.306Z"
+    },
+    {
+      "id": "mtvn63zq3zugw",
+      "kind": "valor",
+      "event": "CSKA x Galatasaray (H1 +3)",
+      "houseA": "Sportmarket",
+      "oddA": 1.75,
+      "stakeA": 178.20000000000002,
+      "curA": "EUR",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.45,
+      "prob": 65.7,
+      "winner": null,
+      "date": "2026-09-10T12:00",
+      "total": 178.20000000000002,
+      "lucroA": 133.65,
+      "lucroRed": -178.20000000000002,
+      "lucro": 133.65,
+      "roi": 75,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T14:47:45.590Z"
     }
   ],
   "invertidos": [],
@@ -17166,5 +17190,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T14:20:38.306Z"
+  "updatedAt": "2026-09-10T14:47:45.590Z"
 }
