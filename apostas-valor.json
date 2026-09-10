@@ -5013,8 +5013,8 @@
   "usdRateAt": "2026-09-10T00:28:08.085Z",
   "eurRate": 5.94,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-09T22:21:06.809Z",
-  "appBuild": "20260909-2111",
+  "eurRateAt": "2026-09-10T00:28:08.239Z",
+  "appBuild": "20260909-2134",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -16979,5 +16979,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T00:08:45.082Z"
+  "updatedAt": "2026-09-10T00:28:08.239Z"
 }
