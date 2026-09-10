@@ -758,7 +758,9 @@
           <input type="text" inputmode="decimal" id="pjOddS" placeholder="2.220">
           <label>Margem do livro (%)</label>
           <input type="text" inputmode="decimal" id="pjMargS" placeholder="6.58">
-          <div class="footnote" style="margin-top:4px;">Pinnacle, Betfair, Matchbook, SportsBet — ou a menor margem da lista.</div>
+          <label>Limite disponível (opcional)</label>
+          <input type="text" inputmode="decimal" id="pjLimS" placeholder="100">
+          <div class="footnote" style="margin-top:4px;">Pinnacle, Betfair, Matchbook, SportsBet — ou a menor margem da lista. O limite é o valor que a casa aceita naquela linha.</div>
         </div>
         <div class="lay-col">
           <div class="lay-col-title" style="color:#C4B5FD;">CONSENSO MOLE (teste)</div>
@@ -1028,7 +1030,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-2132';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-2134';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3678,6 +3680,10 @@
             ? ' = '+(w*100).toFixed(0)+'% régua ('+(pS*100).toFixed(2)+'%) + '+((1-w)*100).toFixed(0)+'% mole ('+(pC*100).toFixed(2)+'%)'
             : ' — só a régua, sem a margem de '+mS.toFixed(2)+'%')+
           '</span><br>';
+    const lim=numBR($('pjLimS').value);
+    if(lim>0&&lim<300){
+      html+='<span style="color:var(--amber);font-size:11px;">limite de '+lim.toFixed(0)+' na régua — teto baixo é a casa dizendo que não banca a própria cotação; como referência ela vale menos</span><br>';
+    }
     if(pC!==null&&pjPeso==='auto'){
       const conf = mS<=3 ? 'régua confiante (margem '+mS.toFixed(2)+'%): ela domina a mistura'
                  : mS<=5 ? 'régua morna (margem '+mS.toFixed(2)+'%): peso dividido'
@@ -3691,8 +3697,18 @@
       const abs=Math.abs(gap);
       let cor,veredito;
       if(abs<=1.5){ cor='var(--green)'; veredito='coerentes — mesmo mercado, disputa normal de linha'; }
-      else if(abs<=3.0){ cor='var(--amber)'; veredito='divergência grande, mas possível — confira linha, período e time'; }
-      else { cor='#F87171'; veredito='<b>divergência impossível</b> — quase sempre é mercado diferente (linha, período, time ou reservas), não valor'; }
+      else if(abs<=3.0){ cor='var(--amber)'; veredito='divergência grande, mas normal em mercado secundário'; }
+      else {
+        cor='#F87171';
+        // Duas explicações, e elas levam a decisões opostas. A margem da régua ajuda a separar:
+        // margem baixa aponta para erro de pareamento; margem alta aponta para régua fraca.
+        veredito='<b>divergência de '+abs.toFixed(1)+' pp</b> — decida entre duas causas:<br>'+
+          '&nbsp;&nbsp;<b>a)</b> não é o mesmo mercado (linha, período ou tempo diferente) → descartar<br>'+
+          '&nbsp;&nbsp;<b>b)</b> é o mesmo mercado e a régua é que não sabe precificar → o valor pode ser real<br>'+
+          '&nbsp;&nbsp;<span style="color:var(--muted-2)">nomes de time variam muito entre casas e não indicam jogo diferente. '+
+          'O que separa (a) de (b) é a <b>margem</b> e o <b>limite</b> da régua: margem baixa e limite alto = confie nela e descarte; '+
+          'margem alta e limite baixo = ela está se protegendo, e quem manda é o consenso.</span>';
+      }
       html+='<span style="color:'+cor+'">Casa mole diz '+(pC*100).toFixed(2)+'% · distância '+(gap>=0?'+':'')+gap.toFixed(2)+' pp — '+veredito+'</span><br>';
     }
 
@@ -3719,7 +3735,7 @@
     html+='</div>';
     box.innerHTML=html;
   }
-  ['pjOddS','pjMargS','pjOddC','pjMargC','pjOddA'].forEach(id=>$(id).addEventListener('input',pjRender));
+  ['pjOddS','pjMargS','pjLimS','pjOddC','pjMargC','pjOddA'].forEach(id=>$(id).addEventListener('input',pjRender));
   document.querySelectorAll('input[name="pjMet"]').forEach(r=>r.addEventListener('change',pjRender));
   document.querySelectorAll('[data-pjw]').forEach(b=>b.addEventListener('click',()=>{
     pjPeso=b.dataset.pjw;
