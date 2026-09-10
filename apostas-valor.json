@@ -4746,9 +4746,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 65.5,
+      "value": 100.14,
       "currency": "USD",
-      "updatedAt": "2026-09-10T13:44:50.611Z"
+      "updatedAt": "2026-09-10T14:20:33.298Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16769,7 +16769,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.64,
       "prob": 58.1,
-      "winner": "VOID",
+      "winner": "A",
       "date": "2026-09-10T07:00",
       "total": 131.6274,
       "lucroA": 177.69699,
@@ -16778,9 +16778,9 @@
       "roi": 135,
       "aplicado": {
         "stakes": true,
-        "resultado": "VOID"
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-10T13:44:50.611Z"
+      "updatedAt": "2026-09-10T14:20:33.298Z"
     },
     {
       "id": "mtudbgu75vi0l",
@@ -17165,5 +17165,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T13:44:50.611Z"
+  "updatedAt": "2026-09-10T14:20:33.298Z"
 }
