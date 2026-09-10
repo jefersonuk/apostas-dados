@@ -4814,6 +4814,14 @@
       "time": "12:59",
       "note": "Médico Cinthia",
       "updatedAt": "2026-09-08T16:38:20.090Z"
+    },
+    {
+      "id": "mtvzvgy2gn13p",
+      "value": -2000,
+      "date": "2026-09-10",
+      "time": "13:49",
+      "note": "Rapha (casa) & Rodrigo (honorários)",
+      "updatedAt": "2026-09-10T20:43:24.170Z"
     }
   ],
   "caixa": [
@@ -17439,5 +17447,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T20:42:37.219Z"
+  "updatedAt": "2026-09-10T20:43:24.170Z"
 }
