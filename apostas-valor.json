@@ -14,7 +14,7 @@
     "escAnc": 200,
     "escTeto": 400,
     "escPiso": 25,
-    "escExp": 1
+    "escExp": 0.5
   },
   "bets": [
     {
@@ -16979,5 +16979,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T00:08:35.082Z"
+  "updatedAt": "2026-09-10T00:08:42.532Z"
 }
