@@ -4587,7 +4587,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 2466.97,
-      "updatedAt": "2026-09-09T23:27:34.799Z"
+      "updatedAt": "2026-09-10T00:50:37.115Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -16793,7 +16793,7 @@
     {
       "id": "mtuqar2n42e2v",
       "kind": "valor",
-      "event": "CF Montreal (Bookings) – Charlotte FC (Bookings)",
+      "event": "CF Montreal (Bookings) – Charlotte FC (Bookings) (1)",
       "houseA": "Pinnacle",
       "oddA": 2.23,
       "stakeA": 200,
@@ -16812,7 +16812,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T23:27:34.801Z"
+      "updatedAt": "2026-09-10T00:50:37.116Z"
     }
   ],
   "invertidos": [],
@@ -16979,5 +16979,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T00:48:52.743Z"
+  "updatedAt": "2026-09-10T00:50:37.116Z"
 }
