@@ -4748,7 +4748,7 @@
       "name": "BetOnline",
       "value": 10.31,
       "currency": "USD",
-      "updatedAt": "2026-09-10T20:42:37.219Z"
+      "updatedAt": "2026-09-10T21:23:11.922Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16863,7 +16863,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T20:42:37.219Z"
+      "updatedAt": "2026-09-10T21:23:11.922Z"
     },
     {
       "id": "mtvfg71s30jsw",
@@ -17449,5 +17449,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T20:53:41.231Z"
+  "updatedAt": "2026-09-10T21:23:11.922Z"
 }
