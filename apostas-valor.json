@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2912.97,
-      "updatedAt": "2026-09-10T01:36:45.286Z"
+      "value": 2712.97,
+      "updatedAt": "2026-09-10T11:11:39.185Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 586.05,
+      "value": 786.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T11:05:17.555Z"
+      "updatedAt": "2026-09-10T11:11:39.187Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -16847,6 +16847,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T11:05:17.554Z"
+    },
+    {
+      "id": "mtvfg71s30jsw",
+      "kind": "valor",
+      "event": "Dubai United (Corners) – Shabab Al Ahli (Corners) (2 mais de 5.5 escanteios)",
+      "houseA": "Pinnacle",
+      "oddA": 1.751,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.55,
+      "prob": 61.4,
+      "winner": null,
+      "date": "2026-09-10T10:30",
+      "total": 200,
+      "lucroA": 150.2,
+      "lucroRed": -200,
+      "lucro": 150.2,
+      "roi": 75.1,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T11:11:39.185Z"
     }
   ],
   "invertidos": [],
@@ -17013,5 +17037,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T11:05:17.555Z"
+  "updatedAt": "2026-09-10T11:11:39.187Z"
 }
