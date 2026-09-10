@@ -4548,8 +4548,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 2311.12,
-      "updatedAt": "2026-09-10T15:37:49.123Z"
+      "value": 2109.12,
+      "updatedAt": "2026-09-10T20:16:14.627Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1454.14,
+      "value": 1656.14,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T19:48:06.520Z"
+      "updatedAt": "2026-09-10T20:16:14.627Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17249,6 +17249,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T19:35:15.267Z"
+    },
+    {
+      "id": "mtvywjkz3byrw",
+      "kind": "valor",
+      "event": "Hamburg Tower x Rostock Seawolves (over 164,5 points)",
+      "houseA": "Blaze",
+      "oddA": 1.88,
+      "stakeA": 202,
+      "curA": "BRL",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-11T15:00",
+      "total": 202,
+      "lucroA": 177.76,
+      "lucroRed": -202,
+      "lucro": 177.76,
+      "roi": 87.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T20:16:14.627Z"
     }
   ],
   "invertidos": [],
@@ -17415,5 +17439,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T20:04:05.556Z"
+  "updatedAt": "2026-09-10T20:16:14.627Z"
 }
