@@ -4718,7 +4718,7 @@
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
       "value": 351.06,
-      "updatedAt": "2026-09-10T16:07:12.900Z",
+      "updatedAt": "2026-09-10T18:54:34.863Z",
       "currency": "USD"
     },
     {
@@ -17100,7 +17100,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T16:07:12.901Z"
+      "updatedAt": "2026-09-10T18:54:34.863Z"
     },
     {
       "id": "mtvq5pohjk9q1",
@@ -17363,5 +17363,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T18:51:48.176Z"
+  "updatedAt": "2026-09-10T18:54:34.863Z"
 }
