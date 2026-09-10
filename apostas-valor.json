@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2161.94,
+      "value": 2314.64,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T16:18:23.961Z"
+      "updatedAt": "2026-09-10T16:24:19.583Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4746,9 +4746,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 60.14,
+      "value": 30.14,
       "currency": "USD",
-      "updatedAt": "2026-09-10T16:11:25.892Z"
+      "updatedAt": "2026-09-10T16:24:19.575Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -17147,6 +17147,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T16:18:23.957Z"
+    },
+    {
+      "id": "mtvqmano0bn4w",
+      "kind": "valor",
+      "event": "Las Vegas Aviators – Sacramento River Cats (under 14)",
+      "houseA": "Betonline",
+      "oddA": 2.17,
+      "stakeA": 152.7,
+      "curA": "USD",
+      "sport": "Beisebol",
+      "market": "Total de Pontos",
+      "oddMkt": 1.85,
+      "prob": 51.5,
+      "winner": null,
+      "date": "2026-09-10T23:00",
+      "total": 152.7,
+      "lucroA": 178.65899999999996,
+      "lucroRed": -152.7,
+      "lucro": 178.65899999999996,
+      "roi": 117,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T16:24:19.576Z"
     }
   ],
   "invertidos": [],
@@ -17313,5 +17337,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T16:18:23.961Z"
+  "updatedAt": "2026-09-10T16:24:19.583Z"
 }
