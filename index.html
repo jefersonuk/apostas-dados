@@ -746,6 +746,46 @@
   <!-- ============ ABA APOSTAS DE VALOR ============ -->
   <div class="tab-panel" id="tab-vbet">
 
+    <!-- PREÇO JUSTO -->
+    <div class="card">
+      <div class="card-title">⚖️ Preço justo</div>
+      <div class="footnote" style="margin-top:0;line-height:1.6;">A odd de tela não é probabilidade — carrega a margem da casa. Preço justo = <b>tirar a margem do livro que sabe precificar</b>, não a média de quem copia. O agregador faz a média de todo mundo; isso conta o mesmo feed várias vezes e afoga a opinião que importa.</div>
+
+      <div class="grid2" style="margin-top:10px;">
+        <div class="lay-col">
+          <div class="lay-col-title" style="color:var(--sky);">RÉGUA — LIVRO SHARP</div>
+          <label>Odd do lado que você quer</label>
+          <input type="text" inputmode="decimal" id="pjOddS" placeholder="2.220">
+          <label>Margem do livro (%)</label>
+          <input type="text" inputmode="decimal" id="pjMargS" placeholder="6.58">
+          <div class="footnote" style="margin-top:4px;">Pinnacle, Betfair, Matchbook, SportsBet — ou a menor margem da lista.</div>
+        </div>
+        <div class="lay-col">
+          <div class="lay-col-title" style="color:#C4B5FD;">CONSENSO MOLE (teste)</div>
+          <label>Odd do mesmo lado</label>
+          <input type="text" inputmode="decimal" id="pjOddC" placeholder="1.87">
+          <label>Margem (%)</label>
+          <input type="text" inputmode="decimal" id="pjMargC" placeholder="8.02">
+          <div class="footnote" style="margin-top:4px;">Uma casa mole só. Serve para testar coerência, não para virar preço.</div>
+        </div>
+      </div>
+
+      <label style="margin-top:10px;">Odd onde você vai apostar</label>
+      <input type="text" inputmode="decimal" id="pjOddA" placeholder="1.87">
+
+      <div class="sc-mode" style="margin-top:6px;">
+        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="power" checked> Power</label>
+        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="shin"> Shin</label>
+        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="prop"> Proporcional</label>
+        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="add"> Aditivo</label>
+      </div>
+
+      <div class="risk-preview" id="pjResult">
+        <span style="color:var(--muted)">Informe a odd e a margem do livro sharp.</span>
+      </div>
+      <button class="btn small" id="pjUsar" style="width:100%;">Levar preço justo para o formulário ↓</button>
+    </div>
+
     <!-- REGISTRAR APOSTA DE VALOR -->
     <div class="card">
       <div class="card-title">📈 Registrar aposta de valor</div>
@@ -981,7 +1021,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-1434';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-2111';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3561,6 +3601,100 @@
   });
   $('vbRegisterBtn').addEventListener('click',registrarValor);
 
+  /* ============================================================
+     PREÇO JUSTO — tirar a margem (de-vig) do livro que sabe precificar.
+     Com a odd de um lado (o) e a margem total do livro (M), a implícita do outro
+     lado sai por diferença: q_outro = (1+M) - 1/o. Daí os quatro métodos:
+       proporcional  p = q/(1+M)                     simples, exagera o favorito
+       aditivo       p = q - M/2                     divide a margem igual
+       power         acha k com q^k + qo^k = 1       corrige viés favorito-azarão
+       Shin          modela fluxo de apostador informado
+     ============================================================ */
+  function devig(odd,margPct,metodo){
+    const q=1/odd, M=margPct/100, tot=1+M, qo=tot-q;
+    if(!(odd>1)||!(M>=0)||!(qo>0)||!(qo<1)) return null;
+    if(metodo==='prop') return q/tot;
+    if(metodo==='add')  return q-M/2;
+    if(metodo==='power'){
+      let lo=0.3,hi=4.0;
+      const f=k=>Math.pow(q,k)+Math.pow(qo,k)-1;
+      if(f(lo)*f(hi)>0) return q/tot;
+      for(let i=0;i<200;i++){ const m=(lo+hi)/2; if(f(lo)*f(m)<=0) hi=m; else lo=m; }
+      return Math.pow(q,(lo+hi)/2);
+    }
+    // Shin
+    const pz=(z,x)=>(Math.sqrt(z*z+4*(1-z)*x*x/tot)-z)/(2*(1-z));
+    const g=z=>pz(z,q)+pz(z,qo)-1;
+    let lo=1e-9,hi=0.35;
+    if(g(lo)*g(hi)>0) return q/tot;
+    for(let i=0;i<200;i++){ const m=(lo+hi)/2; if(g(lo)*g(m)<=0) hi=m; else lo=m; }
+    return pz((lo+hi)/2,q);
+  }
+  function pjMetodo(){ const r=document.querySelector('input[name="pjMet"]:checked'); return r?r.value:'power'; }
+  let pjLast=null;
+
+  function pjRender(){
+    const box=$('pjResult');
+    const met=pjMetodo();
+    const oS=numBR($('pjOddS').value), mS=numBR($('pjMargS').value);
+    const oC=numBR($('pjOddC').value), mC=numBR($('pjMargC').value);
+    const oA=numBR($('pjOddA').value);
+    const pS=(oS>1&&mS>=0)?devig(oS,mS,met):null;
+    if(pS===null){ box.innerHTML='<span style="color:var(--muted)">Informe a odd e a margem do livro sharp.</span>'; pjLast=null; return; }
+    const pC=(oC>1&&mC>=0)?devig(oC,mC,met):null;
+    const oddJusta=1/pS;
+    pjLast={p:pS, oddJusta};
+
+    let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
+    html+='<b style="color:var(--sky)">Preço justo '+oddJusta.toFixed(3)+'</b>'+
+          ' <span style="color:var(--muted-2)">(prob '+(pS*100).toFixed(2)+'%, sem a margem de '+mS.toFixed(2)+'%)</span><br>';
+
+    // teste de coerência: sharp contra a casa mole
+    if(pC!==null){
+      const gap=(pC-pS)*100;
+      const abs=Math.abs(gap);
+      let cor,veredito;
+      if(abs<=1.5){ cor='var(--green)'; veredito='coerentes — mesmo mercado, disputa normal de linha'; }
+      else if(abs<=3.0){ cor='var(--amber)'; veredito='divergência grande, mas possível — confira linha, período e time'; }
+      else { cor='#F87171'; veredito='<b>divergência impossível</b> — quase sempre é mercado diferente (linha, período, time ou reservas), não valor'; }
+      html+='<span style="color:'+cor+'">Casa mole diz '+(pC*100).toFixed(2)+'% · distância '+(gap>=0?'+':'')+gap.toFixed(2)+' pp — '+veredito+'</span><br>';
+    }
+
+    if(oA>1){
+      const ev=pS*oA-1;
+      const cor=ev>=0?'var(--green)':'var(--red)';
+      html+='<span style="color:var(--muted-2)">Apostando em '+oA.toFixed(3)+':</span> EV <b style="color:'+cor+'">'+(ev>=0?'+':'')+(ev*100).toFixed(2)+'%</b>';
+      if(pC!==null){
+        const evFalso=pC*oA-1;
+        html+=' <span style="color:var(--muted-2)">(pela régua mole seria '+(evFalso>=0?'+':'')+(evFalso*100).toFixed(2)+'%)</span>';
+      }
+      html+='<br>';
+      const st=escadaStake(oA);
+      if(st) html+='<span style="color:var(--muted-2)">Escada nesta odd: '+fmt(st)+'</span><br>';
+      if(Math.abs(oA-oS)<1e-9&&mS>0) html+='<span style="color:var(--amber)">⚠ Você está apostando no próprio livro que usou como régua. A régua não pode ser o alvo — sobra só a margem dele contra você.</span><br>';
+    }
+
+    // os quatro métodos lado a lado, para ver se a escolha muda a decisão
+    const met4=['prop','add','power','shin'].map(m=>{
+      const p=devig(oS,mS,m);
+      return p===null?'—':m+' '+(p*100).toFixed(2)+'%';
+    }).join(' · ');
+    html+='<span style="color:var(--muted-2);font-size:11px;">'+met4+'</span>';
+    html+='</div>';
+    box.innerHTML=html;
+  }
+  ['pjOddS','pjMargS','pjOddC','pjMargC','pjOddA'].forEach(id=>$(id).addEventListener('input',pjRender));
+  document.querySelectorAll('input[name="pjMet"]').forEach(r=>r.addEventListener('change',pjRender));
+  $('pjUsar').addEventListener('click',()=>{
+    if(!pjLast){ alert('Calcule o preço justo primeiro.'); return; }
+    $('vbOddMkt').value=pjLast.oddJusta.toFixed(3);
+    const oA=numBR($('pjOddA').value);
+    if(oA>1) $('vbOdd').value=oA;
+    ['vbOdd','vbOddMkt'].forEach(id=>$(id).dispatchEvent(new Event('input')));
+    updateValorCalc();
+    toast('Preço justo '+pjLast.oddJusta.toFixed(3)+' no formulário ✓');
+  });
+
   /* ---------- supervalorização: o que o filtro anunciou naquela aposta ---------- */
   // sv = odd da casa / odd média do mercado - 1. É o yield PREVISTO daquela entrada.
   function svDe(o){
@@ -4032,7 +4166,7 @@
     btn.classList.add('active'); vbFilter=btn.dataset.vbfilter; vbEditingId=null; renderValorList();
   }));
 
-  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMeta(); renderEscada(); renderCalibracao(); renderMiddleSummary(); renderMiddleList(); }
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMeta(); renderEscada(); renderCalibracao(); pjRender(); renderMiddleSummary(); renderMiddleList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
