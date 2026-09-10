@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2314.64,
+      "value": 2569.14,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T16:24:19.583Z"
+      "updatedAt": "2026-09-10T16:29:31.433Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4710,8 +4710,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 90,
-      "updatedAt": "2026-09-10T13:03:32.096Z",
+      "value": 40,
+      "updatedAt": "2026-09-10T16:29:31.425Z",
       "currency": "USD"
     },
     {
@@ -17171,6 +17171,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T16:24:19.576Z"
+    },
+    {
+      "id": "mtvqsza6ewfao",
+      "kind": "valor",
+      "event": "Marsborne – Team Liquid (2map H1 +8.5)",
+      "houseA": "BCgame",
+      "oddA": 1.4,
+      "stakeA": 254.5,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.27,
+      "prob": 75,
+      "winner": null,
+      "date": "2026-09-10T23:00",
+      "total": 254.5,
+      "lucroA": 101.79999999999998,
+      "lucroRed": -254.5,
+      "lucro": 101.79999999999998,
+      "roi": 39.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T16:29:31.426Z"
     }
   ],
   "invertidos": [],
@@ -17337,5 +17361,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T16:24:19.583Z"
+  "updatedAt": "2026-09-10T16:29:31.433Z"
 }
