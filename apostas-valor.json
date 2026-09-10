@@ -4632,17 +4632,17 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 80,
+      "value": 178.04,
       "currency": "USD",
-      "updatedAt": "2026-09-10T18:02:01.915Z"
+      "updatedAt": "2026-09-10T18:29:16.824Z"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2390.94,
+      "value": 2100.81,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T17:10:26.309Z"
+      "updatedAt": "2026-09-10T18:29:16.824Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17065,7 +17065,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.45,
       "prob": 65.7,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-10T12:30",
       "total": 290.13,
       "lucroA": 208.8936,
@@ -17073,9 +17073,10 @@
       "lucro": 208.8936,
       "roi": 72,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-10T18:02:01.915Z"
+      "updatedAt": "2026-09-10T18:29:16.824Z"
     },
     {
       "id": "mtvq0agzsjo24",
@@ -17362,5 +17363,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T18:02:01.916Z"
+  "updatedAt": "2026-09-10T18:29:16.824Z"
 }
