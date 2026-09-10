@@ -4548,8 +4548,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 1873.62,
-      "updatedAt": "2026-09-09T20:30:24.121Z"
+      "value": 1673.62,
+      "updatedAt": "2026-09-10T11:30:54.250Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 786.05,
+      "value": 986.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T11:11:39.187Z"
+      "updatedAt": "2026-09-10T11:30:54.257Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -16871,6 +16871,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T11:11:39.185Z"
+    },
+    {
+      "id": "mtvg4yaxwq1a8",
+      "kind": "valor",
+      "event": "ucmova A / Laboutkova A – Dencheva R / Drazic M (1 win 2x0)",
+      "houseA": "Blaze",
+      "oddA": 2.1,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.66,
+      "prob": 57.4,
+      "winner": null,
+      "date": "2026-09-10T11:00",
+      "total": 200,
+      "lucroA": 220.00000000000003,
+      "lucroRed": -200,
+      "lucro": 220.00000000000003,
+      "roi": 110.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T11:30:54.250Z"
     }
   ],
   "invertidos": [],
@@ -17037,5 +17061,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T11:11:39.187Z"
+  "updatedAt": "2026-09-10T11:30:54.257Z"
 }
