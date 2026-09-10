@@ -4508,8 +4508,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1765,
-      "updatedAt": "2026-09-09T19:15:44.338Z"
+      "value": 1565,
+      "updatedAt": "2026-09-10T11:33:49.032Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 986.05,
+      "value": 1186.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T11:30:54.257Z"
+      "updatedAt": "2026-09-10T11:33:49.037Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -16895,6 +16895,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T11:30:54.250Z"
+    },
+    {
+      "id": "mtvg8p5y94qrd",
+      "kind": "valor",
+      "event": "KT Reykjavik (W) – Augnablik (W) (+ 4.5)",
+      "houseA": "Betnacional",
+      "oddA": 2.4,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.92,
+      "prob": 49.6,
+      "winner": null,
+      "date": "2026-09-10T16:15",
+      "total": 200,
+      "lucroA": 280,
+      "lucroRed": -200,
+      "lucro": 280,
+      "roi": 140,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T11:33:49.032Z"
     }
   ],
   "invertidos": [],
@@ -17061,5 +17085,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T11:30:54.257Z"
+  "updatedAt": "2026-09-10T11:33:49.037Z"
 }
