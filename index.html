@@ -752,11 +752,18 @@
       <div class="footnote" style="margin-top:0;line-height:1.6;">Bater a <b>média</b> das odds não basta: a média de tela já vem com a margem dentro, então empatar exige superá-la pela margem inteira — uns 8% no seu mix de casas. O jeito de achar o sarrafo sem depender de margem nenhuma é pegar a <b>melhor odd de cada lado</b>: o par se auto-normaliza, porque nenhuma casa consegue ser a mais generosa nos dois lados ao mesmo tempo.</div>
 
       <div class="evo-seg" style="margin:10px 0 6px;">
-        <button type="button" class="evo-opt active" data-pjmodo="par">Melhores odds dos 2 lados</button>
+        <button type="button" class="evo-opt active" data-pjmodo="col">Colar coluna de probabilidade</button>
+        <button type="button" class="evo-opt" data-pjmodo="par">Melhores odds dos 2 lados</button>
         <button type="button" class="evo-opt" data-pjmodo="regua">Régua sharp + margem</button>
       </div>
 
-      <div id="pjBlocoPar">
+      <div id="pjBlocoCol">
+        <label>Cole a coluna "Probabilidade da casa de apostas"</label>
+        <textarea id="pjCol" rows="4" placeholder="39,18%&#10;46,41%&#10;48,58%&#10;48,56%&#10;..." style="width:100%;font-family:var(--mono);font-size:12.5px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:#0E1116;color:var(--text);resize:vertical;"></textarea>
+        <div class="footnote" style="margin-top:2px;">Essa coluna já vem <b>sem a margem</b> — o site faz o de-vig linha a linha. Selecione, copie e cole aqui: nada de procurar o lado contrário. Aceita vírgula ou ponto, com ou sem %.</div>
+      </div>
+
+      <div id="pjBlocoPar" style="display:none;">
         <div class="grid2">
           <div class="lay-col">
             <div class="lay-col-title" style="color:var(--sky);">SEU LADO</div>
@@ -1052,7 +1059,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-2148';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-2202';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3662,7 +3669,7 @@
     return pz((lo+hi)/2,q);
   }
   function pjMetodo(){ const r=document.querySelector('input[name="pjMet"]:checked'); return r?r.value:'power'; }
-  let pjLast=null, pjPeso='auto', pjModo='par';
+  let pjLast=null, pjPeso='auto', pjModo='col';
 
   // Peso da régua na mistura. A margem é o termômetro de confiança do livro:
   // margem baixa = "eu sei o preço"; margem alta = "estou me protegendo".
@@ -3673,6 +3680,58 @@
     if(!(mS>0)||!(mC>0)) return 1;
     const w=(1/mS)/((1/mS)+(1/mC));
     return Math.max(0.5,Math.min(0.9,w));
+  }
+
+  // MODO COLUNA: a coluna "Probabilidade da casa de apostas" do surebet.com já vem
+  // sem margem — o site faz o de-vig linha a linha. Então o trabalho todo é consenso:
+  //   1. colapsar linhas idênticas (mesmo feed republicado em várias marcas)
+  //   2. usar a MEDIANA, que não se deixa arrastar por uma cotação deslocada
+  function pjParseCol(txt){
+    return (txt.match(/\d+[.,]?\d*/g)||[])
+      .map(x=>parseFloat(x.replace(',','.')))
+      .filter(v=>isFinite(v)&&v>0&&v<100);
+  }
+  function pjRenderCol(){
+    const box=$('pjResult');
+    const vals=pjParseCol($('pjCol').value);
+    const oAp=numBR($('pjOddA').value);
+    if(vals.length<2){ box.innerHTML='<span style="color:var(--muted)">Cole a coluna de probabilidade (pelo menos duas linhas).</span>'; pjLast=null; return; }
+    // linhas com a mesma probabilidade até a segunda casa são o mesmo feed: valem um voto
+    const grupos={};
+    vals.forEach(v=>{ const k=v.toFixed(2); (grupos[k]=grupos[k]||[]).push(v); });
+    const ind=Object.keys(grupos).map(parseFloat).sort((a,b)=>a-b);
+    const dup=vals.length-ind.length;
+    const med=(ind.length%2)?ind[(ind.length-1)/2]:(ind[ind.length/2-1]+ind[ind.length/2])/2;
+    const media=ind.reduce((a,b)=>a+b,0)/ind.length;
+    const p=med/100, oddJusta=1/p;
+    pjLast={p, oddJusta};
+
+    let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
+    html+='<span style="color:var(--muted-2);font-size:11px;">VOCÊ PRECISA DE ODD MAIOR QUE</span><br>'+
+          '<b style="color:var(--sky);font-size:20px;">'+oddJusta.toFixed(2)+'</b>'+
+          ' <span style="color:var(--muted-2)">mediana '+med.toFixed(2)+'% · média '+media.toFixed(2)+'%</span><br>';
+    html+='<span style="color:var(--muted-2)">'+vals.length+' linhas → <b>'+ind.length+' opiniões</b>'+
+          (dup>0?' <span style="color:var(--amber)">('+dup+' repetiam probabilidade idêntica: mesmo feed, um voto só)</span>':'')+
+          '</span><br>';
+    // dispersão: consenso apertado é consenso confiável
+    const desvio=Math.sqrt(ind.reduce((a,b)=>a+(b-media)*(b-media),0)/ind.length);
+    const fora=ind.filter(v=>Math.abs(v-med)>3);
+    if(fora.length){
+      html+='<span style="color:var(--amber)">fora do consenso (&gt;3 pp da mediana): '+fora.map(v=>v.toFixed(2)+'%').join(', ')+
+            ' — a mediana já os ignora, mas veja se algum é o livro sharp</span><br>';
+    }
+    html+='<span style="color:'+(desvio<=1.5?'var(--green)':desvio<=3?'var(--muted-2)':'var(--amber)')+'">'+
+          'dispersão '+desvio.toFixed(2)+' pp — '+(desvio<=1.5?'consenso apertado':desvio<=3?'consenso normal':'consenso frouxo, estimativa fraca')+'</span><br>';
+    if(oAp>1){
+      const ev=p*oAp-1;
+      const c2=ev>=0?'var(--green)':'var(--red)';
+      html+='<span style="color:var(--muted-2)">Apostando em '+oAp.toFixed(3)+':</span> EV <b style="color:'+c2+'">'+(ev>=0?'+':'')+(ev*100).toFixed(2)+'%</b>'+
+            ' <span style="color:var(--muted-2)">('+((oAp/oddJusta-1)*100>=0?'+':'')+((oAp/oddJusta-1)*100).toFixed(1)+'% sobre o justo)</span><br>';
+      const st=escadaStake(oAp);
+      if(st) html+='<span style="color:var(--muted-2)">Escada nesta odd: '+fmt(st)+'</span><br>';
+    }
+    html+='</div>';
+    box.innerHTML=html;
   }
 
   // MODO PAR: o preço justo sai das duas melhores odds do mercado, sem informar margem.
@@ -3711,6 +3770,7 @@
   }
 
   function pjRender(){
+    if(pjModo==='col'){ pjRenderCol(); return; }
     if(pjModo==='par'){ pjRenderPar(); return; }
     const box=$('pjResult');
     const met=pjMetodo();
@@ -3793,10 +3853,11 @@
     html+='</div>';
     box.innerHTML=html;
   }
-  ['pjOddS','pjMargS','pjLimS','pjOddC','pjMargC','pjOddA','pjBestA','pjBestB'].forEach(id=>$(id).addEventListener('input',pjRender));
+  ['pjOddS','pjMargS','pjLimS','pjOddC','pjMargC','pjOddA','pjBestA','pjBestB','pjCol'].forEach(id=>$(id).addEventListener('input',pjRender));
   document.querySelectorAll('[data-pjmodo]').forEach(b=>b.addEventListener('click',()=>{
     pjModo=b.dataset.pjmodo;
     document.querySelectorAll('[data-pjmodo]').forEach(x=>x.classList.toggle('active',x===b));
+    $('pjBlocoCol').style.display   = (pjModo==='col')?'block':'none';
     $('pjBlocoPar').style.display   = (pjModo==='par')?'block':'none';
     $('pjBlocoRegua').style.display = (pjModo==='regua')?'block':'none';
     pjRender();
