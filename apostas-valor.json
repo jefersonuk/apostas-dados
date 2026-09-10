@@ -4677,7 +4677,7 @@
       "name": "Sportmarket",
       "value": 425.25,
       "currency": "EUR",
-      "updatedAt": "2026-09-10T16:18:23.956Z"
+      "updatedAt": "2026-09-10T17:10:08.813Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -17010,7 +17010,7 @@
       "event": "CSKA x Galatasaray (H1 +3)",
       "houseA": "Sportmarket",
       "oddA": 1.75,
-      "stakeA": 178.20000000000002,
+      "stakeA": 178.2,
       "curA": "EUR",
       "sport": "Basquete",
       "market": "Handicap Asiático",
@@ -17018,15 +17018,15 @@
       "prob": 65.7,
       "winner": null,
       "date": "2026-09-10T12:00",
-      "total": 178.20000000000002,
-      "lucroA": 133.65,
-      "lucroRed": -178.20000000000002,
-      "lucro": 133.65,
+      "total": 178.2,
+      "lucroA": 133.64999999999998,
+      "lucroRed": -178.2,
+      "lucro": 133.64999999999998,
       "roi": 75,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T14:47:45.590Z"
+      "updatedAt": "2026-09-10T17:10:08.813Z"
     },
     {
       "id": "mtvnohnjptq0r",
@@ -17361,5 +17361,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T16:37:50.625Z"
+  "updatedAt": "2026-09-10T17:10:08.813Z"
 }
