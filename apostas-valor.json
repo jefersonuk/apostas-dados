@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1441.55,
+      "value": 1601.93,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T11:50:35.497Z"
+      "updatedAt": "2026-09-10T11:58:54.480Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 483.65,
+      "value": 456.65,
       "currency": "EUR",
-      "updatedAt": "2026-09-09T22:23:54.726Z"
+      "updatedAt": "2026-09-10T11:58:54.478Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -16943,6 +16943,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T11:50:35.495Z"
+    },
+    {
+      "id": "mtvh4yrxr88dn",
+      "kind": "valor",
+      "event": "SK Brann U19 vs. Viking FK U19 (under 5.5)",
+      "houseA": "Sportmarket",
+      "oddA": 1.8,
+      "stakeA": 160.38000000000002,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-10T10:00",
+      "total": 160.38000000000002,
+      "lucroA": 128.30400000000003,
+      "lucroRed": -160.38000000000002,
+      "lucro": 128.30400000000003,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T11:58:54.478Z"
     }
   ],
   "invertidos": [],
@@ -17109,5 +17133,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T11:50:35.497Z"
+  "updatedAt": "2026-09-10T11:58:54.480Z"
 }
