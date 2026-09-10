@@ -4548,8 +4548,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 1891.12,
-      "updatedAt": "2026-09-10T12:54:00.534Z"
+      "value": 2311.12,
+      "updatedAt": "2026-09-10T15:37:49.123Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2713.4,
-      "updatedAt": "2026-09-10T12:53:04.714Z"
+      "value": 3063.6,
+      "updatedAt": "2026-09-10T15:37:12.278Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1575.71,
+      "value": 1175.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T15:02:03.104Z"
+      "updatedAt": "2026-09-10T15:37:49.124Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -16868,7 +16868,7 @@
       "market": "Escanteios",
       "oddMkt": 1.55,
       "prob": 61.4,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-10T10:30",
       "total": 200,
       "lucroA": 150.2,
@@ -16876,9 +16876,10 @@
       "lucro": 150.2,
       "roi": 75.1,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-10T11:11:39.185Z"
+      "updatedAt": "2026-09-10T15:37:12.278Z"
     },
     {
       "id": "mtvg4yaxwq1a8",
@@ -16892,7 +16893,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.66,
       "prob": 57.4,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-10T11:00",
       "total": 200,
       "lucroA": 220.00000000000003,
@@ -16900,9 +16901,10 @@
       "lucro": 220.00000000000003,
       "roi": 110.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-10T11:30:54.250Z"
+      "updatedAt": "2026-09-10T15:37:49.123Z"
     },
     {
       "id": "mtvg8p5y94qrd",
@@ -17215,5 +17217,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T15:36:49.291Z"
+  "updatedAt": "2026-09-10T15:37:49.124Z"
 }
