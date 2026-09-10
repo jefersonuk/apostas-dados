@@ -4677,7 +4677,7 @@
       "name": "Sportmarket",
       "value": 426.65,
       "currency": "EUR",
-      "updatedAt": "2026-09-10T12:00:09.578Z"
+      "updatedAt": "2026-09-10T13:42:42.649Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -16957,7 +16957,7 @@
       "event": "SK Brann U19 vs. Viking FK U19 (under 5.5)",
       "houseA": "Sportmarket",
       "oddA": 1.8,
-      "stakeA": 160.38000000000002,
+      "stakeA": 160.38,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Total de Gols",
@@ -16965,15 +16965,15 @@
       "prob": 63.5,
       "winner": null,
       "date": "2026-09-10T10:00",
-      "total": 160.38000000000002,
-      "lucroA": 128.30400000000003,
-      "lucroRed": -160.38000000000002,
-      "lucro": 128.30400000000003,
+      "total": 160.38,
+      "lucroA": 128.304,
+      "lucroRed": -160.38,
+      "lucro": 128.304,
       "roi": 80,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T11:58:54.478Z"
+      "updatedAt": "2026-09-10T13:42:42.649Z"
     },
     {
       "id": "mtvh6kq2w9gli",
@@ -17164,5 +17164,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T13:10:24.453Z"
+  "updatedAt": "2026-09-10T13:42:42.649Z"
 }
