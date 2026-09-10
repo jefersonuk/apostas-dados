@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1465.84,
+      "value": 1720.34,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T15:53:32.019Z"
+      "updatedAt": "2026-09-10T16:07:12.909Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4717,8 +4717,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 401.06,
-      "updatedAt": "2026-09-09T15:06:07.437Z",
+      "value": 351.06,
+      "updatedAt": "2026-09-10T16:07:12.900Z",
       "currency": "USD"
     },
     {
@@ -17075,6 +17075,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T15:53:32.017Z"
+    },
+    {
+      "id": "mtvq0agzsjo24",
+      "kind": "valor",
+      "event": "KFUM Oslo U19 – Lillehammer FK (1st half H1 +1)",
+      "houseA": "Cloudbet",
+      "oddA": 1.55,
+      "stakeA": 254.5,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.17,
+      "prob": 81.4,
+      "winner": null,
+      "date": "2026-09-10T15:15",
+      "total": 254.5,
+      "lucroA": 139.97500000000002,
+      "lucroRed": -254.5,
+      "lucro": 139.97500000000002,
+      "roi": 55.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T16:07:12.901Z"
     }
   ],
   "invertidos": [],
@@ -17241,5 +17265,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T15:53:32.020Z"
+  "updatedAt": "2026-09-10T16:07:12.909Z"
 }
