@@ -749,48 +749,70 @@
     <!-- PREÇO JUSTO -->
     <div class="card">
       <div class="card-title">⚖️ Preço justo</div>
-      <div class="footnote" style="margin-top:0;line-height:1.6;">A odd de tela não é probabilidade — carrega a margem da casa. Preço justo = <b>tirar a margem do livro que sabe precificar</b>, não a média de quem copia. O agregador faz a média de todo mundo; isso conta o mesmo feed várias vezes e afoga a opinião que importa.</div>
+      <div class="footnote" style="margin-top:0;line-height:1.6;">Bater a <b>média</b> das odds não basta: a média de tela já vem com a margem dentro, então empatar exige superá-la pela margem inteira — uns 8% no seu mix de casas. O jeito de achar o sarrafo sem depender de margem nenhuma é pegar a <b>melhor odd de cada lado</b>: o par se auto-normaliza, porque nenhuma casa consegue ser a mais generosa nos dois lados ao mesmo tempo.</div>
 
-      <div class="grid2" style="margin-top:10px;">
-        <div class="lay-col">
-          <div class="lay-col-title" style="color:var(--sky);">RÉGUA — LIVRO SHARP</div>
-          <label>Odd do lado que você quer</label>
-          <input type="text" inputmode="decimal" id="pjOddS" placeholder="2.220">
-          <label>Margem do livro (%)</label>
-          <input type="text" inputmode="decimal" id="pjMargS" placeholder="6.58">
-          <label>Limite disponível (opcional)</label>
-          <input type="text" inputmode="decimal" id="pjLimS" placeholder="100">
-          <div class="footnote" style="margin-top:4px;">Pinnacle, Betfair, Matchbook, SportsBet — ou a menor margem da lista. O limite é o valor que a casa aceita naquela linha.</div>
+      <div class="evo-seg" style="margin:10px 0 6px;">
+        <button type="button" class="evo-opt active" data-pjmodo="par">Melhores odds dos 2 lados</button>
+        <button type="button" class="evo-opt" data-pjmodo="regua">Régua sharp + margem</button>
+      </div>
+
+      <div id="pjBlocoPar">
+        <div class="grid2">
+          <div class="lay-col">
+            <div class="lay-col-title" style="color:var(--sky);">SEU LADO</div>
+            <label>Melhor odd do mercado</label>
+            <input type="text" inputmode="decimal" id="pjBestA" placeholder="2.220">
+            <div class="footnote" style="margin-top:4px;">A maior odd que existe para o lado que você quer, em qualquer casa da lista.</div>
+          </div>
+          <div class="lay-col">
+            <div class="lay-col-title" style="color:#C4B5FD;">LADO CONTRÁRIO</div>
+            <label>Melhor odd do mercado</label>
+            <input type="text" inputmode="decimal" id="pjBestB" placeholder="1.876">
+            <div class="footnote" style="margin-top:4px;">A maior odd do lado oposto — quase sempre em outra casa.</div>
+          </div>
         </div>
-        <div class="lay-col">
-          <div class="lay-col-title" style="color:#C4B5FD;">CONSENSO MOLE (teste)</div>
-          <label>Odd do mesmo lado</label>
-          <input type="text" inputmode="decimal" id="pjOddC" placeholder="1.87">
-          <label>Margem (%)</label>
-          <input type="text" inputmode="decimal" id="pjMargC" placeholder="8.02">
-          <div class="footnote" style="margin-top:4px;">Uma casa mole só. Serve para testar coerência, não para virar preço.</div>
+      </div>
+
+      <div id="pjBlocoRegua" style="display:none;">
+        <div class="grid2">
+          <div class="lay-col">
+            <div class="lay-col-title" style="color:var(--sky);">RÉGUA — LIVRO SHARP</div>
+            <label>Odd do lado que você quer</label>
+            <input type="text" inputmode="decimal" id="pjOddS" placeholder="2.220">
+            <label>Margem do livro (%)</label>
+            <input type="text" inputmode="decimal" id="pjMargS" placeholder="6.58">
+            <label>Limite disponível (opcional)</label>
+            <input type="text" inputmode="decimal" id="pjLimS" placeholder="100">
+            <div class="footnote" style="margin-top:4px;">Pinnacle, Betfair, Matchbook — ou a menor margem da lista.</div>
+          </div>
+          <div class="lay-col">
+            <div class="lay-col-title" style="color:#C4B5FD;">CASA MOLE (teste)</div>
+            <label>Odd do mesmo lado</label>
+            <input type="text" inputmode="decimal" id="pjOddC" placeholder="1.87">
+            <label>Margem (%)</label>
+            <input type="text" inputmode="decimal" id="pjMargC" placeholder="8.02">
+            <div class="footnote" style="margin-top:4px;">Serve para testar coerência, não para virar preço.</div>
+          </div>
+        </div>
+        <label style="margin-top:10px;">Quanto peso dar à régua</label>
+        <div class="evo-seg" style="margin:4px 0 0;">
+          <button type="button" class="evo-opt" data-pjw="1">Só a régua</button>
+          <button type="button" class="evo-opt active" data-pjw="auto">Automático (pela margem)</button>
+          <button type="button" class="evo-opt" data-pjw="0.5">Meio a meio</button>
+        </div>
+        <div class="sc-mode" style="margin-top:6px;">
+          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="power" checked> Power</label>
+          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="shin"> Shin</label>
+          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="prop"> Proporcional</label>
+          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="add"> Aditivo</label>
         </div>
       </div>
 
       <label style="margin-top:10px;">Odd onde você vai apostar</label>
-      <input type="text" inputmode="decimal" id="pjOddA" placeholder="1.87">
-
-      <label style="margin-top:10px;">Quanto peso dar à régua</label>
-      <div class="evo-seg" style="margin:4px 0 0;">
-        <button type="button" class="evo-opt" data-pjw="1">Só a régua</button>
-        <button type="button" class="evo-opt active" data-pjw="auto">Automático (pela margem)</button>
-        <button type="button" class="evo-opt" data-pjw="0.5">Meio a meio</button>
-      </div>
-
-      <div class="sc-mode" style="margin-top:6px;">
-        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="power" checked> Power</label>
-        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="shin"> Shin</label>
-        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="prop"> Proporcional</label>
-        <label class="sc-mode-opt"><input type="radio" name="pjMet" value="add"> Aditivo</label>
-      </div>
+      <input type="text" inputmode="decimal" id="pjOddA" placeholder="2.30">
 
       <div class="risk-preview" id="pjResult">
-        <span style="color:var(--muted)">Informe a odd e a margem do livro sharp.</span>
+        <span style="color:var(--muted)">Informe a melhor odd de cada lado.</span>
       </div>
       <button class="btn small" id="pjUsar" style="width:100%;">Levar preço justo para o formulário ↓</button>
     </div>
@@ -1030,7 +1052,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-2134';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-2148';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3640,7 +3662,7 @@
     return pz((lo+hi)/2,q);
   }
   function pjMetodo(){ const r=document.querySelector('input[name="pjMet"]:checked'); return r?r.value:'power'; }
-  let pjLast=null, pjPeso='auto';
+  let pjLast=null, pjPeso='auto', pjModo='par';
 
   // Peso da régua na mistura. A margem é o termômetro de confiança do livro:
   // margem baixa = "eu sei o preço"; margem alta = "estou me protegendo".
@@ -3653,7 +3675,43 @@
     return Math.max(0.5,Math.min(0.9,w));
   }
 
+  // MODO PAR: o preço justo sai das duas melhores odds do mercado, sem informar margem.
+  // Nenhuma casa consegue ser a mais generosa nos dois lados, então o par das melhores
+  // já vem quase sem margem — às vezes com margem negativa, que é literalmente uma surebet.
+  //   p = (1/oddA) / (1/oddA + 1/oddB)
+  function pjRenderPar(){
+    const box=$('pjResult');
+    const oA=numBR($('pjBestA').value), oB=numBR($('pjBestB').value), oAp=numBR($('pjOddA').value);
+    if(!(oA>1)||!(oB>1)){ box.innerHTML='<span style="color:var(--muted)">Informe a melhor odd de cada lado.</span>'; pjLast=null; return; }
+    const qa=1/oA, qb=1/oB, tot=qa+qb;
+    const p=qa/tot, oddJusta=1/p, over=(tot-1)*100;
+    pjLast={p, oddJusta};
+    let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
+    html+='<span style="color:var(--muted-2);font-size:11px;">VOCÊ PRECISA DE ODD MAIOR QUE</span><br>'+
+          '<b style="color:var(--sky);font-size:20px;">'+oddJusta.toFixed(2)+'</b>'+
+          ' <span style="color:var(--muted-2)">chance justa '+(p*100).toFixed(2)+'%</span><br>';
+    // a margem do par é o termômetro de qualidade do mercado
+    let cor,txt;
+    if(over<0){ cor='var(--green)'; txt='margem do par '+over.toFixed(2)+'% — negativa: as duas pontas juntas já são uma surebet, mercado bem coberto'; }
+    else if(over<=3){ cor='var(--green)'; txt='margem do par +'+over.toFixed(2)+'% — mercado competitivo, estimativa confiável'; }
+    else if(over<=6){ cor='var(--amber)'; txt='margem do par +'+over.toFixed(2)+'% — poucas casas cobrindo, estimativa mais frouxa'; }
+    else { cor='#F87171'; txt='margem do par +'+over.toFixed(2)+'% — mercado mal coberto; procure mais casas antes de confiar neste número'; }
+    html+='<span style="color:'+cor+'">'+txt+'</span><br>';
+    if(oAp>1){
+      const ev=p*oAp-1;
+      const c2=ev>=0?'var(--green)':'var(--red)';
+      html+='<span style="color:var(--muted-2)">Apostando em '+oAp.toFixed(3)+':</span> EV <b style="color:'+c2+'">'+(ev>=0?'+':'')+(ev*100).toFixed(2)+'%</b>';
+      html+=' <span style="color:var(--muted-2)">('+((oAp/oddJusta-1)*100>=0?'+':'')+((oAp/oddJusta-1)*100).toFixed(1)+'% sobre o justo)</span><br>';
+      const st=escadaStake(oAp);
+      if(st) html+='<span style="color:var(--muted-2)">Escada nesta odd: '+fmt(st)+'</span><br>';
+      if(oAp>oA+1e-9) html+='<span style="color:var(--amber)">a odd que você digitou é maior que a melhor do mercado que você informou — confira</span><br>';
+    }
+    html+='</div>';
+    box.innerHTML=html;
+  }
+
   function pjRender(){
+    if(pjModo==='par'){ pjRenderPar(); return; }
     const box=$('pjResult');
     const met=pjMetodo();
     const oS=numBR($('pjOddS').value), mS=numBR($('pjMargS').value);
@@ -3735,7 +3793,14 @@
     html+='</div>';
     box.innerHTML=html;
   }
-  ['pjOddS','pjMargS','pjLimS','pjOddC','pjMargC','pjOddA'].forEach(id=>$(id).addEventListener('input',pjRender));
+  ['pjOddS','pjMargS','pjLimS','pjOddC','pjMargC','pjOddA','pjBestA','pjBestB'].forEach(id=>$(id).addEventListener('input',pjRender));
+  document.querySelectorAll('[data-pjmodo]').forEach(b=>b.addEventListener('click',()=>{
+    pjModo=b.dataset.pjmodo;
+    document.querySelectorAll('[data-pjmodo]').forEach(x=>x.classList.toggle('active',x===b));
+    $('pjBlocoPar').style.display   = (pjModo==='par')?'block':'none';
+    $('pjBlocoRegua').style.display = (pjModo==='regua')?'block':'none';
+    pjRender();
+  }));
   document.querySelectorAll('input[name="pjMet"]').forEach(r=>r.addEventListener('change',pjRender));
   document.querySelectorAll('[data-pjw]').forEach(b=>b.addEventListener('click',()=>{
     pjPeso=b.dataset.pjw;
