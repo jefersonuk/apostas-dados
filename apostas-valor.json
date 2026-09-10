@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1608.31,
+      "value": 1846.31,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T19:04:01.147Z"
+      "updatedAt": "2026-09-10T19:33:27.171Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 487.97,
+      "value": 447.97,
       "currency": "EUR",
-      "updatedAt": "2026-09-10T19:04:01.147Z"
+      "updatedAt": "2026-09-10T19:33:27.170Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -17199,6 +17199,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T16:29:31.426Z"
+    },
+    {
+      "id": "mtvxdiiq6t395",
+      "kind": "valor",
+      "event": "Pedro Martinez x Valerio Aboian (under 19,5 games)",
+      "houseA": "Sportmarket",
+      "oddA": 1.961,
+      "stakeA": 238,
+      "curA": "EUR",
+      "sport": "Tênis",
+      "market": "Games / Sets",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-11T09:00",
+      "total": 238,
+      "lucroA": 228.71800000000002,
+      "lucroRed": -238,
+      "lucro": 228.71800000000002,
+      "roi": 96.10000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T19:33:27.170Z"
     }
   ],
   "invertidos": [],
@@ -17365,5 +17389,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T19:04:01.147Z"
+  "updatedAt": "2026-09-10T19:33:27.171Z"
 }
