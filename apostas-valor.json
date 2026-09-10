@@ -4748,7 +4748,7 @@
       "name": "BetOnline",
       "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-09-09T18:46:59.551Z"
+      "updatedAt": "2026-09-10T00:48:52.741Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16720,7 +16720,7 @@
     {
       "id": "mtuaz4h15cmjh",
       "kind": "valor",
-      "event": "Worcester Red Sox x Lehigh Valley Ironpigs",
+      "event": "Worcester Red Sox x Lehigh Valley Ironpigs (menos que 11.5)",
       "houseA": "Betonline",
       "oddA": 2,
       "stakeA": 203.6,
@@ -16739,7 +16739,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-09T16:18:38.053Z"
+      "updatedAt": "2026-09-10T00:48:52.741Z"
     },
     {
       "id": "mtud6gby5vefn",
@@ -16979,5 +16979,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T00:28:08.239Z"
+  "updatedAt": "2026-09-10T00:48:52.743Z"
 }
