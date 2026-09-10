@@ -4634,7 +4634,7 @@
       "name": "Opinion",
       "value": 178.04,
       "currency": "USD",
-      "updatedAt": "2026-09-10T18:29:16.824Z"
+      "updatedAt": "2026-09-10T18:51:48.175Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -16936,7 +16936,7 @@
       "event": "TitanFlow vs BOJONG (2)",
       "houseA": "Opinion",
       "oddA": 1.92,
-      "stakeA": 255.50000000000003,
+      "stakeA": 255.5,
       "curA": "USD",
       "sport": "E-sports",
       "market": "1X2 / Resultado",
@@ -16944,15 +16944,15 @@
       "prob": 61.8,
       "winner": null,
       "date": "2026-09-10T15:15",
-      "total": 255.50000000000003,
-      "lucroA": 235.06,
-      "lucroRed": -255.50000000000003,
-      "lucro": 235.06,
+      "total": 255.5,
+      "lucroA": 235.05999999999997,
+      "lucroRed": -255.5,
+      "lucro": 235.05999999999997,
       "roi": 92,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T11:50:35.495Z"
+      "updatedAt": "2026-09-10T18:51:48.175Z"
     },
     {
       "id": "mtvh4yrxr88dn",
@@ -17363,5 +17363,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T18:29:23.119Z"
+  "updatedAt": "2026-09-10T18:51:48.176Z"
 }
