@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 737.66,
+      "value": 534.06,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T01:37:24.266Z"
+      "updatedAt": "2026-09-10T01:48:45.985Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4746,9 +4746,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 0,
+      "value": 79.84,
       "currency": "USD",
-      "updatedAt": "2026-09-10T01:26:20.185Z"
+      "updatedAt": "2026-09-10T01:48:45.984Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16736,7 +16736,7 @@
       "market": "Total de Pontos",
       "oddMkt": 1.57,
       "prob": 60.7,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-09T19:45",
       "total": 203.6,
       "lucroA": 203.6,
@@ -16744,9 +16744,10 @@
       "lucro": 203.6,
       "roi": 100,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-10T01:26:20.186Z"
+      "updatedAt": "2026-09-10T01:48:45.984Z"
     },
     {
       "id": "mtud6gby5vefn",
@@ -16987,5 +16988,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T01:37:24.266Z"
+  "updatedAt": "2026-09-10T01:48:45.985Z"
 }
