@@ -1021,7 +1021,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-2111';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-2129';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3646,8 +3646,14 @@
     pjLast={p:pS, oddJusta};
 
     let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
-    html+='<b style="color:var(--sky)">Preço justo '+oddJusta.toFixed(3)+'</b>'+
-          ' <span style="color:var(--muted-2)">(prob '+(pS*100).toFixed(2)+'%, sem a margem de '+mS.toFixed(2)+'%)</span><br>';
+    // o número que decide: a odd mínima para a aposta valer a pena.
+    // É a odd da régua devolvendo a margem dela — bater só a odd de tela não basta.
+    const acima=(oddJusta/oS-1)*100;
+    html+='<span style="color:var(--muted-2);font-size:11px;">VOCÊ PRECISA DE ODD MAIOR QUE</span><br>'+
+          '<b style="color:var(--sky);font-size:20px;">'+oddJusta.toFixed(2)+'</b>'+
+          ' <span style="color:var(--muted-2)">= '+oS.toFixed(3)+' da régua <b>+'+acima.toFixed(1)+'%</b>'+
+          ' (a margem de '+mS.toFixed(2)+'% que ela guarda)</span><br>'+
+          '<span style="color:var(--muted-2)">chance real '+(pS*100).toFixed(2)+'% · abaixo de '+oddJusta.toFixed(2)+' você paga a margem para outra casa</span><br>';
 
     // teste de coerência: sharp contra a casa mole
     if(pC!==null){
