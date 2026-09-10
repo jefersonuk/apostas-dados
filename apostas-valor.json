@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2100.81,
+      "value": 1846.31,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T18:29:16.824Z"
+      "updatedAt": "2026-09-10T19:03:58.654Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4717,8 +4717,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 351.06,
-      "updatedAt": "2026-09-10T18:54:34.863Z",
+      "value": 428.56,
+      "updatedAt": "2026-09-10T19:03:58.654Z",
       "currency": "USD"
     },
     {
@@ -17090,7 +17090,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.17,
       "prob": 81.4,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-10T15:15",
       "total": 254.5,
       "lucroA": 139.97500000000002,
@@ -17098,9 +17098,10 @@
       "lucro": 139.97500000000002,
       "roi": 55.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-10T18:54:34.863Z"
+      "updatedAt": "2026-09-10T19:03:58.654Z"
     },
     {
       "id": "mtvq5pohjk9q1",
@@ -17363,5 +17364,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T18:54:34.863Z"
+  "updatedAt": "2026-09-10T19:03:58.654Z"
 }
