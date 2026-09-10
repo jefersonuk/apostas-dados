@@ -773,6 +773,13 @@
       <label style="margin-top:10px;">Odd onde você vai apostar</label>
       <input type="text" inputmode="decimal" id="pjOddA" placeholder="1.87">
 
+      <label style="margin-top:10px;">Quanto peso dar à régua</label>
+      <div class="evo-seg" style="margin:4px 0 0;">
+        <button type="button" class="evo-opt" data-pjw="1">Só a régua</button>
+        <button type="button" class="evo-opt active" data-pjw="auto">Automático (pela margem)</button>
+        <button type="button" class="evo-opt" data-pjw="0.5">Meio a meio</button>
+      </div>
+
       <div class="sc-mode" style="margin-top:6px;">
         <label class="sc-mode-opt"><input type="radio" name="pjMet" value="power" checked> Power</label>
         <label class="sc-mode-opt"><input type="radio" name="pjMet" value="shin"> Shin</label>
@@ -1021,7 +1028,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-2129';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-2132';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3631,7 +3638,18 @@
     return pz((lo+hi)/2,q);
   }
   function pjMetodo(){ const r=document.querySelector('input[name="pjMet"]:checked'); return r?r.value:'power'; }
-  let pjLast=null;
+  let pjLast=null, pjPeso='auto';
+
+  // Peso da régua na mistura. A margem é o termômetro de confiança do livro:
+  // margem baixa = "eu sei o preço"; margem alta = "estou me protegendo".
+  // Ponderação por precisão: peso proporcional a 1/margem, limitado a [50%, 90%]
+  // — a régua nunca vale menos que o consenso mole, e nunca vale sozinha.
+  function pjW(mS,mC){
+    if(pjPeso!=='auto') return parseFloat(pjPeso);
+    if(!(mS>0)||!(mC>0)) return 1;
+    const w=(1/mS)/((1/mS)+(1/mC));
+    return Math.max(0.5,Math.min(0.9,w));
+  }
 
   function pjRender(){
     const box=$('pjResult');
@@ -3642,8 +3660,11 @@
     const pS=(oS>1&&mS>=0)?devig(oS,mS,met):null;
     if(pS===null){ box.innerHTML='<span style="color:var(--muted)">Informe a odd e a margem do livro sharp.</span>'; pjLast=null; return; }
     const pC=(oC>1&&mC>=0)?devig(oC,mC,met):null;
-    const oddJusta=1/pS;
-    pjLast={p:pS, oddJusta};
+    // sem casa mole informada não há o que misturar: vale a régua sozinha
+    const w=(pC!==null)?pjW(mS,mC):1;
+    const pFinal=(pC!==null)?(w*pS+(1-w)*pC):pS;
+    const oddJusta=1/pFinal;
+    pjLast={p:pFinal, oddJusta, w};
 
     let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
     // o número que decide: a odd mínima para a aposta valer a pena.
@@ -3651,9 +3672,18 @@
     const acima=(oddJusta/oS-1)*100;
     html+='<span style="color:var(--muted-2);font-size:11px;">VOCÊ PRECISA DE ODD MAIOR QUE</span><br>'+
           '<b style="color:var(--sky);font-size:20px;">'+oddJusta.toFixed(2)+'</b>'+
-          ' <span style="color:var(--muted-2)">= '+oS.toFixed(3)+' da régua <b>+'+acima.toFixed(1)+'%</b>'+
-          ' (a margem de '+mS.toFixed(2)+'% que ela guarda)</span><br>'+
-          '<span style="color:var(--muted-2)">chance real '+(pS*100).toFixed(2)+'% · abaixo de '+oddJusta.toFixed(2)+' você paga a margem para outra casa</span><br>';
+          ' <span style="color:var(--muted-2)">= '+oS.toFixed(3)+' da régua '+(acima>=0?'+':'')+'<b>'+acima.toFixed(1)+'%</b></span><br>'+
+          '<span style="color:var(--muted-2)">chance justa '+(pFinal*100).toFixed(2)+'%'+
+          (pC!==null&&w<0.999
+            ? ' = '+(w*100).toFixed(0)+'% régua ('+(pS*100).toFixed(2)+'%) + '+((1-w)*100).toFixed(0)+'% mole ('+(pC*100).toFixed(2)+'%)'
+            : ' — só a régua, sem a margem de '+mS.toFixed(2)+'%')+
+          '</span><br>';
+    if(pC!==null&&pjPeso==='auto'){
+      const conf = mS<=3 ? 'régua confiante (margem '+mS.toFixed(2)+'%): ela domina a mistura'
+                 : mS<=5 ? 'régua morna (margem '+mS.toFixed(2)+'%): peso dividido'
+                 : 'régua insegura (margem '+mS.toFixed(2)+'%) — margem alta em livro sharp é ele se protegendo, não precificando';
+      html+='<span style="color:'+(mS<=3?'var(--green)':mS<=5?'var(--muted-2)':'var(--amber)')+';font-size:11px;">'+conf+'</span><br>';
+    }
 
     // teste de coerência: sharp contra a casa mole
     if(pC!==null){
@@ -3667,7 +3697,7 @@
     }
 
     if(oA>1){
-      const ev=pS*oA-1;
+      const ev=pFinal*oA-1;
       const cor=ev>=0?'var(--green)':'var(--red)';
       html+='<span style="color:var(--muted-2)">Apostando em '+oA.toFixed(3)+':</span> EV <b style="color:'+cor+'">'+(ev>=0?'+':'')+(ev*100).toFixed(2)+'%</b>';
       if(pC!==null){
@@ -3691,6 +3721,11 @@
   }
   ['pjOddS','pjMargS','pjOddC','pjMargC','pjOddA'].forEach(id=>$(id).addEventListener('input',pjRender));
   document.querySelectorAll('input[name="pjMet"]').forEach(r=>r.addEventListener('change',pjRender));
+  document.querySelectorAll('[data-pjw]').forEach(b=>b.addEventListener('click',()=>{
+    pjPeso=b.dataset.pjw;
+    document.querySelectorAll('[data-pjw]').forEach(x=>x.classList.toggle('active',x===b));
+    pjRender();
+  }));
   $('pjUsar').addEventListener('click',()=>{
     if(!pjLast){ alert('Calcule o preço justo primeiro.'); return; }
     $('vbOddMkt').value=pjLast.oddJusta.toFixed(3);
