@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 381.65,
+      "value": 586.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T02:20:45.929Z"
+      "updatedAt": "2026-09-10T11:05:17.555Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4746,9 +4746,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 79.84,
+      "value": 39.84,
       "currency": "USD",
-      "updatedAt": "2026-09-10T01:48:45.984Z"
+      "updatedAt": "2026-09-10T11:05:17.554Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -16823,6 +16823,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-10T01:36:11.222Z"
+    },
+    {
+      "id": "mtvf80kxqatdo",
+      "kind": "valor",
+      "event": "James Madison – Eastern Kentucky (1)",
+      "houseA": "Betonline",
+      "oddA": 1.87,
+      "stakeA": 204.4,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.34,
+      "prob": 71.1,
+      "winner": null,
+      "date": "2026-09-10T16:00",
+      "total": 204.4,
+      "lucroA": 177.82800000000003,
+      "lucroRed": -204.4,
+      "lucro": 177.82800000000003,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T11:05:17.554Z"
     }
   ],
   "invertidos": [],
@@ -16989,5 +17013,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T10:58:55.568Z"
+  "updatedAt": "2026-09-10T11:05:17.555Z"
 }
