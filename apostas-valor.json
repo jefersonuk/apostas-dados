@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1356.13,
+      "value": 1559.73,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T20:53:41.231Z"
+      "updatedAt": "2026-09-10T21:27:32.006Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4710,8 +4710,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 40,
-      "updatedAt": "2026-09-10T16:29:31.425Z",
+      "value": 0,
+      "updatedAt": "2026-09-10T21:27:32.001Z",
       "currency": "USD"
     },
     {
@@ -17283,6 +17283,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T20:16:14.627Z"
+    },
+    {
+      "id": "mtw1g80x2mk8i",
+      "kind": "valor",
+      "event": "Wests Tigers – Canberra Raiders (2 faz 20 pontos primeiro)",
+      "houseA": "BCgame",
+      "oddA": 2,
+      "stakeA": 203.6,
+      "curA": "USD",
+      "sport": "Rugby",
+      "market": "Total de Pontos",
+      "oddMkt": 1.65,
+      "prob": 57.7,
+      "winner": null,
+      "date": "2026-09-11T04:40",
+      "total": 203.6,
+      "lucroA": 203.6,
+      "lucroRed": -203.6,
+      "lucro": 203.6,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T21:27:32.001Z"
     }
   ],
   "invertidos": [],
@@ -17449,5 +17473,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T21:23:11.922Z"
+  "updatedAt": "2026-09-10T21:27:32.006Z"
 }
