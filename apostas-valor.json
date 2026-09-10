@@ -5010,11 +5010,11 @@
   ],
   "usdRate": 5.1,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-09T17:57:32.577Z",
+  "usdRateAt": "2026-09-10T00:28:08.085Z",
   "eurRate": 5.94,
   "eurRateSrc": "AwesomeAPI",
   "eurRateAt": "2026-09-09T22:21:06.809Z",
-  "appBuild": "20260909-1434",
+  "appBuild": "20260909-2111",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
