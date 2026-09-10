@@ -4509,7 +4509,7 @@
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
       "value": 1565,
-      "updatedAt": "2026-09-10T11:33:49.032Z"
+      "updatedAt": "2026-09-10T20:04:05.556Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -16928,7 +16928,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T11:33:49.032Z"
+      "updatedAt": "2026-09-10T20:04:05.556Z"
     },
     {
       "id": "mtvgu9ra7mjjm",
@@ -17415,5 +17415,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T20:02:08.420Z"
+  "updatedAt": "2026-09-10T20:04:05.556Z"
 }
