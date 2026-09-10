@@ -4587,7 +4587,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 2912.97,
-      "updatedAt": "2026-09-10T01:36:11.221Z"
+      "updatedAt": "2026-09-10T01:36:45.286Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -16277,7 +16277,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T01:15:57.975Z",
+      "updatedAt": "2026-09-10T01:36:45.286Z",
       "stakeFake": 0.01,
       "lucroRed": -20,
       "sport": "",
@@ -16986,5 +16986,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T01:36:11.222Z"
+  "updatedAt": "2026-09-10T01:36:45.286Z"
 }
