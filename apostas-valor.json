@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1338.11,
+      "value": 1575.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T14:52:50.426Z"
+      "updatedAt": "2026-09-10T15:02:03.104Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 505.25,
+      "value": 465.25,
       "currency": "EUR",
-      "updatedAt": "2026-09-10T14:52:50.426Z"
+      "updatedAt": "2026-09-10T15:02:03.103Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -17025,6 +17025,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-10T14:47:45.590Z"
+    },
+    {
+      "id": "mtvnohnjptq0r",
+      "kind": "valor",
+      "event": "Aerterna x Zena",
+      "houseA": "Sportmarket",
+      "oddA": 2.38,
+      "stakeA": 237.60000000000002,
+      "curA": "EUR",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.77,
+      "prob": 53.8,
+      "winner": null,
+      "date": "2026-09-10T13:00",
+      "total": 237.60000000000002,
+      "lucroA": 327.88800000000003,
+      "lucroRed": -237.60000000000002,
+      "lucro": 327.88800000000003,
+      "roi": 138,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-10T15:02:03.103Z"
     }
   ],
   "invertidos": [],
@@ -17191,5 +17215,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-10T14:52:50.426Z"
+  "updatedAt": "2026-09-10T15:02:03.104Z"
 }
