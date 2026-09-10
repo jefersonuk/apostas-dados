@@ -815,8 +815,17 @@
         </div>
       </div>
 
-      <label style="margin-top:10px;">Odd onde você vai apostar</label>
-      <input type="text" inputmode="decimal" id="pjOddA" placeholder="2.30">
+      <div class="grid2" style="margin-top:10px;">
+        <div><label>Odd onde você vai apostar</label><input type="text" inputmode="decimal" id="pjOddA" placeholder="2.30"></div>
+        <div><label>Limite da casa (opcional)</label>
+          <div class="cur-toggle" id="pjLimCur">
+            <button type="button" class="cur-opt" data-plc="BRL">R$</button>
+            <button type="button" class="cur-opt active" data-plc="USD">US$</button>
+            <button type="button" class="cur-opt" data-plc="EUR">€</button>
+          </div>
+          <input type="text" inputmode="decimal" id="pjLim" placeholder="50">
+        </div>
+      </div>
 
       <div class="risk-preview" id="pjResult">
         <span style="color:var(--muted)">Informe a melhor odd de cada lado.</span>
@@ -1059,7 +1068,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-2202';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260909-2222';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3686,6 +3695,24 @@
   // sem margem — o site faz o de-vig linha a linha. Então o trabalho todo é consenso:
   //   1. colapsar linhas idênticas (mesmo feed republicado em várias marcas)
   //   2. usar a MEDIANA, que não se deixa arrastar por uma cotação deslocada
+  // O limite vem em dólar na tela e a escada trabalha em real. Comparar os dois na
+  // cabeça já me custou duas conclusões erradas: aqui a conversão é explícita.
+  let pjLimCur='USD';
+  function pjLinhaLimite(oddAposta){
+    const v=numBR($('pjLim').value);
+    if(!(v>0)) return '';
+    const brl=v*curRate(pjLimCur);
+    const st=escadaStake(oddAposta);
+    const simb=curSimbolo(pjLimCur);
+    let txt='limite '+simb+' '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+    if(pjLimCur!=='BRL') txt+=' = '+fmt(brl);
+    if(st){
+      if(brl>=st) txt+=' · <span style="color:var(--green)">cabe a escada de '+fmt(st)+'</span>';
+      else txt+=' · <span style="color:var(--amber)">a escada pede '+fmt(st)+', só entra '+fmt(brl)+' ('+(100*brl/st).toFixed(0)+'%)</span>';
+    }
+    return '<span style="color:var(--muted-2)">'+txt+'</span><br>';
+  }
+
   function pjParseCol(txt){
     return (txt.match(/\d+[.,]?\d*/g)||[])
       .map(x=>parseFloat(x.replace(',','.')))
@@ -3729,6 +3756,7 @@
             ' <span style="color:var(--muted-2)">('+((oAp/oddJusta-1)*100>=0?'+':'')+((oAp/oddJusta-1)*100).toFixed(1)+'% sobre o justo)</span><br>';
       const st=escadaStake(oAp);
       if(st) html+='<span style="color:var(--muted-2)">Escada nesta odd: '+fmt(st)+'</span><br>';
+      html+=pjLinhaLimite(oAp);
     }
     html+='</div>';
     box.innerHTML=html;
@@ -3763,6 +3791,7 @@
       html+=' <span style="color:var(--muted-2)">('+((oAp/oddJusta-1)*100>=0?'+':'')+((oAp/oddJusta-1)*100).toFixed(1)+'% sobre o justo)</span><br>';
       const st=escadaStake(oAp);
       if(st) html+='<span style="color:var(--muted-2)">Escada nesta odd: '+fmt(st)+'</span><br>';
+      html+=pjLinhaLimite(oAp);
       if(oAp>oA+1e-9) html+='<span style="color:var(--amber)">a odd que você digitou é maior que a melhor do mercado que você informou — confira</span><br>';
     }
     html+='</div>';
@@ -3841,6 +3870,7 @@
       html+='<br>';
       const st=escadaStake(oA);
       if(st) html+='<span style="color:var(--muted-2)">Escada nesta odd: '+fmt(st)+'</span><br>';
+      html+=pjLinhaLimite(oA);
       if(Math.abs(oA-oS)<1e-9&&mS>0) html+='<span style="color:var(--amber)">⚠ Você está apostando no próprio livro que usou como régua. A régua não pode ser o alvo — sobra só a margem dele contra você.</span><br>';
     }
 
@@ -3853,7 +3883,12 @@
     html+='</div>';
     box.innerHTML=html;
   }
-  ['pjOddS','pjMargS','pjLimS','pjOddC','pjMargC','pjOddA','pjBestA','pjBestB','pjCol'].forEach(id=>$(id).addEventListener('input',pjRender));
+  ['pjOddS','pjMargS','pjLimS','pjOddC','pjMargC','pjOddA','pjBestA','pjBestB','pjCol','pjLim'].forEach(id=>$(id).addEventListener('input',pjRender));
+  document.querySelectorAll('[data-plc]').forEach(b=>b.addEventListener('click',()=>{
+    pjLimCur=b.dataset.plc;
+    document.querySelectorAll('[data-plc]').forEach(x=>x.classList.toggle('active',x===b));
+    pjRender();
+  }));
   document.querySelectorAll('[data-pjmodo]').forEach(b=>b.addEventListener('click',()=>{
     pjModo=b.dataset.pjmodo;
     document.querySelectorAll('[data-pjmodo]').forEach(x=>x.classList.toggle('active',x===b));
