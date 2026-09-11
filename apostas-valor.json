@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 97,
+      "value": -0.37,
       "currency": "BRL",
-      "updatedAt": "2026-09-11T12:34:06.069Z"
+      "updatedAt": "2026-09-11T12:41:02.635Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1417.5,
+      "value": 1514.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T12:36:56.698Z"
+      "updatedAt": "2026-09-11T12:41:02.635Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17433,6 +17433,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T12:36:56.698Z"
+    },
+    {
+      "id": "mtwy306ivmtue",
+      "kind": "valor",
+      "event": "Cuba x Republica dominicana (H1 -2.5 sets)",
+      "houseA": "Ivibet",
+      "oddA": 1.42,
+      "stakeA": 97.37,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.2,
+      "prob": 79.4,
+      "winner": null,
+      "date": "2026-09-11T16:36",
+      "total": 97.37,
+      "lucroA": 40.895399999999995,
+      "lucroRed": -97.37,
+      "lucro": 40.895399999999995,
+      "roi": 41.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T12:41:02.635Z"
     }
   ],
   "invertidos": [],
@@ -17599,5 +17623,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T12:36:56.698Z"
+  "updatedAt": "2026-09-11T12:41:02.635Z"
 }
