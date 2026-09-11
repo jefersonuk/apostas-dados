@@ -4711,7 +4711,7 @@
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
       "value": 124.7,
-      "updatedAt": "2026-09-11T12:36:56.698Z",
+      "updatedAt": "2026-09-11T14:24:25.702Z",
       "currency": "USD"
     },
     {
@@ -17417,7 +17417,7 @@
       "event": "Leyla Fiorella x Lourdes Ayala (H1 - 7.5 games)",
       "houseA": "BCgame",
       "oddA": 2.92,
-      "stakeA": 127.49999999999999,
+      "stakeA": 127.5,
       "curA": "USD",
       "sport": "Tênis",
       "market": "Handicap Asiático",
@@ -17425,15 +17425,15 @@
       "prob": 39.7,
       "winner": null,
       "date": "2026-09-11T11:00",
-      "total": 127.49999999999999,
-      "lucroA": 244.79999999999995,
-      "lucroRed": -127.49999999999999,
-      "lucro": 244.79999999999995,
+      "total": 127.5,
+      "lucroA": 244.79999999999998,
+      "lucroRed": -127.5,
+      "lucro": 244.79999999999998,
       "roi": 192,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-11T12:36:56.698Z"
+      "updatedAt": "2026-09-11T14:24:25.702Z"
     },
     {
       "id": "mtwy306ivmtue",
@@ -17888,5 +17888,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T14:24:04.250Z"
+  "updatedAt": "2026-09-11T14:24:25.702Z"
 }
