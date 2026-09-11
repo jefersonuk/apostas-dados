@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3298.87,
+      "value": 3540.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:57:41.041Z"
+      "updatedAt": "2026-09-11T14:24:04.250Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4746,9 +4746,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 25.3,
+      "value": -22.2,
       "currency": "USD",
-      "updatedAt": "2026-09-11T13:44:55.395Z"
+      "updatedAt": "2026-09-11T14:24:04.249Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -17698,6 +17698,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:57:41.041Z"
+    },
+    {
+      "id": "mtx1rhy1t9tap",
+      "kind": "valor",
+      "event": "Santa Clara x San Diego State (2)",
+      "houseA": "Betonline",
+      "oddA": 2,
+      "stakeA": 241.775,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.72,
+      "prob": 55.4,
+      "winner": null,
+      "date": "2026-09-11T23:00",
+      "total": 241.775,
+      "lucroA": 241.775,
+      "lucroRed": -241.775,
+      "lucro": 241.775,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T14:24:04.249Z"
     }
   ],
   "invertidos": [],
@@ -17864,5 +17888,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T14:21:46.953Z"
+  "updatedAt": "2026-09-11T14:24:04.250Z"
 }
