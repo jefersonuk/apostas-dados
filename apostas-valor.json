@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 138.27,
+      "value": 0.27,
       "currency": "BRL",
-      "updatedAt": "2026-09-11T19:55:31.278Z"
+      "updatedAt": "2026-09-11T20:51:02.563Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2877.62,
+      "value": 3015.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T19:55:31.278Z"
+      "updatedAt": "2026-09-11T20:51:02.568Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17885,6 +17885,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T16:53:22.292Z"
+    },
+    {
+      "id": "mtxfl5b66h32q",
+      "kind": "valor",
+      "event": "Ohio State Buckeyes (Women) x Winthrop (Women) (1st set H2 +5.5)",
+      "houseA": "Ivibet",
+      "oddA": 2.21,
+      "stakeA": 138,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-11T19:00",
+      "total": 138,
+      "lucroA": 166.98,
+      "lucroRed": -138,
+      "lucro": 166.98,
+      "roi": 121,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T20:51:02.564Z"
     }
   ],
   "invertidos": [],
@@ -18051,5 +18075,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T20:33:25.719Z"
+  "updatedAt": "2026-09-11T20:51:02.568Z"
 }
