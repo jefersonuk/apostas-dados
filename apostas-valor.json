@@ -4575,7 +4575,7 @@
       "name": "Ivibet",
       "value": -0.37,
       "currency": "BRL",
-      "updatedAt": "2026-09-11T12:41:02.635Z"
+      "updatedAt": "2026-09-11T13:10:16.737Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -17389,7 +17389,7 @@
     {
       "id": "mtwxu2r99u1rx",
       "kind": "valor",
-      "event": "Gimnasia y esgrima x Sol de America",
+      "event": "Gimnasia y esgrima x Sol de America (1)",
       "houseA": "Ivibet",
       "oddA": 1.81,
       "stakeA": 150,
@@ -17408,7 +17408,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-11T12:34:06.069Z"
+      "updatedAt": "2026-09-11T13:10:16.737Z"
     },
     {
       "id": "mtwxxqex4ghyi",
@@ -17647,5 +17647,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:09:37.148Z"
+  "updatedAt": "2026-09-11T13:10:16.737Z"
 }
