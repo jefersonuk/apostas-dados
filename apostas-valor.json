@@ -4508,8 +4508,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1795,
-      "updatedAt": "2026-09-11T11:48:40.427Z"
+      "value": 1645,
+      "updatedAt": "2026-09-11T13:11:56.564Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1820.87,
+      "value": 1970.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:09:37.148Z"
+      "updatedAt": "2026-09-11T13:11:56.565Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17481,6 +17481,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:09:37.147Z"
+    },
+    {
+      "id": "mtwz6qok9vm2r",
+      "kind": "valor",
+      "event": "SB Pachern x SV Gady Raika Lebring (2 over 1,5)",
+      "houseA": "Betnacional",
+      "oddA": 2,
+      "stakeA": 150,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.72,
+      "prob": 55.4,
+      "winner": null,
+      "date": "2026-09-11T14:00",
+      "total": 150,
+      "lucroA": 150,
+      "lucroRed": -150,
+      "lucro": 150,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:11:56.564Z"
     }
   ],
   "invertidos": [],
@@ -17647,5 +17671,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:10:16.737Z"
+  "updatedAt": "2026-09-11T13:11:56.565Z"
 }
