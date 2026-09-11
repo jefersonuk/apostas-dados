@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3094.87,
+      "value": 3298.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:50:24.372Z"
+      "updatedAt": "2026-09-11T13:57:41.041Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4759,8 +4759,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 115.65,
-      "updatedAt": "2026-09-10T16:37:50.624Z",
+      "value": 75.65,
+      "updatedAt": "2026-09-11T13:57:41.041Z",
       "currency": "USD"
     },
     {
@@ -17674,6 +17674,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:50:24.372Z"
+    },
+    {
+      "id": "mtx0tkc1rxy7c",
+      "kind": "valor",
+      "event": "Walid Ahouda x Iannis Miletich (H2 +3,5)",
+      "houseA": "Betfury",
+      "oddA": 1.96,
+      "stakeA": 204,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-11T11:00",
+      "total": 204,
+      "lucroA": 195.84,
+      "lucroRed": -204,
+      "lucro": 195.84,
+      "roi": 96,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:57:41.041Z"
     }
   ],
   "invertidos": [],
@@ -17840,5 +17864,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:50:24.372Z"
+  "updatedAt": "2026-09-11T13:57:41.041Z"
 }
