@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 247,
+      "value": 97,
       "currency": "BRL",
-      "updatedAt": "2026-09-11T12:19:19.891Z"
+      "updatedAt": "2026-09-11T12:34:06.069Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1140,
+      "value": 1290,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T12:25:37.587Z"
+      "updatedAt": "2026-09-11T12:34:06.070Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17385,6 +17385,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T12:25:37.587Z"
+    },
+    {
+      "id": "mtwxu2r99u1rx",
+      "kind": "valor",
+      "event": "Gimnasia y esgrima x Sol de America",
+      "houseA": "Ivibet",
+      "oddA": 1.81,
+      "stakeA": 150,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.51,
+      "prob": 63.1,
+      "winner": null,
+      "date": "2026-09-11T19:00",
+      "total": 150,
+      "lucroA": 121.50000000000001,
+      "lucroRed": -150,
+      "lucro": 121.50000000000001,
+      "roi": 81,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T12:34:06.069Z"
     }
   ],
   "invertidos": [],
@@ -17551,5 +17575,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T12:25:37.587Z"
+  "updatedAt": "2026-09-11T12:34:06.070Z"
 }
