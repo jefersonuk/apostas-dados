@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 409.77,
+      "value": 271.5,
       "currency": "BRL",
-      "updatedAt": "2026-09-11T19:50:09.620Z"
+      "updatedAt": "2026-09-11T19:50:55.332Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1423.84,
+      "value": 1521.21,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T19:50:53.125Z"
+      "updatedAt": "2026-09-11T19:50:55.333Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17451,7 +17451,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.2,
       "prob": 79.4,
-      "winner": "A",
+      "winner": null,
       "date": "2026-09-11T16:36",
       "total": 97.37,
       "lucroA": 40.895399999999995,
@@ -17460,9 +17460,9 @@
       "roi": 41.99999999999999,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": null
       },
-      "updatedAt": "2026-09-11T19:49:01.866Z"
+      "updatedAt": "2026-09-11T19:50:55.332Z"
     },
     {
       "id": "mtwz3r3vwpz8x",
@@ -18051,5 +18051,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T19:50:53.125Z"
+  "updatedAt": "2026-09-11T19:50:55.333Z"
 }
