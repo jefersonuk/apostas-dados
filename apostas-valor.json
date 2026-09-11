@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2313.6,
-      "updatedAt": "2026-09-11T13:50:24.372Z"
+      "value": 2113.6,
+      "updatedAt": "2026-09-11T15:20:21.612Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 4351.54,
+      "value": 4551.54,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T15:06:32.036Z"
+      "updatedAt": "2026-09-11T15:20:21.613Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17794,6 +17794,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T15:06:32.035Z"
+    },
+    {
+      "id": "mtx3rvxnqen5v",
+      "kind": "valor",
+      "event": "LDU x Deportivo Cuenca (H1 -2,5)",
+      "houseA": "Pinnacle",
+      "oddA": 1.793,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-11T21:00",
+      "total": 200,
+      "lucroA": 158.6,
+      "lucroRed": -200,
+      "lucro": 158.6,
+      "roi": 79.3,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T15:20:21.612Z"
     }
   ],
   "invertidos": [],
@@ -17960,5 +17984,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T15:06:32.036Z"
+  "updatedAt": "2026-09-11T15:20:21.613Z"
 }
