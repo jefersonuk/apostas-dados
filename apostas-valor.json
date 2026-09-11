@@ -4632,17 +4632,17 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 178.04,
+      "value": 138.04,
       "currency": "USD",
-      "updatedAt": "2026-09-10T18:51:48.175Z"
+      "updatedAt": "2026-09-11T13:29:41.260Z"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2170.87,
+      "value": 2374.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:16:07.688Z"
+      "updatedAt": "2026-09-11T13:29:41.260Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17529,6 +17529,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:16:07.688Z"
+    },
+    {
+      "id": "mtwztk7f9bh64",
+      "kind": "valor",
+      "event": "Privateer Gaming vs Navi Junior",
+      "houseA": "Opinion",
+      "oddA": 1.92,
+      "stakeA": 204,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "1x2",
+      "oddMkt": 1.3,
+      "prob": 73.3,
+      "winner": null,
+      "date": "2026-09-11T11:00",
+      "total": 204,
+      "lucroA": 187.67999999999998,
+      "lucroRed": -204,
+      "lucro": 187.67999999999998,
+      "roi": 92,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:29:41.260Z"
     }
   ],
   "invertidos": [],
@@ -17695,5 +17719,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:16:07.688Z"
+  "updatedAt": "2026-09-11T13:29:41.260Z"
 }
