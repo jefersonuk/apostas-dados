@@ -4748,7 +4748,7 @@
       "name": "BetOnline",
       "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-09-11T01:39:09.988Z"
+      "updatedAt": "2026-09-11T01:40:37.020Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -17243,7 +17243,7 @@
       "event": "Loyola Chicago x Southeast Missouri (1)",
       "houseA": "Betonline",
       "oddA": 1.62,
-      "stakeA": 100.93469999999999,
+      "stakeA": 100.93,
       "curA": "USD",
       "sport": "Vôlei",
       "market": "1X2 / Resultado",
@@ -17251,15 +17251,15 @@
       "prob": 70,
       "winner": null,
       "date": "2026-09-10T21:00",
-      "total": 100.93469999999999,
-      "lucroA": 62.579514,
-      "lucroRed": -100.93469999999999,
-      "lucro": 62.579514,
+      "total": 100.93,
+      "lucroA": 62.57660000000001,
+      "lucroRed": -100.93,
+      "lucro": 62.57660000000001,
       "roi": 62.000000000000014,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-10T19:35:15.267Z"
+      "updatedAt": "2026-09-11T01:40:37.020Z"
     },
     {
       "id": "mtvywjkz3byrw",
@@ -17474,5 +17474,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T01:39:09.989Z"
+  "updatedAt": "2026-09-11T01:40:37.021Z"
 }
