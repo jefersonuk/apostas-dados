@@ -4508,8 +4508,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 2045,
-      "updatedAt": "2026-09-10T20:53:32.763Z"
+      "value": 1795,
+      "updatedAt": "2026-09-11T11:48:40.427Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 690,
+      "value": 940,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T11:40:34.870Z"
+      "updatedAt": "2026-09-11T11:48:40.434Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17337,6 +17337,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T11:40:34.865Z"
+    },
+    {
+      "id": "mtww7nmvsmxr7",
+      "kind": "valor",
+      "event": "Rotherham – Salford City (2 )",
+      "houseA": "Betnacional",
+      "oddA": 1.83,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.56,
+      "prob": 61.1,
+      "winner": null,
+      "date": "2026-09-12T11:00",
+      "total": 250,
+      "lucroA": 207.50000000000003,
+      "lucroRed": -250,
+      "lucro": 207.50000000000003,
+      "roi": 83,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T11:48:40.429Z"
     }
   ],
   "invertidos": [],
@@ -17503,5 +17527,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T11:40:34.870Z"
+  "updatedAt": "2026-09-11T11:48:40.434Z"
 }
