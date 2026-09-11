@@ -4548,8 +4548,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 2109.12,
-      "updatedAt": "2026-09-10T20:16:14.627Z"
+      "value": 1909.12,
+      "updatedAt": "2026-09-11T13:37:45.823Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2336.87,
+      "value": 2536.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:34:24.611Z"
+      "updatedAt": "2026-09-11T13:37:45.823Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17578,6 +17578,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:34:24.610Z"
+    },
+    {
+      "id": "mtx03y3jgtq83",
+      "kind": "valor",
+      "event": "Detroit Tigers x Colorado - Ben Malgeri 1+ Bases",
+      "houseA": "Blaze",
+      "oddA": 1.85,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Beisebol",
+      "market": "Total de Pontos",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-11T19:40",
+      "total": 200,
+      "lucroA": 170.00000000000003,
+      "lucroRed": -200,
+      "lucro": 170.00000000000003,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:37:45.823Z"
     }
   ],
   "invertidos": [],
@@ -17744,5 +17768,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:34:24.611Z"
+  "updatedAt": "2026-09-11T13:37:45.823Z"
 }
