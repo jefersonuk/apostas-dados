@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 643.6,
+      "value": 440,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T07:55:33.107Z"
+      "updatedAt": "2026-09-11T11:02:29.718Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4710,8 +4710,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 69.86,
-      "updatedAt": "2026-09-11T07:55:33.107Z",
+      "value": 149.7,
+      "updatedAt": "2026-09-11T11:02:29.717Z",
       "currency": "USD"
     },
     {
@@ -17301,7 +17301,7 @@
       "market": "Total de Pontos",
       "oddMkt": 1.65,
       "prob": 57.7,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-11T04:40",
       "total": 203.6,
       "lucroA": 203.6,
@@ -17309,9 +17309,10 @@
       "lucro": 203.6,
       "roi": 100,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-10T21:27:32.001Z"
+      "updatedAt": "2026-09-11T11:02:29.717Z"
     }
   ],
   "invertidos": [],
@@ -17478,5 +17479,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T07:55:33.107Z"
+  "updatedAt": "2026-09-11T11:02:29.718Z"
 }
