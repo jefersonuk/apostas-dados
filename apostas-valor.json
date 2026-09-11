@@ -4634,7 +4634,7 @@
       "name": "Opinion",
       "value": 133.12,
       "currency": "USD",
-      "updatedAt": "2026-09-11T15:26:23.306Z"
+      "updatedAt": "2026-09-11T17:29:57.662Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -17777,10 +17777,10 @@
     {
       "id": "mtx3a3tstoq9m",
       "kind": "valor",
-      "event": "Walczaki x Ex-zero Tenacity",
+      "event": "Walczaki x Ex-zero Tenacity (2)",
       "houseA": "Opinion",
       "oddA": 1.62,
-      "stakeA": 229.04999999999998,
+      "stakeA": 229.05,
       "curA": "USD",
       "sport": "E-sports",
       "market": "1X2 / Resultado",
@@ -17788,15 +17788,15 @@
       "prob": 68,
       "winner": null,
       "date": "2026-09-11T14:00",
-      "total": 229.04999999999998,
+      "total": 229.05,
       "lucroA": 142.01100000000002,
-      "lucroRed": -229.04999999999998,
+      "lucroRed": -229.05,
       "lucro": 142.01100000000002,
       "roi": 62.000000000000014,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-11T15:06:32.035Z"
+      "updatedAt": "2026-09-11T17:29:57.662Z"
     },
     {
       "id": "mtx3rvxnqen5v",
@@ -18036,5 +18036,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T17:29:34.883Z"
+  "updatedAt": "2026-09-11T17:29:57.663Z"
 }
