@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2740.87,
+      "value": 2944.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:42:02.740Z"
+      "updatedAt": "2026-09-11T13:44:55.396Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4746,9 +4746,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 65.3,
+      "value": 25.3,
       "currency": "USD",
-      "updatedAt": "2026-09-11T13:42:02.739Z"
+      "updatedAt": "2026-09-11T13:44:55.395Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -17626,6 +17626,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:42:02.739Z"
+    },
+    {
+      "id": "mtx0d5k3gjnps",
+      "kind": "valor",
+      "event": "Arkansas State x Missouri (2)",
+      "houseA": "Betonline",
+      "oddA": 1.57,
+      "stakeA": 204,
+      "curA": "USD",
+      "sport": "Volei",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.13,
+      "prob": 84.3,
+      "winner": null,
+      "date": "2026-09-11T20:00",
+      "total": 204,
+      "lucroA": 116.28000000000002,
+      "lucroRed": -204,
+      "lucro": 116.28000000000002,
+      "roi": 57.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:44:55.395Z"
     }
   ],
   "invertidos": [],
@@ -17792,5 +17816,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:42:02.740Z"
+  "updatedAt": "2026-09-11T13:44:55.396Z"
 }
