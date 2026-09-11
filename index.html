@@ -158,8 +158,6 @@
   .prog{height:8px;border-radius:4px;background:#0E1116;border:1px solid var(--border);overflow:hidden;margin:6px 0 4px;}
   .prog > i{display:block;height:100%;background:linear-gradient(90deg,#1A3D2E,#34D399);}
   .prog.pouco > i{background:linear-gradient(90deg,#4D3010,#F5A524);}
-  .cal-line{font-family:var(--mono);font-size:11.5px;line-height:1.75;color:var(--muted);}
-  .cal-line b{color:var(--text);}
   .sv-tag{display:inline-block;font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:10px;margin-left:6px;
           background:#0E1520;border:1px solid #1A2C40;color:var(--sky);}
   .sv-tag.alto{background:#2A1A08;border-color:#4D3010;color:var(--amber);}
@@ -340,6 +338,101 @@
   .rh-info{color:var(--muted-2);font-size:11px;flex:1;}
   .rh-add{background:none;border:1px solid var(--sky);color:var(--sky);font-size:10px;font-weight:700;padding:3px 8px;border-radius:5px;cursor:pointer;white-space:nowrap;}
   .rh-add:hover{background:var(--sky);color:#04121C;}
+
+  /* ==========================================================
+     ABA VALOR — hierarquia limpa: resumo → operar → histórico → análise
+     ========================================================== */
+  #tab-vbet .card{border-radius:12px;padding:16px;}
+
+  /* rótulo de seção */
+  .vb-sec{display:flex;align-items:center;gap:10px;margin:22px 2px 10px;
+          font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);}
+  .vb-sec::after{content:'';flex:1;height:1px;background:var(--border);}
+
+  /* resumo */
+  .vb-hero{background:linear-gradient(180deg,#141A22,var(--panel));border:1px solid var(--border);
+           border-radius:14px;padding:16px 16px 14px;margin-bottom:12px;}
+  .vb-hero-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+  .vb-hero-k{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:800;}
+  .vb-hero-main .v{font-family:var(--mono);font-size:30px;font-weight:700;line-height:1.15;letter-spacing:-.6px;margin-top:3px;}
+  .vb-open{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--amber);
+           background:#2A1A08;border:1px solid #4D3010;border-radius:999px;padding:4px 10px;white-space:nowrap;}
+  .vb-open:empty{display:none;}
+  .vb-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin-top:16px;
+            background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+  .vb-stats>div{background:#0E1116;padding:8px 10px;min-width:0;}
+  .vb-stats .k{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);font-weight:800;}
+  .vb-stats .v{display:block;font-family:var(--mono);font-size:13px;font-weight:600;margin-top:2px;
+               white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  @media(max-width:640px){.vb-stats{grid-template-columns:repeat(3,1fr);} .vb-hero-main .v{font-size:26px;}}
+
+  /* cartão dobrável */
+  details.fold{background:var(--panel);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;}
+  details.fold>summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;align-items:center;gap:8px;
+      font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);user-select:none;}
+  details.fold>summary::-webkit-details-marker{display:none;}
+  details.fold>summary:hover{color:var(--text);}
+  details.fold>summary .chev{margin-left:auto;font-size:10px;color:var(--muted-2);transition:transform .18s;}
+  details.fold[open]>summary{color:var(--text);border-bottom:1px solid var(--border);}
+  details.fold[open]>summary .chev{transform:rotate(90deg);}
+  .fold-body{padding:14px 16px 16px;}
+
+  /* explicação sob demanda */
+  details.help{margin:0 0 12px;}
+  details.help>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+      font-size:10.5px;font-weight:700;color:var(--muted-2);border:1px solid var(--border);background:#0E1116;
+      border-radius:999px;padding:4px 11px;user-select:none;}
+  details.help>summary::-webkit-details-marker{display:none;}
+  details.help>summary::before{content:'?';font-family:var(--mono);font-weight:800;color:var(--muted-2);}
+  details.help>summary:hover{color:var(--sky);border-color:#1A2C40;}
+  details.help[open]>summary{color:var(--sky);border-color:#1A2C40;background:#0E1520;}
+  details.help[open]>summary::before{content:'×';color:var(--sky);}
+  .help-body{margin-top:9px;padding:2px 0 2px 12px;border-left:2px solid var(--border);
+      color:var(--muted);font-size:11.5px;line-height:1.7;}
+  .help-body b{color:var(--text);}
+
+  /* microtexto de campo */
+  .hint{color:var(--muted-2);font-size:10.5px;line-height:1.5;margin:-2px 0 10px;}
+  .fld-lab{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+           color:var(--muted-2);margin:14px 0 7px;}
+
+  /* cartão principal de entrada */
+  .card.vb-main{border-color:#1D2836;background:linear-gradient(180deg,#101721,var(--panel));}
+  .card.vb-main .card-title{color:var(--sky);font-size:12px;}
+
+  /* resultado da aposta: dois cenários lado a lado */
+  .vb-result{margin:12px 0 0;}
+  .vb-outcome{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .vb-out{border-radius:10px;padding:10px 12px;border:1px solid var(--border);background:#0E1116;}
+  .vb-out .k{font-size:9px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;}
+  .vb-out .v{font-family:var(--mono);font-size:18px;font-weight:700;margin-top:3px;line-height:1.2;}
+  .vb-out .s{font-family:var(--mono);font-size:10px;color:var(--muted-2);margin-top:3px;}
+  .vb-out.g{background:#0A2018;border-color:#1A3D2E;} .vb-out.g .k,.vb-out.g .v{color:var(--green);}
+  .vb-out.r{background:#2A0E12;border-color:#5C2530;} .vb-out.r .k,.vb-out.r .v{color:var(--red);}
+  .vb-line{font-family:var(--mono);font-size:11px;color:var(--muted-2);line-height:1.75;margin-top:8px;}
+  .vb-line b{color:var(--text);}
+
+  /* preço justo: número-herói */
+  .pj-hero{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;}
+  .pj-hero .k{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted-2);font-weight:800;}
+  .pj-hero .v{font-family:var(--mono);font-size:26px;font-weight:700;color:var(--sky);line-height:1;}
+  .pj-hero .s{font-family:var(--mono);font-size:11px;color:var(--muted-2);}
+
+  /* estatística compacta (calibração) */
+  .cal-stat{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+            padding:8px 0;border-bottom:1px solid var(--border);font-size:12px;}
+  .cal-stat:last-of-type{border-bottom:none;}
+  .cal-stat .k{color:var(--muted);}
+  .cal-stat .v{font-family:var(--mono);font-weight:700;color:var(--text);white-space:nowrap;}
+  .cal-stat .v small{font-weight:500;color:var(--muted-2);font-size:10.5px;}
+
+  /* escada */
+  .esc-row{display:grid;grid-template-columns:44px 72px 1fr 62px;gap:8px;align-items:center;
+           font-family:var(--mono);font-size:11.5px;padding:3px 0;}
+  .esc-row.head{color:var(--muted-2);font-size:9px;text-transform:uppercase;letter-spacing:.06em;
+                font-family:var(--sans);font-weight:800;padding-bottom:6px;margin-bottom:2px;border-bottom:1px solid var(--border);}
+  .esc-row .st{text-align:right;color:var(--sky);font-weight:700;}
+  .esc-row .flat{text-align:right;color:var(--muted-2);font-size:10px;}
 </style>
 </head>
 <body>
@@ -746,99 +839,167 @@
   <!-- ============ ABA APOSTAS DE VALOR ============ -->
   <div class="tab-panel" id="tab-vbet">
 
-    <!-- PREÇO JUSTO -->
-    <div class="card">
-      <div class="card-title">⚖️ Preço justo</div>
-      <div class="footnote" style="margin-top:0;line-height:1.6;">Bater a <b>média</b> das odds não basta: a média de tela já vem com a margem dentro, então empatar exige superá-la pela margem inteira — uns 8% no seu mix de casas. O jeito de achar o sarrafo sem depender de margem nenhuma é pegar a <b>melhor odd de cada lado</b>: o par se auto-normaliza, porque nenhuma casa consegue ser a mais generosa nos dois lados ao mesmo tempo.</div>
-
-      <div class="evo-seg" style="margin:10px 0 6px;">
-        <button type="button" class="evo-opt active" data-pjmodo="col">Colar coluna de probabilidade</button>
-        <button type="button" class="evo-opt" data-pjmodo="par">Melhores odds dos 2 lados</button>
-        <button type="button" class="evo-opt" data-pjmodo="regua">Régua sharp + margem</button>
-      </div>
-
-      <div id="pjBlocoCol">
-        <label>Cole a coluna "Probabilidade da casa de apostas"</label>
-        <textarea id="pjCol" rows="4" placeholder="39,18%&#10;46,41%&#10;48,58%&#10;48,56%&#10;..." style="width:100%;font-family:var(--mono);font-size:12.5px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:#0E1116;color:var(--text);resize:vertical;"></textarea>
-        <div class="footnote" style="margin-top:2px;">Essa coluna já vem <b>sem a margem</b> — o site faz o de-vig linha a linha. Selecione, copie e cole aqui: nada de procurar o lado contrário. Aceita vírgula ou ponto, com ou sem %.</div>
-      </div>
-
-      <div id="pjBlocoPar" style="display:none;">
-        <div class="grid2">
-          <div class="lay-col">
-            <div class="lay-col-title" style="color:var(--sky);">SEU LADO</div>
-            <label>Melhor odd do mercado</label>
-            <input type="text" inputmode="decimal" id="pjBestA" placeholder="2.220">
-            <div class="footnote" style="margin-top:4px;">A maior odd que existe para o lado que você quer, em qualquer casa da lista.</div>
-          </div>
-          <div class="lay-col">
-            <div class="lay-col-title" style="color:#C4B5FD;">LADO CONTRÁRIO</div>
-            <label>Melhor odd do mercado</label>
-            <input type="text" inputmode="decimal" id="pjBestB" placeholder="1.876">
-            <div class="footnote" style="margin-top:4px;">A maior odd do lado oposto — quase sempre em outra casa.</div>
-          </div>
+    <!-- ===== RESUMO ===== -->
+    <div class="vb-hero">
+      <div class="vb-hero-head">
+        <div class="vb-hero-main">
+          <div class="vb-hero-k">Lucro realizado</div>
+          <div class="v" id="vbProfit">—</div>
         </div>
+        <span class="vb-open" id="vbTotalHead"></span>
       </div>
-
-      <div id="pjBlocoRegua" style="display:none;">
-        <div class="grid2">
-          <div class="lay-col">
-            <div class="lay-col-title" style="color:var(--sky);">RÉGUA — LIVRO SHARP</div>
-            <label>Odd do lado que você quer</label>
-            <input type="text" inputmode="decimal" id="pjOddS" placeholder="2.220">
-            <label>Margem do livro (%)</label>
-            <input type="text" inputmode="decimal" id="pjMargS" placeholder="6.58">
-            <label>Limite disponível (opcional)</label>
-            <input type="text" inputmode="decimal" id="pjLimS" placeholder="100">
-            <div class="footnote" style="margin-top:4px;">Pinnacle, Betfair, Matchbook — ou a menor margem da lista.</div>
-          </div>
-          <div class="lay-col">
-            <div class="lay-col-title" style="color:#C4B5FD;">CASA MOLE (teste)</div>
-            <label>Odd do mesmo lado</label>
-            <input type="text" inputmode="decimal" id="pjOddC" placeholder="1.87">
-            <label>Margem (%)</label>
-            <input type="text" inputmode="decimal" id="pjMargC" placeholder="8.02">
-            <div class="footnote" style="margin-top:4px;">Serve para testar coerência, não para virar preço.</div>
-          </div>
-        </div>
-        <label style="margin-top:10px;">Quanto peso dar à régua</label>
-        <div class="evo-seg" style="margin:4px 0 0;">
-          <button type="button" class="evo-opt" data-pjw="1">Só a régua</button>
-          <button type="button" class="evo-opt active" data-pjw="auto">Automático (pela margem)</button>
-          <button type="button" class="evo-opt" data-pjw="0.5">Meio a meio</button>
-        </div>
-        <div class="sc-mode" style="margin-top:6px;">
-          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="power" checked> Power</label>
-          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="shin"> Shin</label>
-          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="prop"> Proporcional</label>
-          <label class="sc-mode-opt"><input type="radio" name="pjMet" value="add"> Aditivo</label>
-        </div>
+      <div class="vb-stats">
+        <div><span class="k">Yield</span><span class="v" id="vbYield">—</span></div>
+        <div><span class="k">Acerto</span><span class="v" id="vbHit">—</span></div>
+        <div><span class="k">Apostas</span><span class="v" id="vbCount">—</span></div>
+        <div><span class="k">Volume</span><span class="v" id="vbVolume">—</span></div>
+        <div><span class="k">Odd média</span><span class="v" id="vbAvgOdd">—</span></div>
       </div>
-
-      <div class="grid2" style="margin-top:10px;">
-        <div><label>Odd onde você vai apostar</label><input type="text" inputmode="decimal" id="pjOddA" placeholder="2.30"></div>
-        <div><label>Limite da casa (opcional)</label>
-          <div class="cur-toggle" id="pjLimCur">
-            <button type="button" class="cur-opt" data-plc="BRL">R$</button>
-            <button type="button" class="cur-opt active" data-plc="USD">US$</button>
-            <button type="button" class="cur-opt" data-plc="EUR">€</button>
-          </div>
-          <input type="text" inputmode="decimal" id="pjLim" placeholder="50">
-        </div>
-      </div>
-
-      <div class="risk-preview" id="pjResult">
-        <span style="color:var(--muted)">Informe a melhor odd de cada lado.</span>
-      </div>
-      <button class="btn small" id="pjUsar" style="width:100%;">Levar preço justo para o formulário ↓</button>
     </div>
 
-    <!-- REGISTRAR APOSTA DE VALOR -->
-    <div class="card">
-      <div class="card-title">📈 Registrar aposta de valor</div>
-      <div class="footnote" style="margin-top:0;">Aposta de <b>uma perna só</b>: ou vence (green) ou perde tudo (red). A entrada sugerida sai do <b>quarto de Kelly</b> sobre a probabilidade real, com teto proporcional à probabilidade — entrada cheia só a partir de 70%.</div>
+    <div class="vb-sec">Operar</div>
 
-      <div class="grid2" style="margin-top:10px;">
+    <!-- ===== PREÇO JUSTO ===== -->
+    <details class="fold" id="foldPreco" open>
+      <summary>⚖️ Preço justo<span class="chev">▸</span></summary>
+      <div class="fold-body">
+
+        <details class="help">
+          <summary>por que a média das odds não serve</summary>
+          <div class="help-body">Bater a <b>média</b> das odds não basta: a média de tela já vem com a margem dentro, então empatar exige superá-la pela margem inteira — uns 8% no seu mix de casas. O jeito de achar o sarrafo sem depender de margem nenhuma é pegar a <b>melhor odd de cada lado</b>: o par se auto-normaliza, porque nenhuma casa consegue ser a mais generosa nos dois lados ao mesmo tempo.</div>
+        </details>
+
+        <div class="evo-seg" style="margin:10px 0 6px;">
+          <button type="button" class="evo-opt active" data-pjmodo="col">Colar coluna</button>
+          <button type="button" class="evo-opt" data-pjmodo="par">2 melhores odds</button>
+          <button type="button" class="evo-opt" data-pjmodo="regua">Régua sharp</button>
+        </div>
+
+        <div id="pjBlocoCol">
+          <label>Coluna "Probabilidade da casa de apostas"</label>
+          <textarea id="pjCol" rows="4" placeholder="39,18%&#10;46,41%&#10;48,58%&#10;48,56%&#10;..." style="width:100%;font-family:var(--mono);font-size:12.5px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:#0E1116;color:var(--text);resize:vertical;"></textarea>
+          <div class="hint">Essa coluna já vem sem a margem — o site faz o de-vig linha a linha. Aceita vírgula ou ponto, com ou sem %.</div>
+        </div>
+
+        <div id="pjBlocoPar" style="display:none;">
+          <div class="grid2">
+            <div class="lay-col">
+              <div class="lay-col-title" style="color:var(--sky);">SEU LADO</div>
+              <label>Melhor odd do mercado</label>
+              <input type="text" inputmode="decimal" id="pjBestA" placeholder="2.220">
+            </div>
+            <div class="lay-col">
+              <div class="lay-col-title" style="color:#C4B5FD;">LADO CONTRÁRIO</div>
+              <label>Melhor odd do mercado</label>
+              <input type="text" inputmode="decimal" id="pjBestB" placeholder="1.876">
+            </div>
+          </div>
+          <div class="hint">A maior odd de cada lado, em qualquer casa da lista — quase sempre em casas diferentes.</div>
+        </div>
+
+        <div id="pjBlocoRegua" style="display:none;">
+          <div class="grid2">
+            <div class="lay-col">
+              <div class="lay-col-title" style="color:var(--sky);">RÉGUA — LIVRO SHARP</div>
+              <label>Odd do lado que você quer</label>
+              <input type="text" inputmode="decimal" id="pjOddS" placeholder="2.220">
+              <label>Margem do livro (%)</label>
+              <input type="text" inputmode="decimal" id="pjMargS" placeholder="6.58">
+              <label>Limite disponível (opcional)</label>
+              <input type="text" inputmode="decimal" id="pjLimS" placeholder="100">
+            </div>
+            <div class="lay-col">
+              <div class="lay-col-title" style="color:#C4B5FD;">CASA MOLE (teste)</div>
+              <label>Odd do mesmo lado</label>
+              <input type="text" inputmode="decimal" id="pjOddC" placeholder="1.87">
+              <label>Margem (%)</label>
+              <input type="text" inputmode="decimal" id="pjMargC" placeholder="8.02">
+            </div>
+          </div>
+          <div class="hint">Régua = Pinnacle, Betfair, Matchbook, ou a menor margem da lista. A casa mole serve para testar coerência, não para virar preço.</div>
+          <details class="help" style="margin-top:10px;">
+            <summary>peso da régua e método de de-vig</summary>
+            <div class="help-body">
+              <label style="margin-bottom:2px;">Quanto peso dar à régua</label>
+              <div class="evo-seg" style="margin:4px 0 0;">
+                <button type="button" class="evo-opt" data-pjw="1">Só a régua</button>
+                <button type="button" class="evo-opt active" data-pjw="auto">Automático</button>
+                <button type="button" class="evo-opt" data-pjw="0.5">Meio a meio</button>
+              </div>
+              <div class="sc-mode" style="margin-top:6px;">
+                <label class="sc-mode-opt"><input type="radio" name="pjMet" value="power" checked> Power</label>
+                <label class="sc-mode-opt"><input type="radio" name="pjMet" value="shin"> Shin</label>
+                <label class="sc-mode-opt"><input type="radio" name="pjMet" value="prop"> Proporcional</label>
+                <label class="sc-mode-opt"><input type="radio" name="pjMet" value="add"> Aditivo</label>
+              </div>
+              <div style="margin-top:8px;">Divergência acima de 3 pp entre régua e casa mole tem duas causas opostas: <b>(a)</b> não é o mesmo mercado — linha, período ou tempo diferente → descartar; <b>(b)</b> é o mesmo mercado e a régua é que não sabe precificar → o valor pode ser real. O que separa as duas é a <b>margem</b> e o <b>limite</b> da régua: margem baixa e limite alto, confie nela e descarte; margem alta e limite baixo, ela está se protegendo e quem manda é o consenso.</div>
+            </div>
+          </details>
+        </div>
+
+        <div class="grid2" style="margin-top:12px;">
+          <div><label>Odd onde você vai apostar</label><input type="text" inputmode="decimal" id="pjOddA" placeholder="2.30"></div>
+          <div><label>Limite da casa (opcional)</label>
+            <div class="cur-toggle" id="pjLimCur">
+              <button type="button" class="cur-opt" data-plc="BRL">R$</button>
+              <button type="button" class="cur-opt active" data-plc="USD">US$</button>
+              <button type="button" class="cur-opt" data-plc="EUR">€</button>
+            </div>
+            <input type="text" inputmode="decimal" id="pjLim" placeholder="50">
+          </div>
+        </div>
+
+        <div class="risk-preview" id="pjResult">
+          <span style="color:var(--muted)">Informe a melhor odd de cada lado.</span>
+        </div>
+        <button class="btn small" id="pjUsar" style="width:100%;">Levar preço justo para o formulário ↓</button>
+      </div>
+    </details>
+
+    <!-- ===== NOVA APOSTA ===== -->
+    <div class="card vb-main">
+      <div class="card-title"><span>📈 Nova aposta de valor</span></div>
+
+      <details class="help">
+        <summary>como sai a entrada sugerida</summary>
+        <div class="help-body">Aposta de <b>uma perna só</b>: ou vence (green) ou perde tudo (red). A entrada sugerida sai do <b>quarto de Kelly</b> sobre a probabilidade real, com teto proporcional à probabilidade — entrada cheia só a partir de 70%.</div>
+      </details>
+
+      <div class="fld-lab">Preço</div>
+      <div class="grid2">
+        <div><label>Casa de aposta</label><input type="text" id="vbHouse" placeholder="Ex: Bet365"></div>
+        <div><label>Odd da casa</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="2.10"></div>
+      </div>
+      <div class="grid2">
+        <div><label>Odd média do mercado <span id="vbSvTag"></span></label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="1.90"></div>
+        <div><label>Prob. real % (auto)</label><input type="number" id="vbProb" step="0.1" placeholder="calculada"></div>
+      </div>
+
+      <div id="vbSugestao"></div>
+
+      <div class="fld-lab">Entrada</div>
+      <label>Stake</label>
+      <div class="cur-toggle" id="curToggleV">
+        <button type="button" class="cur-opt active" data-cur="V:BRL">R$</button>
+        <button type="button" class="cur-opt" data-cur="V:USD">US$</button>
+        <button type="button" class="cur-opt" data-cur="V:EUR">€</button>
+      </div>
+      <input type="number" id="vbStake" step="0.01" min="0" placeholder="50.00">
+      <div class="btn-row">
+        <button class="btn small" id="vbUsarSug">Usar sugestão</button>
+        <button class="btn small" id="vbUsarEsc">Usar escada</button>
+      </div>
+      <input type="hidden" id="scCurV" value="BRL">
+      <div id="vbResult" class="vb-result">
+        <span class="hint" style="margin:0;">Preencha a odd e o stake para ver o retorno.</span>
+      </div>
+
+      <div class="fld-lab">Identificação</div>
+      <div class="grid2">
+        <div><label>Evento</label><input type="text" id="vbEvent" placeholder="Ex: Sport × Santa Cruz"></div>
+        <div><label>Data / horário</label><input type="datetime-local" id="vbDate"></div>
+      </div>
+      <div class="grid2">
         <div><label>Esporte</label>
           <input type="text" id="vbSport" list="sportList" placeholder="Ex: Futebol" autocomplete="off">
           <datalist id="sportList">
@@ -860,118 +1021,100 @@
           </datalist>
         </div>
       </div>
-      <div class="grid2">
-        <div><label>Casa de aposta</label><input type="text" id="vbHouse" placeholder="Ex: Bet365"></div>
-        <div><label>Odd da casa</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="2.10"></div>
-      </div>
-      <div class="grid2">
-        <div><label>Odd média do mercado <span id="vbSvTag"></span></label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="1.90"></div>
-        <div><label>Prob. real % (auto)</label><input type="number" id="vbProb" step="0.1" placeholder="calculada"></div>
-      </div>
-      <div id="vbSugestao"></div>
-      <div class="grid2">
-        <div>
-          <label>Stake</label>
-          <div class="cur-toggle" id="curToggleV">
-            <button type="button" class="cur-opt active" data-cur="V:BRL">R$</button>
-            <button type="button" class="cur-opt" data-cur="V:USD">US$</button>
-            <button type="button" class="cur-opt" data-cur="V:EUR">€</button>
-          </div>
-          <input type="number" id="vbStake" step="0.01" min="0" placeholder="50.00">
-        </div>
-        <div><label>&nbsp;</label>
-          <button class="btn small" id="vbUsarEsc" style="width:100%;">Usar escada</button>
-          <button class="btn small" id="vbUsarSug" style="width:100%;margin-top:4px;">Usar valor sugerido</button>
-        </div>
-      </div>
-      <input type="hidden" id="scCurV" value="BRL">
-      <div class="risk-preview" id="vbResult">
-        <span style="color:var(--muted)">Preencha a odd e o stake para ver o retorno.</span>
-      </div>
-      <div class="grid2">
-        <div><label>Evento (opcional)</label><input type="text" id="vbEvent" placeholder="Ex: Sport × Santa Cruz"></div>
-        <div><label>Data / horário</label><input type="datetime-local" id="vbDate"></div>
-      </div>
-      <button class="btn primary" id="vbRegisterBtn" style="width:100%;">Registrar aposta de valor</button>
+      <button class="btn primary" id="vbRegisterBtn" style="width:100%;margin-top:6px;">Registrar aposta de valor</button>
     </div>
 
-    <!-- META & DIMENSIONAMENTO -->
-    <div class="card">
-      <div class="card-title">🎯 Meta &amp; dimensionamento</div>
-      <div class="footnote" style="margin-top:0;">Só existe uma equação: <b>lucro = giro × yield</b>. Com a stake limitada pelo Kelly, a meta define o <b>volume de apostas</b>, não o tamanho da entrada. Mexa nos campos e veja o que a meta exige.</div>
-      <div class="grid2" style="margin-top:10px;">
-        <div><label>Meta de lucro mensal (R$)</label><input type="number" id="mtAlvo" step="100" value="30000"></div>
-        <div><label>Banca de trabalho (R$)</label><input type="number" id="mtBanca" step="100" placeholder="32000"></div>
-      </div>
-      <div class="grid2">
-        <div><label>Yield de planejamento (%)</label><input type="number" id="mtYield" step="0.5" value="5"></div>
-        <div><label>Odd média de trabalho</label><input type="number" id="mtOdd" step="0.01" value="1.98"></div>
-      </div>
-      <div><label>Fração de Kelly</label>
-        <div class="evo-seg" style="margin:4px 0 0;">
-          <button type="button" class="evo-opt" data-kf="0.125">⅛ Kelly</button>
-          <button type="button" class="evo-opt active" data-kf="0.25">¼ Kelly</button>
-          <button type="button" class="evo-opt" data-kf="0.5">½ Kelly</button>
-        </div>
-      </div>
-      <div class="meta-out" id="mtOut"></div>
-      <div class="footnote" id="mtNota"></div>
+    <div class="vb-sec">Histórico</div>
 
-      <div class="card-title" style="margin:18px 0 6px;">📐 Escada de stake por odd</div>
-      <div class="footnote" style="margin-top:0;">Kelly manda <b>stake &prop; 1/(odd&minus;1)</b>: para o mesmo edge, quanto maior a odd, menor a entrada. Com stake fixa, o desvio por aposta quase dobra da odd 2 para a odd 5 — a escada corrige isso. A âncora é sempre a entrada na <b>odd 2,00</b>.</div>
-      <div class="evo-seg" style="margin:8px 0 4px;">
-        <button type="button" class="evo-opt active" data-esc="1">Kelly · risco cai com a odd</button>
-        <button type="button" class="evo-opt" data-esc="0.5">Risco constante</button>
-      </div>
-      <div class="grid3" style="margin-top:8px;">
-        <div><label>Âncora @ odd 2,00 (R$)</label><input type="number" id="escAnc" step="10" min="1"></div>
-        <div><label>Teto (R$)</label><input type="number" id="escTeto" step="10" min="1"></div>
-        <div><label>Piso (R$)</label><input type="number" id="escPiso" step="5" min="1"></div>
-      </div>
-      <div id="escTabela"></div>
-    </div>
-
-    <!-- CALIBRAÇÃO DO FILTRO -->
+    <!-- ===== LISTA ===== -->
     <div class="card">
-      <div class="card-title">🔬 Calibração do filtro</div>
-      <div class="footnote" style="margin-top:0;">A pergunta que decide tudo: <b>quanto da supervalorização anunciada vira lucro de verdade?</b> Medir isso exige registrar a <b>odd média do mercado</b> em cada aposta — é um número só para a operação inteira, muito mais rápido de medir do que o yield de cada mercado separado.</div>
-      <div id="calBox"></div>
-    </div>
-
-    <!-- APOSTAS DE VALOR -->
-    <div class="card">
-      <div class="card-title"><span>📈 Apostas de Valor</span>
-        <div style="display:flex;align-items:center;gap:8px;">
-          <span id="vbTotalHead" style="font-family:var(--mono);font-size:12px;"></span>
-          <button class="btn small" id="vbCollapseBtn" style="width:auto;padding:6px 10px;">▾</button>
-        </div>
+      <div class="card-title"><span>🗂️ Apostas registradas</span>
+        <button class="btn small" id="vbCollapseBtn" style="width:auto;padding:6px 10px;">▾</button>
       </div>
-      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
-        <div class="summary-item"><div class="k">Lucro realizado</div><div class="v" id="vbProfit" style="font-size:15px;">—</div></div>
-        <div class="summary-item"><div class="k">Yield</div><div class="v" id="vbYield" style="font-size:15px;">—</div></div>
-        <div class="summary-item"><div class="k">Taxa de acerto</div><div class="v" id="vbHit" style="font-size:15px;">—</div></div>
-      </div>
-      <div class="summary-grid" style="grid-template-columns:repeat(3,1fr);">
-        <div class="summary-item"><div class="k">Apostas</div><div class="v" id="vbCount" style="font-size:13px;">—</div></div>
-        <div class="summary-item"><div class="k">Volume</div><div class="v" id="vbVolume" style="font-size:13px;">—</div></div>
-        <div class="summary-item"><div class="k">Odd média</div><div class="v" id="vbAvgOdd" style="font-size:13px;">—</div></div>
-      </div>
-      <div class="filter-row" style="margin-top:14px;">
+      <div class="filter-row">
         <div class="filter-btn active" data-vbfilter="all">Todas</div>
         <div class="filter-btn" data-vbfilter="open">⏳ Em aberto</div>
         <div class="filter-btn" data-vbfilter="green">✓ Green</div>
         <div class="filter-btn" data-vbfilter="red">✗ Red</div>
       </div>
-      <div class="k" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-2);margin:14px 0 6px;font-weight:700;">Desempenho por segmento</div>
-      <div class="evo-seg" style="margin-bottom:8px;">
-        <button type="button" class="evo-opt active" data-seg="market">Mercado</button>
-        <button type="button" class="evo-opt" data-seg="sport">Esporte</button>
-        <button type="button" class="evo-opt" data-seg="house">Casa</button>
-        <button type="button" class="evo-opt" data-seg="odd">Faixa de odd</button>
-      </div>
-      <div id="vbSegments"></div>
-      <div id="vbList" style="margin-top:14px;"></div>
+      <div id="vbList" style="margin-top:12px;"></div>
     </div>
+
+    <div class="vb-sec">Análise</div>
+
+    <!-- ===== SEGMENTOS ===== -->
+    <details class="fold">
+      <summary>📊 Desempenho por segmento<span class="chev">▸</span></summary>
+      <div class="fold-body">
+        <div class="evo-seg" style="margin:0 0 10px;">
+          <button type="button" class="evo-opt active" data-seg="market">Mercado</button>
+          <button type="button" class="evo-opt" data-seg="sport">Esporte</button>
+          <button type="button" class="evo-opt" data-seg="house">Casa</button>
+          <button type="button" class="evo-opt" data-seg="odd">Faixa de odd</button>
+        </div>
+        <div id="vbSegments"></div>
+      </div>
+    </details>
+
+    <!-- ===== CALIBRAÇÃO ===== -->
+    <details class="fold">
+      <summary>🔬 Calibração do filtro<span class="chev">▸</span></summary>
+      <div class="fold-body">
+        <details class="help">
+          <summary>o que esta tela mede</summary>
+          <div class="help-body">A pergunta que decide tudo: <b>quanto da supervalorização anunciada vira lucro de verdade?</b> Medir isso exige registrar a <b>odd média do mercado</b> em cada aposta — é um número só para a operação inteira, muito mais rápido de medir do que o yield de cada mercado separado. A dispersão da supervalorização é o que dá poder ao teste: aceitar <b>só</b> entradas de 8–12% torna β quase impossível de medir; variar de propósito entre 3% e 25% reduz a amostra necessária.</div>
+        </details>
+        <div id="calBox"></div>
+      </div>
+    </details>
+
+    <!-- ===== META ===== -->
+    <details class="fold">
+      <summary>🎯 Meta &amp; dimensionamento<span class="chev">▸</span></summary>
+      <div class="fold-body">
+        <details class="help">
+          <summary>lucro = giro × yield</summary>
+          <div class="help-body">Só existe uma equação: <b>lucro = giro × yield</b>. Com a stake limitada pelo Kelly, a meta define o <b>volume de apostas</b>, não o tamanho da entrada. O yield de planejamento é a variável mais perigosa desta tela: metade dele dobra o volume exigido — use o painel de calibração para substituí-lo por um número medido.</div>
+        </details>
+        <div class="grid2">
+          <div><label>Meta de lucro mensal (R$)</label><input type="number" id="mtAlvo" step="100" value="30000"></div>
+          <div><label>Banca de trabalho (R$)</label><input type="number" id="mtBanca" step="100" placeholder="32000"></div>
+        </div>
+        <div class="grid2">
+          <div><label>Yield de planejamento (%)</label><input type="number" id="mtYield" step="0.5" value="5"></div>
+          <div><label>Odd média de trabalho</label><input type="number" id="mtOdd" step="0.01" value="1.98"></div>
+        </div>
+        <label>Fração de Kelly</label>
+        <div class="evo-seg" style="margin:4px 0 0;">
+          <button type="button" class="evo-opt" data-kf="0.125">⅛ Kelly</button>
+          <button type="button" class="evo-opt active" data-kf="0.25">¼ Kelly</button>
+          <button type="button" class="evo-opt" data-kf="0.5">½ Kelly</button>
+        </div>
+        <div class="meta-out" id="mtOut"></div>
+        <div id="mtNota"></div>
+      </div>
+    </details>
+
+    <!-- ===== ESCADA ===== -->
+    <details class="fold">
+      <summary>📐 Escada de stake por odd<span class="chev">▸</span></summary>
+      <div class="fold-body">
+        <details class="help">
+          <summary>por que a stake cai com a odd</summary>
+          <div class="help-body">Kelly manda <b>stake &prop; 1/(odd&minus;1)</b>: para o mesmo edge, quanto maior a odd, menor a entrada. Com stake fixa, o desvio por aposta quase dobra da odd 2 para a odd 5 — a escada corrige isso. A âncora é sempre a entrada na <b>odd 2,00</b>. No regime <b>risco constante</b> (stake = âncora ÷ √(odd−1)) você arrisca o mesmo em toda odd: é o meio-termo para quando não se confia que o edge seja igual em toda faixa.</div>
+        </details>
+        <div class="evo-seg" style="margin:0 0 8px;">
+          <button type="button" class="evo-opt active" data-esc="1">Kelly</button>
+          <button type="button" class="evo-opt" data-esc="0.5">Risco constante</button>
+        </div>
+        <div class="grid3">
+          <div><label>Âncora @ odd 2,00 (R$)</label><input type="number" id="escAnc" step="10" min="1"></div>
+          <div><label>Teto (R$)</label><input type="number" id="escTeto" step="10" min="1"></div>
+          <div><label>Piso (R$)</label><input type="number" id="escPiso" step="5" min="1"></div>
+        </div>
+        <div id="escTabela"></div>
+      </div>
+    </details>
 
   </div><!-- /tab-vbet -->
 
@@ -1068,7 +1211,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260909-2222';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260911-1114';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3583,20 +3726,23 @@
     renderSugestao();
     const r=vbCompute();
     const box=$('vbResult');
-    if(!r){ box.innerHTML='<span style="color:var(--muted)">Preencha a odd e o stake para ver o retorno.</span>'; return; }
+    if(!r){ box.innerHTML='<span class="hint" style="margin:0;">Preencha a odd e o stake para ver o retorno.</span>'; return; }
     const casa=$('vbHouse').value.trim()||'Casa';
-    let evLine='';
+    const linhas=['<b>'+esc(casa)+'</b> @'+r.odd.toFixed(2)+' · entrada <b>'+fmtCur(r.stake/r.fat,r.cur)+'</b>'+
+                  (r.cur!=='BRL'?' ≈ '+fmt(r.stake):'')];
     if(r.ev!==null){
       const cor=r.ev>=0?'var(--green)':'var(--red)';
-      evLine='<br><span style="color:var(--muted-2)">Prob '+r.prob+'% × odd '+r.odd.toFixed(2)+' → EV </span><span style="color:'+cor+'">'+(r.ev>=0?'+':'')+r.ev.toFixed(1)+'%</span>';
+      linhas.push('prob '+r.prob+'% × odd '+r.odd.toFixed(2)+' → EV <b style="color:'+cor+'">'+(r.ev>=0?'+':'')+r.ev.toFixed(1)+'%</b>');
     }
+    const le=escLine(r); if(le) linhas.push(le);
     box.innerHTML=
-      '<div style="font-family:var(--mono);font-size:13px;line-height:1.85;">'+
-      '<b>'+esc(casa)+'</b> @'+r.odd.toFixed(2)+' · aposta <b>'+fmtCur(r.stake/r.fat,r.cur)+'</b>'+
-      (r.cur!=='BRL'?' <span style="color:var(--muted-2)">≈ '+fmt(r.stake)+'</span>':'')+'<br>'+
-      '<span style="color:var(--green)">Se GREEN: retorno '+fmt(r.retorno)+' · lucro '+fmtSign(r.lucro)+'</span><br>'+
-      '<span style="color:var(--red)">Se RED: perde '+fmt(r.stake)+'</span>'+evLine+escLine(r)+
-      '</div>';
+      '<div class="vb-outcome">'+
+        '<div class="vb-out g"><div class="k">Se green</div><div class="v">'+fmtSign(r.lucro)+'</div>'+
+          '<div class="s">retorno '+fmt(r.retorno)+'</div></div>'+
+        '<div class="vb-out r"><div class="k">Se red</div><div class="v">−'+fmt(r.stake)+'</div>'+
+          '<div class="s">perde a entrada</div></div>'+
+      '</div>'+
+      '<div class="vb-line">'+linhas.join('<br>')+'</div>';
   }
 
   // compara a entrada digitada com o que a escada mandaria naquela odd
@@ -3604,9 +3750,9 @@
     const alvo=escadaStake(r.odd);
     if(!alvo) return '';
     const dif=r.stake/alvo;
-    if(dif>1.25) return '<br><span style="color:var(--amber)">Escada nesta odd: '+fmt(alvo)+' — você está '+dif.toFixed(1)+'x acima</span>';
-    if(dif<0.75) return '<br><span style="color:var(--muted-2)">Escada nesta odd: '+fmt(alvo)+' — você está abaixo</span>';
-    return '<br><span style="color:var(--muted-2)">Escada nesta odd: '+fmt(alvo)+' ✓</span>';
+    if(dif>1.25) return '<span style="color:var(--amber)">escada nesta odd '+fmt(alvo)+' — você está '+dif.toFixed(1)+'× acima</span>';
+    if(dif<0.75) return 'escada nesta odd '+fmt(alvo)+' — você está abaixo';
+    return 'escada nesta odd '+fmt(alvo)+' <span style="color:var(--green)">✓</span>';
   }
 
   function vbResetCur(){
@@ -3733,10 +3879,9 @@
     const p=med/100, oddJusta=1/p;
     pjLast={p, oddJusta};
 
-    let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
-    html+='<span style="color:var(--muted-2);font-size:11px;">VOCÊ PRECISA DE ODD MAIOR QUE</span><br>'+
-          '<b style="color:var(--sky);font-size:20px;">'+oddJusta.toFixed(2)+'</b>'+
-          ' <span style="color:var(--muted-2)">mediana '+med.toFixed(2)+'% · média '+media.toFixed(2)+'%</span><br>';
+    let html='<div class="pj-hero"><span class="k">Odd mínima</span><span class="v">'+oddJusta.toFixed(2)+'</span>'+
+             '<span class="s">mediana '+med.toFixed(2)+'% · média '+media.toFixed(2)+'%</span></div>';
+    html+='<div class="vb-line">';
     html+='<span style="color:var(--muted-2)">'+vals.length+' linhas → <b>'+ind.length+' opiniões</b>'+
           (dup>0?' <span style="color:var(--amber)">('+dup+' repetiam probabilidade idêntica: mesmo feed, um voto só)</span>':'')+
           '</span><br>';
@@ -3773,10 +3918,9 @@
     const qa=1/oA, qb=1/oB, tot=qa+qb;
     const p=qa/tot, oddJusta=1/p, over=(tot-1)*100;
     pjLast={p, oddJusta};
-    let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
-    html+='<span style="color:var(--muted-2);font-size:11px;">VOCÊ PRECISA DE ODD MAIOR QUE</span><br>'+
-          '<b style="color:var(--sky);font-size:20px;">'+oddJusta.toFixed(2)+'</b>'+
-          ' <span style="color:var(--muted-2)">chance justa '+(p*100).toFixed(2)+'%</span><br>';
+    let html='<div class="pj-hero"><span class="k">Odd mínima</span><span class="v">'+oddJusta.toFixed(2)+'</span>'+
+             '<span class="s">chance justa '+(p*100).toFixed(2)+'%</span></div>';
+    html+='<div class="vb-line">';
     // a margem do par é o termômetro de qualidade do mercado
     let cor,txt;
     if(over<0){ cor='var(--green)'; txt='margem do par '+over.toFixed(2)+'% — negativa: as duas pontas juntas já são uma surebet, mercado bem coberto'; }
@@ -3815,14 +3959,13 @@
     const oddJusta=1/pFinal;
     pjLast={p:pFinal, oddJusta, w};
 
-    let html='<div style="font-family:var(--mono);font-size:12.5px;line-height:1.85;">';
     // o número que decide: a odd mínima para a aposta valer a pena.
     // É a odd da régua devolvendo a margem dela — bater só a odd de tela não basta.
     const acima=(oddJusta/oS-1)*100;
-    html+='<span style="color:var(--muted-2);font-size:11px;">VOCÊ PRECISA DE ODD MAIOR QUE</span><br>'+
-          '<b style="color:var(--sky);font-size:20px;">'+oddJusta.toFixed(2)+'</b>'+
-          ' <span style="color:var(--muted-2)">= '+oS.toFixed(3)+' da régua '+(acima>=0?'+':'')+'<b>'+acima.toFixed(1)+'%</b></span><br>'+
-          '<span style="color:var(--muted-2)">chance justa '+(pFinal*100).toFixed(2)+'%'+
+    let html='<div class="pj-hero"><span class="k">Odd mínima</span><span class="v">'+oddJusta.toFixed(2)+'</span>'+
+             '<span class="s">= '+oS.toFixed(3)+' da régua '+(acima>=0?'+':'')+acima.toFixed(1)+'%</span></div>';
+    html+='<div class="vb-line">'+
+          '<span>chance justa '+(pFinal*100).toFixed(2)+'%'+
           (pC!==null&&w<0.999
             ? ' = '+(w*100).toFixed(0)+'% régua ('+(pS*100).toFixed(2)+'%) + '+((1-w)*100).toFixed(0)+'% mole ('+(pC*100).toFixed(2)+'%)'
             : ' — só a régua, sem a margem de '+mS.toFixed(2)+'%')+
@@ -3849,12 +3992,7 @@
         cor='#F87171';
         // Duas explicações, e elas levam a decisões opostas. A margem da régua ajuda a separar:
         // margem baixa aponta para erro de pareamento; margem alta aponta para régua fraca.
-        veredito='<b>divergência de '+abs.toFixed(1)+' pp</b> — decida entre duas causas:<br>'+
-          '&nbsp;&nbsp;<b>a)</b> não é o mesmo mercado (linha, período ou tempo diferente) → descartar<br>'+
-          '&nbsp;&nbsp;<b>b)</b> é o mesmo mercado e a régua é que não sabe precificar → o valor pode ser real<br>'+
-          '&nbsp;&nbsp;<span style="color:var(--muted-2)">nomes de time variam muito entre casas e não indicam jogo diferente. '+
-          'O que separa (a) de (b) é a <b>margem</b> e o <b>limite</b> da régua: margem baixa e limite alto = confie nela e descarte; '+
-          'margem alta e limite baixo = ela está se protegendo, e quem manda é o consenso.</span>';
+        veredito='<b>divergência de '+abs.toFixed(1)+' pp</b> — ou não é o mesmo mercado (descartar), ou a régua é que não sabe precificar (o valor pode ser real). Veja o "?" acima para separar os dois casos.';
       }
       html+='<span style="color:'+cor+'">Casa mole diz '+(pC*100).toFixed(2)+'% · distância '+(gap>=0?'+':'')+gap.toFixed(2)+' pp — '+veredito+'</span><br>';
     }
@@ -3965,24 +4103,23 @@
     }));
     const maxSd=Math.max.apply(null,linhas.map(l=>Math.max(l.sdEsc,l.sdFlat)));
     $('escTabela').innerHTML=
-      '<div class="cal-line" style="display:grid;grid-template-columns:46px 74px 1fr 66px;gap:6px;color:var(--muted-2);font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;margin-top:6px;">'+
-        '<span>odd</span><span style="text-align:right">stake</span><span>risco por aposta (±desvio)</span><span style="text-align:right">se fixa</span></div>'+
+      '<div class="esc-row head"><span>odd</span><span style="text-align:right">stake</span>'+
+        '<span>risco por aposta</span><span style="text-align:right">se fixa</span></div>'+
       linhas.map(l=>
-        '<div class="cal-line" style="display:grid;grid-template-columns:46px 74px 1fr 66px;gap:6px;align-items:center;">'+
-          '<span><b>'+l.o.toFixed(2)+'</b></span>'+
-          '<span style="text-align:right;color:var(--sky)"><b>'+fmt(l.st).replace('R$ ','R$')+'</b></span>'+
-          '<span class="prog" style="margin:0;" title="±'+fmt(l.sdEsc)+'"><i style="width:'+(100*l.sdEsc/maxSd).toFixed(0)+'%"></i></span>'+
-          '<span style="text-align:right;color:var(--muted-2);font-size:10.5px;">±'+fmt(l.sdFlat).replace('R$ ','R$')+'</span>'+
+        '<div class="esc-row">'+
+          '<span>'+l.o.toFixed(2)+'</span>'+
+          '<span class="st">'+fmt(l.st).replace('R$ ','R$')+'</span>'+
+          '<span class="prog" style="margin:0;" title="\u00b1'+fmt(l.sdEsc)+'"><i style="width:'+(100*l.sdEsc/maxSd).toFixed(0)+'%"></i></span>'+
+          '<span class="flat">\u00b1'+fmt(l.sdFlat).replace('R$ ','R$')+'</span>'+
         '</div>').join('')+
-      '<div class="footnote" style="margin-top:8px;">'+
+      '<div class="hint" style="margin:12px 0 0;">'+
         (exp>=0.9
-          ? 'Regime <b>Kelly</b>: stake = âncora ÷ (odd−1). O risco por aposta <b>cai</b> conforme a odd sobe — a barra encurta. É o que maximiza crescimento <i>se</i> o edge for igual em todas as faixas.'
-          : 'Regime <b>risco constante</b>: stake = âncora ÷ √(odd−1). A barra fica reta — você arrisca o mesmo em toda odd. Meio-termo entre stake fixa e Kelly, para quando não se confia que o edge seja igual em toda faixa.')+
-        ' A coluna da direita é o desvio que você teria mantendo '+fmt(anc)+' <b>em toda odd</b>: '+
-        '±'+fmt(sdAposta(anc,2)).replace('R$ ','R$')+' na odd 2 contra ±'+fmt(sdAposta(anc,10)).replace('R$ ','R$')+' na odd 10.'+
-      '</div>'+
-      '<div class="footnote">Âncora de '+fmt(anc)+' na odd 2,00 = <b>¼ de Kelly sobre um edge de '+
-        (100*(anc*4/Math.max(1,banca))).toFixed(1)+'%</b> sobre a banca de '+fmt(banca)+'. Abaixo do que você mede hoje — que é a postura certa enquanto o edge não tem significância.</div>';
+          ? 'Regime <b>Kelly</b>: a barra encurta conforme a odd sobe.'
+          : 'Regime <b>risco constante</b>: a barra fica reta em toda odd.')+
+        ' \u00c2ncora de '+fmt(anc)+' = \u00bc de Kelly sobre um edge de '+
+        (100*(anc*4/Math.max(1,banca))).toFixed(1)+'% na banca de '+fmt(banca)+'.'+
+        ' A coluna da direita \u00e9 o desvio que voc\u00ea teria mantendo '+fmt(anc)+' em toda odd.'+
+      '</div>';
   }
   ['escAnc','escTeto','escPiso'].forEach(id=>$(id).addEventListener('input',()=>{
     const v=parseFloat($(id).value);
@@ -4036,11 +4173,10 @@
       item(expo>banca*0.6?'risco':'','Capital exposto/dia',fmt(expo),(100*expo/banca).toFixed(0)+'% da banca, se as apostas do dia ficarem abertas ao mesmo tempo')+
       item('','Lucro por aposta',fmt(stake*y),'desvio de '+fmt(sdBet)+' por aposta — '+(sdBet/(stake*y)).toFixed(0)+'x o lucro esperado');
     const avisos=[];
-    if(expo>banca*0.6) avisos.push('<b style="color:var(--amber)">O capital exposto passa de 60% da banca.</b> Só funciona se as apostas do dia não ficarem todas abertas ao mesmo tempo — distribua os horários.');
-    if(nDia>50) avisos.push('<b style="color:var(--amber)">'+nDia.toFixed(0)+' apostas por dia</b> é volume de operação automatizada. Sem feed filtrado, não fecha na mão.');
-    if(mtKf>=0.5) avisos.push('<b style="color:#F87171">½ Kelly com yield estimado é agressivo.</b> Se o yield real for metade do planejado, ½ Kelly vira Kelly cheio — o ponto onde o crescimento esperado zera.');
-    avisos.push('O yield de planejamento é a variável mais perigosa desta tela: metade dele dobra o volume exigido. Use o painel de calibração para substituí-lo por um número medido.');
-    $('mtNota').innerHTML=avisos.join('<br>');
+    if(expo>banca*0.6) avisos.push(['warn','<b>O capital exposto passa de 60% da banca.</b> Só funciona se as apostas do dia não ficarem todas abertas ao mesmo tempo — distribua os horários.']);
+    if(nDia>50) avisos.push(['warn','<b>'+nDia.toFixed(0)+' apostas por dia</b> é volume de operação automatizada. Sem feed filtrado, não fecha na mão.']);
+    if(mtKf>=0.5) avisos.push(['bad','<b>½ Kelly com yield estimado é agressivo.</b> Se o yield real for metade do planejado, ½ Kelly vira Kelly cheio — o ponto onde o crescimento esperado zera.']);
+    $('mtNota').innerHTML=avisos.map(a=>'<div class="insight '+a[0]+'" style="margin-top:8px;">'+a[1]+'</div>').join('');
   }
   function item(cls,k,v,s){ return '<div class="meta-item '+cls+'"><div class="k">'+k+'</div><div class="v">'+v+'</div><div class="s">'+s+'</div></div>'; }
   function normCdf(x){ return 0.5*(1+erf(x/Math.SQRT2)); }
@@ -4078,53 +4214,49 @@
 
   function renderCalibracao(){
     const box=$('calBox');
+    const row=(k,v)=>'<div class="cal-stat"><span class="k">'+k+'</span><span class="v">'+v+'</span></div>';
     const arr=valorBets().filter(o=>o.winner==='A'||o.winner==='RED');
-    // yield global observado, por R$1 apostado (estimador não-enviesado — não pondera por stake)
+    // yield global observado, por R$1 apostado (estimador nao-enviesado - nao pondera por stake)
     const rs=arr.map(o=>o.winner==='A'?legOdd(o,'A')-1:-1);
-    let globalHtml='';
+    let html='';
     if(rs.length>1){
       const m=rs.reduce((a,b)=>a+b,0)/rs.length;
       const sd=Math.sqrt(rs.reduce((a,b)=>a+(b-m)*(b-m),0)/rs.length);
       const se=sd/Math.sqrt(rs.length), t=se>0?m/se:0;
       const lo=(m-1.96*se)*100, hi=(m+1.96*se)*100;
       const nProva=y=>Math.ceil(Math.pow(2*sd/y,2));
-      globalHtml='<div class="cal-line" style="margin-bottom:10px;">'+
-        'Edge global por R$1 apostado: <b>'+(m>=0?'+':'')+(m*100).toFixed(2)+'%</b>'+
-        ' · IC95 <b>['+(lo>=0?'+':'')+lo.toFixed(1)+'% , '+(hi>=0?'+':'')+hi.toFixed(1)+'%]</b>'+
-        ' · t = <b>'+(t>=0?'+':'')+t.toFixed(2)+'</b> em '+rs.length+' apostas<br>'+
-        '<span style="color:'+(Math.abs(t)>1.96?'var(--green)':'var(--amber)')+'">'+
-        (Math.abs(t)>1.96?'Edge distinguível de zero.':'Ainda indistinguível de sorte — o IC cruza o zero.')+'</span>'+
-        ' Para provar 5% seriam '+nProva(0.05)+' apostas; 8%, '+nProva(0.08)+'.'+
-        '</div>';
+      const forte=Math.abs(t)>1.96;
+      html+=row('Edge global por R$1','<span style="color:'+(m>=0?'var(--green)':'var(--red)')+'">'+(m>=0?'+':'')+(m*100).toFixed(2)+'%</span>')+
+            row('IC95','['+(lo>=0?'+':'')+lo.toFixed(1)+'% , '+(hi>=0?'+':'')+hi.toFixed(1)+'%] <small>t '+(t>=0?'+':'')+t.toFixed(2)+' · '+rs.length+' apostas</small>')+
+            row('Para provar 5% / 8%',nProva(0.05)+' / '+nProva(0.08)+' <small>apostas</small>')+
+            '<div class="insight '+(forte?'good':'warn')+'" style="margin:10px 0;">'+
+              (forte?'Edge distinguível de zero.':'Ainda indistinguível de sorte — o IC cruza o zero.')+'</div>';
     }
     const c=calcCalibracao();
     const pct=Math.min(100,100*c.n/Math.max(1,c.total));
-    let html=globalHtml+
-      '<div class="cal-line">Apostas com odd de mercado registrada: <b>'+c.n+' de '+c.total+'</b> ('+pct.toFixed(0)+'%)</div>'+
-      '<div class="prog'+(pct<60?' pouco':'')+'"><i style="width:'+pct.toFixed(1)+'%"></i></div>';
+    html+=row('Odd de mercado registrada',c.n+' de '+c.total+' <small>('+pct.toFixed(0)+'%)</small>')+
+          '<div class="prog'+(pct<60?' pouco':'')+'"><i style="width:'+pct.toFixed(1)+'%"></i></div>';
     if(!c.ok){
-      html+='<div class="cal-line" style="color:var(--amber)">Sem amostra para calibrar. Preencha <b>Odd média do mercado</b> nas próximas entradas — e retroativamente pelo botão Editar nas que já existem.</div>';
+      html+='<div class="insight warn" style="margin-top:10px;">Sem amostra para calibrar. Preencha <b>Odd média do mercado</b> nas próximas entradas — e retroativamente pelo botão Editar nas que já existem.</div>';
       box.innerHTML=html; return;
     }
     const t=c.seBeta>0?c.beta/c.seBeta:0;
     const lo=c.beta-1.96*c.seBeta, hi=c.beta+1.96*c.seBeta;
     const prog=Math.min(100,100*c.n/c.nNec);
-    let leitura;
-    if(Math.abs(t)<2) leitura='<span style="color:var(--amber)">Amostra insuficiente para concluir.</span> O intervalo ainda cabe tanto "filtro honesto" quanto "sinal inútil".';
-    else if(c.beta>=0.8) leitura='<span style="color:var(--green)">Filtro honesto:</span> quase todo o edge anunciado se realiza.';
-    else if(c.beta>=0.3) leitura='<span style="color:var(--amber)">Filtro parcial:</span> use <b>'+(c.beta*100).toFixed(0)+'%</b> da supervalorização anunciada como edge real no dimensionamento.';
-    else if(c.beta>=0) leitura='<span style="color:#F87171">Filtro sem poder:</span> a supervalorização anunciada quase não prevê o resultado.';
-    else leitura='<span style="color:#F87171">Sinal invertido:</span> quanto maior a supervalorização, pior o resultado — é a marca da linha desatualizada.';
-    html+=
-      '<div class="cal-line" style="margin-top:8px;">'+
-        'β = <b>'+c.beta.toFixed(2)+'</b> ± '+c.seBeta.toFixed(2)+' · IC95 [<b>'+lo.toFixed(2)+'</b> , <b>'+hi.toFixed(2)+'</b>] · t = '+t.toFixed(2)+'<br>'+
-        'α = '+(c.alfa*100).toFixed(1)+'% (custo fixo por aposta, independente do edge anunciado)<br>'+
-        'supervalorização média da amostra: '+(c.mx*100).toFixed(1)+'% · dispersão '+(c.sdSv*100).toFixed(1)+' pp<br>'+
-        leitura+
-      '</div>'+
-      '<div class="cal-line" style="margin-top:8px;color:var(--muted-2)">Amostra para medir β com t=2: <b>'+c.nNec+'</b> apostas ('+c.n+' feitas, '+prog.toFixed(0)+'%)</div>'+
-      '<div class="prog'+(prog<60?' pouco':'')+'"><i style="width:'+prog.toFixed(1)+'%"></i></div>'+
-      '<div class="footnote" style="margin-top:8px;">A dispersão da supervalorização é o que dá poder ao teste: aceitar <b>só</b> entradas de 8–12% torna β quase impossível de medir. Variar de propósito entre 3% e 25% reduz a amostra necessária.</div>';
+    let tipo,leitura;
+    if(Math.abs(t)<2){ tipo='warn'; leitura='<b>Amostra insuficiente para concluir.</b> O intervalo ainda cabe tanto "filtro honesto" quanto "sinal inútil".'; }
+    else if(c.beta>=0.8){ tipo='good'; leitura='<b>Filtro honesto:</b> quase todo o edge anunciado se realiza.'; }
+    else if(c.beta>=0.3){ tipo='warn'; leitura='<b>Filtro parcial:</b> use <b>'+(c.beta*100).toFixed(0)+'%</b> da supervalorização anunciada como edge real no dimensionamento.'; }
+    else if(c.beta>=0){ tipo='bad'; leitura='<b>Filtro sem poder:</b> a supervalorização anunciada quase não prevê o resultado.'; }
+    else { tipo='bad'; leitura='<b>Sinal invertido:</b> quanto maior a supervalorização, pior o resultado — é a marca da linha desatualizada.'; }
+    html+='<div style="height:12px;"></div>'+
+      row('β — edge real / anunciado',c.beta.toFixed(2)+' <small>± '+c.seBeta.toFixed(2)+'</small>')+
+      row('IC95','['+lo.toFixed(2)+' , '+hi.toFixed(2)+'] <small>t '+t.toFixed(2)+'</small>')+
+      row('α — custo fixo por aposta',(c.alfa*100).toFixed(1)+'%')+
+      row('Supervalorização média',(c.mx*100).toFixed(1)+'% <small>dispersão '+(c.sdSv*100).toFixed(1)+' pp</small>')+
+      '<div class="insight '+tipo+'" style="margin:10px 0;">'+leitura+'</div>'+
+      row('Amostra para β com t=2',c.n+' de '+c.nNec+' <small>('+prog.toFixed(0)+'%)</small>')+
+      '<div class="prog'+(prog<60?' pouco':'')+'"><i style="width:'+prog.toFixed(1)+'%"></i></div>';
     box.innerHTML=html;
   }
 
@@ -4141,15 +4273,13 @@
     const avgOdd=all.length?all.reduce((s,o)=>s+legOdd(o,'A'),0)/all.length:0;
     const openVol=open.reduce((s,o)=>s+legStake(o,'A'),0);
 
-    $('vbTotalHead').innerHTML=open.length?'<span style="color:var(--amber)">⏳ '+fmt(openVol)+' em aberto</span>':'';
+    $('vbTotalHead').textContent=open.length?'⏳ '+open.length+' aberta'+(open.length>1?'s':'')+' · '+fmt(openVol):'';
     $('vbProfit').textContent=done.length?fmtSign(profit):'—';
     $('vbProfit').className='v '+(profit>=0?'pos':'neg');
     $('vbYield').textContent=volume>0?(yld>=0?'+':'')+yld.toFixed(2)+'%':'—';
     $('vbYield').className='v '+(yld>=0?'pos':'neg');
     $('vbHit').textContent=done.length?hit.toFixed(1)+'%':'—';
-    $('vbCount').innerHTML=all.length
-      ? greens.length+'G / '+(done.length-greens.length)+'R'+(open.length?' · <span style="color:var(--amber)">'+open.length+' aberta'+(open.length>1?'s':'')+'</span>':'')
-      : '—';
+    $('vbCount').textContent=all.length?greens.length+'G / '+(done.length-greens.length)+'R':'—';
     $('vbVolume').textContent=volume>0?fmt(volume):'—';
     $('vbAvgOdd').textContent=avgOdd?avgOdd.toFixed(2):'—';
   }
@@ -4207,7 +4337,9 @@
         '</div>'+
       '</div>';
     }).join('')+
-    '<div class="footnote" style="margin-top:6px;">O ponto <span style="color:var(--amber)">•</span> marca segmentos com menos de 5 apostas — amostra pequena demais para conclusão.</div>';
+    (linhas.some(l=>l.n<5)
+      ? '<div class="hint" style="margin:10px 0 0;"><span style="color:var(--amber)">•</span> menos de 5 apostas — amostra pequena demais para conclusão.</div>'
+      : '');
   }
   document.querySelectorAll('[data-seg]').forEach(b=>b.addEventListener('click',()=>{ vbSegBy=b.dataset.seg; renderValorSegments(); }));
 
