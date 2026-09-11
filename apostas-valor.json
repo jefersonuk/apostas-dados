@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 3063.6,
-      "updatedAt": "2026-09-10T15:37:12.278Z"
+      "value": 2863.6,
+      "updatedAt": "2026-09-11T12:25:37.587Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 940,
+      "value": 1140,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T11:48:40.434Z"
+      "updatedAt": "2026-09-11T12:25:37.587Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17361,6 +17361,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T11:48:40.429Z"
+    },
+    {
+      "id": "mtwxj6eqi1y7y",
+      "kind": "valor",
+      "event": "SCM Politehnica Timisoara x HC Buzau (under 55.5)",
+      "houseA": "Pinnacle",
+      "oddA": 2.21,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Handebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.91,
+      "prob": 49.9,
+      "winner": null,
+      "date": "2026-09-11T14:00",
+      "total": 200,
+      "lucroA": 242,
+      "lucroRed": -200,
+      "lucro": 242,
+      "roi": 121,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T12:25:37.587Z"
     }
   ],
   "invertidos": [],
@@ -17527,5 +17551,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T12:19:36.483Z"
+  "updatedAt": "2026-09-11T12:25:37.587Z"
 }
