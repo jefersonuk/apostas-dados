@@ -4548,8 +4548,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 2288.88,
-      "updatedAt": "2026-09-11T19:48:59.554Z"
+      "value": 2658.88,
+      "updatedAt": "2026-09-11T19:50:15.054Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2421.62,
+      "value": 2221.61,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T19:50:09.620Z"
+      "updatedAt": "2026-09-11T19:50:15.055Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17601,7 +17601,7 @@
       "market": "Total de Pontos",
       "oddMkt": 1.6,
       "prob": 59.5,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-11T19:40",
       "total": 200,
       "lucroA": 170.00000000000003,
@@ -17609,9 +17609,10 @@
       "lucro": 170.00000000000003,
       "roi": 85.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-11T13:37:45.823Z"
+      "updatedAt": "2026-09-11T19:50:15.054Z"
     },
     {
       "id": "mtx09gc3gctqc",
@@ -18045,5 +18046,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T19:50:09.620Z"
+  "updatedAt": "2026-09-11T19:50:15.055Z"
 }
