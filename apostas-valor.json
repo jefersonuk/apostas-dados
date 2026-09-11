@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3168.62,
+      "value": 3372.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T20:55:22.990Z"
+      "updatedAt": "2026-09-11T21:00:50.733Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4717,8 +4717,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 428.56,
-      "updatedAt": "2026-09-10T19:03:58.654Z",
+      "value": 388.56,
+      "updatedAt": "2026-09-11T21:00:50.724Z",
       "currency": "USD"
     },
     {
@@ -17933,6 +17933,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T20:55:22.989Z"
+    },
+    {
+      "id": "mtxfxr4ykto60",
+      "kind": "valor",
+      "event": "Hanwha Life Esports v T1 (map 3 under 17.5 kills 1)",
+      "houseA": "Cloudbet",
+      "oddA": 1.8,
+      "stakeA": 204,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-12T03:00",
+      "total": 204,
+      "lucroA": 163.20000000000002,
+      "lucroRed": -204,
+      "lucro": 163.20000000000002,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T21:00:50.726Z"
     }
   ],
   "invertidos": [],
@@ -18099,5 +18123,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T20:55:22.990Z"
+  "updatedAt": "2026-09-11T21:00:50.733Z"
 }
