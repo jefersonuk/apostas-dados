@@ -4625,9 +4625,9 @@
     {
       "id": "msqr1ktlw3015",
       "name": "Sxbet",
-      "value": 108.53,
+      "value": 78.53,
       "currency": "USD",
-      "updatedAt": "2026-09-08T16:07:19.123Z"
+      "updatedAt": "2026-09-11T20:55:22.989Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3015.62,
+      "value": 3168.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T20:51:02.568Z"
+      "updatedAt": "2026-09-11T20:55:22.990Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17909,6 +17909,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T20:51:02.564Z"
+    },
+    {
+      "id": "mtxfqq98weksj",
+      "kind": "valor",
+      "event": "Villanova vs Louisville Cardinals (1st half H1 + 20.5)",
+      "houseA": "SxBet",
+      "oddA": 2.61,
+      "stakeA": 153,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 2,
+      "prob": 47.6,
+      "winner": null,
+      "date": "2026-09-11T20:00",
+      "total": 153,
+      "lucroA": 246.32999999999998,
+      "lucroRed": -153,
+      "lucro": 246.32999999999998,
+      "roi": 161,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T20:55:22.989Z"
     }
   ],
   "invertidos": [],
@@ -18075,5 +18099,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T20:51:02.568Z"
+  "updatedAt": "2026-09-11T20:55:22.990Z"
 }
