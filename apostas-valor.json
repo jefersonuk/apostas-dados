@@ -4760,7 +4760,7 @@
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
       "value": 75.65,
-      "updatedAt": "2026-09-11T13:57:41.041Z",
+      "updatedAt": "2026-09-11T14:37:10.625Z",
       "currency": "USD"
     },
     {
@@ -17697,7 +17697,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-11T13:57:41.041Z"
+      "updatedAt": "2026-09-11T14:37:10.625Z"
     },
     {
       "id": "mtx1rhy1t9tap",
@@ -17888,5 +17888,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T14:24:25.702Z"
+  "updatedAt": "2026-09-11T14:37:10.625Z"
 }
