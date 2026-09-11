@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0.69,
+      "value": -249.31,
       "currency": "BRL",
-      "updatedAt": "2026-09-08T19:19:10.742Z"
+      "updatedAt": "2026-09-11T11:40:34.865Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 440,
+      "value": 690,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T11:02:29.718Z"
+      "updatedAt": "2026-09-11T11:40:34.870Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 487.9,
+      "value": 478,
       "currency": "EUR",
-      "updatedAt": "2026-09-10T19:48:06.520Z"
+      "updatedAt": "2026-09-11T11:24:56.251Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -17313,6 +17313,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-11T11:02:29.717Z"
+    },
+    {
+      "id": "mtwvx8z5yu4nm",
+      "kind": "valor",
+      "event": "Leipzig – Gotha (1set over 43.5)",
+      "houseA": "Ivibet",
+      "oddA": 1.98,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "Total de Pontos",
+      "oddMkt": 1.51,
+      "prob": 63.1,
+      "winner": null,
+      "date": "2026-09-12T14:00",
+      "total": 250,
+      "lucroA": 245,
+      "lucroRed": -250,
+      "lucro": 245,
+      "roi": 98,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T11:40:34.865Z"
     }
   ],
   "invertidos": [],
@@ -17479,5 +17503,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T11:24:30.178Z"
+  "updatedAt": "2026-09-11T11:40:34.870Z"
 }
