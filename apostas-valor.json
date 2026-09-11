@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3372.62,
+      "value": 3609.02,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T21:00:50.733Z"
+      "updatedAt": "2026-09-11T21:06:49.652Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 494,
+      "value": 454,
       "currency": "EUR",
-      "updatedAt": "2026-09-11T20:33:25.717Z"
+      "updatedAt": "2026-09-11T21:06:49.639Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -17957,6 +17957,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T21:00:50.726Z"
+    },
+    {
+      "id": "mtxg5g2uswbw5",
+      "kind": "valor",
+      "event": "Racing Club Warwick vs. Anstey Nomads (under 4)",
+      "houseA": "Sportmarket",
+      "oddA": 1.684,
+      "stakeA": 236.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.43,
+      "prob": 66.6,
+      "winner": null,
+      "date": "2026-09-12T11:00",
+      "total": 236.4,
+      "lucroA": 161.6976,
+      "lucroRed": -236.4,
+      "lucro": 161.6976,
+      "roi": 68.39999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T21:06:49.642Z"
     }
   ],
   "invertidos": [],
@@ -18123,5 +18147,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T21:00:50.733Z"
+  "updatedAt": "2026-09-11T21:06:49.652Z"
 }
