@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2863.6,
-      "updatedAt": "2026-09-11T12:25:37.587Z"
+      "value": 2663.6,
+      "updatedAt": "2026-09-11T13:16:07.688Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1970.87,
+      "value": 2170.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:11:56.565Z"
+      "updatedAt": "2026-09-11T13:16:07.688Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17505,6 +17505,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:11:56.564Z"
+    },
+    {
+      "id": "mtwzc4g8l85cb",
+      "kind": "valor",
+      "event": "Gyori ETO KC x Ferencvarosi TC (under 60.5)",
+      "houseA": "Pinnacle",
+      "oddA": 2,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Handebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.72,
+      "prob": 55.4,
+      "winner": null,
+      "date": "2026-09-11T13:00",
+      "total": 200,
+      "lucroA": 200,
+      "lucroRed": -200,
+      "lucro": 200,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:16:07.688Z"
     }
   ],
   "invertidos": [],
@@ -17671,5 +17695,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:11:56.565Z"
+  "updatedAt": "2026-09-11T13:16:07.688Z"
 }
