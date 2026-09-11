@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3540.65,
+      "value": 3918.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T14:24:04.250Z"
+      "updatedAt": "2026-09-11T14:48:51.764Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4675,9 +4675,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 556.7,
+      "value": 492.7,
       "currency": "EUR",
-      "updatedAt": "2026-09-11T13:32:15.365Z"
+      "updatedAt": "2026-09-11T14:48:51.757Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -17722,6 +17722,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T14:24:04.249Z"
+    },
+    {
+      "id": "mtx2ndpoo7yah",
+      "kind": "valor",
+      "event": "FC Sejong vs. Jinju Citizen FC (h2 -1)",
+      "houseA": "Sportmarket",
+      "oddA": 2.63,
+      "stakeA": 378.24,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.2,
+      "prob": 43.3,
+      "winner": null,
+      "date": "2026-09-12T04:00",
+      "total": 378.24,
+      "lucroA": 616.5312,
+      "lucroRed": -378.24,
+      "lucro": 616.5312,
+      "roi": 163,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T14:48:51.758Z"
     }
   ],
   "invertidos": [],
@@ -17888,5 +17912,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T14:43:03.518Z"
+  "updatedAt": "2026-09-11T14:48:51.765Z"
 }
