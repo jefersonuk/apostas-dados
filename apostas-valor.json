@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2463.6,
-      "updatedAt": "2026-09-11T13:34:24.610Z"
+      "value": 2313.6,
+      "updatedAt": "2026-09-11T13:50:24.372Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2944.87,
+      "value": 3094.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:44:55.396Z"
+      "updatedAt": "2026-09-11T13:50:24.372Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17650,6 +17650,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:44:55.395Z"
+    },
+    {
+      "id": "mtx0k7ecsh2f7",
+      "kind": "valor",
+      "event": "Luca Castelnuovo x Ilya Ivashka (H1 + 4,5)",
+      "houseA": "Pinnacle",
+      "oddA": 1.819,
+      "stakeA": 150,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-11T23:00",
+      "total": 150,
+      "lucroA": 122.85,
+      "lucroRed": -150,
+      "lucro": 122.85,
+      "roi": 81.89999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:50:24.372Z"
     }
   ],
   "invertidos": [],
@@ -17816,5 +17840,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:44:55.396Z"
+  "updatedAt": "2026-09-11T13:50:24.372Z"
 }
