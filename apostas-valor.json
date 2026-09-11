@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1290,
+      "value": 1417.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T12:34:06.070Z"
+      "updatedAt": "2026-09-11T12:36:56.698Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4710,8 +4710,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 149.7,
-      "updatedAt": "2026-09-11T11:02:29.717Z",
+      "value": 124.7,
+      "updatedAt": "2026-09-11T12:36:56.698Z",
       "currency": "USD"
     },
     {
@@ -17409,6 +17409,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T12:34:06.069Z"
+    },
+    {
+      "id": "mtwxxqex4ghyi",
+      "kind": "valor",
+      "event": "Leyla Fiorella x Lourdes Ayala (H1 - 7.5 games)",
+      "houseA": "BCgame",
+      "oddA": 2.92,
+      "stakeA": 127.49999999999999,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.4,
+      "prob": 39.7,
+      "winner": null,
+      "date": "2026-09-11T11:00",
+      "total": 127.49999999999999,
+      "lucroA": 244.79999999999995,
+      "lucroRed": -127.49999999999999,
+      "lucro": 244.79999999999995,
+      "roi": 192,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T12:36:56.698Z"
     }
   ],
   "invertidos": [],
@@ -17575,5 +17599,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T12:34:06.070Z"
+  "updatedAt": "2026-09-11T12:36:56.698Z"
 }
