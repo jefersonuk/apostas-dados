@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3918.89,
+      "value": 4122.49,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T14:48:51.764Z"
+      "updatedAt": "2026-09-11T14:51:22.104Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4710,8 +4710,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 124.7,
-      "updatedAt": "2026-09-11T14:24:25.702Z",
+      "value": 84.7,
+      "updatedAt": "2026-09-11T14:51:22.103Z",
       "currency": "USD"
     },
     {
@@ -17746,6 +17746,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T14:48:51.758Z"
+    },
+    {
+      "id": "mtx2qlpz92kl3",
+      "kind": "valor",
+      "event": "Betboom Team x G2 Esports - Zorte under 12,5 kill mapa 1",
+      "houseA": "Bcgame",
+      "oddA": 2.32,
+      "stakeA": 203.6,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "Abates / Kills",
+      "oddMkt": 1.83,
+      "prob": 52,
+      "winner": null,
+      "date": "2026-09-12T06:00",
+      "total": 203.6,
+      "lucroA": 268.75199999999995,
+      "lucroRed": -203.6,
+      "lucro": 268.75199999999995,
+      "roi": 131.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T14:51:22.103Z"
     }
   ],
   "invertidos": [],
@@ -17912,5 +17936,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T14:48:51.765Z"
+  "updatedAt": "2026-09-11T14:51:22.104Z"
 }
