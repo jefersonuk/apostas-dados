@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2663.6,
-      "updatedAt": "2026-09-11T13:16:07.688Z"
+      "value": 2463.6,
+      "updatedAt": "2026-09-11T13:34:24.610Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2136.87,
+      "value": 2336.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T13:32:15.365Z"
+      "updatedAt": "2026-09-11T13:34:24.611Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -17554,6 +17554,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T13:29:41.260Z"
+    },
+    {
+      "id": "mtwzzmuah8jcr",
+      "kind": "valor",
+      "event": "BC Zalgiris Kaunas x Slask Wroclaw (H2 + 21)",
+      "houseA": "Pinnacle",
+      "oddA": 2.16,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.69,
+      "prob": 56.4,
+      "winner": null,
+      "date": "2026-09-11T13:30",
+      "total": 200,
+      "lucroA": 232.00000000000003,
+      "lucroRed": -200,
+      "lucro": 232.00000000000003,
+      "roi": 116.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T13:34:24.610Z"
     }
   ],
   "invertidos": [],
@@ -17720,5 +17744,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T13:32:15.365Z"
+  "updatedAt": "2026-09-11T13:34:24.611Z"
 }
