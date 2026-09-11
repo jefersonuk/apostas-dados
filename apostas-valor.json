@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 4143.54,
+      "value": 4347.54,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-11T15:27:41.868Z"
+      "updatedAt": "2026-09-11T15:33:32.254Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4759,8 +4759,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 75.65,
-      "updatedAt": "2026-09-11T14:37:10.625Z",
+      "value": 35.65,
+      "updatedAt": "2026-09-11T15:33:32.253Z",
       "currency": "USD"
     },
     {
@@ -17820,6 +17820,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-11T15:20:21.612Z"
+    },
+    {
+      "id": "mtx48tzx2b8ki",
+      "kind": "valor",
+      "event": "Ruma x Miadost NP (under 26.6 1st team)",
+      "houseA": "Betfury",
+      "oddA": 2.14,
+      "stakeA": 204,
+      "curA": "USD",
+      "sport": "Handebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.95,
+      "prob": 48.8,
+      "winner": null,
+      "date": "2026-09-11T13:00",
+      "total": 204,
+      "lucroA": 232.56000000000003,
+      "lucroRed": -204,
+      "lucro": 232.56000000000003,
+      "roi": 114.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-11T15:33:32.253Z"
     }
   ],
   "invertidos": [],
@@ -17986,5 +18010,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-11T15:27:41.868Z"
+  "updatedAt": "2026-09-11T15:33:32.254Z"
 }
