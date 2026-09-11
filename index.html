@@ -412,6 +412,17 @@
   .vb-line{font-family:var(--mono);font-size:11px;color:var(--muted-2);line-height:1.75;margin-top:8px;}
   .vb-line b{color:var(--text);}
 
+  /* preço justo: chips da coluna colada */
+  .pj-chips{display:flex;flex-wrap:wrap;gap:5px;margin:2px 0 6px;}
+  .pj-chips:empty{display:none;}
+  .pj-chip{font-family:var(--mono);font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:999px;
+           border:1px solid var(--border);background:#0E1116;color:var(--muted-2);cursor:pointer;
+           text-decoration:line-through;}
+  .pj-chip.on{border-color:#1A2C40;background:#0E1520;color:var(--sky);text-decoration:none;}
+  .pj-chip i{font-style:normal;opacity:.55;margin-left:3px;}
+  #pjColNota{margin:0 0 10px;}
+  #pjColNota:empty{display:none;}
+
   /* preço justo: número-herói */
   .pj-hero{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;}
   .pj-hero .k{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted-2);font-weight:800;}
@@ -870,15 +881,17 @@
         </details>
 
         <div class="evo-seg" style="margin:10px 0 6px;">
-          <button type="button" class="evo-opt active" data-pjmodo="col">Colar coluna</button>
+          <button type="button" class="evo-opt active" data-pjmodo="col">Colar da tela</button>
           <button type="button" class="evo-opt" data-pjmodo="par">2 melhores odds</button>
           <button type="button" class="evo-opt" data-pjmodo="regua">Régua sharp</button>
         </div>
 
         <div id="pjBlocoCol">
-          <label>Coluna "Probabilidade da casa de apostas"</label>
-          <textarea id="pjCol" rows="4" placeholder="39,18%&#10;46,41%&#10;48,58%&#10;48,56%&#10;..." style="width:100%;font-family:var(--mono);font-size:12.5px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:#0E1116;color:var(--text);resize:vertical;"></textarea>
-          <div class="hint">Essa coluna já vem sem a margem — o site faz o de-vig linha a linha. Aceita vírgula ou ponto, com ou sem %.</div>
+          <label>Cole a tela do surebet.com — a página inteira serve</label>
+          <textarea id="pjCol" rows="3" placeholder="Ctrl+A, Ctrl+C na página do valuebet e Ctrl+V aqui." style="width:100%;font-family:var(--mono);font-size:12.5px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:#0E1116;color:var(--text);resize:vertical;"></textarea>
+          <div id="pjColChips" class="pj-chips"></div>
+          <div id="pjColNota" class="hint"></div>
+          <div class="hint">Só entram números com <b>%</b>: odds, horários, placares e dinheiro ficam de fora sozinhos. De cada coluna percentual que sobrar, o site fica com a da <b>probabilidade da casa</b> — a mais próxima da odd que você vai apostar. Clique num valor para tirá-lo ou devolvê-lo ao cálculo.</div>
         </div>
 
         <div id="pjBlocoPar" style="display:none;">
@@ -1211,7 +1224,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260911-1114';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260911-1141';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3859,37 +3872,112 @@
     return '<span style="color:var(--muted-2)">'+txt+'</span><br>';
   }
 
+  /* ---------- modo "colar da tela": aceita a página inteira ----------
+     A coluna de probabilidade do surebet.com não dá para selecionar sozinha, então o
+     parser recebe lixo por volta e se vira:
+       1. só considera número seguido de % — odd, horário, placar e dinheiro não têm o símbolo;
+       2. descarta percentual com sinal (+8,5%), que é coluna de supervalorização, não de chance;
+       3. do que sobra fica com a janela ancorada em 100/odd da aposta — as casas quotam
+          probabilidade acima dela, então a coluna certa mora ali;
+       4. segundo passe pela mediana derruba percentual de outro evento na mesma janela.
+     Sem odd preenchida, cai para o aglomerado mais cheio. E todo valor vira chip clicável:
+     a decisão automática é sempre reversível na mão. */
+  let pjColFlip=new Set();        // valores que você inverteu na mão
+  let pjColTxt=null;              // texto já lido: mexeu no texto, zera as inversões
+
   function pjParseCol(txt){
-    return (txt.match(/\d+[.,]?\d*/g)||[])
-      .map(x=>parseFloat(x.replace(',','.')))
-      .filter(v=>isFinite(v)&&v>0&&v<100);
+    // sinal só conta colado no número (+8,5%): "Over 2.5 - 48,58%" é traço de separação,
+    // e derrubar a coluna inteira por causa dele seria pior que deixar passar uma supervalorização
+    const out=[], re=/([+\-−–])(\d{1,3}(?:[.,]\d+)?)\s*%|(\d{1,3}(?:[.,]\d+)?)\s*%/g;
+    let m;
+    while((m=re.exec(txt))!==null){
+      if(m[1]) continue;                                   // assinado: outra coluna
+      const v=parseFloat(m[3].replace(',','.'));
+      if(isFinite(v)&&v>0&&v<100) out.push(v);
+    }
+    return out;
   }
+
+  function pjMediana(a){ return a.length%2 ? a[(a.length-1)/2] : (a[a.length/2-1]+a[a.length/2])/2; }
+
+  // A odd onde você vai apostar é, por definição, a melhor do mercado: todas as casas
+  // quotam probabilidade ACIMA de 100/odd. Isso dá uma janela para a coluna certa sem
+  // precisar saber quantas outras colunas de % a página tem.
+  function pjJanelaDensa(ind,larg){
+    let melhor=[], i0=0;
+    for(let i=0;i<ind.length;i++){
+      while(ind[i]-ind[i0]>larg) i0++;
+      if(i-i0+1>melhor.length) melhor=ind.slice(i0,i+1);
+    }
+    return melhor;
+  }
+  function pjAuto(ind,oAp){
+    if(ind.length<3) return ind.slice();
+    let base=null;
+    if(oAp>1){
+      const a=100/oAp;
+      base=ind.filter(v=>v>=a-6 && v<=a*1.3+6);
+    }
+    if(!base||base.length<2) base=pjJanelaDensa(ind,14);   // sem odd: o aglomerado mais cheio
+    if(base.length<2) return ind.slice();
+    // segundo passe pela mediana: derruba percentual de outro evento que caiu na janela
+    const med=pjMediana(base);
+    const fino=base.filter(v=>Math.abs(v-med)<=10);
+    return fino.length>=2?fino:base;
+  }
+
   function pjRenderCol(){
     const box=$('pjResult');
-    const vals=pjParseCol($('pjCol').value);
+    const raw=$('pjCol').value;
+    if(raw!==pjColTxt){ pjColTxt=raw; pjColFlip.clear(); }
+    const brutos=pjParseCol(raw);
     const oAp=numBR($('pjOddA').value);
-    if(vals.length<2){ box.innerHTML='<span style="color:var(--muted)">Cole a coluna de probabilidade (pelo menos duas linhas).</span>'; pjLast=null; return; }
-    // linhas com a mesma probabilidade até a segunda casa são o mesmo feed: valem um voto
-    const grupos={};
-    vals.forEach(v=>{ const k=v.toFixed(2); (grupos[k]=grupos[k]||[]).push(v); });
-    const ind=Object.keys(grupos).map(parseFloat).sort((a,b)=>a-b);
-    const dup=vals.length-ind.length;
-    const med=(ind.length%2)?ind[(ind.length-1)/2]:(ind[ind.length/2-1]+ind[ind.length/2])/2;
-    const media=ind.reduce((a,b)=>a+b,0)/ind.length;
+    // mesma probabilidade até a segunda casa é o mesmo feed: vale um voto
+    const vezes={};
+    brutos.forEach(v=>{ const k=v.toFixed(2); vezes[k]=(vezes[k]||0)+1; });
+    const ind=Object.keys(vezes).map(parseFloat).sort((a,b)=>a-b);
+    const auto=new Set(pjAuto(ind,oAp).map(v=>v.toFixed(2)));
+    const usado=v=>{ const k=v.toFixed(2); return auto.has(k)!==pjColFlip.has(k); };
+
+    $('pjColChips').innerHTML=ind.map(v=>{
+      const k=v.toFixed(2), n=vezes[k];
+      return '<button type="button" class="pj-chip'+(usado(v)?' on':'')+'" data-pjv="'+k+'">'+
+             k.replace('.',',')+'%'+(n>1?'<i>×'+n+'</i>':'')+'</button>';
+    }).join('');
+
+    const ok=ind.filter(usado);
+    const fora=ind.length-ok.length;
+    $('pjColNota').innerHTML=ind.length
+      ? '<b>'+ok.length+'</b> opini'+(ok.length===1?'ão':'ões')+' no cálculo'+
+        (fora?' · <span style="color:var(--amber)">'+fora+' fora</span> (clique para incluir)':'')
+      : '';
+
+    if(!brutos.length){
+      box.innerHTML='<span style="color:var(--muted)">Nenhum percentual no texto colado. A coluna de probabilidade precisa vir com o símbolo %.</span>';
+      pjLast=null; return;
+    }
+    if(ok.length<2){
+      box.innerHTML='<span style="color:var(--muted)">Pelo menos duas opiniões — clique nos valores acima para escolher a coluna certa.</span>';
+      pjLast=null; return;
+    }
+
+    const dup=ok.reduce((a,v)=>a+vezes[v.toFixed(2)],0)-ok.length;
+    const med=pjMediana(ok);
+    const media=ok.reduce((a,b)=>a+b,0)/ok.length;
     const p=med/100, oddJusta=1/p;
     pjLast={p, oddJusta};
 
     let html='<div class="pj-hero"><span class="k">Odd mínima</span><span class="v">'+oddJusta.toFixed(2)+'</span>'+
              '<span class="s">mediana '+med.toFixed(2)+'% · média '+media.toFixed(2)+'%</span></div>';
     html+='<div class="vb-line">';
-    html+='<span style="color:var(--muted-2)">'+vals.length+' linhas → <b>'+ind.length+' opiniões</b>'+
+    html+='<span style="color:var(--muted-2)">'+ok.length+' opiniões'+
           (dup>0?' <span style="color:var(--amber)">('+dup+' repetiam probabilidade idêntica: mesmo feed, um voto só)</span>':'')+
           '</span><br>';
     // dispersão: consenso apertado é consenso confiável
-    const desvio=Math.sqrt(ind.reduce((a,b)=>a+(b-media)*(b-media),0)/ind.length);
-    const fora=ind.filter(v=>Math.abs(v-med)>3);
-    if(fora.length){
-      html+='<span style="color:var(--amber)">fora do consenso (&gt;3 pp da mediana): '+fora.map(v=>v.toFixed(2)+'%').join(', ')+
+    const desvio=Math.sqrt(ok.reduce((a,b)=>a+(b-media)*(b-media),0)/ok.length);
+    const longe=ok.filter(v=>Math.abs(v-med)>3);
+    if(longe.length){
+      html+='<span style="color:var(--amber)">fora do consenso (&gt;3 pp da mediana): '+longe.map(v=>v.toFixed(2)+'%').join(', ')+
             ' — a mediana já os ignora, mas veja se algum é o livro sharp</span><br>';
     }
     html+='<span style="color:'+(desvio<=1.5?'var(--green)':desvio<=3?'var(--muted-2)':'var(--amber)')+'">'+
@@ -3902,10 +3990,18 @@
       const st=escadaStake(oAp);
       if(st) html+='<span style="color:var(--muted-2)">Escada nesta odd: '+fmt(st)+'</span><br>';
       html+=pjLinhaLimite(oAp);
+    } else {
+      html+='<span style="color:var(--amber)">Preencha a odd que você vai apostar — é ela que separa a coluna de probabilidade das outras colunas de %.</span><br>';
     }
     html+='</div>';
     box.innerHTML=html;
   }
+  $('pjColChips').addEventListener('click',e=>{
+    const b=e.target.closest('[data-pjv]'); if(!b) return;
+    const k=b.dataset.pjv;
+    if(pjColFlip.has(k)) pjColFlip.delete(k); else pjColFlip.add(k);
+    pjRender();
+  });
 
   // MODO PAR: o preço justo sai das duas melhores odds do mercado, sem informar margem.
   // Nenhuma casa consegue ser a mais generosa nos dois lados, então o par das melhores
