@@ -4627,7 +4627,7 @@
       "name": "Sxbet",
       "value": 78.53,
       "currency": "USD",
-      "updatedAt": "2026-09-11T20:55:22.989Z"
+      "updatedAt": "2026-09-12T00:54:56.648Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -17933,7 +17933,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-11T20:55:22.989Z"
+      "updatedAt": "2026-09-12T00:54:56.648Z"
     },
     {
       "id": "mtxfxr4ykto60",
@@ -18148,5 +18148,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T00:23:47.237Z"
+  "updatedAt": "2026-09-12T00:54:56.649Z"
 }
