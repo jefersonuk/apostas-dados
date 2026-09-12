@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 426.75,
+      "value": 176.75,
       "currency": "BRL",
-      "updatedAt": "2026-09-12T10:55:46.233Z"
+      "updatedAt": "2026-09-12T12:35:32.910Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1563.2,
+      "value": 1813.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T12:24:06.433Z"
+      "updatedAt": "2026-09-12T12:35:32.915Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18073,6 +18073,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T12:24:06.430Z"
+    },
+    {
+      "id": "mtydbsfienvat",
+      "kind": "valor",
+      "event": "Almeida Garrett (Women) – Alavarium Love Tiles (Women) (H1 -6.5)",
+      "houseA": "Ivibet",
+      "oddA": 2.26,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "Handebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-12T12:00",
+      "total": 250,
+      "lucroA": 314.99999999999994,
+      "lucroRed": -250,
+      "lucro": 314.99999999999994,
+      "roi": 125.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T12:35:32.910Z"
     }
   ],
   "invertidos": [],
@@ -18239,5 +18263,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T12:32:34.931Z"
+  "updatedAt": "2026-09-12T12:35:32.915Z"
 }
