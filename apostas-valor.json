@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 176.75,
+      "value": 0.75,
       "currency": "BRL",
-      "updatedAt": "2026-09-12T12:35:32.910Z"
+      "updatedAt": "2026-09-12T12:47:40.043Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2069.2,
+      "value": 2245.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T12:45:10.328Z"
+      "updatedAt": "2026-09-12T12:47:40.045Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18121,6 +18121,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T12:45:10.327Z"
+    },
+    {
+      "id": "mtydrdhn3afyo",
+      "kind": "valor",
+      "event": "TSC Bačka Topola U19 – Crvena Zvezda U19 1X",
+      "houseA": "Ivibet",
+      "oddA": 2.25,
+      "stakeA": 176,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.85,
+      "prob": 51.5,
+      "winner": null,
+      "date": "2026-09-13T05:00",
+      "total": 176,
+      "lucroA": 220,
+      "lucroRed": -176,
+      "lucro": 220,
+      "roi": 125,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T12:47:40.044Z"
     }
   ],
   "invertidos": [],
@@ -18287,5 +18311,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T12:45:10.328Z"
+  "updatedAt": "2026-09-12T12:47:40.045Z"
 }
