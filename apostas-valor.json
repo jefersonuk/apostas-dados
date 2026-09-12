@@ -4508,8 +4508,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1405,
-      "updatedAt": "2026-09-12T11:46:40.102Z"
+      "value": 1205,
+      "updatedAt": "2026-09-12T21:52:36.797Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 376,
+      "value": 576,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T21:08:37.022Z"
+      "updatedAt": "2026-09-12T21:52:36.801Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18154,6 +18154,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T12:47:40.044Z"
+    },
+    {
+      "id": "mtyx86gtax8je",
+      "kind": "valor",
+      "event": "Canada x Porto Rico (H2 -1.5)",
+      "houseA": "Betnacional",
+      "oddA": 1.67,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-12T19:00",
+      "total": 200,
+      "lucroA": 134,
+      "lucroRed": -200,
+      "lucro": 134,
+      "roi": 67,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T21:52:36.798Z"
     }
   ],
   "invertidos": [],
@@ -18320,5 +18344,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T21:08:37.022Z"
+  "updatedAt": "2026-09-12T21:52:36.801Z"
 }
