@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1326.4,
+      "value": 1563.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T12:18:00.850Z"
+      "updatedAt": "2026-09-12T12:24:06.433Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4676,9 +4676,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 656.86,
+      "value": 616.86,
       "currency": "EUR",
-      "updatedAt": "2026-09-12T12:21:02.227Z"
+      "updatedAt": "2026-09-12T12:24:06.430Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -18035,6 +18035,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T11:46:40.103Z"
+    },
+    {
+      "id": "mtycx2qlh10r0",
+      "kind": "valor",
+      "event": "RB Bragantino U20 – EC Agua Santa U20 (H2 +2)",
+      "houseA": "Sportmarket",
+      "oddA": 2.18,
+      "stakeA": 236.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-12T15:00",
+      "total": 236.8,
+      "lucroA": 279.42400000000004,
+      "lucroRed": -236.8,
+      "lucro": 279.42400000000004,
+      "roi": 118.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T12:24:06.430Z"
     }
   ],
   "invertidos": [],
@@ -18201,5 +18225,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T12:22:12.583Z"
+  "updatedAt": "2026-09-12T12:24:06.433Z"
 }
