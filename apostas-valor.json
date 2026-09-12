@@ -4823,6 +4823,14 @@
       "time": "13:49",
       "note": "Rapha (casa) & Rodrigo (honorários)",
       "updatedAt": "2026-09-10T20:43:24.170Z"
+    },
+    {
+      "id": "mtyd7h4q43x5k",
+      "value": -2200,
+      "date": "2026-09-11",
+      "time": "09:15",
+      "note": "Retirada",
+      "updatedAt": "2026-09-12T12:32:11.642Z"
     }
   ],
   "caixa": [
@@ -18225,5 +18233,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T12:31:04.842Z"
+  "updatedAt": "2026-09-12T12:32:11.643Z"
 }
