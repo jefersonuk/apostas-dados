@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1813.2,
+      "value": 2069.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T12:35:32.915Z"
+      "updatedAt": "2026-09-12T12:45:10.328Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4718,8 +4718,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 388.56,
-      "updatedAt": "2026-09-11T21:00:50.724Z",
+      "value": 338.56,
+      "updatedAt": "2026-09-12T12:45:10.327Z",
       "currency": "USD"
     },
     {
@@ -18097,6 +18097,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T12:35:32.910Z"
+    },
+    {
+      "id": "mtydo5yvhed4r",
+      "kind": "valor",
+      "event": "ecioren Belediyesi Baglum – Gaziantep Basketbol H2(−2.5) 1ª metade",
+      "houseA": "Cloudbet",
+      "oddA": 1.9,
+      "stakeA": 256,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-12T10:00",
+      "total": 256,
+      "lucroA": 230.39999999999998,
+      "lucroRed": -256,
+      "lucro": 230.39999999999998,
+      "roi": 89.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T12:45:10.327Z"
     }
   ],
   "invertidos": [],
@@ -18263,5 +18287,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T12:35:32.915Z"
+  "updatedAt": "2026-09-12T12:45:10.328Z"
 }
