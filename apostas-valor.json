@@ -4508,8 +4508,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1205,
-      "updatedAt": "2026-09-12T22:29:35.325Z"
+      "value": 1539,
+      "updatedAt": "2026-09-12T23:48:45.474Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1479.6,
+      "value": 1279.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T22:27:28.408Z"
+      "updatedAt": "2026-09-12T23:48:45.477Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18167,7 +18167,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.4,
       "prob": 68,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-12T19:00",
       "total": 200,
       "lucroA": 134,
@@ -18175,9 +18175,10 @@
       "lucro": 134,
       "roi": 67,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-12T22:29:35.325Z"
+      "updatedAt": "2026-09-12T23:48:45.475Z"
     },
     {
       "id": "mtyxd4h5lwkpr",
@@ -18440,5 +18441,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T22:29:35.325Z"
+  "updatedAt": "2026-09-12T23:48:45.477Z"
 }
