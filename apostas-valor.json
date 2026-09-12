@@ -4508,8 +4508,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1505,
-      "updatedAt": "2026-09-11T17:29:34.883Z"
+      "value": 1405,
+      "updatedAt": "2026-09-12T11:00:37.580Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4639,10 +4639,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1634,
+      "value": 1734,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T10:55:46.235Z"
+      "updatedAt": "2026-09-12T11:00:37.581Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18008,6 +18008,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T10:55:46.233Z"
+    },
+    {
+      "id": "mty9xpvvnb50r",
+      "kind": "valor",
+      "event": "D ebreceni EAC – Ferencvaros (1 over 0.5)",
+      "houseA": "Betnacional",
+      "oddA": 3.25,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.3,
+      "prob": 41.4,
+      "winner": null,
+      "date": "2026-09-12T08:00",
+      "total": 100,
+      "lucroA": 225,
+      "lucroRed": -100,
+      "lucro": 225,
+      "roi": 225,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T11:00:37.580Z"
     }
   ],
   "invertidos": [],
@@ -18174,5 +18198,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T10:55:46.235Z"
+  "updatedAt": "2026-09-12T11:00:37.581Z"
 }
