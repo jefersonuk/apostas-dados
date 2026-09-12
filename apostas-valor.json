@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1076,
+      "value": 1229.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T21:58:00.486Z"
+      "updatedAt": "2026-09-12T22:24:23.678Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4747,9 +4747,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 221.25,
+      "value": 191.25,
       "currency": "USD",
-      "updatedAt": "2026-09-12T10:10:23.494Z"
+      "updatedAt": "2026-09-12T22:24:23.672Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18226,6 +18226,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T21:58:00.481Z"
+    },
+    {
+      "id": "mtyyd1tk7n491",
+      "kind": "valor",
+      "event": "Syroha, Michal – Kasinski, Zdenek 2",
+      "houseA": "Betonline",
+      "oddA": 2.13,
+      "stakeA": 153.6,
+      "curA": "USD",
+      "sport": "Ten",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-13T07:00",
+      "total": 153.6,
+      "lucroA": 173.56799999999998,
+      "lucroRed": -153.6,
+      "lucro": 173.56799999999998,
+      "roi": 112.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T22:24:23.674Z"
     }
   ],
   "invertidos": [],
@@ -18392,5 +18416,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T21:58:00.486Z"
+  "updatedAt": "2026-09-12T22:24:23.678Z"
 }
