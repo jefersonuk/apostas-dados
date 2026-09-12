@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 581.75,
+      "value": 331.75,
       "currency": "BRL",
-      "updatedAt": "2026-09-12T21:56:27.498Z"
+      "updatedAt": "2026-09-12T21:58:00.481Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 826,
+      "value": 1076,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T21:56:27.503Z"
+      "updatedAt": "2026-09-12T21:58:00.486Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18202,6 +18202,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T21:56:27.499Z"
+    },
+    {
+      "id": "mtyxf480cvw53",
+      "kind": "valor",
+      "event": "Victoria Hotspurs – St. Andrews 1X",
+      "houseA": "Ivibet",
+      "oddA": 1.67,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.52,
+      "prob": 62.7,
+      "winner": null,
+      "date": "2026-09-13T13:00",
+      "total": 250,
+      "lucroA": 167.49999999999997,
+      "lucroRed": -250,
+      "lucro": 167.49999999999997,
+      "roi": 67,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T21:58:00.481Z"
     }
   ],
   "invertidos": [],
@@ -18368,5 +18392,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T21:56:27.503Z"
+  "updatedAt": "2026-09-12T21:58:00.486Z"
 }
