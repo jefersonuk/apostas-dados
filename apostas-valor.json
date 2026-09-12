@@ -4749,7 +4749,7 @@
       "name": "BetOnline",
       "value": 191.25,
       "currency": "USD",
-      "updatedAt": "2026-09-12T22:24:23.672Z"
+      "updatedAt": "2026-09-12T22:24:48.354Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18235,7 +18235,7 @@
       "oddA": 2.13,
       "stakeA": 153.6,
       "curA": "USD",
-      "sport": "Ten",
+      "sport": "Tênis de Mesa",
       "market": "1X2 / Resultado",
       "oddMkt": 1.8,
       "prob": 52.9,
@@ -18249,7 +18249,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-12T22:24:23.674Z"
+      "updatedAt": "2026-09-12T22:24:48.354Z"
     }
   ],
   "invertidos": [],
@@ -18416,5 +18416,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T22:24:23.678Z"
+  "updatedAt": "2026-09-12T22:24:48.354Z"
 }
