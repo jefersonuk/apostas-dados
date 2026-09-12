@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 831.75,
+      "value": 581.75,
       "currency": "BRL",
-      "updatedAt": "2026-09-12T19:28:04.421Z"
+      "updatedAt": "2026-09-12T21:56:27.498Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 576,
+      "value": 826,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T21:52:36.801Z"
+      "updatedAt": "2026-09-12T21:56:27.503Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18178,6 +18178,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T21:52:36.798Z"
+    },
+    {
+      "id": "mtyxd4h5lwkpr",
+      "kind": "valor",
+      "event": "C.D. Luis Angel Firpo II – Isidro II 1X",
+      "houseA": "Ivibet",
+      "oddA": 1.7,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-13T17:00",
+      "total": 250,
+      "lucroA": 175,
+      "lucroRed": -250,
+      "lucro": 175,
+      "roi": 70,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T21:56:27.499Z"
     }
   ],
   "invertidos": [],
@@ -18344,5 +18368,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T21:52:36.801Z"
+  "updatedAt": "2026-09-12T21:56:27.503Z"
 }
