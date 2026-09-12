@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2313.6,
-      "updatedAt": "2026-09-12T10:12:19.237Z"
+      "value": 2113.6,
+      "updatedAt": "2026-09-12T23:50:16.593Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1279.6,
+      "value": 1479.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-12T23:48:45.477Z"
+      "updatedAt": "2026-09-12T23:50:16.597Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18275,6 +18275,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T22:27:28.406Z"
+    },
+    {
+      "id": "mtz1fhu7xrkak",
+      "kind": "valor",
+      "event": "Bushido Wildcats (Kills) – Movistar KOI Fenix (Kills) Abaixo 27.5 1º mapa",
+      "houseA": "Pinnacle",
+      "oddA": 2.17,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "E-sports",
+      "market": "Abates / Kills",
+      "oddMkt": 1.55,
+      "prob": 61.4,
+      "winner": null,
+      "date": "2026-09-13T13:00",
+      "total": 200,
+      "lucroA": 234,
+      "lucroRed": -200,
+      "lucro": 234,
+      "roi": 117,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-12T23:50:16.593Z"
     }
   ],
   "invertidos": [],
@@ -18441,5 +18465,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-12T23:48:45.477Z"
+  "updatedAt": "2026-09-12T23:50:16.597Z"
 }
