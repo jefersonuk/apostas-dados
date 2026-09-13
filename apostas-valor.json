@@ -4586,8 +4586,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2113.6,
-      "updatedAt": "2026-09-12T23:50:16.593Z"
+      "value": 1913.6,
+      "updatedAt": "2026-09-13T21:47:18.288Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 806,
+      "value": 1006,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T19:37:01.378Z"
+      "updatedAt": "2026-09-13T21:47:18.294Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18556,6 +18556,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-13T19:08:24.933Z"
+    },
+    {
+      "id": "mu0ch7d98bvm6",
+      "kind": "valor",
+      "event": "Miramar (Women) – Hebraica (Women) 1 1º set",
+      "houseA": "Pinnacle",
+      "oddA": 1.787,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-13T19:00",
+      "total": 200,
+      "lucroA": 157.39999999999998,
+      "lucroRed": -200,
+      "lucro": 157.39999999999998,
+      "roi": 78.69999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-13T21:47:18.288Z"
     }
   ],
   "invertidos": [],
@@ -18722,5 +18746,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T21:40:30.668Z"
+  "updatedAt": "2026-09-13T21:47:18.294Z"
 }
