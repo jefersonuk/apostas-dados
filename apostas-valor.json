@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 950,
+      "value": 1116.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T10:58:06.753Z"
+      "updatedAt": "2026-09-13T11:01:35.627Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4676,9 +4676,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 616.86,
+      "value": 588.86,
       "currency": "EUR",
-      "updatedAt": "2026-09-12T12:24:06.430Z"
+      "updatedAt": "2026-09-13T11:01:35.621Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -18301,6 +18301,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-12T23:50:16.593Z"
+    },
+    {
+      "id": "mtzpetc27ibo1",
+      "kind": "valor",
+      "event": "Motherwell – Hamilton Academical - H2(+1.5) 1º período",
+      "houseA": "Sportmarket",
+      "oddA": 1.769,
+      "stakeA": 166.32000000000002,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-12T12:00",
+      "total": 166.32000000000002,
+      "lucroA": 127.90008,
+      "lucroRed": -166.32000000000002,
+      "lucro": 127.90008,
+      "roi": 76.89999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-13T11:01:35.622Z"
     }
   ],
   "invertidos": [],
@@ -18467,5 +18491,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T10:58:03.335Z"
+  "updatedAt": "2026-09-13T11:01:35.627Z"
 }
