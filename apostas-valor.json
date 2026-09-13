@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 297.75,
+      "value": 477.75,
       "currency": "BRL",
-      "updatedAt": "2026-09-13T16:03:56.472Z"
+      "updatedAt": "2026-09-13T16:04:10.021Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4676,9 +4676,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 638.39,
+      "value": 608.09,
       "currency": "EUR",
-      "updatedAt": "2026-09-13T15:56:40.389Z"
+      "updatedAt": "2026-09-13T16:04:10.021Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -18428,7 +18428,7 @@
       "id": "mtzqwzha6714w",
       "kind": "valor",
       "event": "Santos Laguna – Juarez Acima 1 1º o time",
-      "houseA": "Ivibet",
+      "houseA": "Sportmarket",
       "oddA": 2.5,
       "stakeA": 180,
       "curA": "BRL",
@@ -18447,7 +18447,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-09-13T16:03:57.956Z"
+      "updatedAt": "2026-09-13T16:04:10.021Z"
     }
   ],
   "invertidos": [],
@@ -18614,5 +18614,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T16:03:57.956Z"
+  "updatedAt": "2026-09-13T16:04:10.021Z"
 }
