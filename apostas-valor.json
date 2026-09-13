@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2064.4,
+      "value": 2269.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T16:17:37.790Z"
+      "updatedAt": "2026-09-13T16:23:49.381Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4747,9 +4747,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 151.25,
+      "value": 111.25,
       "currency": "USD",
-      "updatedAt": "2026-09-13T16:13:29.376Z"
+      "updatedAt": "2026-09-13T16:23:49.374Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18475,6 +18475,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-13T16:17:37.789Z"
+    },
+    {
+      "id": "mu00x7csritpv",
+      "kind": "valor",
+      "event": "Robin Pacha – Martin Sychra",
+      "houseA": "Betonline",
+      "oddA": 2,
+      "stakeA": 204.8,
+      "curA": "USD",
+      "sport": "Tênis de Mesa",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.66,
+      "prob": 57.4,
+      "winner": null,
+      "date": "2026-09-13T16:00",
+      "total": 204.8,
+      "lucroA": 204.8,
+      "lucroRed": -204.8,
+      "lucro": 204.8,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-13T16:23:49.376Z"
     }
   ],
   "invertidos": [],
@@ -18641,5 +18665,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T16:17:37.790Z"
+  "updatedAt": "2026-09-13T16:23:49.381Z"
 }
