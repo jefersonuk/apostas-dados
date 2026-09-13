@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1103.6,
+      "value": 950,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T10:38:29.743Z"
+      "updatedAt": "2026-09-13T10:58:06.753Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5039,10 +5039,10 @@
   ],
   "usdRate": 5.12,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-13T08:10:49.363Z",
+  "usdRateAt": "2026-09-12T18:49:24.040Z",
   "eurRate": 5.94,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-13T08:10:49.448Z",
+  "eurRateAt": "2026-09-12T18:49:24.145Z",
   "appBuild": "20260911-1141",
   "deleted": [
     {
@@ -18241,7 +18241,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.8,
       "prob": 52.9,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-09-13T07:00",
       "total": 153.6,
       "lucroA": 173.56799999999998,
@@ -18249,9 +18249,10 @@
       "lucro": 173.56799999999998,
       "roi": 112.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-09-12T22:24:48.354Z"
+      "updatedAt": "2026-09-13T10:58:03.335Z"
     },
     {
       "id": "mtyyh0d2hbdg1",
@@ -18466,5 +18467,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T10:38:29.744Z"
+  "updatedAt": "2026-09-13T10:58:03.335Z"
 }
