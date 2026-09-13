@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2269.2,
+      "value": 2525.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T16:23:49.381Z"
+      "updatedAt": "2026-09-13T16:28:05.696Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4747,9 +4747,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 111.25,
+      "value": 61.25,
       "currency": "USD",
-      "updatedAt": "2026-09-13T16:23:49.374Z"
+      "updatedAt": "2026-09-13T16:28:05.690Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18499,6 +18499,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-13T16:23:49.376Z"
+    },
+    {
+      "id": "mu012p4o62woq",
+      "kind": "valor",
+      "event": "Oregon – San Diego (1)",
+      "houseA": "Betonline",
+      "oddA": 1.56,
+      "stakeA": 256,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.26,
+      "prob": 75.6,
+      "winner": null,
+      "date": "2026-09-13T16:00",
+      "total": 256,
+      "lucroA": 143.36,
+      "lucroRed": -256,
+      "lucro": 143.36,
+      "roi": 56.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-13T16:28:05.690Z"
     }
   ],
   "invertidos": [],
@@ -18665,5 +18689,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T16:23:49.381Z"
+  "updatedAt": "2026-09-13T16:28:05.696Z"
 }
