@@ -4712,7 +4712,7 @@
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
       "value": 5,
-      "updatedAt": "2026-09-13T11:09:35.150Z",
+      "updatedAt": "2026-09-13T16:06:34.906Z",
       "currency": "USD"
     },
     {
@@ -18368,7 +18368,7 @@
       "oddMkt": 1.8,
       "prob": 52.9,
       "winner": null,
-      "date": "2026-09-13T14:00",
+      "date": "2026-09-13T12:00",
       "total": 204.8,
       "lucroA": 249.85600000000005,
       "lucroRed": -204.8,
@@ -18377,7 +18377,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-13T11:09:35.150Z"
+      "updatedAt": "2026-09-13T16:06:34.906Z"
     },
     {
       "id": "mtzq1pxsz45hw",
@@ -18593,5 +18593,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T16:06:25.378Z"
+  "updatedAt": "2026-09-13T16:06:34.906Z"
 }
