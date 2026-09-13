@@ -4678,7 +4678,7 @@
       "name": "Sportmarket",
       "value": 588.86,
       "currency": "EUR",
-      "updatedAt": "2026-09-13T11:01:35.621Z"
+      "updatedAt": "2026-09-13T12:34:19.368Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -18308,23 +18308,23 @@
       "event": "Motherwell – Hamilton Academical - H2(+1.5) 1º período",
       "houseA": "Sportmarket",
       "oddA": 1.769,
-      "stakeA": 166.32000000000002,
+      "stakeA": 166.32,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Handicap Asiático",
       "oddMkt": 1.4,
       "prob": 68,
       "winner": null,
-      "date": "2026-09-12T12:00",
-      "total": 166.32000000000002,
-      "lucroA": 127.90008,
-      "lucroRed": -166.32000000000002,
-      "lucro": 127.90008,
+      "date": "2026-09-13T12:00",
+      "total": 166.32,
+      "lucroA": 127.90007999999997,
+      "lucroRed": -166.32,
+      "lucro": 127.90007999999997,
       "roi": 76.89999999999999,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-13T11:01:35.622Z"
+      "updatedAt": "2026-09-13T12:34:19.369Z"
     },
     {
       "id": "mtzpgqotz8mw4",
@@ -18611,5 +18611,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T11:43:43.016Z"
+  "updatedAt": "2026-09-13T12:34:19.369Z"
 }
