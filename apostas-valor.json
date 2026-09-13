@@ -4575,7 +4575,7 @@
       "name": "Ivibet",
       "value": 277.75,
       "currency": "BRL",
-      "updatedAt": "2026-09-13T11:43:43.008Z"
+      "updatedAt": "2026-09-13T15:33:56.678Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -18445,7 +18445,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-13T11:43:43.010Z"
+      "updatedAt": "2026-09-13T15:33:56.678Z"
     }
   ],
   "invertidos": [],
@@ -18612,5 +18612,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T12:55:41.404Z"
+  "updatedAt": "2026-09-13T15:33:56.678Z"
 }
