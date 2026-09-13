@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 756,
+      "value": 1012,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T22:08:16.537Z"
+      "updatedAt": "2026-09-13T22:11:12.505Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4747,9 +4747,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 61.25,
+      "value": 11.25,
       "currency": "USD",
-      "updatedAt": "2026-09-13T16:29:00.844Z"
+      "updatedAt": "2026-09-13T22:11:12.500Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18581,6 +18581,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-13T21:47:18.288Z"
+    },
+    {
+      "id": "mu0dby0j8buzc",
+      "kind": "valor",
+      "event": "Urbaniec, Radim – Wagner, Mark Robin  (2)",
+      "houseA": "Betonline",
+      "oddA": 1.71,
+      "stakeA": 256,
+      "curA": "USD",
+      "sport": "Tênis de Mesa",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-13T20:30",
+      "total": 256,
+      "lucroA": 181.76,
+      "lucroRed": -256,
+      "lucro": 181.76,
+      "roi": 71,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-13T22:11:12.502Z"
     }
   ],
   "invertidos": [],
@@ -18747,5 +18771,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T22:08:16.537Z"
+  "updatedAt": "2026-09-13T22:11:12.505Z"
 }
