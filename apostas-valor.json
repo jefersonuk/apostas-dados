@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1012,
+      "value": 1309,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T22:11:12.505Z"
+      "updatedAt": "2026-09-13T22:22:03.995Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4676,9 +4676,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 638.39,
+      "value": 588.39,
       "currency": "EUR",
-      "updatedAt": "2026-09-13T16:06:25.377Z"
+      "updatedAt": "2026-09-13T22:22:03.988Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -18605,6 +18605,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-13T22:11:12.502Z"
+    },
+    {
+      "id": "mu0dpwpf9d82c",
+      "kind": "valor",
+      "event": "Club Deportes Las Animas – Club Deportes Castro (over 149.5)",
+      "houseA": "Sportmarket",
+      "oddA": 1.751,
+      "stakeA": 297,
+      "curA": "EUR",
+      "sport": "Basquete",
+      "market": "Total de Gols",
+      "oddMkt": 1.3,
+      "prob": 73.3,
+      "winner": null,
+      "date": "2026-09-13T20:00",
+      "total": 297,
+      "lucroA": 223.04699999999997,
+      "lucroRed": -297,
+      "lucro": 223.04699999999997,
+      "roi": 75.1,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-13T22:22:03.989Z"
     }
   ],
   "invertidos": [],
@@ -18771,5 +18795,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T22:11:12.505Z"
+  "updatedAt": "2026-09-13T22:22:03.995Z"
 }
