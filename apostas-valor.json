@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 895.25,
+      "value": 695.25,
       "currency": "BRL",
-      "updatedAt": "2026-09-13T16:52:46.889Z"
+      "updatedAt": "2026-09-13T16:57:10.007Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1665.6,
+      "value": 1865.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-13T16:52:46.889Z"
+      "updatedAt": "2026-09-13T16:57:10.019Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18527,6 +18527,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-13T16:29:00.844Z"
+    },
+    {
+      "id": "mu02431z62mn2",
+      "kind": "valor",
+      "event": "Ohio State Buckeyes – Youngstown State Penguins Acima 43.5 1º set",
+      "houseA": "Ivibet",
+      "oddA": 1.82,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "Total de Pontos",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-13T15:00",
+      "total": 200,
+      "lucroA": 164,
+      "lucroRed": -200,
+      "lucro": 164,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-13T16:57:10.009Z"
     }
   ],
   "invertidos": [],
@@ -18693,5 +18717,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-13T16:52:46.889Z"
+  "updatedAt": "2026-09-13T16:57:10.019Z"
 }
