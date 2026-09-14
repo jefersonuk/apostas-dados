@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1295.32,
-      "updatedAt": "2026-09-14T19:52:58.750Z"
+      "value": 1165.32,
+      "updatedAt": "2026-09-14T19:55:14.649Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1565.71,
+      "value": 1695.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T19:52:58.752Z"
+      "updatedAt": "2026-09-14T19:55:14.651Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19013,6 +19013,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T19:52:58.750Z"
+    },
+    {
+      "id": "mu1nwy1lzkaiz",
+      "kind": "valor",
+      "event": "Salvador Monteiro (Games) – Peter Sychev (Games) Acima 4.5 2º o participante",
+      "houseA": "Pinnacle",
+      "oddA": 2.11,
+      "stakeA": 130,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "Total de games",
+      "oddMkt": 1.65,
+      "prob": 57.7,
+      "winner": null,
+      "date": "2026-09-15T06:00",
+      "total": 130,
+      "lucroA": 144.29999999999998,
+      "lucroRed": -130,
+      "lucro": 144.29999999999998,
+      "roi": 110.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T19:55:14.649Z"
     }
   ],
   "invertidos": [],
@@ -19179,5 +19203,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T19:52:58.752Z"
+  "updatedAt": "2026-09-14T19:55:14.651Z"
 }
