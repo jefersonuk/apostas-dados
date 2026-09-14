@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1059.25,
+      "value": 959.25,
       "currency": "BRL",
-      "updatedAt": "2026-09-13T21:40:30.668Z"
+      "updatedAt": "2026-09-14T12:34:58.279Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 512.9,
+      "value": 612.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T12:27:47.446Z"
+      "updatedAt": "2026-09-14T12:34:58.280Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18712,6 +18712,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T12:27:47.445Z"
+    },
+    {
+      "id": "mu186r1j300d0",
+      "kind": "valor",
+      "event": "Ucrania x Portugal (1st set + ucrania)",
+      "houseA": "Ivibet",
+      "oddA": 1.33,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.08,
+      "prob": 88.2,
+      "winner": null,
+      "date": "2026-09-14T10:27",
+      "total": 100,
+      "lucroA": 33.00000000000001,
+      "lucroRed": -100,
+      "lucro": 33.00000000000001,
+      "roi": 33.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T12:34:58.280Z"
     }
   ],
   "invertidos": [],
@@ -18878,5 +18902,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T12:27:47.446Z"
+  "updatedAt": "2026-09-14T12:34:58.280Z"
 }
