@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 204.8,
+      "value": 358.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T11:50:45.114Z"
+      "updatedAt": "2026-09-14T12:12:59.094Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4718,8 +4718,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 338.56,
-      "updatedAt": "2026-09-12T12:45:10.327Z",
+      "value": 308.56,
+      "updatedAt": "2026-09-14T12:12:59.089Z",
       "currency": "USD"
     },
     {
@@ -18658,6 +18658,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T11:50:45.109Z"
+    },
+    {
+      "id": "mu17eh5bi30j4",
+      "kind": "valor",
+      "event": "FC Dynamo Kiev v FC Epitsentr Dunaivtsi (1 over 0.5 1st half)",
+      "houseA": "Cloudbet",
+      "oddA": 1.47,
+      "stakeA": 153.6,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.2,
+      "prob": 79.4,
+      "winner": null,
+      "date": "2026-09-14T09:00",
+      "total": 153.6,
+      "lucroA": 72.192,
+      "lucroRed": -153.6,
+      "lucro": 72.192,
+      "roi": 47,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T12:12:59.090Z"
     }
   ],
   "invertidos": [],
@@ -18824,5 +18848,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T11:50:45.114Z"
+  "updatedAt": "2026-09-14T12:12:59.094Z"
 }
