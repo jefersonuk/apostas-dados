@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 414.25,
+      "value": 214.25,
       "currency": "BRL",
-      "updatedAt": "2026-09-14T13:56:27.480Z"
+      "updatedAt": "2026-09-14T14:01:04.444Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 100,
+      "value": 300,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T13:27:11.334Z"
+      "updatedAt": "2026-09-14T14:01:04.445Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18763,6 +18763,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T13:56:27.481Z"
+    },
+    {
+      "id": "mu1b9ha4yjxh8",
+      "kind": "valor",
+      "event": "U19 Maribor x U19 NK Fuzinar (1st half over2)",
+      "houseA": "Ivibet",
+      "oddA": 1.79,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-14T11:30",
+      "total": 200,
+      "lucroA": 158,
+      "lucroRed": -200,
+      "lucro": 158,
+      "roi": 79,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T14:01:04.444Z"
     }
   ],
   "invertidos": [],
@@ -18929,5 +18953,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T13:56:27.484Z"
+  "updatedAt": "2026-09-14T14:01:04.445Z"
 }
