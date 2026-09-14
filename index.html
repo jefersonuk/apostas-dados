@@ -161,6 +161,21 @@
   .sv-tag{display:inline-block;font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:10px;margin-left:6px;
           background:#0E1520;border:1px solid #1A2C40;color:var(--sky);}
   .sv-tag.alto{background:#2A1A08;border-color:#4D3010;color:var(--amber);}
+  /* politica E: escada de fator por faixa de odd + veto de casa */
+  .pe-tag{display:inline-block;font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:10px;margin-left:6px;
+          background:#0E1520;border:1px solid #1A2C40;color:var(--sky);white-space:nowrap;}
+  .pe-tag.meia{background:#12210E;border-color:#27401A;color:#A3D977;}
+  .pe-tag.quarto{background:#2A1A08;border-color:#4D3010;color:var(--amber);}
+  .pe-tag.zero{background:#2A0E12;border-color:#5C2530;color:#FCA5A5;}
+  .pe-row{display:grid;grid-template-columns:104px 66px 1fr;gap:8px;align-items:center;
+          padding:6px 0;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:11px;}
+  .pe-row:last-of-type{border-bottom:none;}
+  .pe-row.head{color:var(--muted-2);font-size:9px;text-transform:uppercase;letter-spacing:.06em;font-family:var(--sans);}
+  .pe-row .f{text-align:right;font-weight:700;color:var(--sky);}
+  .pe-row .f.zero{color:#FCA5A5;}
+  .pe-row input{margin:0;padding:4px 6px;font-size:11px;text-align:right;}
+  .pe-note{background:#0E1520;border:1px solid #1A2C40;border-radius:9px;padding:8px 10px;margin:8px 0 0;
+           font-size:11px;line-height:1.5;color:var(--muted);}
   /* desempenho por segmento */
   .seg-row{padding:7px 0;border-bottom:1px solid var(--border);}
   .seg-row:last-of-type{border-bottom:none;}
@@ -1129,6 +1144,26 @@
       </div>
     </details>
 
+    <!-- ===== POLÍTICA E ===== -->
+    <details class="fold">
+      <summary>🛡️ Política E — corte por faixa de odd<span class="chev">▸</span></summary>
+      <div class="fold-body">
+        <details class="help">
+          <summary>de onde saiu essa regra</summary>
+          <div class="help-body">Varredura de 14/09/2026 sobre <b>594 apostas de valor</b> (julho + agosto/setembro). Nos 15 dias negativos do período, a perda de R$&nbsp;4.146 se decompõe assim: a faixa <b>odd &lt; 2,10</b> girou R$&nbsp;11.679 e fechou em <b>−R$&nbsp;39</b>; a faixa <b>odd ≥ 2,10</b> girou R$&nbsp;9.382 e perdeu <b>R$&nbsp;4.107</b>. Com quase 12 mil expostos, a faixa baixa saiu no zero a zero até nos piores dias — o estrago mora inteiro acima de 2,10.<br><br>Por isso a política corta o <b>tamanho</b> da entrada por faixa em vez de banir a faixa: entre 2,10 e 2,50 o yield é −0,6% com IC95% atravessando o zero, ou seja, não merece stake cheia mas também não está provada ruim. Acima de 3,00 o yield é −17,4% nas duas amostras, e aí é zero mesmo.<br><br>Simulando a política sobre as mesmas apostas: <b>drawdown máximo cai de −R$&nbsp;2.689 para −R$&nbsp;735</b> e o desvio diário de R$&nbsp;462 para R$&nbsp;303. Ressalva: os fatores foram escolhidos olhando estes dados, então o yield simulado é teto otimista. O efeito da odd, esse aparece igual na amostra de julho, que não foi usada para calibrar nada.</div>
+        </details>
+        <div class="evo-seg" style="margin:0 0 10px;">
+          <button type="button" class="evo-opt" data-pole="1">Política E ligada</button>
+          <button type="button" class="evo-opt" data-pole="0">Desligada</button>
+        </div>
+        <div id="peTabela"></div>
+        <label style="margin-top:10px;">Casas vetadas como entrada (separe por vírgula)</label>
+        <input type="text" id="peVeto" placeholder="Pinnacle">
+        <div class="hint">A casa vetada continua servindo de <b>referência de preço</b> no campo “odd média do mercado”. O veto é só para entrar com dinheiro.</div>
+        <div id="peNota"></div>
+      </div>
+    </details>
+
   </div><!-- /tab-vbet -->
 
   <!-- ABA MIDDLES -->
@@ -1224,7 +1259,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260911-1141';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260914-1500';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1251,7 +1286,15 @@
     oddMin:1.5, potMin:1,
     kellyMult:0.50, probTolerance:3,
     probFull:50, probFloor:20, penMin:0.35,
-    escAnc:200, escTeto:400, escPiso:25, escExp:1   // escada: stake = anc/(odd-1)^expoente
+    escAnc:200, escTeto:400, escPiso:25, escExp:1,  // escada: stake = anc/(odd-1)^expoente
+    // politica E (varredura de 14/09/2026, 594 apostas de valor):
+    // toda a perda dos dias negativos vem da odd >= 2.10; abaixo disso o conjunto
+    // fecha no zero a zero mesmo nos piores dias. A politica corta o tamanho da
+    // entrada por faixa em vez de banir a faixa, porque 2.10-2.50 tem yield -0,6%
+    // com IC95% atravessando o zero: nao merece stake cheia, mas nao esta provada ruim.
+    polE:true,
+    polEFatores:{f210:1, f250:0.5, f300:0.25, fAcima:0},
+    polEVeto:'Pinnacle'                            // casas vetadas como entrada (referencia de preco, nao casa de aposta)
   };
 
   /* ---------- caixa: registros com data + hora ---------- */
@@ -3695,11 +3738,14 @@
     const probReal=(1/oddMkt)/(1+VB_MARGEM_MKT);
     const ev=probReal*oddCasa-1;
     const banca=caixaAtual();
-    if(ev<=0) return {probReal,ev,kelly:0,kellyStake:0,teto:0,sugerido:0,banca};
+    if(ev<=0) return {probReal,ev,kelly:0,kellyStake:0,teto:0,bruto:0,sugerido:0,pe:null,banca};
     const kelly=ev/(oddCasa-1);
     const kellyStake=banca*kelly*VB_KELLY_FRAC;
     const teto=VB_TETO_MAX*Math.min(1,probReal/VB_PROB_REF);
-    return {probReal,ev,kelly,kellyStake,teto,sugerido:Math.min(kellyStake,teto),banca,limitadoPorTeto:kellyStake>teto};
+    const bruto=Math.min(kellyStake,teto);
+    const pe=polEAplicar(bruto,oddCasa,$('vbHouse').value);
+    return {probReal,ev,kelly,kellyStake,teto,bruto,sugerido:pe.final,pe:pe.v,
+            banca,limitadoPorTeto:kellyStake>teto};
   }
 
   function renderSugestao(){
@@ -3711,15 +3757,22 @@
       box.innerHTML='<div class="sug-box neg">⚠ Sem valor — a odd da casa não supera o mercado (EV '+(sug.ev*100).toFixed(1)+'%). Não entrar.</div>';
       return;
     }
+    const pe=sug.pe;
+    if(pe && pe.ativa && pe.fator<=0){
+      box.innerHTML='<div class="sug-box neg">⛔ Política E: <b>não entrar</b> — '+esc(pe.motivo)+'.'+
+        '<br><span style="font-weight:400;">Kelly/4 mandaria '+fmt(sug.bruto)+'. O registro continua liberado para lançar aposta já feita.</span></div>';
+      return;
+    }
     box.innerHTML=
       '<div class="sug-box">'+
         '<div class="sug-top">'+
-          '<span class="sug-label">Entrada sugerida</span>'+
+          '<span class="sug-label">Entrada sugerida '+polETag(pe)+'</span>'+
           '<span class="sug-val">'+fmt(sug.sugerido)+'</span>'+
         '</div>'+
         '<div class="sug-meta">'+
           'prob real <b>'+(sug.probReal*100).toFixed(1)+'%</b> · EV <b style="color:var(--green)">+'+(sug.ev*100).toFixed(1)+'%</b> · Kelly/4 '+fmt(sug.kellyStake)+' · teto '+fmt(sug.teto)+
-          '<br><span style="color:var(--muted-2)">'+(sug.limitadoPorTeto?'limitado pelo teto de probabilidade':'definido pelo Kelly (vantagem magra)')+'</span>'+
+          '<br><span style="color:var(--muted-2)">'+(sug.limitadoPorTeto?'limitado pelo teto de probabilidade':'definido pelo Kelly (vantagem magra)')+
+            (pe&&pe.ativa&&pe.fator<1?' · política E corta para '+(pe.fator*100).toFixed(0)+'% de '+fmt(sug.bruto):'')+'</span>'+
         '</div>'+
       '</div>';
   }
@@ -3760,12 +3813,18 @@
 
   // compara a entrada digitada com o que a escada mandaria naquela odd
   function escLine(r){
-    const alvo=escadaStake(r.odd);
-    if(!alvo) return '';
+    const casa=$('vbHouse').value;
+    const base=escadaStake(r.odd);
+    if(base===null) return '';
+    const pe=polEAplicar(base,r.odd,casa);
+    const alvo=pe.final, v=pe.v;
+    const tag=polETag(v);
+    if(alvo<=0) return '<span style="color:var(--red)">política E: não entrar nesta odd/casa — escada mandaria '+fmt(base)+'</span>'+tag;
     const dif=r.stake/alvo;
-    if(dif>1.25) return '<span style="color:var(--amber)">escada nesta odd '+fmt(alvo)+' — você está '+dif.toFixed(1)+'× acima</span>';
-    if(dif<0.75) return 'escada nesta odd '+fmt(alvo)+' — você está abaixo';
-    return 'escada nesta odd '+fmt(alvo)+' <span style="color:var(--green)">✓</span>';
+    const sufixo=(v&&v.ativa&&v.fator<1)?' (escada '+fmt(base)+' × '+(v.fator*100).toFixed(0)+'%)':'';
+    if(dif>1.25) return '<span style="color:var(--amber)">escada nesta odd '+fmt(alvo)+sufixo+' — você está '+dif.toFixed(1)+'× acima</span>'+tag;
+    if(dif<0.75) return 'escada nesta odd '+fmt(alvo)+sufixo+' — você está abaixo'+tag;
+    return 'escada nesta odd '+fmt(alvo)+sufixo+' <span style="color:var(--green)">✓</span>'+tag;
   }
 
   function vbResetCur(){
@@ -3777,9 +3836,19 @@
   function registrarValor(){
     const r=vbCompute();
     if(!r){ alert('Preencha a odd e o stake.'); return; }
+    const casa=$('vbHouse').value.trim();
+    const pe=polEVeredito(r.odd,casa);
+    if(pe && pe.ativa && pe.fator<=0){
+      if(!confirm('Política E manda NÃO ENTRAR nesta aposta.\n\n'+pe.motivo+'.\n\nRegistrar mesmo assim? (use isto só para lançar aposta já feita)')) return;
+    } else if(pe && pe.ativa && pe.fator<1){
+      const teto=escadaStakePolE(r.odd,casa);
+      if(teto!==null && teto>0 && r.stake>teto*1.35){
+        if(!confirm('Política E pede entrada '+pe.rot+' nesta faixa: '+fmt(teto)+'.\n\nVocê está registrando '+fmt(r.stake)+'. Confirmar?')) return;
+      }
+    }
     const op={
       id:uid(), kind:'valor', event:$('vbEvent').value.trim()||'Aposta sem nome',
-      houseA:$('vbHouse').value.trim(), oddA:r.odd, stakeA:r.stake, curA:r.cur,
+      houseA:casa, oddA:r.odd, stakeA:r.stake, curA:r.cur,
       sport:$('vbSport').value.trim(), market:$('vbMarket').value.trim(),
       oddMkt:parseFloat($('vbOddMkt').value)||null,
       prob:r.prob, winner:null, date:$('vbDate').value||nowLocalStr()
@@ -4182,9 +4251,100 @@
     if(!(odd>1)) return null;
     return Math.max(piso, Math.min(teto, anc/Math.pow(odd-1,exp)));
   }
+  /* Escada depois da política E. A escada já encolhe a entrada pela odd (Kelly),
+     e a política encolhe de novo pela faixa — os dois cortes se somam de propósito.
+     A escada responde "quanto Kelly pede se o edge for igual em toda faixa"; a
+     política responde "e se não for" — e a amostra diz que não é. O piso da escada
+     não segura a política: fator zero é zero. */
+  function escadaStakePolE(odd,casa){
+    const base=escadaStake(odd);
+    if(base===null) return null;
+    return polEAplicar(base,odd,casa).final;
+  }
   // desvio-padrão do resultado de uma aposta, na prob de equilíbrio (p = 1/odd):
   // SD = stake * odd * raiz(p(1-p)) = stake * raiz(odd-1)
   function sdAposta(stake,odd){ return stake*Math.sqrt(odd-1); }
+
+  /* ---------- POLÍTICA E — corte por faixa de odd + veto de casa ----------
+     Varredura de 14/09/2026 sobre 594 apostas de valor (jul + ago/set de 2026).
+     Nos 15 dias negativos do período, a decomposição da perda de R$ 4.146 foi:
+        odd  < 2.10 : 46 apostas, R$ 11.679 de giro, resultado  −R$    39
+        odd >= 2.10 : 74 apostas, R$  9.382 de giro, resultado  −R$ 4.107
+     Ou seja: com quase 12 mil expostos, a faixa baixa saiu no zero a zero até nos
+     piores dias. O estrago mora inteiro acima de 2.10. Cortar ali encolhe o dia
+     ruim sem encolher o dia bom na mesma proporção.
+     Simulação sobre as mesmas apostas (política E): drawdown máximo cai de
+     −R$ 2.689 para −R$ 735 e o desvio diário de R$ 462 para R$ 303.
+     Ressalva honesta: os fatores foram escolhidos olhando estes dados, então o
+     yield da simulação é teto otimista. O que NÃO é in-sample é o efeito da odd,
+     que aparece igual na amostra de julho, usada só para conferir.
+     A Pinnacle entra no veto por mecanismo, não só por número: ela é a linha de
+     referência. Quando é a odd mais alta da tela, quase sempre ela é a odd certa e
+     as outras casas é que estão erradas para baixo — o "valor" medido contra uma
+     média que inclui casas piores é ilusório. Registro: 42 apostas, −R$ 1.882,
+     yield −34,7%, IC95% [−64%, −4%], acerto de 31% contra 59,7% de prob estimada. */
+  // Bordas como na simulação: 2,10 é exclusiva (odd 2,10 já é meia entrada),
+  // 2,50 e 3,00 são inclusivas (odd 3,00 ainda é quarto de entrada; 3,01 é zero).
+  const POL_E_BANDAS=[
+    {ate:2.10, incl:false, chave:'f210',   rot:'cheia',  cls:''},
+    {ate:2.50, incl:true,  chave:'f250',   rot:'meia',   cls:'meia'},
+    {ate:3.00, incl:true,  chave:'f300',   rot:'quarto', cls:'quarto'},
+    {ate:Infinity, incl:true, chave:'fAcima', rot:'zero', cls:'zero'}
+  ];
+  function polEAtiva(){ return state.cfg.polE!==false; }
+  function polEFatores(){
+    const d=DEFAULTS.polEFatores, c=(state.cfg&&state.cfg.polEFatores)||{};
+    const num=(v,dflt)=>(typeof v==='number'&&isFinite(v)&&v>=0)?v:dflt;
+    return {f210:num(c.f210,d.f210), f250:num(c.f250,d.f250), f300:num(c.f300,d.f300), fAcima:num(c.fAcima,d.fAcima)};
+  }
+  function polEBanda(odd){
+    if(!(odd>1)) return null;
+    return POL_E_BANDAS.find(b=>b.incl?odd<=b.ate:odd<b.ate) || POL_E_BANDAS[POL_E_BANDAS.length-1];
+  }
+  // lista de casas vetadas como ENTRADA de valor (continuam valendo como referência de preço)
+  function polEVetos(){
+    return String((state.cfg&&state.cfg.polEVeto)||'')
+      .split(/[,;]+/).map(x=>x.trim().toLowerCase()).filter(Boolean);
+  }
+  function polECasaVetada(nome){
+    const n=String(nome||'').trim().toLowerCase();
+    if(!n) return false;
+    return polEVetos().some(v=>n===v||n.indexOf(v)>=0);
+  }
+  /* Veredito da política para uma (odd, casa).
+     fator 0 = não entrar. Nunca bloqueia o registro: a aposta pode já ter sido
+     feita antes da regra, e esconder ela da base estragaria a própria análise. */
+  function polEVeredito(odd,casa){
+    const banda=polEBanda(odd);
+    if(!banda) return null;
+    const ativa=polEAtiva();
+    const vetada=polECasaVetada(casa);
+    const fatorBanda=ativa?polEFatores()[banda.chave]:1;
+    const fator=(ativa&&vetada)?0:fatorBanda;
+    let motivo='';
+    if(!ativa) motivo='política E desligada';
+    else if(vetada) motivo='casa vetada — use como referência de preço, não como entrada';
+    else if(fator<=0) motivo='odd acima de 3,00 — faixa de yield \u221217,4% nas duas amostras';
+    else if(fator<1) motivo='entrada '+banda.rot+' — a faixa não sustenta stake cheia';
+    else motivo='faixa do núcleo — stake cheia';
+    return {banda,fator,vetada,ativa,motivo,
+            rot:(ativa&&vetada)?'veto':banda.rot,
+            cls:(ativa&&vetada)?'zero':(ativa?banda.cls:'')};
+  }
+  // aplica a política sobre uma stake-base (sugestão do Kelly ou escada)
+  function polEAplicar(stakeBase,odd,casa){
+    const v=polEVeredito(odd,casa);
+    if(!v) return {base:stakeBase,final:stakeBase,v:null};
+    return {base:stakeBase, final:Math.round(stakeBase*v.fator*100)/100, v};
+  }
+  function polETag(v){
+    if(!v||!v.ativa) return '';
+    const txt=v.vetada?'veto '+String(state.cfg.polEVeto||'').trim()
+            :v.fator<=0?'odd 3,00+ · não entrar'
+            :v.fator<1?'política E · '+v.rot+' ('+(v.fator*100).toFixed(0)+'%)'
+            :'política E · cheia';
+    return '<span class="pe-tag '+v.cls+'">'+esc(txt)+'</span>';
+  }
   function renderEscada(){
     const c=state.cfg||{};
     [['escAnc',200],['escTeto',400],['escPiso',25]].forEach(([id,dflt])=>{
@@ -4194,9 +4354,11 @@
     document.querySelectorAll('[data-esc]').forEach(b=>b.classList.toggle('active', parseFloat(b.dataset.esc)===exp));
     const banca=parseFloat($('mtBanca').value)||caixaAtual();
     const anc=(c.escAnc>0)?c.escAnc:200;
-    const linhas=[1.30,1.50,1.80,2.00,2.30,2.60,3.00,3.50,4.50,6.00,10.00].map(o=>({
-      o, st:escadaStake(o), sdEsc:sdAposta(escadaStake(o),o), sdFlat:sdAposta(anc,o)
-    }));
+    const linhas=[1.30,1.50,1.80,2.00,2.30,2.60,3.00,3.50,4.50,6.00,10.00].map(o=>{
+      const base=escadaStake(o), st=polEAplicar(base,o,'').final;
+      return { o, base, st, cortada:st<base-0.005,
+               sdEsc:sdAposta(st,o), sdFlat:sdAposta(anc,o) };
+    });
     const maxSd=Math.max.apply(null,linhas.map(l=>Math.max(l.sdEsc,l.sdFlat)));
     $('escTabela').innerHTML=
       '<div class="esc-row head"><span>odd</span><span style="text-align:right">stake</span>'+
@@ -4204,7 +4366,8 @@
       linhas.map(l=>
         '<div class="esc-row">'+
           '<span>'+l.o.toFixed(2)+'</span>'+
-          '<span class="st">'+fmt(l.st).replace('R$ ','R$')+'</span>'+
+          '<span class="st"'+(l.cortada?' style="color:var(--amber)" title="escada '+fmt(l.base)+' antes da pol\u00edtica E"':'')+'>'+
+            (l.st>0?fmt(l.st).replace('R$ ','R$'):'\u2014')+'</span>'+
           '<span class="prog" style="margin:0;" title="\u00b1'+fmt(l.sdEsc)+'"><i style="width:'+(100*l.sdEsc/maxSd).toFixed(0)+'%"></i></span>'+
           '<span class="flat">\u00b1'+fmt(l.sdFlat).replace('R$ ','R$')+'</span>'+
         '</div>').join('')+
@@ -4215,6 +4378,7 @@
         ' \u00c2ncora de '+fmt(anc)+' = \u00bc de Kelly sobre um edge de '+
         (100*(anc*4/Math.max(1,banca))).toFixed(1)+'% na banca de '+fmt(banca)+'.'+
         ' A coluna da direita \u00e9 o desvio que voc\u00ea teria mantendo '+fmt(anc)+' em toda odd.'+
+        (polEAtiva()?' Os valores em <span style="color:var(--amber)">amarelo</span> j\u00e1 est\u00e3o com o corte da pol\u00edtica E aplicado por cima da escada.':'')+
       '</div>';
   }
   ['escAnc','escTeto','escPiso'].forEach(id=>$(id).addEventListener('input',()=>{
@@ -4225,14 +4389,69 @@
   document.querySelectorAll('[data-esc]').forEach(b=>b.addEventListener('click',()=>{
     state.cfg.escExp=parseFloat(b.dataset.esc); saveState(); renderEscada(); updateValorCalc();
   }));
+
+  /* ---------- painel da política E ---------- */
+  const PE_LINHAS=[
+    {chave:'f210',   rot:'abaixo de 2,10',  sub:'núcleo — yield +16,1% nas duas amostras'},
+    {chave:'f250',   rot:'2,10 a 2,50',     sub:'yield −0,6%, IC atravessa o zero'},
+    {chave:'f300',   rot:'2,51 a 3,00',     sub:'yield −6,1%'},
+    {chave:'fAcima', rot:'acima de 3,00',   sub:'yield −17,4% — faixa que faz o dia ruim'}
+  ];
+  function renderPolE(){
+    const ativa=polEAtiva(), f=polEFatores();
+    document.querySelectorAll('[data-pole]').forEach(b=>
+      b.classList.toggle('active', (b.dataset.pole==='1')===ativa));
+    const vt=$('peVeto');
+    if(vt && document.activeElement!==vt) vt.value=(state.cfg.polEVeto!=null)?state.cfg.polEVeto:DEFAULTS.polEVeto;
+    $('peTabela').innerHTML=
+      '<div class="pe-row head"><span>faixa de odd</span><span style="text-align:right">fator</span><span>o que a amostra diz</span></div>'+
+      PE_LINHAS.map(l=>{
+        const v=f[l.chave];
+        return '<div class="pe-row">'+
+          '<span>'+l.rot+'</span>'+
+          '<span><input type="number" step="0.05" min="0" max="1" data-pef="'+l.chave+'" value="'+v+'"'+(ativa?'':' disabled')+'></span>'+
+          '<span style="color:var(--muted-2);font-size:10px;">'+esc(l.sub)+'</span>'+
+        '</div>';
+      }).join('');
+    renderPolENota();
+  }
+  function renderPolENota(){
+    const el=$('peNota'); if(!el) return;
+    const anc=(state.cfg.escAnc>0)?state.cfg.escAnc:200;
+    el.innerHTML=polEAtiva()
+      ? '<div class="pe-note">Com a âncora de '+fmt(anc)+', a entrada na odd 2,00 fica '+fmt(polEAplicar(escadaStake(2.00),2.00,'').final)+
+        ', na odd 2,30 fica '+fmt(polEAplicar(escadaStake(2.30),2.30,'').final)+
+        ' e na odd 2,80 fica '+fmt(polEAplicar(escadaStake(2.80),2.80,'').final)+
+        '. Acima de 3,00 a sugestão vira zero e o registro pede confirmação.</div>'
+      : '<div class="pe-note">Política desligada: a sugestão e a escada voltam a ignorar a faixa de odd e o veto de casa.</div>';
+  }
+  document.querySelectorAll('[data-pole]').forEach(b=>b.addEventListener('click',()=>{
+    state.cfg.polE=(b.dataset.pole==='1'); saveState();
+    renderPolE(); renderEscada(); updateValorCalc();
+  }));
+  $('peTabela').addEventListener('input',e=>{
+    const inp=e.target.closest('[data-pef]'); if(!inp) return;
+    const v=parseFloat(inp.value);
+    if(!(v>=0)||v>1) return;
+    const f=polEFatores(); f[inp.dataset.pef]=v;
+    state.cfg.polEFatores=f; saveState();
+    renderEscada(); updateValorCalc(); renderPolENota();
+  });
+  $('peVeto').addEventListener('input',()=>{
+    state.cfg.polEVeto=$('peVeto').value; saveState();
+    updateValorCalc();
+  });
   $('vbUsarEsc').addEventListener('click',()=>{
     const odd=parseFloat($('vbOdd').value);
-    const st=escadaStake(odd);
-    if(!st){ alert('Preencha a odd da casa primeiro.'); return; }
+    const casa=$('vbHouse').value;
+    const base=escadaStake(odd);
+    if(base===null){ alert('Preencha a odd da casa primeiro.'); return; }
+    const pe=polEAplicar(base,odd,casa);
+    if(pe.final<=0){ alert('Política E: não entrar.\n\n'+pe.v.motivo+'.\n\nA escada mandaria '+fmt(base)+' nesta odd.'); return; }
     vbResetCur();
-    $('vbStake').value=st.toFixed(2);
+    $('vbStake').value=pe.final.toFixed(2);
     updateValorCalc();
-    toast('Escada: '+fmt(st)+' na odd '+odd.toFixed(2));
+    toast('Escada: '+fmt(pe.final)+' na odd '+odd.toFixed(2)+((pe.v&&pe.v.ativa&&pe.v.fator<1)?' (política E '+(pe.v.fator*100).toFixed(0)+'%)':''));
   });
 
   /* ---------- meta & dimensionamento ---------- */
@@ -4612,7 +4831,7 @@
     btn.classList.add('active'); vbFilter=btn.dataset.vbfilter; vbEditingId=null; renderValorList();
   }));
 
-  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMeta(); renderEscada(); renderCalibracao(); pjRender(); renderMiddleSummary(); renderMiddleList(); }
+  function renderAll(){ renderCaixa(); renderBalances(); renderAportes(); renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily(); renderValorSummary(); renderValorSegments(); renderValorList(); renderMeta(); renderEscada(); renderPolE(); renderCalibracao(); pjRender(); renderMiddleSummary(); renderMiddleList(); }
 
   // wrap saveState pra carimbar updatedAt e agendar push
   const _origSave=saveState;
