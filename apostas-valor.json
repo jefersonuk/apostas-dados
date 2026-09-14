@@ -4581,9 +4581,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 208.25,
+      "value": -84.18,
       "currency": "BRL",
-      "updatedAt": "2026-09-14T14:46:47.003Z"
+      "updatedAt": "2026-09-14T15:29:27.051Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 339,
+      "value": 631.43,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T14:46:47.003Z"
+      "updatedAt": "2026-09-14T15:29:27.055Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18820,6 +18820,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T14:46:47.003Z"
+    },
+    {
+      "id": "mu1ef4srz26su",
+      "kind": "valor",
+      "event": "U19 Ajax x U19 Az Alkmaae",
+      "houseA": "Ivibet",
+      "oddA": 1.6,
+      "stakeA": 292.43,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.28,
+      "prob": 74.4,
+      "winner": null,
+      "date": "2026-09-15T12:00",
+      "total": 292.43,
+      "lucroA": 175.45800000000003,
+      "lucroRed": -292.43,
+      "lucro": 175.45800000000003,
+      "roi": 60.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T15:29:27.051Z"
     }
   ],
   "invertidos": [],
@@ -18986,5 +19010,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T14:57:40.740Z"
+  "updatedAt": "2026-09-14T15:29:27.055Z"
 }
