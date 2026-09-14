@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 358.4,
+      "value": 512.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T12:12:59.094Z"
+      "updatedAt": "2026-09-14T12:27:47.446Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4676,9 +4676,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 645.94,
+      "value": 619.93,
       "currency": "EUR",
-      "updatedAt": "2026-09-14T11:39:39.452Z"
+      "updatedAt": "2026-09-14T12:27:47.445Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5035,6 +5035,12 @@
       "time": "09:15",
       "value": 30460.68,
       "updatedAt": "2026-09-12T12:32:34.931Z"
+    },
+    {
+      "date": "2026-09-14",
+      "time": "09:18",
+      "value": 28843.08,
+      "updatedAt": "2026-09-14T12:18:40.796Z"
     }
   ],
   "usdRate": 5.15,
@@ -18682,6 +18688,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T12:12:59.090Z"
+    },
+    {
+      "id": "mu17xilx6lzds",
+      "kind": "valor",
+      "event": "Panagiotis x Richie Howson (2)",
+      "houseA": "Sportmarket",
+      "oddA": 1.4,
+      "stakeA": 154.5,
+      "curA": "USD",
+      "sport": "Dardos",
+      "market": "1x2",
+      "oddMkt": 1.2,
+      "prob": 79.4,
+      "winner": null,
+      "date": "2026-09-14T09:25",
+      "total": 154.5,
+      "lucroA": 61.79999999999998,
+      "lucroRed": -154.5,
+      "lucro": 61.79999999999998,
+      "roi": 39.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T12:27:47.445Z"
     }
   ],
   "invertidos": [],
@@ -18848,5 +18878,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T12:18:29.913Z"
+  "updatedAt": "2026-09-14T12:27:47.446Z"
 }
