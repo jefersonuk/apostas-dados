@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 101.6,
+      "value": 91.6,
       "currency": "USD",
-      "updatedAt": "2026-09-12T12:31:04.841Z"
+      "updatedAt": "2026-09-14T16:25:06.682Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 659.71,
+      "value": 711.31,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T16:09:07.351Z"
+      "updatedAt": "2026-09-14T16:25:06.687Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18869,6 +18869,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T16:09:07.349Z"
+    },
+    {
+      "id": "mu1gepo9sg0ga",
+      "kind": "valor",
+      "event": "SSG Landers – Kia Tigers (1st entrada under 0.5)",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.48,
+      "stakeA": 51.6,
+      "curA": "USD",
+      "sport": "Beisebol",
+      "market": "Total de Pontos",
+      "oddMkt": 2.325,
+      "prob": 41,
+      "winner": null,
+      "date": "2026-09-15T06:30",
+      "total": 51.6,
+      "lucroA": 76.368,
+      "lucroRed": -51.6,
+      "lucro": 76.368,
+      "roi": 148,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T16:25:06.683Z"
     }
   ],
   "invertidos": [],
@@ -19035,5 +19059,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T16:09:07.351Z"
+  "updatedAt": "2026-09-14T16:25:06.687Z"
 }
