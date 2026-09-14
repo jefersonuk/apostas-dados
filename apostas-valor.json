@@ -4510,8 +4510,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": -870,
-      "updatedAt": "2026-09-14T13:56:27.480Z"
+      "value": 0,
+      "updatedAt": "2026-09-14T18:01:14.155Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4522,9 +4522,9 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 874.99,
+      "value": 4.99,
       "currency": "BRL",
-      "updatedAt": "2026-09-12T12:30:23.262Z"
+      "updatedAt": "2026-09-14T18:01:36.046Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4581,9 +4581,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": -84.18,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-09-14T15:29:27.051Z"
+      "updatedAt": "2026-09-14T18:01:04.878Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -19059,5 +19059,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T16:25:06.687Z"
+  "updatedAt": "2026-09-14T18:01:36.047Z"
 }
