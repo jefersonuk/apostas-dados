@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 347.25,
+      "value": 208.25,
       "currency": "BRL",
-      "updatedAt": "2026-09-14T14:33:17.199Z"
+      "updatedAt": "2026-09-14T14:46:47.003Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 200,
+      "value": 339,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T14:17:24.478Z"
+      "updatedAt": "2026-09-14T14:46:47.003Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18788,6 +18788,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T14:33:17.199Z"
+    },
+    {
+      "id": "mu1cw9g8oj8d6",
+      "kind": "valor",
+      "event": "U19 NEC x U19 Feyenoord",
+      "houseA": "Ivibet",
+      "oddA": 2.7,
+      "stakeA": 139,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-15T08:00",
+      "total": 139,
+      "lucroA": 236.3,
+      "lucroRed": -139,
+      "lucro": 236.3,
+      "roi": 170.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T14:46:47.003Z"
     }
   ],
   "invertidos": [],
@@ -18954,5 +18978,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T14:33:17.199Z"
+  "updatedAt": "2026-09-14T14:46:47.003Z"
 }
