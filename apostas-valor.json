@@ -4640,10 +4640,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 204.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T00:47:18.146Z"
+      "updatedAt": "2026-09-14T11:50:45.114Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4747,9 +4747,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 112.62,
+      "value": 72.62,
       "currency": "USD",
-      "updatedAt": "2026-09-14T11:41:33.013Z"
+      "updatedAt": "2026-09-14T11:50:45.109Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18634,6 +18634,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-14T00:45:40.326Z"
+    },
+    {
+      "id": "mu16lvuc6lw4x",
+      "kind": "valor",
+      "event": "Pecka, Vlastimil – Darin, Kyryl (1)",
+      "houseA": "Betonline",
+      "oddA": 2.24,
+      "stakeA": 204.8,
+      "curA": "USD",
+      "sport": "Tênis de Mesa",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-14T09:30",
+      "total": 204.8,
+      "lucroA": 253.95200000000006,
+      "lucroRed": -204.8,
+      "lucro": 253.95200000000006,
+      "roi": 124.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T11:50:45.109Z"
     }
   ],
   "invertidos": [],
@@ -18800,5 +18824,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T11:43:35.388Z"
+  "updatedAt": "2026-09-14T11:50:45.114Z"
 }
