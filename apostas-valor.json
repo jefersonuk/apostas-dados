@@ -4676,9 +4676,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 675.94,
+      "value": 645.94,
       "currency": "EUR",
-      "updatedAt": "2026-09-14T00:45:40.326Z"
+      "updatedAt": "2026-09-14T11:39:39.452Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4747,9 +4747,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 89.25,
+      "value": 112.62,
       "currency": "USD",
-      "updatedAt": "2026-09-13T22:58:56.454Z"
+      "updatedAt": "2026-09-14T11:41:33.013Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18800,5 +18800,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T11:39:11.468Z"
+  "updatedAt": "2026-09-14T11:41:33.014Z"
 }
