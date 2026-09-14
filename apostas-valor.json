@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1072.51,
+      "value": 1175.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T19:40:05.672Z"
+      "updatedAt": "2026-09-14T19:45:50.563Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 62.62,
+      "value": 42.62,
       "currency": "USD",
-      "updatedAt": "2026-09-14T19:40:05.669Z"
+      "updatedAt": "2026-09-14T19:45:50.561Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18941,6 +18941,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T19:40:05.669Z"
+    },
+    {
+      "id": "mu1nkush0x56s",
+      "kind": "valor",
+      "event": "Hayden Johnson – J Boujii 1 / DNB",
+      "houseA": "Betonline",
+      "oddA": 2.2,
+      "stakeA": 103.2,
+      "curA": "USD",
+      "sport": "MMA",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.62,
+      "prob": 58.8,
+      "winner": null,
+      "date": "2026-09-17T21:00",
+      "total": 103.2,
+      "lucroA": 123.84000000000002,
+      "lucroRed": -103.2,
+      "lucro": 123.84000000000002,
+      "roi": 120.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T19:45:50.562Z"
     }
   ],
   "invertidos": [],
@@ -19107,5 +19131,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T19:40:05.673Z"
+  "updatedAt": "2026-09-14T19:45:50.563Z"
 }
