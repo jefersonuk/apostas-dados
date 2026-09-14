@@ -4516,8 +4516,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1439,
-      "updatedAt": "2026-09-14T21:02:59.268Z"
+      "value": 1339,
+      "updatedAt": "2026-09-14T21:18:42.100Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1744.11,
+      "value": 1844.11,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T21:05:14.000Z"
+      "updatedAt": "2026-09-14T21:18:42.105Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19062,6 +19062,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T21:02:59.269Z"
+    },
+    {
+      "id": "mu1qw9tfgigy5",
+      "kind": "valor",
+      "event": "Kansas City Chiefs – Denver Broncos (mais pontos no 1st tempo)",
+      "houseA": "Betnacional",
+      "oddA": 2,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol Americano",
+      "market": "Total de Pontos",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-14T21:30",
+      "total": 100,
+      "lucroA": 100,
+      "lucroRed": -100,
+      "lucro": 100,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T21:18:42.101Z"
     }
   ],
   "invertidos": [],
@@ -19228,5 +19252,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T21:09:48.850Z"
+  "updatedAt": "2026-09-14T21:18:42.105Z"
 }
