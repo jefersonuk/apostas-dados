@@ -4502,8 +4502,8 @@
     {
       "id": "mrgvixbvmtmbs",
       "name": "Bet365",
-      "value": 0,
-      "updatedAt": "2026-09-02T13:50:45.729Z"
+      "value": -870,
+      "updatedAt": "2026-09-14T13:56:27.480Z"
     },
     {
       "id": "mrgvj5lygydy5",
@@ -4534,10 +4534,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 0,
+      "value": 1415,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-10T02:04:22.280Z"
+      "updatedAt": "2026-09-14T13:56:27.484Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4573,9 +4573,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 959.25,
+      "value": 414.25,
       "currency": "BRL",
-      "updatedAt": "2026-09-14T12:34:58.279Z"
+      "updatedAt": "2026-09-14T13:56:27.480Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -18739,6 +18739,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T12:34:58.280Z"
+    },
+    {
+      "id": "mu1b3jkm96xz2",
+      "kind": "sure",
+      "event": "Nacional x Nilton Lins",
+      "houseA": "bet365",
+      "houseB": "ivibet",
+      "oddA": 1.85,
+      "oddB": 2.95,
+      "total": 1415,
+      "stakeA": 870,
+      "stakeB": 545,
+      "lucroA": 194.5,
+      "lucroB": 192.75,
+      "lucro": 192.75,
+      "roi": 13.621908127208481,
+      "winner": null,
+      "curA": "BRL",
+      "curB": "BRL",
+      "date": "2026-09-14T19:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T13:56:27.481Z"
     }
   ],
   "invertidos": [],
@@ -18905,5 +18929,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T13:27:11.334Z"
+  "updatedAt": "2026-09-14T13:56:27.484Z"
 }
