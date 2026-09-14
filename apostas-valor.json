@@ -4516,8 +4516,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1539,
-      "updatedAt": "2026-09-12T23:48:45.474Z"
+      "value": 1439,
+      "updatedAt": "2026-09-14T21:02:59.268Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1695.71,
+      "value": 1795.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T19:55:14.651Z"
+      "updatedAt": "2026-09-14T21:02:59.272Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19037,6 +19037,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T19:55:14.649Z"
+    },
+    {
+      "id": "mu1qc2bon9b91",
+      "kind": "valor",
+      "event": "Ajax – Excelsior (1 over 2.5)",
+      "houseA": "Betnacional",
+      "oddA": 2,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-19T15:00",
+      "total": 100,
+      "lucroA": 100,
+      "lucroRed": -100,
+      "lucro": 100,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T21:02:59.269Z"
     }
   ],
   "invertidos": [],
@@ -19203,5 +19227,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T20:40:49.171Z"
+  "updatedAt": "2026-09-14T21:02:59.272Z"
 }
