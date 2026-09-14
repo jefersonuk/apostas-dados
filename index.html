@@ -176,6 +176,27 @@
   .pe-row input{margin:0;padding:4px 6px;font-size:11px;text-align:right;}
   .pe-note{background:#0E1520;border:1px solid #1A2C40;border-radius:9px;padding:8px 10px;margin:8px 0 0;
            font-size:11px;line-height:1.5;color:var(--muted);}
+  /* escada de preco justo por modelo */
+  .pj-esc-head{font-family:var(--mono);font-size:11px;color:var(--text);margin:10px 0 4px;}
+  .esc-tab{border:1px solid var(--border);border-radius:9px;overflow:hidden;background:#0E1116;}
+  .esc-tab .esc-h,.esc-tab .esc-l{display:grid;gap:4px;align-items:center;padding:5px 8px;
+       font-family:var(--mono);font-size:10.5px;}
+  .esc-tab .esc-h{grid-template-columns:40px 1fr 1fr 58px 62px 56px 52px;
+       color:var(--muted-2);font-size:9px;text-transform:uppercase;letter-spacing:.05em;
+       font-family:var(--sans);background:#0B0D10;border-bottom:1px solid var(--border);}
+  .esc-tab .esc-l{grid-template-columns:40px 1fr 1fr 58px 62px 56px 52px;border-bottom:1px solid var(--border);}
+  .esc-tab.just .esc-h,.esc-tab.just .esc-l{grid-template-columns:44px 1fr 1fr 1fr 1fr;}
+  .esc-tab .esc-l:last-child{border-bottom:none;}
+  .esc-tab .esc-l.fora{background:#2A1A08;}
+  .esc-tab .esc-l.tem{background:#0E1520;}
+  .esc-tab .d-fora{color:var(--amber);font-weight:700;}
+  .esc-tab .clic{color:var(--sky);cursor:pointer;text-decoration:underline dotted;}
+  .esc-tab .clic:hover{color:#fff;}
+  .esc-tab span{text-align:right;} .esc-tab span:first-child{text-align:left;}
+  @media (max-width:520px){
+    .esc-tab .esc-h,.esc-tab .esc-l{grid-template-columns:34px 1fr 1fr 46px 52px 46px 44px;font-size:9.5px;padding:5px 5px;}
+    .esc-tab.just .esc-h,.esc-tab.just .esc-l{grid-template-columns:38px 1fr 1fr 1fr 1fr;}
+  }
   /* desempenho por segmento */
   .seg-row{padding:7px 0;border-bottom:1px solid var(--border);}
   .seg-row:last-of-type{border-bottom:none;}
@@ -899,6 +920,26 @@
           <button type="button" class="evo-opt active" data-pjmodo="col">Colar da tela</button>
           <button type="button" class="evo-opt" data-pjmodo="par">2 melhores odds</button>
           <button type="button" class="evo-opt" data-pjmodo="regua">Régua sharp</button>
+          <button type="button" class="evo-opt" data-pjmodo="esc">Escada</button>
+        </div>
+
+        <div id="pjBlocoEsc" style="display:none;">
+          <details class="help">
+            <summary>o que a escada faz que uma odd sozinha não faz</summary>
+            <div class="help-body">Uma odd justa isolada é <b>uma equação para uma incógnita</b>: dá para derivar a escada toda por Poisson, mas o erro da âncora se amplifica nas pontas — 2% de erro na linha ancorada vira 9% quatro linhas acima — e a dispersão fica sem identificação: ancorando Poisson e binomial negativa no mesmo preço, elas divergem 28% duas linhas acima e nada na âncora diz qual está certa.<br><br>Aqui é o contrário: você entrega a <b>escada inteira de dois lados</b> da casa que sabe precificar. Cada linha tem seu próprio de-vig (margem <i>medida</i>, não assumida), e as linhas juntas ajustam o modelo com folga de graus de liberdade. O resultado é um preço justo para <b>toda</b> linha — inclusive as que a casa não oferece — e a conta de coerência: se uma linha discorda das outras, é ela que está fora do lugar.</div>
+          </details>
+
+          <label>Cole a escada de dois lados — uma linha por row: <b>linha over under</b></label>
+          <textarea id="pjEscTxt" rows="5" placeholder="2.5  1.11  8.10&#10;3.5  1.31  3.78&#10;4.5  1.72  2.26&#10;5.5  2.48  1.61&#10;6.5  3.98  1.29" style="width:100%;font-family:var(--mono);font-size:12.5px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:#0E1116;color:var(--text);resize:vertical;"></textarea>
+          <div class="hint">Palavras são ignoradas — “Mais de 2.5 | 1.11 | Menos de 2.5 | 8.10” funciona igual. Vírgula decimal também. Precisa dos <b>dois lados</b>: é o par que mede a margem.</div>
+
+          <div class="evo-seg" style="margin:8px 0 6px;">
+            <button type="button" class="evo-opt active" data-pjmod="pois">Poisson</button>
+            <button type="button" class="evo-opt" data-pjmod="nb">Bin. negativa</button>
+            <button type="button" class="evo-opt" data-pjmod="norm">Normal</button>
+          </div>
+          <div class="hint" id="pjEscModNota"></div>
+          <div id="pjEscOut"></div>
         </div>
 
         <div id="pjBlocoCol">
@@ -965,7 +1006,7 @@
           </details>
         </div>
 
-        <div class="grid2" style="margin-top:12px;">
+        <div class="grid2" id="pjBlocoAposta" style="margin-top:12px;">
           <div><label>Odd onde você vai apostar</label><input type="text" inputmode="decimal" id="pjOddA" placeholder="2.30"></div>
           <div><label>Limite da casa (opcional)</label>
             <div class="cur-toggle" id="pjLimCur">
@@ -999,7 +1040,7 @@
         <div><label>Odd da casa</label><input type="number" id="vbOdd" step="0.01" min="1.01" placeholder="2.10"></div>
       </div>
       <div class="grid2">
-        <div><label>Odd média do mercado <span id="vbSvTag"></span></label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="1.90"></div>
+        <div><label>Odd média do mercado <span id="vbSvTag"></span><span id="vbMktTag"></span></label><input type="number" id="vbOddMkt" step="0.01" min="1.01" placeholder="1.90"></div>
         <div><label>Prob. real % (auto)</label><input type="number" id="vbProb" step="0.1" placeholder="calculada"></div>
       </div>
 
@@ -1259,7 +1300,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260914-1500';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260914-1730';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3726,6 +3767,12 @@
   const VB_MARGEM_MKT=0.05;   // margem embutida nas odds médias de mercado
 
   let vbFilter='all', vbSegBy='market', vbEditingId=null, vbOpenDetail=null;
+  /* O campo "odd média do mercado" recebe DOIS significados diferentes:
+       - digitado à mão: média de tela, COM a margem das casas dentro -> desconta VB_MARGEM_MKT
+       - vindo do Preço justo / da Escada: já passou por de-vig -> NÃO desconta de novo
+     Sem esta distinção o preço justo levava o corte de 5% duas vezes e toda
+     sugestão saía conservadora demais. A margem medida sempre ganha da assumida. */
+  let vbMktJusto=false;
   let vbCollapsedDays=new Set(), vbInitCollapsed=true;
 
   function vbResolvidas(){ return valorBets().filter(o=>o.winner&&o.winner!=='VOID'); }
@@ -3735,7 +3782,7 @@
     const oddCasa=parseFloat($('vbOdd').value);
     const oddMkt=parseFloat($('vbOddMkt').value);
     if(!(oddCasa>1)||!(oddMkt>1)) return null;
-    const probReal=(1/oddMkt)/(1+VB_MARGEM_MKT);
+    const probReal=vbMktJusto ? (1/oddMkt) : (1/oddMkt)/(1+VB_MARGEM_MKT);
     const ev=probReal*oddCasa-1;
     const banca=caixaAtual();
     if(ev<=0) return {probReal,ev,kelly:0,kellyStake:0,teto:0,bruto:0,sugerido:0,pe:null,banca};
@@ -3827,6 +3874,22 @@
     return 'escada nesta odd '+fmt(alvo)+sufixo+' <span style="color:var(--green)">✓</span>'+tag;
   }
 
+  // quem preenche o campo declara a origem do numero
+  function vbSetOddMkt(odd,justo){
+    $('vbOddMkt').value=odd.toFixed(3);
+    vbMktJusto=!!justo;
+    renderMktTag();
+  }
+  function renderMktTag(){
+    const el=$('vbMktTag'); if(!el) return;
+    const v=parseFloat($('vbOddMkt').value);
+    el.innerHTML=(v>1&&vbMktJusto)
+      ? '<span class="pe-tag">já sem margem</span>'
+      : (v>1 ? '<span class="pe-tag quarto">média · −'+(100*VB_MARGEM_MKT).toFixed(0)+'%</span>' : '');
+  }
+  // digitou à mão: volta a valer como média de tela
+  $('vbOddMkt').addEventListener('input',()=>{ vbMktJusto=false; renderMktTag(); });
+
   function vbResetCur(){
     $('scCurV').value='BRL';
     const g=$('curToggleV');
@@ -3858,6 +3921,7 @@
     touch(op);
     state.surebets.push(op);
     ['vbHouse','vbOdd','vbStake','vbProb','vbOddMkt','vbEvent'].forEach(id=>{ $(id).value=''; });
+    vbMktJusto=false; renderMktTag();
     $('vbSugestao').innerHTML='';
     $('vbDate').value=nowLocalStr();
     vbResetCur();
@@ -3906,7 +3970,7 @@
     return pz((lo+hi)/2,q);
   }
   function pjMetodo(){ const r=document.querySelector('input[name="pjMet"]:checked'); return r?r.value:'power'; }
-  let pjLast=null, pjPeso='auto', pjModo='col';
+  let pjLast=null, pjPeso='auto', pjModo='col', pjEscMod='pois', pjEscLast=null;
 
   // Peso da régua na mistura. A margem é o termômetro de confiança do livro:
   // margem baixa = "eu sei o preço"; margem alta = "estou me protegendo".
@@ -4107,7 +4171,191 @@
     box.innerHTML=html;
   }
 
+  /* ============================================================
+     ESCADA — ajustar uma distribuição à escada inteira de um livro sharp.
+     Uma odd justa sozinha identifica um parâmetro e só: dá para derivar o resto
+     por Poisson, mas o erro da âncora amplifica (2% na linha ancorada vira 9%
+     quatro linhas acima) e a dispersão fica livre (Poisson e binomial negativa
+     ancoradas no mesmo preço divergem 28% duas linhas acima). A escada de dois
+     lados resolve as duas coisas: mede a margem em vez de assumir, e dá graus de
+     liberdade para identificar a dispersão.
+     Todas as pmf usam recorrência, sem log-gama:
+       Poisson:  p(0)=e^-mu            p(k)=p(k-1)*mu/k
+       Bin.neg:  p(0)=(r/(r+mu))^r     p(k)=p(k-1)*((k-1+r)/k)*(mu/(r+mu))
+       Normal:   contínua; a linha .5 já é a correção de continuidade
+     ============================================================ */
+  const PJ_KMAX=400;
+  function pjPmfPois(mu){
+    const v=[Math.exp(-mu)];
+    for(let k=1;k<=PJ_KMAX;k++) v.push(v[k-1]*mu/k);
+    return v;
+  }
+  function pjPmfNB(mu,r){
+    const q=mu/(r+mu), v=[Math.pow(r/(r+mu),r)];
+    for(let k=1;k<=PJ_KMAX;k++) v.push(v[k-1]*((k-1+r)/k)*q);
+    return v;
+  }
+  // P(total > linha). Para linha .5 é P(T >= ceil), sem push.
+  function pjOverDisc(pmf,linha){
+    const ate=Math.floor(linha);
+    let acc=0; for(let k=0;k<=ate&&k<pmf.length;k++) acc+=pmf[k];
+    return Math.max(1e-9,Math.min(1-1e-9,1-acc));
+  }
+  function pjNormCdf(z){
+    // Abramowitz & Stegun 7.1.26 sobre erf
+    const t=1/(1+0.3275911*Math.abs(z)/Math.SQRT2);
+    const y=1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-0.284496736)*t+0.254829592)*t*Math.exp(-z*z/2);
+    return z>=0 ? 0.5*(1+y) : 0.5*(1-y);
+  }
+  function pjOverNorm(mu,sd,linha){
+    return Math.max(1e-9,Math.min(1-1e-9,1-pjNormCdf((linha-mu)/sd)));
+  }
+  // P(over) do modelo, seja qual for
+  function pjModelOver(m,linha){
+    if(m.tipo==='norm') return pjOverNorm(m.mu,m.sd,linha);
+    return pjOverDisc(m.pmf,linha);
+  }
+  // busca ternária num intervalo unimodal
+  function pjTernaria(f,lo,hi,it){
+    for(let i=0;i<(it||120);i++){
+      const a=lo+(hi-lo)/3, b=hi-(hi-lo)/3;
+      if(f(a)<f(b)) hi=b; else lo=a;
+    }
+    return (lo+hi)/2;
+  }
+  // ajusta o modelo às probabilidades justas observadas: [{linha,p}]
+  function pjAjustar(tipo,obs){
+    const erro=m=>obs.reduce((s,o)=>{ const d=pjModelOver(m,o.linha)-o.p; return s+d*d; },0);
+    const faixa=[Math.max(0.05,Math.min.apply(null,obs.map(o=>o.linha))*0.2),
+                 Math.max.apply(null,obs.map(o=>o.linha))*3+5];
+    if(tipo==='pois'){
+      const mu=pjTernaria(x=>erro({tipo:'pois',pmf:pjPmfPois(x)}),faixa[0],Math.min(faixa[1],PJ_KMAX*0.7));
+      return {tipo:'pois',mu,pmf:pjPmfPois(mu),params:[['λ',mu.toFixed(3)]]};
+    }
+    if(tipo==='nb'){
+      const fit=r=>{
+        const mu=pjTernaria(x=>erro({tipo:'nb',pmf:pjPmfNB(x,r)}),faixa[0],Math.min(faixa[1],PJ_KMAX*0.7),80);
+        return {mu,e:erro({tipo:'nb',pmf:pjPmfNB(mu,r)})};
+      };
+      // r grande = quase Poisson; r pequeno = muito superdisperso
+      const r=pjTernaria(x=>fit(x).e,1.0,200,60);
+      const mu=fit(r).mu;
+      const varr=mu*(1+mu/r);
+      return {tipo:'nb',mu,r,pmf:pjPmfNB(mu,r),
+              params:[['média',mu.toFixed(3)],['r',r.toFixed(1)],['desvio',Math.sqrt(varr).toFixed(2)]]};
+    }
+    const fitS=sd=>({mu:pjTernaria(x=>erro({tipo:'norm',mu:x,sd}),faixa[0],faixa[1],80),sd});
+    const sd=pjTernaria(x=>{const f=fitS(x); return erro({tipo:'norm',mu:f.mu,sd:x});},0.3,faixa[1],60);
+    const mu=fitS(sd).mu;
+    return {tipo:'norm',mu,sd,params:[['média',mu.toFixed(2)],['desvio',sd.toFixed(2)]]};
+  }
+  // lambda que cada linha sozinha implicaria — serve para achar a linha fora do lugar
+  function pjMuDaLinha(tipo,linha,p,ref){
+    const f=x=>{
+      const m = tipo==='norm' ? {tipo:'norm',mu:x,sd:ref.sd}
+              : tipo==='nb'   ? {tipo:'nb',pmf:pjPmfNB(x,ref.r)}
+              :                 {tipo:'pois',pmf:pjPmfPois(x)};
+      return Math.abs(pjModelOver(m,linha)-p);
+    };
+    return pjTernaria(f,0.05,Math.min(linha*4+20,PJ_KMAX*0.7),90);
+  }
+  /* Lê a escada colada. Por row: primeiro número é a linha, os dois seguintes
+     que parecem odd (>1.005) são over e under. Palavras são descartadas. */
+  function pjParseEscada(txt){
+    const out=[];
+    String(txt||'').split(/[\n\r]+/).forEach(row=>{
+      const nums=(row.replace(/,(\d)/g,'.$1').match(/-?\d+(?:\.\d+)?/g)||[]).map(parseFloat);
+      if(nums.length<3) return;
+      const linha=nums[0];
+      if(!(linha>=0)||linha>PJ_KMAX*0.7) return;
+      const odds=nums.slice(1).filter(n=>n>1.005&&n<1000);
+      // "Mais de 2.5 | 1.11 | Menos de 2.5 | 8.10" repete a linha como rótulo do
+      // segundo lado. Tira UMA ocorrência dela — mas só quando ainda sobram duas
+      // odds, para não engolir uma odd que por acaso valha o mesmo que a linha.
+      const rep=odds.findIndex(n=>Math.abs(n-linha)<1e-9);
+      if(rep>=0 && odds.length>=3) odds.splice(rep,1);
+      if(odds.length<2) return;
+      out.push({linha, over:odds[0], under:odds[1]});
+    });
+    // linha repetida: fica a última
+    const m=new Map(); out.forEach(o=>m.set(o.linha,o));
+    return [...m.values()].sort((a,b)=>a.linha-b.linha);
+  }
+
+  function pjRenderEsc(){
+    const box=$('pjEscOut');
+    $('pjEscModNota').innerHTML=
+      pjEscMod==='pois' ? 'Poisson assume <b>variância = média</b>. Serve para gols e escanteios; um parâmetro só.'
+    : pjEscMod==='nb'   ? 'Binomial negativa admite <b>superdispersão</b> (variância &gt; média). Melhor para gols e cartões quando a escada tem 4+ linhas.'
+    :                     'Normal, para <b>pontos</b> — basquete, futebol americano. Não use em gols: contagem baixa não é normal.';
+    $('pjEscModNota').innerHTML+=' <span style="color:var(--muted-2)">Troque de modelo e compare o <b>maior resíduo</b>: o modelo certo para o mercado é o que deixa o menor.</span>';
+    const linhas=pjParseEscada($('pjEscTxt').value);
+    if(linhas.length<1){
+      box.innerHTML='<div class="hint" style="margin:8px 0 0;">Cole pelo menos uma linha com os dois lados.</div>';
+      pjEscLast=null; return;
+    }
+    const min2=(pjEscMod==='pois')?1:2;
+    if(linhas.length<min2){
+      box.innerHTML='<div class="hint" style="margin:8px 0 0;color:var(--amber);">Este modelo tem dois parâmetros: precisa de <b>duas linhas ou mais</b>. Com uma só, use Poisson.</div>';
+      pjEscLast=null; return;
+    }
+    // de-vig proporcional linha a linha: a margem é medida, não assumida
+    const obs=linhas.map(l=>{
+      const soma=1/l.over+1/l.under;
+      return {linha:l.linha, over:l.over, under:l.under, marg:soma-1, p:(1/l.over)/soma};
+    });
+    const mod=pjAjustar(pjEscMod,obs);
+    const resid=obs.map(o=>({...o, pm:pjModelOver(mod,o.linha)}));
+    const pior=Math.max.apply(null,resid.map(r=>Math.abs(r.pm-r.p)));
+    const muL=resid.map(r=>pjMuDaLinha(pjEscMod,r.linha,r.p,mod));
+
+    const cab=mod.params.map(([k,v])=>'<b>'+k+'</b> '+v).join(' · ');
+    const rows=String($('pjEscTxt').value||'').split(/[\n\r]+/).filter(r=>/\d/.test(r)).length;
+    let h='<div class="pj-esc-head">'+cab+' <span style="color:var(--muted-2)">· maior resíduo '+
+          (100*pior).toFixed(2)+' ponto de prob · '+obs.length+' de '+rows+' rows lidos</span></div>';
+    if(obs.length<rows)
+      h+='<div class="hint" style="margin:0 0 6px;color:var(--amber);">'+(rows-obs.length)+
+         ' row não virou linha: precisa de <b>linha, odd over e odd under</b> na mesma row.</div>';
+
+    h+='<div class="esc-tab"><div class="esc-h"><span>linha</span><span>over</span><span>under</span>'+
+       '<span>margem</span><span>P(over)</span><span>implica</span><span>desvio</span></div>';
+    resid.forEach((r,i)=>{
+      const d=100*(r.p-r.pm);
+      const forte=Math.abs(d)>1.5;
+      h+='<div class="esc-l'+(forte?' fora':'')+'"><span>'+r.linha+'</span>'+
+         '<span>'+r.over.toFixed(2)+'</span><span>'+r.under.toFixed(2)+'</span>'+
+         '<span>'+(100*r.marg).toFixed(2)+'%</span>'+
+         '<span>'+(100*r.p).toFixed(2)+'%</span>'+
+         '<span>'+muL[i].toFixed(2)+'</span>'+
+         '<span class="'+(forte?'d-fora':'')+'">'+(d>=0?'+':'')+d.toFixed(2)+'</span></div>';
+    });
+    h+='</div>';
+    if(resid.some((r,i)=>Math.abs(100*(r.p-r.pm))>1.5))
+      h+='<div class="hint" style="margin:6px 0 0;color:var(--amber);">Linha em amarelo discorda das vizinhas em mais de 1,5 ponto de probabilidade. Ou a casa errou nela, ou o modelo não serve para este mercado.</div>';
+
+    // escada justa completa, inclusive linhas que a casa não oferece
+    const lo=Math.max(0.5,Math.floor(obs[0].linha)-2.5);
+    const hi=Math.ceil(obs[obs.length-1].linha)+2.5;
+    const passo=(hi-lo>24)?Math.round((hi-lo)/16):1;
+    h+='<div class="pj-esc-head" style="margin-top:12px;">Escada justa — clique para levar ao formulário</div>';
+    h+='<div class="esc-tab just"><div class="esc-h"><span>linha</span><span>P(over)</span><span>odd over</span><span>P(under)</span><span>odd under</span></div>';
+    const ofertadas=new Set(obs.map(o=>o.linha));
+    for(let L=lo;L<=hi+1e-9;L+=passo){
+      const po=pjModelOver(mod,L), pu=1-po;
+      if(po<0.004||po>0.996) continue;
+      h+='<div class="esc-l'+(ofertadas.has(L)?' tem':'')+'"><span>'+L.toFixed(1)+'</span>'+
+         '<span>'+(100*po).toFixed(2)+'%</span>'+
+         '<span class="clic" data-pjesc="'+(1/po).toFixed(4)+'">'+(1/po).toFixed(3)+'</span>'+
+         '<span>'+(100*pu).toFixed(2)+'%</span>'+
+         '<span class="clic" data-pjesc="'+(1/pu).toFixed(4)+'">'+(1/pu).toFixed(3)+'</span></div>';
+    }
+    h+='</div>';
+    box.innerHTML=h;
+    pjEscLast={mod,obs};
+  }
+
   function pjRender(){
+    if(pjModo==='esc'){ pjRenderEsc(); return; }
     if(pjModo==='col'){ pjRenderCol(); return; }
     if(pjModo==='par'){ pjRenderPar(); return; }
     const box=$('pjResult');
@@ -4198,8 +4446,29 @@
     $('pjBlocoCol').style.display   = (pjModo==='col')?'block':'none';
     $('pjBlocoPar').style.display   = (pjModo==='par')?'block':'none';
     $('pjBlocoRegua').style.display = (pjModo==='regua')?'block':'none';
+    $('pjBlocoEsc').style.display   = (pjModo==='esc')?'block':'none';
+    // a escada tem saída própria: a caixa de resultado do modo simples some
+    // na escada o preço sai da tabela clicável: os campos do modo simples somem
+    $('pjResult').style.display      = (pjModo==='esc')?'none':'';
+    $('pjUsar').style.display        = (pjModo==='esc')?'none':'';
+    $('pjBlocoAposta').style.display = (pjModo==='esc')?'none':'';
     pjRender();
   }));
+  $('pjEscTxt').addEventListener('input',pjRenderEsc);
+  document.querySelectorAll('[data-pjmod]').forEach(b=>b.addEventListener('click',()=>{
+    pjEscMod=b.dataset.pjmod;
+    document.querySelectorAll('[data-pjmod]').forEach(x=>x.classList.toggle('active',x===b));
+    pjRenderEsc();
+  }));
+  $('pjEscOut').addEventListener('click',e=>{
+    const c=e.target.closest('[data-pjesc]'); if(!c) return;
+    const odd=parseFloat(c.dataset.pjesc);
+    if(!(odd>1)) return;
+    $('vbOdd').dispatchEvent(new Event('input'));
+    vbSetOddMkt(odd,true);
+    updateValorCalc();
+    toast('Preço justo '+odd.toFixed(3)+' no formulário ✓');
+  });
   document.querySelectorAll('input[name="pjMet"]').forEach(r=>r.addEventListener('change',pjRender));
   document.querySelectorAll('[data-pjw]').forEach(b=>b.addEventListener('click',()=>{
     pjPeso=b.dataset.pjw;
@@ -4208,10 +4477,10 @@
   }));
   $('pjUsar').addEventListener('click',()=>{
     if(!pjLast){ alert('Calcule o preço justo primeiro.'); return; }
-    $('vbOddMkt').value=pjLast.oddJusta.toFixed(3);
     const oA=numBR($('pjOddA').value);
     if(oA>1) $('vbOdd').value=oA;
-    ['vbOdd','vbOddMkt'].forEach(id=>$(id).dispatchEvent(new Event('input')));
+    $('vbOdd').dispatchEvent(new Event('input'));
+    vbSetOddMkt(pjLast.oddJusta,true);
     updateValorCalc();
     toast('Preço justo '+pjLast.oddJusta.toFixed(3)+' no formulário ✓');
   });
