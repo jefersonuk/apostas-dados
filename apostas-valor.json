@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1913.6,
-      "updatedAt": "2026-09-13T22:59:26.511Z"
+      "value": 1685.32,
+      "updatedAt": "2026-09-14T16:09:07.349Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 431.43,
+      "value": 659.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T15:29:50.316Z"
+      "updatedAt": "2026-09-14T16:09:07.351Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18845,6 +18845,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T15:29:27.051Z"
+    },
+    {
+      "id": "mu1fu5g4m8b3g",
+      "kind": "valor",
+      "event": "Canada (Points) – Venezuela (Points) Abaixo 41.5 1º set",
+      "houseA": "Pinnacle",
+      "oddA": 2.02,
+      "stakeA": 228.28,
+      "curA": "BRL",
+      "sport": "Vôlei",
+      "market": "Total de Pontos",
+      "oddMkt": 1.788,
+      "prob": 53.3,
+      "winner": null,
+      "date": "2026-09-14T21:00",
+      "total": 228.28,
+      "lucroA": 232.84560000000002,
+      "lucroRed": -228.28,
+      "lucro": 232.84560000000002,
+      "roi": 102,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T16:09:07.349Z"
     }
   ],
   "invertidos": [],
@@ -19011,5 +19035,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T15:29:50.316Z"
+  "updatedAt": "2026-09-14T16:09:07.351Z"
 }
