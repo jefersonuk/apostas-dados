@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1425.32,
-      "updatedAt": "2026-09-14T19:50:41.966Z"
+      "value": 1295.32,
+      "updatedAt": "2026-09-14T19:52:58.750Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1435.71,
+      "value": 1565.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T19:50:41.968Z"
+      "updatedAt": "2026-09-14T19:52:58.752Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18989,6 +18989,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T19:50:41.966Z"
+    },
+    {
+      "id": "mu1nu16lzfnqy",
+      "kind": "valor",
+      "event": "Ryukyu Golden Kings – Ibaraki Robots (h1 -6)",
+      "houseA": "Pinnacle",
+      "oddA": 2.23,
+      "stakeA": 130,
+      "curA": "BRL",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.988,
+      "prob": 50.3,
+      "winner": null,
+      "date": "2026-09-15T07:35",
+      "total": 130,
+      "lucroA": 159.9,
+      "lucroRed": -130,
+      "lucro": 159.9,
+      "roi": 123,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T19:52:58.750Z"
     }
   ],
   "invertidos": [],
@@ -19155,5 +19179,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T19:50:41.968Z"
+  "updatedAt": "2026-09-14T19:52:58.752Z"
 }
