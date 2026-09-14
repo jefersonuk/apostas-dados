@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1020.91,
+      "value": 1072.51,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T19:09:34.595Z"
+      "updatedAt": "2026-09-14T19:40:05.672Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 72.62,
+      "value": 62.62,
       "currency": "USD",
-      "updatedAt": "2026-09-14T11:50:45.109Z"
+      "updatedAt": "2026-09-14T19:40:05.669Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -18917,6 +18917,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-14T19:09:34.592Z"
+    },
+    {
+      "id": "mu1ndgo4knitp",
+      "kind": "valor",
+      "event": "Estral Esports – KaBuM! IDL (2 mapa 1)",
+      "houseA": "Betonline",
+      "oddA": 4.66,
+      "stakeA": 51.6,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "oddMkt": 3.07,
+      "prob": 31,
+      "winner": null,
+      "date": "2026-09-14T17:00",
+      "total": 51.6,
+      "lucroA": 188.85600000000002,
+      "lucroRed": -51.6,
+      "lucro": 188.85600000000002,
+      "roi": 366,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-14T19:40:05.669Z"
     }
   ],
   "invertidos": [],
@@ -19083,5 +19107,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T19:09:34.595Z"
+  "updatedAt": "2026-09-14T19:40:05.673Z"
 }
