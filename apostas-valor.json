@@ -4719,7 +4719,7 @@
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
       "value": 308.56,
-      "updatedAt": "2026-09-14T12:12:59.089Z",
+      "updatedAt": "2026-09-14T12:35:56.080Z",
       "currency": "USD"
     },
     {
@@ -18678,7 +18678,7 @@
       "oddMkt": 1.2,
       "prob": 79.4,
       "winner": null,
-      "date": "2026-09-14T09:00",
+      "date": "2026-09-14T09:30",
       "total": 153.6,
       "lucroA": 72.192,
       "lucroRed": -153.6,
@@ -18687,7 +18687,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-14T12:12:59.090Z"
+      "updatedAt": "2026-09-14T12:35:56.080Z"
     },
     {
       "id": "mu17xilx6lzds",
@@ -18902,5 +18902,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-14T12:34:58.280Z"
+  "updatedAt": "2026-09-14T12:35:56.080Z"
 }
