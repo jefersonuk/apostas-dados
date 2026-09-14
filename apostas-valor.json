@@ -14,7 +14,15 @@
     "escAnc": 200,
     "escTeto": 400,
     "escPiso": 25,
-    "escExp": 1
+    "escExp": 1,
+    "polE": true,
+    "polEFatores": {
+      "f210": 1,
+      "f250": 0.5,
+      "f300": 0.25,
+      "fAcima": 0
+    },
+    "polEVeto": "Pinnacle"
   },
   "bets": [
     {
@@ -5049,7 +5057,7 @@
   "eurRate": 5.94,
   "eurRateSrc": "AwesomeAPI",
   "eurRateAt": "2026-09-14T12:18:29.913Z",
-  "appBuild": "20260911-1141",
+  "appBuild": "20260914-1500",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
