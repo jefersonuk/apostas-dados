@@ -4542,10 +4542,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 1415,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T13:56:27.484Z"
+      "updatedAt": "2026-09-15T01:29:42.821Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4581,9 +4581,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 0,
+      "value": 1607.75,
       "currency": "BRL",
-      "updatedAt": "2026-09-14T18:01:04.878Z"
+      "updatedAt": "2026-09-15T01:29:42.821Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -5053,10 +5053,10 @@
   ],
   "usdRate": 5.14,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-14T21:23:52.430Z",
+  "usdRateAt": "2026-09-15T11:39:59.301Z",
   "eurRate": 5.93,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-14T21:23:52.648Z",
+  "eurRateAt": "2026-09-15T11:40:03.699Z",
   "appBuild": "20260914-1730",
   "deleted": [
     {
@@ -18764,14 +18764,15 @@
       "lucroB": 192.75,
       "lucro": 192.75,
       "roi": 13.621908127208481,
-      "winner": null,
+      "winner": "B",
       "curA": "BRL",
       "curB": "BRL",
       "date": "2026-09-14T19:00",
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "B"
       },
-      "updatedAt": "2026-09-14T13:56:27.481Z"
+      "updatedAt": "2026-09-15T01:29:42.821Z"
     },
     {
       "id": "mu1b9ha4yjxh8",
@@ -19254,5 +19255,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-15T01:29:25.719Z"
+  "updatedAt": "2026-09-15T11:40:03.700Z"
 }
