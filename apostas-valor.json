@@ -4517,7 +4517,7 @@
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
       "value": 1339,
-      "updatedAt": "2026-09-14T21:18:42.100Z"
+      "updatedAt": "2026-09-15T01:29:22.784Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1165.32,
-      "updatedAt": "2026-09-15T01:29:12.152Z"
+      "value": 1626.45,
+      "updatedAt": "2026-09-15T01:29:25.719Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1844.11,
+      "value": 1615.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-14T21:18:42.105Z"
+      "updatedAt": "2026-09-15T01:29:25.719Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -18858,7 +18858,7 @@
       "market": "Total de Pontos",
       "oddMkt": 1.788,
       "prob": 53.3,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-14T21:00",
       "total": 228.28,
       "lucroA": 232.84560000000002,
@@ -18866,9 +18866,10 @@
       "lucro": 232.84560000000002,
       "roi": 102,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-15T01:29:12.152Z"
+      "updatedAt": "2026-09-15T01:29:25.719Z"
     },
     {
       "id": "mu1gepo9sg0ga",
@@ -19083,9 +19084,10 @@
       "lucro": 100,
       "roi": 100,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": null
       },
-      "updatedAt": "2026-09-14T21:18:42.101Z"
+      "updatedAt": "2026-09-15T01:29:22.784Z"
     }
   ],
   "invertidos": [],
@@ -19252,5 +19254,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-15T01:29:12.152Z"
+  "updatedAt": "2026-09-15T01:29:25.719Z"
 }
