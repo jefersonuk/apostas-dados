@@ -4581,9 +4581,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1607.75,
+      "value": 2075.64,
       "currency": "BRL",
-      "updatedAt": "2026-09-15T01:29:42.821Z"
+      "updatedAt": "2026-09-15T22:03:28.853Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1065.23,
+      "value": 772.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-15T12:33:22.179Z"
+      "updatedAt": "2026-09-15T22:03:28.853Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5054,9 +5054,9 @@
   "usdRate": 5.14,
   "usdRateSrc": "CoinGecko",
   "usdRateAt": "2026-09-15T22:01:58.235Z",
-  "eurRate": 5.93,
+  "eurRate": 5.94,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-15T11:40:03.699Z",
+  "eurRateAt": "2026-09-15T22:01:59.921Z",
   "appBuild": "20260914-1730",
   "deleted": [
     {
@@ -18836,7 +18836,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.28,
       "prob": 74.4,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-15T12:00",
       "total": 292.43,
       "lucroA": 175.45800000000003,
@@ -18844,9 +18844,10 @@
       "lucro": 175.45800000000003,
       "roi": 60.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-14T15:29:27.051Z"
+      "updatedAt": "2026-09-15T22:03:28.853Z"
     },
     {
       "id": "mu1fu5g4m8b3g",
@@ -19259,5 +19260,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-15T12:33:22.179Z"
+  "updatedAt": "2026-09-15T22:03:28.853Z"
 }
