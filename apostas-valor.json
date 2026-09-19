@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 100,
+      "value": 277,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-18T13:14:18.694Z"
+      "updatedAt": "2026-09-19T15:27:48.741Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4684,9 +4684,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 656.34,
+      "value": 626.34,
       "currency": "EUR",
-      "updatedAt": "2026-09-14T13:07:12.648Z"
+      "updatedAt": "2026-09-19T15:27:48.738Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -19097,6 +19097,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-15T11:40:27.793Z"
+    },
+    {
+      "id": "mu8jka9t1tkzy",
+      "kind": "valor",
+      "event": "UD Oliveirense – FC Penafiel (h2 0)",
+      "houseA": "Sportmarket",
+      "oddA": 1.917,
+      "stakeA": 177,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.805,
+      "prob": 55.4,
+      "winner": null,
+      "date": "2026-09-19T13:00",
+      "total": 177,
+      "lucroA": 162.309,
+      "lucroRed": -177,
+      "lucro": 162.309,
+      "roi": 91.7,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-19T15:27:48.738Z"
     }
   ],
   "invertidos": [],
@@ -19263,5 +19287,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-19T15:23:25.225Z"
+  "updatedAt": "2026-09-19T15:27:48.741Z"
 }
