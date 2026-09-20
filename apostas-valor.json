@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 477,
+      "value": 577,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T08:58:40.636Z"
+      "updatedAt": "2026-09-20T09:48:54.115Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4802,6 +4802,12 @@
       "name": "Betwarrior",
       "value": 0,
       "updatedAt": "2026-09-20T09:06:47.772Z"
+    },
+    {
+      "id": "mu9mwan4fy65w",
+      "name": "Apostatudo",
+      "value": -100,
+      "updatedAt": "2026-09-20T09:48:54.112Z"
     }
   ],
   "aportes": [
@@ -19263,6 +19269,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-20T08:58:40.634Z"
+    },
+    {
+      "id": "mu9mwan3ff5xq",
+      "kind": "valor",
+      "event": "Goiás – Avaí Acima 1.5 2º período - escanteios 2º o time",
+      "houseA": "Apostatudo",
+      "oddA": 1.77,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-20T16:00",
+      "total": 100,
+      "lucroA": 77,
+      "lucroRed": -100,
+      "lucro": 77,
+      "roi": 77,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T09:48:54.112Z"
     }
   ],
   "invertidos": [],
@@ -19429,5 +19459,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T09:06:55.058Z"
+  "updatedAt": "2026-09-20T09:48:54.115Z"
 }
