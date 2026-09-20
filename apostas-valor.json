@@ -4781,8 +4781,8 @@
     {
       "id": "mtn67c4uwdaz0",
       "name": "Casa A",
-      "value": -205.6,
-      "updatedAt": "2026-09-20T08:46:32.532Z"
+      "value": 0,
+      "updatedAt": "2026-09-20T13:54:16.018Z"
     },
     {
       "id": "mtn67c4uibvxb",
@@ -4793,8 +4793,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 0,
-      "updatedAt": "2026-09-20T09:06:55.058Z",
+      "value": -40,
+      "updatedAt": "2026-09-20T13:54:16.018Z",
       "currency": "USD"
     },
     {
@@ -5078,7 +5078,7 @@
   ],
   "usdRate": 5.14,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-20T07:52:37.406Z",
+  "usdRateAt": "2026-09-20T13:54:10.994Z",
   "eurRate": 5.91,
   "eurRateSrc": "AwesomeAPI",
   "eurRateAt": "2026-09-20T07:52:37.636Z",
@@ -19226,7 +19226,7 @@
       "id": "mu9ko3mcogq2m",
       "kind": "valor",
       "event": "Parma – Genoa 2 - faltas",
-      "houseA": "",
+      "houseA": "Betrebels",
       "oddA": 1.95,
       "stakeA": 205.6,
       "curA": "USD",
@@ -19244,7 +19244,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-20T08:46:32.532Z"
+      "updatedAt": "2026-09-20T13:54:16.019Z"
     },
     {
       "id": "mu9l3pfddpnnb",
@@ -19556,5 +19556,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T11:20:00.973Z"
+  "updatedAt": "2026-09-20T13:54:16.020Z"
 }
