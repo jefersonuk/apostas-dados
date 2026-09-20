@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 51.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T07:54:42.387Z"
+      "updatedAt": "2026-09-20T08:36:45.411Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4789,6 +4789,12 @@
       "name": "Casa B",
       "value": 0,
       "updatedAt": "2026-09-04T16:35:40.893Z"
+    },
+    {
+      "id": "mu9kbil8elos7",
+      "name": "Betrebels",
+      "value": -51.4,
+      "updatedAt": "2026-09-20T08:36:45.404Z"
     }
   ],
   "aportes": [
@@ -19154,6 +19160,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-20T07:54:42.387Z"
+    },
+    {
+      "id": "mu9kbil78dkd6",
+      "kind": "valor",
+      "event": "OGC Nice – Lille OSC 2 - faltas",
+      "houseA": "Betrebels",
+      "oddA": 2.9,
+      "stakeA": 51.4,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Faltas",
+      "oddMkt": 2.208,
+      "prob": 45.3,
+      "winner": null,
+      "date": "2026-09-20T12:15",
+      "total": 51.4,
+      "lucroA": 97.66,
+      "lucroRed": -51.4,
+      "lucro": 97.66,
+      "roi": 190,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T08:36:45.404Z"
     }
   ],
   "invertidos": [],
@@ -19320,5 +19350,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T08:12:46.933Z"
+  "updatedAt": "2026-09-20T08:36:45.411Z"
 }
