@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2343.03,
-      "updatedAt": "2026-09-19T15:18:38.546Z"
+      "value": 2143.03,
+      "updatedAt": "2026-09-20T10:16:03.528Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1142.4,
+      "value": 1342.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T10:12:52.583Z"
+      "updatedAt": "2026-09-20T10:16:03.530Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19365,6 +19365,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-20T10:12:52.581Z"
+    },
+    {
+      "id": "mu9nv7wofkbfe",
+      "kind": "valor",
+      "event": "Michael Harris II Acima 0.5 Tempo Extra - base - Houston Astros – Atlanta Braves",
+      "houseA": "Pinnacle",
+      "oddA": 1.814,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Beisebol",
+      "market": "Total de Pontos",
+      "oddMkt": 1.57,
+      "prob": 60.7,
+      "winner": null,
+      "date": "2026-09-20T15:10",
+      "total": 200,
+      "lucroA": 162.8,
+      "lucroRed": -200,
+      "lucro": 162.8,
+      "roi": 81.4,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T10:16:03.528Z"
     }
   ],
   "invertidos": [],
@@ -19531,5 +19555,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T10:12:52.583Z"
+  "updatedAt": "2026-09-20T10:16:03.531Z"
 }
