@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 577,
+      "value": 936.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T09:48:54.115Z"
+      "updatedAt": "2026-09-20T10:11:02.233Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 91.26,
+      "value": 61.26,
       "currency": "USD",
-      "updatedAt": "2026-09-20T07:55:16.368Z"
+      "updatedAt": "2026-09-20T09:57:02.846Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -4768,8 +4768,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 173,
-      "updatedAt": "2026-09-20T09:06:40.766Z",
+      "value": 133,
+      "updatedAt": "2026-09-20T10:11:02.231Z",
       "currency": "USD"
     },
     {
@@ -19293,6 +19293,54 @@
         "stakes": true
       },
       "updatedAt": "2026-09-20T09:48:54.112Z"
+    },
+    {
+      "id": "mu9n6rr2rz3j1",
+      "kind": "valor",
+      "event": "Chicoutimi Sagueneens – Quebec Remparts H2(+1.5)",
+      "houseA": "Betonline",
+      "oddA": 1.87,
+      "stakeA": 154.2,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.62,
+      "prob": 58.8,
+      "winner": null,
+      "date": "2026-09-20T17:00",
+      "total": 154.2,
+      "lucroA": 134.154,
+      "lucroRed": -154.2,
+      "lucro": 134.154,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T09:57:02.846Z"
+    },
+    {
+      "id": "mu9norfbmsff7",
+      "kind": "valor",
+      "event": "KK Furnir Dubrava – KK Dinamo Zagreb (2 over 77.5)",
+      "houseA": "Betfury",
+      "oddA": 1.82,
+      "stakeA": 205.6,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-20T13:30",
+      "total": 205.6,
+      "lucroA": 168.592,
+      "lucroRed": -205.6,
+      "lucro": 168.592,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T10:11:02.231Z"
     }
   ],
   "invertidos": [],
@@ -19459,5 +19507,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T09:48:54.115Z"
+  "updatedAt": "2026-09-20T10:11:02.233Z"
 }
