@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktlw3015",
       "name": "Sxbet",
-      "value": 78.53,
+      "value": 61,
       "currency": "USD",
-      "updatedAt": "2026-09-12T00:54:56.648Z"
+      "updatedAt": "2026-09-20T08:03:57.627Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -19314,5 +19314,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T08:02:51.699Z"
+  "updatedAt": "2026-09-20T08:03:57.627Z"
 }
