@@ -4793,8 +4793,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": -51.4,
-      "updatedAt": "2026-09-20T08:36:45.404Z"
+      "value": 0,
+      "updatedAt": "2026-09-20T09:06:50.652Z"
     },
     {
       "id": "mu9kk8ei6ezqm",
@@ -19428,5 +19428,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T09:06:47.772Z"
+  "updatedAt": "2026-09-20T09:06:50.652Z"
 }
