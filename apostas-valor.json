@@ -4600,9 +4600,9 @@
     {
       "id": "msfgf86ojrke9",
       "name": "Egb",
-      "value": 190,
+      "value": 187.54,
       "currency": "USD",
-      "updatedAt": "2026-09-12T12:22:12.583Z"
+      "updatedAt": "2026-09-20T08:04:19.618Z"
     },
     {
       "id": "msg7v7zbl5xz5",
@@ -19314,5 +19314,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T08:04:02.773Z"
+  "updatedAt": "2026-09-20T08:04:19.618Z"
 }
