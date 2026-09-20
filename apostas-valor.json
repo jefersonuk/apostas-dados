@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 101.4,
+      "value": 307,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T08:43:32.114Z"
+      "updatedAt": "2026-09-20T08:46:32.534Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4781,8 +4781,8 @@
     {
       "id": "mtn67c4uwdaz0",
       "name": "Casa A",
-      "value": 0,
-      "updatedAt": "2026-09-04T16:35:40.893Z"
+      "value": -205.6,
+      "updatedAt": "2026-09-20T08:46:32.532Z"
     },
     {
       "id": "mtn67c4uibvxb",
@@ -19214,6 +19214,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-20T08:43:32.108Z"
+    },
+    {
+      "id": "mu9ko3mcogq2m",
+      "kind": "valor",
+      "event": "Parma – Genoa 2 - faltas",
+      "houseA": "",
+      "oddA": 1.95,
+      "stakeA": 205.6,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "faltas",
+      "oddMkt": 1.55,
+      "prob": 64.5,
+      "winner": null,
+      "date": "2026-09-20T10:00",
+      "total": 205.6,
+      "lucroA": 195.32,
+      "lucroRed": -205.6,
+      "lucro": 195.32,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T08:46:32.532Z"
     }
   ],
   "invertidos": [],
@@ -19380,5 +19404,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T08:43:32.114Z"
+  "updatedAt": "2026-09-20T08:46:32.534Z"
 }
