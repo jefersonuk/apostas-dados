@@ -4581,9 +4581,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 1499,
+      "value": 1412,
       "currency": "BRL",
-      "updatedAt": "2026-09-20T18:33:01.153Z"
+      "updatedAt": "2026-09-20T23:46:46.690Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -19564,5 +19564,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T23:46:43.464Z"
+  "updatedAt": "2026-09-20T23:46:46.691Z"
 }
