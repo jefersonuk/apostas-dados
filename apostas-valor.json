@@ -4516,8 +4516,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1058.4,
-      "updatedAt": "2026-09-19T15:23:25.224Z"
+      "value": 888.4,
+      "updatedAt": "2026-09-20T08:58:40.634Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 307,
+      "value": 477,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T08:46:32.534Z"
+      "updatedAt": "2026-09-20T08:58:40.636Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19238,6 +19238,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-20T08:46:32.532Z"
+    },
+    {
+      "id": "mu9l3pfddpnnb",
+      "kind": "valor",
+      "event": "Termalica Bruk-Bet II Nieciecza – Blekitni Modlnica (over 3.5)",
+      "houseA": "Betnacional",
+      "oddA": 1.75,
+      "stakeA": 170,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.721,
+      "prob": 58.1,
+      "winner": null,
+      "date": "2026-09-20T06:00",
+      "total": 170,
+      "lucroA": 127.5,
+      "lucroRed": -170,
+      "lucro": 127.5,
+      "roi": 75,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T08:58:40.634Z"
     }
   ],
   "invertidos": [],
@@ -19404,5 +19428,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T08:46:32.534Z"
+  "updatedAt": "2026-09-20T08:58:40.636Z"
 }
