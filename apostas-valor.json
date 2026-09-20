@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 936.8,
+      "value": 1142.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T10:11:02.233Z"
+      "updatedAt": "2026-09-20T10:12:52.583Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 61.26,
+      "value": 21.26,
       "currency": "USD",
-      "updatedAt": "2026-09-20T09:57:02.846Z"
+      "updatedAt": "2026-09-20T10:12:52.581Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -19341,6 +19341,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-20T10:11:02.231Z"
+    },
+    {
+      "id": "mu9nr4klxbdc0",
+      "kind": "valor",
+      "event": "Dziki Warszawa – Vechta Acima 87.5 1ª metade",
+      "houseA": "Betonline",
+      "oddA": 1.87,
+      "stakeA": 205.6,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.67,
+      "prob": 57,
+      "winner": null,
+      "date": "2026-09-20T14:30",
+      "total": 205.6,
+      "lucroA": 178.872,
+      "lucroRed": -205.6,
+      "lucro": 178.872,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-20T10:12:52.581Z"
     }
   ],
   "invertidos": [],
@@ -19507,5 +19531,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-20T10:11:02.233Z"
+  "updatedAt": "2026-09-20T10:12:52.583Z"
 }
