@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 205.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-20T23:42:01.131Z"
+      "updatedAt": "2026-09-21T08:16:34.335Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 191.4,
-      "updatedAt": "2026-09-20T08:02:51.699Z",
+      "value": 151.4,
+      "updatedAt": "2026-09-21T08:16:34.332Z",
       "currency": "USD"
     },
     {
@@ -19398,6 +19398,30 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-09-20T23:42:01.131Z"
+    },
+    {
+      "id": "muaz1escq0gxf",
+      "kind": "valor",
+      "event": "Amur Khabarovsk – Severstal Cherepovets 1 - chutes no alvo",
+      "houseA": "BCgame",
+      "oddA": 2.05,
+      "stakeA": 205.6,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Total de Chutes",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-21T06:00",
+      "total": 205.6,
+      "lucroA": 215.87999999999997,
+      "lucroRed": -205.6,
+      "lucro": 215.87999999999997,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T08:16:34.332Z"
     }
   ],
   "invertidos": [],
@@ -19564,5 +19588,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T08:10:39.952Z"
+  "updatedAt": "2026-09-21T08:16:34.335Z"
 }
