@@ -4516,8 +4516,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 898.44,
-      "updatedAt": "2026-09-21T14:31:01.803Z"
+      "value": 848.44,
+      "updatedAt": "2026-09-21T15:31:04.945Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 240,
+      "value": 210,
       "currency": "USD",
-      "updatedAt": "2026-09-20T06:46:17.622Z"
+      "updatedAt": "2026-09-21T15:28:36.170Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 923.87,
+      "value": 1127.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T14:08:57.046Z"
+      "updatedAt": "2026-09-21T15:31:04.958Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19591,6 +19591,54 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T14:08:57.046Z"
+    },
+    {
+      "id": "mubeh07edkkzs",
+      "kind": "valor",
+      "event": "Chicago Blackhawks – Minnesota Wild H2(+1.5)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.89,
+      "stakeA": 153.3,
+      "curA": "USD",
+      "sport": "Futebol Americano",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-21T21:00",
+      "total": 153.3,
+      "lucroA": 136.43699999999998,
+      "lucroRed": -153.3,
+      "lucro": 136.43699999999998,
+      "roi": 88.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T15:28:36.170Z"
+    },
+    {
+      "id": "mubek6zzlhl2b",
+      "kind": "valor",
+      "event": "SC FC Voluntari SA II – ACS LPS HD Clinceni (over 3.5 gols)",
+      "houseA": "Betnacional",
+      "oddA": 2.55,
+      "stakeA": 50,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.1,
+      "prob": 45.4,
+      "winner": null,
+      "date": "2026-09-22T11:00",
+      "total": 50,
+      "lucroA": 77.49999999999999,
+      "lucroRed": -50,
+      "lucro": 77.49999999999999,
+      "roi": 154.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T15:31:04.946Z"
     }
   ],
   "invertidos": [],
@@ -19757,5 +19805,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T15:28:07.927Z"
+  "updatedAt": "2026-09-21T15:31:04.958Z"
 }
