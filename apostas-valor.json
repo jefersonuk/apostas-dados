@@ -4517,7 +4517,7 @@
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
       "value": 931.99,
-      "updatedAt": "2026-09-21T12:54:25.347Z"
+      "updatedAt": "2026-09-21T14:04:33.796Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -19437,7 +19437,7 @@
       "oddMkt": 1.2,
       "prob": 79.4,
       "winner": null,
-      "date": "2026-09-21T10:00",
+      "date": "2026-09-21T12:00",
       "total": 150,
       "lucroA": 62.999999999999986,
       "lucroRed": -150,
@@ -19446,7 +19446,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-21T12:51:18.593Z"
+      "updatedAt": "2026-09-21T14:04:33.796Z"
     },
     {
       "id": "mub9dtklvz28d",
@@ -19733,5 +19733,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T14:03:04.196Z"
+  "updatedAt": "2026-09-21T14:04:33.796Z"
 }
