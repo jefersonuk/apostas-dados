@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 210,
+      "value": 195,
       "currency": "USD",
-      "updatedAt": "2026-09-21T15:28:36.170Z"
+      "updatedAt": "2026-09-21T16:19:50.332Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1411.52,
+      "value": 1488.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T16:10:40.263Z"
+      "updatedAt": "2026-09-21T16:19:50.343Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19712,6 +19712,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T16:10:40.259Z"
+    },
+    {
+      "id": "mubgaw8pf6p5p",
+      "kind": "valor",
+      "event": "SSG Landers – KT Wiz Abaixo 0.5 1ª entrada",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.2,
+      "stakeA": 76.65,
+      "curA": "USD",
+      "sport": "Beisebol",
+      "market": "Total de Pontos",
+      "oddMkt": 1.9,
+      "prob": 50.1,
+      "winner": null,
+      "date": "2026-09-22T06:00",
+      "total": 76.65,
+      "lucroA": 91.98000000000002,
+      "lucroRed": -76.65,
+      "lucro": 91.98000000000002,
+      "roi": 120.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T16:19:50.334Z"
     }
   ],
   "invertidos": [],
@@ -19878,5 +19902,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T16:10:40.263Z"
+  "updatedAt": "2026-09-21T16:19:50.343Z"
 }
