@@ -4556,8 +4556,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 1299.79,
-      "updatedAt": "2026-09-16T01:16:58.698Z"
+      "value": 1159.79,
+      "updatedAt": "2026-09-21T13:17:27.053Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 575.01,
+      "value": 715.01,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T13:11:19.062Z"
+      "updatedAt": "2026-09-21T13:17:27.054Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19494,6 +19494,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T13:11:19.062Z"
+    },
+    {
+      "id": "mub9scctnwvnd",
+      "kind": "valor",
+      "event": "Detroit Tigers x Washigton Nationals (River ryan und 2.5 strike outs)",
+      "houseA": "Blaze",
+      "oddA": 1.77,
+      "stakeA": 140,
+      "curA": "BRL",
+      "sport": "Beisebol",
+      "market": "Jogador / Player Props",
+      "oddMkt": 1.55,
+      "prob": 61.4,
+      "winner": null,
+      "date": "2026-09-21T19:40",
+      "total": 140,
+      "lucroA": 107.8,
+      "lucroRed": -140,
+      "lucro": 107.8,
+      "roi": 77,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T13:17:27.053Z"
     }
   ],
   "invertidos": [],
@@ -19660,5 +19684,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T13:11:19.062Z"
+  "updatedAt": "2026-09-21T13:17:27.054Z"
 }
