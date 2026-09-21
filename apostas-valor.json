@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 397.71,
+      "value": 575.01,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T13:06:09.526Z"
+      "updatedAt": "2026-09-21T13:11:19.062Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4684,9 +4684,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 663.59,
+      "value": 633.59,
       "currency": "EUR",
-      "updatedAt": "2026-09-20T23:46:35.408Z"
+      "updatedAt": "2026-09-21T13:11:19.062Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -19470,6 +19470,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T13:06:09.525Z"
+    },
+    {
+      "id": "mub9kget94k6e",
+      "kind": "valor",
+      "event": "FC Petrolul Ploiesti x FC Csikszereda Miercurea Ciuc (Over 2,25 gols total)",
+      "houseA": "Sportmarket",
+      "oddA": 1.801,
+      "stakeA": 177.3,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols Asiatico",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-21T15:00",
+      "total": 177.3,
+      "lucroA": 142.0173,
+      "lucroRed": -177.3,
+      "lucro": 142.0173,
+      "roi": 80.1,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T13:11:19.062Z"
     }
   ],
   "invertidos": [],
@@ -19636,5 +19660,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T13:06:09.526Z"
+  "updatedAt": "2026-09-21T13:11:19.062Z"
 }
