@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-14",
+    "startDate": "2026-09-21",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 662.71,
+      "value": 712.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T13:36:05.324Z"
+      "updatedAt": "2026-09-21T14:03:04.196Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4800,8 +4800,8 @@
     {
       "id": "mu9kk8ei6ezqm",
       "name": "Betwarrior",
-      "value": 127.5,
-      "updatedAt": "2026-09-20T21:02:30.169Z"
+      "value": 77.5,
+      "updatedAt": "2026-09-21T14:03:04.195Z"
     },
     {
       "id": "mu9mwan4fy65w",
@@ -5078,10 +5078,10 @@
   ],
   "usdRate": 5.11,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-21T13:59:51.792Z",
-  "eurRate": 5.87,
+  "usdRateAt": "2026-09-21T12:34:24.406Z",
+  "eurRate": 5.91,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-21T13:59:52.114Z",
+  "eurRateAt": "2026-09-21T12:34:24.635Z",
   "appBuild": "20260914-1730",
   "deleted": [
     {
@@ -19543,6 +19543,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T13:36:05.323Z"
+    },
+    {
+      "id": "mubbf0cjtyv3r",
+      "kind": "valor",
+      "event": "Nueva Chicago x Patronato de Parana (2 over 3,5 corners)",
+      "houseA": "Betwarrior",
+      "oddA": 1.92,
+      "stakeA": 50,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.7,
+      "prob": 56,
+      "winner": null,
+      "date": "2026-09-21T19:00",
+      "total": 50,
+      "lucroA": 46,
+      "lucroRed": -50,
+      "lucro": 46,
+      "roi": 92,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T14:03:04.195Z"
     }
   ],
   "invertidos": [],
@@ -19709,5 +19733,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T13:59:52.114Z"
+  "updatedAt": "2026-09-21T14:03:04.196Z"
 }
