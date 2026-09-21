@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 977.17,
+      "value": 1130.47,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T15:31:16.869Z"
+      "updatedAt": "2026-09-21T15:41:50.714Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 45.72,
+      "value": 15.72,
       "currency": "USD",
-      "updatedAt": "2026-09-21T13:36:05.323Z"
+      "updatedAt": "2026-09-21T15:41:50.707Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -19640,6 +19640,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T15:31:04.946Z"
+    },
+    {
+      "id": "mubey19taunp9",
+      "kind": "valor",
+      "event": "Chicago Blackhawks – Minnesota Wild H2(+1.5)",
+      "houseA": "Betonline",
+      "oddA": 1.78,
+      "stakeA": 153.3,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-21T21:00",
+      "total": 153.3,
+      "lucroA": 119.57400000000001,
+      "lucroRed": -153.3,
+      "lucro": 119.57400000000001,
+      "roi": 78,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T15:41:50.708Z"
     }
   ],
   "invertidos": [],
@@ -19806,5 +19830,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T15:31:16.869Z"
+  "updatedAt": "2026-09-21T15:41:50.714Z"
 }
