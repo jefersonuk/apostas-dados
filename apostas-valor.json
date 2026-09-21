@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 928.3,
+      "value": 751,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T18:20:39.421Z"
+      "updatedAt": "2026-09-21T18:20:52.970Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4684,9 +4684,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 620.41,
+      "value": 650.61,
       "currency": "EUR",
-      "updatedAt": "2026-09-21T18:18:46.778Z"
+      "updatedAt": "2026-09-21T18:20:52.970Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -19486,7 +19486,7 @@
       "market": "Total de Gols Asiatico",
       "oddMkt": 1.6,
       "prob": 59.5,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-09-21T15:00",
       "total": 177.3,
       "lucroA": 142.0173,
@@ -19494,9 +19494,10 @@
       "lucro": 142.0173,
       "roi": 80.1,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-09-21T13:11:19.062Z"
+      "updatedAt": "2026-09-21T18:20:52.970Z"
     },
     {
       "id": "mub9scctnwvnd",
@@ -19906,5 +19907,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T18:20:39.421Z"
+  "updatedAt": "2026-09-21T18:20:52.970Z"
 }
