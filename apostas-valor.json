@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 712.71,
+      "value": 923.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T14:03:04.196Z"
+      "updatedAt": "2026-09-21T14:08:57.046Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4684,9 +4684,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 633.59,
+      "value": 597.86,
       "currency": "EUR",
-      "updatedAt": "2026-09-21T13:11:19.062Z"
+      "updatedAt": "2026-09-21T14:08:57.046Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -19567,6 +19567,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T14:03:04.195Z"
+    },
+    {
+      "id": "mubbmklymupbg",
+      "kind": "valor",
+      "event": "Fk Budva x Mladost Ljeskopolje (under 2.5 2nd team)",
+      "houseA": "Sportmarket",
+      "oddA": 1.609,
+      "stakeA": 211.1643,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.2,
+      "prob": 79.4,
+      "winner": null,
+      "date": "2026-09-21T13:00",
+      "total": 211.1643,
+      "lucroA": 128.5990587,
+      "lucroRed": -211.1643,
+      "lucro": 128.5990587,
+      "roi": 60.9,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T14:08:57.046Z"
     }
   ],
   "invertidos": [],
@@ -19733,5 +19757,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T14:04:33.796Z"
+  "updatedAt": "2026-09-21T14:08:57.046Z"
 }
