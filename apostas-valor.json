@@ -4516,8 +4516,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 931.99,
-      "updatedAt": "2026-09-21T08:07:13.342Z"
+      "value": 781.99,
+      "updatedAt": "2026-09-21T12:51:18.593Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 205.6,
+      "value": 355.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T08:16:34.335Z"
+      "updatedAt": "2026-09-21T12:51:18.594Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19422,6 +19422,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T08:16:34.332Z"
+    },
+    {
+      "id": "mub8uq4h2508j",
+      "kind": "valor",
+      "event": "Leonardo Vega x Nicolas Ulrich",
+      "houseA": "Betnacional",
+      "oddA": 1.42,
+      "stakeA": 150,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.2,
+      "prob": 79.4,
+      "winner": null,
+      "date": "2026-09-21T10:00",
+      "total": 150,
+      "lucroA": 62.999999999999986,
+      "lucroRed": -150,
+      "lucro": 62.999999999999986,
+      "roi": 41.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T12:51:18.593Z"
     }
   ],
   "invertidos": [],
@@ -19588,5 +19612,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T12:43:47.037Z"
+  "updatedAt": "2026-09-21T12:51:18.594Z"
 }
