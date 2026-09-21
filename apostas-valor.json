@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 802.1,
+      "value": 902.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T18:47:49.927Z"
+      "updatedAt": "2026-09-21T19:31:34.923Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4808,6 +4808,12 @@
       "name": "Apostatudo",
       "value": 0,
       "updatedAt": "2026-09-20T14:00:45.490Z"
+    },
+    {
+      "id": "mubn5h8qb6i67",
+      "name": "Cassino",
+      "value": -100,
+      "updatedAt": "2026-09-21T19:31:34.922Z"
     }
   ],
   "aportes": [
@@ -19790,6 +19796,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T18:32:30.546Z"
+    },
+    {
+      "id": "mubn5h8o9akd3",
+      "kind": "valor",
+      "event": "Criciuma x Athb (over 46,5)",
+      "houseA": "Cassino",
+      "oddA": 1.82,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Handebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.66,
+      "prob": 57.4,
+      "winner": null,
+      "date": "2026-09-21T18:00",
+      "total": 100,
+      "lucroA": 82,
+      "lucroRed": -100,
+      "lucro": 82,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T19:31:34.922Z"
     }
   ],
   "invertidos": [],
@@ -19956,5 +19986,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T18:47:49.927Z"
+  "updatedAt": "2026-09-21T19:31:34.923Z"
 }
