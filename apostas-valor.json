@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 902.1,
+      "value": 1055.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T19:31:34.923Z"
+      "updatedAt": "2026-09-21T19:36:07.999Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4768,8 +4768,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 196,
-      "updatedAt": "2026-09-21T18:18:02.610Z",
+      "value": 166,
+      "updatedAt": "2026-09-21T19:36:07.998Z",
       "currency": "USD"
     },
     {
@@ -19820,6 +19820,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T19:31:34.922Z"
+    },
+    {
+      "id": "mubnbby6cqy9n",
+      "kind": "valor",
+      "event": "Armenia x USA (1x)",
+      "houseA": "Betfury",
+      "oddA": 1.9,
+      "stakeA": 153.3,
+      "curA": "USD",
+      "sport": "Xadrez",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.52,
+      "prob": 62.7,
+      "winner": null,
+      "date": "2026-09-23T07:00",
+      "total": 153.3,
+      "lucroA": 137.97,
+      "lucroRed": -153.3,
+      "lucro": 137.97,
+      "roi": 89.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T19:36:07.998Z"
     }
   ],
   "invertidos": [],
@@ -19986,5 +20010,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T19:31:34.923Z"
+  "updatedAt": "2026-09-21T19:36:07.999Z"
 }
