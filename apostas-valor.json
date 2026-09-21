@@ -4726,8 +4726,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 402.1,
-      "updatedAt": "2026-09-20T07:53:47.324Z",
+      "value": 423.42,
+      "updatedAt": "2026-09-21T08:08:38.238Z",
       "currency": "USD"
     },
     {
@@ -19564,5 +19564,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T08:08:04.735Z"
+  "updatedAt": "2026-09-21T08:08:38.239Z"
 }
