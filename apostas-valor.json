@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 170,
+      "value": 161,
       "currency": "USD",
-      "updatedAt": "2026-09-21T19:38:22.280Z"
+      "updatedAt": "2026-09-21T19:39:34.604Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1183.15,
+      "value": 1229.14,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T19:38:22.281Z"
+      "updatedAt": "2026-09-21T19:39:34.604Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19868,6 +19868,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T19:38:22.280Z"
+    },
+    {
+      "id": "mubnfrd8257jv",
+      "kind": "valor",
+      "event": "Worcester city x Banburry (H1 -1)",
+      "houseA": "Overtimemarkets",
+      "oddA": 3.76,
+      "stakeA": 45.99,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.9,
+      "prob": 32.8,
+      "winner": null,
+      "date": "2026-09-22T15:45",
+      "total": 45.99,
+      "lucroA": 126.9324,
+      "lucroRed": -45.99,
+      "lucro": 126.9324,
+      "roi": 276,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T19:39:34.604Z"
     }
   ],
   "invertidos": [],
@@ -20034,5 +20058,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T19:38:22.281Z"
+  "updatedAt": "2026-09-21T19:39:34.604Z"
 }
