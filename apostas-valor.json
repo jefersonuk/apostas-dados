@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 751,
+      "value": 827.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T18:20:52.970Z"
+      "updatedAt": "2026-09-21T18:25:46.147Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 78.12,
+      "value": 63.12,
       "currency": "USD",
-      "updatedAt": "2026-09-21T16:42:52.782Z"
+      "updatedAt": "2026-09-21T18:25:46.143Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -19741,6 +19741,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T16:19:50.334Z"
+    },
+    {
+      "id": "mubksucemyzjk",
+      "kind": "valor",
+      "event": "Los angeles rams x new york giants (1 over 3.5 sacks)",
+      "houseA": "Betonline",
+      "oddA": 2.3,
+      "stakeA": 76.65,
+      "curA": "USD",
+      "sport": "Futebol Americano",
+      "market": "Total de Pontos",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-21T21:15",
+      "total": 76.65,
+      "lucroA": 99.645,
+      "lucroRed": -76.65,
+      "lucro": 99.645,
+      "roi": 129.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T18:25:46.143Z"
     }
   ],
   "invertidos": [],
@@ -19907,5 +19931,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T18:22:37.174Z"
+  "updatedAt": "2026-09-21T18:25:46.147Z"
 }
