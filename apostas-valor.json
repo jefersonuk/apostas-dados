@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1283.77,
+      "value": 1411.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T15:58:18.919Z"
+      "updatedAt": "2026-09-21T16:10:40.263Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 170,
-      "updatedAt": "2026-09-21T14:31:29.612Z",
+      "value": 145,
+      "updatedAt": "2026-09-21T16:10:40.259Z",
       "currency": "USD"
     },
     {
@@ -19688,6 +19688,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T15:58:18.915Z"
+    },
+    {
+      "id": "mubfz3syu7kqu",
+      "kind": "valor",
+      "event": "Nardo Trondheim – Ranheim 2 Acima 1.5 2º o time",
+      "houseA": "BCgame",
+      "oddA": 1.89,
+      "stakeA": 127.75000000000001,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.789,
+      "prob": 55.9,
+      "winner": null,
+      "date": "2026-09-21T14:00",
+      "total": 127.75000000000001,
+      "lucroA": 113.6975,
+      "lucroRed": -127.75000000000001,
+      "lucro": 113.6975,
+      "roi": 88.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T16:10:40.259Z"
     }
   ],
   "invertidos": [],
@@ -19854,5 +19878,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T15:58:18.919Z"
+  "updatedAt": "2026-09-21T16:10:40.263Z"
 }
