@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1130.47,
+      "value": 1283.77,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T15:41:50.714Z"
+      "updatedAt": "2026-09-21T15:58:18.919Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4726,8 +4726,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 423.42,
-      "updatedAt": "2026-09-21T08:08:38.238Z",
+      "value": 393.42,
+      "updatedAt": "2026-09-21T15:58:18.913Z",
       "currency": "USD"
     },
     {
@@ -19664,6 +19664,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T15:41:50.708Z"
+    },
+    {
+      "id": "mubfj7rz9any2",
+      "kind": "valor",
+      "event": "Sangal Esports – FOKUS 11-2 2º mapa + Tempo Extra",
+      "houseA": "Cloudbet",
+      "oddA": 2.3,
+      "stakeA": 153.3,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.98,
+      "prob": 48.1,
+      "winner": null,
+      "date": "2026-09-21T13:00",
+      "total": 153.3,
+      "lucroA": 199.29,
+      "lucroRed": -153.3,
+      "lucro": 199.29,
+      "roi": 129.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T15:58:18.915Z"
     }
   ],
   "invertidos": [],
@@ -19830,5 +19854,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T15:41:50.714Z"
+  "updatedAt": "2026-09-21T15:58:18.919Z"
 }
