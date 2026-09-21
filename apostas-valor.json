@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 827.65,
+      "value": 929.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T18:25:46.147Z"
+      "updatedAt": "2026-09-21T18:32:30.546Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4719,8 +4719,8 @@
     {
       "id": "mt7cyp79nfew7",
       "name": "BCgame",
-      "value": 145,
-      "updatedAt": "2026-09-21T16:10:40.259Z",
+      "value": 125,
+      "updatedAt": "2026-09-21T18:32:30.546Z",
       "currency": "USD"
     },
     {
@@ -19765,6 +19765,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T18:25:46.143Z"
+    },
+    {
+      "id": "mubl1idu9r8bg",
+      "kind": "valor",
+      "event": "EHC Visp x Bellinzona Snakes (under 5,5 gols)",
+      "houseA": "BCgame",
+      "oddA": 2.18,
+      "stakeA": 102.2,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Total de Gols",
+      "oddMkt": 1.9,
+      "prob": 50.1,
+      "winner": null,
+      "date": "2026-09-22T14:30",
+      "total": 102.2,
+      "lucroA": 120.59600000000002,
+      "lucroRed": -102.2,
+      "lucro": 120.59600000000002,
+      "roi": 118.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T18:32:30.546Z"
     }
   ],
   "invertidos": [],
@@ -19931,5 +19955,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T18:25:46.147Z"
+  "updatedAt": "2026-09-21T18:32:30.546Z"
 }
