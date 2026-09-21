@@ -4634,9 +4634,9 @@
     {
       "id": "msqr1ktlw3015",
       "name": "Sxbet",
-      "value": 95.22,
+      "value": 86.98,
       "currency": "USD",
-      "updatedAt": "2026-09-21T08:10:39.951Z"
+      "updatedAt": "2026-09-21T13:06:09.525Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 355.6,
+      "value": 397.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T12:51:18.594Z"
+      "updatedAt": "2026-09-21T13:06:09.526Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19446,6 +19446,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T12:51:18.593Z"
+    },
+    {
+      "id": "mub9dtklvz28d",
+      "kind": "valor",
+      "event": "Ucam x Mcon (acima 2.5 mapas)",
+      "houseA": "Sxbet",
+      "oddA": 5.67,
+      "stakeA": 42.1064,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "Total de mapas",
+      "oddMkt": 3.9,
+      "prob": 24.4,
+      "winner": null,
+      "date": "2026-09-21T15:00",
+      "total": 42.1064,
+      "lucroA": 196.636888,
+      "lucroRed": -42.1064,
+      "lucro": 196.636888,
+      "roi": 467,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T13:06:09.525Z"
     }
   ],
   "invertidos": [],
@@ -19612,5 +19636,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T12:55:24.178Z"
+  "updatedAt": "2026-09-21T13:06:09.526Z"
 }
