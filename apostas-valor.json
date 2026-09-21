@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 509.41,
+      "value": 662.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-21T13:35:02.772Z"
+      "updatedAt": "2026-09-21T13:36:05.324Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 75.72,
+      "value": 45.72,
       "currency": "USD",
-      "updatedAt": "2026-09-21T08:08:04.735Z"
+      "updatedAt": "2026-09-21T13:36:05.323Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -19519,6 +19519,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T13:17:27.053Z"
+    },
+    {
+      "id": "mubagb7vjbfqp",
+      "kind": "valor",
+      "event": "Nexus Gaming x Bushido Wildcats (2)",
+      "houseA": "Betonline",
+      "oddA": 2.08,
+      "stakeA": 153.3,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.85,
+      "prob": 51.5,
+      "winner": null,
+      "date": "2026-09-21T11:00",
+      "total": 153.3,
+      "lucroA": 165.56400000000002,
+      "lucroRed": -153.3,
+      "lucro": 165.56400000000002,
+      "roi": 108,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-21T13:36:05.323Z"
     }
   ],
   "invertidos": [],
@@ -19685,5 +19709,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-21T13:35:02.772Z"
+  "updatedAt": "2026-09-21T13:36:05.324Z"
 }
