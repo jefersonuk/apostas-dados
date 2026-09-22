@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1820.21,
-      "updatedAt": "2026-09-22T16:44:28.153Z"
+      "value": 1770.21,
+      "updatedAt": "2026-09-22T18:14:59.468Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1329.67,
+      "value": 1379.67,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T18:02:30.855Z"
+      "updatedAt": "2026-09-22T18:14:59.475Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20170,6 +20170,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T18:02:30.850Z"
+    },
+    {
+      "id": "muczuu174eg5l",
+      "kind": "valor",
+      "event": "Alloa Athletic – Hibernian B H2(+2)",
+      "houseA": "Pinnacle",
+      "oddA": 2.5,
+      "stakeA": 50,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2,
+      "prob": 47.6,
+      "winner": null,
+      "date": "2026-09-22T15:30",
+      "total": 50,
+      "lucroA": 75,
+      "lucroRed": -50,
+      "lucro": 75,
+      "roi": 150,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T18:14:59.469Z"
     }
   ],
   "invertidos": [],
@@ -20336,5 +20360,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T18:02:30.855Z"
+  "updatedAt": "2026-09-22T18:14:59.475Z"
 }
