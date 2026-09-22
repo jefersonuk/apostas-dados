@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1379.67,
+      "value": 1481.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T18:14:59.475Z"
+      "updatedAt": "2026-09-22T18:19:57.532Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4825,9 +4825,9 @@
     {
       "id": "muczy0ui6d8aw",
       "name": "Casobet",
-      "value": 49.8,
+      "value": 29.8,
       "currency": "USD",
-      "updatedAt": "2026-09-22T18:17:28.267Z"
+      "updatedAt": "2026-09-22T18:19:57.529Z"
     }
   ],
   "aportes": [
@@ -20201,6 +20201,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T18:14:59.469Z"
+    },
+    {
+      "id": "mud0180pxjcns",
+      "kind": "valor",
+      "event": "Sheng Tang – Haoran Hu - Abaixo 16.5",
+      "houseA": "Casobet",
+      "oddA": 1.82,
+      "stakeA": 102.2,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "Total games",
+      "oddMkt": 1.55,
+      "prob": 61.4,
+      "winner": null,
+      "date": "2026-09-23T00:00",
+      "total": 102.2,
+      "lucroA": 83.804,
+      "lucroRed": -102.2,
+      "lucro": 83.804,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T18:19:57.529Z"
     }
   ],
   "invertidos": [],
@@ -20367,5 +20391,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T18:17:30.710Z"
+  "updatedAt": "2026-09-22T18:19:57.532Z"
 }
