@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 227.03,
+      "value": 187.03,
       "currency": "USD",
-      "updatedAt": "2026-09-22T10:04:50.399Z"
+      "updatedAt": "2026-09-22T15:29:42.537Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 658.09,
+      "value": 862.49,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T15:07:16.720Z"
+      "updatedAt": "2026-09-22T15:29:42.544Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -19956,6 +19956,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T15:07:16.716Z"
+    },
+    {
+      "id": "muctya2wp11jl",
+      "kind": "valor",
+      "event": "Julie Struplova – Samira de Stefano Acima 7.5 1º set",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.73,
+      "stakeA": 204.4,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "Total de games",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-22T12:40",
+      "total": 204.4,
+      "lucroA": 353.612,
+      "lucroRed": -204.4,
+      "lucro": 353.612,
+      "roi": 173,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T15:29:42.539Z"
     }
   ],
   "invertidos": [],
@@ -20122,5 +20146,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T15:23:03.539Z"
+  "updatedAt": "2026-09-22T15:29:42.544Z"
 }
