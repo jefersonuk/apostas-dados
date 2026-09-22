@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2143.03,
-      "updatedAt": "2026-09-20T10:16:03.528Z"
+      "value": 2000,
+      "updatedAt": "2026-09-22T03:15:30.196Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -20096,5 +20096,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T03:14:36.686Z"
+  "updatedAt": "2026-09-22T03:15:30.196Z"
 }
