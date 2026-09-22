@@ -4628,9 +4628,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 237.08,
+      "value": 177.08,
       "currency": "USD",
-      "updatedAt": "2026-09-22T16:09:29.131Z"
+      "updatedAt": "2026-09-22T22:08:38.746Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1117.5,
+      "value": 1493.59,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T21:58:58.879Z"
+      "updatedAt": "2026-09-22T22:08:38.748Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4769,8 +4769,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 135.73,
-      "updatedAt": "2026-09-22T21:50:11.840Z",
+      "value": 122.13,
+      "updatedAt": "2026-09-22T22:06:01.378Z",
       "currency": "USD"
     },
     {
@@ -20354,6 +20354,54 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T21:58:58.878Z"
+    },
+    {
+      "id": "mud83xy9tzgwe",
+      "kind": "valor",
+      "event": "Tararudee, Lanlana – Park, Sohyun (under 4.5 aces)",
+      "houseA": "Betfury",
+      "oddA": 1.87,
+      "stakeA": 69.49600000000001,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "Aces",
+      "oddMkt": 1.66,
+      "prob": 57.4,
+      "winner": null,
+      "date": "2026-09-23T00:00",
+      "total": 69.49600000000001,
+      "lucroA": 60.461520000000014,
+      "lucroRed": -69.49600000000001,
+      "lucro": 60.461520000000014,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T22:06:01.380Z"
+    },
+    {
+      "id": "mud87bdmbxojw",
+      "kind": "valor",
+      "event": "Las Vegas Aces – Los Angeles Sparks (1 primeira parte)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.19,
+      "stakeA": 306.6,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.1,
+      "prob": 86.6,
+      "winner": null,
+      "date": "2026-09-22T23:00",
+      "total": 306.6,
+      "lucroA": 58.25399999999999,
+      "lucroRed": -306.6,
+      "lucro": 58.25399999999999,
+      "roi": 18.999999999999993,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T22:08:38.746Z"
     }
   ],
   "invertidos": [],
@@ -20520,5 +20568,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T21:58:58.879Z"
+  "updatedAt": "2026-09-22T22:08:38.748Z"
 }
