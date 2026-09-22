@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 915.3,
+      "value": 1017.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T21:50:11.842Z"
+      "updatedAt": "2026-09-22T21:55:45.447Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4727,8 +4727,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 437.42,
-      "updatedAt": "2026-09-22T17:19:23.883Z",
+      "value": 417.42,
+      "updatedAt": "2026-09-22T21:55:45.445Z",
       "currency": "USD"
     },
     {
@@ -20306,6 +20306,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T21:50:11.840Z"
+    },
+    {
+      "id": "mud7qqp0dykgp",
+      "kind": "valor",
+      "event": "WAS Mystics – CON Sun (over 80.5 segunda metade)",
+      "houseA": "Cloudbet",
+      "oddA": 2.4,
+      "stakeA": 102.2,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 2.07,
+      "prob": 46,
+      "winner": null,
+      "date": "2026-09-22T20:40",
+      "total": 102.2,
+      "lucroA": 143.07999999999998,
+      "lucroRed": -102.2,
+      "lucro": 143.07999999999998,
+      "roi": 140,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T21:55:45.445Z"
     }
   ],
   "invertidos": [],
@@ -20472,5 +20496,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T21:50:11.842Z"
+  "updatedAt": "2026-09-22T21:55:45.447Z"
 }
