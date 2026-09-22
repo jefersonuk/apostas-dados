@@ -1199,8 +1199,8 @@
         </div>
         <div id="peTabela"></div>
         <label style="margin-top:10px;">Casas vetadas como entrada (separe por vírgula)</label>
-        <input type="text" id="peVeto" placeholder="Pinnacle">
-        <div class="hint">A casa vetada continua servindo de <b>referência de preço</b> no campo “odd média do mercado”. O veto é só para entrar com dinheiro.</div>
+        <input type="text" id="peVeto" placeholder="vazio — nenhuma casa vetada">
+        <div class="hint">Vazio por padrão. A Pinnacle saiu daqui em 22/09: os −34,7% dela eram mistura de odd, não a casa — no núcleo ela rende +7,1% contra +10,4% das demais, e depois da escada o IC95% atravessa o zero. Use este campo para vetar casa por <b>decisão sua</b>, não por número solto. A casa vetada continua servindo de referência de preço.</div>
         <div id="peNota"></div>
       </div>
     </details>
@@ -1300,7 +1300,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260914-1730';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260922-2130';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1335,7 +1335,7 @@
     // com IC95% atravessando o zero: nao merece stake cheia, mas nao esta provada ruim.
     polE:true,
     polEFatores:{f210:1, f250:0.5, f300:0.25, fAcima:0},
-    polEVeto:'Pinnacle'                            // casas vetadas como entrada (referencia de preco, nao casa de aposta)
+    polEVeto:''                                    // vazio: o veto e opcional, nao vem com ninguem dentro
   };
 
   /* ---------- caixa: registros com data + hora ---------- */
@@ -2634,6 +2634,18 @@
 
   // converte entradas antigas registradas como 2 pernas com odd 1.01 no lado fake.
   // NÃO mexe em saldos: apenas reclassifica os dados, preservando o estado contábil já aplicado.
+  /* O veto da Pinnacle foi gravado em cfg pelo build 20260914-1500. Mudar o
+     DEFAULT não limpa o que já está salvo, então a limpeza é explícita e roda
+     uma vez só — marcada por polEVetoLimpo para não desfazer um veto que o
+     usuário venha a colocar de novo depois. */
+  function migrarVetoPinnacle(){
+    const c=state.cfg||{};
+    if(c.polEVetoLimpo) return false;
+    c.polEVetoLimpo=true;
+    if(String(c.polEVeto||'').trim().toLowerCase()==='pinnacle'){ c.polEVeto=''; return true; }
+    return false;
+  }
+
   function migrarValueBets(){
     let n=0;
     (state.surebets||[]).forEach(o=>{
@@ -4547,11 +4559,16 @@
      Ressalva honesta: os fatores foram escolhidos olhando estes dados, então o
      yield da simulação é teto otimista. O que NÃO é in-sample é o efeito da odd,
      que aparece igual na amostra de julho, usada só para conferir.
-     A Pinnacle entra no veto por mecanismo, não só por número: ela é a linha de
-     referência. Quando é a odd mais alta da tela, quase sempre ela é a odd certa e
-     as outras casas é que estão erradas para baixo — o "valor" medido contra uma
-     média que inclui casas piores é ilusório. Registro: 42 apostas, −R$ 1.882,
-     yield −34,7%, IC95% [−64%, −4%], acerto de 31% contra 59,7% de prob estimada. */
+     O veto de casa nasceu com a Pinnacle dentro e foi RETIRADO em 22/09/2026.
+     A justificativa original — "a Pinnacle é a linha de referência, então o valor
+     medido contra ela é ilusório" — não sobreviveu ao teste. Decompondo por faixa
+     de odd, a Pinnacle no núcleo (odd < 2,10) rende +7,1% contra +10,4% das demais:
+     indistinguível. Os −34,7% vinham da mistura de odd, não da casa — 62% das
+     apostas dela estavam em 2,10+ contra 43% das outras. Depois da escada de odd,
+     o número dela fica em −27,8% com IC95% [−60,0%, +5,4%], que atravessa o zero.
+     Some-se que apostar via broker (Sportmarket roteia PS3838) usa o mesmo preço e
+     rendeu +52,8%: mesma fonte de odd, resultados opostos = duas caudas de ruído.
+     A lista continua no painel, vazia, para vetar casa por decisão própria. */
   // Bordas como na simulação: 2,10 é exclusiva (odd 2,10 já é meia entrada),
   // 2,50 e 3,00 são inclusivas (odd 3,00 ainda é quarto de entrada; 3,01 é zero).
   const POL_E_BANDAS=[
@@ -5142,7 +5159,8 @@
     state.usdRate=5.19; state.usdRateSrc='inicial'; state.usdRateAt=new Date().toISOString();
   }
   const migradas=migrarValueBets()+migrarValorEmSurebets();
-  if(migradas>0){ saveState(); }
+  const vetoLimpo=migrarVetoPinnacle();
+  if(migradas>0||vetoLimpo){ saveState(); }
   fillCfg();
   $('sbBankrollInput').value=state.sbBankroll||'';
   $('balRate').value=usdRate();
