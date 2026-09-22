@@ -4821,6 +4821,13 @@
       "value": 100,
       "currency": "BRL",
       "updatedAt": "2026-09-22T17:17:31.080Z"
+    },
+    {
+      "id": "muczy0ui6d8aw",
+      "name": "Casobet",
+      "value": 49.8,
+      "currency": "USD",
+      "updatedAt": "2026-09-22T18:17:28.267Z"
     }
   ],
   "aportes": [
@@ -20360,5 +20367,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T18:14:59.475Z"
+  "updatedAt": "2026-09-22T18:17:28.269Z"
 }
