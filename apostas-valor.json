@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 939.14,
+      "value": 1092.44,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T01:10:32.818Z"
+      "updatedAt": "2026-09-22T01:23:29.001Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4768,8 +4768,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 166,
-      "updatedAt": "2026-09-21T19:36:07.998Z",
+      "value": 136,
+      "updatedAt": "2026-09-22T01:23:28.998Z",
       "currency": "USD"
     },
     {
@@ -19903,6 +19903,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T19:40:35.187Z"
+    },
+    {
+      "id": "mubzq0yui1210",
+      "kind": "valor",
+      "event": "HC Sierre-Anniviers – GCK Lions H1(−2.5)",
+      "houseA": "Betfury",
+      "oddA": 1.79,
+      "stakeA": 153.3,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-22T14:45",
+      "total": 153.3,
+      "lucroA": 121.10700000000001,
+      "lucroRed": -153.3,
+      "lucro": 121.10700000000001,
+      "roi": 79,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T01:23:28.998Z"
     }
   ],
   "invertidos": [],
@@ -20069,5 +20093,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T01:10:43.963Z"
+  "updatedAt": "2026-09-22T01:23:29.001Z"
 }
