@@ -4643,7 +4643,7 @@
       "name": "Opinion",
       "value": 135.71,
       "currency": "USD",
-      "updatedAt": "2026-09-22T17:24:06.584Z"
+      "updatedAt": "2026-09-22T19:17:08.917Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -20105,7 +20105,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-22T17:24:06.584Z"
+      "updatedAt": "2026-09-22T19:17:08.917Z"
     },
     {
       "id": "mucwmf7djgvyj",
@@ -20417,5 +20417,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T19:15:39.455Z"
+  "updatedAt": "2026-09-22T19:17:08.918Z"
 }
