@@ -4517,8 +4517,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1058.94,
-      "updatedAt": "2026-09-22T21:58:58.878Z"
+      "value": 958.94,
+      "updatedAt": "2026-09-22T22:16:20.369Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1493.59,
+      "value": 1593.59,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T22:08:38.748Z"
+      "updatedAt": "2026-09-22T22:16:20.380Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20402,6 +20402,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T22:08:38.746Z"
+    },
+    {
+      "id": "mud8h7kf42ygu",
+      "kind": "valor",
+      "event": "Tzeirey Umm al-Fahm – Hapoel Umm Al Fahm (under 2.5)",
+      "houseA": "Betnacional",
+      "oddA": 2.55,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2,
+      "prob": 47.6,
+      "winner": null,
+      "date": "2026-09-23T14:20",
+      "total": 100,
+      "lucroA": 154.99999999999997,
+      "lucroRed": -100,
+      "lucro": 154.99999999999997,
+      "roi": 154.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T22:16:20.370Z"
     }
   ],
   "invertidos": [],
@@ -20568,5 +20592,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T22:08:38.748Z"
+  "updatedAt": "2026-09-22T22:16:20.380Z"
 }
