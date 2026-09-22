@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1103.87,
+      "value": 1231.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T16:44:28.154Z"
+      "updatedAt": "2026-09-22T17:19:23.885Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4726,8 +4726,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 462.42,
-      "updatedAt": "2026-09-21T17:49:15.899Z",
+      "value": 437.42,
+      "updatedAt": "2026-09-22T17:19:23.883Z",
       "currency": "USD"
     },
     {
@@ -4814,6 +4814,13 @@
       "name": "Cassino",
       "value": 0,
       "updatedAt": "2026-09-21T19:42:09.432Z"
+    },
+    {
+      "id": "mucxsx8o9axks",
+      "name": "20bet",
+      "value": 100,
+      "currency": "BRL",
+      "updatedAt": "2026-09-22T17:17:31.080Z"
     }
   ],
   "aportes": [
@@ -20114,6 +20121,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T16:44:28.153Z"
+    },
+    {
+      "id": "mucxvca291wrr",
+      "kind": "valor",
+      "event": "Atletico FC – Tigres FC (under 12 corners)",
+      "houseA": "Cloudbet",
+      "oddA": 1.84,
+      "stakeA": 128,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-22T18:00",
+      "total": 128,
+      "lucroA": 107.52000000000001,
+      "lucroRed": -128,
+      "lucro": 107.52000000000001,
+      "roi": 84.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T17:19:23.883Z"
     }
   ],
   "invertidos": [],
@@ -20280,5 +20311,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T17:17:15.036Z"
+  "updatedAt": "2026-09-22T17:19:23.885Z"
 }
