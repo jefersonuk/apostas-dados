@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-22",
+    "startDate": "2026-09-14",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -22,7 +22,8 @@
       "f300": 0.25,
       "fAcima": 0
     },
-    "polEVeto": "Pinnacle"
+    "polEVeto": "",
+    "polEVetoLimpo": true
   },
   "bets": [
     {
@@ -5110,11 +5111,11 @@
   ],
   "usdRate": 5.11,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-22T19:15:39.182Z",
+  "usdRateAt": "2026-09-22T18:17:30.652Z",
   "eurRate": 5.85,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-22T19:15:39.455Z",
-  "appBuild": "20260914-1730",
+  "eurRateAt": "2026-09-22T18:17:30.710Z",
+  "appBuild": "20260922-2130",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -20447,5 +20448,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T20:44:13.641Z"
+  "updatedAt": "2026-09-22T21:48:35.519Z"
 }
