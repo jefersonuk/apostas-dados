@@ -4557,7 +4557,7 @@
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
       "value": 1086.66,
-      "updatedAt": "2026-09-22T16:03:44.119Z"
+      "updatedAt": "2026-09-22T17:20:54.783Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -20048,7 +20048,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-22T16:03:44.119Z"
+      "updatedAt": "2026-09-22T17:20:54.783Z"
     },
     {
       "id": "mucv9bsiveiso",
@@ -20311,5 +20311,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T17:19:23.885Z"
+  "updatedAt": "2026-09-22T17:20:54.783Z"
 }
