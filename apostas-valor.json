@@ -4556,8 +4556,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 1086.66,
-      "updatedAt": "2026-09-22T17:20:54.783Z"
+      "value": 886.66,
+      "updatedAt": "2026-09-22T18:02:30.850Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1129.67,
+      "value": 1329.67,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T17:24:28.165Z"
+      "updatedAt": "2026-09-22T18:02:30.855Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20146,6 +20146,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T17:19:23.883Z"
+    },
+    {
+      "id": "muczese9jgs2o",
+      "kind": "valor",
+      "event": "Poland – Georgia (2)",
+      "houseA": "Blaze",
+      "oddA": 2.03,
+      "stakeA": 200,
+      "curA": "BRL",
+      "sport": "Xadrez",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.53,
+      "prob": 62.2,
+      "winner": null,
+      "date": "2026-09-23T07:00",
+      "total": 200,
+      "lucroA": 205.99999999999997,
+      "lucroRed": -200,
+      "lucro": 205.99999999999997,
+      "roi": 102.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T18:02:30.850Z"
     }
   ],
   "invertidos": [],
@@ -20312,5 +20336,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T17:53:35.468Z"
+  "updatedAt": "2026-09-22T18:02:30.855Z"
 }
