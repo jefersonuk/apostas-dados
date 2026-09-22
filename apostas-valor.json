@@ -4768,8 +4768,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 155.32,
-      "updatedAt": "2026-09-22T17:24:28.165Z",
+      "value": 169.33,
+      "updatedAt": "2026-09-22T17:53:35.467Z",
       "currency": "USD"
     },
     {
@@ -20312,5 +20312,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T17:24:28.165Z"
+  "updatedAt": "2026-09-22T17:53:35.468Z"
 }
