@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 862.49,
+      "value": 964.69,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T15:29:42.544Z"
+      "updatedAt": "2026-09-22T16:01:35.292Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 212,
+      "value": 192,
       "currency": "USD",
-      "updatedAt": "2026-09-22T15:08:38.721Z"
+      "updatedAt": "2026-09-22T16:01:35.288Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -19980,6 +19980,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T15:29:42.539Z"
+    },
+    {
+      "id": "mucv39yvsblj4",
+      "kind": "valor",
+      "event": "Carolina Hurricanes – Florida Panthers (under 6.5)",
+      "houseA": "Betonline",
+      "oddA": 1.9,
+      "stakeA": 102.2,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Total de Gols",
+      "oddMkt": 1.75,
+      "prob": 54.4,
+      "winner": null,
+      "date": "2026-09-22T20:07",
+      "total": 102.2,
+      "lucroA": 91.97999999999999,
+      "lucroRed": -102.2,
+      "lucro": 91.97999999999999,
+      "roi": 89.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T16:01:35.288Z"
     }
   ],
   "invertidos": [],
@@ -20146,5 +20170,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T15:57:28.996Z"
+  "updatedAt": "2026-09-22T16:01:35.292Z"
 }
