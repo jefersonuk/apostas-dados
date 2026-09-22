@@ -4517,8 +4517,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 1158.94,
-      "updatedAt": "2026-09-22T16:03:49.253Z"
+      "value": 1058.94,
+      "updatedAt": "2026-09-22T21:58:58.878Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1017.5,
+      "value": 1117.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T21:55:45.447Z"
+      "updatedAt": "2026-09-22T21:58:58.879Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20330,6 +20330,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T21:55:45.445Z"
+    },
+    {
+      "id": "mud7uvy6rdpja",
+      "kind": "valor",
+      "event": "Vit Kopriva – Jia Hu (over 16.5 games)",
+      "houseA": "Betnacional",
+      "oddA": 2.1,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Tênis",
+      "market": "Total de games",
+      "oddMkt": 1.87,
+      "prob": 50.9,
+      "winner": null,
+      "date": "2026-09-23T04:00",
+      "total": 100,
+      "lucroA": 110.00000000000001,
+      "lucroRed": -100,
+      "lucro": 110.00000000000001,
+      "roi": 110.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T21:58:58.878Z"
     }
   ],
   "invertidos": [],
@@ -20496,5 +20520,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T21:55:45.447Z"
+  "updatedAt": "2026-09-22T21:58:58.879Z"
 }
