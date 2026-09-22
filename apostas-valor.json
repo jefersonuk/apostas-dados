@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 275.28,
+      "value": 227.03,
       "currency": "USD",
-      "updatedAt": "2026-09-22T03:16:10.489Z"
+      "updatedAt": "2026-09-22T10:04:50.399Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 658.09,
+      "value": 581.44,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T03:14:36.686Z"
+      "updatedAt": "2026-09-22T10:04:09.210Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,9 +4755,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 133.5,
+      "value": 168,
       "currency": "USD",
-      "updatedAt": "2026-09-22T03:15:47.925Z"
+      "updatedAt": "2026-09-22T10:04:09.210Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -19749,7 +19749,7 @@
       "market": "Total de Pontos",
       "oddMkt": 1.8,
       "prob": 52.9,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-21T21:15",
       "total": 76.65,
       "lucroA": 99.645,
@@ -19757,9 +19757,10 @@
       "lucro": 99.645,
       "roi": 129.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-21T18:25:46.143Z"
+      "updatedAt": "2026-09-22T10:04:09.210Z"
     },
     {
       "id": "mubl1idu9r8bg",
@@ -19846,7 +19847,7 @@
       "market": "Total de Chutes",
       "oddMkt": 1.74,
       "prob": 54.7,
-      "winner": "A",
+      "winner": "RED",
       "date": "2026-09-21T21:15",
       "total": 127.75,
       "lucroA": 118.80749999999999,
@@ -19855,9 +19856,9 @@
       "roi": 93,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "RED"
       },
-      "updatedAt": "2026-09-22T01:58:57.747Z"
+      "updatedAt": "2026-09-22T10:04:50.400Z"
     },
     {
       "id": "mubnfrd8257jv",
@@ -20096,5 +20097,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T10:04:00.019Z"
+  "updatedAt": "2026-09-22T10:05:17.465Z"
 }
