@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 851.19,
+      "value": 909.09,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T20:30:24.634Z"
+      "updatedAt": "2026-09-22T20:36:26.211Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4698,8 +4698,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 84.62,
-      "updatedAt": "2026-09-22T20:34:51.999Z",
+      "value": 73.29,
+      "updatedAt": "2026-09-22T20:36:26.210Z",
       "currency": "USD"
     },
     {
@@ -20255,6 +20255,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T20:29:15.055Z"
+    },
+    {
+      "id": "mud4wqg1o59mz",
+      "kind": "valor",
+      "event": "Krejckova / chwalinska x routiffe / sutjadi (1)",
+      "houseA": "Bookmaker",
+      "oddA": 2.31,
+      "stakeA": 57.896300000000004,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2,
+      "prob": 47.6,
+      "winner": null,
+      "date": "2026-09-23T07:00",
+      "total": 57.896300000000004,
+      "lucroA": 75.844153,
+      "lucroRed": -57.896300000000004,
+      "lucro": 75.844153,
+      "roi": 131,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T20:36:26.210Z"
     }
   ],
   "invertidos": [],
@@ -20421,5 +20445,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T20:34:52.008Z"
+  "updatedAt": "2026-09-22T20:36:26.211Z"
 }
