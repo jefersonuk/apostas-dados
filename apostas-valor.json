@@ -4594,8 +4594,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1920.21,
-      "updatedAt": "2026-09-22T16:10:40.561Z"
+      "value": 1820.21,
+      "updatedAt": "2026-09-22T16:44:28.153Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1003.87,
+      "value": 1103.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T16:43:38.605Z"
+      "updatedAt": "2026-09-22T16:44:28.154Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20090,6 +20090,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T16:43:38.604Z"
+    },
+    {
+      "id": "mucwmf7djgvyj",
+      "kind": "valor",
+      "event": "3 febrero x river plate assuncion (1st half 1+0,5)",
+      "houseA": "Pinnacle",
+      "oddA": 1.909,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-22T15:00",
+      "total": 100,
+      "lucroA": 90.9,
+      "lucroRed": -100,
+      "lucro": 90.9,
+      "roi": 90.9,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T16:44:28.153Z"
     }
   ],
   "invertidos": [],
@@ -20256,5 +20280,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T16:43:38.605Z"
+  "updatedAt": "2026-09-22T16:44:28.154Z"
 }
