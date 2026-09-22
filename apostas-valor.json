@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 756.47,
+      "value": 858.67,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T16:04:33.787Z"
+      "updatedAt": "2026-09-22T16:06:17.588Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4768,8 +4768,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 136,
-      "updatedAt": "2026-09-22T01:23:28.998Z",
+      "value": 116,
+      "updatedAt": "2026-09-22T16:06:17.586Z",
       "currency": "USD"
     },
     {
@@ -20030,6 +20030,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T16:03:44.119Z"
+    },
+    {
+      "id": "mucv9bsiveiso",
+      "kind": "valor",
+      "event": "Fenerbahce Istanbul – Besiktas JK Abaixo 42.5 1º período",
+      "houseA": "Betfury",
+      "oddA": 1.97,
+      "stakeA": 102.2,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.83,
+      "prob": 52,
+      "winner": null,
+      "date": "2026-09-22T14:00",
+      "total": 102.2,
+      "lucroA": 99.134,
+      "lucroRed": -102.2,
+      "lucro": 99.134,
+      "roi": 97,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T16:06:17.586Z"
     }
   ],
   "invertidos": [],
@@ -20196,5 +20220,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T16:04:33.787Z"
+  "updatedAt": "2026-09-22T16:06:17.588Z"
 }
