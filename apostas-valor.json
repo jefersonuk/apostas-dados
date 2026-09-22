@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 813.1,
+      "value": 915.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T20:37:35.154Z"
+      "updatedAt": "2026-09-22T21:50:11.842Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4769,8 +4769,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 155.73,
-      "updatedAt": "2026-09-22T20:29:15.055Z",
+      "value": 135.73,
+      "updatedAt": "2026-09-22T21:50:11.840Z",
       "currency": "USD"
     },
     {
@@ -20282,6 +20282,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T20:36:26.210Z"
+    },
+    {
+      "id": "mud7jla78c09g",
+      "kind": "valor",
+      "event": "Uzbekistan – China (x2)",
+      "houseA": "Betfury",
+      "oddA": 1.76,
+      "stakeA": 102.2,
+      "curA": "USD",
+      "sport": "Xadrez",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-23T07:00",
+      "total": 102.2,
+      "lucroA": 77.672,
+      "lucroRed": -102.2,
+      "lucro": 77.672,
+      "roi": 76,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T21:50:11.840Z"
     }
   ],
   "invertidos": [],
@@ -20448,5 +20472,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T21:48:35.519Z"
+  "updatedAt": "2026-09-22T21:50:11.842Z"
 }
