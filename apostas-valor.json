@@ -4629,7 +4629,7 @@
       "name": "Overtimemarkets",
       "value": 170,
       "currency": "USD",
-      "updatedAt": "2026-09-22T01:44:30.680Z"
+      "updatedAt": "2026-09-22T01:58:55.831Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -19835,10 +19835,10 @@
     {
       "id": "mubne7k8an2h5",
       "kind": "valor",
-      "event": "Lanus x Estudiantes (1 over 14.5 chutes)",
+      "event": "Lanus x Estudiantes (1 under 14.5 chutes)",
       "houseA": "Overtimemarkets",
       "oddA": 1.93,
-      "stakeA": 127.75000000000001,
+      "stakeA": 127.75,
       "curA": "USD",
       "sport": "Futebol",
       "market": "Total de Chutes",
@@ -19846,15 +19846,15 @@
       "prob": 54.7,
       "winner": null,
       "date": "2026-09-21T21:15",
-      "total": 127.75000000000001,
-      "lucroA": 118.8075,
-      "lucroRed": -127.75000000000001,
-      "lucro": 118.8075,
+      "total": 127.75,
+      "lucroA": 118.80749999999999,
+      "lucroRed": -127.75,
+      "lucro": 118.80749999999999,
       "roi": 93,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-21T19:38:22.280Z"
+      "updatedAt": "2026-09-22T01:58:55.831Z"
     },
     {
       "id": "mubnfrd8257jv",
@@ -20093,5 +20093,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T01:44:30.680Z"
+  "updatedAt": "2026-09-22T01:58:55.831Z"
 }
