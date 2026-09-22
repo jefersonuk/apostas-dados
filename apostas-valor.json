@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 163.21,
+      "value": 178.21,
       "currency": "USD",
-      "updatedAt": "2026-09-22T01:08:46.769Z"
+      "updatedAt": "2026-09-22T01:10:32.817Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1015.79,
+      "value": 939.14,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T00:08:11.126Z"
+      "updatedAt": "2026-09-22T01:10:32.818Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5530,6 +5530,10 @@
     {
       "id": "mubniqn2kc3o2",
       "at": "2026-09-22T00:08:11.125Z"
+    },
+    {
+      "id": "mubgaw8pf6p5p",
+      "at": "2026-09-22T01:10:32.818Z"
     }
   ],
   "surebets": [
@@ -19732,30 +19736,6 @@
       "updatedAt": "2026-09-21T18:47:49.927Z"
     },
     {
-      "id": "mubgaw8pf6p5p",
-      "kind": "valor",
-      "event": "SSG Landers – KT Wiz Abaixo 0.5 1ª entrada",
-      "houseA": "Overtimemarkets",
-      "oddA": 2.2,
-      "stakeA": 76.65,
-      "curA": "USD",
-      "sport": "Beisebol",
-      "market": "Total de Pontos",
-      "oddMkt": 1.9,
-      "prob": 50.1,
-      "winner": null,
-      "date": "2026-09-22T06:00",
-      "total": 76.65,
-      "lucroA": 91.98000000000002,
-      "lucroRed": -76.65,
-      "lucro": 91.98000000000002,
-      "roi": 120.00000000000001,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-21T16:19:50.334Z"
-    },
-    {
       "id": "mubksucemyzjk",
       "kind": "valor",
       "event": "Los angeles rams x new york giants (1 over 3.5 sacks)",
@@ -20089,5 +20069,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T01:08:46.770Z"
+  "updatedAt": "2026-09-22T01:10:32.818Z"
 }
