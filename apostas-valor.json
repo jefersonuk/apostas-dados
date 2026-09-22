@@ -4641,17 +4641,17 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 179.54,
+      "value": 151.18,
       "currency": "USD",
-      "updatedAt": "2026-09-21T12:43:47.028Z"
+      "updatedAt": "2026-09-22T16:43:38.604Z"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 858.67,
+      "value": 1003.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T16:06:17.588Z"
+      "updatedAt": "2026-09-22T16:43:38.605Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20066,6 +20066,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-22T16:06:17.586Z"
+    },
+    {
+      "id": "mucwlcz0jb8sj",
+      "kind": "valor",
+      "event": "Leo Team x Ex-rustec (2)",
+      "houseA": "Opinion",
+      "oddA": 1.7,
+      "stakeA": 145.2032,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-22T13:30",
+      "total": 145.2032,
+      "lucroA": 101.64224,
+      "lucroRed": -145.2032,
+      "lucro": 101.64224,
+      "roi": 70,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-22T16:43:38.604Z"
     }
   ],
   "invertidos": [],
@@ -20232,5 +20256,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T16:32:06.148Z"
+  "updatedAt": "2026-09-22T16:43:38.605Z"
 }
