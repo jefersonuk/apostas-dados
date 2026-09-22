@@ -4627,9 +4627,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 161.12,
+      "value": 191.12,
       "currency": "USD",
-      "updatedAt": "2026-09-21T19:42:01.232Z"
+      "updatedAt": "2026-09-22T00:08:11.125Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4648,10 +4648,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1169.09,
+      "value": 1015.79,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-22T00:07:32.397Z"
+      "updatedAt": "2026-09-22T00:08:11.126Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5526,6 +5526,10 @@
     {
       "id": "mtzqwzha6714w",
       "at": "2026-09-13T16:06:25.378Z"
+    },
+    {
+      "id": "mubniqn2kc3o2",
+      "at": "2026-09-22T00:08:11.125Z"
     }
   ],
   "surebets": [
@@ -19919,30 +19923,6 @@
         "stakes": true
       },
       "updatedAt": "2026-09-21T19:40:35.187Z"
-    },
-    {
-      "id": "mubniqn2kc3o2",
-      "kind": "valor",
-      "event": "Chicago Blackhawks x Minnesota Wild (H2 +1,5)",
-      "houseA": "Overtimemarkets",
-      "oddA": 1.89,
-      "stakeA": 153.3,
-      "curA": "USD",
-      "sport": "Hóquei",
-      "market": "Handicap Asiático",
-      "oddMkt": 1.55,
-      "prob": 61.4,
-      "winner": null,
-      "date": "2026-09-21T21:00",
-      "total": 153.3,
-      "lucroA": 136.43699999999998,
-      "lucroRed": -153.3,
-      "lucro": 136.43699999999998,
-      "roi": 88.99999999999999,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-09-21T19:41:53.630Z"
     }
   ],
   "invertidos": [],
@@ -20109,5 +20089,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T00:07:32.397Z"
+  "updatedAt": "2026-09-22T00:08:11.126Z"
 }
