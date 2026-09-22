@@ -4769,7 +4769,7 @@
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
       "value": 155.73,
-      "updatedAt": "2026-09-22T18:36:38.509Z",
+      "updatedAt": "2026-09-22T20:29:15.055Z",
       "currency": "USD"
     },
     {
@@ -20237,23 +20237,23 @@
       "event": "Michigan Wolverines – Iowa Hawkeyes (4quarto H2 +3.5)",
       "houseA": "Betfury",
       "oddA": 1.84,
-      "stakeA": 69.49600000000001,
+      "stakeA": 69.5,
       "curA": "USD",
       "sport": "Futebol Americano",
       "market": "Handicap Asiático",
       "oddMkt": 1.6,
       "prob": 59.5,
       "winner": null,
-      "date": "2026-09-22T16:30",
-      "total": 69.49600000000001,
-      "lucroA": 58.376640000000016,
-      "lucroRed": -69.49600000000001,
-      "lucro": 58.376640000000016,
+      "date": "2026-09-26T16:30",
+      "total": 69.5,
+      "lucroA": 58.38,
+      "lucroRed": -69.5,
+      "lucro": 58.38,
       "roi": 84.00000000000001,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-22T18:36:38.509Z"
+      "updatedAt": "2026-09-22T20:29:15.055Z"
     }
   ],
   "invertidos": [],
@@ -20420,5 +20420,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-22T19:57:13.658Z"
+  "updatedAt": "2026-09-22T20:29:15.055Z"
 }
