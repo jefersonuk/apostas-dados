@@ -4628,9 +4628,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 177.08,
+      "value": 248.48,
       "currency": "USD",
-      "updatedAt": "2026-09-22T22:08:38.746Z"
+      "updatedAt": "2026-09-23T10:04:26.630Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1964.36,
+      "value": 1555.56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T01:31:59.044Z"
+      "updatedAt": "2026-09-23T10:05:20.112Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4826,9 +4826,9 @@
     {
       "id": "muczy0ui6d8aw",
       "name": "Casobet",
-      "value": 29.8,
+      "value": 49.8,
       "currency": "USD",
-      "updatedAt": "2026-09-22T18:19:57.529Z"
+      "updatedAt": "2026-09-23T10:05:20.111Z"
     },
     {
       "id": "mudd82jmntqp2",
@@ -20231,7 +20231,7 @@
       "market": "Total games",
       "oddMkt": 1.55,
       "prob": 61.4,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-09-23T00:00",
       "total": 102.2,
       "lucroA": 83.804,
@@ -20239,9 +20239,10 @@
       "lucro": 83.804,
       "roi": 82,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-09-22T18:19:57.529Z"
+      "updatedAt": "2026-09-23T10:05:20.111Z"
     },
     {
       "id": "mud0modoeeine",
@@ -20400,7 +20401,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.1,
       "prob": 86.6,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-22T23:00",
       "total": 306.6,
       "lucroA": 58.25399999999999,
@@ -20408,9 +20409,10 @@
       "lucro": 58.25399999999999,
       "roi": 18.999999999999993,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-22T22:08:38.746Z"
+      "updatedAt": "2026-09-23T10:04:26.630Z"
     },
     {
       "id": "mud8h7kf42ygu",
@@ -20722,5 +20724,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T10:03:39.198Z"
+  "updatedAt": "2026-09-23T10:05:20.112Z"
 }
