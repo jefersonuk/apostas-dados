@@ -4595,8 +4595,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1936,
-      "updatedAt": "2026-09-23T00:17:12.339Z"
+      "value": 1836,
+      "updatedAt": "2026-09-23T11:08:59.105Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1428.17,
+      "value": 1528.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T11:00:40.626Z"
+      "updatedAt": "2026-09-23T11:08:59.110Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20585,6 +20585,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T11:00:40.616Z"
+    },
+    {
+      "id": "mue02u745b0a4",
+      "kind": "valor",
+      "event": "Sant Andreu – Real Madrid Castilla (2 DNB)",
+      "houseA": "Pinnacle",
+      "oddA": 2,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.75,
+      "prob": 54.4,
+      "winner": null,
+      "date": "2026-09-23T16:00",
+      "total": 100,
+      "lucroA": 100,
+      "lucroRed": -100,
+      "lucro": 100,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T11:08:59.105Z"
     }
   ],
   "invertidos": [],
@@ -20751,5 +20775,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T11:00:40.626Z"
+  "updatedAt": "2026-09-23T11:08:59.110Z"
 }
