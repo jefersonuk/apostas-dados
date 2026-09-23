@@ -553,6 +553,17 @@
   .lote-tab .lote-casa{width:auto;max-width:150px;margin:0;padding:4px 4px;font-size:11px;font-family:var(--mono);}
   .chip.on{background:#0E1520;border-color:var(--sky);color:var(--sky);}
   .chip .o{font-family:var(--mono);color:var(--amber);margin-left:3px;}
+  .jogo-info{font-size:11.5px;line-height:1.6;border-radius:9px;padding:9px 11px;margin:10px 0 0;font-family:var(--mono);}
+  .jogo-info:empty{display:none;}
+  .jogo-info b{font-family:var(--sans);}
+  .jogo-info.serio{background:#2A0E12;border:1px solid #5C2530;color:#FCA5A5;}
+  .jogo-info.oposto{background:#0E1520;border:1px solid #1A2C40;color:#BFD8F5;}
+  .jogo-info.outro{background:#0E1116;border:1px solid var(--border);color:var(--muted);}
+  .jogo-teto{margin-top:4px;padding-top:4px;border-top:1px dashed rgba(255,255,255,.12);}
+  .jogo-tag{display:inline-block;font-size:9.5px;font-weight:800;padding:0 6px;border-radius:8px;background:#5C2530;color:#FCA5A5;margin-left:4px;font-family:var(--sans);}
+  .jogo-tag.leve{background:#1A1F28;color:var(--muted);}
+  .lote-conf{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;color:#FCA5A5;cursor:pointer;margin-top:2px;}
+  .lote-conf input{width:auto;margin:0;}
   .lote-tab .lote-st{width:74px;margin:0;padding:4px 6px;font-size:11.5px;text-align:right;}
 
   /* botão flutuante e toast com desfazer */
@@ -708,6 +719,7 @@
             </datalist>
           </div>
         </div>
+        <div id="vbJogoInfo" class="jogo-info"></div>
         <button class="btn primary big" id="vbRegisterBtn">Registrar aposta</button>
       </div>
     </div>
@@ -856,6 +868,12 @@
     <details class="fold" data-remember id="foldVbDia">
       <summary>📅 Resultado por dia<span class="chev">▸</span></summary>
       <div class="fold-body"><div id="vbDaily"></div></div>
+    </details>
+
+    <!-- ===== JOGOS REPETIDOS ===== -->
+    <details class="fold" data-remember id="foldVbRep">
+      <summary>🔁 Jogos repetidos<span class="chev">▸</span></summary>
+      <div class="fold-body"><div id="vbRepet"></div></div>
     </details>
 
     <!-- ===== SEGMENTOS ===== -->
@@ -1409,7 +1427,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260923-1156';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260923-1243';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3912,6 +3930,111 @@
   function vbResolvidas(){ return valorBets().filter(o=>o.winner&&o.winner!=='VOID'); }
   function vbStakeNat(o){ const c=legCur(o,'A'); return fmtCur(legStake(o,'A')/curRate(c),c); }
 
+  /* ---------- mesmo jogo: não entrar duas vezes sem perceber ----------
+     O surebet.com escreve o mesmo jogo de jeitos diferentes em cada casa
+     ("Cloud9 (Kills) – LYON (Kills)" e "LYON – Cloud9"), então a comparação é
+     por palavra de time, sem acento, sem parênteses e sem termos de mercado:
+       - os DOIS times batem e o horário difere até 3h  -> mesmo jogo
+       - só UM time bate e o horário difere até 30 min  -> mesmo jogo
+     A relação entre as apostas decide o tom do aviso:
+       dobrado     mesmo mercado e mesmo lado: risco dobrado
+       indefinido  não deu para ler o mercado: tratado como dobrado, por cautela
+       oposto      lados contrários: é proteção, não valor novo
+       outro       outro mercado no mesmo jogo: correlacionado, não dobrado
+     Teto por jogo: tudo que não é lado oposto soma, e o total não passa de UMA
+     entrada da escada (com política E) na odd da nova aposta. */
+  const JOGO_STOP=new Set(('over under acima abaixo mais menos total totais mapa map maps tempo extra handicap gols goals '+
+    'pontos points games game set sets quarto quarter periodo period half primeiro segundo escanteios corners cartoes cards '+
+    'kills abates rounds aces chutes shots vencedor winner resultado empate draw vitoria club clube esporte sport team gaming '+
+    'esports women feminino fem the').split(' '));
+  function semAcento(s){ return String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase(); }
+  function jogoTimes(ev){
+    const t=semAcento(ev).replace(/\([^)]*\)/g,' ');
+    return t.split(/\s+(?:–|—|-|vs\.?|x|×|@)\s+|\s*[–—]\s*/).slice(0,2)
+      .map(p=>new Set((p.match(/[a-z0-9]{3,}/g)||[]).filter(w=>!JOGO_STOP.has(w)&&!/^\d+$/.test(w)&&!/^u\d\d$/.test(w))))
+      .filter(s=>s.size);
+  }
+  const jogoCache=new Map();
+  function jogoChave(o){
+    const k=(o.event||'')+'|'+(o.date||'');
+    let v=jogoCache.get(k);
+    if(!v){ v={times:jogoTimes(o.event), t:Date.parse(o.date)}; jogoCache.set(k,v); }
+    return v;
+  }
+  const cruza=(A,B)=>{ for(const w of A) if(B.has(w)) return true; return false; };
+  function mesmoJogo(a,b){
+    if(!a.times.length||!b.times.length) return false;
+    const dt=(isFinite(a.t)&&isFinite(b.t))?Math.abs(a.t-b.t):0;
+    if(dt>3*3600e3) return false;
+    const [a1,a2]=a.times, [b1,b2]=b.times;
+    if(a2&&b2&&((cruza(a1,b1)&&cruza(a2,b2))||(cruza(a1,b2)&&cruza(a2,b1)))) return true;
+    return dt<=30*60e3 && a.times.some(x=>b.times.some(y=>cruza(x,y)));
+  }
+  // seleção lida do texto do evento: handicap, total ou resultado
+  function specAposta(ev){
+    const t=semAcento(ev).replace(/,/g,'.').replace(/−/g,'-');
+    let m=t.match(/\b(?:ah|h|f)\s*([12])\s*\(?\s*([+-]?\d+(?:\.\d+)?)/);
+    if(m) return {tipo:'hcap',lado:m[1]};
+    m=t.match(/\b(over|under|acima|abaixo|mais|menos|to|tu)\b(?:\s+de)?\s*\(?\s*\d/);
+    if(m) return {tipo:'total',lado:/^(over|acima|mais|to)$/.test(m[1])?'o':'u'};
+    m=t.match(/\b([12])\s*dnb\b|\bdnb\s*([12])\b/);
+    if(m) return {tipo:'res',lado:m[1]||m[2]};
+    m=t.match(/\((1|2|x|1x|x2|12)\)/);
+    if(m) return {tipo:'res',lado:m[1]};
+    return null;
+  }
+  function relacaoJogo(a,b){
+    const sa=specAposta(a.event), sb=specAposta(b.event);
+    if(sa&&sb){
+      if(sa.tipo!==sb.tipo) return 'outro';
+      if(sa.lado===sb.lado) return 'dobrado';
+      return (sa.tipo==='res'&&/x/.test(sa.lado+sb.lado))?'outro':'oposto';
+    }
+    const ma=(a.market||'').trim().toLowerCase(), mb=(b.market||'').trim().toLowerCase();
+    if(ma&&mb&&ma!==mb) return 'outro';
+    return 'indefinido';
+  }
+  // apostas em aberto (e as de antes no mesmo lote) que caem no mesmo jogo do candidato
+  function conflitosJogo(cand,extras){
+    if(!String(cand.event||'').trim()) return [];
+    const kc=jogoChave(cand);
+    return valorBets().filter(o=>!o.winner).concat(extras||[])
+      .filter(o=>o!==cand && (!cand.id||o.id!==cand.id) && mesmoJogo(kc,jogoChave(o)))
+      .map(o=>({o,rel:relacaoJogo(cand,o)}));
+  }
+  const conflitoSerio=c=>c.rel==='dobrado'||c.rel==='indefinido';
+  function exposicaoJogo(confl){ return confl.filter(c=>c.rel!=='oposto').reduce((s,c)=>s+legStake(c.o,'A'),0); }
+  // quanto ainda cabe no jogo (R$), ou null se não há nada aberto nele
+  function restanteJogo(odd,casa,confl){
+    if(!confl.length||!(odd>1)) return null;
+    const teto=escadaStakePolE(odd,casa)||0;
+    return Math.max(0,teto-exposicaoJogo(confl));
+  }
+  function candForm(){ return {event:$('vbEvent').value, date:$('vbDate').value, market:$('vbMarket').value}; }
+  const JOGO_ROT={dobrado:'mesmo lado',indefinido:'mercado não identificado',oposto:'lado oposto',outro:'outro mercado'};
+  function linhaConflito(c){
+    const o=c.o, sel=(String(o.event||'').match(/\(([^)]*)\)\s*$/)||[])[1]||o.market||'';
+    return esc(legHouse(o,'A'))+' @'+legOdd(o,'A').toFixed(2)+' · '+(o.curA?vbStakeNat(o):fmt(legStake(o,'A')))+
+      (sel?' · '+esc(sel):'')+' <span class="muted">('+JOGO_ROT[c.rel]+')</span>';
+  }
+  function renderJogoInfo(){
+    const box=$('vbJogoInfo');
+    const confl=conflitosJogo(candForm());
+    if(!confl.length){ box.innerHTML=''; box.className='jogo-info'; return; }
+    const serio=confl.some(conflitoSerio), dob=confl.some(c=>c.rel==='dobrado');
+    const soOposto=confl.every(c=>c.rel==='oposto');
+    const odd=numBR($('vbOdd').value), casa=$('vbHouse').value;
+    const expo=exposicaoJogo(confl), rest=restanteJogo(odd,casa,confl);
+    const titulo=dob?'⚠ Risco dobrado: você já tem esta seleção neste jogo'
+      :serio?'⚠ Você já está neste jogo'
+      :soOposto?'↔ Lado oposto já apostado — isto é proteção, não valor novo'
+      :'ℹ Outro mercado no mesmo jogo';
+    box.className='jogo-info '+(serio?'serio':soOposto?'oposto':'outro');
+    box.innerHTML='<b>'+titulo+'</b>'+confl.map(c=>'<div>• '+linhaConflito(c)+'</div>').join('')+
+      (rest!==null?'<div class="jogo-teto">exposição no jogo '+fmt(expo)+' · teto (1 entrada da escada) '+fmt(escadaStakePolE(odd,casa)||0)+
+        ' · <b>'+(rest>0?'cabe mais '+fmt(rest):'teto atingido')+'</b></div>':'');
+  }
+
   /* ---------- sugestão de entrada a partir da odd de mercado ---------- */
   function vbSugerir(){
     const oddCasa=numBR($('vbOdd').value);
@@ -3926,8 +4049,11 @@
     const teto=VB_TETO_MAX*Math.min(1,probReal/VB_PROB_REF);
     const bruto=Math.min(kellyStake,teto);
     const pe=polEAplicar(bruto,oddCasa,$('vbHouse').value);
-    return {probReal,ev,kelly,kellyStake,teto,bruto,sugerido:pe.final,pe:pe.v,
-            banca,limitadoPorTeto:kellyStake>teto};
+    // já há aposta aberta neste jogo: a sugestão não passa do que ainda cabe nele
+    const rest=restanteJogo(oddCasa,$('vbHouse').value,conflitosJogo(candForm()));
+    const sugerido=rest===null?pe.final:Math.min(pe.final,Math.round(rest*100)/100);
+    return {probReal,ev,kelly,kellyStake,teto,bruto,sugerido,pe:pe.v,
+            banca,limitadoPorTeto:kellyStake>teto,limitadoJogo:rest!==null&&rest<pe.final,restJogo:rest};
   }
 
   function renderSugestao(){
@@ -3954,7 +4080,8 @@
         '<div class="sug-meta">'+
           'prob real <b>'+(sug.probReal*100).toFixed(1)+'%</b> · Kelly/4 '+fmt(sug.kellyStake)+' · teto '+fmt(sug.teto)+
           '<br><span style="color:var(--muted-2)">'+(sug.limitadoPorTeto?'limitado pelo teto de probabilidade':'definido pelo Kelly (vantagem magra)')+
-            (pe&&pe.ativa&&pe.fator<1?' · política E corta para '+(pe.fator*100).toFixed(0)+'% de '+fmt(sug.bruto):'')+'</span>'+
+            (pe&&pe.ativa&&pe.fator<1?' · política E corta para '+(pe.fator*100).toFixed(0)+'% de '+fmt(sug.bruto):'')+
+            (sug.limitadoJogo?' · <b style="color:var(--amber)">limitada ao que cabe no jogo</b>':'')+'</span>'+
         '</div>'+
       '</div>';
   }
@@ -3972,6 +4099,7 @@
 
   function updateValorCalc(){
     renderPagCasas();
+    renderJogoInfo();
     renderSugestao();
     renderStakeChips();
     renderHouseInfo();
@@ -4113,10 +4241,11 @@
     const sug=vbSugerir();
     if(sug&&sug.ev>0) chips.push(['Sugestão',sug.sugerido]);
     const base=escadaStake(odd);
-    if(base!==null) chips.push(['Escada',polEAplicar(base,odd,casa).final]);
+    const rest=restanteJogo(odd,casa,conflitosJogo(candForm()));
+    if(base!==null){ const e=polEAplicar(base,odd,casa).final; chips.push([rest!==null&&rest<e?'Restante do jogo':'Escada',rest===null?e:Math.min(e,rest)]); }
     box.innerHTML=chips.map(([k,v])=>v>0
       ? '<button type="button" class="chip" data-stk="'+v+'">'+k+' <b>'+fmtCur0(v/curRate(cur),cur)+'</b></button>'
-      : '<span class="chip zero">'+k+' · não entrar</span>').join('');
+      : '<span class="chip zero">'+k+' · '+(rest!==null&&rest<=0?'teto do jogo atingido':'não entrar')+'</span>').join('');
   }
   $('vbStakeChips').addEventListener('click',e=>{
     const c=e.target.closest('[data-stk]'); if(!c) return;
@@ -4243,6 +4372,14 @@
         if(!confirm('Política E pede entrada '+pe.rot+' nesta faixa: '+fmt(teto)+'.\n\nVocê está registrando '+fmt(r.stake)+'. Confirmar?')) return;
       }
     }
+    const confl=conflitosJogo(candForm());
+    if(confl.some(conflitoSerio)){
+      const rest=restanteJogo(r.odd,casa,confl);
+      if(!confirm((confl.some(c=>c.rel==='dobrado')?'RISCO DOBRADO — você já tem esta seleção neste jogo:':'Você já está neste jogo:')+'\n\n'+
+        confl.map(c=>'• '+legHouse(c.o,'A')+' @'+legOdd(c.o,'A').toFixed(2)+' · '+fmt(legStake(c.o,'A'))+' · '+(c.o.event||'')).join('\n')+
+        (rest!==null?'\n\nCabe mais '+fmt(rest)+' neste jogo (teto de 1 entrada da escada); você está registrando '+fmt(r.stake)+'.':'')+
+        '\n\nRegistrar mesmo assim?')) return;
+    }
     if(!acharCasaExistente(casa) && !confirm('"'+casa+'" não está nos saldos.\n\nCriar a casa em '+curSimbolo(r.cur)+' e registrar?')) return;
     const op=gravarValor({casa, odd:r.odd, stake:r.stake, cur:r.cur,
       event:$('vbEvent').value.trim(), sport:$('vbSport').value.trim(), market:$('vbMarket').value.trim(),
@@ -4253,7 +4390,7 @@
     $('vbHouse').focus();
   }
 
-  ['vbOdd','vbStake','vbProb'].forEach(id=>$(id).addEventListener('input',updateValorCalc));
+  ['vbOdd','vbStake','vbProb','vbEvent','vbDate','vbMarket'].forEach(id=>$(id).addEventListener('input',updateValorCalc));
   $('vbOddMkt').addEventListener('input',updateValorCalc);
   $('vbRegisterBtn').addEventListener('click',registrarValor);
   // Enter no último campo numérico registra direto
@@ -4571,18 +4708,36 @@
               nova:!conta && nomeCasaValido(casa), erros, alertas:[]};
     });
   }
+  let loteConfirma={};        // "registrar mesmo assim" marcado para jogo repetido
   function parseLote(){
     const txt=String($('vbLoteTxt').value||'');
-    if(ehPaginaSurebet(txt)) return parsePaginaSurebet(txt).map(itemDaPagina);
-    return itensDeLinhas(txt);
+    const itens=ehPaginaSurebet(txt)?parsePaginaSurebet(txt).map(itemDaPagina):itensDeLinhas(txt);
+    // jogo repetido: contra as apostas abertas e contra as linhas anteriores do próprio lote
+    const antes=[];
+    itens.forEach(x=>{
+      x.jogo=conflitosJogo({event:x.event,date:x.date,market:x.market},antes);
+      if(x.jogo.length){
+        const rest=restanteJogo(x.odd,x.casa,x.jogo);
+        x.restJogo=rest;
+        // stake inicial da página respeita o teto do jogo (a digitada por você, não)
+        if(x.pagina && rest!==null && loteStakes[x.chave]==null && x.stake>rest){
+          x.stakeNat=Math.floor(rest/curRate(x.cur)); x.stake=x.stakeNat*curRate(x.cur);
+          if(!(x.stakeNat>0) && !x.erros.length) x.erros.push('stake (teto do jogo atingido)');
+        }
+        if(x.jogo.some(conflitoSerio) && !loteConfirma[x.chave||('l'+x.i)]) x.bloqJogo=true;
+      }
+      if(!x.erros.length) antes.push({id:'lote'+x.i, event:x.event, date:x.date, market:x.market, stakeA:x.stake, houseA:x.casa, oddA:x.odd, curA:x.cur});
+    });
+    return itens;
   }
+  const loteValido=x=>!x.erros.length&&!x.bloqJogo;
   function renderLote(){
     const itens=parseLote(), box=$('vbLotePrev'), btn=$('vbLoteBtn');
     if(!itens.length){
       box.innerHTML=/\S/.test($('vbLoteTxt').value)?'<div class="hint" style="color:var(--amber)">Nenhuma aposta reconhecida no texto.</div>':'';
       btn.disabled=true; btn.textContent='Registrar lote'; return;
     }
-    const validos=itens.filter(x=>!x.erros.length);
+    const validos=itens.filter(loteValido);
     const total=validos.reduce((s,x)=>s+x.stake,0);
     const pag=itens.some(x=>x.pagina);
     box.innerHTML=(pag?'<div class="hint" style="margin:0 0 4px;">Página do surebet.com: a casa inicial é <b>a sua casa com a melhor odd</b> (✓ = cadastrada nos saldos) — troque no seletor. O preço justo vem da linha anunciada pelo site; as demais casas viram o consenso. Stake inicial = escada com a política E — ajuste na tabela.</div>':'')+
@@ -4602,17 +4757,23 @@
         const casaCel=r
           ? selectCasas(r,x.casa,'data-lotebloco="'+esc(x.bloco)+'"')+(x.nova?' <span style="color:var(--amber)">nova</span>':'')
           : esc(x.casa||'—')+(x.nova?' <span style="color:var(--amber)">nova</span>':'');
-        return '<tr class="'+(x.erros.length?'err':'')+'"><td>'+x.i+'</td>'+
+        const jogo=(x.jogo&&x.jogo.length)
+          ? '<br><span style="color:'+(x.jogo.some(conflitoSerio)?'#FCA5A5':'var(--muted)')+'">'+
+              (x.jogo.some(c=>c.rel==='dobrado')?'⚠ risco dobrado':x.jogo.some(conflitoSerio)?'⚠ já está neste jogo':x.jogo.every(c=>c.rel==='oposto')?'↔ lado oposto já apostado':'ℹ outro mercado no mesmo jogo')+': '+
+              x.jogo.map(linhaConflito).join('; ')+(x.restJogo!=null?' · cabe mais '+fmt(x.restJogo):'')+'</span>'+
+            (x.jogo.some(conflitoSerio)?'<br><label class="lote-conf"><input type="checkbox" data-loteconf="'+esc(x.chave||('l'+x.i))+'"'+(loteConfirma[x.chave||('l'+x.i)]?' checked':'')+'> registrar mesmo assim</label>':'')
+          : '';
+        return '<tr class="'+((x.erros.length||x.bloqJogo)?'err':'')+'"><td>'+x.i+'</td>'+
           '<td>'+casaCel+'</td>'+
           '<td class="r">'+(x.odd>1?x.odd.toFixed(2):'?')+'</td>'+
           '<td class="r" style="white-space:nowrap;">'+stakeCel+'</td>'+
-          '<td>'+(x.erros.length?'falta '+x.erros.join(', ')+'<br>':'')+esc([x.event,r?'':x.market].filter(Boolean).join(' · ')||'—')+det+'</td></tr>';
+          '<td>'+(x.erros.length?'falta '+x.erros.join(', ')+'<br>':'')+esc([x.event,r?'':x.market].filter(Boolean).join(' · ')||'—')+det+jogo+'</td></tr>';
       }).join('')+
       '</table><div class="hint">'+validos.length+' de '+itens.length+' válidas · total '+fmt(total)+'</div>';
     btn.disabled=!validos.length;
     btn.textContent=validos.length?'Registrar '+validos.length+' aposta'+(validos.length>1?'s':'')+' · '+fmt(total):'Registrar lote';
   }
-  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',()=>{ if(id==='vbLoteTxt'){ loteStakes={}; loteCasas={}; } renderLote(); }));
+  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',()=>{ if(id==='vbLoteTxt'){ loteStakes={}; loteCasas={}; loteConfirma={}; } renderLote(); }));
   // stake editada na prévia: guarda e atualiza só o total, sem redesenhar a tabela (o cursor fica no campo)
   $('vbLotePrev').addEventListener('input',e=>{
     const inp=e.target.closest('.lote-st'); if(!inp) return;
@@ -4622,11 +4783,13 @@
   $('vbLotePrev').addEventListener('change',e=>{
     const sel=e.target.closest('[data-lotebloco]');
     if(sel){ loteCasas[sel.dataset.lotebloco]=sel.value; renderLote(); return; }
+    const cf=e.target.closest('[data-loteconf]');
+    if(cf){ loteConfirma[cf.dataset.loteconf]=cf.checked; renderLote(); return; }
     if(e.target.closest('.lote-st')) renderLote();
   });
   $('vbLoteBtn').addEventListener('click',()=>{
     document.querySelectorAll('#vbLotePrev .lote-st').forEach(inp=>{ const v=numBR(inp.value); loteStakes[inp.dataset.lotek]=v>0?v:0; });
-    const itens=parseLote(), validos=itens.filter(x=>!x.erros.length);
+    const itens=parseLote(), validos=itens.filter(loteValido);
     if(!validos.length){ renderLote(); return; }
     const novas=[...new Set(validos.filter(x=>x.nova).map(x=>x.casa))];
     if(novas.length && !confirm('Casas que ainda não estão nos saldos e serão criadas:\n\n'+novas.join(', ')+'\n\nContinuar?')) return;
@@ -4634,7 +4797,7 @@
     if(alertas.length && !confirm(alertas.map(x=>x.casa+' @'+x.odd.toFixed(2)+':\n  '+x.alertas.join('\n  ')).join('\n\n')+'\n\nRegistrar mesmo assim?')) return;
     const ops=validos.map(x=>gravarValor({casa:x.casa, odd:x.odd, stake:x.stake, cur:x.cur, event:x.event,
       sport:x.sport, market:x.market, oddMkt:x.oddMkt, prob:(x.oddMkt>1)?100/x.oddMkt:null, date:x.date}));
-    $('vbLoteTxt').value=''; loteStakes={}; loteCasas={}; renderLote();
+    $('vbLoteTxt').value=''; loteStakes={}; loteCasas={}; loteConfirma={}; renderLote();
     saveState(); renderAll();
     toast(ops.length+' aposta'+(ops.length>1?'s':'')+' registrada'+(ops.length>1?'s':'')+' · '+fmt(ops.reduce((s,o)=>s+o.stakeA,0)),()=>desfazerRegistro(ops));
   });
@@ -4667,7 +4830,7 @@
         return '<div class="pend-row">'+
           '<div class="pend-when'+(late?' late':'')+'"><b>'+hh+'</b>'+diaTxt+'<div class="rel">'+relTempo(d)+'</div></div>'+
           '<div class="pend-main"><div class="pend-ev" title="'+esc(o.event||'')+'">'+esc(o.event||'')+'</div>'+
-            '<div class="pend-sub">'+esc(legHouse(o,'A'))+' @'+od.toFixed(2)+' · '+vbStakeNat(o)+' · <span class="g">+'+fmt(st*(od-1))+'</span>'+(o.market?' · '+esc(o.market):'')+'</div></div>'+
+            '<div class="pend-sub">'+tagJogo(o)+esc(legHouse(o,'A'))+' @'+od.toFixed(2)+' · '+vbStakeNat(o)+' · <span class="g">+'+fmt(st*(od-1))+'</span>'+(o.market?' · '+esc(o.market):'')+'</div></div>'+
           '<div class="pend-act">'+
             '<button class="qb g" data-liq="'+o.id+':A" title="Green">✓</button>'+
             '<button class="qb r" data-liq="'+o.id+':RED" title="Red">✗</button>'+
@@ -4682,6 +4845,45 @@
         '</div>';
       }).join('');
   }
+  // marca, no painel de pendentes, aposta que divide o jogo com outra aberta
+  function tagJogo(o){
+    const c=conflitosJogo(o); if(!c.length) return '';
+    const serio=c.some(conflitoSerio);
+    const tot=legStake(o,'A')+exposicaoJogo(c);
+    return '<span class="jogo-tag'+(serio?'':' leve')+'" title="'+esc(c.map(x=>legHouse(x.o,'A')+' @'+legOdd(x.o,'A').toFixed(2)+' ('+JOGO_ROT[x.rel]+')').join(' · '))+'">'+(c.length+1)+'× jogo · '+fmt(tot).replace(/,\d\d$/,'')+'</span> ';
+  }
+
+  /* ---------- auditoria: jogos com mais de uma entrada ---------- */
+  function renderRepetidos(){
+    const box=$('vbRepet');
+    const ord=valorBets().slice().sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+    const grupos=[];
+    ord.forEach(o=>{
+      const k=jogoChave(o);
+      const g=grupos.find(g=>g.some(x=>mesmoJogo(k,jogoChave(x))));
+      if(g) g.push(o); else grupos.push([o]);
+    });
+    const rep=grupos.filter(g=>g.length>1).map(g=>{
+      let serio=false;
+      for(let i=0;i<g.length;i++) for(let j=i+1;j<g.length;j++) if(conflitoSerio({rel:relacaoJogo(g[i],g[j])})) serio=true;
+      return {g,serio,lucro:g.reduce((s,o)=>s+sbRealProfit(o),0),vol:g.reduce((s,o)=>s+legStake(o,'A'),0),data:(g[0].date||'').slice(0,10)};
+    });
+    if(!rep.length){ box.innerHTML='<div class="empty">Nenhum jogo com mais de uma entrada ✓</div>'; return; }
+    const serios=rep.filter(r=>r.serio);
+    const porMes={}; serios.forEach(r=>{ const m=r.data.slice(0,7); porMes[m]=(porMes[m]||0)+1; });
+    const meses=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+    const luc=serios.reduce((s,r)=>s+r.lucro,0);
+    box.innerHTML='<div class="cal-stat"><span class="k">Jogos com risco dobrado</span><span class="v">'+serios.length+' <small>de '+rep.length+' com mais de uma entrada</small></span></div>'+
+      '<div class="cal-stat"><span class="k">Resultado desses jogos</span><span class="v" style="color:var(--'+(luc>=0?'green':'red')+')">'+fmtSign(luc)+' <small>giro '+fmt(serios.reduce((s,r)=>s+r.vol,0))+'</small></span></div>'+
+      '<div class="cal-stat"><span class="k">Por mês</span><span class="v">'+(Object.keys(porMes).sort().map(m=>meses[+m.slice(5,7)-1]+' '+porMes[m]).join(' · ')||'—')+'</span></div>'+
+      '<div class="hint" style="margin:8px 0 6px;">Resultado positivo não absolve a repetição: ela dobra a variância do jogo sem dobrar o edge. O que importa é a contagem cair.</div>'+
+      rep.slice().reverse().slice(0,12).map(r=>
+        '<div class="seg-row"><div class="seg-head"><span class="seg-name">'+(r.serio?'<span class="jogo-tag">dobrado</span> ':'<span class="jogo-tag leve">outro mercado</span> ')+
+          r.data.slice(8,10)+'/'+r.data.slice(5,7)+' · '+esc((r.g[0].event||'').slice(0,48))+'</span>'+
+          '<span class="seg-val '+(r.lucro>=0?'pos':'neg')+'">'+fmtSign(r.lucro)+'</span></div>'+
+          '<div class="seg-meta"><span>'+r.g.map(o=>esc(legHouse(o,'A'))+' @'+legOdd(o,'A').toFixed(2)+' '+fmt(legStake(o,'A')).replace(/,\d\d$/,'')+(o.winner?' '+(VB_RES[o.winner]||''):' aberta')).join(' · ')+'</span></div></div>').join('');
+  }
+
   function liquidarValor(id,w){
     const o=state.surebets.find(x=>x.id===id); if(!o) return;
     const antes=o.winner||null;
@@ -5949,7 +6151,7 @@
   function renderAll(){
     renderCaixa(); renderBalances(); renderAportes();
     renderSurebetSummary(); renderSurebetChart(); renderSurebetList(); renderEvoDaily();
-    renderValorSummary(); renderPendentes(); renderValorList(); renderValorDaily(); renderValorSegments();
+    renderValorSummary(); renderPendentes(); renderValorList(); renderValorDaily(); renderRepetidos(); renderValorSegments();
     renderMeta(); renderEscada(); renderPolE(); renderCalibracao(); pjRender();
     renderMiddleSummary(); renderMiddleList();
     renderHouseList(); renderCampoChips(); renderHouseInfo(); renderTopbar();
