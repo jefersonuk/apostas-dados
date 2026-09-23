@@ -4557,8 +4557,8 @@
     {
       "id": "ms95ud6rq4x12",
       "name": "Blaze",
-      "value": 886.66,
-      "updatedAt": "2026-09-22T18:02:30.850Z"
+      "value": 629.59,
+      "updatedAt": "2026-09-23T01:00:53.313Z"
     },
     {
       "id": "msan29jv5dft4",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1757.69,
+      "value": 2014.76,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T00:49:37.160Z"
+      "updatedAt": "2026-09-23T01:00:53.320Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20506,6 +20506,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T00:49:37.155Z"
+    },
+    {
+      "id": "mudectkw3owlo",
+      "kind": "valor",
+      "event": "AEO Proteas Voulas – Elitzur Ramla (H2 -11.5)",
+      "houseA": "Blaze",
+      "oddA": 1.68,
+      "stakeA": 257.07,
+      "curA": "BRL",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.54,
+      "prob": 61.8,
+      "winner": null,
+      "date": "2026-09-23T14:30",
+      "total": 257.07,
+      "lucroA": 174.80759999999998,
+      "lucroRed": -257.07,
+      "lucro": 174.80759999999998,
+      "roi": 68,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T01:00:53.314Z"
     }
   ],
   "invertidos": [],
@@ -20672,5 +20696,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T00:49:37.160Z"
+  "updatedAt": "2026-09-23T01:00:53.320Z"
 }
