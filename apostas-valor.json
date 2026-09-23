@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1604.69,
+      "value": 1757.69,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T00:29:12.037Z"
+      "updatedAt": "2026-09-23T00:49:37.160Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4756,9 +4756,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 149.98,
+      "value": 119.98,
       "currency": "USD",
-      "updatedAt": "2026-09-23T00:08:42.035Z"
+      "updatedAt": "2026-09-23T00:49:37.154Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -20482,6 +20482,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T00:29:12.034Z"
+    },
+    {
+      "id": "muddybuoq71ih",
+      "kind": "valor",
+      "event": "LGD Gaming – MOUZ Acima 52.5 2º mapa - abates",
+      "houseA": "Betonline",
+      "oddA": 1.77,
+      "stakeA": 153,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "Abates / Kills",
+      "oddMkt": 1.53,
+      "prob": 62.2,
+      "winner": null,
+      "date": "2026-09-23T10:00",
+      "total": 153,
+      "lucroA": 117.81,
+      "lucroRed": -153,
+      "lucro": 117.81,
+      "roi": 77,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T00:49:37.155Z"
     }
   ],
   "invertidos": [],
@@ -20648,5 +20672,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T00:29:12.037Z"
+  "updatedAt": "2026-09-23T00:49:37.160Z"
 }
