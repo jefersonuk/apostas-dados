@@ -4642,9 +4642,9 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 144.33,
+      "value": 104.33,
       "currency": "USD",
-      "updatedAt": "2026-09-23T13:26:42.212Z"
+      "updatedAt": "2026-09-23T13:55:06.360Z"
     },
     {
       "id": "msqtofykbh7kq",
@@ -20686,7 +20686,7 @@
       "id": "mue56hyc3gllo",
       "kind": "valor",
       "event": "paiN Academy – Semente do Mal (1)",
-      "houseA": "",
+      "houseA": "Opinion",
       "oddA": 1.58,
       "stakeA": 205.6,
       "curA": "USD",
@@ -20704,7 +20704,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-23T13:31:47.941Z"
+      "updatedAt": "2026-09-23T13:55:06.360Z"
     },
     {
       "id": "mue58bavbf2sj",
@@ -20919,5 +20919,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T13:54:50.233Z"
+  "updatedAt": "2026-09-23T13:55:06.361Z"
 }
