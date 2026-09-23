@@ -4780,12 +4780,6 @@
       "updatedAt": "2026-08-31T14:36:39.326Z"
     },
     {
-      "id": "mtn67c4uwdaz0",
-      "name": "Casa A",
-      "value": -205.6,
-      "updatedAt": "2026-09-23T13:31:47.940Z"
-    },
-    {
       "id": "mtn67c4uibvxb",
       "name": "Casa B",
       "value": 0,
@@ -4829,12 +4823,6 @@
       "value": 49.8,
       "currency": "USD",
       "updatedAt": "2026-09-23T10:05:20.111Z"
-    },
-    {
-      "id": "mudd82jmntqp2",
-      "name": "Basquete",
-      "value": -89.1,
-      "updatedAt": "2026-09-23T13:54:50.233Z"
     }
   ],
   "aportes": [
@@ -5567,6 +5555,14 @@
     {
       "id": "mubgaw8pf6p5p",
       "at": "2026-09-22T01:10:32.818Z"
+    },
+    {
+      "id": "mtn67c4uwdaz0",
+      "at": "2026-09-23T13:55:24.818Z"
+    },
+    {
+      "id": "mudd82jmntqp2",
+      "at": "2026-09-23T13:55:26.914Z"
     }
   ],
   "surebets": [
@@ -20919,5 +20915,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T13:55:06.361Z"
+  "updatedAt": "2026-09-23T13:55:26.915Z"
 }
