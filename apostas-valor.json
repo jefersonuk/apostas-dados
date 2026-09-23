@@ -4642,17 +4642,17 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 91.27,
+      "value": 131.04,
       "currency": "USD",
-      "updatedAt": "2026-09-23T19:43:08.897Z"
+      "updatedAt": "2026-09-23T22:36:03.324Z"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2819.45,
+      "value": 2513.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T21:15:53.444Z"
+      "updatedAt": "2026-09-23T22:36:03.325Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20716,7 +20716,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.37,
       "prob": 69.5,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-09-23T19:00",
       "total": 205.6,
       "lucroA": 119.248,
@@ -20724,9 +20724,10 @@
       "lucro": 119.248,
       "roi": 58.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-09-23T13:55:06.360Z"
+      "updatedAt": "2026-09-23T22:36:03.324Z"
     },
     {
       "id": "mue58bavbf2sj",
@@ -21155,7 +21156,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.8228217280349983,
       "prob": 54.86,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-09-23T18:30",
       "total": 100,
       "lucroA": 100,
@@ -21163,9 +21164,10 @@
       "lucro": 100,
       "roi": 100,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-09-23T19:37:52.832Z"
+      "updatedAt": "2026-09-23T22:12:43.486Z"
     },
     {
       "id": "muejhoetj9il7",
@@ -21404,5 +21406,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T22:11:57.296Z"
+  "updatedAt": "2026-09-23T22:36:03.325Z"
 }
