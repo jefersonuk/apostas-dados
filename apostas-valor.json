@@ -4595,8 +4595,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1628.18,
-      "updatedAt": "2026-09-23T15:15:06.123Z"
+      "value": 1528.18,
+      "updatedAt": "2026-09-23T15:58:44.420Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2912.17,
+      "value": 3012.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T15:44:31.227Z"
+      "updatedAt": "2026-09-23T15:58:44.421Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20891,6 +20891,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T15:44:31.226Z"
+    },
+    {
+      "id": "mueafgsj6qcdg",
+      "kind": "valor",
+      "event": "HC Decin – HC Pribram (H2(−2.5))",
+      "houseA": "Pinnacle",
+      "oddA": 2.06,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Hóquei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7617866004962777,
+      "prob": 56.760563380281695,
+      "winner": null,
+      "date": "2026-09-23T13:00",
+      "total": 100,
+      "lucroA": 106,
+      "lucroRed": -100,
+      "lucro": 106,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T15:58:44.420Z"
     }
   ],
   "invertidos": [],
@@ -21057,5 +21081,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T15:44:31.227Z"
+  "updatedAt": "2026-09-23T15:58:44.423Z"
 }
