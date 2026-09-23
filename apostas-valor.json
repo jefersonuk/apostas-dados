@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2706.57,
+      "value": 2912.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T15:15:06.123Z"
+      "updatedAt": "2026-09-23T15:44:31.227Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 210.74,
+      "value": 170.74,
       "currency": "USD",
-      "updatedAt": "2026-09-23T14:40:31.828Z"
+      "updatedAt": "2026-09-23T15:44:31.226Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -20867,6 +20867,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T15:15:06.123Z"
+    },
+    {
+      "id": "mue9x6gpid6pd",
+      "kind": "valor",
+      "event": "AKM Tula – Dizel Penza (H1(0))",
+      "houseA": "BetOnline",
+      "oddA": 1.95,
+      "stakeA": 205.6,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6819317235636968,
+      "prob": 59.45544554455446,
+      "winner": null,
+      "date": "2026-09-23T13:00",
+      "total": 205.6,
+      "lucroA": 195.32,
+      "lucroRed": -205.6,
+      "lucro": 195.32,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T15:44:31.226Z"
     }
   ],
   "invertidos": [],
@@ -21033,5 +21057,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T15:23:20.128Z"
+  "updatedAt": "2026-09-23T15:44:31.227Z"
 }
