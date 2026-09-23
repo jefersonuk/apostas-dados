@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2014.76,
+      "value": 2218.76,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T01:00:53.320Z"
+      "updatedAt": "2026-09-23T01:02:50.145Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4713,9 +4713,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 310.4,
+      "value": 270.4,
       "currency": "USD",
-      "updatedAt": "2026-09-21T15:06:14.792Z"
+      "updatedAt": "2026-09-23T01:02:50.138Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -20530,6 +20530,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T01:00:53.314Z"
+    },
+    {
+      "id": "mudefbq1by7eg",
+      "kind": "valor",
+      "event": "Malvin – Defensor Sporting H2 -11.5) Tempo Extra",
+      "houseA": "Shuffle",
+      "oddA": 1.88,
+      "stakeA": 204,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.54,
+      "prob": 61.8,
+      "winner": null,
+      "date": "2026-09-23T21:45",
+      "total": 204,
+      "lucroA": 179.51999999999998,
+      "lucroRed": -204,
+      "lucro": 179.51999999999998,
+      "roi": 87.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T01:02:50.139Z"
     }
   ],
   "invertidos": [],
@@ -20696,5 +20720,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T01:00:53.320Z"
+  "updatedAt": "2026-09-23T01:02:50.145Z"
 }
