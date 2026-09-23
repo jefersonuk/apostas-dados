@@ -4699,8 +4699,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 84.64,
-      "updatedAt": "2026-09-23T10:52:30.690Z",
+      "value": 67.31,
+      "updatedAt": "2026-09-23T13:56:10.441Z",
       "currency": "USD"
     },
     {
@@ -4823,6 +4823,13 @@
       "value": 49.8,
       "currency": "USD",
       "updatedAt": "2026-09-23T10:05:20.111Z"
+    },
+    {
+      "id": "mue61ufdo805a",
+      "name": "Basquete",
+      "value": 89.1,
+      "currency": "BRL",
+      "updatedAt": "2026-09-23T13:56:10.441Z"
     }
   ],
   "aportes": [
@@ -20466,7 +20473,7 @@
       "id": "mudd82jlicubc",
       "kind": "valor",
       "event": "BMS Herlev Wolfpack - Gladsaxe BK (1quarto H1 +0.5)",
-      "houseA": "Basquete",
+      "houseA": "Bookmaker",
       "oddA": 1.85,
       "stakeA": 89.097,
       "curA": "USD",
@@ -20484,7 +20491,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-23T13:54:50.233Z"
+      "updatedAt": "2026-09-23T13:56:10.441Z"
     },
     {
       "id": "muddybuoq71ih",
@@ -20915,5 +20922,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T13:55:26.915Z"
+  "updatedAt": "2026-09-23T13:56:10.441Z"
 }
