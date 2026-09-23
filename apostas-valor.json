@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2366,
+      "value": 2572.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T19:10:22.268Z"
+      "updatedAt": "2026-09-23T19:11:22.267Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 160.6,
+      "value": 120.6,
       "currency": "USD",
-      "updatedAt": "2026-09-23T19:04:43.989Z"
+      "updatedAt": "2026-09-23T19:11:22.266Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -21066,6 +21066,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T19:10:22.267Z"
+    },
+    {
+      "id": "muehb6vuy8btb",
+      "kind": "valor",
+      "event": "Las Vegas Aviators – Oklahoma City Comets (Acima 13 Tempo Extra)",
+      "houseA": "BetOnline",
+      "oddA": 2,
+      "stakeA": 206.8,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 1.8891092849721356,
+      "prob": 52.935,
+      "winner": null,
+      "date": "2026-09-23T23:05",
+      "total": 206.8,
+      "lucroA": 206.8,
+      "lucroRed": -206.8,
+      "lucro": 206.8,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T19:11:22.266Z"
     }
   ],
   "invertidos": [],
@@ -21232,5 +21256,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T19:10:22.268Z"
+  "updatedAt": "2026-09-23T19:11:22.267Z"
 }
