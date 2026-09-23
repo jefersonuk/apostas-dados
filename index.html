@@ -564,6 +564,7 @@
   .jogo-tag.leve{background:#1A1F28;color:var(--muted);}
   .lote-conf{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;color:#FCA5A5;cursor:pointer;margin-top:2px;}
   .lote-conf input{width:auto;margin:0;}
+  .lote-tab .lote-odd{width:62px;margin:0;padding:4px 6px;font-size:11.5px;text-align:right;}
   .lote-tab .lote-st{width:74px;margin:0;padding:4px 6px;font-size:11.5px;text-align:right;}
 
   /* botão flutuante e toast com desfazer */
@@ -1427,7 +1428,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260923-1243';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260923-1353';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -4650,10 +4651,14 @@
 
   let loteStakes={};          // stake digitada na prévia, por aposta (sobrevive a redesenhos)
   let loteCasas={};           // casa escolhida na prévia, por bloco
-  const chaveLote=x=>[x.casa,x.odd,x.event,x.date].join('|');
+  let loteOdds={};            // odd corrigida na prévia (a da casa mudou desde a página), por bloco+casa
+  // sem a odd: corrigir a odd não apaga a stake que você digitou
+  const chaveLote=x=>[x.casa,x.event,x.date].join('|');
   function itemDaPagina(r,n){
     const c=casaDoBloco(r,loteCasas[r.chaveBloco]);
-    const casa=c?c.nome:nomeCasaPagina(r.casaRaw), odd=c?c.odd:r.odd;
+    const casa=c?c.nome:nomeCasaPagina(r.casaRaw), oddSite=c?c.odd:r.odd;
+    const oddKey=r.chaveBloco+'|'+casa, oddEd=loteOdds[oddKey];
+    const odd=oddEd>1?oddEd:oddSite;
     const conta=acharCasaExistente(casa);
     const cur=conta?(conta.currency||'BRL'):'BRL';
     const sport=esporteApp(r.sportRaw);
@@ -4664,7 +4669,7 @@
     const erros=[];
     if(!nomeCasaValido(casa)) erros.push('casa');
     if(!(odd>1)) erros.push('odd');
-    const it={i:n+1, casa, odd, cur, event, market, sport, oddMkt, date:r.date, sv,
+    const it={i:n+1, casa, odd, oddSite, oddKey, cur, event, market, sport, oddMkt, date:r.date, sv,
               nova:!conta&&nomeCasaValido(casa), erros, pagina:r, bloco:r.chaveBloco};
     // stake: a que você digitou na prévia; senão a escada com a política E, na moeda da casa
     const k=chaveLote(it);
@@ -4765,7 +4770,10 @@
           : '';
         return '<tr class="'+((x.erros.length||x.bloqJogo)?'err':'')+'"><td>'+x.i+'</td>'+
           '<td>'+casaCel+'</td>'+
-          '<td class="r">'+(x.odd>1?x.odd.toFixed(2):'?')+'</td>'+
+          '<td class="r" style="white-space:nowrap;">'+(r
+            ? '<input type="text" inputmode="decimal" class="lote-odd" data-loteodd="'+esc(x.oddKey)+'" value="'+(x.odd>1?+x.odd.toFixed(3):'')+'">'+
+              (Math.abs(x.odd-x.oddSite)>1e-9?'<br><span class="muted" style="font-size:10px;">site '+x.oddSite.toFixed(2)+'</span>':'')
+            : (x.odd>1?x.odd.toFixed(2):'?'))+'</td>'+
           '<td class="r" style="white-space:nowrap;">'+stakeCel+'</td>'+
           '<td>'+(x.erros.length?'falta '+x.erros.join(', ')+'<br>':'')+esc([x.event,r?'':x.market].filter(Boolean).join(' · ')||'—')+det+jogo+'</td></tr>';
       }).join('')+
@@ -4773,7 +4781,7 @@
     btn.disabled=!validos.length;
     btn.textContent=validos.length?'Registrar '+validos.length+' aposta'+(validos.length>1?'s':'')+' · '+fmt(total):'Registrar lote';
   }
-  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',()=>{ if(id==='vbLoteTxt'){ loteStakes={}; loteCasas={}; loteConfirma={}; } renderLote(); }));
+  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',()=>{ if(id==='vbLoteTxt'){ loteStakes={}; loteCasas={}; loteConfirma={}; loteOdds={}; } renderLote(); }));
   // stake editada na prévia: guarda e atualiza só o total, sem redesenhar a tabela (o cursor fica no campo)
   $('vbLotePrev').addEventListener('input',e=>{
     const inp=e.target.closest('.lote-st'); if(!inp) return;
@@ -4783,12 +4791,15 @@
   $('vbLotePrev').addEventListener('change',e=>{
     const sel=e.target.closest('[data-lotebloco]');
     if(sel){ loteCasas[sel.dataset.lotebloco]=sel.value; renderLote(); return; }
+    const od=e.target.closest('[data-loteodd]');
+    if(od){ const v=numBR(od.value); if(v>1) loteOdds[od.dataset.loteodd]=v; else delete loteOdds[od.dataset.loteodd]; renderLote(); return; }
     const cf=e.target.closest('[data-loteconf]');
     if(cf){ loteConfirma[cf.dataset.loteconf]=cf.checked; renderLote(); return; }
     if(e.target.closest('.lote-st')) renderLote();
   });
   $('vbLoteBtn').addEventListener('click',()=>{
     document.querySelectorAll('#vbLotePrev .lote-st').forEach(inp=>{ const v=numBR(inp.value); loteStakes[inp.dataset.lotek]=v>0?v:0; });
+    document.querySelectorAll('#vbLotePrev .lote-odd').forEach(inp=>{ const v=numBR(inp.value); if(v>1) loteOdds[inp.dataset.loteodd]=v; });
     const itens=parseLote(), validos=itens.filter(loteValido);
     if(!validos.length){ renderLote(); return; }
     const novas=[...new Set(validos.filter(x=>x.nova).map(x=>x.casa))];
@@ -4797,7 +4808,7 @@
     if(alertas.length && !confirm(alertas.map(x=>x.casa+' @'+x.odd.toFixed(2)+':\n  '+x.alertas.join('\n  ')).join('\n\n')+'\n\nRegistrar mesmo assim?')) return;
     const ops=validos.map(x=>gravarValor({casa:x.casa, odd:x.odd, stake:x.stake, cur:x.cur, event:x.event,
       sport:x.sport, market:x.market, oddMkt:x.oddMkt, prob:(x.oddMkt>1)?100/x.oddMkt:null, date:x.date}));
-    $('vbLoteTxt').value=''; loteStakes={}; loteCasas={}; loteConfirma={}; renderLote();
+    $('vbLoteTxt').value=''; loteStakes={}; loteCasas={}; loteConfirma={}; loteOdds={}; renderLote();
     saveState(); renderAll();
     toast(ops.length+' aposta'+(ops.length>1?'s':'')+' registrada'+(ops.length>1?'s':'')+' · '+fmt(ops.reduce((s,o)=>s+o.stakeA,0)),()=>desfazerRegistro(ops));
   });
