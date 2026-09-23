@@ -4819,9 +4819,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": 135,
+      "value": 210.55,
       "currency": "BRL",
-      "updatedAt": "2026-09-23T01:32:33.349Z"
+      "updatedAt": "2026-09-23T10:51:01.598Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -5115,12 +5115,12 @@
       "updatedAt": "2026-09-22T16:12:16.271Z"
     }
   ],
-  "usdRate": 5.11,
+  "usdRate": 5.1,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-23T10:03:39.041Z",
-  "eurRate": 5.84,
+  "usdRateAt": "2026-09-22T23:55:29.118Z",
+  "eurRate": 5.86,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-23T10:03:39.197Z",
+  "eurRateAt": "2026-09-22T23:55:29.495Z",
   "appBuild": "20260922-2130",
   "deleted": [
     {
@@ -20726,5 +20726,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T10:06:14.084Z"
+  "updatedAt": "2026-09-23T10:51:01.598Z"
 }
