@@ -4819,9 +4819,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": 100,
+      "value": 135,
       "currency": "BRL",
-      "updatedAt": "2026-09-22T17:17:31.080Z"
+      "updatedAt": "2026-09-23T01:32:33.349Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -20722,5 +20722,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T01:31:59.044Z"
+  "updatedAt": "2026-09-23T01:32:33.351Z"
 }
