@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2288.17,
+      "value": 2390.97,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T13:51:12.441Z"
+      "updatedAt": "2026-09-23T14:10:20.750Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4820,9 +4820,9 @@
     {
       "id": "muczy0ui6d8aw",
       "name": "Casobet",
-      "value": 49.8,
+      "value": 29.8,
       "currency": "USD",
-      "updatedAt": "2026-09-23T10:05:20.111Z"
+      "updatedAt": "2026-09-23T14:10:20.747Z"
     },
     {
       "id": "mue61ufdo805a",
@@ -20762,6 +20762,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T13:35:58.811Z"
+    },
+    {
+      "id": "mue6k2izvfi2e",
+      "kind": "valor",
+      "event": "England – Sri Lanka 1 - seis",
+      "houseA": "Casobet",
+      "oddA": 1.54,
+      "stakeA": 102.8,
+      "curA": "USD",
+      "sport": "Cricket",
+      "market": "Total de Pontos",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-24T08:30",
+      "total": 102.8,
+      "lucroA": 55.512,
+      "lucroRed": -102.8,
+      "lucro": 55.512,
+      "roi": 54,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T14:10:20.747Z"
     }
   ],
   "invertidos": [],
@@ -20928,5 +20952,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T13:58:42.787Z"
+  "updatedAt": "2026-09-23T14:10:20.750Z"
 }
