@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3012.17,
+      "value": 3165.34,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T15:58:44.421Z"
+      "updatedAt": "2026-09-23T16:08:34.621Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4813,9 +4813,9 @@
     {
       "id": "muczy0ui6d8aw",
       "name": "Casobet",
-      "value": 29.8,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-09-23T14:10:20.747Z"
+      "updatedAt": "2026-09-23T16:08:34.620Z"
     },
     {
       "id": "mue61ufdo805a",
@@ -20915,6 +20915,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T15:59:09.546Z"
+    },
+    {
+      "id": "mueas470jwvr9",
+      "kind": "valor",
+      "event": "RK Velika Nedelja – RD Koper 2013 (H2(−3.5) 1º período)",
+      "houseA": "Casobet",
+      "oddA": 1.68,
+      "stakeA": 153.172,
+      "curA": "USD",
+      "sport": "Handebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.5272727272727271,
+      "prob": 65.47619047619048,
+      "winner": null,
+      "date": "2026-09-23T14:30",
+      "total": 153.172,
+      "lucroA": 104.15695999999998,
+      "lucroRed": -153.172,
+      "lucro": 104.15695999999998,
+      "roi": 68,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T16:08:34.620Z"
     }
   ],
   "invertidos": [],
@@ -21081,5 +21105,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T16:06:23.920Z"
+  "updatedAt": "2026-09-23T16:08:34.621Z"
 }
