@@ -4595,8 +4595,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 1528.18,
-      "updatedAt": "2026-09-23T15:59:09.546Z"
+      "value": 1733.18,
+      "updatedAt": "2026-09-23T18:14:21.571Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2462.94,
+      "value": 2362.94,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T17:47:49.551Z"
+      "updatedAt": "2026-09-23T18:14:21.571Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20905,7 +20905,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.7617866004962777,
       "prob": 56.760563380281695,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-23T13:00",
       "total": 100,
       "lucroA": 104.99999999999999,
@@ -20913,9 +20913,10 @@
       "lucro": 104.99999999999999,
       "roi": 104.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-23T15:59:09.546Z"
+      "updatedAt": "2026-09-23T18:14:21.571Z"
     },
     {
       "id": "mueas470jwvr9",
@@ -21106,5 +21107,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T17:47:49.551Z"
+  "updatedAt": "2026-09-23T18:14:21.571Z"
 }
