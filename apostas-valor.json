@@ -4642,17 +4642,17 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 181.49,
+      "value": 144.33,
       "currency": "USD",
-      "updatedAt": "2026-09-23T13:25:05.192Z"
+      "updatedAt": "2026-09-23T13:26:42.212Z"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1628.18,
+      "value": 1819.18,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T12:24:12.539Z"
+      "updatedAt": "2026-09-23T13:26:42.213Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20608,6 +20608,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T11:08:59.105Z"
+    },
+    {
+      "id": "mue4zy1wzrf2d",
+      "kind": "valor",
+      "event": "Peladona x Your end (1)",
+      "houseA": "Opinion",
+      "oddA": 1.75,
+      "stakeA": 191.00239999999997,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.5,
+      "prob": 63.5,
+      "winner": null,
+      "date": "2026-09-23T16:00",
+      "total": 191.00239999999997,
+      "lucroA": 143.25179999999997,
+      "lucroRed": -191.00239999999997,
+      "lucro": 143.25179999999997,
+      "roi": 75,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T13:26:42.212Z"
     }
   ],
   "invertidos": [],
@@ -20774,5 +20798,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T13:25:05.202Z"
+  "updatedAt": "2026-09-23T13:26:42.213Z"
 }
