@@ -550,6 +550,9 @@
   .lote-tab th{font-family:var(--sans);font-size:9px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted-2);}
   .lote-tab tr.err td{color:#F87171;}
   .lote-tab .r{text-align:right;}
+  .lote-tab .lote-casa{width:auto;max-width:150px;margin:0;padding:4px 4px;font-size:11px;font-family:var(--mono);}
+  .chip.on{background:#0E1520;border-color:var(--sky);color:var(--sky);}
+  .chip .o{font-family:var(--mono);color:var(--amber);margin-left:3px;}
   .lote-tab .lote-st{width:74px;margin:0;padding:4px 6px;font-size:11.5px;text-align:right;}
 
   /* botão flutuante e toast com desfazer */
@@ -656,6 +659,7 @@
           <div><label>Odd da casa</label><input type="text" inputmode="decimal" id="vbOdd" placeholder="1.85"></div>
         </div>
         <div id="vbHouseInfo" class="house-info"></div>
+        <div id="vbPagCasas"></div>
         <div class="grid2 keep2">
           <div><label>Odd justa / média <span id="vbSvTag"></span><span id="vbMktTag"></span></label><input type="text" inputmode="decimal" id="vbOddMkt" placeholder="1.62"></div>
           <div><label>Prob. real % (auto)</label><input type="number" id="vbProb" step="0.1" placeholder="calculada"></div>
@@ -1405,7 +1409,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260923-1110';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260923-1129';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3965,6 +3969,7 @@
   }
 
   function updateValorCalc(){
+    renderPagCasas();
     renderSugestao();
     renderStakeChips();
     renderHouseInfo();
@@ -4151,7 +4156,45 @@
   });
 
   /* ---------- registrar ---------- */
+  /* ---------- página do surebet.com colada no "Colar texto" ----------
+     Mesmo leitor do lote: a casa inicial é a SUA casa com a melhor odd, e as casas
+     da página ficam como atalho para trocar (casa + odd juntas). */
+  let vbPagina=null;
+  function aplicarPagina(blk){
+    limparFormValor();
+    const c=casaDoBloco(blk,null);
+    const sport=esporteApp(blk.sportRaw);
+    if(c){ $('vbHouse').value=c.nome; $('vbOdd').value=c.odd; }
+    if(blk.justa>1) vbSetOddMkt(blk.justa,true);
+    $('vbEvent').value=blk.event+(blk.mercadoRaw?' ('+blk.mercadoRaw+')':'');
+    $('vbDate').value=blk.date;
+    $('vbSport').value=sport;
+    $('vbMarket').value=mercadoApp(blk.mercadoRaw,sport);
+    vbPagina=blk;
+    const b=acharCasaExistente($('vbHouse').value); if(b) vbSetCur(b.currency||'BRL');
+    return c;
+  }
+  function renderPagCasas(){
+    const box=$('vbPagCasas');
+    if(!vbPagina){ box.innerHTML=''; return; }
+    const atual=$('vbHouse').value.trim().toLowerCase();
+    const minhas=vbPagina.casas.filter(c=>c.minha), outras=vbPagina.casas.filter(c=>!c.minha);
+    const chip=c=>'<button type="button" class="chip'+(c.nome.toLowerCase()===atual?' on':'')+'" data-pagcasa="'+esc(c.nome)+'">'+(c.minha?'✓ ':'')+esc(c.nome)+'<span class="o">'+c.odd.toFixed(2)+'</span></button>';
+    box.innerHTML='<label>Casas desta página <span class="muted">— ✓ cadastradas · justa '+(vbPagina.justa>1?vbPagina.justa.toFixed(3):'?')+'</span></label>'+
+      '<div class="chips">'+(minhas.length?minhas.map(chip).join(''):'<span class="hint" style="margin:0;color:var(--amber)">nenhuma casa sua nesta página</span>')+'</div>'+
+      (outras.length?'<details class="sub-fold" style="margin:-4px 0 8px;"><summary>outras '+outras.length+' casas</summary><div class="chips" style="margin-top:6px;">'+outras.map(chip).join('')+'</div></details>':'');
+  }
+  $('vbPagCasas').addEventListener('click',e=>{
+    const c=e.target.closest('[data-pagcasa]'); if(!c||!vbPagina) return;
+    const x=vbPagina.casas.find(k=>k.nome===c.dataset.pagcasa); if(!x) return;
+    $('vbHouse').value=x.nome; $('vbOdd').value=x.odd;
+    vbCurManual=false; const b=acharCasaExistente(x.nome); if(b) vbSetCur(b.currency||'BRL');
+    $('vbStake').value='';
+    updateValorCalc(); renderSvTag();
+  });
+
   function limparFormValor(){
+    vbPagina=null;
     ['vbHouse','vbOdd','vbStake','vbProb','vbOddMkt','vbEvent','vbSport','vbMarket'].forEach(id=>{ $(id).value=''; });
     vbMktJusto=false; vbCurManual=false; renderMktTag(); renderSvTag();
     $('vbSugestao').innerHTML='';
@@ -4332,6 +4375,18 @@
     const b=acharCasaExistente($('vbHouse').value); if(b) vbSetCur(b.currency||'BRL');
   }
   $('vbColarBtn').addEventListener('click',()=>{
+    const txtPag=$('vbColarTxt').value;
+    if(ehPaginaSurebet(txtPag)){
+      const blk=parsePaginaSurebet(txtPag)[0];
+      if(blk){
+        const c=aplicarPagina(blk);
+        vbModoSet('form'); renderCampoChips(); updateValorCalc(); renderSvTag();
+        $('vbColarTxt').value=''; $('vbColarOut').innerHTML='';
+        toast(c?(c.minha?'Melhor casa sua: '+c.nome+' @'+c.odd.toFixed(2):'Nenhuma casa sua na página — '+c.nome+' @'+c.odd.toFixed(2)):'Página lida');
+        $('vbStake').focus();
+        return;
+      }
+    }
     const a=vbParseTexto($('vbColarTxt').value);
     const campos=[['casa','casa'],['odd','odd'],['oddMkt','preço justo'],['event','evento'],['date','data'],['sport','esporte'],['market','mercado']];
     const ok=campos.filter(([k])=>a[k]!=null&&a[k]!==''), falta=campos.filter(([k])=>a[k]==null||a[k]==='');
@@ -4431,42 +4486,71 @@
       // mesma probabilidade até a 2ª casa = mesmo feed revendido: um voto só
       const votos=[...new Set(outras.map(r=>r.prob.toFixed(2)))].map(parseFloat).sort((a,b)=>a-b);
       const cons=votos.length?pjMediana(votos):null;
-      return Object.assign({}, alvo, {nCasas:outras.length, nVotos:votos.length, consenso:cons});
+      // preço justo = o que o site usou para anunciar a supervalorização (já sem margem)
+      const justa=(alvo.odd>1&&alvo.sv>0)?alvo.odd/(1+alvo.sv):(cons?100/cons:NaN);
+      // casas da página, uma por nome (NetBet e NetBet (RO) viram uma, fica a maior odd)
+      const porCasa=new Map();
+      b.filter(r=>r.odd>1).forEach(r=>{
+        const nome=nomeCasaPagina(r.casaRaw), k=nome.toLowerCase();
+        const conta=acharCasaExistente(nome);
+        const minha=!!(conta&&!conta.auto);
+        const x=porCasa.get(k);
+        if(!x||r.odd>x.odd) porCasa.set(k,{nome, odd:r.odd, minha, cur:conta?(conta.currency||'BRL'):'BRL', row:r});
+      });
+      // suas casas primeiro, maior odd no topo; depois as outras
+      const casas=[...porCasa.values()].sort((x,y)=>(y.minha-x.minha)||(y.odd-x.odd));
+      return Object.assign({}, alvo, {nCasas:outras.length, nVotos:votos.length, consenso:cons, justa, casas,
+        chaveBloco:[alvo.event,alvo.date,alvo.mercadoRaw].join('|')});
     });
+  }
+  // casa escolhida no bloco: a sua escolha, senão a sua casa com a melhor odd, senão a anunciada
+  function casaDoBloco(blk,escolha){
+    const esc=escolha&&blk.casas.find(c=>c.nome===escolha);
+    return esc||blk.casas.find(c=>c.minha)||blk.casas.find(c=>c.nome===nomeCasaPagina(blk.casaRaw))||blk.casas[0]||null;
   }
 
   let loteStakes={};          // stake digitada na prévia, por aposta (sobrevive a redesenhos)
+  let loteCasas={};           // casa escolhida na prévia, por bloco
   const chaveLote=x=>[x.casa,x.odd,x.event,x.date].join('|');
   function itemDaPagina(r,n){
-    const casa=nomeCasaPagina(r.casaRaw);
+    const c=casaDoBloco(r,loteCasas[r.chaveBloco]);
+    const casa=c?c.nome:nomeCasaPagina(r.casaRaw), odd=c?c.odd:r.odd;
     const conta=acharCasaExistente(casa);
     const cur=conta?(conta.currency||'BRL'):'BRL';
     const sport=esporteApp(r.sportRaw);
     const market=mercadoApp(r.mercadoRaw,sport);
     const event=r.event+(r.mercadoRaw?' ('+r.mercadoRaw+')':'');
-    // preço justo = o que o site usou para anunciar a supervalorização (já sem margem)
-    const oddMkt=(r.odd>1&&r.sv>0)?r.odd/(1+r.sv):(r.consenso?100/r.consenso:NaN);
+    const oddMkt=r.justa;
+    const sv=(odd>1&&oddMkt>1)?odd/oddMkt-1:null;       // supervalorização NA casa escolhida
     const erros=[];
     if(!nomeCasaValido(casa)) erros.push('casa');
-    if(!(r.odd>1)) erros.push('odd');
-    const it={i:n+1, casa, odd:r.odd, cur, event, market, sport, oddMkt, date:r.date,
-              nova:!conta&&nomeCasaValido(casa), erros, pagina:r};
+    if(!(odd>1)) erros.push('odd');
+    const it={i:n+1, casa, odd, cur, event, market, sport, oddMkt, date:r.date, sv,
+              nova:!conta&&nomeCasaValido(casa), erros, pagina:r, bloco:r.chaveBloco};
     // stake: a que você digitou na prévia; senão a escada com a política E, na moeda da casa
     const k=chaveLote(it);
     let nat=loteStakes[k];
-    if(nat==null && r.odd>1){ const base=escadaStake(r.odd); nat=base?Math.round(polEAplicar(base,r.odd,casa).final/curRate(cur)*100)/100:0; }
+    if(nat==null && odd>1){ const base=escadaStake(odd); nat=base?Math.round(polEAplicar(base,odd,casa).final/curRate(cur)*100)/100:0; }
     it.stakeNat=nat||0; it.stake=it.stakeNat*curRate(cur); it.chave=k;
-    if(!(it.stakeNat>0)) erros.push(r.odd>1&&polEVeredito(r.odd,casa)&&polEVeredito(r.odd,casa).fator<=0?'stake (política E: não entrar)':'stake');
+    if(!(it.stakeNat>0)) erros.push(odd>1&&polEVeredito(odd,casa)&&polEVeredito(odd,casa).fator<=0?'stake (política E: não entrar)':'stake');
     // alertas: não bloqueiam, só avisam
     const al=[];
-    if(r.sv>=0.20) al.push('supervalorização '+(r.sv*100).toFixed(1).replace('.',',')+'% — acima de 20% o histórico é armadilha');
+    if(!r.casas.some(x=>x.minha)) al.push('nenhuma casa sua nesta página — escolha outra ou cadastre '+casa);
+    if(sv!==null && sv<=0) al.push('sem valor em '+casa+' @'+odd.toFixed(2)+' — justa '+oddMkt.toFixed(3));
+    if(sv!==null && sv>=0.20) al.push('supervalorização '+(sv*100).toFixed(1).replace('.',',')+'% — acima de 20% o histórico é armadilha');
     if(r.consenso){
       const oc=100/r.consenso;
-      if(r.odd/oc>1.25) al.push('consenso paga '+oc.toFixed(2)+' — odd '+((r.odd/oc-1)*100).toFixed(0)+'% acima: confira se é o mesmo mercado');
+      if(odd/oc>1.25) al.push('consenso paga '+oc.toFixed(2)+' — odd '+((odd/oc-1)*100).toFixed(0)+'% acima: confira se é o mesmo mercado');
     }
     it.alertas=al;
     return it;
   }
+  // <select> das casas da página: as suas (✓) primeiro, com a odd de cada uma
+  function selectCasas(blk,atual,attr){
+    return '<select class="lote-casa" '+attr+'>'+blk.casas.map(c=>
+      '<option value="'+esc(c.nome)+'"'+(c.nome===atual?' selected':'')+'>'+(c.minha?'✓ ':'')+esc(c.nome)+' · '+c.odd.toFixed(2)+'</option>').join('')+'</select>';
+  }
+
   function itensDeLinhas(txt){
     const padrao=$('vbLoteData').value||nowLocalStr();
     return txt.split(/\n+/).map(l=>l.trim()).filter(Boolean).map((l,i)=>{
@@ -4499,7 +4583,7 @@
     const validos=itens.filter(x=>!x.erros.length);
     const total=validos.reduce((s,x)=>s+x.stake,0);
     const pag=itens.some(x=>x.pagina);
-    box.innerHTML=(pag?'<div class="hint" style="margin:0 0 4px;">Página do surebet.com: a aposta é a linha com supervalorização positiva; as demais casas viram o consenso. Stake inicial = escada com a política E — ajuste na tabela.</div>':'')+
+    box.innerHTML=(pag?'<div class="hint" style="margin:0 0 4px;">Página do surebet.com: a casa inicial é <b>a sua casa com a melhor odd</b> (✓ = cadastrada nos saldos) — troque no seletor. O preço justo vem da linha anunciada pelo site; as demais casas viram o consenso. Stake inicial = escada com a política E — ajuste na tabela.</div>':'')+
       '<table class="lote-tab"><tr><th>#</th><th>casa</th><th class="r">odd</th><th class="r">stake</th><th>evento / mercado</th></tr>'+
       itens.map(x=>{
         const r=x.pagina;
@@ -4508,13 +4592,16 @@
           : (x.stakeNat>0?fmtCur(x.stakeNat,x.cur):'?');
         const det=r
           ? '<br><span class="muted">'+esc(x.sport)+(x.market?' · '+esc(x.market):'')+' · '+x.date.slice(8,10)+'/'+x.date.slice(5,7)+' '+x.date.slice(11,16)+
-            (r.sv!=null?' · <b style="color:var(--sky)">'+(r.sv>=0?'+':'')+(r.sv*100).toFixed(1).replace('.',',')+'%</b>':'')+
+            (x.sv!=null?' · <b style="color:'+(x.sv>0?'var(--sky)':'var(--red)')+'">'+(x.sv>=0?'+':'')+(x.sv*100).toFixed(1).replace('.',',')+'%</b>':'')+
             (x.oddMkt>1?' · justa '+x.oddMkt.toFixed(3):'')+
             (r.consenso?' · consenso '+r.consenso.toFixed(2).replace('.',',')+'% ('+r.nCasas+' casas, '+r.nVotos+' feeds)':'')+'</span>'+
             x.alertas.map(a=>'<br><span style="color:var(--amber)">⚠ '+esc(a)+'</span>').join('')
           : '';
+        const casaCel=r
+          ? selectCasas(r,x.casa,'data-lotebloco="'+esc(x.bloco)+'"')+(x.nova?' <span style="color:var(--amber)">nova</span>':'')
+          : esc(x.casa||'—')+(x.nova?' <span style="color:var(--amber)">nova</span>':'');
         return '<tr class="'+(x.erros.length?'err':'')+'"><td>'+x.i+'</td>'+
-          '<td>'+esc(x.casa||'—')+(x.nova?' <span style="color:var(--amber)">nova</span>':'')+'</td>'+
+          '<td>'+casaCel+'</td>'+
           '<td class="r">'+(x.odd>1?x.odd.toFixed(2):'?')+'</td>'+
           '<td class="r" style="white-space:nowrap;">'+stakeCel+'</td>'+
           '<td>'+(x.erros.length?'falta '+x.erros.join(', ')+'<br>':'')+esc([x.event,r?'':x.market].filter(Boolean).join(' · ')||'—')+det+'</td></tr>';
@@ -4523,14 +4610,18 @@
     btn.disabled=!validos.length;
     btn.textContent=validos.length?'Registrar '+validos.length+' aposta'+(validos.length>1?'s':'')+' · '+fmt(total):'Registrar lote';
   }
-  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',()=>{ if(id==='vbLoteTxt') loteStakes={}; renderLote(); }));
+  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',()=>{ if(id==='vbLoteTxt'){ loteStakes={}; loteCasas={}; } renderLote(); }));
   // stake editada na prévia: guarda e atualiza só o total, sem redesenhar a tabela (o cursor fica no campo)
   $('vbLotePrev').addEventListener('input',e=>{
     const inp=e.target.closest('.lote-st'); if(!inp) return;
     const v=numBR(inp.value);
     loteStakes[inp.dataset.lotek]=v>0?v:0;
   });
-  $('vbLotePrev').addEventListener('change',e=>{ if(e.target.closest('.lote-st')) renderLote(); });
+  $('vbLotePrev').addEventListener('change',e=>{
+    const sel=e.target.closest('[data-lotebloco]');
+    if(sel){ loteCasas[sel.dataset.lotebloco]=sel.value; renderLote(); return; }
+    if(e.target.closest('.lote-st')) renderLote();
+  });
   $('vbLoteBtn').addEventListener('click',()=>{
     document.querySelectorAll('#vbLotePrev .lote-st').forEach(inp=>{ const v=numBR(inp.value); loteStakes[inp.dataset.lotek]=v>0?v:0; });
     const itens=parseLote(), validos=itens.filter(x=>!x.erros.length);
@@ -4541,7 +4632,7 @@
     if(alertas.length && !confirm(alertas.map(x=>x.casa+' @'+x.odd.toFixed(2)+':\n  '+x.alertas.join('\n  ')).join('\n\n')+'\n\nRegistrar mesmo assim?')) return;
     const ops=validos.map(x=>gravarValor({casa:x.casa, odd:x.odd, stake:x.stake, cur:x.cur, event:x.event,
       sport:x.sport, market:x.market, oddMkt:x.oddMkt, prob:(x.oddMkt>1)?100/x.oddMkt:null, date:x.date}));
-    $('vbLoteTxt').value=''; loteStakes={}; renderLote();
+    $('vbLoteTxt').value=''; loteStakes={}; loteCasas={}; renderLote();
     saveState(); renderAll();
     toast(ops.length+' aposta'+(ops.length>1?'s':'')+' registrada'+(ops.length>1?'s':'')+' · '+fmt(ops.reduce((s,o)=>s+o.stakeA,0)),()=>desfazerRegistro(ops));
   });
