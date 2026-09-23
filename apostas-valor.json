@@ -4642,17 +4642,17 @@
     {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
-      "value": 104.33,
+      "value": 54.33,
       "currency": "USD",
-      "updatedAt": "2026-09-23T13:55:06.360Z"
+      "updatedAt": "2026-09-23T16:56:31.339Z"
     },
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1333.5,
+      "value": 1590.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T18:53:51.959Z"
+      "updatedAt": "2026-09-23T19:03:49.383Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -20946,6 +20946,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-23T18:53:51.959Z"
+    },
+    {
+      "id": "muechrvv6cqac",
+      "kind": "valor",
+      "event": "Zomblers – Club 333 (11-2 Tempo Extra)",
+      "houseA": "Opinion",
+      "oddA": 1.639,
+      "stakeA": 257,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "",
+      "oddMkt": 1.4285714285714284,
+      "prob": 70.00000000000001,
+      "winner": null,
+      "date": "2026-09-23T22:00",
+      "total": 257,
+      "lucroA": 164.223,
+      "lucroRed": -257,
+      "lucro": 164.223,
+      "roi": 63.9,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T16:56:31.339Z"
     }
   ],
   "invertidos": [],
