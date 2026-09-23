@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1590.5,
+      "value": 1952.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T19:03:49.383Z"
+      "updatedAt": "2026-09-23T19:07:25.478Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4720,8 +4720,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 426.88,
-      "updatedAt": "2026-09-23T17:47:49.551Z",
+      "value": 391.88,
+      "updatedAt": "2026-09-23T19:07:25.477Z",
       "currency": "USD"
     },
     {
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 195.6,
+      "value": 160.6,
       "currency": "USD",
-      "updatedAt": "2026-09-23T18:19:21.610Z"
+      "updatedAt": "2026-09-23T19:04:43.989Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -20970,6 +20970,54 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T16:56:31.339Z"
+    },
+    {
+      "id": "mueh2nklfos52",
+      "kind": "valor",
+      "event": "Memphis Redbirds – Rochester Red Wings (Acima 9 Tempo Extra)",
+      "houseA": "BetOnline",
+      "oddA": 2.05,
+      "stakeA": 180.95,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 1.829,
+      "prob": 54.7,
+      "winner": null,
+      "date": "2026-09-23T20:45",
+      "total": 180.95,
+      "lucroA": 189.99749999999995,
+      "lucroRed": -180.95,
+      "lucro": 189.99749999999995,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T19:04:43.989Z"
+    },
+    {
+      "id": "mueh646c27s1f",
+      "kind": "valor",
+      "event": "SL Benfica – AA Avanca (Abaixo 64)",
+      "houseA": "Cloudbet",
+      "oddA": 2.05,
+      "stakeA": 180.95,
+      "curA": "USD",
+      "sport": "Handebol",
+      "market": "Total (linha)",
+      "oddMkt": 1.8374558303886925,
+      "prob": 54.42307692307693,
+      "winner": null,
+      "date": "2026-09-23T16:30",
+      "total": 180.95,
+      "lucroA": 189.99749999999995,
+      "lucroRed": -180.95,
+      "lucro": 189.99749999999995,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T19:07:25.477Z"
     }
   ],
   "invertidos": [],
@@ -21136,5 +21184,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T18:53:51.959Z"
+  "updatedAt": "2026-09-23T19:07:25.478Z"
 }
