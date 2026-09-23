@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2292.97,
+      "value": 2498.57,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T14:40:31.828Z"
+      "updatedAt": "2026-09-23T14:54:51.756Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4769,8 +4769,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 147.56,
-      "updatedAt": "2026-09-23T10:06:14.083Z",
+      "value": 107.56,
+      "updatedAt": "2026-09-23T14:54:51.755Z",
       "currency": "USD"
     },
     {
@@ -20815,6 +20815,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T14:13:04.965Z"
+    },
+    {
+      "id": "mue85bhmwbn4e",
+      "kind": "valor",
+      "event": "SPR Rokis Radzymin – KS AZS-AWF Warszawa (2)",
+      "houseA": "Betfury",
+      "oddA": 1.99,
+      "stakeA": 205.6,
+      "curA": "USD",
+      "sport": "Handebol",
+      "market": "",
+      "oddMkt": 1.5462315462315463,
+      "prob": 64.67336683417085,
+      "winner": null,
+      "date": "2026-09-23T14:30",
+      "total": 205.6,
+      "lucroA": 203.54399999999998,
+      "lucroRed": -205.6,
+      "lucro": 203.54399999999998,
+      "roi": 99,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T14:54:51.755Z"
     }
   ],
   "invertidos": [],
@@ -20981,5 +21005,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T14:40:31.828Z"
+  "updatedAt": "2026-09-23T14:54:51.758Z"
 }
