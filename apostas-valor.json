@@ -4767,12 +4767,6 @@
       "currency": "USD"
     },
     {
-      "id": "mthcdb8cf914h",
-      "name": "Tivobet",
-      "value": 0.01,
-      "updatedAt": "2026-08-31T14:36:39.326Z"
-    },
-    {
       "id": "mtn67c4uibvxb",
       "name": "Casa B",
       "value": 0,
@@ -5581,6 +5575,10 @@
     {
       "id": "mue61ufdo805a",
       "at": "2026-09-23T16:37:15.844Z"
+    },
+    {
+      "id": "mthcdb8cf914h",
+      "at": "2026-09-23T16:37:21.684Z"
     }
   ],
   "surebets": [
@@ -21106,5 +21104,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T16:37:15.848Z"
+  "updatedAt": "2026-09-23T16:37:21.684Z"
 }
