@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1328.17,
+      "value": 1428.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T10:52:30.692Z"
+      "updatedAt": "2026-09-23T11:00:40.626Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4819,9 +4819,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": 210.55,
+      "value": 110.55,
       "currency": "BRL",
-      "updatedAt": "2026-09-23T10:51:01.598Z"
+      "updatedAt": "2026-09-23T11:00:40.614Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -20561,6 +20561,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T01:02:50.139Z"
+    },
+    {
+      "id": "mudzs5k3um8cy",
+      "kind": "valor",
+      "event": "Universidad O&M – Atlantico H1(-1) 1º período",
+      "houseA": "20BET",
+      "oddA": 2.88,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.06,
+      "prob": 46.2,
+      "winner": null,
+      "date": "2026-09-23T17:00",
+      "total": 100,
+      "lucroA": 188,
+      "lucroRed": -100,
+      "lucro": 188,
+      "roi": 188,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T11:00:40.616Z"
     }
   ],
   "invertidos": [],
@@ -20727,5 +20751,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T10:52:30.692Z"
+  "updatedAt": "2026-09-23T11:00:40.626Z"
 }
