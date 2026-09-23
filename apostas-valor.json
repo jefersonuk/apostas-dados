@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2636.8,
+      "value": 2843.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T19:43:08.897Z"
+      "updatedAt": "2026-09-23T20:12:24.150Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4762,8 +4762,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 104.23,
-      "updatedAt": "2026-09-23T19:08:56.284Z",
+      "value": 64.23,
+      "updatedAt": "2026-09-23T20:12:24.149Z",
       "currency": "USD"
     },
     {
@@ -21163,6 +21163,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T19:37:52.832Z"
+    },
+    {
+      "id": "muejhoetj9il7",
+      "kind": "valor",
+      "event": "Eto Basket W – Ujbuda BEAC W (21-2 Tempo Extra)",
+      "houseA": "Betfury",
+      "oddA": 1.92,
+      "stakeA": 206.8,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "",
+      "oddMkt": 1.631623212783852,
+      "prob": 61.28865979381443,
+      "winner": null,
+      "date": "2026-09-24T13:00",
+      "total": 206.8,
+      "lucroA": 190.256,
+      "lucroRed": -206.8,
+      "lucro": 190.256,
+      "roi": 92,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T20:12:24.149Z"
     }
   ],
   "invertidos": [],
@@ -21329,5 +21353,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T19:43:08.897Z"
+  "updatedAt": "2026-09-23T20:12:24.150Z"
 }
