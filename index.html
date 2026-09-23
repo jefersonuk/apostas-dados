@@ -550,6 +550,7 @@
   .lote-tab th{font-family:var(--sans);font-size:9px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted-2);}
   .lote-tab tr.err td{color:#F87171;}
   .lote-tab .r{text-align:right;}
+  .lote-tab .lote-st{width:74px;margin:0;padding:4px 6px;font-size:11.5px;text-align:right;}
 
   /* botão flutuante e toast com desfazer */
   .fab{position:fixed;right:18px;bottom:22px;width:54px;height:54px;border-radius:50%;border:none;background:var(--sky);color:#04121C;
@@ -638,8 +639,8 @@
 
       <!-- lote: várias apostas de uma vez -->
       <div id="vbBlocoLote" style="display:none;">
-        <textarea id="vbLoteTxt" rows="6" class="ta" placeholder="Uma aposta por linha — separe com ; ou TAB (colado de planilha):&#10;casa ; odd ; stake ; evento ; mercado ; esporte ; odd justa ; dd/mm hh:mm&#10;&#10;Ivibet ; 1.85 ; 150 ; Flamengo x Palmeiras ; Escanteios ; Futebol ; 1.62&#10;Betonline ; 1.77 ; 30 usd ; LGD – MOUZ ; Abates / Kills ; E-sports"></textarea>
-        <div class="hint">Só <b>casa, odd e stake</b> são obrigatórios. Stake sem moeda usa a moeda da casa; aceite <b>usd</b>, <b>$</b>, <b>eur</b>, <b>€</b>, <b>r$</b> junto do número. Linha sem data usa a data abaixo.</div>
+        <textarea id="vbLoteTxt" rows="6" class="ta" placeholder="Cole a página inteira de &quot;Apostas semelhantes&quot; do surebet.com (Ctrl+A, Ctrl+C) — uma ou várias páginas seguidas.&#10;&#10;Ou uma aposta por linha — separe com ; ou TAB (colado de planilha):&#10;casa ; odd ; stake ; evento ; mercado ; esporte ; odd justa ; dd/mm hh:mm&#10;&#10;Ivibet ; 1.85 ; 150 ; Flamengo x Palmeiras ; Escanteios ; Futebol ; 1.62&#10;Betonline ; 1.77 ; 30 usd ; LGD – MOUZ ; Abates / Kills ; E-sports"></textarea>
+        <div class="hint"><b>Página do surebet.com:</b> lê casa, esporte, data/hora, evento, mercado, odd, supervalorização e o consenso das outras casas; a stake começa pela escada e você ajusta na prévia. <b>Linhas:</b> só <b>casa, odd e stake</b> são obrigatórios. Stake sem moeda usa a moeda da casa; aceite <b>usd</b>, <b>$</b>, <b>eur</b>, <b>€</b>, <b>r$</b> junto do número. Linha sem data usa a data abaixo.</div>
         <div class="grid2">
           <div><label>Data / horário padrão do lote</label><input type="datetime-local" id="vbLoteData"></div>
           <div></div>
@@ -1404,7 +1405,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260923-1030';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260923-1110';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -4344,7 +4345,9 @@
   });
 
   /* ---------- lote ----------
-     casa ; odd ; stake[moeda] ; evento ; mercado ; esporte ; odd justa ; dd/mm hh:mm */
+     Dois formatos:
+       1. página "Apostas semelhantes" do surebet.com colada inteira (uma ou várias)
+       2. linhas: casa ; odd ; stake[moeda] ; evento ; mercado ; esporte ; odd justa ; dd/mm hh:mm */
   function lerStakeLote(txt,casaCur){
     const t=String(txt||'').trim().toLowerCase();
     let cur=casaCur||'BRL';
@@ -4354,9 +4357,119 @@
     const v=numBR(t.replace(/[^\d.,\-]/g,''));
     return {v,cur};
   }
-  function parseLote(){
+
+  /* ---------- página do surebet.com ----------
+     Cada linha da tabela vem assim (TAB entre colunas):
+        +74,2%                          <- supervalorização (a da 1ª linha é a aposta anunciada)
+        Opinion                         <- casa (sufixo de país "(BR)" é descartado)
+        Counter-Strike<TAB>23/09        <- esporte e data   ← âncora da linha
+        16:00<TAB>Peladona – your end   <- hora e evento
+        CCT South America<TAB>11-2 Tempo Extra   <- liga e mercado
+        1.89                            <- odd
+        50,50%                          <- probabilidade da casa (a dela, sem margem)
+        4,76%                           <- margem da casa
+     A supervalorização das linhas seguintes aparece ANTES da casa, colada no fim da
+     linha anterior. A 1ª linha com supervalorização positiva é a aposta; as outras são
+     o consenso, que serve de conferência: odd da aposta muito acima do consenso quase
+     sempre é mercado diferente (linha, período ou regra), não valor. */
+  const RE_PCT=/^[+\-−]?\d{1,3}(?:[.,]\d+)?\s*%$/;
+  const RE_ANCORA=/^(.+?)\s*\t\s*(\d{1,2})\/(\d{1,2})\s*$/;
+  function ehPaginaSurebet(txt){ return /Casa de aposta/i.test(txt) || String(txt).split(/\r?\n/).some(l=>RE_ANCORA.test(l.replace(/\s+$/,''))); }
+  function nomeCasaPagina(raw){
+    const limpo=String(raw||'').replace(/\s*\([^)]*\)\s*$/,'').trim();
+    const conta=acharCasaExistente(limpo)||acharCasaExistente(raw);
+    if(conta) return conta.name.trim();
+    const conhecida=casasConhecidas().find(c=>c.toLowerCase()===limpo.toLowerCase());
+    return conhecida||limpo;
+  }
+  function esporteApp(raw){
+    for(const [sp,re] of VB_SPORT_KW){ if(re.test(raw)) return sp; }
+    return raw;
+  }
+  function mercadoApp(raw,sp){
+    const t=String(raw||'');
+    if(/^\s*(w1|w2|win ?1|win ?2|1x2|x)\b/i.test(t)) return '1X2 / Resultado';
+    for(const [mk,re] of VB_MKT_KW){ if(re.test(t)) return mk==='Total'?vbTotalPorEsporte(sp):mk; }
+    return '';
+  }
+  function parsePaginaSurebet(txt){
+    const L=String(txt||'').split(/\r?\n/).map(l=>l.replace(/\s+$/,''));
+    const linhas=[];
+    for(let i=0;i<L.length;i++){
+      const m=L[i].match(RE_ANCORA);
+      if(!m) continue;
+      // casa = linha não vazia imediatamente acima; supervalorização = a que vem antes dela
+      let k=i-1; while(k>=0&&!L[k].trim()) k--;
+      const casaRaw=k>=0?L[k].trim():'';
+      let j=k-1; while(j>=0&&!L[j].trim()) j--;
+      const svTxt=(j>=0&&RE_PCT.test(L[j].trim()))?L[j].trim():null;
+      // depois da âncora: hora+evento, liga+mercado, odd, prob, margem
+      const prox=[]; let p=i+1;
+      while(p<L.length&&prox.length<5){ if(L[p].trim()) prox.push(L[p]); p++; }
+      const he=(prox[0]||'').split('\t').map(x=>x.trim());
+      const hm=(he[0]||'').match(/^(\d{1,2}):(\d{2})$/);
+      const lm=(prox[1]||'').split('\t').map(x=>x.trim()).filter(Boolean);
+      const odd=numBR(prox[2]);
+      const prob=RE_PCT.test((prox[3]||'').trim())?numBR(prox[3]):NaN;
+      const marg=RE_PCT.test((prox[4]||'').trim())?numBR(prox[4]):NaN;
+      const dd=+m[2], mm=+m[3], hoje=todayStr();
+      let aa=+hoje.slice(0,4);
+      // virada de ano: jogo em janeiro visto em dezembro
+      if(mm<+hoje.slice(5,7)-6) aa++;
+      const date=aa+'-'+String(mm).padStart(2,'0')+'-'+String(dd).padStart(2,'0')+'T'+(hm?String(+hm[1]).padStart(2,'0')+':'+hm[2]:'12:00');
+      linhas.push({idx:i, casaRaw, sv:svTxt?numBR(svTxt.replace('−','-'))/100:null,
+        sportRaw:m[1].trim(), date, event:he.slice(1).join(' ').trim(),
+        liga:lm.length>1?lm[0]:'', mercadoRaw:lm.length>1?lm.slice(1).join(' '):(lm[0]||''),
+        odd, prob, marg});
+    }
+    // uma página = um bloco; várias páginas coladas juntas são separadas pelo cabeçalho da tabela
+    const cabec=L.map((l,i)=>/Casa de aposta/i.test(l)&&/Supervalorizado/i.test(l)?i:-1).filter(i=>i>=0);
+    const blocos=cabec.length?cabec.map((c,n)=>linhas.filter(r=>r.idx>c&&(n+1>=cabec.length||r.idx<cabec[n+1]))):[linhas];
+    return blocos.filter(b=>b.length).map(b=>{
+      const alvo=b.find(r=>r.sv>0)||b[0];
+      const outras=b.filter(r=>r!==alvo&&r.prob>0);
+      // mesma probabilidade até a 2ª casa = mesmo feed revendido: um voto só
+      const votos=[...new Set(outras.map(r=>r.prob.toFixed(2)))].map(parseFloat).sort((a,b)=>a-b);
+      const cons=votos.length?pjMediana(votos):null;
+      return Object.assign({}, alvo, {nCasas:outras.length, nVotos:votos.length, consenso:cons});
+    });
+  }
+
+  let loteStakes={};          // stake digitada na prévia, por aposta (sobrevive a redesenhos)
+  const chaveLote=x=>[x.casa,x.odd,x.event,x.date].join('|');
+  function itemDaPagina(r,n){
+    const casa=nomeCasaPagina(r.casaRaw);
+    const conta=acharCasaExistente(casa);
+    const cur=conta?(conta.currency||'BRL'):'BRL';
+    const sport=esporteApp(r.sportRaw);
+    const market=mercadoApp(r.mercadoRaw,sport);
+    const event=r.event+(r.mercadoRaw?' ('+r.mercadoRaw+')':'');
+    // preço justo = o que o site usou para anunciar a supervalorização (já sem margem)
+    const oddMkt=(r.odd>1&&r.sv>0)?r.odd/(1+r.sv):(r.consenso?100/r.consenso:NaN);
+    const erros=[];
+    if(!nomeCasaValido(casa)) erros.push('casa');
+    if(!(r.odd>1)) erros.push('odd');
+    const it={i:n+1, casa, odd:r.odd, cur, event, market, sport, oddMkt, date:r.date,
+              nova:!conta&&nomeCasaValido(casa), erros, pagina:r};
+    // stake: a que você digitou na prévia; senão a escada com a política E, na moeda da casa
+    const k=chaveLote(it);
+    let nat=loteStakes[k];
+    if(nat==null && r.odd>1){ const base=escadaStake(r.odd); nat=base?Math.round(polEAplicar(base,r.odd,casa).final/curRate(cur)*100)/100:0; }
+    it.stakeNat=nat||0; it.stake=it.stakeNat*curRate(cur); it.chave=k;
+    if(!(it.stakeNat>0)) erros.push(r.odd>1&&polEVeredito(r.odd,casa)&&polEVeredito(r.odd,casa).fator<=0?'stake (política E: não entrar)':'stake');
+    // alertas: não bloqueiam, só avisam
+    const al=[];
+    if(r.sv>=0.20) al.push('supervalorização '+(r.sv*100).toFixed(1).replace('.',',')+'% — acima de 20% o histórico é armadilha');
+    if(r.consenso){
+      const oc=100/r.consenso;
+      if(r.odd/oc>1.25) al.push('consenso paga '+oc.toFixed(2)+' — odd '+((r.odd/oc-1)*100).toFixed(0)+'% acima: confira se é o mesmo mercado');
+    }
+    it.alertas=al;
+    return it;
+  }
+  function itensDeLinhas(txt){
     const padrao=$('vbLoteData').value||nowLocalStr();
-    return String($('vbLoteTxt').value||'').split(/\n+/).map(l=>l.trim()).filter(Boolean).map((l,i)=>{
+    return txt.split(/\n+/).map(l=>l.trim()).filter(Boolean).map((l,i)=>{
       const c=l.split(/\t|;|\|/).map(x=>x.trim());
       const casa=c[0]||'', odd=numBR(c[1]);
       const conta=acharCasaExistente(casa);
@@ -4367,37 +4480,70 @@
       if(!(st.v>0)) erros.push('stake');
       let date=padrao;
       if(c[7]){ const a=vbParseTexto(c[7]); if(a.date) date=a.date; }
-      return {i:i+1, casa, odd, stakeNat:st.v, cur:st.cur, stake:st.v*curRate(st.cur),
+      return {i:i+1, casa:conta?conta.name.trim():casa, odd, stakeNat:st.v, cur:st.cur, stake:st.v*curRate(st.cur),
               event:c[3]||'', market:c[4]||'', sport:c[5]||'', oddMkt:numBR(c[6]), date,
-              nova:!conta && nomeCasaValido(casa), erros};
+              nova:!conta && nomeCasaValido(casa), erros, alertas:[]};
     });
+  }
+  function parseLote(){
+    const txt=String($('vbLoteTxt').value||'');
+    if(ehPaginaSurebet(txt)) return parsePaginaSurebet(txt).map(itemDaPagina);
+    return itensDeLinhas(txt);
   }
   function renderLote(){
     const itens=parseLote(), box=$('vbLotePrev'), btn=$('vbLoteBtn');
-    if(!itens.length){ box.innerHTML=''; btn.disabled=true; btn.textContent='Registrar lote'; return; }
+    if(!itens.length){
+      box.innerHTML=/\S/.test($('vbLoteTxt').value)?'<div class="hint" style="color:var(--amber)">Nenhuma aposta reconhecida no texto.</div>':'';
+      btn.disabled=true; btn.textContent='Registrar lote'; return;
+    }
     const validos=itens.filter(x=>!x.erros.length);
     const total=validos.reduce((s,x)=>s+x.stake,0);
-    box.innerHTML='<table class="lote-tab"><tr><th>#</th><th>casa</th><th class="r">odd</th><th class="r">stake</th><th>evento / mercado</th></tr>'+
-      itens.map(x=>'<tr class="'+(x.erros.length?'err':'')+'"><td>'+x.i+'</td>'+
-        '<td>'+esc(x.casa||'—')+(x.nova?' <span style="color:var(--amber)">nova</span>':'')+'</td>'+
-        '<td class="r">'+(x.odd>1?x.odd.toFixed(2):'?')+'</td>'+
-        '<td class="r">'+(x.stakeNat>0?fmtCur(x.stakeNat,x.cur):'?')+'</td>'+
-        '<td>'+(x.erros.length?'falta '+x.erros.join(', '):esc([x.event,x.market].filter(Boolean).join(' · ')||'—'))+'</td></tr>').join('')+
+    const pag=itens.some(x=>x.pagina);
+    box.innerHTML=(pag?'<div class="hint" style="margin:0 0 4px;">Página do surebet.com: a aposta é a linha com supervalorização positiva; as demais casas viram o consenso. Stake inicial = escada com a política E — ajuste na tabela.</div>':'')+
+      '<table class="lote-tab"><tr><th>#</th><th>casa</th><th class="r">odd</th><th class="r">stake</th><th>evento / mercado</th></tr>'+
+      itens.map(x=>{
+        const r=x.pagina;
+        const stakeCel=r
+          ? '<input type="text" inputmode="decimal" class="lote-st" data-lotek="'+esc(x.chave)+'" value="'+(x.stakeNat>0?x.stakeNat.toFixed(2):'')+'"> <span class="muted">'+curSimbolo(x.cur)+'</span>'
+          : (x.stakeNat>0?fmtCur(x.stakeNat,x.cur):'?');
+        const det=r
+          ? '<br><span class="muted">'+esc(x.sport)+(x.market?' · '+esc(x.market):'')+' · '+x.date.slice(8,10)+'/'+x.date.slice(5,7)+' '+x.date.slice(11,16)+
+            (r.sv!=null?' · <b style="color:var(--sky)">'+(r.sv>=0?'+':'')+(r.sv*100).toFixed(1).replace('.',',')+'%</b>':'')+
+            (x.oddMkt>1?' · justa '+x.oddMkt.toFixed(3):'')+
+            (r.consenso?' · consenso '+r.consenso.toFixed(2).replace('.',',')+'% ('+r.nCasas+' casas, '+r.nVotos+' feeds)':'')+'</span>'+
+            x.alertas.map(a=>'<br><span style="color:var(--amber)">⚠ '+esc(a)+'</span>').join('')
+          : '';
+        return '<tr class="'+(x.erros.length?'err':'')+'"><td>'+x.i+'</td>'+
+          '<td>'+esc(x.casa||'—')+(x.nova?' <span style="color:var(--amber)">nova</span>':'')+'</td>'+
+          '<td class="r">'+(x.odd>1?x.odd.toFixed(2):'?')+'</td>'+
+          '<td class="r" style="white-space:nowrap;">'+stakeCel+'</td>'+
+          '<td>'+(x.erros.length?'falta '+x.erros.join(', ')+'<br>':'')+esc([x.event,r?'':x.market].filter(Boolean).join(' · ')||'—')+det+'</td></tr>';
+      }).join('')+
       '</table><div class="hint">'+validos.length+' de '+itens.length+' válidas · total '+fmt(total)+'</div>';
     btn.disabled=!validos.length;
     btn.textContent=validos.length?'Registrar '+validos.length+' aposta'+(validos.length>1?'s':'')+' · '+fmt(total):'Registrar lote';
   }
-  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',renderLote));
+  ['vbLoteTxt','vbLoteData'].forEach(id=>$(id).addEventListener('input',()=>{ if(id==='vbLoteTxt') loteStakes={}; renderLote(); }));
+  // stake editada na prévia: guarda e atualiza só o total, sem redesenhar a tabela (o cursor fica no campo)
+  $('vbLotePrev').addEventListener('input',e=>{
+    const inp=e.target.closest('.lote-st'); if(!inp) return;
+    const v=numBR(inp.value);
+    loteStakes[inp.dataset.lotek]=v>0?v:0;
+  });
+  $('vbLotePrev').addEventListener('change',e=>{ if(e.target.closest('.lote-st')) renderLote(); });
   $('vbLoteBtn').addEventListener('click',()=>{
-    const validos=parseLote().filter(x=>!x.erros.length);
-    if(!validos.length) return;
+    document.querySelectorAll('#vbLotePrev .lote-st').forEach(inp=>{ const v=numBR(inp.value); loteStakes[inp.dataset.lotek]=v>0?v:0; });
+    const itens=parseLote(), validos=itens.filter(x=>!x.erros.length);
+    if(!validos.length){ renderLote(); return; }
     const novas=[...new Set(validos.filter(x=>x.nova).map(x=>x.casa))];
     if(novas.length && !confirm('Casas que ainda não estão nos saldos e serão criadas:\n\n'+novas.join(', ')+'\n\nContinuar?')) return;
+    const alertas=validos.filter(x=>x.alertas&&x.alertas.length);
+    if(alertas.length && !confirm(alertas.map(x=>x.casa+' @'+x.odd.toFixed(2)+':\n  '+x.alertas.join('\n  ')).join('\n\n')+'\n\nRegistrar mesmo assim?')) return;
     const ops=validos.map(x=>gravarValor({casa:x.casa, odd:x.odd, stake:x.stake, cur:x.cur, event:x.event,
       sport:x.sport, market:x.market, oddMkt:x.oddMkt, prob:(x.oddMkt>1)?100/x.oddMkt:null, date:x.date}));
-    $('vbLoteTxt').value=''; renderLote();
+    $('vbLoteTxt').value=''; loteStakes={}; renderLote();
     saveState(); renderAll();
-    toast(ops.length+' apostas registradas · '+fmt(ops.reduce((s,o)=>s+o.stakeA,0)),()=>desfazerRegistro(ops));
+    toast(ops.length+' aposta'+(ops.length>1?'s':'')+' registrada'+(ops.length>1?'s':'')+' · '+fmt(ops.reduce((s,o)=>s+o.stakeA,0)),()=>desfazerRegistro(ops));
   });
 
   /* ---------- pendentes: liquidar em um toque ---------- */
