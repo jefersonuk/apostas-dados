@@ -4818,13 +4818,6 @@
       "updatedAt": "2026-09-23T16:08:34.620Z"
     },
     {
-      "id": "mue61ufdo805a",
-      "name": "Basquete",
-      "value": 89.1,
-      "currency": "BRL",
-      "updatedAt": "2026-09-23T13:56:10.441Z"
-    },
-    {
       "id": "mue95xogyqnk4",
       "name": "BookmakerXyz",
       "value": 48.88,
@@ -5584,6 +5577,10 @@
     {
       "id": "mt1xxprjym6w0",
       "at": "2026-09-23T15:23:07.351Z"
+    },
+    {
+      "id": "mue61ufdo805a",
+      "at": "2026-09-23T16:37:15.844Z"
     }
   ],
   "surebets": [
@@ -21109,5 +21106,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T16:30:20.996Z"
+  "updatedAt": "2026-09-23T16:37:15.848Z"
 }
