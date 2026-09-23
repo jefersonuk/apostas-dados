@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1921.98,
+      "value": 2281.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T13:28:50.144Z"
+      "updatedAt": "2026-09-23T13:31:47.943Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4664,8 +4664,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 96.81,
-      "updatedAt": "2026-09-23T00:22:35.103Z",
+      "value": 66.81,
+      "updatedAt": "2026-09-23T13:29:45.424Z",
       "currency": "USD"
     },
     {
@@ -4782,8 +4782,8 @@
     {
       "id": "mtn67c4uwdaz0",
       "name": "Casa A",
-      "value": 0,
-      "updatedAt": "2026-09-20T13:54:16.018Z"
+      "value": -205.6,
+      "updatedAt": "2026-09-23T13:31:47.940Z"
     },
     {
       "id": "mtn67c4uibvxb",
@@ -20656,6 +20656,54 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T13:19:56.800Z"
+    },
+    {
+      "id": "mue53vf3559fo",
+      "kind": "valor",
+      "event": "Crossley / Christine Lutkemeyer – Fernanda Navarro / Rodriguez (2)",
+      "houseA": "Kalshi",
+      "oddA": 2.03,
+      "stakeA": 154.2,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.75,
+      "prob": 54.4,
+      "winner": null,
+      "date": "2026-09-23T21:00",
+      "total": 154.2,
+      "lucroA": 158.82599999999996,
+      "lucroRed": -154.2,
+      "lucro": 158.82599999999996,
+      "roi": 102.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T13:29:45.424Z"
+    },
+    {
+      "id": "mue56hyc3gllo",
+      "kind": "valor",
+      "event": "paiN Academy – Semente do Mal (1)",
+      "houseA": "",
+      "oddA": 1.58,
+      "stakeA": 205.6,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.37,
+      "prob": 69.5,
+      "winner": null,
+      "date": "2026-09-23T19:00",
+      "total": 205.6,
+      "lucroA": 119.248,
+      "lucroRed": -205.6,
+      "lucro": 119.248,
+      "roi": 58.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T13:31:47.941Z"
     }
   ],
   "invertidos": [],
@@ -20822,5 +20870,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T13:26:42.213Z"
+  "updatedAt": "2026-09-23T13:31:47.943Z"
 }
