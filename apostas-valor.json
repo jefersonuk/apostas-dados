@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1515.59,
+      "value": 1604.69,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T00:11:04.680Z"
+      "updatedAt": "2026-09-23T00:29:12.037Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4829,6 +4829,12 @@
       "value": 29.8,
       "currency": "USD",
       "updatedAt": "2026-09-22T18:19:57.529Z"
+    },
+    {
+      "id": "mudd82jmntqp2",
+      "name": "Basquete",
+      "value": -89.1,
+      "updatedAt": "2026-09-23T00:29:12.034Z"
     }
   ],
   "aportes": [
@@ -20452,6 +20458,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T00:11:04.673Z"
+    },
+    {
+      "id": "mudd82jlicubc",
+      "kind": "valor",
+      "event": "BMS Herlev Wolfpack - Gladsaxe BK (1quarto H1 +0.5)",
+      "houseA": "Basquete",
+      "oddA": 1.85,
+      "stakeA": 89.097,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-23T14:00",
+      "total": 89.097,
+      "lucroA": 75.73245,
+      "lucroRed": -89.097,
+      "lucro": 75.73245,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T00:29:12.034Z"
     }
   ],
   "invertidos": [],
@@ -20618,5 +20648,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T00:22:35.103Z"
+  "updatedAt": "2026-09-23T00:29:12.037Z"
 }
