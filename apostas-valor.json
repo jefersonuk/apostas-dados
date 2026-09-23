@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2262.6,
+      "value": 2366,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T19:08:56.284Z"
+      "updatedAt": "2026-09-23T19:10:22.268Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4775,8 +4775,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 50,
-      "updatedAt": "2026-09-22T16:08:17.053Z",
+      "value": 30,
+      "updatedAt": "2026-09-23T19:10:22.267Z",
       "currency": "USD"
     },
     {
@@ -21042,6 +21042,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T19:08:56.284Z"
+    },
+    {
+      "id": "mueh9wl7xud8e",
+      "kind": "valor",
+      "event": "ATL Braves – CIN Reds (Abaixo 14.5 Tempo Extra - hits)",
+      "houseA": "Betrebels",
+      "oddA": 2.05,
+      "stakeA": 103.4,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 1.840434342504831,
+      "prob": 54.335,
+      "winner": null,
+      "date": "2026-09-23T20:15",
+      "total": 103.4,
+      "lucroA": 108.57,
+      "lucroRed": -103.4,
+      "lucro": 108.57,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T19:10:22.267Z"
     }
   ],
   "invertidos": [],
@@ -21208,5 +21232,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T19:08:56.284Z"
+  "updatedAt": "2026-09-23T19:10:22.268Z"
 }
