@@ -4596,7 +4596,7 @@
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
       "value": 1528.18,
-      "updatedAt": "2026-09-23T15:58:44.420Z"
+      "updatedAt": "2026-09-23T15:59:09.546Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -20895,9 +20895,9 @@
     {
       "id": "mueafgsj6qcdg",
       "kind": "valor",
-      "event": "HC Decin – HC Pribram (H2(−2.5))",
+      "event": "HC Decin – HC Pribram (H2(−2))",
       "houseA": "Pinnacle",
-      "oddA": 2.06,
+      "oddA": 2.05,
       "stakeA": 100,
       "curA": "BRL",
       "sport": "Hóquei",
@@ -20907,14 +20907,14 @@
       "winner": null,
       "date": "2026-09-23T13:00",
       "total": 100,
-      "lucroA": 106,
+      "lucroA": 104.99999999999999,
       "lucroRed": -100,
-      "lucro": 106,
-      "roi": 106,
+      "lucro": 104.99999999999999,
+      "roi": 104.99999999999999,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-23T15:58:44.420Z"
+      "updatedAt": "2026-09-23T15:59:09.546Z"
     }
   ],
   "invertidos": [],
@@ -21081,5 +21081,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T15:58:44.423Z"
+  "updatedAt": "2026-09-23T15:59:09.546Z"
 }
