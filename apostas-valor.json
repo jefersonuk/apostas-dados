@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2333.18,
+      "value": 2388.18,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T13:33:12.642Z"
+      "updatedAt": "2026-09-23T13:35:58.817Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4819,9 +4819,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": 110.55,
+      "value": 55.55,
       "currency": "BRL",
-      "updatedAt": "2026-09-23T11:00:40.614Z"
+      "updatedAt": "2026-09-23T13:35:58.810Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -20728,6 +20728,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-23T13:33:12.634Z"
+    },
+    {
+      "id": "mue5bviwytkgu",
+      "kind": "valor",
+      "event": "Aruba – Antigua and Barbuda 2 / DNB",
+      "houseA": "20bet",
+      "oddA": 2.19,
+      "stakeA": 55,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.8,
+      "prob": 52.9,
+      "winner": null,
+      "date": "2026-09-23T20:00",
+      "total": 55,
+      "lucroA": 65.45,
+      "lucroRed": -55,
+      "lucro": 65.45,
+      "roi": 119,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-23T13:35:58.811Z"
     }
   ],
   "invertidos": [],
@@ -20894,5 +20918,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T13:33:12.642Z"
+  "updatedAt": "2026-09-23T13:35:58.817Z"
 }
