@@ -1409,7 +1409,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260923-1129';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260923-1156';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -3468,6 +3468,8 @@
   let layLast=null;                 // último cálculo válido (para registrar)
   function curSimbolo(c){ return c==='USD'?'US$':c==='EUR'?'€':'R$'; }
   function fmtCur(n,cur){ return cur==='USD'?fmtUSD(n):cur==='EUR'?fmtEUR(n):fmt(n); }
+  // stake sugerida: sempre inteira, na moeda da casa (ninguém aposta US$ 43,81)
+  function fmtCur0(n,cur){ const v=Math.round((typeof n==='number'&&isFinite(n))?n:0); return curSimbolo(cur)+' '+v.toLocaleString('pt-BR'); }
   function fmtCurSign(n,cur){ const v=(typeof n==='number'&&isFinite(n))?n:0; return (v>=0?'+':'')+fmtCur(v,cur); }
   // valor em BRL exibido na moeda da perna, com o equivalente em R$ ao lado quando não for R$
   function layNat(brl,cur){
@@ -3947,7 +3949,7 @@
       '<div class="sug-box">'+
         '<div class="sug-top">'+
           '<span class="sug-label">EV +'+(sug.ev*100).toFixed(1)+'% '+polETag(pe)+'</span>'+
-          '<span class="sug-val">'+fmt(sug.sugerido)+'</span>'+
+          '<span class="sug-val">'+fmtCur0(sug.sugerido/curRate($('scCurV').value),$('scCurV').value)+'</span>'+
         '</div>'+
         '<div class="sug-meta">'+
           'prob real <b>'+(sug.probReal*100).toFixed(1)+'%</b> · Kelly/4 '+fmt(sug.kellyStake)+' · teto '+fmt(sug.teto)+
@@ -4113,13 +4115,13 @@
     const base=escadaStake(odd);
     if(base!==null) chips.push(['Escada',polEAplicar(base,odd,casa).final]);
     box.innerHTML=chips.map(([k,v])=>v>0
-      ? '<button type="button" class="chip" data-stk="'+v+'">'+k+' <b>'+fmtCur(v/curRate(cur),cur)+'</b></button>'
+      ? '<button type="button" class="chip" data-stk="'+v+'">'+k+' <b>'+fmtCur0(v/curRate(cur),cur)+'</b></button>'
       : '<span class="chip zero">'+k+' · não entrar</span>').join('');
   }
   $('vbStakeChips').addEventListener('click',e=>{
     const c=e.target.closest('[data-stk]'); if(!c) return;
     const v=parseFloat(c.dataset.stk), cur=$('scCurV').value;
-    $('vbStake').value=(v/curRate(cur)).toFixed(2);
+    $('vbStake').value=Math.round(v/curRate(cur));
     updateValorCalc();
   });
   // os 5 mais usados nas últimas 80 apostas (mercado: dentro do esporte escolhido, se houver)
@@ -4530,7 +4532,7 @@
     // stake: a que você digitou na prévia; senão a escada com a política E, na moeda da casa
     const k=chaveLote(it);
     let nat=loteStakes[k];
-    if(nat==null && odd>1){ const base=escadaStake(odd); nat=base?Math.round(polEAplicar(base,odd,casa).final/curRate(cur)*100)/100:0; }
+    if(nat==null && odd>1){ const base=escadaStake(odd); nat=base?Math.round(polEAplicar(base,odd,casa).final/curRate(cur)):0; }
     it.stakeNat=nat||0; it.stake=it.stakeNat*curRate(cur); it.chave=k;
     if(!(it.stakeNat>0)) erros.push(odd>1&&polEVeredito(odd,casa)&&polEVeredito(odd,casa).fator<=0?'stake (política E: não entrar)':'stake');
     // alertas: não bloqueiam, só avisam
@@ -4588,7 +4590,7 @@
       itens.map(x=>{
         const r=x.pagina;
         const stakeCel=r
-          ? '<input type="text" inputmode="decimal" class="lote-st" data-lotek="'+esc(x.chave)+'" value="'+(x.stakeNat>0?x.stakeNat.toFixed(2):'')+'"> <span class="muted">'+curSimbolo(x.cur)+'</span>'
+          ? '<input type="text" inputmode="decimal" class="lote-st" data-lotek="'+esc(x.chave)+'" value="'+(x.stakeNat>0?+x.stakeNat.toFixed(2):'')+'"> <span class="muted">'+curSimbolo(x.cur)+'</span>'
           : (x.stakeNat>0?fmtCur(x.stakeNat,x.cur):'?');
         const det=r
           ? '<br><span class="muted">'+esc(x.sport)+(x.market?' · '+esc(x.market):'')+' · '+x.date.slice(8,10)+'/'+x.date.slice(5,7)+' '+x.date.slice(11,16)+
