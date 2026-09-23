@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 170.74,
+      "value": 118.05,
       "currency": "USD",
-      "updatedAt": "2026-09-23T15:44:31.226Z"
+      "updatedAt": "2026-09-23T16:06:23.919Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -20519,7 +20519,7 @@
       "market": "Abates / Kills",
       "oddMkt": 1.53,
       "prob": 62.2,
-      "winner": "A",
+      "winner": "RED",
       "date": "2026-09-23T10:00",
       "total": 153,
       "lucroA": 117.81,
@@ -20528,9 +20528,9 @@
       "roi": 77,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "RED"
       },
-      "updatedAt": "2026-09-23T14:40:31.828Z"
+      "updatedAt": "2026-09-23T16:06:23.920Z"
     },
     {
       "id": "mudectkw3owlo",
@@ -21081,5 +21081,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T15:59:09.546Z"
+  "updatedAt": "2026-09-23T16:06:23.920Z"
 }
