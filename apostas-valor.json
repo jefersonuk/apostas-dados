@@ -4699,8 +4699,8 @@
     {
       "id": "mt1xxprjym6w0",
       "name": "Bookmaker",
-      "value": 50,
-      "updatedAt": "2026-09-23T14:36:41.332Z",
+      "value": 67.33,
+      "updatedAt": "2026-09-23T14:37:38.702Z",
       "currency": "USD"
     },
     {
@@ -4727,8 +4727,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 397.42,
-      "updatedAt": "2026-09-23T13:19:56.800Z",
+      "value": 380.09,
+      "updatedAt": "2026-09-23T14:37:38.702Z",
       "currency": "USD"
     },
     {
@@ -20479,7 +20479,7 @@
       "id": "mudd82jlicubc",
       "kind": "valor",
       "event": "BMS Herlev Wolfpack - Gladsaxe BK (1quarto H1 +0.5)",
-      "houseA": "Bookmaker",
+      "houseA": "Cloudbet",
       "oddA": 1.85,
       "stakeA": 89.097,
       "curA": "USD",
@@ -20497,7 +20497,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-23T13:56:10.441Z"
+      "updatedAt": "2026-09-23T14:37:38.702Z"
     },
     {
       "id": "muddybuoq71ih",
@@ -21000,5 +21000,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T14:36:41.332Z"
+  "updatedAt": "2026-09-23T14:37:38.702Z"
 }
