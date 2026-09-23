@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-09-23",
+    "startDate": "2026-09-14",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -5105,10 +5105,10 @@
   ],
   "usdRate": 5.17,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-09-23T17:30:59.113Z",
-  "eurRate": 5.88,
+  "usdRateAt": "2026-09-23T22:11:56.987Z",
+  "eurRate": 5.83,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-23T17:30:59.175Z",
+  "eurRateAt": "2026-09-23T22:11:57.296Z",
   "appBuild": "20260923-1353",
   "deleted": [
     {
@@ -21404,5 +21404,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-23T21:15:53.444Z"
+  "updatedAt": "2026-09-23T22:11:57.296Z"
 }
