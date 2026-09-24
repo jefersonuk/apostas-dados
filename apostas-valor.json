@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2402.38,
+      "value": 2654.99,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T12:33:13.614Z"
+      "updatedAt": "2026-09-24T13:51:11.330Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4814,9 +4814,9 @@
     {
       "id": "mue95xogyqnk4",
       "name": "BookmakerXyz",
-      "value": 48.88,
+      "value": 0.02,
       "currency": "USD",
-      "updatedAt": "2026-09-23T15:23:20.128Z"
+      "updatedAt": "2026-09-24T13:51:11.323Z"
     }
   ],
   "aportes": [
@@ -21521,6 +21521,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T11:55:36.703Z"
+    },
+    {
+      "id": "muflbaahdii8c",
+      "kind": "valor",
+      "event": "BK Vejen x Bears Academy (1)",
+      "houseA": "BookmakerXyz",
+      "oddA": 1.66,
+      "stakeA": 252.6062,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.3,
+      "prob": 73.3,
+      "winner": null,
+      "date": "2026-09-24T14:00",
+      "total": 252.6062,
+      "lucroA": 166.720092,
+      "lucroRed": -252.6062,
+      "lucro": 166.720092,
+      "roi": 65.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T13:51:11.323Z"
     }
   ],
   "invertidos": [],
@@ -21687,5 +21711,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T13:01:38.877Z"
+  "updatedAt": "2026-09-24T13:51:11.330Z"
 }
