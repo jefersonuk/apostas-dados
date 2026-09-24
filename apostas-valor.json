@@ -4628,9 +4628,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 248.48,
+      "value": 236.48,
       "currency": "USD",
-      "updatedAt": "2026-09-23T10:04:26.630Z"
+      "updatedAt": "2026-09-24T11:46:53.473Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1727.49,
+      "value": 1789.53,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T11:46:10.173Z"
+      "updatedAt": "2026-09-24T11:46:53.473Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -21328,6 +21328,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T11:46:10.167Z"
+    },
+    {
+      "id": "mufgvfs0m4r93",
+      "kind": "valor",
+      "event": "Netherlands – Germany (Abaixo 13.5 - chutes 2º o time)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.92,
+      "stakeA": 62.04,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Chutes",
+      "oddMkt": 1.7875148959574663,
+      "prob": 55.94358974358975,
+      "winner": null,
+      "date": "2026-09-24T15:45",
+      "total": 62.04,
+      "lucroA": 57.07679999999999,
+      "lucroRed": -62.04,
+      "lucro": 57.07679999999999,
+      "roi": 92,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T11:46:53.473Z"
     }
   ],
   "invertidos": [],
@@ -21494,5 +21518,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:46:10.173Z"
+  "updatedAt": "2026-09-24T11:46:53.473Z"
 }
