@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 3067.35,
+      "value": 2808.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T16:45:57.856Z"
+      "updatedAt": "2026-09-24T16:48:33.686Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4807,9 +4807,9 @@
     {
       "id": "muczy0ui6d8aw",
       "name": "Casobet",
-      "value": 5.06,
+      "value": 89.56,
       "currency": "USD",
-      "updatedAt": "2026-09-24T11:48:46.503Z"
+      "updatedAt": "2026-09-24T16:48:33.685Z"
     },
     {
       "id": "mue95xogyqnk4",
@@ -21394,7 +21394,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.5959958447445461,
       "prob": 62.65680473372782,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-24T12:00",
       "total": 258.5,
       "lucroA": 178.36499999999998,
@@ -21402,9 +21402,10 @@
       "lucro": 178.36499999999998,
       "roi": 69,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-24T11:48:46.503Z"
+      "updatedAt": "2026-09-24T16:48:33.686Z"
     },
     {
       "id": "mufgzev05qew5",
@@ -21883,5 +21884,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T16:45:52.727Z"
+  "updatedAt": "2026-09-24T16:48:33.686Z"
 }
