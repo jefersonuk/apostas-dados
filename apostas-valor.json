@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2696.35,
+      "value": 2748.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T15:04:18.570Z"
+      "updatedAt": "2026-09-24T15:30:07.486Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4706,9 +4706,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 270.4,
+      "value": 260.4,
       "currency": "USD",
-      "updatedAt": "2026-09-23T01:02:50.138Z"
+      "updatedAt": "2026-09-24T15:30:07.486Z"
     },
     {
       "id": "mt7cyp79nfew7",
@@ -21570,6 +21570,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T15:04:18.569Z"
+    },
+    {
+      "id": "mufouinxfdxp2",
+      "kind": "valor",
+      "event": "Lautp/2 – Kultsu FC (H1(+2.75))",
+      "houseA": "Shuffle",
+      "oddA": 2.5,
+      "stakeA": 51.7,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.2608695652173916,
+      "prob": 44.230769230769226,
+      "winner": null,
+      "date": "2026-09-24T13:00",
+      "total": 51.7,
+      "lucroA": 77.55000000000001,
+      "lucroRed": -51.7,
+      "lucro": 77.55000000000001,
+      "roi": 150,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T15:30:07.486Z"
     }
   ],
   "invertidos": [],
@@ -21736,5 +21760,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T15:04:18.570Z"
+  "updatedAt": "2026-09-24T15:30:07.486Z"
 }
