@@ -4628,9 +4628,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 236.48,
+      "value": 188.48,
       "currency": "USD",
-      "updatedAt": "2026-09-24T11:46:53.473Z"
+      "updatedAt": "2026-09-24T15:04:18.569Z"
     },
     {
       "id": "msqr1ktlw3015",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2448.19,
+      "value": 2696.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T14:06:07.074Z"
+      "updatedAt": "2026-09-24T15:04:18.570Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -21546,6 +21546,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T13:51:11.323Z"
+    },
+    {
+      "id": "mufnxbihlt612",
+      "kind": "valor",
+      "event": "Washington Mystics – Chicago Sky (Acima 45.5 2ª metade + Tempo Extra 1º o time)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.8,
+      "stakeA": 248.16,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.6494089617886925,
+      "prob": 60.62777777777777,
+      "winner": null,
+      "date": "2026-09-24T20:30",
+      "total": 248.16,
+      "lucroA": 198.52800000000002,
+      "lucroRed": -248.16,
+      "lucro": 198.52800000000002,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T15:04:18.569Z"
     }
   ],
   "invertidos": [],
@@ -21712,5 +21736,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T14:53:34.262Z"
+  "updatedAt": "2026-09-24T15:04:18.570Z"
 }
