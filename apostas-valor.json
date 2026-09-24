@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2476.53,
+      "value": 2502.38,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T11:54:28.383Z"
+      "updatedAt": "2026-09-24T11:55:36.704Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 130.15,
+      "value": 125.15,
       "currency": "USD",
-      "updatedAt": "2026-09-24T11:54:28.382Z"
+      "updatedAt": "2026-09-24T11:55:36.703Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -21496,6 +21496,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T11:54:28.382Z"
+    },
+    {
+      "id": "mufh6ni6t1tw8",
+      "kind": "valor",
+      "event": "San Diego – Saint Mary's (CA) (H2(+2.5))",
+      "houseA": "BetOnline",
+      "oddA": 3.37,
+      "stakeA": 25.85,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.9902395740905057,
+      "prob": 33.44213649851632,
+      "winner": null,
+      "date": "2026-09-24T23:00",
+      "total": 25.85,
+      "lucroA": 61.264500000000005,
+      "lucroRed": -25.85,
+      "lucro": 61.264500000000005,
+      "roi": 237,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T11:55:36.703Z"
     }
   ],
   "invertidos": [],
@@ -21662,5 +21686,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:54:28.383Z"
+  "updatedAt": "2026-09-24T11:55:36.704Z"
 }
