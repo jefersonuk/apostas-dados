@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1978.34,
+      "value": 1860.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T18:34:19.904Z"
+      "updatedAt": "2026-09-24T19:19:10.398Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4685,9 +4685,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 180.5,
+      "value": 200.5,
       "currency": "EUR",
-      "updatedAt": "2026-09-24T15:46:35.082Z"
+      "updatedAt": "2026-09-24T19:19:10.398Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -21640,7 +21640,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.002,
       "prob": 50,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-09-24T14:30",
       "total": 117.6,
       "lucroA": 130.53599999999997,
@@ -21648,9 +21648,10 @@
       "lucro": 130.53599999999997,
       "roi": 110.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-09-24T15:46:35.082Z"
+      "updatedAt": "2026-09-24T19:19:10.398Z"
     },
     {
       "id": "mufpiwv0rm5dr",
@@ -21890,5 +21891,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T18:38:22.724Z"
+  "updatedAt": "2026-09-24T19:19:10.398Z"
 }
