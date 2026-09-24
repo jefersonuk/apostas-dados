@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2251.43,
+      "value": 2354.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T11:49:58.910Z"
+      "updatedAt": "2026-09-24T11:50:53.921Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4775,8 +4775,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 90,
-      "updatedAt": "2026-09-24T11:48:03.155Z",
+      "value": 70,
+      "updatedAt": "2026-09-24T11:50:53.921Z",
       "currency": "USD"
     },
     {
@@ -21424,6 +21424,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T11:49:58.909Z"
+    },
+    {
+      "id": "mufh0lb4l08yz",
+      "kind": "valor",
+      "event": "Red Machine U20 – SKA São Petersburgo (2(2:0))",
+      "houseA": "Betrebels",
+      "oddA": 1.57,
+      "stakeA": 103.4,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "",
+      "oddMkt": 1.491119764460063,
+      "prob": 67.06369426751591,
+      "winner": null,
+      "date": "2026-09-24T13:00",
+      "total": 103.4,
+      "lucroA": 58.93800000000001,
+      "lucroRed": -103.4,
+      "lucro": 58.93800000000001,
+      "roi": 57.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T11:50:53.921Z"
     }
   ],
   "invertidos": [],
@@ -21590,5 +21614,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:49:58.910Z"
+  "updatedAt": "2026-09-24T11:50:53.921Z"
 }
