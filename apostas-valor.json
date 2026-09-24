@@ -4782,8 +4782,8 @@
     {
       "id": "mu9kk8ei6ezqm",
       "name": "Betwarrior",
-      "value": 77.5,
-      "updatedAt": "2026-09-21T14:03:04.195Z"
+      "value": 0,
+      "updatedAt": "2026-09-24T13:01:38.877Z"
     },
     {
       "id": "mu9mwan4fy65w",
@@ -21687,5 +21687,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T13:01:29.130Z"
+  "updatedAt": "2026-09-24T13:01:38.877Z"
 }
