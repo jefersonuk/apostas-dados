@@ -4595,8 +4595,8 @@
     {
       "id": "msdvui0wbro2s",
       "name": "Pinnacle",
-      "value": 2011.07,
-      "updatedAt": "2026-09-24T11:46:10.167Z"
+      "value": 1911.07,
+      "updatedAt": "2026-09-24T11:49:58.909Z"
     },
     {
       "id": "msfgf86ojrke9",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2151.43,
+      "value": 2251.43,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T11:48:46.504Z"
+      "updatedAt": "2026-09-24T11:49:58.910Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -21400,6 +21400,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T11:48:46.503Z"
+    },
+    {
+      "id": "mufgzev05qew5",
+      "kind": "valor",
+      "event": "Oaxaca – Atletico La Paz (Acima 4.5 - escanteios 1º o time)",
+      "houseA": "Pinnacle",
+      "oddA": 1.699,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.605902777777778,
+      "prob": 62.27027027027027,
+      "winner": null,
+      "date": "2026-09-24T22:00",
+      "total": 100,
+      "lucroA": 69.9,
+      "lucroRed": -100,
+      "lucro": 69.9,
+      "roi": 69.9,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T11:49:58.909Z"
     }
   ],
   "invertidos": [],
@@ -21566,5 +21590,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:48:46.504Z"
+  "updatedAt": "2026-09-24T11:49:58.910Z"
 }
