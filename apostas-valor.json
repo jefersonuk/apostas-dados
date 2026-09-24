@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1487.85,
+      "value": 1198.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T22:19:17.400Z"
+      "updatedAt": "2026-09-24T22:33:29.416Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4664,8 +4664,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 0.81,
-      "updatedAt": "2026-09-24T15:49:05.629Z",
+      "value": 68.31,
+      "updatedAt": "2026-09-24T22:33:29.414Z",
       "currency": "USD"
     },
     {
@@ -21669,7 +21669,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.04,
       "prob": 91.6,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-24T16:00",
       "total": 289.52,
       "lucroA": 60.799199999999985,
@@ -21677,9 +21677,10 @@
       "lucro": 60.799199999999985,
       "roi": 20.999999999999996,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-24T15:49:05.629Z"
+      "updatedAt": "2026-09-24T22:33:29.415Z"
     },
     {
       "id": "mufr62k0dotr9",
@@ -21895,5 +21896,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T22:19:17.400Z"
+  "updatedAt": "2026-09-24T22:33:29.416Z"
 }
