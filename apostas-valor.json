@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1973.7,
+      "value": 1870.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T01:22:06.562Z"
+      "updatedAt": "2026-09-24T11:28:43.052Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4775,8 +4775,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 30,
-      "updatedAt": "2026-09-23T19:10:22.267Z",
+      "value": 71,
+      "updatedAt": "2026-09-24T11:28:43.052Z",
       "currency": "USD"
     },
     {
@@ -21063,7 +21063,7 @@
       "market": "Total (linha)",
       "oddMkt": 1.840434342504831,
       "prob": 54.335,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-23T20:15",
       "total": 103.4,
       "lucroA": 108.57,
@@ -21071,9 +21071,10 @@
       "lucro": 108.57,
       "roi": 104.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-23T19:10:22.267Z"
+      "updatedAt": "2026-09-24T11:28:43.052Z"
     },
     {
       "id": "muehb6vuy8btb",
@@ -21410,5 +21411,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:27:18.484Z"
+  "updatedAt": "2026-09-24T11:28:43.052Z"
 }
