@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2855.38,
+      "value": 3067.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T16:35:05.715Z"
+      "updatedAt": "2026-09-24T16:45:57.856Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4775,8 +4775,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 70,
-      "updatedAt": "2026-09-24T11:50:53.921Z",
+      "value": 29,
+      "updatedAt": "2026-09-24T16:45:52.724Z",
       "currency": "USD"
     },
     {
@@ -21693,6 +21693,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T16:35:05.712Z"
+    },
+    {
+      "id": "mufrjxsj2xtmk",
+      "kind": "valor",
+      "event": "BOS Red Sox – CLE Guardians (Abaixo 14.5 Tempo Extra - hits)",
+      "houseA": "Betrebels",
+      "oddA": 1.95,
+      "stakeA": 211.97,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 1.742627345844504,
+      "prob": 57.38461538461538,
+      "winner": null,
+      "date": "2026-09-24T19:45",
+      "total": 211.97,
+      "lucroA": 201.3715,
+      "lucroRed": -211.97,
+      "lucro": 201.3715,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T16:45:52.724Z"
     }
   ],
   "invertidos": [],
@@ -21859,5 +21883,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T16:35:05.715Z"
+  "updatedAt": "2026-09-24T16:45:52.727Z"
 }
