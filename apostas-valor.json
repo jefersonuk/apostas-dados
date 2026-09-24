@@ -4517,8 +4517,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 898.94,
-      "updatedAt": "2026-09-24T12:33:13.614Z"
+      "value": 648.94,
+      "updatedAt": "2026-09-24T16:35:05.712Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2605.38,
+      "value": 2855.38,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T16:22:12.113Z"
+      "updatedAt": "2026-09-24T16:35:05.715Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -21669,6 +21669,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T15:49:05.629Z"
+    },
+    {
+      "id": "mufr62k0dotr9",
+      "kind": "valor",
+      "event": "BK Vejen x Bears Acaemy (1 3º quarto)",
+      "houseA": "Betnacional",
+      "oddA": 2,
+      "stakeA": 250,
+      "curA": "BRL",
+      "sport": "Basquete",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.56,
+      "prob": 61.1,
+      "winner": null,
+      "date": "2026-09-24T14:00",
+      "total": 250,
+      "lucroA": 250,
+      "lucroRed": -250,
+      "lucro": 250,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T16:35:05.712Z"
     }
   ],
   "invertidos": [],
@@ -21835,5 +21859,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T16:24:08.729Z"
+  "updatedAt": "2026-09-24T16:35:05.715Z"
 }
