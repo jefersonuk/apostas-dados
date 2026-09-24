@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2748.05,
+      "value": 2773.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T15:30:07.486Z"
+      "updatedAt": "2026-09-24T15:32:41.307Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4720,8 +4720,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 431.8,
-      "updatedAt": "2026-09-24T11:33:09.420Z",
+      "value": 426.8,
+      "updatedAt": "2026-09-24T15:32:41.303Z",
       "currency": "USD"
     },
     {
@@ -21594,6 +21594,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T15:30:07.486Z"
+    },
+    {
+      "id": "mufoxtcny3la1",
+      "kind": "valor",
+      "event": "Costa Rica – Nicaragua (H2(+1.5))",
+      "houseA": "Cloudbet",
+      "oddA": 2.96,
+      "stakeA": 25.85,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.724820143884892,
+      "prob": 36.6996699669967,
+      "winner": null,
+      "date": "2026-09-24T18:00",
+      "total": 25.85,
+      "lucroA": 50.666000000000004,
+      "lucroRed": -25.85,
+      "lucro": 50.666000000000004,
+      "roi": 196,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T15:32:41.304Z"
     }
   ],
   "invertidos": [],
@@ -21760,5 +21784,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T15:30:07.486Z"
+  "updatedAt": "2026-09-24T15:32:41.307Z"
 }
