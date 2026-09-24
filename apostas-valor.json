@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 944.3,
+      "value": 1332.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T11:31:44.985Z"
+      "updatedAt": "2026-09-24T11:43:15.608Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 215.15,
+      "value": 140.15,
       "currency": "USD",
-      "updatedAt": "2026-09-24T11:31:44.984Z"
+      "updatedAt": "2026-09-24T11:43:15.607Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -21256,6 +21256,30 @@
         "resultado": "VOID"
       },
       "updatedAt": "2026-09-24T01:20:15.173Z"
+    },
+    {
+      "id": "mufgqro6dzf33",
+      "kind": "valor",
+      "event": "Northwestern – Southern California (21-2)",
+      "houseA": "BetOnline",
+      "oddA": 1.5,
+      "stakeA": 387.75,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "",
+      "oddMkt": 1.3262599469496021,
+      "prob": 75.4,
+      "winner": null,
+      "date": "2026-09-24T21:00",
+      "total": 387.75,
+      "lucroA": 193.875,
+      "lucroRed": -387.75,
+      "lucro": 193.875,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T11:43:15.607Z"
     }
   ],
   "invertidos": [],
@@ -21422,5 +21446,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:41:31.276Z"
+  "updatedAt": "2026-09-24T11:43:15.608Z"
 }
