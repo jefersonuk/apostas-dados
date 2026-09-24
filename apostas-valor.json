@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1892.93,
+      "value": 2151.43,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T11:48:03.155Z"
+      "updatedAt": "2026-09-24T11:48:46.504Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4807,9 +4807,9 @@
     {
       "id": "muczy0ui6d8aw",
       "name": "Casobet",
-      "value": 55.06,
+      "value": 5.06,
       "currency": "USD",
-      "updatedAt": "2026-09-24T11:38:58.607Z"
+      "updatedAt": "2026-09-24T11:48:46.503Z"
     },
     {
       "id": "mue95xogyqnk4",
@@ -21376,6 +21376,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T11:48:03.155Z"
+    },
+    {
+      "id": "mufgxuzrbox44",
+      "kind": "valor",
+      "event": "Dolphins FC – Kun Khalifa (Acima 2.5)",
+      "houseA": "Casobet",
+      "oddA": 1.69,
+      "stakeA": 258.5,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.5959958447445461,
+      "prob": 62.65680473372782,
+      "winner": null,
+      "date": "2026-09-24T12:00",
+      "total": 258.5,
+      "lucroA": 178.36499999999998,
+      "lucroRed": -258.5,
+      "lucro": 178.36499999999998,
+      "roi": 69,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T11:48:46.503Z"
     }
   ],
   "invertidos": [],
@@ -21542,5 +21566,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:48:03.155Z"
+  "updatedAt": "2026-09-24T11:48:46.504Z"
 }
