@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2424.83,
+      "value": 2476.53,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T11:53:08.256Z"
+      "updatedAt": "2026-09-24T11:54:28.383Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 140.15,
+      "value": 130.15,
       "currency": "USD",
-      "updatedAt": "2026-09-24T11:43:15.607Z"
+      "updatedAt": "2026-09-24T11:54:28.382Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -21472,6 +21472,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T11:53:08.255Z"
+    },
+    {
+      "id": "mufh56se7arqz",
+      "kind": "valor",
+      "event": "Illinois – Minnesota (H2(−1.5))",
+      "houseA": "BetOnline",
+      "oddA": 2.64,
+      "stakeA": 51.7,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.3466666666666667,
+      "prob": 42.61363636363637,
+      "winner": null,
+      "date": "2026-09-24T21:00",
+      "total": 51.7,
+      "lucroA": 84.78800000000001,
+      "lucroRed": -51.7,
+      "lucro": 84.78800000000001,
+      "roi": 164,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T11:54:28.382Z"
     }
   ],
   "invertidos": [],
@@ -21638,5 +21662,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T11:53:08.256Z"
+  "updatedAt": "2026-09-24T11:54:28.383Z"
 }
