@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 2581.3,
+      "value": 2870.82,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-24T15:46:35.084Z"
+      "updatedAt": "2026-09-24T15:49:05.633Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4664,8 +4664,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 56.81,
-      "updatedAt": "2026-09-23T13:33:12.633Z",
+      "value": 0.81,
+      "updatedAt": "2026-09-24T15:49:05.629Z",
       "currency": "USD"
     },
     {
@@ -21643,6 +21643,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-24T15:46:35.082Z"
+    },
+    {
+      "id": "mufpiwv0rm5dr",
+      "kind": "valor",
+      "event": "Pinheiro da Cruz Junior / Schenekenberg vs Leite / Pereira (2)",
+      "houseA": "Kalshi",
+      "oddA": 1.21,
+      "stakeA": 289.52,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.04,
+      "prob": 91.6,
+      "winner": null,
+      "date": "2026-09-24T16:00",
+      "total": 289.52,
+      "lucroA": 60.799199999999985,
+      "lucroRed": -289.52,
+      "lucro": 60.799199999999985,
+      "roi": 20.999999999999996,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-24T15:49:05.629Z"
     }
   ],
   "invertidos": [],
@@ -21809,5 +21833,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-24T15:46:35.084Z"
+  "updatedAt": "2026-09-24T15:49:05.633Z"
 }
