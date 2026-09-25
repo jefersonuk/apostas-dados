@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 911.48,
+      "value": 1067.18,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T16:40:23.632Z"
+      "updatedAt": "2026-09-25T16:41:09.699Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4768,8 +4768,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 48.38,
-      "updatedAt": "2026-09-25T16:40:23.631Z",
+      "value": 18.38,
+      "updatedAt": "2026-09-25T16:41:09.698Z",
       "currency": "USD"
     },
     {
@@ -21940,6 +21940,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T16:40:23.631Z"
+    },
+    {
+      "id": "muh6tq2qkthy9",
+      "kind": "valor",
+      "event": "SF Giants – LA Dodgers (Abaixo 8.5 Tempo Extra - hits 2º o time)",
+      "houseA": "Betrebels",
+      "oddA": 2,
+      "stakeA": 155.70000000000002,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 1.8206645425580337,
+      "prob": 54.925,
+      "winner": null,
+      "date": "2026-09-25T23:15",
+      "total": 155.70000000000002,
+      "lucroA": 155.70000000000002,
+      "lucroRed": -155.70000000000002,
+      "lucro": 155.70000000000002,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T16:41:09.698Z"
     }
   ],
   "invertidos": [],
@@ -22106,5 +22130,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T16:40:23.632Z"
+  "updatedAt": "2026-09-25T16:41:09.699Z"
 }
