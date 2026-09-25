@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1222.88,
+      "value": 1274.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T16:47:28.719Z"
+      "updatedAt": "2026-09-25T16:52:13.852Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 198.22,
+      "value": 188.22,
       "currency": "USD",
-      "updatedAt": "2026-09-25T13:47:57.710Z"
+      "updatedAt": "2026-09-25T16:52:13.850Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -21988,6 +21988,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T16:47:28.718Z"
+    },
+    {
+      "id": "muh77yjev91k6",
+      "kind": "valor",
+      "event": "Colorado – Utah (H2(−1.5))",
+      "houseA": "BetOnline",
+      "oddA": 2.53,
+      "stakeA": 51.900000000000006,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.250889679715302,
+      "prob": 44.426877470355734,
+      "winner": null,
+      "date": "2026-09-25T22:00",
+      "total": 51.900000000000006,
+      "lucroA": 79.407,
+      "lucroRed": -51.900000000000006,
+      "lucro": 79.407,
+      "roi": 152.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T16:52:13.850Z"
     }
   ],
   "invertidos": [],
@@ -22154,5 +22178,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T16:47:28.719Z"
+  "updatedAt": "2026-09-25T16:52:13.852Z"
 }
