@@ -4807,9 +4807,9 @@
     {
       "id": "muczy0ui6d8aw",
       "name": "Casobet",
-      "value": 120.06,
+      "value": 120.86,
       "currency": "USD",
-      "updatedAt": "2026-09-24T18:29:19.309Z"
+      "updatedAt": "2026-09-25T12:20:38.544Z"
     },
     {
       "id": "mue95xogyqnk4",
@@ -21903,5 +21903,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T12:20:06.417Z"
+  "updatedAt": "2026-09-25T12:20:38.544Z"
 }
