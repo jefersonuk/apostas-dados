@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1274.78,
+      "value": 1393.18,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T16:52:13.852Z"
+      "updatedAt": "2026-09-25T17:09:26.378Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4678,9 +4678,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 200.5,
+      "value": 180.5,
       "currency": "EUR",
-      "updatedAt": "2026-09-24T19:19:10.398Z"
+      "updatedAt": "2026-09-25T17:09:26.375Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -22012,6 +22012,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T16:52:13.850Z"
+    },
+    {
+      "id": "muh7u38nchsb1",
+      "kind": "valor",
+      "event": "Baie-Comeau Drakkar – Chicoutimi Sagueneens (H2(−1))",
+      "houseA": "Sportmarket",
+      "oddA": 1.699,
+      "stakeA": 118.4,
+      "curA": "EUR",
+      "sport": "Hóquei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.502,
+      "prob": 66.6,
+      "winner": null,
+      "date": "2026-09-25T20:00",
+      "total": 118.4,
+      "lucroA": 82.76160000000002,
+      "lucroRed": -118.4,
+      "lucro": 82.76160000000002,
+      "roi": 69.9,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T17:09:26.375Z"
     }
   ],
   "invertidos": [],
@@ -22178,5 +22202,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T16:52:13.852Z"
+  "updatedAt": "2026-09-25T17:09:26.378Z"
 }
