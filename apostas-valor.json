@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 308.05,
+      "value": 411.85,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T12:38:17.484Z"
+      "updatedAt": "2026-09-25T12:40:07.818Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4762,8 +4762,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 203.35,
-      "updatedAt": "2026-09-25T12:22:22.682Z",
+      "value": 183.35,
+      "updatedAt": "2026-09-25T12:40:07.817Z",
       "currency": "USD"
     },
     {
@@ -21815,6 +21815,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T12:38:17.484Z"
+    },
+    {
+      "id": "mugy7r7sswabe",
+      "kind": "valor",
+      "event": "Temple Owls – Army Black Knights (Abaixo 10.5 3º período)",
+      "houseA": "Betfury",
+      "oddA": 1.84,
+      "stakeA": 103.80000000000001,
+      "curA": "USD",
+      "sport": "Futebol Americano",
+      "market": "Total de Pontos",
+      "oddMkt": 1.6606498194945847,
+      "prob": 60.217391304347835,
+      "winner": null,
+      "date": "2026-09-25T17:00",
+      "total": 103.80000000000001,
+      "lucroA": 87.19200000000002,
+      "lucroRed": -103.80000000000001,
+      "lucro": 87.19200000000002,
+      "roi": 84.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T12:40:07.817Z"
     }
   ],
   "invertidos": [],
@@ -21981,5 +22005,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T12:38:17.484Z"
+  "updatedAt": "2026-09-25T12:40:07.818Z"
 }
