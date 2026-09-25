@@ -4633,13 +4633,6 @@
       "updatedAt": "2026-09-25T12:21:32.546Z"
     },
     {
-      "id": "msqr1ktlw3015",
-      "name": "Sxbet",
-      "value": 85.06,
-      "currency": "USD",
-      "updatedAt": "2026-09-21T18:22:37.164Z"
-    },
-    {
       "id": "msqr1ktmyxbew",
       "name": "Opinion",
       "value": 121.09,
@@ -5598,6 +5591,10 @@
     {
       "id": "mthcdb8cf914h",
       "at": "2026-09-23T16:37:21.684Z"
+    },
+    {
+      "id": "msqr1ktlw3015",
+      "at": "2026-09-25T15:38:17.273Z"
     }
   ],
   "surebets": [
@@ -22084,5 +22081,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T15:38:07.636Z"
+  "updatedAt": "2026-09-25T15:38:17.274Z"
 }
