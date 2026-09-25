@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 515.65,
+      "value": 707.68,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T12:41:03.928Z"
+      "updatedAt": "2026-09-25T13:47:57.712Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 235.22,
+      "value": 198.22,
       "currency": "USD",
-      "updatedAt": "2026-09-25T12:41:03.928Z"
+      "updatedAt": "2026-09-25T13:47:57.710Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -21863,6 +21863,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T12:41:03.928Z"
+    },
+    {
+      "id": "muh0mzke9aae2",
+      "kind": "valor",
+      "event": "MHC Kaluga – Dizel Penza (H1(0))",
+      "houseA": "BetOnline",
+      "oddA": 2.05,
+      "stakeA": 192.03,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.8489583333333335,
+      "prob": 54.08450704225352,
+      "winner": null,
+      "date": "2026-09-25T13:00",
+      "total": 192.03,
+      "lucroA": 201.63149999999996,
+      "lucroRed": -192.03,
+      "lucro": 201.63149999999996,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T13:47:57.710Z"
     }
   ],
   "invertidos": [],
@@ -22029,5 +22053,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T12:41:03.928Z"
+  "updatedAt": "2026-09-25T13:47:57.712Z"
 }
