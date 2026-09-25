@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 69.5,
+      "value": 173.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T09:55:07.080Z"
+      "updatedAt": "2026-09-25T12:34:27.312Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4775,8 +4775,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 108.38,
-      "updatedAt": "2026-09-25T12:30:23.016Z",
+      "value": 88.38,
+      "updatedAt": "2026-09-25T12:34:27.311Z",
       "currency": "USD"
     },
     {
@@ -21743,6 +21743,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-25T01:45:41.244Z"
+    },
+    {
+      "id": "mugy0ghaate13",
+      "kind": "valor",
+      "event": "Club Deportivo Del Este U20 – Costa Del Este FC (2)",
+      "houseA": "Betrebels",
+      "oddA": 5,
+      "stakeA": 103.80000000000001,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "",
+      "oddMkt": 1.7249190938511327,
+      "prob": 57.97373358348968,
+      "winner": null,
+      "date": "2026-09-25T11:00",
+      "total": 103.80000000000001,
+      "lucroA": 415.20000000000005,
+      "lucroRed": -103.80000000000001,
+      "lucro": 415.20000000000005,
+      "roi": 400,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T12:34:27.311Z"
     }
   ],
   "invertidos": [],
@@ -21909,5 +21933,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T12:34:05.760Z"
+  "updatedAt": "2026-09-25T12:34:27.312Z"
 }
