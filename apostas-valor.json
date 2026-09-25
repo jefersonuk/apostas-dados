@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 419.3,
+      "value": 308.05,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T12:38:02.547Z"
+      "updatedAt": "2026-09-25T12:38:17.484Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4800,9 +4800,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": -111.25,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-09-25T12:38:02.546Z"
+      "updatedAt": "2026-09-25T12:38:17.484Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -21798,7 +21798,7 @@
       "event": "Fuchse Duisburg – Tilburg Trappers (Abaixo 3.5 1º o time)",
       "houseA": "20bet",
       "oddA": 1.81,
-      "stakeA": 186,
+      "stakeA": 74.75,
       "curA": "BRL",
       "sport": "Hóquei",
       "market": "Total (linha)",
@@ -21806,15 +21806,15 @@
       "prob": 62.1195652173913,
       "winner": null,
       "date": "2026-09-25T14:30",
-      "total": 186,
-      "lucroA": 150.66,
-      "lucroRed": -186,
-      "lucro": 150.66,
+      "total": 74.75,
+      "lucroA": 60.54750000000001,
+      "lucroRed": -74.75,
+      "lucro": 60.54750000000001,
       "roi": 81,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-25T12:38:02.546Z"
+      "updatedAt": "2026-09-25T12:38:17.484Z"
     }
   ],
   "invertidos": [],
@@ -21981,5 +21981,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T12:38:02.547Z"
+  "updatedAt": "2026-09-25T12:38:17.484Z"
 }
