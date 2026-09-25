@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 962.6,
+      "value": 806.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T22:27:00.375Z"
+      "updatedAt": "2026-09-25T23:17:23.548Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4713,8 +4713,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 398.68,
-      "updatedAt": "2026-09-25T16:47:28.718Z",
+      "value": 453.99,
+      "updatedAt": "2026-09-25T23:17:23.547Z",
       "currency": "USD"
     },
     {
@@ -21981,7 +21981,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.6043270993766043,
       "prob": 62.331428571428575,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-25T18:15",
       "total": 155.70000000000002,
       "lucroA": 130.78800000000004,
@@ -21989,9 +21989,10 @@
       "lucro": 130.78800000000004,
       "roi": 84.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-25T16:47:28.718Z"
+      "updatedAt": "2026-09-25T23:17:23.547Z"
     },
     {
       "id": "muh77yjev91k6",
@@ -22206,5 +22207,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T22:27:00.375Z"
+  "updatedAt": "2026-09-25T23:17:23.548Z"
 }
