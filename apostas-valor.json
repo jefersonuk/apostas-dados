@@ -4775,8 +4775,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 108.64,
-      "updatedAt": "2026-09-25T01:45:41.244Z",
+      "value": 108.38,
+      "updatedAt": "2026-09-25T12:30:23.016Z",
       "currency": "USD"
     },
     {
@@ -21903,5 +21903,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T12:29:57.873Z"
+  "updatedAt": "2026-09-25T12:30:23.016Z"
 }
