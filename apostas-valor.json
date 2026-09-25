@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1067.18,
+      "value": 1222.88,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T16:41:09.699Z"
+      "updatedAt": "2026-09-25T16:47:28.719Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4713,8 +4713,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 428.68,
-      "updatedAt": "2026-09-25T12:29:49.841Z",
+      "value": 398.68,
+      "updatedAt": "2026-09-25T16:47:28.718Z",
       "currency": "USD"
     },
     {
@@ -21964,6 +21964,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T16:41:09.698Z"
+    },
+    {
+      "id": "muh71uj1ex1fd",
+      "kind": "valor",
+      "event": "ABB – Club Aurora (Abaixo 3)",
+      "houseA": "Cloudbet",
+      "oddA": 1.84,
+      "stakeA": 155.70000000000002,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.6043270993766043,
+      "prob": 62.331428571428575,
+      "winner": null,
+      "date": "2026-09-25T18:15",
+      "total": 155.70000000000002,
+      "lucroA": 130.78800000000004,
+      "lucroRed": -155.70000000000002,
+      "lucro": 130.78800000000004,
+      "roi": 84.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T16:47:28.718Z"
     }
   ],
   "invertidos": [],
@@ -22130,5 +22154,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T16:41:09.699Z"
+  "updatedAt": "2026-09-25T16:47:28.719Z"
 }
