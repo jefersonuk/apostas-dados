@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 707.68,
+      "value": 807.68,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T13:47:57.712Z"
+      "updatedAt": "2026-09-25T15:37:44.108Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,6 +4817,13 @@
       "value": 0.02,
       "currency": "USD",
       "updatedAt": "2026-09-24T13:51:11.323Z"
+    },
+    {
+      "id": "muh4k5nvhsp0z",
+      "name": "SX Bet",
+      "value": -100,
+      "currency": "BRL",
+      "updatedAt": "2026-09-25T15:37:44.107Z"
     }
   ],
   "aportes": [
@@ -21887,6 +21894,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T13:47:57.710Z"
+    },
+    {
+      "id": "muh4k5nuvkwbr",
+      "kind": "valor",
+      "event": "Brown – Harvard (Acima 47.5 Tempo Extra)",
+      "houseA": "SX Bet",
+      "oddA": 2.48,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol Americano",
+      "market": "Total de Pontos",
+      "oddMkt": 2.1830985915492955,
+      "prob": 45.80645161290323,
+      "winner": null,
+      "date": "2026-09-25T20:00",
+      "total": 100,
+      "lucroA": 148,
+      "lucroRed": -100,
+      "lucro": 148,
+      "roi": 148,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T15:37:44.107Z"
     }
   ],
   "invertidos": [],
@@ -22053,5 +22084,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T15:36:15.829Z"
+  "updatedAt": "2026-09-25T15:37:44.108Z"
 }
