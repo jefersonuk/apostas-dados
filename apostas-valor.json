@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 703.88,
+      "value": 911.48,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T16:38:49.942Z"
+      "updatedAt": "2026-09-25T16:40:23.632Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4768,8 +4768,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 88.38,
-      "updatedAt": "2026-09-25T12:34:27.311Z",
+      "value": 48.38,
+      "updatedAt": "2026-09-25T16:40:23.631Z",
       "currency": "USD"
     },
     {
@@ -21916,6 +21916,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T15:37:44.107Z"
+    },
+    {
+      "id": "muh6sqj20bn5s",
+      "kind": "valor",
+      "event": "SD Padres – ARI Diamondbacks (Abaixo 8.5 Tempo Extra - hits 1º o time)",
+      "houseA": "Betrebels",
+      "oddA": 1.76,
+      "stakeA": 207.60000000000002,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 1.566579634464752,
+      "prob": 63.83333333333333,
+      "winner": null,
+      "date": "2026-09-25T22:40",
+      "total": 207.60000000000002,
+      "lucroA": 157.776,
+      "lucroRed": -207.60000000000002,
+      "lucro": 157.776,
+      "roi": 76,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T16:40:23.631Z"
     }
   ],
   "invertidos": [],
@@ -22082,5 +22106,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T16:38:49.942Z"
+  "updatedAt": "2026-09-25T16:40:23.632Z"
 }
