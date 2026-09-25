@@ -4649,10 +4649,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 411.85,
+      "value": 515.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-25T12:40:07.818Z"
+      "updatedAt": "2026-09-25T12:41:03.928Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4749,9 +4749,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 255.22,
+      "value": 235.22,
       "currency": "USD",
-      "updatedAt": "2026-09-25T12:29:57.873Z"
+      "updatedAt": "2026-09-25T12:41:03.928Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -21839,6 +21839,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-25T12:40:07.817Z"
+    },
+    {
+      "id": "mugy8yig0h18l",
+      "kind": "valor",
+      "event": "David Mundell – Jack Cullen (1 / DNB)",
+      "houseA": "BetOnline",
+      "oddA": 2.05,
+      "stakeA": 103.80000000000001,
+      "curA": "USD",
+      "sport": "Artes marciais",
+      "market": "Draw No Bet",
+      "oddMkt": 1.8683922712358731,
+      "prob": 53.5219512195122,
+      "winner": null,
+      "date": "2026-09-26T18:35",
+      "total": 103.80000000000001,
+      "lucroA": 108.99,
+      "lucroRed": -103.80000000000001,
+      "lucro": 108.99,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-25T12:41:03.928Z"
     }
   ],
   "invertidos": [],
@@ -22005,5 +22029,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-25T12:40:07.818Z"
+  "updatedAt": "2026-09-25T12:41:03.928Z"
 }
