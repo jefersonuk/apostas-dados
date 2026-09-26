@@ -4817,6 +4817,13 @@
       "value": 65.06,
       "currency": "USD",
       "updatedAt": "2026-09-25T15:38:07.636Z"
+    },
+    {
+      "id": "muipjzfjzklo4",
+      "name": "CasinozerApp",
+      "value": 170,
+      "currency": "BRL",
+      "updatedAt": "2026-09-26T18:13:14.143Z"
     }
   ],
   "aportes": [
@@ -22338,5 +22345,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-26T18:08:02.548Z"
+  "updatedAt": "2026-09-26T18:13:14.143Z"
 }
