@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 639.5,
+      "value": 691.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-26T18:06:24.426Z"
+      "updatedAt": "2026-09-26T18:08:02.548Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4768,8 +4768,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 38.5,
-      "updatedAt": "2026-09-26T18:05:36.631Z",
+      "value": 28.5,
+      "updatedAt": "2026-09-26T18:08:02.547Z",
       "currency": "USD"
     },
     {
@@ -22148,6 +22148,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-26T18:06:24.425Z"
+    },
+    {
+      "id": "muipdb03z27h3",
+      "kind": "valor",
+      "event": "Wellington – Waikato (Abaixo 55.5)",
+      "houseA": "Betrebels",
+      "oddA": 2.55,
+      "stakeA": 51.8,
+      "curA": "USD",
+      "sport": "Rugby",
+      "market": "Total (linha)",
+      "oddMkt": 2.3306827529476277,
+      "prob": 42.905882352941184,
+      "winner": null,
+      "date": "2026-09-26T21:05",
+      "total": 51.8,
+      "lucroA": 80.28999999999999,
+      "lucroRed": -51.8,
+      "lucro": 80.28999999999999,
+      "roi": 154.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-26T18:08:02.547Z"
     }
   ],
   "invertidos": [],
@@ -22314,5 +22338,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-26T18:06:24.426Z"
+  "updatedAt": "2026-09-26T18:08:02.548Z"
 }
