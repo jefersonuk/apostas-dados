@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 380.5,
+      "value": 639.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-26T18:05:36.632Z"
+      "updatedAt": "2026-09-26T18:06:24.426Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4742,9 +4742,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 250.57,
+      "value": 200.57,
       "currency": "USD",
-      "updatedAt": "2026-09-26T14:46:11.388Z"
+      "updatedAt": "2026-09-26T18:06:24.425Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -22124,6 +22124,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-26T18:05:36.631Z"
+    },
+    {
+      "id": "muipb7ah4ukv6",
+      "kind": "valor",
+      "event": "Iowa – Rutgers (H1(−1.5))",
+      "houseA": "BetOnline",
+      "oddA": 1.71,
+      "stakeA": 259,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.5391539153915392,
+      "prob": 64.97076023391813,
+      "winner": null,
+      "date": "2026-09-26T20:00",
+      "total": 259,
+      "lucroA": 183.89,
+      "lucroRed": -259,
+      "lucro": 183.89,
+      "roi": 71,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-26T18:06:24.425Z"
     }
   ],
   "invertidos": [],
@@ -22290,5 +22314,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-26T18:05:36.632Z"
+  "updatedAt": "2026-09-26T18:06:24.426Z"
 }
