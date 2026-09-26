@@ -4517,8 +4517,8 @@
     {
       "id": "mrgvj5lygydy5",
       "name": "Betnacional",
-      "value": 648.94,
-      "updatedAt": "2026-09-24T16:35:05.712Z"
+      "value": 0,
+      "updatedAt": "2026-09-26T17:46:17.691Z"
     },
     {
       "id": "mrgvt68edox8t",
@@ -22212,5 +22212,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-26T17:46:01.095Z"
+  "updatedAt": "2026-09-26T17:46:17.691Z"
 }
