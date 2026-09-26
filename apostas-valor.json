@@ -4642,10 +4642,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 173.3,
+      "value": 225.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-26T14:46:11.390Z"
+      "updatedAt": "2026-09-26T18:04:41.199Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4768,8 +4768,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 78.5,
-      "updatedAt": "2026-09-26T14:44:03.445Z",
+      "value": 68.5,
+      "updatedAt": "2026-09-26T18:04:41.197Z",
       "currency": "USD"
     },
     {
@@ -22052,6 +22052,30 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-26T03:33:04.473Z"
+    },
+    {
+      "id": "muip8zn0xeak1",
+      "kind": "valor",
+      "event": "MIN Twins – TEX Rangers (Abaixo 14.5 Tempo Extra - hits)",
+      "houseA": "Betrebels",
+      "oddA": 2.6,
+      "stakeA": 51.8,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 2.0933977455716586,
+      "prob": 47.76923076923077,
+      "winner": null,
+      "date": "2026-09-26T17:10",
+      "total": 51.8,
+      "lucroA": 82.88,
+      "lucroRed": -51.8,
+      "lucro": 82.88,
+      "roi": 160,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-26T18:04:41.197Z"
     }
   ],
   "invertidos": [],
@@ -22218,5 +22242,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-26T18:00:40.172Z"
+  "updatedAt": "2026-09-26T18:04:41.199Z"
 }
