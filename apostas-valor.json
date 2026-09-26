@@ -4574,12 +4574,6 @@
       "updatedAt": "2026-09-08T16:21:27.762Z"
     },
     {
-      "id": "msddfxwzvj74u",
-      "name": "Casinozer",
-      "value": 170.85,
-      "updatedAt": "2026-09-23T16:50:16.538Z"
-    },
-    {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
       "value": 1524.31,
@@ -5608,6 +5602,10 @@
     {
       "id": "msqr1ktlw3015",
       "at": "2026-09-25T15:38:17.273Z"
+    },
+    {
+      "id": "msddfxwzvj74u",
+      "at": "2026-09-26T18:13:19.568Z"
     }
   ],
   "surebets": [
@@ -22345,5 +22343,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-26T18:13:14.143Z"
+  "updatedAt": "2026-09-26T18:13:19.569Z"
 }
