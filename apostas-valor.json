@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 491.2,
+      "value": 594.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-27T14:25:59.814Z"
+      "updatedAt": "2026-09-27T14:27:15.661Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4729,9 +4729,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 300.9,
+      "value": 280.9,
       "currency": "USD",
-      "updatedAt": "2026-09-27T14:20:21.760Z"
+      "updatedAt": "2026-09-27T14:27:15.660Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -22534,6 +22534,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-27T14:25:59.813Z"
+    },
+    {
+      "id": "mujwx8b0r0qcc",
+      "kind": "valor",
+      "event": "Pittsburgh – Stanford (H2(+2.5))",
+      "houseA": "BetOnline",
+      "oddA": 2.32,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.0333041191936894,
+      "prob": 49.18103448275863,
+      "winner": null,
+      "date": "2026-09-27T21:30",
+      "total": 103.6,
+      "lucroA": 136.75199999999998,
+      "lucroRed": -103.6,
+      "lucro": 136.75199999999998,
+      "roi": 131.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-27T14:27:15.660Z"
     }
   ],
   "invertidos": [],
@@ -22700,5 +22724,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-27T14:25:59.814Z"
+  "updatedAt": "2026-09-27T14:27:15.661Z"
 }
