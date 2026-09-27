@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 853.8,
+      "value": 939.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-27T14:28:41.146Z"
+      "updatedAt": "2026-09-27T14:30:19.382Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,8 +4755,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 33,
-      "updatedAt": "2026-09-27T14:25:59.813Z",
+      "value": 16.52,
+      "updatedAt": "2026-09-27T14:30:19.381Z",
       "currency": "USD"
     },
     {
@@ -22582,6 +22582,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-27T14:28:41.145Z"
+    },
+    {
+      "id": "mujx162dyb17f",
+      "kind": "valor",
+      "event": "Columbus Crew – Inter Miami CF (Abaixo 4.5 - impedimentos)",
+      "houseA": "Betrebels",
+      "oddA": 1.58,
+      "stakeA": 85.3664,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.4494083111641134,
+      "prob": 68.99367088607595,
+      "winner": null,
+      "date": "2026-09-27T20:00",
+      "total": 85.3664,
+      "lucroA": 49.51251200000001,
+      "lucroRed": -85.3664,
+      "lucro": 49.51251200000001,
+      "roi": 58.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-27T14:30:19.381Z"
     }
   ],
   "invertidos": [],
@@ -22748,5 +22772,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-27T14:28:41.146Z"
+  "updatedAt": "2026-09-27T14:30:19.382Z"
 }
