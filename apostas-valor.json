@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 680.17,
+      "value": 655.17,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-27T21:35:17.357Z"
+      "updatedAt": "2026-09-27T23:28:28.559Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4780,9 +4780,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": 102.51,
+      "value": 127.51,
       "currency": "BRL",
-      "updatedAt": "2026-09-27T12:17:10.254Z"
+      "updatedAt": "2026-09-27T23:28:28.559Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -22276,7 +22276,7 @@
       "market": "",
       "oddMkt": 2.4896265560165975,
       "prob": 40.166666666666664,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-09-27T11:30",
       "total": 25,
       "lucroA": 49.25000000000001,
@@ -22284,9 +22284,10 @@
       "lucro": 49.25000000000001,
       "roi": 197.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-09-26T18:17:04.802Z"
+      "updatedAt": "2026-09-27T23:28:28.559Z"
     },
     {
       "id": "muippv0xry92t",
@@ -22773,5 +22774,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-27T21:35:17.359Z"
+  "updatedAt": "2026-09-27T23:28:28.559Z"
 }
