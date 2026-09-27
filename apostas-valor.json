@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 390.77,
+      "value": 428.08,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-27T23:42:47.499Z"
+      "updatedAt": "2026-09-27T23:44:32.247Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,8 +4755,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 16.52,
-      "updatedAt": "2026-09-27T14:30:19.381Z",
+      "value": 9.33,
+      "updatedAt": "2026-09-27T23:44:32.246Z",
       "currency": "USD"
     },
     {
@@ -22634,6 +22634,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-27T23:42:47.498Z"
+    },
+    {
+      "id": "mukgtw51q3b3q",
+      "kind": "valor",
+      "event": "Romania – Bosnia and Herzegovina (2 - faltas)",
+      "houseA": "Betrebels",
+      "oddA": 2.17,
+      "stakeA": 37.316100000000006,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "",
+      "oddMkt": 1.6992952231793266,
+      "prob": 58.8479262672811,
+      "winner": null,
+      "date": "2026-09-28T15:45",
+      "total": 37.316100000000006,
+      "lucroA": 43.659837,
+      "lucroRed": -37.316100000000006,
+      "lucro": 43.659837,
+      "roi": 117,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-27T23:44:32.246Z"
     }
   ],
   "invertidos": [],
@@ -22800,5 +22824,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-27T23:42:47.499Z"
+  "updatedAt": "2026-09-27T23:44:32.247Z"
 }
