@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 309.9,
+      "value": 491.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-27T14:24:34.544Z"
+      "updatedAt": "2026-09-27T14:25:59.814Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,8 +4755,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 68,
-      "updatedAt": "2026-09-27T14:24:34.544Z",
+      "value": 33,
+      "updatedAt": "2026-09-27T14:25:59.813Z",
       "currency": "USD"
     },
     {
@@ -22510,6 +22510,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-27T14:24:34.544Z"
+    },
+    {
+      "id": "mujwvls5gbq2g",
+      "kind": "valor",
+      "event": "KC Royals – CLE Guardians (Abaixo 16.5 Tempo Extra - hits)",
+      "houseA": "Betrebels",
+      "oddA": 2.05,
+      "stakeA": 181.29999999999998,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Total (linha)",
+      "oddMkt": 1.781059947871416,
+      "prob": 56.14634146341464,
+      "winner": null,
+      "date": "2026-09-27T16:10",
+      "total": 181.29999999999998,
+      "lucroA": 190.36499999999995,
+      "lucroRed": -181.29999999999998,
+      "lucro": 190.36499999999995,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-27T14:25:59.813Z"
     }
   ],
   "invertidos": [],
@@ -22676,5 +22700,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-27T14:24:34.544Z"
+  "updatedAt": "2026-09-27T14:25:59.814Z"
 }
