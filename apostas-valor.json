@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 428.08,
+      "value": 607.71,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-27T23:44:32.247Z"
+      "updatedAt": "2026-09-27T23:46:06.640Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4651,8 +4651,8 @@
     {
       "id": "mst27o0q2ewv2",
       "name": "Kalshi",
-      "value": 34.61,
-      "updatedAt": "2026-09-24T22:38:59.937Z",
+      "value": 0,
+      "updatedAt": "2026-09-27T23:46:06.639Z",
       "currency": "USD"
     },
     {
@@ -22658,6 +22658,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-27T23:44:32.246Z"
+    },
+    {
+      "id": "mukgvwz3sfkfp",
+      "kind": "valor",
+      "event": "India – Afghanistan (2 - Não)",
+      "houseA": "Kalshi",
+      "oddA": 1.38,
+      "stakeA": 179.6259,
+      "curA": "USD",
+      "sport": "Cricket",
+      "market": "",
+      "oddMkt": 1.2533333333333332,
+      "prob": 79.7872340425532,
+      "winner": null,
+      "date": "2026-09-28T01:30",
+      "total": 179.6259,
+      "lucroA": 68.25784199999998,
+      "lucroRed": -179.6259,
+      "lucro": 68.25784199999998,
+      "roi": 37.999999999999986,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-27T23:46:06.639Z"
     }
   ],
   "invertidos": [],
@@ -22824,5 +22848,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-27T23:44:32.247Z"
+  "updatedAt": "2026-09-27T23:46:06.640Z"
 }
