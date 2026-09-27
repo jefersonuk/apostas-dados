@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 240.77,
+      "value": 390.77,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-27T23:30:31.095Z"
+      "updatedAt": "2026-09-27T23:42:47.499Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4780,9 +4780,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": 127.51,
+      "value": -22.49,
       "currency": "BRL",
-      "updatedAt": "2026-09-27T23:28:28.559Z"
+      "updatedAt": "2026-09-27T23:42:47.498Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -22610,6 +22610,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-27T14:30:19.381Z"
+    },
+    {
+      "id": "mukgrnbeyumt4",
+      "kind": "valor",
+      "event": "T1 Esports Academy – Cupid Esports (Abaixo 30 2º mapa - minutos)",
+      "houseA": "20bet",
+      "oddA": 1.8,
+      "stakeA": 150,
+      "curA": "BRL",
+      "sport": "E-sports",
+      "market": "Total (linha)",
+      "oddMkt": 1.631016042780749,
+      "prob": 61.311475409836056,
+      "winner": null,
+      "date": "2026-09-28T03:00",
+      "total": 150,
+      "lucroA": 120,
+      "lucroRed": -150,
+      "lucro": 120,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-27T23:42:47.498Z"
     }
   ],
   "invertidos": [],
@@ -22776,5 +22800,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-27T23:31:17.327Z"
+  "updatedAt": "2026-09-27T23:42:47.499Z"
 }
