@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 398.3,
+      "value": 476.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T16:26:02.660Z"
+      "updatedAt": "2026-09-28T16:39:23.602Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4693,9 +4693,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 247.38,
+      "value": 232.38,
       "currency": "USD",
-      "updatedAt": "2026-09-28T15:14:25.771Z"
+      "updatedAt": "2026-09-28T16:39:23.590Z"
     },
     {
       "id": "mt8tdp80v21ek",
@@ -22758,6 +22758,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-28T16:26:02.658Z"
+    },
+    {
+      "id": "mulh3079whn3z",
+      "kind": "valor",
+      "event": "BK 04 AC LB SNV Spisski Rytieri – BC Komarno (H1 +5.5)",
+      "houseA": "Shuffle",
+      "oddA": 1.76,
+      "stakeA": 78.3,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-30T13:00",
+      "total": 78.3,
+      "lucroA": 59.507999999999996,
+      "lucroRed": -78.3,
+      "lucro": 59.507999999999996,
+      "roi": 76,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T16:39:23.590Z"
     }
   ],
   "invertidos": [],
@@ -22924,5 +22948,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T16:30:58.052Z"
+  "updatedAt": "2026-09-28T16:39:23.602Z"
 }
