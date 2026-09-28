@@ -4838,9 +4838,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 117.72,
+      "value": 67,
       "currency": "USD",
-      "updatedAt": "2026-09-27T21:35:17.356Z"
+      "updatedAt": "2026-09-28T22:30:22.155Z"
     }
   ],
   "aportes": [
@@ -23124,5 +23124,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T22:26:51.635Z"
+  "updatedAt": "2026-09-28T22:30:22.156Z"
 }
