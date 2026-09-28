@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 89.12,
+      "value": 297.92,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T12:40:07.096Z"
+      "updatedAt": "2026-09-28T15:14:25.779Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4693,9 +4693,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 287.38,
+      "value": 247.38,
       "currency": "USD",
-      "updatedAt": "2026-09-25T12:29:37.961Z"
+      "updatedAt": "2026-09-28T15:14:25.771Z"
     },
     {
       "id": "mt8tdp80v21ek",
@@ -22686,6 +22686,30 @@
         "resultado": "VOID"
       },
       "updatedAt": "2026-09-28T12:37:28.976Z"
+    },
+    {
+      "id": "mule1qp7t9z0o",
+      "kind": "valor",
+      "event": "Raelingen FK – Lyn 1896 FK II (H1 -2)",
+      "houseA": "Shuffle",
+      "oddA": 1.7,
+      "stakeA": 208.79999999999998,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.4,
+      "prob": 68,
+      "winner": null,
+      "date": "2026-09-28T13:00",
+      "total": 208.79999999999998,
+      "lucroA": 146.15999999999997,
+      "lucroRed": -208.79999999999998,
+      "lucro": 146.15999999999997,
+      "roi": 70,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T15:14:25.771Z"
     }
   ],
   "invertidos": [],
@@ -22852,5 +22876,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T13:46:53.070Z"
+  "updatedAt": "2026-09-28T15:14:25.779Z"
 }
