@@ -4756,7 +4756,7 @@
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
       "value": 0.1,
-      "updatedAt": "2026-09-28T15:19:23.181Z",
+      "updatedAt": "2026-09-28T16:30:58.052Z",
       "currency": "USD"
     },
     {
@@ -22502,7 +22502,7 @@
       "oddMkt": 2.901023890784983,
       "prob": 34.470588235294116,
       "winner": null,
-      "date": "2026-09-28T10:30",
+      "date": "2026-09-29T04:00",
       "total": 51.8,
       "lucroA": 124.32,
       "lucroRed": -51.8,
@@ -22511,7 +22511,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-27T14:24:34.544Z"
+      "updatedAt": "2026-09-28T16:30:58.052Z"
     },
     {
       "id": "mujwvls5gbq2g",
@@ -22924,5 +22924,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T16:26:02.660Z"
+  "updatedAt": "2026-09-28T16:30:58.052Z"
 }
