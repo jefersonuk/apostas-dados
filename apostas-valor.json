@@ -4766,7 +4766,7 @@
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
       "value": 216.33,
-      "updatedAt": "2026-09-28T20:56:40.659Z",
+      "updatedAt": "2026-09-28T20:57:06.325Z",
       "currency": "USD"
     },
     {
@@ -22764,7 +22764,7 @@
     {
       "id": "mulglu761g16w",
       "kind": "valor",
-      "event": "Коринтианс – Пато (Acima 5.5)",
+      "event": "Corinthians x Pato futsal(Acima 5.5)",
       "houseA": "Betfury",
       "oddA": 3.15,
       "stakeA": 52.199999999999996,
@@ -22783,7 +22783,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-28T16:26:02.658Z"
+      "updatedAt": "2026-09-28T20:57:06.325Z"
     },
     {
       "id": "mulh3079whn3z",
@@ -23124,5 +23124,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T20:56:40.659Z"
+  "updatedAt": "2026-09-28T20:57:06.325Z"
 }
