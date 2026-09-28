@@ -546,6 +546,9 @@
   .bal-edit-box .bal-edit{width:92px;}
   .bal-cur.eur{color:#C4B5FD;background:#1A1230;border-color:#2E2350;}
   .bal-zero-title{cursor:pointer;}
+  .lim-tag{display:inline-block;font-size:8.5px;font-weight:800;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle;background:#2A0E12;border:1px solid #5C2530;color:#FCA5A5;letter-spacing:.03em;}
+  .bal-row.lim .bal-name,.bal-row.lim .bal-val{opacity:.6;}
+  .lim-btn{font-size:13px;} .lim-btn.on{color:var(--red);}
 
   /* lote: pré-visualização */
   .lote-tab{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:11px;margin:4px 0 10px;}
@@ -1411,7 +1414,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20260928-1512';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20260928-1552';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1454,6 +1457,7 @@
     polEFatores:{f210:1, f250:0.5, f300:0.25, fAcima:0},
     polEVeto:'',                                   // vazio: o veto e opcional, nao vem com ninguem dentro
     // modelo F (28/09/2026): stake fixa, sem escada — substitui escada e política E
+    casasLimitadas:[],
     modelo:{oddMin:1.20, oddMax:2.00, svMin:5, svMax:15, idealMin:8, idealMax:12,
             pct:1, stake:300, stakeMes:'2026-09', inicio:'2026-09-28', meta:300}
   };
@@ -2211,11 +2215,13 @@
       } else {
         valHtml=`<span class="bal-val" data-baledit="${b.id}" title="Clique para ajustar">${fmtBal(b)}${cur!=='BRL'?`<span class="bal-conv">≈ ${fmt(emBRL)}</span>`:''}</span>`;
       }
-      return `<div class="bal-row">
-        <span class="bal-dot" style="background:${auto?'var(--muted-2)':color}"></span>
-        <span class="bal-name">${esc(b.name)}${auto?'<span class="bal-auto">AUTO</span>':badgesCasa(b.name)}${curTag(cur)}${auto?'':`<span class="bal-pct">${pct.toFixed(1)}%</span>`}
+      const lim=!auto&&casaLimitada(b.name);
+      return `<div class="bal-row${lim?' lim':''}">
+        <span class="bal-dot" style="background:${auto?'var(--muted-2)':lim?'var(--red)':color}"></span>
+        <span class="bal-name">${esc(b.name)}${auto?'<span class="bal-auto">AUTO</span>':badgesCasa(b.name)}${lim?'<span class="lim-tag">LIMITADA</span>':''}${curTag(cur)}${auto?'':`<span class="bal-pct">${pct.toFixed(1)}%</span>`}
           ${(jogo>0&&!auto)?`<span class="bal-jogo">⏳ ${fmtCur(jogo/curRate(cur),cur)} em jogo</span>`:''}${auto?`<span class="bal-jogo">${autoTxt}</span>`:''}</span>
         ${valHtml}
+        ${auto||isBank(b.name)?'':`<button class="bal-del lim-btn${lim?' on':''}" data-ballim="${esc(b.name)}" title="${lim?'Limitada — clique para reativar':'Marcar como limitada'}">⊘</button>`}
         ${auto?'<span class="bal-del" style="visibility:hidden;">×</span>':`<button class="bal-del" data-baldel="${b.id}" title="Remover">×</button>`}
       </div>`;
     }
@@ -2264,6 +2270,7 @@
       box.addEventListener('focusout',e=>{ if(!box.contains(e.relatedTarget)) setTimeout(()=>{ if(!box.contains(document.activeElement)) salvar(); },0); });
       sel.addEventListener('change',()=>inp.focus());
     });
+    cont.querySelectorAll('[data-ballim]').forEach(btn=>btn.addEventListener('click',()=>alternarLimitada(btn.dataset.ballim)));
     cont.querySelectorAll('[data-baldel]').forEach(btn=>btn.addEventListener('click',()=>{
       const b=state.balances.find(x=>x.id===btn.dataset.baldel);
       if(!b) return;
@@ -2688,6 +2695,18 @@
   /* ---------- integração surebets -> saldo por casa ---------- */
   // Encontra (ou cria) a casa no saldo, casando por nome sem diferenciar maiúsculas
   // "Casa A/B/C" é só o rótulo de perna sem nome: nunca vira linha de saldo
+  /* Casas que já te limitaram (lista sincronizada em state.cfg.casasLimitadas).
+     A comparação ignora maiúsculas, espaços e pontos, e pega variações do mesmo
+     nome ("Casinozer" marca também "CasinozerApp"). */
+  const chaveCasa=n=>String(n||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  function casasLimitadas(){ return (state.cfg.casasLimitadas||[]).map(chaveCasa).filter(Boolean); }
+  function casaLimitada(nome){ const k=chaveCasa(nome); return !!k && casasLimitadas().some(l=>k===l||k.startsWith(l)); }
+  function alternarLimitada(nome){
+    const k=chaveCasa(nome), lista=casasLimitadas();
+    state.cfg.casasLimitadas = casaLimitada(nome) ? lista.filter(l=>!(k===l||k.startsWith(l))) : lista.concat([k]);
+    saveState(); renderAll(); updateValorCalc();
+    toast(nome+(casaLimitada(nome)?' marcada como limitada':' voltou a ativa'));
+  }
   function nomeCasaValido(nome){ const n=String(nome||'').trim(); return !!n && !/^casa [abc]$/i.test(n); }
   function acharCasaExistente(nome){
     if(!nomeCasaValido(nome)) return null;
@@ -4167,6 +4186,7 @@
     const b=acharCasaExistente(nome), meta=getHouseMeta(nome);
     const partes=[];
     if(meta&&meta.tier==='X') partes.push('<span class="bad">⛔ postura gambling — '+esc(meta.why||'não depositar')+'</span>');
+    if(casaLimitada(nome)) partes.push('<span class="bad">⊘ casa marcada como limitada</span>');
     if(!b){
       const sug=casaParecida(nome);
       partes.push('<span class="warn">casa nova — será criada no saldo ao registrar</span>'+
@@ -4593,7 +4613,7 @@
       b.filter(r=>r.odd>1).forEach(r=>{
         const nome=nomeCasaPagina(r.casaRaw), k=nome.toLowerCase();
         const conta=acharCasaExistente(nome);
-        const minha=!!(conta&&!conta.auto);
+        const minha=!!(conta&&!conta.auto)&&!casaLimitada(nome);   // limitada não conta como opção sua
         const x=porCasa.get(k);
         if(!x||r.odd>x.odd) porCasa.set(k,{nome, odd:r.odd, minha, cur:conta?(conta.currency||'BRL'):'BRL', row:r});
       });
@@ -6063,9 +6083,15 @@
   if(!state.usdRateSrc && Math.abs((state.usdRate||0)-5)<0.001){
     state.usdRate=5.19; state.usdRateSrc='inicial'; state.usdRateAt=new Date().toISOString();
   }
+  // limitações informadas em 28/09/2026 — roda uma vez só, depois a lista é editada pelo botão ⊘
+  if(!state.cfg.limitadasMigr2809){
+    const base=['jackbit','casinozer','duelbits','donbet','zenit','jetcasino'];
+    state.cfg.casasLimitadas=[...new Set(casasLimitadas().concat(base))];
+    state.cfg.limitadasMigr2809=true;
+  }
   const migradas=migrarValueBets()+migrarValorEmSurebets();
   const vetoLimpo=migrarVetoPinnacle();
-  if(migradas>0||vetoLimpo){ saveState(); }
+  if(migradas>0||vetoLimpo||!state.cfg.limitadasSalvo){ state.cfg.limitadasSalvo=true; saveState(); }
   fillCfg();
   // atualiza sozinho se a cotação estiver com mais de 6 horas
   (function(){
