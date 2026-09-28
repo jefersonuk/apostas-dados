@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 603.46,
+      "value": 707.81,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T20:56:40.659Z"
+      "updatedAt": "2026-09-28T22:50:09.444Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 20,
+      "value": 0.01,
       "currency": "USD",
-      "updatedAt": "2026-09-28T22:47:46.970Z"
+      "updatedAt": "2026-09-28T22:50:09.444Z"
     }
   ],
   "aportes": [
@@ -22965,6 +22965,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-28T20:44:05.547Z"
+    },
+    {
+      "id": "mulubt7o1xzls",
+      "kind": "valor",
+      "event": "Michael Zheng – Zeng Yaojie (H1(−1.5))",
+      "houseA": "Frumzi",
+      "oddA": 1.23,
+      "stakeA": 104.34779999999999,
+      "curA": "USD",
+      "sport": "Tênis",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.1701337295690937,
+      "prob": 85.46031746031746,
+      "winner": null,
+      "date": "2026-09-29T02:30",
+      "modelo": "F",
+      "total": 104.34779999999999,
+      "lucroA": 23.999993999999997,
+      "lucroRed": -104.34779999999999,
+      "lucro": 23.999993999999997,
+      "roi": 23,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T22:50:09.444Z"
     }
   ],
   "invertidos": [],
@@ -23131,5 +23156,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T22:47:46.972Z"
+  "updatedAt": "2026-09-28T22:50:09.444Z"
 }
