@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 277.21,
+      "value": 257.21,
       "currency": "USD",
-      "updatedAt": "2026-09-28T20:41:19.314Z"
+      "updatedAt": "2026-09-28T20:44:05.547Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 666.88,
+      "value": 771.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T20:42:32.886Z"
+      "updatedAt": "2026-09-28T20:44:05.548Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -22931,6 +22931,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-28T20:42:32.885Z"
+    },
+    {
+      "id": "mulptovfr98qg",
+      "kind": "valor",
+      "event": "Alessandro Pajola (Acima 5.5 Tempo Extra)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.91,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.771019677996422,
+      "prob": 56.46464646464647,
+      "winner": null,
+      "date": "2026-09-29T15:45",
+      "modelo": "fora",
+      "total": 104.39999999999999,
+      "lucroA": 95.00399999999999,
+      "lucroRed": -104.39999999999999,
+      "lucro": 95.00399999999999,
+      "roi": 90.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T20:44:05.547Z"
     }
   ],
   "invertidos": [],
@@ -23097,5 +23122,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T20:42:32.886Z"
+  "updatedAt": "2026-09-28T20:44:05.548Z"
 }
