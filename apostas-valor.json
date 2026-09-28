@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 297.92,
+      "value": 346.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T15:14:25.779Z"
+      "updatedAt": "2026-09-28T15:19:23.182Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4755,8 +4755,8 @@
     {
       "id": "mu9kbil8elos7",
       "name": "Betrebels",
-      "value": 9.33,
-      "updatedAt": "2026-09-27T23:44:32.246Z",
+      "value": 0.1,
+      "updatedAt": "2026-09-28T15:19:23.181Z",
       "currency": "USD"
     },
     {
@@ -22710,6 +22710,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-28T15:14:25.771Z"
+    },
+    {
+      "id": "mule846kmsz8c",
+      "kind": "valor",
+      "event": "Mikhaylov Academy U20 – Red Machine U20 (1(0:3))",
+      "houseA": "Betrebels",
+      "oddA": 1.91,
+      "stakeA": 48.1806,
+      "curA": "USD",
+      "sport": "Hóquei",
+      "market": "",
+      "oddMkt": 1.7564724178940627,
+      "prob": 56.932291666666664,
+      "winner": null,
+      "date": "2026-09-28T13:00",
+      "total": 48.1806,
+      "lucroA": 43.844345999999994,
+      "lucroRed": -48.1806,
+      "lucro": 43.844345999999994,
+      "roi": 90.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T15:19:23.181Z"
     }
   ],
   "invertidos": [],
@@ -22876,5 +22900,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T15:14:25.779Z"
+  "updatedAt": "2026-09-28T15:19:23.182Z"
 }
