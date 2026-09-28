@@ -5127,7 +5127,7 @@
   "usdRateAt": "2026-09-28T13:46:52.780Z",
   "eurRate": 5.92,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-28T13:46:53.069Z",
+  "eurRateAt": "2026-09-28T17:04:14.667Z",
   "appBuild": "20260923-1353",
   "deleted": [
     {
@@ -22972,5 +22972,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T16:46:05.599Z"
+  "updatedAt": "2026-09-28T17:04:14.667Z"
 }
