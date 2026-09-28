@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 733.96,
+      "value": 603.46,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T20:56:10.211Z"
+      "updatedAt": "2026-09-28T20:56:40.659Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 173.08,
-      "updatedAt": "2026-09-28T17:23:39.253Z",
+      "value": 216.33,
+      "updatedAt": "2026-09-28T20:56:40.659Z",
       "currency": "USD"
     },
     {
@@ -22821,7 +22821,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.6,
       "prob": 59.5,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-28T16:00",
       "total": 130.5,
       "lucroA": 95.265,
@@ -22829,9 +22829,10 @@
       "lucro": 95.265,
       "roi": 73,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-28T16:46:05.591Z"
+      "updatedAt": "2026-09-28T20:56:40.659Z"
     },
     {
       "id": "mulinxboqxu1h",
@@ -23123,5 +23124,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T20:56:10.211Z"
+  "updatedAt": "2026-09-28T20:56:40.659Z"
 }
