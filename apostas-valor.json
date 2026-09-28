@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 707.81,
+      "value": 812.21,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T22:50:09.444Z"
+      "updatedAt": "2026-09-28T22:51:52.009Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4838,9 +4838,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 67,
+      "value": 47,
       "currency": "USD",
-      "updatedAt": "2026-09-28T22:30:22.155Z"
+      "updatedAt": "2026-09-28T22:51:52.008Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -22990,6 +22990,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-28T22:50:09.444Z"
+    },
+    {
+      "id": "mulue0coogwll",
+      "kind": "valor",
+      "event": "Nolan Smith Jr. (Abaixo 0.5 Tempo Extra - sacks)",
+      "houseA": "BC.game",
+      "oddA": 1.57,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "sport": "Futebol Americano",
+      "market": "Total de Pontos",
+      "oddMkt": 1.400535236396075,
+      "prob": 71.40127388535032,
+      "winner": null,
+      "date": "2026-09-28T21:15",
+      "modelo": "fora",
+      "total": 104.39999999999999,
+      "lucroA": 59.508,
+      "lucroRed": -104.39999999999999,
+      "lucro": 59.508,
+      "roi": 57.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T22:51:52.008Z"
     }
   ],
   "invertidos": [],
@@ -23156,5 +23181,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T22:50:09.444Z"
+  "updatedAt": "2026-09-28T22:51:52.009Z"
 }
