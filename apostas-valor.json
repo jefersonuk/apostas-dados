@@ -23,7 +23,30 @@
       "fAcima": 0
     },
     "polEVeto": "",
-    "polEVetoLimpo": true
+    "casasLimitadas": [
+      "jackbit",
+      "casinozer",
+      "duelbits",
+      "donbet",
+      "zenit",
+      "jetcasino"
+    ],
+    "modelo": {
+      "oddMin": 1.2,
+      "oddMax": 2,
+      "svMin": 5,
+      "svMax": 15,
+      "idealMin": 8,
+      "idealMax": 12,
+      "pct": 1,
+      "stake": 300,
+      "stakeMes": "2026-09",
+      "inicio": "2026-09-28",
+      "meta": 300
+    },
+    "polEVetoLimpo": true,
+    "limitadasMigr2809": true,
+    "limitadasSalvo": true
   },
   "bets": [
     {
@@ -5127,8 +5150,8 @@
   "usdRateAt": "2026-09-28T13:46:52.780Z",
   "eurRate": 5.92,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-09-28T17:04:14.667Z",
-  "appBuild": "20260923-1353",
+  "eurRateAt": "2026-09-28T13:46:53.069Z",
+  "appBuild": "20260928-1552",
   "deleted": [
     {
       "id": "msq9evr1gkm04",
@@ -22998,5 +23021,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T18:14:06.615Z"
+  "updatedAt": "2026-09-28T19:03:06.123Z"
 }
