@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 315.21,
+      "value": 297.21,
       "currency": "USD",
-      "updatedAt": "2026-09-28T17:54:10.107Z"
+      "updatedAt": "2026-09-28T20:39:02.521Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 350.12,
+      "value": 444.08,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T20:04:40.915Z"
+      "updatedAt": "2026-09-28T20:39:02.521Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -22856,6 +22856,31 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-09-28T20:04:40.913Z"
+    },
+    {
+      "id": "mulpn720hz8ca",
+      "kind": "valor",
+      "event": "Jared Rhoden (Acima 1.5 Tempo Extra - assistências)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.64,
+      "stakeA": 93.96,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.48471615720524,
+      "prob": 67.3529411764706,
+      "winner": null,
+      "date": "2026-09-29T15:45",
+      "modelo": "fora",
+      "total": 93.96,
+      "lucroA": 60.134399999999985,
+      "lucroRed": -93.96,
+      "lucro": 60.134399999999985,
+      "roi": 63.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T20:39:02.521Z"
     }
   ],
   "invertidos": [],
@@ -23022,5 +23047,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T20:17:41.331Z"
+  "updatedAt": "2026-09-28T20:39:02.521Z"
 }
