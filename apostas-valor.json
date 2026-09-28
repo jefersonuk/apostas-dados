@@ -4636,10 +4636,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 607.1,
+      "value": 711.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-28T16:46:05.599Z"
+      "updatedAt": "2026-09-28T17:23:39.255Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4742,8 +4742,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 193.08,
-      "updatedAt": "2026-09-28T16:46:05.590Z",
+      "value": 173.08,
+      "updatedAt": "2026-09-28T17:23:39.253Z",
       "currency": "USD"
     },
     {
@@ -22806,6 +22806,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-28T16:46:05.591Z"
+    },
+    {
+      "id": "mulinxboqxu1h",
+      "kind": "valor",
+      "event": "AL Kuwait x Al Riyadi Beirut (H2 - 9,5)",
+      "houseA": "Betfury",
+      "oddA": 1.85,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-09-28T14:45",
+      "total": 104.39999999999999,
+      "lucroA": 88.74000000000001,
+      "lucroRed": -104.39999999999999,
+      "lucro": 88.74000000000001,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-28T17:23:39.253Z"
     }
   ],
   "invertidos": [],
@@ -22972,5 +22996,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-28T17:04:14.667Z"
+  "updatedAt": "2026-09-28T17:23:39.255Z"
 }
