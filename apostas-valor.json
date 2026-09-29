@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 499.46,
+      "value": 628.07,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T12:10:03.412Z"
+      "updatedAt": "2026-09-29T12:15:55.939Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 24.55,
+      "value": -0.04,
       "currency": "USD",
-      "updatedAt": "2026-09-29T12:06:23.610Z"
+      "updatedAt": "2026-09-29T12:15:55.938Z"
     }
   ],
   "aportes": [
@@ -23019,6 +23019,31 @@
         "resultado": "A"
       },
       "updatedAt": "2026-09-29T11:09:53.864Z"
+    },
+    {
+      "id": "mumn41luird43",
+      "kind": "valor",
+      "event": "South Sudan – Egypt (2 primeiro a vai conseguir 3 escanteios)",
+      "houseA": "Frumzi",
+      "oddA": 1.25,
+      "stakeA": 128.6057,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.1664800298618887,
+      "prob": 85.72800000000001,
+      "winner": null,
+      "date": "2026-09-29T10:00",
+      "modelo": "F",
+      "total": 128.6057,
+      "lucroA": 32.151425,
+      "lucroRed": -128.6057,
+      "lucro": 32.151425,
+      "roi": 25,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-29T12:15:55.938Z"
     }
   ],
   "invertidos": [],
@@ -23185,5 +23210,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T12:10:03.412Z"
+  "updatedAt": "2026-09-29T12:15:55.940Z"
 }
