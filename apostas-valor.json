@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 955.87,
+      "value": 1060.47,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T12:20:19.205Z"
+      "updatedAt": "2026-09-29T12:26:15.389Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 166,
-      "updatedAt": "2026-09-28T22:42:20.359Z",
+      "value": 146,
+      "updatedAt": "2026-09-29T12:26:15.388Z",
       "currency": "USD"
     },
     {
@@ -23119,6 +23119,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-29T12:20:19.202Z"
+    },
+    {
+      "id": "mumnhbks319tv",
+      "kind": "valor",
+      "event": "Фенербахче – Бавария (1 Tempo Extra - cestas de dois pontos)",
+      "houseA": "Betfury",
+      "oddA": 1.6,
+      "stakeA": 104.60000000000001,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "",
+      "oddMkt": 1.5176151761517616,
+      "prob": 65.89285714285714,
+      "winner": null,
+      "date": "2026-09-29T14:45",
+      "modelo": "fora",
+      "total": 104.60000000000001,
+      "lucroA": 62.76000000000001,
+      "lucroRed": -104.60000000000001,
+      "lucro": 62.76000000000001,
+      "roi": 60.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-29T12:26:15.388Z"
     }
   ],
   "invertidos": [],
@@ -23285,5 +23310,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T12:20:19.205Z"
+  "updatedAt": "2026-09-29T12:26:15.390Z"
 }
