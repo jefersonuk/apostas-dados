@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 655.61,
+      "value": 551.26,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T11:09:53.865Z"
+      "updatedAt": "2026-09-29T12:06:23.612Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 0.01,
+      "value": 24.55,
       "currency": "USD",
-      "updatedAt": "2026-09-28T22:50:09.444Z"
+      "updatedAt": "2026-09-29T12:06:23.610Z"
     }
   ],
   "aportes": [
@@ -22979,7 +22979,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.1701337295690937,
       "prob": 85.46031746031746,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-29T02:30",
       "modelo": "F",
       "total": 104.34779999999999,
@@ -22988,9 +22988,10 @@
       "lucro": 23.999993999999997,
       "roi": 23,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-28T22:50:09.444Z"
+      "updatedAt": "2026-09-29T12:06:23.610Z"
     },
     {
       "id": "mulue0coogwll",
@@ -23183,5 +23184,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T12:04:00.090Z"
+  "updatedAt": "2026-09-29T12:06:23.612Z"
 }
