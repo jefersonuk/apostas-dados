@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 274,
+      "value": 254,
       "currency": "USD",
-      "updatedAt": "2026-09-29T15:01:59.167Z"
+      "updatedAt": "2026-09-29T15:57:26.137Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1178.86,
+      "value": 1283.26,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T15:14:26.606Z"
+      "updatedAt": "2026-09-29T15:57:26.138Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -23227,6 +23227,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-29T14:57:30.718Z"
+    },
+    {
+      "id": "mumv0we1v59tc",
+      "kind": "valor",
+      "event": "DeWayne Stewart (Acima 0.5 Tempo Extra - cestas de três pontos)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.43,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.2959719789842383,
+      "prob": 77.16216216216215,
+      "winner": null,
+      "date": "2026-09-29T15:30",
+      "modelo": "F",
+      "total": 104.39999999999999,
+      "lucroA": 44.89199999999999,
+      "lucroRed": -104.39999999999999,
+      "lucro": 44.89199999999999,
+      "roi": 42.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-29T15:57:26.137Z"
     }
   ],
   "invertidos": [],
@@ -23393,5 +23418,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T15:14:26.606Z"
+  "updatedAt": "2026-09-29T15:57:26.138Z"
 }
