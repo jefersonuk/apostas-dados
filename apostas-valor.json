@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 174.48,
       "currency": "EUR",
-      "updatedAt": "2026-09-29T12:20:19.202Z"
+      "updatedAt": "2026-09-29T14:58:14.293Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -23104,7 +23104,7 @@
     {
       "id": "mumn9oqqj6svu",
       "kind": "valor",
-      "event": "Онодзава Нана – Субасич Алана (21-2)",
+      "event": "Nana Onozawa vs. Alana Subasic (2)",
       "houseA": "Sportmarket",
       "oddA": 1.292,
       "stakeA": 118.6,
@@ -23124,7 +23124,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-29T12:20:19.202Z"
+      "updatedAt": "2026-09-29T14:58:14.293Z"
     },
     {
       "id": "mumnhbks319tv",
@@ -23391,5 +23391,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T14:57:30.721Z"
+  "updatedAt": "2026-09-29T14:58:14.294Z"
 }
