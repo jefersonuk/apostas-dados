@@ -4840,7 +4840,7 @@
       "name": "BC.game",
       "value": 59.28,
       "currency": "USD",
-      "updatedAt": "2026-09-29T14:55:36.753Z"
+      "updatedAt": "2026-09-29T17:50:18.949Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -23081,7 +23081,7 @@
     {
       "id": "mumn7qvdru4ss",
       "kind": "valor",
-      "event": "Fenerbahce IstanbulvsBayern Munich1 Tempo Extra - cestas de dois pontos)",
+      "event": "Fenerbahce Istanbul vs Bayern Munich - 1",
       "houseA": "BC.game",
       "oddA": 1.26,
       "stakeA": 104.60000000000001,
@@ -23101,7 +23101,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-29T14:55:36.753Z"
+      "updatedAt": "2026-09-29T17:50:18.949Z"
     },
     {
       "id": "mumn9oqqj6svu",
@@ -23468,5 +23468,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T16:45:30.170Z"
+  "updatedAt": "2026-09-29T17:50:18.949Z"
 }
