@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 837.27,
+      "value": 955.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T12:18:48.650Z"
+      "updatedAt": "2026-09-29T12:20:19.205Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 194.48,
+      "value": 174.48,
       "currency": "EUR",
-      "updatedAt": "2026-09-28T20:42:32.885Z"
+      "updatedAt": "2026-09-29T12:20:19.202Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -23094,6 +23094,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-29T12:18:48.650Z"
+    },
+    {
+      "id": "mumn9oqqj6svu",
+      "kind": "valor",
+      "event": "Онодзава Нана – Субасич Алана (21-2)",
+      "houseA": "Sportmarket",
+      "oddA": 1.292,
+      "stakeA": 118.6,
+      "curA": "EUR",
+      "sport": "Tênis",
+      "market": "",
+      "oddMkt": 1.097,
+      "prob": 91.2,
+      "winner": null,
+      "date": "2026-09-29T21:00",
+      "modelo": "fora",
+      "total": 118.6,
+      "lucroA": 34.6312,
+      "lucroRed": -118.6,
+      "lucro": 34.6312,
+      "roi": 29.200000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-29T12:20:19.202Z"
     }
   ],
   "invertidos": [],
@@ -23260,5 +23285,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T12:18:48.651Z"
+  "updatedAt": "2026-09-29T12:20:19.205Z"
 }
