@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 198.43,
-      "updatedAt": "2026-09-29T20:43:33.858Z",
+      "value": 158.43,
+      "updatedAt": "2026-09-29T21:14:46.589Z",
       "currency": "USD"
     },
     {
@@ -23222,7 +23222,7 @@
       "market": "",
       "oddMkt": 1.8636003172085644,
       "prob": 53.65957446808511,
-      "winner": "A",
+      "winner": "RED",
       "date": "2026-09-29T15:45",
       "modelo": "F",
       "total": 104.39999999999999,
@@ -23232,9 +23232,9 @@
       "roi": 100,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "RED"
       },
-      "updatedAt": "2026-09-29T20:43:33.859Z"
+      "updatedAt": "2026-09-29T21:14:46.589Z"
     },
     {
       "id": "mumv0we1v59tc",
@@ -23479,5 +23479,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T20:56:46.206Z"
+  "updatedAt": "2026-09-29T21:14:46.589Z"
 }
