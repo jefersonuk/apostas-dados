@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1425.87,
+      "value": 1307.47,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T14:57:30.721Z"
+      "updatedAt": "2026-09-29T14:59:47.521Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 174,
+      "value": 193.97,
       "currency": "EUR",
-      "updatedAt": "2026-09-29T14:58:49.657Z"
+      "updatedAt": "2026-09-29T14:59:47.521Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -22936,7 +22936,7 @@
       "market": "Cartões",
       "oddMkt": 1.648299896392578,
       "prob": 60.66857142857143,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-09-29T15:45",
       "modelo": "F",
       "total": 118.4,
@@ -22945,9 +22945,10 @@
       "lucro": 87.616,
       "roi": 74,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-09-28T20:42:32.885Z"
+      "updatedAt": "2026-09-29T14:59:47.521Z"
     },
     {
       "id": "mulptovfr98qg",
@@ -23391,5 +23392,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T14:58:49.657Z"
+  "updatedAt": "2026-09-29T14:59:47.521Z"
 }
