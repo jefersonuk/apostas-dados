@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 284.27,
+      "value": 322.47,
       "currency": "USD",
-      "updatedAt": "2026-09-29T20:56:40.005Z"
+      "updatedAt": "2026-09-29T20:56:46.205Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -22964,7 +22964,7 @@
       "market": "Total de Pontos",
       "oddMkt": 1.771019677996422,
       "prob": 56.46464646464647,
-      "winner": "RED",
+      "winner": "A",
       "date": "2026-09-29T15:45",
       "modelo": "fora",
       "total": 104.39999999999999,
@@ -22974,9 +22974,9 @@
       "roi": 90.99999999999999,
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-29T20:20:15.141Z"
+      "updatedAt": "2026-09-29T20:56:46.205Z"
     },
     {
       "id": "mulubt7o1xzls",
@@ -23479,5 +23479,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T20:56:40.005Z"
+  "updatedAt": "2026-09-29T20:56:46.206Z"
 }
