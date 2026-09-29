@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1126.66,
+      "value": 917.46,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T18:52:40.700Z"
+      "updatedAt": "2026-09-29T19:06:58.549Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 126.37,
-      "updatedAt": "2026-09-29T17:50:34.395Z",
+      "value": 158.43,
+      "updatedAt": "2026-09-29T19:06:58.548Z",
       "currency": "USD"
     },
     {
@@ -4838,9 +4838,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 59.28,
+      "value": 84.53,
       "currency": "USD",
-      "updatedAt": "2026-09-29T17:50:18.949Z"
+      "updatedAt": "2026-09-29T19:06:57.864Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -23090,7 +23090,7 @@
       "market": "",
       "oddMkt": 1.5121512151215122,
       "prob": 66.13095238095238,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-29T14:45",
       "modelo": "fora",
       "total": 104.60000000000001,
@@ -23099,9 +23099,10 @@
       "lucro": 27.196,
       "roi": 26,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-29T17:50:18.949Z"
+      "updatedAt": "2026-09-29T19:06:57.864Z"
     },
     {
       "id": "mumn9oqqj6svu",
@@ -23140,7 +23141,7 @@
       "market": "",
       "oddMkt": 1.5176151761517616,
       "prob": 65.89285714285714,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-29T14:45",
       "modelo": "fora",
       "total": 104.60000000000001,
@@ -23149,9 +23150,10 @@
       "lucro": 62.76000000000001,
       "roi": 60.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-29T17:50:34.395Z"
+      "updatedAt": "2026-09-29T19:06:58.548Z"
     },
     {
       "id": "mumshm30cxm3r",
@@ -23471,5 +23473,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T18:52:40.700Z"
+  "updatedAt": "2026-09-29T19:06:58.549Z"
 }
