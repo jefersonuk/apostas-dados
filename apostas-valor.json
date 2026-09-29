@@ -4559,9 +4559,9 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 5750,
+      "value": 5728,
       "currency": "BRL",
-      "updatedAt": "2026-09-28T22:42:13.806Z"
+      "updatedAt": "2026-09-29T13:08:28.836Z"
     },
     {
       "id": "mrzmpfmzgil2s",
@@ -23310,5 +23310,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T13:08:14.794Z"
+  "updatedAt": "2026-09-29T13:08:28.836Z"
 }
