@@ -4766,7 +4766,7 @@
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
       "value": 146.37,
-      "updatedAt": "2026-09-29T13:10:21.297Z",
+      "updatedAt": "2026-09-29T14:55:45.059Z",
       "currency": "USD"
     },
     {
@@ -4840,7 +4840,7 @@
       "name": "BC.game",
       "value": 59.28,
       "currency": "USD",
-      "updatedAt": "2026-09-29T13:10:07.259Z"
+      "updatedAt": "2026-09-29T14:55:36.753Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -23079,7 +23079,7 @@
     {
       "id": "mumn7qvdru4ss",
       "kind": "valor",
-      "event": "Фенербахче – Бавария (1 Tempo Extra - cestas de dois pontos)",
+      "event": "Fenerbahce IstanbulvsBayern Munich1 Tempo Extra - cestas de dois pontos)",
       "houseA": "BC.game",
       "oddA": 1.26,
       "stakeA": 104.60000000000001,
@@ -23099,7 +23099,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-29T12:18:48.650Z"
+      "updatedAt": "2026-09-29T14:55:36.753Z"
     },
     {
       "id": "mumn9oqqj6svu",
@@ -23129,7 +23129,7 @@
     {
       "id": "mumnhbks319tv",
       "kind": "valor",
-      "event": "Фенербахче – Бавария (1 Tempo Extra - cestas de dois pontos)",
+      "event": "Fenerbahce IstanbulvsBayern Munich1 Tempo Extra - cestas de dois pontos)",
       "houseA": "Betfury",
       "oddA": 1.6,
       "stakeA": 104.60000000000001,
@@ -23149,7 +23149,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-29T12:26:15.388Z"
+      "updatedAt": "2026-09-29T14:55:45.059Z"
     },
     {
       "id": "mumshm30cxm3r",
@@ -23366,5 +23366,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T14:47:33.265Z"
+  "updatedAt": "2026-09-29T14:55:45.059Z"
 }
