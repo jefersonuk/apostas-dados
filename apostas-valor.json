@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": -0.04,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-09-29T12:15:55.938Z"
+      "updatedAt": "2026-09-29T15:03:34.482Z"
     }
   ],
   "aportes": [
@@ -23392,5 +23392,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T15:02:24.750Z"
+  "updatedAt": "2026-09-29T15:03:34.482Z"
 }
