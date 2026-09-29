@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1321.47,
+      "value": 1425.87,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T14:47:33.265Z"
+      "updatedAt": "2026-09-29T14:57:30.721Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 146.37,
-      "updatedAt": "2026-09-29T14:55:45.059Z",
+      "value": 126.37,
+      "updatedAt": "2026-09-29T14:57:30.718Z",
       "currency": "USD"
     },
     {
@@ -23200,6 +23200,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-29T14:47:33.265Z"
+    },
+    {
+      "id": "mumsvu5ahub40",
+      "kind": "valor",
+      "event": "Paris – Partizan (1 Tempo Extra - assistências)",
+      "houseA": "Betfury",
+      "oddA": 2,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "",
+      "oddMkt": 1.8636003172085644,
+      "prob": 53.65957446808511,
+      "winner": null,
+      "date": "2026-09-29T15:45",
+      "modelo": "F",
+      "total": 104.39999999999999,
+      "lucroA": 104.39999999999999,
+      "lucroRed": -104.39999999999999,
+      "lucro": 104.39999999999999,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-29T14:57:30.718Z"
     }
   ],
   "invertidos": [],
@@ -23366,5 +23391,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T14:55:45.059Z"
+  "updatedAt": "2026-09-29T14:57:30.721Z"
 }
