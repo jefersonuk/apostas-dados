@@ -4766,7 +4766,7 @@
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
       "value": 126.37,
-      "updatedAt": "2026-09-29T14:57:30.718Z",
+      "updatedAt": "2026-09-29T17:50:34.395Z",
       "currency": "USD"
     },
     {
@@ -23131,7 +23131,7 @@
     {
       "id": "mumnhbks319tv",
       "kind": "valor",
-      "event": "Fenerbahce IstanbulvsBayern Munich1 Tempo Extra - cestas de dois pontos)",
+      "event": "Fenerbahce Istanbul vs Bayern Munich (1 - cestas de dois pontos)",
       "houseA": "Betfury",
       "oddA": 1.6,
       "stakeA": 104.60000000000001,
@@ -23151,7 +23151,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-09-29T14:55:45.059Z"
+      "updatedAt": "2026-09-29T17:50:34.395Z"
     },
     {
       "id": "mumshm30cxm3r",
@@ -23468,5 +23468,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T17:50:18.949Z"
+  "updatedAt": "2026-09-29T17:50:34.395Z"
 }
