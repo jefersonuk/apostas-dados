@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1164.87,
+      "value": 1321.47,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T14:46:27.087Z"
+      "updatedAt": "2026-09-29T14:47:33.265Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4745,8 +4745,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 50,
-      "updatedAt": "2026-09-29T13:10:46.258Z",
+      "value": 20,
+      "updatedAt": "2026-09-29T14:47:33.265Z",
       "currency": "USD"
     },
     {
@@ -23175,6 +23175,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-29T14:46:27.086Z"
+    },
+    {
+      "id": "mumsj15d5c3t0",
+      "kind": "valor",
+      "event": "Kaufland Hangry Knights – Otter Side (H1(−9.5) 1º mapa - abates)",
+      "houseA": "Vave",
+      "oddA": 1.8,
+      "stakeA": 156.6,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "Abates / Kills",
+      "oddMkt": 1.6336898395721926,
+      "prob": 61.211129296235676,
+      "winner": null,
+      "date": "2026-09-29T14:00",
+      "modelo": "F",
+      "total": 156.6,
+      "lucroA": 125.28,
+      "lucroRed": -156.6,
+      "lucro": 125.28,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-29T14:47:33.265Z"
     }
   ],
   "invertidos": [],
@@ -23341,5 +23366,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T14:46:27.087Z"
+  "updatedAt": "2026-09-29T14:47:33.265Z"
 }
