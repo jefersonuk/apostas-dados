@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1283.26,
+      "value": 1126.66,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-29T17:59:02.097Z"
+      "updatedAt": "2026-09-29T18:52:40.700Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4745,8 +4745,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 20,
-      "updatedAt": "2026-09-29T14:47:33.265Z",
+      "value": 74,
+      "updatedAt": "2026-09-29T18:52:40.700Z",
       "currency": "USD"
     },
     {
@@ -23191,7 +23191,7 @@
       "market": "Abates / Kills",
       "oddMkt": 1.6336898395721926,
       "prob": 61.211129296235676,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-29T14:00",
       "modelo": "F",
       "total": 156.6,
@@ -23200,9 +23200,10 @@
       "lucro": 125.28,
       "roi": 80,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-29T14:47:33.265Z"
+      "updatedAt": "2026-09-29T18:52:40.700Z"
     },
     {
       "id": "mumsvu5ahub40",
@@ -23470,5 +23471,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-29T17:59:02.097Z"
+  "updatedAt": "2026-09-29T18:52:40.700Z"
 }
