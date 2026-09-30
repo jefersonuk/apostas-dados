@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 496.86,
+      "value": 600.46,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T16:39:15.207Z"
+      "updatedAt": "2026-09-30T16:41:17.452Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4745,8 +4745,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 34,
-      "updatedAt": "2026-09-30T13:20:06.228Z",
+      "value": 14,
+      "updatedAt": "2026-09-30T16:41:17.451Z",
       "currency": "USD"
     },
     {
@@ -23493,6 +23493,31 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-09-30T16:37:33.551Z"
+    },
+    {
+      "id": "muoc15e29ethw",
+      "kind": "valor",
+      "event": "Alianza FC – CD Platense (H2(+1))",
+      "houseA": "Vave",
+      "oddA": 1.9,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6766467065868262,
+      "prob": 59.642857142857146,
+      "winner": null,
+      "date": "2026-09-30T18:00",
+      "modelo": "F",
+      "total": 103.6,
+      "lucroA": 93.23999999999998,
+      "lucroRed": -103.6,
+      "lucro": 93.23999999999998,
+      "roi": 89.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T16:41:17.451Z"
     }
   ],
   "invertidos": [],
@@ -23659,5 +23684,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T16:39:44.039Z"
+  "updatedAt": "2026-09-30T16:41:17.452Z"
 }
