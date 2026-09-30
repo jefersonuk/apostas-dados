@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 317.54,
+      "value": 288.08,
       "currency": "BRL",
-      "updatedAt": "2026-09-30T13:10:09.729Z"
+      "updatedAt": "2026-09-30T13:11:18.526Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 107.76,
+      "value": 137.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T13:10:09.730Z"
+      "updatedAt": "2026-09-30T13:11:18.527Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -23340,6 +23340,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T13:10:09.729Z"
+    },
+    {
+      "id": "muo4j3zx09pva",
+      "kind": "valor",
+      "event": "Kaufland Hangry Knights – Unicorns of Love SE (Acima 30 1º mapa - minutos)",
+      "houseA": "Ivibet",
+      "oddA": 1.8,
+      "stakeA": 29.46,
+      "curA": "BRL",
+      "sport": "E-sports",
+      "market": "Total (linha)",
+      "oddMkt": 1.5968586387434558,
+      "prob": 62.62295081967212,
+      "winner": null,
+      "date": "2026-09-30T12:00",
+      "modelo": "F",
+      "total": 29.46,
+      "lucroA": 23.568,
+      "lucroRed": -29.46,
+      "lucro": 23.568,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T13:11:18.526Z"
     }
   ],
   "invertidos": [],
@@ -23506,5 +23531,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T13:10:09.730Z"
+  "updatedAt": "2026-09-30T13:11:18.527Z"
 }
