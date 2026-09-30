@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 704.06,
+      "value": 807.66,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T16:45:09.177Z"
+      "updatedAt": "2026-09-30T16:47:43.678Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 30.8,
+      "value": 10.8,
       "currency": "USD",
-      "updatedAt": "2026-09-29T15:14:26.606Z"
+      "updatedAt": "2026-09-30T16:47:43.677Z"
     }
   ],
   "aportes": [
@@ -23543,6 +23543,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T16:45:09.177Z"
+    },
+    {
+      "id": "muoc9felp7bqw",
+      "kind": "valor",
+      "event": "Ante Zizic (Abaixo 6.5 Tempo Extra - rebotes)",
+      "houseA": "Frumzi",
+      "oddA": 1.63,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.4684684684684683,
+      "prob": 68.09815950920246,
+      "winner": null,
+      "date": "2026-09-30T15:05",
+      "modelo": "F",
+      "total": 103.6,
+      "lucroA": 65.26799999999999,
+      "lucroRed": -103.6,
+      "lucro": 65.26799999999999,
+      "roi": 62.999999999999986,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T16:47:43.677Z"
     }
   ],
   "invertidos": [],
@@ -23709,5 +23734,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T16:45:09.178Z"
+  "updatedAt": "2026-09-30T16:47:43.678Z"
 }
