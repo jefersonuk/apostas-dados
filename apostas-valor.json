@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 555.78,
+      "value": 659.38,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T13:19:09.567Z"
+      "updatedAt": "2026-09-30T13:20:06.229Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4745,8 +4745,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 54,
-      "updatedAt": "2026-09-29T19:26:20.749Z",
+      "value": 34,
+      "updatedAt": "2026-09-30T13:20:06.228Z",
       "currency": "USD"
     },
     {
@@ -23465,6 +23465,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T13:19:09.566Z"
+    },
+    {
+      "id": "muo4uf6cp3wtj",
+      "kind": "valor",
+      "event": "JSK Esports – Skillcamp (Acima 30.5 1º mapa - abates)",
+      "houseA": "Vave",
+      "oddA": 1.8,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "E-sports",
+      "market": "Abates / Kills",
+      "oddMkt": 1.708364451082898,
+      "prob": 58.53551912568305,
+      "winner": null,
+      "date": "2026-09-30T11:00",
+      "modelo": "F",
+      "total": 103.6,
+      "lucroA": 82.88,
+      "lucroRed": -103.6,
+      "lucro": 82.88,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T13:20:06.228Z"
     }
   ],
   "invertidos": [],
@@ -23631,5 +23656,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T13:19:09.567Z"
+  "updatedAt": "2026-09-30T13:20:06.229Z"
 }
