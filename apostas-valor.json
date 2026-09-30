@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 288.08,
+      "value": 232.12,
       "currency": "BRL",
-      "updatedAt": "2026-09-30T13:11:18.526Z"
+      "updatedAt": "2026-09-30T13:13:17.899Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 396.22,
+      "value": 452.18,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T13:12:30.916Z"
+      "updatedAt": "2026-09-30T13:13:17.901Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -23415,6 +23415,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T13:12:30.915Z"
+    },
+    {
+      "id": "muo4lo3vu0g52",
+      "kind": "valor",
+      "event": "Secret Club – SU Esports (Abaixo 2.5)",
+      "houseA": "Ivibet",
+      "oddA": 1.59,
+      "stakeA": 55.96,
+      "curA": "BRL",
+      "sport": "E-sports",
+      "market": "Total (linha)",
+      "oddMkt": 1.4634146341463417,
+      "prob": 68.33333333333333,
+      "winner": null,
+      "date": "2026-09-30T13:00",
+      "modelo": "F",
+      "total": 55.96,
+      "lucroA": 33.016400000000004,
+      "lucroRed": -55.96,
+      "lucro": 33.016400000000004,
+      "roi": 59.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T13:13:17.900Z"
     }
   ],
   "invertidos": [],
@@ -23581,5 +23606,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T13:12:30.916Z"
+  "updatedAt": "2026-09-30T13:13:17.901Z"
 }
