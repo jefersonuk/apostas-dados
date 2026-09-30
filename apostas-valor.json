@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 600.46,
+      "value": 704.06,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T16:41:17.452Z"
+      "updatedAt": "2026-09-30T16:45:09.177Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4723,8 +4723,8 @@
     {
       "id": "mt8tdp80v21ek",
       "name": "Cloudbet",
-      "value": 343,
-      "updatedAt": "2026-09-29T15:00:24.195Z",
+      "value": 323,
+      "updatedAt": "2026-09-30T16:45:09.177Z",
       "currency": "USD"
     },
     {
@@ -23518,6 +23518,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T16:41:17.451Z"
+    },
+    {
+      "id": "muoc646wpfs75",
+      "kind": "valor",
+      "event": "3 de Febrero – Club Sportivo Limpeno (H1(+1) 1º período)",
+      "houseA": "Cloudbet",
+      "oddA": 1.54,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.447993295465127,
+      "prob": 69.06109324758843,
+      "winner": null,
+      "date": "2026-09-30T15:00",
+      "modelo": "F",
+      "total": 103.6,
+      "lucroA": 55.944,
+      "lucroRed": -103.6,
+      "lucro": 55.944,
+      "roi": 54,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T16:45:09.177Z"
     }
   ],
   "invertidos": [],
@@ -23684,5 +23709,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T16:41:17.452Z"
+  "updatedAt": "2026-09-30T16:45:09.178Z"
 }
