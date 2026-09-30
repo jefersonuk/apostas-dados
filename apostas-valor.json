@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 807.66,
+      "value": 729.36,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T16:47:43.678Z"
+      "updatedAt": "2026-09-30T18:23:12.146Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4716,9 +4716,9 @@
     {
       "id": "mt2x7fqlwljjc",
       "name": "Shuffle",
-      "value": 232.38,
+      "value": 258.98,
       "currency": "USD",
-      "updatedAt": "2026-09-28T16:39:23.590Z"
+      "updatedAt": "2026-09-30T18:23:12.146Z"
     },
     {
       "id": "mt8tdp80v21ek",
@@ -22812,7 +22812,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.4,
       "prob": 68,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-30T13:00",
       "total": 78.3,
       "lucroA": 59.507999999999996,
@@ -22820,9 +22820,10 @@
       "lucro": 59.507999999999996,
       "roi": 76,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-28T16:39:23.590Z"
+      "updatedAt": "2026-09-30T18:23:12.146Z"
     },
     {
       "id": "mulhbmdx3jn1z",
@@ -23734,5 +23735,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T17:03:04.858Z"
+  "updatedAt": "2026-09-30T18:23:12.146Z"
 }
