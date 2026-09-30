@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 292.62,
+      "value": 396.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T13:11:52.079Z"
+      "updatedAt": "2026-09-30T13:12:30.916Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4752,9 +4752,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 307.75,
+      "value": 287.75,
       "currency": "USD",
-      "updatedAt": "2026-09-30T13:11:52.078Z"
+      "updatedAt": "2026-09-30T13:12:30.915Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -23390,6 +23390,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T13:11:52.078Z"
+    },
+    {
+      "id": "muo4knuq2yf7y",
+      "kind": "valor",
+      "event": "Valparaiso – UIC (H1(−1.5))",
+      "houseA": "BetOnline",
+      "oddA": 1.87,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6953762466001814,
+      "prob": 58.98395721925134,
+      "winner": null,
+      "date": "2026-09-30T20:00",
+      "modelo": "F",
+      "total": 103.6,
+      "lucroA": 90.132,
+      "lucroRed": -103.6,
+      "lucro": 90.132,
+      "roi": 87.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T13:12:30.915Z"
     }
   ],
   "invertidos": [],
@@ -23556,5 +23581,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T13:11:52.079Z"
+  "updatedAt": "2026-09-30T13:12:30.916Z"
 }
