@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 338.18,
+      "value": 285.15,
       "currency": "BRL",
-      "updatedAt": "2026-09-30T16:39:15.204Z"
+      "updatedAt": "2026-09-30T16:39:44.039Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -23328,7 +23328,7 @@
       "market": "Total (linha)",
       "oddMkt": 1.5996503496503496,
       "prob": 62.513661202185794,
-      "winner": "A",
+      "winner": "RED",
       "date": "2026-09-30T12:00",
       "modelo": "F",
       "total": 29.46,
@@ -23338,9 +23338,9 @@
       "roi": 80,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "RED"
       },
-      "updatedAt": "2026-09-30T16:38:54.398Z"
+      "updatedAt": "2026-09-30T16:39:44.039Z"
     },
     {
       "id": "muo4j3zx09pva",
@@ -23659,5 +23659,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T16:39:15.207Z"
+  "updatedAt": "2026-09-30T16:39:44.039Z"
 }
