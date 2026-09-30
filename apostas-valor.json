@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 785.8,
+      "value": 889.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T21:56:17.660Z"
+      "updatedAt": "2026-09-30T21:58:42.680Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 141.41,
-      "updatedAt": "2026-09-30T13:19:09.566Z",
+      "value": 121.41,
+      "updatedAt": "2026-09-30T21:58:42.680Z",
       "currency": "USD"
     },
     {
@@ -23698,6 +23698,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T21:56:17.659Z"
+    },
+    {
+      "id": "muondcs8tdj4i",
+      "kind": "valor",
+      "event": "Atlanta Braves – Philadelphia Phillies (H1(+0.5) 1ª metade)",
+      "houseA": "Betfury",
+      "oddA": 1.85,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "Beisebal",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.756858323938369,
+      "prob": 56.919786096256686,
+      "winner": null,
+      "date": "2026-10-01T15:00",
+      "modelo": "F",
+      "total": 103.6,
+      "lucroA": 88.06,
+      "lucroRed": -103.6,
+      "lucro": 88.06,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T21:58:42.680Z"
     }
   ],
   "invertidos": [],
@@ -23864,5 +23889,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T21:56:17.660Z"
+  "updatedAt": "2026-09-30T21:58:42.680Z"
 }
