@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 569.8,
+      "value": 621.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T18:45:33.744Z"
+      "updatedAt": "2026-09-30T18:54:28.842Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 10.8,
+      "value": 0.8,
       "currency": "USD",
-      "updatedAt": "2026-09-30T16:47:43.677Z"
+      "updatedAt": "2026-09-30T18:54:28.841Z"
     }
   ],
   "aportes": [
@@ -23571,6 +23571,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T16:47:43.677Z"
+    },
+    {
+      "id": "muogsfl5xja59",
+      "kind": "valor",
+      "event": "Bruno Fernando (Abaixo 5.5 Tempo Extra - rebotes)",
+      "houseA": "Frumzi",
+      "oddA": 1.67,
+      "stakeA": 51.8,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.4347079037800687,
+      "prob": 69.7005988023952,
+      "winner": null,
+      "date": "2026-10-01T15:00",
+      "modelo": "fora",
+      "total": 51.8,
+      "lucroA": 34.705999999999996,
+      "lucroRed": -51.8,
+      "lucro": 34.705999999999996,
+      "roi": 67,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T18:54:28.841Z"
     }
   ],
   "invertidos": [],
@@ -23737,5 +23762,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T18:45:33.744Z"
+  "updatedAt": "2026-09-30T18:54:28.842Z"
 }
