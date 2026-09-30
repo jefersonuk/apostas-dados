@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 734,
+      "value": 785.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T21:47:21.377Z"
+      "updatedAt": "2026-09-30T21:56:17.660Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4752,9 +4752,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 287.75,
+      "value": 277.75,
       "currency": "USD",
-      "updatedAt": "2026-09-30T13:12:30.915Z"
+      "updatedAt": "2026-09-30T21:56:17.659Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -23673,6 +23673,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T21:47:21.376Z"
+    },
+    {
+      "id": "muona8vvk4a2g",
+      "kind": "valor",
+      "event": "Louisiana State Fighting Tigers – Vanderbilt Commodores (H2(−2.5))",
+      "houseA": "BetOnline",
+      "oddA": 2.32,
+      "stakeA": 51.8,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.1326164874551967,
+      "prob": 46.89075630252102,
+      "winner": null,
+      "date": "2026-09-30T20:00",
+      "modelo": "fora",
+      "total": 51.8,
+      "lucroA": 68.37599999999999,
+      "lucroRed": -51.8,
+      "lucro": 68.37599999999999,
+      "roi": 131.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T21:56:17.659Z"
     }
   ],
   "invertidos": [],
@@ -23839,5 +23864,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T21:47:21.377Z"
+  "updatedAt": "2026-09-30T21:56:17.660Z"
 }
