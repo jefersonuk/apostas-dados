@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 414.4,
+      "value": 461.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T20:01:21.325Z"
+      "updatedAt": "2026-09-30T21:37:40.343Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4803,9 +4803,9 @@
     {
       "id": "mucxsx8o9axks",
       "name": "20bet",
-      "value": 47.1,
+      "value": 0.1,
       "currency": "BRL",
-      "updatedAt": "2026-09-28T20:17:41.330Z"
+      "updatedAt": "2026-09-30T21:37:40.342Z"
     },
     {
       "id": "muczy0ui6d8aw",
@@ -23598,6 +23598,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T18:54:28.841Z"
+    },
+    {
+      "id": "muommarawkr48",
+      "kind": "valor",
+      "event": "Cerro Porteno – Club Rubio Nu (1 - escanteios)",
+      "houseA": "20bet",
+      "oddA": 1.85,
+      "stakeA": 47,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.6390584132519614,
+      "prob": 61.01063829787235,
+      "winner": null,
+      "date": "2026-09-30T19:30",
+      "modelo": "F",
+      "total": 47,
+      "lucroA": 39.95,
+      "lucroRed": -47,
+      "lucro": 39.95,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T21:37:40.342Z"
     }
   ],
   "invertidos": [],
@@ -23764,5 +23789,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T21:26:45.549Z"
+  "updatedAt": "2026-09-30T21:37:40.343Z"
 }
