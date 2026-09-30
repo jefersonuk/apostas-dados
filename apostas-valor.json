@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 452.18,
+      "value": 555.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T13:13:17.901Z"
+      "updatedAt": "2026-09-30T13:19:09.567Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 161.41,
-      "updatedAt": "2026-09-30T12:59:39.439Z",
+      "value": 141.41,
+      "updatedAt": "2026-09-30T13:19:09.566Z",
       "currency": "USD"
     },
     {
@@ -23440,6 +23440,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T13:13:17.900Z"
+    },
+    {
+      "id": "muo4t7gdr1scs",
+      "kind": "valor",
+      "event": "Panathinaikos – ASVEL Lyon-Villeurbanne (Abaixo 9.5 Tempo Extra - cestas de três pontos 1º o time)",
+      "houseA": "Betfury",
+      "oddA": 2,
+      "stakeA": 103.6,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.8931901667137605,
+      "prob": 52.82089552238807,
+      "winner": null,
+      "date": "2026-09-30T15:15",
+      "modelo": "F",
+      "total": 103.6,
+      "lucroA": 103.6,
+      "lucroRed": -103.6,
+      "lucro": 103.6,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T13:19:09.566Z"
     }
   ],
   "invertidos": [],
@@ -23606,5 +23631,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T13:13:17.901Z"
+  "updatedAt": "2026-09-30T13:19:09.567Z"
 }
