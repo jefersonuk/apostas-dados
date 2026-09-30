@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 616.8,
+      "value": 734,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T21:43:08.315Z"
+      "updatedAt": "2026-09-30T21:47:21.377Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 194,
+      "value": 174,
       "currency": "EUR",
-      "updatedAt": "2026-09-29T15:02:24.749Z"
+      "updatedAt": "2026-09-30T21:47:21.376Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -23648,6 +23648,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T21:43:08.314Z"
+    },
+    {
+      "id": "muomyr34rnhw4",
+      "kind": "valor",
+      "event": "CD Atlético Nacional – CPD Junior Barranquilla (H2(+3.5) - escanteios)",
+      "houseA": "Sportmarket",
+      "oddA": 1.96,
+      "stakeA": 117.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.8518518518518519,
+      "prob": 54,
+      "winner": null,
+      "date": "2026-09-30T22:00",
+      "modelo": "F",
+      "total": 117.2,
+      "lucroA": 112.512,
+      "lucroRed": -117.2,
+      "lucro": 112.512,
+      "roi": 96,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T21:47:21.376Z"
     }
   ],
   "invertidos": [],
@@ -23814,5 +23839,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T21:43:08.315Z"
+  "updatedAt": "2026-09-30T21:47:21.377Z"
 }
