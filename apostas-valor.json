@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 461.4,
+      "value": 616.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T21:37:40.343Z"
+      "updatedAt": "2026-09-30T21:43:08.315Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 33.46,
+      "value": 3.46,
       "currency": "USD",
-      "updatedAt": "2026-09-30T20:01:21.325Z"
+      "updatedAt": "2026-09-30T21:43:08.314Z"
     }
   ],
   "aportes": [
@@ -23623,6 +23623,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T21:37:40.342Z"
+    },
+    {
+      "id": "muomtbtmnca76",
+      "kind": "valor",
+      "event": "Argentina – Bolivia (1 primeiro a vai conseguir 5 escanteios)",
+      "houseA": "Frumzi",
+      "oddA": 1.47,
+      "stakeA": 155.39999999999998,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.330316742081448,
+      "prob": 75.17006802721089,
+      "winner": null,
+      "date": "2026-09-30T21:00",
+      "modelo": "F",
+      "total": 155.39999999999998,
+      "lucroA": 73.03799999999998,
+      "lucroRed": -155.39999999999998,
+      "lucro": 73.03799999999998,
+      "roi": 47,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T21:43:08.314Z"
     }
   ],
   "invertidos": [],
@@ -23789,5 +23814,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T21:37:40.343Z"
+  "updatedAt": "2026-09-30T21:43:08.315Z"
 }
