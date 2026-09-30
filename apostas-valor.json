@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 232.12,
+      "value": 285.15,
       "currency": "BRL",
-      "updatedAt": "2026-09-30T13:13:17.899Z"
+      "updatedAt": "2026-09-30T16:38:54.395Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 555.78,
+      "value": 526.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T16:37:33.552Z"
+      "updatedAt": "2026-09-30T16:38:54.400Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -23328,7 +23328,7 @@
       "market": "Total (linha)",
       "oddMkt": 1.5996503496503496,
       "prob": 62.513661202185794,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-30T12:00",
       "modelo": "F",
       "total": 29.46,
@@ -23337,9 +23337,10 @@
       "lucro": 23.568,
       "roi": 80,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-30T13:10:09.729Z"
+      "updatedAt": "2026-09-30T16:38:54.398Z"
     },
     {
       "id": "muo4j3zx09pva",
@@ -23657,5 +23658,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T16:37:33.552Z"
+  "updatedAt": "2026-09-30T16:38:54.400Z"
 }
