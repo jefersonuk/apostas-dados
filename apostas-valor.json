@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 137.22,
+      "value": 292.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T13:11:18.527Z"
+      "updatedAt": "2026-09-30T13:11:52.079Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4752,9 +4752,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 337.75,
+      "value": 307.75,
       "currency": "USD",
-      "updatedAt": "2026-09-30T12:58:23.975Z"
+      "updatedAt": "2026-09-30T13:11:52.078Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -23365,6 +23365,31 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T13:11:18.526Z"
+    },
+    {
+      "id": "muo4jtvylv4d2",
+      "kind": "valor",
+      "event": "DePaul – Marquette (21-2)",
+      "houseA": "BetOnline",
+      "oddA": 1.53,
+      "stakeA": 155.39999999999998,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "",
+      "oddMkt": 1.3833634719710668,
+      "prob": 72.2875816993464,
+      "winner": null,
+      "date": "2026-09-30T21:00",
+      "modelo": "F",
+      "total": 155.39999999999998,
+      "lucroA": 82.362,
+      "lucroRed": -155.39999999999998,
+      "lucro": 82.362,
+      "roi": 53,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-09-30T13:11:52.078Z"
     }
   ],
   "invertidos": [],
@@ -23531,5 +23556,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-09-30T13:11:18.527Z"
+  "updatedAt": "2026-09-30T13:11:52.079Z"
 }
