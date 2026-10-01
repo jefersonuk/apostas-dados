@@ -39,7 +39,7 @@
       "idealMin": 8,
       "idealMax": 12,
       "pct": 1,
-      "stake": 320,
+      "stake": 310,
       "stakeMes": "2026-10",
       "inicio": "2026-09-28",
       "meta": 300
@@ -5168,10 +5168,10 @@
   ],
   "usdRate": 5.22,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-01T19:04:55.139Z",
-  "eurRate": 5.86,
+  "usdRateAt": "2026-10-01T22:26:05.960Z",
+  "eurRate": 5.85,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-01T19:04:58.834Z",
+  "eurRateAt": "2026-10-01T22:26:06.077Z",
   "appBuild": "20261001-1016",
   "deleted": [
     {
@@ -23955,5 +23955,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-01T20:35:47.411Z"
+  "updatedAt": "2026-10-01T22:26:06.077Z"
 }
