@@ -4566,10 +4566,10 @@
     {
       "id": "mrzmpfmzgil2s",
       "name": "Em arbitragem",
-      "value": 0,
+      "value": 828.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-23T12:24:12.539Z"
+      "updatedAt": "2026-10-01T12:51:39.927Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4752,9 +4752,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 338.35,
+      "value": 278.35,
       "currency": "USD",
-      "updatedAt": "2026-10-01T11:53:45.825Z"
+      "updatedAt": "2026-10-01T12:51:39.909Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 121.41,
-      "updatedAt": "2026-09-30T21:58:42.680Z",
+      "value": 21.41,
+      "updatedAt": "2026-10-01T12:51:39.908Z",
       "currency": "USD"
     },
     {
@@ -23738,6 +23738,30 @@
         "stakes": true
       },
       "updatedAt": "2026-09-30T21:58:42.680Z"
+    },
+    {
+      "id": "mupj9p899hz12",
+      "kind": "sure",
+      "event": "Maryland x Iowa",
+      "houseA": "Betfury",
+      "houseB": "BetOnline",
+      "oddA": 1.83,
+      "oddB": 2.95,
+      "total": 828.8,
+      "stakeA": 518,
+      "stakeB": 310.79999999999995,
+      "lucroA": 119.1400000000001,
+      "lucroB": 88.05999999999995,
+      "lucro": 88.05999999999995,
+      "roi": 10.624999999999995,
+      "winner": null,
+      "curA": "USD",
+      "curB": "USD",
+      "date": "2026-10-01T20:00",
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-01T12:51:39.911Z"
     }
   ],
   "invertidos": [],
@@ -23904,5 +23928,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-01T12:02:32.706Z"
+  "updatedAt": "2026-10-01T12:51:39.928Z"
 }
