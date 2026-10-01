@@ -5166,9 +5166,9 @@
       "updatedAt": "2026-09-29T13:12:11.118Z"
     }
   ],
-  "usdRate": 5.18,
+  "usdRate": 5.22,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-01T12:53:23.112Z",
+  "usdRateAt": "2026-10-01T19:04:55.139Z",
   "eurRate": 5.87,
   "eurRateSrc": "AwesomeAPI",
   "eurRateAt": "2026-10-01T12:53:23.381Z",
