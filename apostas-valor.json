@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 889.4,
+      "value": 785.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-09-30T21:58:42.680Z"
+      "updatedAt": "2026-10-01T11:52:38.002Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4745,8 +4745,8 @@
     {
       "id": "mtack9k79qsdy",
       "name": "Vave",
-      "value": 14,
-      "updatedAt": "2026-09-30T16:41:17.451Z",
+      "value": 52,
+      "updatedAt": "2026-10-01T11:52:37.998Z",
       "currency": "USD"
     },
     {
@@ -23509,7 +23509,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.6766467065868262,
       "prob": 59.642857142857146,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-30T18:00",
       "modelo": "F",
       "total": 103.6,
@@ -23518,9 +23518,10 @@
       "lucro": 93.23999999999998,
       "roi": 89.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-30T16:41:17.451Z"
+      "updatedAt": "2026-10-01T11:52:37.999Z"
     },
     {
       "id": "muoc646wpfs75",
@@ -23889,5 +23890,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-01T11:50:41.945Z"
+  "updatedAt": "2026-10-01T11:52:38.002Z"
 }
