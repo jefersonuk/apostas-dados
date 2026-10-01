@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 428,
+      "value": 272.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-01T11:54:00.877Z"
+      "updatedAt": "2026-10-01T11:54:55.508Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 3.46,
+      "value": 47.56,
       "currency": "USD",
-      "updatedAt": "2026-09-30T21:43:08.314Z"
+      "updatedAt": "2026-10-01T11:54:55.508Z"
     }
   ],
   "aportes": [
@@ -23640,7 +23640,7 @@
       "market": "Escanteios",
       "oddMkt": 1.330316742081448,
       "prob": 75.17006802721089,
-      "winner": null,
+      "winner": "A",
       "date": "2026-09-30T21:00",
       "modelo": "F",
       "total": 155.39999999999998,
@@ -23649,9 +23649,10 @@
       "lucro": 73.03799999999998,
       "roi": 47,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-09-30T21:43:08.314Z"
+      "updatedAt": "2026-10-01T11:54:55.508Z"
     },
     {
       "id": "muomyr34rnhw4",
@@ -23894,5 +23895,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-01T11:54:00.877Z"
+  "updatedAt": "2026-10-01T11:54:55.508Z"
 }
