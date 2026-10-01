@@ -1336,6 +1336,7 @@
     <div class="card">
       <div class="card-title">Apostas da Análise</div>
       <div class="hint" style="margin:0 0 10px;">Entradas feitas pelo botão <b>➕ Entrar</b> do <a href="../analise-futebol/" target="analise">app de análise</a>. Chegam sozinhas ao abrir esta página e entram como apostas de valor normais (saldo da casa debitado, aparecem também em 📈 Valor), marcadas fora do Modelo F. <b>Conferir resultados</b> liquida pelo placar e pelas estatísticas da API-Football e mede o CLV contra a última odd da Pinnacle.</div>
+      <div id="anWait"></div>
       <div class="summary-grid" id="anSummary"></div>
       <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
         <button type="button" class="btn primary" id="anCheck">🔄 Conferir resultados</button>
@@ -1442,7 +1443,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261001-0928';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261001-1016';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1753,7 +1754,7 @@
     try{
       setSyncStatus('Baixando dados da nuvem…');
       const remote=await cloudPull();
-      if(remote===null){ await cloudPush(); setSyncStatus('Nuvem inicializada ↑ '+new Date().toLocaleTimeString('pt-BR')); }
+      if(remote===null){ await cloudPush(); setSyncStatus('Nuvem inicializada ↑ '+new Date().toLocaleTimeString('pt-BR')); syncPronto=true; importarAnalise(); }
       else {
         const antes=state;
         const fundido=fundirEstados(state,normalize(remote));
@@ -1764,6 +1765,7 @@
         await cloudPush();   // devolve a versão fundida para a nuvem
         setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR')+(novos?` · ${novos} registro(s) recebido(s)`:''));
         if(novos) toast(`${novos} registro(s) de outro dispositivo ✓`);
+        syncPronto=true; importarAnalise();
       }
     }catch(e){ setSyncStatus('⚠ '+e.message,true); }
   }
@@ -6116,23 +6118,53 @@
   const INBOX_KEY='apostasInbox_v1';
   // declarações de função (içadas): renderAll pode chamar renderAnalise antes deste trecho rodar
   function analiseBets(){ return state.surebets.filter(o=>o.kind==='valor'&&o.origem==='analise'); }
-  function importarAnalise(){
-    let box=[]; try{ box=JSON.parse(localStorage.getItem(INBOX_KEY))||[]; }catch(e){ box=[]; }
-    if(!box.length) return 0;
+  // Só importa depois que este aparelho tem os dados da nuvem: importar num estado vazio ou velho
+  // criava casas novas (saldo negativo) e, na sincronização seguinte, levava isso para a nuvem.
+  var syncPronto=false;     // var: renderAll pode rodar antes deste trecho
+  var anAguardando=[];   // itens da caixa que não puderam entrar (casa inexistente ou sem sincronizar)
+  function lerCaixa(){ try{ return JSON.parse(localStorage.getItem(INBOX_KEY))||[]; }catch(e){ return []; } }
+  function gravarCaixa(arr){ try{ if(arr.length) localStorage.setItem(INBOX_KEY,JSON.stringify(arr)); else localStorage.removeItem(INBOX_KEY); }catch(e){} }
+  // Duas abas abertas registravam a mesma aposta: a trava (Web Locks) serializa as abas e o item sai
+  // da caixa antes de ser gravado; e duplicatas antigas pelo mesmo inboxId são desfeitas.
+  function importarAnalise(criarCasa){
+    const rodar=()=>importarAnaliseAgora(criarCasa);
+    if(navigator.locks&&navigator.locks.request) return navigator.locks.request('apostasInbox',rodar);
+    return rodar();
+  }
+  function importarAnaliseAgora(criarCasa){
+    limparDuplicadasAnalise();
+    const box=lerCaixa();
+    anAguardando=[];
+    if(!box.length){ renderAnalise(); return 0; }
+    if(!syncPronto){ anAguardando=box.map(it=>({it,motivo:'aguardando sincronizar com a nuvem'})); renderAnalise(); return 0; }
     const ja=new Set(state.surebets.filter(o=>o.analise&&o.analise.inboxId).map(o=>o.analise.inboxId));
-    const feitos=new Set(); let n=0;
+    const pegar=[], ficar=[];
     box.forEach(it=>{
-      feitos.add(it.id);
-      if(ja.has(it.id)||!(it.odd>1)||!(it.stake>0)||!it.casa) return;
+      if(ja.has(it.id)||!(it.odd>1)||!(it.stake>0)||!it.casa) return;               // já registrada ou inválida: sai da caixa
+      if(!acharCasaExistente(it.casa)&&!(criarCasa&&criarCasa===it.id)){ ficar.push(it); anAguardando.push({it,motivo:'a casa "'+it.casa+'" não existe aqui'}); return; }
+      pegar.push(it);
+    });
+    gravarCaixa(ficar);                                                                // reivindica antes de gravar
+    pegar.forEach(it=>{
       const op=gravarValor({casa:it.casa, odd:it.odd, stake:it.stake, cur:it.cur, event:it.event, sport:it.sport,
         market:it.market, oddMkt:it.oddMkt, prob:it.prob, date:it.date, modelo:'analise'});
-      op.origem='analise'; op.analise=Object.assign({},it.analise||{},{inboxId:it.id,enviadaEm:it.createdAt}); touch(op); n++;
+      op.origem='analise'; op.analise=Object.assign({},it.analise||{},{inboxId:it.id,enviadaEm:it.createdAt}); touch(op);
     });
-    // remove só o que foi processado (o app de análise pode ter escrito outra no meio tempo)
-    try{ const atual=JSON.parse(localStorage.getItem(INBOX_KEY))||[]; const resto=atual.filter(x=>!feitos.has(x.id));
-      if(resto.length) localStorage.setItem(INBOX_KEY,JSON.stringify(resto)); else localStorage.removeItem(INBOX_KEY); }catch(e){}
-    if(n){ saveState(); renderAll(); toast(n+' aposta'+(n>1?'s':'')+' da Análise registrada'+(n>1?'s':'')+' ✓'); }
-    return n;
+    if(pegar.length){ saveState(); renderAll(); toast(pegar.length+' aposta'+(pegar.length>1?'s':'')+' da Análise registrada'+(pegar.length>1?'s':'')+' ✓'); }
+    else renderAnalise();
+    return pegar.length;
+  }
+  function limparDuplicadasAnalise(){
+    const vistos=new Set(), extras=[];
+    state.surebets.filter(o=>o.origem==='analise'&&o.analise&&o.analise.inboxId)
+      .sort((a,b)=>String(a.updatedAt||'').localeCompare(String(b.updatedAt||'')))
+      .forEach(o=>{ if(vistos.has(o.analise.inboxId)) extras.push(o); else vistos.add(o.analise.inboxId); });
+    if(!extras.length) return 0;
+    extras.forEach(o=>{ reverterTudo(o); marcarExcluido(o.id); });
+    const fora=new Set(extras.map(o=>o.id));
+    state.surebets=state.surebets.filter(o=>!fora.has(o.id));
+    saveState(); renderAll(); toast(extras.length+' registro(s) duplicado(s) da Análise desfeito(s)');
+    return extras.length;
   }
   window.addEventListener('storage',e=>{ if(e.key===INBOX_KEY) importarAnalise(); });
   window.addEventListener('focus',importarAnalise);
@@ -6154,6 +6186,10 @@
       ['Acerto',validos?anPct(ganhos/validos)+' ('+ganhos+'/'+validos+')':'—',''],
       ['CLV médio',clv===null?'—':(clv>=0?'+':'')+anPct(clv)+' ('+clvs.length+')',clv===null?'':clv>=0?'pos':'neg'],
     ].map(([k,v,c])=>'<div class="summary-item"><div class="k">'+k+'</div><div class="v sm '+c+'">'+v+'</div></div>').join('');
+    const espera=anAguardando.map(({it,motivo})=>'<div class="an-row"><div class="an-head"><span><b>⏳ '+esc(it.event||'')+'</b></span>'+
+      (motivo.startsWith('a casa')?'<button type="button" class="btn small" data-ancriar="'+esc(it.id)+'">Criar a casa e registrar</button>':'')+'</div>'+
+      '<div class="an-meta">'+esc(it.casa)+' @'+Number(it.odd).toFixed(2)+' · '+fmt(it.stake)+' — '+esc(motivo)+'</div></div>').join('');
+    $('anWait').innerHTML=espera?'<div class="card-title" style="margin-top:4px;">Aguardando</div>'+espera:'';
     const prontas=open.filter(anVence).length;
     $('anCheckMsg').textContent=open.length?(open.length+' em aberto'+(prontas?' · '+prontas+' já podem ser conferidas':'')):'nenhuma em aberto';
     // por mercado: o que interessa é saber onde a margem está aparecendo
@@ -6177,6 +6213,10 @@
         (ck.detail?'<div class="an-meta">'+esc(ck.detail)+'</div>':'')+liq+'</div>';
     }).join(''):'<div class="hint" style="margin:0;">Nenhuma aposta enviada pela Análise ainda.</div>';
   }
+  $('anWait').addEventListener('click',e=>{
+    const b=e.target.closest('[data-ancriar]'); if(!b) return;
+    if(confirm('Criar a casa e registrar a aposta? A casa nova começa com saldo zero e fica negativa com a stake.')) importarAnalise(b.dataset.ancriar);
+  });
   $('anList').addEventListener('click',e=>{
     const b=e.target.closest('[data-anliq]'); if(!b) return;
     const [id,w]=b.dataset.anliq.split(':'); liquidarValor(id,w);
@@ -6238,6 +6278,7 @@
   updateValorCalc();
   mdRender();
   layRender();
+  if(!syncCfg) syncPronto=true;
   importarAnalise();
   if(location.hash==='#analise') abrirAba('analise');
   renderAll();
