@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 259,
+      "value": 155.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-01T13:02:21.638Z"
+      "updatedAt": "2026-10-01T17:22:50.227Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4838,9 +4838,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 64.53,
+      "value": 94.13,
       "currency": "USD",
-      "updatedAt": "2026-10-01T13:02:21.637Z"
+      "updatedAt": "2026-10-01T17:22:50.227Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -23775,7 +23775,7 @@
       "market": "Cartões",
       "oddMkt": 1.3943112102621305,
       "prob": 71.72,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-01T13:00",
       "modelo": "F",
       "total": 103.6,
@@ -23784,9 +23784,10 @@
       "lucro": 49.727999999999994,
       "roi": 48,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-01T13:02:21.637Z"
+      "updatedAt": "2026-10-01T17:22:50.227Z"
     }
   ],
   "invertidos": [],
@@ -23953,5 +23954,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-01T13:02:21.638Z"
+  "updatedAt": "2026-10-01T17:22:50.227Z"
 }
