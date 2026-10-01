@@ -4898,6 +4898,14 @@
       "time": "09:15",
       "note": "Retirada",
       "updatedAt": "2026-09-12T12:32:11.642Z"
+    },
+    {
+      "id": "muph9zrysd5ry",
+      "value": -3550,
+      "date": "2026-10-01",
+      "time": "08:48",
+      "note": "cartão de crédito",
+      "updatedAt": "2026-10-01T11:55:54.334Z"
     }
   ],
   "caixa": [
@@ -23896,5 +23904,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-01T11:55:23.109Z"
+  "updatedAt": "2026-10-01T11:55:54.335Z"
 }
