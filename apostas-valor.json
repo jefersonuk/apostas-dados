@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 528.82,
+      "value": 507,
       "currency": "USD",
-      "updatedAt": "2026-10-01T11:50:41.944Z"
+      "updatedAt": "2026-10-02T12:09:23.633Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 193.81,
+      "value": 156.14,
       "currency": "EUR",
-      "updatedAt": "2026-10-01T11:55:23.109Z"
+      "updatedAt": "2026-10-02T12:10:01.311Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 239.31,
-      "updatedAt": "2026-10-02T10:20:39.952Z",
+      "value": 241.9,
+      "updatedAt": "2026-10-02T12:09:29.688Z",
       "currency": "USD"
     },
     {
@@ -23957,5 +23957,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T12:08:44.255Z"
+  "updatedAt": "2026-10-02T12:10:01.311Z"
 }
