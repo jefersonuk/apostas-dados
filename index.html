@@ -40,6 +40,11 @@
   .an-meta{color:var(--muted,#8b98a5);font-size:12px;margin-top:3px;}
   .an-liq{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
   .an-tag{font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid var(--border);margin-left:6px;}
+  .an-liq .btn.primary{pointer-events:none;}
+  .an-edit{display:grid;gap:8px;margin-top:8px;padding:10px;border:1px solid var(--border);border-radius:8px;}
+  .an-edit .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .an-edit label{display:block;font-size:12px;color:var(--muted,#8b98a5);margin-bottom:3px;}
+  .an-edit input,.an-edit select{width:100%;}
 
   .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:12px;}
   .card-title{font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:10px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px;}
@@ -1443,7 +1448,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261002-1035';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261002-1053';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -4913,6 +4918,17 @@
           '<div class="seg-meta"><span>'+r.g.map(o=>esc(legHouse(o,'A'))+' @'+legOdd(o,'A').toFixed(2)+' '+fmt(legStake(o,'A')).replace(/,\d\d$/,'')+(o.winner?' '+(VB_RES[o.winner]||''):' aberta')).join(' · ')+'</span></div></div>').join('');
   }
 
+  // Reescreve uma aposta de valor sem bagunçar saldos: devolve stake e resultado, aplica a mudança,
+  // debita de novo (na casa nova, se mudou) e reaplica o resultado que ela tinha.
+  function editarValor(o,mudar){
+    const tinha=o.winner;
+    reverterTudo(o);
+    mudar(o);
+    recalcValor(o);
+    aplicarStakes(o);
+    if(tinha) aplicarResultado(o,tinha);
+    touch(o);
+  }
   function liquidarValor(id,w){
     const o=state.surebets.find(x=>x.id===id); if(!o) return;
     const antes=o.winner||null;
@@ -6029,9 +6045,7 @@
     if(sv){
       const o=state.surebets.find(x=>x.id===sv.dataset.vbsave); if(!o) return;
       const form=$('vbEditForm_'+o.id); if(!form) return;
-      const tinha=o.winner;
-      reverterTudo(o);                                    // devolve saldo antes de reescrever os números
-      form.querySelectorAll('.vbed').forEach(inp=>{
+      editarValor(o,o=>form.querySelectorAll('.vbed').forEach(inp=>{
         const f=inp.dataset.f, v=inp.value;
         if(f==='event') o.event=v.trim()||o.event;
         else if(f==='sport') o.sport=v.trim();
@@ -6042,11 +6056,7 @@
         else if(f==='stakeNat'){ const n=numBR(v); if(n>0 && v.trim()!==inp.dataset.orig) o.stakeA=Math.round(n*curRate(legCur(o,'A'))*100)/100; }
         else if(f==='oddMkt'){ const n=numBR(v); o.oddMkt=(n>1)?n:null; }
         else if(f==='date') o.date=v||o.date;
-      });
-      recalcValor(o);
-      aplicarStakes(o);
-      if(tinha) aplicarResultado(o,tinha);
-      touch(o);
+      }));
       vbEditingId=null; saveState(); renderAll();
       toast('Aposta atualizada ✓');
     }
@@ -6122,6 +6132,7 @@
   // criava casas novas (saldo negativo) e, na sincronização seguinte, levava isso para a nuvem.
   var syncPronto=false;     // var: renderAll pode rodar antes deste trecho
   var anAguardando=[];   // itens da caixa que não puderam entrar (casa inexistente ou sem sincronizar)
+  var anEditando=null;   // id da aposta da aba Análise aberta para edição
   function lerCaixa(){ try{ return JSON.parse(localStorage.getItem(INBOX_KEY))||[]; }catch(e){ return []; } }
   function gravarCaixa(arr){ try{ if(arr.length) localStorage.setItem(INBOX_KEY,JSON.stringify(arr)); else localStorage.removeItem(INBOX_KEY); }catch(e){} }
   // Duas abas abertas registravam a mesma aposta: a trava (Web Locks) serializa as abas e o item sai
@@ -6229,8 +6240,12 @@
     $('anList').innerHTML=all.length?all.map(o=>{
       const a=o.analise||{}, ck=a.check||{}, odd=legOdd(o,'A');
       const st=o.winner?'<b class="'+(sbRealProfit(o)>=0?'pos':'neg')+'">'+(VB_RES[o.winner]||o.winner)+' '+fmtSign(sbRealProfit(o))+'</b>':'<span class="hint" style="margin:0;">em aberto</span>';
-      const liq=o.winner?'':'<div class="an-liq">'+[['A','green'],['HW','½ green'],['VOID','devolvida'],['HL','½ red'],['RED','red']]
-        .map(([w,t])=>'<button type="button" class="btn small" data-anliq="'+o.id+':'+w+'">'+t+'</button>').join('')+'</div>';
+      const liq='<div class="an-liq">'+[['A','✓ green'],['HW','½ green'],['VOID','↩ anulada'],['HL','½ red'],['RED','✗ red']]
+        .map(([w,t])=>'<button type="button" class="btn small'+(o.winner===w?' primary':'')+'" data-anliq="'+o.id+':'+w+'">'+t+'</button>').join('')+
+        (o.winner?'<button type="button" class="btn small" data-anliq="'+o.id+':">reabrir</button>':'')+
+        '<button type="button" class="btn small" data-anedit="'+o.id+'">✏️ editar</button>'+
+        '<button type="button" class="btn small danger" data-andel="'+o.id+'">excluir</button></div>'+
+        (anEditando===o.id?anFormEdicao(o):'');
       return '<div class="an-row"><div class="an-head"><span><b>'+esc(a.mercado||o.market||'')+': '+esc(a.linha||'')+'</b>'+
         (a.tier?'<span class="an-tag">'+esc(a.tier)+'</span>':'')+'</span>'+st+'</div>'+
         '<div>'+esc((a.home&&a.away)?a.home+' x '+a.away:o.event)+' <span class="an-meta">· '+esc(a.competition||'')+' · '+String(o.date).slice(8,10)+'/'+String(o.date).slice(5,7)+' '+String(o.date).slice(11,16)+'</span></div>'+
@@ -6244,13 +6259,77 @@
     const b=e.target.closest('[data-ancriar]'); if(!b) return;
     if(confirm('Criar a casa e registrar a aposta? A casa nova começa com saldo zero e fica negativa com a stake.')) importarAnalise(b.dataset.ancriar);
   });
+  // Edição de uma aposta da Análise: casa (a moeda segue a casa), odd, stake na moeda da casa, horário,
+  // mercado, linha e odd justa. Mudou a linha: o id dela é relido pelo app de análise para a conferência
+  // automática continuar valendo; se não reconhecer, a conferência dessa aposta passa a ser manual.
+  function anFormEdicao(o){
+    const a=o.analise||{}, cur=legCur(o,'A'), stNat=legStake(o,'A')/curRate(cur);
+    const campo=(lab,f,val,extra)=>'<div><label>'+lab+'</label><input type="text" data-f="'+f+'" value="'+esc(val)+'"'+(extra||'')+'></div>';
+    return '<div class="an-edit" id="anEditForm_'+o.id+'">'+
+      '<div class="grid2">'+campo('Casa','casa',legHouse(o,'A'),' list="houseList" autocomplete="off"')+campo('Odd','odd',legOdd(o,'A'),' inputmode="decimal"')+'</div>'+
+      '<div class="grid2">'+campo('Stake ('+curSimbolo(cur)+')','stake',stNat.toFixed(2),' inputmode="decimal" data-orig="'+stNat.toFixed(2)+'"')+
+        '<div><label>Data / horário do jogo</label><input type="datetime-local" data-f="data" value="'+esc(String(o.date||'').slice(0,16))+'"></div></div>'+
+      '<div class="grid2">'+campo('Mercado','mercado',a.mercado||o.market||'')+campo('Linha','linha',a.linha||'')+'</div>'+
+      '<div class="grid2">'+campo('Odd justa','justa',typeof o.oddMkt==='number'?o.oddMkt.toFixed(2):'',' inputmode="decimal"')+
+        '<div style="display:flex;gap:6px;align-items:flex-end;"><button type="button" class="btn small primary" data-ansave="'+o.id+'">Salvar</button>'+
+        '<button type="button" class="btn small" data-ancancel="'+o.id+'">Cancelar</button></div></div>'+
+      '<div class="hint" style="margin:0;">A stake está na moeda da casa. Trocar de casa devolve a stake à casa antiga e debita a nova; o resultado marcado é reaplicado.</div>'+
+    '</div>';
+  }
+  async function anSalvar(id){
+    const o=state.surebets.find(x=>x.id===id), f=$('anEditForm_'+id); if(!o||!f) return;
+    const inp=k=>f.querySelector('[data-f="'+k+'"]'), v=k=>inp(k).value;
+    const casa=v('casa').trim(), odd=numBR(v('odd')), stakeTxt=v('stake').trim(), stake=numBR(stakeTxt), justa=numBR(v('justa'));
+    const mercado=v('mercado').trim(), linha=v('linha').trim(), data=v('data');
+    if(!nomeCasaValido(casa)){ toast('Informe a casa.'); return; }
+    if(!(odd>1)){ toast('Odd inválida.'); return; }
+    if(!(stake>0)){ toast('Stake inválida.'); return; }
+    const a=o.analise||{};
+    let lineId=a.lineId||null, aviso='';
+    if(mercado!==(a.mercado||'')||linha!==(a.linha||'')){
+      try{ const m=await import('/analise-futebol/src/myline.js'); lineId=m.parseLine(mercado+' '+linha).id||null; }catch(e){ lineId=null; }
+      if(!lineId) aviso=' · linha não reconhecida: o resultado desta aposta passa a ser marcado à mão';
+    }
+    const conta=acharCasaExistente(casa);
+    if(!conta&&!confirm('"'+casa+'" não está nos saldos.\n\nCriar a casa em '+curSimbolo(legCur(o,'A'))+' e debitar a stake dela?')) return;
+    const curNova=conta?(conta.currency||'BRL'):legCur(o,'A'), mudouMoeda=curNova!==legCur(o,'A');
+    editarValor(o,o=>{
+      o.houseA=conta?conta.name.trim():casa;
+      o.oddA=odd;
+      // stake só é reconvertida se você mudou o número (ou a moeda): senão a cotação do dia a deslocaria
+      if(stakeTxt!==inp('stake').dataset.orig||mudouMoeda) o.stakeA=Math.round(stake*curRate(curNova)*100)/100;
+      o.curA=curNova;
+      o.oddMkt=justa>1?justa:null;
+      if(data) o.date=data;
+      o.analise=Object.assign({},a,{mercado,linha,lineId,kickoff:data?new Date(data).toISOString():a.kickoff,editadaEm:new Date().toISOString()});
+      const jogo=a.home&&a.away?a.home+' x '+a.away:String(o.event||'').split(' — ')[0];
+      o.event=jogo+' — '+mercado+': '+linha;
+    });
+    anEditando=null; saveState(); renderAll();
+    toast('Aposta atualizada ✓'+aviso);
+  }
   $('anList').addEventListener('click',e=>{
-    const b=e.target.closest('[data-anliq]'); if(!b) return;
-    const [id,w]=b.dataset.anliq.split(':'); liquidarValor(id,w);
+    const b=e.target.closest('[data-anliq]');
+    if(b){ const [id,w]=b.dataset.anliq.split(':'); liquidarValor(id,w); return; }
+    const ed=e.target.closest('[data-anedit]');
+    if(ed){ anEditando=anEditando===ed.dataset.anedit?null:ed.dataset.anedit; renderAnalise(); return; }
+    if(e.target.closest('[data-ancancel]')){ anEditando=null; renderAnalise(); return; }
+    const sv=e.target.closest('[data-ansave]');
+    if(sv){ anSalvar(sv.dataset.ansave); return; }
+    const de=e.target.closest('[data-andel]');
+    if(de){
+      const o=state.surebets.find(x=>x.id===de.dataset.andel);
+      if(o&&confirm('Excluir "'+(o.event||'')+'"?\n\nA stake volta para o saldo da casa.')){
+        reverterTudo(o); marcarExcluido(o.id);
+        state.surebets=state.surebets.filter(x=>x.id!==o.id);
+        if(anEditando===o.id) anEditando=null;
+        saveState(); renderAll(); toast('Aposta excluída');
+      }
+    }
   });
   // Confere pelo módulo do app de análise (mesmo endereço): placar, estatísticas, 1º tempo e CLV.
   async function conferirAnalise(){
-    const pend=analiseBets().filter(o=>o.analise&&o.analise.fixtureId&&(!o.winner||typeof o.analise.clv!=='number'&&o.analise.priced_by==='pinnacle')&&anVence(o));
+    const pend=analiseBets().filter(o=>o.analise&&o.analise.fixtureId&&o.analise.lineId&&(!o.winner||typeof o.analise.clv!=='number'&&o.analise.priced_by==='pinnacle')&&anVence(o));
     if(!pend.length){ $('anCheckMsg').textContent='Nada para conferir agora (só depois do fim do jogo).'; return; }
     $('anCheck').disabled=true; $('anCheckMsg').textContent='Conferindo '+pend.length+'…';
     let liq=0, erro='';
