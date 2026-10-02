@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 103.6,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-01T20:35:47.411Z"
+      "updatedAt": "2026-10-02T10:20:31.279Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 21.41,
-      "updatedAt": "2026-10-01T19:05:16.577Z",
+      "value": 58.06,
+      "updatedAt": "2026-10-02T10:20:31.279Z",
       "currency": "USD"
     },
     {
@@ -23727,7 +23727,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.756858323938369,
       "prob": 56.919786096256686,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-01T21:00",
       "modelo": "F",
       "total": 103.6,
@@ -23736,9 +23736,10 @@
       "lucro": 88.06,
       "roi": 85.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-01T19:05:16.577Z"
+      "updatedAt": "2026-10-02T10:20:31.279Z"
     },
     {
       "id": "mupj9p899hz12",
@@ -23955,5 +23956,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T10:19:52.385Z"
+  "updatedAt": "2026-10-02T10:20:31.279Z"
 }
