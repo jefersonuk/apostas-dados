@@ -1448,7 +1448,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261002-1117';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261002-1420';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1625,11 +1625,19 @@
   function b64encode(str){ return btoa(unescape(encodeURIComponent(str))); }
   function b64decode(b64){ return decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))); }
 
+  // Mensagem que diz o que fazer, em vez do código HTTP: o repositório é público, então ler funciona com
+  // qualquer token; gravar exige token com acesso a ESTE repositório e Contents: Read and write.
+  function erroGitHub(status,acao){
+    const repo=syncCfg?syncCfg.repo:'o repositório';
+    if(status===401) return 'Token inválido ou expirado (HTTP 401). Gere um token novo e conecte de novo.';
+    if(status===403) return 'O token deste aparelho não pode '+acao+' em '+repo+' (HTTP 403). Use um token fine-grained com acesso a '+repo+' e permissão Contents: Read and write; desconecte e conecte com ele.';
+    if(status===404) return 'Repositório ou arquivo não encontrado (HTTP 404): confira se o repositório é '+repo+' e o arquivo apostas-valor.json.';
+    return 'Erro ao '+acao+' (HTTP '+status+').';
+  }
   async function cloudPull(){
     const r=await fetch(apiUrl(true),{headers:apiHeaders()});
     if(r.status===404){ cloudSha=null; return null; }
-    if(r.status===401||r.status===403) throw new Error('Token inválido ou sem permissão.');
-    if(!r.ok) throw new Error('Erro ao ler (HTTP '+r.status+').');
+    if(!r.ok) throw new Error(erroGitHub(r.status,'ler'));
     const j=await r.json(); cloudSha=j.sha;
     try{
       const remoto=JSON.parse(b64decode(j.content));
@@ -1665,7 +1673,7 @@
       }catch(e){}
       return cloudPush(true);
     }
-    if(!r.ok) throw new Error('Erro ao gravar (HTTP '+r.status+').');
+    if(!r.ok) throw new Error(erroGitHub(r.status,'gravar'));
     const j=await r.json(); cloudSha=j.content&&j.content.sha;
   }
 
