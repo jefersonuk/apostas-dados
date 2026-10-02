@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1114.83,
+      "value": 1167.03,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T15:34:27.116Z"
+      "updatedAt": "2026-10-02T18:34:36.764Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 241,
-      "updatedAt": "2026-10-02T17:33:52.227Z",
+      "value": 231,
+      "updatedAt": "2026-10-02T18:34:36.763Z",
       "currency": "USD"
     },
     {
@@ -24357,6 +24357,53 @@
         "stakes": true
       },
       "updatedAt": "2026-10-02T15:34:27.115Z"
+    },
+    {
+      "id": "murayl3u6twup",
+      "kind": "valor",
+      "event": "France x Italy — Total de chutes: Menos de 29,5",
+      "houseA": "Betfury",
+      "oddA": 1.64,
+      "stakeA": 52.2,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Chutes",
+      "oddMkt": 1.59,
+      "prob": 0.629,
+      "winner": null,
+      "date": "2026-10-02T15:45",
+      "modelo": "analise",
+      "total": 52.2,
+      "lucroA": 33.407999999999994,
+      "lucroRed": -52.2,
+      "lucro": 33.407999999999994,
+      "roi": 63.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T18:34:36.763Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528924,
+        "kickoff": "2026-10-02T18:45:00.000Z",
+        "home": "France",
+        "away": "Italy",
+        "competition": "UEFA Nations League",
+        "lineId": "shotsU29.5",
+        "mercado": "Total de chutes",
+        "linha": "Menos de 29,5",
+        "tier": "sólida",
+        "p_model": 0.629,
+        "p_blend": 0.629,
+        "p_pinnacle": null,
+        "fair_odd": 1.59,
+        "odd_min": 1.72,
+        "pinnacle_odd": null,
+        "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
+        "fragile": true,
+        "inboxId": "anmuraykmmzhme",
+        "enviadaEm": "2026-10-02T18:34:36.142Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24523,5 +24570,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T17:33:52.228Z"
+  "updatedAt": "2026-10-02T18:34:36.764Z"
 }
