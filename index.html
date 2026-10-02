@@ -1443,7 +1443,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261001-1016';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261002-1035';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -6126,18 +6126,41 @@
   function gravarCaixa(arr){ try{ if(arr.length) localStorage.setItem(INBOX_KEY,JSON.stringify(arr)); else localStorage.removeItem(INBOX_KEY); }catch(e){} }
   // Duas abas abertas registravam a mesma aposta: a trava (Web Locks) serializa as abas e o item sai
   // da caixa antes de ser gravado; e duplicatas antigas pelo mesmo inboxId são desfeitas.
+  // A caixa também fica na nuvem do app de análise (repositório privado do cache, inbox/apostas.json):
+  // a aposta enviada de qualquer navegador chega aqui, mesmo que aquele navegador esteja sem sync.
+  // Puxa no máximo a cada 20 s; registrada a aposta, ela sai da nuvem.
+  var anNuvem={em:0,cfg:null,erro:null};
+  function registradasAnalise(){ return new Set(state.surebets.filter(o=>o.analise&&o.analise.inboxId).map(o=>o.analise.inboxId)); }
+  async function moduloCaixa(){ try{ return await import('/analise-futebol/src/inbox.js'); }catch(e){ return null; } }
+  async function puxarCaixaNuvem(){
+    if(!syncPronto||Date.now()-anNuvem.em<20000) return;
+    anNuvem.em=Date.now();
+    const m=await moduloCaixa();
+    if(!m||!m.cloudCfg()){ anNuvem.cfg=false; return; }
+    anNuvem.cfg=true;
+    try{
+      const remotos=(await m.pullItems())||[], local=lerCaixa(), tem=new Set(local.map(i=>i.id)), ja=registradasAnalise();
+      const novos=remotos.filter(i=>!tem.has(i.id)&&!ja.has(i.id));
+      if(novos.length) gravarCaixa(local.concat(novos));
+      const feitos=remotos.filter(i=>ja.has(i.id)).map(i=>i.id);
+      if(feitos.length) m.dropItems(feitos).catch(()=>{});
+      anNuvem.erro=null;
+    }catch(e){ anNuvem.erro=e.message; }
+  }
+  function tirarDaCaixaNuvem(ids){ if(ids.length) moduloCaixa().then(m=>m&&m.cloudCfg()&&m.dropItems(ids)).catch(()=>{}); }
   function importarAnalise(criarCasa){
-    const rodar=()=>importarAnaliseAgora(criarCasa);
+    const rodar=async()=>{ await puxarCaixaNuvem(); const ids=importarAnaliseAgora(criarCasa); tirarDaCaixaNuvem(ids); return ids.length; };
     if(navigator.locks&&navigator.locks.request) return navigator.locks.request('apostasInbox',rodar);
     return rodar();
   }
+  // Registra o que está na caixa; devolve os ids registrados.
   function importarAnaliseAgora(criarCasa){
     limparDuplicadasAnalise();
     const box=lerCaixa();
     anAguardando=[];
-    if(!box.length){ renderAnalise(); return 0; }
-    if(!syncPronto){ anAguardando=box.map(it=>({it,motivo:'aguardando sincronizar com a nuvem'})); renderAnalise(); return 0; }
-    const ja=new Set(state.surebets.filter(o=>o.analise&&o.analise.inboxId).map(o=>o.analise.inboxId));
+    if(!box.length){ renderAnalise(); return []; }
+    if(!syncPronto){ anAguardando=box.map(it=>({it,motivo:'aguardando sincronizar com a nuvem'})); renderAnalise(); return []; }
+    const ja=registradasAnalise();
     const pegar=[], ficar=[];
     box.forEach(it=>{
       if(ja.has(it.id)||!(it.odd>1)||!(it.stake>0)||!it.casa) return;               // já registrada ou inválida: sai da caixa
@@ -6152,7 +6175,7 @@
     });
     if(pegar.length){ saveState(); renderAll(); toast(pegar.length+' aposta'+(pegar.length>1?'s':'')+' da Análise registrada'+(pegar.length>1?'s':'')+' ✓'); }
     else renderAnalise();
-    return pegar.length;
+    return pegar.map(it=>it.id);
   }
   function limparDuplicadasAnalise(){
     const vistos=new Set(), extras=[];
@@ -6171,6 +6194,8 @@
   document.addEventListener('visibilitychange',()=>{ if(!document.hidden) importarAnalise(); });
 
   function anPct(x){ return (x*100).toFixed(1).replace('.',',')+'%'; }
+  // stake de um item da caixa: na moeda da casa quando veio assim (stake sempre em R$)
+  function anStakeItem(it){ return it.cur&&it.cur!=='BRL'&&it.stakeNat>0?fmtCur(it.stakeNat,it.cur)+' ('+fmt(it.stake)+')':fmt(it.stake); }
   function anVence(o){ return Date.parse((o.analise||{}).kickoff||o.date)+105*60000<Date.now(); }   // jogo já deve ter terminado
   function renderAnalise(){
     if(!$('anList')) return;
@@ -6188,8 +6213,10 @@
     ].map(([k,v,c])=>'<div class="summary-item"><div class="k">'+k+'</div><div class="v sm '+c+'">'+v+'</div></div>').join('');
     const espera=anAguardando.map(({it,motivo})=>'<div class="an-row"><div class="an-head"><span><b>⏳ '+esc(it.event||'')+'</b></span>'+
       (motivo.startsWith('a casa')?'<button type="button" class="btn small" data-ancriar="'+esc(it.id)+'">Criar a casa e registrar</button>':'')+'</div>'+
-      '<div class="an-meta">'+esc(it.casa)+' @'+Number(it.odd).toFixed(2)+' · '+fmt(it.stake)+' — '+esc(motivo)+'</div></div>').join('');
-    $('anWait').innerHTML=espera?'<div class="card-title" style="margin-top:4px;">Aguardando</div>'+espera:'';
+      '<div class="an-meta">'+esc(it.casa)+' @'+Number(it.odd).toFixed(2)+' · '+anStakeItem(it)+' — '+esc(motivo)+'</div></div>').join('');
+    const nuvem=anNuvem.cfg===false&&syncPronto?'<div class="hint" style="margin:0 0 8px;">Para receber aqui as apostas enviadas de outros aparelhos, conecte a ☁️ nuvem no app de análise neste aparelho (⚙️ Chave).</div>'
+      :anNuvem.erro?'<div class="hint" style="margin:0 0 8px;">Caixa da nuvem com erro: '+esc(anNuvem.erro)+'</div>':'';
+    $('anWait').innerHTML=nuvem+(espera?'<div class="card-title" style="margin-top:4px;">Aguardando</div>'+espera:'');
     const prontas=open.filter(anVence).length;
     $('anCheckMsg').textContent=open.length?(open.length+' em aberto'+(prontas?' · '+prontas+' já podem ser conferidas':'')):'nenhuma em aberto';
     // por mercado: o que interessa é saber onde a margem está aparecendo
@@ -6207,7 +6234,7 @@
       return '<div class="an-row"><div class="an-head"><span><b>'+esc(a.mercado||o.market||'')+': '+esc(a.linha||'')+'</b>'+
         (a.tier?'<span class="an-tag">'+esc(a.tier)+'</span>':'')+'</span>'+st+'</div>'+
         '<div>'+esc((a.home&&a.away)?a.home+' x '+a.away:o.event)+' <span class="an-meta">· '+esc(a.competition||'')+' · '+String(o.date).slice(8,10)+'/'+String(o.date).slice(5,7)+' '+String(o.date).slice(11,16)+'</span></div>'+
-        '<div class="an-meta">'+esc(legHouse(o,'A'))+' @'+odd.toFixed(2)+' · '+fmt(legStake(o,'A'))+
+        '<div class="an-meta">'+esc(legHouse(o,'A'))+' @'+odd.toFixed(2)+' · '+(legCur(o,'A')!=='BRL'?vbStakeNat(o)+' ('+fmt(legStake(o,'A'))+')':fmt(legStake(o,'A')))+
           (a.p_blend?' · acerto previsto '+anPct(a.p_blend):'')+(a.fair_odd?' · justa '+a.fair_odd.toFixed(2):'')+(a.odd_min?' · mínima '+a.odd_min.toFixed(2):'')+
           (typeof a.clv==='number'?' · CLV '+(a.clv>=0?'+':'')+anPct(a.clv)+' (fech. justa '+a.closingFair.toFixed(2)+')':'')+'</div>'+
         (ck.detail?'<div class="an-meta">'+esc(ck.detail)+'</div>':'')+liq+'</div>';
