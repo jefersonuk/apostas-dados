@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 68.84,
+      "value": 98.84,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T19:36:12.758Z"
+      "updatedAt": "2026-10-02T19:51:34.691Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24243,7 +24243,7 @@
       "event": "Latvia x Montenegro — Total de escanteios: Mais de 8,5",
       "houseA": "Sportmarket",
       "oddA": 1.77,
-      "stakeA": 234.8,
+      "stakeA": 58.7,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Escanteios",
@@ -24252,16 +24252,16 @@
       "winner": "RED",
       "date": "2026-10-02T13:00",
       "modelo": "analise",
-      "total": 234.8,
-      "lucroA": 180.79600000000002,
-      "lucroRed": -234.8,
-      "lucro": 180.79600000000002,
+      "total": 58.7,
+      "lucroA": 45.199000000000005,
+      "lucroRed": -58.7,
+      "lucro": 45.199000000000005,
       "roi": 77,
       "aplicado": {
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-02T18:45:40.959Z",
+      "updatedAt": "2026-10-02T19:51:34.691Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1545608,
@@ -24622,5 +24622,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T19:51:12.892Z"
+  "updatedAt": "2026-10-02T19:51:34.692Z"
 }
