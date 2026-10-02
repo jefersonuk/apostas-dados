@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 120,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T10:20:31.279Z"
+      "updatedAt": "2026-10-02T12:37:21.224Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 156.14,
+      "value": 135.7,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T12:10:01.311Z"
+      "updatedAt": "2026-10-02T12:37:21.223Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -23791,6 +23791,53 @@
         "resultado": "A"
       },
       "updatedAt": "2026-10-01T17:22:50.227Z"
+    },
+    {
+      "id": "muqy75c7xdo1i",
+      "kind": "valor",
+      "event": "Independ. Rivadavia x Gimnasia L.P. — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.38,
+      "stakeA": 120,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.47,
+      "prob": 0.405,
+      "winner": null,
+      "date": "2026-10-02T21:30",
+      "modelo": "analise",
+      "total": 120,
+      "lucroA": 165.6,
+      "lucroRed": -120,
+      "lucro": 165.6,
+      "roi": 138,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T12:37:21.224Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493162,
+        "kickoff": "2026-10-03T00:30:00.000Z",
+        "home": "Independ. Rivadavia",
+        "away": "Gimnasia L.P.",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.406,
+        "p_blend": 0.405,
+        "p_pinnacle": 0.405,
+        "fair_odd": 2.47,
+        "odd_min": 2.59,
+        "pinnacle_odd": 2.34,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuqy72pankfo",
+        "enviadaEm": "2026-10-02T12:37:17.806Z"
+      }
     }
   ],
   "invertidos": [],
@@ -23957,5 +24004,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T12:11:09.910Z"
+  "updatedAt": "2026-10-02T12:37:21.224Z"
 }
