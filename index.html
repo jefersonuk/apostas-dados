@@ -1448,7 +1448,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261002-1420';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261002-1542';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -6324,7 +6324,7 @@
     const a=o.analise||{};
     let lineId=a.lineId||null, aviso='';
     if(mercado!==(a.mercado||'')||linha!==(a.linha||'')){
-      try{ const m=await import('/analise-futebol/src/myline.js'); lineId=m.parseLine(mercado+' '+linha).id||null; }catch(e){ lineId=null; }
+      try{ const m=await import('/analise-futebol/src/myline.js'); lineId=m.parseLine(linha,{market:mercado,names:{home:a.home,away:a.away}}).id||null; }catch(e){ lineId=null; }
       if(!lineId) aviso=' · linha não reconhecida: o resultado desta aposta passa a ser marcado à mão';
     }
     const conta=acharCasaExistente(casa);
