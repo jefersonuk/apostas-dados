@@ -1448,7 +1448,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261002-1108';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261002-1117';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -6165,7 +6165,13 @@
       anNuvem.erro=null;
     }catch(e){ anNuvem.erro=e.message; }
   }
-  function tirarDaCaixaNuvem(ids){ if(ids.length) moduloCaixa().then(m=>m&&m.cloudCfg()&&m.dropItems(ids)).catch(()=>{}); }
+  // Tira da nuvem o que foi registrado — de novo 15 s depois: com o app aberto, a aposta entra pela caixa
+  // local antes de o app de análise terminar de mandá-la para a nuvem, e a cópia de lá ficaria para trás.
+  function tirarDaCaixaNuvem(ids){
+    if(!ids.length) return;
+    const tirar=()=>moduloCaixa().then(m=>m&&m.cloudCfg()&&m.dropItems(ids)).catch(()=>{});
+    tirar(); setTimeout(tirar,15000);
+  }
   function importarAnalise(criarCasa,confirmarId){
     const rodar=async()=>{ await puxarCaixaNuvem(); const ids=importarAnaliseAgora(criarCasa,confirmarId); tirarDaCaixaNuvem(ids); return ids.length; };
     if(navigator.locks&&navigator.locks.request) return navigator.locks.request('apostasInbox',rodar);
