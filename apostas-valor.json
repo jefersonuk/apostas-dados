@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 567.6,
+      "value": 626.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T21:58:03.923Z"
+      "updatedAt": "2026-10-02T22:03:12.962Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 88.84,
+      "value": 78.84,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T21:58:03.923Z"
+      "updatedAt": "2026-10-02T22:03:12.962Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24517,6 +24517,53 @@
         "inboxId": "anmuri84v8ihzi",
         "enviadaEm": "2026-10-02T21:57:59.588Z"
       }
+    },
+    {
+      "id": "murieuo2g72fb",
+      "kind": "valor",
+      "event": "Fortaleza EC x Nautico Recife — Handicap de escanteios: Nautico Recife +2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.63,
+      "stakeA": 58.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.74,
+      "prob": 0.576,
+      "winner": null,
+      "date": "2026-10-02T21:35",
+      "modelo": "analise",
+      "total": 58.8,
+      "lucroA": 37.04399999999999,
+      "lucroRed": -58.8,
+      "lucro": 37.04399999999999,
+      "roi": 62.999999999999986,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T22:03:12.962Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520905,
+        "kickoff": "2026-10-03T00:35:00.000Z",
+        "home": "Fortaleza EC",
+        "away": "Nautico Recife",
+        "competition": "Serie B",
+        "lineId": "chA2.5",
+        "mercado": "Handicap de escanteios",
+        "linha": "Nautico Recife +2,5",
+        "tier": "sólida",
+        "p_model": 0.575,
+        "p_blend": 0.576,
+        "p_pinnacle": 0.576,
+        "fair_odd": 1.74,
+        "odd_min": 1.82,
+        "pinnacle_odd": 1.62,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmurierquq6uw",
+        "enviadaEm": "2026-10-02T22:03:09.174Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24683,5 +24730,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T21:58:42.856Z"
+  "updatedAt": "2026-10-02T22:03:12.962Z"
 }
