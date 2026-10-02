@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1167.03,
+      "value": 1225.73,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T18:34:36.764Z"
+      "updatedAt": "2026-10-02T18:35:53.497Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 68.84,
+      "value": 58.84,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T15:31:32.054Z"
+      "updatedAt": "2026-10-02T18:35:53.497Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24404,6 +24404,53 @@
         "inboxId": "anmuraykmmzhme",
         "enviadaEm": "2026-10-02T18:34:36.142Z"
       }
+    },
+    {
+      "id": "murb08bdvwa72",
+      "kind": "valor",
+      "event": "France x Italy — Handicap escanteios 1T: Fora +2",
+      "houseA": "Sportmarket",
+      "oddA": 1.6,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.42,
+      "prob": 0.702,
+      "winner": null,
+      "date": "2026-10-02T15:45",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 35.220000000000006,
+      "lucroRed": -58.7,
+      "lucro": 35.220000000000006,
+      "roi": 60.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T18:35:53.497Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528924,
+        "kickoff": "2026-10-02T18:45:00.000Z",
+        "home": "France",
+        "away": "Italy",
+        "competition": "UEFA Nations League",
+        "lineId": "c1hA2",
+        "mercado": "Handicap escanteios 1T",
+        "linha": "Fora +2",
+        "tier": "sólida",
+        "p_model": 0.702,
+        "p_blend": 0.702,
+        "p_pinnacle": null,
+        "fair_odd": 1.42,
+        "odd_min": 1.5,
+        "pinnacle_odd": null,
+        "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
+        "fragile": true,
+        "inboxId": "anmurb07ycbjim",
+        "enviadaEm": "2026-10-02T18:35:53.028Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24570,5 +24617,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T18:34:36.764Z"
+  "updatedAt": "2026-10-02T18:35:53.497Z"
 }
