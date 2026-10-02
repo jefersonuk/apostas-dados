@@ -4569,7 +4569,7 @@
       "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T10:20:39.952Z"
+      "updatedAt": "2026-10-02T13:55:47.188Z"
     },
     {
       "id": "ms2ghozrogav9",
@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 507,
+      "value": 436,
       "currency": "USD",
-      "updatedAt": "2026-10-02T12:09:23.633Z"
+      "updatedAt": "2026-10-02T15:30:33.058Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 234.8,
+      "value": 1114.83,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T14:07:14.374Z"
+      "updatedAt": "2026-10-02T15:34:27.116Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 116.14,
+      "value": 68.84,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T14:07:14.374Z"
+      "updatedAt": "2026-10-02T15:31:32.054Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4752,9 +4752,9 @@
     {
       "id": "mtbnoggil5qf1",
       "name": "BetOnline",
-      "value": 278.35,
+      "value": 258.35,
       "currency": "USD",
-      "updatedAt": "2026-10-01T12:51:39.909Z"
+      "updatedAt": "2026-10-02T15:34:27.115Z"
     },
     {
       "id": "mtbvh50wqy903",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 241.9,
-      "updatedAt": "2026-10-02T12:09:29.688Z",
+      "value": 239.31,
+      "updatedAt": "2026-10-02T13:55:47.188Z",
       "currency": "USD"
     },
     {
@@ -4838,16 +4838,16 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 94.13,
+      "value": 93.85,
       "currency": "USD",
-      "updatedAt": "2026-10-01T17:22:50.227Z"
+      "updatedAt": "2026-10-02T13:55:31.057Z"
     },
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 64.13,
+      "value": 54.1,
       "currency": "USD",
-      "updatedAt": "2026-10-01T20:35:47.410Z"
+      "updatedAt": "2026-10-02T15:28:34.294Z"
     }
   ],
   "aportes": [
@@ -5665,7 +5665,11 @@
     },
     {
       "id": "mur16h9u6k2mq",
-      "at": "2026-10-02T14:05:25.703Z"
+      "at": "2026-10-02T14:01:37.326Z"
+    },
+    {
+      "id": "mur1orfwc4xt7",
+      "at": "2026-10-02T14:15:16.025Z"
     }
   ],
   "surebets": [
@@ -23621,7 +23625,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-01T20:35:47.410Z"
+      "updatedAt": "2026-10-02T13:55:36.756Z"
     },
     {
       "id": "muommarawkr48",
@@ -23740,7 +23744,7 @@
       "oddMkt": 1.756858323938369,
       "prob": 56.919786096256686,
       "winner": "A",
-      "date": "2026-10-01T21:00",
+      "date": "2026-10-01T15:00",
       "modelo": "F",
       "total": 103.6,
       "lucroA": 88.06,
@@ -23751,7 +23755,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-02T10:20:31.279Z"
+      "updatedAt": "2026-10-02T13:55:37.622Z"
     },
     {
       "id": "mupj9p899hz12",
@@ -23776,7 +23780,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-02T10:20:39.952Z"
+      "updatedAt": "2026-10-02T13:55:47.188Z"
     },
     {
       "id": "mupjngechelvn",
@@ -23802,7 +23806,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-01T17:22:50.227Z"
+      "updatedAt": "2026-10-02T13:55:31.057Z"
     },
     {
       "id": "muqy75c7xdo1i",
@@ -23992,6 +23996,367 @@
         "inboxId": "anmur1brgszt5x",
         "enviadaEm": "2026-10-02T14:04:55.372Z"
       }
+    },
+    {
+      "id": "mur1obt6djrzh",
+      "kind": "valor",
+      "event": "Universidad de Concepcion x Huachipato — Total de gols: Mais de 2,25",
+      "houseA": "Sportmarket",
+      "oddA": 1.77,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.66,
+      "prob": 0.604,
+      "winner": null,
+      "date": "2026-10-02T20:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 45.199000000000005,
+      "lucroRed": -58.7,
+      "lucro": 45.199000000000005,
+      "roi": 77,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T14:14:55.093Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1505529,
+        "kickoff": "2026-10-02T23:00:00.000Z",
+        "home": "Universidad de Concepcion",
+        "away": "Huachipato",
+        "competition": "Primera División",
+        "lineId": "gO2.25",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,25",
+        "tier": "sólida",
+        "p_model": 0.611,
+        "p_blend": 0.604,
+        "p_pinnacle": 0.603,
+        "fair_odd": 1.66,
+        "odd_min": 1.71,
+        "pinnacle_odd": 1.61,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmur1obcii0h9",
+        "enviadaEm": "2026-10-02T14:14:41.010Z",
+        "editadaEm": "2026-10-02T14:14:55.093Z"
+      }
+    },
+    {
+      "id": "mur1q62jd536v",
+      "kind": "valor",
+      "event": "Colombia x Paraguay — Total de gols: Mais de 1,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.5,
+      "stakeA": 319.03,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.42,
+      "prob": 0.702,
+      "winner": null,
+      "date": "2026-10-02T21:00",
+      "modelo": "analise",
+      "total": 319.03,
+      "lucroA": 159.515,
+      "lucroRed": -319.03,
+      "lucro": 159.515,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T14:16:07.484Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1638597,
+        "kickoff": "2026-10-03T00:00:00.000Z",
+        "home": "Colombia",
+        "away": "Paraguay",
+        "competition": "Friendlies",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.674,
+        "p_blend": 0.702,
+        "p_pinnacle": 0.705,
+        "fair_odd": 1.42,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.37,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmur1q5lt0nr6",
+        "enviadaEm": "2026-10-02T14:16:06.881Z"
+      }
+    },
+    {
+      "id": "mur1wcbh5oa05",
+      "kind": "valor",
+      "event": "Sao Paulo x Santos — Total de gols: Mais de 2",
+      "houseA": "Sportmarket",
+      "oddA": 1.72,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.5,
+      "prob": 0.666,
+      "winner": null,
+      "date": "2026-10-02T20:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 42.264,
+      "lucroRed": -58.7,
+      "lucro": 42.264,
+      "roi": 72,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T14:21:12.323Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492318,
+        "kickoff": "2026-10-02T23:00:00.000Z",
+        "home": "Sao Paulo",
+        "away": "Santos",
+        "competition": "Serie A",
+        "lineId": "gO2",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2",
+        "tier": "sólida",
+        "p_model": 0.675,
+        "p_blend": 0.666,
+        "p_pinnacle": 0.665,
+        "fair_odd": 1.5,
+        "odd_min": 1.58,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmur1wcbacfis",
+        "enviadaEm": "2026-10-02T14:20:55.510Z",
+        "editadaEm": "2026-10-02T14:21:12.322Z"
+      }
+    },
+    {
+      "id": "mur1wva4hli2t",
+      "kind": "valor",
+      "event": "Sao Paulo x Santos — Total de gols: Mais de 1,75",
+      "houseA": "Sportmarket",
+      "oddA": 1.72,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.5,
+      "prob": 0.666,
+      "winner": "VOID",
+      "date": "2026-10-02T20:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 42.264,
+      "lucroRed": -58.7,
+      "lucro": 42.264,
+      "roi": 72,
+      "aplicado": {
+        "stakes": true,
+        "resultado": "VOID"
+      },
+      "updatedAt": "2026-10-02T15:22:26.456Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492318,
+        "kickoff": "2026-10-02T23:00:00.000Z",
+        "home": "Sao Paulo",
+        "away": "Santos",
+        "competition": "Serie A",
+        "lineId": "gO1.75",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,75",
+        "tier": "sólida",
+        "p_model": 0.675,
+        "p_blend": 0.666,
+        "p_pinnacle": 0.665,
+        "fair_odd": 1.5,
+        "odd_min": 1.58,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmur1wu38c61o",
+        "enviadaEm": "2026-10-02T14:21:18.548Z"
+      }
+    },
+    {
+      "id": "mur3an3lghsow",
+      "kind": "valor",
+      "event": "Kazakhstan x Moldova — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.27,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.59,
+      "prob": 0.387,
+      "winner": "A",
+      "date": "2026-10-02T11:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 74.549,
+      "lucroRed": -58.7,
+      "lucro": 74.549,
+      "roi": 127,
+      "aplicado": {
+        "stakes": true,
+        "resultado": "A"
+      },
+      "updatedAt": "2026-10-02T15:31:32.054Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528923,
+        "kickoff": "2026-10-02T14:00:00.000Z",
+        "home": "Kazakhstan",
+        "away": "Moldova",
+        "competition": "UEFA Nations League",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.555,
+        "p_blend": 0.387,
+        "p_pinnacle": 0.369,
+        "fair_odd": 2.59,
+        "odd_min": 2.72,
+        "pinnacle_odd": 2.55,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmur3an3byu06",
+        "enviadaEm": "2026-10-02T15:00:02.279Z"
+      }
+    },
+    {
+      "id": "mur3sksgojo39",
+      "kind": "valor",
+      "event": "Latvia x Montenegro — Total de escanteios: Mais de 8,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.77,
+      "stakeA": 234.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.77,
+      "prob": 0.566,
+      "winner": null,
+      "date": "2026-10-02T13:00",
+      "modelo": "analise",
+      "total": 234.8,
+      "lucroA": 180.79600000000002,
+      "lucroRed": -234.8,
+      "lucro": 180.79600000000002,
+      "roi": 77,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T15:13:59.104Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1545608,
+        "kickoff": "2026-10-02T16:00:00.000Z",
+        "home": "Latvia",
+        "away": "Montenegro",
+        "competition": "UEFA Nations League",
+        "lineId": "cornersO8.5",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 8,5",
+        "tier": "especulativa",
+        "p_model": 0.65,
+        "p_blend": 0.566,
+        "p_pinnacle": 0.544,
+        "fair_odd": 1.77,
+        "odd_min": 1.86,
+        "pinnacle_odd": 1.74,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmur3sgux6rr3",
+        "enviadaEm": "2026-10-02T15:13:54.009Z"
+      }
+    },
+    {
+      "id": "mur4bc39g05xj",
+      "kind": "valor",
+      "event": "Justin Robinson (Acima 1.5 Tempo Extra - cestas de três pontos)",
+      "houseA": "Frumzi",
+      "oddA": 1.95,
+      "stakeA": 52.199999999999996,
+      "curA": "USD",
+      "sport": "Basquete",
+      "market": "Total de Pontos",
+      "oddMkt": 1.779034759602226,
+      "prob": 56.21025641025641,
+      "winner": null,
+      "date": "2026-10-02T14:00",
+      "modelo": "F",
+      "total": 52.199999999999996,
+      "lucroA": 49.589999999999996,
+      "lucroRed": -52.199999999999996,
+      "lucro": 49.589999999999996,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T15:28:34.294Z"
+    },
+    {
+      "id": "mur4dvqahwjnp",
+      "kind": "valor",
+      "event": "FHK Elite – TTH Holstebro (11-2 TE + DP)",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.93,
+      "stakeA": 52.199999999999996,
+      "curA": "USD",
+      "sport": "Handebol",
+      "market": "",
+      "oddMkt": 1.6900175131348512,
+      "prob": 59.170984455958546,
+      "winner": null,
+      "date": "2026-10-03T10:00",
+      "modelo": "F",
+      "total": 52.199999999999996,
+      "lucroA": 48.54599999999999,
+      "lucroRed": -52.199999999999996,
+      "lucro": 48.54599999999999,
+      "roi": 93,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T15:30:33.058Z"
+    },
+    {
+      "id": "mur4iwbv9eici",
+      "kind": "valor",
+      "event": "Georgia – Arkansas (H1(−2.5))",
+      "houseA": "BetOnline",
+      "oddA": 1.77,
+      "stakeA": 104.39999999999999,
+      "curA": "USD",
+      "sport": "Vôlei",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6284846812034226,
+      "prob": 61.40677966101695,
+      "winner": null,
+      "date": "2026-10-02T20:00",
+      "modelo": "F",
+      "total": 104.39999999999999,
+      "lucroA": 80.38799999999999,
+      "lucroRed": -104.39999999999999,
+      "lucro": 80.38799999999999,
+      "roi": 77,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T15:34:27.115Z"
     }
   ],
   "invertidos": [],
@@ -24158,5 +24523,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T14:25:46.086Z"
+  "updatedAt": "2026-10-02T15:34:27.116Z"
 }
