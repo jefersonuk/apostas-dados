@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 176.1,
+      "value": 234.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T14:05:25.704Z"
+      "updatedAt": "2026-10-02T14:07:14.374Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 126.14,
+      "value": 116.14,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T14:05:25.702Z"
+      "updatedAt": "2026-10-02T14:07:14.374Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -23945,6 +23945,53 @@
         "inboxId": "anmur12kcia6n3",
         "enviadaEm": "2026-10-02T13:57:46.242Z"
       }
+    },
+    {
+      "id": "mur1eqpyeto2h",
+      "kind": "valor",
+      "event": "Juventude x Operario-PR — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.55,
+      "prob": 0.646,
+      "winner": null,
+      "date": "2026-10-02T20:45",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 29.35,
+      "lucroRed": -58.7,
+      "lucro": 29.35,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T14:07:14.374Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520906,
+        "kickoff": "2026-10-02T23:45:00.000Z",
+        "home": "Juventude",
+        "away": "Operario-PR",
+        "competition": "Serie B",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.632,
+        "p_blend": 0.646,
+        "p_pinnacle": 0.647,
+        "fair_odd": 1.55,
+        "odd_min": 1.6,
+        "pinnacle_odd": 1.5,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmur1brgszt5x",
+        "enviadaEm": "2026-10-02T14:04:55.372Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24111,5 +24158,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T14:05:25.704Z"
+  "updatedAt": "2026-10-02T14:07:14.374Z"
 }
