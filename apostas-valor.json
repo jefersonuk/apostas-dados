@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 685.2,
+      "value": 744,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T22:23:41.500Z"
+      "updatedAt": "2026-10-02T22:25:15.522Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 68.84,
+      "value": 58.84,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T22:23:41.500Z"
+      "updatedAt": "2026-10-02T22:25:15.522Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24611,6 +24611,53 @@
         "inboxId": "anmurj53idbye3",
         "enviadaEm": "2026-10-02T22:23:37.477Z"
       }
+    },
+    {
+      "id": "murj775ujy1zj",
+      "kind": "valor",
+      "event": "Independiente x Instituto Cordoba — Total escanteios 1T: Mais de 3,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.07,
+      "stakeA": 58.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.54,
+      "prob": 0.651,
+      "winner": null,
+      "date": "2026-10-02T19:15",
+      "modelo": "analise",
+      "total": 58.8,
+      "lucroA": 62.91599999999999,
+      "lucroRed": -58.8,
+      "lucro": 62.91599999999999,
+      "roi": 106.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T22:25:15.522Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493161,
+        "kickoff": "2026-10-02T22:15:00.000Z",
+        "home": "Independiente",
+        "away": "Instituto Cordoba",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "c1O3.5",
+        "mercado": "Total escanteios 1T",
+        "linha": "Mais de 3,5",
+        "tier": "âncora",
+        "p_model": 0.651,
+        "p_blend": 0.651,
+        "p_pinnacle": null,
+        "fair_odd": 1.54,
+        "odd_min": 1.61,
+        "pinnacle_odd": null,
+        "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
+        "fragile": true,
+        "inboxId": "anmurj76si2zz4",
+        "enviadaEm": "2026-10-02T22:25:15.042Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24777,5 +24824,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T22:23:41.500Z"
+  "updatedAt": "2026-10-02T22:25:15.522Z"
 }
