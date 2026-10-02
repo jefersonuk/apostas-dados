@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 58.7,
+      "value": 296.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T13:56:19.979Z"
+      "updatedAt": "2026-10-02T14:00:48.882Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 146.14,
+      "value": 105.7,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T13:56:19.979Z"
+      "updatedAt": "2026-10-02T14:00:48.882Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -23847,6 +23847,147 @@
         "enviadaEm": "2026-10-02T12:37:17.806Z",
         "editadaEm": "2026-10-02T13:56:19.979Z"
       }
+    },
+    {
+      "id": "mur16h9u6k2mq",
+      "kind": "valor",
+      "event": "Independ. Rivadavia x Gimnasia L.P. — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.38,
+      "stakeA": 120,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.47,
+      "prob": 0.405,
+      "winner": null,
+      "date": "2026-10-02T21:30",
+      "modelo": "analise",
+      "total": 120,
+      "lucroA": 165.6,
+      "lucroRed": -120,
+      "lucro": 165.6,
+      "roi": 138,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T14:00:48.882Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493162,
+        "kickoff": "2026-10-03T00:30:00.000Z",
+        "home": "Independ. Rivadavia",
+        "away": "Gimnasia L.P.",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.406,
+        "p_blend": 0.405,
+        "p_pinnacle": 0.405,
+        "fair_odd": 2.47,
+        "odd_min": 2.59,
+        "pinnacle_odd": 2.34,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmur06xr5cwll",
+        "enviadaEm": "2026-10-02T13:33:10.625Z"
+      }
+    },
+    {
+      "id": "mur16h9u0iab4",
+      "kind": "valor",
+      "event": "Universidad de Concepcion x Huachipato — Total de escanteios: Mais de 9",
+      "houseA": "Sportmarket",
+      "oddA": 1.6,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.5,
+      "prob": 0.668,
+      "winner": null,
+      "date": "2026-10-02T20:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 35.220000000000006,
+      "lucroRed": -58.7,
+      "lucro": 35.220000000000006,
+      "roi": 60.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T14:00:48.882Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1505529,
+        "kickoff": "2026-10-02T23:00:00.000Z",
+        "home": "Universidad de Concepcion",
+        "away": "Huachipato",
+        "competition": "Primera División",
+        "lineId": "cornersO9",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 9",
+        "tier": "âncora",
+        "p_model": 0.711,
+        "p_blend": 0.668,
+        "p_pinnacle": 0.657,
+        "fair_odd": 1.5,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.46,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmur0t56q9zfm",
+        "enviadaEm": "2026-10-02T13:50:26.690Z"
+      }
+    },
+    {
+      "id": "mur16h9ug8ks4",
+      "kind": "valor",
+      "event": "Londrina x Criciuma — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.46,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.47,
+      "prob": 0.682,
+      "winner": null,
+      "date": "2026-10-02T20:30",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 27.002,
+      "lucroRed": -58.7,
+      "lucro": 27.002,
+      "roi": 46,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T14:00:48.882Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520907,
+        "kickoff": "2026-10-02T23:30:00.000Z",
+        "home": "Londrina",
+        "away": "Criciuma",
+        "competition": "Serie B",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "âncora",
+        "p_model": 0.675,
+        "p_blend": 0.682,
+        "p_pinnacle": 0.683,
+        "fair_odd": 1.47,
+        "odd_min": 1.51,
+        "pinnacle_odd": 1.42,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmur12kcia6n3",
+        "enviadaEm": "2026-10-02T13:57:46.242Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24013,5 +24154,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T13:56:19.979Z"
+  "updatedAt": "2026-10-02T14:00:48.882Z"
 }
