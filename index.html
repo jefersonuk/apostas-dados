@@ -1448,7 +1448,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261002-1053';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261002-1108';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1759,7 +1759,7 @@
     try{
       setSyncStatus('Baixando dados da nuvem…');
       const remote=await cloudPull();
-      if(remote===null){ await cloudPush(); setSyncStatus('Nuvem inicializada ↑ '+new Date().toLocaleTimeString('pt-BR')); syncPronto=true; importarAnalise(); }
+      if(remote===null){ await cloudPush(); setSyncStatus('Nuvem inicializada ↑ '+new Date().toLocaleTimeString('pt-BR')); marcarSyncPronto(); }
       else {
         const antes=state;
         const fundido=fundirEstados(state,normalize(remote));
@@ -1767,10 +1767,10 @@
         state=fundido;
         try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){}
         fillCfg(); renderAll();
+        marcarSyncPronto();   // o estado já tem a nuvem: pode registrar mesmo se o envio abaixo falhar
         await cloudPush();   // devolve a versão fundida para a nuvem
         setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR')+(novos?` · ${novos} registro(s) recebido(s)`:''));
         if(novos) toast(`${novos} registro(s) de outro dispositivo ✓`);
-        syncPronto=true; importarAnalise();
       }
     }catch(e){ setSyncStatus('⚠ '+e.message,true); }
   }
@@ -6109,7 +6109,8 @@
           if(novos>0){ toast(`${novos} registro(s) de outro dispositivo ✓`); await cloudPush(); }
           setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR'));
         }
-      }
+        marcarSyncPronto();
+      } else if(remoto===null) marcarSyncPronto();
     }catch(e){}
     finally{ syncBusy=false; }
   }
@@ -6131,6 +6132,12 @@
   // Só importa depois que este aparelho tem os dados da nuvem: importar num estado vazio ou velho
   // criava casas novas (saldo negativo) e, na sincronização seguinte, levava isso para a nuvem.
   var syncPronto=false;     // var: renderAll pode rodar antes deste trecho
+  // Chamada a cada sincronização bem-sucedida (abertura OU verificação periódica): antes só a da
+  // abertura liberava, e uma falha nela deixava a caixa travada com o topo dizendo "Sincronizado".
+  function marcarSyncPronto(){ const era=syncPronto; syncPronto=true; if(!era) importarAnalise(); }
+  // Envio que precisa da sua confirmação antes de mexer em saldo: formato antigo (antes da moeda por
+  // casa: a stake dele foi gravada em R$) ou "casa" que é conta interna (Em arbitragem…).
+  function anPrecisaConfirmar(it){ return it.v!==2 || /^em\s/i.test(String(it.casa||'').trim()); }
   var anAguardando=[];   // itens da caixa que não puderam entrar (casa inexistente ou sem sincronizar)
   var anEditando=null;   // id da aposta da aba Análise aberta para edição
   function lerCaixa(){ try{ return JSON.parse(localStorage.getItem(INBOX_KEY))||[]; }catch(e){ return []; } }
@@ -6159,13 +6166,13 @@
     }catch(e){ anNuvem.erro=e.message; }
   }
   function tirarDaCaixaNuvem(ids){ if(ids.length) moduloCaixa().then(m=>m&&m.cloudCfg()&&m.dropItems(ids)).catch(()=>{}); }
-  function importarAnalise(criarCasa){
-    const rodar=async()=>{ await puxarCaixaNuvem(); const ids=importarAnaliseAgora(criarCasa); tirarDaCaixaNuvem(ids); return ids.length; };
+  function importarAnalise(criarCasa,confirmarId){
+    const rodar=async()=>{ await puxarCaixaNuvem(); const ids=importarAnaliseAgora(criarCasa,confirmarId); tirarDaCaixaNuvem(ids); return ids.length; };
     if(navigator.locks&&navigator.locks.request) return navigator.locks.request('apostasInbox',rodar);
     return rodar();
   }
   // Registra o que está na caixa; devolve os ids registrados.
-  function importarAnaliseAgora(criarCasa){
+  function importarAnaliseAgora(criarCasa,confirmarId){
     limparDuplicadasAnalise();
     const box=lerCaixa();
     anAguardando=[];
@@ -6175,6 +6182,13 @@
     const pegar=[], ficar=[];
     box.forEach(it=>{
       if(ja.has(it.id)||!(it.odd>1)||!(it.stake>0)||!it.casa) return;               // já registrada ou inválida: sai da caixa
+      if(anPrecisaConfirmar(it)&&confirmarId!==it.id){
+        ficar.push(it);
+        anAguardando.push({it,confirmar:true,motivo:it.v!==2
+          ?'envio antigo (antes da stake na moeda da casa): a stake dele é '+fmt(it.stake)+'. Registre se você fez esta aposta (depois dá para editar) ou descarte'
+          :'"'+it.casa+'" é uma conta interna, não uma casa: registre e edite a casa, ou descarte'});
+        return;
+      }
       if(!acharCasaExistente(it.casa)&&!(criarCasa&&criarCasa===it.id)){ ficar.push(it); anAguardando.push({it,motivo:'a casa "'+it.casa+'" não existe aqui'}); return; }
       pegar.push(it);
     });
@@ -6222,8 +6236,9 @@
       ['Acerto',validos?anPct(ganhos/validos)+' ('+ganhos+'/'+validos+')':'—',''],
       ['CLV médio',clv===null?'—':(clv>=0?'+':'')+anPct(clv)+' ('+clvs.length+')',clv===null?'':clv>=0?'pos':'neg'],
     ].map(([k,v,c])=>'<div class="summary-item"><div class="k">'+k+'</div><div class="v sm '+c+'">'+v+'</div></div>').join('');
-    const espera=anAguardando.map(({it,motivo})=>'<div class="an-row"><div class="an-head"><span><b>⏳ '+esc(it.event||'')+'</b></span>'+
-      (motivo.startsWith('a casa')?'<button type="button" class="btn small" data-ancriar="'+esc(it.id)+'">Criar a casa e registrar</button>':'')+'</div>'+
+    const espera=anAguardando.map(({it,motivo,confirmar})=>'<div class="an-row"><div class="an-head"><span><b>⏳ '+esc(it.event||'')+'</b></span>'+
+      (motivo.startsWith('a casa')?'<button type="button" class="btn small" data-ancriar="'+esc(it.id)+'">Criar a casa e registrar</button>':'')+
+      (confirmar?'<span><button type="button" class="btn small" data-anok="'+esc(it.id)+'">Registrar</button> <button type="button" class="btn small danger" data-andescartar="'+esc(it.id)+'">Descartar</button></span>':'')+'</div>'+
       '<div class="an-meta">'+esc(it.casa)+' @'+Number(it.odd).toFixed(2)+' · '+anStakeItem(it)+' — '+esc(motivo)+'</div></div>').join('');
     const nuvem=anNuvem.cfg===false&&syncPronto?'<div class="hint" style="margin:0 0 8px;">Para receber aqui as apostas enviadas de outros aparelhos, conecte a ☁️ nuvem no app de análise neste aparelho (⚙️ Chave).</div>'
       :anNuvem.erro?'<div class="hint" style="margin:0 0 8px;">Caixa da nuvem com erro: '+esc(anNuvem.erro)+'</div>':'';
@@ -6256,6 +6271,14 @@
     }).join(''):'<div class="hint" style="margin:0;">Nenhuma aposta enviada pela Análise ainda.</div>';
   }
   $('anWait').addEventListener('click',e=>{
+    const ok=e.target.closest('[data-anok]');
+    if(ok){ importarAnalise(null,ok.dataset.anok); return; }
+    const fora=e.target.closest('[data-andescartar]');
+    if(fora){
+      if(!confirm('Descartar este envio? Nada é registrado e ele sai da caixa.')) return;
+      gravarCaixa(lerCaixa().filter(i=>i.id!==fora.dataset.andescartar)); tirarDaCaixaNuvem([fora.dataset.andescartar]); importarAnalise();
+      return;
+    }
     const b=e.target.closest('[data-ancriar]'); if(!b) return;
     if(confirm('Criar a casa e registrar a aposta? A casa nova começa com saldo zero e fica negativa com a stake.')) importarAnalise(b.dataset.ancriar);
   });
