@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 626.4,
+      "value": 685.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-02T22:03:12.962Z"
+      "updatedAt": "2026-10-02T22:23:41.500Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 78.84,
+      "value": 68.84,
       "currency": "EUR",
-      "updatedAt": "2026-10-02T22:03:12.962Z"
+      "updatedAt": "2026-10-02T22:23:41.500Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24564,6 +24564,53 @@
         "inboxId": "anmurierquq6uw",
         "enviadaEm": "2026-10-02T22:03:09.174Z"
       }
+    },
+    {
+      "id": "murj56m3v4ito",
+      "kind": "valor",
+      "event": "Independiente x Instituto Cordoba — Total de gols: Mais de 2",
+      "houseA": "Sportmarket",
+      "oddA": 2.41,
+      "stakeA": 58.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.11,
+      "prob": 0.473,
+      "winner": null,
+      "date": "2026-10-02T19:15",
+      "modelo": "analise",
+      "total": 58.8,
+      "lucroA": 82.908,
+      "lucroRed": -58.8,
+      "lucro": 82.908,
+      "roi": 141,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-02T22:23:41.500Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493161,
+        "kickoff": "2026-10-02T22:15:00.000Z",
+        "home": "Independiente",
+        "away": "Instituto Cordoba",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "gO2",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2",
+        "tier": "especulativa",
+        "p_model": 0.473,
+        "p_blend": 0.473,
+        "p_pinnacle": 0.473,
+        "fair_odd": 2.11,
+        "odd_min": 2.22,
+        "pinnacle_odd": 2.05,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmurj53idbye3",
+        "enviadaEm": "2026-10-02T22:23:37.477Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24730,5 +24777,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T22:03:12.962Z"
+  "updatedAt": "2026-10-02T22:23:41.500Z"
 }
