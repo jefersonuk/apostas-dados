@@ -24213,7 +24213,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-02T15:31:32.054Z",
+      "updatedAt": "2026-10-02T21:58:42.120Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1528923,
@@ -24234,7 +24234,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmur3an3byu06",
-        "enviadaEm": "2026-10-02T15:00:02.279Z"
+        "enviadaEm": "2026-10-02T15:00:02.279Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Kazakhstan 1–2 Moldova · gols no jogo: 3 (linha 2.5)",
+          "at": "2026-10-02T21:58:42.120Z"
+        },
+        "clv": -0.16284426041993472,
+        "closingFair": 2.7115623684771952
       }
     },
     {
@@ -24261,7 +24268,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-02T19:51:34.691Z",
+      "updatedAt": "2026-10-02T21:58:42.856Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1545608,
@@ -24282,7 +24289,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmur3sgux6rr3",
-        "enviadaEm": "2026-10-02T15:13:54.009Z"
+        "enviadaEm": "2026-10-02T15:13:54.009Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Latvia 1–2 Montenegro · escanteios no jogo: 7 (linha 8.5)",
+          "at": "2026-10-02T21:58:42.856Z"
+        },
+        "clv": -0.03774877581748404,
+        "closingFair": 1.8394364751301928
       }
     },
     {
@@ -24669,5 +24683,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T21:58:03.923Z"
+  "updatedAt": "2026-10-02T21:58:42.856Z"
 }
