@@ -4906,6 +4906,14 @@
       "time": "08:48",
       "note": "cartão de crédito",
       "updatedAt": "2026-10-01T11:55:54.334Z"
+    },
+    {
+      "id": "mur04khmwslb1",
+      "value": -5000,
+      "date": "2026-10-01",
+      "time": "13:02",
+      "note": "cartão Santander",
+      "updatedAt": "2026-10-02T13:31:20.122Z"
     }
   ],
   "caixa": [
@@ -24004,5 +24012,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-02T12:37:21.224Z"
+  "updatedAt": "2026-10-02T13:31:20.124Z"
 }
