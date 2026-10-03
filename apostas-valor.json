@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 437.34,
+      "value": 456.68,
       "currency": "USD",
-      "updatedAt": "2026-10-03T04:43:05.192Z"
+      "updatedAt": "2026-10-03T14:44:09.212Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 52.2,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-03T04:41:48.320Z"
+      "updatedAt": "2026-10-03T14:44:09.212Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -24343,7 +24343,7 @@
       "market": "",
       "oddMkt": 1.6900175131348512,
       "prob": 59.170984455958546,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-03T10:00",
       "modelo": "F",
       "total": 52.199999999999996,
@@ -24352,9 +24352,10 @@
       "lucro": 48.54599999999999,
       "roi": 93,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-02T15:30:33.058Z"
+      "updatedAt": "2026-10-03T14:44:09.212Z"
     },
     {
       "id": "mur4iwbv9eici",
@@ -24835,5 +24836,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-03T14:37:01.736Z"
+  "updatedAt": "2026-10-03T14:44:09.213Z"
 }
