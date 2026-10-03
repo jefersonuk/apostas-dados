@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 58.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-03T14:44:09.212Z"
+      "updatedAt": "2026-10-03T21:39:54.011Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 152.89,
+      "value": 142.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-03T04:43:33.027Z"
+      "updatedAt": "2026-10-03T21:39:54.010Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24670,6 +24670,53 @@
         "inboxId": "anmurj76si2zz4",
         "enviadaEm": "2026-10-02T22:25:15.042Z"
       }
+    },
+    {
+      "id": "musx0pway4luz",
+      "kind": "valor",
+      "event": "Atletico-MG x RB Bragantino — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.29,
+      "prob": 0.775,
+      "winner": null,
+      "date": "2026-10-03T18:30",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 29.35,
+      "lucroRed": -58.7,
+      "lucro": 29.35,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-03T21:39:54.010Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492310,
+        "kickoff": "2026-10-03T21:30:00.000Z",
+        "home": "Atletico-MG",
+        "away": "RB Bragantino",
+        "competition": "Serie A",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "âncora",
+        "p_model": 0.746,
+        "p_blend": 0.775,
+        "p_pinnacle": 0.778,
+        "fair_odd": 1.29,
+        "odd_min": 1.35,
+        "pinnacle_odd": 1.26,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmusx0n3g9irz",
+        "enviadaEm": "2026-10-03T21:39:50.380Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24836,5 +24883,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-03T21:39:52.949Z"
+  "updatedAt": "2026-10-03T21:39:54.011Z"
 }
