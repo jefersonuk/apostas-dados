@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 215.4,
+      "value": 156.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-03T03:07:53.311Z"
+      "updatedAt": "2026-10-03T04:40:42.004Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -24537,7 +24537,7 @@
       "market": "Escanteios",
       "oddMkt": 1.74,
       "prob": 0.576,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-02T21:35",
       "modelo": "analise",
       "total": 58.8,
@@ -24546,9 +24546,10 @@
       "lucro": 37.04399999999999,
       "roi": 62.999999999999986,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-02T22:03:12.962Z",
+      "updatedAt": "2026-10-03T04:40:42.004Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520905,
@@ -24833,5 +24834,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-03T04:40:13.821Z"
+  "updatedAt": "2026-10-03T04:40:42.004Z"
 }
