@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 117.4,
+      "value": 176.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-03T21:40:15.317Z"
+      "updatedAt": "2026-10-03T21:42:07.543Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 132.89,
+      "value": 122.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-03T21:40:15.317Z"
+      "updatedAt": "2026-10-03T21:42:07.543Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24764,6 +24764,53 @@
         "inboxId": "anmusx15ugesr8",
         "enviadaEm": "2026-10-03T21:40:14.680Z"
       }
+    },
+    {
+      "id": "musx3kxjonj90",
+      "kind": "valor",
+      "event": "Botafogo SP x Vila Nova — Total escanteios 1T: Mais de 3,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.12,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.41,
+      "prob": 0.707,
+      "winner": null,
+      "date": "2026-10-03T18:30",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 65.74400000000001,
+      "lucroRed": -58.7,
+      "lucro": 65.74400000000001,
+      "roi": 112.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-03T21:42:07.543Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520903,
+        "kickoff": "2026-10-03T21:30:00.000Z",
+        "home": "Botafogo SP",
+        "away": "Vila Nova",
+        "competition": "Serie B",
+        "lineId": "c1O3.5",
+        "mercado": "Total escanteios 1T",
+        "linha": "Mais de 3,5",
+        "tier": "âncora",
+        "p_model": 0.707,
+        "p_blend": 0.707,
+        "p_pinnacle": null,
+        "fair_odd": 1.41,
+        "odd_min": 1.49,
+        "pinnacle_odd": null,
+        "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
+        "fragile": true,
+        "inboxId": "anmusx3kf2kib4",
+        "enviadaEm": "2026-10-03T21:42:06.878Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24930,5 +24977,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-03T21:40:15.317Z"
+  "updatedAt": "2026-10-03T21:42:07.543Z"
 }
