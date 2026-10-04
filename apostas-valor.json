@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 58.7,
+      "value": 117.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T19:37:31.353Z"
+      "updatedAt": "2026-10-04T19:42:04.952Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 132.89,
+      "value": 122.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T19:37:31.353Z"
+      "updatedAt": "2026-10-04T19:42:04.952Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24773,6 +24773,53 @@
         "inboxId": "anmuu8339tewyj",
         "enviadaEm": "2026-10-04T19:37:26.609Z"
       }
+    },
+    {
+      "id": "muu8921khmapq",
+      "kind": "valor",
+      "event": "Estudiantes de Rio Cuarto x Racing Club — Total de gols: Mais de 1,25",
+      "houseA": "Sportmarket",
+      "oddA": 1.57,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.43,
+      "prob": 0.701,
+      "winner": null,
+      "date": "2026-10-04T21:30",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 33.459,
+      "lucroRed": -58.7,
+      "lucro": 33.459,
+      "roi": 57.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T19:42:04.952Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493159,
+        "kickoff": "2026-10-05T00:30:00.000Z",
+        "home": "Estudiantes de Rio Cuarto",
+        "away": "Racing Club",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "gO1.25",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,25",
+        "tier": "âncora",
+        "p_model": 0.716,
+        "p_blend": 0.701,
+        "p_pinnacle": 0.7,
+        "fair_odd": 1.43,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.39,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuu88zc1mhh5",
+        "enviadaEm": "2026-10-04T19:42:01.441Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24939,5 +24986,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T19:37:33.421Z"
+  "updatedAt": "2026-10-04T19:42:04.952Z"
 }
