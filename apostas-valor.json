@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 58.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T11:30:29.571Z"
+      "updatedAt": "2026-10-04T19:37:31.353Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 142.89,
+      "value": 132.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T11:30:29.570Z"
+      "updatedAt": "2026-10-04T19:37:31.353Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24726,6 +24726,53 @@
         "inboxId": "anmusx3kf2kib4",
         "enviadaEm": "2026-10-03T21:42:06.878Z"
       }
+    },
+    {
+      "id": "muu836xl2h5d2",
+      "kind": "valor",
+      "event": "Estudiantes de Rio Cuarto x Racing Club — Handicap escanteios 1T: Estudiantes de Rio Cuarto +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.67,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.44,
+      "prob": 0.695,
+      "winner": null,
+      "date": "2026-10-04T21:30",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 39.329,
+      "lucroRed": -58.7,
+      "lucro": 39.329,
+      "roi": 67,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T19:37:31.353Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493159,
+        "kickoff": "2026-10-05T00:30:00.000Z",
+        "home": "Estudiantes de Rio Cuarto",
+        "away": "Racing Club",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "c1hH1",
+        "mercado": "Handicap escanteios 1T",
+        "linha": "Estudiantes de Rio Cuarto +1",
+        "tier": "âncora",
+        "p_model": 0.695,
+        "p_blend": 0.695,
+        "p_pinnacle": null,
+        "fair_odd": 1.44,
+        "odd_min": 1.51,
+        "pinnacle_odd": null,
+        "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
+        "fragile": true,
+        "inboxId": "anmuu8339tewyj",
+        "enviadaEm": "2026-10-04T19:37:26.609Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24892,5 +24939,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T16:34:12.354Z"
+  "updatedAt": "2026-10-04T19:37:31.353Z"
 }
