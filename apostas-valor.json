@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 58.7,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T11:30:17.071Z"
+      "updatedAt": "2026-10-04T11:30:29.571Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 132.89,
+      "value": 142.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T11:30:22.121Z"
+      "updatedAt": "2026-10-04T11:30:29.570Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5674,6 +5674,10 @@
     {
       "id": "musx0pway4luz",
       "at": "2026-10-04T11:30:14.206Z"
+    },
+    {
+      "id": "musx16c43830s",
+      "at": "2026-10-04T11:30:29.570Z"
     }
   ],
   "surebets": [
@@ -24676,53 +24680,6 @@
       }
     },
     {
-      "id": "musx16c43830s",
-      "kind": "valor",
-      "event": "Atletico-MG x RB Bragantino — Total escanteios 1T: Mais de 4",
-      "houseA": "Sportmarket",
-      "oddA": 1.8,
-      "stakeA": 58.7,
-      "curA": "EUR",
-      "sport": "Futebol",
-      "market": "Escanteios",
-      "oddMkt": 1.58,
-      "prob": 0.634,
-      "winner": null,
-      "date": "2026-10-03T18:30",
-      "modelo": "analise",
-      "total": 58.7,
-      "lucroA": 46.96000000000001,
-      "lucroRed": -58.7,
-      "lucro": 46.96000000000001,
-      "roi": 80,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-10-03T21:40:15.317Z",
-      "origem": "analise",
-      "analise": {
-        "fixtureId": 1492310,
-        "kickoff": "2026-10-03T21:30:00.000Z",
-        "home": "Atletico-MG",
-        "away": "RB Bragantino",
-        "competition": "Serie A",
-        "lineId": "c1O4",
-        "mercado": "Total escanteios 1T",
-        "linha": "Mais de 4",
-        "tier": "sólida",
-        "p_model": 0.649,
-        "p_blend": 0.634,
-        "p_pinnacle": 0.633,
-        "fair_odd": 1.58,
-        "odd_min": 1.66,
-        "pinnacle_odd": 1.5,
-        "priced_by": "pinnacle",
-        "fragile": true,
-        "inboxId": "anmusx15ugesr8",
-        "enviadaEm": "2026-10-03T21:40:14.680Z"
-      }
-    },
-    {
       "id": "musx3kxjonj90",
       "kind": "valor",
       "event": "Botafogo SP x Vila Nova — Total escanteios 1T: Mais de 3,5",
@@ -24935,5 +24892,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T11:30:22.121Z"
+  "updatedAt": "2026-10-04T11:30:29.571Z"
 }
