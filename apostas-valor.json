@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 234.8,
+      "value": 293.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T19:59:23.481Z"
+      "updatedAt": "2026-10-04T20:22:55.064Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 102.89,
+      "value": 92.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T19:59:23.481Z"
+      "updatedAt": "2026-10-04T20:22:55.064Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24914,6 +24914,53 @@
         "inboxId": "anmuu8v8p5fx44",
         "enviadaEm": "2026-10-04T19:59:20.009Z"
       }
+    },
+    {
+      "id": "muu9pkk81791s",
+      "kind": "valor",
+      "event": "San Martin Tucuman x Gimnasia Y Tiro — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.58,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.62,
+      "prob": 0.616,
+      "winner": null,
+      "date": "2026-10-04T18:30",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 34.04600000000001,
+      "lucroRed": -58.7,
+      "lucro": 34.04600000000001,
+      "roi": 58.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T20:22:55.064Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1498860,
+        "kickoff": "2026-10-04T21:30:00.000Z",
+        "home": "San Martin Tucuman",
+        "away": "Gimnasia Y Tiro",
+        "competition": "Primera Nacional",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "especulativa",
+        "p_model": 0.547,
+        "p_blend": 0.616,
+        "p_pinnacle": 0.623,
+        "fair_odd": 1.62,
+        "odd_min": 1.71,
+        "pinnacle_odd": 1.55,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuu9pi1w66dl",
+        "enviadaEm": "2026-10-04T20:22:51.812Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25080,5 +25127,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T19:59:23.481Z"
+  "updatedAt": "2026-10-04T20:22:55.064Z"
 }
