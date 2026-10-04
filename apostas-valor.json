@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 117.4,
+      "value": 176.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T19:42:04.952Z"
+      "updatedAt": "2026-10-04T19:44:31.777Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 122.89,
+      "value": 112.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T19:42:04.952Z"
+      "updatedAt": "2026-10-04T19:44:31.777Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24820,6 +24820,53 @@
         "inboxId": "anmuu88zc1mhh5",
         "enviadaEm": "2026-10-04T19:42:01.441Z"
       }
+    },
+    {
+      "id": "muu8c7c1d4ijb",
+      "kind": "valor",
+      "event": "Guabirá x Oriente Petrolero — Total de gols: Mais de 2,25",
+      "houseA": "Sportmarket",
+      "oddA": 1.6,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.46,
+      "prob": 0.687,
+      "winner": null,
+      "date": "2026-10-04T18:15",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 35.220000000000006,
+      "lucroRed": -58.7,
+      "lucro": 35.220000000000006,
+      "roi": 60.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T19:44:31.777Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1619706,
+        "kickoff": "2026-10-04T21:15:00.000Z",
+        "home": "Guabirá",
+        "away": "Oriente Petrolero",
+        "competition": "Copa de la División Profesional",
+        "lineId": "gO2.25",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,25",
+        "tier": "sólida",
+        "p_model": 0.693,
+        "p_blend": 0.687,
+        "p_pinnacle": 0.686,
+        "fair_odd": 1.46,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.38,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmuu8c54d3ppl",
+        "enviadaEm": "2026-10-04T19:44:28.909Z"
+      }
     }
   ],
   "invertidos": [],
@@ -24986,5 +25033,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T19:42:04.952Z"
+  "updatedAt": "2026-10-04T19:44:31.777Z"
 }
