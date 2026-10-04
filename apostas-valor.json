@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 154.09,
+      "value": 132.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T11:30:17.071Z"
+      "updatedAt": "2026-10-04T11:30:22.121Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24734,7 +24734,7 @@
       "market": "Escanteios",
       "oddMkt": 1.41,
       "prob": 0.707,
-      "winner": "A",
+      "winner": "RED",
       "date": "2026-10-03T18:30",
       "modelo": "analise",
       "total": 58.7,
@@ -24744,9 +24744,9 @@
       "roi": 112.00000000000001,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-04T11:30:17.071Z",
+      "updatedAt": "2026-10-04T11:30:22.121Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520903,
@@ -24935,5 +24935,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T11:30:17.071Z"
+  "updatedAt": "2026-10-04T11:30:22.121Z"
 }
