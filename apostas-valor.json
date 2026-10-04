@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 293.5,
+      "value": 352.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T20:22:55.064Z"
+      "updatedAt": "2026-10-04T20:27:43.371Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 92.89,
+      "value": 82.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T20:22:55.064Z"
+      "updatedAt": "2026-10-04T20:27:43.371Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24961,6 +24961,53 @@
         "inboxId": "anmuu9pi1w66dl",
         "enviadaEm": "2026-10-04T20:22:51.812Z"
       }
+    },
+    {
+      "id": "muu9vr0r0wr55",
+      "kind": "valor",
+      "event": "Llaneros x America de Cali — Total escanteios 1T: Mais de 4",
+      "houseA": "Sportmarket",
+      "oddA": 1.74,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.84,
+      "prob": 0.544,
+      "winner": null,
+      "date": "2026-10-04T22:15",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 43.438,
+      "lucroRed": -58.7,
+      "lucro": 43.438,
+      "roi": 74,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T20:27:43.371Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1549811,
+        "kickoff": "2026-10-05T01:15:00.000Z",
+        "home": "Llaneros",
+        "away": "America de Cali",
+        "competition": "Primera A",
+        "lineId": "c1O4",
+        "mercado": "Total escanteios 1T",
+        "linha": "Mais de 4",
+        "tier": "sólida",
+        "p_model": 0.622,
+        "p_blend": 0.544,
+        "p_pinnacle": 0.535,
+        "fair_odd": 1.84,
+        "odd_min": 1.93,
+        "pinnacle_odd": 1.74,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuu9vonso2p7",
+        "enviadaEm": "2026-10-04T20:27:40.312Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25127,5 +25174,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T20:22:55.064Z"
+  "updatedAt": "2026-10-04T20:27:43.371Z"
 }
