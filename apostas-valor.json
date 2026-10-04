@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 352.2,
+      "value": 410.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T20:27:43.371Z"
+      "updatedAt": "2026-10-04T20:29:51.767Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 82.89,
+      "value": 72.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T20:27:43.371Z"
+      "updatedAt": "2026-10-04T20:29:51.767Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25008,6 +25008,53 @@
         "inboxId": "anmuu9vonso2p7",
         "enviadaEm": "2026-10-04T20:27:40.312Z"
       }
+    },
+    {
+      "id": "muu9yi3b0if35",
+      "kind": "valor",
+      "event": "Racing Montevideo x Penarol — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.51,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.51,
+      "prob": 0.662,
+      "winner": null,
+      "date": "2026-10-04T19:30",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 29.937,
+      "lucroRed": -58.7,
+      "lucro": 29.937,
+      "roi": 51,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T20:29:51.767Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1641622,
+        "kickoff": "2026-10-04T22:30:00.000Z",
+        "home": "Racing Montevideo",
+        "away": "Penarol",
+        "competition": "Primera División",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.709,
+        "p_blend": 0.662,
+        "p_pinnacle": 0.656,
+        "fair_odd": 1.51,
+        "odd_min": 1.59,
+        "pinnacle_odd": 1.48,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuu9ydnx3s4f",
+        "enviadaEm": "2026-10-04T20:29:46.029Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25174,5 +25221,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T20:27:43.371Z"
+  "updatedAt": "2026-10-04T20:29:51.767Z"
 }
