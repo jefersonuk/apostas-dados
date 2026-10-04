@@ -23840,7 +23840,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-03T03:07:15.313Z",
+      "updatedAt": "2026-10-04T20:55:40.149Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493162,
@@ -23862,7 +23862,14 @@
         "fragile": true,
         "inboxId": "anmuqy72pankfo",
         "enviadaEm": "2026-10-02T12:37:17.806Z",
-        "editadaEm": "2026-10-02T13:56:19.979Z"
+        "editadaEm": "2026-10-02T13:56:19.979Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Independ. Rivadavia 1–1 Gimnasia L.P. · gols no jogo: 2 (linha 2.5)",
+          "at": "2026-10-04T20:55:40.149Z"
+        },
+        "clv": -0.001544294222510345,
+        "closingFair": 2.383681104958695
       }
     },
     {
@@ -23889,7 +23896,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-03T03:05:35.211Z",
+      "updatedAt": "2026-10-04T20:55:40.870Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1505529,
@@ -23910,7 +23917,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmur0t56q9zfm",
-        "enviadaEm": "2026-10-02T13:50:26.690Z"
+        "enviadaEm": "2026-10-02T13:50:26.690Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Universidad de Concepcion 0–2 Huachipato · escanteios no jogo: 10 (linha 9)",
+          "at": "2026-10-04T20:55:40.870Z"
+        },
+        "clv": 0.05099167062249799,
+        "closingFair": 1.5223717225583022
       }
     },
     {
@@ -23937,7 +23951,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-03T03:07:40.896Z",
+      "updatedAt": "2026-10-04T20:55:41.597Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520907,
@@ -23958,7 +23972,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmur12kcia6n3",
-        "enviadaEm": "2026-10-02T13:57:46.242Z"
+        "enviadaEm": "2026-10-02T13:57:46.242Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Londrina 0–2 Criciuma · gols no jogo: 2 (linha 1.5)",
+          "at": "2026-10-04T20:55:41.597Z"
+        },
+        "clv": -0.004811451960666346,
+        "closingFair": 1.4670586823737195
       }
     },
     {
@@ -23985,7 +24006,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-03T03:07:53.310Z",
+      "updatedAt": "2026-10-04T20:55:42.309Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520906,
@@ -24006,7 +24027,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmur1brgszt5x",
-        "enviadaEm": "2026-10-02T14:04:55.372Z"
+        "enviadaEm": "2026-10-02T14:04:55.372Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Juventude 3–0 Operario-PR · gols no jogo: 3 (linha 1.5)",
+          "at": "2026-10-04T20:55:42.308Z"
+        },
+        "clv": 0.05815049006549855,
+        "closingFair": 1.417567741151026
       }
     },
     {
@@ -24033,7 +24061,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-03T03:05:35.860Z",
+      "updatedAt": "2026-10-04T20:55:42.720Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1505529,
@@ -24055,7 +24083,14 @@
         "fragile": false,
         "inboxId": "anmur1obcii0h9",
         "enviadaEm": "2026-10-02T14:14:41.010Z",
-        "editadaEm": "2026-10-02T14:14:55.093Z"
+        "editadaEm": "2026-10-02T14:14:55.093Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Universidad de Concepcion 0–2 Huachipato · gols no jogo: 2 (linha 2.25)",
+          "at": "2026-10-04T20:55:42.720Z"
+        },
+        "clv": 0.08788114925559887,
+        "closingFair": 1.627015966965833
       }
     },
     {
@@ -24082,7 +24117,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-02T19:50:43.123Z",
+      "updatedAt": "2026-10-04T20:55:43.465Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1638597,
@@ -24103,7 +24138,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmur1q5lt0nr6",
-        "enviadaEm": "2026-10-02T14:16:06.881Z"
+        "enviadaEm": "2026-10-02T14:16:06.881Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Colombia 0–1 Paraguay · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-04T20:55:43.465Z"
+        },
+        "clv": 0.0209397801000184,
+        "closingFair": 1.4692345515746772
       }
     },
     {
@@ -24130,7 +24172,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-03T02:44:49.974Z",
+      "updatedAt": "2026-10-04T20:55:44.186Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492318,
@@ -24152,7 +24194,14 @@
         "fragile": true,
         "inboxId": "anmur1wcbacfis",
         "enviadaEm": "2026-10-02T14:20:55.510Z",
-        "editadaEm": "2026-10-02T14:21:12.322Z"
+        "editadaEm": "2026-10-02T14:21:12.322Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sao Paulo 1–2 Santos · gols no jogo: 3 (linha 2)",
+          "at": "2026-10-04T20:55:44.186Z"
+        },
+        "clv": 0.018211345145215274,
+        "closingFair": 1.6892367269338342
       }
     },
     {
@@ -24179,7 +24228,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-02T15:22:26.456Z",
+      "updatedAt": "2026-10-04T20:55:44.551Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492318,
@@ -24200,7 +24249,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmur1wu38c61o",
-        "enviadaEm": "2026-10-02T14:21:18.548Z"
+        "enviadaEm": "2026-10-02T14:21:18.548Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sao Paulo 1–2 Santos · gols no jogo: 3 (linha 1.75)",
+          "at": "2026-10-04T20:55:44.551Z"
+        },
+        "clv": 0.12794358889907742,
+        "closingFair": 1.5248989549901124
       }
     },
     {
@@ -24511,7 +24567,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-02T23:04:40.026Z",
+      "updatedAt": "2026-10-04T20:55:45.619Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493161,
@@ -24532,7 +24588,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuri84v8ihzi",
-        "enviadaEm": "2026-10-02T21:57:59.588Z"
+        "enviadaEm": "2026-10-02T21:57:59.588Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Independiente 1–4 Instituto Cordoba · escanteios no 1º tempo: 4 (linha 4)",
+          "at": "2026-10-04T20:55:45.619Z"
+        },
+        "clv": -0.06423904523238744,
+        "closingFair": 1.7846438147386998
       }
     },
     {
@@ -24559,7 +24622,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-03T04:40:42.004Z",
+      "updatedAt": "2026-10-04T20:55:46.328Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520905,
@@ -24580,7 +24643,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmurierquq6uw",
-        "enviadaEm": "2026-10-02T22:03:09.174Z"
+        "enviadaEm": "2026-10-02T22:03:09.174Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Fortaleza EC 1–1 Nautico Recife · saldo de escanteios do Fortaleza EC: 3 (linha 2.5)",
+          "at": "2026-10-04T20:55:46.328Z"
+        },
+        "clv": -0.07971719102669861,
+        "closingFair": 1.7711946633214664
       }
     },
     {
@@ -24607,7 +24677,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-02T23:37:00.104Z",
+      "updatedAt": "2026-10-04T20:55:46.775Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493161,
@@ -24628,7 +24698,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmurj53idbye3",
-        "enviadaEm": "2026-10-02T22:23:37.477Z"
+        "enviadaEm": "2026-10-02T22:23:37.477Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Independiente 1–4 Instituto Cordoba · gols no jogo: 5 (linha 2)",
+          "at": "2026-10-04T20:55:46.775Z"
+        },
+        "clv": 0.14060804056962972,
+        "closingFair": 2.1129081281913678
       }
     },
     {
@@ -25268,5 +25345,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T20:32:16.985Z"
+  "updatedAt": "2026-10-04T20:55:46.776Z"
 }
