@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 469.6,
+      "value": 528.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T20:32:16.985Z"
+      "updatedAt": "2026-10-04T21:09:43.800Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 62.89,
+      "value": 52.89,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T20:32:16.984Z"
+      "updatedAt": "2026-10-04T21:09:43.800Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25179,6 +25179,53 @@
         "inboxId": "anmuua1b62xw7i",
         "enviadaEm": "2026-10-04T20:32:02.762Z"
       }
+    },
+    {
+      "id": "muubdrso6ag3d",
+      "kind": "valor",
+      "event": "Platense x Municipal Limeño — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 2,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.05,
+      "prob": 0.488,
+      "winner": null,
+      "date": "2026-10-04T18:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 58.7,
+      "lucroRed": -58.7,
+      "lucro": 58.7,
+      "roi": 100,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T21:09:43.800Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1600621,
+        "kickoff": "2026-10-04T21:00:00.000Z",
+        "home": "Platense",
+        "away": "Municipal Limeño",
+        "competition": "Primera Division",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.417,
+        "p_blend": 0.488,
+        "p_pinnacle": 0.496,
+        "fair_odd": 2.05,
+        "odd_min": 2.15,
+        "pinnacle_odd": 1.91,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuubdrda02br",
+        "enviadaEm": "2026-10-04T21:09:43.246Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25345,5 +25392,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-04T20:55:46.776Z"
+  "updatedAt": "2026-10-04T21:09:43.801Z"
 }
