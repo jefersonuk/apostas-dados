@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 450.05,
+      "value": 440.67,
       "currency": "USD",
-      "updatedAt": "2026-10-05T17:53:36.076Z"
+      "updatedAt": "2026-10-05T17:54:19.281Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 81.22,
+      "value": 90.62,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T17:53:36.668Z"
+      "updatedAt": "2026-10-05T17:54:19.281Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25808,10 +25808,10 @@
       "id": "muvgjgapa3wda",
       "kind": "valor",
       "event": "Cyprus x Latvia — Total de gols: Mais de 2",
-      "houseA": "Overtimemarkets",
+      "houseA": "Sportmarket",
       "oddA": 1.94,
-      "stakeA": 49.8,
-      "curA": "USD",
+      "stakeA": 58.7,
+      "curA": "EUR",
       "sport": "Futebol",
       "market": "Total de Gols",
       "oddMkt": 1.63,
@@ -25819,16 +25819,16 @@
       "winner": "A",
       "date": "2026-10-05T13:00",
       "modelo": "analise",
-      "total": 49.8,
-      "lucroA": 46.812,
-      "lucroRed": -49.8,
-      "lucro": 46.812,
+      "total": 58.7,
+      "lucroA": 55.178,
+      "lucroRed": -58.7,
+      "lucro": 55.178,
       "roi": 94,
       "aplicado": {
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T17:53:36.076Z",
+      "updatedAt": "2026-10-05T17:54:19.281Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1545611,
@@ -25856,7 +25856,8 @@
           "at": "2026-10-05T17:53:36.076Z"
         },
         "clv": 0.17770843776248668,
-        "closingFair": 1.647266791843473
+        "closingFair": 1.647266791843473,
+        "editadaEm": "2026-10-05T17:54:19.281Z"
       }
     },
     {
@@ -26351,5 +26352,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T17:53:51.565Z"
+  "updatedAt": "2026-10-05T17:54:19.281Z"
 }
