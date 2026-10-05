@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 358.1,
+      "value": 457.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T19:54:34.476Z"
+      "updatedAt": "2026-10-05T20:18:11.747Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 14.1,
+      "value": -5.9,
       "currency": "USD",
-      "updatedAt": "2026-10-05T17:45:53.358Z"
+      "updatedAt": "2026-10-05T20:18:11.747Z"
     }
   ],
   "aportes": [
@@ -26468,6 +26468,31 @@
         "inboxId": "anmuvn8nd7hjqe",
         "enviadaEm": "2026-10-05T19:29:26.347Z"
       }
+    },
+    {
+      "id": "muvozcmbb1rqe",
+      "kind": "valor",
+      "event": "England – Czechia (Acima 26.5 - chutes)",
+      "houseA": "Frumzi",
+      "oddA": 1.95,
+      "stakeA": 99.80000000000001,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Chutes",
+      "oddMkt": 1.8050541516245486,
+      "prob": 55.400000000000006,
+      "winner": null,
+      "date": "2026-10-06T15:45",
+      "modelo": "F",
+      "total": 99.80000000000001,
+      "lucroA": 94.81,
+      "lucroRed": -99.80000000000001,
+      "lucro": 94.81,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T20:18:11.747Z"
     }
   ],
   "invertidos": [],
@@ -26634,5 +26659,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T19:56:30.752Z"
+  "updatedAt": "2026-10-05T20:18:11.747Z"
 }
