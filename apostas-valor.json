@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 58.6,
+      "value": 117.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T12:21:01.846Z"
+      "updatedAt": "2026-10-05T12:26:12.594Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 125.64,
+      "value": 115.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:21:17.545Z"
+      "updatedAt": "2026-10-05T12:26:12.594Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25405,6 +25405,53 @@
         "enviadaEm": "2026-10-05T12:20:58.299Z",
         "editadaEm": "2026-10-05T12:21:17.545Z"
       }
+    },
+    {
+      "id": "muv84df664nm2",
+      "kind": "valor",
+      "event": "Uganda x Congo DR — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.79,
+      "stakeA": 58.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.48,
+      "prob": 0.676,
+      "winner": null,
+      "date": "2026-10-05T10:00",
+      "modelo": "analise",
+      "total": 58.6,
+      "lucroA": 46.294000000000004,
+      "lucroRed": -58.6,
+      "lucro": 46.294000000000004,
+      "roi": 79,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T12:26:12.594Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640078,
+        "kickoff": "2026-10-05T13:00:00.000Z",
+        "home": "Uganda",
+        "away": "Congo DR",
+        "competition": "Friendlies",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.687,
+        "p_blend": 0.676,
+        "p_pinnacle": 0.675,
+        "fair_odd": 1.48,
+        "odd_min": 1.55,
+        "pinnacle_odd": 1.43,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuv84d0bo3bm",
+        "enviadaEm": "2026-10-05T12:26:12.059Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25571,5 +25618,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:21:17.545Z"
+  "updatedAt": "2026-10-05T12:26:12.594Z"
 }
