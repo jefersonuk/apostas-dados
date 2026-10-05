@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 220.1,
+      "value": 337.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T17:07:45.018Z"
+      "updatedAt": "2026-10-05T17:09:05.543Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 77.2,
+      "value": 67.2,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T16:48:16.833Z"
+      "updatedAt": "2026-10-05T17:09:05.543Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5684,6 +5684,10 @@
     {
       "id": "musx16c43830s",
       "at": "2026-10-04T11:30:29.570Z"
+    },
+    {
+      "id": "muv7pln08r4w7",
+      "at": "2026-10-05T17:07:45.750Z"
     }
   ],
   "surebets": [
@@ -25304,61 +25308,6 @@
       }
     },
     {
-      "id": "muv7pln08r4w7",
-      "kind": "valor",
-      "event": "Costa Rica x Haiti — Total de escanteios: Menos de 9,5",
-      "houseA": "Sportmarket",
-      "oddA": 1.5,
-      "stakeA": 58.7,
-      "curA": "EUR",
-      "sport": "Futebol",
-      "market": "Escanteios",
-      "oddMkt": 1.52,
-      "prob": 0.658,
-      "winner": "RED",
-      "date": "2026-10-04T21:00",
-      "modelo": "analise",
-      "total": 58.7,
-      "lucroA": 29.35,
-      "lucroRed": -58.7,
-      "lucro": 29.35,
-      "roi": 50,
-      "aplicado": {
-        "stakes": true,
-        "resultado": "RED"
-      },
-      "updatedAt": "2026-10-05T12:15:59.306Z",
-      "origem": "analise",
-      "analise": {
-        "fixtureId": 1639990,
-        "kickoff": "2026-10-05T00:00:00.000Z",
-        "home": "Costa Rica",
-        "away": "Haiti",
-        "competition": "CONCACAF Nations League",
-        "lineId": "cornersU9.5",
-        "mercado": "Total de escanteios",
-        "linha": "Menos de 9,5",
-        "tier": "especulativa",
-        "p_model": 0.699,
-        "p_blend": 0.658,
-        "p_pinnacle": 0.648,
-        "fair_odd": 1.52,
-        "odd_min": 1.6,
-        "pinnacle_odd": 1.47,
-        "priced_by": "pinnacle",
-        "fragile": true,
-        "inboxId": "anmuug938hg09n",
-        "enviadaEm": "2026-10-04T23:26:03.425Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Costa Rica 2–0 Haiti · escanteios no jogo: 11 (linha 9.5)",
-          "at": "2026-10-05T12:15:59.306Z"
-        },
-        "clv": -0.08286665721192277,
-        "closingFair": 1.6355309855380606
-      }
-    },
-    {
       "id": "muv7xpnaotiz2",
       "kind": "valor",
       "event": "Yarud Mariupol' x Nyva Ternopil — Total de gols: Mais de 2",
@@ -25982,6 +25931,100 @@
         "inboxId": "anmuug938hg09n",
         "enviadaEm": "2026-10-04T23:26:03.425Z"
       }
+    },
+    {
+      "id": "muvi6gb1n9kad",
+      "kind": "valor",
+      "event": "Lyn II x Råde — Total de gols 1T: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.75,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.65,
+      "prob": 0.607,
+      "winner": null,
+      "date": "2026-10-05T14:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 44.025000000000006,
+      "lucroRed": -58.7,
+      "lucro": 44.025000000000006,
+      "roi": 75,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T17:07:45.806Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1497441,
+        "kickoff": "2026-10-05T17:00:00.000Z",
+        "home": "Lyn II",
+        "away": "Råde",
+        "competition": "3. Division - Girone 6",
+        "lineId": "g1O1.5",
+        "mercado": "Total de gols 1T",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.706,
+        "p_blend": 0.607,
+        "p_pinnacle": 0.596,
+        "fair_odd": 1.65,
+        "odd_min": 1.73,
+        "pinnacle_odd": 1.57,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvi6cuuynqc",
+        "enviadaEm": "2026-10-05T17:07:41.334Z"
+      }
+    },
+    {
+      "id": "muvi85tzpec5a",
+      "kind": "valor",
+      "event": "Herrestads x Grebbestad — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.65,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.51,
+      "prob": 0.663,
+      "winner": null,
+      "date": "2026-10-05T14:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 38.154999999999994,
+      "lucroRed": -58.7,
+      "lucro": 38.154999999999994,
+      "roi": 64.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T17:09:05.543Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1510684,
+        "kickoff": "2026-10-05T17:00:00.000Z",
+        "home": "Herrestads",
+        "away": "Grebbestad",
+        "competition": "Division 2 - Norra Götaland",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "âncora",
+        "p_model": 0.667,
+        "p_blend": 0.663,
+        "p_pinnacle": 0.663,
+        "fair_odd": 1.51,
+        "odd_min": 1.55,
+        "pinnacle_odd": 1.43,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmuvi85b6nywg",
+        "enviadaEm": "2026-10-05T17:09:04.866Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26148,5 +26191,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T17:07:44.778Z"
+  "updatedAt": "2026-10-05T17:09:05.543Z"
 }
