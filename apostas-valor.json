@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 534.2,
+      "value": 475.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T18:27:37.795Z"
+      "updatedAt": "2026-10-05T18:34:02.669Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 52.2,
+      "value": 62.2,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T18:27:34.515Z"
+      "updatedAt": "2026-10-05T18:34:02.668Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5688,6 +5688,10 @@
     {
       "id": "muv7pln08r4w7",
       "at": "2026-10-05T17:07:45.750Z"
+    },
+    {
+      "id": "muvl13aqtd2l4",
+      "at": "2026-10-05T18:34:02.668Z"
     }
   ],
   "surebets": [
@@ -26281,53 +26285,6 @@
         "inboxId": "anmuvkxo5v1jj1",
         "enviadaEm": "2026-10-05T18:24:54.931Z"
       }
-    },
-    {
-      "id": "muvl13aqtd2l4",
-      "kind": "valor",
-      "event": "Lujan x General Lamadrid — Total de gols: Mais de 1,5",
-      "houseA": "Sportmarket",
-      "oddA": 1.61,
-      "stakeA": 58.7,
-      "curA": "EUR",
-      "sport": "Futebol",
-      "market": "Total de Gols",
-      "oddMkt": 1.56,
-      "prob": 0.641,
-      "winner": null,
-      "date": "2026-10-05T15:00",
-      "modelo": "analise",
-      "total": 58.7,
-      "lucroA": 35.80700000000001,
-      "lucroRed": -58.7,
-      "lucro": 35.80700000000001,
-      "roi": 61.00000000000001,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-10-05T18:27:34.515Z",
-      "origem": "analise",
-      "analise": {
-        "fixtureId": 1500139,
-        "kickoff": "2026-10-05T18:00:00.000Z",
-        "home": "Lujan",
-        "away": "General Lamadrid",
-        "competition": "Primera C",
-        "lineId": "gO1.5",
-        "mercado": "Total de gols",
-        "linha": "Mais de 1,5",
-        "tier": "sólida",
-        "p_model": 0.655,
-        "p_blend": 0.641,
-        "p_pinnacle": 0.64,
-        "fair_odd": 1.56,
-        "odd_min": 1.64,
-        "pinnacle_odd": 1.47,
-        "priced_by": "pinnacle",
-        "fragile": true,
-        "inboxId": "anmuvkxo5v1jj1",
-        "enviadaEm": "2026-10-05T18:24:54.931Z"
-      }
     }
   ],
   "invertidos": [],
@@ -26494,5 +26451,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T18:27:34.516Z"
+  "updatedAt": "2026-10-05T18:34:02.669Z"
 }
