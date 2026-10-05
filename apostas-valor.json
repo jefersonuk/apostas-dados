@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 58.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T12:15:59.307Z"
+      "updatedAt": "2026-10-05T12:21:01.846Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 135.64,
+      "value": 125.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:16:32.305Z"
+      "updatedAt": "2026-10-05T12:21:01.846Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25357,6 +25357,53 @@
         "clv": -0.08286665721192277,
         "closingFair": 1.6355309855380606
       }
+    },
+    {
+      "id": "muv7xpnaotiz2",
+      "kind": "valor",
+      "event": "Yarud Mariupol' x Nyva Ternopil — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.79,
+      "stakeA": 58.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.48,
+      "prob": 0.674,
+      "winner": null,
+      "date": "2026-10-05T09:30",
+      "modelo": "analise",
+      "total": 58.6,
+      "lucroA": 46.294000000000004,
+      "lucroRed": -58.6,
+      "lucro": 46.294000000000004,
+      "roi": 79,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T12:21:01.846Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1581922,
+        "kickoff": "2026-10-05T12:30:00.000Z",
+        "home": "Yarud Mariupol'",
+        "away": "Nyva Ternopil",
+        "competition": "Persha Liga",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.631,
+        "p_blend": 0.674,
+        "p_pinnacle": 0.679,
+        "fair_odd": 1.48,
+        "odd_min": 1.53,
+        "pinnacle_odd": 1.4,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmuv7xmwr16tg",
+        "enviadaEm": "2026-10-05T12:20:58.299Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25523,5 +25570,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:21:00.371Z"
+  "updatedAt": "2026-10-05T12:21:01.846Z"
 }
