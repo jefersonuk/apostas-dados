@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 58.6,
+      "value": 114.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T15:04:18.803Z"
+      "updatedAt": "2026-10-05T16:14:57.646Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 91.3,
+      "value": 81.3,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T15:04:18.803Z"
+      "updatedAt": "2026-10-05T16:14:57.646Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25738,6 +25738,53 @@
         "enviadaEm": "2026-10-05T13:36:18.471Z",
         "editadaEm": "2026-10-05T13:36:33.095Z"
       }
+    },
+    {
+      "id": "muvgajqlaiqgb",
+      "kind": "valor",
+      "event": "SAT Moreno x Deportivo Metalurgico — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.59,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.43,
+      "prob": 0.697,
+      "winner": null,
+      "date": "2026-10-05T13:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 32.922000000000004,
+      "lucroRed": -55.8,
+      "lucro": 32.922000000000004,
+      "roi": 59.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T16:14:57.646Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1642031,
+        "kickoff": "2026-10-05T16:00:00.000Z",
+        "home": "SAT Moreno",
+        "away": "Deportivo Metalurgico",
+        "competition": "Torneo Promocional Amateur",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.646,
+        "p_blend": 0.697,
+        "p_pinnacle": 0.702,
+        "fair_odd": 1.43,
+        "odd_min": 1.51,
+        "pinnacle_odd": 1.35,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvgadtl6sqe",
+        "enviadaEm": "2026-10-05T16:14:49.978Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25904,5 +25951,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T16:14:56.236Z"
+  "updatedAt": "2026-10-05T16:14:57.646Z"
 }
