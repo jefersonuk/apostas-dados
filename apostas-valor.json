@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 528.3,
+      "value": 587,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-04T21:09:43.800Z"
+      "updatedAt": "2026-10-05T12:14:43.404Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 52.89,
+      "value": 42.87,
       "currency": "EUR",
-      "updatedAt": "2026-10-04T21:09:43.800Z"
+      "updatedAt": "2026-10-05T12:14:43.404Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25226,6 +25226,53 @@
         "inboxId": "anmuubdrda02br",
         "enviadaEm": "2026-10-04T21:09:43.246Z"
       }
+    },
+    {
+      "id": "muv7pln08r4w7",
+      "kind": "valor",
+      "event": "Costa Rica x Haiti — Total de escanteios: Menos de 9,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.52,
+      "prob": 0.658,
+      "winner": null,
+      "date": "2026-10-04T21:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 29.35,
+      "lucroRed": -58.7,
+      "lucro": 29.35,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T12:14:43.404Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1639990,
+        "kickoff": "2026-10-05T00:00:00.000Z",
+        "home": "Costa Rica",
+        "away": "Haiti",
+        "competition": "CONCACAF Nations League",
+        "lineId": "cornersU9.5",
+        "mercado": "Total de escanteios",
+        "linha": "Menos de 9,5",
+        "tier": "especulativa",
+        "p_model": 0.699,
+        "p_blend": 0.658,
+        "p_pinnacle": 0.648,
+        "fair_odd": 1.52,
+        "odd_min": 1.6,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuug938hg09n",
+        "enviadaEm": "2026-10-04T23:26:03.425Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25392,5 +25439,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:12:54.115Z"
+  "updatedAt": "2026-10-05T12:14:43.404Z"
 }
