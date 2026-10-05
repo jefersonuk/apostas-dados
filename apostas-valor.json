@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 125.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:21:01.846Z"
+      "updatedAt": "2026-10-05T12:21:17.545Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25361,14 +25361,14 @@
     {
       "id": "muv7xpnaotiz2",
       "kind": "valor",
-      "event": "Yarud Mariupol' x Nyva Ternopil — Total de gols: Mais de 1,5",
+      "event": "Yarud Mariupol' x Nyva Ternopil — Total de gols: Mais de 2",
       "houseA": "Sportmarket",
       "oddA": 1.79,
       "stakeA": 58.6,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Total de Gols",
-      "oddMkt": 1.48,
+      "oddMkt": 1.6,
       "prob": 0.674,
       "winner": null,
       "date": "2026-10-05T09:30",
@@ -25381,7 +25381,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-05T12:21:01.846Z",
+      "updatedAt": "2026-10-05T12:21:17.545Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1581922,
@@ -25389,9 +25389,9 @@
         "home": "Yarud Mariupol'",
         "away": "Nyva Ternopil",
         "competition": "Persha Liga",
-        "lineId": "gO1.5",
+        "lineId": "gO2",
         "mercado": "Total de gols",
-        "linha": "Mais de 1,5",
+        "linha": "Mais de 2",
         "tier": "sólida",
         "p_model": 0.631,
         "p_blend": 0.674,
@@ -25402,7 +25402,8 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuv7xmwr16tg",
-        "enviadaEm": "2026-10-05T12:20:58.299Z"
+        "enviadaEm": "2026-10-05T12:20:58.299Z",
+        "editadaEm": "2026-10-05T12:21:17.545Z"
       }
     }
   ],
@@ -25570,5 +25571,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:21:01.846Z"
+  "updatedAt": "2026-10-05T12:21:17.545Z"
 }
