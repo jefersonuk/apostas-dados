@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 337.5,
+      "value": 278.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T17:09:05.543Z"
+      "updatedAt": "2026-10-05T17:09:24.799Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -25897,7 +25897,7 @@
       "market": "Escanteios",
       "oddMkt": 1.52,
       "prob": 0.658,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-04T21:00",
       "modelo": "analise",
       "total": 58.7,
@@ -25906,9 +25906,10 @@
       "lucro": 29.35,
       "roi": 50,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-04T23:26:07.512Z",
+      "updatedAt": "2026-10-05T17:09:24.799Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639990,
@@ -25929,7 +25930,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuug938hg09n",
-        "enviadaEm": "2026-10-04T23:26:03.425Z"
+        "enviadaEm": "2026-10-04T23:26:03.425Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Costa Rica 2–0 Haiti · escanteios no jogo: 11 (linha 9.5)",
+          "at": "2026-10-05T17:09:24.799Z"
+        },
+        "clv": -0.08286665721192277,
+        "closingFair": 1.6355309855380606
       }
     },
     {
@@ -26191,5 +26199,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T17:09:05.543Z"
+  "updatedAt": "2026-10-05T17:09:24.799Z"
 }
