@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 95.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:35:46.983Z"
+      "updatedAt": "2026-10-05T12:35:59.840Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25504,7 +25504,7 @@
     {
       "id": "muv8gomfp3h42",
       "kind": "valor",
-      "event": "Semendrija 1924 x FK Vozdovac — Total de gols: Mais de 2,5",
+      "event": "Semendrija 1924 x FK Vozdovac — Total de gols: Mais de 2",
       "houseA": "Sportmarket",
       "oddA": 1.59,
       "stakeA": 58.6,
@@ -25524,7 +25524,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-05T12:35:46.983Z",
+      "updatedAt": "2026-10-05T12:35:59.840Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1554179,
@@ -25532,9 +25532,9 @@
         "home": "Semendrija 1924",
         "away": "FK Vozdovac",
         "competition": "Prva Liga",
-        "lineId": "gO2.5",
+        "lineId": "gO2",
         "mercado": "Total de gols",
-        "linha": "Mais de 2,5",
+        "linha": "Mais de 2",
         "tier": "especulativa",
         "p_model": 0.371,
         "p_blend": 0.434,
@@ -25545,7 +25545,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuv8go7119ff",
-        "enviadaEm": "2026-10-05T12:35:46.429Z"
+        "enviadaEm": "2026-10-05T12:35:46.429Z",
+        "editadaEm": "2026-10-05T12:35:59.840Z"
       }
     }
   ],
@@ -25713,5 +25714,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:35:46.983Z"
+  "updatedAt": "2026-10-05T12:35:59.840Z"
 }
