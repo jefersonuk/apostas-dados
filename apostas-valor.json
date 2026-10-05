@@ -5691,7 +5691,7 @@
     },
     {
       "id": "muvl13aqtd2l4",
-      "at": "2026-10-05T18:27:43.656Z"
+      "at": "2026-10-05T18:34:02.668Z"
     }
   ],
   "surebets": [
@@ -25724,7 +25724,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T18:06:34.156Z",
+      "updatedAt": "2026-10-05T18:45:50.704Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1642031,
@@ -25749,7 +25749,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Not Started",
-          "at": "2026-10-05T18:06:34.156Z"
+          "at": "2026-10-05T18:45:50.703Z"
         }
       }
     },
@@ -25998,7 +25998,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T17:53:51.565Z",
+      "updatedAt": "2026-10-05T18:45:51.182Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1497441,
@@ -26019,7 +26019,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvi6cuuynqc",
-        "enviadaEm": "2026-10-05T17:07:41.334Z"
+        "enviadaEm": "2026-10-05T17:07:41.334Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-05T18:45:51.182Z"
+        }
       }
     },
     {
@@ -26046,7 +26051,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T18:34:06.279Z",
+      "updatedAt": "2026-10-05T18:45:51.652Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1510684,
@@ -26067,7 +26072,12 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuvi85b6nywg",
-        "enviadaEm": "2026-10-05T17:09:04.866Z"
+        "enviadaEm": "2026-10-05T17:09:04.866Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-05T18:45:51.652Z"
+        }
       }
     },
     {
@@ -26094,7 +26104,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T17:54:35.932Z",
+      "updatedAt": "2026-10-05T18:45:52.144Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495962,
@@ -26115,7 +26125,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvj5rjc9pp2",
-        "enviadaEm": "2026-10-05T17:35:13.320Z"
+        "enviadaEm": "2026-10-05T17:35:13.320Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-05T18:45:52.144Z"
+        }
       }
     },
     {
@@ -26499,5 +26514,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T18:45:43.934Z"
+  "updatedAt": "2026-10-05T18:45:52.144Z"
 }
