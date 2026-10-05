@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 67.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T13:36:22.939Z"
+      "updatedAt": "2026-10-05T13:36:33.095Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25646,7 +25646,7 @@
     {
       "id": "muvamm579l47c",
       "kind": "valor",
-      "event": "Napredak x Loznica — Handicap asiático: Loznica +0,75",
+      "event": "Napredak x Loznica — Handicap asiático: Loznica +0,50",
       "houseA": "Sportmarket",
       "oddA": 1.85,
       "stakeA": 58.6,
@@ -25666,7 +25666,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-05T13:36:22.939Z",
+      "updatedAt": "2026-10-05T13:36:33.095Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1554178,
@@ -25674,9 +25674,9 @@
         "home": "Napredak",
         "away": "Loznica",
         "competition": "Prva Liga",
-        "lineId": "ahA0.75",
+        "lineId": "ahA0.5",
         "mercado": "Handicap asiático",
-        "linha": "Loznica +0,75",
+        "linha": "Loznica +0,50",
         "tier": "âncora",
         "p_model": 0.779,
         "p_blend": 0.627,
@@ -25687,7 +25687,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvamip3k8j4",
-        "enviadaEm": "2026-10-05T13:36:18.471Z"
+        "enviadaEm": "2026-10-05T13:36:18.471Z",
+        "editadaEm": "2026-10-05T13:36:33.095Z"
       }
     }
   ],
@@ -25855,5 +25856,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T13:36:22.939Z"
+  "updatedAt": "2026-10-05T13:36:33.095Z"
 }
