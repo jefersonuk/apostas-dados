@@ -39,8 +39,8 @@
       "idealMin": 8,
       "idealMax": 12,
       "pct": 1,
-      "stake": 300,
-      "stakeMes": "2026-09",
+      "stake": 220,
+      "stakeMes": "2026-10",
       "inicio": "2026-09-28",
       "meta": 300
     },
@@ -25523,5 +25523,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:17:43.031Z"
+  "updatedAt": "2026-10-05T12:21:00.371Z"
 }
