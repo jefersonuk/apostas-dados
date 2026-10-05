@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 416.8,
+      "value": 534.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T18:34:06.279Z"
+      "updatedAt": "2026-10-05T18:45:43.934Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 78.7,
+      "value": 58.7,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T18:34:06.279Z"
+      "updatedAt": "2026-10-05T18:45:43.932Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26286,6 +26286,53 @@
         "inboxId": "anmuvkxo5v1jj1",
         "enviadaEm": "2026-10-05T18:24:54.931Z"
       }
+    },
+    {
+      "id": "muvlofwcrp1e9",
+      "kind": "valor",
+      "event": "Cordoba x Tenerife — Total de escanteios: Menos de 9,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.15,
+      "stakeA": 117.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.84,
+      "prob": 0.542,
+      "winner": null,
+      "date": "2026-10-05T15:30",
+      "modelo": "analise",
+      "total": 117.4,
+      "lucroA": 135.01,
+      "lucroRed": -117.4,
+      "lucro": 135.01,
+      "roi": 114.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T18:45:43.933Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1569952,
+        "kickoff": "2026-10-05T18:30:00.000Z",
+        "home": "Cordoba",
+        "away": "Tenerife",
+        "competition": "Segunda División",
+        "lineId": "cornersU9.5",
+        "mercado": "Total de escanteios",
+        "linha": "Menos de 9,5",
+        "tier": "especulativa",
+        "p_model": 0.548,
+        "p_blend": 0.542,
+        "p_pinnacle": 0.541,
+        "fair_odd": 1.84,
+        "odd_min": 1.94,
+        "pinnacle_odd": 1.75,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvlofdcqezn",
+        "enviadaEm": "2026-10-05T18:45:43.248Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26452,5 +26499,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T18:34:06.279Z"
+  "updatedAt": "2026-10-05T18:45:43.934Z"
 }
