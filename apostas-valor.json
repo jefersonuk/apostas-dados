@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 279.52,
+      "value": 58.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T14:37:25.944Z"
+      "updatedAt": "2026-10-05T15:04:18.803Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 67.94,
+      "value": 91.3,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T13:36:33.095Z"
+      "updatedAt": "2026-10-05T15:04:18.803Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25426,7 +25426,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.69,
       "prob": 0.676,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-05T10:00",
       "modelo": "analise",
       "total": 58.6,
@@ -25435,9 +25435,10 @@
       "lucro": 46.294000000000004,
       "roi": 79,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-05T14:50:25.524Z",
+      "updatedAt": "2026-10-05T15:04:16.882Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640078,
@@ -25461,10 +25462,12 @@
         "enviadaEm": "2026-10-05T12:26:12.059Z",
         "editadaEm": "2026-10-05T12:26:39.660Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T14:50:25.524Z"
-        }
+          "status": "encerrado",
+          "detail": "Uganda 1–1 Congo DR · gols no jogo: 2 (linha 2)",
+          "at": "2026-10-05T15:04:16.882Z"
+        },
+        "clv": -0.01659832078358192,
+        "closingFair": 1.8202124704792915
       }
     },
     {
@@ -25479,7 +25482,7 @@
       "market": "Total de Gols",
       "oddMkt": 2.08,
       "prob": 0.48,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-05T10:00",
       "modelo": "analise",
       "total": 58.6,
@@ -25488,9 +25491,10 @@
       "lucro": 67.97600000000001,
       "roi": 116.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T14:50:26.076Z",
+      "updatedAt": "2026-10-05T15:04:17.603Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1643811,
@@ -25513,10 +25517,12 @@
         "inboxId": "anmuv8a3vzl82t",
         "enviadaEm": "2026-10-05T12:30:40.175Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T14:50:26.076Z"
-        }
+          "status": "encerrado",
+          "detail": "Indonesia 1–1 Thailand · gols no jogo: 2 (linha 2.5)",
+          "at": "2026-10-05T15:04:17.603Z"
+        },
+        "clv": -0.041582667733930045,
+        "closingFair": 2.2537155029249347
       }
     },
     {
@@ -25531,7 +25537,7 @@
       "market": "Total de Gols",
       "oddMkt": 2.3,
       "prob": 0.434,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-05T10:00",
       "modelo": "analise",
       "total": 58.6,
@@ -25540,9 +25546,10 @@
       "lucro": 34.574000000000005,
       "roi": 59.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T14:50:26.618Z",
+      "updatedAt": "2026-10-05T15:04:18.308Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1554179,
@@ -25566,10 +25573,12 @@
         "enviadaEm": "2026-10-05T12:35:46.429Z",
         "editadaEm": "2026-10-05T12:35:59.840Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T14:50:26.618Z"
-        }
+          "status": "encerrado",
+          "detail": "Semendrija 1924 1–0 FK Vozdovac · gols no jogo: 1 (linha 2)",
+          "at": "2026-10-05T15:04:18.308Z"
+        },
+        "clv": -0.03071367831171834,
+        "closingFair": 1.6403821702864567
       }
     },
     {
@@ -25584,7 +25593,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.52,
       "prob": 0.659,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-05T10:00",
       "modelo": "analise",
       "total": 45.12,
@@ -25593,9 +25602,10 @@
       "lucro": 26.620800000000003,
       "roi": 59.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-05T14:50:26.882Z",
+      "updatedAt": "2026-10-05T15:04:18.803Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640078,
@@ -25618,10 +25628,12 @@
         "inboxId": "anmuv8l5sd7z86",
         "enviadaEm": "2026-10-05T12:39:15.853Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T14:50:26.882Z"
-        }
+          "status": "encerrado",
+          "detail": "Uganda 1–1 Congo DR · saldo de gols do Uganda: 0 (linha -1)",
+          "at": "2026-10-05T15:04:18.803Z"
+        },
+        "clv": 0.012605398569278226,
+        "closingFair": 1.5702069159877377
       }
     },
     {
@@ -25892,5 +25904,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T14:50:26.885Z"
+  "updatedAt": "2026-10-05T15:04:18.803Z"
 }
