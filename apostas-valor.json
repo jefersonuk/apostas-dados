@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 358.1,
+      "value": 416.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T17:54:35.932Z"
+      "updatedAt": "2026-10-05T18:17:56.485Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 90.62,
+      "value": 80.62,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T17:54:19.281Z"
+      "updatedAt": "2026-10-05T18:17:56.484Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26187,6 +26187,53 @@
         "stakes": true
       },
       "updatedAt": "2026-10-05T17:45:53.358Z"
+    },
+    {
+      "id": "muvkopac122sh",
+      "kind": "valor",
+      "event": "Sportivo Barracas x Leones de Rosario — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.85,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.75,
+      "prob": 0.57,
+      "winner": null,
+      "date": "2026-10-05T15:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 49.89500000000001,
+      "lucroRed": -58.7,
+      "lucro": 49.89500000000001,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T18:17:56.484Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1500192,
+        "kickoff": "2026-10-05T18:00:00.000Z",
+        "home": "Sportivo Barracas",
+        "away": "Leones de Rosario",
+        "competition": "Primera C",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "especulativa",
+        "p_model": 0.556,
+        "p_blend": 0.57,
+        "p_pinnacle": 0.572,
+        "fair_odd": 1.75,
+        "odd_min": 1.84,
+        "pinnacle_odd": 1.63,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvkoospgscw",
+        "enviadaEm": "2026-10-05T18:17:55.849Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26353,5 +26400,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T18:06:34.156Z"
+  "updatedAt": "2026-10-05T18:17:56.485Z"
 }
