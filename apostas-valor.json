@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 399.2,
+      "value": 516.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T20:37:21.605Z"
+      "updatedAt": "2026-10-05T21:59:50.332Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 127.8,
+      "value": 107.8,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T20:37:21.605Z"
+      "updatedAt": "2026-10-05T21:59:50.332Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26494,6 +26494,53 @@
         "stakes": true
       },
       "updatedAt": "2026-10-05T20:18:11.747Z"
+    },
+    {
+      "id": "muvsm2bg213dr",
+      "kind": "valor",
+      "event": "Deportivo Merlo x Brown DE Adrogue — Handicap asiático: Deportivo Merlo +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.05,
+      "stakeA": 117.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.47,
+      "prob": 0.681,
+      "winner": null,
+      "date": "2026-10-05T19:00",
+      "modelo": "analise",
+      "total": 117.4,
+      "lucroA": 123.26999999999998,
+      "lucroRed": -117.4,
+      "lucro": 123.26999999999998,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T21:59:50.332Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1499663,
+        "kickoff": "2026-10-05T22:00:00.000Z",
+        "home": "Deportivo Merlo",
+        "away": "Brown DE Adrogue",
+        "competition": "Primera B Metropolitana",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Deportivo Merlo +0,5",
+        "tier": "sólida",
+        "p_model": 0.677,
+        "p_blend": 0.681,
+        "p_pinnacle": 0.681,
+        "fair_odd": 1.47,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.4,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvslztfs635",
+        "enviadaEm": "2026-10-05T21:59:47.091Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26660,5 +26707,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T20:44:06.062Z"
+  "updatedAt": "2026-10-05T21:59:50.332Z"
 }
