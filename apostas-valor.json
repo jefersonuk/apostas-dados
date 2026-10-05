@@ -26246,7 +26246,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T19:56:30.249Z",
+      "updatedAt": "2026-10-05T22:12:34.928Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1500192,
@@ -26269,10 +26269,12 @@
         "inboxId": "anmuvkoospgscw",
         "enviadaEm": "2026-10-05T18:17:55.849Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T19:56:30.249Z"
-        }
+          "status": "encerrado",
+          "detail": "Sportivo Barracas 0–2 Leones de Rosario · gols no jogo: 2 (linha 1.5)",
+          "at": "2026-10-05T22:12:34.928Z"
+        },
+        "clv": 0.06011646268814386,
+        "closingFair": 1.7450912848848168
       }
     },
     {
@@ -26299,7 +26301,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T19:56:30.752Z",
+      "updatedAt": "2026-10-05T22:12:35.752Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1500139,
@@ -26322,10 +26324,12 @@
         "inboxId": "anmuvkxo5v1jj1",
         "enviadaEm": "2026-10-05T18:24:54.931Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T19:56:30.752Z"
-        }
+          "status": "encerrado",
+          "detail": "Lujan 1–0 General Lamadrid · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-05T22:12:35.752Z"
+        },
+        "clv": 0.05173455337844701,
+        "closingFair": 1.5308045122490825
       }
     },
     {
@@ -26803,5 +26807,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T22:12:27.395Z"
+  "updatedAt": "2026-10-05T22:12:35.752Z"
 }
