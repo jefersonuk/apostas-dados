@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 115.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:26:12.594Z"
+      "updatedAt": "2026-10-05T12:26:39.660Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25409,14 +25409,14 @@
     {
       "id": "muv84df664nm2",
       "kind": "valor",
-      "event": "Uganda x Congo DR — Total de gols: Mais de 1,5",
+      "event": "Uganda x Congo DR — Total de gols: Mais de 2",
       "houseA": "Sportmarket",
       "oddA": 1.79,
       "stakeA": 58.6,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Total de Gols",
-      "oddMkt": 1.48,
+      "oddMkt": 1.69,
       "prob": 0.676,
       "winner": null,
       "date": "2026-10-05T10:00",
@@ -25429,7 +25429,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-05T12:26:12.594Z",
+      "updatedAt": "2026-10-05T12:26:39.660Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640078,
@@ -25437,9 +25437,9 @@
         "home": "Uganda",
         "away": "Congo DR",
         "competition": "Friendlies",
-        "lineId": "gO1.5",
+        "lineId": "gO2",
         "mercado": "Total de gols",
-        "linha": "Mais de 1,5",
+        "linha": "Mais de 2",
         "tier": "sólida",
         "p_model": 0.687,
         "p_blend": 0.676,
@@ -25450,7 +25450,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuv84d0bo3bm",
-        "enviadaEm": "2026-10-05T12:26:12.059Z"
+        "enviadaEm": "2026-10-05T12:26:12.059Z",
+        "editadaEm": "2026-10-05T12:26:39.660Z"
       }
     }
   ],
@@ -25618,5 +25619,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:26:12.594Z"
+  "updatedAt": "2026-10-05T12:26:39.660Z"
 }
