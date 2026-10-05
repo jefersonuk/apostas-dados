@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 534.2,
+      "value": 651.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T19:06:09.348Z"
+      "updatedAt": "2026-10-05T19:20:42.049Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 67.5,
+      "value": 47.5,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T19:06:09.348Z"
+      "updatedAt": "2026-10-05T19:20:42.049Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26396,6 +26396,53 @@
         "inboxId": "anmuvmejfewrxm",
         "enviadaEm": "2026-10-05T19:06:01.562Z"
       }
+    },
+    {
+      "id": "muvmxetcqm4q0",
+      "kind": "valor",
+      "event": "Romania x Sweden — Total escanteios 1T: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 117.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.35,
+      "prob": 0.742,
+      "winner": null,
+      "date": "2026-10-05T15:45",
+      "modelo": "analise",
+      "total": 117.4,
+      "lucroA": 58.7,
+      "lucroRed": -117.4,
+      "lucro": 58.7,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T19:20:42.049Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528949,
+        "kickoff": "2026-10-05T18:45:00.000Z",
+        "home": "Romania",
+        "away": "Sweden",
+        "competition": "UEFA Nations League",
+        "lineId": "c1O2.5",
+        "mercado": "Total escanteios 1T",
+        "linha": "Mais de 2,5",
+        "tier": "sólida",
+        "p_model": 0.742,
+        "p_blend": 0.742,
+        "p_pinnacle": null,
+        "fair_odd": 1.35,
+        "odd_min": 1.42,
+        "pinnacle_odd": null,
+        "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvmxeekqjrm",
+        "enviadaEm": "2026-10-05T19:20:41.516Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26562,5 +26609,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T19:06:09.348Z"
+  "updatedAt": "2026-10-05T19:20:42.049Z"
 }
