@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 534.2,
+      "value": 651.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T18:45:43.934Z"
+      "updatedAt": "2026-10-05T19:06:05.867Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 58.7,
+      "value": 38.7,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T18:45:43.932Z"
+      "updatedAt": "2026-10-05T19:06:05.867Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26348,6 +26348,53 @@
         "inboxId": "anmuvlofdcqezn",
         "enviadaEm": "2026-10-05T18:45:43.248Z"
       }
+    },
+    {
+      "id": "muvmemqzcjkdy",
+      "kind": "valor",
+      "event": "Italy x Türkiye — Total escanteios 1T: Mais de 3",
+      "houseA": "Sportmarket",
+      "oddA": 1.44,
+      "stakeA": 117.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.24,
+      "prob": 0.804,
+      "winner": null,
+      "date": "2026-10-05T15:45",
+      "modelo": "analise",
+      "total": 117.4,
+      "lucroA": 51.656,
+      "lucroRed": -117.4,
+      "lucro": 51.656,
+      "roi": 43.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T19:06:05.867Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528945,
+        "kickoff": "2026-10-05T18:45:00.000Z",
+        "home": "Italy",
+        "away": "Türkiye",
+        "competition": "UEFA Nations League",
+        "lineId": "c1O3",
+        "mercado": "Total escanteios 1T",
+        "linha": "Mais de 3",
+        "tier": "sólida",
+        "p_model": 0.804,
+        "p_blend": 0.804,
+        "p_pinnacle": null,
+        "fair_odd": 1.24,
+        "odd_min": 1.31,
+        "pinnacle_odd": null,
+        "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvmejfewrxm",
+        "enviadaEm": "2026-10-05T19:06:01.562Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26514,5 +26561,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T18:45:52.144Z"
+  "updatedAt": "2026-10-05T19:06:05.867Z"
 }
