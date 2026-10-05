@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 534.2,
+      "value": 592.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T19:20:48.014Z"
+      "updatedAt": "2026-10-05T19:29:27.186Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 77.5,
+      "value": 67.5,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T19:20:48.014Z"
+      "updatedAt": "2026-10-05T19:29:27.185Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26444,6 +26444,53 @@
         "inboxId": "anmuvmxeekqjrm",
         "enviadaEm": "2026-10-05T19:20:41.516Z"
       }
+    },
+    {
+      "id": "muvn8o0hwo4g3",
+      "kind": "valor",
+      "event": "France x Belgium — Total de escanteios: Menos de 11,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.18,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.31,
+      "prob": 0.765,
+      "winner": null,
+      "date": "2026-10-05T15:45",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 69.26600000000002,
+      "lucroRed": -58.7,
+      "lucro": 69.26600000000002,
+      "roi": 118.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T19:29:27.186Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528944,
+        "kickoff": "2026-10-05T18:45:00.000Z",
+        "home": "France",
+        "away": "Belgium",
+        "competition": "UEFA Nations League",
+        "lineId": "cornersU11.5",
+        "mercado": "Total de escanteios",
+        "linha": "Menos de 11,5",
+        "tier": "sólida",
+        "p_model": 0.765,
+        "p_blend": 0.765,
+        "p_pinnacle": null,
+        "fair_odd": 1.31,
+        "odd_min": 1.41,
+        "pinnacle_odd": null,
+        "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
+        "fragile": true,
+        "inboxId": "anmuvn8nd7hjqe",
+        "enviadaEm": "2026-10-05T19:29:26.347Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26610,5 +26657,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T19:20:48.014Z"
+  "updatedAt": "2026-10-05T19:29:27.186Z"
 }
