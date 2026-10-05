@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 308.15,
+      "value": 407.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T17:35:14.067Z"
+      "updatedAt": "2026-10-05T17:39:06.420Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 54.1,
+      "value": 34.1,
       "currency": "USD",
-      "updatedAt": "2026-10-02T15:28:34.294Z"
+      "updatedAt": "2026-10-05T17:39:06.419Z"
     }
   ],
   "aportes": [
@@ -26080,6 +26080,31 @@
         "inboxId": "anmuvj5rjc9pp2",
         "enviadaEm": "2026-10-05T17:35:13.320Z"
       }
+    },
+    {
+      "id": "muvjarebpwhp8",
+      "kind": "valor",
+      "event": "Italy – Turkey (Acima 10.5 - chutes 2º o time)",
+      "houseA": "Frumzi",
+      "oddA": 1.9,
+      "stakeA": 99.80000000000001,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Chutes",
+      "oddMkt": 1.6710642040457342,
+      "prob": 59.842105263157904,
+      "winner": null,
+      "date": "2026-10-05T15:45",
+      "modelo": "F",
+      "total": 99.80000000000001,
+      "lucroA": 89.82000000000001,
+      "lucroRed": -99.80000000000001,
+      "lucro": 89.82000000000001,
+      "roi": 89.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T17:39:06.419Z"
     }
   ],
   "invertidos": [],
@@ -26246,5 +26271,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T17:35:14.067Z"
+  "updatedAt": "2026-10-05T17:39:06.420Z"
 }
