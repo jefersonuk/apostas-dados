@@ -25728,7 +25728,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T18:45:50.704Z",
+      "updatedAt": "2026-10-05T19:56:26.657Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1642031,
@@ -25751,10 +25751,12 @@
         "inboxId": "anmuvgadtl6sqe",
         "enviadaEm": "2026-10-05T16:14:49.978Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Not Started",
-          "at": "2026-10-05T18:45:50.703Z"
-        }
+          "status": "encerrado",
+          "detail": "SAT Moreno 3–2 Deportivo Metalurgico · gols no jogo: 5 (linha 1.5)",
+          "at": "2026-10-05T19:56:26.657Z"
+        },
+        "clv": 0.11680771199188933,
+        "closingFair": 1.4237007704434148
       }
     },
     {
@@ -26002,7 +26004,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T18:45:51.182Z",
+      "updatedAt": "2026-10-05T19:56:27.672Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1497441,
@@ -26025,10 +26027,12 @@
         "inboxId": "anmuvi6cuuynqc",
         "enviadaEm": "2026-10-05T17:07:41.334Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T18:45:51.182Z"
-        }
+          "status": "encerrado",
+          "detail": "Lyn II 0–0 Råde · gols no 1º tempo: 0 (linha 1.5)",
+          "at": "2026-10-05T19:56:27.672Z"
+        },
+        "clv": 0.04243335647005342,
+        "closingFair": 1.678764392119942
       }
     },
     {
@@ -26055,7 +26059,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T18:45:51.652Z",
+      "updatedAt": "2026-10-05T19:56:28.744Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1510684,
@@ -26078,10 +26082,12 @@
         "inboxId": "anmuvi85b6nywg",
         "enviadaEm": "2026-10-05T17:09:04.866Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T18:45:51.652Z"
-        }
+          "status": "encerrado",
+          "detail": "Herrestads 3–1 Grebbestad · gols no jogo: 4 (linha 2.5)",
+          "at": "2026-10-05T19:56:28.744Z"
+        },
+        "clv": 0.09321565635329976,
+        "closingFair": 1.509308790457682
       }
     },
     {
@@ -26108,7 +26114,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T18:45:52.144Z",
+      "updatedAt": "2026-10-05T19:56:29.751Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495962,
@@ -26131,10 +26137,12 @@
         "inboxId": "anmuvj5rjc9pp2",
         "enviadaEm": "2026-10-05T17:35:13.320Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T18:45:52.144Z"
-        }
+          "status": "encerrado",
+          "detail": "Moss 0–2 Kongsvinger · gols no 1º tempo: 1 (linha 1.5)",
+          "at": "2026-10-05T19:56:29.751Z"
+        },
+        "clv": 0.2769759512195522,
+        "closingFair": 1.8011302388298132
       }
     },
     {
@@ -26236,7 +26244,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T19:44:44.178Z",
+      "updatedAt": "2026-10-05T19:56:30.249Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1500192,
@@ -26257,7 +26265,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvkoospgscw",
-        "enviadaEm": "2026-10-05T18:17:55.849Z"
+        "enviadaEm": "2026-10-05T18:17:55.849Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-05T19:56:30.249Z"
+        }
       }
     },
     {
@@ -26284,7 +26297,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T19:54:34.476Z",
+      "updatedAt": "2026-10-05T19:56:30.752Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1500139,
@@ -26305,7 +26318,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvkxo5v1jj1",
-        "enviadaEm": "2026-10-05T18:24:54.931Z"
+        "enviadaEm": "2026-10-05T18:24:54.931Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-05T19:56:30.752Z"
+        }
       }
     },
     {
@@ -26616,5 +26634,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T19:54:34.476Z"
+  "updatedAt": "2026-10-05T19:56:30.752Z"
 }
