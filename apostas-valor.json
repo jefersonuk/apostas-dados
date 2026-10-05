@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 430.69,
+      "value": 450.05,
       "currency": "USD",
-      "updatedAt": "2026-10-05T16:21:53.090Z"
+      "updatedAt": "2026-10-05T17:53:36.076Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 607.55,
+      "value": 446.15,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T17:45:53.359Z"
+      "updatedAt": "2026-10-05T17:53:36.668Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 62.2,
+      "value": 81.22,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T17:35:14.066Z"
+      "updatedAt": "2026-10-05T17:53:36.668Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25720,7 +25720,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T17:49:10.017Z",
+      "updatedAt": "2026-10-05T17:53:34.591Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1642031,
@@ -25745,7 +25745,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Not Started",
-          "at": "2026-10-05T17:49:10.017Z"
+          "at": "2026-10-05T17:53:34.591Z"
         }
       }
     },
@@ -25761,7 +25761,7 @@
       "market": "Escanteios",
       "oddMkt": 1.69,
       "prob": 0.592,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-05T13:00",
       "modelo": "analise",
       "total": 55.8,
@@ -25770,9 +25770,10 @@
       "lucro": 56.35799999999998,
       "roi": 100.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-05T17:49:10.500Z",
+      "updatedAt": "2026-10-05T17:53:35.574Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1545611,
@@ -25795,10 +25796,12 @@
         "inboxId": "anmuvgdfry02wv",
         "enviadaEm": "2026-10-05T16:17:12.478Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T17:49:10.500Z"
-        }
+          "status": "encerrado",
+          "detail": "Cyprus 2–1 Latvia · escanteios no jogo: 10 (linha 10)",
+          "at": "2026-10-05T17:53:35.573Z"
+        },
+        "clv": 0.27646073908145463,
+        "closingFair": 1.574666527892117
       }
     },
     {
@@ -25813,7 +25816,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.63,
       "prob": 0.612,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-05T13:00",
       "modelo": "analise",
       "total": 49.8,
@@ -25822,9 +25825,10 @@
       "lucro": 46.812,
       "roi": 94,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-05T17:49:10.730Z",
+      "updatedAt": "2026-10-05T17:53:36.076Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1545611,
@@ -25847,10 +25851,12 @@
         "inboxId": "anmuvgjdfjxti1",
         "enviadaEm": "2026-10-05T16:21:49.375Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T17:49:10.730Z"
-        }
+          "status": "encerrado",
+          "detail": "Cyprus 2–1 Latvia · gols no jogo: 3 (linha 2)",
+          "at": "2026-10-05T17:53:36.076Z"
+        },
+        "clv": 0.17770843776248668,
+        "closingFair": 1.647266791843473
       }
     },
     {
@@ -25865,7 +25871,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.87,
       "prob": 0.536,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-05T13:00",
       "modelo": "analise",
       "total": 55.8,
@@ -25874,9 +25880,10 @@
       "lucro": 51.33599999999999,
       "roi": 92,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-05T17:49:10.951Z",
+      "updatedAt": "2026-10-05T17:53:36.668Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1545611,
@@ -25899,10 +25906,12 @@
         "inboxId": "anmuvgy56ftoca",
         "enviadaEm": "2026-10-05T16:33:18.519Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-05T17:49:10.951Z"
-        }
+          "status": "encerrado",
+          "detail": "Cyprus 2–1 Latvia · saldo de gols do Cyprus: 1 (linha 1)",
+          "at": "2026-10-05T17:53:36.668Z"
+        },
+        "clv": -0.011681471735460192,
+        "closingFair": 1.9426935194379764
       }
     },
     {
@@ -26341,5 +26350,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T17:49:10.952Z"
+  "updatedAt": "2026-10-05T17:53:36.668Z"
 }
