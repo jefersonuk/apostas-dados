@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 338.12,
+      "value": 396.72,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T12:57:54.511Z"
+      "updatedAt": "2026-10-05T13:36:22.939Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 77.94,
+      "value": 67.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:57:54.511Z"
+      "updatedAt": "2026-10-05T13:36:22.939Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25642,6 +25642,53 @@
         "inboxId": "anmuv9915uyzjl",
         "enviadaEm": "2026-10-05T12:57:49.602Z"
       }
+    },
+    {
+      "id": "muvamm579l47c",
+      "kind": "valor",
+      "event": "Napredak x Loznica — Handicap asiático: Loznica +0,75",
+      "houseA": "Sportmarket",
+      "oddA": 1.85,
+      "stakeA": 58.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 0.627,
+      "winner": null,
+      "date": "2026-10-05T11:00",
+      "modelo": "analise",
+      "total": 58.6,
+      "lucroA": 49.81000000000001,
+      "lucroRed": -58.6,
+      "lucro": 49.81000000000001,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T13:36:22.939Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1554178,
+        "kickoff": "2026-10-05T14:00:00.000Z",
+        "home": "Napredak",
+        "away": "Loznica",
+        "competition": "Prva Liga",
+        "lineId": "ahA0.75",
+        "mercado": "Handicap asiático",
+        "linha": "Loznica +0,75",
+        "tier": "âncora",
+        "p_model": 0.779,
+        "p_blend": 0.627,
+        "p_pinnacle": 0.607,
+        "fair_odd": 1.6,
+        "odd_min": 1.68,
+        "pinnacle_odd": 1.56,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvamip3k8j4",
+        "enviadaEm": "2026-10-05T13:36:18.471Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25808,5 +25855,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:57:54.511Z"
+  "updatedAt": "2026-10-05T13:36:22.939Z"
 }
