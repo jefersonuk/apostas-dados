@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 434.4,
+      "value": 551.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T22:11:13.975Z"
+      "updatedAt": "2026-10-05T22:12:27.395Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 97.24,
+      "value": 77.24,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T22:11:13.975Z"
+      "updatedAt": "2026-10-05T22:12:27.395Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26590,6 +26590,53 @@
         "inboxId": "anmuvt0pfs5rjr",
         "enviadaEm": "2026-10-05T22:11:13.480Z"
       }
+    },
+    {
+      "id": "muvt2agyvlxxe",
+      "kind": "valor",
+      "event": "Estudiantes L.P. x Gimnasia M. — Total escanteios 1T: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.6,
+      "stakeA": 117.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.28,
+      "prob": 0.782,
+      "winner": null,
+      "date": "2026-10-05T19:00",
+      "modelo": "analise",
+      "total": 117.4,
+      "lucroA": 70.44000000000001,
+      "lucroRed": -117.4,
+      "lucro": 70.44000000000001,
+      "roi": 60.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T22:12:27.395Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493158,
+        "kickoff": "2026-10-05T22:00:00.000Z",
+        "home": "Estudiantes L.P.",
+        "away": "Gimnasia M.",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "c1O2.5",
+        "mercado": "Total escanteios 1T",
+        "linha": "Mais de 2,5",
+        "tier": "âncora",
+        "p_model": 0.782,
+        "p_blend": 0.782,
+        "p_pinnacle": null,
+        "fair_odd": 1.28,
+        "odd_min": 1.34,
+        "pinnacle_odd": null,
+        "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvt2a2ohqyt",
+        "enviadaEm": "2026-10-05T22:12:26.880Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26756,5 +26803,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T22:11:13.975Z"
+  "updatedAt": "2026-10-05T22:12:27.395Z"
 }
