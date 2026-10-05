@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 587,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T12:14:43.404Z"
+      "updatedAt": "2026-10-05T12:15:59.307Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 42.87,
+      "value": 128.12,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:14:43.404Z"
+      "updatedAt": "2026-10-05T12:15:58.394Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -24816,7 +24816,7 @@
       "market": "Escanteios",
       "oddMkt": 1.44,
       "prob": 0.695,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-04T21:30",
       "modelo": "analise",
       "total": 58.7,
@@ -24825,9 +24825,10 @@
       "lucro": 39.329,
       "roi": 67,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-04T19:37:31.353Z",
+      "updatedAt": "2026-10-05T12:15:50.794Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493159,
@@ -24848,7 +24849,12 @@
         "priced_by": "modelo ancorado no total 1T de escanteios da Pinnacle",
         "fragile": true,
         "inboxId": "anmuu8339tewyj",
-        "enviadaEm": "2026-10-04T19:37:26.609Z"
+        "enviadaEm": "2026-10-04T19:37:26.609Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Estudiantes de Rio Cuarto 1–2 Racing Club · saldo de escanteios no 1º tempo do Estudiantes de Rio Cuarto: -5 (linha -1)",
+          "at": "2026-10-05T12:15:50.794Z"
+        }
       }
     },
     {
@@ -24863,7 +24869,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.43,
       "prob": 0.701,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-04T21:30",
       "modelo": "analise",
       "total": 58.7,
@@ -24872,9 +24878,10 @@
       "lucro": 33.459,
       "roi": 57.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-04T19:42:04.952Z",
+      "updatedAt": "2026-10-05T12:15:51.467Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493159,
@@ -24895,7 +24902,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuu88zc1mhh5",
-        "enviadaEm": "2026-10-04T19:42:01.441Z"
+        "enviadaEm": "2026-10-04T19:42:01.441Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Estudiantes de Rio Cuarto 1–2 Racing Club · gols no jogo: 3 (linha 1.25)",
+          "at": "2026-10-05T12:15:51.467Z"
+        },
+        "clv": 0.09836976215544424,
+        "closingFair": 1.429391134110454
       }
     },
     {
@@ -24910,7 +24924,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.46,
       "prob": 0.687,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-04T18:15",
       "modelo": "analise",
       "total": 58.7,
@@ -24919,9 +24933,10 @@
       "lucro": 35.220000000000006,
       "roi": 60.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-04T19:44:31.777Z",
+      "updatedAt": "2026-10-05T12:15:52.391Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1619706,
@@ -24942,7 +24957,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuu8c54d3ppl",
-        "enviadaEm": "2026-10-04T19:44:28.909Z"
+        "enviadaEm": "2026-10-04T19:44:28.909Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Guabirá 2–1 Oriente Petrolero · gols no jogo: 3 (linha 2.25)",
+          "at": "2026-10-05T12:15:52.391Z"
+        },
+        "clv": 0.09483119078741087,
+        "closingFair": 1.4614125113199123
       }
     },
     {
@@ -24957,7 +24979,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.66,
       "prob": 0.603,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-04T18:00",
       "modelo": "analise",
       "total": 58.7,
@@ -24966,9 +24988,10 @@
       "lucro": 35.220000000000006,
       "roi": 60.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-04T19:59:23.481Z",
+      "updatedAt": "2026-10-05T12:15:53.320Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1498857,
@@ -24989,7 +25012,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuu8v8p5fx44",
-        "enviadaEm": "2026-10-04T19:59:20.009Z"
+        "enviadaEm": "2026-10-04T19:59:20.009Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Godoy Cruz 2–1 Los Andes · gols no jogo: 3 (linha 1.5)",
+          "at": "2026-10-05T12:15:53.320Z"
+        },
+        "clv": -0.022757316617702417,
+        "closingFair": 1.637259635920016
       }
     },
     {
@@ -25004,7 +25034,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.62,
       "prob": 0.616,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-04T18:30",
       "modelo": "analise",
       "total": 58.7,
@@ -25013,9 +25043,10 @@
       "lucro": 34.04600000000001,
       "roi": 58.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-04T20:22:55.064Z",
+      "updatedAt": "2026-10-05T12:15:54.249Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1498860,
@@ -25036,7 +25067,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuu9pi1w66dl",
-        "enviadaEm": "2026-10-04T20:22:51.812Z"
+        "enviadaEm": "2026-10-04T20:22:51.812Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "San Martin Tucuman 1–0 Gimnasia Y Tiro · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-05T12:15:54.249Z"
+        },
+        "clv": -0.015441282721139316,
+        "closingFair": 1.6047798595159766
       }
     },
     {
@@ -25051,7 +25089,7 @@
       "market": "Escanteios",
       "oddMkt": 1.84,
       "prob": 0.544,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-04T22:15",
       "modelo": "analise",
       "total": 58.7,
@@ -25060,9 +25098,10 @@
       "lucro": 43.438,
       "roi": 74,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-04T20:27:43.371Z",
+      "updatedAt": "2026-10-05T12:15:55.604Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549811,
@@ -25083,7 +25122,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuu9vonso2p7",
-        "enviadaEm": "2026-10-04T20:27:40.312Z"
+        "enviadaEm": "2026-10-04T20:27:40.312Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Llaneros 1–2 America de Cali · escanteios no 1º tempo: 5 (linha 4)",
+          "at": "2026-10-05T12:15:55.604Z"
+        },
+        "clv": -0.06911240373851091,
+        "closingFair": 1.869183784366624
       }
     },
     {
@@ -25098,7 +25144,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.51,
       "prob": 0.662,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-04T19:30",
       "modelo": "analise",
       "total": 58.7,
@@ -25107,9 +25153,10 @@
       "lucro": 29.937,
       "roi": 51,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-04T20:29:51.767Z",
+      "updatedAt": "2026-10-05T12:15:56.575Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1641622,
@@ -25130,7 +25177,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuu9ydnx3s4f",
-        "enviadaEm": "2026-10-04T20:29:46.029Z"
+        "enviadaEm": "2026-10-04T20:29:46.029Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Racing Montevideo 0–1 Penarol · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-05T12:15:56.575Z"
+        },
+        "clv": -0.004186734789500934,
+        "closingFair": 1.5163485492240456
       }
     },
     {
@@ -25145,7 +25199,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.49,
       "prob": 0.672,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-04T18:00",
       "modelo": "analise",
       "total": 58.7,
@@ -25154,9 +25208,10 @@
       "lucro": 35.80700000000001,
       "roi": 61.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-04T20:32:16.985Z",
+      "updatedAt": "2026-10-05T12:15:57.477Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549658,
@@ -25177,7 +25232,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuua1b62xw7i",
-        "enviadaEm": "2026-10-04T20:32:02.762Z"
+        "enviadaEm": "2026-10-04T20:32:02.762Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Tigres FC 1–0 Internacional Palmira · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-05T12:15:57.477Z"
+        },
+        "clv": 0.09242271629610044,
+        "closingFair": 1.4737884666649597
       }
     },
     {
@@ -25192,7 +25254,7 @@
       "market": "Total de Gols",
       "oddMkt": 2.05,
       "prob": 0.488,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-04T18:00",
       "modelo": "analise",
       "total": 58.7,
@@ -25201,9 +25263,10 @@
       "lucro": 58.7,
       "roi": 100,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-04T21:09:43.800Z",
+      "updatedAt": "2026-10-05T12:15:58.394Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1600621,
@@ -25224,7 +25287,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuubdrda02br",
-        "enviadaEm": "2026-10-04T21:09:43.246Z"
+        "enviadaEm": "2026-10-04T21:09:43.246Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Platense 2–1 Municipal Limeño · gols no jogo: 3 (linha 2.5)",
+          "at": "2026-10-05T12:15:58.394Z"
+        },
+        "clv": 0.014118099842638454,
+        "closingFair": 1.9721568920920962
       }
     },
     {
@@ -25239,7 +25309,7 @@
       "market": "Escanteios",
       "oddMkt": 1.52,
       "prob": 0.658,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-04T21:00",
       "modelo": "analise",
       "total": 58.7,
@@ -25248,9 +25318,10 @@
       "lucro": 29.35,
       "roi": 50,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T12:14:43.404Z",
+      "updatedAt": "2026-10-05T12:15:59.306Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639990,
@@ -25271,7 +25342,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuug938hg09n",
-        "enviadaEm": "2026-10-04T23:26:03.425Z"
+        "enviadaEm": "2026-10-04T23:26:03.425Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Costa Rica 2–0 Haiti · escanteios no jogo: 11 (linha 9.5)",
+          "at": "2026-10-05T12:15:59.306Z"
+        },
+        "clv": -0.08286665721192277,
+        "closingFair": 1.6355309855380606
       }
     }
   ],
@@ -25439,5 +25517,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:15:36.439Z"
+  "updatedAt": "2026-10-05T12:15:59.307Z"
 }
