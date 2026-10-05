@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-10-05",
+    "startDate": "2026-09-14",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -39,13 +39,13 @@
       "idealMin": 8,
       "idealMax": 12,
       "pct": 1,
-      "stake": 220,
+      "stake": 320,
       "stakeMes": "2026-10",
       "inicio": "2026-09-28",
       "meta": 300
     },
-    "limitadasMigr2809": true,
     "polEVetoLimpo": true,
+    "limitadasMigr2809": true,
     "limitadasSalvo": true
   },
   "bets": [
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 161.4,
+      "value": 220.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T16:48:16.833Z"
+      "updatedAt": "2026-10-05T17:07:45.018Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5180,12 +5180,12 @@
       "updatedAt": "2026-10-05T12:17:43.031Z"
     }
   ],
-  "usdRate": 4.98,
+  "usdRate": 4.99,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-05T14:36:49.924Z",
-  "eurRate": 5.58,
+  "usdRateAt": "2026-10-05T17:07:44.618Z",
+  "eurRate": 5.87,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-05T14:36:50.124Z",
+  "eurRateAt": "2026-10-05T17:07:44.778Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -25935,6 +25935,53 @@
         "inboxId": "anmuvgy56ftoca",
         "enviadaEm": "2026-10-05T16:33:18.519Z"
       }
+    },
+    {
+      "id": "muug96e0jfmsz",
+      "kind": "valor",
+      "event": "Costa Rica x Haiti — Total de escanteios: Menos de 9,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 58.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.52,
+      "prob": 0.658,
+      "winner": null,
+      "date": "2026-10-04T21:00",
+      "modelo": "analise",
+      "total": 58.7,
+      "lucroA": 29.35,
+      "lucroRed": -58.7,
+      "lucro": 29.35,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-04T23:26:07.512Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1639990,
+        "kickoff": "2026-10-05T00:00:00.000Z",
+        "home": "Costa Rica",
+        "away": "Haiti",
+        "competition": "CONCACAF Nations League",
+        "lineId": "cornersU9.5",
+        "mercado": "Total de escanteios",
+        "linha": "Menos de 9,5",
+        "tier": "especulativa",
+        "p_model": 0.699,
+        "p_blend": 0.658,
+        "p_pinnacle": 0.648,
+        "fair_odd": 1.52,
+        "odd_min": 1.6,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuug938hg09n",
+        "enviadaEm": "2026-10-04T23:26:03.425Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26101,5 +26148,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T16:48:16.833Z"
+  "updatedAt": "2026-10-05T17:07:44.778Z"
 }
