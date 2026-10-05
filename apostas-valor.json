@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 551.8,
+      "value": 669.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T22:12:27.395Z"
+      "updatedAt": "2026-10-05T22:25:13.847Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 112.07,
+      "value": 92.07,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T22:14:10.228Z"
+      "updatedAt": "2026-10-05T22:25:13.847Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26641,6 +26641,53 @@
         "inboxId": "anmuvt2a2ohqyt",
         "enviadaEm": "2026-10-05T22:12:26.880Z"
       }
+    },
+    {
+      "id": "muvtipvbpx5bs",
+      "kind": "valor",
+      "event": "Fernando De La Mora x General Caballero — Handicap asiático: General Caballero +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 117.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.49,
+      "prob": 0.673,
+      "winner": null,
+      "date": "2026-10-05T19:30",
+      "modelo": "analise",
+      "total": 117.4,
+      "lucroA": 58.7,
+      "lucroRed": -117.4,
+      "lucro": 58.7,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T22:25:13.847Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640783,
+        "kickoff": "2026-10-05T22:30:00.000Z",
+        "home": "Fernando De La Mora",
+        "away": "General Caballero",
+        "competition": "Division Intermedia",
+        "lineId": "ahA0.5",
+        "mercado": "Handicap asiático",
+        "linha": "General Caballero +0,5",
+        "tier": "sólida",
+        "p_model": 0.741,
+        "p_blend": 0.673,
+        "p_pinnacle": 0.664,
+        "fair_odd": 1.49,
+        "odd_min": 1.56,
+        "pinnacle_odd": 1.42,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvtipuxswsw",
+        "enviadaEm": "2026-10-05T22:25:13.833Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26807,5 +26854,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T22:14:10.228Z"
+  "updatedAt": "2026-10-05T22:25:13.847Z"
 }
