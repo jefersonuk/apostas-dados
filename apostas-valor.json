@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 507.75,
+      "value": 607.55,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T17:42:41.758Z"
+      "updatedAt": "2026-10-05T17:45:53.359Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 34.1,
+      "value": 14.1,
       "currency": "USD",
-      "updatedAt": "2026-10-05T17:39:06.419Z"
+      "updatedAt": "2026-10-05T17:45:53.358Z"
     }
   ],
   "aportes": [
@@ -26130,6 +26130,31 @@
         "stakes": true
       },
       "updatedAt": "2026-10-05T17:42:41.757Z"
+    },
+    {
+      "id": "muvjjhe6tlz93",
+      "kind": "valor",
+      "event": "Romania – Sweden (Abaixo 15.5 - tiros de meta)",
+      "houseA": "Frumzi",
+      "oddA": 1.8,
+      "stakeA": 99.80000000000001,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.601423487544484,
+      "prob": 62.44444444444444,
+      "winner": null,
+      "date": "2026-10-05T15:45",
+      "modelo": "F",
+      "total": 99.80000000000001,
+      "lucroA": 79.84000000000002,
+      "lucroRed": -99.80000000000001,
+      "lucro": 79.84000000000002,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T17:45:53.358Z"
     }
   ],
   "invertidos": [],
@@ -26296,5 +26321,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T17:42:41.758Z"
+  "updatedAt": "2026-10-05T17:45:53.359Z"
 }
