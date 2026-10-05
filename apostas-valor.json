@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 278.8,
+      "value": 308.15,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T17:09:24.799Z"
+      "updatedAt": "2026-10-05T17:35:14.067Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 67.2,
+      "value": 62.2,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T17:09:05.543Z"
+      "updatedAt": "2026-10-05T17:35:14.066Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26033,6 +26033,53 @@
         "inboxId": "anmuvi85b6nywg",
         "enviadaEm": "2026-10-05T17:09:04.866Z"
       }
+    },
+    {
+      "id": "muvj5s42jp79w",
+      "kind": "valor",
+      "event": "Moss x Kongsvinger — Total de gols 1T: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.3,
+      "stakeA": 29.35,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.84,
+      "prob": 0.542,
+      "winner": null,
+      "date": "2026-10-05T14:00",
+      "modelo": "analise",
+      "total": 29.35,
+      "lucroA": 38.154999999999994,
+      "lucroRed": -29.35,
+      "lucro": 38.154999999999994,
+      "roi": 129.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T17:35:14.066Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1495962,
+        "kickoff": "2026-10-05T17:00:00.000Z",
+        "home": "Moss",
+        "away": "Kongsvinger",
+        "competition": "1. Division",
+        "lineId": "g1O1.5",
+        "mercado": "Total de gols 1T",
+        "linha": "Mais de 1,5",
+        "tier": "especulativa",
+        "p_model": 0.515,
+        "p_blend": 0.542,
+        "p_pinnacle": 0.545,
+        "fair_odd": 1.84,
+        "odd_min": 1.94,
+        "pinnacle_odd": 1.75,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvj5rjc9pp2",
+        "enviadaEm": "2026-10-05T17:35:13.320Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26199,5 +26246,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T17:09:24.799Z"
+  "updatedAt": "2026-10-05T17:35:14.067Z"
 }
