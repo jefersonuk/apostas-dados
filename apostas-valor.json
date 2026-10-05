@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 396.72,
+      "value": 279.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T13:36:22.939Z"
+      "updatedAt": "2026-10-05T14:37:25.944Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -25370,7 +25370,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.6,
       "prob": 0.674,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-05T09:30",
       "modelo": "analise",
       "total": 58.6,
@@ -25379,9 +25379,10 @@
       "lucro": 46.294000000000004,
       "roi": 79,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T12:21:17.545Z",
+      "updatedAt": "2026-10-05T14:37:25.515Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1581922,
@@ -25403,7 +25404,14 @@
         "fragile": false,
         "inboxId": "anmuv7xmwr16tg",
         "enviadaEm": "2026-10-05T12:20:58.299Z",
-        "editadaEm": "2026-10-05T12:21:17.545Z"
+        "editadaEm": "2026-10-05T12:21:17.545Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Yarud Mariupol' 0–0 Nyva Ternopil · gols no jogo: 0 (linha 2)",
+          "at": "2026-10-05T14:37:25.515Z"
+        },
+        "clv": -0.011580534201459991,
+        "closingFair": 1.8109720234555138
       }
     },
     {
@@ -25608,7 +25616,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.48,
       "prob": 0.674,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-05T09:30",
       "modelo": "analise",
       "total": 58.6,
@@ -25617,9 +25625,10 @@
       "lucro": 53.912,
       "roi": 92,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T12:57:54.511Z",
+      "updatedAt": "2026-10-05T14:37:25.944Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1581922,
@@ -25640,7 +25649,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuv9915uyzjl",
-        "enviadaEm": "2026-10-05T12:57:49.602Z"
+        "enviadaEm": "2026-10-05T12:57:49.602Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Yarud Mariupol' 0–0 Nyva Ternopil · gols no jogo: 0 (linha 1.5)",
+          "at": "2026-10-05T14:37:25.944Z"
+        },
+        "clv": 0.3031463609806653,
+        "closingFair": 1.4733571435177317
       }
     },
     {
@@ -25856,5 +25872,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T14:36:50.124Z"
+  "updatedAt": "2026-10-05T14:37:25.944Z"
 }
