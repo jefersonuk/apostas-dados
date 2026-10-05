@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 234.4,
+      "value": 279.52,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T12:35:46.983Z"
+      "updatedAt": "2026-10-05T12:39:20.081Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 95.64,
+      "value": 87.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:35:59.840Z"
+      "updatedAt": "2026-10-05T12:39:20.081Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25548,6 +25548,53 @@
         "enviadaEm": "2026-10-05T12:35:46.429Z",
         "editadaEm": "2026-10-05T12:35:59.840Z"
       }
+    },
+    {
+      "id": "muv8l91tr98mu",
+      "kind": "valor",
+      "event": "Uganda x Congo DR — Handicap asiático: Uganda +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.59,
+      "stakeA": 45.12,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.52,
+      "prob": 0.659,
+      "winner": null,
+      "date": "2026-10-05T10:00",
+      "modelo": "analise",
+      "total": 45.12,
+      "lucroA": 26.620800000000003,
+      "lucroRed": -45.12,
+      "lucro": 26.620800000000003,
+      "roi": 59.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T12:39:20.081Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640078,
+        "kickoff": "2026-10-05T13:00:00.000Z",
+        "home": "Uganda",
+        "away": "Congo DR",
+        "competition": "Friendlies",
+        "lineId": "ahH1",
+        "mercado": "Handicap asiático",
+        "linha": "Uganda +1",
+        "tier": "âncora",
+        "p_model": 0.824,
+        "p_blend": 0.659,
+        "p_pinnacle": 0.637,
+        "fair_odd": 1.52,
+        "odd_min": 1.59,
+        "pinnacle_odd": 1.52,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuv8l5sd7z86",
+        "enviadaEm": "2026-10-05T12:39:15.853Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25714,5 +25761,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:35:59.840Z"
+  "updatedAt": "2026-10-05T12:39:20.081Z"
 }
