@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 317,
+      "value": 434.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T22:00:16.975Z"
+      "updatedAt": "2026-10-05T22:11:13.975Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 117.24,
+      "value": 97.24,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T22:00:40.227Z"
+      "updatedAt": "2026-10-05T22:11:13.975Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26543,6 +26543,53 @@
         "inboxId": "anmuvslztfs635",
         "enviadaEm": "2026-10-05T21:59:47.091Z"
       }
+    },
+    {
+      "id": "muvt0ptjh8z0s",
+      "kind": "valor",
+      "event": "Bogota FC x Envigado — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.7,
+      "stakeA": 117.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.56,
+      "prob": 0.639,
+      "winner": null,
+      "date": "2026-10-05T19:00",
+      "modelo": "analise",
+      "total": 117.4,
+      "lucroA": 82.17999999999999,
+      "lucroRed": -117.4,
+      "lucro": 82.17999999999999,
+      "roi": 70,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T22:11:13.975Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1549652,
+        "kickoff": "2026-10-05T22:00:00.000Z",
+        "home": "Bogota FC",
+        "away": "Envigado",
+        "competition": "Primera B",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "especulativa",
+        "p_model": 0.656,
+        "p_blend": 0.639,
+        "p_pinnacle": 0.637,
+        "fair_odd": 1.56,
+        "odd_min": 1.64,
+        "pinnacle_odd": 1.5,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvt0pfs5rjr",
+        "enviadaEm": "2026-10-05T22:11:13.480Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26709,5 +26756,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T22:00:40.227Z"
+  "updatedAt": "2026-10-05T22:11:13.975Z"
 }
