@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 220,
+      "value": 275.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T16:21:53.090Z"
+      "updatedAt": "2026-10-05T16:33:23.039Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 71.3,
+      "value": 61.3,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T16:17:15.842Z"
+      "updatedAt": "2026-10-05T16:33:23.039Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25879,6 +25879,53 @@
         "inboxId": "anmuvgjdfjxti1",
         "enviadaEm": "2026-10-05T16:21:49.375Z"
       }
+    },
+    {
+      "id": "muvgy8nysjsc1",
+      "kind": "valor",
+      "event": "Cyprus x Latvia — Handicap asiático: Latvia +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.92,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.87,
+      "prob": 0.536,
+      "winner": null,
+      "date": "2026-10-05T13:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 51.33599999999999,
+      "lucroRed": -55.8,
+      "lucro": 51.33599999999999,
+      "roi": 92,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T16:33:23.039Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1545611,
+        "kickoff": "2026-10-05T16:00:00.000Z",
+        "home": "Cyprus",
+        "away": "Latvia",
+        "competition": "UEFA Nations League",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "Latvia +1",
+        "tier": "sólida",
+        "p_model": 0.712,
+        "p_blend": 0.536,
+        "p_pinnacle": 0.515,
+        "fair_odd": 1.87,
+        "odd_min": 1.96,
+        "pinnacle_odd": 1.89,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvgy56ftoca",
+        "enviadaEm": "2026-10-05T16:33:18.519Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26045,5 +26092,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T16:21:53.090Z"
+  "updatedAt": "2026-10-05T16:33:23.039Z"
 }
