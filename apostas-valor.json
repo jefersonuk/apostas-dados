@@ -4645,9 +4645,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 440.69,
+      "value": 430.69,
       "currency": "USD",
-      "updatedAt": "2026-10-05T12:16:55.696Z"
+      "updatedAt": "2026-10-05T16:21:53.090Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 170.2,
+      "value": 220,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T16:17:15.842Z"
+      "updatedAt": "2026-10-05T16:21:53.090Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -25832,6 +25832,53 @@
         "inboxId": "anmuvgdfry02wv",
         "enviadaEm": "2026-10-05T16:17:12.478Z"
       }
+    },
+    {
+      "id": "muvgjgapa3wda",
+      "kind": "valor",
+      "event": "Cyprus x Latvia — Total de gols: Mais de 2",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.94,
+      "stakeA": 49.8,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.63,
+      "prob": 0.612,
+      "winner": null,
+      "date": "2026-10-05T13:00",
+      "modelo": "analise",
+      "total": 49.8,
+      "lucroA": 46.812,
+      "lucroRed": -49.8,
+      "lucro": 46.812,
+      "roi": 94,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T16:21:53.090Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1545611,
+        "kickoff": "2026-10-05T16:00:00.000Z",
+        "home": "Cyprus",
+        "away": "Latvia",
+        "competition": "UEFA Nations League",
+        "lineId": "gO2",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2",
+        "tier": "especulativa",
+        "p_model": 0.654,
+        "p_blend": 0.612,
+        "p_pinnacle": 0.607,
+        "fair_odd": 1.63,
+        "odd_min": 1.72,
+        "pinnacle_odd": 1.6,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvgjdfjxti1",
+        "enviadaEm": "2026-10-05T16:21:49.375Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25998,5 +26045,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T16:17:15.842Z"
+  "updatedAt": "2026-10-05T16:21:53.090Z"
 }
