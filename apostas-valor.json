@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 275.8,
+      "value": 217.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T16:33:23.039Z"
+      "updatedAt": "2026-10-05T16:33:24.877Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -25703,7 +25703,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.6,
       "prob": 0.627,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-05T11:00",
       "modelo": "analise",
       "total": 58.6,
@@ -25712,9 +25712,10 @@
       "lucro": 49.81000000000001,
       "roi": 85.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T13:36:33.095Z",
+      "updatedAt": "2026-10-05T16:33:24.877Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1554178,
@@ -25736,7 +25737,14 @@
         "fragile": true,
         "inboxId": "anmuvamip3k8j4",
         "enviadaEm": "2026-10-05T13:36:18.471Z",
-        "editadaEm": "2026-10-05T13:36:33.095Z"
+        "editadaEm": "2026-10-05T13:36:33.095Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Napredak 3–0 Loznica · saldo de gols do Napredak: 3 (linha 0.5)",
+          "at": "2026-10-05T16:33:24.877Z"
+        },
+        "clv": -0.017593034419148612,
+        "closingFair": 1.8831299703847086
       }
     },
     {
@@ -26092,5 +26100,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T16:33:23.039Z"
+  "updatedAt": "2026-10-05T16:33:24.877Z"
 }
