@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 114.4,
+      "value": 170.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T16:14:57.646Z"
+      "updatedAt": "2026-10-05T16:17:15.842Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 81.3,
+      "value": 71.3,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T16:14:57.646Z"
+      "updatedAt": "2026-10-05T16:17:15.842Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25785,6 +25785,53 @@
         "inboxId": "anmuvgadtl6sqe",
         "enviadaEm": "2026-10-05T16:14:49.978Z"
       }
+    },
+    {
+      "id": "muvgdide344b4",
+      "kind": "valor",
+      "event": "Cyprus x Latvia — Total de escanteios: Menos de 10",
+      "houseA": "Sportmarket",
+      "oddA": 2.01,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.69,
+      "prob": 0.592,
+      "winner": null,
+      "date": "2026-10-05T13:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 56.35799999999998,
+      "lucroRed": -55.8,
+      "lucro": 56.35799999999998,
+      "roi": 100.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T16:17:15.842Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1545611,
+        "kickoff": "2026-10-05T16:00:00.000Z",
+        "home": "Cyprus",
+        "away": "Latvia",
+        "competition": "UEFA Nations League",
+        "lineId": "cornersU10",
+        "mercado": "Total de escanteios",
+        "linha": "Menos de 10",
+        "tier": "especulativa",
+        "p_model": 0.412,
+        "p_blend": 0.592,
+        "p_pinnacle": 0.635,
+        "fair_odd": 1.69,
+        "odd_min": 1.77,
+        "pinnacle_odd": 1.5,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuvgdfry02wv",
+        "enviadaEm": "2026-10-05T16:17:12.478Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25951,5 +25998,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T16:14:57.646Z"
+  "updatedAt": "2026-10-05T16:17:15.842Z"
 }
