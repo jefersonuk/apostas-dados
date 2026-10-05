@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 117.2,
+      "value": 175.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T12:26:12.594Z"
+      "updatedAt": "2026-10-05T12:30:40.770Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 115.64,
+      "value": 105.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T12:26:39.660Z"
+      "updatedAt": "2026-10-05T12:30:40.770Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -25453,6 +25453,53 @@
         "enviadaEm": "2026-10-05T12:26:12.059Z",
         "editadaEm": "2026-10-05T12:26:39.660Z"
       }
+    },
+    {
+      "id": "muv8a4cinazac",
+      "kind": "valor",
+      "event": "Indonesia x Thailand — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.16,
+      "stakeA": 58.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.08,
+      "prob": 0.48,
+      "winner": null,
+      "date": "2026-10-05T10:00",
+      "modelo": "analise",
+      "total": 58.6,
+      "lucroA": 67.97600000000001,
+      "lucroRed": -58.6,
+      "lucro": 67.97600000000001,
+      "roi": 116.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-05T12:30:40.770Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1643811,
+        "kickoff": "2026-10-05T13:00:00.000Z",
+        "home": "Indonesia",
+        "away": "Thailand",
+        "competition": "FIFA Asean Cup",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.595,
+        "p_blend": 0.48,
+        "p_pinnacle": 0.467,
+        "fair_odd": 2.08,
+        "odd_min": 2.19,
+        "pinnacle_odd": 2.05,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuv8a3vzl82t",
+        "enviadaEm": "2026-10-05T12:30:40.175Z"
+      }
     }
   ],
   "invertidos": [],
@@ -25619,5 +25666,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T12:26:39.660Z"
+  "updatedAt": "2026-10-05T12:30:40.770Z"
 }
