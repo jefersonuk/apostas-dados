@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 248.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T00:47:54.696Z"
+      "updatedAt": "2026-10-06T00:48:19.662Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26717,7 +26717,7 @@
     {
       "id": "muvym7gn9mdol",
       "kind": "valor",
-      "event": "Independiente Medellin x Santa Fe — Total de escanteios: Menos de 10,5",
+      "event": "Independiente Medellin x Santa Fe — Total de escanteios: Menos de 9",
       "houseA": "Sportmarket",
       "oddA": 1.95,
       "stakeA": 117.4,
@@ -26737,7 +26737,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T00:47:54.696Z",
+      "updatedAt": "2026-10-06T00:48:19.662Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549809,
@@ -26745,9 +26745,9 @@
         "home": "Independiente Medellin",
         "away": "Santa Fe",
         "competition": "Primera A",
-        "lineId": "cornersU10.5",
+        "lineId": "cornersU9",
         "mercado": "Total de escanteios",
-        "linha": "Menos de 10,5",
+        "linha": "Menos de 9",
         "tier": "sólida",
         "p_model": 0.722,
         "p_blend": 0.722,
@@ -26758,7 +26758,8 @@
         "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
         "fragile": true,
         "inboxId": "anmuvym6womxoq",
-        "enviadaEm": "2026-10-06T00:47:53.976Z"
+        "enviadaEm": "2026-10-06T00:47:53.976Z",
+        "editadaEm": "2026-10-06T00:48:19.662Z"
       }
     }
   ],
@@ -26926,5 +26927,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T00:47:54.696Z"
+  "updatedAt": "2026-10-06T00:48:19.662Z"
 }
