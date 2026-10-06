@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 323,
+      "value": 378.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T11:15:59.208Z"
+      "updatedAt": "2026-10-06T11:17:17.447Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 208.96,
+      "value": 198.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T11:16:15.225Z"
+      "updatedAt": "2026-10-06T11:17:17.445Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26864,6 +26864,31 @@
         "enviadaEm": "2026-10-06T11:15:58.578Z",
         "editadaEm": "2026-10-06T11:16:15.225Z"
       }
+    },
+    {
+      "id": "muwl3ldxogk4r",
+      "kind": "valor",
+      "event": "Coreia do sul x Uzbequistão (over 2.5 1t)",
+      "houseA": "Sportmarket",
+      "oddA": 1.9,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.6800000000000002,
+      "prob": 59.5,
+      "winner": null,
+      "date": "2026-10-06T08:16",
+      "modelo": "F",
+      "total": 55.8,
+      "lucroA": 50.21999999999999,
+      "lucroRed": -55.8,
+      "lucro": 50.21999999999999,
+      "roi": 89.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T11:17:17.445Z"
     }
   ],
   "invertidos": [],
@@ -27030,5 +27055,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T11:16:15.225Z"
+  "updatedAt": "2026-10-06T11:17:17.447Z"
 }
