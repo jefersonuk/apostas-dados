@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 659.8,
+      "value": 211.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T20:05:50.142Z"
+      "updatedAt": "2026-10-06T20:38:39.458Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 106.84,
+      "value": 229.24,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T20:04:24.151Z"
+      "updatedAt": "2026-10-06T20:38:39.457Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27095,7 +27095,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.47,
       "prob": 0.68,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-06T15:45",
       "modelo": "analise",
       "total": 111.6,
@@ -27104,9 +27104,10 @@
       "lucro": 65.84400000000001,
       "roi": 59.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-06T15:44:59.712Z",
+      "updatedAt": "2026-10-06T20:38:36.243Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1528953,
@@ -27127,7 +27128,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwunuqr5a6z",
-        "enviadaEm": "2026-10-06T15:44:59.235Z"
+        "enviadaEm": "2026-10-06T15:44:59.235Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "England 3–0 Czechia · saldo de gols do England: 3 (linha 3)",
+          "at": "2026-10-06T20:38:36.243Z"
+        },
+        "clv": 0.04481377849421908,
+        "closingFair": 1.5218022892955152
       }
     },
     {
@@ -27208,7 +27216,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T15:58:18.039Z",
+      "updatedAt": "2026-10-06T20:38:36.783Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1528954,
@@ -27230,7 +27238,12 @@
         "fragile": true,
         "inboxId": "anmuwv41bf0x0h",
         "enviadaEm": "2026-10-06T15:57:34.251Z",
-        "editadaEm": "2026-10-06T15:58:18.039Z"
+        "editadaEm": "2026-10-06T15:58:18.039Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-06T20:38:36.783Z"
+        }
       }
     },
     {
@@ -27300,7 +27313,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.51,
       "prob": 0.662,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-06T15:45",
       "modelo": "analise",
       "total": 112.4,
@@ -27309,9 +27322,10 @@
       "lucro": 73.05999999999999,
       "roi": 64.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-06T16:41:12.724Z",
+      "updatedAt": "2026-10-06T20:38:37.741Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1545655,
@@ -27332,7 +27346,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwwo5bcon28",
-        "enviadaEm": "2026-10-06T16:41:12.168Z"
+        "enviadaEm": "2026-10-06T16:41:12.168Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Switzerland 3–0 FYR Macedonia · saldo de gols do Switzerland: 3 (linha 3)",
+          "at": "2026-10-06T20:38:37.741Z"
+        },
+        "clv": -0.033831522408112824,
+        "closingFair": 1.707776685193165
       }
     },
     {
@@ -27347,7 +27368,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2,
       "prob": 0.677,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-06T15:45",
       "modelo": "analise",
       "total": 112.4,
@@ -27356,9 +27377,10 @@
       "lucro": 166.352,
       "roi": 148,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-06T16:47:41.857Z",
+      "updatedAt": "2026-10-06T20:38:38.917Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1528957,
@@ -27380,7 +27402,14 @@
         "fragile": true,
         "inboxId": "anmuwwvv0k7bn3",
         "enviadaEm": "2026-10-06T16:47:12.068Z",
-        "editadaEm": "2026-10-06T16:47:41.857Z"
+        "editadaEm": "2026-10-06T16:47:41.857Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Estonia 0–0 Iceland · saldo de gols do Estonia: 0 (linha -0.5)",
+          "at": "2026-10-06T20:38:38.917Z"
+        },
+        "clv": -0.04426285319428502,
+        "closingFair": 2.5948557176925777
       }
     },
     {
@@ -27449,7 +27478,7 @@
       "market": "Escanteios",
       "oddMkt": 1.55,
       "prob": 0.647,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-06T15:45",
       "modelo": "analise",
       "total": 112,
@@ -27458,9 +27487,10 @@
       "lucro": 69.44000000000001,
       "roi": 62.000000000000014,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-06T19:02:47.051Z",
+      "updatedAt": "2026-10-06T20:38:39.457Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1528953,
@@ -27481,7 +27511,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmux1q7kb05x9",
-        "enviadaEm": "2026-10-06T19:02:46.475Z"
+        "enviadaEm": "2026-10-06T19:02:46.475Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "England 3–0 Czechia · escanteios no jogo: 8 (linha 10.5)",
+          "at": "2026-10-06T20:38:39.457Z"
+        },
+        "clv": 0.044404277529769276,
+        "closingFair": 1.551123482404374
       }
     }
   ],
@@ -27649,5 +27686,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T20:21:30.686Z"
+  "updatedAt": "2026-10-06T20:38:39.458Z"
 }
