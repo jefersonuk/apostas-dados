@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 208.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T11:15:59.208Z"
+      "updatedAt": "2026-10-06T11:16:15.225Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26820,14 +26820,14 @@
     {
       "id": "muwl1x0neo0ha",
       "kind": "valor",
-      "event": "Trollhättan x Mjallby AIF — Handicap asiático: Trollhättan +2",
+      "event": "Trollhättan x Mjallby AIF — Handicap asiático: Trollhättan +1",
       "houseA": "Sportmarket",
       "oddA": 2.61,
       "stakeA": 111.6,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Handicap Asiático",
-      "oddMkt": 1.51,
+      "oddMkt": 2.5,
       "prob": 0.664,
       "winner": null,
       "date": "2026-10-06T12:00",
@@ -26840,7 +26840,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T11:15:59.208Z",
+      "updatedAt": "2026-10-06T11:16:15.225Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1548378,
@@ -26848,9 +26848,9 @@
         "home": "Trollhättan",
         "away": "Mjallby AIF",
         "competition": "Svenska Cupen",
-        "lineId": "ahH2",
+        "lineId": "ahH1",
         "mercado": "Handicap asiático",
-        "linha": "Trollhättan +2",
+        "linha": "Trollhättan +1",
         "tier": "sólida",
         "p_model": 0.842,
         "p_blend": 0.664,
@@ -26861,7 +26861,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwl1wj6tr1g",
-        "enviadaEm": "2026-10-06T11:15:58.578Z"
+        "enviadaEm": "2026-10-06T11:15:58.578Z",
+        "editadaEm": "2026-10-06T11:16:15.225Z"
       }
     }
   ],
@@ -27029,5 +27030,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T11:15:59.208Z"
+  "updatedAt": "2026-10-06T11:16:15.225Z"
 }
