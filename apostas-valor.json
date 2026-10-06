@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 434.6,
+      "value": 546.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T15:29:54.057Z"
+      "updatedAt": "2026-10-06T15:34:20.553Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 158.96,
+      "value": 138.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T15:29:54.057Z"
+      "updatedAt": "2026-10-06T15:34:20.552Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26991,6 +26991,53 @@
         "inboxId": "anmuwu4fpygkyd",
         "enviadaEm": "2026-10-06T15:29:53.302Z"
       }
+    },
+    {
+      "id": "muwua5xkf5u1b",
+      "kind": "valor",
+      "event": "Central Ballester x Deportivo Muñiz — Total de gols: Menos de 3",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.31,
+      "prob": 0.761,
+      "winner": null,
+      "date": "2026-10-06T14:00",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 55.8,
+      "lucroRed": -111.6,
+      "lucro": 55.8,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T15:34:20.552Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1500136,
+        "kickoff": "2026-10-06T17:00:00.000Z",
+        "home": "Central Ballester",
+        "away": "Deportivo Muñiz",
+        "competition": "Primera C",
+        "lineId": "gU3",
+        "mercado": "Total de gols",
+        "linha": "Menos de 3",
+        "tier": "âncora",
+        "p_model": 0.831,
+        "p_blend": 0.761,
+        "p_pinnacle": 0.753,
+        "fair_odd": 1.31,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.27,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwua5k0thu4",
+        "enviadaEm": "2026-10-06T15:34:20.064Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27157,5 +27204,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T15:29:54.057Z"
+  "updatedAt": "2026-10-06T15:34:20.553Z"
 }
