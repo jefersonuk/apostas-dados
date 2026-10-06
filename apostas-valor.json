@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 993.4,
+      "value": 1105.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T16:37:17.779Z"
+      "updatedAt": "2026-10-06T16:41:12.724Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 78.96,
+      "value": 58.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T16:37:17.779Z"
+      "updatedAt": "2026-10-06T16:41:12.724Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27231,6 +27231,53 @@
         "inboxId": "anmuwwj1codtc7",
         "enviadaEm": "2026-10-06T16:37:13.752Z"
       }
+    },
+    {
+      "id": "muwwo5qssyh21",
+      "kind": "valor",
+      "event": "Switzerland x FYR Macedonia — Handicap asiático: FYR Macedonia +3",
+      "houseA": "Sportmarket",
+      "oddA": 1.65,
+      "stakeA": 112.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.51,
+      "prob": 0.662,
+      "winner": null,
+      "date": "2026-10-06T15:45",
+      "modelo": "analise",
+      "total": 112.4,
+      "lucroA": 73.05999999999999,
+      "lucroRed": -112.4,
+      "lucro": 73.05999999999999,
+      "roi": 64.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T16:41:12.724Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1545655,
+        "kickoff": "2026-10-06T18:45:00.000Z",
+        "home": "Switzerland",
+        "away": "FYR Macedonia",
+        "competition": "UEFA Nations League",
+        "lineId": "ahA3",
+        "mercado": "Handicap asiático",
+        "linha": "FYR Macedonia +3",
+        "tier": "sólida",
+        "p_model": 0.924,
+        "p_blend": 0.662,
+        "p_pinnacle": 0.615,
+        "fair_odd": 1.51,
+        "odd_min": 1.59,
+        "pinnacle_odd": 1.56,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwwo5bcon28",
+        "enviadaEm": "2026-10-06T16:41:12.168Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27397,5 +27444,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T16:37:17.779Z"
+  "updatedAt": "2026-10-06T16:41:12.724Z"
 }
