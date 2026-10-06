@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 99.8,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T20:38:48.555Z"
+      "updatedAt": "2026-10-06T23:05:27.589Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 270.37,
+      "value": 250,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T20:38:48.555Z"
+      "updatedAt": "2026-10-06T23:05:11.319Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4765,8 +4765,8 @@
     {
       "id": "mtfqqot0vqwy5",
       "name": "Betfury",
-      "value": 252.8,
-      "updatedAt": "2026-10-06T11:03:56.853Z",
+      "value": 100,
+      "updatedAt": "2026-10-06T23:07:25.852Z",
       "currency": "USD"
     },
     {
@@ -26499,7 +26499,7 @@
       "market": "Total de Chutes",
       "oddMkt": 1.8050541516245486,
       "prob": 55.400000000000006,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-06T15:45",
       "modelo": "F",
       "total": 99.80000000000001,
@@ -26508,9 +26508,10 @@
       "lucro": 94.81,
       "roi": 95,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-05T20:18:11.747Z"
+      "updatedAt": "2026-10-06T23:05:27.588Z"
     },
     {
       "id": "muvsm2bg213dr",
@@ -27687,5 +27688,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T23:04:55.495Z"
+  "updatedAt": "2026-10-06T23:07:25.852Z"
 }
