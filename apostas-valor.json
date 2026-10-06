@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 323,
+      "value": 434.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T15:06:10.916Z"
+      "updatedAt": "2026-10-06T15:29:54.057Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 178.96,
+      "value": 158.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T12:03:32.687Z"
+      "updatedAt": "2026-10-06T15:29:54.057Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26944,6 +26944,53 @@
         "inboxId": "anmuwmr28ea2cn",
         "enviadaEm": "2026-10-06T12:03:31.982Z"
       }
+    },
+    {
+      "id": "muwu4gaw3mom2",
+      "kind": "valor",
+      "event": "Skjetten x Kongsvinger II — Handicap asiático: Skjetten 0",
+      "houseA": "Sportmarket",
+      "oddA": 2.28,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.47,
+      "prob": 0.682,
+      "winner": null,
+      "date": "2026-10-06T13:00",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 142.84799999999998,
+      "lucroRed": -111.6,
+      "lucro": 142.84799999999998,
+      "roi": 127.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T15:29:54.057Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1497258,
+        "kickoff": "2026-10-06T16:00:00.000Z",
+        "home": "Skjetten",
+        "away": "Kongsvinger II",
+        "competition": "3. Division - Girone 5",
+        "lineId": "ahH0",
+        "mercado": "Handicap asiático",
+        "linha": "Skjetten 0",
+        "tier": "sólida",
+        "p_model": 0.823,
+        "p_blend": 0.682,
+        "p_pinnacle": 0.663,
+        "fair_odd": 1.47,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.42,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwu4fpygkyd",
+        "enviadaEm": "2026-10-06T15:29:53.302Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27110,5 +27157,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T15:06:10.916Z"
+  "updatedAt": "2026-10-06T15:29:54.057Z"
 }
