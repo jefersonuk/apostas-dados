@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1218.6,
+      "value": 1107,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T17:01:39.619Z"
+      "updatedAt": "2026-10-06T18:03:17.510Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -26976,7 +26976,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.2,
       "prob": 0.682,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-06T13:00",
       "modelo": "analise",
       "total": 111.6,
@@ -26985,9 +26985,10 @@
       "lucro": 142.84799999999998,
       "roi": 127.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-06T17:49:05.751Z",
+      "updatedAt": "2026-10-06T18:03:17.509Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1497258,
@@ -27011,10 +27012,12 @@
         "enviadaEm": "2026-10-06T15:29:53.302Z",
         "editadaEm": "2026-10-06T15:30:13.581Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-06T17:49:05.751Z"
-        }
+          "status": "encerrado",
+          "detail": "Skjetten 3–4 Kongsvinger II · saldo de gols do Skjetten: -1 (linha 1)",
+          "at": "2026-10-06T18:03:17.509Z"
+        },
+        "clv": -0.021502102293190162,
+        "closingFair": 2.330102093569508
       }
     },
     {
@@ -27560,5 +27563,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T17:49:05.751Z"
+  "updatedAt": "2026-10-06T18:03:17.510Z"
 }
