@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 18.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T17:01:00.147Z"
+      "updatedAt": "2026-10-06T17:01:26.186Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27330,14 +27330,14 @@
     {
       "id": "muwxdlyrrbx3k",
       "kind": "valor",
-      "event": "AFC Hornchurch x Fulham U21 — Handicap asiático: AFC Hornchurch +0,5",
+      "event": "AFC Hornchurch x Fulham U21 — Handicap asiático: AFC Hornchurch -0,5",
       "houseA": "Sportmarket",
       "oddA": 2.48,
       "stakeA": 112,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Handicap Asiático",
-      "oddMkt": 1.52,
+      "oddMkt": 2.4,
       "prob": 0.659,
       "winner": null,
       "date": "2026-10-06T15:00",
@@ -27350,7 +27350,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T17:01:00.147Z",
+      "updatedAt": "2026-10-06T17:01:26.186Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1619499,
@@ -27358,9 +27358,9 @@
         "home": "AFC Hornchurch",
         "away": "Fulham U21",
         "competition": "National League Cup",
-        "lineId": "ahH0.5",
+        "lineId": "ahH-0.5",
         "mercado": "Handicap asiático",
-        "linha": "AFC Hornchurch +0,5",
+        "linha": "AFC Hornchurch -0,5",
         "tier": "especulativa",
         "p_model": 0.659,
         "p_blend": 0.659,
@@ -27371,7 +27371,8 @@
         "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
         "fragile": true,
         "inboxId": "anmuwxdlhw2mbf",
-        "enviadaEm": "2026-10-06T17:00:59.540Z"
+        "enviadaEm": "2026-10-06T17:00:59.540Z",
+        "editadaEm": "2026-10-06T17:01:26.186Z"
       }
     }
   ],
@@ -27539,5 +27540,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T17:01:00.148Z"
+  "updatedAt": "2026-10-06T17:01:26.186Z"
 }
