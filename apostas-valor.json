@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 323,
+      "value": 434.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T11:58:32.032Z"
+      "updatedAt": "2026-10-06T12:03:32.688Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 198.96,
+      "value": 178.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T11:17:17.445Z"
+      "updatedAt": "2026-10-06T12:03:32.687Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26896,6 +26896,53 @@
         "resultado": "RED"
       },
       "updatedAt": "2026-10-06T11:58:32.032Z"
+    },
+    {
+      "id": "muwmr2rz3n3l5",
+      "kind": "valor",
+      "event": "Bristol City U21 x Charlton Athletic U21 — Handicap asiático: Charlton Athletic U21 +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.7,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.48,
+      "prob": 0.675,
+      "winner": null,
+      "date": "2026-10-06T09:00",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 78.11999999999999,
+      "lucroRed": -111.6,
+      "lucro": 78.11999999999999,
+      "roi": 70,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T12:03:32.687Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1619158,
+        "kickoff": "2026-10-06T12:00:00.000Z",
+        "home": "Bristol City U21",
+        "away": "Charlton Athletic U21",
+        "competition": "Professional Development League",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Charlton Athletic U21 +1,5",
+        "tier": "sólida",
+        "p_model": 0.765,
+        "p_blend": 0.675,
+        "p_pinnacle": 0.665,
+        "fair_odd": 1.48,
+        "odd_min": 1.55,
+        "pinnacle_odd": 1.44,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwmr28ea2cn",
+        "enviadaEm": "2026-10-06T12:03:31.982Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27062,5 +27109,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T11:58:32.033Z"
+  "updatedAt": "2026-10-06T12:03:32.688Z"
 }
