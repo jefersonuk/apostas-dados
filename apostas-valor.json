@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 199.6,
+      "value": 311.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T01:58:37.856Z"
+      "updatedAt": "2026-10-06T11:03:40.435Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 248.96,
+      "value": 228.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T00:48:19.662Z"
+      "updatedAt": "2026-10-06T11:03:40.435Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26767,6 +26767,53 @@
           "at": "2026-10-06T01:58:37.856Z"
         }
       }
+    },
+    {
+      "id": "muwkm2z750psh",
+      "kind": "valor",
+      "event": "Sheffield Wednesday x Sunderland U21 — Handicap asiático: Sunderland U21 +2",
+      "houseA": "Sportmarket",
+      "oddA": 1.9,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.44,
+      "prob": 0.695,
+      "winner": null,
+      "date": "2026-10-06T15:00",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 100.43999999999998,
+      "lucroRed": -111.6,
+      "lucro": 100.43999999999998,
+      "roi": 89.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T11:03:40.435Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1588818,
+        "kickoff": "2026-10-06T18:00:00.000Z",
+        "home": "Sheffield Wednesday",
+        "away": "Sunderland U21",
+        "competition": "EFL Trophy",
+        "lineId": "ahA2",
+        "mercado": "Handicap asiático",
+        "linha": "Sunderland U21 +2",
+        "tier": "sólida",
+        "p_model": 0.911,
+        "p_blend": 0.695,
+        "p_pinnacle": 0.658,
+        "fair_odd": 1.44,
+        "odd_min": 1.51,
+        "pinnacle_odd": 1.46,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwklzjrnr5o",
+        "enviadaEm": "2026-10-06T11:03:35.991Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26933,5 +26980,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T10:43:55.094Z"
+  "updatedAt": "2026-10-06T11:03:40.435Z"
 }
