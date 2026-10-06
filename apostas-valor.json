@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 546.2,
+      "value": 657.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T15:34:20.553Z"
+      "updatedAt": "2026-10-06T15:44:59.713Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 138.96,
+      "value": 118.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T15:34:20.552Z"
+      "updatedAt": "2026-10-06T15:44:59.712Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27038,6 +27038,53 @@
         "inboxId": "anmuwua5k0thu4",
         "enviadaEm": "2026-10-06T15:34:20.064Z"
       }
+    },
+    {
+      "id": "muwunv3z2ur9f",
+      "kind": "valor",
+      "event": "England x Czechia — Handicap asiático: Czechia +3",
+      "houseA": "Sportmarket",
+      "oddA": 1.59,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.47,
+      "prob": 0.68,
+      "winner": null,
+      "date": "2026-10-06T15:45",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 65.84400000000001,
+      "lucroRed": -111.6,
+      "lucro": 65.84400000000001,
+      "roi": 59.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T15:44:59.712Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528953,
+        "kickoff": "2026-10-06T18:45:00.000Z",
+        "home": "England",
+        "away": "Czechia",
+        "competition": "UEFA Nations League",
+        "lineId": "ahA3",
+        "mercado": "Handicap asiático",
+        "linha": "Czechia +3",
+        "tier": "sólida",
+        "p_model": 0.918,
+        "p_blend": 0.68,
+        "p_pinnacle": 0.639,
+        "fair_odd": 1.47,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.51,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwunuqr5a6z",
+        "enviadaEm": "2026-10-06T15:44:59.235Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27204,5 +27251,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T15:34:20.553Z"
+  "updatedAt": "2026-10-06T15:44:59.713Z"
 }
