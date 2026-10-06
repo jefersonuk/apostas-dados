@@ -27043,7 +27043,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T18:52:03.183Z",
+      "updatedAt": "2026-10-06T18:59:29.333Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1500136,
@@ -27068,7 +27068,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Second Half",
-          "at": "2026-10-06T18:52:03.182Z"
+          "at": "2026-10-06T18:59:29.333Z"
         }
       }
     },
@@ -27568,5 +27568,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T18:52:03.183Z"
+  "updatedAt": "2026-10-06T18:59:29.334Z"
 }
