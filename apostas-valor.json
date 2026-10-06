@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 883.4,
+      "value": 771.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T19:53:24.292Z"
+      "updatedAt": "2026-10-06T20:01:42.339Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 104.62,
+      "value": 124.55,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T19:53:24.058Z"
+      "updatedAt": "2026-10-06T20:01:42.059Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27142,7 +27142,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.43,
       "prob": 0.698,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-06T15:00",
       "modelo": "analise",
       "total": 111.6,
@@ -27151,9 +27151,10 @@
       "lucro": 68.07600000000001,
       "roi": 61.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-06T19:53:23.149Z",
+      "updatedAt": "2026-10-06T20:01:42.059Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1588884,
@@ -27176,10 +27177,12 @@
         "inboxId": "anmuwuqagmitwb",
         "enviadaEm": "2026-10-06T15:46:52.918Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-06T19:53:23.149Z"
-        }
+          "status": "encerrado",
+          "detail": "Peterborough 4–1 Ipswich Town U21 · saldo de gols do Peterborough: 3 (linha 3)",
+          "at": "2026-10-06T20:01:42.059Z"
+        },
+        "clv": -0.16128522693351655,
+        "closingFair": 1.9196037219108077
       }
     },
     {
@@ -27402,7 +27405,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T19:53:24.291Z",
+      "updatedAt": "2026-10-06T20:01:42.339Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1619499,
@@ -27428,7 +27431,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Penalty in progress",
-          "at": "2026-10-06T19:53:24.291Z"
+          "at": "2026-10-06T20:01:42.338Z"
         }
       }
     },
@@ -27644,5 +27647,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T19:53:24.292Z"
+  "updatedAt": "2026-10-06T20:01:42.339Z"
 }
