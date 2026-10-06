@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1219,
+      "value": 1107.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T19:02:47.051Z"
+      "updatedAt": "2026-10-06T19:02:58.827Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 50.97,
+      "value": 70.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T19:02:47.051Z"
+      "updatedAt": "2026-10-06T19:02:58.827Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27032,7 +27032,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.31,
       "prob": 0.761,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-06T14:00",
       "modelo": "analise",
       "total": 111.6,
@@ -27041,9 +27041,10 @@
       "lucro": 55.8,
       "roi": 50,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-06T18:59:29.333Z",
+      "updatedAt": "2026-10-06T19:02:58.827Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1500136,
@@ -27066,10 +27067,12 @@
         "inboxId": "anmuwua5k0thu4",
         "enviadaEm": "2026-10-06T15:34:20.064Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-06T18:59:29.333Z"
-        }
+          "status": "encerrado",
+          "detail": "Central Ballester 1–2 Deportivo Muñiz · gols no jogo: 3 (linha 3)",
+          "at": "2026-10-06T19:02:58.827Z"
+        },
+        "clv": -0.1992577221102323,
+        "closingFair": 1.8732618988883887
       }
     },
     {
@@ -27615,5 +27618,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T19:02:47.051Z"
+  "updatedAt": "2026-10-06T19:02:58.827Z"
 }
