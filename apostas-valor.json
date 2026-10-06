@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 657.8,
+      "value": 769.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T15:44:59.713Z"
+      "updatedAt": "2026-10-06T15:45:11.880Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 118.96,
+      "value": 138.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T15:44:59.712Z"
+      "updatedAt": "2026-10-06T15:45:07.998Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26948,14 +26948,14 @@
     {
       "id": "muwu4gaw3mom2",
       "kind": "valor",
-      "event": "Skjetten x Kongsvinger II — Handicap asiático: Skjetten 0",
+      "event": "Skjetten x Kongsvinger II — Handicap asiático: Skjetten -1",
       "houseA": "Sportmarket",
       "oddA": 2.28,
       "stakeA": 111.6,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Handicap Asiático",
-      "oddMkt": 1.47,
+      "oddMkt": 2.2,
       "prob": 0.682,
       "winner": null,
       "date": "2026-10-06T13:00",
@@ -26968,7 +26968,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T15:29:54.057Z",
+      "updatedAt": "2026-10-06T15:30:13.581Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1497258,
@@ -26976,9 +26976,9 @@
         "home": "Skjetten",
         "away": "Kongsvinger II",
         "competition": "3. Division - Girone 5",
-        "lineId": "ahH0",
+        "lineId": "ahH-1",
         "mercado": "Handicap asiático",
-        "linha": "Skjetten 0",
+        "linha": "Skjetten -1",
         "tier": "sólida",
         "p_model": 0.823,
         "p_blend": 0.682,
@@ -26989,7 +26989,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwu4fpygkyd",
-        "enviadaEm": "2026-10-06T15:29:53.302Z"
+        "enviadaEm": "2026-10-06T15:29:53.302Z",
+        "editadaEm": "2026-10-06T15:30:13.581Z"
       }
     },
     {
@@ -27063,6 +27064,53 @@
         "stakes": true
       },
       "updatedAt": "2026-10-06T15:44:59.712Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528953,
+        "kickoff": "2026-10-06T18:45:00.000Z",
+        "home": "England",
+        "away": "Czechia",
+        "competition": "UEFA Nations League",
+        "lineId": "ahA3",
+        "mercado": "Handicap asiático",
+        "linha": "Czechia +3",
+        "tier": "sólida",
+        "p_model": 0.918,
+        "p_blend": 0.68,
+        "p_pinnacle": 0.639,
+        "fair_odd": 1.47,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.51,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwunuqr5a6z",
+        "enviadaEm": "2026-10-06T15:44:59.235Z"
+      }
+    },
+    {
+      "id": "muwuo1i6zuqye",
+      "kind": "valor",
+      "event": "England x Czechia — Handicap asiático: Czechia +3",
+      "houseA": "Sportmarket",
+      "oddA": 1.59,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.47,
+      "prob": 0.68,
+      "winner": null,
+      "date": "2026-10-06T15:45",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 65.84400000000001,
+      "lucroRed": -111.6,
+      "lucro": 65.84400000000001,
+      "roi": 59.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T15:45:07.998Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1528953,
@@ -27251,5 +27299,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T15:44:59.713Z"
+  "updatedAt": "2026-10-06T15:45:07.999Z"
 }
