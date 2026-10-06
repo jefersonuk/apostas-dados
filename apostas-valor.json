@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 317,
+      "value": 199.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T00:47:54.696Z"
+      "updatedAt": "2026-10-06T01:58:37.856Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -26726,7 +26726,7 @@
       "market": "Escanteios",
       "oddMkt": 1.38,
       "prob": 0.722,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-05T21:00",
       "modelo": "analise",
       "total": 117.4,
@@ -26735,9 +26735,10 @@
       "lucro": 111.53,
       "roi": 95,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-06T00:48:19.662Z",
+      "updatedAt": "2026-10-06T01:58:37.856Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549809,
@@ -26759,7 +26760,12 @@
         "fragile": true,
         "inboxId": "anmuvym6womxoq",
         "enviadaEm": "2026-10-06T00:47:53.976Z",
-        "editadaEm": "2026-10-06T00:48:19.662Z"
+        "editadaEm": "2026-10-06T00:48:19.662Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Independiente Medellin 0–1 Santa Fe · escanteios no jogo: 12 (linha 9)",
+          "at": "2026-10-06T01:58:37.856Z"
+        }
       }
     }
   ],
@@ -26927,5 +26933,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T01:41:33.554Z"
+  "updatedAt": "2026-10-06T01:58:37.856Z"
 }
