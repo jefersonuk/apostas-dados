@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1105.8,
+      "value": 1218.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T16:41:12.724Z"
+      "updatedAt": "2026-10-06T16:47:12.683Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 58.96,
+      "value": 38.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T16:41:12.724Z"
+      "updatedAt": "2026-10-06T16:47:12.682Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27278,6 +27278,53 @@
         "inboxId": "anmuwwo5bcon28",
         "enviadaEm": "2026-10-06T16:41:12.168Z"
       }
+    },
+    {
+      "id": "muwwvvhmlm4ju",
+      "kind": "valor",
+      "event": "Estonia x Iceland — Handicap asiático: Estonia +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.48,
+      "stakeA": 112.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.48,
+      "prob": 0.677,
+      "winner": null,
+      "date": "2026-10-06T15:45",
+      "modelo": "analise",
+      "total": 112.4,
+      "lucroA": 166.352,
+      "lucroRed": -112.4,
+      "lucro": 166.352,
+      "roi": 148,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T16:47:12.682Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1528957,
+        "kickoff": "2026-10-06T18:45:00.000Z",
+        "home": "Estonia",
+        "away": "Iceland",
+        "competition": "UEFA Nations League",
+        "lineId": "ahH1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Estonia +1,5",
+        "tier": "sólida",
+        "p_model": 0.836,
+        "p_blend": 0.677,
+        "p_pinnacle": 0.655,
+        "fair_odd": 1.48,
+        "odd_min": 1.55,
+        "pinnacle_odd": 1.49,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwwvv0k7bn3",
+        "enviadaEm": "2026-10-06T16:47:12.068Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27444,5 +27491,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T16:41:12.724Z"
+  "updatedAt": "2026-10-06T16:47:12.683Z"
 }
