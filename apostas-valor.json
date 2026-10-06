@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1218.2,
+      "value": 1330.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T16:47:12.683Z"
+      "updatedAt": "2026-10-06T17:01:00.148Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 38.96,
+      "value": 18.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T16:47:41.857Z"
+      "updatedAt": "2026-10-06T17:01:00.147Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27326,6 +27326,53 @@
         "enviadaEm": "2026-10-06T16:47:12.068Z",
         "editadaEm": "2026-10-06T16:47:41.857Z"
       }
+    },
+    {
+      "id": "muwxdlyrrbx3k",
+      "kind": "valor",
+      "event": "AFC Hornchurch x Fulham U21 — Handicap asiático: AFC Hornchurch +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.48,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.52,
+      "prob": 0.659,
+      "winner": null,
+      "date": "2026-10-06T15:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 165.76,
+      "lucroRed": -112,
+      "lucro": 165.76,
+      "roi": 148,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T17:01:00.147Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1619499,
+        "kickoff": "2026-10-06T18:00:00.000Z",
+        "home": "AFC Hornchurch",
+        "away": "Fulham U21",
+        "competition": "National League Cup",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "AFC Hornchurch +0,5",
+        "tier": "especulativa",
+        "p_model": 0.659,
+        "p_blend": 0.659,
+        "p_pinnacle": null,
+        "fair_odd": 1.52,
+        "odd_min": 1.64,
+        "pinnacle_odd": null,
+        "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
+        "fragile": true,
+        "inboxId": "anmuwxdlhw2mbf",
+        "enviadaEm": "2026-10-06T17:00:59.540Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27492,5 +27539,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T16:47:41.857Z"
+  "updatedAt": "2026-10-06T17:01:00.148Z"
 }
