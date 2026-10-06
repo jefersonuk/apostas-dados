@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 211.4,
+      "value": 323,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T11:03:56.853Z"
+      "updatedAt": "2026-10-06T11:15:59.208Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 228.96,
+      "value": 208.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T11:03:51.572Z"
+      "updatedAt": "2026-10-06T11:15:59.208Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26816,6 +26816,53 @@
         "enviadaEm": "2026-10-06T11:03:35.991Z",
         "editadaEm": "2026-10-06T11:03:51.572Z"
       }
+    },
+    {
+      "id": "muwl1x0neo0ha",
+      "kind": "valor",
+      "event": "Trollhättan x Mjallby AIF — Handicap asiático: Trollhättan +2",
+      "houseA": "Sportmarket",
+      "oddA": 2.61,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.51,
+      "prob": 0.664,
+      "winner": null,
+      "date": "2026-10-06T12:00",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 179.676,
+      "lucroRed": -111.6,
+      "lucro": 179.676,
+      "roi": 161,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-06T11:15:59.208Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1548378,
+        "kickoff": "2026-10-06T15:00:00.000Z",
+        "home": "Trollhättan",
+        "away": "Mjallby AIF",
+        "competition": "Svenska Cupen",
+        "lineId": "ahH2",
+        "mercado": "Handicap asiático",
+        "linha": "Trollhättan +2",
+        "tier": "sólida",
+        "p_model": 0.842,
+        "p_blend": 0.664,
+        "p_pinnacle": 0.639,
+        "fair_odd": 1.51,
+        "odd_min": 1.58,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuwl1wj6tr1g",
+        "enviadaEm": "2026-10-06T11:15:58.578Z"
+      }
     }
   ],
   "invertidos": [],
@@ -26982,5 +27029,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T11:03:56.853Z"
+  "updatedAt": "2026-10-06T11:15:59.208Z"
 }
