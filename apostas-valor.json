@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 995.8,
+      "value": 883.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T19:53:10.557Z"
+      "updatedAt": "2026-10-06T19:53:24.292Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 70.9,
+      "value": 104.62,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T19:02:58.827Z"
+      "updatedAt": "2026-10-06T19:53:24.058Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27153,7 +27153,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T19:53:09.454Z",
+      "updatedAt": "2026-10-06T19:53:23.149Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1588884,
@@ -27178,7 +27178,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Second Half",
-          "at": "2026-10-06T19:53:09.454Z"
+          "at": "2026-10-06T19:53:23.149Z"
         }
       }
     },
@@ -27241,7 +27241,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.66,
       "prob": 0.602,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-06T15:00",
       "modelo": "analise",
       "total": 112.4,
@@ -27250,9 +27250,10 @@
       "lucro": 76.432,
       "roi": 68,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-06T19:53:10.093Z",
+      "updatedAt": "2026-10-06T19:53:24.058Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1588836,
@@ -27275,10 +27276,12 @@
         "inboxId": "anmuwwj1codtc7",
         "enviadaEm": "2026-10-06T16:37:13.752Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-06T19:53:10.093Z"
-        }
+          "status": "encerrado",
+          "detail": "Port Vale 2–0 Mansfield Town · gols no jogo: 2 (linha 3.5)",
+          "at": "2026-10-06T19:53:24.058Z"
+        },
+        "clv": -0.002070370413359335,
+        "closingFair": 1.6834854384430737
       }
     },
     {
@@ -27399,7 +27402,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T19:53:10.557Z",
+      "updatedAt": "2026-10-06T19:53:24.291Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1619499,
@@ -27425,7 +27428,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Penalty in progress",
-          "at": "2026-10-06T19:53:10.557Z"
+          "at": "2026-10-06T19:53:24.291Z"
         }
       }
     },
@@ -27641,5 +27644,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T19:53:10.557Z"
+  "updatedAt": "2026-10-06T19:53:24.292Z"
 }
