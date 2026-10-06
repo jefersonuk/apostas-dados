@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 38.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T16:47:12.682Z"
+      "updatedAt": "2026-10-06T16:47:41.857Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27282,14 +27282,14 @@
     {
       "id": "muwwvvhmlm4ju",
       "kind": "valor",
-      "event": "Estonia x Iceland — Handicap asiático: Estonia +1,5",
+      "event": "Estonia x Iceland — Handicap asiático: Estonia +0,5",
       "houseA": "Sportmarket",
       "oddA": 2.48,
       "stakeA": 112.4,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Handicap Asiático",
-      "oddMkt": 1.48,
+      "oddMkt": 2,
       "prob": 0.677,
       "winner": null,
       "date": "2026-10-06T15:45",
@@ -27302,7 +27302,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T16:47:12.682Z",
+      "updatedAt": "2026-10-06T16:47:41.857Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1528957,
@@ -27310,9 +27310,9 @@
         "home": "Estonia",
         "away": "Iceland",
         "competition": "UEFA Nations League",
-        "lineId": "ahH1.5",
+        "lineId": "ahH0.5",
         "mercado": "Handicap asiático",
-        "linha": "Estonia +1,5",
+        "linha": "Estonia +0,5",
         "tier": "sólida",
         "p_model": 0.836,
         "p_blend": 0.677,
@@ -27323,7 +27323,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwwvv0k7bn3",
-        "enviadaEm": "2026-10-06T16:47:12.068Z"
+        "enviadaEm": "2026-10-06T16:47:12.068Z",
+        "editadaEm": "2026-10-06T16:47:41.857Z"
       }
     }
   ],
@@ -27491,5 +27492,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T16:47:20.828Z"
+  "updatedAt": "2026-10-06T16:47:41.857Z"
 }
