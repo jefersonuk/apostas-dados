@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1107.4,
+      "value": 995.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T19:02:58.827Z"
+      "updatedAt": "2026-10-06T19:53:10.557Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -26791,7 +26791,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.44,
       "prob": 0.695,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-06T15:00",
       "modelo": "analise",
       "total": 111.6,
@@ -26800,9 +26800,10 @@
       "lucro": 100.43999999999998,
       "roi": 89.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-06T11:03:51.572Z",
+      "updatedAt": "2026-10-06T19:53:08.982Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1588818,
@@ -26824,7 +26825,14 @@
         "fragile": true,
         "inboxId": "anmuwklzjrnr5o",
         "enviadaEm": "2026-10-06T11:03:35.991Z",
-        "editadaEm": "2026-10-06T11:03:51.572Z"
+        "editadaEm": "2026-10-06T11:03:51.572Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sheffield Wednesday 2–0 Sunderland U21 · saldo de gols do Sheffield Wednesday: 2 (linha 1.5)",
+          "at": "2026-10-06T19:53:08.982Z"
+        },
+        "clv": -0.026476477701022016,
+        "closingFair": 1.951673438267979
       }
     },
     {
@@ -27145,7 +27153,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T15:46:53.631Z",
+      "updatedAt": "2026-10-06T19:53:09.454Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1588884,
@@ -27166,7 +27174,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwuqagmitwb",
-        "enviadaEm": "2026-10-06T15:46:52.918Z"
+        "enviadaEm": "2026-10-06T15:46:52.918Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-06T19:53:09.454Z"
+        }
       }
     },
     {
@@ -27239,7 +27252,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T16:37:17.779Z",
+      "updatedAt": "2026-10-06T19:53:10.093Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1588836,
@@ -27260,7 +27273,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwwj1codtc7",
-        "enviadaEm": "2026-10-06T16:37:13.752Z"
+        "enviadaEm": "2026-10-06T16:37:13.752Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-06T19:53:10.093Z"
+        }
       }
     },
     {
@@ -27381,7 +27399,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T17:01:26.186Z",
+      "updatedAt": "2026-10-06T19:53:10.557Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1619499,
@@ -27403,7 +27421,12 @@
         "fragile": true,
         "inboxId": "anmuwxdlhw2mbf",
         "enviadaEm": "2026-10-06T17:00:59.540Z",
-        "editadaEm": "2026-10-06T17:01:26.186Z"
+        "editadaEm": "2026-10-06T17:01:26.186Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Penalty in progress",
+          "at": "2026-10-06T19:53:10.557Z"
+        }
       }
     },
     {
@@ -27618,5 +27641,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T19:02:58.827Z"
+  "updatedAt": "2026-10-06T19:53:10.557Z"
 }
