@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 228.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T11:03:40.435Z"
+      "updatedAt": "2026-10-06T11:03:51.572Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26771,7 +26771,7 @@
     {
       "id": "muwkm2z750psh",
       "kind": "valor",
-      "event": "Sheffield Wednesday x Sunderland U21 — Handicap asiático: Sunderland U21 +2",
+      "event": "Sheffield Wednesday x Sunderland U21 — Handicap asiático: Sunderland U21 +1.5",
       "houseA": "Sportmarket",
       "oddA": 1.9,
       "stakeA": 111.6,
@@ -26791,7 +26791,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-06T11:03:40.435Z",
+      "updatedAt": "2026-10-06T11:03:51.572Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1588818,
@@ -26799,9 +26799,9 @@
         "home": "Sheffield Wednesday",
         "away": "Sunderland U21",
         "competition": "EFL Trophy",
-        "lineId": "ahA2",
+        "lineId": "ahA1.5",
         "mercado": "Handicap asiático",
-        "linha": "Sunderland U21 +2",
+        "linha": "Sunderland U21 +1.5",
         "tier": "sólida",
         "p_model": 0.911,
         "p_blend": 0.695,
@@ -26812,7 +26812,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwklzjrnr5o",
-        "enviadaEm": "2026-10-06T11:03:35.991Z"
+        "enviadaEm": "2026-10-06T11:03:35.991Z",
+        "editadaEm": "2026-10-06T11:03:51.572Z"
       }
     }
   ],
@@ -26980,5 +26981,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T11:03:40.435Z"
+  "updatedAt": "2026-10-06T11:03:51.572Z"
 }
