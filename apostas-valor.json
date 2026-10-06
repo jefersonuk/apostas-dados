@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 434.4,
+      "value": 199.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-05T22:49:33.682Z"
+      "updatedAt": "2026-10-06T00:34:57.002Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 158.07,
+      "value": 229.07,
       "currency": "EUR",
-      "updatedAt": "2026-10-05T22:49:33.682Z"
+      "updatedAt": "2026-10-06T00:34:57.002Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26513,7 +26513,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.47,
       "prob": 0.681,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-05T19:00",
       "modelo": "analise",
       "total": 117.4,
@@ -26522,9 +26522,10 @@
       "lucro": 123.26999999999998,
       "roi": 104.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-05T21:59:50.332Z",
+      "updatedAt": "2026-10-06T00:34:55.060Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1499663,
@@ -26545,7 +26546,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvslztfs635",
-        "enviadaEm": "2026-10-05T21:59:47.091Z"
+        "enviadaEm": "2026-10-05T21:59:47.091Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Deportivo Merlo 0–0 Brown DE Adrogue · saldo de gols do Deportivo Merlo: 0 (linha -0.5)",
+          "at": "2026-10-06T00:34:55.059Z"
+        },
+        "clv": 0.3960456248500095,
+        "closingFair": 1.4684333831999588
       }
     },
     {
@@ -26572,7 +26580,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-05T22:49:33.682Z",
+      "updatedAt": "2026-10-06T00:34:56.002Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549652,
@@ -26593,7 +26601,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvt0pfs5rjr",
-        "enviadaEm": "2026-10-05T22:11:13.480Z"
+        "enviadaEm": "2026-10-05T22:11:13.480Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Bogota FC 3–3 Envigado · gols no jogo: 6 (linha 1.5)",
+          "at": "2026-10-06T00:34:56.001Z"
+        },
+        "clv": 0.08326499609096571,
+        "closingFair": 1.569329763386211
       }
     },
     {
@@ -26656,7 +26671,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.49,
       "prob": 0.673,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-05T19:30",
       "modelo": "analise",
       "total": 117.4,
@@ -26665,9 +26680,10 @@
       "lucro": 58.7,
       "roi": 50,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-05T22:25:13.847Z",
+      "updatedAt": "2026-10-06T00:34:57.002Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640783,
@@ -26688,7 +26704,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuvtipuxswsw",
-        "enviadaEm": "2026-10-05T22:25:13.833Z"
+        "enviadaEm": "2026-10-05T22:25:13.833Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Fernando De La Mora 0–2 General Caballero · saldo de gols do Fernando De La Mora: -2 (linha 0.5)",
+          "at": "2026-10-06T00:34:57.002Z"
+        },
+        "clv": -0.003472266335940777,
+        "closingFair": 1.50522654746874
       }
     }
   ],
@@ -26856,5 +26879,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-05T23:13:54.141Z"
+  "updatedAt": "2026-10-06T00:34:57.002Z"
 }
