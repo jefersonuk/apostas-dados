@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1330.2,
+      "value": 1218.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T17:01:00.148Z"
+      "updatedAt": "2026-10-06T17:01:39.619Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 18.96,
+      "value": 70.97,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T17:01:26.186Z"
+      "updatedAt": "2026-10-06T17:01:38.700Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -26839,7 +26839,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.5,
       "prob": 0.664,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-06T12:00",
       "modelo": "analise",
       "total": 111.6,
@@ -26848,9 +26848,10 @@
       "lucro": 179.676,
       "roi": 161,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-06T11:16:15.225Z",
+      "updatedAt": "2026-10-06T17:01:38.700Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1548378,
@@ -26872,7 +26873,14 @@
         "fragile": true,
         "inboxId": "anmuwl1wj6tr1g",
         "enviadaEm": "2026-10-06T11:15:58.578Z",
-        "editadaEm": "2026-10-06T11:16:15.225Z"
+        "editadaEm": "2026-10-06T11:16:15.225Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Trollhättan 1–0 Mjallby AIF · saldo de gols do Trollhättan: 1 (linha -1)",
+          "at": "2026-10-06T17:01:38.700Z"
+        },
+        "clv": -0.07090783628609432,
+        "closingFair": 2.809193858192624
       }
     },
     {
@@ -26925,7 +26933,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-06T15:06:10.916Z",
+      "updatedAt": "2026-10-06T17:01:39.619Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1619158,
@@ -26946,7 +26954,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuwmr28ea2cn",
-        "enviadaEm": "2026-10-06T12:03:31.982Z"
+        "enviadaEm": "2026-10-06T12:03:31.982Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Bristol City U21 4–1 Charlton Athletic U21 · saldo de gols do Bristol City U21: 3 (linha 1.5)",
+          "at": "2026-10-06T17:01:39.619Z"
+        },
+        "clv": -0.07978033960872366,
+        "closingFair": 1.847385002921109
       }
     },
     {
@@ -27540,5 +27555,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-06T17:01:26.186Z"
+  "updatedAt": "2026-10-06T17:01:39.619Z"
 }
