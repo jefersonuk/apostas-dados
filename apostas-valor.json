@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 212.75,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T13:53:40.630Z"
+      "updatedAt": "2026-10-07T13:54:00.036Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27785,7 +27785,7 @@
     {
       "id": "muy64k5xji6fn",
       "kind": "valor",
-      "event": "Neftchi x Xorazm — 1X2: Neftchi vence",
+      "event": "Neftchi x Xorazm — 1X2: Neftchi vence primeiro tempo",
       "houseA": "Sportmarket",
       "oddA": 1.5,
       "stakeA": 112,
@@ -27805,7 +27805,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T13:53:40.630Z",
+      "updatedAt": "2026-10-07T13:54:00.036Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1516149,
@@ -27813,9 +27813,9 @@
         "home": "Neftchi",
         "away": "Xorazm",
         "competition": "Super League",
-        "lineId": "1",
+        "lineId": null,
         "mercado": "1X2",
-        "linha": "Neftchi vence",
+        "linha": "Neftchi vence primeiro tempo",
         "tier": "sólida",
         "p_model": 0.664,
         "p_blend": 0.808,
@@ -27826,7 +27826,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuy64js5u9yf",
-        "enviadaEm": "2026-10-07T13:53:40.133Z"
+        "enviadaEm": "2026-10-07T13:53:40.133Z",
+        "editadaEm": "2026-10-07T13:54:00.036Z"
       }
     }
   ],
@@ -27994,5 +27995,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T13:53:40.630Z"
+  "updatedAt": "2026-10-07T13:54:00.036Z"
 }
