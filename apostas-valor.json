@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.4,
+      "value": 222.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T17:26:46.644Z"
+      "updatedAt": "2026-10-07T17:31:21.766Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 266.91,
+      "value": 246.91,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T17:30:19.931Z"
+      "updatedAt": "2026-10-07T17:31:21.765Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28060,6 +28060,54 @@
         "inboxId": "anmuycyh5ct7m1",
         "enviadaEm": "2026-10-07T17:04:54.096Z"
       }
+    },
+    {
+      "id": "muydwi79tijpe",
+      "kind": "valor",
+      "event": "Standard Liège II x Albert Quévy-Mons — Handicap asiático: Albert Quévy-Mons −1",
+      "houseA": "Sportmarket",
+      "oddA": 2.01,
+      "stakeA": 111.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.17,
+      "prob": 0.461,
+      "winner": null,
+      "date": "2026-10-07T15:00",
+      "modelo": "analise",
+      "total": 111.4,
+      "lucroA": 112.51399999999998,
+      "lucroRed": -111.4,
+      "lucro": 112.51399999999998,
+      "roi": 100.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T17:31:21.765Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1579824,
+        "kickoff": "2026-10-07T18:00:00.000Z",
+        "home": "Standard Liège II",
+        "away": "Albert Quévy-Mons",
+        "competition": "First Amateur Division",
+        "lineId": "ahA-1",
+        "mercado": "Handicap asiático",
+        "linha": "Albert Quévy-Mons −1",
+        "tier": "especulativa",
+        "p_model": 0.367,
+        "p_blend": 0.461,
+        "p_pinnacle": 0.472,
+        "fair_odd": 2.17,
+        "odd_min": 2.28,
+        "pinnacle_odd": 2.01,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuydwhpvb54r",
+        "enviadaEm": "2026-10-07T17:31:21.139Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28226,5 +28274,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T17:30:19.931Z"
+  "updatedAt": "2026-10-07T17:31:21.766Z"
 }
