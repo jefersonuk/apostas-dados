@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 232.75,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T13:49:15.488Z"
+      "updatedAt": "2026-10-07T13:49:29.224Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27737,7 +27737,7 @@
     {
       "id": "muy5yvkw6dye2",
       "kind": "valor",
-      "event": "Asyut Petrol x Al Ahly — Handicap asiático: Al Ahly 0",
+      "event": "Asyut Petrol x Al Ahly — Handicap asiático: Al Ahly -1",
       "houseA": "Sportmarket",
       "oddA": 1.89,
       "stakeA": 112,
@@ -27757,7 +27757,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T13:49:15.488Z",
+      "updatedAt": "2026-10-07T13:49:29.224Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640288,
@@ -27765,9 +27765,9 @@
         "home": "Asyut Petrol",
         "away": "Al Ahly",
         "competition": "League Cup",
-        "lineId": "ahA0",
+        "lineId": "ahA-1",
         "mercado": "Handicap asiático",
-        "linha": "Al Ahly 0",
+        "linha": "Al Ahly -1",
         "tier": "especulativa",
         "p_model": 0.721,
         "p_blend": 0.795,
@@ -27778,7 +27778,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuy5yv4kweso",
-        "enviadaEm": "2026-10-07T13:49:14.900Z"
+        "enviadaEm": "2026-10-07T13:49:14.900Z",
+        "editadaEm": "2026-10-07T13:49:29.224Z"
       }
     }
   ],
@@ -27946,5 +27947,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T13:49:15.488Z"
+  "updatedAt": "2026-10-07T13:49:29.224Z"
 }
