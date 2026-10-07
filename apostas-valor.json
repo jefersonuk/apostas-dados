@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 223.4,
+      "value": 111.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T17:04:57.602Z"
+      "updatedAt": "2026-10-07T17:26:46.644Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -27866,7 +27866,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.8,
       "prob": 0.555,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T12:00",
       "modelo": "analise",
       "total": 112,
@@ -27875,9 +27875,10 @@
       "lucro": 99.67999999999999,
       "roi": 88.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T17:07:12.172Z",
+      "updatedAt": "2026-10-07T17:26:46.644Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1517361,
@@ -27901,10 +27902,12 @@
         "inboxId": "anmuy86kqa1ntl",
         "enviadaEm": "2026-10-07T14:51:13.906Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-07T17:07:12.172Z"
-        }
+          "status": "encerrado",
+          "detail": "York United 1–2 Supra du Quebec · saldo de gols do York United: -1 (linha -0.5)",
+          "at": "2026-10-07T17:26:46.644Z"
+        },
+        "clv": 0.040924447475204184,
+        "closingFair": 1.8156937370279427
       }
     },
     {
@@ -28223,5 +28226,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T17:07:12.173Z"
+  "updatedAt": "2026-10-07T17:26:46.644Z"
 }
