@@ -6851,7 +6851,8 @@
     const l=anAoVivo.linha.get(o.id);
     let lin='';
     if(l){
-      const conta=esc(l.what)+': '+String(l.value).replace('.',',')+' (linha '+String(l.threshold).replace('.',',')+')';
+      // combo (app de análise): a perna de gols na conta e, ao lado, como está a perna de resultado
+      const conta=esc(l.what)+': '+String(l.value).replace('.',',')+' (linha '+String(l.threshold).replace('.',',')+')'+(l.leg?' · '+esc(l.leg):'');
       // verde = ganha, vermelho = perde, cinza = devolve, âmbar = falta escanteio/gol; tracejado = como está agora, ainda pode mudar
       const lado=w=>w==='A'||w==='HW'?'ok':w==='RED'||w==='HL'?'no':'void';
       lin=l.locked
