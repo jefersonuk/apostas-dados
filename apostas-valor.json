@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 328.8,
+      "value": 384.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:33:23.861Z"
+      "updatedAt": "2026-10-07T21:34:26.200Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 161,
+      "value": 151,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:33:23.861Z"
+      "updatedAt": "2026-10-07T21:34:26.200Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28523,6 +28523,53 @@
         "inboxId": "anmuymjp7uwmt6",
         "enviadaEm": "2026-10-07T21:33:20.874Z"
       }
+    },
+    {
+      "id": "muyml3mgo7b7f",
+      "kind": "valor",
+      "event": "Forge x Pacific FC — Handicap asiático: Pacific FC +2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.51,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.51,
+      "prob": 0.664,
+      "winner": null,
+      "date": "2026-10-07T20:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 28.560000000000002,
+      "lucroRed": -56,
+      "lucro": 28.560000000000002,
+      "roi": 51,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:34:26.200Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1517309,
+        "kickoff": "2026-10-07T23:00:00.000Z",
+        "home": "Forge",
+        "away": "Pacific FC",
+        "competition": "Canadian Premier League",
+        "lineId": "ahA2.5",
+        "mercado": "Handicap asiático",
+        "linha": "Pacific FC +2,5",
+        "tier": "sólida",
+        "p_model": 0.798,
+        "p_blend": 0.664,
+        "p_pinnacle": 0.647,
+        "fair_odd": 1.51,
+        "odd_min": 1.58,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuyml0wk3vg8",
+        "enviadaEm": "2026-10-07T21:34:22.676Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28689,5 +28736,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:33:23.861Z"
+  "updatedAt": "2026-10-07T21:34:26.200Z"
 }
