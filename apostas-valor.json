@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 552.8,
+      "value": 608.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:39:38.379Z"
+      "updatedAt": "2026-10-07T21:42:48.336Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 121,
+      "value": 111,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:39:38.379Z"
+      "updatedAt": "2026-10-07T21:42:48.336Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28711,6 +28711,53 @@
         "inboxId": "anmuymrs4yerlg",
         "enviadaEm": "2026-10-07T21:39:37.906Z"
       }
+    },
+    {
+      "id": "muymvv2om4brr",
+      "kind": "valor",
+      "event": "Vila Nova x Cuiaba — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.52,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.54,
+      "prob": 0.651,
+      "winner": null,
+      "date": "2026-10-07T20:30",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 29.12,
+      "lucroRed": -56,
+      "lucro": 29.12,
+      "roi": 52,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:42:48.336Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520919,
+        "kickoff": "2026-10-07T23:30:00.000Z",
+        "home": "Vila Nova",
+        "away": "Cuiaba",
+        "competition": "Serie B",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "especulativa",
+        "p_model": 0.625,
+        "p_blend": 0.651,
+        "p_pinnacle": 0.654,
+        "fair_odd": 1.54,
+        "odd_min": 1.61,
+        "pinnacle_odd": 1.49,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuymvuhj2gvp",
+        "enviadaEm": "2026-10-07T21:42:47.575Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28877,5 +28924,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:39:38.379Z"
+  "updatedAt": "2026-10-07T21:42:48.336Z"
 }
