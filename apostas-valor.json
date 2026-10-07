@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168,
+      "value": 223.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T16:01:20.660Z"
+      "updatedAt": "2026-10-07T16:51:12.601Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 257.15,
+      "value": 247.15,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T16:01:20.660Z"
+      "updatedAt": "2026-10-07T16:51:12.600Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27948,6 +27948,54 @@
         "inboxId": "anmuy8hs83hbta",
         "enviadaEm": "2026-10-07T14:59:56.835Z"
       }
+    },
+    {
+      "id": "muycgv9z4mfpo",
+      "kind": "valor",
+      "event": "Zamalek SC x Masr — Handicap asiático: Zamalek SC +1",
+      "houseA": "Sportmarket",
+      "oddA": 3.11,
+      "stakeA": 55.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.37,
+      "prob": 0.421,
+      "winner": null,
+      "date": "2026-10-07T14:00",
+      "modelo": "analise",
+      "total": 55.7,
+      "lucroA": 117.527,
+      "lucroRed": -55.7,
+      "lucro": 117.527,
+      "roi": 211,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T16:51:12.600Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640291,
+        "kickoff": "2026-10-07T17:00:00.000Z",
+        "home": "Zamalek SC",
+        "away": "Masr",
+        "competition": "League Cup",
+        "lineId": "ahH1",
+        "mercado": "Handicap asiático",
+        "linha": "Zamalek SC +1",
+        "tier": "especulativa",
+        "p_model": 0.893,
+        "p_blend": 0.421,
+        "p_pinnacle": 0.357,
+        "fair_odd": 2.37,
+        "odd_min": 2.49,
+        "pinnacle_odd": 2.38,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuycguwo2vtw",
+        "enviadaEm": "2026-10-07T16:51:12.120Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28114,5 +28162,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T16:03:30.486Z"
+  "updatedAt": "2026-10-07T16:51:12.601Z"
 }
