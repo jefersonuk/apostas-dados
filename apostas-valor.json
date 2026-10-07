@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 224,
+      "value": 280,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T14:52:11.383Z"
+      "updatedAt": "2026-10-07T15:00:01.463Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 229.15,
+      "value": 219.15,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T14:52:11.383Z"
+      "updatedAt": "2026-10-07T15:00:01.463Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27879,6 +27879,53 @@
         "inboxId": "anmuy86kqa1ntl",
         "enviadaEm": "2026-10-07T14:51:13.906Z"
       }
+    },
+    {
+      "id": "muy8hvsnodx4s",
+      "kind": "valor",
+      "event": "Shooting Stars x Kano Pillars — Handicap asiático: Kano Pillars +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.48,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.55,
+      "prob": 0.644,
+      "winner": null,
+      "date": "2026-10-07T12:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 26.88,
+      "lucroRed": -56,
+      "lucro": 26.88,
+      "roi": 48,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T15:00:01.463Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1628500,
+        "kickoff": "2026-10-07T15:00:00.000Z",
+        "home": "Shooting Stars",
+        "away": "Kano Pillars",
+        "competition": "NPFL",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Kano Pillars +1,5",
+        "tier": "especulativa",
+        "p_model": 0.632,
+        "p_blend": 0.644,
+        "p_pinnacle": 0.645,
+        "fair_odd": 1.55,
+        "odd_min": 1.63,
+        "pinnacle_odd": 1.46,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuy8hs83hbta",
+        "enviadaEm": "2026-10-07T14:59:56.835Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28045,5 +28092,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T14:52:11.383Z"
+  "updatedAt": "2026-10-07T15:00:01.463Z"
 }
