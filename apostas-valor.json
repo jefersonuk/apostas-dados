@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 222.8,
+      "value": 540.29,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T17:54:36.240Z"
+      "updatedAt": "2026-10-07T17:54:55.025Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 255.31,
+      "value": 198.31,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T17:54:36.240Z"
+      "updatedAt": "2026-10-07T17:54:55.025Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28164,6 +28164,53 @@
         "inboxId": "anmuye394q3lgr",
         "enviadaEm": "2026-10-07T17:36:36.602Z"
       }
+    },
+    {
+      "id": "muyeqsohic45q",
+      "kind": "valor",
+      "event": "Deportivo Riestra Res. x Independiente Riva. Res. — Handicap asiático: Independiente Riva. Res. +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.06,
+      "stakeA": 317.49,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 0.626,
+      "winner": null,
+      "date": "2026-10-07T15:00",
+      "modelo": "analise",
+      "total": 317.49,
+      "lucroA": 336.5394,
+      "lucroRed": -317.49,
+      "lucro": 336.5394,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T17:54:55.025Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1612079,
+        "kickoff": "2026-10-07T18:00:00.000Z",
+        "home": "Deportivo Riestra Res.",
+        "away": "Independiente Riva. Res.",
+        "competition": "Reserve League",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Independiente Riva. Res. +1,5",
+        "tier": "especulativa",
+        "p_model": 0.629,
+        "p_blend": 0.626,
+        "p_pinnacle": 0.625,
+        "fair_odd": 1.6,
+        "odd_min": 1.68,
+        "pinnacle_odd": 1.52,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuyeqs9vt3cz",
+        "enviadaEm": "2026-10-07T17:54:54.499Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28330,5 +28377,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T17:54:36.241Z"
+  "updatedAt": "2026-10-07T17:54:55.025Z"
 }
