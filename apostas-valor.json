@@ -28212,7 +28212,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T19:07:20.985Z",
+      "updatedAt": "2026-10-07T20:19:03.506Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1612079,
@@ -28234,7 +28234,12 @@
         "fragile": true,
         "inboxId": "anmuyeqs9vt3cz",
         "enviadaEm": "2026-10-07T17:54:54.499Z",
-        "editadaEm": "2026-10-07T19:07:20.985Z"
+        "editadaEm": "2026-10-07T19:07:20.985Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-07T20:19:03.506Z"
+        }
       }
     }
   ],
@@ -28402,5 +28407,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T20:18:23.474Z"
+  "updatedAt": "2026-10-07T20:19:03.506Z"
 }
