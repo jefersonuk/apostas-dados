@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 496.8,
+      "value": 552.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:38:55.477Z"
+      "updatedAt": "2026-10-07T21:39:38.379Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 131,
+      "value": 121,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:38:55.476Z"
+      "updatedAt": "2026-10-07T21:39:38.379Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28664,6 +28664,53 @@
         "inboxId": "anmuymquuxful1",
         "enviadaEm": "2026-10-07T21:38:54.777Z"
       }
+    },
+    {
+      "id": "muymrsi33j850",
+      "kind": "valor",
+      "event": "Plaza Colonia x Juventud — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.48,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.5,
+      "prob": 0.665,
+      "winner": null,
+      "date": "2026-10-07T20:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 26.88,
+      "lucroRed": -56,
+      "lucro": 26.88,
+      "roi": 48,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:39:38.379Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1643393,
+        "kickoff": "2026-10-07T23:00:00.000Z",
+        "home": "Plaza Colonia",
+        "away": "Juventud",
+        "competition": "Copa Uruguay",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.657,
+        "p_blend": 0.665,
+        "p_pinnacle": 0.666,
+        "fair_odd": 1.5,
+        "odd_min": 1.58,
+        "pinnacle_odd": 1.43,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuymrs4yerlg",
+        "enviadaEm": "2026-10-07T21:39:37.906Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28830,5 +28877,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:38:55.477Z"
+  "updatedAt": "2026-10-07T21:39:38.379Z"
 }
