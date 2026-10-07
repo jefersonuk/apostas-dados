@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.6,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T20:00:51.940Z"
+      "updatedAt": "2026-10-07T20:22:09.361Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -28198,7 +28198,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.6,
       "prob": 0.626,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T15:00",
       "modelo": "analise",
       "total": 111.6,
@@ -28207,9 +28207,10 @@
       "lucro": 118.296,
       "roi": 106,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T20:19:03.506Z",
+      "updatedAt": "2026-10-07T20:22:09.361Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1612079,
@@ -28233,10 +28234,12 @@
         "enviadaEm": "2026-10-07T17:54:54.499Z",
         "editadaEm": "2026-10-07T19:07:20.985Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-07T20:19:03.506Z"
-        }
+          "status": "encerrado",
+          "detail": "Deportivo Riestra Res. 3–1 Independiente Riva. Res. · saldo de gols do Deportivo Riestra Res.: 2 (linha 1.5)",
+          "at": "2026-10-07T20:22:09.361Z"
+        },
+        "clv": 0.0038092900876491864,
+        "closingFair": 2.052182641007564
       }
     }
   ],
@@ -28404,5 +28407,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T20:20:41.259Z"
+  "updatedAt": "2026-10-07T20:22:09.361Z"
 }
