@@ -4697,7 +4697,7 @@
       "name": "Sportmarket",
       "value": 212.75,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T14:42:01.804Z"
+      "updatedAt": "2026-10-07T14:42:44.017Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27689,7 +27689,7 @@
     {
       "id": "muy55k0ukg7ij",
       "kind": "valor",
-      "event": "Pyramids FC x Olympic El Qanah — 1x2: 1 vence primeiro tempo",
+      "event": "Pyramids FC x Olympic El Qanah — 1x2: Pyramids FC vence primeiro tempo",
       "houseA": "Sportmarket",
       "oddA": 1.82,
       "stakeA": 112,
@@ -27709,7 +27709,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T14:42:01.804Z",
+      "updatedAt": "2026-10-07T14:42:44.017Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640289,
@@ -27719,7 +27719,7 @@
         "competition": "League Cup",
         "lineId": null,
         "mercado": "1x2",
-        "linha": "1 vence primeiro tempo",
+        "linha": "Pyramids FC vence primeiro tempo",
         "tier": "especulativa",
         "p_model": 0.602,
         "p_blend": 0.654,
@@ -27731,7 +27731,7 @@
         "fragile": true,
         "inboxId": "anmuy55jml4hiv",
         "enviadaEm": "2026-10-07T13:26:26.973Z",
-        "editadaEm": "2026-10-07T14:42:01.804Z"
+        "editadaEm": "2026-10-07T14:42:44.017Z"
       }
     },
     {
@@ -27995,5 +27995,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T14:42:01.804Z"
+  "updatedAt": "2026-10-07T14:42:44.017Z"
 }
