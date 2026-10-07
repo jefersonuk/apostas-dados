@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 223.7,
+      "value": 279.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T16:51:12.601Z"
+      "updatedAt": "2026-10-07T17:04:54.731Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 247.15,
+      "value": 237.15,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T16:51:12.600Z"
+      "updatedAt": "2026-10-07T17:04:54.730Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27996,6 +27996,54 @@
         "inboxId": "anmuycguwo2vtw",
         "enviadaEm": "2026-10-07T16:51:12.120Z"
       }
+    },
+    {
+      "id": "muycyhmyotmre",
+      "kind": "valor",
+      "event": "Gnistan x Inter Turku — Handicap asiático: Gnistan +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.84,
+      "stakeA": 55.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.31,
+      "prob": 0.434,
+      "winner": null,
+      "date": "2026-10-07T13:00",
+      "modelo": "analise",
+      "total": 55.7,
+      "lucroA": 46.788000000000004,
+      "lucroRed": -55.7,
+      "lucro": 46.788000000000004,
+      "roi": 84.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T17:04:54.730Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1638101,
+        "kickoff": "2026-10-07T16:00:00.000Z",
+        "home": "Gnistan",
+        "away": "Inter Turku",
+        "competition": "Veikkausliiga",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Gnistan +0,5",
+        "tier": "especulativa",
+        "p_model": 0.537,
+        "p_blend": 0.434,
+        "p_pinnacle": 0.422,
+        "fair_odd": 2.31,
+        "odd_min": 2.42,
+        "pinnacle_odd": 2.28,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuycyh5ct7m1",
+        "enviadaEm": "2026-10-07T17:04:54.096Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28162,5 +28210,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T16:51:12.601Z"
+  "updatedAt": "2026-10-07T17:04:54.731Z"
 }
