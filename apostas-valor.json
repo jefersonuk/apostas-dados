@@ -4638,9 +4638,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 111.39,
+      "value": 101.43,
       "currency": "USD",
-      "updatedAt": "2026-10-06T10:43:55.093Z"
+      "updatedAt": "2026-10-07T21:33:23.861Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 222.8,
+      "value": 328.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:23:44.974Z"
+      "updatedAt": "2026-10-07T21:33:23.861Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 171,
+      "value": 161,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:23:44.974Z"
+      "updatedAt": "2026-10-07T21:33:23.861Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28429,6 +28429,100 @@
         "inboxId": "anmuym7ah27j4s",
         "enviadaEm": "2026-10-07T21:23:41.894Z"
       }
+    },
+    {
+      "id": "muymjritr517y",
+      "kind": "valor",
+      "event": "Remo x Gremio — Handicap asiático: Gremio +1,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.67,
+      "stakeA": 50,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.31,
+      "prob": 0.764,
+      "winner": null,
+      "date": "2026-10-07T19:30",
+      "modelo": "analise",
+      "total": 50,
+      "lucroA": 33.5,
+      "lucroRed": -50,
+      "lucro": 33.5,
+      "roi": 67,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:33:23.861Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492397,
+        "kickoff": "2026-10-07T22:30:00.000Z",
+        "home": "Remo",
+        "away": "Gremio",
+        "competition": "Serie A",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Gremio +1,5",
+        "tier": "sólida",
+        "p_model": 0.788,
+        "p_blend": 0.764,
+        "p_pinnacle": 0.762,
+        "fair_odd": 1.31,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.29,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuymhc5v52k7",
+        "enviadaEm": "2026-10-07T21:31:30.643Z"
+      }
+    },
+    {
+      "id": "muymjritiw0r5",
+      "kind": "valor",
+      "event": "Fundación Lara Deportiva x Aragua FC — Handicap asiático: Fundación Lara Deportiva +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.55,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.54,
+      "prob": 0.65,
+      "winner": null,
+      "date": "2026-10-07T19:30",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 30.800000000000004,
+      "lucroRed": -56,
+      "lucro": 30.800000000000004,
+      "roi": 55.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:33:23.861Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1560836,
+        "kickoff": "2026-10-07T22:30:00.000Z",
+        "home": "Fundación Lara Deportiva",
+        "away": "Aragua FC",
+        "competition": "Copa Venezuela",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Fundación Lara Deportiva +0,5",
+        "tier": "especulativa",
+        "p_model": 0.766,
+        "p_blend": 0.65,
+        "p_pinnacle": 0.635,
+        "fair_odd": 1.54,
+        "odd_min": 1.62,
+        "pinnacle_odd": 1.48,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuymjp7uwmt6",
+        "enviadaEm": "2026-10-07T21:33:20.874Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28595,5 +28689,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:31:33.999Z"
+  "updatedAt": "2026-10-07T21:33:23.861Z"
 }
