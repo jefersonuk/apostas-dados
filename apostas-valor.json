@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 384.8,
+      "value": 440.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:34:26.200Z"
+      "updatedAt": "2026-10-07T21:37:09.057Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 151,
+      "value": 141,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:34:26.200Z"
+      "updatedAt": "2026-10-07T21:37:09.057Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28570,6 +28570,53 @@
         "inboxId": "anmuyml0wk3vg8",
         "enviadaEm": "2026-10-07T21:34:22.676Z"
       }
+    },
+    {
+      "id": "muymola94wzqr",
+      "kind": "valor",
+      "event": "Vitoria x Chapecoense-sc — Handicap asiático: Chapecoense-sc +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.59,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.56,
+      "prob": 0.642,
+      "winner": null,
+      "date": "2026-10-07T20:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 33.040000000000006,
+      "lucroRed": -56,
+      "lucro": 33.040000000000006,
+      "roi": 59.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:37:09.057Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492399,
+        "kickoff": "2026-10-07T23:00:00.000Z",
+        "home": "Vitoria",
+        "away": "Chapecoense-sc",
+        "competition": "Serie A",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Chapecoense-sc +1,5",
+        "tier": "sólida",
+        "p_model": 0.741,
+        "p_blend": 0.642,
+        "p_pinnacle": 0.63,
+        "fair_odd": 1.56,
+        "odd_min": 1.64,
+        "pinnacle_odd": 1.55,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuymokvivuao",
+        "enviadaEm": "2026-10-07T21:37:08.526Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28736,5 +28783,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:34:26.200Z"
+  "updatedAt": "2026-10-07T21:37:09.057Z"
 }
