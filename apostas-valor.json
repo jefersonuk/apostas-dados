@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 199.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-06T23:05:27.589Z"
+      "updatedAt": "2026-10-07T10:53:46.437Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4845,9 +4845,9 @@
     {
       "id": "mulu8ra1y8ze7",
       "name": "Frumzi",
-      "value": 41.54,
+      "value": 1.54,
       "currency": "USD",
-      "updatedAt": "2026-10-05T22:13:55.841Z"
+      "updatedAt": "2026-10-07T10:53:46.436Z"
     }
   ],
   "aportes": [
@@ -27522,6 +27522,31 @@
         "clv": 0.044404277529769276,
         "closingFair": 1.551123482404374
       }
+    },
+    {
+      "id": "muxzp7b8p3new",
+      "kind": "valor",
+      "event": "Efeler 09 – Ayvalikgucu Belediyespor (2 / DNB)",
+      "houseA": "Frumzi",
+      "oddA": 1.85,
+      "stakeA": 199.20000000000002,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Draw No Bet",
+      "oddMkt": 1.4636075949367089,
+      "prob": 68.32432432432432,
+      "winner": null,
+      "date": "2026-10-07T08:30",
+      "modelo": "fora",
+      "total": 199.20000000000002,
+      "lucroA": 169.32000000000002,
+      "lucroRed": -199.20000000000002,
+      "lucro": 169.32000000000002,
+      "roi": 85.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T10:53:46.436Z"
     }
   ],
   "invertidos": [],
@@ -27688,5 +27713,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T10:51:22.367Z"
+  "updatedAt": "2026-10-07T10:53:46.437Z"
 }
