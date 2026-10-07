@@ -41,6 +41,8 @@
   .an-liq{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
   .an-tag{font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid var(--border);margin-left:6px;}
   .an-liq .btn.primary{pointer-events:none;}
+  .an-live{font-size:13px;margin-top:4px;font-variant-numeric:tabular-nums;}
+  .an-live .ok{color:var(--green);font-weight:600;} .an-live .no{color:var(--red);font-weight:600;} .an-live .wait{color:var(--amber);}
   .an-edit{display:grid;gap:8px;margin-top:8px;padding:10px;border:1px solid var(--border);border-radius:8px;}
   .an-edit .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
   .an-edit label{display:block;font-size:12px;color:var(--muted,#8b98a5);margin-bottom:3px;}
@@ -1340,13 +1342,18 @@
   <div class="tab-panel" id="tab-analise">
     <div class="card">
       <div class="card-title">Apostas da Análise</div>
-      <div class="hint" style="margin:0 0 10px;">Entradas feitas pelo botão <b>➕ Entrar</b> do <a href="../analise-futebol/" target="analise">app de análise</a>. Chegam sozinhas ao abrir esta página e entram como apostas de valor normais (saldo da casa debitado, aparecem também em 📈 Valor), marcadas fora do Modelo F. <b>Conferir resultados</b> liquida pelo placar e pelas estatísticas da API-Football e mede o CLV contra a última odd da Pinnacle.</div>
+      <div class="hint" style="margin:0 0 10px;">Entradas feitas pelo botão <b>➕ Entrar</b> ou pela <b>✍️ Entrada manual</b> do <a href="../analise-futebol/" target="analise">app de análise</a>. Chegam sozinhas ao abrir esta página e entram como apostas de valor normais (saldo da casa debitado, aparecem também em 📈 Valor), marcadas fora do Modelo F. Com o jogo em andamento, o placar, o minuto e os escanteios aparecem em cada entrada (atualiza a cada minuto com esta página aberta) e, no fim do jogo, a aposta é liquidada sozinha pelo placar e pelas estatísticas da API-Football, com o CLV contra a última odd da Pinnacle. <b>Conferir resultados</b> faz o mesmo na hora.</div>
       <div id="anWait"></div>
       <div class="summary-grid" id="anSummary"></div>
       <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
         <button type="button" class="btn primary" id="anCheck">🔄 Conferir resultados</button>
         <span class="hint" id="anCheckMsg" style="margin:0;"></span>
       </div>
+      <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px;">
+        <button type="button" class="btn small" id="anLiveBtn">🔴 Atualizar ao vivo</button>
+        <span class="hint" id="anLiveMsg" style="margin:0;"></span>
+      </div>
+      <div class="hint" id="anSplit" style="margin:8px 0 0;"></div>
     </div>
     <div class="card">
       <div class="card-title">Por mercado</div>
@@ -3281,6 +3288,7 @@
   /* ---------- tabs ---------- */
   function abrirAba(nome){
     if(!$('tab-'+nome)) nome='vbet';
+    if(nome==='analise'&&typeof atualizarAoVivo==='function') setTimeout(()=>atualizarAoVivo(),0);
     document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===nome));
     document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p.id==='tab-'+nome));
     prefSet('aba',nome);
@@ -6257,6 +6265,10 @@
     const nuvem=anNuvem.cfg===false&&syncPronto?'<div class="hint" style="margin:0 0 8px;">Para receber aqui as apostas enviadas de outros aparelhos, conecte a ☁️ nuvem no app de análise neste aparelho (⚙️ Chave).</div>'
       :anNuvem.erro?'<div class="hint" style="margin:0 0 8px;">Caixa da nuvem com erro: '+esc(anNuvem.erro)+'</div>':'';
     $('anWait').innerHTML=nuvem+(espera?'<div class="card-title" style="margin-top:4px;">Aguardando</div>'+espera:'');
+    // minhas análises (✍️ entrada manual) x as do app, para comparar
+    const parte=f=>{ const d=done.filter(f), l=d.reduce((s,o)=>s+sbRealProfit(o),0), g=d.reduce((s,o)=>s+legStake(o,'A'),0); return d.length+' liquidadas, lucro '+fmtSign(l)+(g?' (yield '+anPct(l/g)+')':''); };
+    $('anSplit').textContent=all.some(o=>(o.analise||{}).manual)?'✍️ Minhas análises: '+parte(o=>(o.analise||{}).manual)+' · App: '+parte(o=>!(o.analise||{}).manual)+'.':'';
+    anLiveStatus();
     const prontas=open.filter(anVence).length;
     $('anCheckMsg').textContent=open.length?(open.length+' em aberto'+(prontas?' · '+prontas+' já podem ser conferidas':'')):'nenhuma em aberto';
     // por mercado: o que interessa é saber onde a margem está aparecendo
@@ -6276,12 +6288,12 @@
         '<button type="button" class="btn small danger" data-andel="'+o.id+'">excluir</button></div>'+
         (anEditando===o.id?anFormEdicao(o):'');
       return '<div class="an-row"><div class="an-head"><span><b>'+esc(a.mercado||o.market||'')+': '+esc(a.linha||'')+'</b>'+
-        (a.tier?'<span class="an-tag">'+esc(a.tier)+'</span>':'')+'</span>'+st+'</div>'+
+        (a.manual?'<span class="an-tag">✍️ manual</span>':'')+(a.tier&&a.tier!=='manual'?'<span class="an-tag">'+esc(a.tier)+'</span>':'')+'</span>'+st+'</div>'+
         '<div>'+esc((a.home&&a.away)?a.home+' x '+a.away:o.event)+' <span class="an-meta">· '+esc(a.competition||'')+' · '+String(o.date).slice(8,10)+'/'+String(o.date).slice(5,7)+' '+String(o.date).slice(11,16)+'</span></div>'+
         '<div class="an-meta">'+esc(legHouse(o,'A'))+' @'+odd.toFixed(2)+' · '+(legCur(o,'A')!=='BRL'?vbStakeNat(o)+' ('+fmt(legStake(o,'A'))+')':fmt(legStake(o,'A')))+
           (a.p_blend?' · acerto previsto '+anPct(a.p_blend):'')+(a.fair_odd?' · justa '+a.fair_odd.toFixed(2):'')+(a.odd_min?' · mínima '+a.odd_min.toFixed(2):'')+
           (typeof a.clv==='number'?' · CLV '+(a.clv>=0?'+':'')+anPct(a.clv)+' (fech. justa '+a.closingFair.toFixed(2)+')':'')+'</div>'+
-        (ck.detail?'<div class="an-meta">'+esc(ck.detail)+'</div>':'')+liq+'</div>';
+        anLiveHtml(o)+(ck.detail?'<div class="an-meta">'+esc(ck.detail)+'</div>':'')+liq+'</div>';
     }).join(''):'<div class="hint" style="margin:0;">Nenhuma aposta enviada pela Análise ainda.</div>';
   }
   $('anWait').addEventListener('click',e=>{
@@ -6364,29 +6376,102 @@
       }
     }
   });
-  // Confere pelo módulo do app de análise (mesmo endereço): placar, estatísticas, 1º tempo e CLV.
+  // Liquida pelo módulo do app de análise (mesmo endereço): placar, estatísticas, 1º tempo e CLV.
+  async function liquidarAnalise(lista,mod){
+    let liq=0, erro='';
+    for(const o of lista){
+      try{
+        const r=await mod.checkBet(o.analise,legOdd(o,'A'));
+        o.analise.check={status:r.status,detail:r.detail,at:new Date().toISOString()};
+        if(typeof r.clv==='number'){ o.analise.clv=r.clv; o.analise.closingFair=r.closingFair; }
+        if(!o.winner&&r.winner&&(r.status==='encerrado'||r.status==='cancelado')){ o.winner=r.winner; aplicarResultado(o,o.winner); liq++; }
+        touch(o);
+      }catch(e){ erro=e.message; o.analise.check={status:'erro',detail:e.message,at:new Date().toISOString()}; touch(o); }
+    }
+    saveState(); renderAll();
+    return {liq,erro};
+  }
   async function conferirAnalise(){
     const pend=analiseBets().filter(o=>o.analise&&o.analise.fixtureId&&o.analise.lineId&&(!o.winner||typeof o.analise.clv!=='number'&&o.analise.priced_by==='pinnacle')&&anVence(o));
     if(!pend.length){ $('anCheckMsg').textContent='Nada para conferir agora (só depois do fim do jogo).'; return; }
     $('anCheck').disabled=true; $('anCheckMsg').textContent='Conferindo '+pend.length+'…';
-    let liq=0, erro='';
-    try{
-      const mod=await import('/analise-futebol/src/settlement.js');
-      for(const o of pend){
-        try{
-          const r=await mod.checkBet(o.analise,legOdd(o,'A'));
-          o.analise.check={status:r.status,detail:r.detail,at:new Date().toISOString()};
-          if(typeof r.clv==='number'){ o.analise.clv=r.clv; o.analise.closingFair=r.closingFair; }
-          if(!o.winner&&r.winner&&(r.status==='encerrado'||r.status==='cancelado')){ o.winner=r.winner; aplicarResultado(o,o.winner); liq++; }
-          touch(o);
-        }catch(e){ erro=e.message; o.analise.check={status:'erro',detail:e.message,at:new Date().toISOString()}; touch(o); }
-      }
-    }catch(e){ erro='não consegui carregar o módulo de conferência: '+e.message; }
-    saveState(); renderAll();
+    let r={liq:0,erro:''};
+    try{ r=await liquidarAnalise(pend,await import('/analise-futebol/src/settlement.js')); }
+    catch(e){ r.erro='não consegui carregar o módulo de conferência: '+e.message; }
     $('anCheck').disabled=false;
-    $('anCheckMsg').textContent=(liq?liq+' liquidada'+(liq>1?'s':'')+'. ':'Nenhuma liquidada. ')+(erro?'Erro: '+erro:'');
+    $('anCheckMsg').textContent=(r.liq?r.liq+' liquidada'+(r.liq>1?'s':'')+'. ':'Nenhuma liquidada. ')+(r.erro?'Erro: '+r.erro:'');
   }
   $('anCheck').addEventListener('click',conferirAnalise);
+
+  /* ---------- ao vivo: placar, minuto e escanteios dos jogos das apostas em aberto ----------
+     Só as apostas com o jogo da API (fixtureId), de 10 min antes do início até 4 h depois. Uma requisição
+     traz até 20 jogos (/fixtures?ids=); a cada 60 s com a página aberta e visível, em qualquer aba. Jogo
+     encerrado ou cancelado: a aposta é liquidada sozinha pela conferência completa (placar, estatística,
+     1º tempo, CLV); sem a estatística ainda, tenta de novo em 10 min. O ao vivo fica só na memória deste
+     aparelho: para a nuvem vai só o resultado. */
+  var anAoVivo={info:new Map(),c1:new Map(),linha:new Map(),tentou:new Map(),em:0,erro:null,rodando:false};
+  function anNaJanela(o){ const a=o.analise||{}, k=Date.parse(a.kickoff||o.date); return !o.winner&&!!a.fixtureId&&isFinite(k)&&Date.now()>=k-10*60000&&Date.now()<=k+4*3600000; }
+  function anTemChave(){ try{ return !!localStorage.getItem('af:key'); }catch(e){ return false; } }
+  async function atualizarAoVivo(forcar){
+    const bets=analiseBets().filter(anNaJanela);
+    if(!bets.length){ if(forcar){ anAoVivo.erro=null; anAoVivo.em=Date.now(); renderAnalise(); } return; }
+    if(!anTemChave()){ anAoVivo.erro='sem a chave da API-Football neste navegador: salve em ⚙️ Chave no app de análise'; renderAnalise(); return; }
+    if(anAoVivo.rodando||(!forcar&&Date.now()-anAoVivo.em<55000)) return;
+    anAoVivo.rodando=true; anAoVivo.em=Date.now(); anLiveStatus();
+    let liquidadas=0;
+    try{
+      const mod=await import('/analise-futebol/src/settlement.js');
+      const ids=[...new Set(bets.map(o=>o.analise.fixtureId))];
+      const needC1=new Set(bets.filter(o=>/^c1/.test(o.analise.lineId||'')).map(o=>o.analise.fixtureId));
+      const info=await mod.liveFixtures(ids,{needC1,c1:anAoVivo.c1});
+      // o 1º tempo só é guardado quando está completo (intervalo em diante)
+      info.forEach((v,id)=>{ anAoVivo.info.set(id,v); if(v.c1&&v.status!=='1H') anAoVivo.c1.set(id,v.c1); });
+      bets.forEach(o=>{ const v=info.get(o.analise.fixtureId); anAoVivo.linha.set(o.id,v&&o.analise.lineId?mod.liveLine(o.analise.lineId,v):null); });
+      anAoVivo.erro=null;
+      const fim=bets.filter(o=>{ const v=info.get(o.analise.fixtureId), t=anAoVivo.tentou.get(o.id)||0;
+        return v&&(v.finished||v.cancelled)&&o.analise.lineId&&Date.now()-t>10*60000; });
+      if(fim.length){
+        fim.forEach(o=>anAoVivo.tentou.set(o.id,Date.now()));
+        liquidadas=(await liquidarAnalise(fim,mod)).liq;
+      }
+    }catch(e){ anAoVivo.erro=e.message; }
+    anAoVivo.rodando=false;
+    renderAnalise();
+    if(liquidadas) toast(liquidadas+' aposta'+(liquidadas>1?'s':'')+' da Análise liquidada'+(liquidadas>1?'s':'')+' pelo resultado do jogo ✓');
+  }
+  function anLiveStatus(){
+    if(!$('anLiveMsg')||!anAoVivo) return;   // anAoVivo: renderAll pode rodar antes deste trecho
+    const vivos=analiseBets().filter(o=>{ const v=anAoVivo.info.get((o.analise||{}).fixtureId); return !o.winner&&v&&v.live; }).length;
+    const janela=analiseBets().filter(anNaJanela).length;
+    const quando=anAoVivo.em?' · atualizado às '+new Date(anAoVivo.em).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'';
+    $('anLiveMsg').textContent=anAoVivo.rodando?'Buscando os jogos…':anAoVivo.erro?'Ao vivo: '+anAoVivo.erro
+      :janela?(vivos?vivos+' aposta'+(vivos>1?'s':'')+' com jogo em andamento':'Nenhum jogo em andamento')+quando:'Nenhuma aposta com jogo perto do horário.';
+  }
+  // Linha "ao vivo" de uma entrada: situação do jogo e como a linha está agora.
+  function anLiveHtml(o){
+    const a=o.analise||{};
+    if(o.winner||!anAoVivo) return '';
+    if(!a.fixtureId) return a.manual?'<div class="an-meta">Jogo fora da API: o resultado é marcado à mão.</div>':'';
+    if(a.fixtureId&&!a.lineId) return '<div class="an-meta">Linha não reconhecida pelo app: o resultado é marcado à mão.</div>';
+    const v=anAoVivo.info.get(a.fixtureId);
+    if(!v) return '';
+    if(v.status==='NS'||v.status==='TBD') return '<div class="an-live">⏳ ainda não começou</div>';
+    const min=v.finished?'🏁 encerrado':v.cancelled?'⛔ '+esc(v.long):v.status==='HT'?'⏸ intervalo':v.live?'🔴 '+(v.elapsed!=null?v.elapsed+(v.extra?'+'+v.extra:'')+"'":esc(v.long)):esc(v.long);
+    const esc1=v.corners?' · escanteios '+v.corners[0]+'–'+v.corners[1]+(v.c1&&v.status!=='1H'&&v.status!=='HT'?' (1T '+v.c1[0]+'–'+v.c1[1]+')':''):'';
+    const l=anAoVivo.linha.get(o.id);
+    let lin='';
+    if(l){
+      const conta=esc(l.what)+': '+String(l.value).replace('.',',')+' (linha '+String(l.threshold).replace('.',',')+')';
+      lin=l.locked
+        ?(l.now==='A'||l.now==='HW'?' · <span class="ok">✅ '+(l.now==='A'?'já bateu':'meia vitória garantida')+'</span>':l.now==='RED'||l.now==='HL'?' · <span class="no">❌ '+(l.now==='RED'?'já perdeu':'meia derrota garantida')+'</span>':' · <span class="wait">↩ devolve</span>')+' — '+conta
+        :l.need>0?' · <span class="wait">⏳ '+(l.need===1?'falta 1':'faltam '+l.need)+'</span> — '+conta   // over que ainda pode bater
+        :' · <span class="wait">no momento: '+(l.now==='A'?'ganha':l.now==='HW'?'meia vitória':l.now==='VOID'?'devolve':l.now==='HL'?'meia derrota':'perde')+'</span> — '+conta;
+    }
+    return '<div class="an-live">'+min+' · '+esc(v.home)+' '+v.goals[0]+'–'+v.goals[1]+' '+esc(v.away)+esc1+lin+'</div>';
+  }
+  $('anLiveBtn').addEventListener('click',()=>atualizarAoVivo(true));
+  setInterval(()=>{ if(!document.hidden) atualizarAoVivo(); },60000);
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) atualizarAoVivo(); });
 
   // init
   // corrige o placeholder antigo (5,00) para a cotação USDT de mercado
@@ -6423,6 +6508,7 @@
   layRender();
   if(!syncCfg) syncPronto=true;
   importarAnalise();
+  setTimeout(()=>atualizarAoVivo(),1500);
   if(location.hash==='#analise') abrirAba('analise');
   renderAll();
   renderAutosave();
