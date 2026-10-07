@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 278.7,
+      "value": 167.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T19:34:17.280Z"
+      "updatedAt": "2026-10-07T19:52:28.122Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -28089,7 +28089,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.17,
       "prob": 0.461,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T15:00",
       "modelo": "analise",
       "total": 111.4,
@@ -28098,9 +28098,10 @@
       "lucro": 112.51399999999998,
       "roi": 100.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T17:31:21.765Z",
+      "updatedAt": "2026-10-07T19:52:28.122Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1579824,
@@ -28122,7 +28123,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuydwhpvb54r",
-        "enviadaEm": "2026-10-07T17:31:21.139Z"
+        "enviadaEm": "2026-10-07T17:31:21.139Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Standard Liège II 3–2 Albert Quévy-Mons · saldo de gols do Standard Liège II: 1 (linha -1)",
+          "at": "2026-10-07T19:52:28.122Z"
+        },
+        "clv": -0.048392236629362206,
+        "closingFair": 2.1122147983329693
       }
     },
     {
@@ -28386,5 +28394,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T19:33:52.665Z"
+  "updatedAt": "2026-10-07T19:52:28.122Z"
 }
