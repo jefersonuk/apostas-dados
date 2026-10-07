@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 311.4,
+      "value": 535.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T10:57:41.018Z"
+      "updatedAt": "2026-10-07T11:13:21.539Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 230,
+      "value": 190,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T10:57:41.018Z"
+      "updatedAt": "2026-10-07T11:13:21.535Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27594,6 +27594,79 @@
         "inboxId": "anmuxzu5uzx7v1",
         "enviadaEm": "2026-10-07T10:57:37.835Z"
       }
+    },
+    {
+      "id": "muy0csmey4nec",
+      "kind": "valor",
+      "event": "Şahdağ x Zaqatala — Handicap asiático: Şahdağ −1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.11,
+      "stakeA": 112.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2,
+      "prob": 0.678,
+      "winner": null,
+      "date": "2026-10-07T08:30",
+      "modelo": "analise",
+      "total": 112.2,
+      "lucroA": 124.54199999999999,
+      "lucroRed": -112.2,
+      "lucro": 124.54199999999999,
+      "roi": 110.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T11:12:18.270Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1630448,
+        "kickoff": "2026-10-07T11:30:00.000Z",
+        "home": "Şahdağ",
+        "away": "Zaqatala",
+        "competition": "Birinci Dasta",
+        "lineId": "ahH-1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Şahdağ −1,5",
+        "tier": "especulativa",
+        "p_model": 0.593,
+        "p_blend": 0.678,
+        "p_pinnacle": 0.686,
+        "fair_odd": 1.48,
+        "odd_min": 1.55,
+        "pinnacle_odd": 1.36,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuy0cpu43mcy",
+        "enviadaEm": "2026-10-07T11:12:03.532Z",
+        "editadaEm": "2026-10-07T11:12:18.270Z"
+      }
+    },
+    {
+      "id": "muy0ee0voi7s6",
+      "kind": "valor",
+      "event": "Nanjing City x Shaanxi Union (2)",
+      "houseA": "Sportmarket",
+      "oddA": 2.02,
+      "stakeA": 112.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.0475,
+      "prob": 48.8,
+      "winner": null,
+      "date": "2026-10-07T08:30",
+      "modelo": "fora",
+      "total": 112.2,
+      "lucroA": 114.444,
+      "lucroRed": -112.2,
+      "lucro": 114.444,
+      "roi": 102,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T11:13:21.535Z"
     }
   ],
   "invertidos": [],
@@ -27760,5 +27833,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T10:57:41.018Z"
+  "updatedAt": "2026-10-07T11:13:21.539Z"
 }
