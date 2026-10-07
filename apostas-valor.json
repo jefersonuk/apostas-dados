@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 224,
+      "value": 336,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T14:46:01.104Z"
+      "updatedAt": "2026-10-07T14:51:15.685Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 212.75,
+      "value": 192.75,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T14:43:07.742Z"
+      "updatedAt": "2026-10-07T14:51:15.685Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27830,6 +27830,54 @@
         "enviadaEm": "2026-10-07T13:53:40.133Z",
         "editadaEm": "2026-10-07T14:40:19.417Z"
       }
+    },
+    {
+      "id": "muy86m3p8y5rt",
+      "kind": "valor",
+      "event": "York United x Supra du Quebec — Handicap asiático: York United +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.89,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.8,
+      "prob": 0.555,
+      "winner": null,
+      "date": "2026-10-07T12:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 99.67999999999999,
+      "lucroRed": -112,
+      "lucro": 99.67999999999999,
+      "roi": 88.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T14:51:15.685Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1517361,
+        "kickoff": "2026-10-07T15:00:00.000Z",
+        "home": "York United",
+        "away": "Supra du Quebec",
+        "competition": "Canadian Premier League",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "York United +0,5",
+        "tier": "especulativa",
+        "p_model": 0.598,
+        "p_blend": 0.555,
+        "p_pinnacle": 0.551,
+        "fair_odd": 1.8,
+        "odd_min": 1.89,
+        "pinnacle_odd": 1.72,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuy86kqa1ntl",
+        "enviadaEm": "2026-10-07T14:51:13.906Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27996,5 +28044,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T14:46:01.104Z"
+  "updatedAt": "2026-10-07T14:51:15.686Z"
 }
