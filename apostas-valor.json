@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 984,
+      "value": 1040,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:48:09.098Z"
+      "updatedAt": "2026-10-07T21:54:55.567Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 44,
+      "value": 34,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:48:09.097Z"
+      "updatedAt": "2026-10-07T21:54:55.567Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28853,6 +28853,54 @@
         "inboxId": "anmuyn2q60hz38",
         "enviadaEm": "2026-10-07T21:48:08.568Z"
       }
+    },
+    {
+      "id": "muynbg7jwzs42",
+      "kind": "valor",
+      "event": "Botafogo x Vasco DA Gama — Handicap asiático: Botafogo +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.73,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.68,
+      "prob": 0.594,
+      "winner": null,
+      "date": "2026-10-07T20:30",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 40.879999999999995,
+      "lucroRed": -56,
+      "lucro": 40.879999999999995,
+      "roi": 73,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:54:55.567Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492391,
+        "kickoff": "2026-10-07T23:30:00.000Z",
+        "home": "Botafogo",
+        "away": "Vasco DA Gama",
+        "competition": "Serie A",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Botafogo +0,5",
+        "tier": "especulativa",
+        "p_model": 0.746,
+        "p_blend": 0.594,
+        "p_pinnacle": 0.575,
+        "fair_odd": 1.68,
+        "odd_min": 1.77,
+        "pinnacle_odd": 1.69,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuynbfj0xvyu",
+        "enviadaEm": "2026-10-07T21:54:54.684Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29019,5 +29067,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:48:09.098Z"
+  "updatedAt": "2026-10-07T21:54:55.568Z"
 }
