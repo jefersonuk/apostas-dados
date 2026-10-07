@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 540.29,
+      "value": 484.59,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T17:54:55.025Z"
+      "updatedAt": "2026-10-07T19:06:09.137Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -27977,7 +27977,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.37,
       "prob": 0.421,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T14:00",
       "modelo": "analise",
       "total": 55.7,
@@ -27986,9 +27986,10 @@
       "lucro": 117.527,
       "roi": 211,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T16:51:12.600Z",
+      "updatedAt": "2026-10-07T19:06:09.137Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640291,
@@ -28010,7 +28011,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuycguwo2vtw",
-        "enviadaEm": "2026-10-07T16:51:12.120Z"
+        "enviadaEm": "2026-10-07T16:51:12.120Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Zamalek SC 0–3 Masr · saldo de gols do Zamalek SC: -3 (linha -1)",
+          "at": "2026-10-07T19:06:09.136Z"
+        },
+        "clv": -0.06803707530845005,
+        "closingFair": 3.337042620047692
       }
     },
     {
@@ -28377,5 +28385,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T18:26:26.374Z"
+  "updatedAt": "2026-10-07T19:06:09.137Z"
 }
