@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-10-07",
+    "startDate": "2026-09-14",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -39,13 +39,13 @@
       "idealMin": 8,
       "idealMax": 12,
       "pct": 1,
-      "stake": 220,
+      "stake": 320,
       "stakeMes": "2026-10",
       "inicio": "2026-09-28",
       "meta": 300
     },
-    "limitadasMigr2809": true,
     "polEVetoLimpo": true,
+    "limitadasMigr2809": true,
     "limitadasSalvo": true
   },
   "bets": [
@@ -4662,7 +4662,7 @@
       "value": 278.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T19:07:20.986Z"
+      "updatedAt": "2026-10-07T19:34:17.280Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5188,10 +5188,10 @@
   ],
   "usdRate": 5,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-07T18:26:26.171Z",
-  "eurRate": 5.58,
+  "usdRateAt": "2026-10-07T15:30:16.490Z",
+  "eurRate": 5.57,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-07T18:26:26.374Z",
+  "eurRateAt": "2026-10-07T15:30:16.725Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -27989,7 +27989,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T19:06:09.137Z",
+      "updatedAt": "2026-10-07T19:33:52.665Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640291,
@@ -28015,7 +28015,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Zamalek SC 0–3 Masr · saldo de gols do Zamalek SC: -3 (linha -1)",
-          "at": "2026-10-07T19:06:09.136Z"
+          "at": "2026-10-07T19:33:52.664Z"
         },
         "clv": -0.06803707530845005,
         "closingFair": 3.337042620047692
@@ -28386,5 +28386,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T19:33:08.322Z"
+  "updatedAt": "2026-10-07T19:33:52.665Z"
 }
