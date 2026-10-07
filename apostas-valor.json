@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 112,
+      "value": 224,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T13:39:31.298Z"
+      "updatedAt": "2026-10-07T13:49:15.488Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 252.75,
+      "value": 232.75,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T13:28:21.675Z"
+      "updatedAt": "2026-10-07T13:49:15.488Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27733,6 +27733,53 @@
         "enviadaEm": "2026-10-07T13:26:26.973Z",
         "editadaEm": "2026-10-07T13:26:45.125Z"
       }
+    },
+    {
+      "id": "muy5yvkw6dye2",
+      "kind": "valor",
+      "event": "Asyut Petrol x Al Ahly — Handicap asiático: Al Ahly 0",
+      "houseA": "Sportmarket",
+      "oddA": 1.89,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.26,
+      "prob": 0.795,
+      "winner": null,
+      "date": "2026-10-07T11:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 99.67999999999999,
+      "lucroRed": -112,
+      "lucro": 99.67999999999999,
+      "roi": 88.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T13:49:15.488Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640288,
+        "kickoff": "2026-10-07T14:00:00.000Z",
+        "home": "Asyut Petrol",
+        "away": "Al Ahly",
+        "competition": "League Cup",
+        "lineId": "ahA0",
+        "mercado": "Handicap asiático",
+        "linha": "Al Ahly 0",
+        "tier": "especulativa",
+        "p_model": 0.721,
+        "p_blend": 0.795,
+        "p_pinnacle": 0.802,
+        "fair_odd": 1.26,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.21,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuy5yv4kweso",
+        "enviadaEm": "2026-10-07T13:49:14.900Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27899,5 +27946,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T13:39:31.298Z"
+  "updatedAt": "2026-10-07T13:49:15.488Z"
 }
