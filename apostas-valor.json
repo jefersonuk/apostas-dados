@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 484.59,
+      "value": 278.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T19:06:09.137Z"
+      "updatedAt": "2026-10-07T19:07:20.986Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 198.31,
+      "value": 235.21,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T17:54:55.025Z"
+      "updatedAt": "2026-10-07T19:07:20.985Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28179,7 +28179,7 @@
       "event": "Deportivo Riestra Res. x Independiente Riva. Res. — Handicap asiático: Independiente Riva. Res. +1,5",
       "houseA": "Sportmarket",
       "oddA": 2.06,
-      "stakeA": 317.49,
+      "stakeA": 111.6,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Handicap Asiático",
@@ -28188,15 +28188,15 @@
       "winner": null,
       "date": "2026-10-07T15:00",
       "modelo": "analise",
-      "total": 317.49,
-      "lucroA": 336.5394,
-      "lucroRed": -317.49,
-      "lucro": 336.5394,
+      "total": 111.6,
+      "lucroA": 118.296,
+      "lucroRed": -111.6,
+      "lucro": 118.296,
       "roi": 106,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T17:54:55.025Z",
+      "updatedAt": "2026-10-07T19:07:20.985Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1612079,
@@ -28217,7 +28217,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuyeqs9vt3cz",
-        "enviadaEm": "2026-10-07T17:54:54.499Z"
+        "enviadaEm": "2026-10-07T17:54:54.499Z",
+        "editadaEm": "2026-10-07T19:07:20.985Z"
       }
     }
   ],
@@ -28385,5 +28386,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T19:06:09.137Z"
+  "updatedAt": "2026-10-07T19:07:20.986Z"
 }
