@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 222.8,
+      "value": 278.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T17:31:21.766Z"
+      "updatedAt": "2026-10-07T17:36:37.406Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 246.91,
+      "value": 236.91,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T17:31:21.765Z"
+      "updatedAt": "2026-10-07T17:36:37.406Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28108,6 +28108,54 @@
         "inboxId": "anmuydwhpvb54r",
         "enviadaEm": "2026-10-07T17:31:21.139Z"
       }
+    },
+    {
+      "id": "muye39r2hvlb3",
+      "kind": "valor",
+      "event": "Ceará U20 x Ferroviario U20 — Handicap asiático: Ceará U20 −1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.71,
+      "stakeA": 55.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.89,
+      "prob": 0.53,
+      "winner": null,
+      "date": "2026-10-07T15:00",
+      "modelo": "analise",
+      "total": 55.7,
+      "lucroA": 39.547,
+      "lucroRed": -55.7,
+      "lucro": 39.547,
+      "roi": 71,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T17:36:37.406Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1639229,
+        "kickoff": "2026-10-07T18:00:00.000Z",
+        "home": "Ceará U20",
+        "away": "Ferroviario U20",
+        "competition": "Copa do Brasil U20",
+        "lineId": "ahH-1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Ceará U20 −1,5",
+        "tier": "especulativa",
+        "p_model": 0.415,
+        "p_blend": 0.53,
+        "p_pinnacle": 0.542,
+        "fair_odd": 1.89,
+        "odd_min": 1.98,
+        "pinnacle_odd": 1.72,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuye394q3lgr",
+        "enviadaEm": "2026-10-07T17:36:36.602Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28274,5 +28322,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T17:31:21.766Z"
+  "updatedAt": "2026-10-07T17:36:37.406Z"
 }
