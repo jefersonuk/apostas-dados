@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 199.2,
+      "value": 311.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T10:53:46.437Z"
+      "updatedAt": "2026-10-07T10:57:41.018Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 250,
+      "value": 230,
       "currency": "EUR",
-      "updatedAt": "2026-10-06T23:05:11.319Z"
+      "updatedAt": "2026-10-07T10:57:41.018Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27547,6 +27547,53 @@
         "stakes": true
       },
       "updatedAt": "2026-10-07T10:53:46.436Z"
+    },
+    {
+      "id": "muxzu8bey05i8",
+      "kind": "valor",
+      "event": "Jiangxi Liansheng x Dalian Kewei — Handicap asiático: Jiangxi Liansheng +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.74,
+      "stakeA": 112.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.55,
+      "prob": 0.644,
+      "winner": null,
+      "date": "2026-10-07T08:30",
+      "modelo": "analise",
+      "total": 112.2,
+      "lucroA": 83.028,
+      "lucroRed": -112.2,
+      "lucro": 83.028,
+      "roi": 74,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T10:57:41.018Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1638471,
+        "kickoff": "2026-10-07T11:30:00.000Z",
+        "home": "Jiangxi Liansheng",
+        "away": "Dalian Kewei",
+        "competition": "League Two",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Jiangxi Liansheng +0,5",
+        "tier": "sólida",
+        "p_model": 0.71,
+        "p_blend": 0.644,
+        "p_pinnacle": 0.636,
+        "fair_odd": 1.55,
+        "odd_min": 1.63,
+        "pinnacle_odd": 1.5,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuxzu5uzx7v1",
+        "enviadaEm": "2026-10-07T10:57:37.835Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27713,5 +27760,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T10:53:46.437Z"
+  "updatedAt": "2026-10-07T10:57:41.018Z"
 }
