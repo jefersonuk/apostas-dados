@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 647.8,
+      "value": 311.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T13:26:27.487Z"
+      "updatedAt": "2026-10-07T13:28:21.675Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 170,
+      "value": 252.75,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T13:26:27.486Z"
+      "updatedAt": "2026-10-07T13:28:21.675Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27560,7 +27560,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.55,
       "prob": 0.644,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T08:30",
       "modelo": "analise",
       "total": 112.2,
@@ -27569,9 +27569,10 @@
       "lucro": 83.028,
       "roi": 74,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T10:57:41.018Z",
+      "updatedAt": "2026-10-07T13:26:53.830Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1638471,
@@ -27592,7 +27593,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuxzu5uzx7v1",
-        "enviadaEm": "2026-10-07T10:57:37.835Z"
+        "enviadaEm": "2026-10-07T10:57:37.835Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Jiangxi Liansheng 0–1 Dalian Kewei · saldo de gols do Jiangxi Liansheng: -1 (linha -0.5)",
+          "at": "2026-10-07T13:26:53.830Z"
+        },
+        "clv": 0.106260087288788,
+        "closingFair": 1.5728670138180398
       }
     },
     {
@@ -27607,7 +27615,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2,
       "prob": 0.678,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-07T08:30",
       "modelo": "analise",
       "total": 112.2,
@@ -27616,9 +27624,10 @@
       "lucro": 124.54199999999999,
       "roi": 110.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-07T11:12:18.270Z",
+      "updatedAt": "2026-10-07T13:26:55.011Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1630448,
@@ -27640,7 +27649,14 @@
         "fragile": true,
         "inboxId": "anmuy0cpu43mcy",
         "enviadaEm": "2026-10-07T11:12:03.532Z",
-        "editadaEm": "2026-10-07T11:12:18.270Z"
+        "editadaEm": "2026-10-07T11:12:18.270Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Şahdağ 6–0 Zaqatala · saldo de gols do Şahdağ: 6 (linha 1.5)",
+          "at": "2026-10-07T13:26:55.011Z"
+        },
+        "clv": -0.09390287582835544,
+        "closingFair": 2.328668686515218
       }
     },
     {
@@ -27655,7 +27671,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.0475,
       "prob": 48.8,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-07T08:30",
       "modelo": "fora",
       "total": 112.2,
@@ -27664,14 +27680,15 @@
       "lucro": 114.444,
       "roi": 102,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-07T11:13:21.535Z"
+      "updatedAt": "2026-10-07T13:28:21.675Z"
     },
     {
       "id": "muy55k0ukg7ij",
       "kind": "valor",
-      "event": "Pyramids FC x Olympic El Qanah — Total de gols 1T: Mais de 0,5",
+      "event": "Pyramids FC x Olympic El Qanah — 1 vence primeiro tempo: Mais de 0,5",
       "houseA": "Sportmarket",
       "oddA": 1.82,
       "stakeA": 112,
@@ -27691,7 +27708,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T13:26:27.487Z",
+      "updatedAt": "2026-10-07T13:26:45.125Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640289,
@@ -27699,8 +27716,8 @@
         "home": "Pyramids FC",
         "away": "Olympic El Qanah",
         "competition": "League Cup",
-        "lineId": "g1O0.5",
-        "mercado": "Total de gols 1T",
+        "lineId": "gO0.5",
+        "mercado": "1 vence primeiro tempo",
         "linha": "Mais de 0,5",
         "tier": "especulativa",
         "p_model": 0.602,
@@ -27712,7 +27729,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuy55jml4hiv",
-        "enviadaEm": "2026-10-07T13:26:26.973Z"
+        "enviadaEm": "2026-10-07T13:26:26.973Z",
+        "editadaEm": "2026-10-07T13:26:45.125Z"
       }
     }
   ],
@@ -27880,5 +27898,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T13:26:27.487Z"
+  "updatedAt": "2026-10-07T13:28:21.675Z"
 }
