@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 224,
+      "value": 336,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T13:49:15.488Z"
+      "updatedAt": "2026-10-07T13:53:40.630Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 232.75,
+      "value": 212.75,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T13:49:29.224Z"
+      "updatedAt": "2026-10-07T13:53:40.630Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27781,6 +27781,53 @@
         "enviadaEm": "2026-10-07T13:49:14.900Z",
         "editadaEm": "2026-10-07T13:49:29.224Z"
       }
+    },
+    {
+      "id": "muy64k5xji6fn",
+      "kind": "valor",
+      "event": "Neftchi x Xorazm — 1X2: Neftchi vence",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.24,
+      "prob": 0.808,
+      "winner": null,
+      "date": "2026-10-07T11:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 56,
+      "lucroRed": -112,
+      "lucro": 56,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T13:53:40.630Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1516149,
+        "kickoff": "2026-10-07T14:00:00.000Z",
+        "home": "Neftchi",
+        "away": "Xorazm",
+        "competition": "Super League",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Neftchi vence",
+        "tier": "sólida",
+        "p_model": 0.664,
+        "p_blend": 0.808,
+        "p_pinnacle": 0.821,
+        "fair_odd": 1.24,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.19,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuy64js5u9yf",
+        "enviadaEm": "2026-10-07T13:53:40.133Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27947,5 +27994,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T13:49:29.224Z"
+  "updatedAt": "2026-10-07T13:53:40.630Z"
 }
