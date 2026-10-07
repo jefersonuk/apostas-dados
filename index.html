@@ -40,9 +40,46 @@
   .an-meta{color:var(--muted,#8b98a5);font-size:12px;margin-top:3px;}
   .an-liq{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
   .an-tag{font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid var(--border);margin-left:6px;}
-  .an-liq .btn.primary{pointer-events:none;}
-  .an-live{font-size:13px;margin-top:4px;font-variant-numeric:tabular-nums;}
-  .an-live .ok{color:var(--green);font-weight:600;} .an-live .no{color:var(--red);font-weight:600;} .an-live .wait{color:var(--amber);}
+  /* resultados com contraste: green, ½ green, anulada, ½ red, red, em aberto (texto ≥ 6,8:1 no fundo) */
+  :root{
+    --res-win-bg:#0B3324; --res-win-fg:#86EFAC; --res-win-bd:#22C55E;
+    --res-void-bg:#1F2633; --res-void-fg:#CBD5E1; --res-void-bd:#64748B;
+    --res-loss-bg:#3A0F16; --res-loss-fg:#FCA5A5; --res-loss-bd:#EF4444;
+    --res-open-bg:#2A1A08; --res-open-fg:#FCD34D; --res-open-bd:#B45309;
+  }
+  .an-row.r-win,.an-row.r-hwin,.an-row.r-void,.an-row.r-hloss,.an-row.r-loss,.an-row.r-open{border-left:4px solid;padding-left:10px;}
+  .an-row.r-win{border-left-color:var(--res-win-bd);} .an-row.r-hwin{border-left-color:#15803D;}
+  .an-row.r-void{border-left-color:var(--res-void-bd);}
+  .an-row.r-hloss{border-left-color:#B91C1C;} .an-row.r-loss{border-left-color:var(--res-loss-bd);}
+  .an-row.r-open{border-left-color:var(--res-open-bd);}
+  .an-res{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap;}
+  .an-res.win,.an-res.hwin{background:var(--res-win-bg);color:var(--res-win-fg);border-color:var(--res-win-bd);}
+  .an-res.hwin,.an-res.hloss{border-style:dashed;}
+  .an-res.void{background:var(--res-void-bg);color:var(--res-void-fg);border-color:var(--res-void-bd);}
+  .an-res.loss,.an-res.hloss{background:var(--res-loss-bg);color:var(--res-loss-fg);border-color:var(--res-loss-bd);}
+  .an-res.open{background:var(--res-open-bg);color:var(--res-open-fg);border-color:var(--res-open-bd);}
+  .an-liq .btn.sel-win{background:#34D399;border-color:#34D399;color:#04231A;}
+  .an-liq .btn.sel-hwin{background:#A7F3D0;border-color:#A7F3D0;color:#04231A;}
+  .an-liq .btn.sel-void{background:#CBD5E1;border-color:#CBD5E1;color:#0B0D10;}
+  .an-liq .btn.sel-hloss{background:#FECACA;border-color:#FECACA;color:#2A0508;}
+  .an-liq .btn.sel-loss{background:#F87171;border-color:#F87171;color:#2A0508;}
+  .an-liq .btn[class*="sel-"]{pointer-events:none;}
+  .an-live{font-size:13px;margin-top:6px;font-variant-numeric:tabular-nums;line-height:1.9;}
+  .an-live .ok,.an-live .no,.an-live .wait,.an-live .void{display:inline-block;font-weight:700;padding:0 8px;border-radius:999px;border:1px solid;line-height:1.6;}
+  .an-live .ok{background:var(--res-win-bg);color:var(--res-win-fg);border-color:var(--res-win-bd);}
+  .an-live .no{background:var(--res-loss-bg);color:var(--res-loss-fg);border-color:var(--res-loss-bd);}
+  .an-live .void{background:var(--res-void-bg);color:var(--res-void-fg);border-color:var(--res-void-bd);}
+  .an-live .wait{background:var(--res-open-bg);color:var(--res-open-fg);border-color:var(--res-open-bd);}
+  .an-live .ok.soft,.an-live .no.soft,.an-live .void.soft{border-style:dashed;font-weight:600;}   /* como está agora, ainda pode mudar */
+  .an-live .clock{font-weight:700;color:var(--text);}
+  .an-live .clock.on{color:var(--res-loss-fg);}
+  .an-daynav{display:flex;align-items:center;gap:6px;margin:0 0 10px;}
+  .an-daynav .btn.small{min-width:34px;}
+  .an-daynav .d{flex:1;text-align:center;font-weight:700;font-size:14px;}
+  .an-daynav .d small{display:block;font-weight:500;font-size:11px;color:var(--muted);}
+  #anDays .day-row{cursor:pointer;border-radius:6px;padding-left:4px;padding-right:4px;}
+  #anDays .day-row.sel{background:#0E1520;outline:1px solid var(--sky);}
+  #anDays .day-meta{min-width:96px;}
   .an-edit{display:grid;gap:8px;margin-top:8px;padding:10px;border:1px solid var(--border);border-radius:8px;}
   .an-edit .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
   .an-edit label{display:block;font-size:12px;color:var(--muted,#8b98a5);margin-bottom:3px;}
@@ -1341,10 +1378,12 @@
   <!-- ============ ABA ANÁLISE (apostas vindas do app analise-futebol) ============ -->
   <div class="tab-panel" id="tab-analise">
     <div class="card">
-      <div class="card-title">Apostas da Análise</div>
+      <div class="card-title">Apostas da Análise · resultado do dia</div>
       <div class="hint" style="margin:0 0 10px;">Entradas feitas pelo botão <b>➕ Entrar</b> ou pela <b>✍️ Entrada manual</b> do <a href="../analise-futebol/" target="analise">app de análise</a>. Chegam sozinhas ao abrir esta página e entram como apostas de valor normais (saldo da casa debitado, aparecem também em 📈 Valor), marcadas fora do Modelo F. Com o jogo em andamento, o placar, o minuto e os escanteios aparecem em cada entrada (atualiza a cada minuto com esta página aberta) e, no fim do jogo, a aposta é liquidada sozinha pelo placar e pelas estatísticas da API-Football, com o CLV contra a última odd da Pinnacle. <b>Conferir resultados</b> faz o mesmo na hora.</div>
       <div id="anWait"></div>
+      <div class="an-daynav" id="anDayNav"></div>
       <div class="summary-grid" id="anSummary"></div>
+      <div class="hint" id="anTotal" style="margin:-4px 0 10px;"></div>
       <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
         <button type="button" class="btn primary" id="anCheck">🔄 Conferir resultados</button>
         <span class="hint" id="anCheckMsg" style="margin:0;"></span>
@@ -1356,12 +1395,16 @@
       <div class="hint" id="anSplit" style="margin:8px 0 0;"></div>
     </div>
     <div class="card">
-      <div class="card-title">Por mercado</div>
-      <div id="anMarkets"></div>
+      <div class="card-title" id="anListTitle">Entradas do dia</div>
+      <div id="anList"></div>
     </div>
     <div class="card">
-      <div class="card-title">Entradas</div>
-      <div id="anList"></div>
+      <div class="card-title">Dia a dia</div>
+      <div id="anDays"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Por mercado · acumulado</div>
+      <div id="anMarkets"></div>
     </div>
   </div>
 
@@ -6156,6 +6199,7 @@
   function anPrecisaConfirmar(it){ return it.v!==2 || /^em\s/i.test(String(it.casa||'').trim()); }
   var anAguardando=[];   // itens da caixa que não puderam entrar (casa inexistente ou sem sincronizar)
   var anEditando=null;   // id da aposta da aba Análise aberta para edição
+  var anDia=null;        // dia mostrado na aba Análise (AAAA-MM-DD); null = hoje
   function lerCaixa(){ try{ return JSON.parse(localStorage.getItem(INBOX_KEY))||[]; }catch(e){ return []; } }
   function gravarCaixa(arr){ try{ if(arr.length) localStorage.setItem(INBOX_KEY,JSON.stringify(arr)); else localStorage.removeItem(INBOX_KEY); }catch(e){} }
   // Duas abas abertas registravam a mesma aposta: a trava (Web Locks) serializa as abas e o item sai
@@ -6244,20 +6288,51 @@
   // stake de um item da caixa: na moeda da casa quando veio assim (stake sempre em R$)
   function anStakeItem(it){ return it.cur&&it.cur!=='BRL'&&it.stakeNat>0?fmtCur(it.stakeNat,it.cur)+' ('+fmt(it.stake)+')':fmt(it.stake); }
   function anVence(o){ return Date.parse((o.analise||{}).kickoff||o.date)+105*60000<Date.now(); }   // jogo já deve ter terminado
+  // ---- resultado do dia: o dia é o do jogo (data/hora da aposta) ----
+  var AN_RES={A:['win','✓ green'],HW:['hwin','½ green'],VOID:['void','↩ anulada'],HL:['hloss','½ red'],RED:['loss','✗ red']};
+  var AN_SEM=['dom','seg','ter','qua','qui','sex','sáb'];
+  function anDiaDe(o){ return String(o.date||'').slice(0,10)||'—'; }
+  function anSomaDia(d,n){ const t=new Date(d+'T12:00:00'); t.setDate(t.getDate()+n); return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'); }
+  function anDiaNome(d){
+    if(d==='—') return 'Sem data';
+    const hoje=todayStr(), base=d.slice(8,10)+'/'+d.slice(5,7)+(d.slice(0,4)!==hoje.slice(0,4)?'/'+d.slice(0,4):'');
+    return (d===hoje?'Hoje':d===anSomaDia(hoje,-1)?'Ontem':d===anSomaDia(hoje,1)?'Amanhã':AN_SEM[new Date(d+'T12:00:00').getDay()])+' · '+base;
+  }
+  function anStats(list){
+    const done=list.filter(o=>o.winner), clvs=list.map(o=>(o.analise||{}).clv).filter(x=>typeof x==='number');
+    const conta=w=>done.filter(o=>w.includes(o.winner)).length;
+    return {n:list.length, done:done.length, open:list.length-done.length,
+      giro:done.reduce((s,o)=>s+legStake(o,'A'),0), lucro:done.reduce((s,o)=>s+sbRealProfit(o),0),
+      ganhos:conta(['A','HW']), perdas:conta(['RED','HL']), nulas:conta(['VOID']), validos:done.length-conta(['VOID']),
+      clv:clvs.length?clvs.reduce((s,x)=>s+x,0)/clvs.length:null, nclv:clvs.length};
+  }
+  function anResBadge(o){
+    if(!o.winner) return '<span class="an-res open">⏳ em aberto</span>';
+    const [cls,txt]=AN_RES[o.winner]||['void',o.winner];
+    return '<span class="an-res '+cls+'">'+txt+' '+(o.winner==='VOID'?fmt(0):fmtSign(sbRealProfit(o)))+'</span>';
+  }
   function renderAnalise(){
-    if(!$('anList')) return;
-    const all=analiseBets().slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));
-    const done=all.filter(o=>o.winner), open=all.filter(o=>!o.winner);
-    const giro=done.reduce((s,o)=>s+legStake(o,'A'),0), lucro=done.reduce((s,o)=>s+sbRealProfit(o),0);
-    const ganhos=done.filter(o=>o.winner==='A'||o.winner==='HW').length, validos=done.filter(o=>o.winner!=='VOID').length;
-    const clvs=all.map(o=>(o.analise||{}).clv).filter(x=>typeof x==='number');
-    const clv=clvs.length?clvs.reduce((s,x)=>s+x,0)/clvs.length:null;
+    if(!$('anList')||!AN_RES) return;   // AN_RES: renderAll pode rodar antes deste trecho
+    const all=analiseBets().slice().sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+    const hoje=todayStr(), dia=anDia||hoje;
+    const dias=[...new Set(all.map(anDiaDe).filter(d=>d!=='—').concat(hoje))].sort();
+    const antes=dias.filter(d=>d<dia).pop(), depois=dias.find(d=>d>dia);
+    const doDia=all.filter(o=>anDiaDe(o)===dia), S=anStats(doDia), T=anStats(all);
+    const nav=(d,t,tit)=>'<button type="button" class="btn small" '+(d?'data-andia="'+d+'" title="'+esc(tit)+'"':'disabled')+'>'+t+'</button>';
+    $('anDayNav').innerHTML=nav(antes,'‹',antes?anDiaNome(antes):'')+
+      '<div class="d">'+anDiaNome(dia)+'<small>'+(S.n?S.n+' aposta'+(S.n>1?'s':'')+(S.open?' · '+S.open+' em aberto':''):'sem apostas neste dia')+'</small></div>'+
+      nav(depois,'›',depois?anDiaNome(depois):'')+(dia!==hoje?'<button type="button" class="btn small" data-andia="'+hoje+'">Hoje</button>':'');
+    const cor=x=>x>0?'pos':x<0?'neg':'';
     $('anSummary').innerHTML=[
-      ['Lucro',fmtSign(lucro),lucro>=0?'pos':'neg'],
-      ['Yield',giro?anPct(lucro/giro):'—',lucro>=0?'pos':'neg'],
-      ['Acerto',validos?anPct(ganhos/validos)+' ('+ganhos+'/'+validos+')':'—',''],
-      ['CLV médio',clv===null?'—':(clv>=0?'+':'')+anPct(clv)+' ('+clvs.length+')',clv===null?'':clv>=0?'pos':'neg'],
+      ['Lucro do dia',S.done?fmtSign(S.lucro):'—',S.done?cor(S.lucro):''],
+      ['Yield',S.giro?anPct(S.lucro/S.giro):'—',S.giro?cor(S.lucro):''],
+      ['Acerto',S.validos?anPct(S.ganhos/S.validos)+' ('+S.ganhos+'/'+S.validos+')':'—',''],
+      ['CLV médio',S.clv===null?'—':(S.clv>=0?'+':'')+anPct(S.clv)+' ('+S.nclv+')',S.clv===null?'':S.clv>=0?'pos':'neg'],
     ].map(([k,v,c])=>'<div class="summary-item"><div class="k">'+k+'</div><div class="v sm '+c+'">'+v+'</div></div>').join('');
+    const pills=[[S.ganhos,'win','✓ '+S.ganhos+' green'],[S.nulas,'void','↩ '+S.nulas+' anulada'+(S.nulas>1?'s':'')],[S.perdas,'loss','✗ '+S.perdas+' red'],[S.open,'open','⏳ '+S.open+' em aberto']]
+      .filter(([n])=>n).map(([,c,t])=>'<span class="an-res '+c+'">'+t+'</span>').join(' ');
+    $('anTotal').innerHTML=(pills?pills+'<br>':'')+(T.done?'Acumulado: <b class="'+(T.lucro>=0?'pos':'neg')+'" style="color:var(--'+(T.lucro>=0?'green':'red')+')">'+fmtSign(T.lucro)+'</b>'+
+      (T.giro?' · yield '+anPct(T.lucro/T.giro):'')+' · '+T.done+' liquidada'+(T.done>1?'s':'')+(T.validos?' · acerto '+anPct(T.ganhos/T.validos):''):'');
     const espera=anAguardando.map(({it,motivo,confirmar})=>'<div class="an-row"><div class="an-head"><span><b>⏳ '+esc(it.event||'')+'</b></span>'+
       (motivo.startsWith('a casa')?'<button type="button" class="btn small" data-ancriar="'+esc(it.id)+'">Criar a casa e registrar</button>':'')+
       (confirmar?'<span><button type="button" class="btn small" data-anok="'+esc(it.id)+'">Registrar</button> <button type="button" class="btn small danger" data-andescartar="'+esc(it.id)+'">Descartar</button></span>':'')+'</div>'+
@@ -6265,37 +6340,59 @@
     const nuvem=anNuvem.cfg===false&&syncPronto?'<div class="hint" style="margin:0 0 8px;">Para receber aqui as apostas enviadas de outros aparelhos, conecte a ☁️ nuvem no app de análise neste aparelho (⚙️ Chave).</div>'
       :anNuvem.erro?'<div class="hint" style="margin:0 0 8px;">Caixa da nuvem com erro: '+esc(anNuvem.erro)+'</div>':'';
     $('anWait').innerHTML=nuvem+(espera?'<div class="card-title" style="margin-top:4px;">Aguardando</div>'+espera:'');
-    // minhas análises (✍️ entrada manual) x as do app, para comparar
+    // minhas análises (✍️ entrada manual) x as do app, no dia
+    const done=doDia.filter(o=>o.winner);
     const parte=f=>{ const d=done.filter(f), l=d.reduce((s,o)=>s+sbRealProfit(o),0), g=d.reduce((s,o)=>s+legStake(o,'A'),0); return d.length+' liquidadas, lucro '+fmtSign(l)+(g?' (yield '+anPct(l/g)+')':''); };
-    $('anSplit').textContent=all.some(o=>(o.analise||{}).manual)?'✍️ Minhas análises: '+parte(o=>(o.analise||{}).manual)+' · App: '+parte(o=>!(o.analise||{}).manual)+'.':'';
+    $('anSplit').textContent=doDia.some(o=>(o.analise||{}).manual)?'No dia — ✍️ Minhas análises: '+parte(o=>(o.analise||{}).manual)+' · App: '+parte(o=>!(o.analise||{}).manual)+'.':'';
     anLiveStatus();
-    const prontas=open.filter(anVence).length;
+    const open=all.filter(o=>!o.winner), prontas=open.filter(anVence).length;
     $('anCheckMsg').textContent=open.length?(open.length+' em aberto'+(prontas?' · '+prontas+' já podem ser conferidas':'')):'nenhuma em aberto';
-    // por mercado: o que interessa é saber onde a margem está aparecendo
+    // por mercado (acumulado): o que interessa é saber onde a margem está aparecendo
     const mk={};
-    done.filter(o=>o.winner!=='VOID').forEach(o=>{ const k=(o.analise||{}).mercado||o.market||'—'; const m=mk[k]||(mk[k]={n:0,g:0,l:0,w:0});
+    all.filter(o=>o.winner&&o.winner!=='VOID').forEach(o=>{ const k=(o.analise||{}).mercado||o.market||'—'; const m=mk[k]||(mk[k]={n:0,g:0,l:0,w:0});
       m.n++; m.g+=legStake(o,'A'); m.l+=sbRealProfit(o); if(o.winner==='A'||o.winner==='HW') m.w++; });
     const rows=Object.entries(mk).sort((a,b)=>b[1].n-a[1].n);
     $('anMarkets').innerHTML=rows.length?rows.map(([k,m])=>'<div class="seg-row"><div class="seg-head"><span class="seg-name">'+esc(k)+'</span><span class="seg-val '+(m.l>=0?'pos':'neg')+'">'+fmtSign(m.l)+'</span></div>'+
       '<div class="seg-meta"><span>'+m.n+' apostas · acerto '+anPct(m.w/m.n)+' · yield '+(m.g?anPct(m.l/m.g):'—')+'</span></div></div>').join(''):'<div class="hint" style="margin:0;">Sem apostas liquidadas ainda.</div>';
-    $('anList').innerHTML=all.length?all.map(o=>{
-      const a=o.analise||{}, ck=a.check||{}, odd=legOdd(o,'A');
-      const st=o.winner?'<b class="'+(sbRealProfit(o)>=0?'pos':'neg')+'">'+(VB_RES[o.winner]||o.winner)+' '+fmtSign(sbRealProfit(o))+'</b>':'<span class="hint" style="margin:0;">em aberto</span>';
-      const liq='<div class="an-liq">'+[['A','✓ green'],['HW','½ green'],['VOID','↩ anulada'],['HL','½ red'],['RED','✗ red']]
-        .map(([w,t])=>'<button type="button" class="btn small'+(o.winner===w?' primary':'')+'" data-anliq="'+o.id+':'+w+'">'+t+'</button>').join('')+
+    // dia a dia: lucro de cada dia com aposta (o mais recente primeiro); clicar abre o dia
+    const porDia=dias.slice().reverse().map(d=>({d,s:anStats(all.filter(o=>anDiaDe(o)===d))})).filter(r=>r.s.n).slice(0,31);
+    const maxAbs=Math.max(1,...porDia.map(r=>Math.abs(r.s.lucro)));
+    $('anDays').innerHTML=porDia.length?porDia.map(({d,s})=>{
+      const w=Math.min(50,Math.abs(s.lucro)/maxAbs*50);
+      return '<div class="day-row'+(d===dia?' sel':'')+'" data-andia="'+d+'">'+
+        '<span class="day-date">'+d.slice(8,10)+'/'+d.slice(5,7)+'<span class="wd">'+AN_SEM[new Date(d+'T12:00:00').getDay()]+'</span></span>'+
+        '<div class="day-bar-wrap"><div class="day-center"></div>'+(s.done?'<div class="day-bar '+(s.lucro>=0?'pos':'neg')+'" style="width:'+w+'%;"></div>':'')+'</div>'+
+        '<span class="day-val '+(s.done?(s.lucro>=0?'pos':'neg'):'')+'">'+(s.done?fmtSign(s.lucro):'—')+'</span>'+
+        '<span class="day-meta">'+[s.validos?s.ganhos+'/'+s.validos+' G':'',s.giro?(s.lucro>=0?'+':'')+(s.lucro/s.giro*100).toFixed(0)+'%':'',
+          s.open?'<span style="color:var(--res-open-fg)">'+s.open+'⏳</span>':''].filter(Boolean).join(' · ')+'</span></div>';
+    }).join(''):'<div class="hint" style="margin:0;">Nenhuma aposta ainda.</div>';
+    // entradas do dia (na ordem do horário) e, antes, as em aberto de outros dias
+    const outras=open.filter(o=>anDiaDe(o)!==dia);
+    $('anListTitle').textContent='Entradas · '+anDiaNome(dia);
+    const linha=o=>{
+      const a=o.analise||{}, ck=a.check||{}, odd=legOdd(o,'A'), [cls]=o.winner?(AN_RES[o.winner]||['void']):['open'];
+      const liq='<div class="an-liq">'+Object.entries(AN_RES)
+        .map(([w,[c,t]])=>'<button type="button" class="btn small'+(o.winner===w?' sel-'+c:'')+'" data-anliq="'+o.id+':'+w+'">'+t+'</button>').join('')+
         (o.winner?'<button type="button" class="btn small" data-anliq="'+o.id+':">reabrir</button>':'')+
         '<button type="button" class="btn small" data-anedit="'+o.id+'">✏️ editar</button>'+
         '<button type="button" class="btn small danger" data-andel="'+o.id+'">excluir</button></div>'+
         (anEditando===o.id?anFormEdicao(o):'');
-      return '<div class="an-row"><div class="an-head"><span><b>'+esc(a.mercado||o.market||'')+': '+esc(a.linha||'')+'</b>'+
-        (a.manual?'<span class="an-tag">✍️ manual</span>':'')+(a.tier&&a.tier!=='manual'?'<span class="an-tag">'+esc(a.tier)+'</span>':'')+'</span>'+st+'</div>'+
+      return '<div class="an-row r-'+cls+'"><div class="an-head"><span><b>'+esc(a.mercado||o.market||'')+': '+esc(a.linha||'')+'</b>'+
+        (a.manual?'<span class="an-tag">✍️ manual</span>':'')+(a.tier&&a.tier!=='manual'?'<span class="an-tag">'+esc(a.tier)+'</span>':'')+'</span>'+anResBadge(o)+'</div>'+
         '<div>'+esc((a.home&&a.away)?a.home+' x '+a.away:o.event)+' <span class="an-meta">· '+esc(a.competition||'')+' · '+String(o.date).slice(8,10)+'/'+String(o.date).slice(5,7)+' '+String(o.date).slice(11,16)+'</span></div>'+
         '<div class="an-meta">'+esc(legHouse(o,'A'))+' @'+odd.toFixed(2)+' · '+(legCur(o,'A')!=='BRL'?vbStakeNat(o)+' ('+fmt(legStake(o,'A'))+')':fmt(legStake(o,'A')))+
           (a.p_blend?' · acerto previsto '+anPct(a.p_blend):'')+(a.fair_odd?' · justa '+a.fair_odd.toFixed(2):'')+(a.odd_min?' · mínima '+a.odd_min.toFixed(2):'')+
           (typeof a.clv==='number'?' · CLV '+(a.clv>=0?'+':'')+anPct(a.clv)+' (fech. justa '+a.closingFair.toFixed(2)+')':'')+'</div>'+
         anLiveHtml(o)+(ck.detail?'<div class="an-meta">'+esc(ck.detail)+'</div>':'')+liq+'</div>';
-    }).join(''):'<div class="hint" style="margin:0;">Nenhuma aposta enviada pela Análise ainda.</div>';
+    };
+    $('anList').innerHTML=(outras.length?'<div class="card-title" style="margin:0 0 4px;">Em aberto de outros dias</div>'+outras.map(linha).join('')+
+        '<div class="card-title" style="margin:14px 0 4px;">'+anDiaNome(dia)+'</div>':'')+
+      (doDia.length?doDia.map(linha).join(''):'<div class="hint" style="margin:0;">'+(all.length?'Nenhuma aposta neste dia.':'Nenhuma aposta enviada pela Análise ainda.')+'</div>');
   }
+  document.getElementById('tab-analise').addEventListener('click',e=>{
+    const b=e.target.closest('[data-andia]'); if(!b) return;
+    anDia=b.dataset.andia===todayStr()?null:b.dataset.andia; renderAnalise();
+  });
   $('anWait').addEventListener('click',e=>{
     const ok=e.target.closest('[data-anok]');
     if(ok){ importarAnalise(null,ok.dataset.anok); return; }
@@ -6456,16 +6553,18 @@
     const v=anAoVivo.info.get(a.fixtureId);
     if(!v) return '';
     if(v.status==='NS'||v.status==='TBD') return '<div class="an-live">⏳ ainda não começou</div>';
-    const min=v.finished?'🏁 encerrado':v.cancelled?'⛔ '+esc(v.long):v.status==='HT'?'⏸ intervalo':v.live?'🔴 '+(v.elapsed!=null?v.elapsed+(v.extra?'+'+v.extra:'')+"'":esc(v.long)):esc(v.long);
+    const min='<span class="clock'+(v.live&&v.status!=='HT'?' on':'')+'">'+(v.finished?'🏁 encerrado':v.cancelled?'⛔ '+esc(v.long):v.status==='HT'?'⏸ intervalo':v.live?'🔴 '+(v.elapsed!=null?v.elapsed+(v.extra?'+'+v.extra:'')+"'":esc(v.long)):esc(v.long))+'</span>';
     const esc1=v.corners?' · escanteios '+v.corners[0]+'–'+v.corners[1]+(v.c1&&v.status!=='1H'&&v.status!=='HT'?' (1T '+v.c1[0]+'–'+v.c1[1]+')':''):'';
     const l=anAoVivo.linha.get(o.id);
     let lin='';
     if(l){
       const conta=esc(l.what)+': '+String(l.value).replace('.',',')+' (linha '+String(l.threshold).replace('.',',')+')';
+      // verde = ganha, vermelho = perde, cinza = devolve, âmbar = falta escanteio/gol; tracejado = como está agora, ainda pode mudar
+      const lado=w=>w==='A'||w==='HW'?'ok':w==='RED'||w==='HL'?'no':'void';
       lin=l.locked
-        ?(l.now==='A'||l.now==='HW'?' · <span class="ok">✅ '+(l.now==='A'?'já bateu':'meia vitória garantida')+'</span>':l.now==='RED'||l.now==='HL'?' · <span class="no">❌ '+(l.now==='RED'?'já perdeu':'meia derrota garantida')+'</span>':' · <span class="wait">↩ devolve</span>')+' — '+conta
+        ?(l.now==='A'||l.now==='HW'?' · <span class="ok">✅ '+(l.now==='A'?'já bateu':'meia vitória garantida')+'</span>':l.now==='RED'||l.now==='HL'?' · <span class="no">❌ '+(l.now==='RED'?'já perdeu':'meia derrota garantida')+'</span>':' · <span class="void">↩ devolve</span>')+' — '+conta
         :l.need>0?' · <span class="wait">⏳ '+(l.need===1?'falta 1':'faltam '+l.need)+'</span> — '+conta   // over que ainda pode bater
-        :' · <span class="wait">no momento: '+(l.now==='A'?'ganha':l.now==='HW'?'meia vitória':l.now==='VOID'?'devolve':l.now==='HL'?'meia derrota':'perde')+'</span> — '+conta;
+        :' · <span class="'+lado(l.now)+' soft">no momento: '+(l.now==='A'?'ganha':l.now==='HW'?'meia vitória':l.now==='VOID'?'devolve':l.now==='HL'?'meia derrota':'perde')+'</span> — '+conta;
     }
     return '<div class="an-live">'+min+' · '+esc(v.home)+' '+v.goals[0]+'–'+v.goals[1]+' '+esc(v.away)+esc1+lin+'</div>';
   }
