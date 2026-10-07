@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 664.8,
+      "value": 984,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:45:16.132Z"
+      "updatedAt": "2026-10-07T21:48:09.098Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 101,
+      "value": 44,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:45:16.132Z"
+      "updatedAt": "2026-10-07T21:48:09.097Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28805,6 +28805,54 @@
         "inboxId": "anmuymz0plco0a",
         "enviadaEm": "2026-10-07T21:45:15.609Z"
       }
+    },
+    {
+      "id": "muyn2qkpfedj7",
+      "kind": "valor",
+      "event": "America Mineiro x Fortaleza EC — Total de gols: Menos de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.81,
+      "stakeA": 319.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.81,
+      "prob": 0.552,
+      "winner": null,
+      "date": "2026-10-07T20:30",
+      "modelo": "analise",
+      "total": 319.2,
+      "lucroA": 258.552,
+      "lucroRed": -319.2,
+      "lucro": 258.552,
+      "roi": 81,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:48:09.097Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520910,
+        "kickoff": "2026-10-07T23:30:00.000Z",
+        "home": "America Mineiro",
+        "away": "Fortaleza EC",
+        "competition": "Serie B",
+        "lineId": "gU2.5",
+        "mercado": "Total de gols",
+        "linha": "Menos de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.598,
+        "p_blend": 0.552,
+        "p_pinnacle": 0.546,
+        "fair_odd": 1.81,
+        "odd_min": 1.9,
+        "pinnacle_odd": 1.77,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuyn2q60hz38",
+        "enviadaEm": "2026-10-07T21:48:08.568Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28971,5 +29019,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:45:16.132Z"
+  "updatedAt": "2026-10-07T21:48:09.098Z"
 }
