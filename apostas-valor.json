@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 608.8,
+      "value": 664.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:42:48.336Z"
+      "updatedAt": "2026-10-07T21:45:16.132Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 111,
+      "value": 101,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:42:48.336Z"
+      "updatedAt": "2026-10-07T21:45:16.132Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28758,6 +28758,53 @@
         "inboxId": "anmuymvuhj2gvp",
         "enviadaEm": "2026-10-07T21:42:47.575Z"
       }
+    },
+    {
+      "id": "muymz1449nbs5",
+      "kind": "valor",
+      "event": "CRB x Atletico Goianiense — Handicap asiático: Atletico Goianiense +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.56,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.54,
+      "prob": 0.65,
+      "winner": null,
+      "date": "2026-10-07T20:30",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 31.360000000000003,
+      "lucroRed": -56,
+      "lucro": 31.360000000000003,
+      "roi": 56.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:45:16.132Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520913,
+        "kickoff": "2026-10-07T23:30:00.000Z",
+        "home": "CRB",
+        "away": "Atletico Goianiense",
+        "competition": "Serie B",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "Atletico Goianiense +1",
+        "tier": "sólida",
+        "p_model": 0.683,
+        "p_blend": 0.65,
+        "p_pinnacle": 0.646,
+        "fair_odd": 1.54,
+        "odd_min": 1.58,
+        "pinnacle_odd": 1.51,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmuymz0plco0a",
+        "enviadaEm": "2026-10-07T21:45:15.609Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28924,5 +28971,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:42:48.336Z"
+  "updatedAt": "2026-10-07T21:45:16.132Z"
 }
