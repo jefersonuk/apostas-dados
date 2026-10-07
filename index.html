@@ -47,11 +47,6 @@
     --res-loss-bg:#3A0F16; --res-loss-fg:#FCA5A5; --res-loss-bd:#EF4444;
     --res-open-bg:#2A1A08; --res-open-fg:#FCD34D; --res-open-bd:#B45309;
   }
-  .an-row.r-win,.an-row.r-hwin,.an-row.r-void,.an-row.r-hloss,.an-row.r-loss,.an-row.r-open{border-left:4px solid;padding-left:10px;}
-  .an-row.r-win{border-left-color:var(--res-win-bd);} .an-row.r-hwin{border-left-color:#15803D;}
-  .an-row.r-void{border-left-color:var(--res-void-bd);}
-  .an-row.r-hloss{border-left-color:#B91C1C;} .an-row.r-loss{border-left-color:var(--res-loss-bd);}
-  .an-row.r-open{border-left-color:var(--res-open-bd);}
   .an-res{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap;}
   .an-res.win,.an-res.hwin{background:var(--res-win-bg);color:var(--res-win-fg);border-color:var(--res-win-bd);}
   .an-res.hwin,.an-res.hloss{border-style:dashed;}
@@ -73,10 +68,38 @@
   .an-live .ok.soft,.an-live .no.soft,.an-live .void.soft{border-style:dashed;font-weight:600;}   /* como está agora, ainda pode mudar */
   .an-live .clock{font-weight:700;color:var(--text);}
   .an-live .clock.on{color:var(--res-loss-fg);}
-  .an-daynav{display:flex;align-items:center;gap:6px;margin:0 0 10px;}
-  .an-daynav .btn.small{min-width:34px;}
-  .an-daynav .d{flex:1;text-align:center;font-weight:700;font-size:14px;}
-  .an-daynav .d small{display:block;font-weight:500;font-size:11px;color:var(--muted);}
+  /* aba Análise: os componentes da aba Valor (vb-hero, pend-row, bet-row, fold) com o que é só dela */
+  .an-segs{display:flex;flex-direction:column;align-items:flex-end;gap:6px;}
+  @media(max-width:520px){.an-segs{flex-direction:row;flex-wrap:wrap;align-items:center;width:100%;}}
+  .an-daynav{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:12px;color:var(--muted);}
+  .an-daynav:empty{display:none;}
+  .an-daynav button{border:1px solid var(--border);background:#0E1116;color:var(--text);border-radius:7px;min-width:30px;height:26px;font-weight:800;cursor:pointer;}
+  .an-daynav button:disabled{opacity:.35;cursor:default;}
+  .an-daynav .hoje{font-size:11px;font-weight:700;padding:0 8px;color:var(--sky);}
+  .an-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+  .an-pills:empty{display:none;}
+  .an-acts{display:flex;gap:6px;flex-wrap:wrap;margin:2px 0 4px;}
+  .an-acts .btn.small{flex:0 0 auto;text-decoration:none;display:inline-flex;align-items:center;}
+  .an-status{margin:0 0 4px;min-height:14px;}
+  #anPend .pend-row{grid-template-columns:52px 1fr auto;}
+  #anPend .pend-ev b{color:var(--text);}
+  #anPend .pend-live{grid-column:1 / -1;padding-left:60px;margin-top:-4px;}
+  #anPend .pend-live .an-live,#anPend .pend-live .an-meta{margin-top:0;font-size:12px;}
+  @media(max-width:520px){#anPend .pend-live,#anPend .pend-more{padding-left:0;}}
+  #anPend .an-edit,#anList .an-edit{grid-column:1 / -1;}
+  #anList .bet-row{border-left-width:4px;border-left-style:solid;}
+  #anList .bet-row.r-win,#anList .bet-row.r-hwin{border-left-color:var(--res-win-bd);}
+  #anList .bet-row.r-hwin,#anList .bet-row.r-hloss{border-left-style:dashed;}
+  #anList .bet-row.r-void{border-left-color:var(--res-void-bd);}
+  #anList .bet-row.r-loss,#anList .bet-row.r-hloss{border-left-color:var(--res-loss-bd);}
+  #anList .bet-row.r-open{border-left-color:var(--res-open-bd);}
+  #anList .bet-val.win{color:var(--res-win-fg);} #anList .bet-val.loss{color:var(--res-loss-fg);} #anList .bet-val.void{color:var(--res-void-fg);}
+  #anList .bet-detail{font-family:var(--sans);font-size:12px;line-height:1.6;}
+  #anList .bet-detail .an-liq{margin-top:8px;}
+  .an-res.mini{font-size:10px;padding:0 6px;}
+  .vb-stats .v small{color:var(--muted-2);font-weight:500;}
+  #tab-analise .filter-btn,#tab-vbet .filter-btn{min-width:max-content;}   /* no celular quebra a linha em vez de cortar o botão */
+  .vb-orig{display:inline-block;font-size:10px;padding:1px 6px;border-radius:10px;background:#0E1A14;border:1px solid #1A3D2E;color:#86EFAC;margin-right:4px;vertical-align:middle;}
   #anDays .day-row{cursor:pointer;border-radius:6px;padding-left:4px;padding-right:4px;}
   #anDays .day-row.sel{background:#0E1520;outline:1px solid var(--sky);}
   #anDays .day-meta{min-width:96px;}
@@ -399,7 +422,7 @@
   /* ==========================================================
      ABA VALOR — hierarquia limpa: resumo → operar → histórico → análise
      ========================================================== */
-  #tab-vbet .card{border-radius:12px;padding:16px;}
+  #tab-vbet .card,#tab-analise .card{border-radius:12px;padding:16px;}
 
   /* rótulo de seção */
   .vb-sec{display:flex;align-items:center;gap:10px;margin:22px 2px 10px;
@@ -915,6 +938,7 @@
         <div class="filter-btn" data-vbfilter="open">Abertas</div>
         <div class="filter-btn" data-vbfilter="green">Green</div>
         <div class="filter-btn" data-vbfilter="red">Red</div>
+        <div class="filter-btn" data-vbfilter="analise" title="Entradas do app de análise">⚽ Análise</div>
       </div>
       <div id="vbListSum" class="hint" style="margin:6px 0 0;"></div>
       <div id="vbList" style="margin-top:10px;"></div>
@@ -1375,37 +1399,114 @@
 
   </div><!-- /tab-surebet -->
 
-  <!-- ============ ABA ANÁLISE (apostas vindas do app analise-futebol) ============ -->
+  <!-- ============ ABA ANÁLISE (apostas vindas do app analise-futebol) ============
+       Mesma hierarquia da aba Valor: resumo → em aberto (com o ao vivo) → histórico → análise -->
   <div class="tab-panel" id="tab-analise">
-    <div class="card">
-      <div class="card-title">Apostas da Análise · resultado do dia</div>
-      <div class="hint" style="margin:0 0 10px;">Entradas feitas pelo botão <b>➕ Entrar</b> ou pela <b>✍️ Entrada manual</b> do <a href="../analise-futebol/" target="analise">app de análise</a>. Chegam sozinhas ao abrir esta página e entram como apostas de valor normais (saldo da casa debitado, aparecem também em 📈 Valor), marcadas fora do Modelo F. Com o jogo em andamento, o placar, o minuto e os escanteios aparecem em cada entrada (atualiza a cada minuto com esta página aberta) e, no fim do jogo, a aposta é liquidada sozinha pelo placar e pelas estatísticas da API-Football, com o CLV contra a última odd da Pinnacle. <b>Conferir resultados</b> faz o mesmo na hora.</div>
-      <div id="anWait"></div>
-      <div class="an-daynav" id="anDayNav"></div>
-      <div class="summary-grid" id="anSummary"></div>
-      <div class="hint" id="anTotal" style="margin:-4px 0 10px;"></div>
-      <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-        <button type="button" class="btn primary" id="anCheck">🔄 Conferir resultados</button>
-        <span class="hint" id="anCheckMsg" style="margin:0;"></span>
+
+    <!-- ===== RESUMO ===== -->
+    <div class="vb-hero">
+      <div class="vb-hero-head">
+        <div class="vb-hero-main">
+          <div class="vb-hero-k" id="anHeroK">Lucro realizado</div>
+          <div class="v" id="anProfit">—</div>
+          <div class="an-daynav" id="anDayNav"></div>
+        </div>
+        <div class="an-segs">
+          <div class="seg-mini" id="anPerSeg">
+            <button type="button" data-anper="dia">Dia</button>
+            <button type="button" data-anper="7d">7d</button>
+            <button type="button" data-anper="mes">Mês</button>
+            <button type="button" data-anper="tudo">Tudo</button>
+          </div>
+          <div class="seg-mini" id="anOrigSeg" title="Quem fez a análise">
+            <button type="button" data-anorig="todas">Todas</button>
+            <button type="button" data-anorig="app">📱 App</button>
+            <button type="button" data-anorig="minhas">✍️ Minhas</button>
+          </div>
+        </div>
       </div>
-      <div class="row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px;">
-        <button type="button" class="btn small" id="anLiveBtn">🔴 Atualizar ao vivo</button>
-        <span class="hint" id="anLiveMsg" style="margin:0;"></span>
+      <div class="vb-stats">
+        <div><span class="k">Yield</span><span class="v" id="anYield">—</span></div>
+        <div><span class="k">Acerto · previsto</span><span class="v" id="anHit">—</span></div>
+        <div><span class="k">Apostas</span><span class="v" id="anCount">—</span></div>
+        <div><span class="k">Volume</span><span class="v" id="anVolume">—</span></div>
+        <div><span class="k">CLV médio</span><span class="v" id="anClv">—</span></div>
       </div>
-      <div class="hint" id="anSplit" style="margin:8px 0 0;"></div>
+      <div class="an-pills" id="anTotal"></div>
+      <div class="hint" id="anSplit" style="margin:6px 0 0;"></div>
     </div>
+    <details class="help">
+      <summary>como esta aba funciona</summary>
+      <div class="help-body">Entradas feitas pelo botão <b>➕ Entrar</b> ou pela <b>✍️ Entrada manual</b> do <a href="../analise-futebol/" target="analise">app de análise</a>. Chegam sozinhas ao abrir esta página e entram como apostas de valor normais (saldo da casa debitado, aparecem também em 📈 Valor com a marca ⚽), fora do Modelo F. Com o jogo em andamento, o placar, o minuto e os escanteios aparecem em cada entrada em aberto (atualiza a cada minuto com esta página aberta) e, no fim do jogo, a aposta é liquidada sozinha pelo placar e pelas estatísticas da API-Football, com o CLV contra a última odd da Pinnacle. <b>Conferir</b> faz o mesmo na hora. O resumo é pelo dia do jogo; anuladas não contam como resultado nem como volume (igual à aba Valor). <b>Origem</b> separa as análises do app das suas (✍️ entrada manual) em toda a aba.</div>
+    </details>
+    <div id="anWait"></div>
+
+    <!-- ===== EM ABERTO: ao vivo e liquidação em um toque ===== -->
+    <div class="card pend-card">
+      <div class="card-title"><span>⏳ Em aberto</span><span class="pend-sum" id="anPendHead"></span></div>
+      <div class="an-acts">
+        <button type="button" class="btn small" id="anLiveBtn">🔴 Ao vivo</button>
+        <button type="button" class="btn small" id="anCheck">🔄 Conferir</button>
+        <a class="btn small ghost" href="../analise-futebol/" target="analise">➕ Nova entrada</a>
+      </div>
+      <div class="hint an-status"><span id="anLiveMsg"></span> <span id="anCheckMsg"></span></div>
+      <div id="anPend"></div>
+    </div>
+
+    <div class="vb-sec">Histórico</div>
+
+    <!-- ===== LISTA ===== -->
     <div class="card">
-      <div class="card-title" id="anListTitle">Entradas do dia</div>
-      <div id="anList"></div>
+      <div class="card-title"><span>🗂️ Entradas</span>
+        <button class="btn small" id="anCollapseBtn" title="Recolher ou abrir todos os dias">▾</button>
+      </div>
+      <div class="search-box"><input type="text" id="anSearch" placeholder="Buscar time, mercado, linha, casa…" autocomplete="off"></div>
+      <div class="filter-row">
+        <div class="filter-btn active" data-anfilter="all">Todas</div>
+        <div class="filter-btn" data-anfilter="hoje">Hoje</div>
+        <div class="filter-btn" data-anfilter="green">Green</div>
+        <div class="filter-btn" data-anfilter="red">Red</div>
+        <div class="filter-btn" data-anfilter="void">Anuladas</div>
+      </div>
+      <div id="anListSum" class="hint" style="margin:6px 0 0;"></div>
+      <div id="anList" style="margin-top:10px;"></div>
     </div>
-    <div class="card">
-      <div class="card-title">Dia a dia</div>
-      <div id="anDays"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">Por mercado · acumulado</div>
-      <div id="anMarkets"></div>
-    </div>
+
+    <div class="vb-sec">Análise</div>
+
+    <!-- ===== RESULTADO POR DIA ===== -->
+    <details class="fold" data-remember id="foldAnDia" open>
+      <summary>📅 Resultado por dia<span class="chev">▸</span></summary>
+      <div class="fold-body"><div id="anDays"></div></div>
+    </details>
+
+    <!-- ===== SEGMENTOS ===== -->
+    <details class="fold" data-remember id="foldAnSeg">
+      <summary>📊 Desempenho por segmento<span class="chev">▸</span></summary>
+      <div class="fold-body">
+        <div class="evo-seg" style="margin:0 0 10px;">
+          <button type="button" class="evo-opt active" data-anseg="market">Mercado</button>
+          <button type="button" class="evo-opt" data-anseg="tier">Nível</button>
+          <button type="button" class="evo-opt" data-anseg="orig">Origem</button>
+          <button type="button" class="evo-opt" data-anseg="house">Casa</button>
+          <button type="button" class="evo-opt" data-anseg="odd">Odd</button>
+        </div>
+        <div id="anMarkets"></div>
+      </div>
+    </details>
+
+    <!-- ===== PREVISTO × REAL ===== -->
+    <details class="fold" data-remember id="foldAnCal">
+      <summary>🔬 Previsto × real<span class="chev">▸</span></summary>
+      <div class="fold-body">
+        <details class="help">
+          <summary>o que esta tela mede</summary>
+          <div class="help-body">O app de análise diz a chance de cada entrada (<b>acerto previsto</b>, a mistura Pinnacle × modelo). Aqui ela é comparada com o que aconteceu, por faixa: se o real fica sempre abaixo do previsto, o modelo está otimista e a odd mínima precisa subir. Com menos de ~30 apostas numa faixa a diferença ainda é ruído. O <b>CLV</b> (odd tomada contra a última odd justa da Pinnacle) mede o mesmo mais cedo: CLV positivo de forma consistente é o melhor sinal de que a entrada tem valor, mesmo antes do lucro aparecer. Entradas manuais sem previsão ficam de fora.</div>
+        </details>
+        <div id="anCal"></div>
+      </div>
+    </details>
+
   </div>
 
   <!-- ============ ABA MIDDLES ============ -->
@@ -4923,7 +5024,7 @@
         return '<div class="pend-row">'+
           '<div class="pend-when'+(late?' late':'')+'"><b>'+hh+'</b>'+diaTxt+'<div class="rel">'+relTempo(d)+'</div></div>'+
           '<div class="pend-main"><div class="pend-ev" title="'+esc(o.event||'')+'">'+esc(o.event||'')+'</div>'+
-            '<div class="pend-sub">'+tagJogo(o)+esc(legHouse(o,'A'))+' @'+od.toFixed(2)+' · '+vbStakeNat(o)+' · <span class="g">+'+fmt(st*(od-1))+'</span>'+(o.market?' · '+esc(o.market):'')+'</div></div>'+
+            '<div class="pend-sub">'+(o.origem==='analise'?'<span class="vb-orig">⚽</span>':'')+tagJogo(o)+esc(legHouse(o,'A'))+' @'+od.toFixed(2)+' · '+vbStakeNat(o)+' · <span class="g">+'+fmt(st*(od-1))+'</span>'+(o.market?' · '+esc(o.market):'')+'</div></div>'+
           '<div class="pend-act">'+
             '<button class="qb g" data-liq="'+o.id+':A" title="Green">✓</button>'+
             '<button class="qb r" data-liq="'+o.id+':RED" title="Red">✗</button>'+
@@ -5948,6 +6049,7 @@
     else if(vbFilter==='hoje') arr=arr.filter(o=>(o.date||'').slice(0,10)===hoje);
     else if(vbFilter==='green') arr=arr.filter(vbGanhou);
     else if(vbFilter==='red') arr=arr.filter(vbPerdeu);
+    else if(vbFilter==='analise') arr=arr.filter(o=>o.origem==='analise');
     const q=($('vbSearch').value||'').trim().toLowerCase();
     if(q){
       const termos=q.split(/\s+/);
@@ -6046,7 +6148,8 @@
               '</div>'+
               '<div style="display:flex;gap:6px;margin-top:8px;">'+
                 '<button class="btn small" data-vbedit="'+o.id+'">Editar</button>'+
-                '<button class="btn small" data-vbdup="'+o.id+'">Duplicar no formulário</button>'+
+                (o.origem==='analise'?'<button class="btn small" data-vbanalise="'+o.id+'">⚽ Ver na Análise</button>'
+                  :'<button class="btn small" data-vbdup="'+o.id+'">Duplicar no formulário</button>')+
                 '<button class="btn small danger" data-vbdel="'+o.id+'">Excluir</button>'+
               '</div>'+
             '</div>';
@@ -6056,7 +6159,7 @@
             '<span class="bet-date">'+((o.date||'').slice(11,16)||'—')+'</span>'+
             '<div class="bet-main" data-vbtoggle="'+o.id+'">'+
               '<div class="bet-event">'+esc(o.event||'')+'</div>'+
-              '<div class="bet-sub"><span class="house-tag">'+esc(casa)+'</span>'+
+              '<div class="bet-sub">'+(o.origem==='analise'?'<span class="vb-orig">⚽</span>':'')+'<span class="house-tag">'+esc(casa)+'</span>'+
                 (o.market?'<span class="mkt-tag">'+esc(o.market)+'</span>':'')+
                 '@'+od.toFixed(2)+' · '+vbStakeNat(o)+' · '+statusTxt+'</div>'+
             '</div>'+
@@ -6079,6 +6182,8 @@
     if(ed){ vbEditingId=ed.dataset.vbedit; vbOpenDetail=ed.dataset.vbedit; renderValorList(); return; }
     const ca=t.closest('[data-vbcancel]');
     if(ca){ vbEditingId=null; renderValorList(); return; }
+    const va=t.closest('[data-vbanalise]');
+    if(va){ verNaAnalise(va.dataset.vbanalise); return; }
     const du=t.closest('[data-vbdup]');
     if(du){
       const o=state.surebets.find(x=>x.id===du.dataset.vbdup); if(!o) return;
@@ -6288,111 +6393,272 @@
   // stake de um item da caixa: na moeda da casa quando veio assim (stake sempre em R$)
   function anStakeItem(it){ return it.cur&&it.cur!=='BRL'&&it.stakeNat>0?fmtCur(it.stakeNat,it.cur)+' ('+fmt(it.stake)+')':fmt(it.stake); }
   function anVence(o){ return Date.parse((o.analise||{}).kickoff||o.date)+105*60000<Date.now(); }   // jogo já deve ter terminado
-  // ---- resultado do dia: o dia é o do jogo (data/hora da aposta) ----
+  // ---- aba Análise: os mesmos blocos da aba Valor (resumo por período, em aberto, histórico por dia, análise),
+  // com o que é só dela: dia a dia com ‹ ›, origem (app × minhas), ao vivo, acerto previsto e CLV. O dia é o do jogo.
   var AN_RES={A:['win','✓ green'],HW:['hwin','½ green'],VOID:['void','↩ anulada'],HL:['hloss','½ red'],RED:['loss','✗ red']};
   var AN_SEM=['dom','seg','ter','qua','qui','sex','sáb'];
+  var AN_PER_ROT={'7d':'últimos 7 dias',mes:'no mês',tudo:'desde o início'};
+  var anPer=prefGet('anPer','dia'), anOrig=prefGet('anOrig','todas'), anFiltro='all', anSegBy='market';
+  var anAberto=null, anPendMais=null, anEditOnde='list', anFechados=new Set(), anIniFechados=true;
   function anDiaDe(o){ return String(o.date||'').slice(0,10)||'—'; }
-  function anSomaDia(d,n){ const t=new Date(d+'T12:00:00'); t.setDate(t.getDate()+n); return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'); }
   function anDiaNome(d){
     if(d==='—') return 'Sem data';
     const hoje=todayStr(), base=d.slice(8,10)+'/'+d.slice(5,7)+(d.slice(0,4)!==hoje.slice(0,4)?'/'+d.slice(0,4):'');
-    return (d===hoje?'Hoje':d===anSomaDia(hoje,-1)?'Ontem':d===anSomaDia(hoje,1)?'Amanhã':AN_SEM[new Date(d+'T12:00:00').getDay()])+' · '+base;
+    return (d===hoje?'Hoje':d===addDias(hoje,-1)?'Ontem':d===addDias(hoje,1)?'Amanhã':AN_SEM[new Date(d+'T12:00:00').getDay()])+', '+base;
   }
+  function anPct0(x){ return Math.round(x*100)+'%'; }
+  function anManual(o){ return !!(o.analise||{}).manual; }
+  function anDaOrigem(o){ return anOrig==='todas'||(anOrig==='minhas')===anManual(o); }
+  function anNoPeriodo(o){ return anPer==='dia'?anDiaDe(o)===(anDia||todayStr()):vbNoPeriodo(o,anPer); }
+  // anuladas não são resultado nem volume (igual à aba Valor); ½ green conta como acerto e ½ red como erro
   function anStats(list){
-    const done=list.filter(o=>o.winner), clvs=list.map(o=>(o.analise||{}).clv).filter(x=>typeof x==='number');
-    const conta=w=>done.filter(o=>w.includes(o.winner)).length;
-    return {n:list.length, done:done.length, open:list.length-done.length,
+    const done=list.filter(o=>o.winner&&o.winner!=='VOID');
+    const clvs=list.map(o=>(o.analise||{}).clv).filter(x=>typeof x==='number'), prev=done.map(o=>(o.analise||{}).p_blend).filter(x=>x>0);
+    if(prev.length<done.length) prev.length=0;   // com manual no meio, o previsto não é do mesmo grupo: fica no Previsto × real
+    const media=xs=>xs.length?xs.reduce((s,x)=>s+x,0)/xs.length:null;
+    return {n:list.length, open:list.filter(o=>!o.winner).length, nulas:list.filter(o=>o.winner==='VOID').length, done:done.length,
       giro:done.reduce((s,o)=>s+legStake(o,'A'),0), lucro:done.reduce((s,o)=>s+sbRealProfit(o),0),
-      ganhos:conta(['A','HW']), perdas:conta(['RED','HL']), nulas:conta(['VOID']), validos:done.length-conta(['VOID']),
-      clv:clvs.length?clvs.reduce((s,x)=>s+x,0)/clvs.length:null, nclv:clvs.length};
+      ganhos:done.filter(vbGanhou).length, perdas:done.filter(vbPerdeu).length, prev:media(prev), clv:media(clvs), nclv:clvs.length};
   }
-  function anResBadge(o){
-    if(!o.winner) return '<span class="an-res open">⏳ em aberto</span>';
+  const anCor=x=>x>0?'pos':x<0?'neg':'';
+  function anJogo(o){ const a=o.analise||{}; return a.home&&a.away?a.home+' x '+a.away:String(o.event||'').split(' — ')[0]; }
+  function anLinha(o){ const a=o.analise||{}; return (a.mercado||o.market||'')+(a.linha?': '+a.linha:''); }
+  function anTags(o){ const a=o.analise||{}; return (anManual(o)?'<span class="an-tag">✍️ minha</span>':'')+(a.tier&&a.tier!=='manual'?'<span class="an-tag">'+esc(a.tier)+'</span>':''); }
+  function anResBadge(o,mini){
+    const c=mini?' mini':'';
+    if(!o.winner) return '<span class="an-res open'+c+'">⏳ em aberto</span>';
     const [cls,txt]=AN_RES[o.winner]||['void',o.winner];
-    return '<span class="an-res '+cls+'">'+txt+' '+(o.winner==='VOID'?fmt(0):fmtSign(sbRealProfit(o)))+'</span>';
+    return '<span class="an-res '+cls+c+'">'+txt+(mini?'':' '+(o.winner==='VOID'?fmt(0):fmtSign(sbRealProfit(o))))+'</span>';
   }
+  function anBotoesResultado(o){
+    return '<div class="an-liq">'+Object.entries(AN_RES)
+      .map(([w,[c,t]])=>'<button type="button" class="btn small'+(o.winner===w?' sel-'+c:'')+'" data-anliq="'+o.id+':'+w+'">'+t+'</button>').join('')+
+      (o.winner?'<button type="button" class="btn small" data-anliq="'+o.id+':">reabrir</button>':'')+
+      '<button type="button" class="btn small" data-anedit="'+o.id+'">✏️ editar</button>'+
+      '<button type="button" class="btn small danger" data-andel="'+o.id+'">excluir</button></div>';
+  }
+  function anNumeros(o){
+    const a=o.analise||{};
+    return [a.p_blend?'acerto previsto '+anPct(a.p_blend):'', a.fair_odd?'justa '+a.fair_odd.toFixed(2):'', a.odd_min?'mínima '+a.odd_min.toFixed(2):'',
+      typeof a.clv==='number'?'CLV <b class="'+(a.clv>=0?'pos':'neg')+'" style="color:var(--'+(a.clv>=0?'green':'red')+')">'+(a.clv>=0?'+':'')+anPct(a.clv)+'</b> (fech. justa '+a.closingFair.toFixed(2)+')':'']
+      .filter(Boolean).join(' · ');
+  }
+
   function renderAnalise(){
     if(!$('anList')||!AN_RES) return;   // AN_RES: renderAll pode rodar antes deste trecho
-    const all=analiseBets().slice().sort((a,b)=>String(a.date).localeCompare(String(b.date)));
-    const hoje=todayStr(), dia=anDia||hoje;
-    const dias=[...new Set(all.map(anDiaDe).filter(d=>d!=='—').concat(hoje))].sort();
-    const antes=dias.filter(d=>d<dia).pop(), depois=dias.find(d=>d>dia);
-    const doDia=all.filter(o=>anDiaDe(o)===dia), S=anStats(doDia), T=anStats(all);
-    const nav=(d,t,tit)=>'<button type="button" class="btn small" '+(d?'data-andia="'+d+'" title="'+esc(tit)+'"':'disabled')+'>'+t+'</button>';
-    $('anDayNav').innerHTML=nav(antes,'‹',antes?anDiaNome(antes):'')+
-      '<div class="d">'+anDiaNome(dia)+'<small>'+(S.n?S.n+' aposta'+(S.n>1?'s':'')+(S.open?' · '+S.open+' em aberto':''):'sem apostas neste dia')+'</small></div>'+
-      nav(depois,'›',depois?anDiaNome(depois):'')+(dia!==hoje?'<button type="button" class="btn small" data-andia="'+hoje+'">Hoje</button>':'');
-    const cor=x=>x>0?'pos':x<0?'neg':'';
-    $('anSummary').innerHTML=[
-      ['Lucro do dia',S.done?fmtSign(S.lucro):'—',S.done?cor(S.lucro):''],
-      ['Yield',S.giro?anPct(S.lucro/S.giro):'—',S.giro?cor(S.lucro):''],
-      ['Acerto',S.validos?anPct(S.ganhos/S.validos)+' ('+S.ganhos+'/'+S.validos+')':'—',''],
-      ['CLV médio',S.clv===null?'—':(S.clv>=0?'+':'')+anPct(S.clv)+' ('+S.nclv+')',S.clv===null?'':S.clv>=0?'pos':'neg'],
-    ].map(([k,v,c])=>'<div class="summary-item"><div class="k">'+k+'</div><div class="v sm '+c+'">'+v+'</div></div>').join('');
-    const pills=[[S.ganhos,'win','✓ '+S.ganhos+' green'],[S.nulas,'void','↩ '+S.nulas+' anulada'+(S.nulas>1?'s':'')],[S.perdas,'loss','✗ '+S.perdas+' red'],[S.open,'open','⏳ '+S.open+' em aberto']]
-      .filter(([n])=>n).map(([,c,t])=>'<span class="an-res '+c+'">'+t+'</span>').join(' ');
-    $('anTotal').innerHTML=(pills?pills+'<br>':'')+(T.done?'Acumulado: <b class="'+(T.lucro>=0?'pos':'neg')+'" style="color:var(--'+(T.lucro>=0?'green':'red')+')">'+fmtSign(T.lucro)+'</b>'+
-      (T.giro?' · yield '+anPct(T.lucro/T.giro):'')+' · '+T.done+' liquidada'+(T.done>1?'s':'')+(T.validos?' · acerto '+anPct(T.ganhos/T.validos):''):'');
+    const all=analiseBets(), base=all.filter(anDaOrigem);
+    anHero(base); anEspera(); anPendentes(base); anLista(base); anDias(base); anSegmentos(base); anCalibracao(base);
+    anLiveStatus();
+    const prontas=all.filter(o=>!o.winner&&anVence(o)).length;
+    $('anCheckMsg').textContent=prontas?'· '+prontas+' já pode'+(prontas>1?'m':'')+' ser conferida'+(prontas>1?'s':''):'';
+  }
+
+  /* ---------- resumo ---------- */
+  function anHero(base){
+    document.querySelectorAll('[data-anper]').forEach(b=>b.classList.toggle('active',b.dataset.anper===anPer));
+    document.querySelectorAll('[data-anorig]').forEach(b=>b.classList.toggle('active',b.dataset.anorig===anOrig));
+    const hoje=todayStr(), dia=anDia||hoje, doPer=base.filter(anNoPeriodo), S=anStats(doPer);
+    $('anHeroK').textContent='Lucro realizado · '+(anPer==='dia'?anDiaNome(dia):AN_PER_ROT[anPer]);
+    if(anPer==='dia'){   // ‹ › pulam entre os dias com aposta
+      const dias=[...new Set(base.map(anDiaDe).filter(d=>d!=='—').concat(hoje))].sort();
+      const antes=dias.filter(d=>d<dia).pop(), depois=dias.find(d=>d>dia);
+      const seta=(d,t)=>'<button type="button" '+(d?'data-andia="'+d+'" title="'+esc(anDiaNome(d))+'"':'disabled')+'>'+t+'</button>';
+      $('anDayNav').innerHTML=seta(antes,'‹')+seta(depois,'›')+'<span>'+(S.n?S.n+' aposta'+(S.n>1?'s':'')+' no dia':'sem apostas no dia')+'</span>'+
+        (dia!==hoje?'<button type="button" class="hoje" data-andia="'+hoje+'">Hoje</button>':'');
+    } else $('anDayNav').innerHTML='';
+    $('anProfit').textContent=S.done?fmtSign(S.lucro):'—';
+    $('anProfit').className='v '+(S.done?(S.lucro>=0?'pos':'neg'):'');
+    $('anYield').textContent=S.giro?(S.lucro>=0?'+':'')+(S.lucro/S.giro*100).toFixed(1).replace('.',',')+'%':'—';
+    $('anYield').className='v '+(S.giro?anCor(S.lucro):'');
+    $('anHit').innerHTML=(S.ganhos+S.perdas)?anPct0(S.ganhos/(S.ganhos+S.perdas))+(S.prev?' <small>· '+anPct0(S.prev)+'</small>':''):'—';
+    $('anCount').innerHTML=S.n?S.ganhos+'G / '+S.perdas+'R'+(S.open?' <span style="color:var(--amber)">+'+S.open+'</span>':''):'—';
+    $('anVolume').textContent=S.giro?fmt(S.giro):'—';
+    $('anClv').innerHTML=S.clv===null?'—':'<span class="'+(S.clv>=0?'pos':'neg')+'" style="color:var(--'+(S.clv>=0?'green':'red')+')">'+(S.clv>=0?'+':'')+anPct(S.clv)+'</span> <small>('+S.nclv+')</small>';
+    $('anTotal').innerHTML=[[S.ganhos,'win','✓ '+S.ganhos+' green'],[S.nulas,'void','↩ '+S.nulas+' anulada'+(S.nulas>1?'s':'')],[S.perdas,'loss','✗ '+S.perdas+' red'],[S.open,'open','⏳ '+S.open+' em aberto']]
+      .filter(([n])=>n).map(([,c,t])=>'<span class="an-res '+c+'">'+t+'</span>').join('');
+    // com as duas origens no período: o placar app × minhas
+    const parte=(rot,f)=>{ const s=anStats(doPer.filter(f)); return rot+': '+(s.done?'<b class="'+anCor(s.lucro)+'" style="color:var(--'+(s.lucro>=0?'green':'red')+')">'+fmtSign(s.lucro)+'</b>'+(s.giro?' · yield '+anPct(s.lucro/s.giro):'')+' · '+s.ganhos+'/'+(s.ganhos+s.perdas):'sem resultado')+(s.open?' · '+s.open+' em aberto':''); };
+    $('anSplit').innerHTML=anOrig==='todas'&&doPer.some(anManual)&&doPer.some(o=>!anManual(o))?parte('📱 App',o=>!anManual(o))+'<br>'+parte('✍️ Minhas',anManual):'';
+  }
+
+  /* ---------- envios que ainda não entraram ---------- */
+  function anEspera(){
     const espera=anAguardando.map(({it,motivo,confirmar})=>'<div class="an-row"><div class="an-head"><span><b>⏳ '+esc(it.event||'')+'</b></span>'+
       (motivo.startsWith('a casa')?'<button type="button" class="btn small" data-ancriar="'+esc(it.id)+'">Criar a casa e registrar</button>':'')+
       (confirmar?'<span><button type="button" class="btn small" data-anok="'+esc(it.id)+'">Registrar</button> <button type="button" class="btn small danger" data-andescartar="'+esc(it.id)+'">Descartar</button></span>':'')+'</div>'+
       '<div class="an-meta">'+esc(it.casa)+' @'+Number(it.odd).toFixed(2)+' · '+anStakeItem(it)+' — '+esc(motivo)+'</div></div>').join('');
     const nuvem=anNuvem.cfg===false&&syncPronto?'<div class="hint" style="margin:0 0 8px;">Para receber aqui as apostas enviadas de outros aparelhos, conecte a ☁️ nuvem no app de análise neste aparelho (⚙️ Chave).</div>'
       :anNuvem.erro?'<div class="hint" style="margin:0 0 8px;">Caixa da nuvem com erro: '+esc(anNuvem.erro)+'</div>':'';
-    $('anWait').innerHTML=nuvem+(espera?'<div class="card-title" style="margin-top:4px;">Aguardando</div>'+espera:'');
-    // minhas análises (✍️ entrada manual) x as do app, no dia
-    const done=doDia.filter(o=>o.winner);
-    const parte=f=>{ const d=done.filter(f), l=d.reduce((s,o)=>s+sbRealProfit(o),0), g=d.reduce((s,o)=>s+legStake(o,'A'),0); return d.length+' liquidadas, lucro '+fmtSign(l)+(g?' (yield '+anPct(l/g)+')':''); };
-    $('anSplit').textContent=doDia.some(o=>(o.analise||{}).manual)?'No dia — ✍️ Minhas análises: '+parte(o=>(o.analise||{}).manual)+' · App: '+parte(o=>!(o.analise||{}).manual)+'.':'';
-    anLiveStatus();
-    const open=all.filter(o=>!o.winner), prontas=open.filter(anVence).length;
-    $('anCheckMsg').textContent=open.length?(open.length+' em aberto'+(prontas?' · '+prontas+' já podem ser conferidas':'')):'nenhuma em aberto';
-    // por mercado (acumulado): o que interessa é saber onde a margem está aparecendo
-    const mk={};
-    all.filter(o=>o.winner&&o.winner!=='VOID').forEach(o=>{ const k=(o.analise||{}).mercado||o.market||'—'; const m=mk[k]||(mk[k]={n:0,g:0,l:0,w:0});
-      m.n++; m.g+=legStake(o,'A'); m.l+=sbRealProfit(o); if(o.winner==='A'||o.winner==='HW') m.w++; });
-    const rows=Object.entries(mk).sort((a,b)=>b[1].n-a[1].n);
-    $('anMarkets').innerHTML=rows.length?rows.map(([k,m])=>'<div class="seg-row"><div class="seg-head"><span class="seg-name">'+esc(k)+'</span><span class="seg-val '+(m.l>=0?'pos':'neg')+'">'+fmtSign(m.l)+'</span></div>'+
-      '<div class="seg-meta"><span>'+m.n+' apostas · acerto '+anPct(m.w/m.n)+' · yield '+(m.g?anPct(m.l/m.g):'—')+'</span></div></div>').join(''):'<div class="hint" style="margin:0;">Sem apostas liquidadas ainda.</div>';
-    // dia a dia: lucro de cada dia com aposta (o mais recente primeiro); clicar abre o dia
-    const porDia=dias.slice().reverse().map(d=>({d,s:anStats(all.filter(o=>anDiaDe(o)===d))})).filter(r=>r.s.n).slice(0,31);
-    const maxAbs=Math.max(1,...porDia.map(r=>Math.abs(r.s.lucro)));
-    $('anDays').innerHTML=porDia.length?porDia.map(({d,s})=>{
-      const w=Math.min(50,Math.abs(s.lucro)/maxAbs*50);
-      return '<div class="day-row'+(d===dia?' sel':'')+'" data-andia="'+d+'">'+
-        '<span class="day-date">'+d.slice(8,10)+'/'+d.slice(5,7)+'<span class="wd">'+AN_SEM[new Date(d+'T12:00:00').getDay()]+'</span></span>'+
-        '<div class="day-bar-wrap"><div class="day-center"></div>'+(s.done?'<div class="day-bar '+(s.lucro>=0?'pos':'neg')+'" style="width:'+w+'%;"></div>':'')+'</div>'+
-        '<span class="day-val '+(s.done?(s.lucro>=0?'pos':'neg'):'')+'">'+(s.done?fmtSign(s.lucro):'—')+'</span>'+
-        '<span class="day-meta">'+[s.validos?s.ganhos+'/'+s.validos+' G':'',s.giro?(s.lucro>=0?'+':'')+(s.lucro/s.giro*100).toFixed(0)+'%':'',
-          s.open?'<span style="color:var(--res-open-fg)">'+s.open+'⏳</span>':''].filter(Boolean).join(' · ')+'</span></div>';
-    }).join(''):'<div class="hint" style="margin:0;">Nenhuma aposta ainda.</div>';
-    // entradas do dia (na ordem do horário) e, antes, as em aberto de outros dias
-    const outras=open.filter(o=>anDiaDe(o)!==dia);
-    $('anListTitle').textContent='Entradas · '+anDiaNome(dia);
-    const linha=o=>{
-      const a=o.analise||{}, ck=a.check||{}, odd=legOdd(o,'A'), [cls]=o.winner?(AN_RES[o.winner]||['void']):['open'];
-      const liq='<div class="an-liq">'+Object.entries(AN_RES)
-        .map(([w,[c,t]])=>'<button type="button" class="btn small'+(o.winner===w?' sel-'+c:'')+'" data-anliq="'+o.id+':'+w+'">'+t+'</button>').join('')+
-        (o.winner?'<button type="button" class="btn small" data-anliq="'+o.id+':">reabrir</button>':'')+
-        '<button type="button" class="btn small" data-anedit="'+o.id+'">✏️ editar</button>'+
-        '<button type="button" class="btn small danger" data-andel="'+o.id+'">excluir</button></div>'+
-        (anEditando===o.id?anFormEdicao(o):'');
-      return '<div class="an-row r-'+cls+'"><div class="an-head"><span><b>'+esc(a.mercado||o.market||'')+': '+esc(a.linha||'')+'</b>'+
-        (a.manual?'<span class="an-tag">✍️ manual</span>':'')+(a.tier&&a.tier!=='manual'?'<span class="an-tag">'+esc(a.tier)+'</span>':'')+'</span>'+anResBadge(o)+'</div>'+
-        '<div>'+esc((a.home&&a.away)?a.home+' x '+a.away:o.event)+' <span class="an-meta">· '+esc(a.competition||'')+' · '+String(o.date).slice(8,10)+'/'+String(o.date).slice(5,7)+' '+String(o.date).slice(11,16)+'</span></div>'+
-        '<div class="an-meta">'+esc(legHouse(o,'A'))+' @'+odd.toFixed(2)+' · '+(legCur(o,'A')!=='BRL'?vbStakeNat(o)+' ('+fmt(legStake(o,'A'))+')':fmt(legStake(o,'A')))+
-          (a.p_blend?' · acerto previsto '+anPct(a.p_blend):'')+(a.fair_odd?' · justa '+a.fair_odd.toFixed(2):'')+(a.odd_min?' · mínima '+a.odd_min.toFixed(2):'')+
-          (typeof a.clv==='number'?' · CLV '+(a.clv>=0?'+':'')+anPct(a.clv)+' (fech. justa '+a.closingFair.toFixed(2)+')':'')+'</div>'+
-        anLiveHtml(o)+(ck.detail?'<div class="an-meta">'+esc(ck.detail)+'</div>':'')+liq+'</div>';
-    };
-    $('anList').innerHTML=(outras.length?'<div class="card-title" style="margin:0 0 4px;">Em aberto de outros dias</div>'+outras.map(linha).join('')+
-        '<div class="card-title" style="margin:14px 0 4px;">'+anDiaNome(dia)+'</div>':'')+
-      (doDia.length?doDia.map(linha).join(''):'<div class="hint" style="margin:0;">'+(all.length?'Nenhuma aposta neste dia.':'Nenhuma aposta enviada pela Análise ainda.')+'</div>');
+    $('anWait').innerHTML=nuvem+(espera?'<div class="card"><div class="card-title">📥 Aguardando</div>'+espera+'</div>':'');
   }
-  document.getElementById('tab-analise').addEventListener('click',e=>{
-    const b=e.target.closest('[data-andia]'); if(!b) return;
-    anDia=b.dataset.andia===todayStr()?null:b.dataset.andia; renderAnalise();
-  });
+
+  /* ---------- em aberto: ao vivo e liquidação em um toque ---------- */
+  function anPendentes(base){
+    const box=$('anPend'), hoje=todayStr();
+    const abertas=base.filter(o=>!o.winner).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+    const expo=abertas.reduce((s,o)=>s+legStake(o,'A'),0), pot=abertas.reduce((s,o)=>s+legStake(o,'A')*(legOdd(o,'A')-1),0);
+    $('anPendHead').innerHTML=abertas.length?abertas.length+' · '+fmt(expo)+' em jogo · <span style="color:var(--green)">+'+fmt(pot)+'</span> se tudo green':'';
+    if(!abertas.length){ box.innerHTML='<div class="pend-empty">Nada em aberto ✓</div>'; return; }
+    box.innerHTML=abertas.map(o=>{
+      const d=String(o.date||''), dia=d.slice(0,10), late=anVence(o), st=legStake(o,'A'), od=legOdd(o,'A');
+      const diaTxt=dia===hoje?'hoje':dia===addDias(hoje,1)?'amanhã':dia===addDias(hoje,-1)?'ontem':(dia.slice(8,10)+'/'+dia.slice(5,7));
+      const a=o.analise||{}, vivo=anLiveHtml(o);
+      return '<div class="pend-row">'+
+        '<div class="pend-when'+(late?' late':'')+'"><b>'+(d.slice(11,16)||'--:--')+'</b>'+diaTxt+'<div class="rel">'+relTempo(d)+'</div></div>'+
+        '<div class="pend-main"><div class="pend-ev" title="'+esc(anLinha(o)+' · '+anJogo(o))+'"><b>'+esc(a.linha||anLinha(o))+'</b> · '+esc(anJogo(o))+'</div>'+
+          '<div class="pend-sub">'+esc(a.mercado||o.market||'')+' · '+esc(legHouse(o,'A'))+' @'+od.toFixed(2)+' · '+vbStakeNat(o)+' · <span class="g">+'+fmt(st*(od-1))+'</span>'+(anManual(o)?' · ✍️':'')+'</div></div>'+
+        '<div class="pend-act">'+
+          '<button type="button" class="qb g" data-anliq="'+o.id+':A" title="Green">✓</button>'+
+          '<button type="button" class="qb r" data-anliq="'+o.id+':RED" title="Red">✗</button>'+
+          '<button type="button" class="qb more" data-anmais="'+o.id+'" title="½ green, ½ red, anulada, editar, excluir">⋯</button>'+
+        '</div>'+(vivo?'<div class="pend-live">'+vivo+'</div>':'')+
+        (anPendMais===o.id?'<div class="pend-more">'+
+          '<button type="button" class="qb g" data-anliq="'+o.id+':HW">½ green</button>'+
+          '<button type="button" class="qb r" data-anliq="'+o.id+':HL">½ red</button>'+
+          '<button type="button" class="qb" data-anliq="'+o.id+':VOID">↩ anulada</button>'+
+          '<button type="button" class="qb" data-anedit="'+o.id+'">editar</button>'+
+          '<button type="button" class="qb r" data-andel="'+o.id+'">excluir</button>'+
+        '</div>':'')+
+        (anEditando===o.id&&anEditOnde==='pend'?anFormEdicao(o):'')+
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------- histórico: por dia, com busca e filtro ---------- */
+  function anLista(base){
+    const box=$('anList'), hoje=todayStr();
+    document.querySelectorAll('[data-anfilter]').forEach(b=>b.classList.toggle('active',b.dataset.anfilter===anFiltro));
+    let arr=base;
+    if(anFiltro==='hoje') arr=arr.filter(o=>anDiaDe(o)===hoje);
+    else if(anFiltro==='green') arr=arr.filter(vbGanhou);
+    else if(anFiltro==='red') arr=arr.filter(vbPerdeu);
+    else if(anFiltro==='void') arr=arr.filter(o=>o.winner==='VOID');
+    const q=($('anSearch').value||'').trim().toLowerCase();
+    if(q){
+      const termos=q.split(/\s+/);
+      arr=arr.filter(o=>{ const a=o.analise||{}; const alvo=[o.event,o.houseA,o.market,a.mercado,a.linha,a.home,a.away,a.competition,a.tier].join(' ').toLowerCase();
+        return termos.every(t=>alvo.includes(t)); });
+    }
+    const S=anStats(arr);
+    $('anListSum').innerHTML=arr.length?arr.length+' aposta'+(arr.length>1?'s':'')+(S.done?' · <b class="'+anCor(S.lucro)+'" style="color:var(--'+(S.lucro>=0?'green':'red')+')">'+fmtSign(S.lucro)+'</b> · yield '+(S.giro?anPct(S.lucro/S.giro):'—')+' · '+S.ganhos+'/'+S.done+' green':''):'';
+    if(!arr.length){ box.innerHTML='<div class="empty">'+(analiseBets().length?'Nenhuma aposta neste filtro.':'Nenhuma aposta enviada pela Análise ainda.')+'</div>'; return; }
+    if(anIniFechados){   // no começo, só ficam abertos hoje e os dias com aposta em aberto
+      const comAberta=new Set(analiseBets().filter(o=>!o.winner).map(anDiaDe));
+      analiseBets().forEach(o=>{ const d=anDiaDe(o); if(d!==hoje&&!comAberta.has(d)) anFechados.add(d); });
+      anIniFechados=false;
+    }
+    const porDia={};
+    arr.forEach(o=>(porDia[anDiaDe(o)]=porDia[anDiaDe(o)]||[]).push(o));
+    box.innerHTML=Object.keys(porDia).sort((a,b)=>b.localeCompare(a)).map(dia=>{
+      const doDia=porDia[dia].sort((a,b)=>String(a.date).localeCompare(String(b.date))||a.id.localeCompare(b.id)), s=anStats(doDia);
+      const fechado=!q&&anFechados.has(dia);
+      const head='<div class="sb-day-header" data-andaytoggle="'+dia+'" style="cursor:pointer;">'+
+        '<div class="sb-day-title"><span class="day-chevron '+(fechado?'':'open')+'">▸</span>'+esc(anDiaNome(dia))+'</div>'+
+        '<div class="sb-day-sum '+(s.lucro>=0?'pos':'neg')+'">'+
+          (s.done?fmtSign(s.lucro)+' · '+s.ganhos+'/'+s.done+'G'+(s.giro?' · '+(s.lucro>=0?'+':'')+(s.lucro/s.giro*100).toFixed(1)+'%':''):'')+
+          (s.open?'<span style="color:var(--res-open-fg)"> · '+s.open+' aberta'+(s.open>1?'s':'')+'</span>':'')+
+        '</div></div>';
+      if(fechado) return head;
+      return head+doDia.map(o=>{
+        const a=o.analise||{}, st=legStake(o,'A'), od=legOdd(o,'A'), [cls]=o.winner?(AN_RES[o.winner]||['void']):['open'];
+        const dot=!o.winner?'pendente':o.winner==='VOID'?'void':vbGanhou(o)?'green':'red';
+        const val=!o.winner?'<span class="vb-cen g">+'+fmt(st*(od-1))+'</span><span class="vb-cen r">−'+fmt(st)+'</span>'
+          :o.winner==='VOID'?fmt(0):fmtSign(sbRealProfit(o));
+        const valCls=!o.winner?'pend':o.winner==='VOID'?'void':vbGanhou(o)?'win':'loss';
+        const aberto=anAberto===o.id||(anEditando===o.id&&anEditOnde==='list');
+        const det=aberto?'<div class="bet-detail show">'+
+            esc(anJogo(o))+(a.competition?' · '+esc(a.competition):'')+' · '+esc(legHouse(o,'A'))+' @'+od.toFixed(2)+' · '+vbStakeNat(o)+(legCur(o,'A')!=='BRL'?' ≈ '+fmt(st):'')+
+            (anNumeros(o)?'<br>'+anNumeros(o):'')+(o.winner?'':anLiveHtml(o))+((a.check||{}).detail?'<div class="an-meta">'+esc(a.check.detail)+'</div>':'')+
+            anBotoesResultado(o)+(anEditando===o.id&&anEditOnde==='list'?anFormEdicao(o):'')+
+          '</div>':'';
+        return '<div class="bet-row r-'+cls+'">'+
+            '<span class="bet-dot '+dot+'"></span>'+
+            '<span class="bet-date">'+(String(o.date||'').slice(11,16)||'—')+'</span>'+
+            '<div class="bet-main" data-antoggle="'+o.id+'">'+
+              '<div class="bet-event">'+esc(anLinha(o))+'</div>'+
+              '<div class="bet-sub">'+anResBadge(o,true)+' '+esc(anJogo(o))+' · <span class="house-tag">'+esc(legHouse(o,'A'))+'</span>@'+od.toFixed(2)+' · '+vbStakeNat(o)+(anManual(o)?' · ✍️':'')+'</div>'+
+            '</div>'+
+            '<span class="bet-val '+valCls+'">'+val+'</span>'+
+          '</div>'+det;
+      }).join('');
+    }).join('');
+  }
+
+  /* ---------- resultado por dia (clicar abre o dia no resumo) ---------- */
+  function anDias(base){
+    const dia=anPer==='dia'?(anDia||todayStr()):null;
+    const dias={};
+    base.forEach(o=>{ const d=anDiaDe(o); if(d!=='—') (dias[d]=dias[d]||[]).push(o); });
+    const rows=Object.keys(dias).sort().map(d=>({d,s:anStats(dias[d])}));
+    if(!rows.length){ $('anDays').innerHTML='<div class="empty">Nenhuma aposta ainda.</div>'; return; }
+    let cum=0; rows.forEach(r=>{ cum+=r.s.lucro; });
+    const ult=rows.slice(-30).reverse(), maxAbs=Math.max(1,...ult.map(r=>Math.abs(r.s.lucro)));
+    const comRes=rows.filter(r=>r.s.done), pos=comRes.filter(r=>r.s.lucro>0).length;
+    $('anDays').innerHTML=(comRes.length?'<div class="hint" style="margin:0 0 8px;">'+comRes.length+' dia'+(comRes.length>1?'s':'')+' com resultado · '+pos+' positivo'+(pos===1?'':'s')+' ('+Math.round(100*pos/comRes.length)+'%) · toque num dia para ver no resumo</div>':'')+
+      ult.map(({d,s})=>{
+        const w=Math.min(50,Math.abs(s.lucro)/maxAbs*50);
+        return '<div class="day-row'+(d===dia?' sel':'')+'" data-andia="'+d+'">'+
+          '<span class="day-date">'+d.slice(8,10)+'/'+d.slice(5,7)+'<span class="wd">'+AN_SEM[new Date(d+'T12:00:00').getDay()]+'</span></span>'+
+          '<span class="day-meta">'+(s.done?s.ganhos+'/'+s.done:'')+(s.open?'<span style="color:var(--res-open-fg)"> '+s.open+'⏳</span>':'')+'</span>'+
+          '<div class="day-bar-wrap"><div class="day-center"></div>'+(s.done?'<div class="day-bar '+(s.lucro>=0?'pos':'neg')+'" style="width:'+w+'%;"></div>':'')+'</div>'+
+          '<span class="day-val '+(s.done?(s.lucro>=0?'pos':'neg'):'')+'">'+(s.done?fmtSign(s.lucro):'—')+'</span>'+
+          '<span class="day-meta">'+(s.giro?(s.lucro>=0?'+':'')+(s.lucro/s.giro*100).toFixed(0)+'%':'')+'</span></div>';
+      }).join('')+
+      '<div class="day-row" style="border-top:2px solid var(--border);margin-top:4px;padding-top:8px;cursor:default;">'+
+        '<span class="day-date" style="color:var(--text);font-weight:700;">acum.</span><span class="day-meta"></span>'+
+        '<div class="day-bar-wrap" style="background:none;"></div>'+
+        '<span class="day-val '+(cum>=0?'pos':'neg')+'" style="font-size:13px;">'+fmtSign(cum)+'</span><span class="day-meta"></span></div>';
+  }
+
+  /* ---------- desempenho por segmento (com o acerto previsto ao lado do real) ---------- */
+  function anSegmentos(base){
+    document.querySelectorAll('[data-anseg]').forEach(b=>b.classList.toggle('active',b.dataset.anseg===anSegBy));
+    const done=base.filter(o=>o.winner&&o.winner!=='VOID');
+    if(!done.length){ $('anMarkets').innerHTML='<div class="empty" style="padding:8px;">Liquide apostas para ver o desempenho por segmento.</div>'; return; }
+    const chave=o=>{ const a=o.analise||{};
+      return anSegBy==='market'?(a.mercado||o.market||'(sem mercado)'):anSegBy==='tier'?(anManual(o)?'✍️ manual':a.tier||'(sem nível)')
+        :anSegBy==='orig'?(anManual(o)?'✍️ Minhas':'📱 App'):anSegBy==='odd'?vbFaixaOdd(legOdd(o,'A')):legHouse(o,'A')||'(sem casa)'; };
+    const grupos={};
+    done.forEach(o=>(grupos[chave(o)]=grupos[chave(o)]||[]).push(o));
+    const linhas=Object.entries(grupos).map(([nome,l])=>Object.assign({nome,odd:l.reduce((s,o)=>s+legOdd(o,'A'),0)/l.length},anStats(l)));
+    if(anSegBy==='odd') linhas.sort((a,b)=>a.nome.localeCompare(b.nome)); else linhas.sort((a,b)=>b.lucro-a.lucro);
+    const maxAbs=Math.max(1,...linhas.map(l=>Math.abs(l.lucro)));
+    $('anMarkets').innerHTML=linhas.map(l=>{
+      const w=Math.min(50,Math.abs(l.lucro)/maxAbs*50), y=l.giro?l.lucro/l.giro*100:0;
+      return '<div class="seg-row"><div class="seg-head"><span class="seg-name">'+esc(l.nome)+(l.done<5?'<span class="seg-warn" title="amostra pequena">•</span>':'')+'</span>'+
+        '<span class="seg-val '+(l.lucro>=0?'pos':'neg')+'">'+fmtSign(l.lucro)+'</span></div>'+
+        '<div class="day-bar-wrap" style="height:12px;"><div class="day-center"></div><div class="day-bar '+(l.lucro>=0?'pos':'neg')+'" style="width:'+w+'%;"></div></div>'+
+        '<div class="seg-meta"><span>'+l.ganhos+'/'+l.done+' · '+anPct0(l.ganhos/l.done)+' acerto'+(l.prev?' (prev. '+anPct0(l.prev)+')':'')+'</span>'+
+        '<span>odd méd '+l.odd.toFixed(2)+'</span><span class="'+(y>=0?'pos':'neg')+'">yield '+(y>=0?'+':'')+y.toFixed(1)+'%</span></div></div>';
+    }).join('')+(linhas.some(l=>l.done<5)?'<div class="hint" style="margin:10px 0 0;"><span style="color:var(--amber)">•</span> menos de 5 apostas — amostra pequena demais para conclusão.</div>':'');
+  }
+
+  /* ---------- previsto × real e CLV ---------- */
+  function anCalibracao(base){
+    const done=base.filter(o=>o.winner&&o.winner!=='VOID'), comPrev=done.filter(o=>(o.analise||{}).p_blend>0);
+    const row=(k,v)=>'<div class="cal-stat"><span class="k">'+k+'</span><span class="v">'+v+'</span></div>';
+    if(!comPrev.length&&!base.some(o=>typeof (o.analise||{}).clv==='number')){ $('anCal').innerHTML='<div class="empty">Ainda sem apostas do app liquidadas.</div>'; return; }
+    const S=anStats(comPrev), faixas=[[0,0.6,'abaixo de 60%'],[0.6,0.65,'60–65%'],[0.65,0.7,'65–70%'],[0.7,0.75,'70–75%'],[0.75,1.01,'75% ou mais']];
+    let html=comPrev.length?row('Acerto real × previsto',anPct0(S.ganhos/S.done)+' × '+anPct0(S.prev)+' <small>'+S.done+' aposta'+(S.done>1?'s':'')+' do app</small>'):'';
+    const clv=base.filter(o=>typeof (o.analise||{}).clv==='number');
+    if(clv.length){
+      const pos=clv.filter(o=>o.analise.clv>0), m=clv.reduce((s,o)=>s+o.analise.clv,0)/clv.length;
+      const luc=l=>l.filter(o=>o.winner).reduce((s,o)=>s+sbRealProfit(o),0), neg=clv.filter(o=>o.analise.clv<=0);
+      html+=row('CLV médio','<span style="color:var(--'+(m>=0?'green':'red')+')">'+(m>=0?'+':'')+anPct(m)+'</span> <small>'+pos.length+' de '+clv.length+' positivos</small>')+
+        row('Lucro com CLV + / −','<span style="color:var(--'+(luc(pos)>=0?'green':'red')+')">'+fmtSign(luc(pos))+'</span> / <span style="color:var(--'+(luc(neg)>=0?'green':'red')+')">'+fmtSign(luc(neg))+'</span>');
+    }
+    let pouco=false;
+    html+=faixas.map(([lo,hi,nome])=>{
+      const l=comPrev.filter(o=>o.analise.p_blend>=lo&&o.analise.p_blend<hi); if(!l.length) return '';
+      if(l.length<30) pouco=true;
+      const s=anStats(l), real=s.ganhos/s.done, gap=real-s.prev;
+      return '<div class="seg-row"><div class="seg-head"><span class="seg-name">Previsto '+nome+(s.done<30?'<span class="seg-warn" title="amostra pequena">•</span>':'')+'</span>'+
+        '<span class="seg-val '+(s.lucro>=0?'pos':'neg')+'">'+fmtSign(s.lucro)+'</span></div>'+
+        '<div class="seg-meta"><span>'+s.done+' aposta'+(s.done>1?'s':'')+' · previsto '+anPct0(s.prev)+' · real '+anPct0(real)+'</span>'+
+        '<span class="'+(gap>=0?'pos':'neg')+'">'+(gap>=0?'+':'')+Math.round(gap*100)+' pp</span></div></div>';
+    }).join('');
+    $('anCal').innerHTML=html+(pouco?'<div class="hint" style="margin:10px 0 0;"><span style="color:var(--amber)">•</span> menos de 30 apostas na faixa: a diferença ainda é ruído.</div>':'');
+  }
   $('anWait').addEventListener('click',e=>{
     const ok=e.target.closest('[data-anok]');
     if(ok){ importarAnalise(null,ok.dataset.anok); return; }
@@ -6454,24 +6720,51 @@
     anEditando=null; saveState(); renderAll();
     toast('Aposta atualizada ✓'+aviso);
   }
-  $('anList').addEventListener('click',e=>{
-    const b=e.target.closest('[data-anliq]');
-    if(b){ const [id,w]=b.dataset.anliq.split(':'); liquidarValor(id,w); return; }
-    const ed=e.target.closest('[data-anedit]');
-    if(ed){ anEditando=anEditando===ed.dataset.anedit?null:ed.dataset.anedit; renderAnalise(); return; }
-    if(e.target.closest('[data-ancancel]')){ anEditando=null; renderAnalise(); return; }
-    const sv=e.target.closest('[data-ansave]');
-    if(sv){ anSalvar(sv.dataset.ansave); return; }
-    const de=e.target.closest('[data-andel]');
-    if(de){
-      const o=state.surebets.find(x=>x.id===de.dataset.andel);
+  // um listener só para a aba inteira (ela é redesenhada a cada mudança)
+  $('tab-analise').addEventListener('click',e=>{
+    const q=sel=>e.target.closest(sel);
+    let b;
+    if((b=q('[data-anper]'))){ anPer=b.dataset.anper; prefSet('anPer',anPer); if(anPer!=='dia') anDia=null; renderAnalise(); return; }
+    if((b=q('[data-anorig]'))){ anOrig=b.dataset.anorig; prefSet('anOrig',anOrig); renderAnalise(); return; }
+    if((b=q('[data-andia]'))){
+      anPer='dia'; prefSet('anPer','dia'); anDia=b.dataset.andia===todayStr()?null:b.dataset.andia; renderAnalise();
+      if(b.closest('#anDays')) $('anHeroK').scrollIntoView({behavior:'smooth',block:'center'});
+      return;
+    }
+    if((b=q('[data-anfilter]'))){ anFiltro=b.dataset.anfilter; renderAnalise(); return; }
+    if((b=q('[data-anseg]'))){ anSegBy=b.dataset.anseg; renderAnalise(); return; }
+    if((b=q('[data-andaytoggle]'))){ const d=b.dataset.andaytoggle; if(anFechados.has(d)) anFechados.delete(d); else anFechados.add(d); renderAnalise(); return; }
+    if((b=q('[data-antoggle]'))){ const id=b.dataset.antoggle; if(anEditando===id) return; anAberto=anAberto===id?null:id; renderAnalise(); return; }
+    if((b=q('[data-anmais]'))){ anPendMais=anPendMais===b.dataset.anmais?null:b.dataset.anmais; renderAnalise(); return; }
+    if((b=q('[data-anliq]'))){ const [id,w]=b.dataset.anliq.split(':'); anPendMais=null; liquidarValor(id,w); return; }
+    if((b=q('[data-anedit]'))){
+      const id=b.dataset.anedit; anEditOnde=b.closest('#anPend')?'pend':'list';
+      anEditando=anEditando===id?null:id; if(anEditando&&anEditOnde==='list') anAberto=id;
+      renderAnalise(); return;
+    }
+    if(q('[data-ancancel]')){ anEditando=null; renderAnalise(); return; }
+    if((b=q('[data-ansave]'))){ anSalvar(b.dataset.ansave); return; }
+    if((b=q('[data-andel]'))){
+      const o=state.surebets.find(x=>x.id===b.dataset.andel);
       if(o&&confirm('Excluir "'+(o.event||'')+'"?\n\nA stake volta para o saldo da casa.')){
         reverterTudo(o); marcarExcluido(o.id);
         state.surebets=state.surebets.filter(x=>x.id!==o.id);
         if(anEditando===o.id) anEditando=null;
-        saveState(); renderAll(); toast('Aposta excluída');
+        anPendMais=null; saveState(); renderAll(); toast('Aposta excluída');
       }
     }
+  });
+  $('anSearch').addEventListener('input',renderAnalise);
+  function verNaAnalise(id){
+    const o=analiseBets().find(x=>x.id===id); if(!o) return;
+    anOrig='todas'; anFiltro='all'; $('anSearch').value=''; anFechados.delete(anDiaDe(o)); anAberto=id;
+    abrirAba('analise'); renderAnalise();
+    setTimeout(()=>{ const el=document.querySelector('#anList [data-antoggle="'+id+'"]'); if(el) el.scrollIntoView({behavior:'smooth',block:'center'}); },60);
+  }
+  $('anCollapseBtn').addEventListener('click',()=>{
+    const dias=[...new Set(analiseBets().map(anDiaDe))];
+    if(dias.every(d=>anFechados.has(d))) anFechados.clear(); else dias.forEach(d=>anFechados.add(d));
+    renderAnalise();
   });
   // Liquida pelo módulo do app de análise (mesmo endereço): placar, estatísticas, 1º tempo e CLV.
   async function liquidarAnalise(lista,mod){
