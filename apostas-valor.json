@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 167.3,
+      "value": 111.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T19:52:28.122Z"
+      "updatedAt": "2026-10-07T20:00:51.940Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -28145,7 +28145,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.89,
       "prob": 0.53,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T15:00",
       "modelo": "analise",
       "total": 55.7,
@@ -28154,9 +28154,10 @@
       "lucro": 39.547,
       "roi": 71,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T17:36:37.406Z",
+      "updatedAt": "2026-10-07T20:00:51.939Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639229,
@@ -28178,7 +28179,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuye394q3lgr",
-        "enviadaEm": "2026-10-07T17:36:36.602Z"
+        "enviadaEm": "2026-10-07T17:36:36.602Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Ceará U20 1–0 Ferroviario U20 · saldo de gols do Ceará U20: 1 (linha 1.5)",
+          "at": "2026-10-07T20:00:51.939Z"
+        },
+        "clv": -0.06184721233062862,
+        "closingFair": 1.8227308200491612
       }
     },
     {
@@ -28394,5 +28402,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T19:52:28.122Z"
+  "updatedAt": "2026-10-07T20:00:51.940Z"
 }
