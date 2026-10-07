@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 535.8,
+      "value": 647.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T11:13:21.539Z"
+      "updatedAt": "2026-10-07T13:26:27.487Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 190,
+      "value": 170,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T11:13:21.535Z"
+      "updatedAt": "2026-10-07T13:26:27.486Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27667,6 +27667,53 @@
         "stakes": true
       },
       "updatedAt": "2026-10-07T11:13:21.535Z"
+    },
+    {
+      "id": "muy55k0ukg7ij",
+      "kind": "valor",
+      "event": "Pyramids FC x Olympic El Qanah — Total de gols 1T: Mais de 0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.82,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.53,
+      "prob": 0.654,
+      "winner": null,
+      "date": "2026-10-07T11:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 91.84,
+      "lucroRed": -112,
+      "lucro": 91.84,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T13:26:27.487Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640289,
+        "kickoff": "2026-10-07T14:00:00.000Z",
+        "home": "Pyramids FC",
+        "away": "Olympic El Qanah",
+        "competition": "League Cup",
+        "lineId": "g1O0.5",
+        "mercado": "Total de gols 1T",
+        "linha": "Mais de 0,5",
+        "tier": "especulativa",
+        "p_model": 0.602,
+        "p_blend": 0.654,
+        "p_pinnacle": 0.659,
+        "fair_odd": 1.53,
+        "odd_min": 1.61,
+        "pinnacle_odd": 1.45,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuy55jml4hiv",
+        "enviadaEm": "2026-10-07T13:26:26.973Z"
+      }
     }
   ],
   "invertidos": [],
@@ -27833,5 +27880,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T12:56:53.322Z"
+  "updatedAt": "2026-10-07T13:26:27.487Z"
 }
