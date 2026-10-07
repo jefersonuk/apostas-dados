@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1040,
+      "value": 776.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:54:55.567Z"
+      "updatedAt": "2026-10-07T21:55:14.702Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 34,
+      "value": 81,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:54:55.567Z"
+      "updatedAt": "2026-10-07T21:55:14.702Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28812,7 +28812,7 @@
       "event": "America Mineiro x Fortaleza EC — Total de gols: Menos de 2,5",
       "houseA": "Sportmarket",
       "oddA": 1.81,
-      "stakeA": 319.2,
+      "stakeA": 56,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Total de Gols",
@@ -28821,15 +28821,15 @@
       "winner": null,
       "date": "2026-10-07T20:30",
       "modelo": "analise",
-      "total": 319.2,
-      "lucroA": 258.552,
-      "lucroRed": -319.2,
-      "lucro": 258.552,
+      "total": 56,
+      "lucroA": 45.36,
+      "lucroRed": -56,
+      "lucro": 45.36,
       "roi": 81,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T21:48:09.097Z",
+      "updatedAt": "2026-10-07T21:55:14.702Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520910,
@@ -28851,7 +28851,8 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuyn2q60hz38",
-        "enviadaEm": "2026-10-07T21:48:08.568Z"
+        "enviadaEm": "2026-10-07T21:48:08.568Z",
+        "editadaEm": "2026-10-07T21:55:14.701Z"
       }
     },
     {
@@ -29067,5 +29068,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:54:55.568Z"
+  "updatedAt": "2026-10-07T21:55:14.702Z"
 }
