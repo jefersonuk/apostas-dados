@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 55.7,
+      "value": 222.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:19:41.602Z"
+      "updatedAt": "2026-10-07T21:23:44.974Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 201,
+      "value": 171,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:19:41.601Z"
+      "updatedAt": "2026-10-07T21:23:44.974Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5179,12 +5179,12 @@
       "updatedAt": "2026-10-06T11:20:49.693Z"
     }
   ],
-  "usdRate": 5,
+  "usdRate": 5.02,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-07T15:30:16.490Z",
-  "eurRate": 5.57,
+  "usdRateAt": "2026-10-07T21:31:33.469Z",
+  "eurRate": 5.6,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-07T15:30:16.725Z",
+  "eurRateAt": "2026-10-07T21:31:33.998Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -28288,6 +28288,147 @@
         "inboxId": "anmuym21fgvbar",
         "enviadaEm": "2026-10-07T21:19:36.892Z"
       }
+    },
+    {
+      "id": "muym7culpwfz4",
+      "kind": "valor",
+      "event": "Antofagasta x Universidad de Chile — Handicap asiático: Antofagasta +2",
+      "houseA": "Sportmarket",
+      "oddA": 1.43,
+      "stakeA": 55.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.45,
+      "prob": 0.691,
+      "winner": null,
+      "date": "2026-10-07T19:00",
+      "modelo": "analise",
+      "total": 55.7,
+      "lucroA": 23.950999999999997,
+      "lucroRed": -55.7,
+      "lucro": 23.950999999999997,
+      "roi": 42.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:23:44.974Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1643186,
+        "kickoff": "2026-10-07T22:00:00.000Z",
+        "home": "Antofagasta",
+        "away": "Universidad de Chile",
+        "competition": "Copa Chile",
+        "lineId": "ahH2",
+        "mercado": "Handicap asiático",
+        "linha": "Antofagasta +2",
+        "tier": "sólida",
+        "p_model": 0.904,
+        "p_blend": 0.691,
+        "p_pinnacle": 0.656,
+        "fair_odd": 1.45,
+        "odd_min": 1.52,
+        "pinnacle_odd": 1.41,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuym2wu2uta1",
+        "enviadaEm": "2026-10-07T21:20:17.594Z"
+      }
+    },
+    {
+      "id": "muym7cumzqad4",
+      "kind": "valor",
+      "event": "Popayan x Union Magdalena — Handicap asiático: Union Magdalena 0",
+      "houseA": "Sportmarket",
+      "oddA": 1.56,
+      "stakeA": 55.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.58,
+      "prob": 0.633,
+      "winner": null,
+      "date": "2026-10-07T19:00",
+      "modelo": "analise",
+      "total": 55.7,
+      "lucroA": 31.192000000000004,
+      "lucroRed": -55.7,
+      "lucro": 31.192000000000004,
+      "roi": 56.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:23:44.974Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1549587,
+        "kickoff": "2026-10-07T22:00:00.000Z",
+        "home": "Popayan",
+        "away": "Union Magdalena",
+        "competition": "Primera B",
+        "lineId": "ahA0",
+        "mercado": "Handicap asiático",
+        "linha": "Union Magdalena 0",
+        "tier": "especulativa",
+        "p_model": 0.642,
+        "p_blend": 0.633,
+        "p_pinnacle": 0.632,
+        "fair_odd": 1.58,
+        "odd_min": 1.63,
+        "pinnacle_odd": 1.53,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmuym4p77doc3",
+        "enviadaEm": "2026-10-07T21:21:41.011Z"
+      }
+    },
+    {
+      "id": "muym7cumhrj3w",
+      "kind": "valor",
+      "event": "Avai x Londrina — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.46,
+      "stakeA": 55.7,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.47,
+      "prob": 0.681,
+      "winner": null,
+      "date": "2026-10-07T19:30",
+      "modelo": "analise",
+      "total": 55.7,
+      "lucroA": 25.622,
+      "lucroRed": -55.7,
+      "lucro": 25.622,
+      "roi": 46,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:23:44.974Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520911,
+        "kickoff": "2026-10-07T22:30:00.000Z",
+        "home": "Avai",
+        "away": "Londrina",
+        "competition": "Serie B",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.681,
+        "p_blend": 0.681,
+        "p_pinnacle": 0.681,
+        "fair_odd": 1.47,
+        "odd_min": 1.51,
+        "pinnacle_odd": 1.43,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmuym7ah27j4s",
+        "enviadaEm": "2026-10-07T21:23:41.894Z"
+      }
     }
   ],
   "invertidos": [],
@@ -28454,5 +28595,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:19:41.602Z"
+  "updatedAt": "2026-10-07T21:31:33.999Z"
 }
