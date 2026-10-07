@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 776.8,
+      "value": 832.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:55:14.702Z"
+      "updatedAt": "2026-10-07T21:57:19.132Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 81,
+      "value": 71,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:55:14.702Z"
+      "updatedAt": "2026-10-07T21:57:19.131Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28902,6 +28902,53 @@
         "inboxId": "anmuynbfj0xvyu",
         "enviadaEm": "2026-10-07T21:54:54.684Z"
       }
+    },
+    {
+      "id": "muyneizfvad9c",
+      "kind": "valor",
+      "event": "Oriente Petrolero x Universitario de Vinto — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.45,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.48,
+      "prob": 0.677,
+      "winner": null,
+      "date": "2026-10-07T21:30",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 25.199999999999996,
+      "lucroRed": -56,
+      "lucro": 25.199999999999996,
+      "roi": 44.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-07T21:57:19.131Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1619713,
+        "kickoff": "2026-10-08T00:30:00.000Z",
+        "home": "Oriente Petrolero",
+        "away": "Universitario de Vinto",
+        "competition": "Copa de la División Profesional",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.646,
+        "p_blend": 0.677,
+        "p_pinnacle": 0.681,
+        "fair_odd": 1.48,
+        "odd_min": 1.52,
+        "pinnacle_odd": 1.39,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmuyneil7hd2x",
+        "enviadaEm": "2026-10-07T21:57:18.619Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29068,5 +29115,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T21:55:14.702Z"
+  "updatedAt": "2026-10-07T21:57:19.132Z"
 }
