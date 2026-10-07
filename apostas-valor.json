@@ -4599,9 +4599,9 @@
     {
       "id": "msddu5i007wwm",
       "name": "Ivibet",
-      "value": 180,
+      "value": 200,
       "currency": "BRL",
-      "updatedAt": "2026-10-07T15:42:06.834Z"
+      "updatedAt": "2026-10-07T15:43:02.785Z"
     },
     {
       "id": "msdee34ivpnvx",
@@ -4659,10 +4659,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 280,
+      "value": 168,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T15:00:01.463Z"
+      "updatedAt": "2026-10-07T16:01:20.660Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4695,9 +4695,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 219.15,
+      "value": 257.15,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T15:00:01.463Z"
+      "updatedAt": "2026-10-07T16:01:20.660Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -27747,7 +27747,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.26,
       "prob": 0.795,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-07T11:00",
       "modelo": "analise",
       "total": 112,
@@ -27756,9 +27756,10 @@
       "lucro": 99.67999999999999,
       "roi": 88.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-07T13:49:29.224Z",
+      "updatedAt": "2026-10-07T16:01:20.660Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640288,
@@ -27780,7 +27781,14 @@
         "fragile": true,
         "inboxId": "anmuy5yv4kweso",
         "enviadaEm": "2026-10-07T13:49:14.900Z",
-        "editadaEm": "2026-10-07T13:49:29.224Z"
+        "editadaEm": "2026-10-07T13:49:29.224Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Asyut Petrol 0–5 Al Ahly · saldo de gols do Asyut Petrol: -5 (linha -1)",
+          "at": "2026-10-07T16:01:20.659Z"
+        },
+        "clv": -0.07252221126516545,
+        "closingFair": 2.0377846488142155
       }
     },
     {
@@ -28092,5 +28100,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T15:42:06.834Z"
+  "updatedAt": "2026-10-07T16:01:20.660Z"
 }
