@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 112,
+      "value": 168.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T16:03:38.030Z"
+      "updatedAt": "2026-10-08T16:29:31.350Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 229.71,
+      "value": 219.71,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T16:03:38.030Z"
+      "updatedAt": "2026-10-08T16:29:31.350Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29684,6 +29684,113 @@
         "resultado": "A"
       },
       "updatedAt": "2026-10-08T14:57:48.786Z"
+    },
+    {
+      "id": "muzr4tw5mnve6",
+      "kind": "valor",
+      "event": "Múltipla (4) — Atletico Nacional x Deportes Tolima Mais de 1,5 · Atletico Paranaense x Atletico-MG Mais de 1,5 · Safa x Reyady Abaseya Mais de 1,5 · Bentín Tacna Heroica x Carlos A. Mannucci Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 3.3,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": 3.45,
+      "prob": 0.29,
+      "winner": null,
+      "date": "2026-10-08T15:45",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 129.26,
+      "lucroRed": -56.2,
+      "lucro": 129.26,
+      "roi": 229.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T16:29:31.350Z",
+      "origem": "analise",
+      "analise": {
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1549764,
+            "lineId": "gO1.5",
+            "home": "Atletico Nacional",
+            "away": "Deportes Tolima",
+            "kickoff": "2026-10-08T23:05:00.000Z",
+            "competition": "Primera A",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.75,
+            "p_pinnacle": 0.762,
+            "fair_odd": 1.33,
+            "odd_min": 1.35,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1492390,
+            "lineId": "gO1.5",
+            "home": "Atletico Paranaense",
+            "away": "Atletico-MG",
+            "kickoff": "2026-10-08T23:00:00.000Z",
+            "competition": "Serie A",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.73,
+            "p_pinnacle": 0.742,
+            "fair_odd": 1.37,
+            "odd_min": 1.39,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1642034,
+            "lineId": "gO1.5",
+            "home": "Safa",
+            "away": "Reyady Abaseya",
+            "kickoff": "2026-10-08T18:45:00.000Z",
+            "competition": "Premier League",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.729,
+            "p_pinnacle": 0.726,
+            "fair_odd": 1.37,
+            "odd_min": 1.39,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1640278,
+            "lineId": "gO1.5",
+            "home": "Bentín Tacna Heroica",
+            "away": "Carlos A. Mannucci",
+            "kickoff": "2026-10-08T20:00:00.000Z",
+            "competition": "Segunda División",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.727,
+            "p_pinnacle": 0.721,
+            "fair_odd": 1.38,
+            "odd_min": 1.4,
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1549764,
+        "lineId": "multi",
+        "kickoff": "2026-10-08T23:05:00.000Z",
+        "first_kickoff": "2026-10-08T18:45:00.000Z",
+        "competition": "Primera A, Serie A, Premier League, Segunda División",
+        "mercado": "Múltipla",
+        "linha": "4 pernas · over de gols",
+        "tier": "múltipla",
+        "p_blend": 0.29,
+        "p_pinnacle": 0.296,
+        "fair_odd": 3.45,
+        "odd_min": 3.62,
+        "pinnacle_odd": null,
+        "priced_by": "pinnacle",
+        "inboxId": "anmuzr4t865b6d",
+        "enviadaEm": "2026-10-08T16:29:30.486Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29850,5 +29957,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T16:03:38.030Z"
+  "updatedAt": "2026-10-08T16:29:31.351Z"
 }
