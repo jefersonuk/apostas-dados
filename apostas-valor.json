@@ -4801,13 +4801,6 @@
       "updatedAt": "2026-09-30T21:37:40.342Z"
     },
     {
-      "id": "muczy0ui6d8aw",
-      "name": "Casobet",
-      "value": 130,
-      "currency": "USD",
-      "updatedAt": "2026-10-07T20:20:41.259Z"
-    },
-    {
       "id": "mue95xogyqnk4",
       "name": "BookmakerXyz",
       "value": 0.02,
@@ -5703,6 +5696,10 @@
     {
       "id": "msfgf86ojrke9",
       "at": "2026-10-07T20:19:41.422Z"
+    },
+    {
+      "id": "muczy0ui6d8aw",
+      "at": "2026-10-08T17:32:40.506Z"
     }
   ],
   "surebets": [
@@ -30185,5 +30182,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:31:48.756Z"
+  "updatedAt": "2026-10-08T17:32:40.506Z"
 }
