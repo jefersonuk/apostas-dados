@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 721.4,
+      "value": 665.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T00:00:33.607Z"
+      "updatedAt": "2026-10-08T00:16:51.095Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 95.08,
+      "value": 108.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T00:00:33.606Z"
+      "updatedAt": "2026-10-08T00:16:51.094Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28254,7 +28254,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.48,
       "prob": 0.674,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-07T19:00",
       "modelo": "analise",
       "total": 55.7,
@@ -28263,9 +28263,10 @@
       "lucro": 22.279999999999998,
       "roi": 39.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T00:00:31.305Z",
+      "updatedAt": "2026-10-08T00:16:51.095Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1638395,
@@ -28288,10 +28289,12 @@
         "inboxId": "anmuym21fgvbar",
         "enviadaEm": "2026-10-07T21:19:36.892Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-08T00:00:31.305Z"
-        }
+          "status": "encerrado",
+          "detail": "Coquimbo Unido 2–1 Cobreloa · saldo de gols do Coquimbo Unido: 1 (linha 2)",
+          "at": "2026-10-08T00:16:51.094Z"
+        },
+        "clv": -0.10025696318438782,
+        "closingFair": 1.5559998162974473
       }
     },
     {
@@ -29136,5 +29139,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T00:00:33.607Z"
+  "updatedAt": "2026-10-08T00:16:51.095Z"
 }
