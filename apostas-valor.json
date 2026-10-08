@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 56,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T01:33:06.115Z"
+      "updatedAt": "2026-10-08T03:59:43.358Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29027,7 +29027,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.48,
       "prob": 0.677,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T21:30",
       "modelo": "analise",
       "total": 56,
@@ -29036,9 +29036,10 @@
       "lucro": 25.199999999999996,
       "roi": 44.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T21:57:19.131Z",
+      "updatedAt": "2026-10-08T03:59:43.358Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1619713,
@@ -29059,7 +29060,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuyneil7hd2x",
-        "enviadaEm": "2026-10-07T21:57:18.619Z"
+        "enviadaEm": "2026-10-07T21:57:18.619Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Oriente Petrolero 2–0 Universitario de Vinto · gols no jogo: 2 (linha 2.5)",
+          "at": "2026-10-08T03:59:43.357Z"
+        },
+        "clv": 0.0009832952742494516,
+        "closingFair": 1.4485756224360655
       }
     }
   ],
@@ -29227,5 +29235,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T01:33:06.115Z"
+  "updatedAt": "2026-10-08T03:59:43.358Z"
 }
