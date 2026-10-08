@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 336.2,
+      "value": 448.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:43:31.496Z"
+      "updatedAt": "2026-10-08T14:49:49.529Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 92.49,
+      "value": 72.49,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T14:16:59.694Z"
+      "updatedAt": "2026-10-08T14:49:49.529Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29531,6 +29531,54 @@
         "inboxId": "anmuzmeba8oe02",
         "enviadaEm": "2026-10-08T14:16:55.712Z"
       }
+    },
+    {
+      "id": "muznkmahhl5qr",
+      "kind": "valor",
+      "event": "HJK Helsinki x VPS — Handicap asiático: VPS +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.96,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.89,
+      "prob": 0.53,
+      "winner": null,
+      "date": "2026-10-08T12:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 107.52,
+      "lucroRed": -112,
+      "lucro": 107.52,
+      "roi": 96,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T14:49:49.529Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1638102,
+        "kickoff": "2026-10-08T15:00:00.000Z",
+        "home": "HJK Helsinki",
+        "away": "VPS",
+        "competition": "Veikkausliiga",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "VPS +1",
+        "tier": "especulativa",
+        "p_model": 0.668,
+        "p_blend": 0.53,
+        "p_pinnacle": 0.515,
+        "fair_odd": 1.89,
+        "odd_min": 1.98,
+        "pinnacle_odd": 1.9,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuznklwh03mh",
+        "enviadaEm": "2026-10-08T14:49:49.025Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29697,5 +29745,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:43:31.496Z"
+  "updatedAt": "2026-10-08T14:49:49.529Z"
 }
