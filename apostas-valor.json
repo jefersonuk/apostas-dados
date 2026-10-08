@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 337.2,
+      "value": 393.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T11:09:14.382Z"
+      "updatedAt": "2026-10-08T11:10:29.204Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 92,
+      "value": 82,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T11:09:14.381Z"
+      "updatedAt": "2026-10-08T11:10:29.204Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29260,6 +29260,54 @@
         "inboxId": "anmuzfoxljck0e",
         "enviadaEm": "2026-10-08T11:09:13.879Z"
       }
+    },
+    {
+      "id": "muzfqjpwhyev5",
+      "kind": "valor",
+      "event": "Masar x El Dakhleya — Handicap asiático: Masar −1,5",
+      "houseA": "Sportmarket",
+      "oddA": 3.05,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.85,
+      "prob": 0.35,
+      "winner": null,
+      "date": "2026-10-08T09:30",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 115.21,
+      "lucroRed": -56.2,
+      "lucro": 115.21,
+      "roi": 204.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T11:10:29.204Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1594861,
+        "kickoff": "2026-10-08T12:30:00.000Z",
+        "home": "Masar",
+        "away": "El Dakhleya",
+        "competition": "Second League",
+        "lineId": "ahH-1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Masar −1,5",
+        "tier": "especulativa",
+        "p_model": 0.269,
+        "p_blend": 0.35,
+        "p_pinnacle": 0.36,
+        "fair_odd": 2.85,
+        "odd_min": 3,
+        "pinnacle_odd": 2.49,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuzfqjekk1af",
+        "enviadaEm": "2026-10-08T11:10:28.796Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29426,5 +29474,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T11:09:14.382Z"
+  "updatedAt": "2026-10-08T11:10:29.204Z"
 }
