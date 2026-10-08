@@ -28431,7 +28431,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-08T00:19:14.286Z",
+      "updatedAt": "2026-10-08T00:59:07.020Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520911,
@@ -28452,7 +28452,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuym7ah27j4s",
-        "enviadaEm": "2026-10-07T21:23:41.894Z"
+        "enviadaEm": "2026-10-07T21:23:41.894Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Avai 2–1 Londrina · gols no jogo: 3 (linha 1.5)",
+          "at": "2026-10-08T00:59:07.020Z"
+        },
+        "clv": -0.006251504376027506,
+        "closingFair": 1.4691846140438876
       }
     },
     {
@@ -28479,7 +28486,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-08T00:19:20.320Z",
+      "updatedAt": "2026-10-08T00:59:07.889Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492397,
@@ -28500,7 +28507,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuymhc5v52k7",
-        "enviadaEm": "2026-10-07T21:31:30.643Z"
+        "enviadaEm": "2026-10-07T21:31:30.643Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Remo 1–1 Gremio · saldo de gols do Remo: 0 (linha 1.5)",
+          "at": "2026-10-08T00:59:07.889Z"
+        },
+        "clv": 0.280110766490435,
+        "closingFair": 1.3045746069135011
       }
     },
     {
@@ -28581,7 +28595,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T21:34:26.200Z",
+      "updatedAt": "2026-10-08T00:59:08.309Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1517309,
@@ -28602,7 +28616,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuyml0wk3vg8",
-        "enviadaEm": "2026-10-07T21:34:22.676Z"
+        "enviadaEm": "2026-10-07T21:34:22.676Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-08T00:59:08.309Z"
+        }
       }
     },
     {
@@ -28683,7 +28702,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T21:38:55.476Z",
+      "updatedAt": "2026-10-08T00:59:08.711Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1494029,
@@ -28704,7 +28723,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuymquuxful1",
-        "enviadaEm": "2026-10-07T21:38:54.777Z"
+        "enviadaEm": "2026-10-07T21:38:54.777Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-08T00:59:08.711Z"
+        }
       }
     },
     {
@@ -29165,5 +29189,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T00:59:05.111Z"
+  "updatedAt": "2026-10-08T00:59:08.712Z"
 }
