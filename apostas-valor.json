@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 281,
+      "value": 337.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T17:20:11.312Z"
+      "updatedAt": "2026-10-08T17:20:18.802Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 135.67,
+      "value": 125.67,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T17:20:11.312Z"
+      "updatedAt": "2026-10-08T17:20:18.801Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29137,7 +29137,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 5.93,
       "prob": 0.169,
-      "winner": "VOID",
+      "winner": null,
       "date": "2026-10-08T09:00",
       "modelo": "analise",
       "total": 56.2,
@@ -29147,9 +29147,9 @@
       "roi": 174.00000000000003,
       "aplicado": {
         "stakes": true,
-        "resultado": "VOID"
+        "resultado": null
       },
-      "updatedAt": "2026-10-08T12:52:10.825Z",
+      "updatedAt": "2026-10-08T17:20:18.801Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1558531,
@@ -30053,5 +30053,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:20:11.312Z"
+  "updatedAt": "2026-10-08T17:20:18.802Z"
 }
