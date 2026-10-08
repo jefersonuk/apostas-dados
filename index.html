@@ -6808,7 +6808,9 @@
      1º tempo, CLV); sem a estatística ainda, tenta de novo em 10 min. O ao vivo fica só na memória deste
      aparelho: para a nuvem vai só o resultado. */
   var anAoVivo={info:new Map(),c1:new Map(),linha:new Map(),tentou:new Map(),em:0,erro:null,rodando:false};
-  function anNaJanela(o){ const a=o.analise||{}, k=Date.parse(a.kickoff||o.date); return !o.winner&&!!a.fixtureId&&isFinite(k)&&Date.now()>=k-10*60000&&Date.now()<=k+4*3600000; }
+  // múltipla: a janela vai do início da primeira perna (first_kickoff) até 4 h depois da última (kickoff)
+  function anNaJanela(o){ const a=o.analise||{}, k=Date.parse(a.kickoff||o.date), k0=a.multi&&a.first_kickoff?Date.parse(a.first_kickoff):k; return !o.winner&&!!a.fixtureId&&isFinite(k)&&Date.now()>=k0-10*60000&&Date.now()<=k+4*3600000; }
+  function anIds(o){ const a=o.analise||{}; return a.multi&&a.legs?a.legs.map(l=>l.fixtureId):[a.fixtureId]; }
   function anTemChave(){ try{ return !!localStorage.getItem('af:key'); }catch(e){ return false; } }
   async function atualizarAoVivo(forcar){
     const bets=analiseBets().filter(anNaJanela);
@@ -6819,15 +6821,19 @@
     let liquidadas=0;
     try{
       const mod=await import('/analise-futebol/src/settlement.js');
-      const ids=[...new Set(bets.map(o=>o.analise.fixtureId))];
+      const ids=[...new Set(bets.flatMap(anIds))];
       const needC1=new Set(bets.filter(o=>/^c1/.test(o.analise.lineId||'')).map(o=>o.analise.fixtureId));
       const info=await mod.liveFixtures(ids,{needC1,c1:anAoVivo.c1});
       // o 1º tempo só é guardado quando está completo (intervalo em diante)
       info.forEach((v,id)=>{ anAoVivo.info.set(id,v); if(v.c1&&v.status!=='1H') anAoVivo.c1.set(id,v.c1); });
-      bets.forEach(o=>{ const v=info.get(o.analise.fixtureId); anAoVivo.linha.set(o.id,v&&o.analise.lineId?mod.liveLine(o.analise.lineId,v):null); });
+      bets.forEach(o=>{ const a=o.analise;
+        if(a.multi){ anAoVivo.linha.set(o.id,mod.liveMulti?mod.liveMulti(a.legs,info):null); return; }
+        const v=info.get(a.fixtureId); anAoVivo.linha.set(o.id,v&&a.lineId?mod.liveLine(a.lineId,v):null); });
       anAoVivo.erro=null;
+      // múltipla: liquida quando uma perna já perdeu ou quando todos os jogos terminaram
+      const fimMulti=o=>{ const m=anAoVivo.linha.get(o.id); return m&&(m.lost>0||o.analise.legs.every(l=>{ const v=info.get(l.fixtureId); return v&&(v.finished||v.cancelled); })); };
       const fim=bets.filter(o=>{ const v=info.get(o.analise.fixtureId), t=anAoVivo.tentou.get(o.id)||0;
-        return v&&(v.finished||v.cancelled)&&o.analise.lineId&&Date.now()-t>10*60000; });
+        return (o.analise.multi?fimMulti(o):v&&(v.finished||v.cancelled))&&o.analise.lineId&&Date.now()-t>10*60000; });
       if(fim.length){
         fim.forEach(o=>anAoVivo.tentou.set(o.id,Date.now()));
         liquidadas=(await liquidarAnalise(fim,mod)).liq;
@@ -6839,11 +6845,26 @@
   }
   function anLiveStatus(){
     if(!$('anLiveMsg')||!anAoVivo) return;   // anAoVivo: renderAll pode rodar antes deste trecho
-    const vivos=analiseBets().filter(o=>{ const v=anAoVivo.info.get((o.analise||{}).fixtureId); return !o.winner&&v&&v.live; }).length;
+    const vivos=analiseBets().filter(o=>!o.winner&&anIds(o).some(id=>{ const v=anAoVivo.info.get(id); return v&&v.live; })).length;
     const janela=analiseBets().filter(anNaJanela).length;
     const quando=anAoVivo.em?' · atualizado às '+new Date(anAoVivo.em).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'';
     $('anLiveMsg').textContent=anAoVivo.rodando?'Buscando os jogos…':anAoVivo.erro?'Ao vivo: '+anAoVivo.erro
       :janela?(vivos?vivos+' aposta'+(vivos>1?'s':'')+' com jogo em andamento':'Nenhum jogo em andamento')+quando:'Nenhuma aposta com jogo perto do horário.';
+  }
+  // Múltipla ao vivo: cada perna numa linha (✅ já bateu, ❌ perdeu, ⏳ faltam N, ainda não começou) e o placar do bilhete.
+  function anMultiHtml(o){
+    const m=anAoVivo.linha.get(o.id);
+    if(!m) return '';
+    const perna=x=>{
+      const l=x.line, sc=x.goals?' '+x.goals[0]+'–'+x.goals[1]+' ':' x ';
+      const st=!x.status||x.status==='NS'||x.status==='TBD'?'<span class="muted">⏳ ainda não começou</span>'
+        :l&&l.locked?(l.now==='A'?'<span class="ok">✅ bateu</span>':l.now==='RED'?'<span class="no">❌ perdeu</span>':'<span class="void">↩ anulada</span>')
+        :l&&l.need>0?'<span class="wait">'+(x.live?'🔴 '+(x.elapsed!=null?x.elapsed+"' ":''):'')+'⏳ '+(l.need===1?'falta 1 gol':'faltam '+l.need+' gols')+'</span>'
+        :'<span class="muted">'+esc(x.status)+'</span>';
+      return '<div>'+esc(x.home)+sc+esc(x.away)+' · '+esc(x.linha||'')+' — '+st+'</div>';
+    };
+    const head=m.lost?'<span class="no">❌ múltipla perdida</span>':m.won===m.n?'<span class="ok">✅ todas bateram</span>':'<span class="wait">'+m.won+' de '+m.n+' já bateram</span>';
+    return '<div class="an-live">🎟️ '+head+m.legs.map(perna).join('')+'</div>';
   }
   // Linha "ao vivo" de uma entrada: situação do jogo e como a linha está agora.
   function anLiveHtml(o){
@@ -6851,6 +6872,7 @@
     if(o.winner||!anAoVivo) return '';
     if(!a.fixtureId) return a.manual?'<div class="an-meta">Jogo fora da API: o resultado é marcado à mão.</div>':'';
     if(a.fixtureId&&!a.lineId) return '<div class="an-meta">Linha não reconhecida pelo app: o resultado é marcado à mão.</div>';
+    if(a.multi) return anMultiHtml(o);
     const v=anAoVivo.info.get(a.fixtureId);
     if(!v) return '';
     if(v.status==='NS'||v.status==='TBD') return '<div class="an-live">⏳ ainda não começou</div>';
