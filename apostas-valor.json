@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 561.2,
+      "value": 673.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T12:58:19.075Z"
+      "updatedAt": "2026-10-08T13:13:11.963Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 52.04,
+      "value": 32.04,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T12:58:19.075Z"
+      "updatedAt": "2026-10-08T13:13:11.963Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29403,6 +29403,54 @@
         "inboxId": "anmuzjl649qsa0",
         "enviadaEm": "2026-10-08T12:58:16.761Z"
       }
+    },
+    {
+      "id": "muzk4cuz0qnvl",
+      "kind": "valor",
+      "event": "Rosenborg U19 x Lillestrøm U19 — Handicap asiático: Lillestrøm U19 +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.99,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.64,
+      "prob": 0.379,
+      "winner": null,
+      "date": "2026-10-08T10:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 110.88,
+      "lucroRed": -112,
+      "lucro": 110.88,
+      "roi": 99,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T13:13:11.963Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1639324,
+        "kickoff": "2026-10-08T13:00:00.000Z",
+        "home": "Rosenborg U19",
+        "away": "Lillestrøm U19",
+        "competition": "Nasjonal U19 Champions League",
+        "lineId": "ahA0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Lillestrøm U19 +0,5",
+        "tier": "especulativa",
+        "p_model": 0.493,
+        "p_blend": 0.379,
+        "p_pinnacle": 0.367,
+        "fair_odd": 2.64,
+        "odd_min": 2.77,
+        "pinnacle_odd": 2.4,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuzk4cf33oq4",
+        "enviadaEm": "2026-10-08T13:13:11.391Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29569,5 +29617,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T12:58:19.075Z"
+  "updatedAt": "2026-10-08T13:13:11.963Z"
 }
