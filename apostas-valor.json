@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 56.2,
+      "value": 112.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T16:31:15.151Z"
+      "updatedAt": "2026-10-08T16:46:51.257Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 163,
+      "value": 153,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T16:30:39.439Z"
+      "updatedAt": "2026-10-08T16:46:51.257Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29792,6 +29792,53 @@
         "inboxId": "anmuzr4t865b6d",
         "enviadaEm": "2026-10-08T16:29:30.486Z"
       }
+    },
+    {
+      "id": "muzrr4ah21xj7",
+      "kind": "valor",
+      "event": "Holon Yermiyahu x Nordia Jerusalem — Handicap asiático: Nordia Jerusalem +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.81,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.52,
+      "prob": 0.657,
+      "winner": null,
+      "date": "2026-10-08T13:40",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 45.522000000000006,
+      "lucroRed": -56.2,
+      "lucro": 45.522000000000006,
+      "roi": 81,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T16:46:51.257Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1621636,
+        "kickoff": "2026-10-08T16:40:00.000Z",
+        "home": "Holon Yermiyahu",
+        "away": "Nordia Jerusalem",
+        "competition": "Liga Alef",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Nordia Jerusalem +1,5",
+        "tier": "sólida",
+        "p_model": 0.789,
+        "p_blend": 0.657,
+        "p_pinnacle": 0.64,
+        "fair_odd": 1.52,
+        "odd_min": 1.6,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuzrr0s267py",
+        "enviadaEm": "2026-10-08T16:46:46.706Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29958,5 +30005,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T16:31:15.151Z"
+  "updatedAt": "2026-10-08T16:46:51.257Z"
 }
