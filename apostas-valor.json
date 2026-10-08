@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 336.2,
+      "value": 392.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:54:12.481Z"
+      "updatedAt": "2026-10-08T14:55:54.843Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 72.49,
+      "value": 62.49,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T14:49:49.529Z"
+      "updatedAt": "2026-10-08T14:55:54.843Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29587,6 +29587,54 @@
         "inboxId": "anmuznklwh03mh",
         "enviadaEm": "2026-10-08T14:49:49.025Z"
       }
+    },
+    {
+      "id": "muznsg6332qki",
+      "kind": "valor",
+      "event": "Sporty x Khaitan — Handicap asiático: Khaitan −2,5",
+      "houseA": "Sportmarket",
+      "oddA": 3.23,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 3.52,
+      "prob": 0.284,
+      "winner": null,
+      "date": "2026-10-08T11:50",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 124.88,
+      "lucroRed": -56,
+      "lucro": 124.88,
+      "roi": 223,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T14:55:54.843Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1644617,
+        "kickoff": "2026-10-08T14:50:00.000Z",
+        "home": "Sporty",
+        "away": "Khaitan",
+        "competition": "Division 1",
+        "lineId": "ahA-2.5",
+        "mercado": "Handicap asiático",
+        "linha": "Khaitan −2,5",
+        "tier": "especulativa",
+        "p_model": 0.208,
+        "p_blend": 0.284,
+        "p_pinnacle": 0.294,
+        "fair_odd": 3.52,
+        "odd_min": 3.69,
+        "pinnacle_odd": 2.8,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuznsfqhppp5",
+        "enviadaEm": "2026-10-08T14:55:54.281Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29753,5 +29801,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:54:12.481Z"
+  "updatedAt": "2026-10-08T14:55:54.843Z"
 }
