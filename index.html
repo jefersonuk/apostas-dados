@@ -60,6 +60,8 @@
   .an-liq .btn.sel-loss{background:#F87171;border-color:#F87171;color:#2A0508;}
   .an-liq .btn[class*="sel-"]{pointer-events:none;}
   .an-live{font-size:13px;margin-top:6px;font-variant-numeric:tabular-nums;line-height:1.9;}
+  .an-multi .leg{margin-left:18px;}
+  .an-multi .leg .clock{display:inline-block;min-width:52px;}
   .an-live .ok,.an-live .no,.an-live .wait,.an-live .void{display:inline-block;font-weight:700;padding:0 8px;border-radius:999px;border:1px solid;line-height:1.6;}
   .an-live .ok{background:var(--res-win-bg);color:var(--res-win-fg);border-color:var(--res-win-bd);}
   .an-live .no{background:var(--res-loss-bg);color:var(--res-loss-fg);border-color:var(--res-loss-bd);}
@@ -6851,20 +6853,27 @@
     $('anLiveMsg').textContent=anAoVivo.rodando?'Buscando os jogos…':anAoVivo.erro?'Ao vivo: '+anAoVivo.erro
       :janela?(vivos?vivos+' aposta'+(vivos>1?'s':'')+' com jogo em andamento':'Nenhum jogo em andamento')+quando:'Nenhuma aposta com jogo perto do horário.';
   }
-  // Múltipla ao vivo: cada perna numa linha (✅ já bateu, ❌ perdeu, ⏳ faltam N, ainda não começou) e o placar do bilhete.
+  // Múltipla: as pernas sempre à vista (hora, jogo, linha) e, com o jogo começado, o minuto, o placar e a perna agora
+  // (✅ bateu, ❌ perdeu, ⏳ faltam N gols, intervalo, encerrado) — e o placar do bilhete.
   function anMultiHtml(o){
-    const m=anAoVivo.linha.get(o.id);
-    if(!m) return '';
-    const perna=x=>{
-      const l=x.line, sc=x.goals?' '+x.goals[0]+'–'+x.goals[1]+' ':' x ';
-      const st=!x.status||x.status==='NS'||x.status==='TBD'?'<span class="muted">⏳ ainda não começou</span>'
-        :l&&l.locked?(l.now==='A'?'<span class="ok">✅ bateu</span>':l.now==='RED'?'<span class="no">❌ perdeu</span>':'<span class="void">↩ anulada</span>')
-        :l&&l.need>0?'<span class="wait">'+(x.live?'🔴 '+(x.elapsed!=null?x.elapsed+"' ":''):'')+'⏳ '+(l.need===1?'falta 1 gol':'faltam '+l.need+' gols')+'</span>'
+    const a=o.analise||{}, legs=a.legs||[], m=anAoVivo.linha.get(o.id);
+    if(!legs.length) return '';
+    const hora=k=>{ const t=Date.parse(k); return isFinite(t)?new Date(t).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'--:--'; };
+    const perna=(l,i)=>{
+      const x=m&&m.legs?m.legs[i]:null, ln=x&&x.line, comecou=x&&x.status&&x.status!=='NS'&&x.status!=='TBD';
+      const relogio=!comecou?'<span class="clock">'+hora(l.kickoff)+'</span>'
+        :'<span class="clock'+(x.live&&x.status!=='HT'?' on':'')+'">'+(x.finished?'🏁':x.status==='HT'?'⏸ int.':x.live?'🔴 '+(x.elapsed!=null?x.elapsed+"'":''):esc(x.status))+'</span>';
+      const jogo=esc(l.home)+(comecou&&x.goals?' <b>'+x.goals[0]+'–'+x.goals[1]+'</b> ':' x ')+esc(l.away);
+      const st=!comecou?'<span class="muted">ainda não começou</span>'
+        :ln&&ln.locked?(ln.now==='A'?'<span class="ok">✅ bateu</span>':ln.now==='RED'?'<span class="no">❌ perdeu</span>':'<span class="void">↩ anulada</span>')
+        :ln&&ln.need>0?'<span class="wait">⏳ '+(ln.need===1?'falta 1 gol':'faltam '+ln.need+' gols')+'</span>'
         :'<span class="muted">'+esc(x.status)+'</span>';
-      return '<div>'+esc(x.home)+sc+esc(x.away)+' · '+esc(x.linha||'')+' — '+st+'</div>';
+      return '<div class="leg">'+relogio+' '+jogo+' · '+esc(l.linha||'')+' — '+st+'</div>';
     };
-    const head=m.lost?'<span class="no">❌ múltipla perdida</span>':m.won===m.n?'<span class="ok">✅ todas bateram</span>':'<span class="wait">'+m.won+' de '+m.n+' já bateram</span>';
-    return '<div class="an-live">🎟️ '+head+m.legs.map(perna).join('')+'</div>';
+    const n=legs.length, won=m?m.won:0;
+    const head=m&&m.lost?'<span class="no">❌ múltipla perdida</span>':m&&won===n?'<span class="ok">✅ todas bateram</span>'
+      :'<span class="wait">'+won+' de '+n+' já bateram</span>'+(m?'':' <span class="muted">· ao vivo a partir de '+hora(a.first_kickoff||a.kickoff)+'</span>');
+    return '<div class="an-live an-multi">🎟️ '+head+legs.map(perna).join('')+'</div>';
   }
   // Linha "ao vivo" de uma entrada: situação do jogo e como a linha está agora.
   function anLiveHtml(o){
