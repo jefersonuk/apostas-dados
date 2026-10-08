@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 504,
+      "value": 392,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T00:19:20.320Z"
+      "updatedAt": "2026-10-08T00:59:05.111Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -28617,7 +28617,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.56,
       "prob": 0.642,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T20:00",
       "modelo": "analise",
       "total": 56,
@@ -28626,9 +28626,10 @@
       "lucro": 33.040000000000006,
       "roi": 59.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T21:37:09.057Z",
+      "updatedAt": "2026-10-08T00:59:04.268Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492399,
@@ -28649,7 +28650,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuymokvivuao",
-        "enviadaEm": "2026-10-07T21:37:08.526Z"
+        "enviadaEm": "2026-10-07T21:37:08.526Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Vitoria 4–0 Chapecoense-sc · saldo de gols do Vitoria: 4 (linha 1.5)",
+          "at": "2026-10-08T00:59:04.268Z"
+        },
+        "clv": -0.011009171567210485,
+        "closingFair": 1.60769943895193
       }
     },
     {
@@ -28711,7 +28719,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.5,
       "prob": 0.665,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T20:00",
       "modelo": "analise",
       "total": 56,
@@ -28720,9 +28728,10 @@
       "lucro": 26.88,
       "roi": 48,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-07T21:39:38.379Z",
+      "updatedAt": "2026-10-08T00:59:05.110Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1643393,
@@ -28743,7 +28752,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuymrs4yerlg",
-        "enviadaEm": "2026-10-07T21:39:37.906Z"
+        "enviadaEm": "2026-10-07T21:39:37.906Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Plaza Colonia 0–1 Juventud · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-08T00:59:05.110Z"
+        },
+        "clv": -0.014751409742781219,
+        "closingFair": 1.502158962352452
       }
     },
     {
@@ -29149,5 +29165,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T00:24:25.793Z"
+  "updatedAt": "2026-10-08T00:59:05.111Z"
 }
