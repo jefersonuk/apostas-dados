@@ -4648,7 +4648,7 @@
       "value": 281,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T18:45:41.503Z"
+      "updatedAt": "2026-10-08T19:28:28.849Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29844,7 +29844,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T18:45:41.031Z",
+      "updatedAt": "2026-10-08T19:28:28.239Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1621636,
@@ -29869,7 +29869,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Holon Yermiyahu 5–0 Nordia Jerusalem · saldo de gols do Holon Yermiyahu: 5 (linha 1.5)",
-          "at": "2026-10-08T18:45:41.031Z"
+          "at": "2026-10-08T19:28:28.237Z"
         },
         "clv": 0.1589982954362794,
         "closingFair": 1.5616934098411814
@@ -29899,7 +29899,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T18:45:41.503Z",
+      "updatedAt": "2026-10-08T19:28:28.847Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1621636,
@@ -29925,7 +29925,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Holon Yermiyahu 5–0 Nordia Jerusalem · saldo de gols do Holon Yermiyahu: 5 (linha 1)",
-          "at": "2026-10-08T18:45:41.503Z"
+          "at": "2026-10-08T19:28:28.847Z"
         },
         "clv": 0.30713575361645984,
         "closingFair": 1.9355296441094465
@@ -30209,5 +30209,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T19:20:58.441Z"
+  "updatedAt": "2026-10-08T19:28:28.850Z"
 }
