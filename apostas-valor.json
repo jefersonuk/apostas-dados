@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 832.8,
+      "value": 721.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-07T21:57:19.132Z"
+      "updatedAt": "2026-10-08T00:00:33.607Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 71,
+      "value": 95.08,
       "currency": "EUR",
-      "updatedAt": "2026-10-07T21:57:19.131Z"
+      "updatedAt": "2026-10-08T00:00:33.606Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28265,7 +28265,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-07T21:19:41.601Z",
+      "updatedAt": "2026-10-08T00:00:31.305Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1638395,
@@ -28286,7 +28286,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuym21fgvbar",
-        "enviadaEm": "2026-10-07T21:19:36.892Z"
+        "enviadaEm": "2026-10-07T21:19:36.892Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-08T00:00:31.305Z"
+        }
       }
     },
     {
@@ -28301,7 +28306,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.45,
       "prob": 0.691,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-07T19:00",
       "modelo": "analise",
       "total": 55.7,
@@ -28310,9 +28315,10 @@
       "lucro": 23.950999999999997,
       "roi": 42.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-07T21:23:44.974Z",
+      "updatedAt": "2026-10-08T00:00:32.766Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1643186,
@@ -28333,7 +28339,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuym2wu2uta1",
-        "enviadaEm": "2026-10-07T21:20:17.594Z"
+        "enviadaEm": "2026-10-07T21:20:17.594Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Antofagasta 2–0 Universidad de Chile · saldo de gols do Antofagasta: 2 (linha -2)",
+          "at": "2026-10-08T00:00:32.766Z"
+        },
+        "clv": -0.06258832710404427,
+        "closingFair": 1.5254770570354494
       }
     },
     {
@@ -28348,7 +28361,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.58,
       "prob": 0.633,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-07T19:00",
       "modelo": "analise",
       "total": 55.7,
@@ -28357,9 +28370,10 @@
       "lucro": 31.192000000000004,
       "roi": 56.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-07T21:23:44.974Z",
+      "updatedAt": "2026-10-08T00:00:33.606Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549587,
@@ -28380,7 +28394,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuym4p77doc3",
-        "enviadaEm": "2026-10-07T21:21:41.011Z"
+        "enviadaEm": "2026-10-07T21:21:41.011Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Popayan 1–1 Union Magdalena · saldo de gols do Popayan: 0 (linha 0)",
+          "at": "2026-10-08T00:00:33.606Z"
+        },
+        "clv": -0.013604602172704983,
+        "closingFair": 1.5815158945755095
       }
     },
     {
@@ -29115,5 +29136,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-07T22:47:34.190Z"
+  "updatedAt": "2026-10-08T00:00:33.607Z"
 }
