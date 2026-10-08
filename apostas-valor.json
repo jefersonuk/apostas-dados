@@ -4900,6 +4900,14 @@
       "time": "13:02",
       "note": "cartão Santander",
       "updatedAt": "2026-10-02T13:31:20.122Z"
+    },
+    {
+      "id": "muztf53zqqho0",
+      "value": -1600,
+      "date": "2026-10-08",
+      "time": "14:26",
+      "note": "Exclusão dos saldos perdidos em EGB e Casobet",
+      "updatedAt": "2026-10-08T17:33:31.680Z"
     }
   ],
   "caixa": [
@@ -30182,5 +30190,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:32:40.506Z"
+  "updatedAt": "2026-10-08T17:33:31.680Z"
 }
