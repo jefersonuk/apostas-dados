@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 448.2,
+      "value": 336.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:16:59.694Z"
+      "updatedAt": "2026-10-08T14:43:31.496Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29393,7 +29393,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.36,
       "prob": 0.738,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T09:45",
       "modelo": "analise",
       "total": 112,
@@ -29402,9 +29402,10 @@
       "lucro": 61.60000000000001,
       "roi": 55.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T12:58:19.075Z",
+      "updatedAt": "2026-10-08T14:43:31.495Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1644447,
@@ -29425,7 +29426,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuzjl649qsa0",
-        "enviadaEm": "2026-10-08T12:58:16.761Z"
+        "enviadaEm": "2026-10-08T12:58:16.761Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "ATK Mohun Bagan 1–0 East Bengal II · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-08T14:43:31.495Z"
+        },
+        "clv": 0.13302455336015662,
+        "closingFair": 1.3680197798037468
       }
     },
     {
@@ -29689,5 +29697,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:16:59.694Z"
+  "updatedAt": "2026-10-08T14:43:31.496Z"
 }
