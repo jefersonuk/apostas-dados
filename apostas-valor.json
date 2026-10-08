@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 392.2,
+      "value": 336,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:55:54.843Z"
+      "updatedAt": "2026-10-08T14:56:01.031Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 62.49,
+      "value": 93.1,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T14:55:54.843Z"
+      "updatedAt": "2026-10-08T14:56:01.031Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29298,7 +29298,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.85,
       "prob": 0.35,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-08T09:30",
       "modelo": "analise",
       "total": 56.2,
@@ -29307,9 +29307,10 @@
       "lucro": 115.21,
       "roi": 204.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T11:10:29.204Z",
+      "updatedAt": "2026-10-08T14:56:01.031Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1594861,
@@ -29331,7 +29332,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuzfqjekk1af",
-        "enviadaEm": "2026-10-08T11:10:28.796Z"
+        "enviadaEm": "2026-10-08T11:10:28.796Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Masar 3–1 El Dakhleya · saldo de gols do Masar: 2 (linha 1.5)",
+          "at": "2026-10-08T14:56:01.031Z"
+        },
+        "clv": -0.07990922307596726,
+        "closingFair": 3.3148903091893756
       }
     },
     {
@@ -29801,5 +29809,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:55:54.843Z"
+  "updatedAt": "2026-10-08T14:56:01.031Z"
 }
