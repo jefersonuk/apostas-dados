@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 560.8,
+      "value": 504.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T13:35:08.078Z"
+      "updatedAt": "2026-10-08T14:02:07.272Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29186,7 +29186,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 3.07,
       "prob": 0.326,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T09:00",
       "modelo": "analise",
       "total": 56.2,
@@ -29195,9 +29195,10 @@
       "lucro": 96.66400000000002,
       "roi": 172.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T11:00:47.975Z",
+      "updatedAt": "2026-10-08T14:02:07.272Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1558535,
@@ -29219,7 +29220,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuzfe2r7psol",
-        "enviadaEm": "2026-10-08T11:00:47.347Z"
+        "enviadaEm": "2026-10-08T11:00:47.347Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Otrant-Olympic 2–2 Mladost DG · saldo de gols do Otrant-Olympic: 0 (linha 1.5)",
+          "at": "2026-10-08T14:02:07.270Z"
+        },
+        "clv": -0.10527106061077307,
+        "closingFair": 3.0400268508770565
       }
     },
     {
@@ -29625,5 +29633,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T13:35:08.078Z"
+  "updatedAt": "2026-10-08T14:02:07.272Z"
 }
