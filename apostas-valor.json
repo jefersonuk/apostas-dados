@@ -4597,13 +4597,6 @@
       "updatedAt": "2026-09-08T16:21:27.762Z"
     },
     {
-      "id": "msddu5i007wwm",
-      "name": "Ivibet",
-      "value": 300,
-      "currency": "BRL",
-      "updatedAt": "2026-10-07T17:47:29.355Z"
-    },
-    {
       "id": "msdee34ivpnvx",
       "name": "Jetcasino",
       "value": 0,
@@ -5714,6 +5707,10 @@
     {
       "id": "muczy0ui6d8aw",
       "at": "2026-10-08T17:32:40.506Z"
+    },
+    {
+      "id": "msddu5i007wwm",
+      "at": "2026-10-08T18:03:04.586Z"
     }
   ],
   "surebets": [
@@ -30196,5 +30193,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:34:15.153Z"
+  "updatedAt": "2026-10-08T18:03:04.586Z"
 }
