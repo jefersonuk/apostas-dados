@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 112.4,
+      "value": 168.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T10:46:15.778Z"
+      "updatedAt": "2026-10-08T10:57:55.111Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 132,
+      "value": 122,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T10:46:15.778Z"
+      "updatedAt": "2026-10-08T10:57:55.110Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29116,6 +29116,54 @@
         "inboxId": "anmuzevdsg3v2u",
         "enviadaEm": "2026-10-08T10:46:15.184Z"
       }
+    },
+    {
+      "id": "muzfaduu24r40",
+      "kind": "valor",
+      "event": "Arsenal Tivat x Dečić — Handicap asiático: Dečić −1",
+      "houseA": "Sportmarket",
+      "oddA": 2.74,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 5.93,
+      "prob": 0.169,
+      "winner": null,
+      "date": "2026-10-08T09:00",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 97.78800000000001,
+      "lucroRed": -56.2,
+      "lucro": 97.78800000000001,
+      "roi": 174.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T10:57:55.110Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1558531,
+        "kickoff": "2026-10-08T12:00:00.000Z",
+        "home": "Arsenal Tivat",
+        "away": "Dečić",
+        "competition": "First League",
+        "lineId": "ahA-1",
+        "mercado": "Handicap asiático",
+        "linha": "Dečić −1",
+        "tier": "especulativa",
+        "p_model": 0.169,
+        "p_blend": 0.169,
+        "p_pinnacle": null,
+        "fair_odd": 5.93,
+        "odd_min": 6.41,
+        "pinnacle_odd": null,
+        "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuzfadh09xb8",
+        "enviadaEm": "2026-10-08T10:57:54.612Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29282,5 +29330,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T10:46:15.778Z"
+  "updatedAt": "2026-10-08T10:57:55.111Z"
 }
