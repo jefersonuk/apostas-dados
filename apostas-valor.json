@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 393.4,
+      "value": 505.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T11:10:29.204Z"
+      "updatedAt": "2026-10-08T12:50:24.550Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 82,
+      "value": 62,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T11:10:29.204Z"
+      "updatedAt": "2026-10-08T12:50:24.549Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29308,6 +29308,53 @@
         "inboxId": "anmuzfqjekk1af",
         "enviadaEm": "2026-10-08T11:10:28.796Z"
       }
+    },
+    {
+      "id": "muzjb1r98uw6k",
+      "kind": "valor",
+      "event": "Al Ain x Al-Ittihad Kalba — Handicap asiático: Al Ain −1",
+      "houseA": "Sportmarket",
+      "oddA": 2.84,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.45,
+      "prob": 0.692,
+      "winner": null,
+      "date": "2026-10-08T10:10",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 206.07999999999998,
+      "lucroRed": -112,
+      "lucro": 206.07999999999998,
+      "roi": 184,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T12:50:24.549Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1639238,
+        "kickoff": "2026-10-08T13:10:00.000Z",
+        "home": "Al Ain",
+        "away": "Al-Ittihad Kalba",
+        "competition": "League Cup",
+        "lineId": "ahH-1",
+        "mercado": "Handicap asiático",
+        "linha": "Al Ain −1",
+        "tier": "especulativa",
+        "p_model": 0.627,
+        "p_blend": 0.692,
+        "p_pinnacle": 0.698,
+        "fair_odd": 1.45,
+        "odd_min": 1.52,
+        "pinnacle_odd": 1.37,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuzjb1cdtbj7",
+        "enviadaEm": "2026-10-08T12:50:24.013Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29474,5 +29521,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T12:29:38.849Z"
+  "updatedAt": "2026-10-08T12:50:24.550Z"
 }
