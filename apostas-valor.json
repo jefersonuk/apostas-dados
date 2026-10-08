@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 336,
+      "value": 280,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T00:59:19.498Z"
+      "updatedAt": "2026-10-08T01:08:44.835Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -28584,7 +28584,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.51,
       "prob": 0.664,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T20:00",
       "modelo": "analise",
       "total": 56,
@@ -28593,9 +28593,10 @@
       "lucro": 28.560000000000002,
       "roi": 51,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T01:03:32.592Z",
+      "updatedAt": "2026-10-08T01:08:44.835Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1517309,
@@ -28618,10 +28619,12 @@
         "inboxId": "anmuyml0wk3vg8",
         "enviadaEm": "2026-10-07T21:34:22.676Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-08T01:03:32.592Z"
-        }
+          "status": "encerrado",
+          "detail": "Forge 3–0 Pacific FC · saldo de gols do Forge: 3 (linha 2.5)",
+          "at": "2026-10-08T01:08:44.835Z"
+        },
+        "clv": -0.02331199451275201,
+        "closingFair": 1.546041306452509
       }
     },
     {
@@ -29192,5 +29195,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T01:03:33.210Z"
+  "updatedAt": "2026-10-08T01:08:44.835Z"
 }
