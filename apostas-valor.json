@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 112,
+      "value": 56,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T01:26:39.634Z"
+      "updatedAt": "2026-10-08T01:33:06.115Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -28971,7 +28971,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.68,
       "prob": 0.594,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-07T20:30",
       "modelo": "analise",
       "total": 56,
@@ -28981,9 +28981,9 @@
       "roi": 73,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T01:30:43.858Z",
+      "updatedAt": "2026-10-08T01:33:06.115Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492391,
@@ -29007,10 +29007,12 @@
         "inboxId": "anmuynbfj0xvyu",
         "enviadaEm": "2026-10-07T21:54:54.684Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-08T01:30:43.858Z"
-        }
+          "status": "encerrado",
+          "detail": "Botafogo 1–2 Vasco DA Gama · saldo de gols do Botafogo: -1 (linha -0.5)",
+          "at": "2026-10-08T01:33:06.115Z"
+        },
+        "clv": -0.003803305772254073,
+        "closingFair": 1.7366048392090883
       }
     },
     {
@@ -29225,5 +29227,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T01:30:43.859Z"
+  "updatedAt": "2026-10-08T01:33:06.115Z"
 }
