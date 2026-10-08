@@ -4638,9 +4638,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 129,
+      "value": 119,
       "currency": "USD",
-      "updatedAt": "2026-10-08T01:00:08.836Z"
+      "updatedAt": "2026-10-08T14:57:41.740Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 336,
+      "value": 386.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:56:01.031Z"
+      "updatedAt": "2026-10-08T14:57:41.742Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29643,6 +29643,31 @@
         "inboxId": "anmuznsfqhppp5",
         "enviadaEm": "2026-10-08T14:55:54.281Z"
       }
+    },
+    {
+      "id": "muznuqngclagx",
+      "kind": "valor",
+      "event": "Multiplas over 1.5",
+      "houseA": "Overtimemarkets",
+      "oddA": 6.67,
+      "stakeA": 50.199999999999996,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": null,
+      "prob": 47.6,
+      "winner": null,
+      "date": "2026-10-08T09:00",
+      "modelo": "fora",
+      "total": 50.199999999999996,
+      "lucroA": 284.63399999999996,
+      "lucroRed": -50.199999999999996,
+      "lucro": 284.63399999999996,
+      "roi": 567,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T14:57:41.740Z"
     }
   ],
   "invertidos": [],
@@ -29809,5 +29834,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:56:01.031Z"
+  "updatedAt": "2026-10-08T14:57:41.742Z"
 }
