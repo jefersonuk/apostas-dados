@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168.6,
+      "value": 56.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T19:36:18.479Z"
+      "updatedAt": "2026-10-08T21:22:53.049Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 92.25,
+      "value": 112.29,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T17:31:48.756Z"
+      "updatedAt": "2026-10-08T21:22:53.049Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30009,7 +30009,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.8,
       "prob": 0.56,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-08T15:45",
       "modelo": "analise",
       "total": 112.4,
@@ -30018,9 +30018,10 @@
       "lucro": 119.144,
       "roi": 106,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-08T17:31:48.756Z",
+      "updatedAt": "2026-10-08T21:22:53.049Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1642034,
@@ -30049,7 +30050,14 @@
         "p_model_cal": 0.57,
         "status": "aposta",
         "inboxId": "anmuztcwkujmdo",
-        "enviadaEm": "2026-10-08T17:31:47.310Z"
+        "enviadaEm": "2026-10-08T17:31:47.310Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Safa 2–1 Reyady Abaseya · saldo de gols do Safa: 1 (linha 1)",
+          "at": "2026-10-08T21:22:53.049Z"
+        },
+        "clv": -0.0662811123246172,
+        "closingFair": 2.2062314762943736
       }
     }
   ],
@@ -30217,5 +30225,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T21:22:40.254Z"
+  "updatedAt": "2026-10-08T21:22:53.049Z"
 }
