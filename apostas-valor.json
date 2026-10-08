@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 673.2,
+      "value": 560.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T13:13:11.963Z"
+      "updatedAt": "2026-10-08T13:35:08.078Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 32.04,
+      "value": 64.76,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T13:13:11.963Z"
+      "updatedAt": "2026-10-08T13:35:08.078Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29082,7 +29082,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.44,
       "prob": 0.695,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-08T08:30",
       "modelo": "analise",
       "total": 112.4,
@@ -29091,9 +29091,10 @@
       "lucro": 70.812,
       "roi": 62.999999999999986,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T10:46:15.778Z",
+      "updatedAt": "2026-10-08T13:35:08.078Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1630447,
@@ -29114,7 +29115,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuzevdsg3v2u",
-        "enviadaEm": "2026-10-08T10:46:15.184Z"
+        "enviadaEm": "2026-10-08T10:46:15.184Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Səbail 1–1 Karvan · saldo de gols do Səbail: 0 (linha 1.5)",
+          "at": "2026-10-08T13:35:08.077Z"
+        },
+        "clv": 0.12907656675324186,
+        "closingFair": 1.443657629603639
       }
     },
     {
@@ -29617,5 +29625,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T13:13:11.963Z"
+  "updatedAt": "2026-10-08T13:35:08.078Z"
 }
