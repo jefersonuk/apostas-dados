@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 562,
+      "value": 954,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T17:20:24.420Z"
+      "updatedAt": "2026-10-08T17:20:30.185Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 57.57,
+      "value": 21.3,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T17:20:24.419Z"
+      "updatedAt": "2026-10-08T17:20:30.185Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29354,7 +29354,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.45,
       "prob": 0.692,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-10-08T10:10",
       "modelo": "analise",
       "total": 112,
@@ -29364,9 +29364,9 @@
       "roi": 184,
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": null
       },
-      "updatedAt": "2026-10-08T15:21:14.509Z",
+      "updatedAt": "2026-10-08T17:20:28.691Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639238,
@@ -29409,7 +29409,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.36,
       "prob": 0.738,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-10-08T09:45",
       "modelo": "analise",
       "total": 112,
@@ -29419,9 +29419,9 @@
       "roi": 55.00000000000001,
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": null
       },
-      "updatedAt": "2026-10-08T14:43:31.495Z",
+      "updatedAt": "2026-10-08T17:20:25.958Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1644447,
@@ -29464,7 +29464,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.64,
       "prob": 0.379,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-10-08T10:00",
       "modelo": "analise",
       "total": 112,
@@ -29474,9 +29474,9 @@
       "roi": 99,
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": null
       },
-      "updatedAt": "2026-10-08T14:54:12.481Z",
+      "updatedAt": "2026-10-08T17:20:27.359Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639324,
@@ -29520,7 +29520,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.31,
       "prob": 0.433,
-      "winner": "A",
+      "winner": null,
       "date": "2026-10-08T11:00",
       "modelo": "analise",
       "total": 56,
@@ -29530,9 +29530,9 @@
       "roi": 264,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": null
       },
-      "updatedAt": "2026-10-08T16:03:38.030Z",
+      "updatedAt": "2026-10-08T17:20:30.185Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640292,
@@ -30053,5 +30053,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:20:24.420Z"
+  "updatedAt": "2026-10-08T17:20:30.185Z"
 }
