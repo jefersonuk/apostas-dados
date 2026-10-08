@@ -1486,6 +1486,7 @@
       <div class="fold-body">
         <div class="evo-seg" style="margin:0 0 10px;">
           <button type="button" class="evo-opt active" data-anseg="market">Mercado</button>
+          <button type="button" class="evo-opt" data-anseg="lente">Leitura</button>
           <button type="button" class="evo-opt" data-anseg="tier">Nível</button>
           <button type="button" class="evo-opt" data-anseg="orig">Origem</button>
           <button type="button" class="evo-opt" data-anseg="house">Casa</button>
@@ -6615,8 +6616,11 @@
     document.querySelectorAll('[data-anseg]').forEach(b=>b.classList.toggle('active',b.dataset.anseg===anSegBy));
     const done=base.filter(o=>o.winner&&o.winner!=='VOID');
     if(!done.length){ $('anMarkets').innerHTML='<div class="empty" style="padding:8px;">Liquide apostas para ver o desempenho por segmento.</div>'; return; }
+    // leitura: a nossa análise contra a Pinnacle (o que queremos medir), a nossa análise de acordo com ela, a lente de
+    // consistência (odd baixa) e as suas entradas manuais
+    const lente=o=>{ const a=o.analise||{}; return anManual(o)?'✍️ manual':a.contra_pinnacle?'🎯 contra a Pinnacle':a.ours?'🎯 nossa análise (de acordo)':'consistência (odd baixa)'; };
     const chave=o=>{ const a=o.analise||{};
-      return anSegBy==='market'?(a.mercado||o.market||'(sem mercado)'):anSegBy==='tier'?(anManual(o)?'✍️ manual':a.tier||'(sem nível)')
+      return anSegBy==='lente'?lente(o):anSegBy==='market'?(a.mercado||o.market||'(sem mercado)'):anSegBy==='tier'?(anManual(o)?'✍️ manual':a.tier||'(sem nível)')
         :anSegBy==='orig'?(anManual(o)?'✍️ Minhas':'📱 App'):anSegBy==='odd'?vbFaixaOdd(legOdd(o,'A')):legHouse(o,'A')||'(sem casa)'; };
     const grupos={};
     done.forEach(o=>(grupos[chave(o)]=grupos[chave(o)]||[]).push(o));
@@ -6629,7 +6633,7 @@
         '<span class="seg-val '+(l.lucro>=0?'pos':'neg')+'">'+fmtSign(l.lucro)+'</span></div>'+
         '<div class="day-bar-wrap" style="height:12px;"><div class="day-center"></div><div class="day-bar '+(l.lucro>=0?'pos':'neg')+'" style="width:'+w+'%;"></div></div>'+
         '<div class="seg-meta"><span>'+l.ganhos+'/'+l.done+' · '+anPct0(l.ganhos/l.done)+' acerto'+(l.prev?' (prev. '+anPct0(l.prev)+')':'')+'</span>'+
-        '<span>odd méd '+l.odd.toFixed(2)+'</span><span class="'+(y>=0?'pos':'neg')+'">yield '+(y>=0?'+':'')+y.toFixed(1)+'%</span></div></div>';
+        '<span>odd méd '+l.odd.toFixed(2)+(l.clv!==null?' · CLV <b class="'+(l.clv>=0?'pos':'neg')+'">'+(l.clv>=0?'+':'')+anPct(l.clv)+'</b>':'')+'</span><span class="'+(y>=0?'pos':'neg')+'">yield '+(y>=0?'+':'')+y.toFixed(1)+'%</span></div></div>';
     }).join('')+(linhas.some(l=>l.done<5)?'<div class="hint" style="margin:10px 0 0;"><span style="color:var(--amber)">•</span> menos de 5 apostas — amostra pequena demais para conclusão.</div>':'');
   }
 
@@ -6639,7 +6643,11 @@
     const row=(k,v)=>'<div class="cal-stat"><span class="k">'+k+'</span><span class="v">'+v+'</span></div>';
     if(!comPrev.length&&!base.some(o=>typeof (o.analise||{}).clv==='number')){ $('anCal').innerHTML='<div class="empty">Ainda sem apostas do app liquidadas.</div>'; return; }
     const S=anStats(comPrev), faixas=[[0,0.6,'abaixo de 60%'],[0.6,0.65,'60–65%'],[0.65,0.7,'65–70%'],[0.7,0.75,'70–75%'],[0.75,1.01,'75% ou mais']];
-    let html=comPrev.length?row('Acerto real × previsto',anPct0(S.ganhos/S.done)+' × '+anPct0(S.prev)+' <small>'+S.done+' aposta'+(S.done>1?'s':'')+' do app</small>'):'';
+    const contra=done.filter(o=>(o.analise||{}).contra_pinnacle&&o.analise.p_pinnacle>0);
+    const media=(l,f)=>l.reduce((s,o)=>s+f(o),0)/l.length;
+    const contraRow=contra.length?row('Contra a Pinnacle: real × nós × ela',anPct0(contra.filter(vbGanhou).length/contra.length)+' × '+anPct0(media(contra,o=>o.analise.p_blend))+' × '+anPct0(media(contra,o=>o.analise.p_pinnacle))
+      +' <small>'+contra.length+' aposta'+(contra.length>1?'s':'')+' · quem chegar mais perto do real está certo</small>'):'';
+    let html=contraRow+(comPrev.length?row('Acerto real × previsto',anPct0(S.ganhos/S.done)+' × '+anPct0(S.prev)+' <small>'+S.done+' aposta'+(S.done>1?'s':'')+' do app</small>'):'');
     const clv=base.filter(o=>typeof (o.analise||{}).clv==='number');
     if(clv.length){
       const pos=clv.filter(o=>o.analise.clv>0), m=clv.reduce((s,o)=>s+o.analise.clv,0)/clv.length;
