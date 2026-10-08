@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168.6,
+      "value": 281,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T17:21:00.116Z"
+      "updatedAt": "2026-10-08T17:26:29.927Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 132.25,
+      "value": 112.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T17:21:24.941Z"
+      "updatedAt": "2026-10-08T17:26:29.927Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29906,6 +29906,64 @@
         "inboxId": "anmuzrria3tzo5",
         "enviadaEm": "2026-10-08T16:47:09.387Z"
       }
+    },
+    {
+      "id": "muzt63on403d9",
+      "kind": "valor",
+      "event": "CFR 1907 Cluj x Universitatea Cluj — Handicap asiático: CFR 1907 Cluj 0",
+      "houseA": "Sportmarket",
+      "oddA": 2.19,
+      "stakeA": 112.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.52,
+      "prob": 0.66,
+      "winner": null,
+      "date": "2026-10-08T14:30",
+      "modelo": "analise",
+      "total": 112.4,
+      "lucroA": 133.756,
+      "lucroRed": -112.4,
+      "lucro": 133.756,
+      "roi": 119,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T17:26:29.927Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1565207,
+        "kickoff": "2026-10-08T17:30:00.000Z",
+        "home": "CFR 1907 Cluj",
+        "away": "Universitatea Cluj",
+        "competition": "Liga I",
+        "lineId": "ahH0",
+        "mercado": "Handicap asiático",
+        "linha": "CFR 1907 Cluj 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.624,
+        "p_blend": 0.66,
+        "p_pinnacle": 0.451,
+        "fair_odd": 1.52,
+        "odd_min": 1.59,
+        "pinnacle_odd": 2.12,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.66,
+        "ev_pinnacle": 0.4,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 20.77,
+        "p_model_cal": 0.62,
+        "status": "entrar se",
+        "conditions": [
+          "a nossa leitura está 21 pp acima da Pinnacle — conferir escalação e notícias"
+        ],
+        "inboxId": "anmuzt63alrbnq",
+        "enviadaEm": "2026-10-08T17:26:29.421Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30072,5 +30130,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:21:24.941Z"
+  "updatedAt": "2026-10-08T17:26:29.927Z"
 }
