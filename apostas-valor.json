@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 336,
+      "value": 224,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:57:48.786Z"
+      "updatedAt": "2026-10-08T15:21:14.509Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29354,7 +29354,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.45,
       "prob": 0.692,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T10:10",
       "modelo": "analise",
       "total": 112,
@@ -29363,9 +29363,10 @@
       "lucro": 206.07999999999998,
       "roi": 184,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T12:50:24.549Z",
+      "updatedAt": "2026-10-08T15:21:14.509Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639238,
@@ -29386,7 +29387,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuzjb1cdtbj7",
-        "enviadaEm": "2026-10-08T12:50:24.013Z"
+        "enviadaEm": "2026-10-08T12:50:24.013Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Al Ain 2–2 Al-Ittihad Kalba · saldo de gols do Al Ain: 0 (linha 1)",
+          "at": "2026-10-08T15:21:14.509Z"
+        },
+        "clv": 0.4359298151294102,
+        "closingFair": 1.977812543535807
       }
     },
     {
@@ -29835,5 +29843,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T15:21:12.311Z"
+  "updatedAt": "2026-10-08T15:21:14.509Z"
 }
