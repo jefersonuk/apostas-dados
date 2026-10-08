@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168,
+      "value": 112,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T01:20:41.814Z"
+      "updatedAt": "2026-10-08T01:26:39.634Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 161.39,
+      "value": 179.43,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T00:24:24.899Z"
+      "updatedAt": "2026-10-08T01:26:39.634Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -28900,7 +28900,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.81,
       "prob": 0.552,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-07T20:30",
       "modelo": "analise",
       "total": 56,
@@ -28909,9 +28909,10 @@
       "lucro": 45.36,
       "roi": 81,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-07T21:55:14.702Z",
+      "updatedAt": "2026-10-08T01:26:39.634Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520910,
@@ -29198,5 +29199,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T01:20:41.815Z"
+  "updatedAt": "2026-10-08T01:26:39.634Z"
 }
