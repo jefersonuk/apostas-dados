@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 281,
+      "value": 168.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T19:28:28.849Z"
+      "updatedAt": "2026-10-08T19:30:32.371Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29943,7 +29943,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.52,
       "prob": 0.66,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T14:30",
       "modelo": "analise",
       "total": 112.4,
@@ -29952,9 +29952,10 @@
       "lucro": 133.756,
       "roi": 119,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T17:26:29.927Z",
+      "updatedAt": "2026-10-08T19:30:32.371Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1565207,
@@ -29986,7 +29987,14 @@
           "a nossa leitura está 21 pp acima da Pinnacle — conferir escalação e notícias"
         ],
         "inboxId": "anmuzt63alrbnq",
-        "enviadaEm": "2026-10-08T17:26:29.421Z"
+        "enviadaEm": "2026-10-08T17:26:29.421Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "CFR 1907 Cluj 1–3 Universitatea Cluj · saldo de gols do CFR 1907 Cluj: -2 (linha 0)",
+          "at": "2026-10-08T19:30:32.371Z"
+        },
+        "clv": -0.012676833507974217,
+        "closingFair": 2.2181187217363725
       }
     },
     {
@@ -30209,5 +30217,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T19:28:28.850Z"
+  "updatedAt": "2026-10-08T19:30:32.371Z"
 }
