@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 504.6,
+      "value": 560.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:02:07.272Z"
+      "updatedAt": "2026-10-08T14:16:56.219Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 64.76,
+      "value": 54.76,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T13:35:08.078Z"
+      "updatedAt": "2026-10-08T14:16:56.219Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29467,6 +29467,54 @@
         "inboxId": "anmuzk4cf33oq4",
         "enviadaEm": "2026-10-08T13:13:11.391Z"
       }
+    },
+    {
+      "id": "muzmeboakjy5d",
+      "kind": "valor",
+      "event": "Al Ittihad x Wadi Degla — 1X2: Wadi Degla vence",
+      "houseA": "Sportmarket",
+      "oddA": 3.64,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.31,
+      "prob": 0.433,
+      "winner": null,
+      "date": "2026-10-08T11:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 147.84,
+      "lucroRed": -56,
+      "lucro": 147.84,
+      "roi": 264,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T14:16:56.219Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640292,
+        "kickoff": "2026-10-08T14:00:00.000Z",
+        "home": "Al Ittihad",
+        "away": "Wadi Degla",
+        "competition": "League Cup",
+        "lineId": "2",
+        "mercado": "1X2",
+        "linha": "Wadi Degla vence",
+        "tier": "especulativa",
+        "p_model": 0.433,
+        "p_blend": 0.433,
+        "p_pinnacle": null,
+        "fair_odd": 2.31,
+        "odd_min": 2.5,
+        "pinnacle_odd": null,
+        "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuzmeba8oe02",
+        "enviadaEm": "2026-10-08T14:16:55.712Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29633,5 +29681,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:10:47.723Z"
+  "updatedAt": "2026-10-08T14:16:56.219Z"
 }
