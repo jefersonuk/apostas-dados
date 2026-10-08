@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 112.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T03:59:43.358Z"
+      "updatedAt": "2026-10-08T10:46:15.778Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 152,
+      "value": 132,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T10:42:12.297Z"
+      "updatedAt": "2026-10-08T10:46:15.778Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29069,6 +29069,53 @@
         "clv": 0.0009832952742494516,
         "closingFair": 1.4485756224360655
       }
+    },
+    {
+      "id": "muzeve8xjoon4",
+      "kind": "valor",
+      "event": "Səbail x Karvan — Handicap asiático: Karvan +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.63,
+      "stakeA": 112.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.44,
+      "prob": 0.695,
+      "winner": null,
+      "date": "2026-10-08T08:30",
+      "modelo": "analise",
+      "total": 112.4,
+      "lucroA": 70.812,
+      "lucroRed": -112.4,
+      "lucro": 70.812,
+      "roi": 62.999999999999986,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T10:46:15.778Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1630447,
+        "kickoff": "2026-10-08T11:30:00.000Z",
+        "home": "Səbail",
+        "away": "Karvan",
+        "competition": "Birinci Dasta",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Karvan +1,5",
+        "tier": "sólida",
+        "p_model": 0.719,
+        "p_blend": 0.695,
+        "p_pinnacle": 0.693,
+        "fair_odd": 1.44,
+        "odd_min": 1.51,
+        "pinnacle_odd": 1.37,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuzevdsg3v2u",
+        "enviadaEm": "2026-10-08T10:46:15.184Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29235,5 +29282,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T10:42:12.297Z"
+  "updatedAt": "2026-10-08T10:46:15.778Z"
 }
