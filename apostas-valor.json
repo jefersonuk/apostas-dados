@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168.6,
+      "value": 224.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T10:57:55.111Z"
+      "updatedAt": "2026-10-08T11:00:47.975Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 122,
+      "value": 112,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T10:57:55.110Z"
+      "updatedAt": "2026-10-08T11:00:47.975Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29164,6 +29164,54 @@
         "inboxId": "anmuzfadh09xb8",
         "enviadaEm": "2026-10-08T10:57:54.612Z"
       }
+    },
+    {
+      "id": "muzfe38nld4yy",
+      "kind": "valor",
+      "event": "Otrant-Olympic x Mladost DG — Handicap asiático: Otrant-Olympic −1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.72,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 3.07,
+      "prob": 0.326,
+      "winner": null,
+      "date": "2026-10-08T09:00",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 96.66400000000002,
+      "lucroRed": -56.2,
+      "lucro": 96.66400000000002,
+      "roi": 172.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T11:00:47.975Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1558535,
+        "kickoff": "2026-10-08T12:00:00.000Z",
+        "home": "Otrant-Olympic",
+        "away": "Mladost DG",
+        "competition": "First League",
+        "lineId": "ahH-1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Otrant-Olympic −1,5",
+        "tier": "especulativa",
+        "p_model": 0.314,
+        "p_blend": 0.326,
+        "p_pinnacle": 0.327,
+        "fair_odd": 3.07,
+        "odd_min": 3.22,
+        "pinnacle_odd": 2.69,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuzfe2r7psol",
+        "enviadaEm": "2026-10-08T11:00:47.347Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29330,5 +29378,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T10:57:55.111Z"
+  "updatedAt": "2026-10-08T11:00:47.976Z"
 }
