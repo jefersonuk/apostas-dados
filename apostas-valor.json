@@ -4803,9 +4803,9 @@
     {
       "id": "muh4k5nvhsp0z",
       "name": "SX Bet",
-      "value": 65.06,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-09-25T15:38:07.636Z"
+      "updatedAt": "2026-10-08T19:00:47.905Z"
     },
     {
       "id": "muipjzfjzklo4",
@@ -30209,5 +30209,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T19:00:43.837Z"
+  "updatedAt": "2026-10-08T19:00:47.905Z"
 }
