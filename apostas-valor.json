@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 1122,
+      "value": 729.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T17:20:33.570Z"
+      "updatedAt": "2026-10-08T17:20:41.918Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": -10.89,
+      "value": 127.77,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T17:20:32.328Z"
+      "updatedAt": "2026-10-08T17:20:43.004Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29082,7 +29082,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.44,
       "prob": 0.695,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-08T08:30",
       "modelo": "analise",
       "total": 112.4,
@@ -29092,9 +29092,9 @@
       "roi": 62.999999999999986,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T17:20:11.312Z",
+      "updatedAt": "2026-10-08T17:20:40.396Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1630447,
@@ -29119,7 +29119,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Səbail 1–1 Karvan · saldo de gols do Səbail: 0 (linha 1.5)",
-          "at": "2026-10-08T13:35:08.077Z"
+          "at": "2026-10-08T17:20:40.396Z"
         },
         "clv": 0.12907656675324186,
         "closingFair": 1.443657629603639
@@ -29149,7 +29149,7 @@
         "stakes": true,
         "resultado": null
       },
-      "updatedAt": "2026-10-08T17:20:18.801Z",
+      "updatedAt": "2026-10-08T17:20:40.899Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1558531,
@@ -29171,7 +29171,12 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuzfadh09xb8",
-        "enviadaEm": "2026-10-08T10:57:54.612Z"
+        "enviadaEm": "2026-10-08T10:57:54.612Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Match Postponed",
+          "at": "2026-10-08T17:20:40.899Z"
+        }
       }
     },
     {
@@ -29186,7 +29191,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 3.07,
       "prob": 0.326,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T09:00",
       "modelo": "analise",
       "total": 56.2,
@@ -29196,9 +29201,9 @@
       "roi": 172.00000000000003,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T17:20:20.804Z",
+      "updatedAt": "2026-10-08T17:20:41.912Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1558535,
@@ -29224,7 +29229,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Otrant-Olympic 2–2 Mladost DG · saldo de gols do Otrant-Olympic: 0 (linha 1.5)",
-          "at": "2026-10-08T14:02:07.270Z"
+          "at": "2026-10-08T17:20:41.912Z"
         },
         "clv": -0.10527106061077307,
         "closingFair": 3.0400268508770565
@@ -29242,7 +29247,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.93,
       "prob": 0.517,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-08T09:15",
       "modelo": "analise",
       "total": 112.4,
@@ -29252,9 +29257,9 @@
       "roi": 87.99999999999999,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T17:20:22.564Z",
+      "updatedAt": "2026-10-08T17:20:43.004Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1633901,
@@ -29280,7 +29285,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Viettel 1–3 Hồng Lĩnh Hà Tĩnh · saldo de gols do Viettel: -2 (linha 1)",
-          "at": "2026-10-08T14:16:59.693Z"
+          "at": "2026-10-08T17:20:43.004Z"
         },
         "clv": 0.008110291859642738,
         "closingFair": 1.8648753168981125
@@ -29520,7 +29525,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.31,
       "prob": 0.433,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-08T11:00",
       "modelo": "analise",
       "total": 56,
@@ -29530,9 +29535,9 @@
       "roi": 264,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T17:20:30.185Z",
+      "updatedAt": "2026-10-08T17:20:40.405Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640292,
@@ -29558,7 +29563,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Al Ittihad 0–1 Wadi Degla · saldo de gols do Al Ittihad: -1 (linha -0.5)",
-          "at": "2026-10-08T16:03:38.030Z"
+          "at": "2026-10-08T17:20:40.405Z"
         }
       }
     },
@@ -29574,7 +29579,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.89,
       "prob": 0.53,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T12:00",
       "modelo": "analise",
       "total": 112,
@@ -29584,9 +29589,9 @@
       "roi": 96,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T17:20:33.569Z",
+      "updatedAt": "2026-10-08T17:20:40.918Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1638102,
@@ -29608,7 +29613,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuznklwh03mh",
-        "enviadaEm": "2026-10-08T14:49:49.025Z"
+        "enviadaEm": "2026-10-08T14:49:49.025Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "HJK Helsinki 6–0 VPS · saldo de gols do HJK Helsinki: 6 (linha 1)",
+          "at": "2026-10-08T17:20:40.918Z"
+        },
+        "clv": 0.008539993771752075,
+        "closingFair": 1.9434033475162094
       }
     },
     {
@@ -29623,7 +29635,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 3.52,
       "prob": 0.284,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-08T11:50",
       "modelo": "analise",
       "total": 56,
@@ -29633,9 +29645,9 @@
       "roi": 223,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T17:20:32.328Z",
+      "updatedAt": "2026-10-08T17:20:41.918Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1644617,
@@ -29657,7 +29669,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuznsfqhppp5",
-        "enviadaEm": "2026-10-08T14:55:54.281Z"
+        "enviadaEm": "2026-10-08T14:55:54.281Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sporty 1–6 Khaitan · saldo de gols do Sporty: -5 (linha -2.5)",
+          "at": "2026-10-08T17:20:41.918Z"
+        },
+        "clv": -0.050607414679122,
+        "closingFair": 3.4021752960165754
       }
     },
     {
@@ -30053,5 +30072,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:20:33.570Z"
+  "updatedAt": "2026-10-08T17:20:41.918Z"
 }
