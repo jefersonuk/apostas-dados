@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 560.6,
+      "value": 448.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:16:56.219Z"
+      "updatedAt": "2026-10-08T14:16:59.694Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 54.76,
+      "value": 92.49,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T14:16:56.219Z"
+      "updatedAt": "2026-10-08T14:16:59.694Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29242,7 +29242,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.93,
       "prob": 0.517,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-08T09:15",
       "modelo": "analise",
       "total": 112.4,
@@ -29251,9 +29251,10 @@
       "lucro": 98.91199999999999,
       "roi": 87.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-08T11:09:14.381Z",
+      "updatedAt": "2026-10-08T14:16:59.694Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1633901,
@@ -29275,7 +29276,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuzfoxljck0e",
-        "enviadaEm": "2026-10-08T11:09:13.879Z"
+        "enviadaEm": "2026-10-08T11:09:13.879Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Viettel 1–3 Hồng Lĩnh Hà Tĩnh · saldo de gols do Viettel: -2 (linha 1)",
+          "at": "2026-10-08T14:16:59.693Z"
+        },
+        "clv": 0.008110291859642738,
+        "closingFair": 1.8648753168981125
       }
     },
     {
@@ -29681,5 +29689,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:16:56.219Z"
+  "updatedAt": "2026-10-08T14:16:59.694Z"
 }
