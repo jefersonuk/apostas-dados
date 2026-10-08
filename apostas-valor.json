@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 448.2,
+      "value": 336.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T14:49:49.529Z"
+      "updatedAt": "2026-10-08T14:54:12.481Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29448,7 +29448,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.64,
       "prob": 0.379,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T10:00",
       "modelo": "analise",
       "total": 112,
@@ -29457,9 +29457,10 @@
       "lucro": 110.88,
       "roi": 99,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T13:13:11.963Z",
+      "updatedAt": "2026-10-08T14:54:12.481Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639324,
@@ -29481,7 +29482,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuzk4cf33oq4",
-        "enviadaEm": "2026-10-08T13:13:11.391Z"
+        "enviadaEm": "2026-10-08T13:13:11.391Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Rosenborg U19 2–1 Lillestrøm U19 · saldo de gols do Rosenborg U19: 1 (linha 0.5)",
+          "at": "2026-10-08T14:54:12.481Z"
+        },
+        "clv": -0.27015992719816884,
+        "closingFair": 2.7266247417197276
       }
     },
     {
@@ -29745,5 +29753,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T14:49:49.529Z"
+  "updatedAt": "2026-10-08T14:54:12.481Z"
 }
