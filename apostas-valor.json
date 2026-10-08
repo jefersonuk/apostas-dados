@@ -28595,7 +28595,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-08T00:59:08.309Z",
+      "updatedAt": "2026-10-08T01:03:32.592Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1517309,
@@ -28620,7 +28620,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Second Half",
-          "at": "2026-10-08T00:59:08.309Z"
+          "at": "2026-10-08T01:03:32.592Z"
         }
       }
     },
@@ -28703,7 +28703,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T00:59:19.498Z",
+      "updatedAt": "2026-10-08T01:03:33.210Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1494029,
@@ -28726,10 +28726,12 @@
         "inboxId": "anmuymquuxful1",
         "enviadaEm": "2026-10-07T21:38:54.777Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-08T00:59:08.711Z"
-        }
+          "status": "encerrado",
+          "detail": "One Knoxville 3–0 Chattanooga Red Wolves · saldo de gols do One Knoxville: 3 (linha 1)",
+          "at": "2026-10-08T01:03:33.210Z"
+        },
+        "clv": -0.07810378148741581,
+        "closingFair": 1.5186091144389366
       }
     },
     {
@@ -29190,5 +29192,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T01:00:08.836Z"
+  "updatedAt": "2026-10-08T01:03:33.210Z"
 }
