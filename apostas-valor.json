@@ -28816,7 +28816,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T01:20:41.814Z",
+      "updatedAt": "2026-10-08T01:30:41.621Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520919,
@@ -28837,7 +28837,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuymvuhj2gvp",
-        "enviadaEm": "2026-10-07T21:42:47.575Z"
+        "enviadaEm": "2026-10-07T21:42:47.575Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Vila Nova 0–0 Cuiaba · gols no jogo: 0 (linha 1.5)",
+          "at": "2026-10-08T01:30:41.621Z"
+        },
+        "clv": -0.004963322168486051,
+        "closingFair": 1.5275818810142154
       }
     },
     {
@@ -28864,7 +28871,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T01:09:44.548Z",
+      "updatedAt": "2026-10-08T01:30:42.471Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520913,
@@ -28885,7 +28892,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmuymz0plco0a",
-        "enviadaEm": "2026-10-07T21:45:15.609Z"
+        "enviadaEm": "2026-10-07T21:45:15.609Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "CRB 3–1 Atletico Goianiense · saldo de gols do CRB: 2 (linha 1)",
+          "at": "2026-10-08T01:30:42.471Z"
+        },
+        "clv": 0.008437637897206196,
+        "closingFair": 1.5469474178422291
       }
     },
     {
@@ -28912,7 +28926,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-08T01:26:39.634Z",
+      "updatedAt": "2026-10-08T01:30:43.383Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520910,
@@ -28935,7 +28949,14 @@
         "manual": true,
         "inboxId": "anmuyn2q60hz38",
         "enviadaEm": "2026-10-07T21:48:08.568Z",
-        "editadaEm": "2026-10-07T21:55:14.701Z"
+        "editadaEm": "2026-10-07T21:55:14.701Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "America Mineiro 0–1 Fortaleza EC · gols no jogo: 1 (linha 2.5)",
+          "at": "2026-10-08T01:30:43.383Z"
+        },
+        "clv": -0.0110716652493984,
+        "closingFair": 1.8302640711133684
       }
     },
     {
@@ -28962,7 +28983,7 @@
         "stakes": true,
         "resultado": null
       },
-      "updatedAt": "2026-10-08T01:12:09.581Z",
+      "updatedAt": "2026-10-08T01:30:43.858Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492391,
@@ -28984,7 +29005,12 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuynbfj0xvyu",
-        "enviadaEm": "2026-10-07T21:54:54.684Z"
+        "enviadaEm": "2026-10-07T21:54:54.684Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-08T01:30:43.858Z"
+        }
       }
     },
     {
@@ -29199,5 +29225,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T01:26:39.634Z"
+  "updatedAt": "2026-10-08T01:30:43.859Z"
 }
