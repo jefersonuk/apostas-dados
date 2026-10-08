@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 281,
+      "value": 393.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T17:26:29.927Z"
+      "updatedAt": "2026-10-08T17:31:48.756Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 112.25,
+      "value": 92.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T17:26:29.927Z"
+      "updatedAt": "2026-10-08T17:31:48.756Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29964,6 +29964,61 @@
         "inboxId": "anmuzt63alrbnq",
         "enviadaEm": "2026-10-08T17:26:29.421Z"
       }
+    },
+    {
+      "id": "muztcxozj2uq1",
+      "kind": "valor",
+      "event": "Safa x Reyady Abaseya — Handicap asiático: Safa −1",
+      "houseA": "Sportmarket",
+      "oddA": 2.06,
+      "stakeA": 112.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.8,
+      "prob": 0.56,
+      "winner": null,
+      "date": "2026-10-08T15:45",
+      "modelo": "analise",
+      "total": 112.4,
+      "lucroA": 119.144,
+      "lucroRed": -112.4,
+      "lucro": 119.144,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T17:31:48.756Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1642034,
+        "kickoff": "2026-10-08T18:45:00.000Z",
+        "home": "Safa",
+        "away": "Reyady Abaseya",
+        "competition": "Premier League",
+        "lineId": "ahH-1",
+        "mercado": "Handicap asiático",
+        "linha": "Safa −1",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.573,
+        "p_blend": 0.56,
+        "p_pinnacle": 0.453,
+        "fair_odd": 1.8,
+        "odd_min": 1.89,
+        "pinnacle_odd": 2.01,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.56,
+        "ev_pinnacle": 0.12,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 10.3,
+        "p_model_cal": 0.57,
+        "status": "aposta",
+        "inboxId": "anmuztcwkujmdo",
+        "enviadaEm": "2026-10-08T17:31:47.310Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30130,5 +30185,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T17:26:29.927Z"
+  "updatedAt": "2026-10-08T17:31:48.756Z"
 }
