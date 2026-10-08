@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 393.4,
+      "value": 281,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T17:31:48.756Z"
+      "updatedAt": "2026-10-08T18:45:41.503Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -29832,7 +29832,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.52,
       "prob": 0.657,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T13:40",
       "modelo": "analise",
       "total": 56.2,
@@ -29841,9 +29841,10 @@
       "lucro": 45.522000000000006,
       "roi": 81,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T16:46:51.257Z",
+      "updatedAt": "2026-10-08T18:45:41.031Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1621636,
@@ -29864,7 +29865,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmuzrr0s267py",
-        "enviadaEm": "2026-10-08T16:46:46.706Z"
+        "enviadaEm": "2026-10-08T16:46:46.706Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Holon Yermiyahu 5–0 Nordia Jerusalem · saldo de gols do Holon Yermiyahu: 5 (linha 1.5)",
+          "at": "2026-10-08T18:45:41.031Z"
+        },
+        "clv": 0.1589982954362794,
+        "closingFair": 1.5616934098411814
       }
     },
     {
@@ -29879,7 +29887,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.85,
       "prob": 0.541,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-08T13:40",
       "modelo": "analise",
       "total": 56.2,
@@ -29888,9 +29896,10 @@
       "lucro": 85.98599999999999,
       "roi": 152.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T16:47:12.566Z",
+      "updatedAt": "2026-10-08T18:45:41.503Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1621636,
@@ -29912,7 +29921,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmuzrria3tzo5",
-        "enviadaEm": "2026-10-08T16:47:09.387Z"
+        "enviadaEm": "2026-10-08T16:47:09.387Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Holon Yermiyahu 5–0 Nordia Jerusalem · saldo de gols do Holon Yermiyahu: 5 (linha 1)",
+          "at": "2026-10-08T18:45:41.503Z"
+        },
+        "clv": 0.30713575361645984,
+        "closingFair": 1.9355296441094465
       }
     },
     {
@@ -30193,5 +30209,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T18:03:04.586Z"
+  "updatedAt": "2026-10-08T18:45:41.503Z"
 }
