@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 224.8,
+      "value": 337.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T11:00:47.975Z"
+      "updatedAt": "2026-10-08T11:09:14.382Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 112,
+      "value": 92,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T11:00:47.975Z"
+      "updatedAt": "2026-10-08T11:09:14.381Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29212,6 +29212,54 @@
         "inboxId": "anmuzfe2r7psol",
         "enviadaEm": "2026-10-08T11:00:47.347Z"
       }
+    },
+    {
+      "id": "muzfoxzhmqgy6",
+      "kind": "valor",
+      "event": "Viettel x Hồng Lĩnh Hà Tĩnh — Handicap asiático: Hồng Lĩnh Hà Tĩnh +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.88,
+      "stakeA": 112.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.93,
+      "prob": 0.517,
+      "winner": null,
+      "date": "2026-10-08T09:15",
+      "modelo": "analise",
+      "total": 112.4,
+      "lucroA": 98.91199999999999,
+      "lucroRed": -112.4,
+      "lucro": 98.91199999999999,
+      "roi": 87.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T11:09:14.381Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1633901,
+        "kickoff": "2026-10-08T12:15:00.000Z",
+        "home": "Viettel",
+        "away": "Hồng Lĩnh Hà Tĩnh",
+        "competition": "V.League 1",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "Hồng Lĩnh Hà Tĩnh +1",
+        "tier": "especulativa",
+        "p_model": 0.663,
+        "p_blend": 0.517,
+        "p_pinnacle": 0.5,
+        "fair_odd": 1.93,
+        "odd_min": 2.03,
+        "pinnacle_odd": 1.89,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmuzfoxljck0e",
+        "enviadaEm": "2026-10-08T11:09:13.879Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29378,5 +29426,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T11:00:47.976Z"
+  "updatedAt": "2026-10-08T11:09:14.382Z"
 }
