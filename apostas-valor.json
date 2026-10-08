@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 449.2,
+      "value": 561.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T12:52:10.825Z"
+      "updatedAt": "2026-10-08T12:58:19.075Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4688,9 +4688,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 72.04,
+      "value": 52.04,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T12:52:10.825Z"
+      "updatedAt": "2026-10-08T12:58:19.075Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -29356,6 +29356,53 @@
         "inboxId": "anmuzjb1cdtbj7",
         "enviadaEm": "2026-10-08T12:50:24.013Z"
       }
+    },
+    {
+      "id": "muzjl7wj1qrpb",
+      "kind": "valor",
+      "event": "ATK Mohun Bagan x East Bengal II — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.55,
+      "stakeA": 112,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.36,
+      "prob": 0.738,
+      "winner": null,
+      "date": "2026-10-08T09:45",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 61.60000000000001,
+      "lucroRed": -112,
+      "lucro": 61.60000000000001,
+      "roi": 55.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-08T12:58:19.075Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1644447,
+        "kickoff": "2026-10-08T12:45:00.000Z",
+        "home": "ATK Mohun Bagan",
+        "away": "East Bengal II",
+        "competition": "IFA Shield",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.793,
+        "p_blend": 0.738,
+        "p_pinnacle": 0.731,
+        "fair_odd": 1.36,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.31,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmuzjl649qsa0",
+        "enviadaEm": "2026-10-08T12:58:16.761Z"
+      }
     }
   ],
   "invertidos": [],
@@ -29522,5 +29569,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T12:52:10.825Z"
+  "updatedAt": "2026-10-08T12:58:19.075Z"
 }
