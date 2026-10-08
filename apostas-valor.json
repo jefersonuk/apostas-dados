@@ -4652,10 +4652,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168,
+      "value": 224,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T01:09:47.215Z"
+      "updatedAt": "2026-10-08T01:12:09.581Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -28948,7 +28948,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.68,
       "prob": 0.594,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-10-07T20:30",
       "modelo": "analise",
       "total": 56,
@@ -28958,9 +28958,9 @@
       "roi": 73,
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": null
       },
-      "updatedAt": "2026-10-08T01:09:47.214Z",
+      "updatedAt": "2026-10-08T01:12:09.581Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492391,
@@ -29197,5 +29197,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-08T01:09:47.215Z"
+  "updatedAt": "2026-10-08T01:12:09.581Z"
 }
