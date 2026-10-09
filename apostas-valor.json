@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168.1,
+      "value": 111.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T22:00:29.387Z"
+      "updatedAt": "2026-10-09T22:52:07.338Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30508,7 +30508,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.1,
       "prob": 0.48,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-09T17:30",
       "modelo": "analise",
       "total": 56.2,
@@ -30517,9 +30517,10 @@
       "lucro": 85.98599999999999,
       "roi": 152.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T11:04:41.251Z",
+      "updatedAt": "2026-10-09T22:52:07.335Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639821,
@@ -30548,7 +30549,14 @@
         "p_model_cal": 0.46,
         "status": "aposta",
         "inboxId": "anmv0uyxjr6bol",
-        "enviadaEm": "2026-10-09T11:04:40.791Z"
+        "enviadaEm": "2026-10-09T11:04:40.791Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Delfin SC 3–2 Mushuc Runa SC · saldo de gols do Delfin SC: 1 (linha 0)",
+          "at": "2026-10-09T22:52:07.335Z"
+        },
+        "clv": -0.0520246070052669,
+        "closingFair": 2.668845645884878
       }
     },
     {
@@ -31385,5 +31393,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T22:00:29.387Z"
+  "updatedAt": "2026-10-09T22:52:07.338Z"
 }
