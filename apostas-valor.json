@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 905.08,
+      "value": 752.84,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T17:52:41.877Z"
+      "updatedAt": "2026-10-09T18:08:03.178Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 0,
+      "value": 27.33,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T13:35:26.730Z"
+      "updatedAt": "2026-10-09T18:08:03.178Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30578,7 +30578,7 @@
       "event": "Once Caldas x Llaneros — Handicap asiático: Llaneros +1",
       "houseA": "Sportmarket",
       "oddA": 1.93,
-      "stakeA": 207.94,
+      "stakeA": 55.7,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Handicap Asiático",
@@ -30587,15 +30587,15 @@
       "winner": null,
       "date": "2026-10-09T22:10",
       "modelo": "analise",
-      "total": 207.94,
-      "lucroA": 193.3842,
-      "lucroRed": -207.94,
-      "lucro": 193.3842,
+      "total": 55.7,
+      "lucroA": 51.801,
+      "lucroRed": -55.7,
+      "lucro": 51.801,
       "roi": 93,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-09T11:06:15.134Z",
+      "updatedAt": "2026-10-09T18:08:03.178Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549820,
@@ -30624,7 +30624,8 @@
         "p_model_cal": 0.66,
         "status": "aposta",
         "inboxId": "anmv0v0xzmvw60",
-        "enviadaEm": "2026-10-09T11:06:14.674Z"
+        "enviadaEm": "2026-10-09T11:06:14.674Z",
+        "editadaEm": "2026-10-09T18:08:03.178Z"
       }
     },
     {
@@ -31277,5 +31278,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T17:52:54.538Z"
+  "updatedAt": "2026-10-09T18:08:03.178Z"
 }
