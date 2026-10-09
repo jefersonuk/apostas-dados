@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 175.7,
+      "value": 165.7,
       "currency": "USD",
-      "updatedAt": "2026-10-09T14:11:01.772Z"
+      "updatedAt": "2026-10-09T17:36:03.343Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 805.28,
+      "value": 855.18,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T16:22:17.697Z"
+      "updatedAt": "2026-10-09T17:36:03.344Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -31015,6 +31015,53 @@
         "inboxId": "anmv11mhd6qsyz",
         "enviadaEm": "2026-10-09T14:10:57.258Z"
       }
+    },
+    {
+      "id": "mv18y8svaxqnh",
+      "kind": "valor",
+      "event": "Stade Nyonnais x FC Aarau — Combo: FC Aarau ou empate + Mais de 1,5 gols",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.53,
+      "stakeA": 49.9,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.29,
+      "prob": 0.775,
+      "winner": null,
+      "date": "2026-10-09T15:15",
+      "modelo": "analise",
+      "total": 49.9,
+      "lucroA": 26.447,
+      "lucroRed": -49.9,
+      "lucro": 26.447,
+      "roi": 53,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T17:36:03.344Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1555065,
+        "kickoff": "2026-10-09T18:15:00.000Z",
+        "home": "Stade Nyonnais",
+        "away": "FC Aarau",
+        "competition": "Challenge League",
+        "lineId": "cb:X2+gO1.5",
+        "mercado": "Combo",
+        "linha": "FC Aarau ou empate + Mais de 1,5 gols",
+        "tier": "sólida",
+        "p_model": 0.662,
+        "p_blend": 0.775,
+        "p_pinnacle": 0.787,
+        "fair_odd": 1.29,
+        "odd_min": 1.5,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv18xhc6mq4d",
+        "enviadaEm": "2026-10-09T17:35:27.750Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31181,5 +31228,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T16:22:17.698Z"
+  "updatedAt": "2026-10-09T17:36:03.344Z"
 }
