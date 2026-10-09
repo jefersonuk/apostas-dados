@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 176.5,
+      "value": 207.36,
       "currency": "USD",
-      "updatedAt": "2026-10-09T19:14:19.394Z"
+      "updatedAt": "2026-10-09T20:23:42.876Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 442.8,
+      "value": 386.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T20:00:43.407Z"
+      "updatedAt": "2026-10-09T20:31:46.200Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30256,7 +30256,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.7,
       "prob": 0.59,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-09T15:30",
       "modelo": "analise",
       "total": 56.2,
@@ -30265,9 +30265,10 @@
       "lucro": 59.00999999999999,
       "roi": 104.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T11:01:20.182Z",
+      "updatedAt": "2026-10-09T20:31:46.200Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1558234,
@@ -30296,7 +30297,14 @@
         "p_model_cal": 0.58,
         "status": "aposta",
         "inboxId": "anmv0uume2ztdu",
-        "enviadaEm": "2026-10-09T11:01:19.706Z"
+        "enviadaEm": "2026-10-09T11:01:19.706Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Podbeskidzie 1–0 Pogoń Siedlce · saldo de gols do Podbeskidzie: 1 (linha 0.5)",
+          "at": "2026-10-09T20:31:46.200Z"
+        },
+        "clv": -0.008641489782584943,
+        "closingFair": 2.0678694729219744
       }
     },
     {
@@ -31352,5 +31360,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T20:23:36.489Z"
+  "updatedAt": "2026-10-09T20:31:46.200Z"
 }
