@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 280.5,
+      "value": 168.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T20:46:30.038Z"
+      "updatedAt": "2026-10-09T22:00:29.387Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 37.64,
+      "value": 62.3,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T20:46:30.037Z"
+      "updatedAt": "2026-10-09T22:00:19.945Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30382,7 +30382,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.06,
       "prob": 0.49,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-09T16:15",
       "modelo": "analise",
       "total": 56.2,
@@ -30391,9 +30391,10 @@
       "lucro": 82.61400000000002,
       "roi": 147.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-09T11:02:50.383Z",
+      "updatedAt": "2026-10-09T22:00:19.945Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1575512,
@@ -30422,7 +30423,14 @@
         "p_model_cal": 0.49,
         "status": "aposta",
         "inboxId": "anmv0uwjyq4y9u",
-        "enviadaEm": "2026-10-09T11:02:49.874Z"
+        "enviadaEm": "2026-10-09T11:02:49.874Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "SC Braga 1–3 Sporting CP · saldo de gols do SC Braga: -2 (linha -0.5)",
+          "at": "2026-10-09T22:00:19.944Z"
+        },
+        "clv": 0.006183816228757522,
+        "closingFair": 2.4548198452025605
       }
     },
     {
@@ -30437,7 +30445,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.02,
       "prob": 0.5,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-09T17:00",
       "modelo": "analise",
       "total": 56.2,
@@ -30446,9 +30454,10 @@
       "lucro": 79.24200000000002,
       "roi": 141,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T11:03:59.597Z",
+      "updatedAt": "2026-10-09T22:00:29.386Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549601,
@@ -30477,7 +30486,14 @@
         "p_model_cal": 0.46,
         "status": "aposta",
         "inboxId": "anmv0uy1czhabu",
-        "enviadaEm": "2026-10-09T11:03:59.076Z"
+        "enviadaEm": "2026-10-09T11:03:59.076Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Real Cundinamarca 0–1 Real Santander · saldo de gols do Real Cundinamarca: -1 (linha 1.5)",
+          "at": "2026-10-09T22:00:29.386Z"
+        },
+        "clv": -0.09460309503633935,
+        "closingFair": 2.6618160353626665
       }
     },
     {
@@ -31369,5 +31385,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T20:46:30.038Z"
+  "updatedAt": "2026-10-09T22:00:29.387Z"
 }
