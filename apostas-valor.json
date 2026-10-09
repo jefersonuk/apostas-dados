@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 207.36,
+      "value": 224.7,
       "currency": "USD",
-      "updatedAt": "2026-10-09T20:23:42.876Z"
+      "updatedAt": "2026-10-09T20:31:58.029Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 386.6,
+      "value": 336.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T20:31:46.200Z"
+      "updatedAt": "2026-10-09T20:31:58.030Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -31159,7 +31159,7 @@
       "market": "Escanteios",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-09T15:45",
       "modelo": "analise",
       "total": 49.9,
@@ -31168,9 +31168,10 @@
       "lucro": 36.427,
       "roi": 73,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-09T19:14:19.394Z",
+      "updatedAt": "2026-10-09T20:31:58.029Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1552775,
@@ -31360,5 +31361,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T20:31:46.200Z"
+  "updatedAt": "2026-10-09T20:31:58.030Z"
 }
