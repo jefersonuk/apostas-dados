@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 112.4,
+      "value": 168.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:00:16.948Z"
+      "updatedAt": "2026-10-09T11:00:43.864Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 112.25,
+      "value": 102.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T11:00:16.948Z"
+      "updatedAt": "2026-10-09T11:00:43.863Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30176,6 +30176,61 @@
         "inboxId": "anmv0ut808xoha",
         "enviadaEm": "2026-10-09T11:00:14.408Z"
       }
+    },
+    {
+      "id": "mv0utuqfp4vjv",
+      "kind": "valor",
+      "event": "Avellino x Sampdoria — Handicap asiático: Avellino 0",
+      "houseA": "Sportmarket",
+      "oddA": 1.93,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.62,
+      "prob": 0.62,
+      "winner": null,
+      "date": "2026-10-09T15:30",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 52.266,
+      "lucroRed": -56.2,
+      "lucro": 52.266,
+      "roi": 93,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T11:00:43.864Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1601544,
+        "kickoff": "2026-10-09T18:30:00.000Z",
+        "home": "Avellino",
+        "away": "Sampdoria",
+        "competition": "Serie B",
+        "lineId": "ahH0",
+        "mercado": "Handicap asiático",
+        "linha": "Avellino 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.573,
+        "p_blend": 0.62,
+        "p_pinnacle": 0.5,
+        "fair_odd": 1.62,
+        "odd_min": 1.71,
+        "pinnacle_odd": 1.95,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.62,
+        "ev_pinnacle": 0.2,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.55,
+        "p_model_cal": 0.57,
+        "status": "aposta",
+        "inboxId": "anmv0utueo30lh",
+        "enviadaEm": "2026-10-09T11:00:43.440Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30342,5 +30397,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T11:00:16.948Z"
+  "updatedAt": "2026-10-09T11:00:43.864Z"
 }
