@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 336.7,
+      "value": 280.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T20:31:58.030Z"
+      "updatedAt": "2026-10-09T20:46:30.038Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 19.47,
+      "value": 37.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T19:51:22.851Z"
+      "updatedAt": "2026-10-09T20:46:30.037Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30319,7 +30319,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.59,
       "prob": 0.63,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-09T15:45",
       "modelo": "analise",
       "total": 56.2,
@@ -30328,9 +30328,10 @@
       "lucro": 46.084,
       "roi": 82,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-09T11:01:57.452Z",
+      "updatedAt": "2026-10-09T20:46:30.037Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585281,
@@ -30359,7 +30360,14 @@
         "p_model_cal": 0.6,
         "status": "aposta",
         "inboxId": "anmv0uvexittlj",
-        "enviadaEm": "2026-10-09T11:01:56.694Z"
+        "enviadaEm": "2026-10-09T11:01:56.694Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sutton Utd 0–2 Boreham Wood · saldo de gols do Sutton Utd: -2 (linha -0.5)",
+          "at": "2026-10-09T20:46:30.036Z"
+        },
+        "clv": 0.015213416863264051,
+        "closingFair": 1.7927265043672391
       }
     },
     {
@@ -31361,5 +31369,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T20:31:58.030Z"
+  "updatedAt": "2026-10-09T20:46:30.038Z"
 }
