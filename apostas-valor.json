@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 112.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-08T22:32:17.111Z"
+      "updatedAt": "2026-10-09T11:00:16.948Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 132.25,
+      "value": 112.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-08T21:49:43.013Z"
+      "updatedAt": "2026-10-09T11:00:16.948Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30065,6 +30065,117 @@
         "clv": -0.0662811123246172,
         "closingFair": 2.2062314762943736
       }
+    },
+    {
+      "id": "mv0us139auvgh",
+      "kind": "valor",
+      "event": "Sivasspor x Pendikspor — Handicap asiático: Pendikspor 0",
+      "houseA": "Sportmarket",
+      "oddA": 2.12,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.81,
+      "prob": 0.55,
+      "winner": null,
+      "date": "2026-10-09T11:00",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 62.94400000000001,
+      "lucroRed": -56.2,
+      "lucro": 62.94400000000001,
+      "roi": 112.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T10:59:26.108Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1585776,
+        "kickoff": "2026-10-09T14:00:00.000Z",
+        "home": "Sivasspor",
+        "away": "Pendikspor",
+        "competition": "1. Lig",
+        "lineId": "ahA0",
+        "mercado": "Handicap asiático",
+        "linha": "Pendikspor 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.585,
+        "p_blend": 0.55,
+        "p_pinnacle": 0.456,
+        "fair_odd": 1.81,
+        "odd_min": 1.9,
+        "pinnacle_odd": 2.1,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.55,
+        "ev_pinnacle": 0.16,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 9.65,
+        "p_model_cal": 0.59,
+        "status": "aposta",
+        "inboxId": "anmv0urx74g869",
+        "enviadaEm": "2026-10-09T10:59:13.744Z",
+        "editadaEm": "2026-10-09T10:59:26.108Z"
+      }
+    },
+    {
+      "id": "mv0ut9ysnr37r",
+      "kind": "valor",
+      "event": "Almere City FC x FC Eindhoven — Handicap asiático: FC Eindhoven +1",
+      "houseA": "Sportmarket",
+      "oddA": 2.52,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.02,
+      "prob": 0.49,
+      "winner": null,
+      "date": "2026-10-09T15:00",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 85.424,
+      "lucroRed": -56.2,
+      "lucro": 85.424,
+      "roi": 152,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T11:00:16.948Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1551827,
+        "kickoff": "2026-10-09T18:00:00.000Z",
+        "home": "Almere City FC",
+        "away": "FC Eindhoven",
+        "competition": "Eerste Divisie",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "FC Eindhoven +1",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.555,
+        "p_blend": 0.49,
+        "p_pinnacle": 0.384,
+        "fair_odd": 2.02,
+        "odd_min": 2.12,
+        "pinnacle_odd": 2.44,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.49,
+        "ev_pinnacle": 0.21,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.02,
+        "p_model_cal": 0.55,
+        "status": "aposta",
+        "inboxId": "anmv0ut808xoha",
+        "enviadaEm": "2026-10-09T11:00:14.408Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30231,5 +30342,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T10:59:17.145Z"
+  "updatedAt": "2026-10-09T11:00:16.948Z"
 }
