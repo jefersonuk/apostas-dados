@@ -4633,7 +4633,7 @@
       "name": "Overtimemarkets",
       "value": 165.7,
       "currency": "USD",
-      "updatedAt": "2026-10-09T17:36:03.343Z"
+      "updatedAt": "2026-10-09T17:43:17.541Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -31019,7 +31019,7 @@
     {
       "id": "mv18y8svaxqnh",
       "kind": "valor",
-      "event": "Stade Nyonnais x FC Aarau — Combo: FC Aarau ou empate + Mais de 1,5 gols",
+      "event": "Stade Nyonnais x FC Aarau — Combo: FC Aarau + Mais de 1,5 gols",
       "houseA": "Overtimemarkets",
       "oddA": 1.53,
       "stakeA": 49.9,
@@ -31039,7 +31039,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-09T17:36:03.344Z",
+      "updatedAt": "2026-10-09T17:43:17.541Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1555065,
@@ -31047,9 +31047,9 @@
         "home": "Stade Nyonnais",
         "away": "FC Aarau",
         "competition": "Challenge League",
-        "lineId": "cb:X2+gO1.5",
+        "lineId": "gO1.5",
         "mercado": "Combo",
-        "linha": "FC Aarau ou empate + Mais de 1,5 gols",
+        "linha": "FC Aarau + Mais de 1,5 gols",
         "tier": "sólida",
         "p_model": 0.662,
         "p_blend": 0.775,
@@ -31060,7 +31060,8 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv18xhc6mq4d",
-        "enviadaEm": "2026-10-09T17:35:27.750Z"
+        "enviadaEm": "2026-10-09T17:35:27.750Z",
+        "editadaEm": "2026-10-09T17:43:17.541Z"
       }
     }
   ],
@@ -31228,5 +31229,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T17:40:58.055Z"
+  "updatedAt": "2026-10-09T17:43:17.541Z"
 }
