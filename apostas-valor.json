@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 168.6,
+      "value": 224.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:00:43.864Z"
+      "updatedAt": "2026-10-09T11:01:20.182Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 102.25,
+      "value": 92.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T11:00:43.863Z"
+      "updatedAt": "2026-10-09T11:01:20.182Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30231,6 +30231,61 @@
         "inboxId": "anmv0utueo30lh",
         "enviadaEm": "2026-10-09T11:00:43.440Z"
       }
+    },
+    {
+      "id": "mv0uumraa3ucz",
+      "kind": "valor",
+      "event": "Podbeskidzie x Pogoń Siedlce — Handicap asiático: Pogoń Siedlce +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.05,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.7,
+      "prob": 0.59,
+      "winner": null,
+      "date": "2026-10-09T15:30",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 59.00999999999999,
+      "lucroRed": -56.2,
+      "lucro": 59.00999999999999,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T11:01:20.182Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1558234,
+        "kickoff": "2026-10-09T18:30:00.000Z",
+        "home": "Podbeskidzie",
+        "away": "Pogoń Siedlce",
+        "competition": "I Liga",
+        "lineId": "ahA0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Pogoń Siedlce +0,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.576,
+        "p_blend": 0.59,
+        "p_pinnacle": 0.477,
+        "fair_odd": 1.7,
+        "odd_min": 1.79,
+        "pinnacle_odd": 2.02,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.59,
+        "ev_pinnacle": 0.19,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 10.99,
+        "p_model_cal": 0.58,
+        "status": "aposta",
+        "inboxId": "anmv0uume2ztdu",
+        "enviadaEm": "2026-10-09T11:01:19.706Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30397,5 +30452,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T11:00:43.864Z"
+  "updatedAt": "2026-10-09T11:01:20.182Z"
 }
