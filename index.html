@@ -6395,7 +6395,15 @@
   function anPct(x){ return (x*100).toFixed(1).replace('.',',')+'%'; }
   // stake de um item da caixa: na moeda da casa quando veio assim (stake sempre em R$)
   function anStakeItem(it){ return it.cur&&it.cur!=='BRL'&&it.stakeNat>0?fmtCur(it.stakeNat,it.cur)+' ('+fmt(it.stake)+')':fmt(it.stake); }
-  function anVence(o){ return Date.parse((o.analise||{}).kickoff||o.date)+105*60000<Date.now(); }   // jogo já deve ter terminado
+  // Horário de uma aposta da Análise (ms): ini/fim = o do jogo; na múltipla, o da primeira e o da última perna, lidos das
+  // próprias pernas (a edição gravava o horário da 1ª perna em kickoff e o ao vivo parava 4 h depois dela)
+  function anHorario(o){
+    const a=o.analise||{}, ks=a.multi&&a.legs?a.legs.map(l=>Date.parse(l.kickoff)).filter(isFinite):[];
+    if(ks.length) return {ini:Math.min(...ks),fim:Math.max(...ks)};
+    const k=Date.parse(a.kickoff||o.date);
+    return {ini:a.multi&&a.first_kickoff?Date.parse(a.first_kickoff):k,fim:k};
+  }
+  function anVence(o){ return anHorario(o).fim+105*60000<Date.now(); }   // jogo (na múltipla, o último) já deve ter terminado
   // ---- aba Análise: os mesmos blocos da aba Valor (resumo por período, em aberto, histórico por dia, análise),
   // com o que é só dela: dia a dia com ‹ ›, origem (app × minhas), ao vivo, acerto previsto e CLV. O dia é o do jogo.
   var AN_RES={A:['win','✓ green'],HW:['hwin','½ green'],VOID:['void','↩ anulada'],HL:['hloss','½ red'],RED:['loss','✗ red']};
@@ -6685,13 +6693,16 @@
   // mercado, linha e odd justa. Mudou a linha: o id dela é relido pelo app de análise para a conferência
   // automática continuar valendo; se não reconhecer, a conferência dessa aposta passa a ser manual.
   function anFormEdicao(o){
-    const a=o.analise||{}, cur=legCur(o,'A'), stNat=legStake(o,'A')/curRate(cur);
+    const a=o.analise||{}, cur=legCur(o,'A'), stNat=legStake(o,'A')/curRate(cur), multi=!!a.multi;
     const campo=(lab,f,val,extra)=>'<div><label>'+lab+'</label><input type="text" data-f="'+f+'" value="'+esc(val)+'"'+(extra||'')+'></div>';
+    // múltipla: os horários e as linhas são os das pernas — não se editam aqui
+    const h=anHorario(o), hh=t=>isFinite(t)?new Date(t).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'--:--';
+    const horario=multi?'<div><label>Horários</label><div class="hint" style="margin:6px 0 0;">os das pernas: '+hh(h.ini)+' a '+hh(h.fim)+'</div></div>'
+      :'<div><label>Data / horário do jogo</label><input type="datetime-local" data-f="data" value="'+esc(String(o.date||'').slice(0,16))+'"></div>';
     return '<div class="an-edit" id="anEditForm_'+o.id+'">'+
       '<div class="grid2">'+campo('Casa','casa',legHouse(o,'A'),' list="houseList" autocomplete="off"')+campo('Odd','odd',legOdd(o,'A'),' inputmode="decimal"')+'</div>'+
-      '<div class="grid2">'+campo('Stake ('+curSimbolo(cur)+')','stake',stNat.toFixed(2),' inputmode="decimal" data-orig="'+stNat.toFixed(2)+'"')+
-        '<div><label>Data / horário do jogo</label><input type="datetime-local" data-f="data" value="'+esc(String(o.date||'').slice(0,16))+'"></div></div>'+
-      '<div class="grid2">'+campo('Mercado','mercado',a.mercado||o.market||'')+campo('Linha','linha',a.linha||'')+'</div>'+
+      '<div class="grid2">'+campo('Stake ('+curSimbolo(cur)+')','stake',stNat.toFixed(2),' inputmode="decimal" data-orig="'+stNat.toFixed(2)+'"')+horario+'</div>'+
+      (multi?'':'<div class="grid2">'+campo('Mercado','mercado',a.mercado||o.market||'')+campo('Linha','linha',a.linha||'')+'</div>')+
       '<div class="grid2">'+campo('Odd justa','justa',typeof o.oddMkt==='number'?o.oddMkt.toFixed(2):'',' inputmode="decimal"')+
         '<div style="display:flex;gap:6px;align-items:flex-end;"><button type="button" class="btn small primary" data-ansave="'+o.id+'">Salvar</button>'+
         '<button type="button" class="btn small" data-ancancel="'+o.id+'">Cancelar</button></div></div>'+
@@ -6700,13 +6711,14 @@
   }
   async function anSalvar(id){
     const o=state.surebets.find(x=>x.id===id), f=$('anEditForm_'+id); if(!o||!f) return;
-    const inp=k=>f.querySelector('[data-f="'+k+'"]'), v=k=>inp(k).value;
+    const inp=k=>f.querySelector('[data-f="'+k+'"]'), v=k=>inp(k)?inp(k).value:'';
     const casa=v('casa').trim(), odd=numBR(v('odd')), stakeTxt=v('stake').trim(), stake=numBR(stakeTxt), justa=numBR(v('justa'));
-    const mercado=v('mercado').trim(), linha=v('linha').trim(), data=v('data');
+    const a=o.analise||{}, multi=!!a.multi;
+    const mercado=multi?a.mercado||'':v('mercado').trim(), linha=multi?a.linha||'':v('linha').trim(), data=multi?'':v('data');
+    const mudouData=!!data&&data!==String(o.date||'').slice(0,16);
     if(!nomeCasaValido(casa)){ toast('Informe a casa.'); return; }
     if(!(odd>1)){ toast('Odd inválida.'); return; }
     if(!(stake>0)){ toast('Stake inválida.'); return; }
-    const a=o.analise||{};
     let lineId=a.lineId||null, aviso='';
     if(mercado!==(a.mercado||'')||linha!==(a.linha||'')){
       try{ const m=await import('/analise-futebol/src/myline.js'); lineId=m.parseLine(linha,{market:mercado,names:{home:a.home,away:a.away}}).id||null; }catch(e){ lineId=null; }
@@ -6722,8 +6734,8 @@
       if(stakeTxt!==inp('stake').dataset.orig||mudouMoeda) o.stakeA=Math.round(stake*curRate(curNova)*100)/100;
       o.curA=curNova;
       o.oddMkt=justa>1?justa:null;
-      if(data) o.date=data;
-      o.analise=Object.assign({},a,{mercado,linha,lineId,kickoff:data?new Date(data).toISOString():a.kickoff,editadaEm:new Date().toISOString()});
+      if(mudouData) o.date=data;
+      o.analise=Object.assign({},a,{mercado,linha,lineId,editadaEm:new Date().toISOString()},mudouData?{kickoff:new Date(data).toISOString()}:{});
       const jogo=a.home&&a.away?a.home+' x '+a.away:String(o.event||'').split(' — ')[0];
       o.event=jogo+' — '+mercado+': '+linha;
     });
@@ -6810,8 +6822,8 @@
      1º tempo, CLV); sem a estatística ainda, tenta de novo em 10 min. O ao vivo fica só na memória deste
      aparelho: para a nuvem vai só o resultado. */
   var anAoVivo={info:new Map(),c1:new Map(),linha:new Map(),tentou:new Map(),em:0,erro:null,rodando:false};
-  // múltipla: a janela vai do início da primeira perna (first_kickoff) até 4 h depois da última (kickoff)
-  function anNaJanela(o){ const a=o.analise||{}, k=Date.parse(a.kickoff||o.date), k0=a.multi&&a.first_kickoff?Date.parse(a.first_kickoff):k; return !o.winner&&!!a.fixtureId&&isFinite(k)&&Date.now()>=k0-10*60000&&Date.now()<=k+4*3600000; }
+  // múltipla: a janela vai do início da primeira perna até 4 h depois da última
+  function anNaJanela(o){ const a=o.analise||{}, h=anHorario(o); return !o.winner&&!!a.fixtureId&&isFinite(h.fim)&&Date.now()>=h.ini-10*60000&&Date.now()<=h.fim+4*3600000; }
   function anIds(o){ const a=o.analise||{}; return a.multi&&a.legs?a.legs.map(l=>l.fixtureId):[a.fixtureId]; }
   function anTemChave(){ try{ return !!localStorage.getItem('af:key'); }catch(e){ return false; } }
   async function atualizarAoVivo(forcar){
