@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 861.48,
+      "value": 805.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T14:11:01.773Z"
+      "updatedAt": "2026-10-09T16:12:29.700Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30080,7 +30080,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.81,
       "prob": 0.55,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-09T11:00",
       "modelo": "analise",
       "total": 56.2,
@@ -30089,9 +30089,10 @@
       "lucro": 62.94400000000001,
       "roi": 112.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T10:59:26.108Z",
+      "updatedAt": "2026-10-09T16:12:29.700Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585776,
@@ -30121,7 +30122,14 @@
         "status": "aposta",
         "inboxId": "anmv0urx74g869",
         "enviadaEm": "2026-10-09T10:59:13.744Z",
-        "editadaEm": "2026-10-09T10:59:26.108Z"
+        "editadaEm": "2026-10-09T10:59:26.108Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sivasspor 4–1 Pendikspor · saldo de gols do Sivasspor: 3 (linha 0)",
+          "at": "2026-10-09T16:12:29.699Z"
+        },
+        "clv": -0.03239523334792982,
+        "closingFair": 2.1909772182450467
       }
     },
     {
@@ -30642,7 +30650,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-09T15:04:47.942Z",
+      "updatedAt": "2026-10-09T16:13:22.168Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30757,8 +30765,8 @@
         "editadaEm": "2026-10-09T11:16:20.687Z",
         "check": {
           "status": "pendente",
-          "detail": "múltipla 1/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood x Al-Qadisiyah FC: Second Half · Corvinul Hunedoara x FC Voluntari: First Half · FC Nordsjaelland x Odense: Not Started · IFK Goteborg x Vasteras SK FK: Not Started · Portadown x Glentoran: Not Started",
-          "at": "2026-10-09T15:04:47.942Z"
+          "detail": "múltipla 2/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood 0–5 Al-Qadisiyah FC ✅ · Corvinul Hunedoara x FC Voluntari: Second Half · FC Nordsjaelland x Odense: Not Started · IFK Goteborg x Vasteras SK FK: Not Started · Portadown x Glentoran: Not Started",
+          "at": "2026-10-09T16:13:22.168Z"
         }
       }
     },
@@ -31173,5 +31181,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T16:12:22.062Z"
+  "updatedAt": "2026-10-09T16:13:22.169Z"
 }
