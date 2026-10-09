@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 826.14,
+      "value": 811.58,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:15:21.696Z"
+      "updatedAt": "2026-10-09T11:16:20.687Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": -14.75,
+      "value": -12.16,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T11:15:21.696Z"
+      "updatedAt": "2026-10-09T11:16:20.687Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30620,10 +30620,10 @@
     {
       "id": "mv0v8k84sroob",
       "kind": "valor",
-      "event": "Múltipla (6) — Sichuan Jiuniu x Henan Jianye Mais de 1,5 · Al Kholood x Al-Qadisiyah FC Mais de 1,5 · Corvinul Hunedoara x FC Voluntari Mais de 1,5 · FC Nordsjaelland x Odense Mais de 1,5 · IFK Goteborg x Vasteras SK FK Mais de 1,5 · Portadown x Glentoran Mais de 1,5",
+      "event": "Múltipla (6) — Múltipla: 6 pernas · over de gols",
       "houseA": "Sportmarket",
-      "oddA": 5.51,
-      "stakeA": 56.2,
+      "oddA": 2.79,
+      "stakeA": 41.64,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Múltipla",
@@ -30632,15 +30632,15 @@
       "winner": null,
       "date": "2026-10-09T08:35",
       "modelo": "analise",
-      "total": 56.2,
-      "lucroA": 253.462,
-      "lucroRed": -56.2,
-      "lucro": 253.462,
-      "roi": 451,
+      "total": 41.64,
+      "lucroA": 74.5356,
+      "lucroRed": -41.64,
+      "lucro": 74.5356,
+      "roi": 179,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-09T11:12:10.084Z",
+      "updatedAt": "2026-10-09T11:16:20.687Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30738,7 +30738,7 @@
         ],
         "fixtureId": 1562091,
         "lineId": "multi",
-        "kickoff": "2026-10-09T18:45:00.000Z",
+        "kickoff": "2026-10-09T11:35:00.000Z",
         "first_kickoff": "2026-10-09T11:35:00.000Z",
         "competition": "Super League, Pro League, Liga I, Superliga, Allsvenskan, Premiership",
         "mercado": "Múltipla",
@@ -30751,7 +30751,8 @@
         "pinnacle_odd": null,
         "priced_by": "pinnacle",
         "inboxId": "anmv0v8jpd4avo",
-        "enviadaEm": "2026-10-09T11:12:09.409Z"
+        "enviadaEm": "2026-10-09T11:12:09.409Z",
+        "editadaEm": "2026-10-09T11:16:20.687Z"
       }
     },
     {
@@ -31056,5 +31057,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T11:15:21.696Z"
+  "updatedAt": "2026-10-09T11:16:20.687Z"
 }
