@@ -29737,7 +29737,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-08T22:32:17.110Z",
+      "updatedAt": "2026-10-09T15:04:47.469Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -29821,9 +29821,11 @@
         "enviadaEm": "2026-10-08T16:29:30.486Z",
         "check": {
           "status": "encerrado",
-          "detail": "múltipla 1/4: Atletico Nacional x Deportes Tolima: Not Started · Atletico Paranaense x Atletico-MG: Not Started · Safa 2–1 Reyady Abaseya ✅ · Bentín Tacna Heroica 0–0 Carlos A. Mannucci ❌",
-          "at": "2026-10-08T22:32:17.110Z"
-        }
+          "detail": "múltipla 2/4: Atletico Nacional 0–0 Deportes Tolima ❌ · Atletico Paranaense 2–2 Atletico-MG ✅ · Safa 2–1 Reyady Abaseya ✅ · Bentín Tacna Heroica 0–0 Carlos A. Mannucci ❌",
+          "at": "2026-10-09T15:04:47.469Z"
+        },
+        "clv": -0.00018114958549741988,
+        "closingFair": 3.3005979019418303
       }
     },
     {
@@ -30640,7 +30642,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-09T11:16:20.687Z",
+      "updatedAt": "2026-10-09T15:04:47.942Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30752,7 +30754,12 @@
         "priced_by": "pinnacle",
         "inboxId": "anmv0v8jpd4avo",
         "enviadaEm": "2026-10-09T11:12:09.409Z",
-        "editadaEm": "2026-10-09T11:16:20.687Z"
+        "editadaEm": "2026-10-09T11:16:20.687Z",
+        "check": {
+          "status": "pendente",
+          "detail": "múltipla 1/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood x Al-Qadisiyah FC: Second Half · Corvinul Hunedoara x FC Voluntari: First Half · FC Nordsjaelland x Odense: Not Started · IFK Goteborg x Vasteras SK FK: Not Started · Portadown x Glentoran: Not Started",
+          "at": "2026-10-09T15:04:47.942Z"
+        }
       }
     },
     {
@@ -31166,5 +31173,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T14:11:01.773Z"
+  "updatedAt": "2026-10-09T15:04:47.942Z"
 }
