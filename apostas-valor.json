@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 752.84,
+      "value": 696.64,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T18:08:03.178Z"
+      "updatedAt": "2026-10-09T18:25:27.447Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30783,7 +30783,7 @@
       "market": "Múltipla",
       "oddMkt": 5.84,
       "prob": 0.171,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-09T09:00",
       "modelo": "analise",
       "total": 56.2,
@@ -30792,9 +30792,10 @@
       "lucro": 253.462,
       "roi": 451,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T11:15:21.696Z",
+      "updatedAt": "2026-10-09T18:25:27.447Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30905,7 +30906,12 @@
         "pinnacle_odd": null,
         "priced_by": "pinnacle",
         "inboxId": "anmv0vcmweum2r",
-        "enviadaEm": "2026-10-09T11:15:20.174Z"
+        "enviadaEm": "2026-10-09T11:15:20.174Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 1/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd x Al-Arabi SC: Second Half · Nancy x Guingamp: First Half · Tacuary x Paraguari AC: Not Started · San Francisco FC x Deportivo Universitario: Not Started",
+          "at": "2026-10-09T18:25:27.447Z"
+        }
       }
     },
     {
@@ -31278,5 +31284,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T18:08:16.087Z"
+  "updatedAt": "2026-10-09T18:25:27.447Z"
 }
