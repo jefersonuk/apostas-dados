@@ -30650,7 +30650,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-09T16:13:22.168Z",
+      "updatedAt": "2026-10-09T16:14:18.909Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30766,7 +30766,7 @@
         "check": {
           "status": "pendente",
           "detail": "múltipla 2/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood 0–5 Al-Qadisiyah FC ✅ · Corvinul Hunedoara x FC Voluntari: Second Half · FC Nordsjaelland x Odense: Not Started · IFK Goteborg x Vasteras SK FK: Not Started · Portadown x Glentoran: Not Started",
-          "at": "2026-10-09T16:13:22.168Z"
+          "at": "2026-10-09T16:14:18.909Z"
         }
       }
     },
@@ -31181,5 +31181,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T16:13:22.169Z"
+  "updatedAt": "2026-10-09T16:14:18.909Z"
 }
