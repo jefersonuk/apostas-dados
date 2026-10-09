@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 185.7,
+      "value": 175.7,
       "currency": "USD",
-      "updatedAt": "2026-10-08T14:57:48.786Z"
+      "updatedAt": "2026-10-09T14:11:01.772Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 811.58,
+      "value": 861.48,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:16:20.687Z"
+      "updatedAt": "2026-10-09T14:11:01.773Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30891,6 +30891,115 @@
         "inboxId": "anmv0vcmweum2r",
         "enviadaEm": "2026-10-09T11:15:20.174Z"
       }
+    },
+    {
+      "id": "mv11mkuk0p70d",
+      "kind": "valor",
+      "event": "Múltipla (4) — Finland W x Serbia W Mais de 2 · Klubi-04 x EIF Mais de 2,5 · Slovakia W x Ukraine W Mais de 2 · SKU Amstetten x FC BW Linz Mais de 1,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 3.08,
+      "stakeA": 49.9,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": 3.94,
+      "prob": 0.319,
+      "winner": null,
+      "date": "2026-10-09T12:30",
+      "modelo": "analise",
+      "total": 49.9,
+      "lucroA": 103.792,
+      "lucroRed": -49.9,
+      "lucro": 103.792,
+      "roi": 208,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T14:11:01.772Z",
+      "origem": "analise",
+      "analise": {
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1557247,
+            "lineId": "gO2",
+            "home": "Finland W",
+            "away": "Serbia W",
+            "kickoff": "2026-10-09T15:30:00.000Z",
+            "competition": "World Cup - Women - Qualification Europe",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2",
+            "p": 0.745,
+            "p_pinnacle": 0.737,
+            "fair_odd": 1.48,
+            "odd_min": 1.49,
+            "odd_casa": null,
+            "asiatica": true
+          },
+          {
+            "fixtureId": 1504320,
+            "lineId": "gO2.5",
+            "home": "Klubi-04",
+            "away": "EIF",
+            "kickoff": "2026-10-09T16:00:00.000Z",
+            "competition": "Ykkösliiga",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.699,
+            "p_pinnacle": 0.713,
+            "fair_odd": 1.43,
+            "odd_min": 1.45,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1557256,
+            "lineId": "gO2",
+            "home": "Slovakia W",
+            "away": "Ukraine W",
+            "kickoff": "2026-10-09T16:00:00.000Z",
+            "competition": "World Cup - Women - Qualification Europe",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2",
+            "p": 0.746,
+            "p_pinnacle": 0.732,
+            "fair_odd": 1.53,
+            "odd_min": 1.55,
+            "odd_casa": null,
+            "asiatica": true
+          },
+          {
+            "fixtureId": 1567917,
+            "lineId": "gO1.5",
+            "home": "SKU Amstetten",
+            "away": "FC BW Linz",
+            "kickoff": "2026-10-09T16:30:00.000Z",
+            "competition": "2. Liga",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.82,
+            "p_pinnacle": 0.83,
+            "fair_odd": 1.22,
+            "odd_min": 1.23,
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1567917,
+        "lineId": "multi",
+        "kickoff": "2026-10-09T16:30:00.000Z",
+        "first_kickoff": "2026-10-09T15:30:00.000Z",
+        "competition": "World Cup - Women - Qualification Europe, Ykkösliiga, 2. Liga",
+        "mercado": "Múltipla",
+        "linha": "4 pernas · over de gols",
+        "tier": "múltipla",
+        "p_blend": 0.319,
+        "p_pinnacle": 0.319,
+        "fair_odd": 3.94,
+        "odd_min": 4.14,
+        "pinnacle_odd": null,
+        "priced_by": "pinnacle",
+        "inboxId": "anmv11mhd6qsyz",
+        "enviadaEm": "2026-10-09T14:10:57.258Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31057,5 +31166,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T13:37:14.038Z"
+  "updatedAt": "2026-10-09T14:11:01.773Z"
 }
