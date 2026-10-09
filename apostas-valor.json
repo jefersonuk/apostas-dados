@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 281,
+      "value": 337.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:01:57.453Z"
+      "updatedAt": "2026-10-09T11:02:50.384Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 82.25,
+      "value": 72.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T11:01:57.452Z"
+      "updatedAt": "2026-10-09T11:02:50.383Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30341,6 +30341,61 @@
         "inboxId": "anmv0uvexittlj",
         "enviadaEm": "2026-10-09T11:01:56.694Z"
       }
+    },
+    {
+      "id": "mv0uwkcvkqruf",
+      "kind": "valor",
+      "event": "SC Braga x Sporting CP — 1X2: Sporting CP vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.47,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.06,
+      "prob": 0.49,
+      "winner": null,
+      "date": "2026-10-09T16:15",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 82.61400000000002,
+      "lucroRed": -56.2,
+      "lucro": 82.61400000000002,
+      "roi": 147.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T11:02:50.383Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1575512,
+        "kickoff": "2026-10-09T19:15:00.000Z",
+        "home": "SC Braga",
+        "away": "Sporting CP",
+        "competition": "Primeira Liga",
+        "lineId": "2",
+        "mercado": "1X2",
+        "linha": "Sporting CP vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.494,
+        "p_blend": 0.49,
+        "p_pinnacle": 0.409,
+        "fair_odd": 2.06,
+        "odd_min": 2.16,
+        "pinnacle_odd": 2.38,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.49,
+        "ev_pinnacle": 0.16,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 7.67,
+        "p_model_cal": 0.49,
+        "status": "aposta",
+        "inboxId": "anmv0uwjyq4y9u",
+        "enviadaEm": "2026-10-09T11:02:49.874Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30507,5 +30562,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T11:01:57.453Z"
+  "updatedAt": "2026-10-09T11:02:50.384Z"
 }
