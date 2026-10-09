@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 165.7,
+      "value": 155.7,
       "currency": "USD",
-      "updatedAt": "2026-10-09T17:43:17.541Z"
+      "updatedAt": "2026-10-09T17:52:41.877Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 855.18,
+      "value": 905.08,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T17:36:03.344Z"
+      "updatedAt": "2026-10-09T17:52:41.877Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -31063,6 +31063,53 @@
         "enviadaEm": "2026-10-09T17:35:27.750Z",
         "editadaEm": "2026-10-09T17:43:17.541Z"
       }
+    },
+    {
+      "id": "mv19jn9xkqu3q",
+      "kind": "valor",
+      "event": "PAU x Laval — Total de escanteios: Mais de 8,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.71,
+      "stakeA": 49.9,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.61,
+      "prob": 0.621,
+      "winner": null,
+      "date": "2026-10-09T15:00",
+      "modelo": "analise",
+      "total": 49.9,
+      "lucroA": 35.428999999999995,
+      "lucroRed": -49.9,
+      "lucro": 35.428999999999995,
+      "roi": 71,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T17:52:41.877Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1552492,
+        "kickoff": "2026-10-09T18:00:00.000Z",
+        "home": "PAU",
+        "away": "Laval",
+        "competition": "Ligue 2",
+        "lineId": "cornersO8.5",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 8,5",
+        "tier": "sólida",
+        "p_model": 0.681,
+        "p_blend": 0.621,
+        "p_pinnacle": 0.605,
+        "fair_odd": 1.61,
+        "odd_min": 1.66,
+        "pinnacle_odd": 1.58,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmv19jjmnw9yy",
+        "enviadaEm": "2026-10-09T17:52:37.151Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31229,5 +31276,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T17:43:17.541Z"
+  "updatedAt": "2026-10-09T17:52:41.877Z"
 }
