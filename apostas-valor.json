@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 186.5,
+      "value": 176.5,
       "currency": "USD",
-      "updatedAt": "2026-10-09T18:25:37.864Z"
+      "updatedAt": "2026-10-09T19:14:19.394Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 646.74,
+      "value": 655,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T18:25:37.864Z"
+      "updatedAt": "2026-10-09T19:14:19.394Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30640,7 +30640,7 @@
       "market": "Múltipla",
       "oddMkt": 3.29,
       "prob": 0.304,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-09T08:35",
       "modelo": "analise",
       "total": 41.64,
@@ -30649,9 +30649,10 @@
       "lucro": 74.5356,
       "roi": 179,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T16:14:18.909Z",
+      "updatedAt": "2026-10-09T19:05:15.747Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30765,9 +30766,9 @@
         "enviadaEm": "2026-10-09T11:12:09.409Z",
         "editadaEm": "2026-10-09T11:16:20.687Z",
         "check": {
-          "status": "pendente",
-          "detail": "múltipla 2/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood 0–5 Al-Qadisiyah FC ✅ · Corvinul Hunedoara x FC Voluntari: Second Half · FC Nordsjaelland x Odense: Not Started · IFK Goteborg x Vasteras SK FK: Not Started · Portadown x Glentoran: Not Started",
-          "at": "2026-10-09T16:14:18.909Z"
+          "status": "encerrado",
+          "detail": "múltipla 3/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood 0–5 Al-Qadisiyah FC ✅ · Corvinul Hunedoara 3–2 FC Voluntari ✅ · FC Nordsjaelland 0–0 Odense ❌ · IFK Goteborg 1–0 Vasteras SK FK ❌ · Portadown x Glentoran: First Half",
+          "at": "2026-10-09T19:05:15.747Z"
         }
       }
     },
@@ -31119,6 +31120,54 @@
         "enviadaEm": "2026-10-09T17:52:37.151Z",
         "editadaEm": "2026-10-09T17:52:54.538Z"
       }
+    },
+    {
+      "id": "mv1cgm82v0g2k",
+      "kind": "valor",
+      "event": "Lens x Lyon — Total de escanteios: Mais de 8 escanteios",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.73,
+      "stakeA": 49.9,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-09T15:45",
+      "modelo": "analise",
+      "total": 49.9,
+      "lucroA": 36.427,
+      "lucroRed": -49.9,
+      "lucro": 36.427,
+      "roi": 73,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T19:14:19.394Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1552775,
+        "kickoff": "2026-10-09T18:45:00.000Z",
+        "home": "Lens",
+        "away": "Lyon",
+        "competition": "Ligue 1",
+        "lineId": "cornersO8",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 8 escanteios",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmv1cgluaqfyh",
+        "enviadaEm": "2026-10-09T19:14:18.898Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31285,5 +31334,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T19:05:09.446Z"
+  "updatedAt": "2026-10-09T19:14:19.394Z"
 }
