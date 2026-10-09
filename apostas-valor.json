@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 505.8,
+      "value": 713.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:05:40.719Z"
+      "updatedAt": "2026-10-09T11:06:15.134Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 42.25,
+      "value": 5.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T11:05:40.718Z"
+      "updatedAt": "2026-10-09T11:06:15.134Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30561,6 +30561,61 @@
         "inboxId": "anmv0v07cda942",
         "enviadaEm": "2026-10-09T11:05:40.141Z"
       }
+    },
+    {
+      "id": "mv0v0ycdds79s",
+      "kind": "valor",
+      "event": "Once Caldas x Llaneros — Handicap asiático: Llaneros +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.93,
+      "stakeA": 207.94,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.59,
+      "prob": 0.63,
+      "winner": null,
+      "date": "2026-10-09T22:10",
+      "modelo": "analise",
+      "total": 207.94,
+      "lucroA": 193.3842,
+      "lucroRed": -207.94,
+      "lucro": 193.3842,
+      "roi": 93,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T11:06:15.134Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1549820,
+        "kickoff": "2026-10-10T01:10:00.000Z",
+        "home": "Once Caldas",
+        "away": "Llaneros",
+        "competition": "Primera A",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "Llaneros +1",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.662,
+        "p_blend": 0.63,
+        "p_pinnacle": 0.51,
+        "fair_odd": 1.59,
+        "odd_min": 1.67,
+        "pinnacle_odd": 1.88,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.63,
+        "ev_pinnacle": 0.18,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.74,
+        "p_model_cal": 0.66,
+        "status": "aposta",
+        "inboxId": "anmv0v0xzmvw60",
+        "enviadaEm": "2026-10-09T11:06:14.674Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30727,5 +30782,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T11:05:40.719Z"
+  "updatedAt": "2026-10-09T11:06:15.134Z"
 }
