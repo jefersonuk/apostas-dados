@@ -4648,7 +4648,7 @@
       "value": 805.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T16:12:29.700Z"
+      "updatedAt": "2026-10-09T16:22:17.697Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5179,12 +5179,12 @@
       "updatedAt": "2026-10-08T17:34:15.153Z"
     }
   ],
-  "usdRate": 4.98,
+  "usdRate": 4.99,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-09T16:12:21.867Z",
+  "usdRateAt": "2026-10-09T13:37:14.032Z",
   "eurRate": 5.59,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-09T16:12:22.061Z",
+  "eurRateAt": "2026-10-09T13:37:14.038Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -30092,7 +30092,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T16:12:29.700Z",
+      "updatedAt": "2026-10-09T16:22:17.697Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585776,
@@ -30126,7 +30126,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Sivasspor 4–1 Pendikspor · saldo de gols do Sivasspor: 3 (linha 0)",
-          "at": "2026-10-09T16:12:29.699Z"
+          "at": "2026-10-09T16:22:17.696Z"
         },
         "clv": -0.03239523334792982,
         "closingFair": 2.1909772182450467
@@ -31181,5 +31181,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T16:14:18.909Z"
+  "updatedAt": "2026-10-09T16:22:17.698Z"
 }
