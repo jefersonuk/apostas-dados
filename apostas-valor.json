@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 337.2,
+      "value": 393.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:02:50.384Z"
+      "updatedAt": "2026-10-09T11:03:59.597Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 72.25,
+      "value": 62.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T11:02:50.383Z"
+      "updatedAt": "2026-10-09T11:03:59.597Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30396,6 +30396,61 @@
         "inboxId": "anmv0uwjyq4y9u",
         "enviadaEm": "2026-10-09T11:02:49.874Z"
       }
+    },
+    {
+      "id": "mv0uy1rgrv26k",
+      "kind": "valor",
+      "event": "Real Cundinamarca x Real Santander — Handicap asiático: Real Cundinamarca −1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.41,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.02,
+      "prob": 0.5,
+      "winner": null,
+      "date": "2026-10-09T17:00",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 79.24200000000002,
+      "lucroRed": -56.2,
+      "lucro": 79.24200000000002,
+      "roi": 141,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T11:03:59.597Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1549601,
+        "kickoff": "2026-10-09T20:00:00.000Z",
+        "home": "Real Cundinamarca",
+        "away": "Real Santander",
+        "competition": "Primera B",
+        "lineId": "ahH-1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Real Cundinamarca −1,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.459,
+        "p_blend": 0.5,
+        "p_pinnacle": 0.376,
+        "fair_odd": 2.02,
+        "odd_min": 2.12,
+        "pinnacle_odd": 2.42,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.5,
+        "ev_pinnacle": 0.2,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.99,
+        "p_model_cal": 0.46,
+        "status": "aposta",
+        "inboxId": "anmv0uy1czhabu",
+        "enviadaEm": "2026-10-09T11:03:59.076Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30562,5 +30617,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T11:02:50.384Z"
+  "updatedAt": "2026-10-09T11:03:59.597Z"
 }
