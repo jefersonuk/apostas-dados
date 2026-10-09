@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 224.8,
+      "value": 281,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T11:01:20.182Z"
+      "updatedAt": "2026-10-09T11:01:57.453Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 92.25,
+      "value": 82.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T11:01:20.182Z"
+      "updatedAt": "2026-10-09T11:01:57.452Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30286,6 +30286,61 @@
         "inboxId": "anmv0uume2ztdu",
         "enviadaEm": "2026-10-09T11:01:19.706Z"
       }
+    },
+    {
+      "id": "mv0uvfikkoy45",
+      "kind": "valor",
+      "event": "Sutton Utd x Boreham Wood — 1X2: Boreham Wood vence",
+      "houseA": "Sportmarket",
+      "oddA": 1.82,
+      "stakeA": 56.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.59,
+      "prob": 0.63,
+      "winner": null,
+      "date": "2026-10-09T15:45",
+      "modelo": "analise",
+      "total": 56.2,
+      "lucroA": 46.084,
+      "lucroRed": -56.2,
+      "lucro": 46.084,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-09T11:01:57.452Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1585281,
+        "kickoff": "2026-10-09T18:45:00.000Z",
+        "home": "Sutton Utd",
+        "away": "Boreham Wood",
+        "competition": "National League",
+        "lineId": "2",
+        "mercado": "1X2",
+        "linha": "Boreham Wood vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.601,
+        "p_blend": 0.63,
+        "p_pinnacle": 0.509,
+        "fair_odd": 1.59,
+        "odd_min": 1.67,
+        "pinnacle_odd": 1.9,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.63,
+        "ev_pinnacle": 0.19,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.96,
+        "p_model_cal": 0.6,
+        "status": "aposta",
+        "inboxId": "anmv0uvexittlj",
+        "enviadaEm": "2026-10-09T11:01:56.694Z"
+      }
     }
   ],
   "invertidos": [],
@@ -30452,5 +30507,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T11:01:20.182Z"
+  "updatedAt": "2026-10-09T11:01:57.453Z"
 }
