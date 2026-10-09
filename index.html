@@ -6864,10 +6864,13 @@
       const relogio=!comecou?'<span class="clock">'+hora(l.kickoff)+'</span>'
         :'<span class="clock'+(x.live&&x.status!=='HT'?' on':'')+'">'+(x.finished?'🏁':x.status==='HT'?'⏸ int.':x.live?'🔴 '+(x.elapsed!=null?x.elapsed+"'":''):esc(x.status))+'</span>';
       const jogo=esc(l.home)+(comecou&&x.goals?' <b>'+x.goals[0]+'–'+x.goals[1]+'</b> ':' x ')+esc(l.away);
+      // perna asiática (1,75 · 2 · 2,25): com 2 gols ganha metade, devolve ou perde metade
+      const agora={A:'ganha',HW:'meia vitória',VOID:'devolve',HL:'meia derrota',RED:'perde'};
       const st=!comecou?'<span class="muted">ainda não começou</span>'
-        :ln&&ln.locked?(ln.now==='A'?'<span class="ok">✅ bateu</span>':ln.now==='RED'?'<span class="no">❌ perdeu</span>':'<span class="void">↩ anulada</span>')
-        :ln&&ln.need>0?'<span class="wait">⏳ '+(ln.need===1?'falta 1 gol':'faltam '+ln.need+' gols')+'</span>'
-        :'<span class="muted">'+esc(x.status)+'</span>';
+        :ln&&ln.locked?(ln.now==='A'?'<span class="ok">✅ bateu</span>':ln.now==='RED'?'<span class="no">❌ perdeu</span>'
+          :ln.now==='HW'?'<span class="ok">½✅ meia vitória</span>':ln.now==='HL'?'<span class="no">½❌ meia derrota</span>':'<span class="void">↩ devolveu</span>')
+        :ln&&ln.need>0?'<span class="wait">⏳ '+(ln.need===1?'falta 1 gol':'faltam '+ln.need+' gols')+'</span>'+(ln.now&&ln.now!=='RED'?' <span class="muted">(no momento: '+agora[ln.now]+')</span>':'')
+        :ln&&ln.now?'<span class="muted">no momento: '+agora[ln.now]+'</span>':'<span class="muted">'+esc(x.status)+'</span>';
       return '<div class="leg">'+relogio+' '+jogo+' · '+esc(l.linha||'')+' — '+st+'</div>';
     };
     const n=legs.length, won=m?m.won:0;
