@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 492.7,
+      "value": 442.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T19:57:42.086Z"
+      "updatedAt": "2026-10-09T20:00:43.407Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -31095,7 +31095,7 @@
       "market": "Escanteios",
       "oddMkt": 1.61,
       "prob": 0.621,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-09T15:00",
       "modelo": "analise",
       "total": 49.9,
@@ -31104,9 +31104,10 @@
       "lucro": 35.428999999999995,
       "roi": 71,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T19:58:35.012Z",
+      "updatedAt": "2026-10-09T20:00:43.407Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1552492,
@@ -31130,10 +31131,12 @@
         "enviadaEm": "2026-10-09T17:52:37.151Z",
         "editadaEm": "2026-10-09T17:52:54.538Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-09T19:58:35.012Z"
-        }
+          "status": "encerrado",
+          "detail": "PAU 3–2 Laval · escanteios no jogo: 8 (linha 9)",
+          "at": "2026-10-09T20:00:43.407Z"
+        },
+        "clv": -0.06440655366855785,
+        "closingFair": 1.8277169498194812
       }
     },
     {
@@ -31349,5 +31352,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T19:58:35.012Z"
+  "updatedAt": "2026-10-09T20:00:43.407Z"
 }
