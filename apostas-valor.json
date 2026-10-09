@@ -4633,7 +4633,7 @@
       "name": "Overtimemarkets",
       "value": 155.7,
       "currency": "USD",
-      "updatedAt": "2026-10-09T17:52:41.877Z"
+      "updatedAt": "2026-10-09T17:52:54.538Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -31067,7 +31067,7 @@
     {
       "id": "mv19jn9xkqu3q",
       "kind": "valor",
-      "event": "PAU x Laval — Total de escanteios: Mais de 8,5",
+      "event": "PAU x Laval — Total de escanteios: Mais de 9",
       "houseA": "Overtimemarkets",
       "oddA": 1.71,
       "stakeA": 49.9,
@@ -31087,7 +31087,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-09T17:52:41.877Z",
+      "updatedAt": "2026-10-09T17:52:54.538Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1552492,
@@ -31095,9 +31095,9 @@
         "home": "PAU",
         "away": "Laval",
         "competition": "Ligue 2",
-        "lineId": "cornersO8.5",
+        "lineId": "cornersO9",
         "mercado": "Total de escanteios",
-        "linha": "Mais de 8,5",
+        "linha": "Mais de 9",
         "tier": "sólida",
         "p_model": 0.681,
         "p_blend": 0.621,
@@ -31108,7 +31108,8 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmv19jjmnw9yy",
-        "enviadaEm": "2026-10-09T17:52:37.151Z"
+        "enviadaEm": "2026-10-09T17:52:37.151Z",
+        "editadaEm": "2026-10-09T17:52:54.538Z"
       }
     }
   ],
@@ -31276,5 +31277,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T17:52:41.877Z"
+  "updatedAt": "2026-10-09T17:52:54.538Z"
 }
