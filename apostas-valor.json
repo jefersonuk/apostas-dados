@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 55.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-10T08:04:07.696Z"
+      "updatedAt": "2026-10-10T11:23:36.778Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 91.94,
+      "value": 81.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-10T08:04:04.822Z"
+      "updatedAt": "2026-10-10T11:23:36.777Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31245,6 +31245,54 @@
         "inboxId": "anmv1cgluaqfyh",
         "enviadaEm": "2026-10-09T19:14:18.898Z"
       }
+    },
+    {
+      "id": "mv2b34qwm6n3r",
+      "kind": "valor",
+      "event": "Rayo Vallecano x Athletic Club — Handicap asiático: Rayo Vallecano +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.57,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.56,
+      "prob": 0.642,
+      "winner": null,
+      "date": "2026-10-10T09:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 31.806,
+      "lucroRed": -55.8,
+      "lucro": 31.806,
+      "roi": 57.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-10T11:23:36.777Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1570410,
+        "kickoff": "2026-10-10T12:00:00.000Z",
+        "home": "Rayo Vallecano",
+        "away": "Athletic Club",
+        "competition": "La Liga",
+        "lineId": "ahH0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Rayo Vallecano +0,5",
+        "tier": "sólida",
+        "p_model": 0.651,
+        "p_blend": 0.642,
+        "p_pinnacle": 0.641,
+        "fair_odd": 1.56,
+        "odd_min": 1.6,
+        "pinnacle_odd": 1.53,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmv2b34dusrf2",
+        "enviadaEm": "2026-10-10T11:23:36.306Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31411,5 +31459,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-10T10:47:05.064Z"
+  "updatedAt": "2026-10-10T11:23:36.778Z"
 }
