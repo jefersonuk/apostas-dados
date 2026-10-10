@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 55.8,
+      "value": 111.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-10T11:23:36.778Z"
+      "updatedAt": "2026-10-10T11:53:12.515Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4683,7 +4683,7 @@
       "name": "Sportmarket",
       "value": 81.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-10T11:23:36.777Z"
+      "updatedAt": "2026-10-10T11:53:11.099Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5181,10 +5181,10 @@
   ],
   "usdRate": 4.98,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-10T10:47:04.893Z",
+  "usdRateAt": "2026-10-10T08:02:45.320Z",
   "eurRate": 5.58,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-10T10:47:05.064Z",
+  "eurRateAt": "2026-10-10T08:02:45.407Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -31293,6 +31293,53 @@
         "inboxId": "anmv2b34dusrf2",
         "enviadaEm": "2026-10-10T11:23:36.306Z"
       }
+    },
+    {
+      "id": "mv2c55tmlpqj7",
+      "kind": "valor",
+      "event": "Rangers x Kilmarnock — Handicap asiático: Kilmarnock +3",
+      "houseA": "Sportmarket",
+      "oddA": 1.82,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.44,
+      "prob": 0.695,
+      "winner": null,
+      "date": "2026-10-10T11:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 45.756,
+      "lucroRed": -55.8,
+      "lucro": 45.756,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-10T11:53:11.099Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1556675,
+        "kickoff": "2026-10-10T14:00:00.000Z",
+        "home": "Rangers",
+        "away": "Kilmarnock",
+        "competition": "Premiership",
+        "lineId": "ahA3",
+        "mercado": "Handicap asiático",
+        "linha": "Kilmarnock +3",
+        "tier": "sólida",
+        "p_model": 0.831,
+        "p_blend": 0.695,
+        "p_pinnacle": 0.676,
+        "fair_odd": 1.44,
+        "odd_min": 1.51,
+        "pinnacle_odd": 1.44,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv2b6wprsyld",
+        "enviadaEm": "2026-10-10T11:26:32.991Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31459,5 +31506,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-10T11:23:36.778Z"
+  "updatedAt": "2026-10-10T11:53:11.099Z"
 }
