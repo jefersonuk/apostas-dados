@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 55.7,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-10T00:46:45.575Z"
+      "updatedAt": "2026-10-10T08:04:07.696Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 81.96,
+      "value": 91.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-10T00:46:45.575Z"
+      "updatedAt": "2026-10-10T08:04:04.822Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30634,7 +30634,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.59,
       "prob": 0.63,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-09T22:10",
       "modelo": "analise",
       "total": 55.7,
@@ -30643,9 +30643,10 @@
       "lucro": 51.801,
       "roi": 93,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-09T18:08:03.178Z",
+      "updatedAt": "2026-10-10T08:04:04.822Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549820,
@@ -30675,7 +30676,14 @@
         "status": "aposta",
         "inboxId": "anmv0v0xzmvw60",
         "enviadaEm": "2026-10-09T11:06:14.674Z",
-        "editadaEm": "2026-10-09T18:08:03.178Z"
+        "editadaEm": "2026-10-09T18:08:03.178Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Once Caldas 1–0 Llaneros · saldo de gols do Once Caldas: 1 (linha 1)",
+          "at": "2026-10-10T08:04:04.822Z"
+        },
+        "clv": -0.003327768155907407,
+        "closingFair": 1.9364440368013642
       }
     },
     {
@@ -30702,7 +30710,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T19:05:15.747Z",
+      "updatedAt": "2026-10-10T08:04:07.322Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30817,9 +30825,11 @@
         "editadaEm": "2026-10-09T11:16:20.687Z",
         "check": {
           "status": "encerrado",
-          "detail": "múltipla 3/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood 0–5 Al-Qadisiyah FC ✅ · Corvinul Hunedoara 3–2 FC Voluntari ✅ · FC Nordsjaelland 0–0 Odense ❌ · IFK Goteborg 1–0 Vasteras SK FK ❌ · Portadown x Glentoran: First Half",
-          "at": "2026-10-09T19:05:15.747Z"
-        }
+          "detail": "múltipla 3/6: Sichuan Jiuniu 2–2 Henan Jianye ✅ · Al Kholood 0–5 Al-Qadisiyah FC ✅ · Corvinul Hunedoara 3–2 FC Voluntari ✅ · FC Nordsjaelland 0–0 Odense ❌ · IFK Goteborg 1–0 Vasteras SK FK ❌ · Portadown 0–0 Glentoran ❌",
+          "at": "2026-10-10T08:04:07.322Z"
+        },
+        "clv": -0.08614246112794255,
+        "closingFair": 3.052992267748428
       }
     },
     {
@@ -30846,7 +30856,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-09T18:25:27.447Z",
+      "updatedAt": "2026-10-10T08:04:07.695Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30960,8 +30970,8 @@
         "enviadaEm": "2026-10-09T11:15:20.174Z",
         "check": {
           "status": "encerrado",
-          "detail": "múltipla 1/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd x Al-Arabi SC: Second Half · Nancy x Guingamp: First Half · Tacuary x Paraguari AC: Not Started · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-09T18:25:27.447Z"
+          "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Match Postponed",
+          "at": "2026-10-10T08:04:07.695Z"
         }
       }
     },
@@ -31401,5 +31411,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-10T08:02:45.407Z"
+  "updatedAt": "2026-10-10T08:04:07.696Z"
 }
