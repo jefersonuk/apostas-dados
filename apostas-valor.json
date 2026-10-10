@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.9,
+      "value": 55.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-09T22:52:07.338Z"
+      "updatedAt": "2026-10-10T00:46:45.575Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 62.3,
+      "value": 81.96,
       "currency": "EUR",
-      "updatedAt": "2026-10-09T22:00:19.945Z"
+      "updatedAt": "2026-10-10T00:46:45.575Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30571,7 +30571,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.68,
       "prob": 0.59,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-09T18:00",
       "modelo": "analise",
       "total": 56.2,
@@ -30580,9 +30580,10 @@
       "lucro": 54.514,
       "roi": 97,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-09T11:05:40.718Z",
+      "updatedAt": "2026-10-10T00:46:45.575Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493170,
@@ -30611,7 +30612,14 @@
         "p_model_cal": 0.6,
         "status": "aposta",
         "inboxId": "anmv0v07cda942",
-        "enviadaEm": "2026-10-09T11:05:40.141Z"
+        "enviadaEm": "2026-10-09T11:05:40.141Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Gimnasia L.P. 1–1 Atletico Tucuman · saldo de gols do Gimnasia L.P.: 0 (linha 0.5)",
+          "at": "2026-10-10T00:46:45.574Z"
+        },
+        "clv": -0.015000000000000013,
+        "closingFair": 2
       }
     },
     {
@@ -31393,5 +31401,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-09T22:52:07.338Z"
+  "updatedAt": "2026-10-10T00:46:45.575Z"
 }
