@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 390.6,
+      "value": 446.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T16:21:58.396Z"
+      "updatedAt": "2026-10-11T16:22:59.307Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 30,
+      "value": 20,
       "currency": "EUR",
-      "updatedAt": "2026-10-11T16:21:58.395Z"
+      "updatedAt": "2026-10-11T16:22:59.306Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31722,6 +31722,61 @@
         "inboxId": "anmv416mi7ucze",
         "enviadaEm": "2026-10-11T16:21:55.951Z"
       }
+    },
+    {
+      "id": "mv417ze25bge8",
+      "kind": "valor",
+      "event": "Al Shabab x Al Taawon — Handicap asiático: Al Taawon 0",
+      "houseA": "Sportmarket",
+      "oddA": 2.3,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.03,
+      "prob": 0.49,
+      "winner": null,
+      "date": "2026-10-11T15:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 72.53999999999999,
+      "lucroRed": -55.8,
+      "lucro": 72.53999999999999,
+      "roi": 129.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-11T16:22:59.306Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1603043,
+        "kickoff": "2026-10-11T18:00:00.000Z",
+        "home": "Al Shabab",
+        "away": "Al Taawon",
+        "competition": "Pro League",
+        "lineId": "ahA0",
+        "mercado": "Handicap asiático",
+        "linha": "Al Taawon 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.398,
+        "p_blend": 0.49,
+        "p_pinnacle": 0.424,
+        "fair_odd": 2.03,
+        "odd_min": 2.14,
+        "pinnacle_odd": 2.24,
+        "priced_by": "nossa análise",
+        "fragile": false,
+        "scenario": true,
+        "p_scenario": 0.49,
+        "ev_pinnacle": 0.1,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 6.75,
+        "p_model_cal": 0.4,
+        "status": "aposta",
+        "inboxId": "anmv417wefkaot",
+        "enviadaEm": "2026-10-11T16:22:55.431Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31888,5 +31943,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T16:21:58.396Z"
+  "updatedAt": "2026-10-11T16:22:59.307Z"
 }
