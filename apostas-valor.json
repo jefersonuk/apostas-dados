@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 167.4,
+      "value": 111.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T19:15:32.080Z"
+      "updatedAt": "2026-10-11T20:09:20.065Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -31760,7 +31760,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.03,
       "prob": 0.49,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-11T15:00",
       "modelo": "analise",
       "total": 55.8,
@@ -31769,9 +31769,10 @@
       "lucro": 72.53999999999999,
       "roi": 129.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-11T16:22:59.306Z",
+      "updatedAt": "2026-10-11T20:09:20.064Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1603043,
@@ -31800,7 +31801,14 @@
         "p_model_cal": 0.4,
         "status": "aposta",
         "inboxId": "anmv417wefkaot",
-        "enviadaEm": "2026-10-11T16:22:55.431Z"
+        "enviadaEm": "2026-10-11T16:22:55.431Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Al Shabab 3–0 Al Taawon · saldo de gols do Al Shabab: 3 (linha 0)",
+          "at": "2026-10-11T20:09:20.064Z"
+        },
+        "clv": -0.020219298600432367,
+        "closingFair": 2.3474640771292647
       }
     }
   ],
@@ -31968,5 +31976,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T19:15:32.081Z"
+  "updatedAt": "2026-10-11T20:09:20.065Z"
 }
