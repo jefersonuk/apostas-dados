@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 279,
+      "value": 223.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T18:22:16.070Z"
+      "updatedAt": "2026-10-11T18:56:41.712Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 50.2,
+      "value": 60.2,
       "currency": "EUR",
-      "updatedAt": "2026-10-11T18:01:15.930Z"
+      "updatedAt": "2026-10-11T18:56:41.711Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31467,7 +31467,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.93,
       "prob": 0.52,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-11T14:00",
       "modelo": "analise",
       "total": 55.8,
@@ -31476,9 +31476,10 @@
       "lucro": 40.175999999999995,
       "roi": 72,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-11T15:07:04.607Z",
+      "updatedAt": "2026-10-11T18:56:41.711Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1575511,
@@ -31508,7 +31509,14 @@
         "status": "aposta",
         "inboxId": "anmv3yi198l7l1",
         "enviadaEm": "2026-10-11T15:06:49.436Z",
-        "editadaEm": "2026-10-11T15:07:04.607Z"
+        "editadaEm": "2026-10-11T15:07:04.607Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Benfica 2–0 Vitória SC · saldo de gols do Benfica: 2 (linha 2)",
+          "at": "2026-10-11T18:56:41.711Z"
+        },
+        "clv": -0.038163689765620346,
+        "closingFair": 1.7882460681702395
       }
     },
     {
@@ -31952,5 +31960,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T18:22:16.070Z"
+  "updatedAt": "2026-10-11T18:56:41.712Z"
 }
