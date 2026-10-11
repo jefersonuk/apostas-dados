@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 55.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-10T18:45:45.429Z"
+      "updatedAt": "2026-10-11T14:57:15.045Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5181,10 +5181,10 @@
   ],
   "usdRate": 4.98,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-10T14:28:20.200Z",
+  "usdRateAt": "2026-10-11T14:57:14.258Z",
   "eurRate": 5.58,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-10T14:28:20.362Z",
+  "eurRateAt": "2026-10-11T14:57:14.603Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -31347,6 +31347,53 @@
           "at": "2026-10-10T16:55:10.543Z"
         }
       }
+    },
+    {
+      "id": "mv2b41uugp3v2",
+      "kind": "valor",
+      "event": "Samsunspor x Trabzonspor — Handicap asiático: Samsunspor +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.5,
+      "prob": 0.668,
+      "winner": null,
+      "date": "2026-10-10T10:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 27.9,
+      "lucroRed": -55.8,
+      "lucro": 27.9,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-10T11:24:19.686Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1584429,
+        "kickoff": "2026-10-10T13:00:00.000Z",
+        "home": "Samsunspor",
+        "away": "Trabzonspor",
+        "competition": "Süper Lig",
+        "lineId": "ahH1",
+        "mercado": "Handicap asiático",
+        "linha": "Samsunspor +1",
+        "tier": "sólida",
+        "p_model": 0.788,
+        "p_blend": 0.668,
+        "p_pinnacle": 0.653,
+        "fair_odd": 1.5,
+        "odd_min": 1.57,
+        "pinnacle_odd": 1.5,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv2b3zxgrf2u",
+        "enviadaEm": "2026-10-10T11:24:17.188Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31513,5 +31560,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-10T18:46:48.896Z"
+  "updatedAt": "2026-10-11T14:57:14.603Z"
 }
