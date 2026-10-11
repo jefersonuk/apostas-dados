@@ -31423,7 +31423,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-11T14:57:16.177Z",
+      "updatedAt": "2026-10-11T17:57:17.542Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1584422,
@@ -31444,7 +31444,12 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv3y5mpsc4at",
-        "enviadaEm": "2026-10-11T14:57:10.721Z"
+        "enviadaEm": "2026-10-11T14:57:10.721Z",
+        "check": {
+          "status": "erro",
+          "detail": "Load failed",
+          "at": "2026-10-11T17:57:17.542Z"
+        }
       }
     },
     {
@@ -31943,5 +31948,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T16:22:59.307Z"
+  "updatedAt": "2026-10-11T17:57:17.542Z"
 }
