@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 55.8,
+      "value": 167.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T14:57:15.045Z"
+      "updatedAt": "2026-10-11T15:06:50.165Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 90,
+      "value": 70,
       "currency": "EUR",
-      "updatedAt": "2026-10-10T18:46:48.895Z"
+      "updatedAt": "2026-10-11T15:07:04.607Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31360,7 +31360,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.5,
       "prob": 0.668,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-10T10:00",
       "modelo": "analise",
       "total": 55.8,
@@ -31369,9 +31369,10 @@
       "lucro": 27.9,
       "roi": 50,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-10T11:24:19.686Z",
+      "updatedAt": "2026-10-11T14:57:24.505Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1584429,
@@ -31393,6 +31394,109 @@
         "fragile": true,
         "inboxId": "anmv2b3zxgrf2u",
         "enviadaEm": "2026-10-10T11:24:17.188Z"
+      }
+    },
+    {
+      "id": "mv3y5qxc9t8wq",
+      "kind": "valor",
+      "event": "Beşiktaş x Kocaelispor — Handicap asiático: Kocaelispor +2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.51,
+      "stakeA": 111.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.47,
+      "prob": 0.681,
+      "winner": null,
+      "date": "2026-10-11T13:00",
+      "modelo": "analise",
+      "total": 111.6,
+      "lucroA": 56.916,
+      "lucroRed": -111.6,
+      "lucro": 56.916,
+      "roi": 51,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-11T14:57:16.177Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1584422,
+        "kickoff": "2026-10-11T16:00:00.000Z",
+        "home": "Beşiktaş",
+        "away": "Kocaelispor",
+        "competition": "Süper Lig",
+        "lineId": "ahA2.5",
+        "mercado": "Handicap asiático",
+        "linha": "Kocaelispor +2,5",
+        "tier": "sólida",
+        "p_model": 0.838,
+        "p_blend": 0.681,
+        "p_pinnacle": 0.659,
+        "fair_odd": 1.47,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.48,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv3y5mpsc4at",
+        "enviadaEm": "2026-10-11T14:57:10.721Z"
+      }
+    },
+    {
+      "id": "mv3yi1tg50dfe",
+      "kind": "valor",
+      "event": "Benfica x Vitória SC — Handicap asiático: Vitória SC +2",
+      "houseA": "Sportmarket",
+      "oddA": 1.72,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.93,
+      "prob": 0.52,
+      "winner": null,
+      "date": "2026-10-11T14:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 40.175999999999995,
+      "lucroRed": -55.8,
+      "lucro": 40.175999999999995,
+      "roi": 72,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-11T15:07:04.607Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1575511,
+        "kickoff": "2026-10-11T17:00:00.000Z",
+        "home": "Benfica",
+        "away": "Vitória SC",
+        "competition": "Primeira Liga",
+        "lineId": "ahA2",
+        "mercado": "Handicap asiático",
+        "linha": "Vitória SC +2",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.556,
+        "p_blend": 0.52,
+        "p_pinnacle": 0.423,
+        "fair_odd": 1.93,
+        "odd_min": 2.02,
+        "pinnacle_odd": 2.21,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.52,
+        "ev_pinnacle": 0.15,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 9.56,
+        "p_model_cal": 0.56,
+        "status": "aposta",
+        "inboxId": "anmv3yi198l7l1",
+        "enviadaEm": "2026-10-11T15:06:49.436Z",
+        "editadaEm": "2026-10-11T15:07:04.607Z"
       }
     }
   ],
@@ -31560,5 +31664,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T14:57:14.603Z"
+  "updatedAt": "2026-10-11T15:07:04.607Z"
 }
