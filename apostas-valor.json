@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.6,
+      "value": 55.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T20:09:20.065Z"
+      "updatedAt": "2026-10-11T20:44:44.837Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 70.2,
+      "value": 95.3,
       "currency": "EUR",
-      "updatedAt": "2026-10-11T19:15:32.079Z"
+      "updatedAt": "2026-10-11T20:44:44.836Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31650,7 +31650,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.11,
       "prob": 0.47,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-11T15:45",
       "modelo": "analise",
       "total": 55.8,
@@ -31659,9 +31659,10 @@
       "lucro": 84.25799999999998,
       "roi": 150.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-11T16:20:51.342Z",
+      "updatedAt": "2026-10-11T20:44:44.836Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1550138,
@@ -31690,7 +31691,14 @@
         "p_model_cal": 0.47,
         "status": "aposta",
         "inboxId": "anmv415634p86n",
-        "enviadaEm": "2026-10-11T16:20:48.016Z"
+        "enviadaEm": "2026-10-11T16:20:48.016Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Cagliari 1–1 Juventus · saldo de gols do Cagliari: 0 (linha -0.5)",
+          "at": "2026-10-11T20:44:44.835Z"
+        },
+        "clv": -0.048991038511909,
+        "closingFair": 2.639302153443936
       }
     },
     {
@@ -31976,5 +31984,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T20:09:20.065Z"
+  "updatedAt": "2026-10-11T20:44:44.838Z"
 }
