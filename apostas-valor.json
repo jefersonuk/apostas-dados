@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 446.4,
+      "value": 334.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T16:22:59.307Z"
+      "updatedAt": "2026-10-11T18:01:15.931Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 20,
+      "value": 50.2,
       "currency": "EUR",
-      "updatedAt": "2026-10-11T16:22:59.306Z"
+      "updatedAt": "2026-10-11T18:01:15.930Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31412,7 +31412,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.47,
       "prob": 0.681,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-11T13:00",
       "modelo": "analise",
       "total": 111.6,
@@ -31421,9 +31421,10 @@
       "lucro": 56.916,
       "roi": 51,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-11T17:57:17.542Z",
+      "updatedAt": "2026-10-11T18:01:15.930Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1584422,
@@ -31446,10 +31447,12 @@
         "inboxId": "anmv3y5mpsc4at",
         "enviadaEm": "2026-10-11T14:57:10.721Z",
         "check": {
-          "status": "erro",
-          "detail": "Load failed",
-          "at": "2026-10-11T17:57:17.542Z"
-        }
+          "status": "encerrado",
+          "detail": "Beşiktaş 2–1 Kocaelispor · saldo de gols do Beşiktaş: 1 (linha 2.5)",
+          "at": "2026-10-11T18:01:15.930Z"
+        },
+        "clv": -0.0048637264614154185,
+        "closingFair": 1.5173801218506708
       }
     },
     {
@@ -31948,5 +31951,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T17:57:17.542Z"
+  "updatedAt": "2026-10-11T18:01:15.931Z"
 }
