@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 55.8,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T20:44:44.837Z"
+      "updatedAt": "2026-10-11T21:11:41.048Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 95.3,
+      "value": 117,
       "currency": "EUR",
-      "updatedAt": "2026-10-11T20:44:44.836Z"
+      "updatedAt": "2026-10-11T21:11:41.047Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31713,7 +31713,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.82,
       "prob": 0.55,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-11T16:10",
       "modelo": "analise",
       "total": 55.8,
@@ -31722,9 +31722,10 @@
       "lucro": 65.28599999999999,
       "roi": 117,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-11T16:21:58.395Z",
+      "updatedAt": "2026-10-11T21:11:41.048Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520921,
@@ -31753,7 +31754,14 @@
         "p_model_cal": 0.55,
         "status": "aposta",
         "inboxId": "anmv416mi7ucze",
-        "enviadaEm": "2026-10-11T16:21:55.951Z"
+        "enviadaEm": "2026-10-11T16:21:55.951Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Atletico Goianiense 1–1 Sport Recife · saldo de gols do Atletico Goianiense: 0 (linha 0.5)",
+          "at": "2026-10-11T21:11:41.047Z"
+        },
+        "clv": -0.014313020783948471,
+        "closingFair": 2.201510262138058
       }
     },
     {
@@ -31984,5 +31992,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T20:44:44.838Z"
+  "updatedAt": "2026-10-11T21:11:41.048Z"
 }
