@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 334.8,
+      "value": 390.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-11T16:20:51.342Z"
+      "updatedAt": "2026-10-11T16:21:58.396Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 40,
+      "value": 30,
       "currency": "EUR",
-      "updatedAt": "2026-10-11T16:20:51.342Z"
+      "updatedAt": "2026-10-11T16:21:58.395Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31667,6 +31667,61 @@
         "inboxId": "anmv415634p86n",
         "enviadaEm": "2026-10-11T16:20:48.016Z"
       }
+    },
+    {
+      "id": "mv416oe3vdjv6",
+      "kind": "valor",
+      "event": "Atletico Goianiense x Sport Recife — Handicap asiático: Sport Recife +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.17,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.82,
+      "prob": 0.55,
+      "winner": null,
+      "date": "2026-10-11T16:10",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 65.28599999999999,
+      "lucroRed": -55.8,
+      "lucro": 65.28599999999999,
+      "roi": 117,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-11T16:21:58.395Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520921,
+        "kickoff": "2026-10-11T19:10:00.000Z",
+        "home": "Atletico Goianiense",
+        "away": "Sport Recife",
+        "competition": "Serie B",
+        "lineId": "ahA0.5",
+        "mercado": "Handicap asiático",
+        "linha": "Sport Recife +0,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.549,
+        "p_blend": 0.55,
+        "p_pinnacle": 0.473,
+        "fair_odd": 1.82,
+        "odd_min": 1.91,
+        "pinnacle_odd": 2.05,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.55,
+        "ev_pinnacle": 0.13,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 7.61,
+        "p_model_cal": 0.55,
+        "status": "aposta",
+        "inboxId": "anmv416mi7ucze",
+        "enviadaEm": "2026-10-11T16:21:55.951Z"
+      }
     }
   ],
   "invertidos": [],
@@ -31833,5 +31888,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T16:20:51.343Z"
+  "updatedAt": "2026-10-11T16:21:58.396Z"
 }
