@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 667.69,
+      "value": 642.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T18:52:12.554Z"
+      "updatedAt": "2026-10-12T18:55:49.260Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32055,7 +32055,7 @@
       "market": "Múltipla",
       "oddMkt": 6.29,
       "prob": 0.159,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-12T09:00",
       "modelo": "analise",
       "total": 24.95,
@@ -32064,9 +32064,10 @@
       "lucro": 114.76999999999998,
       "roi": 459.99999999999994,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-12T01:24:12.399Z",
+      "updatedAt": "2026-10-12T18:55:49.259Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -32177,7 +32178,12 @@
         "pinnacle_odd": null,
         "priced_by": "pinnacle",
         "inboxId": "anmv4kjxenj3hb",
-        "enviadaEm": "2026-10-12T01:24:09.311Z"
+        "enviadaEm": "2026-10-12T01:24:09.311Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 2/6: Valladolid 5–0 Albacete ✅ · Aarhus 3–0 Sonderjyske ✅ · Malmo FF 1–0 Kalmar FF ❌ · Torino x Udinese: First Half · Coritiba x Botafogo: Not Started · Levante x Sevilla: Not Started",
+          "at": "2026-10-12T18:55:49.259Z"
+        }
       }
     },
     {
@@ -32801,5 +32807,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T18:52:12.554Z"
+  "updatedAt": "2026-10-12T18:55:49.260Z"
 }
