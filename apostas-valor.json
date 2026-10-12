@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 181,
+      "value": 171,
       "currency": "USD",
-      "updatedAt": "2026-10-12T01:24:12.399Z"
+      "updatedAt": "2026-10-12T17:51:33.403Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 679.89,
+      "value": 729.69,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T17:47:54.533Z"
+      "updatedAt": "2026-10-12T17:51:33.403Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32509,6 +32509,61 @@
         "inboxId": "anmv5joybhgdau",
         "enviadaEm": "2026-10-12T17:47:50.333Z"
       }
+    },
+    {
+      "id": "mv5jtqfvfxiiq",
+      "kind": "valor",
+      "event": "Racing Cordoba x Los Andes — 1X2: Racing Cordoba vence",
+      "houseA": "Overtimemarkets",
+      "oddA": 3.56,
+      "stakeA": 49.8,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.02,
+      "prob": 0.5,
+      "winner": null,
+      "date": "2026-10-12T17:00",
+      "modelo": "analise",
+      "total": 49.8,
+      "lucroA": 127.488,
+      "lucroRed": -49.8,
+      "lucro": 127.488,
+      "roi": 256,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T17:51:33.403Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1498881,
+        "kickoff": "2026-10-12T20:00:00.000Z",
+        "home": "Racing Cordoba",
+        "away": "Los Andes",
+        "competition": "Primera Nacional",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Racing Cordoba vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.481,
+        "p_blend": 0.5,
+        "p_pinnacle": 0.41,
+        "fair_odd": 2.02,
+        "odd_min": 2.12,
+        "pinnacle_odd": 2.33,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.5,
+        "ev_pinnacle": 0.16,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 8.57,
+        "p_model_cal": 0.48,
+        "status": "aposta",
+        "inboxId": "anmv5jtqfr2ftm",
+        "enviadaEm": "2026-10-12T17:51:33.399Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32675,5 +32730,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T17:47:54.533Z"
+  "updatedAt": "2026-10-12T17:51:33.403Z"
 }
