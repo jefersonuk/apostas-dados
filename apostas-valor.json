@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 379.2,
+      "value": 267.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T20:22:13.953Z"
+      "updatedAt": "2026-10-12T20:34:40.683Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 124.65,
+      "value": 166.6,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T20:22:40.833Z"
+      "updatedAt": "2026-10-12T20:34:40.681Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32324,7 +32324,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.67,
       "prob": 0.6,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-12T15:30",
       "modelo": "analise",
       "total": 56,
@@ -32333,9 +32333,10 @@
       "lucro": 64.39999999999999,
       "roi": 114.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-12T17:44:45.533Z",
+      "updatedAt": "2026-10-12T20:34:39.876Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1608694,
@@ -32364,7 +32365,14 @@
         "p_model_cal": 0.58,
         "status": "aposta",
         "inboxId": "anmv5jkwugeae5",
-        "enviadaEm": "2026-10-12T17:44:41.800Z"
+        "enviadaEm": "2026-10-12T17:44:41.800Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Pescara 1–1 Guidonia Montecelio 1937 · saldo de gols do Pescara: 0 (linha 0.5)",
+          "at": "2026-10-12T20:34:39.876Z"
+        },
+        "clv": -0.010114149088933266,
+        "closingFair": 2.1719676041648563
       }
     },
     {
@@ -32379,7 +32387,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.97,
       "prob": 0.51,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-12T15:30",
       "modelo": "analise",
       "total": 55.6,
@@ -32388,9 +32396,10 @@
       "lucro": 57.267999999999994,
       "roi": 102.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-12T17:45:39.796Z",
+      "updatedAt": "2026-10-12T20:34:40.681Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1553119,
@@ -32419,7 +32428,14 @@
         "p_model_cal": 0.47,
         "status": "aposta",
         "inboxId": "anmv5jm5936mgv",
-        "enviadaEm": "2026-10-12T17:45:39.351Z"
+        "enviadaEm": "2026-10-12T17:45:39.351Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "GKS Katowice 2–1 Wieczysta Kraków · saldo de gols do GKS Katowice: 1 (linha 0.5)",
+          "at": "2026-10-12T20:34:40.681Z"
+        },
+        "clv": -0.0018105882938305173,
+        "closingFair": 2.0336821611142852
       }
     },
     {
@@ -32810,5 +32826,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T20:22:40.833Z"
+  "updatedAt": "2026-10-12T20:34:40.683Z"
 }
