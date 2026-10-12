@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 167.8,
+      "value": 223.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T01:11:23.315Z"
+      "updatedAt": "2026-10-12T01:21:41.437Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 67.04,
+      "value": 57.04,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T01:11:23.315Z"
+      "updatedAt": "2026-10-12T01:21:41.436Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31975,6 +31975,61 @@
         "inboxId": "anmv4k3hwp87yb",
         "enviadaEm": "2026-10-12T01:11:22.729Z"
       }
+    },
+    {
+      "id": "mv4kgrb0kq2id",
+      "kind": "valor",
+      "event": "Chapecoense-sc x Atletico Paranaense — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.94,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.79,
+      "prob": 0.56,
+      "winner": null,
+      "date": "2026-10-12T19:30",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 52.64,
+      "lucroRed": -56,
+      "lucro": 52.64,
+      "roi": 94,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T01:21:41.436Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492403,
+        "kickoff": "2026-10-12T22:30:00.000Z",
+        "home": "Chapecoense-sc",
+        "away": "Atletico Paranaense",
+        "competition": "Serie A",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.52,
+        "p_blend": 0.56,
+        "p_pinnacle": 0.5,
+        "fair_odd": 1.79,
+        "odd_min": 1.88,
+        "pinnacle_odd": 1.92,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.56,
+        "ev_pinnacle": 0.07,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 5.86,
+        "p_model_cal": 0.52,
+        "status": "aposta",
+        "inboxId": "anmv4kgo4djdpq",
+        "enviadaEm": "2026-10-12T01:21:37.309Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32141,5 +32196,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T01:11:23.315Z"
+  "updatedAt": "2026-10-12T01:21:41.437Z"
 }
