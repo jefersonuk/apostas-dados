@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 154.05,
+      "value": 124.65,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T20:22:13.952Z"
+      "updatedAt": "2026-10-12T20:22:40.833Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32428,7 +32428,7 @@
       "event": "AZ Picerno x Cosenza — Total de gols: Mais de 2,5",
       "houseA": "Sportmarket",
       "oddA": 2.05,
-      "stakeA": 211.28,
+      "stakeA": 55.6,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "Total de Gols",
@@ -32437,16 +32437,16 @@
       "winner": "A",
       "date": "2026-10-12T15:30",
       "modelo": "analise",
-      "total": 211.28,
-      "lucroA": 221.84399999999997,
-      "lucroRed": -211.28,
-      "lucro": 221.84399999999997,
+      "total": 55.6,
+      "lucroA": 58.37999999999999,
+      "lucroRed": -55.6,
+      "lucro": 58.37999999999999,
       "roi": 104.99999999999999,
       "aplicado": {
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-12T20:20:53.469Z",
+      "updatedAt": "2026-10-12T20:22:40.833Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1609078,
@@ -32475,7 +32475,8 @@
         "p_model_cal": 0.51,
         "status": "aposta",
         "inboxId": "anmv5jn1i7bf78",
-        "enviadaEm": "2026-10-12T17:46:21.151Z"
+        "enviadaEm": "2026-10-12T17:46:21.151Z",
+        "editadaEm": "2026-10-12T20:22:40.832Z"
       }
     },
     {
@@ -32809,5 +32810,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T20:22:13.953Z"
+  "updatedAt": "2026-10-12T20:22:40.833Z"
 }
