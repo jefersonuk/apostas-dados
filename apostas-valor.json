@@ -5179,12 +5179,12 @@
       "updatedAt": "2026-10-08T17:34:15.153Z"
     }
   ],
-  "usdRate": 4.98,
+  "usdRate": 4.99,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-11T15:53:49.008Z",
+  "usdRateAt": "2026-10-12T00:29:58.468Z",
   "eurRate": 5.58,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-11T15:53:49.278Z",
+  "eurRateAt": "2026-10-12T00:29:58.561Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -31992,5 +31992,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-11T21:11:41.048Z"
+  "updatedAt": "2026-10-12T00:29:58.561Z"
 }
