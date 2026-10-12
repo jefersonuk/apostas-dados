@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 360.75,
+      "value": 304.75,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T09:33:40.283Z"
+      "updatedAt": "2026-10-12T16:55:12.627Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32180,7 +32180,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.89,
       "prob": 0.53,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-12T12:00",
       "modelo": "analise",
       "total": 56,
@@ -32189,9 +32189,10 @@
       "lucro": 63.84,
       "roi": 114.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-12T01:38:42.988Z",
+      "updatedAt": "2026-10-12T16:55:12.626Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1638105,
@@ -32220,7 +32221,14 @@
         "p_model_cal": 0.53,
         "status": "aposta",
         "inboxId": "anmv4l2kh1ie6m",
-        "enviadaEm": "2026-10-12T01:38:39.013Z"
+        "enviadaEm": "2026-10-12T01:38:39.013Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "VPS 1–0 Gnistan · saldo de gols do VPS: 1 (linha 0)",
+          "at": "2026-10-12T16:55:12.626Z"
+        },
+        "clv": 0.007854369232714653,
+        "closingFair": 2.1233226399853726
       }
     },
     {
@@ -32443,5 +32451,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T16:35:53.301Z"
+  "updatedAt": "2026-10-12T16:55:12.627Z"
 }
