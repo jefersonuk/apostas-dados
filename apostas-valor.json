@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 779.49,
+      "value": 723.49,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T17:52:54.277Z"
+      "updatedAt": "2026-10-12T17:56:24.784Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32247,7 +32247,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2,
       "prob": 0.5,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-12T13:00",
       "modelo": "analise",
       "total": 56,
@@ -32256,9 +32256,10 @@
       "lucro": 83.44000000000001,
       "roi": 149.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-12T01:55:32.541Z",
+      "updatedAt": "2026-10-12T17:56:24.784Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1553187,
@@ -32287,7 +32288,14 @@
         "p_model_cal": 0.52,
         "status": "aposta",
         "inboxId": "anmv4lo7r7tfws",
-        "enviadaEm": "2026-10-12T01:55:28.963Z"
+        "enviadaEm": "2026-10-12T01:55:28.963Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Radomiak Radom 2–3 Motor Lublin · saldo de gols do Radomiak Radom: -1 (linha 0.5)",
+          "at": "2026-10-12T17:56:24.784Z"
+        },
+        "clv": -0.055493313243883735,
+        "closingFair": 2.6362968467188312
       }
     },
     {
@@ -32785,5 +32793,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T17:52:54.277Z"
+  "updatedAt": "2026-10-12T17:56:24.784Z"
 }
