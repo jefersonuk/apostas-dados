@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 304.75,
+      "value": 360.75,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T01:38:42.988Z"
+      "updatedAt": "2026-10-12T09:33:40.283Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 47.04,
+      "value": 87,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T01:38:42.988Z"
+      "updatedAt": "2026-10-12T09:33:39.188Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5179,12 +5179,12 @@
       "updatedAt": "2026-10-08T17:34:15.153Z"
     }
   ],
-  "usdRate": 4.99,
+  "usdRate": 4.98,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-12T01:05:31.233Z",
+  "usdRateAt": "2026-10-12T09:33:38.577Z",
   "eurRate": 5.6,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-12T01:05:31.312Z",
+  "eurRateAt": "2026-10-12T09:33:38.641Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -32222,6 +32222,61 @@
         "inboxId": "anmv4l2kh1ie6m",
         "enviadaEm": "2026-10-12T01:38:39.013Z"
       }
+    },
+    {
+      "id": "mv521fcjwew6h",
+      "kind": "valor",
+      "event": "Radomiak Radom x Motor Lublin — 1X2: Radomiak Radom vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.49,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2,
+      "prob": 0.5,
+      "winner": null,
+      "date": "2026-10-12T13:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 83.44000000000001,
+      "lucroRed": -56,
+      "lucro": 83.44000000000001,
+      "roi": 149.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T09:33:39.188Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1553187,
+        "kickoff": "2026-10-12T16:00:00.000Z",
+        "home": "Radomiak Radom",
+        "away": "Motor Lublin",
+        "competition": "Ekstraklasa",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Radomiak Radom vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.518,
+        "p_blend": 0.5,
+        "p_pinnacle": 0.387,
+        "fair_odd": 2,
+        "odd_min": 2.1,
+        "pinnacle_odd": 2.49,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.5,
+        "ev_pinnacle": 0.25,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.42,
+        "p_model_cal": 0.52,
+        "status": "aposta",
+        "inboxId": "anmv4lo7r7tfws",
+        "enviadaEm": "2026-10-12T01:55:28.963Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32388,5 +32443,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T01:38:42.988Z"
+  "updatedAt": "2026-10-12T09:33:39.188Z"
 }
