@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 186,
+      "value": 181,
       "currency": "USD",
-      "updatedAt": "2026-10-11T18:57:40.860Z"
+      "updatedAt": "2026-10-12T01:24:12.399Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 223.8,
+      "value": 248.75,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T01:21:41.437Z"
+      "updatedAt": "2026-10-12T01:24:12.399Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32030,6 +32030,143 @@
         "inboxId": "anmv4kgo4djdpq",
         "enviadaEm": "2026-10-12T01:21:37.309Z"
       }
+    },
+    {
+      "id": "mv4kjzsf8izv0",
+      "kind": "valor",
+      "event": "Múltipla (6) — Valladolid x Albacete Mais de 1,5 · Aarhus x Sonderjyske Mais de 2,5 · Malmo FF x Kalmar FF Mais de 1,5 · Torino x Udinese Mais de 1,5 · Coritiba x Botafogo Mais de 1,5 · Levante x Sevilla Mais de 1,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 5.6,
+      "stakeA": 24.95,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": 6.29,
+      "prob": 0.159,
+      "winner": null,
+      "date": "2026-10-12T09:00",
+      "modelo": "analise",
+      "total": 24.95,
+      "lucroA": 114.76999999999998,
+      "lucroRed": -24.95,
+      "lucro": 114.76999999999998,
+      "roi": 459.99999999999994,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T01:24:12.399Z",
+      "origem": "analise",
+      "analise": {
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1569969,
+            "lineId": "gO1.5",
+            "home": "Valladolid",
+            "away": "Albacete",
+            "kickoff": "2026-10-12T12:00:00.000Z",
+            "competition": "Segunda División",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.74,
+            "p_pinnacle": 0.759,
+            "fair_odd": 1.35,
+            "odd_min": 1.36,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1549028,
+            "lineId": "gO2.5",
+            "home": "Aarhus",
+            "away": "Sonderjyske",
+            "kickoff": "2026-10-12T17:00:00.000Z",
+            "competition": "Superliga",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.646,
+            "p_pinnacle": 0.648,
+            "fair_odd": 1.55,
+            "odd_min": 1.56,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1494295,
+            "lineId": "gO1.5",
+            "home": "Malmo FF",
+            "away": "Kalmar FF",
+            "kickoff": "2026-10-12T17:00:00.000Z",
+            "competition": "Allsvenskan",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.788,
+            "p_pinnacle": 0.788,
+            "fair_odd": 1.27,
+            "odd_min": 1.28,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1550146,
+            "lineId": "gO1.5",
+            "home": "Torino",
+            "away": "Udinese",
+            "kickoff": "2026-10-12T18:45:00.000Z",
+            "competition": "Serie A",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.721,
+            "p_pinnacle": 0.719,
+            "fair_odd": 1.39,
+            "odd_min": 1.4,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1492404,
+            "lineId": "gO1.5",
+            "home": "Coritiba",
+            "away": "Botafogo",
+            "kickoff": "2026-10-12T19:00:00.000Z",
+            "competition": "Serie A",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.796,
+            "p_pinnacle": 0.797,
+            "fair_odd": 1.26,
+            "odd_min": 1.27,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1570407,
+            "lineId": "gO1.5",
+            "home": "Levante",
+            "away": "Sevilla",
+            "kickoff": "2026-10-12T19:00:00.000Z",
+            "competition": "La Liga",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.735,
+            "p_pinnacle": 0.73,
+            "fair_odd": 1.36,
+            "odd_min": 1.37,
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1492404,
+        "lineId": "multi",
+        "kickoff": "2026-10-12T19:00:00.000Z",
+        "first_kickoff": "2026-10-12T12:00:00.000Z",
+        "competition": "Segunda División, Superliga, Allsvenskan, Serie A, La Liga",
+        "mercado": "Múltipla",
+        "linha": "6 pernas · over de gols",
+        "tier": "múltipla",
+        "p_blend": 0.159,
+        "p_pinnacle": 0.162,
+        "fair_odd": 6.29,
+        "odd_min": 6.61,
+        "pinnacle_odd": null,
+        "priced_by": "pinnacle",
+        "inboxId": "anmv4kjxenj3hb",
+        "enviadaEm": "2026-10-12T01:24:09.311Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32196,5 +32333,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T01:21:41.437Z"
+  "updatedAt": "2026-10-12T01:24:12.399Z"
 }
