@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.8,
+      "value": 167.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T01:10:28.418Z"
+      "updatedAt": "2026-10-12T01:11:23.315Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 77.04,
+      "value": 67.04,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T01:10:28.418Z"
+      "updatedAt": "2026-10-12T01:11:23.315Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31928,6 +31928,53 @@
         "inboxId": "anmv4k2bmhu35l",
         "enviadaEm": "2026-10-12T01:10:27.929Z"
       }
+    },
+    {
+      "id": "mv4k3icz9j3yo",
+      "kind": "valor",
+      "event": "Novorizontino x Ponte Preta — Handicap asiático: Ponte Preta +3",
+      "houseA": "Sportmarket",
+      "oddA": 1.75,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.66,
+      "prob": 0.601,
+      "winner": null,
+      "date": "2026-10-12T19:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 42,
+      "lucroRed": -56,
+      "lucro": 42,
+      "roi": 75,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T01:11:23.315Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520927,
+        "kickoff": "2026-10-12T22:00:00.000Z",
+        "home": "Novorizontino",
+        "away": "Ponte Preta",
+        "competition": "Serie B",
+        "lineId": "ahA3",
+        "mercado": "Handicap asiático",
+        "linha": "Ponte Preta +3",
+        "tier": "sólida",
+        "p_model": 0.831,
+        "p_blend": 0.601,
+        "p_pinnacle": 0.569,
+        "fair_odd": 1.66,
+        "odd_min": 1.75,
+        "pinnacle_odd": 1.69,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv4k3hwp87yb",
+        "enviadaEm": "2026-10-12T01:11:22.729Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32094,5 +32141,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T01:10:28.418Z"
+  "updatedAt": "2026-10-12T01:11:23.315Z"
 }
