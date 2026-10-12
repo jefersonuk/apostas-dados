@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 248.75,
+      "value": 304.75,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T01:24:12.399Z"
+      "updatedAt": "2026-10-12T01:38:42.988Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 57.04,
+      "value": 47.04,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T01:21:41.436Z"
+      "updatedAt": "2026-10-12T01:38:42.988Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32167,6 +32167,61 @@
         "inboxId": "anmv4kjxenj3hb",
         "enviadaEm": "2026-10-12T01:24:09.311Z"
       }
+    },
+    {
+      "id": "mv4l2njg2hjn6",
+      "kind": "valor",
+      "event": "VPS x Gnistan — Handicap asiático: Gnistan 0",
+      "houseA": "Sportmarket",
+      "oddA": 2.14,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.89,
+      "prob": 0.53,
+      "winner": null,
+      "date": "2026-10-12T12:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 63.84,
+      "lucroRed": -56,
+      "lucro": 63.84,
+      "roi": 114.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T01:38:42.988Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1638105,
+        "kickoff": "2026-10-12T15:00:00.000Z",
+        "home": "VPS",
+        "away": "Gnistan",
+        "competition": "Veikkausliiga",
+        "lineId": "ahA0",
+        "mercado": "Handicap asiático",
+        "linha": "Gnistan 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.532,
+        "p_blend": 0.53,
+        "p_pinnacle": 0.45,
+        "fair_odd": 1.89,
+        "odd_min": 1.98,
+        "pinnacle_odd": 2.14,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.53,
+        "ev_pinnacle": 0.13,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 7.91,
+        "p_model_cal": 0.53,
+        "status": "aposta",
+        "inboxId": "anmv4l2kh1ie6m",
+        "enviadaEm": "2026-10-12T01:38:39.013Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32333,5 +32388,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T01:24:12.399Z"
+  "updatedAt": "2026-10-12T01:38:42.988Z"
 }
