@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 55.8,
+      "value": 111.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T01:05:32.135Z"
+      "updatedAt": "2026-10-12T01:10:28.418Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 87.04,
+      "value": 77.04,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T01:05:32.135Z"
+      "updatedAt": "2026-10-12T01:10:28.418Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31881,6 +31881,53 @@
         "inboxId": "anmv4jvwq18dlv",
         "enviadaEm": "2026-10-12T01:05:28.681Z"
       }
+    },
+    {
+      "id": "mv4k2c02pl4xc",
+      "kind": "valor",
+      "event": "Fortaleza EC x CRB — Handicap asiático: CRB +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.49,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.5,
+      "prob": 0.668,
+      "winner": null,
+      "date": "2026-10-12T16:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 27.439999999999998,
+      "lucroRed": -56,
+      "lucro": 27.439999999999998,
+      "roi": 49,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T01:10:28.418Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1520925,
+        "kickoff": "2026-10-12T19:00:00.000Z",
+        "home": "Fortaleza EC",
+        "away": "CRB",
+        "competition": "Serie B",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "CRB +1",
+        "tier": "sólida",
+        "p_model": 0.701,
+        "p_blend": 0.668,
+        "p_pinnacle": 0.664,
+        "fair_odd": 1.5,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.47,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmv4k2bmhu35l",
+        "enviadaEm": "2026-10-12T01:10:27.929Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32047,5 +32094,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T01:05:32.135Z"
+  "updatedAt": "2026-10-12T01:10:28.418Z"
 }
