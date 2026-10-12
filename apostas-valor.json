@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 165,
+      "value": 230.1,
       "currency": "USD",
-      "updatedAt": "2026-10-12T21:15:20.987Z"
+      "updatedAt": "2026-10-12T21:59:28.496Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 211.6,
+      "value": 112,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T21:03:53.037Z"
+      "updatedAt": "2026-10-12T21:59:28.499Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32571,7 +32571,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.02,
       "prob": 0.5,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-12T17:00",
       "modelo": "analise",
       "total": 49.8,
@@ -32580,9 +32580,10 @@
       "lucro": 127.488,
       "roi": 256,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-12T17:51:33.403Z",
+      "updatedAt": "2026-10-12T21:59:27.741Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1498881,
@@ -32611,7 +32612,14 @@
         "p_model_cal": 0.48,
         "status": "aposta",
         "inboxId": "anmv5jtqfr2ftm",
-        "enviadaEm": "2026-10-12T17:51:33.399Z"
+        "enviadaEm": "2026-10-12T17:51:33.399Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Racing Cordoba 1–0 Los Andes · saldo de gols do Racing Cordoba: 1 (linha 0.5)",
+          "at": "2026-10-12T21:59:27.740Z"
+        },
+        "clv": 0.38803450739106093,
+        "closingFair": 2.5647777350228482
       }
     },
     {
@@ -32626,7 +32634,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.72,
       "prob": 0.58,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-12T17:00",
       "modelo": "analise",
       "total": 49.8,
@@ -32635,9 +32643,10 @@
       "lucro": 97.11,
       "roi": 195.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-12T17:52:54.277Z",
+      "updatedAt": "2026-10-12T21:59:28.496Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1632026,
@@ -32666,7 +32675,14 @@
         "p_model_cal": 0.56,
         "status": "aposta",
         "inboxId": "anmv5jvgizoyu9",
-        "enviadaEm": "2026-10-12T17:52:53.867Z"
+        "enviadaEm": "2026-10-12T17:52:53.867Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "2 de Mayo 1–0 Sportivo Ameliano · saldo de gols do 2 de Mayo: 1 (linha 0)",
+          "at": "2026-10-12T21:59:28.496Z"
+        },
+        "clv": 0.43847663643053436,
+        "closingFair": 2.050780614219909
       }
     }
   ],
@@ -32834,5 +32850,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T21:15:20.988Z"
+  "updatedAt": "2026-10-12T21:59:28.499Z"
 }
