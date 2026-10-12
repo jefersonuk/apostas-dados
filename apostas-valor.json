@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 304.75,
+      "value": 360.75,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T16:55:12.627Z"
+      "updatedAt": "2026-10-12T17:44:44.971Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5181,10 +5181,10 @@
   ],
   "usdRate": 4.98,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-12T16:35:53.081Z",
-  "eurRate": 5.58,
+  "usdRateAt": "2026-10-12T17:44:43.986Z",
+  "eurRate": 5.56,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-12T16:35:53.301Z",
+  "eurRateAt": "2026-10-12T17:44:44.074Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -32285,6 +32285,61 @@
         "inboxId": "anmv4lo7r7tfws",
         "enviadaEm": "2026-10-12T01:55:28.963Z"
       }
+    },
+    {
+      "id": "mv4loailid09s",
+      "kind": "valor",
+      "event": "Radomiak Radom x Motor Lublin — 1X2: Radomiak Radom vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.49,
+      "stakeA": 56,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2,
+      "prob": 0.5,
+      "winner": null,
+      "date": "2026-10-12T13:00",
+      "modelo": "analise",
+      "total": 56,
+      "lucroA": 83.44000000000001,
+      "lucroRed": -56,
+      "lucro": 83.44000000000001,
+      "roi": 149.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T01:55:32.541Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1553187,
+        "kickoff": "2026-10-12T16:00:00.000Z",
+        "home": "Radomiak Radom",
+        "away": "Motor Lublin",
+        "competition": "Ekstraklasa",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Radomiak Radom vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.518,
+        "p_blend": 0.5,
+        "p_pinnacle": 0.387,
+        "fair_odd": 2,
+        "odd_min": 2.1,
+        "pinnacle_odd": 2.49,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.5,
+        "ev_pinnacle": 0.25,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.42,
+        "p_model_cal": 0.52,
+        "status": "aposta",
+        "inboxId": "anmv4lo7r7tfws",
+        "enviadaEm": "2026-10-12T01:55:28.963Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32451,5 +32506,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T16:55:12.627Z"
+  "updatedAt": "2026-10-12T17:44:44.074Z"
 }
