@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 230.1,
+      "value": 295.2,
       "currency": "USD",
-      "updatedAt": "2026-10-12T21:59:28.496Z"
+      "updatedAt": "2026-10-12T22:42:39.214Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 148.19,
+      "value": 185.66,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T21:14:47.156Z"
+      "updatedAt": "2026-10-12T22:42:37.741Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32850,5 +32850,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T21:59:28.499Z"
+  "updatedAt": "2026-10-12T22:42:39.214Z"
 }
