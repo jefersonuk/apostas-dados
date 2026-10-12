@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 416.35,
+      "value": 679.89,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T17:45:39.797Z"
+      "updatedAt": "2026-10-12T17:47:54.533Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 77,
+      "value": 29.6,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T17:45:39.796Z"
+      "updatedAt": "2026-10-12T17:47:54.533Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32399,6 +32399,116 @@
         "inboxId": "anmv5jm5936mgv",
         "enviadaEm": "2026-10-12T17:45:39.351Z"
       }
+    },
+    {
+      "id": "mv5jp1k5njlv5",
+      "kind": "valor",
+      "event": "AZ Picerno x Cosenza — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.05,
+      "stakeA": 211.28,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.9,
+      "prob": 0.53,
+      "winner": null,
+      "date": "2026-10-12T15:30",
+      "modelo": "analise",
+      "total": 211.28,
+      "lucroA": 221.84399999999997,
+      "lucroRed": -211.28,
+      "lucro": 221.84399999999997,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T17:47:54.533Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1609078,
+        "kickoff": "2026-10-12T18:30:00.000Z",
+        "home": "AZ Picerno",
+        "away": "Cosenza",
+        "competition": "Serie C - Girone C",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.514,
+        "p_blend": 0.53,
+        "p_pinnacle": 0.469,
+        "fair_odd": 1.9,
+        "odd_min": 2,
+        "pinnacle_odd": 2.02,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.53,
+        "ev_pinnacle": 0.06,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 5.68,
+        "p_model_cal": 0.51,
+        "status": "aposta",
+        "inboxId": "anmv5jn1i7bf78",
+        "enviadaEm": "2026-10-12T17:46:21.151Z"
+      }
+    },
+    {
+      "id": "mv5jp1k5zxawo",
+      "kind": "valor",
+      "event": "Gualberto Villarroel SJ x Guabirá — Total de gols: Mais de 3,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.39,
+      "stakeA": 52.26,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.85,
+      "prob": 0.54,
+      "winner": null,
+      "date": "2026-10-12T16:00",
+      "modelo": "analise",
+      "total": 52.26,
+      "lucroA": 72.6414,
+      "lucroRed": -52.26,
+      "lucro": 72.6414,
+      "roi": 139,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T17:47:54.533Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1619326,
+        "kickoff": "2026-10-12T19:00:00.000Z",
+        "home": "Gualberto Villarroel SJ",
+        "away": "Guabirá",
+        "competition": "Primera División",
+        "lineId": "gO3.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 3,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.48,
+        "p_blend": 0.54,
+        "p_pinnacle": 0.421,
+        "fair_odd": 1.85,
+        "odd_min": 1.94,
+        "pinnacle_odd": 2.17,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.54,
+        "ev_pinnacle": 0.17,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.97,
+        "p_model_cal": 0.48,
+        "status": "aposta",
+        "inboxId": "anmv5joybhgdau",
+        "enviadaEm": "2026-10-12T17:47:50.333Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32565,5 +32675,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T17:45:39.797Z"
+  "updatedAt": "2026-10-12T17:47:54.533Z"
 }
