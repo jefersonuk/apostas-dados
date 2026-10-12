@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 267.6,
+      "value": 211.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T20:34:40.683Z"
+      "updatedAt": "2026-10-12T21:03:53.037Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 166.6,
+      "value": 181.61,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T20:34:40.681Z"
+      "updatedAt": "2026-10-12T21:03:53.036Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31906,7 +31906,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.5,
       "prob": 0.668,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-12T16:00",
       "modelo": "analise",
       "total": 56,
@@ -31915,9 +31915,10 @@
       "lucro": 27.439999999999998,
       "roi": 49,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-12T01:10:28.418Z",
+      "updatedAt": "2026-10-12T21:03:53.036Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520925,
@@ -31938,7 +31939,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmv4k2bmhu35l",
-        "enviadaEm": "2026-10-12T01:10:27.929Z"
+        "enviadaEm": "2026-10-12T01:10:27.929Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Fortaleza EC 2–2 CRB · saldo de gols do Fortaleza EC: 0 (linha 1)",
+          "at": "2026-10-12T21:03:53.036Z"
+        },
+        "clv": -0.009054133571256173,
+        "closingFair": 1.5036139212828956
       }
     },
     {
@@ -32826,5 +32834,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T20:34:40.683Z"
+  "updatedAt": "2026-10-12T21:03:53.037Z"
 }
