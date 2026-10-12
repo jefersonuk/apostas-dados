@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 175,
+      "value": 139.4,
       "currency": "USD",
-      "updatedAt": "2026-10-12T22:43:37.850Z"
+      "updatedAt": "2026-10-12T23:59:50.484Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -32580,7 +32580,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.02,
       "prob": 0.5,
-      "winner": "A",
+      "winner": "RED",
       "date": "2026-10-12T17:00",
       "modelo": "analise",
       "total": 49.8,
@@ -32590,9 +32590,9 @@
       "roi": 256,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-12T21:59:27.741Z",
+      "updatedAt": "2026-10-12T23:59:50.484Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1498881,
@@ -32914,5 +32914,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T23:58:38.615Z"
+  "updatedAt": "2026-10-12T23:59:50.484Z"
 }
