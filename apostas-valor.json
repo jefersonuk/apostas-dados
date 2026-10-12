@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 167.2,
+      "value": 111.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T23:11:55.119Z"
+      "updatedAt": "2026-10-12T23:58:38.615Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5181,10 +5181,10 @@
   ],
   "usdRate": 4.98,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-12T23:50:43.414Z",
-  "eurRate": 5.57,
+  "usdRateAt": "2026-10-12T17:44:43.986Z",
+  "eurRate": 5.56,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-12T23:50:43.562Z",
+  "eurRateAt": "2026-10-12T17:44:44.074Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -31961,7 +31961,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.66,
       "prob": 0.601,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-12T19:00",
       "modelo": "analise",
       "total": 56,
@@ -31970,9 +31970,10 @@
       "lucro": 42,
       "roi": 75,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-12T01:11:23.315Z",
+      "updatedAt": "2026-10-12T23:58:38.615Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520927,
@@ -31993,7 +31994,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv4k3hwp87yb",
-        "enviadaEm": "2026-10-12T01:11:22.729Z"
+        "enviadaEm": "2026-10-12T01:11:22.729Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Novorizontino 5–1 Ponte Preta · saldo de gols do Novorizontino: 4 (linha 3)",
+          "at": "2026-10-12T23:58:38.615Z"
+        },
+        "clv": -0.04085443491258811,
+        "closingFair": 1.8245405741312202
       }
     },
     {
@@ -32906,5 +32914,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T23:50:43.562Z"
+  "updatedAt": "2026-10-12T23:58:38.615Z"
 }
