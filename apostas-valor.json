@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 139.4,
+      "value": 109.9,
       "currency": "USD",
-      "updatedAt": "2026-10-12T23:59:50.484Z"
+      "updatedAt": "2026-10-12T23:59:54.905Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -32643,7 +32643,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.72,
       "prob": 0.58,
-      "winner": "A",
+      "winner": "RED",
       "date": "2026-10-12T17:00",
       "modelo": "analise",
       "total": 49.8,
@@ -32653,9 +32653,9 @@
       "roi": 195.00000000000003,
       "aplicado": {
         "stakes": true,
-        "resultado": "A"
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-12T21:59:28.496Z",
+      "updatedAt": "2026-10-12T23:59:54.905Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1632026,
@@ -32914,5 +32914,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T23:59:50.484Z"
+  "updatedAt": "2026-10-12T23:59:54.905Z"
 }
