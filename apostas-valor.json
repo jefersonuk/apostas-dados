@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 75,
+      "value": 97,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T00:30:41.189Z"
+      "updatedAt": "2026-10-12T00:31:02.719Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -31992,5 +31992,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T00:30:41.189Z"
+  "updatedAt": "2026-10-12T00:31:02.719Z"
 }
