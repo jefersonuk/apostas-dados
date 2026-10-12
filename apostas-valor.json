@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 360.75,
+      "value": 416.35,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T17:44:45.533Z"
+      "updatedAt": "2026-10-12T17:45:39.797Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 87,
+      "value": 77,
       "currency": "EUR",
-      "updatedAt": "2026-10-12T17:44:45.533Z"
+      "updatedAt": "2026-10-12T17:45:39.796Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32344,6 +32344,61 @@
         "inboxId": "anmv5jkwugeae5",
         "enviadaEm": "2026-10-12T17:44:41.800Z"
       }
+    },
+    {
+      "id": "mv5jm5lgjz3ul",
+      "kind": "valor",
+      "event": "GKS Katowice x Wieczysta Kraków — 1X2: GKS Katowice vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.03,
+      "stakeA": 55.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.97,
+      "prob": 0.51,
+      "winner": null,
+      "date": "2026-10-12T15:30",
+      "modelo": "analise",
+      "total": 55.6,
+      "lucroA": 57.267999999999994,
+      "lucroRed": -55.6,
+      "lucro": 57.267999999999994,
+      "roi": 102.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T17:45:39.796Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1553119,
+        "kickoff": "2026-10-12T18:30:00.000Z",
+        "home": "GKS Katowice",
+        "away": "Wieczysta Kraków",
+        "competition": "Ekstraklasa",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "GKS Katowice vence",
+        "tier": "nossa análise",
+        "p_model": 0.468,
+        "p_blend": 0.51,
+        "p_pinnacle": 0.466,
+        "fair_odd": 1.97,
+        "odd_min": 2.07,
+        "pinnacle_odd": 2.08,
+        "priced_by": "nossa análise",
+        "fragile": false,
+        "scenario": true,
+        "p_scenario": 0.51,
+        "ev_pinnacle": 0.05,
+        "ours": true,
+        "contra_pinnacle": false,
+        "diff_pp": 4.08,
+        "p_model_cal": 0.47,
+        "status": "aposta",
+        "inboxId": "anmv5jm5936mgv",
+        "enviadaEm": "2026-10-12T17:45:39.351Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32510,5 +32565,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T17:44:45.533Z"
+  "updatedAt": "2026-10-12T17:45:39.797Z"
 }
