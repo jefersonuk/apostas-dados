@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 171,
+      "value": 161,
       "currency": "USD",
-      "updatedAt": "2026-10-12T17:51:33.403Z"
+      "updatedAt": "2026-10-12T17:52:54.277Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 729.69,
+      "value": 779.49,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T17:51:33.403Z"
+      "updatedAt": "2026-10-12T17:52:54.277Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32564,6 +32564,61 @@
         "inboxId": "anmv5jtqfr2ftm",
         "enviadaEm": "2026-10-12T17:51:33.399Z"
       }
+    },
+    {
+      "id": "mv5jvgudhlbxl",
+      "kind": "valor",
+      "event": "2 de Mayo x Sportivo Ameliano — Handicap asiático: 2 de Mayo 0",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.95,
+      "stakeA": 49.8,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.72,
+      "prob": 0.58,
+      "winner": null,
+      "date": "2026-10-12T17:00",
+      "modelo": "analise",
+      "total": 49.8,
+      "lucroA": 97.11,
+      "lucroRed": -49.8,
+      "lucro": 97.11,
+      "roi": 195.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-12T17:52:54.277Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1632026,
+        "kickoff": "2026-10-12T20:00:00.000Z",
+        "home": "2 de Mayo",
+        "away": "Sportivo Ameliano",
+        "competition": "Division Profesional - Clausura",
+        "lineId": "ahH0",
+        "mercado": "Handicap asiático",
+        "linha": "2 de Mayo 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.557,
+        "p_blend": 0.58,
+        "p_pinnacle": 0.503,
+        "fair_odd": 1.72,
+        "odd_min": 1.81,
+        "pinnacle_odd": 1.91,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.58,
+        "ev_pinnacle": 0.11,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 7.72,
+        "p_model_cal": 0.56,
+        "status": "aposta",
+        "inboxId": "anmv5jvgizoyu9",
+        "enviadaEm": "2026-10-12T17:52:53.867Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32730,5 +32785,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-12T17:51:33.403Z"
+  "updatedAt": "2026-10-12T17:52:54.277Z"
 }
