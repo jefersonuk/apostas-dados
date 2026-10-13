@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 223.2,
+      "value": 279,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T12:03:06.383Z"
+      "updatedAt": "2026-10-13T12:06:08.268Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 92.9,
+      "value": 82.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:03:38.606Z"
+      "updatedAt": "2026-10-13T12:06:08.268Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33071,6 +33071,61 @@
         "enviadaEm": "2026-10-13T12:03:02.839Z",
         "editadaEm": "2026-10-13T12:03:38.606Z"
       }
+    },
+    {
+      "id": "mv6mxdhnyr4ql",
+      "kind": "valor",
+      "event": "Orlando Pirates x TS Galaxy — Handicap asiático: TS Galaxy +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.7,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.93,
+      "prob": 0.52,
+      "winner": null,
+      "date": "2026-10-13T14:30",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 39.059999999999995,
+      "lucroRed": -55.8,
+      "lucro": 39.059999999999995,
+      "roi": 70,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T12:06:08.268Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1600360,
+        "kickoff": "2026-10-13T17:30:00.000Z",
+        "home": "Orlando Pirates",
+        "away": "TS Galaxy",
+        "competition": "Premier Soccer League",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "TS Galaxy +1,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.574,
+        "p_blend": 0.52,
+        "p_pinnacle": 0.437,
+        "fair_odd": 1.93,
+        "odd_min": 2.03,
+        "pinnacle_odd": 2.13,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.52,
+        "ev_pinnacle": 0.1,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 8.14,
+        "p_model_cal": 0.57,
+        "status": "aposta",
+        "inboxId": "anmv6mxcvkl3wz",
+        "enviadaEm": "2026-10-13T12:06:07.472Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33237,5 +33292,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:03:38.606Z"
+  "updatedAt": "2026-10-13T12:06:08.268Z"
 }
