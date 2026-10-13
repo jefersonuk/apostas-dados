@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 390.8,
+      "value": 502.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T23:42:24.354Z"
+      "updatedAt": "2026-10-13T23:45:06.870Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 99,
+      "value": 79,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T23:42:24.353Z"
+      "updatedAt": "2026-10-13T23:45:06.869Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34388,6 +34388,108 @@
         "inboxId": "anmv7bsq8nnpbw",
         "enviadaEm": "2026-10-13T23:42:21.911Z"
       }
+    },
+    {
+      "id": "mv7buz0s3nyc5",
+      "kind": "valor",
+      "event": "Sogndal x ODD Ballklubb — Handicap asiático: Sogndal 0",
+      "houseA": "Sportmarket",
+      "oddA": 2.64,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.04,
+      "prob": 0.49,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 91.512,
+      "lucroRed": -55.8,
+      "lucro": 91.512,
+      "roi": 164,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T23:44:06.604Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1495979,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Sogndal",
+        "away": "ODD Ballklubb",
+        "competition": "1. Division",
+        "lineId": "ahH0",
+        "mercado": "Handicap asiático",
+        "linha": "Sogndal 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.536,
+        "p_blend": 0.49,
+        "p_pinnacle": 0.381,
+        "fair_odd": 2.04,
+        "odd_min": 2.15,
+        "pinnacle_odd": 2.45,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.49,
+        "ev_pinnacle": 0.2,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 10.83,
+        "p_model_cal": 0.54,
+        "status": "aposta",
+        "inboxId": "anmv7buwwzxqux",
+        "enviadaEm": "2026-10-13T23:44:03.875Z"
+      }
+    },
+    {
+      "id": "mv7bw9itiebvm",
+      "kind": "valor",
+      "event": "DC United x New York Red Bulls — Handicap asiático: New York Red Bulls +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.54,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.54,
+      "prob": 0.651,
+      "winner": null,
+      "date": "2026-10-14T20:30",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 30.132,
+      "lucroRed": -55.8,
+      "lucro": 30.132,
+      "roi": 54,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T23:45:06.870Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1490531,
+        "kickoff": "2026-10-14T23:30:00.000Z",
+        "home": "DC United",
+        "away": "New York Red Bulls",
+        "competition": "Major League Soccer",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "New York Red Bulls +1",
+        "tier": "sólida",
+        "p_model": 0.778,
+        "p_blend": 0.651,
+        "p_pinnacle": 0.635,
+        "fair_odd": 1.54,
+        "odd_min": 1.57,
+        "pinnacle_odd": 1.53,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv7bw787psq3",
+        "enviadaEm": "2026-10-13T23:45:03.895Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34554,5 +34656,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T23:42:24.354Z"
+  "updatedAt": "2026-10-13T23:45:06.870Z"
 }
