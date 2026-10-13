@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 167,
+      "value": 111.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T11:50:17.618Z"
+      "updatedAt": "2026-10-13T11:50:20.343Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -32762,7 +32762,7 @@
       "market": "Escanteios",
       "oddMkt": 1.48,
       "prob": 0.678,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T07:00",
       "modelo": "analise",
       "total": 55.6,
@@ -32771,9 +32771,10 @@
       "lucro": 24.464,
       "roi": 43.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T00:18:04.458Z",
+      "updatedAt": "2026-10-13T11:50:20.343Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1629936,
@@ -32794,7 +32795,12 @@
         "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
         "fragile": true,
         "inboxId": "anmv5xmsgbnwla",
-        "enviadaEm": "2026-10-13T00:18:04.043Z"
+        "enviadaEm": "2026-10-13T00:18:04.043Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "SHANGHAI SIPG 1–1 Daejeon Citizen · escanteios no jogo: 7 (linha 8)",
+          "at": "2026-10-13T11:50:20.343Z"
+        }
       }
     },
     {
@@ -33065,5 +33071,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T11:50:17.618Z"
+  "updatedAt": "2026-10-13T11:50:20.343Z"
 }
