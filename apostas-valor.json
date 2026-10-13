@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 223,
+      "value": 278.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T11:59:35.053Z"
+      "updatedAt": "2026-10-13T12:03:03.508Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 87.95,
+      "value": 77.95,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T11:59:35.053Z"
+      "updatedAt": "2026-10-13T12:03:03.507Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33015,6 +33015,53 @@
         "inboxId": "anmv6moxhcsfzf",
         "enviadaEm": "2026-10-13T11:59:34.272Z"
       }
+    },
+    {
+      "id": "mv6mtexf1244h",
+      "kind": "valor",
+      "event": "IFK Norrkoping x GIF Sundsvall — Handicap asiático: GIF Sundsvall +2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.86,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 0.625,
+      "winner": null,
+      "date": "2026-10-13T14:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 47.988,
+      "lucroRed": -55.8,
+      "lucro": 47.988,
+      "roi": 86.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T12:03:03.507Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1497716,
+        "kickoff": "2026-10-13T17:00:00.000Z",
+        "home": "IFK Norrkoping",
+        "away": "GIF Sundsvall",
+        "competition": "Superettan",
+        "lineId": "ahA2.5",
+        "mercado": "Handicap asiático",
+        "linha": "GIF Sundsvall +2,5",
+        "tier": "sólida",
+        "p_model": 0.818,
+        "p_blend": 0.625,
+        "p_pinnacle": 0.599,
+        "fair_odd": 1.6,
+        "odd_min": 1.68,
+        "pinnacle_odd": 1.61,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv6mteevfkxm",
+        "enviadaEm": "2026-10-13T12:03:02.839Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33181,5 +33228,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T11:59:35.053Z"
+  "updatedAt": "2026-10-13T12:03:03.508Z"
 }
