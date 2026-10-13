@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 279,
+      "value": 334.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T12:06:08.268Z"
+      "updatedAt": "2026-10-13T12:07:06.429Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 82.9,
+      "value": 72.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:06:17.891Z"
+      "updatedAt": "2026-10-13T12:07:06.429Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33127,6 +33127,61 @@
         "enviadaEm": "2026-10-13T12:06:07.472Z",
         "editadaEm": "2026-10-13T12:06:17.891Z"
       }
+    },
+    {
+      "id": "mv6mymd9vbydv",
+      "kind": "valor",
+      "event": "Millwall x Swansea — 1X2: Millwall vence",
+      "houseA": "Sportmarket",
+      "oddA": 3.07,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.22,
+      "prob": 0.45,
+      "winner": null,
+      "date": "2026-10-13T15:45",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 115.50599999999999,
+      "lucroRed": -55.8,
+      "lucro": 115.50599999999999,
+      "roi": 206.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T12:07:06.429Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1563195,
+        "kickoff": "2026-10-13T18:45:00.000Z",
+        "home": "Millwall",
+        "away": "Swansea",
+        "competition": "Championship",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Millwall vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.444,
+        "p_blend": 0.45,
+        "p_pinnacle": 0.395,
+        "fair_odd": 2.22,
+        "odd_min": 2.33,
+        "pinnacle_odd": 2.46,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.45,
+        "ev_pinnacle": 0.11,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 5.52,
+        "p_model_cal": 0.44,
+        "status": "aposta",
+        "inboxId": "anmv6myljwiz9c",
+        "enviadaEm": "2026-10-13T12:07:05.372Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33293,5 +33348,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:06:17.891Z"
+  "updatedAt": "2026-10-13T12:07:06.429Z"
 }
