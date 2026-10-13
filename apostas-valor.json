@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 613.8,
+      "value": 669.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T13:50:29.971Z"
+      "updatedAt": "2026-10-13T13:55:29.846Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 22.9,
+      "value": 12.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T13:50:29.970Z"
+      "updatedAt": "2026-10-13T13:55:29.845Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33443,6 +33443,54 @@
         "inboxId": "anmv6q2a1gejbw",
         "enviadaEm": "2026-10-13T13:33:55.924Z"
       }
+    },
+    {
+      "id": "mv6qu0fpfz8bp",
+      "kind": "valor",
+      "event": "Spartak Kostroma x Chelyabinsk — 1X2: Spartak Kostroma vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.46,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.21,
+      "prob": 0.453,
+      "winner": null,
+      "date": "2026-10-13T10:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 81.46799999999999,
+      "lucroRed": -55.8,
+      "lucro": 81.46799999999999,
+      "roi": 146,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T13:55:29.845Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1639261,
+        "kickoff": "2026-10-13T13:00:00.000Z",
+        "home": "Spartak Kostroma",
+        "away": "Chelyabinsk",
+        "competition": "Cup",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Spartak Kostroma vence",
+        "tier": "especulativa",
+        "p_model": 0.453,
+        "p_blend": 0.453,
+        "p_pinnacle": null,
+        "fair_odd": 2.21,
+        "odd_min": 2.39,
+        "pinnacle_odd": null,
+        "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmv6qtz9he6yn",
+        "enviadaEm": "2026-10-13T13:55:28.325Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33609,5 +33657,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T13:50:29.971Z"
+  "updatedAt": "2026-10-13T13:55:29.846Z"
 }
