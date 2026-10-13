@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 514.48,
+      "value": 570.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T13:05:27.274Z"
+      "updatedAt": "2026-10-13T13:33:56.219Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 40.7,
+      "value": 30.7,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T13:05:27.274Z"
+      "updatedAt": "2026-10-13T13:33:56.219Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33387,6 +33387,61 @@
         "inboxId": "anmv6p1n8ivs9p",
         "enviadaEm": "2026-10-13T13:05:26.754Z"
       }
+    },
+    {
+      "id": "mv6q2a9nfdbsh",
+      "kind": "valor",
+      "event": "National Bank of Egypt x El Geish — Handicap asiático: El Geish +0,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.01,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.85,
+      "prob": 0.54,
+      "winner": null,
+      "date": "2026-10-13T11:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 56.35799999999998,
+      "lucroRed": -55.8,
+      "lucro": 56.35799999999998,
+      "roi": 100.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T13:33:56.219Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1612256,
+        "kickoff": "2026-10-13T14:00:00.000Z",
+        "home": "National Bank of Egypt",
+        "away": "El Geish",
+        "competition": "Premier League",
+        "lineId": "ahA0.5",
+        "mercado": "Handicap asiático",
+        "linha": "El Geish +0,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.572,
+        "p_blend": 0.54,
+        "p_pinnacle": 0.436,
+        "fair_odd": 1.85,
+        "odd_min": 1.94,
+        "pinnacle_odd": 2.18,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.54,
+        "ev_pinnacle": 0.18,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 10.57,
+        "p_model_cal": 0.57,
+        "status": "aposta",
+        "inboxId": "anmv6q2a1gejbw",
+        "enviadaEm": "2026-10-13T13:33:55.924Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33553,5 +33608,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T13:05:27.274Z"
+  "updatedAt": "2026-10-13T13:33:56.219Z"
 }
