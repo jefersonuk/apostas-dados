@@ -30864,7 +30864,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T20:44:55.698Z",
+      "updatedAt": "2026-10-13T22:57:17.993Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30979,7 +30979,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Match Postponed",
-          "at": "2026-10-13T20:44:55.698Z"
+          "at": "2026-10-13T22:57:17.993Z"
         }
       }
     },
@@ -31278,7 +31278,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-13T20:44:56.110Z",
+      "updatedAt": "2026-10-13T22:57:18.348Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31304,7 +31304,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-13T20:44:56.110Z"
+          "at": "2026-10-13T22:57:18.348Z"
         }
       }
     },
@@ -33777,7 +33777,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T20:44:56.771Z",
+      "updatedAt": "2026-10-13T22:57:20.186Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -33861,9 +33861,11 @@
         "enviadaEm": "2026-10-13T14:44:35.617Z",
         "check": {
           "status": "encerrado",
-          "detail": "múltipla 1/4: United of Manchester 1–1 AFC Emley ❌ · Havant & Wville 4–1 Basingstoke Town ✅ · Wingate & Finchley 2–0 Ramsgate ❌ · Malvern Town x Yate Town: Second Half",
-          "at": "2026-10-13T20:44:56.771Z"
-        }
+          "detail": "múltipla 2/4: United of Manchester 1–1 AFC Emley ❌ · Havant & Wville 4–1 Basingstoke Town ✅ · Wingate & Finchley 2–0 Ramsgate ❌ · Malvern Town 3–2 Yate Town ✅",
+          "at": "2026-10-13T22:57:20.186Z"
+        },
+        "clv": -0.20589878326870936,
+        "closingFair": 6.95125493286817
       }
     },
     {
@@ -34402,5 +34404,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T21:43:19.802Z"
+  "updatedAt": "2026-10-13T22:57:20.187Z"
 }
