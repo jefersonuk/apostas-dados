@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 418.5,
+      "value": 474.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T20:30:47.184Z"
+      "updatedAt": "2026-10-13T20:32:04.292Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 85.44,
+      "value": 75.44,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T20:30:47.183Z"
+      "updatedAt": "2026-10-13T20:32:04.292Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34103,6 +34103,53 @@
         "inboxId": "anmv74ycdop87u",
         "enviadaEm": "2026-10-13T20:30:46.572Z"
       }
+    },
+    {
+      "id": "mv7500ckiivdu",
+      "kind": "valor",
+      "event": "CS Cartagines x Puntarenas FC — Handicap asiático: Puntarenas FC +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.59,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 0.624,
+      "winner": null,
+      "date": "2026-10-13T21:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 32.922000000000004,
+      "lucroRed": -55.8,
+      "lucro": 32.922000000000004,
+      "roi": 59.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T20:32:04.292Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1551698,
+        "kickoff": "2026-10-14T00:00:00.000Z",
+        "home": "CS Cartagines",
+        "away": "Puntarenas FC",
+        "competition": "Primera División",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Puntarenas FC +1,5",
+        "tier": "sólida",
+        "p_model": 0.748,
+        "p_blend": 0.624,
+        "p_pinnacle": 0.609,
+        "fair_odd": 1.6,
+        "odd_min": 1.63,
+        "pinnacle_odd": 1.59,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv74zzu6yvaz",
+        "enviadaEm": "2026-10-13T20:32:03.630Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34269,5 +34316,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T20:30:47.184Z"
+  "updatedAt": "2026-10-13T20:32:04.292Z"
 }
