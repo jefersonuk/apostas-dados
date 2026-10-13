@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 558.2,
+      "value": 614,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T23:45:44.258Z"
+      "updatedAt": "2026-10-13T23:54:39.617Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 69,
+      "value": 59,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T23:45:44.258Z"
+      "updatedAt": "2026-10-13T23:54:39.617Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34537,6 +34537,61 @@
         "inboxId": "anmv7bx0c9r9f7",
         "enviadaEm": "2026-10-13T23:45:41.625Z"
       }
+    },
+    {
+      "id": "mv7c8jgg2z4tx",
+      "kind": "valor",
+      "event": "Nashville SC x Sporting Kansas City — Handicap asiático: Sporting Kansas City +2",
+      "houseA": "Sportmarket",
+      "oddA": 1.94,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.56,
+      "prob": 0.64,
+      "winner": null,
+      "date": "2026-10-14T21:30",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 52.45199999999999,
+      "lucroRed": -55.8,
+      "lucro": 52.45199999999999,
+      "roi": 94,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T23:54:39.617Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1490535,
+        "kickoff": "2026-10-15T00:30:00.000Z",
+        "home": "Nashville SC",
+        "away": "Sporting Kansas City",
+        "competition": "Major League Soccer",
+        "lineId": "ahA2",
+        "mercado": "Handicap asiático",
+        "linha": "Sporting Kansas City +2",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.721,
+        "p_blend": 0.64,
+        "p_pinnacle": 0.527,
+        "fair_odd": 1.56,
+        "odd_min": 1.64,
+        "pinnacle_odd": 1.83,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.64,
+        "ev_pinnacle": 0.17,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.31,
+        "p_model_cal": 0.72,
+        "status": "aposta",
+        "inboxId": "anmv7bxta1me19",
+        "enviadaEm": "2026-10-13T23:46:19.129Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34703,5 +34758,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T23:45:44.258Z"
+  "updatedAt": "2026-10-13T23:54:39.617Z"
 }
