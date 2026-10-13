@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 585.9,
+      "value": 418.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T17:53:31.993Z"
+      "updatedAt": "2026-10-13T19:02:42.484Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 50.44,
+      "value": 85.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T17:53:31.993Z"
+      "updatedAt": "2026-10-13T19:02:42.484Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33005,7 +33005,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.03,
       "prob": 0.49,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T14:00",
       "modelo": "analise",
       "total": 55.8,
@@ -33014,9 +33014,10 @@
       "lucro": 80.91000000000001,
       "roi": 145.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T11:59:35.053Z",
+      "updatedAt": "2026-10-13T19:02:40.786Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1612258,
@@ -33045,7 +33046,14 @@
         "p_model_cal": 0.48,
         "status": "aposta",
         "inboxId": "anmv6moxhcsfzf",
-        "enviadaEm": "2026-10-13T11:59:34.272Z"
+        "enviadaEm": "2026-10-13T11:59:34.272Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Petrojet 2–2 Wadi Degla · saldo de gols do Petrojet: 0 (linha -0.5)",
+          "at": "2026-10-13T19:02:40.785Z"
+        },
+        "clv": -0.14542598461374467,
+        "closingFair": 2.8669254574662384
       }
     },
     {
@@ -33060,7 +33068,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.6,
       "prob": 0.625,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T14:00",
       "modelo": "analise",
       "total": 55.8,
@@ -33069,9 +33077,10 @@
       "lucro": 47.988,
       "roi": 86.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T12:03:38.606Z",
+      "updatedAt": "2026-10-13T19:02:41.768Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1497716,
@@ -33093,7 +33102,14 @@
         "fragile": true,
         "inboxId": "anmv6mteevfkxm",
         "enviadaEm": "2026-10-13T12:03:02.839Z",
-        "editadaEm": "2026-10-13T12:03:38.606Z"
+        "editadaEm": "2026-10-13T12:03:38.606Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "IFK Norrkoping 4–0 GIF Sundsvall · saldo de gols do IFK Norrkoping: 4 (linha 2)",
+          "at": "2026-10-13T19:02:41.768Z"
+        },
+        "clv": -0.028714707810628792,
+        "closingFair": 1.91498833036726
       }
     },
     {
@@ -33877,7 +33893,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.6,
       "prob": 0.624,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T14:00",
       "modelo": "analise",
       "total": 55.8,
@@ -33886,9 +33902,10 @@
       "lucro": 38.501999999999995,
       "roi": 69,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T15:20:08.010Z",
+      "updatedAt": "2026-10-13T19:02:42.484Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1584024,
@@ -33909,7 +33926,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv6tuueyesgr",
-        "enviadaEm": "2026-10-13T15:20:07.546Z"
+        "enviadaEm": "2026-10-13T15:20:07.546Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Hansa Rostock 0–2 SV Meppen · saldo de gols do Hansa Rostock: -2 (linha 1.5)",
+          "at": "2026-10-13T19:02:42.484Z"
+        },
+        "clv": -0.09180449209198105,
+        "closingFair": 1.8608328110902321
       }
     },
     {
@@ -34133,5 +34157,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T17:53:31.993Z"
+  "updatedAt": "2026-10-13T19:02:42.484Z"
 }
