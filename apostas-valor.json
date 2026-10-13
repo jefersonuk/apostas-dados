@@ -4683,7 +4683,7 @@
       "name": "Sportmarket",
       "value": 95.44,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T20:27:28.594Z"
+      "updatedAt": "2026-10-13T20:27:52.993Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34004,7 +34004,7 @@
     {
       "id": "mv74t1l4204v8",
       "kind": "valor",
-      "event": "Venezuela W x Colombia W — 1x2: Colombia vence",
+      "event": "Venezuela W x Colombia W — 1X2: Colombia vence",
       "houseA": "Sportmarket",
       "oddA": 2.2,
       "stakeA": 55.8,
@@ -34024,7 +34024,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-13T20:27:28.594Z",
+      "updatedAt": "2026-10-13T20:27:52.993Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1640027,
@@ -34033,7 +34033,7 @@
         "away": "Colombia W",
         "competition": "Friendlies Women",
         "lineId": null,
-        "mercado": "1x2",
+        "mercado": "1X2",
         "linha": "Colombia vence",
         "tier": "sólida",
         "p_model": 0.74,
@@ -34046,7 +34046,7 @@
         "fragile": true,
         "inboxId": "anmv74t1403obl",
         "enviadaEm": "2026-10-13T20:26:38.688Z",
-        "editadaEm": "2026-10-13T20:27:28.594Z"
+        "editadaEm": "2026-10-13T20:27:52.993Z"
       }
     }
   ],
@@ -34214,5 +34214,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T20:27:28.594Z"
+  "updatedAt": "2026-10-13T20:27:52.993Z"
 }
