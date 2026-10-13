@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 502.2,
+      "value": 514.48,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T13:00:36.719Z"
+      "updatedAt": "2026-10-13T13:05:27.274Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 42.9,
+      "value": 40.7,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T13:00:36.719Z"
+      "updatedAt": "2026-10-13T13:05:27.274Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33340,6 +33340,53 @@
         "inboxId": "anmv6ova1wx287",
         "enviadaEm": "2026-10-13T13:00:29.732Z"
       }
+    },
+    {
+      "id": "mv6p1nmyonk7u",
+      "kind": "valor",
+      "event": "Công An Nhân Dân x Kashima — 1X2: Kashima vence",
+      "houseA": "Sportmarket",
+      "oddA": 10,
+      "stakeA": 12.28,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.57,
+      "prob": 0.638,
+      "winner": null,
+      "date": "2026-10-13T09:15",
+      "modelo": "analise",
+      "total": 12.28,
+      "lucroA": 110.52,
+      "lucroRed": -12.28,
+      "lucro": 110.52,
+      "roi": 900,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T13:05:27.274Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1629938,
+        "kickoff": "2026-10-13T12:15:00.000Z",
+        "home": "Công An Nhân Dân",
+        "away": "Kashima",
+        "competition": "AFC Champions League Elite",
+        "lineId": "2",
+        "mercado": "1X2",
+        "linha": "Kashima vence",
+        "tier": "especulativa",
+        "p_model": 0.184,
+        "p_blend": 0.638,
+        "p_pinnacle": 0.688,
+        "fair_odd": 1.57,
+        "odd_min": 1.65,
+        "pinnacle_odd": 1.42,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv6p1n8ivs9p",
+        "enviadaEm": "2026-10-13T13:05:26.754Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33506,5 +33553,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T13:00:36.719Z"
+  "updatedAt": "2026-10-13T13:05:27.274Z"
 }
