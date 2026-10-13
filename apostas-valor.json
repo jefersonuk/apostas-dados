@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 641.7,
+      "value": 585.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T17:48:18.366Z"
+      "updatedAt": "2026-10-13T17:53:31.993Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 34.64,
+      "value": 50.44,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T17:48:17.343Z"
+      "updatedAt": "2026-10-13T17:53:31.993Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33822,7 +33822,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.62,
       "prob": 0.618,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T13:00",
       "modelo": "analise",
       "total": 55.8,
@@ -33831,9 +33831,10 @@
       "lucro": 32.364000000000004,
       "roi": 58.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T15:18:10.525Z",
+      "updatedAt": "2026-10-13T17:53:31.993Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1571799,
@@ -33854,7 +33855,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv6tsbqymvbz",
-        "enviadaEm": "2026-10-13T15:18:10.042Z"
+        "enviadaEm": "2026-10-13T15:18:10.042Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Diosgyori VTK 1–1 Szentlőrinc SE · saldo de gols do Diosgyori VTK: 0 (linha 1.5)",
+          "at": "2026-10-13T17:53:31.992Z"
+        },
+        "clv": -0.051408921469137336,
+        "closingFair": 1.66562814658455
       }
     },
     {
@@ -34125,5 +34133,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T17:48:18.366Z"
+  "updatedAt": "2026-10-13T17:53:31.993Z"
 }
