@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 418.7,
+      "value": 362.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T20:37:08.887Z"
+      "updatedAt": "2026-10-13T20:40:14.976Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 65.44,
+      "value": 96.03,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T20:36:43.256Z"
+      "updatedAt": "2026-10-13T20:40:14.976Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33188,7 +33188,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.22,
       "prob": 0.45,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T15:45",
       "modelo": "analise",
       "total": 55.8,
@@ -33197,9 +33197,10 @@
       "lucro": 115.50599999999999,
       "roi": 206.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T12:07:17.640Z",
+      "updatedAt": "2026-10-13T20:40:14.976Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1563195,
@@ -33229,7 +33230,14 @@
         "status": "aposta",
         "inboxId": "anmv6myljwiz9c",
         "enviadaEm": "2026-10-13T12:07:05.372Z",
-        "editadaEm": "2026-10-13T12:07:17.640Z"
+        "editadaEm": "2026-10-13T12:07:17.640Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Millwall 0–1 Swansea · saldo de gols do Millwall: -1 (linha -0.5)",
+          "at": "2026-10-13T20:40:14.976Z"
+        },
+        "clv": -0.08013287858406759,
+        "closingFair": 3.3374385588153346
       }
     },
     {
@@ -34373,5 +34381,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T20:37:08.887Z"
+  "updatedAt": "2026-10-13T20:40:14.976Z"
 }
