@@ -4683,7 +4683,7 @@
       "name": "Sportmarket",
       "value": 108,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T00:18:45.256Z"
+      "updatedAt": "2026-10-13T00:19:04.001Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32799,7 +32799,7 @@
     {
       "id": "mv5xno93n0v8d",
       "kind": "valor",
-      "event": "Kyoto Sanga x Ratchaburi — Total de escanteios: Mais de 8,5",
+      "event": "Kyoto Sanga x Ratchaburi — Total de escanteios: Mais de 9",
       "houseA": "Sportmarket",
       "oddA": 1.5,
       "stakeA": 55.6,
@@ -32819,7 +32819,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-13T00:18:45.256Z",
+      "updatedAt": "2026-10-13T00:19:04.001Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1629934,
@@ -32827,9 +32827,9 @@
         "home": "Kyoto Sanga",
         "away": "Ratchaburi",
         "competition": "AFC Champions League Elite",
-        "lineId": "cornersO8.5",
+        "lineId": "cornersO9",
         "mercado": "Total de escanteios",
-        "linha": "Mais de 8,5",
+        "linha": "Mais de 9",
         "tier": "sólida",
         "p_model": 0.774,
         "p_blend": 0.687,
@@ -32840,7 +32840,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv5xnnwazbxd",
-        "enviadaEm": "2026-10-13T00:18:44.794Z"
+        "enviadaEm": "2026-10-13T00:18:44.794Z",
+        "editadaEm": "2026-10-13T00:19:04.001Z"
       }
     }
   ],
@@ -33008,5 +33009,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T00:18:45.256Z"
+  "updatedAt": "2026-10-13T00:19:04.002Z"
 }
