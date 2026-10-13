@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 306.9,
+      "value": 362.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T20:20:08.255Z"
+      "updatedAt": "2026-10-13T20:26:39.304Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 105.44,
+      "value": 95.44,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T20:20:08.254Z"
+      "updatedAt": "2026-10-13T20:26:39.304Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34000,6 +34000,53 @@
         "clv": 0.18421902851648997,
         "closingFair": 1.7310986824524361
       }
+    },
+    {
+      "id": "mv74t1l4204v8",
+      "kind": "valor",
+      "event": "Venezuela W x Colombia W — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.2,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.46,
+      "prob": 0.687,
+      "winner": null,
+      "date": "2026-10-13T18:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 66.96000000000001,
+      "lucroRed": -55.8,
+      "lucro": 66.96000000000001,
+      "roi": 120.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T20:26:39.304Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640027,
+        "kickoff": "2026-10-13T21:00:00.000Z",
+        "home": "Venezuela W",
+        "away": "Colombia W",
+        "competition": "Friendlies Women",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.74,
+        "p_blend": 0.687,
+        "p_pinnacle": 0.681,
+        "fair_odd": 1.46,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.4,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv74t1403obl",
+        "enviadaEm": "2026-10-13T20:26:38.688Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34166,5 +34213,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T20:20:08.255Z"
+  "updatedAt": "2026-10-13T20:26:39.304Z"
 }
