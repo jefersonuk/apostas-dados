@@ -4683,7 +4683,7 @@
       "name": "Sportmarket",
       "value": 82.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:06:08.268Z"
+      "updatedAt": "2026-10-13T12:06:17.891Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33075,7 +33075,7 @@
     {
       "id": "mv6mxdhnyr4ql",
       "kind": "valor",
-      "event": "Orlando Pirates x TS Galaxy — Handicap asiático: TS Galaxy +1,5",
+      "event": "Orlando Pirates x TS Galaxy — Handicap asiático: TS Galaxy +2",
       "houseA": "Sportmarket",
       "oddA": 1.7,
       "stakeA": 55.8,
@@ -33095,7 +33095,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-13T12:06:08.268Z",
+      "updatedAt": "2026-10-13T12:06:17.891Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1600360,
@@ -33103,9 +33103,9 @@
         "home": "Orlando Pirates",
         "away": "TS Galaxy",
         "competition": "Premier Soccer League",
-        "lineId": "ahA1.5",
+        "lineId": "ahA2",
         "mercado": "Handicap asiático",
-        "linha": "TS Galaxy +1,5",
+        "linha": "TS Galaxy +2",
         "tier": "contra a Pinnacle",
         "p_model": 0.574,
         "p_blend": 0.52,
@@ -33124,7 +33124,8 @@
         "p_model_cal": 0.57,
         "status": "aposta",
         "inboxId": "anmv6mxcvkl3wz",
-        "enviadaEm": "2026-10-13T12:06:07.472Z"
+        "enviadaEm": "2026-10-13T12:06:07.472Z",
+        "editadaEm": "2026-10-13T12:06:17.891Z"
       }
     }
   ],
@@ -33292,5 +33293,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:06:08.268Z"
+  "updatedAt": "2026-10-13T12:06:17.891Z"
 }
