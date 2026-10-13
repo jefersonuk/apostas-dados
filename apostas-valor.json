@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 223.4,
+      "value": 279.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T22:58:47.344Z"
+      "updatedAt": "2026-10-13T23:40:45.868Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 129,
+      "value": 119,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T21:05:04.143Z"
+      "updatedAt": "2026-10-13T23:40:45.868Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34239,6 +34239,53 @@
         "inboxId": "anmv755z7oim3f",
         "enviadaEm": "2026-10-13T20:36:42.756Z"
       }
+    },
+    {
+      "id": "mv7bqo4sblhfy",
+      "kind": "valor",
+      "event": "Ümraniyespor x Boluspor — Handicap asiático: Boluspor +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.62,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 0.624,
+      "winner": null,
+      "date": "2026-10-14T11:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 34.596000000000004,
+      "lucroRed": -55.8,
+      "lucro": 34.596000000000004,
+      "roi": 62.000000000000014,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T23:40:45.868Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1585788,
+        "kickoff": "2026-10-14T14:00:00.000Z",
+        "home": "Ümraniyespor",
+        "away": "Boluspor",
+        "competition": "1. Lig",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Boluspor +1,5",
+        "tier": "sólida",
+        "p_model": 0.803,
+        "p_blend": 0.624,
+        "p_pinnacle": 0.6,
+        "fair_odd": 1.6,
+        "odd_min": 1.63,
+        "pinnacle_odd": 1.61,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv7bqo4lhaq5",
+        "enviadaEm": "2026-10-13T23:40:45.861Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34405,5 +34452,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T23:12:01.615Z"
+  "updatedAt": "2026-10-13T23:40:45.868Z"
 }
