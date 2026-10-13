@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 362.7,
+      "value": 418.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T20:26:39.304Z"
+      "updatedAt": "2026-10-13T20:30:47.184Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 95.44,
+      "value": 85.44,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T20:28:06.741Z"
+      "updatedAt": "2026-10-13T20:30:47.183Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34048,6 +34048,61 @@
         "enviadaEm": "2026-10-13T20:26:38.688Z",
         "editadaEm": "2026-10-13T20:28:06.741Z"
       }
+    },
+    {
+      "id": "mv74ycunkbryi",
+      "kind": "valor",
+      "event": "Tapatío x Tepatitlán — Handicap asiático: Tepatitlán +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.72,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.48,
+      "prob": 0.68,
+      "winner": null,
+      "date": "2026-10-13T20:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 40.175999999999995,
+      "lucroRed": -55.8,
+      "lucro": 40.175999999999995,
+      "roi": 72,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T20:30:47.183Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1581430,
+        "kickoff": "2026-10-13T23:00:00.000Z",
+        "home": "Tapatío",
+        "away": "Tepatitlán",
+        "competition": "Liga de Expansión MX",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Tepatitlán +1,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.667,
+        "p_blend": 0.68,
+        "p_pinnacle": 0.56,
+        "fair_odd": 1.48,
+        "odd_min": 1.55,
+        "pinnacle_odd": 1.72,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.68,
+        "ev_pinnacle": 0.16,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.64,
+        "p_model_cal": 0.67,
+        "status": "aposta",
+        "inboxId": "anmv74ycdop87u",
+        "enviadaEm": "2026-10-13T20:30:46.572Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34214,5 +34269,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T20:28:06.741Z"
+  "updatedAt": "2026-10-13T20:30:47.184Z"
 }
