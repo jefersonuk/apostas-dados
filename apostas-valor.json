@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 558,
+      "value": 613.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T14:09:16.684Z"
+      "updatedAt": "2026-10-13T14:35:19.186Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 34.9,
+      "value": 24.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T14:09:16.683Z"
+      "updatedAt": "2026-10-13T14:35:19.185Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33507,6 +33507,61 @@
         "inboxId": "anmv6qtz9he6yn",
         "enviadaEm": "2026-10-13T13:55:28.325Z"
       }
+    },
+    {
+      "id": "mv6s982910ats",
+      "kind": "valor",
+      "event": "Laagri x Nõmme United — 1X2: Laagri vence",
+      "houseA": "Sportmarket",
+      "oddA": 1.97,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.64,
+      "prob": 0.61,
+      "winner": null,
+      "date": "2026-10-13T12:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 54.126,
+      "lucroRed": -55.8,
+      "lucro": 54.126,
+      "roi": 97,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T14:35:19.185Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1513644,
+        "kickoff": "2026-10-13T15:00:00.000Z",
+        "home": "Laagri",
+        "away": "Nõmme United",
+        "competition": "Meistriliiga",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Laagri vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.593,
+        "p_blend": 0.61,
+        "p_pinnacle": 0.492,
+        "fair_odd": 1.64,
+        "odd_min": 1.72,
+        "pinnacle_odd": 1.93,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.61,
+        "ev_pinnacle": 0.18,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.83,
+        "p_model_cal": 0.59,
+        "status": "aposta",
+        "inboxId": "anmv6s97o8hg2k",
+        "enviadaEm": "2026-10-13T14:35:18.680Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33673,5 +33728,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T14:09:16.684Z"
+  "updatedAt": "2026-10-13T14:35:19.186Z"
 }
