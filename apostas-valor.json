@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 747.3,
+      "value": 691.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T16:07:17.276Z"
+      "updatedAt": "2026-10-13T16:50:57.018Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 14.94,
+      "value": 34.64,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T16:07:16.637Z"
+      "updatedAt": "2026-10-13T16:50:57.017Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33558,7 +33558,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.64,
       "prob": 0.61,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T12:00",
       "modelo": "analise",
       "total": 55.8,
@@ -33567,9 +33567,10 @@
       "lucro": 54.126,
       "roi": 97,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T14:35:19.185Z",
+      "updatedAt": "2026-10-13T16:50:57.017Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1513644,
@@ -33598,7 +33599,14 @@
         "p_model_cal": 0.59,
         "status": "aposta",
         "inboxId": "anmv6s97o8hg2k",
-        "enviadaEm": "2026-10-13T14:35:18.680Z"
+        "enviadaEm": "2026-10-13T14:35:18.680Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Laagri 2–0 Nõmme United · saldo de gols do Laagri: 2 (linha 0.5)",
+          "at": "2026-10-13T16:50:57.017Z"
+        },
+        "clv": -0.0299426701636748,
+        "closingFair": 2.030807808371895
       }
     },
     {
@@ -34109,5 +34117,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T16:07:17.276Z"
+  "updatedAt": "2026-10-13T16:50:57.018Z"
 }
