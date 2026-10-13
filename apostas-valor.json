@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.4,
+      "value": 167.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T11:50:20.343Z"
+      "updatedAt": "2026-10-13T11:57:10.675Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 107.95,
+      "value": 97.95,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T11:50:17.617Z"
+      "updatedAt": "2026-10-13T11:57:10.674Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32905,6 +32905,61 @@
         "inboxId": "anmv6mczgygbuv",
         "enviadaEm": "2026-10-13T11:50:16.978Z"
       }
+    },
+    {
+      "id": "mv6mluois66wt",
+      "kind": "valor",
+      "event": "CA Batna x Khroub — Handicap asiático: Khroub +1",
+      "houseA": "Sportmarket",
+      "oddA": 1.99,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.68,
+      "prob": 0.6,
+      "winner": null,
+      "date": "2026-10-13T11:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 55.242,
+      "lucroRed": -55.8,
+      "lucro": 55.242,
+      "roi": 99,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T11:57:10.674Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1643953,
+        "kickoff": "2026-10-13T14:00:00.000Z",
+        "home": "CA Batna",
+        "away": "Khroub",
+        "competition": "Ligue 2",
+        "lineId": "ahA1",
+        "mercado": "Handicap asiático",
+        "linha": "Khroub +1",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.611,
+        "p_blend": 0.6,
+        "p_pinnacle": 0.489,
+        "fair_odd": 1.68,
+        "odd_min": 1.76,
+        "pinnacle_odd": 1.89,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.6,
+        "ev_pinnacle": 0.13,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 10.69,
+        "p_model_cal": 0.61,
+        "status": "aposta",
+        "inboxId": "anmv6mlu1e88zh",
+        "enviadaEm": "2026-10-13T11:57:09.842Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33071,5 +33126,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T11:50:20.343Z"
+  "updatedAt": "2026-10-13T11:57:10.675Z"
 }
