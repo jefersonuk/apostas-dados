@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.2,
+      "value": 166.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-12T23:58:38.615Z"
+      "updatedAt": "2026-10-13T00:18:04.458Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 128,
+      "value": 118,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T00:03:08.169Z"
+      "updatedAt": "2026-10-13T00:18:04.458Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32748,6 +32748,53 @@
         "inboxId": "anmv5v9pllwzea",
         "enviadaEm": "2026-10-12T23:11:54.585Z"
       }
+    },
+    {
+      "id": "mv5xmsrubxh3i",
+      "kind": "valor",
+      "event": "SHANGHAI SIPG x Daejeon Citizen — Total de escanteios: Mais de 8",
+      "houseA": "Sportmarket",
+      "oddA": 1.44,
+      "stakeA": 55.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.48,
+      "prob": 0.678,
+      "winner": null,
+      "date": "2026-10-13T07:00",
+      "modelo": "analise",
+      "total": 55.6,
+      "lucroA": 24.464,
+      "lucroRed": -55.6,
+      "lucro": 24.464,
+      "roi": 43.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T00:18:04.458Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1629936,
+        "kickoff": "2026-10-13T10:00:00.000Z",
+        "home": "SHANGHAI SIPG",
+        "away": "Daejeon Citizen",
+        "competition": "AFC Champions League Elite",
+        "lineId": "cornersO8",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 8",
+        "tier": "especulativa",
+        "p_model": 0.678,
+        "p_blend": 0.678,
+        "p_pinnacle": null,
+        "fair_odd": 1.48,
+        "odd_min": 1.59,
+        "pinnacle_odd": null,
+        "priced_by": "só o modelo (sem odd da Pinnacle nesta linha)",
+        "fragile": true,
+        "inboxId": "anmv5xmsgbnwla",
+        "enviadaEm": "2026-10-13T00:18:04.043Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32914,5 +32961,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T00:03:08.169Z"
+  "updatedAt": "2026-10-13T00:18:04.458Z"
 }
