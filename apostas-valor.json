@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 418.5,
+      "value": 362.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T19:02:42.484Z"
+      "updatedAt": "2026-10-13T19:30:56.395Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -33124,7 +33124,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.93,
       "prob": 0.52,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T14:30",
       "modelo": "analise",
       "total": 55.8,
@@ -33133,9 +33133,10 @@
       "lucro": 39.059999999999995,
       "roi": 70,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T12:06:17.891Z",
+      "updatedAt": "2026-10-13T19:30:56.394Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1600360,
@@ -33165,7 +33166,14 @@
         "status": "aposta",
         "inboxId": "anmv6mxcvkl3wz",
         "enviadaEm": "2026-10-13T12:06:07.472Z",
-        "editadaEm": "2026-10-13T12:06:17.891Z"
+        "editadaEm": "2026-10-13T12:06:17.891Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Orlando Pirates 3–0 TS Galaxy · saldo de gols do Orlando Pirates: 3 (linha 2)",
+          "at": "2026-10-13T19:30:56.394Z"
+        },
+        "clv": -0.12173276078308282,
+        "closingFair": 1.9356295260606078
       }
     },
     {
@@ -34157,5 +34165,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T19:02:42.484Z"
+  "updatedAt": "2026-10-13T19:30:56.395Z"
 }
