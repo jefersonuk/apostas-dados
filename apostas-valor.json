@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 175,
+      "value": 165,
       "currency": "USD",
-      "updatedAt": "2026-10-13T00:02:58.822Z"
+      "updatedAt": "2026-10-13T15:31:15.011Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 809.1,
+      "value": 858.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T15:20:08.010Z"
+      "updatedAt": "2026-10-13T15:31:15.011Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -33879,6 +33879,54 @@
         "inboxId": "anmv6tuueyesgr",
         "enviadaEm": "2026-10-13T15:20:07.546Z"
       }
+    },
+    {
+      "id": "mv6u95fnl8s1p",
+      "kind": "valor",
+      "event": "Vaprus x Kalju Nomme — 1X2: Kalju Nomme vence",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.05,
+      "stakeA": 49.8,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.74,
+      "prob": 0.573,
+      "winner": null,
+      "date": "2026-10-13T12:00",
+      "modelo": "analise",
+      "total": 49.8,
+      "lucroA": 52.289999999999985,
+      "lucroRed": -49.8,
+      "lucro": 52.289999999999985,
+      "roi": 104.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T15:31:15.011Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1513645,
+        "kickoff": "2026-10-13T15:00:00.000Z",
+        "home": "Vaprus",
+        "away": "Kalju Nomme",
+        "competition": "Meistriliiga",
+        "lineId": "2",
+        "mercado": "1X2",
+        "linha": "Kalju Nomme vence",
+        "tier": "especulativa",
+        "p_model": 0.531,
+        "p_blend": 0.573,
+        "p_pinnacle": 0.578,
+        "fair_odd": 1.74,
+        "odd_min": 1.83,
+        "pinnacle_odd": 1.66,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmv6u951n530u",
+        "enviadaEm": "2026-10-13T15:31:14.507Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34045,5 +34093,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T15:21:01.372Z"
+  "updatedAt": "2026-10-13T15:31:15.011Z"
 }
