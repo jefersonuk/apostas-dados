@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 279.2,
+      "value": 390.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T23:40:45.868Z"
+      "updatedAt": "2026-10-13T23:42:24.354Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 119,
+      "value": 99,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T23:40:45.868Z"
+      "updatedAt": "2026-10-13T23:42:24.353Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34286,6 +34286,108 @@
         "inboxId": "anmv7bqo4lhaq5",
         "enviadaEm": "2026-10-13T23:40:45.861Z"
       }
+    },
+    {
+      "id": "mv7bss4hd3hf8",
+      "kind": "valor",
+      "event": "hodd x Ranheim — Handicap asiático: hodd 0",
+      "houseA": "Sportmarket",
+      "oddA": 2.54,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.96,
+      "prob": 0.51,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 85.932,
+      "lucroRed": -55.8,
+      "lucro": 85.932,
+      "roi": 154,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T23:42:24.353Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1495977,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "hodd",
+        "away": "Ranheim",
+        "competition": "1. Division",
+        "lineId": "ahH0",
+        "mercado": "Handicap asiático",
+        "linha": "hodd 0",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.523,
+        "p_blend": 0.51,
+        "p_pinnacle": 0.395,
+        "fair_odd": 1.96,
+        "odd_min": 2.06,
+        "pinnacle_odd": 2.39,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.51,
+        "ev_pinnacle": 0.22,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 11.5,
+        "p_model_cal": 0.52,
+        "status": "aposta",
+        "inboxId": "anmv7brrjjgdl3",
+        "enviadaEm": "2026-10-13T23:41:36.943Z"
+      }
+    },
+    {
+      "id": "mv7bss4h9mrwy",
+      "kind": "valor",
+      "event": "Haugesund x Lyn — Handicap asiático: Lyn +2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.64,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.59,
+      "prob": 0.63,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 35.711999999999996,
+      "lucroRed": -55.8,
+      "lucro": 35.711999999999996,
+      "roi": 63.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T23:42:24.354Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1495976,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Haugesund",
+        "away": "Lyn",
+        "competition": "1. Division",
+        "lineId": "ahA2.5",
+        "mercado": "Handicap asiático",
+        "linha": "Lyn +2,5",
+        "tier": "sólida",
+        "p_model": 0.792,
+        "p_blend": 0.63,
+        "p_pinnacle": 0.609,
+        "fair_odd": 1.59,
+        "odd_min": 1.62,
+        "pinnacle_odd": 1.58,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv7bsq8nnpbw",
+        "enviadaEm": "2026-10-13T23:42:21.911Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34452,5 +34554,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T23:40:45.868Z"
+  "updatedAt": "2026-10-13T23:42:24.354Z"
 }
