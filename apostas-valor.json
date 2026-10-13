@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 390.6,
+      "value": 446.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T12:08:36.947Z"
+      "updatedAt": "2026-10-13T12:39:18.758Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 62.9,
+      "value": 52.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:08:36.947Z"
+      "updatedAt": "2026-10-13T12:39:18.758Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5184,7 +5184,7 @@
   "usdRateAt": "2026-10-13T11:37:17.459Z",
   "eurRate": 5.58,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-13T11:37:17.705Z",
+  "eurRateAt": "2026-10-13T12:39:18.140Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -33238,6 +33238,61 @@
         "inboxId": "anmv6n0jt2u7fi",
         "enviadaEm": "2026-10-13T12:08:36.422Z"
       }
+    },
+    {
+      "id": "mv6o41d1oo65u",
+      "kind": "valor",
+      "event": "Leamington x Redditch United — 1X2: Leamington vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.2,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.93,
+      "prob": 0.52,
+      "winner": null,
+      "date": "2026-10-13T15:45",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 66.96000000000001,
+      "lucroRed": -55.8,
+      "lucro": 66.96000000000001,
+      "roi": 120.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T12:39:18.758Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1596930,
+        "kickoff": "2026-10-13T18:45:00.000Z",
+        "home": "Leamington",
+        "away": "Redditch United",
+        "competition": "Non League Premier - Southern Central",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Leamington vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.495,
+        "p_blend": 0.52,
+        "p_pinnacle": 0.419,
+        "fair_odd": 1.93,
+        "odd_min": 2.03,
+        "pinnacle_odd": 2.2,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.52,
+        "ev_pinnacle": 0.14,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 9.94,
+        "p_model_cal": 0.5,
+        "status": "aposta",
+        "inboxId": "anmv6n2fo232db",
+        "enviadaEm": "2026-10-13T12:10:04.370Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33404,5 +33459,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:08:36.947Z"
+  "updatedAt": "2026-10-13T12:39:18.758Z"
 }
