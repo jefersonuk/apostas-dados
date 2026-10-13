@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 570.28,
+      "value": 613.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T13:33:56.219Z"
+      "updatedAt": "2026-10-13T13:50:29.971Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 30.7,
+      "value": 22.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T13:33:56.219Z"
+      "updatedAt": "2026-10-13T13:50:29.970Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33346,8 +33346,8 @@
       "kind": "valor",
       "event": "Công An Nhân Dân x Kashima — 1X2: Kashima vence",
       "houseA": "Sportmarket",
-      "oddA": 10,
-      "stakeA": 12.28,
+      "oddA": 2.2,
+      "stakeA": 55.8,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "1X2 / Resultado",
@@ -33356,15 +33356,15 @@
       "winner": null,
       "date": "2026-10-13T09:15",
       "modelo": "analise",
-      "total": 12.28,
-      "lucroA": 110.52,
-      "lucroRed": -12.28,
-      "lucro": 110.52,
-      "roi": 900,
+      "total": 55.8,
+      "lucroA": 66.96000000000001,
+      "lucroRed": -55.8,
+      "lucro": 66.96000000000001,
+      "roi": 120.00000000000001,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-13T13:05:27.274Z",
+      "updatedAt": "2026-10-13T13:50:29.970Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1629938,
@@ -33385,7 +33385,8 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv6p1n8ivs9p",
-        "enviadaEm": "2026-10-13T13:05:26.754Z"
+        "enviadaEm": "2026-10-13T13:05:26.754Z",
+        "editadaEm": "2026-10-13T13:50:29.970Z"
       }
     },
     {
@@ -33608,5 +33609,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T13:33:56.219Z"
+  "updatedAt": "2026-10-13T13:50:29.971Z"
 }
