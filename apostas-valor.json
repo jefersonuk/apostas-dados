@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 691.5,
+      "value": 641.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T16:50:57.018Z"
+      "updatedAt": "2026-10-13T16:54:56.831Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -33916,7 +33916,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.74,
       "prob": 0.573,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T12:00",
       "modelo": "analise",
       "total": 49.8,
@@ -33925,9 +33925,10 @@
       "lucro": 52.289999999999985,
       "roi": 104.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T15:31:15.011Z",
+      "updatedAt": "2026-10-13T16:54:56.831Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1513645,
@@ -33949,7 +33950,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmv6u951n530u",
-        "enviadaEm": "2026-10-13T15:31:14.507Z"
+        "enviadaEm": "2026-10-13T15:31:14.507Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Vaprus 2–2 Kalju Nomme · saldo de gols do Vaprus: 0 (linha -0.5)",
+          "at": "2026-10-13T16:54:56.831Z"
+        },
+        "clv": 0.18421902851648997,
+        "closingFair": 1.7310986824524361
       }
     }
   ],
@@ -34117,5 +34125,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T16:50:57.018Z"
+  "updatedAt": "2026-10-13T16:54:56.831Z"
 }
