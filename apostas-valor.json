@@ -4683,7 +4683,7 @@
       "name": "Sportmarket",
       "value": 72.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:07:06.429Z"
+      "updatedAt": "2026-10-13T12:07:17.640Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33131,7 +33131,7 @@
     {
       "id": "mv6mymd9vbydv",
       "kind": "valor",
-      "event": "Millwall x Swansea — 1X2: Millwall vence",
+      "event": "Millwall x Swansea — 1X2: Swansea vence",
       "houseA": "Sportmarket",
       "oddA": 3.07,
       "stakeA": 55.8,
@@ -33151,7 +33151,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-13T12:07:06.429Z",
+      "updatedAt": "2026-10-13T12:07:17.640Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1563195,
@@ -33159,9 +33159,9 @@
         "home": "Millwall",
         "away": "Swansea",
         "competition": "Championship",
-        "lineId": "1",
+        "lineId": "2",
         "mercado": "1X2",
-        "linha": "Millwall vence",
+        "linha": "Swansea vence",
         "tier": "contra a Pinnacle",
         "p_model": 0.444,
         "p_blend": 0.45,
@@ -33180,7 +33180,8 @@
         "p_model_cal": 0.44,
         "status": "aposta",
         "inboxId": "anmv6myljwiz9c",
-        "enviadaEm": "2026-10-13T12:07:05.372Z"
+        "enviadaEm": "2026-10-13T12:07:05.372Z",
+        "editadaEm": "2026-10-13T12:07:17.640Z"
       }
     }
   ],
@@ -33348,5 +33349,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:07:06.429Z"
+  "updatedAt": "2026-10-13T12:07:17.640Z"
 }
