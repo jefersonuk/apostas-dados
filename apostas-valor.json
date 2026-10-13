@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 669.6,
+      "value": 558,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T13:55:29.846Z"
+      "updatedAt": "2026-10-13T14:09:16.684Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 12.9,
+      "value": 34.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T13:55:29.845Z"
+      "updatedAt": "2026-10-13T14:09:16.683Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33306,7 +33306,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.23,
       "prob": 0.812,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T09:15",
       "modelo": "analise",
       "total": 55.8,
@@ -33315,9 +33315,10 @@
       "lucro": 59.148,
       "roi": 106,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T13:00:36.719Z",
+      "updatedAt": "2026-10-13T14:09:15.680Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1629937,
@@ -33338,7 +33339,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv6ova1wx287",
-        "enviadaEm": "2026-10-13T13:00:29.732Z"
+        "enviadaEm": "2026-10-13T13:00:29.732Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Buriram United 0–1 Beijing Guoan · gols no jogo: 1 (linha 1.5)",
+          "at": "2026-10-13T14:09:15.678Z"
+        },
+        "clv": 0.707088965828512,
+        "closingFair": 1.206732654967521
       }
     },
     {
@@ -33353,7 +33361,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.57,
       "prob": 0.638,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T09:15",
       "modelo": "analise",
       "total": 55.8,
@@ -33362,9 +33370,10 @@
       "lucro": 66.96000000000001,
       "roi": 120.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T13:50:29.970Z",
+      "updatedAt": "2026-10-13T14:09:16.683Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1629938,
@@ -33386,7 +33395,14 @@
         "fragile": true,
         "inboxId": "anmv6p1n8ivs9p",
         "enviadaEm": "2026-10-13T13:05:26.754Z",
-        "editadaEm": "2026-10-13T13:50:29.970Z"
+        "editadaEm": "2026-10-13T13:50:29.970Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Công An Nhân Dân 0–1 Kashima · saldo de gols do Công An Nhân Dân: -1 (linha -0.5)",
+          "at": "2026-10-13T14:09:16.683Z"
+        },
+        "clv": 0.512862556630256,
+        "closingFair": 1.454196873574736
       }
     },
     {
@@ -33657,5 +33673,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T13:55:29.846Z"
+  "updatedAt": "2026-10-13T14:09:16.684Z"
 }
