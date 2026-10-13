@@ -30864,7 +30864,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-10T08:04:07.695Z",
+      "updatedAt": "2026-10-13T14:35:34.633Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30979,7 +30979,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Match Postponed",
-          "at": "2026-10-10T08:04:07.695Z"
+          "at": "2026-10-13T14:35:34.633Z"
         }
       }
     },
@@ -31278,7 +31278,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-10T18:45:45.429Z",
+      "updatedAt": "2026-10-13T14:35:35.108Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31300,7 +31300,12 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmv2b34dusrf2",
-        "enviadaEm": "2026-10-10T11:23:36.306Z"
+        "enviadaEm": "2026-10-10T11:23:36.306Z",
+        "check": {
+          "status": "cancelado",
+          "detail": "jogo não disputado",
+          "at": "2026-10-13T14:35:35.108Z"
+        }
       }
     },
     {
@@ -31327,7 +31332,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-10T16:55:10.544Z",
+      "updatedAt": "2026-10-13T14:35:36.089Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1556675,
@@ -31352,8 +31357,10 @@
         "check": {
           "status": "encerrado",
           "detail": "Rangers 3–1 Kilmarnock · saldo de gols do Rangers: 2 (linha 3)",
-          "at": "2026-10-10T16:55:10.543Z"
-        }
+          "at": "2026-10-13T14:35:36.089Z"
+        },
+        "clv": 0.21967398019203843,
+        "closingFair": 1.4922020388706168
       }
     },
     {
@@ -31380,7 +31387,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-11T14:57:24.505Z",
+      "updatedAt": "2026-10-13T14:35:37.088Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1584429,
@@ -31401,7 +31408,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv2b3zxgrf2u",
-        "enviadaEm": "2026-10-10T11:24:17.188Z"
+        "enviadaEm": "2026-10-10T11:24:17.188Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Samsunspor 0–3 Trabzonspor · saldo de gols do Samsunspor: -3 (linha -1)",
+          "at": "2026-10-13T14:35:37.088Z"
+        },
+        "clv": -0.02027158029191145,
+        "closingFair": 1.5310365299466633
       }
     },
     {
@@ -32084,7 +32098,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-12T18:55:49.259Z",
+      "updatedAt": "2026-10-13T14:35:40.482Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -32198,9 +32212,11 @@
         "enviadaEm": "2026-10-12T01:24:09.311Z",
         "check": {
           "status": "encerrado",
-          "detail": "múltipla 2/6: Valladolid 5–0 Albacete ✅ · Aarhus 3–0 Sonderjyske ✅ · Malmo FF 1–0 Kalmar FF ❌ · Torino x Udinese: First Half · Coritiba x Botafogo: Not Started · Levante x Sevilla: Not Started",
-          "at": "2026-10-12T18:55:49.259Z"
-        }
+          "detail": "múltipla 5/6: Valladolid 5–0 Albacete ✅ · Aarhus 3–0 Sonderjyske ✅ · Malmo FF 1–0 Kalmar FF ❌ · Torino 2–1 Udinese ✅ · Coritiba 1–1 Botafogo ✅ · Levante 3–3 Sevilla ✅",
+          "at": "2026-10-13T14:35:40.482Z"
+        },
+        "clv": -0.12320417908696135,
+        "closingFair": 6.38689175567525
       }
     },
     {
@@ -33728,5 +33744,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T14:35:19.186Z"
+  "updatedAt": "2026-10-13T14:35:40.483Z"
 }
