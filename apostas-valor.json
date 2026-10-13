@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 166.8,
+      "value": 222.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T00:18:04.458Z"
+      "updatedAt": "2026-10-13T00:18:45.256Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 118,
+      "value": 108,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T00:18:04.458Z"
+      "updatedAt": "2026-10-13T00:18:45.256Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32795,6 +32795,53 @@
         "inboxId": "anmv5xmsgbnwla",
         "enviadaEm": "2026-10-13T00:18:04.043Z"
       }
+    },
+    {
+      "id": "mv5xno93n0v8d",
+      "kind": "valor",
+      "event": "Kyoto Sanga x Ratchaburi — Total de escanteios: Mais de 8,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 55.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.46,
+      "prob": 0.687,
+      "winner": null,
+      "date": "2026-10-13T07:00",
+      "modelo": "analise",
+      "total": 55.6,
+      "lucroA": 27.8,
+      "lucroRed": -55.6,
+      "lucro": 27.8,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T00:18:45.256Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1629934,
+        "kickoff": "2026-10-13T10:00:00.000Z",
+        "home": "Kyoto Sanga",
+        "away": "Ratchaburi",
+        "competition": "AFC Champions League Elite",
+        "lineId": "cornersO8.5",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 8,5",
+        "tier": "sólida",
+        "p_model": 0.774,
+        "p_blend": 0.687,
+        "p_pinnacle": 0.663,
+        "fair_odd": 1.46,
+        "odd_min": 1.53,
+        "pinnacle_odd": 1.44,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv5xnnwazbxd",
+        "enviadaEm": "2026-10-13T00:18:44.794Z"
+      }
     }
   ],
   "invertidos": [],
@@ -32961,5 +33008,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T00:18:04.458Z"
+  "updatedAt": "2026-10-13T00:18:45.256Z"
 }
