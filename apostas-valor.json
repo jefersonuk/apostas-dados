@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 613.8,
+      "value": 669.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T14:35:19.186Z"
+      "updatedAt": "2026-10-13T14:38:57.077Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 24.9,
+      "value": 14.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T14:35:19.185Z"
+      "updatedAt": "2026-10-13T14:38:57.076Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33578,6 +33578,53 @@
         "inboxId": "anmv6s97o8hg2k",
         "enviadaEm": "2026-10-13T14:35:18.680Z"
       }
+    },
+    {
+      "id": "mv6sdw6s0pj4v",
+      "kind": "valor",
+      "event": "Cardiff x Watford — Handicap asiático: Watford +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.54,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.51,
+      "prob": 0.661,
+      "winner": null,
+      "date": "2026-10-13T15:45",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 30.132,
+      "lucroRed": -55.8,
+      "lucro": 30.132,
+      "roi": 54,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T14:38:57.076Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1563194,
+        "kickoff": "2026-10-13T18:45:00.000Z",
+        "home": "Cardiff",
+        "away": "Watford",
+        "competition": "Championship",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Watford +1,5",
+        "tier": "sólida",
+        "p_model": 0.752,
+        "p_blend": 0.661,
+        "p_pinnacle": 0.649,
+        "fair_odd": 1.51,
+        "odd_min": 1.54,
+        "pinnacle_odd": 1.51,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv6sdvr34z2d",
+        "enviadaEm": "2026-10-13T14:38:56.511Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33744,5 +33791,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T14:35:40.483Z"
+  "updatedAt": "2026-10-13T14:38:57.077Z"
 }
