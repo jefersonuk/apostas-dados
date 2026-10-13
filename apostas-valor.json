@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 753.3,
+      "value": 809.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T15:18:10.525Z"
+      "updatedAt": "2026-10-13T15:20:08.010Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 14.94,
+      "value": 4.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T15:18:10.525Z"
+      "updatedAt": "2026-10-13T15:20:08.010Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33832,6 +33832,53 @@
         "inboxId": "anmv6tsbqymvbz",
         "enviadaEm": "2026-10-13T15:18:10.042Z"
       }
+    },
+    {
+      "id": "mv6tuuru84k94",
+      "kind": "valor",
+      "event": "Hansa Rostock x SV Meppen — Handicap asiático: SV Meppen +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.69,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.6,
+      "prob": 0.624,
+      "winner": null,
+      "date": "2026-10-13T14:00",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 38.501999999999995,
+      "lucroRed": -55.8,
+      "lucro": 38.501999999999995,
+      "roi": 69,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T15:20:08.010Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1584024,
+        "kickoff": "2026-10-13T17:00:00.000Z",
+        "home": "Hansa Rostock",
+        "away": "SV Meppen",
+        "competition": "3. Liga",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "SV Meppen +1,5",
+        "tier": "sólida",
+        "p_model": 0.82,
+        "p_blend": 0.624,
+        "p_pinnacle": 0.597,
+        "fair_odd": 1.6,
+        "odd_min": 1.63,
+        "pinnacle_odd": 1.62,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv6tuueyesgr",
+        "enviadaEm": "2026-10-13T15:20:07.546Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33998,5 +34045,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T15:18:10.525Z"
+  "updatedAt": "2026-10-13T15:20:08.010Z"
 }
