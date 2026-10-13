@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 858.9,
+      "value": 747.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T15:31:15.011Z"
+      "updatedAt": "2026-10-13T16:07:17.276Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 4.94,
+      "value": 14.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T15:20:08.010Z"
+      "updatedAt": "2026-10-13T16:07:16.637Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32942,7 +32942,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.68,
       "prob": 0.6,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-13T11:00",
       "modelo": "analise",
       "total": 55.8,
@@ -32951,9 +32951,10 @@
       "lucro": 55.242,
       "roi": 99,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-13T11:57:10.674Z",
+      "updatedAt": "2026-10-13T16:07:16.637Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1643953,
@@ -32982,7 +32983,14 @@
         "p_model_cal": 0.61,
         "status": "aposta",
         "inboxId": "anmv6mlu1e88zh",
-        "enviadaEm": "2026-10-13T11:57:09.842Z"
+        "enviadaEm": "2026-10-13T11:57:09.842Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "CA Batna 1–0 Khroub · saldo de gols do CA Batna: 1 (linha 1)",
+          "at": "2026-10-13T16:07:16.637Z"
+        },
+        "clv": -0.06927579636222869,
+        "closingFair": 2.1381199631663264
       }
     },
     {
@@ -33433,7 +33441,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.85,
       "prob": 0.54,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T11:00",
       "modelo": "analise",
       "total": 55.8,
@@ -33442,9 +33450,10 @@
       "lucro": 56.35799999999998,
       "roi": 100.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T13:33:56.219Z",
+      "updatedAt": "2026-10-13T16:07:17.275Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1612256,
@@ -33473,7 +33482,14 @@
         "p_model_cal": 0.57,
         "status": "aposta",
         "inboxId": "anmv6q2a1gejbw",
-        "enviadaEm": "2026-10-13T13:33:55.924Z"
+        "enviadaEm": "2026-10-13T13:33:55.924Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "National Bank of Egypt 3–0 El Geish · saldo de gols do National Bank of Egypt: 3 (linha 0.5)",
+          "at": "2026-10-13T16:07:17.275Z"
+        },
+        "clv": -0.1165906465175306,
+        "closingFair": 2.275275886627667
       }
     },
     {
@@ -34093,5 +34109,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T15:31:15.011Z"
+  "updatedAt": "2026-10-13T16:07:17.276Z"
 }
