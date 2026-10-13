@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 278.8,
+      "value": 223.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T12:03:03.508Z"
+      "updatedAt": "2026-10-13T12:03:06.383Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 77.95,
+      "value": 92.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:03:03.507Z"
+      "updatedAt": "2026-10-13T12:03:06.383Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32815,7 +32815,7 @@
       "market": "Escanteios",
       "oddMkt": 1.46,
       "prob": 0.687,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T07:00",
       "modelo": "analise",
       "total": 55.6,
@@ -32824,9 +32824,10 @@
       "lucro": 27.8,
       "roi": 50,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T00:19:04.001Z",
+      "updatedAt": "2026-10-13T12:03:06.383Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1629934,
@@ -32848,7 +32849,14 @@
         "fragile": true,
         "inboxId": "anmv5xnnwazbxd",
         "enviadaEm": "2026-10-13T00:18:44.794Z",
-        "editadaEm": "2026-10-13T00:19:04.001Z"
+        "editadaEm": "2026-10-13T00:19:04.001Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Kyoto Sanga 1–0 Ratchaburi · escanteios no jogo: 11 (linha 9)",
+          "at": "2026-10-13T12:03:06.382Z"
+        },
+        "clv": -0.05358079541655092,
+        "closingFair": 1.5849213464135066
       }
     },
     {
@@ -33228,5 +33236,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:03:03.508Z"
+  "updatedAt": "2026-10-13T12:03:06.383Z"
 }
