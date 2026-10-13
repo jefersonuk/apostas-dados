@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 334.8,
+      "value": 390.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T12:07:06.429Z"
+      "updatedAt": "2026-10-13T12:08:36.947Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 72.9,
+      "value": 62.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:07:17.640Z"
+      "updatedAt": "2026-10-13T12:08:36.947Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33183,6 +33183,61 @@
         "enviadaEm": "2026-10-13T12:07:05.372Z",
         "editadaEm": "2026-10-13T12:07:17.640Z"
       }
+    },
+    {
+      "id": "mv6n0k7ny7x9j",
+      "kind": "valor",
+      "event": "Hyde United x Quorn — Total de gols: Mais de 3",
+      "houseA": "Sportmarket",
+      "oddA": 1.95,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.75,
+      "prob": 0.57,
+      "winner": null,
+      "date": "2026-10-13T15:45",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 53.01,
+      "lucroRed": -55.8,
+      "lucro": 53.01,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T12:08:36.947Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1596491,
+        "kickoff": "2026-10-13T18:45:00.000Z",
+        "home": "Hyde United",
+        "away": "Quorn",
+        "competition": "Non League Premier - Northern",
+        "lineId": "gO3",
+        "mercado": "Total de gols",
+        "linha": "Mais de 3",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.583,
+        "p_blend": 0.57,
+        "p_pinnacle": 0.469,
+        "fair_odd": 1.75,
+        "odd_min": 1.83,
+        "pinnacle_odd": 1.99,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.57,
+        "ev_pinnacle": 0.14,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 10.4,
+        "p_model_cal": 0.58,
+        "status": "aposta",
+        "inboxId": "anmv6n0jt2u7fi",
+        "enviadaEm": "2026-10-13T12:08:36.422Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33349,5 +33404,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:07:17.640Z"
+  "updatedAt": "2026-10-13T12:08:36.947Z"
 }
