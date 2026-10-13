@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 446.4,
+      "value": 502.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T12:39:18.758Z"
+      "updatedAt": "2026-10-13T13:00:36.719Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 52.9,
+      "value": 42.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T12:39:18.758Z"
+      "updatedAt": "2026-10-13T13:00:36.719Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33293,6 +33293,53 @@
         "inboxId": "anmv6n2fo232db",
         "enviadaEm": "2026-10-13T12:10:04.370Z"
       }
+    },
+    {
+      "id": "mv6ovffz4kfm6",
+      "kind": "valor",
+      "event": "Buriram United x Beijing Guoan — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 2.06,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.23,
+      "prob": 0.812,
+      "winner": null,
+      "date": "2026-10-13T09:15",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 59.148,
+      "lucroRed": -55.8,
+      "lucro": 59.148,
+      "roi": 106,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T13:00:36.719Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1629937,
+        "kickoff": "2026-10-13T12:15:00.000Z",
+        "home": "Buriram United",
+        "away": "Beijing Guoan",
+        "competition": "AFC Champions League Elite",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "âncora",
+        "p_model": 0.844,
+        "p_blend": 0.812,
+        "p_pinnacle": 0.808,
+        "fair_odd": 1.23,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.21,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv6ova1wx287",
+        "enviadaEm": "2026-10-13T13:00:29.732Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33459,5 +33506,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T12:39:18.758Z"
+  "updatedAt": "2026-10-13T13:00:36.719Z"
 }
