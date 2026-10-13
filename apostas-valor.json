@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 669.6,
+      "value": 725.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T14:38:57.077Z"
+      "updatedAt": "2026-10-13T14:40:45.609Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 14.9,
+      "value": 4.9,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T14:38:57.076Z"
+      "updatedAt": "2026-10-13T14:40:45.609Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33625,6 +33625,53 @@
         "inboxId": "anmv6sdvr34z2d",
         "enviadaEm": "2026-10-13T14:38:56.511Z"
       }
+    },
+    {
+      "id": "mv6sg7xln6vc7",
+      "kind": "valor",
+      "event": "Burnley x Charlton — Handicap asiático: Charlton +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.49,
+      "stakeA": 55.8,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.49,
+      "prob": 0.671,
+      "winner": null,
+      "date": "2026-10-13T15:45",
+      "modelo": "analise",
+      "total": 55.8,
+      "lucroA": 27.342,
+      "lucroRed": -55.8,
+      "lucro": 27.342,
+      "roi": 49,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T14:40:45.609Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1563193,
+        "kickoff": "2026-10-13T18:45:00.000Z",
+        "home": "Burnley",
+        "away": "Charlton",
+        "competition": "Championship",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Charlton +1,5",
+        "tier": "sólida",
+        "p_model": 0.683,
+        "p_blend": 0.671,
+        "p_pinnacle": 0.669,
+        "fair_odd": 1.49,
+        "odd_min": 1.52,
+        "pinnacle_odd": 1.46,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv6sg5yaftg7",
+        "enviadaEm": "2026-10-13T14:40:43.042Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33791,5 +33838,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T14:38:57.077Z"
+  "updatedAt": "2026-10-13T14:40:45.609Z"
 }
