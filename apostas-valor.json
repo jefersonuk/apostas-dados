@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 362.9,
+      "value": 279.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T20:40:14.976Z"
+      "updatedAt": "2026-10-13T20:44:55.811Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 96.03,
+      "value": 129,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T20:40:14.976Z"
+      "updatedAt": "2026-10-13T21:05:04.143Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30864,7 +30864,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T14:35:34.633Z",
+      "updatedAt": "2026-10-13T20:44:55.698Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30979,7 +30979,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Match Postponed",
-          "at": "2026-10-13T14:35:34.633Z"
+          "at": "2026-10-13T20:44:55.698Z"
         }
       }
     },
@@ -31278,7 +31278,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-13T14:35:35.108Z",
+      "updatedAt": "2026-10-13T20:44:56.110Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31304,7 +31304,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-13T14:35:35.108Z"
+          "at": "2026-10-13T20:44:56.110Z"
         }
       }
     },
@@ -33667,7 +33667,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T20:37:08.048Z",
+      "updatedAt": "2026-10-13T20:44:56.550Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1563194,
@@ -33688,7 +33688,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv6sdvr34z2d",
-        "enviadaEm": "2026-10-13T14:38:56.511Z"
+        "enviadaEm": "2026-10-13T14:38:56.511Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Cardiff 5–1 Watford · saldo de gols do Cardiff: 4 (linha 1.5)",
+          "at": "2026-10-13T20:44:56.550Z"
+        },
+        "clv": 0.004074951460310894,
+        "closingFair": 1.5337500430224338
       }
     },
     {
@@ -33703,7 +33710,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.49,
       "prob": 0.671,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T15:45",
       "modelo": "analise",
       "total": 55.8,
@@ -33712,9 +33719,10 @@
       "lucro": 27.342,
       "roi": 49,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T14:40:45.609Z",
+      "updatedAt": "2026-10-13T20:44:54.519Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1563193,
@@ -33735,7 +33743,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv6sg5yaftg7",
-        "enviadaEm": "2026-10-13T14:40:43.042Z"
+        "enviadaEm": "2026-10-13T14:40:43.042Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Burnley 2–2 Charlton · saldo de gols do Burnley: 0 (linha 1.5)",
+          "at": "2026-10-13T20:44:54.519Z"
+        },
+        "clv": 0.011253140440534493,
+        "closingFair": 1.473419404513204
       }
     },
     {
@@ -33750,7 +33765,7 @@
       "market": "Múltipla",
       "oddMkt": 6.84,
       "prob": 0.146,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T15:45",
       "modelo": "analise",
       "total": 27.9,
@@ -33759,9 +33774,10 @@
       "lucro": 126.10799999999998,
       "roi": 451.99999999999994,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T14:44:36.244Z",
+      "updatedAt": "2026-10-13T20:44:56.771Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -33842,7 +33858,12 @@
         "pinnacle_odd": null,
         "priced_by": "pinnacle",
         "inboxId": "anmv6sl5eptifa",
-        "enviadaEm": "2026-10-13T14:44:35.617Z"
+        "enviadaEm": "2026-10-13T14:44:35.617Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 1/4: United of Manchester 1–1 AFC Emley ❌ · Havant & Wville 4–1 Basingstoke Town ✅ · Wingate & Finchley 2–0 Ramsgate ❌ · Malvern Town x Yate Town: Second Half",
+          "at": "2026-10-13T20:44:56.771Z"
+        }
       }
     },
     {
@@ -34381,5 +34402,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T20:44:45.241Z"
+  "updatedAt": "2026-10-13T21:05:04.143Z"
 }
