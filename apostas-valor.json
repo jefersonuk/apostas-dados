@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 725.4,
+      "value": 753.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T14:40:45.609Z"
+      "updatedAt": "2026-10-13T14:44:36.244Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 4.9,
+      "value": -0.1,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T14:40:45.609Z"
+      "updatedAt": "2026-10-13T14:44:36.244Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33672,6 +33672,113 @@
         "inboxId": "anmv6sg5yaftg7",
         "enviadaEm": "2026-10-13T14:40:43.042Z"
       }
+    },
+    {
+      "id": "mv6sl5w3e57w2",
+      "kind": "valor",
+      "event": "Múltipla (4) — United of Manchester x AFC Emley Mais de 2,5 · Havant & Wville x Basingstoke Town Mais de 2,5 · Wingate & Finchley x Ramsgate Mais de 2,5 · Malvern Town x Yate Town Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 5.52,
+      "stakeA": 27.9,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": 6.84,
+      "prob": 0.146,
+      "winner": null,
+      "date": "2026-10-13T15:45",
+      "modelo": "analise",
+      "total": 27.9,
+      "lucroA": 126.10799999999998,
+      "lucroRed": -27.9,
+      "lucro": 126.10799999999998,
+      "roi": 451.99999999999994,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-13T14:44:36.244Z",
+      "origem": "analise",
+      "analise": {
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1596488,
+            "lineId": "gO2.5",
+            "home": "United of Manchester",
+            "away": "AFC Emley",
+            "kickoff": "2026-10-13T18:45:00.000Z",
+            "competition": "Non League Premier - Northern",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.606,
+            "p_pinnacle": 0.61,
+            "fair_odd": 1.65,
+            "odd_min": 1.67,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1597393,
+            "lineId": "gO2.5",
+            "home": "Havant & Wville",
+            "away": "Basingstoke Town",
+            "kickoff": "2026-10-13T18:45:00.000Z",
+            "competition": "Non League Premier - Southern South",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.623,
+            "p_pinnacle": 0.617,
+            "fair_odd": 1.61,
+            "odd_min": 1.62,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1595989,
+            "lineId": "gO2.5",
+            "home": "Wingate & Finchley",
+            "away": "Ramsgate",
+            "kickoff": "2026-10-13T18:45:00.000Z",
+            "competition": "Non League Premier - Isthmian",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.62,
+            "p_pinnacle": 0.617,
+            "fair_odd": 1.61,
+            "odd_min": 1.63,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1597394,
+            "lineId": "gO2.5",
+            "home": "Malvern Town",
+            "away": "Yate Town",
+            "kickoff": "2026-10-13T18:45:00.000Z",
+            "competition": "Non League Premier - Southern South",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.625,
+            "p_pinnacle": 0.618,
+            "fair_odd": 1.6,
+            "odd_min": 1.62,
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1596488,
+        "lineId": "multi",
+        "kickoff": "2026-10-13T18:45:00.000Z",
+        "first_kickoff": "2026-10-13T18:45:00.000Z",
+        "competition": "Non League Premier - Northern, Non League Premier - Southern South, Non League Premier - Isthmian",
+        "mercado": "Múltipla",
+        "linha": "4 pernas · over de gols",
+        "tier": "múltipla",
+        "p_blend": 0.146,
+        "p_pinnacle": 0.144,
+        "fair_odd": 6.84,
+        "odd_min": 7.18,
+        "pinnacle_odd": null,
+        "priced_by": "pinnacle",
+        "inboxId": "anmv6sl5eptifa",
+        "enviadaEm": "2026-10-13T14:44:35.617Z"
+      }
     }
   ],
   "invertidos": [],
@@ -33838,5 +33945,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T14:40:45.609Z"
+  "updatedAt": "2026-10-13T14:44:36.244Z"
 }
