@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 753.3,
+      "value": 697.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T14:44:36.244Z"
+      "updatedAt": "2026-10-13T15:11:25.528Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 0.34,
+      "value": 24.94,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T14:45:12.497Z"
+      "updatedAt": "2026-10-13T15:11:25.528Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -33488,7 +33488,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.21,
       "prob": 0.453,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T10:00",
       "modelo": "analise",
       "total": 55.8,
@@ -33497,9 +33497,10 @@
       "lucro": 81.46799999999999,
       "roi": 146,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T13:55:29.845Z",
+      "updatedAt": "2026-10-13T15:11:25.528Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1639261,
@@ -33521,7 +33522,12 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmv6qtz9he6yn",
-        "enviadaEm": "2026-10-13T13:55:28.325Z"
+        "enviadaEm": "2026-10-13T13:55:28.325Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Spartak Kostroma 1–0 Chelyabinsk · saldo de gols do Spartak Kostroma: 1 (linha 0.5)",
+          "at": "2026-10-13T15:11:25.527Z"
+        }
       }
     },
     {
@@ -33945,5 +33951,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T14:45:12.497Z"
+  "updatedAt": "2026-10-13T15:11:25.529Z"
 }
