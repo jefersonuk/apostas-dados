@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 138.9,
+      "value": 128.9,
       "currency": "USD",
-      "updatedAt": "2026-10-14T18:23:41.715Z"
+      "updatedAt": "2026-10-14T18:31:03.789Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 922.28,
+      "value": 972.58,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:23:41.715Z"
+      "updatedAt": "2026-10-14T18:31:03.789Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35426,6 +35426,84 @@
         "inboxId": "anmv8fura18844",
         "enviadaEm": "2026-10-14T18:23:41.209Z"
       }
+    },
+    {
+      "id": "mv8g48rx6xif6",
+      "kind": "valor",
+      "event": "Múltipla (2) — Whyteleafe x Whitehawk Mais de 2,5 · Portsmouth x Sheffield Utd Mais de 2",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.85,
+      "stakeA": 50.3,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": 2.52,
+      "prob": 0.451,
+      "winner": null,
+      "date": "2026-10-14T15:45",
+      "modelo": "analise",
+      "total": 50.3,
+      "lucroA": 93.05499999999999,
+      "lucroRed": -50.3,
+      "lucro": 93.05499999999999,
+      "roi": 185,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T18:31:03.789Z",
+      "origem": "analise",
+      "analise": {
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1596011,
+            "lineId": "gO2.5",
+            "home": "Whyteleafe",
+            "away": "Whitehawk",
+            "kickoff": "2026-10-14T18:45:00.000Z",
+            "competition": "Non League Premier - Isthmian",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.61,
+            "p_pinnacle": 0.622,
+            "fair_odd": 1.64,
+            "odd_min": 1.68,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1563201,
+            "lineId": "gO2",
+            "home": "Portsmouth",
+            "away": "Sheffield Utd",
+            "kickoff": "2026-10-14T18:45:00.000Z",
+            "competition": "Championship",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2",
+            "p": 0.74,
+            "p_pinnacle": 0.749,
+            "fair_odd": 1.54,
+            "odd_min": 1.58,
+            "odd_casa": null,
+            "asiatica": true
+          }
+        ],
+        "fixtureId": 1596011,
+        "lineId": "multi",
+        "kickoff": "2026-10-14T18:45:00.000Z",
+        "first_kickoff": "2026-10-14T18:45:00.000Z",
+        "competition": "Non League Premier - Isthmian, Championship",
+        "mercado": "Múltipla",
+        "linha": "2 pernas · over de gols",
+        "tier": "múltipla",
+        "p_blend": 0.451,
+        "p_pinnacle": 0.466,
+        "fair_odd": 2.52,
+        "odd_min": 2.65,
+        "pinnacle_odd": null,
+        "priced_by": "pinnacle",
+        "inboxId": "anmv8g48ct34vb",
+        "enviadaEm": "2026-10-14T18:31:03.245Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35592,5 +35670,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:23:41.715Z"
+  "updatedAt": "2026-10-14T18:31:03.789Z"
 }
