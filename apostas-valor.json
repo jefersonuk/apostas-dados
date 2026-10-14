@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 972.58,
+      "value": 1042.58,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:31:03.789Z"
+      "updatedAt": "2026-10-14T18:35:48.332Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 71.75,
+      "value": 1.75,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T18:17:43.304Z"
+      "updatedAt": "2026-10-14T18:35:48.332Z"
     }
   ],
   "aportes": [
@@ -35504,6 +35504,53 @@
         "inboxId": "anmv8g48ct34vb",
         "enviadaEm": "2026-10-14T18:31:03.245Z"
       }
+    },
+    {
+      "id": "mv8gacbvf191p",
+      "kind": "valor",
+      "event": "Atletico-MG x Atletico Torque — Combo: Atletico-MG vence + Mais de 1,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 1.71,
+      "stakeA": 70,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.81,
+      "prob": 0.553,
+      "winner": null,
+      "date": "2026-10-14T19:00",
+      "modelo": "analise",
+      "total": 70,
+      "lucroA": 49.699999999999996,
+      "lucroRed": -70,
+      "lucro": 49.699999999999996,
+      "roi": 71,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T18:35:48.332Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1640557,
+        "kickoff": "2026-10-14T22:00:00.000Z",
+        "home": "Atletico-MG",
+        "away": "Atletico Torque",
+        "competition": "CONMEBOL Sudamericana",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "Atletico-MG vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.439,
+        "p_blend": 0.553,
+        "p_pinnacle": 0.565,
+        "fair_odd": 1.81,
+        "odd_min": 1.9,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8gabx5axl1",
+        "enviadaEm": "2026-10-14T18:35:47.801Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35670,5 +35717,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:31:03.789Z"
+  "updatedAt": "2026-10-14T18:35:48.332Z"
 }
