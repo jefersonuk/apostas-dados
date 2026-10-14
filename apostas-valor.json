@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 681.2,
+      "value": 737.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T15:47:41.786Z"
+      "updatedAt": "2026-10-14T15:56:19.228Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 52.83,
+      "value": 42.83,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T13:10:50.660Z"
+      "updatedAt": "2026-10-14T15:56:14.173Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34969,6 +34969,53 @@
         "inboxId": "anmv8a8wi62mum",
         "enviadaEm": "2026-10-14T15:46:43.470Z"
       }
+    },
+    {
+      "id": "mv8al4v0v9mg4",
+      "kind": "valor",
+      "event": "Paide x Tammeka — Resultado 1º tempo: Paide vence o 1º tempo",
+      "houseA": "Sportmarket",
+      "oddA": 2.2,
+      "stakeA": 56.3,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.06,
+      "prob": 0.485,
+      "winner": null,
+      "date": "2026-10-14T13:00",
+      "modelo": "analise",
+      "total": 56.3,
+      "lucroA": 67.56,
+      "lucroRed": -56.3,
+      "lucro": 67.56,
+      "roi": 120.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T15:56:14.173Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1513647,
+        "kickoff": "2026-10-14T16:00:00.000Z",
+        "home": "Paide",
+        "away": "Tammeka",
+        "competition": "Meistriliiga",
+        "lineId": "1T1",
+        "mercado": "Resultado 1º tempo",
+        "linha": "Paide vence o 1º tempo",
+        "tier": "especulativa",
+        "p_model": 0.516,
+        "p_blend": 0.485,
+        "p_pinnacle": 0.482,
+        "fair_odd": 2.06,
+        "odd_min": 2.12,
+        "pinnacle_odd": 1.95,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmv8al3lk098d",
+        "enviadaEm": "2026-10-14T15:56:12.536Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35135,5 +35182,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T15:47:48.044Z"
+  "updatedAt": "2026-10-14T15:56:14.174Z"
 }
