@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 614,
+      "value": 558.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-13T23:54:39.617Z"
+      "updatedAt": "2026-10-14T00:36:18.188Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 59,
+      "value": 81.6,
       "currency": "EUR",
-      "updatedAt": "2026-10-13T23:54:39.617Z"
+      "updatedAt": "2026-10-14T00:36:18.188Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -32887,7 +32887,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.98,
       "prob": 0.5,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-13T19:30",
       "modelo": "analise",
       "total": 55.8,
@@ -32896,9 +32896,10 @@
       "lucro": 70.30799999999998,
       "roi": 125.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-13T11:50:17.617Z",
+      "updatedAt": "2026-10-14T00:36:18.188Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1520920,
@@ -32927,7 +32928,14 @@
         "p_model_cal": 0.46,
         "status": "aposta",
         "inboxId": "anmv6mczgygbuv",
-        "enviadaEm": "2026-10-13T11:50:16.978Z"
+        "enviadaEm": "2026-10-13T11:50:16.978Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Athletic Club 2–2 Londrina · gols no jogo: 4 (linha 2.5)",
+          "at": "2026-10-14T00:36:18.187Z"
+        },
+        "clv": -0.03718549865275367,
+        "closingFair": 2.3472849617840494
       }
     },
     {
@@ -34758,5 +34766,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-13T23:54:39.617Z"
+  "updatedAt": "2026-10-14T00:36:18.188Z"
 }
