@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 864.98,
+      "value": 801.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T17:15:42.985Z"
+      "updatedAt": "2026-10-14T17:54:44.565Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 0,
+      "value": 141.75,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T15:47:48.044Z"
+      "updatedAt": "2026-10-14T17:54:44.565Z"
     }
   ],
   "aportes": [
@@ -34952,7 +34952,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.09,
       "prob": 0.478,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-14T13:00",
       "modelo": "analise",
       "total": 63,
@@ -34961,9 +34961,10 @@
       "lucro": 78.75,
       "roi": 125,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-14T15:46:44.239Z",
+      "updatedAt": "2026-10-14T17:54:44.565Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1513647,
@@ -34984,7 +34985,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv8a8wi62mum",
-        "enviadaEm": "2026-10-14T15:46:43.470Z"
+        "enviadaEm": "2026-10-14T15:46:43.470Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Paide 2–1 Tammeka · combo: as duas pernas ganharam",
+          "at": "2026-10-14T17:54:44.565Z"
+        }
       }
     },
     {
@@ -35447,5 +35453,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T17:40:26.351Z"
+  "updatedAt": "2026-10-14T17:54:44.565Z"
 }
