@@ -30877,7 +30877,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T18:53:53.663Z",
+      "updatedAt": "2026-10-14T18:56:19.916Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30992,7 +30992,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-14T18:53:53.663Z"
+          "at": "2026-10-14T18:56:19.916Z"
         }
       }
     },
@@ -31291,7 +31291,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T18:53:54.260Z",
+      "updatedAt": "2026-10-14T18:56:20.179Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31317,7 +31317,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-14T18:53:54.260Z"
+          "at": "2026-10-14T18:56:20.179Z"
         }
       }
     },
@@ -34309,7 +34309,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T18:53:54.764Z",
+      "updatedAt": "2026-10-14T18:56:20.438Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585788,
@@ -34334,7 +34334,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Match Interrupted",
-          "at": "2026-10-14T18:53:54.764Z"
+          "at": "2026-10-14T18:56:20.438Z"
         }
       }
     },
@@ -34361,7 +34361,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-14T18:53:55.264Z",
+      "updatedAt": "2026-10-14T18:56:20.704Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495977,
@@ -34394,7 +34394,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Second Half",
-          "at": "2026-10-14T18:53:55.264Z"
+          "at": "2026-10-14T18:56:20.704Z"
         }
       }
     },
@@ -34860,7 +34860,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:53:56.587Z",
+      "updatedAt": "2026-10-14T18:56:20.967Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34917,7 +34917,7 @@
         "check": {
           "status": "manual",
           "detail": "múltipla 1/2: Baník Souš 1–1 Benátky nad Jizerou ↩ · Minerva Punjab 2–1 Odisha ✅ — perna com devolução ou meia: a casa recalcula a odd; confira o valor pago e marque à mão",
-          "at": "2026-10-14T18:53:56.587Z"
+          "at": "2026-10-14T18:56:20.967Z"
         }
       }
     },
@@ -35107,7 +35107,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T18:53:57.399Z",
+      "updatedAt": "2026-10-14T18:56:21.470Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35134,7 +35134,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Bryne 1–1 Raufoss · saldo de gols do Bryne: 0 (linha 3.5)",
-          "at": "2026-10-14T18:53:57.399Z"
+          "at": "2026-10-14T18:56:21.470Z"
         }
       }
     },
@@ -35280,7 +35280,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:54:35.466Z",
+      "updatedAt": "2026-10-14T18:56:22.282Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585779,
@@ -35304,10 +35304,12 @@
         "inboxId": "anmv8ctcrslnnv",
         "enviadaEm": "2026-10-14T16:58:36.904Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-14T18:53:57.910Z"
-        }
+          "status": "encerrado",
+          "detail": "Antalyaspor 0–4 Kayserispor · saldo de gols do Antalyaspor: -4 (linha -0.5)",
+          "at": "2026-10-14T18:56:22.282Z"
+        },
+        "clv": 0.11884155425384146,
+        "closingFair": 2.4132103332545936
       }
     },
     {
@@ -35333,7 +35335,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-14T18:53:58.430Z",
+      "updatedAt": "2026-10-14T18:56:22.538Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1604022,
@@ -35359,7 +35361,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Second Half",
-          "at": "2026-10-14T18:53:58.430Z"
+          "at": "2026-10-14T18:56:22.538Z"
         }
       }
     },
@@ -35839,5 +35841,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:54:35.466Z"
+  "updatedAt": "2026-10-14T18:56:22.538Z"
 }
