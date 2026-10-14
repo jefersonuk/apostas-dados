@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 801.98,
+      "value": 871.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T17:54:44.565Z"
+      "updatedAt": "2026-10-14T18:17:43.304Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 141.75,
+      "value": 71.75,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T17:54:44.565Z"
+      "updatedAt": "2026-10-14T18:17:43.304Z"
     }
   ],
   "aportes": [
@@ -35287,6 +35287,53 @@
         "inboxId": "anmv8db2cesf9y",
         "enviadaEm": "2026-10-14T17:12:23.198Z"
       }
+    },
+    {
+      "id": "mv8fn348eqxfm",
+      "kind": "valor",
+      "event": "QPR x Derby — Combo: QPR vence + Mais de 1,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 2.21,
+      "stakeA": 70,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.22,
+      "prob": 0.45,
+      "winner": null,
+      "date": "2026-10-14T15:45",
+      "modelo": "analise",
+      "total": 70,
+      "lucroA": 84.7,
+      "lucroRed": -70,
+      "lucro": 84.7,
+      "roi": 121,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T18:17:43.304Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1563202,
+        "kickoff": "2026-10-14T18:45:00.000Z",
+        "home": "QPR",
+        "away": "Derby",
+        "competition": "Championship",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "QPR vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.332,
+        "p_blend": 0.45,
+        "p_pinnacle": 0.463,
+        "fair_odd": 2.22,
+        "odd_min": 2.34,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8fn2pdpbsg",
+        "enviadaEm": "2026-10-14T18:17:42.769Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35453,5 +35500,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T17:54:44.565Z"
+  "updatedAt": "2026-10-14T18:17:43.304Z"
 }
