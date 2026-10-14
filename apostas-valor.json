@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 765.65,
+      "value": 715.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T16:36:21.728Z"
+      "updatedAt": "2026-10-14T16:42:09.079Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -34713,7 +34713,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.07,
       "prob": 0.482,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T11:45",
       "modelo": "analise",
       "total": 50,
@@ -34722,9 +34722,10 @@
       "lucro": 47,
       "roi": 94,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T13:05:45.026Z",
+      "updatedAt": "2026-10-14T16:42:08.219Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1644620,
@@ -34745,7 +34746,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv84hsndguo4",
-        "enviadaEm": "2026-10-14T13:05:40.681Z"
+        "enviadaEm": "2026-10-14T13:05:40.681Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Yarmouk 0–0 Burgan · combo: uma perna perdeu",
+          "at": "2026-10-14T16:42:08.218Z"
+        }
       }
     },
     {
@@ -35231,5 +35237,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T16:36:37.311Z"
+  "updatedAt": "2026-10-14T16:42:08.219Z"
 }
