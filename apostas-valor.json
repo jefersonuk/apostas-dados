@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 446.9,
+      "value": 496.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T12:31:55.090Z"
+      "updatedAt": "2026-10-14T13:05:45.026Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 50,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T12:33:43.831Z"
+      "updatedAt": "2026-10-14T13:05:45.025Z"
     }
   ],
   "aportes": [
@@ -34692,6 +34692,53 @@
         "inboxId": "anmv82vtz46hy4",
         "enviadaEm": "2026-10-14T12:20:36.352Z"
       }
+    },
+    {
+      "id": "mv84hw012ew8d",
+      "kind": "valor",
+      "event": "Yarmouk x Burgan — Combo: Yarmouk vence + Mais de 1,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 1.94,
+      "stakeA": 50,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.07,
+      "prob": 0.482,
+      "winner": null,
+      "date": "2026-10-14T11:45",
+      "modelo": "analise",
+      "total": 50,
+      "lucroA": 47,
+      "lucroRed": -50,
+      "lucro": 47,
+      "roi": 94,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T13:05:45.026Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1644620,
+        "kickoff": "2026-10-14T14:45:00.000Z",
+        "home": "Yarmouk",
+        "away": "Burgan",
+        "competition": "Division 1",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "Yarmouk vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.4,
+        "p_blend": 0.482,
+        "p_pinnacle": 0.492,
+        "fair_odd": 2.07,
+        "odd_min": 2.18,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv84hsndguo4",
+        "enviadaEm": "2026-10-14T13:05:40.681Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34858,5 +34905,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T12:38:18.928Z"
+  "updatedAt": "2026-10-14T13:05:45.026Z"
 }
