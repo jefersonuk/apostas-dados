@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 753.38,
+      "value": 809.68,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:51:45.035Z"
+      "updatedAt": "2026-10-14T18:53:46.681Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 39.84,
+      "value": 29.84,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T18:39:22.464Z"
+      "updatedAt": "2026-10-14T18:53:46.681Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -35586,6 +35586,53 @@
         "inboxId": "anmv8gabx5axl1",
         "enviadaEm": "2026-10-14T18:35:47.801Z"
       }
+    },
+    {
+      "id": "mv8gxge1mbmbb",
+      "kind": "valor",
+      "event": "QPR x Derby — Total de escanteios: Mais de 9",
+      "houseA": "Sportmarket",
+      "oddA": 1.69,
+      "stakeA": 56.3,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.48,
+      "prob": 0.676,
+      "winner": null,
+      "date": "2026-10-14T15:45",
+      "modelo": "analise",
+      "total": 56.3,
+      "lucroA": 38.846999999999994,
+      "lucroRed": -56.3,
+      "lucro": 38.846999999999994,
+      "roi": 69,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T18:53:46.681Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1563202,
+        "kickoff": "2026-10-14T18:45:00.000Z",
+        "home": "QPR",
+        "away": "Derby",
+        "competition": "Championship",
+        "lineId": "cornersO9",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 9",
+        "tier": "especulativa",
+        "p_model": 0.64,
+        "p_blend": 0.676,
+        "p_pinnacle": 0.685,
+        "fair_odd": 1.48,
+        "odd_min": 1.55,
+        "pinnacle_odd": null,
+        "priced_by": "derivada do total da Pinnacle (ela cota 10,5; total 10,60)",
+        "fragile": true,
+        "inboxId": "anmv8gxfudofr3",
+        "enviadaEm": "2026-10-14T18:53:45.973Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35752,5 +35799,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:52:43.443Z"
+  "updatedAt": "2026-10-14T18:53:46.681Z"
 }
