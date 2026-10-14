@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 729.2,
+      "value": 681.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T15:46:44.240Z"
+      "updatedAt": "2026-10-14T15:47:41.786Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": -48,
+      "value": 0,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T15:46:44.239Z"
+      "updatedAt": "2026-10-14T15:47:48.044Z"
     }
   ],
   "aportes": [
@@ -34881,7 +34881,7 @@
       "event": "Stabaek x Sandnes ULF — Combo: Stabaek vence + Mais de 2,5 gols",
       "houseA": "Chute da Sorte",
       "oddA": 1.83,
-      "stakeA": 113,
+      "stakeA": 65,
       "curA": "BRL",
       "sport": "Futebol",
       "market": "Combo (criar aposta)",
@@ -34890,15 +34890,15 @@
       "winner": null,
       "date": "2026-10-14T14:00",
       "modelo": "analise",
-      "total": 113,
-      "lucroA": 93.79,
-      "lucroRed": -113,
-      "lucro": 93.79,
+      "total": 65,
+      "lucroA": 53.95,
+      "lucroRed": -65,
+      "lucro": 53.95,
       "roi": 83,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-14T15:43:01.743Z",
+      "updatedAt": "2026-10-14T15:47:41.785Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495980,
@@ -34919,7 +34919,8 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv8a44z4ba87",
-        "enviadaEm": "2026-10-14T15:43:01.168Z"
+        "enviadaEm": "2026-10-14T15:43:01.168Z",
+        "editadaEm": "2026-10-14T15:47:41.785Z"
       }
     },
     {
@@ -35134,5 +35135,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T15:46:44.240Z"
+  "updatedAt": "2026-10-14T15:47:48.044Z"
 }
