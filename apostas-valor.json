@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 464.3,
+      "value": 524.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T19:00:19.151Z"
+      "updatedAt": "2026-10-14T19:47:51.994Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 120.7,
+      "value": 60.7,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T18:50:43.218Z"
+      "updatedAt": "2026-10-14T19:47:51.994Z"
     }
   ],
   "aportes": [
@@ -35682,6 +35682,53 @@
         "enviadaEm": "2026-10-14T18:53:45.973Z",
         "editadaEm": "2026-10-14T19:07:56.719Z"
       }
+    },
+    {
+      "id": "mv8iv0hle6dsz",
+      "kind": "valor",
+      "event": "Comunicaciones x Aurora — Combo: Comunicaciones vence + Mais de 1,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 2.08,
+      "stakeA": 60,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.98,
+      "prob": 0.504,
+      "winner": null,
+      "date": "2026-10-14T20:00",
+      "modelo": "analise",
+      "total": 60,
+      "lucroA": 64.80000000000001,
+      "lucroRed": -60,
+      "lucro": 64.80000000000001,
+      "roi": 108,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T19:47:51.994Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1559668,
+        "kickoff": "2026-10-14T23:00:00.000Z",
+        "home": "Comunicaciones",
+        "away": "Aurora",
+        "competition": "Liga Nacional",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "Comunicaciones vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.435,
+        "p_blend": 0.504,
+        "p_pinnacle": 0.512,
+        "fair_odd": 1.98,
+        "odd_min": 2.08,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8iv03h8rqy",
+        "enviadaEm": "2026-10-14T19:47:51.485Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35848,5 +35895,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T19:07:56.719Z"
+  "updatedAt": "2026-10-14T19:47:51.994Z"
 }
