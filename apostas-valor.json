@@ -4827,6 +4827,13 @@
       "value": 0,
       "currency": "USD",
       "updatedAt": "2026-10-14T12:33:28.077Z"
+    },
+    {
+      "id": "mv83cpljs614v",
+      "name": "Chute da Sorte",
+      "value": 50,
+      "currency": "BRL",
+      "updatedAt": "2026-10-14T12:33:43.831Z"
     }
   ],
   "aportes": [
@@ -34845,5 +34852,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T12:33:28.078Z"
+  "updatedAt": "2026-10-14T12:33:43.832Z"
 }
