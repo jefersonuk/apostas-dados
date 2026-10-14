@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 496.9,
+      "value": 609.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T13:05:45.026Z"
+      "updatedAt": "2026-10-14T13:10:50.660Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 72.83,
+      "value": 52.83,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T12:32:37.261Z"
+      "updatedAt": "2026-10-14T13:10:50.660Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34739,6 +34739,53 @@
         "inboxId": "anmv84hsndguo4",
         "enviadaEm": "2026-10-14T13:05:40.681Z"
       }
+    },
+    {
+      "id": "mv84oftvahaly",
+      "kind": "valor",
+      "event": "SV Wehen x Alemannia Aachen — Total de escanteios: Mais de 8,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.48,
+      "stakeA": 112.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Escanteios",
+      "oddMkt": 1.53,
+      "prob": 0.655,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 112.6,
+      "lucroA": 54.047999999999995,
+      "lucroRed": -112.6,
+      "lucro": 54.047999999999995,
+      "roi": 48,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T13:10:50.660Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1584033,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "SV Wehen",
+        "away": "Alemannia Aachen",
+        "competition": "3. Liga",
+        "lineId": "cornersO8.5",
+        "mercado": "Total de escanteios",
+        "linha": "Mais de 8,5",
+        "tier": "sólida",
+        "p_model": 0.697,
+        "p_blend": 0.655,
+        "p_pinnacle": 0.645,
+        "fair_odd": 1.53,
+        "odd_min": 1.56,
+        "pinnacle_odd": 1.48,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmv84ofefbrg1",
+        "enviadaEm": "2026-10-14T13:10:50.103Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34905,5 +34952,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T13:05:45.026Z"
+  "updatedAt": "2026-10-14T13:10:50.660Z"
 }
