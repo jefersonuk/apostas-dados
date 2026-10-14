@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 524.3,
+      "value": 584.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T19:47:51.994Z"
+      "updatedAt": "2026-10-14T19:52:03.405Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 60.7,
+      "value": 0.7,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T19:47:51.994Z"
+      "updatedAt": "2026-10-14T19:52:03.405Z"
     }
   ],
   "aportes": [
@@ -35729,6 +35729,53 @@
         "inboxId": "anmv8iv03h8rqy",
         "enviadaEm": "2026-10-14T19:47:51.485Z"
       }
+    },
+    {
+      "id": "mv8j0eh9ml8oq",
+      "kind": "valor",
+      "event": "Sporting JAX x Birmingham Legion — Combo: Birmingham Legion vence + Mais de 2,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 2.39,
+      "stakeA": 60,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.55,
+      "prob": 0.392,
+      "winner": null,
+      "date": "2026-10-14T20:00",
+      "modelo": "analise",
+      "total": 60,
+      "lucroA": 83.4,
+      "lucroRed": -60,
+      "lucro": 83.4,
+      "roi": 139,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T19:52:03.405Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493744,
+        "kickoff": "2026-10-14T23:00:00.000Z",
+        "home": "Sporting JAX",
+        "away": "Birmingham Legion",
+        "competition": "USL Championship",
+        "lineId": "cb:2+gO2.5",
+        "mercado": "Combo",
+        "linha": "Birmingham Legion vence + Mais de 2,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.436,
+        "p_blend": 0.392,
+        "p_pinnacle": 0.387,
+        "fair_odd": 2.55,
+        "odd_min": 2.68,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8j0e2h2c5j",
+        "enviadaEm": "2026-10-14T19:52:02.873Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35895,5 +35942,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T19:47:51.994Z"
+  "updatedAt": "2026-10-14T19:52:03.405Z"
 }
