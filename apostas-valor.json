@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 446.6,
+      "value": 390.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T02:02:00.486Z"
+      "updatedAt": "2026-10-14T07:43:09.725Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30864,7 +30864,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T22:57:23.231Z",
+      "updatedAt": "2026-10-14T07:43:08.611Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30979,7 +30979,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Match Postponed",
-          "at": "2026-10-13T22:57:23.231Z"
+          "at": "2026-10-14T07:43:08.611Z"
         }
       }
     },
@@ -31278,7 +31278,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-13T22:57:23.426Z",
+      "updatedAt": "2026-10-14T07:43:09.000Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31304,7 +31304,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-13T22:57:23.426Z"
+          "at": "2026-10-14T07:43:09.000Z"
         }
       }
     },
@@ -34221,7 +34221,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 2.01,
       "prob": 0.5,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T23:00",
       "modelo": "analise",
       "total": 56,
@@ -34230,9 +34230,10 @@
       "lucro": 75.60000000000001,
       "roi": 135,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T20:36:43.256Z",
+      "updatedAt": "2026-10-14T07:43:09.724Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1551699,
@@ -34261,7 +34262,14 @@
         "p_model_cal": 0.47,
         "status": "aposta",
         "inboxId": "anmv755z7oim3f",
-        "enviadaEm": "2026-10-13T20:36:42.756Z"
+        "enviadaEm": "2026-10-13T20:36:42.756Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "San Carlos 1–2 Inter San Carlos · saldo de gols do San Carlos: -1 (linha 0.5)",
+          "at": "2026-10-14T07:43:09.724Z"
+        },
+        "clv": -0.042839813544450656,
+        "closingFair": 2.4551794289545854
       }
     },
     {
@@ -34782,5 +34790,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T07:42:52.480Z"
+  "updatedAt": "2026-10-14T07:43:09.725Z"
 }
