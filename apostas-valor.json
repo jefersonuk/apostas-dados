@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 640.78,
+      "value": 612.63,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:53:51.325Z"
+      "updatedAt": "2026-10-14T18:53:58.430Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -30877,7 +30877,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T18:36:45.189Z",
+      "updatedAt": "2026-10-14T18:53:53.663Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30992,7 +30992,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-14T18:36:45.189Z"
+          "at": "2026-10-14T18:53:53.663Z"
         }
       }
     },
@@ -31291,7 +31291,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T18:36:45.459Z",
+      "updatedAt": "2026-10-14T18:53:54.260Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31317,7 +31317,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-14T18:36:45.459Z"
+          "at": "2026-10-14T18:53:54.260Z"
         }
       }
     },
@@ -34309,7 +34309,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T18:36:45.726Z",
+      "updatedAt": "2026-10-14T18:53:54.764Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585788,
@@ -34334,7 +34334,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Match Interrupted",
-          "at": "2026-10-14T18:36:45.726Z"
+          "at": "2026-10-14T18:53:54.764Z"
         }
       }
     },
@@ -34361,7 +34361,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-13T23:42:24.353Z",
+      "updatedAt": "2026-10-14T18:53:55.264Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495977,
@@ -34390,7 +34390,12 @@
         "p_model_cal": 0.52,
         "status": "aposta",
         "inboxId": "anmv7brrjjgdl3",
-        "enviadaEm": "2026-10-13T23:41:36.943Z"
+        "enviadaEm": "2026-10-13T23:41:36.943Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-14T18:53:55.264Z"
+        }
       }
     },
     {
@@ -34800,7 +34805,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:39:22.464Z",
+      "updatedAt": "2026-10-14T18:53:56.302Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1584033,
@@ -34821,7 +34826,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmv84ofefbrg1",
-        "enviadaEm": "2026-10-14T13:10:50.103Z"
+        "enviadaEm": "2026-10-14T13:10:50.103Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "SV Wehen 3–0 Alemannia Aachen · escanteios no jogo: 12 (linha 8.5)",
+          "at": "2026-10-14T18:53:56.302Z"
+        },
+        "clv": -0.04582079280253015,
+        "closingFair": 1.5510713174592476
       }
     },
     {
@@ -34848,7 +34860,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:36:46.253Z",
+      "updatedAt": "2026-10-14T18:53:56.587Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34905,7 +34917,7 @@
         "check": {
           "status": "manual",
           "detail": "múltipla 1/2: Baník Souš 1–1 Benátky nad Jizerou ↩ · Minerva Punjab 2–1 Odisha ✅ — perna com devolução ou meia: a casa recalcula a odd; confira o valor pago e marque à mão",
-          "at": "2026-10-14T18:36:46.253Z"
+          "at": "2026-10-14T18:53:56.587Z"
         }
       }
     },
@@ -35083,7 +35095,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.81,
       "prob": 0.551,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 28.15,
@@ -35092,9 +35104,10 @@
       "lucro": 74.0345,
       "roi": 263,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T18:52:43.443Z",
+      "updatedAt": "2026-10-14T18:53:57.399Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35119,9 +35132,9 @@
         "enviadaEm": "2026-10-14T16:36:20.071Z",
         "editadaEm": "2026-10-14T16:36:37.311Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-14T18:52:43.443Z"
+          "status": "encerrado",
+          "detail": "Bryne 1–1 Raufoss · saldo de gols do Bryne: 0 (linha 3.5)",
+          "at": "2026-10-14T18:53:57.399Z"
         }
       }
     },
@@ -35266,7 +35279,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-14T16:58:37.476Z",
+      "updatedAt": "2026-10-14T18:53:57.910Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585779,
@@ -35288,7 +35301,12 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmv8ctcrslnnv",
-        "enviadaEm": "2026-10-14T16:58:36.904Z"
+        "enviadaEm": "2026-10-14T16:58:36.904Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-14T18:53:57.910Z"
+        }
       }
     },
     {
@@ -35314,7 +35332,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-14T17:12:23.757Z",
+      "updatedAt": "2026-10-14T18:53:58.430Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1604022,
@@ -35336,7 +35354,12 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmv8db2cesf9y",
-        "enviadaEm": "2026-10-14T17:12:23.198Z"
+        "enviadaEm": "2026-10-14T17:12:23.198Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Second Half",
+          "at": "2026-10-14T18:53:58.430Z"
+        }
       }
     },
     {
@@ -35815,5 +35838,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:53:51.325Z"
+  "updatedAt": "2026-10-14T18:53:58.430Z"
 }
