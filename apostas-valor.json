@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 508.3,
+      "value": 458,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T21:01:43.236Z"
+      "updatedAt": "2026-10-14T23:27:10.650Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35805,7 +35805,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 1.99,
       "prob": 0.502,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T18:30",
       "modelo": "analise",
       "total": 50.3,
@@ -35814,9 +35814,10 @@
       "lucro": 37.724999999999994,
       "roi": 75,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T20:07:27.662Z",
+      "updatedAt": "2026-10-14T23:27:10.649Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549721,
@@ -35837,7 +35838,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv8jk79103ny",
-        "enviadaEm": "2026-10-14T20:07:27.157Z"
+        "enviadaEm": "2026-10-14T20:07:27.157Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Junior 1–1 Deportivo Pereira · combo: uma perna perdeu",
+          "at": "2026-10-14T23:27:10.649Z"
+        }
       }
     },
     {
@@ -36099,5 +36105,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T21:01:43.236Z"
+  "updatedAt": "2026-10-14T23:27:10.650Z"
 }
