@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 614.9,
+      "value": 508.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T20:21:42.365Z"
+      "updatedAt": "2026-10-14T21:01:43.236Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35431,7 +35431,7 @@
       "market": "Múltipla",
       "oddMkt": 3.09,
       "prob": 0.324,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T15:45",
       "modelo": "analise",
       "total": 50.3,
@@ -35440,9 +35440,10 @@
       "lucro": 96.07300000000001,
       "roi": 191,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T18:23:41.715Z",
+      "updatedAt": "2026-10-14T21:01:42.795Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -35508,7 +35509,14 @@
         "pinnacle_odd": null,
         "priced_by": "pinnacle",
         "inboxId": "anmv8fura18844",
-        "enviadaEm": "2026-10-14T18:23:41.209Z"
+        "enviadaEm": "2026-10-14T18:23:41.209Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 1/3: Norwich 0–1 Southampton ❌ · Lincoln 0–6 West Ham ✅ · Bodo/Glimt 1–0 Borussia Dortmund ❌",
+          "at": "2026-10-14T21:01:42.795Z"
+        },
+        "clv": -0.04339851776657555,
+        "closingFair": 3.042019120863037
       }
     },
     {
@@ -35649,7 +35657,7 @@
       "market": "Escanteios",
       "oddMkt": 1.48,
       "prob": 0.676,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T15:45",
       "modelo": "analise",
       "total": 56.3,
@@ -35658,9 +35666,10 @@
       "lucro": 38.846999999999994,
       "roi": 69,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T19:07:56.719Z",
+      "updatedAt": "2026-10-14T21:01:43.236Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1563202,
@@ -35682,7 +35691,12 @@
         "fragile": true,
         "inboxId": "anmv8gxfudofr3",
         "enviadaEm": "2026-10-14T18:53:45.973Z",
-        "editadaEm": "2026-10-14T19:07:56.719Z"
+        "editadaEm": "2026-10-14T19:07:56.719Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "QPR 4–1 Derby · escanteios no jogo: 4 (linha 9)",
+          "at": "2026-10-14T21:01:43.236Z"
+        }
       }
     },
     {
@@ -36085,5 +36099,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T21:01:38.070Z"
+  "updatedAt": "2026-10-14T21:01:43.236Z"
 }
