@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 771.95,
+      "value": 884.55,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T16:45:16.941Z"
+      "updatedAt": "2026-10-14T16:49:47.549Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 27.83,
+      "value": 7.83,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T16:45:16.941Z"
+      "updatedAt": "2026-10-14T16:49:47.549Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -35126,6 +35126,53 @@
         "inboxId": "anmv8cc725w3z7",
         "enviadaEm": "2026-10-14T16:45:16.349Z"
       }
+    },
+    {
+      "id": "mv8ci0bhg4bpl",
+      "kind": "valor",
+      "event": "Stromsgodset x Kongsvinger — Handicap asiático: Kongsvinger +1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.61,
+      "stakeA": 112.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.47,
+      "prob": 0.679,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 112.6,
+      "lucroA": 68.686,
+      "lucroRed": -112.6,
+      "lucro": 68.686,
+      "roi": 61.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T16:49:47.549Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1495982,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Stromsgodset",
+        "away": "Kongsvinger",
+        "competition": "1. Division",
+        "lineId": "ahA1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Kongsvinger +1,5",
+        "tier": "sólida",
+        "p_model": 0.715,
+        "p_blend": 0.679,
+        "p_pinnacle": 0.675,
+        "fair_odd": 1.47,
+        "odd_min": 1.5,
+        "pinnacle_odd": 1.44,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmv8chzwafe06",
+        "enviadaEm": "2026-10-14T16:49:47.002Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35292,5 +35339,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T16:45:16.941Z"
+  "updatedAt": "2026-10-14T16:49:47.549Z"
 }
