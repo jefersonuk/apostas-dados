@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 158.9,
+      "value": 148.9,
       "currency": "USD",
-      "updatedAt": "2026-10-14T12:33:25.341Z"
+      "updatedAt": "2026-10-14T16:58:37.476Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 828.25,
+      "value": 878.55,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T16:49:58.590Z"
+      "updatedAt": "2026-10-14T16:58:37.476Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35174,6 +35174,54 @@
         "inboxId": "anmv8chzwafe06",
         "enviadaEm": "2026-10-14T16:49:47.002Z"
       }
+    },
+    {
+      "id": "mv8ctd7n61rim",
+      "kind": "valor",
+      "event": "Antalyaspor x Kayserispor — 1X2: Kayserispor vence",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.7,
+      "stakeA": 50.3,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.48,
+      "prob": 0.404,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 50.3,
+      "lucroA": 85.51,
+      "lucroRed": -50.3,
+      "lucro": 85.51,
+      "roi": 170.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T16:58:37.476Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1585779,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Antalyaspor",
+        "away": "Kayserispor",
+        "competition": "1. Lig",
+        "lineId": "2",
+        "mercado": "1X2",
+        "linha": "Kayserispor vence",
+        "tier": "especulativa",
+        "p_model": 0.488,
+        "p_blend": 0.404,
+        "p_pinnacle": 0.395,
+        "fair_odd": 2.48,
+        "odd_min": 2.6,
+        "pinnacle_odd": 2.43,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmv8ctcrslnnv",
+        "enviadaEm": "2026-10-14T16:58:36.904Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35340,5 +35388,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T16:49:58.590Z"
+  "updatedAt": "2026-10-14T16:58:37.476Z"
 }
