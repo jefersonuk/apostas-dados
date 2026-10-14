@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 715.65,
+      "value": 771.95,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T16:42:09.079Z"
+      "updatedAt": "2026-10-14T16:45:16.941Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 37.83,
+      "value": 27.83,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T16:36:37.311Z"
+      "updatedAt": "2026-10-14T16:45:16.941Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -35071,6 +35071,61 @@
         "enviadaEm": "2026-10-14T16:36:20.071Z",
         "editadaEm": "2026-10-14T16:36:37.311Z"
       }
+    },
+    {
+      "id": "mv8cc7ilbmqxo",
+      "kind": "valor",
+      "event": "Keçiörengücü x Iğdır FK — 1X2: Keçiörengücü vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.31,
+      "stakeA": 56.3,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.89,
+      "prob": 0.53,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 56.3,
+      "lucroA": 73.753,
+      "lucroRed": -56.3,
+      "lucro": 73.753,
+      "roi": 131,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T16:45:16.941Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1585782,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Keçiörengücü",
+        "away": "Iğdır FK",
+        "competition": "1. Lig",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Keçiörengücü vence",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.482,
+        "p_blend": 0.53,
+        "p_pinnacle": 0.44,
+        "fair_odd": 1.89,
+        "odd_min": 1.98,
+        "pinnacle_odd": 2.19,
+        "priced_by": "nossa análise",
+        "fragile": false,
+        "scenario": true,
+        "p_scenario": 0.53,
+        "ev_pinnacle": 0.16,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 9.05,
+        "p_model_cal": 0.48,
+        "status": "aposta",
+        "inboxId": "anmv8cc725w3z7",
+        "enviadaEm": "2026-10-14T16:45:16.349Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35237,5 +35292,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T16:42:08.219Z"
+  "updatedAt": "2026-10-14T16:45:16.941Z"
 }
