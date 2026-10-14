@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 653.2,
+      "value": 553.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T14:51:44.460Z"
+      "updatedAt": "2026-10-14T15:36:42.318Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 0,
+      "value": 128,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T13:16:46.289Z"
+      "updatedAt": "2026-10-14T15:36:42.318Z"
     }
   ],
   "aportes": [
@@ -30877,7 +30877,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T15:19:02.378Z",
+      "updatedAt": "2026-10-14T15:29:43.194Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30992,7 +30992,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-14T15:19:02.378Z"
+          "at": "2026-10-14T15:29:43.194Z"
         }
       }
     },
@@ -31291,7 +31291,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T15:19:02.942Z",
+      "updatedAt": "2026-10-14T15:29:43.410Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31317,7 +31317,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-14T15:19:02.942Z"
+          "at": "2026-10-14T15:29:43.410Z"
         }
       }
     },
@@ -34798,27 +34798,28 @@
     {
       "id": "mv84vpk2wa757",
       "kind": "valor",
-      "event": "Múltipla (2) — Baník Souš x Benátky nad Jizerou Mais de 2 · Minerva Punjab x Odisha Mais de 1,5",
+      "event": "Múltipla (2) — Múltipla: 2 pernas · over de gols",
       "houseA": "Chute da Sorte",
-      "oddA": 1.86,
+      "oddA": 1.28,
       "stakeA": 100,
       "curA": "BRL",
       "sport": "Futebol",
       "market": "Múltipla",
       "oddMkt": 2.07,
       "prob": 0.546,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-14T10:30",
       "modelo": "analise",
       "total": 100,
-      "lucroA": 86.00000000000001,
+      "lucroA": 28.000000000000004,
       "lucroRed": -100,
-      "lucro": 86.00000000000001,
-      "roi": 86.00000000000001,
+      "lucro": 28.000000000000004,
+      "roi": 28.000000000000004,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-14T13:16:29.858Z",
+      "updatedAt": "2026-10-14T15:36:42.318Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34870,7 +34871,8 @@
         "pinnacle_odd": null,
         "priced_by": "pinnacle",
         "inboxId": "anmv84vp4iwyp4",
-        "enviadaEm": "2026-10-14T13:16:29.298Z"
+        "enviadaEm": "2026-10-14T13:16:29.298Z",
+        "editadaEm": "2026-10-14T15:36:39.702Z"
       }
     }
   ],
@@ -35038,5 +35040,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T15:29:25.958Z"
+  "updatedAt": "2026-10-14T15:36:42.318Z"
 }
