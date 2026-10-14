@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 809.68,
+      "value": 640.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:53:46.681Z"
+      "updatedAt": "2026-10-14T18:53:51.325Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35137,7 +35137,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.89,
       "prob": 0.53,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 56.3,
@@ -35146,9 +35146,10 @@
       "lucro": 73.753,
       "roi": 131,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T16:45:16.941Z",
+      "updatedAt": "2026-10-14T18:53:50.265Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585782,
@@ -35177,7 +35178,14 @@
         "p_model_cal": 0.48,
         "status": "aposta",
         "inboxId": "anmv8cc725w3z7",
-        "enviadaEm": "2026-10-14T16:45:16.349Z"
+        "enviadaEm": "2026-10-14T16:45:16.349Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Keçiörengücü 0–0 Iğdır FK · saldo de gols do Keçiörengücü: 0 (linha 0.5)",
+          "at": "2026-10-14T18:53:50.265Z"
+        },
+        "clv": 0.016179846274633647,
+        "closingFair": 2.27321965542672
       }
     },
     {
@@ -35192,7 +35200,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.47,
       "prob": 0.679,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 112.6,
@@ -35201,9 +35209,10 @@
       "lucro": 68.686,
       "roi": 61.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T16:49:47.549Z",
+      "updatedAt": "2026-10-14T18:53:51.325Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495982,
@@ -35224,7 +35233,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmv8chzwafe06",
-        "enviadaEm": "2026-10-14T16:49:47.002Z"
+        "enviadaEm": "2026-10-14T16:49:47.002Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Stromsgodset 5–1 Kongsvinger · saldo de gols do Stromsgodset: 4 (linha 1.5)",
+          "at": "2026-10-14T18:53:51.325Z"
+        },
+        "clv": 0.08532524054381829,
+        "closingFair": 1.4834262945854697
       }
     },
     {
@@ -35799,5 +35815,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:53:46.681Z"
+  "updatedAt": "2026-10-14T18:53:51.325Z"
 }
