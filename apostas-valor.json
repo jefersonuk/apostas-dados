@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 148.9,
+      "value": 138.9,
       "currency": "USD",
-      "updatedAt": "2026-10-14T16:58:37.476Z"
+      "updatedAt": "2026-10-14T18:23:41.715Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 871.98,
+      "value": 922.28,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:17:43.304Z"
+      "updatedAt": "2026-10-14T18:23:41.715Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35334,6 +35334,98 @@
         "inboxId": "anmv8fn2pdpbsg",
         "enviadaEm": "2026-10-14T18:17:42.769Z"
       }
+    },
+    {
+      "id": "mv8furo2aldxs",
+      "kind": "valor",
+      "event": "Múltipla (3) — Norwich x Southampton Mais de 2,5 · Lincoln x West Ham Mais de 1,5 · Bodo/Glimt x Borussia Dortmund Mais de 2,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.91,
+      "stakeA": 50.3,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": 3.09,
+      "prob": 0.324,
+      "winner": null,
+      "date": "2026-10-14T15:45",
+      "modelo": "analise",
+      "total": 50.3,
+      "lucroA": 96.07300000000001,
+      "lucroRed": -50.3,
+      "lucro": 96.07300000000001,
+      "roi": 191,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T18:23:41.715Z",
+      "origem": "analise",
+      "analise": {
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1563200,
+            "lineId": "gO2.5",
+            "home": "Norwich",
+            "away": "Southampton",
+            "kickoff": "2026-10-14T18:45:00.000Z",
+            "competition": "Championship",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.6,
+            "p_pinnacle": 0.605,
+            "fair_odd": 1.67,
+            "odd_min": 1.69,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1563199,
+            "lineId": "gO1.5",
+            "home": "Lincoln",
+            "away": "West Ham",
+            "kickoff": "2026-10-14T19:00:00.000Z",
+            "competition": "Championship",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.764,
+            "p_pinnacle": 0.76,
+            "fair_odd": 1.31,
+            "odd_min": 1.33,
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1635639,
+            "lineId": "gO2.5",
+            "home": "Bodo/Glimt",
+            "away": "Borussia Dortmund",
+            "kickoff": "2026-10-14T19:00:00.000Z",
+            "competition": "UEFA Champions League",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2,5",
+            "p": 0.707,
+            "p_pinnacle": 0.71,
+            "fair_odd": 1.41,
+            "odd_min": 1.44,
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1563199,
+        "lineId": "multi",
+        "kickoff": "2026-10-14T19:00:00.000Z",
+        "first_kickoff": "2026-10-14T18:45:00.000Z",
+        "competition": "Championship, UEFA Champions League",
+        "mercado": "Múltipla",
+        "linha": "3 pernas · over de gols",
+        "tier": "múltipla",
+        "p_blend": 0.324,
+        "p_pinnacle": 0.326,
+        "fair_odd": 3.09,
+        "odd_min": 3.24,
+        "pinnacle_odd": null,
+        "priced_by": "pinnacle",
+        "inboxId": "anmv8fura18844",
+        "enviadaEm": "2026-10-14T18:23:41.209Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35500,5 +35592,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:17:43.304Z"
+  "updatedAt": "2026-10-14T18:23:41.715Z"
 }
