@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 878.55,
+      "value": 920.78,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T16:58:37.476Z"
+      "updatedAt": "2026-10-14T17:12:23.757Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 7.83,
+      "value": 0.33,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T16:49:47.549Z"
+      "updatedAt": "2026-10-14T17:12:23.757Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -35222,6 +35222,54 @@
         "inboxId": "anmv8ctcrslnnv",
         "enviadaEm": "2026-10-14T16:58:36.904Z"
       }
+    },
+    {
+      "id": "mv8db2rxjln0j",
+      "kind": "valor",
+      "event": "Al-Raed x Jeddah Club — 1X2: Al-Raed vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.6,
+      "stakeA": 42.23,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.69,
+      "prob": 0.593,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 42.23,
+      "lucroA": 67.568,
+      "lucroRed": -42.23,
+      "lucro": 67.568,
+      "roi": 160,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T17:12:23.757Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1604022,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Al-Raed",
+        "away": "Jeddah Club",
+        "competition": "Division 1",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Al-Raed vence",
+        "tier": "especulativa",
+        "p_model": 0.487,
+        "p_blend": 0.593,
+        "p_pinnacle": 0.605,
+        "fair_odd": 1.69,
+        "odd_min": 1.77,
+        "pinnacle_odd": 1.59,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmv8db2cesf9y",
+        "enviadaEm": "2026-10-14T17:12:23.198Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35388,5 +35436,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T16:58:37.476Z"
+  "updatedAt": "2026-10-14T17:12:23.757Z"
 }
