@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 553.2,
+      "value": 666.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T15:36:42.318Z"
+      "updatedAt": "2026-10-14T15:43:01.743Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 128,
+      "value": 15,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T15:36:42.318Z"
+      "updatedAt": "2026-10-14T15:43:01.743Z"
     }
   ],
   "aportes": [
@@ -34874,6 +34874,53 @@
         "enviadaEm": "2026-10-14T13:16:29.298Z",
         "editadaEm": "2026-10-14T15:36:39.702Z"
       }
+    },
+    {
+      "id": "mv8a45f2d8apo",
+      "kind": "valor",
+      "event": "Stabaek x Sandnes ULF — Combo: Stabaek vence + Mais de 2,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 1.83,
+      "stakeA": 113,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.9,
+      "prob": 0.526,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 113,
+      "lucroA": 93.79,
+      "lucroRed": -113,
+      "lucro": 93.79,
+      "roi": 83,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T15:43:01.743Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1495980,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Stabaek",
+        "away": "Sandnes ULF",
+        "competition": "1. Division",
+        "lineId": "cb:1+gO2.5",
+        "mercado": "Combo",
+        "linha": "Stabaek vence + Mais de 2,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.52,
+        "p_blend": 0.526,
+        "p_pinnacle": 0.527,
+        "fair_odd": 1.9,
+        "odd_min": 1.99,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8a44z4ba87",
+        "enviadaEm": "2026-10-14T15:43:01.168Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35040,5 +35087,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T15:36:42.318Z"
+  "updatedAt": "2026-10-14T15:43:01.744Z"
 }
