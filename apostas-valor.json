@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 155.9,
+      "value": 184.4,
       "currency": "USD",
-      "updatedAt": "2026-10-14T18:54:35.466Z"
+      "updatedAt": "2026-10-14T20:21:42.365Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 735.2,
+      "value": 614.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T20:21:08.512Z"
+      "updatedAt": "2026-10-14T20:21:42.365Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 0.7,
+      "value": 155.4,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T19:52:03.405Z"
+      "updatedAt": "2026-10-14T20:21:41.211Z"
     }
   ],
   "aportes": [
@@ -35383,7 +35383,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.22,
       "prob": 0.45,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-14T15:45",
       "modelo": "analise",
       "total": 70,
@@ -35392,9 +35392,10 @@
       "lucro": 84.7,
       "roi": 121,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:17:43.304Z",
+      "updatedAt": "2026-10-14T20:21:41.211Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1563202,
@@ -35522,7 +35523,7 @@
       "market": "Múltipla",
       "oddMkt": 2.52,
       "prob": 0.451,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-14T15:45",
       "modelo": "analise",
       "total": 50.3,
@@ -35531,9 +35532,10 @@
       "lucro": 93.05499999999999,
       "roi": 185,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:31:03.789Z",
+      "updatedAt": "2026-10-14T20:21:42.365Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -36083,5 +36085,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T20:21:08.512Z"
+  "updatedAt": "2026-10-14T20:21:42.365Z"
 }
