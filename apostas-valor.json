@@ -30877,7 +30877,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T07:43:08.611Z",
+      "updatedAt": "2026-10-14T15:19:02.378Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30991,8 +30991,8 @@
         "enviadaEm": "2026-10-09T11:15:20.174Z",
         "check": {
           "status": "encerrado",
-          "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Match Postponed",
-          "at": "2026-10-14T07:43:08.611Z"
+          "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
+          "at": "2026-10-14T15:19:02.378Z"
         }
       }
     },
@@ -31291,7 +31291,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T07:43:09.000Z",
+      "updatedAt": "2026-10-14T15:19:02.942Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31317,7 +31317,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-14T07:43:09.000Z"
+          "at": "2026-10-14T15:19:02.942Z"
         }
       }
     },
@@ -35038,5 +35038,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T14:51:44.460Z"
+  "updatedAt": "2026-10-14T15:19:02.943Z"
 }
