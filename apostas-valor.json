@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 609.5,
+      "value": 709.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T13:10:50.660Z"
+      "updatedAt": "2026-10-14T13:16:29.858Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 0,
+      "value": -100,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T13:05:45.025Z"
+      "updatedAt": "2026-10-14T13:16:29.858Z"
     }
   ],
   "aportes": [
@@ -34786,6 +34786,84 @@
         "inboxId": "anmv84ofefbrg1",
         "enviadaEm": "2026-10-14T13:10:50.103Z"
       }
+    },
+    {
+      "id": "mv84vpk2wa757",
+      "kind": "valor",
+      "event": "Múltipla (2) — Baník Souš x Benátky nad Jizerou Mais de 2 · Minerva Punjab x Odisha Mais de 1,5",
+      "houseA": "Chute da Sorte",
+      "oddA": 1.86,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": 2.07,
+      "prob": 0.546,
+      "winner": null,
+      "date": "2026-10-14T10:30",
+      "modelo": "analise",
+      "total": 100,
+      "lucroA": 86.00000000000001,
+      "lucroRed": -100,
+      "lucro": 86.00000000000001,
+      "roi": 86.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T13:16:29.858Z",
+      "origem": "analise",
+      "analise": {
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1562723,
+            "lineId": "gO2",
+            "home": "Baník Souš",
+            "away": "Benátky nad Jizerou",
+            "kickoff": "2026-10-14T13:30:00.000Z",
+            "competition": "3. liga - CFL B",
+            "mercado": "Total de gols",
+            "linha": "Mais de 2",
+            "p": 0.738,
+            "p_pinnacle": 0.733,
+            "fair_odd": 1.53,
+            "odd_min": 1.57,
+            "odd_casa": null,
+            "asiatica": true
+          },
+          {
+            "fixtureId": 1642172,
+            "lineId": "gO1.5",
+            "home": "Minerva Punjab",
+            "away": "Odisha",
+            "kickoff": "2026-10-14T14:00:00.000Z",
+            "competition": "Indian Super League",
+            "mercado": "Total de gols",
+            "linha": "Mais de 1,5",
+            "p": 0.74,
+            "p_pinnacle": 0.755,
+            "fair_odd": 1.35,
+            "odd_min": 1.38,
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1642172,
+        "lineId": "multi",
+        "kickoff": "2026-10-14T14:00:00.000Z",
+        "first_kickoff": "2026-10-14T13:30:00.000Z",
+        "competition": "3. liga - CFL B, Indian Super League",
+        "mercado": "Múltipla",
+        "linha": "2 pernas · over de gols",
+        "tier": "múltipla",
+        "p_blend": 0.546,
+        "p_pinnacle": 0.553,
+        "fair_odd": 2.07,
+        "odd_min": 2.17,
+        "pinnacle_odd": null,
+        "priced_by": "pinnacle",
+        "inboxId": "anmv84vp4iwyp4",
+        "enviadaEm": "2026-10-14T13:16:29.298Z"
+      }
     }
   ],
   "invertidos": [],
@@ -34952,5 +35030,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T13:10:50.660Z"
+  "updatedAt": "2026-10-14T13:16:29.858Z"
 }
