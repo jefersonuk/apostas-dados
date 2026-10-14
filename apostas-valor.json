@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 737.5,
+      "value": 765.65,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T15:56:19.228Z"
+      "updatedAt": "2026-10-14T16:36:21.728Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 42.83,
+      "value": 37.83,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T15:56:14.173Z"
+      "updatedAt": "2026-10-14T16:36:21.728Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -35016,6 +35016,54 @@
         "inboxId": "anmv8al3lk098d",
         "enviadaEm": "2026-10-14T15:56:12.536Z"
       }
+    },
+    {
+      "id": "mv8c0qjjf5tpv",
+      "kind": "valor",
+      "event": "Bryne x Raufoss — Handicap asiático: Bryne −1,5",
+      "houseA": "Sportmarket",
+      "oddA": 3.63,
+      "stakeA": 28.15,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 1.81,
+      "prob": 0.551,
+      "winner": null,
+      "date": "2026-10-14T14:00",
+      "modelo": "analise",
+      "total": 28.15,
+      "lucroA": 74.0345,
+      "lucroRed": -28.15,
+      "lucro": 74.0345,
+      "roi": 263,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T16:36:21.728Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1495975,
+        "kickoff": "2026-10-14T17:00:00.000Z",
+        "home": "Bryne",
+        "away": "Raufoss",
+        "competition": "1. Division",
+        "lineId": "ahH-1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Bryne −1,5",
+        "tier": "especulativa",
+        "p_model": 0.415,
+        "p_blend": 0.551,
+        "p_pinnacle": 0.566,
+        "fair_odd": 1.81,
+        "odd_min": 1.9,
+        "pinnacle_odd": 1.7,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmv8c0p9jnkxl",
+        "enviadaEm": "2026-10-14T16:36:20.071Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35182,5 +35230,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T15:56:14.174Z"
+  "updatedAt": "2026-10-14T16:36:21.729Z"
 }
