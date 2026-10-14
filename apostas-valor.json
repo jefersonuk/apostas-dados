@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 584.3,
+      "value": 634.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T19:52:03.405Z"
+      "updatedAt": "2026-10-14T20:07:27.662Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 50,
+      "value": 40,
       "currency": "USD",
-      "updatedAt": "2026-10-14T20:06:46.828Z"
+      "updatedAt": "2026-10-14T20:07:27.662Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -35776,6 +35776,53 @@
         "inboxId": "anmv8j0e2h2c5j",
         "enviadaEm": "2026-10-14T19:52:02.873Z"
       }
+    },
+    {
+      "id": "mv8jk7n2zo5f8",
+      "kind": "valor",
+      "event": "Junior x Deportivo Pereira — Combo: Junior vence + Mais de 2,5 gols",
+      "houseA": "BC.game",
+      "oddA": 1.75,
+      "stakeA": 50.3,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.99,
+      "prob": 0.502,
+      "winner": null,
+      "date": "2026-10-14T18:30",
+      "modelo": "analise",
+      "total": 50.3,
+      "lucroA": 37.724999999999994,
+      "lucroRed": -50.3,
+      "lucro": 37.724999999999994,
+      "roi": 75,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T20:07:27.662Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1549721,
+        "kickoff": "2026-10-14T21:30:00.000Z",
+        "home": "Junior",
+        "away": "Deportivo Pereira",
+        "competition": "Primera A",
+        "lineId": "cb:1+gO2.5",
+        "mercado": "Combo",
+        "linha": "Junior vence + Mais de 2,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.412,
+        "p_blend": 0.502,
+        "p_pinnacle": 0.513,
+        "fair_odd": 1.99,
+        "odd_min": 2.09,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8jk79103ny",
+        "enviadaEm": "2026-10-14T20:07:27.157Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35942,5 +35989,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T20:06:46.828Z"
+  "updatedAt": "2026-10-14T20:07:27.662Z"
 }
