@@ -4683,7 +4683,7 @@
       "name": "Sportmarket",
       "value": 37.83,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T16:36:21.728Z"
+      "updatedAt": "2026-10-14T16:36:37.311Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -35020,7 +35020,7 @@
     {
       "id": "mv8c0qjjf5tpv",
       "kind": "valor",
-      "event": "Bryne x Raufoss — Handicap asiático: Bryne −1,5",
+      "event": "Bryne x Raufoss — Handicap asiático: Bryne −3,5",
       "houseA": "Sportmarket",
       "oddA": 3.63,
       "stakeA": 28.15,
@@ -35040,7 +35040,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-14T16:36:21.728Z",
+      "updatedAt": "2026-10-14T16:36:37.311Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35048,9 +35048,9 @@
         "home": "Bryne",
         "away": "Raufoss",
         "competition": "1. Division",
-        "lineId": "ahH-1.5",
+        "lineId": "ahH-3.5",
         "mercado": "Handicap asiático",
-        "linha": "Bryne −1,5",
+        "linha": "Bryne −3,5",
         "tier": "especulativa",
         "p_model": 0.415,
         "p_blend": 0.551,
@@ -35062,7 +35062,8 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmv8c0p9jnkxl",
-        "enviadaEm": "2026-10-14T16:36:20.071Z"
+        "enviadaEm": "2026-10-14T16:36:20.071Z",
+        "editadaEm": "2026-10-14T16:36:37.311Z"
       }
     }
   ],
@@ -35230,5 +35231,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T16:36:21.729Z"
+  "updatedAt": "2026-10-14T16:36:37.311Z"
 }
