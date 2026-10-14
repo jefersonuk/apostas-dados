@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 864.98,
+      "value": 753.38,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:50:43.218Z"
+      "updatedAt": "2026-10-14T18:51:45.035Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -34405,7 +34405,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.59,
       "prob": 0.63,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 55.8,
@@ -34414,9 +34414,10 @@
       "lucro": 35.711999999999996,
       "roi": 63.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T23:42:24.354Z",
+      "updatedAt": "2026-10-14T18:51:44.001Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495976,
@@ -34437,7 +34438,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv7bsq8nnpbw",
-        "enviadaEm": "2026-10-13T23:42:21.911Z"
+        "enviadaEm": "2026-10-13T23:42:21.911Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Haugesund 3–0 Lyn · saldo de gols do Haugesund: 3 (linha 2.5)",
+          "at": "2026-10-14T18:51:44.001Z"
+        },
+        "clv": 0.014370599675349593,
+        "closingFair": 1.61676610158544
       }
     },
     {
@@ -34452,7 +34460,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.04,
       "prob": 0.49,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 55.8,
@@ -34461,9 +34469,10 @@
       "lucro": 91.512,
       "roi": 164,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T23:44:06.604Z",
+      "updatedAt": "2026-10-14T18:51:45.035Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495979,
@@ -34492,7 +34501,14 @@
         "p_model_cal": 0.54,
         "status": "aposta",
         "inboxId": "anmv7buwwzxqux",
-        "enviadaEm": "2026-10-13T23:44:03.875Z"
+        "enviadaEm": "2026-10-13T23:44:03.875Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sogndal 0–1 ODD Ballklubb · saldo de gols do Sogndal: -1 (linha 0)",
+          "at": "2026-10-14T18:51:45.035Z"
+        },
+        "clv": -0.1333999127493456,
+        "closingFair": 3.046387876991304
       }
     },
     {
@@ -35731,5 +35747,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:50:43.218Z"
+  "updatedAt": "2026-10-14T18:51:45.035Z"
 }
