@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 558.2,
+      "value": 502.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T00:36:18.188Z"
+      "updatedAt": "2026-10-14T01:11:02.634Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -34103,7 +34103,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.48,
       "prob": 0.68,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T20:00",
       "modelo": "analise",
       "total": 55.8,
@@ -34112,9 +34112,10 @@
       "lucro": 40.175999999999995,
       "roi": 72,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T20:30:47.183Z",
+      "updatedAt": "2026-10-14T01:11:02.633Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1581430,
@@ -34143,7 +34144,14 @@
         "p_model_cal": 0.67,
         "status": "aposta",
         "inboxId": "anmv74ycdop87u",
-        "enviadaEm": "2026-10-13T20:30:46.572Z"
+        "enviadaEm": "2026-10-13T20:30:46.572Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Tapatío 4–1 Tepatitlán · saldo de gols do Tapatío: 3 (linha 1.5)",
+          "at": "2026-10-14T01:11:02.633Z"
+        },
+        "clv": -0.03595228258201344,
+        "closingFair": 1.7841440510918731
       }
     },
     {
@@ -34766,5 +34774,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T00:53:46.692Z"
+  "updatedAt": "2026-10-14T01:11:02.634Z"
 }
