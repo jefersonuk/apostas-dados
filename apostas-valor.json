@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 562.33,
+      "value": 464.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:54:35.466Z"
+      "updatedAt": "2026-10-14T19:00:19.151Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 29.84,
+      "value": 59.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T18:53:46.681Z"
+      "updatedAt": "2026-10-14T19:00:19.151Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34350,7 +34350,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.96,
       "prob": 0.51,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 55.8,
@@ -34359,9 +34359,10 @@
       "lucro": 85.932,
       "roi": 154,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T18:56:20.704Z",
+      "updatedAt": "2026-10-14T19:00:18.526Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495977,
@@ -34392,10 +34393,12 @@
         "inboxId": "anmv7brrjjgdl3",
         "enviadaEm": "2026-10-13T23:41:36.943Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-14T18:56:20.704Z"
-        }
+          "status": "encerrado",
+          "detail": "hodd 1–1 Ranheim · saldo de gols do hodd: 0 (linha 0)",
+          "at": "2026-10-14T19:00:18.526Z"
+        },
+        "clv": -0.019223329919959786,
+        "closingFair": 2.5897842775896303
       }
     },
     {
@@ -35324,7 +35327,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.69,
       "prob": 0.593,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 42.23,
@@ -35333,9 +35336,10 @@
       "lucro": 67.568,
       "roi": 160,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:56:22.538Z",
+      "updatedAt": "2026-10-14T19:00:19.151Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1604022,
@@ -35359,10 +35363,12 @@
         "inboxId": "anmv8db2cesf9y",
         "enviadaEm": "2026-10-14T17:12:23.198Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Second Half",
-          "at": "2026-10-14T18:56:22.538Z"
-        }
+          "status": "encerrado",
+          "detail": "Al-Raed 1–0 Jeddah Club · saldo de gols do Al-Raed: 1 (linha 0.5)",
+          "at": "2026-10-14T19:00:19.151Z"
+        },
+        "clv": 0.6941637945696504,
+        "closingFair": 1.5346804177576285
       }
     },
     {
@@ -35841,5 +35847,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:56:22.538Z"
+  "updatedAt": "2026-10-14T19:00:19.151Z"
 }
