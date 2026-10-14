@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 502.4,
+      "value": 446.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T01:11:02.634Z"
+      "updatedAt": "2026-10-14T02:02:00.486Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -34166,7 +34166,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.6,
       "prob": 0.624,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-13T21:00",
       "modelo": "analise",
       "total": 55.8,
@@ -34175,9 +34175,10 @@
       "lucro": 32.922000000000004,
       "roi": 59.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T20:32:04.292Z",
+      "updatedAt": "2026-10-14T02:02:00.485Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1551698,
@@ -34198,7 +34199,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv74zzu6yvaz",
-        "enviadaEm": "2026-10-13T20:32:03.630Z"
+        "enviadaEm": "2026-10-13T20:32:03.630Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "CS Cartagines 3–1 Puntarenas FC · saldo de gols do CS Cartagines: 2 (linha 1.5)",
+          "at": "2026-10-14T02:02:00.485Z"
+        },
+        "clv": -0.05542781408089026,
+        "closingFair": 1.6833017356453928
       }
     },
     {
@@ -34774,5 +34782,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T01:11:02.634Z"
+  "updatedAt": "2026-10-14T02:02:00.486Z"
 }
