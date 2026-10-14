@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 929.98,
+      "value": 864.98,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T18:39:22.464Z"
+      "updatedAt": "2026-10-14T18:50:43.218Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 1.75,
+      "value": 120.7,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T18:35:48.332Z"
+      "updatedAt": "2026-10-14T18:50:43.218Z"
     }
   ],
   "aportes": [
@@ -34905,7 +34905,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 1.9,
       "prob": 0.526,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-14T14:00",
       "modelo": "analise",
       "total": 65,
@@ -34914,9 +34914,10 @@
       "lucro": 53.95,
       "roi": 83,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-14T15:47:41.785Z",
+      "updatedAt": "2026-10-14T18:50:43.218Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495980,
@@ -34938,7 +34939,12 @@
         "fragile": true,
         "inboxId": "anmv8a44z4ba87",
         "enviadaEm": "2026-10-14T15:43:01.168Z",
-        "editadaEm": "2026-10-14T15:47:41.785Z"
+        "editadaEm": "2026-10-14T15:47:41.785Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Stabaek 4–1 Sandnes ULF · combo: as duas pernas ganharam",
+          "at": "2026-10-14T18:50:43.217Z"
+        }
       }
     },
     {
@@ -35725,5 +35731,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T18:39:22.464Z"
+  "updatedAt": "2026-10-14T18:50:43.218Z"
 }
