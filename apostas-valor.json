@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 684.9,
+      "value": 735.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T20:14:55.965Z"
+      "updatedAt": "2026-10-14T20:21:08.512Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 30,
+      "value": 20,
       "currency": "USD",
-      "updatedAt": "2026-10-14T20:14:55.965Z"
+      "updatedAt": "2026-10-14T20:21:08.511Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -35870,6 +35870,53 @@
         "inboxId": "anmv8jtt4lmq46",
         "enviadaEm": "2026-10-14T20:14:55.413Z"
       }
+    },
+    {
+      "id": "mv8k1t0fko0j2",
+      "kind": "valor",
+      "event": "Sarmiento Junin x River Plate — Combo: River Plate vence + Mais de 1,5 gols",
+      "houseA": "BC.game",
+      "oddA": 2.64,
+      "stakeA": 50.3,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.17,
+      "prob": 0.46,
+      "winner": null,
+      "date": "2026-10-14T19:00",
+      "modelo": "analise",
+      "total": 50.3,
+      "lucroA": 82.492,
+      "lucroRed": -50.3,
+      "lucro": 82.492,
+      "roi": 164,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T20:21:08.511Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493164,
+        "kickoff": "2026-10-14T22:00:00.000Z",
+        "home": "Sarmiento Junin",
+        "away": "River Plate",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "cb:2+gO1.5",
+        "mercado": "Combo",
+        "linha": "River Plate vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.263,
+        "p_blend": 0.46,
+        "p_pinnacle": 0.485,
+        "fair_odd": 2.17,
+        "odd_min": 2.28,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8k1shp8w6n",
+        "enviadaEm": "2026-10-14T20:21:07.837Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36036,5 +36083,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T20:14:55.965Z"
+  "updatedAt": "2026-10-14T20:21:08.512Z"
 }
