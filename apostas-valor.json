@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 634.6,
+      "value": 684.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T20:07:27.662Z"
+      "updatedAt": "2026-10-14T20:14:55.965Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 40,
+      "value": 30,
       "currency": "USD",
-      "updatedAt": "2026-10-14T20:07:27.662Z"
+      "updatedAt": "2026-10-14T20:14:55.965Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -35823,6 +35823,53 @@
         "inboxId": "anmv8jk79103ny",
         "enviadaEm": "2026-10-14T20:07:27.157Z"
       }
+    },
+    {
+      "id": "mv8jttjxfa3dz",
+      "kind": "valor",
+      "event": "Inter Miami x New York City FC — Combo: Inter Miami vence + Mais de 2,5 gols",
+      "houseA": "BC.game",
+      "oddA": 1.95,
+      "stakeA": 50.3,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.06,
+      "prob": 0.486,
+      "winner": null,
+      "date": "2026-10-14T20:30",
+      "modelo": "analise",
+      "total": 50.3,
+      "lucroA": 47.785,
+      "lucroRed": -50.3,
+      "lucro": 47.785,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T20:14:55.965Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1490526,
+        "kickoff": "2026-10-14T23:30:00.000Z",
+        "home": "Inter Miami",
+        "away": "New York City FC",
+        "competition": "Major League Soccer",
+        "lineId": "cb:1+gO2.5",
+        "mercado": "Combo",
+        "linha": "Inter Miami vence + Mais de 2,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.372,
+        "p_blend": 0.486,
+        "p_pinnacle": 0.5,
+        "fair_odd": 2.06,
+        "odd_min": 2.16,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8jtt4lmq46",
+        "enviadaEm": "2026-10-14T20:14:55.413Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35989,5 +36036,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T20:07:27.662Z"
+  "updatedAt": "2026-10-14T20:14:55.965Z"
 }
