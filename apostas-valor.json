@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 709.5,
+      "value": 653.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T13:16:29.858Z"
+      "updatedAt": "2026-10-14T14:51:44.460Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -34650,7 +34650,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.69,
       "prob": 0.59,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T10:00",
       "modelo": "analise",
       "total": 56.3,
@@ -34659,9 +34659,10 @@
       "lucro": 57.98899999999998,
       "roi": 102.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T12:31:55.090Z",
+      "updatedAt": "2026-10-14T14:51:44.459Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495981,
@@ -34690,7 +34691,14 @@
         "p_model_cal": 0.58,
         "status": "aposta",
         "inboxId": "anmv82vtz46hy4",
-        "enviadaEm": "2026-10-14T12:20:36.352Z"
+        "enviadaEm": "2026-10-14T12:20:36.352Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Strommen 6–1 Asane · saldo de gols do Strommen: 5 (linha 0.5)",
+          "at": "2026-10-14T14:51:44.457Z"
+        },
+        "clv": -0.040668529537229436,
+        "closingFair": 2.1160569234956412
       }
     },
     {
@@ -35030,5 +35038,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T13:16:46.289Z"
+  "updatedAt": "2026-10-14T14:51:44.460Z"
 }
