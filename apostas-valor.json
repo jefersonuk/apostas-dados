@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 666.2,
+      "value": 729.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T15:43:01.743Z"
+      "updatedAt": "2026-10-14T15:46:44.240Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 15,
+      "value": -48,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T15:43:01.743Z"
+      "updatedAt": "2026-10-14T15:46:44.239Z"
     }
   ],
   "aportes": [
@@ -34921,6 +34921,53 @@
         "inboxId": "anmv8a44z4ba87",
         "enviadaEm": "2026-10-14T15:43:01.168Z"
       }
+    },
+    {
+      "id": "mv8a8x3jgq5od",
+      "kind": "valor",
+      "event": "Paide x Tammeka — Combo: Paide vence + Mais de 2,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 2.25,
+      "stakeA": 63,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.09,
+      "prob": 0.478,
+      "winner": null,
+      "date": "2026-10-14T13:00",
+      "modelo": "analise",
+      "total": 63,
+      "lucroA": 78.75,
+      "lucroRed": -63,
+      "lucro": 78.75,
+      "roi": 125,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-14T15:46:44.239Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1513647,
+        "kickoff": "2026-10-14T16:00:00.000Z",
+        "home": "Paide",
+        "away": "Tammeka",
+        "competition": "Meistriliiga",
+        "lineId": "cb:1+gO2.5",
+        "mercado": "Combo",
+        "linha": "Paide vence + Mais de 2,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.483,
+        "p_blend": 0.478,
+        "p_pinnacle": 0.476,
+        "fair_odd": 2.09,
+        "odd_min": 2.2,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv8a8wi62mum",
+        "enviadaEm": "2026-10-14T15:46:43.470Z"
+      }
     }
   ],
   "invertidos": [],
@@ -35087,5 +35134,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T15:43:01.744Z"
+  "updatedAt": "2026-10-14T15:46:44.240Z"
 }
