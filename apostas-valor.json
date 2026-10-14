@@ -4683,7 +4683,7 @@
       "name": "Sportmarket",
       "value": 59.25,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T19:00:19.151Z"
+      "updatedAt": "2026-10-14T19:07:56.719Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -35658,7 +35658,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-14T18:53:46.681Z",
+      "updatedAt": "2026-10-14T19:07:56.719Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1563202,
@@ -35679,7 +35679,8 @@
         "priced_by": "derivada do total da Pinnacle (ela cota 10,5; total 10,60)",
         "fragile": true,
         "inboxId": "anmv8gxfudofr3",
-        "enviadaEm": "2026-10-14T18:53:45.973Z"
+        "enviadaEm": "2026-10-14T18:53:45.973Z",
+        "editadaEm": "2026-10-14T19:07:56.719Z"
       }
     }
   ],
@@ -35847,5 +35848,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T19:00:19.151Z"
+  "updatedAt": "2026-10-14T19:07:56.719Z"
 }
