@@ -1450,6 +1450,7 @@
         <button type="button" class="btn small" id="anLiveBtn">🔴 Ao vivo</button>
         <button type="button" class="btn small" id="anCheck">🔄 Conferir</button>
         <a class="btn small ghost" href="../analise-futebol/" target="analise">➕ Nova entrada</a>
+        <a class="btn small ghost" href="../analise-futebol/#manual" target="analise" title="Registre uma aposta feita fora da análise (simples, múltipla ou no mesmo jogo) para acompanhar os jogos pela API">✍️ Aposta manual</a>
       </div>
       <div class="hint an-status"><span id="anLiveMsg"></span> <span id="anCheckMsg"></span></div>
       <div id="anPend"></div>
@@ -6886,7 +6887,7 @@
           :ln.now==='HW'?'<span class="ok">½✅ meia vitória</span>':ln.now==='HL'?'<span class="no">½❌ meia derrota</span>':'<span class="void">↩ devolveu</span>')
         :ln&&ln.need>0?'<span class="wait">⏳ '+(ln.need===1?'falta 1 gol':'faltam '+ln.need+' gols')+'</span>'+(ln.now&&ln.now!=='RED'?' <span class="muted">(no momento: '+agora[ln.now]+')</span>':'')
         :ln&&ln.now?'<span class="muted">no momento: '+agora[ln.now]+'</span>':'<span class="muted">'+esc(x.status)+'</span>';
-      return '<div class="leg">'+relogio+' '+jogo+' · '+esc(l.linha||'')+' — '+st+'</div>';
+      return '<div class="leg">'+relogio+' '+jogo+' · '+esc(l.linha||'')+(l.odd_casa>1?' <span class="muted">@ '+Number(l.odd_casa).toFixed(2).replace('.',',')+'</span>':'')+' — '+st+'</div>';
     };
     const n=legs.length, won=m?m.won:0;
     const head=m&&m.lost?'<span class="no">❌ múltipla perdida</span>':m&&won===n?'<span class="ok">✅ todas bateram</span>'
