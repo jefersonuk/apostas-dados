@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 100,
+      "value": 302,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T17:13:59.107Z"
+      "updatedAt": "2026-10-15T17:23:36.940Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 0,
+      "value": -39.92,
       "currency": "USD",
-      "updatedAt": "2026-10-15T13:20:12.166Z"
+      "updatedAt": "2026-10-15T17:23:36.940Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -36804,6 +36804,100 @@
         "inboxId": "anmv9ss9sznf4e",
         "enviadaEm": "2026-10-15T17:13:26.435Z"
       }
+    },
+    {
+      "id": "mv9t2r2onbzqg",
+      "kind": "valor",
+      "event": "Xelajú x Malacateco — Combo: Xelajú vence + Mais de 1,5 gols",
+      "houseA": "BC.game",
+      "oddA": 1.65,
+      "stakeA": 100.8,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.87,
+      "prob": 0.536,
+      "winner": null,
+      "date": "2026-10-15T15:00",
+      "modelo": "analise",
+      "total": 100.8,
+      "lucroA": 65.52,
+      "lucroRed": -100.8,
+      "lucro": 65.52,
+      "roi": 64.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T17:21:35.376Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1559672,
+        "kickoff": "2026-10-15T18:00:00.000Z",
+        "home": "Xelajú",
+        "away": "Malacateco",
+        "competition": "Liga Nacional",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "Xelajú vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.596,
+        "p_blend": 0.536,
+        "p_pinnacle": 0.53,
+        "fair_odd": 1.87,
+        "odd_min": 1.96,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv9t2lm2ta7j",
+        "enviadaEm": "2026-10-15T17:21:28.298Z"
+      }
+    },
+    {
+      "id": "mv9t5cvgdpl8b",
+      "kind": "valor",
+      "event": "CD Marathon x Olancho — Combo: CD Marathon vence + Mais de 1,5 gols",
+      "houseA": "BC.game",
+      "oddA": 1.95,
+      "stakeA": 101.2,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.13,
+      "prob": 0.469,
+      "winner": null,
+      "date": "2026-10-15T20:15",
+      "modelo": "analise",
+      "total": 101.2,
+      "lucroA": 96.14,
+      "lucroRed": -101.2,
+      "lucro": 96.14,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T17:23:36.940Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1642286,
+        "kickoff": "2026-10-15T23:15:00.000Z",
+        "home": "CD Marathon",
+        "away": "Olancho",
+        "competition": "Liga Nacional",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "CD Marathon vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.357,
+        "p_blend": 0.469,
+        "p_pinnacle": 0.481,
+        "fair_odd": 2.13,
+        "odd_min": 2.24,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv9t5bhavhfl",
+        "enviadaEm": "2026-10-15T17:23:35.134Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36970,5 +37064,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T17:21:33.775Z"
+  "updatedAt": "2026-10-15T17:23:36.940Z"
 }
