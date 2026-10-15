@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 536.16,
+      "value": 424.16,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T15:21:45.892Z"
+      "updatedAt": "2026-10-15T15:40:26.939Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 266,
+      "value": 491.12,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T15:21:45.788Z"
+      "updatedAt": "2026-10-15T15:40:26.938Z"
     }
   ],
   "aportes": [
@@ -36355,7 +36355,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.11,
       "prob": 0.475,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-15T11:00",
       "modelo": "analise",
       "total": 112,
@@ -36364,9 +36364,10 @@
       "lucro": 113.11999999999998,
       "roi": 100.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-15T13:51:31.856Z",
+      "updatedAt": "2026-10-15T15:40:26.938Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1643960,
@@ -36891,5 +36892,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T15:21:45.788Z"
+  "updatedAt": "2026-10-15T15:40:26.939Z"
 }
