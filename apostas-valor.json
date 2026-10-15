@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 205,
+      "value": 185,
       "currency": "USD",
-      "updatedAt": "2026-10-15T11:12:39.255Z"
+      "updatedAt": "2026-10-15T12:56:41.477Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 100,
+      "value": 201,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T11:16:27.659Z"
+      "updatedAt": "2026-10-15T12:56:41.478Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -36042,6 +36042,87 @@
         "inboxId": "anmv9g16l1g97w",
         "enviadaEm": "2026-10-15T11:16:27.157Z"
       }
+    },
+    {
+      "id": "mv9jm39hpp4ve",
+      "kind": "valor",
+      "event": "Múltipla (3) — Khon Kaen United x Chainat Khon Kaen United vence · Kuching FA x Kitchee Kuching FA vence · Tampines Rovers x Machida Zelvia Machida Zelvia vence",
+      "houseA": "Overtimemarkets",
+      "oddA": 3.21,
+      "stakeA": 101,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-15T09:00",
+      "modelo": "analise",
+      "total": 101,
+      "lucroA": 223.21,
+      "lucroRed": -101,
+      "lucro": 223.21,
+      "roi": 221,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T12:56:41.477Z",
+      "origem": "analise",
+      "analise": {
+        "manual": true,
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1602699,
+            "kickoff": "2026-10-15T12:00:00.000Z",
+            "home": "Khon Kaen United",
+            "away": "Chainat",
+            "competition": "Thai League 2",
+            "lineId": "1",
+            "linha": "Khon Kaen United vence",
+            "mercado": "1X2",
+            "odd_casa": 1.58
+          },
+          {
+            "fixtureId": 1630371,
+            "kickoff": "2026-10-15T12:15:00.000Z",
+            "home": "Kuching FA",
+            "away": "Kitchee",
+            "competition": "AFC Champions League Two",
+            "lineId": "1",
+            "linha": "Kuching FA vence",
+            "mercado": "1X2",
+            "odd_casa": 1.6
+          },
+          {
+            "fixtureId": 1630374,
+            "kickoff": "2026-10-15T12:15:00.000Z",
+            "home": "Tampines Rovers",
+            "away": "Machida Zelvia",
+            "competition": "AFC Champions League Two",
+            "lineId": "2",
+            "linha": "Machida Zelvia vence",
+            "mercado": "1X2",
+            "odd_casa": 1.27
+          }
+        ],
+        "fixtureId": 1630371,
+        "lineId": "multi",
+        "kickoff": "2026-10-15T12:15:00.000Z",
+        "first_kickoff": "2026-10-15T12:00:00.000Z",
+        "competition": "Thai League 2, AFC Champions League Two",
+        "mercado": "Múltipla",
+        "linha": "3 pernas",
+        "tier": "manual",
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "inboxId": "anmv9jm2vn35lc",
+        "enviadaEm": "2026-10-15T12:56:40.979Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36208,5 +36289,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T12:12:39.641Z"
+  "updatedAt": "2026-10-15T12:56:41.478Z"
 }
