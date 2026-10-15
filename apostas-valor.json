@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 302,
+      "value": 415.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T17:23:36.940Z"
+      "updatedAt": "2026-10-15T17:25:31.535Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 70.16,
+      "value": 50.16,
       "currency": "EUR",
-      "updatedAt": "2026-10-15T14:20:42.463Z"
+      "updatedAt": "2026-10-15T17:25:31.535Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -36898,6 +36898,53 @@
         "inboxId": "anmv9t5bhavhfl",
         "enviadaEm": "2026-10-15T17:23:35.134Z"
       }
+    },
+    {
+      "id": "mv9t7tanwjbuh",
+      "kind": "valor",
+      "event": "Quindio x Real Cartagena — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.44,
+      "stakeA": 113.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.44,
+      "prob": 0.694,
+      "winner": null,
+      "date": "2026-10-15T22:00",
+      "modelo": "analise",
+      "total": 113.4,
+      "lucroA": 49.895999999999994,
+      "lucroRed": -113.4,
+      "lucro": 49.895999999999994,
+      "roi": 43.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T17:25:31.535Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1549664,
+        "kickoff": "2026-10-16T01:00:00.000Z",
+        "home": "Quindio",
+        "away": "Real Cartagena",
+        "competition": "Primera B",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.712,
+        "p_blend": 0.694,
+        "p_pinnacle": 0.692,
+        "fair_odd": 1.44,
+        "odd_min": 1.47,
+        "pinnacle_odd": 1.39,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmv9t7rn6gpcn",
+        "enviadaEm": "2026-10-15T17:25:29.394Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37064,5 +37111,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T17:23:36.940Z"
+  "updatedAt": "2026-10-15T17:25:31.535Z"
 }
