@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 388,
+      "value": 337.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-14T23:52:09.369Z"
+      "updatedAt": "2026-10-15T00:12:51.021Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35906,7 +35906,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.17,
       "prob": 0.46,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T19:00",
       "modelo": "analise",
       "total": 50.3,
@@ -35915,9 +35915,10 @@
       "lucro": 82.492,
       "roi": 164,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T20:21:08.511Z",
+      "updatedAt": "2026-10-15T00:12:51.020Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493164,
@@ -35938,7 +35939,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv8k1shp8w6n",
-        "enviadaEm": "2026-10-14T20:21:07.837Z"
+        "enviadaEm": "2026-10-14T20:21:07.837Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sarmiento Junin 1–1 River Plate · combo: uma perna perdeu",
+          "at": "2026-10-15T00:12:51.020Z"
+        }
       }
     }
   ],
@@ -36106,5 +36112,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-14T23:52:09.369Z"
+  "updatedAt": "2026-10-15T00:12:51.021Z"
 }
