@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 424.16,
+      "value": 273.66,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T15:40:26.939Z"
+      "updatedAt": "2026-10-15T16:05:29.392Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -36154,7 +36154,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-15T11:00",
       "modelo": "analise",
       "total": 50.5,
@@ -36163,9 +36163,10 @@
       "lucro": 47.974999999999994,
       "roi": 95,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T13:20:12.166Z",
+      "updatedAt": "2026-10-15T16:05:28.986Z",
       "origem": "analise",
       "analise": {
         "manual": true,
@@ -36212,7 +36213,12 @@
         "pinnacle_odd": null,
         "priced_by": "manual",
         "inboxId": "anmv9kg6lbkjd2",
-        "enviadaEm": "2026-10-15T13:20:05.471Z"
+        "enviadaEm": "2026-10-15T13:20:05.471Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 1/2: Mardin 1969 1–0 Fatih Karagümrük ❌ · Mardin 1969 1–0 Fatih Karagümrük ✅",
+          "at": "2026-10-15T16:05:28.986Z"
+        }
       }
     },
     {
@@ -36403,7 +36409,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-15T11:00",
       "modelo": "analise",
       "total": 100,
@@ -36412,9 +36418,10 @@
       "lucro": 152.99999999999997,
       "roi": 152.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T14:06:48.203Z",
+      "updatedAt": "2026-10-15T16:05:29.392Z",
       "origem": "analise",
       "analise": {
         "manual": true,
@@ -36472,7 +36479,12 @@
         "pinnacle_odd": null,
         "priced_by": "manual",
         "inboxId": "anmv9m45mzfkhh",
-        "enviadaEm": "2026-10-15T14:06:43.595Z"
+        "enviadaEm": "2026-10-15T14:06:43.595Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 2/3: Mash'al 0–1 Olmaliq ✅ · Mash'al 0–1 Olmaliq ❌ · Mash'al 0–1 Olmaliq ✅",
+          "at": "2026-10-15T16:05:29.392Z"
+        }
       }
     },
     {
@@ -36892,5 +36904,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T15:40:26.939Z"
+  "updatedAt": "2026-10-15T16:05:29.392Z"
 }
