@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 542.2,
+      "value": 441.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T19:51:22.449Z"
+      "updatedAt": "2026-10-15T20:01:30.959Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": -29.92,
+      "value": 2.95,
       "currency": "USD",
-      "updatedAt": "2026-10-15T19:51:22.449Z"
+      "updatedAt": "2026-10-15T20:01:30.959Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -36823,7 +36823,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 1.87,
       "prob": 0.536,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-15T15:00",
       "modelo": "analise",
       "total": 100.8,
@@ -36832,9 +36832,10 @@
       "lucro": 65.52,
       "roi": 64.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-15T17:21:35.376Z",
+      "updatedAt": "2026-10-15T20:01:30.959Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1559672,
@@ -36855,7 +36856,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv9t2lm2ta7j",
-        "enviadaEm": "2026-10-15T17:21:28.298Z"
+        "enviadaEm": "2026-10-15T17:21:28.298Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Xelajú 2–1 Malacateco · combo: as duas pernas ganharam",
+          "at": "2026-10-15T20:01:30.959Z"
+        }
       }
     },
     {
@@ -37259,5 +37265,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T19:51:22.449Z"
+  "updatedAt": "2026-10-15T20:01:30.959Z"
 }
