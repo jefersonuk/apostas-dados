@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 451.5,
+      "value": 468.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T13:40:52.911Z"
+      "updatedAt": "2026-10-15T13:50:08.779Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 79.16,
+      "value": 76.16,
       "currency": "EUR",
-      "updatedAt": "2026-10-15T10:19:36.561Z"
+      "updatedAt": "2026-10-15T13:50:08.779Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -36316,6 +36316,54 @@
         "inboxId": "anmv9l6wig6cj2",
         "enviadaEm": "2026-10-15T13:40:52.120Z"
       }
+    },
+    {
+      "id": "mv9liu15buc42",
+      "kind": "valor",
+      "event": "Rīgas FS x Super Nova — 1X2: Super Nova vence",
+      "houseA": "Sportmarket",
+      "oddA": 33.2,
+      "stakeA": 16.83,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-15T11:00",
+      "modelo": "analise",
+      "total": 16.83,
+      "lucroA": 541.926,
+      "lucroRed": -16.83,
+      "lucro": 541.926,
+      "roi": 3220.0000000000005,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T13:50:08.779Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1515897,
+        "kickoff": "2026-10-15T14:00:00.000Z",
+        "home": "Rīgas FS",
+        "away": "Super Nova",
+        "competition": "Virsliga",
+        "lineId": "2",
+        "mercado": "1X2",
+        "linha": "Super Nova vence",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmv9litjofh01",
+        "enviadaEm": "2026-10-15T13:50:08.148Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36482,5 +36530,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T13:40:52.911Z"
+  "updatedAt": "2026-10-15T13:50:08.779Z"
 }
