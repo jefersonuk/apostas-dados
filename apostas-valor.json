@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 528.8,
+      "value": 630,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T17:26:40.879Z"
+      "updatedAt": "2026-10-15T17:33:10.825Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": -39.92,
+      "value": -59.92,
       "currency": "USD",
-      "updatedAt": "2026-10-15T17:23:36.940Z"
+      "updatedAt": "2026-10-15T17:33:10.825Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -36992,6 +36992,53 @@
         "inboxId": "anmv9t9aaq0hws",
         "enviadaEm": "2026-10-15T17:26:40.226Z"
       }
+    },
+    {
+      "id": "mv9thnopsy2yg",
+      "kind": "valor",
+      "event": "Rodina Moskva x Spartak Moscow — Combo: Spartak Moscow (empate anula) + Mais de 1,5 gols",
+      "houseA": "BC.game",
+      "oddA": 1.5,
+      "stakeA": 101.2,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.43,
+      "prob": 0.735,
+      "winner": null,
+      "date": "2026-10-15T14:45",
+      "modelo": "analise",
+      "total": 101.2,
+      "lucroA": 50.6,
+      "lucroRed": -101.2,
+      "lucro": 50.6,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T17:33:10.825Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1563665,
+        "kickoff": "2026-10-15T17:45:00.000Z",
+        "home": "Rodina Moskva",
+        "away": "Spartak Moscow",
+        "competition": "Cup",
+        "lineId": "cb:dnb2+gO1.5",
+        "mercado": "Combo",
+        "linha": "Spartak Moscow (empate anula) + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.513,
+        "p_blend": 0.735,
+        "p_pinnacle": 0.758,
+        "fair_odd": 1.43,
+        "odd_min": 1.5,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv9thn32v2o3",
+        "enviadaEm": "2026-10-15T17:33:10.046Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37158,5 +37205,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T17:26:40.879Z"
+  "updatedAt": "2026-10-15T17:33:10.825Z"
 }
