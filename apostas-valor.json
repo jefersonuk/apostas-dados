@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 100,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T10:19:39.840Z"
+      "updatedAt": "2026-10-15T11:16:27.659Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 125,
+      "value": 25,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T11:10:30.213Z"
+      "updatedAt": "2026-10-15T11:16:27.659Z"
     }
   ],
   "aportes": [
@@ -35995,6 +35995,53 @@
           "at": "2026-10-15T00:12:51.020Z"
         }
       }
+    },
+    {
+      "id": "mv9g16yy1ppy9",
+      "kind": "valor",
+      "event": "Khon Kaen United x Chainat — Combo: Khon Kaen United vence + Mais de 2,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 2.41,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.56,
+      "prob": 0.39,
+      "winner": null,
+      "date": "2026-10-15T09:00",
+      "modelo": "analise",
+      "total": 100,
+      "lucroA": 141,
+      "lucroRed": -100,
+      "lucro": 141,
+      "roi": 141,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T11:16:27.659Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1602699,
+        "kickoff": "2026-10-15T12:00:00.000Z",
+        "home": "Khon Kaen United",
+        "away": "Chainat",
+        "competition": "Thai League 2",
+        "lineId": "cb:1+gO2.5",
+        "mercado": "Combo",
+        "linha": "Khon Kaen United vence + Mais de 2,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.369,
+        "p_blend": 0.39,
+        "p_pinnacle": 0.392,
+        "fair_odd": 2.56,
+        "odd_min": 2.69,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv9g16l1g97w",
+        "enviadaEm": "2026-10-15T11:16:27.157Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36161,5 +36208,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T11:12:58.984Z"
+  "updatedAt": "2026-10-15T11:16:27.660Z"
 }
