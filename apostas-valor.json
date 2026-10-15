@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 111.6,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T02:24:45.668Z"
+      "updatedAt": "2026-10-15T10:19:39.840Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 69.21,
+      "value": 79.16,
       "currency": "EUR",
-      "updatedAt": "2026-10-15T02:24:45.282Z"
+      "updatedAt": "2026-10-15T10:19:36.561Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30877,7 +30877,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T18:56:19.916Z",
+      "updatedAt": "2026-10-15T10:19:34.950Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30992,7 +30992,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-14T18:56:19.916Z"
+          "at": "2026-10-15T10:19:34.950Z"
         }
       }
     },
@@ -31291,7 +31291,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T18:56:20.179Z",
+      "updatedAt": "2026-10-15T10:19:35.356Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31317,7 +31317,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-14T18:56:20.179Z"
+          "at": "2026-10-15T10:19:35.355Z"
         }
       }
     },
@@ -34309,7 +34309,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-14T18:56:20.438Z",
+      "updatedAt": "2026-10-15T10:19:35.749Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585788,
@@ -34334,7 +34334,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Match Interrupted",
-          "at": "2026-10-14T18:56:20.438Z"
+          "at": "2026-10-15T10:19:35.749Z"
         }
       }
     },
@@ -34586,7 +34586,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.51,
       "prob": 0.661,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-14T21:30",
       "modelo": "analise",
       "total": 55.8,
@@ -34595,9 +34595,10 @@
       "lucro": 31.248,
       "roi": 56.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-13T23:45:44.258Z",
+      "updatedAt": "2026-10-15T10:19:36.561Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1490532,
@@ -34618,7 +34619,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv7bx0c9r9f7",
-        "enviadaEm": "2026-10-13T23:45:41.625Z"
+        "enviadaEm": "2026-10-13T23:45:41.625Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "FC Dallas 1–0 Seattle Sounders · saldo de gols do FC Dallas: 1 (linha 1)",
+          "at": "2026-10-15T10:19:36.561Z"
+        },
+        "clv": 0.033251080753354145,
+        "closingFair": 1.5097975981429292
       }
     },
     {
@@ -34633,7 +34641,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.56,
       "prob": 0.64,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T21:30",
       "modelo": "analise",
       "total": 55.8,
@@ -34642,9 +34650,10 @@
       "lucro": 52.45199999999999,
       "roi": 94,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-13T23:54:39.617Z",
+      "updatedAt": "2026-10-15T10:19:37.370Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1490535,
@@ -34673,7 +34682,14 @@
         "p_model_cal": 0.72,
         "status": "aposta",
         "inboxId": "anmv7bxta1me19",
-        "enviadaEm": "2026-10-13T23:46:19.129Z"
+        "enviadaEm": "2026-10-13T23:46:19.129Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Nashville SC 4–0 Sporting Kansas City · saldo de gols do Nashville SC: 4 (linha 2)",
+          "at": "2026-10-15T10:19:37.370Z"
+        },
+        "clv": -0.1355543864035056,
+        "closingFair": 2.2442129030289144
       }
     },
     {
@@ -34871,7 +34887,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-14T18:56:20.967Z",
+      "updatedAt": "2026-10-15T10:19:37.791Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34928,7 +34944,7 @@
         "check": {
           "status": "manual",
           "detail": "múltipla 1/2: Baník Souš 1–1 Benátky nad Jizerou ↩ · Minerva Punjab 2–1 Odisha ✅ — perna com devolução ou meia: a casa recalcula a odd; confira o valor pago e marque à mão",
-          "at": "2026-10-14T18:56:20.967Z"
+          "at": "2026-10-15T10:19:37.791Z"
         }
       }
     },
@@ -35118,7 +35134,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T18:56:21.470Z",
+      "updatedAt": "2026-10-15T10:19:38.599Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35145,7 +35161,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Bryne 1–1 Raufoss · saldo de gols do Bryne: 0 (linha 3.5)",
-          "at": "2026-10-14T18:56:21.470Z"
+          "at": "2026-10-15T10:19:38.599Z"
         }
       }
     },
@@ -35551,7 +35567,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-14T20:21:42.365Z",
+      "updatedAt": "2026-10-15T10:19:39.840Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -35603,7 +35619,14 @@
         "pinnacle_odd": null,
         "priced_by": "pinnacle",
         "inboxId": "anmv8g48ct34vb",
-        "enviadaEm": "2026-10-14T18:31:03.245Z"
+        "enviadaEm": "2026-10-14T18:31:03.245Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 2/2: Whyteleafe 5–0 Whitehawk ✅ · Portsmouth 3–2 Sheffield Utd ✅",
+          "at": "2026-10-15T10:19:39.840Z"
+        },
+        "clv": 0.16301564476229946,
+        "closingFair": 2.4505259347413952
       }
     },
     {
@@ -36138,5 +36161,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T10:19:18.063Z"
+  "updatedAt": "2026-10-15T10:19:39.840Z"
 }
