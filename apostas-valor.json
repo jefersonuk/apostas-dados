@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 641.4,
+      "value": 428,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T22:18:40.449Z"
+      "updatedAt": "2026-10-15T22:19:14.815Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 10.16,
+      "value": 38.26,
       "currency": "EUR",
-      "updatedAt": "2026-10-15T19:19:23.015Z"
+      "updatedAt": "2026-10-15T22:19:14.815Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 179,
+      "value": 279,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T22:18:39.231Z"
+      "updatedAt": "2026-10-15T22:19:14.387Z"
     }
   ],
   "aportes": [
@@ -5736,6 +5736,10 @@
     {
       "id": "mv9kzedx9d98u",
       "at": "2026-10-15T14:04:09.924Z"
+    },
+    {
+      "id": "mva3os1rrzc40",
+      "at": "2026-10-15T22:19:14.387Z"
     }
   ],
   "surebets": [
@@ -30881,7 +30885,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T19:17:44.368Z",
+      "updatedAt": "2026-10-15T22:19:52.554Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30996,7 +31000,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-15T19:17:44.368Z"
+          "at": "2026-10-15T22:19:52.554Z"
         }
       }
     },
@@ -31295,7 +31299,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-15T19:17:44.946Z",
+      "updatedAt": "2026-10-15T22:19:52.962Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31321,7 +31325,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-15T19:17:44.946Z"
+          "at": "2026-10-15T22:19:52.962Z"
         }
       }
     },
@@ -34313,7 +34317,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-15T19:17:45.528Z",
+      "updatedAt": "2026-10-15T22:19:53.414Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585788,
@@ -34338,7 +34342,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Match Interrupted",
-          "at": "2026-10-15T19:17:45.528Z"
+          "at": "2026-10-15T22:19:53.414Z"
         }
       }
     },
@@ -34891,7 +34895,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-15T19:17:46.109Z",
+      "updatedAt": "2026-10-15T22:19:53.788Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34948,7 +34952,7 @@
         "check": {
           "status": "manual",
           "detail": "múltipla 1/2: Baník Souš 1–1 Benátky nad Jizerou ↩ · Minerva Punjab 2–1 Odisha ✅ — perna com devolução ou meia: a casa recalcula a odd; confira o valor pago e marque à mão",
-          "at": "2026-10-15T19:17:46.109Z"
+          "at": "2026-10-15T22:19:53.788Z"
         }
       }
     },
@@ -35138,7 +35142,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T19:17:47.273Z",
+      "updatedAt": "2026-10-15T22:19:54.514Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35165,7 +35169,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Bryne 1–1 Raufoss · saldo de gols do Bryne: 0 (linha 3.5)",
-          "at": "2026-10-15T19:17:47.273Z"
+          "at": "2026-10-15T22:19:54.514Z"
         }
       }
     },
@@ -37065,7 +37069,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.25,
       "prob": 0.801,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-15T16:00",
       "modelo": "analise",
       "total": 113.4,
@@ -37074,9 +37078,10 @@
       "lucro": 45.35999999999999,
       "roi": 39.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-15T19:19:23.015Z",
+      "updatedAt": "2026-10-15T22:19:16.433Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1564359,
@@ -37097,7 +37102,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv9xa80piwi0",
-        "enviadaEm": "2026-10-15T19:19:22.393Z"
+        "enviadaEm": "2026-10-15T19:19:22.393Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Mansfield Town 1–1 Oxford United · gols no jogo: 2 (linha 1.5)",
+          "at": "2026-10-15T22:19:16.433Z"
+        },
+        "clv": 0.12591646636192322,
+        "closingFair": 1.2434314994288156
       }
     },
     {
@@ -37124,53 +37136,6 @@
         "stakes": true
       },
       "updatedAt": "2026-10-15T20:34:46.212Z",
-      "origem": "analise",
-      "analise": {
-        "fixtureId": 1645637,
-        "kickoff": "2026-10-15T21:00:00.000Z",
-        "home": "H&H Export",
-        "away": "Rancho Santana",
-        "competition": "Primera Division",
-        "lineId": "cb:1+gO2.5",
-        "mercado": "Combo",
-        "linha": "H&H Export vence + Mais de 2,5 gols",
-        "tier": "especulativa",
-        "p_model": 0.333,
-        "p_blend": 0.419,
-        "p_pinnacle": 0.429,
-        "fair_odd": 2.39,
-        "odd_min": 2.51,
-        "pinnacle_odd": null,
-        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
-        "fragile": true,
-        "inboxId": "anmv9zz67rmhiy",
-        "enviadaEm": "2026-10-15T20:34:45.687Z"
-      }
-    },
-    {
-      "id": "mva3os1rrzc40",
-      "kind": "valor",
-      "event": "H&H Export x Rancho Santana — Combo: H&H Export vence + Mais de 2,5 gols",
-      "houseA": "Chute da Sorte",
-      "oddA": 2.01,
-      "stakeA": 100,
-      "curA": "BRL",
-      "sport": "Futebol",
-      "market": "Combo (criar aposta)",
-      "oddMkt": 2.39,
-      "prob": 0.419,
-      "winner": null,
-      "date": "2026-10-15T18:00",
-      "modelo": "analise",
-      "total": 100,
-      "lucroA": 100.99999999999997,
-      "lucroRed": -100,
-      "lucro": 100.99999999999997,
-      "roi": 100.99999999999997,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-10-15T22:18:39.231Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1645637,
@@ -37359,5 +37324,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T22:18:39.231Z"
+  "updatedAt": "2026-10-15T22:19:54.514Z"
 }
