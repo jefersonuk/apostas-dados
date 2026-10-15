@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 415.4,
+      "value": 528.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T17:25:31.535Z"
+      "updatedAt": "2026-10-15T17:26:40.879Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 50.16,
+      "value": 30.16,
       "currency": "EUR",
-      "updatedAt": "2026-10-15T17:25:31.535Z"
+      "updatedAt": "2026-10-15T17:26:40.879Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -36945,6 +36945,53 @@
         "inboxId": "anmv9t7rn6gpcn",
         "enviadaEm": "2026-10-15T17:25:29.394Z"
       }
+    },
+    {
+      "id": "mv9t9asvtn3jx",
+      "kind": "valor",
+      "event": "Deportivo Saprissa x Sporting San Jose — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.33,
+      "stakeA": 113.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.33,
+      "prob": 0.754,
+      "winner": null,
+      "date": "2026-10-15T23:00",
+      "modelo": "analise",
+      "total": 113.4,
+      "lucroA": 37.42200000000001,
+      "lucroRed": -113.4,
+      "lucro": 37.42200000000001,
+      "roi": 33.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T17:26:40.879Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1551700,
+        "kickoff": "2026-10-16T02:00:00.000Z",
+        "home": "Deportivo Saprissa",
+        "away": "Sporting San Jose",
+        "competition": "Primera División",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "âncora",
+        "p_model": 0.761,
+        "p_blend": 0.754,
+        "p_pinnacle": 0.753,
+        "fair_odd": 1.33,
+        "odd_min": 1.35,
+        "pinnacle_odd": 1.29,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmv9t9aaq0hws",
+        "enviadaEm": "2026-10-15T17:26:40.226Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37111,5 +37158,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T17:25:31.535Z"
+  "updatedAt": "2026-10-15T17:26:40.879Z"
 }
