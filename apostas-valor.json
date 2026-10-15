@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 296.16,
+      "value": 396.16,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T14:49:22.851Z"
+      "updatedAt": "2026-10-15T14:53:17.603Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 179,
+      "value": 79,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T14:06:48.203Z"
+      "updatedAt": "2026-10-15T14:53:17.603Z"
     }
   ],
   "aportes": [
@@ -36521,6 +36521,53 @@
         "inboxId": "anmv9mm4cn0k0a",
         "enviadaEm": "2026-10-15T14:20:41.735Z"
       }
+    },
+    {
+      "id": "mv9ns1ibiyeyq",
+      "kind": "valor",
+      "event": "Dinamo Minsk x Slavia Mozyr — Combo: Dinamo Minsk vence + Mais de 1,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 1.74,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.91,
+      "prob": 0.522,
+      "winner": null,
+      "date": "2026-10-15T12:30",
+      "modelo": "analise",
+      "total": 100,
+      "lucroA": 74,
+      "lucroRed": -100,
+      "lucro": 74,
+      "roi": 74,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T14:53:17.603Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1525930,
+        "kickoff": "2026-10-15T15:30:00.000Z",
+        "home": "Dinamo Minsk",
+        "away": "Slavia Mozyr",
+        "competition": "Premier League",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "Dinamo Minsk vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.453,
+        "p_blend": 0.522,
+        "p_pinnacle": 0.53,
+        "fair_odd": 1.91,
+        "odd_min": 2.01,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv9ns0zija4k",
+        "enviadaEm": "2026-10-15T14:53:16.926Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36687,5 +36734,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:49:22.851Z"
+  "updatedAt": "2026-10-15T14:53:17.603Z"
 }
