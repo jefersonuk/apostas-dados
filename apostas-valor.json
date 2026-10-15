@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 379.33,
+      "value": 412.99,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T14:09:48.632Z"
+      "updatedAt": "2026-10-15T14:20:42.464Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 76.16,
+      "value": 70.16,
       "currency": "EUR",
-      "updatedAt": "2026-10-15T13:50:08.779Z"
+      "updatedAt": "2026-10-15T14:20:42.463Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -36466,6 +36466,54 @@
         "inboxId": "anmv9m45mzfkhh",
         "enviadaEm": "2026-10-15T14:06:43.595Z"
       }
+    },
+    {
+      "id": "mv9mm4wunceie",
+      "kind": "valor",
+      "event": "Al Khaleej Saihat x Al-Fayha — 1X2: Empate",
+      "houseA": "Sportmarket",
+      "oddA": 5,
+      "stakeA": 33.66,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-15T11:50",
+      "modelo": "analise",
+      "total": 33.66,
+      "lucroA": 134.64,
+      "lucroRed": -33.66,
+      "lucro": 134.64,
+      "roi": 400,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T14:20:42.463Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1603049,
+        "kickoff": "2026-10-15T14:50:00.000Z",
+        "home": "Al Khaleej Saihat",
+        "away": "Al-Fayha",
+        "competition": "Pro League",
+        "lineId": "X",
+        "mercado": "1X2",
+        "linha": "Empate",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmv9mm4cn0k0a",
+        "enviadaEm": "2026-10-15T14:20:41.735Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36632,5 +36680,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:09:48.632Z"
+  "updatedAt": "2026-10-15T14:20:42.464Z"
 }
