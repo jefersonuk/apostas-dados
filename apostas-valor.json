@@ -4648,7 +4648,7 @@
       "value": 536.16,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T15:07:11.422Z"
+      "updatedAt": "2026-10-15T15:21:45.892Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": -61,
+      "value": 266,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T15:05:20.199Z"
+      "updatedAt": "2026-10-15T15:21:45.788Z"
     }
   ],
   "aportes": [
@@ -5192,12 +5192,12 @@
       "updatedAt": "2026-10-14T12:38:18.928Z"
     }
   ],
-  "usdRate": 5.05,
+  "usdRate": 5.04,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-15T12:12:39.494Z",
-  "eurRate": 5.61,
+  "usdRateAt": "2026-10-15T11:10:01.252Z",
+  "eurRate": 5.66,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-15T12:12:39.641Z",
+  "eurRateAt": "2026-10-15T11:10:01.656Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -36024,7 +36024,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-15T13:53:22.494Z",
+      "updatedAt": "2026-10-15T15:21:45.788Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1602699,
@@ -36049,7 +36049,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Khon Kaen United 2–1 Chainat · combo: as duas pernas ganharam",
-          "at": "2026-10-15T13:53:22.494Z"
+          "at": "2026-10-15T15:21:45.787Z"
         }
       }
     },
@@ -36891,5 +36891,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T15:07:11.422Z"
+  "updatedAt": "2026-10-15T15:21:45.788Z"
 }
