@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 20,
+      "value": 10,
       "currency": "USD",
-      "updatedAt": "2026-10-14T20:21:08.511Z"
+      "updatedAt": "2026-10-15T11:12:20.976Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 275.1,
+      "value": 125,
       "currency": "BRL",
-      "updatedAt": "2026-10-14T23:52:09.368Z"
+      "updatedAt": "2026-10-15T11:10:30.213Z"
     }
   ],
   "aportes": [
@@ -36161,5 +36161,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T11:10:01.656Z"
+  "updatedAt": "2026-10-15T11:12:20.976Z"
 }
