@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": -75,
+      "value": 150,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T13:35:02.038Z"
+      "updatedAt": "2026-10-15T13:35:24.839Z"
     }
   ],
   "aportes": [
@@ -36409,5 +36409,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T13:35:02.038Z"
+  "updatedAt": "2026-10-15T13:35:24.839Z"
 }
