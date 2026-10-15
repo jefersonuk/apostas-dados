@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 480.33,
+      "value": 380.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T13:53:22.494Z"
+      "updatedAt": "2026-10-15T14:04:09.925Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 179,
+      "value": 279,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T14:02:14.975Z"
+      "updatedAt": "2026-10-15T14:04:09.924Z"
     }
   ],
   "aportes": [
@@ -5732,6 +5732,10 @@
     {
       "id": "mv521fcjwew6h",
       "at": "2026-10-12T17:44:45.494Z"
+    },
+    {
+      "id": "mv9kzedx9d98u",
+      "at": "2026-10-15T14:04:09.924Z"
     }
   ],
   "surebets": [
@@ -36204,54 +36208,6 @@
       }
     },
     {
-      "id": "mv9kzedx9d98u",
-      "kind": "valor",
-      "event": "Mash'al x Olmaliq — 1X2: Olmaliq vence",
-      "houseA": "Chute da Sorte",
-      "oddA": 2.53,
-      "stakeA": 100,
-      "curA": "BRL",
-      "sport": "Futebol",
-      "market": "Combo (criar aposta)",
-      "oddMkt": 2.17,
-      "prob": 0.461,
-      "winner": null,
-      "date": "2026-10-15T11:00",
-      "modelo": "analise",
-      "total": 100,
-      "lucroA": 152.99999999999997,
-      "lucroRed": -100,
-      "lucro": 152.99999999999997,
-      "roi": 152.99999999999997,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-10-15T14:02:14.975Z",
-      "origem": "analise",
-      "analise": {
-        "fixtureId": 1516158,
-        "kickoff": "2026-10-15T14:00:00.000Z",
-        "home": "Mash'al",
-        "away": "Olmaliq",
-        "competition": "Super League",
-        "lineId": null,
-        "mercado": "1X2",
-        "linha": "Olmaliq vence",
-        "tier": "especulativa",
-        "p_model": 0.315,
-        "p_blend": 0.461,
-        "p_pinnacle": 0.479,
-        "fair_odd": 2.17,
-        "odd_min": 2.28,
-        "pinnacle_odd": null,
-        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
-        "fragile": true,
-        "inboxId": "anmv9kzdwybx2d",
-        "enviadaEm": "2026-10-15T13:35:01.426Z",
-        "editadaEm": "2026-10-15T14:02:14.975Z"
-      }
-    },
-    {
       "id": "mv9l6x4f4176g",
       "kind": "valor",
       "event": "Usm El Harrach x RC Arba — Mesmo jogo: Usm El Harrach vence primeiro tempo + Mais de 1,5 gols",
@@ -36584,5 +36540,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:02:14.975Z"
+  "updatedAt": "2026-10-15T14:04:09.925Z"
 }
