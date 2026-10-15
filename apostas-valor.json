@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 480.33,
+      "value": 379.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T14:06:48.203Z"
+      "updatedAt": "2026-10-15T14:09:48.632Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -36065,7 +36065,7 @@
       "market": "Múltipla",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-15T09:00",
       "modelo": "analise",
       "total": 101,
@@ -36074,9 +36074,10 @@
       "lucro": 223.21,
       "roi": 221,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T12:56:41.477Z",
+      "updatedAt": "2026-10-15T14:09:48.631Z",
       "origem": "analise",
       "analise": {
         "manual": true,
@@ -36131,7 +36132,14 @@
         "pinnacle_odd": null,
         "priced_by": "manual",
         "inboxId": "anmv9jm2vn35lc",
-        "enviadaEm": "2026-10-15T12:56:40.979Z"
+        "enviadaEm": "2026-10-15T12:56:40.979Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 2/3: Khon Kaen United 2–1 Chainat ✅ · Kuching FA 1–1 Kitchee ❌ · Tampines Rovers 0–1 Machida Zelvia ✅",
+          "at": "2026-10-15T14:09:48.631Z"
+        },
+        "clv": -0.10959164523770104,
+        "closingFair": 3.6050874667016495
       }
     },
     {
@@ -36624,5 +36632,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:06:48.203Z"
+  "updatedAt": "2026-10-15T14:09:48.632Z"
 }
