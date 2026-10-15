@@ -6721,7 +6721,8 @@
     if(!(stake>0)){ toast('Stake inválida.'); return; }
     let lineId=a.lineId||null, aviso='';
     if(mercado!==(a.mercado||'')||linha!==(a.linha||'')){
-      try{ const m=await import('/analise-futebol/src/myline.js'); lineId=m.parseLine(linha,{market:mercado,names:{home:a.home,away:a.away}}).id||null; }catch(e){ lineId=null; }
+      // settle: também o que a conferência liquida e o modelo não calcula (dupla chance, gols de um time)
+      try{ const m=await import('/analise-futebol/src/myline.js'); lineId=m.parseLine(linha,{market:mercado,names:{home:a.home,away:a.away},settle:true}).id||null; }catch(e){ lineId=null; }
       if(!lineId) aviso=' · linha não reconhecida: o resultado desta aposta passa a ser marcado à mão';
     }
     const conta=acharCasaExistente(casa);
@@ -6878,7 +6879,9 @@
       const jogo=esc(l.home)+(comecou&&x.goals?' <b>'+x.goals[0]+'–'+x.goals[1]+'</b> ':' x ')+esc(l.away);
       // perna asiática (1,75 · 2 · 2,25): com 2 gols ganha metade, devolve ou perde metade
       const agora={A:'ganha',HW:'meia vitória',VOID:'devolve',HL:'meia derrota',RED:'perde'};
-      const st=!comecou?'<span class="muted">ainda não começou</span>'
+      // perna da aposta manual sem o jogo da API ou com a linha que o app não reconhece: o resultado dela é marcado à mão
+      const st=!l.fixtureId?'<span class="muted">jogo fora da API: confira à mão</span>':!l.lineId?'<span class="muted">linha não reconhecida: confira à mão</span>'
+        :!comecou?'<span class="muted">ainda não começou</span>'
         :ln&&ln.locked?(ln.now==='A'?'<span class="ok">✅ bateu</span>':ln.now==='RED'?'<span class="no">❌ perdeu</span>'
           :ln.now==='HW'?'<span class="ok">½✅ meia vitória</span>':ln.now==='HL'?'<span class="no">½❌ meia derrota</span>':'<span class="void">↩ devolveu</span>')
         :ln&&ln.need>0?'<span class="wait">⏳ '+(ln.need===1?'falta 1 gol':'faltam '+ln.need+' gols')+'</span>'+(ln.now&&ln.now!=='RED'?' <span class="muted">(no momento: '+agora[ln.now]+')</span>':'')
