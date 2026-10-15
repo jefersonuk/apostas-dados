@@ -36238,7 +36238,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-15T13:40:52.911Z",
+      "updatedAt": "2026-10-15T14:49:02.154Z",
       "origem": "analise",
       "analise": {
         "manual": true,
@@ -36285,7 +36285,12 @@
         "pinnacle_odd": null,
         "priced_by": "manual",
         "inboxId": "anmv9l6wig6cj2",
-        "enviadaEm": "2026-10-15T13:40:52.120Z"
+        "enviadaEm": "2026-10-15T13:40:52.120Z",
+        "check": {
+          "status": "pendente",
+          "detail": "múltipla 0/2: Usm El Harrach x RC Arba: Halftime · Usm El Harrach x RC Arba: Halftime",
+          "at": "2026-10-15T14:49:02.153Z"
+        }
       }
     },
     {
@@ -36680,5 +36685,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:20:42.464Z"
+  "updatedAt": "2026-10-15T14:49:02.154Z"
 }
