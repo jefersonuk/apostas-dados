@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 580.33,
+      "value": 480.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T13:51:31.856Z"
+      "updatedAt": "2026-10-15T13:53:22.494Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": -62,
+      "value": 179,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T13:51:31.856Z"
+      "updatedAt": "2026-10-15T13:53:22.494Z"
     }
   ],
   "aportes": [
@@ -36008,7 +36008,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.56,
       "prob": 0.39,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-15T09:00",
       "modelo": "analise",
       "total": 100,
@@ -36017,9 +36017,10 @@
       "lucro": 141,
       "roi": 141,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-15T11:16:27.659Z",
+      "updatedAt": "2026-10-15T13:53:22.494Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1602699,
@@ -36040,7 +36041,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv9g16l1g97w",
-        "enviadaEm": "2026-10-15T11:16:27.157Z"
+        "enviadaEm": "2026-10-15T11:16:27.157Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Khon Kaen United 2–1 Chainat · combo: as duas pernas ganharam",
+          "at": "2026-10-15T13:53:22.494Z"
+        }
       }
     },
     {
@@ -36577,5 +36583,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T13:51:31.856Z"
+  "updatedAt": "2026-10-15T13:53:22.494Z"
 }
