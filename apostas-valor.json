@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 380.33,
+      "value": 480.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T14:04:09.925Z"
+      "updatedAt": "2026-10-15T14:06:48.203Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 279,
+      "value": 179,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T14:04:09.924Z"
+      "updatedAt": "2026-10-15T14:06:48.203Z"
     }
   ],
   "aportes": [
@@ -36374,6 +36374,90 @@
         "inboxId": "anmv9lklo7ldb8",
         "enviadaEm": "2026-10-15T13:51:31.255Z"
       }
+    },
+    {
+      "id": "mv9m496zyjoxj",
+      "kind": "valor",
+      "event": "Mash'al x Olmaliq — Mesmo jogo: Olmaliq vence + Mais de 2,5 gols + Mash'al +2.5",
+      "houseA": "Chute da Sorte",
+      "oddA": 2.53,
+      "stakeA": 100,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-15T11:00",
+      "modelo": "analise",
+      "total": 100,
+      "lucroA": 152.99999999999997,
+      "lucroRed": -100,
+      "lucro": 152.99999999999997,
+      "roi": 152.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T14:06:48.203Z",
+      "origem": "analise",
+      "analise": {
+        "manual": true,
+        "multi": true,
+        "same_game": true,
+        "home": "Mash'al",
+        "away": "Olmaliq",
+        "legs": [
+          {
+            "fixtureId": 1516158,
+            "kickoff": "2026-10-15T14:00:00.000Z",
+            "home": "Mash'al",
+            "away": "Olmaliq",
+            "competition": "Super League",
+            "lineId": "2",
+            "linha": "Olmaliq vence",
+            "mercado": "1X2",
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1516158,
+            "kickoff": "2026-10-15T14:00:00.000Z",
+            "home": "Mash'al",
+            "away": "Olmaliq",
+            "competition": "Super League",
+            "lineId": "gO2.5",
+            "linha": "Mais de 2,5 gols",
+            "mercado": "Total de gols",
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1516158,
+            "kickoff": "2026-10-15T14:00:00.000Z",
+            "home": "Mash'al",
+            "away": "Olmaliq",
+            "competition": "Super League",
+            "lineId": "ahH2.5",
+            "linha": "Mash'al +2.5",
+            "mercado": "Handicap asiático",
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1516158,
+        "lineId": "multi",
+        "kickoff": "2026-10-15T14:00:00.000Z",
+        "first_kickoff": "2026-10-15T14:00:00.000Z",
+        "competition": "Super League",
+        "mercado": "Mesmo jogo",
+        "linha": "Olmaliq vence + Mais de 2,5 gols + Mash'al +2.5",
+        "tier": "manual",
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "inboxId": "anmv9m45mzfkhh",
+        "enviadaEm": "2026-10-15T14:06:43.595Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36540,5 +36624,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:04:09.925Z"
+  "updatedAt": "2026-10-15T14:06:48.203Z"
 }
