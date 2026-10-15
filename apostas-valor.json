@@ -4833,7 +4833,7 @@
       "name": "Chute da Sorte",
       "value": 179,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T14:01:45.064Z"
+      "updatedAt": "2026-10-15T14:02:14.975Z"
     }
   ],
   "aportes": [
@@ -36206,7 +36206,7 @@
     {
       "id": "mv9kzedx9d98u",
       "kind": "valor",
-      "event": "Mash'al x Olmaliq — Combo: Olmaliq vence + Mais de 2,5 gols",
+      "event": "Mash'al x Olmaliq — 1X2: Olmaliq vence",
       "houseA": "Chute da Sorte",
       "oddA": 2.53,
       "stakeA": 100,
@@ -36226,7 +36226,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-15T14:01:45.065Z",
+      "updatedAt": "2026-10-15T14:02:14.975Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1516158,
@@ -36235,8 +36235,8 @@
         "away": "Olmaliq",
         "competition": "Super League",
         "lineId": null,
-        "mercado": "Combo",
-        "linha": "Olmaliq vence + Mais de 2,5 gols",
+        "mercado": "1X2",
+        "linha": "Olmaliq vence",
         "tier": "especulativa",
         "p_model": 0.315,
         "p_blend": 0.461,
@@ -36248,7 +36248,7 @@
         "fragile": true,
         "inboxId": "anmv9kzdwybx2d",
         "enviadaEm": "2026-10-15T13:35:01.426Z",
-        "editadaEm": "2026-10-15T14:01:45.064Z"
+        "editadaEm": "2026-10-15T14:02:14.975Z"
       }
     },
     {
@@ -36584,5 +36584,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:01:45.065Z"
+  "updatedAt": "2026-10-15T14:02:14.975Z"
 }
