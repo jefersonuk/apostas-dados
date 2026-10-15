@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 337.7,
+      "value": 217.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T00:12:51.021Z"
+      "updatedAt": "2026-10-15T01:03:14.604Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -35712,7 +35712,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 1.98,
       "prob": 0.504,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T20:00",
       "modelo": "analise",
       "total": 60,
@@ -35721,9 +35721,10 @@
       "lucro": 64.80000000000001,
       "roi": 108,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T19:47:51.994Z",
+      "updatedAt": "2026-10-15T01:03:14.250Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1559668,
@@ -35744,7 +35745,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv8iv03h8rqy",
-        "enviadaEm": "2026-10-14T19:47:51.485Z"
+        "enviadaEm": "2026-10-14T19:47:51.485Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Comunicaciones 1–2 Aurora · combo: uma perna perdeu",
+          "at": "2026-10-15T01:03:14.250Z"
+        }
       }
     },
     {
@@ -35759,7 +35765,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.55,
       "prob": 0.392,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T20:00",
       "modelo": "analise",
       "total": 60,
@@ -35768,9 +35774,10 @@
       "lucro": 83.4,
       "roi": 139,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T19:52:03.405Z",
+      "updatedAt": "2026-10-15T01:03:14.603Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493744,
@@ -35791,7 +35798,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv8j0e2h2c5j",
-        "enviadaEm": "2026-10-14T19:52:02.873Z"
+        "enviadaEm": "2026-10-14T19:52:02.873Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Sporting JAX 0–1 Birmingham Legion · combo: uma perna perdeu",
+          "at": "2026-10-15T01:03:14.603Z"
+        }
       }
     },
     {
@@ -36112,5 +36124,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T00:12:51.021Z"
+  "updatedAt": "2026-10-15T01:03:14.605Z"
 }
