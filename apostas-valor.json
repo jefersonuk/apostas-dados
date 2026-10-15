@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 468.33,
+      "value": 580.33,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T13:50:08.779Z"
+      "updatedAt": "2026-10-15T13:51:31.856Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 50,
+      "value": -62,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T13:40:52.911Z"
+      "updatedAt": "2026-10-15T13:51:31.856Z"
     }
   ],
   "aportes": [
@@ -36364,6 +36364,53 @@
         "inboxId": "anmv9litjofh01",
         "enviadaEm": "2026-10-15T13:50:08.148Z"
       }
+    },
+    {
+      "id": "mv9lkm4wsuh3l",
+      "kind": "valor",
+      "event": "MO Bejaia x Nrb Beni Oulbene — Combo: MO Bejaia vence + Mais de 1,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 2.01,
+      "stakeA": 112,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.11,
+      "prob": 0.475,
+      "winner": null,
+      "date": "2026-10-15T11:00",
+      "modelo": "analise",
+      "total": 112,
+      "lucroA": 113.11999999999998,
+      "lucroRed": -112,
+      "lucro": 113.11999999999998,
+      "roi": 100.99999999999997,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T13:51:31.856Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1643960,
+        "kickoff": "2026-10-15T14:00:00.000Z",
+        "home": "MO Bejaia",
+        "away": "Nrb Beni Oulbene",
+        "competition": "Ligue 2",
+        "lineId": "cb:1+gO1.5",
+        "mercado": "Combo",
+        "linha": "MO Bejaia vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.497,
+        "p_blend": 0.475,
+        "p_pinnacle": 0.472,
+        "fair_odd": 2.11,
+        "odd_min": 2.21,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmv9lklo7ldb8",
+        "enviadaEm": "2026-10-15T13:51:31.255Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36530,5 +36577,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T13:50:08.779Z"
+  "updatedAt": "2026-10-15T13:51:31.856Z"
 }
