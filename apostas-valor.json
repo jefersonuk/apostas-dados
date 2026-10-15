@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 396.16,
+      "value": 466.16,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T14:53:17.603Z"
+      "updatedAt": "2026-10-15T14:58:49.478Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 79,
+      "value": 9,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T14:53:17.603Z"
+      "updatedAt": "2026-10-15T14:58:49.478Z"
     }
   ],
   "aportes": [
@@ -36568,6 +36568,79 @@
         "inboxId": "anmv9ns0zija4k",
         "enviadaEm": "2026-10-15T14:53:16.926Z"
       }
+    },
+    {
+      "id": "mv9nz5l25wha0",
+      "kind": "valor",
+      "event": "FC Tallinn x Tartu Welco — Mesmo jogo: Tartu Welco -1.5 + Menos de 4.5",
+      "houseA": "Chute da Sorte",
+      "oddA": 3.19,
+      "stakeA": 70,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-15T13:00",
+      "modelo": "analise",
+      "total": 70,
+      "lucroA": 153.29999999999998,
+      "lucroRed": -70,
+      "lucro": 153.29999999999998,
+      "roi": 219,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T14:58:49.478Z",
+      "origem": "analise",
+      "analise": {
+        "manual": true,
+        "multi": true,
+        "same_game": true,
+        "home": "FC Tallinn",
+        "away": "Tartu Welco",
+        "legs": [
+          {
+            "fixtureId": 1519660,
+            "kickoff": "2026-10-15T16:00:00.000Z",
+            "home": "FC Tallinn",
+            "away": "Tartu Welco",
+            "competition": "Esiliiga A",
+            "lineId": "ahA-1.5",
+            "linha": "Tartu Welco -1.5",
+            "mercado": "Handicap asiático",
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1519660,
+            "kickoff": "2026-10-15T16:00:00.000Z",
+            "home": "FC Tallinn",
+            "away": "Tartu Welco",
+            "competition": "Esiliiga A",
+            "lineId": "gU4.5",
+            "linha": "Menos de 4.5",
+            "mercado": "Total de gols",
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1519660,
+        "lineId": "multi",
+        "kickoff": "2026-10-15T16:00:00.000Z",
+        "first_kickoff": "2026-10-15T16:00:00.000Z",
+        "competition": "Esiliiga A",
+        "mercado": "Mesmo jogo",
+        "linha": "Tartu Welco -1.5 + Menos de 4.5",
+        "tier": "manual",
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "inboxId": "anmv9nz5289bxw",
+        "enviadaEm": "2026-10-15T14:58:48.800Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36734,5 +36807,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T14:53:17.603Z"
+  "updatedAt": "2026-10-15T14:58:49.478Z"
 }
