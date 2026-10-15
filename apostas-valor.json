@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 273.66,
+      "value": 240,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T16:05:29.392Z"
+      "updatedAt": "2026-10-15T17:06:53.418Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4831,9 +4831,9 @@
     {
       "id": "mv83cpljs614v",
       "name": "Chute da Sorte",
-      "value": 491.12,
+      "value": 716.24,
       "currency": "BRL",
-      "updatedAt": "2026-10-15T15:40:26.938Z"
+      "updatedAt": "2026-10-15T17:06:51.873Z"
     }
   ],
   "aportes": [
@@ -36499,7 +36499,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-15T11:50",
       "modelo": "analise",
       "total": 33.66,
@@ -36508,9 +36508,10 @@
       "lucro": 134.64,
       "roi": 400,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T14:20:42.463Z",
+      "updatedAt": "2026-10-15T17:06:52.889Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1603049,
@@ -36532,7 +36533,12 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmv9mm4cn0k0a",
-        "enviadaEm": "2026-10-15T14:20:41.735Z"
+        "enviadaEm": "2026-10-15T14:20:41.735Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Al Khaleej Saihat 2–0 Al-Fayha · saldo de gols do Al Khaleej Saihat: 2 (linha 0)",
+          "at": "2026-10-15T17:06:52.889Z"
+        }
       }
     },
     {
@@ -36678,7 +36684,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-15T15:05:20.199Z",
+      "updatedAt": "2026-10-15T17:06:53.417Z",
       "origem": "analise",
       "analise": {
         "manual": true,
@@ -36736,7 +36742,12 @@
         "pinnacle_odd": null,
         "priced_by": "manual",
         "inboxId": "anmv9o7id82jgk",
-        "enviadaEm": "2026-10-15T15:05:19.292Z"
+        "enviadaEm": "2026-10-15T15:05:19.292Z",
+        "check": {
+          "status": "pendente",
+          "detail": "múltipla 0/3: Flora Tallinn x FC Levadia Tallinn: Second Half · Flora Tallinn x FC Levadia Tallinn: Second Half · Flora Tallinn x FC Levadia Tallinn: Second Half",
+          "at": "2026-10-15T17:06:53.417Z"
+        }
       }
     }
   ],
@@ -36904,5 +36915,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T16:05:29.392Z"
+  "updatedAt": "2026-10-15T17:06:53.418Z"
 }
