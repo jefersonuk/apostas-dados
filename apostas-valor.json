@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 217.7,
+      "value": 111.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T01:03:14.604Z"
+      "updatedAt": "2026-10-15T02:24:45.668Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 59.25,
+      "value": 69.21,
       "currency": "EUR",
-      "updatedAt": "2026-10-14T19:07:56.719Z"
+      "updatedAt": "2026-10-15T02:24:45.282Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -34531,7 +34531,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 1.54,
       "prob": 0.651,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-14T20:30",
       "modelo": "analise",
       "total": 55.8,
@@ -34540,9 +34540,10 @@
       "lucro": 30.132,
       "roi": 54,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-13T23:45:06.870Z",
+      "updatedAt": "2026-10-15T02:24:45.282Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1490531,
@@ -34563,7 +34564,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv7bw787psq3",
-        "enviadaEm": "2026-10-13T23:45:03.895Z"
+        "enviadaEm": "2026-10-13T23:45:03.895Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "DC United 2–1 New York Red Bulls · saldo de gols do DC United: 1 (linha 1)",
+          "at": "2026-10-15T02:24:45.281Z"
+        },
+        "clv": 0.1362433127366387,
+        "closingFair": 1.355343510265345
       }
     },
     {
@@ -35871,7 +35879,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.06,
       "prob": 0.486,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-14T20:30",
       "modelo": "analise",
       "total": 50.3,
@@ -35880,9 +35888,10 @@
       "lucro": 47.785,
       "roi": 95,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-14T20:14:55.965Z",
+      "updatedAt": "2026-10-15T02:24:45.668Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1490526,
@@ -35903,7 +35912,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv8jtt4lmq46",
-        "enviadaEm": "2026-10-14T20:14:55.413Z"
+        "enviadaEm": "2026-10-14T20:14:55.413Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Inter Miami 2–0 New York City FC · combo: uma perna perdeu",
+          "at": "2026-10-15T02:24:45.668Z"
+        }
       }
     },
     {
@@ -36124,5 +36138,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T01:03:14.605Z"
+  "updatedAt": "2026-10-15T02:24:45.669Z"
 }
