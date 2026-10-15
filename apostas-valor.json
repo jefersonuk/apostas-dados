@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 201,
+      "value": 251.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T12:56:41.478Z"
+      "updatedAt": "2026-10-15T13:20:12.166Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 10,
+      "value": 0,
       "currency": "USD",
-      "updatedAt": "2026-10-15T11:12:20.976Z"
+      "updatedAt": "2026-10-15T13:20:12.166Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -36123,6 +36123,79 @@
         "inboxId": "anmv9jm2vn35lc",
         "enviadaEm": "2026-10-15T12:56:40.979Z"
       }
+    },
+    {
+      "id": "mv9kgbrayw31p",
+      "kind": "valor",
+      "event": "Mardin 1969 x Fatih Karagümrük — Mesmo jogo: Mais de 1,5 gols + Fatih Karagümrük +1.5",
+      "houseA": "BC.game",
+      "oddA": 1.95,
+      "stakeA": 50.5,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-15T11:00",
+      "modelo": "analise",
+      "total": 50.5,
+      "lucroA": 47.974999999999994,
+      "lucroRed": -50.5,
+      "lucro": 47.974999999999994,
+      "roi": 95,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-15T13:20:12.166Z",
+      "origem": "analise",
+      "analise": {
+        "manual": true,
+        "multi": true,
+        "same_game": true,
+        "home": "Mardin 1969",
+        "away": "Fatih Karagümrük",
+        "legs": [
+          {
+            "fixtureId": 1585784,
+            "kickoff": "2026-10-15T14:00:00.000Z",
+            "home": "Mardin 1969",
+            "away": "Fatih Karagümrük",
+            "competition": "1. Lig",
+            "lineId": "gO1.5",
+            "linha": "Mais de 1,5 gols",
+            "mercado": "Total de gols",
+            "odd_casa": 1.29
+          },
+          {
+            "fixtureId": 1585784,
+            "kickoff": "2026-10-15T14:00:00.000Z",
+            "home": "Mardin 1969",
+            "away": "Fatih Karagümrük",
+            "competition": "1. Lig",
+            "lineId": "ahA1.5",
+            "linha": "Fatih Karagümrük +1.5",
+            "mercado": "Handicap asiático",
+            "odd_casa": 1.49
+          }
+        ],
+        "fixtureId": 1585784,
+        "lineId": "multi",
+        "kickoff": "2026-10-15T14:00:00.000Z",
+        "first_kickoff": "2026-10-15T14:00:00.000Z",
+        "competition": "1. Lig",
+        "mercado": "Mesmo jogo",
+        "linha": "Mais de 1,5 gols + Fatih Karagümrük +1.5",
+        "tier": "manual",
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "inboxId": "anmv9kg6lbkjd2",
+        "enviadaEm": "2026-10-15T13:20:05.471Z"
+      }
     }
   ],
   "invertidos": [],
@@ -36289,5 +36362,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T12:56:41.478Z"
+  "updatedAt": "2026-10-15T13:20:12.166Z"
 }
