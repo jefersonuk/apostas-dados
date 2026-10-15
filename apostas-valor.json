@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 536.16,
+      "value": 552.99,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T15:05:20.200Z"
+      "updatedAt": "2026-10-15T15:06:40.349Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -36306,7 +36306,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": null,
       "prob": null,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-10-15T11:00",
       "modelo": "analise",
       "total": 16.83,
@@ -36316,9 +36316,9 @@
       "roi": 3220.0000000000005,
       "aplicado": {
         "stakes": true,
-        "resultado": "RED"
+        "resultado": null
       },
-      "updatedAt": "2026-10-15T14:49:22.851Z",
+      "updatedAt": "2026-10-15T15:06:40.349Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1515897,
@@ -36891,5 +36891,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T15:05:20.200Z"
+  "updatedAt": "2026-10-15T15:06:40.349Z"
 }
