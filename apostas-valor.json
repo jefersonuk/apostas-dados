@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 109.33,
+      "value": 139.93,
       "currency": "USD",
-      "updatedAt": "2026-10-16T19:47:21.731Z"
+      "updatedAt": "2026-10-16T20:02:44.214Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 569.9,
+      "value": 304.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T20:02:43.525Z"
+      "updatedAt": "2026-10-16T20:27:30.288Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38072,7 +38072,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T15:30",
       "modelo": "analise",
       "total": 50.7,
@@ -38082,9 +38082,9 @@
       "roi": 333,
       "aplicado": {
         "stakes": true,
-        "resultado": null
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T19:37:40.492Z",
+      "updatedAt": "2026-10-16T20:27:29.256Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1575187,
@@ -38106,7 +38106,12 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvb9gkaxya8a",
-        "enviadaEm": "2026-10-16T17:47:59.817Z"
+        "enviadaEm": "2026-10-16T17:47:59.817Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Eintracht Frankfurt 1–0 1. FC Köln · saldo de gols do Eintracht Frankfurt: 1 (linha 0)",
+          "at": "2026-10-16T20:27:29.256Z"
+        }
       }
     },
     {
@@ -38171,7 +38176,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.56,
       "prob": 0.64,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-16T15:00",
       "modelo": "analise",
       "total": 101.4,
@@ -38180,9 +38185,10 @@
       "lucro": 53.742000000000004,
       "roi": 53,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-16T17:53:54.284Z",
+      "updatedAt": "2026-10-16T20:02:44.214Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1552496,
@@ -38203,7 +38209,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmvb9o5cix793",
-        "enviadaEm": "2026-10-16T17:53:53.682Z"
+        "enviadaEm": "2026-10-16T17:53:53.682Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Grenoble 0–2 Boulogne · gols no jogo: 2 (linha 1.5)",
+          "at": "2026-10-16T20:02:44.214Z"
+        },
+        "clv": -0.028423000040480706,
+        "closingFair": 1.5747593860947176
       }
     },
     {
@@ -38218,7 +38231,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.81,
       "prob": 0.554,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T15:30",
       "modelo": "analise",
       "total": 113.6,
@@ -38227,9 +38240,10 @@
       "lucro": 90.88,
       "roi": 80,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T18:15:48.651Z",
+      "updatedAt": "2026-10-16T20:27:30.288Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1601562,
@@ -38250,7 +38264,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmvbagbi30ffa",
-        "enviadaEm": "2026-10-16T18:15:48.027Z"
+        "enviadaEm": "2026-10-16T18:15:48.027Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Hellas Verona 2–2 Catanzaro · saldo de gols do Hellas Verona: 0 (linha 0.5)",
+          "at": "2026-10-16T20:27:30.288Z"
+        },
+        "clv": 0.036360052171536816,
+        "closingFair": 1.7368481120324646
       }
     },
     {
@@ -38610,5 +38631,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T20:02:43.525Z"
+  "updatedAt": "2026-10-16T20:27:30.288Z"
 }
