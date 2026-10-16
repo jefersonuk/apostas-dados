@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 148.19,
+      "value": 138.19,
       "currency": "USD",
-      "updatedAt": "2026-10-16T17:38:43.061Z"
+      "updatedAt": "2026-10-16T17:48:00.417Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 419.92,
+      "value": 470.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T17:38:43.061Z"
+      "updatedAt": "2026-10-16T17:48:00.418Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38049,6 +38049,54 @@
         "inboxId": "anmvb8sg1xxm3t",
         "enviadaEm": "2026-10-16T17:29:14.565Z"
       }
+    },
+    {
+      "id": "mvb9gkrluytb1",
+      "kind": "valor",
+      "event": "Eintracht Frankfurt x 1. FC Köln — 1X2: Empate",
+      "houseA": "Overtimemarkets",
+      "oddA": 4.33,
+      "stakeA": 50.7,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-16T15:30",
+      "modelo": "analise",
+      "total": 50.7,
+      "lucroA": 168.83100000000002,
+      "lucroRed": -50.7,
+      "lucro": 168.83100000000002,
+      "roi": 333,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T17:48:00.417Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1575187,
+        "kickoff": "2026-10-16T18:30:00.000Z",
+        "home": "Eintracht Frankfurt",
+        "away": "1. FC Köln",
+        "competition": "Bundesliga",
+        "lineId": "X",
+        "mercado": "1X2",
+        "linha": "Empate",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmvb9gkaxya8a",
+        "enviadaEm": "2026-10-16T17:47:59.817Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38215,5 +38263,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T17:38:43.061Z"
+  "updatedAt": "2026-10-16T17:48:00.418Z"
 }
