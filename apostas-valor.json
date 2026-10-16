@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 148.4,
+      "value": 125.99,
       "currency": "USD",
-      "updatedAt": "2026-10-16T17:06:55.346Z"
+      "updatedAt": "2026-10-16T17:17:36.455Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 328.6,
+      "value": 442.22,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T17:06:59.858Z"
+      "updatedAt": "2026-10-16T17:17:36.455Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37870,6 +37870,53 @@
         "inboxId": "anmvb5w2b5vtf2",
         "enviadaEm": "2026-10-16T16:08:04.529Z"
       }
+    },
+    {
+      "id": "mvb8dhdyy14s9",
+      "kind": "valor",
+      "event": "Rapid Vienna x TSV Hartberg — Resultado 1º tempo: Rapid Vienna vence o 1º tempo",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.63,
+      "stakeA": 113.62,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.81,
+      "prob": 0.551,
+      "winner": null,
+      "date": "2026-10-16T14:30",
+      "modelo": "analise",
+      "total": 113.62,
+      "lucroA": 71.58059999999999,
+      "lucroRed": -113.62,
+      "lucro": 71.58059999999999,
+      "roi": 62.999999999999986,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T17:17:36.455Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1561945,
+        "kickoff": "2026-10-16T17:30:00.000Z",
+        "home": "Rapid Vienna",
+        "away": "TSV Hartberg",
+        "competition": "Bundesliga",
+        "lineId": "1T1",
+        "mercado": "Resultado 1º tempo",
+        "linha": "Rapid Vienna vence o 1º tempo",
+        "tier": "especulativa",
+        "p_model": 0.255,
+        "p_blend": 0.551,
+        "p_pinnacle": 0.586,
+        "fair_odd": 1.81,
+        "odd_min": 1.87,
+        "pinnacle_odd": 1.66,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmvb8dgvs98kc",
+        "enviadaEm": "2026-10-16T17:17:35.800Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38036,5 +38083,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T17:06:56.431Z"
+  "updatedAt": "2026-10-16T17:17:36.455Z"
 }
