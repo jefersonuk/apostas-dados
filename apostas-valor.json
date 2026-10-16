@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 442.22,
+      "value": 470.62,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T17:17:36.455Z"
+      "updatedAt": "2026-10-16T17:20:52.725Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 3.43,
+      "value": -1.57,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T16:08:04.534Z"
+      "updatedAt": "2026-10-16T17:20:52.725Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -37917,6 +37917,53 @@
         "inboxId": "anmvb8dgvs98kc",
         "enviadaEm": "2026-10-16T17:17:35.800Z"
       }
+    },
+    {
+      "id": "mvb8hotxcgkez",
+      "kind": "valor",
+      "event": "SV Lafnitz x Gleisdorf 09 — Resultado 1º tempo: SV Lafnitz vence o 1º tempo",
+      "houseA": "Sportmarket",
+      "oddA": 2.29,
+      "stakeA": 28.4,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.92,
+      "prob": 0.521,
+      "winner": null,
+      "date": "2026-10-16T14:00",
+      "modelo": "analise",
+      "total": 28.4,
+      "lucroA": 36.635999999999996,
+      "lucroRed": -28.4,
+      "lucro": 36.635999999999996,
+      "roi": 129,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T17:20:52.725Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1607987,
+        "kickoff": "2026-10-16T17:00:00.000Z",
+        "home": "SV Lafnitz",
+        "away": "Gleisdorf 09",
+        "competition": "Regionalliga - South",
+        "lineId": "1T1",
+        "mercado": "Resultado 1º tempo",
+        "linha": "SV Lafnitz vence o 1º tempo",
+        "tier": "especulativa",
+        "p_model": 0.349,
+        "p_blend": 0.521,
+        "p_pinnacle": 0.541,
+        "fair_odd": 1.92,
+        "odd_min": 1.98,
+        "pinnacle_odd": 1.7,
+        "priced_by": "pinnacle (handicap asiático do 1º tempo −0,5)",
+        "fragile": false,
+        "inboxId": "anmvb8hl4wtsg7",
+        "enviadaEm": "2026-10-16T17:20:47.936Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38083,5 +38130,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T17:17:36.455Z"
+  "updatedAt": "2026-10-16T17:20:52.725Z"
 }
