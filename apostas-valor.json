@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 701.7,
+      "value": 626.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T15:48:45.287Z"
+      "updatedAt": "2026-10-16T15:48:47.777Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37702,7 +37702,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.02,
       "prob": 0.496,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T10:00",
       "modelo": "analise",
       "total": 75,
@@ -37711,9 +37711,10 @@
       "lucro": 47.99999999999999,
       "roi": 63.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T12:30:11.012Z",
+      "updatedAt": "2026-10-16T15:48:47.777Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1555186,
@@ -37734,7 +37735,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmvay3rgn4asj",
-        "enviadaEm": "2026-10-16T12:30:06.791Z"
+        "enviadaEm": "2026-10-16T12:30:06.791Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Ashdod 0–0 Maccabi Kiryat Gat · combo: uma perna perdeu",
+          "at": "2026-10-16T15:48:47.777Z"
+        }
       }
     }
   ],
@@ -37902,5 +37908,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T15:17:00.280Z"
+  "updatedAt": "2026-10-16T15:48:47.777Z"
 }
