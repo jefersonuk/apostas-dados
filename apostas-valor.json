@@ -30885,7 +30885,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T22:19:52.554Z",
+      "updatedAt": "2026-10-16T01:34:08.737Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -31000,7 +31000,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-15T22:19:52.554Z"
+          "at": "2026-10-16T01:34:08.737Z"
         }
       }
     },
@@ -31299,7 +31299,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-15T22:19:52.962Z",
+      "updatedAt": "2026-10-16T01:34:09.096Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31325,7 +31325,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-15T22:19:52.962Z"
+          "at": "2026-10-16T01:34:09.096Z"
         }
       }
     },
@@ -34317,7 +34317,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-15T22:19:53.414Z",
+      "updatedAt": "2026-10-16T01:34:09.463Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585788,
@@ -34342,7 +34342,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Match Interrupted",
-          "at": "2026-10-15T22:19:53.414Z"
+          "at": "2026-10-16T01:34:09.463Z"
         }
       }
     },
@@ -34895,7 +34895,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-15T22:19:53.788Z",
+      "updatedAt": "2026-10-16T01:34:09.833Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34952,7 +34952,7 @@
         "check": {
           "status": "manual",
           "detail": "múltipla 1/2: Baník Souš 1–1 Benátky nad Jizerou ↩ · Minerva Punjab 2–1 Odisha ✅ — perna com devolução ou meia: a casa recalcula a odd; confira o valor pago e marque à mão",
-          "at": "2026-10-15T22:19:53.788Z"
+          "at": "2026-10-16T01:34:09.833Z"
         }
       }
     },
@@ -35142,7 +35142,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-15T22:19:54.514Z",
+      "updatedAt": "2026-10-16T01:34:10.594Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35169,7 +35169,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Bryne 1–1 Raufoss · saldo de gols do Bryne: 0 (linha 3.5)",
-          "at": "2026-10-15T22:19:54.514Z"
+          "at": "2026-10-16T01:34:10.594Z"
         }
       }
     },
@@ -37141,7 +37141,7 @@
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-15T20:34:46.212Z",
+      "updatedAt": "2026-10-16T01:34:10.976Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1645637,
@@ -37162,7 +37162,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv9zz67rmhiy",
-        "enviadaEm": "2026-10-15T20:34:45.687Z"
+        "enviadaEm": "2026-10-15T20:34:45.687Z",
+        "check": {
+          "status": "pendente",
+          "detail": "situação na API: Not Started",
+          "at": "2026-10-16T01:34:10.976Z"
+        }
       }
     }
   ],
@@ -37330,5 +37335,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T01:21:55.181Z"
+  "updatedAt": "2026-10-16T01:34:10.977Z"
 }
