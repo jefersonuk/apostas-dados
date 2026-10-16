@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 150.53,
+      "value": 130.53,
       "currency": "USD",
-      "updatedAt": "2026-10-16T18:18:17.825Z"
+      "updatedAt": "2026-10-16T19:12:44.035Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 475.02,
+      "value": 576.42,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T18:51:30.658Z"
+      "updatedAt": "2026-10-16T19:12:44.035Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38292,6 +38292,54 @@
         "inboxId": "anmvbaj4zq62gn",
         "enviadaEm": "2026-10-16T18:17:59.558Z"
       }
+    },
+    {
+      "id": "mvbchjb7p11mt",
+      "kind": "valor",
+      "event": "Breidablik x Vikingur Reykjavik — Total de gols: Mais de 3,5 gols",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.84,
+      "stakeA": 101.4,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-16T16:15",
+      "modelo": "analise",
+      "total": 101.4,
+      "lucroA": 85.17600000000002,
+      "lucroRed": -101.4,
+      "lucro": 85.17600000000002,
+      "roi": 84.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T19:12:44.035Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1638631,
+        "kickoff": "2026-10-16T19:15:00.000Z",
+        "home": "Breidablik",
+        "away": "Vikingur Reykjavik",
+        "competition": "Úrvalsdeild",
+        "lineId": "gO3.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 3,5 gols",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmvbchi2cvsn7",
+        "enviadaEm": "2026-10-16T19:12:42.420Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38458,5 +38506,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T18:51:30.658Z"
+  "updatedAt": "2026-10-16T19:12:44.035Z"
 }
