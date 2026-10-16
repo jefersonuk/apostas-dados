@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 62.43,
+      "value": 50.43,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T15:02:21.380Z"
+      "updatedAt": "2026-10-16T15:02:47.390Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -37241,7 +37241,7 @@
       "event": "Ashdod x Maccabi Kiryat Gat — 1X2: Ashdod vence",
       "houseA": "Sportmarket",
       "oddA": 1.48,
-      "stakeA": 142,
+      "stakeA": 210.16,
       "curA": "EUR",
       "sport": "Futebol",
       "market": "1X2 / Resultado",
@@ -37250,16 +37250,16 @@
       "winner": "RED",
       "date": "2026-10-16T10:00",
       "modelo": "analise",
-      "total": 142,
-      "lucroA": 68.16,
-      "lucroRed": -142,
-      "lucro": 68.16,
+      "total": 210.16,
+      "lucroA": 100.87679999999999,
+      "lucroRed": -210.16,
+      "lucro": 100.87679999999999,
       "roi": 48,
       "aplicado": {
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T15:02:11.639Z",
+      "updatedAt": "2026-10-16T15:02:47.390Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1555186,
@@ -37286,7 +37286,8 @@
           "status": "encerrado",
           "detail": "Ashdod 0–0 Maccabi Kiryat Gat · saldo de gols do Ashdod: 0 (linha 0.5)",
           "at": "2026-10-16T15:02:11.638Z"
-        }
+        },
+        "editadaEm": "2026-10-16T15:02:47.390Z"
       }
     },
     {
@@ -37665,5 +37666,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T15:02:21.380Z"
+  "updatedAt": "2026-10-16T15:02:47.390Z"
 }
