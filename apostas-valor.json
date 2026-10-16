@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 119,
+      "value": 99,
       "currency": "USD",
-      "updatedAt": "2026-10-16T15:15:45.180Z"
+      "updatedAt": "2026-10-16T15:17:00.280Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 525.3,
+      "value": 626.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T15:15:45.180Z"
+      "updatedAt": "2026-10-16T15:17:00.280Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37642,6 +37642,53 @@
         "inboxId": "anmvb40r3iqihm",
         "enviadaEm": "2026-10-16T15:15:44.046Z"
       }
+    },
+    {
+      "id": "mvb42dx4g96xf",
+      "kind": "valor",
+      "event": "Rudes x HNK Rijeka — Resultado 1º tempo: HNK Rijeka vence o 1º tempo",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.77,
+      "stakeA": 101.4,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.9,
+      "prob": 0.526,
+      "winner": null,
+      "date": "2026-10-16T13:00",
+      "modelo": "analise",
+      "total": 101.4,
+      "lucroA": 78.078,
+      "lucroRed": -101.4,
+      "lucro": 78.078,
+      "roi": 77,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T15:17:00.280Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1548545,
+        "kickoff": "2026-10-16T16:00:00.000Z",
+        "home": "Rudes",
+        "away": "HNK Rijeka",
+        "competition": "HNL",
+        "lineId": "1T2",
+        "mercado": "Resultado 1º tempo",
+        "linha": "HNK Rijeka vence o 1º tempo",
+        "tier": "especulativa",
+        "p_model": 0.45,
+        "p_blend": 0.526,
+        "p_pinnacle": 0.535,
+        "fair_odd": 1.9,
+        "odd_min": 1.91,
+        "pinnacle_odd": 1.8,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmvb42ddyfso2",
+        "enviadaEm": "2026-10-16T15:16:59.590Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37808,5 +37855,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T15:15:45.180Z"
+  "updatedAt": "2026-10-16T15:17:00.280Z"
 }
