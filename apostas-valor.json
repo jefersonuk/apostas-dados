@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 626.7,
+      "value": 701.7,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T15:17:00.280Z"
+      "updatedAt": "2026-10-16T15:48:45.287Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37688,6 +37688,53 @@
         "fragile": false,
         "inboxId": "anmvb42ddyfso2",
         "enviadaEm": "2026-10-16T15:16:59.590Z"
+      }
+    },
+    {
+      "id": "mvay3upw3swl4",
+      "kind": "valor",
+      "event": "Ashdod x Maccabi Kiryat Gat — Combo: Ashdod vence + Mais de 2,5 gols",
+      "houseA": "Chute da Sorte",
+      "oddA": 1.64,
+      "stakeA": 75,
+      "curA": "BRL",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 2.02,
+      "prob": 0.496,
+      "winner": null,
+      "date": "2026-10-16T10:00",
+      "modelo": "analise",
+      "total": 75,
+      "lucroA": 47.99999999999999,
+      "lucroRed": -75,
+      "lucro": 47.99999999999999,
+      "roi": 63.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T12:30:11.012Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1555186,
+        "kickoff": "2026-10-16T13:00:00.000Z",
+        "home": "Ashdod",
+        "away": "Maccabi Kiryat Gat",
+        "competition": "Liga Leumit",
+        "lineId": "cb:1+gO2.5",
+        "mercado": "Combo",
+        "linha": "Ashdod vence + Mais de 2,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.341,
+        "p_blend": 0.496,
+        "p_pinnacle": 0.514,
+        "fair_odd": 2.02,
+        "odd_min": 2.12,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmvay3rgn4asj",
+        "enviadaEm": "2026-10-16T12:30:06.791Z"
       }
     }
   ],
