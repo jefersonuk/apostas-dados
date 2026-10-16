@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 626.7,
+      "value": 496.06,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T15:48:47.777Z"
+      "updatedAt": "2026-10-16T15:55:17.327Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37302,7 +37302,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.51,
       "prob": 0.66,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T11:00",
       "modelo": "analise",
       "total": 130.64,
@@ -37311,9 +37311,10 @@
       "lucro": 97.97999999999999,
       "roi": 75,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T13:49:17.279Z",
+      "updatedAt": "2026-10-16T15:55:17.327Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1516154,
@@ -37342,7 +37343,14 @@
         "p_model_cal": 0.63,
         "status": "aposta",
         "inboxId": "anmvb0xkisol3p",
-        "enviadaEm": "2026-10-16T13:49:16.708Z"
+        "enviadaEm": "2026-10-16T13:49:16.708Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Bunyodkor 1–1 Sogdiana · gols no jogo: 2 (linha 2.5)",
+          "at": "2026-10-16T15:55:17.327Z"
+        },
+        "clv": -0.019539294017687392,
+        "closingFair": 1.7848752013439382
       }
     },
     {
@@ -37908,5 +37916,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T15:48:47.777Z"
+  "updatedAt": "2026-10-16T15:55:17.327Z"
 }
