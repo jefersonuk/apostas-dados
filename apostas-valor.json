@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 129.33,
+      "value": 109.33,
       "currency": "USD",
-      "updatedAt": "2026-10-16T19:43:24.173Z"
+      "updatedAt": "2026-10-16T19:47:21.731Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 519.2,
+      "value": 620.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T19:43:24.173Z"
+      "updatedAt": "2026-10-16T19:47:21.731Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38390,6 +38390,54 @@
         "inboxId": "anmvbdkyngkyfl",
         "enviadaEm": "2026-10-16T19:43:23.500Z"
       }
+    },
+    {
+      "id": "mvbdq2gz1sm5x",
+      "kind": "valor",
+      "event": "Defensa Y Justicia x Instituto Cordoba — Total de gols: Mais de 2,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.39,
+      "stakeA": 101.4,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 2.52,
+      "prob": 0.397,
+      "winner": null,
+      "date": "2026-10-16T19:00",
+      "modelo": "analise",
+      "total": 101.4,
+      "lucroA": 140.94600000000003,
+      "lucroRed": -101.4,
+      "lucro": 140.94600000000003,
+      "roi": 139,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T19:47:21.731Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1493186,
+        "kickoff": "2026-10-16T22:00:00.000Z",
+        "home": "Defensa Y Justicia",
+        "away": "Instituto Cordoba",
+        "competition": "Liga Profesional Argentina",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "especulativa",
+        "p_model": 0.387,
+        "p_blend": 0.397,
+        "p_pinnacle": 0.398,
+        "fair_odd": 2.52,
+        "odd_min": 2.6,
+        "pinnacle_odd": 2.4,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmvbdq20spuuw",
+        "enviadaEm": "2026-10-16T19:47:21.148Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38556,5 +38604,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T19:43:24.174Z"
+  "updatedAt": "2026-10-16T19:47:21.731Z"
 }
