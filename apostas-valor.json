@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 128.4,
+      "value": 183.8,
       "currency": "USD",
-      "updatedAt": "2026-10-16T15:55:26.842Z"
+      "updatedAt": "2026-10-16T16:57:06.476Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 531.4,
+      "value": 328.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T16:53:19.898Z"
+      "updatedAt": "2026-10-16T16:57:06.477Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37467,7 +37467,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.44,
       "prob": 0.7,
-      "winner": null,
+      "winner": "VOID",
       "date": "2026-10-16T12:00",
       "modelo": "analise",
       "total": 101.4,
@@ -37476,9 +37476,10 @@
       "lucro": 51.714000000000006,
       "roi": 51,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "VOID"
       },
-      "updatedAt": "2026-10-16T14:18:31.203Z",
+      "updatedAt": "2026-10-16T16:57:06.477Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1565274,
@@ -37507,7 +37508,14 @@
         "p_model_cal": 0.66,
         "status": "aposta",
         "inboxId": "anmvb1z5vsoxh0",
-        "enviadaEm": "2026-10-16T14:18:30.664Z"
+        "enviadaEm": "2026-10-16T14:18:30.664Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Oţelul 1–1 Csikszereda · gols no jogo: 2 (linha 2)",
+          "at": "2026-10-16T16:57:06.476Z"
+        },
+        "clv": -0.0441820886029769,
+        "closingFair": 1.5797988110444432
       }
     },
     {
@@ -37673,7 +37681,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": 1.9,
       "prob": 0.526,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-16T13:00",
       "modelo": "analise",
       "total": 101.4,
@@ -37682,9 +37690,10 @@
       "lucro": 78.078,
       "roi": 77,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-16T15:17:00.280Z",
+      "updatedAt": "2026-10-16T16:54:01.564Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1548545,
@@ -38020,5 +38029,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T16:53:19.898Z"
+  "updatedAt": "2026-10-16T16:57:06.477Z"
 }
