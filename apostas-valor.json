@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 620.6,
+      "value": 569.9,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T19:47:21.731Z"
+      "updatedAt": "2026-10-16T20:02:43.525Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5194,10 +5194,10 @@
   ],
   "usdRate": 5.07,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-16T13:11:01.557Z",
-  "eurRate": 5.68,
+  "usdRateAt": "2026-10-16T20:02:43.264Z",
+  "eurRate": 5.7,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-16T13:11:01.831Z",
+  "eurRateAt": "2026-10-16T20:02:43.525Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -37982,7 +37982,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T15:00",
       "modelo": "analise",
       "total": 50.7,
@@ -37991,9 +37991,10 @@
       "lucro": 98.86500000000001,
       "roi": 195.00000000000003,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T17:29:15.169Z",
+      "updatedAt": "2026-10-16T20:02:43.191Z",
       "origem": "analise",
       "analise": {
         "manual": true,
@@ -38051,7 +38052,12 @@
         "pinnacle_odd": null,
         "priced_by": "manual",
         "inboxId": "anmvb8sg1xxm3t",
-        "enviadaEm": "2026-10-16T17:29:14.565Z"
+        "enviadaEm": "2026-10-16T17:29:14.565Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "múltipla 2/3: Heerenveen 4–0 Excelsior ✅ · Heerenveen 4–0 Excelsior ✅ · Heerenveen 4–0 Excelsior ❌",
+          "at": "2026-10-16T20:02:43.191Z"
+        }
       }
     },
     {
@@ -38604,5 +38610,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T19:47:21.731Z"
+  "updatedAt": "2026-10-16T20:02:43.525Z"
 }
