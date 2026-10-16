@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 202.8,
+      "value": 101.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T20:58:26.468Z"
+      "updatedAt": "2026-10-16T21:18:39.268Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38335,7 +38335,7 @@
       "market": "Total de Gols",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T16:15",
       "modelo": "analise",
       "total": 101.4,
@@ -38344,9 +38344,10 @@
       "lucro": 85.17600000000002,
       "roi": 84.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T19:12:44.035Z",
+      "updatedAt": "2026-10-16T21:18:39.267Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1638631,
@@ -38368,7 +38369,12 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvbchi2cvsn7",
-        "enviadaEm": "2026-10-16T19:12:42.420Z"
+        "enviadaEm": "2026-10-16T19:12:42.420Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Breidablik 1–2 Vikingur Reykjavik · gols no jogo: 3 (linha 3.5)",
+          "at": "2026-10-16T21:18:39.267Z"
+        }
       }
     },
     {
@@ -38632,5 +38638,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T20:58:26.468Z"
+  "updatedAt": "2026-10-16T21:18:39.268Z"
 }
