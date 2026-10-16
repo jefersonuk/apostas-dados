@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 189,
+      "value": 169,
       "currency": "USD",
-      "updatedAt": "2026-10-16T13:42:35.547Z"
+      "updatedAt": "2026-10-16T14:10:15.716Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 471.14,
+      "value": 572.54,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T14:05:49.805Z"
+      "updatedAt": "2026-10-16T14:10:15.716Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37384,6 +37384,53 @@
         "inboxId": "anmvb1iudn71lx",
         "enviadaEm": "2026-10-16T14:05:49.259Z"
       }
+    },
+    {
+      "id": "mvb1ojz8utl5f",
+      "kind": "valor",
+      "event": "Olympique Akbou x Ben Aknoun — Total de gols: Mais de 1,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.47,
+      "stakeA": 101.4,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.53,
+      "prob": 0.655,
+      "winner": null,
+      "date": "2026-10-16T11:30",
+      "modelo": "analise",
+      "total": 101.4,
+      "lucroA": 47.658,
+      "lucroRed": -101.4,
+      "lucro": 47.658,
+      "roi": 47,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T14:10:15.716Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1611416,
+        "kickoff": "2026-10-16T14:30:00.000Z",
+        "home": "Olympique Akbou",
+        "away": "Ben Aknoun",
+        "competition": "Ligue 1",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.727,
+        "p_blend": 0.655,
+        "p_pinnacle": 0.647,
+        "fair_odd": 1.53,
+        "odd_min": 1.6,
+        "pinnacle_odd": 1.48,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmvb1ohyg5564",
+        "enviadaEm": "2026-10-16T14:10:13.097Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37550,5 +37597,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T14:05:49.805Z"
+  "updatedAt": "2026-10-16T14:10:15.716Z"
 }
