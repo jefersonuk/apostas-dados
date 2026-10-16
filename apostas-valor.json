@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 394.66,
+      "value": 508.26,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T15:55:26.842Z"
+      "updatedAt": "2026-10-16T16:06:50.233Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 43.43,
+      "value": 23.43,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T15:04:59.007Z"
+      "updatedAt": "2026-10-16T16:06:50.233Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -37751,6 +37751,53 @@
           "at": "2026-10-16T15:48:47.777Z"
         }
       }
+    },
+    {
+      "id": "mvb5ugzd3a8rc",
+      "kind": "valor",
+      "event": "IF Brommapojkarna x Djurgardens IF — Resultado 1º tempo: Djurgardens IF vence o 1º tempo",
+      "houseA": "Sportmarket",
+      "oddA": 1.96,
+      "stakeA": 113.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.04,
+      "prob": 0.49,
+      "winner": null,
+      "date": "2026-10-16T14:00",
+      "modelo": "analise",
+      "total": 113.6,
+      "lucroA": 109.056,
+      "lucroRed": -113.6,
+      "lucro": 109.056,
+      "roi": 96,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T16:06:50.233Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1494298,
+        "kickoff": "2026-10-16T17:00:00.000Z",
+        "home": "IF Brommapojkarna",
+        "away": "Djurgardens IF",
+        "competition": "Allsvenskan",
+        "lineId": "1T2",
+        "mercado": "Resultado 1º tempo",
+        "linha": "Djurgardens IF vence o 1º tempo",
+        "tier": "especulativa",
+        "p_model": 0.399,
+        "p_blend": 0.49,
+        "p_pinnacle": 0.501,
+        "fair_odd": 2.04,
+        "odd_min": 2.04,
+        "pinnacle_odd": 1.93,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmvb5ugytea80",
+        "enviadaEm": "2026-10-16T16:06:50.213Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37917,5 +37964,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T15:55:26.842Z"
+  "updatedAt": "2026-10-16T16:06:50.233Z"
 }
