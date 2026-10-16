@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 149,
+      "value": 129,
       "currency": "USD",
-      "updatedAt": "2026-10-16T14:18:31.203Z"
+      "updatedAt": "2026-10-16T15:07:07.580Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 373.2,
+      "value": 474.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T15:04:59.008Z"
+      "updatedAt": "2026-10-16T15:07:07.580Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37547,6 +37547,53 @@
         "inboxId": "anmvb3mwwh386s",
         "enviadaEm": "2026-10-16T15:04:58.385Z"
       }
+    },
+    {
+      "id": "mvb3pol8e7vzt",
+      "kind": "valor",
+      "event": "Baniyas SC x Al-Wasl FC — Combo: Al-Wasl FC vence + Mais de 1,5 gols",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.61,
+      "stakeA": 101.4,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": 1.62,
+      "prob": 0.617,
+      "winner": null,
+      "date": "2026-10-16T12:45",
+      "modelo": "analise",
+      "total": 101.4,
+      "lucroA": 61.85400000000001,
+      "lucroRed": -101.4,
+      "lucro": 61.85400000000001,
+      "roi": 61.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T15:07:07.580Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1639008,
+        "kickoff": "2026-10-16T15:45:00.000Z",
+        "home": "Baniyas SC",
+        "away": "Al-Wasl FC",
+        "competition": "Pro League",
+        "lineId": "cb:2+gO1.5",
+        "mercado": "Combo",
+        "linha": "Al-Wasl FC vence + Mais de 1,5 gols",
+        "tier": "especulativa",
+        "p_model": 0.515,
+        "p_blend": 0.617,
+        "p_pinnacle": 0.628,
+        "fair_odd": 1.62,
+        "odd_min": 1.7,
+        "pinnacle_odd": null,
+        "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
+        "fragile": true,
+        "inboxId": "anmvb3po0lx2zq",
+        "enviadaEm": "2026-10-16T15:07:06.837Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37713,5 +37760,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T15:04:59.008Z"
+  "updatedAt": "2026-10-16T15:07:07.580Z"
 }
