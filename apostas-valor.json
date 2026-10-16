@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 594.32,
+      "value": 702.24,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T18:15:48.651Z"
+      "updatedAt": "2026-10-16T18:18:00.147Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 19.2,
+      "value": 0.2,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T18:15:48.651Z"
+      "updatedAt": "2026-10-16T18:18:00.147Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -38242,6 +38242,54 @@
         "inboxId": "anmvbagbi30ffa",
         "enviadaEm": "2026-10-16T18:15:48.027Z"
       }
+    },
+    {
+      "id": "mvbaj5g3z9bgd",
+      "kind": "valor",
+      "event": "Bohemians x Waterford — Resultado 1º tempo: Bohemians vence o 1º tempo",
+      "houseA": "Sportmarket",
+      "oddA": 2.21,
+      "stakeA": 107.92,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.21,
+      "prob": 0.452,
+      "winner": null,
+      "date": "2026-10-16T15:45",
+      "modelo": "analise",
+      "total": 107.92,
+      "lucroA": 130.5832,
+      "lucroRed": -107.92,
+      "lucro": 130.5832,
+      "roi": 121,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T18:18:00.147Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1492781,
+        "kickoff": "2026-10-16T18:45:00.000Z",
+        "home": "Bohemians",
+        "away": "Waterford",
+        "competition": "Premier Division",
+        "lineId": "1T1",
+        "mercado": "Resultado 1º tempo",
+        "linha": "Bohemians vence o 1º tempo",
+        "tier": "da simulação",
+        "p_model": null,
+        "p_blend": 0.452,
+        "p_pinnacle": 0.465,
+        "fair_odd": 2.21,
+        "odd_min": null,
+        "pinnacle_odd": 2.08,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmvbaj4zq62gn",
+        "enviadaEm": "2026-10-16T18:17:59.558Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38408,5 +38456,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T18:15:48.651Z"
+  "updatedAt": "2026-10-16T18:18:00.147Z"
 }
