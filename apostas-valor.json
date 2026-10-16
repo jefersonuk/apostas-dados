@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 312.1,
+      "value": 442.74,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T13:14:08.238Z"
+      "updatedAt": "2026-10-16T13:49:17.279Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 38.61,
+      "value": 15.61,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T13:14:08.238Z"
+      "updatedAt": "2026-10-16T13:49:17.279Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -37281,6 +37281,61 @@
         "inboxId": "anmvazod9ibh80",
         "enviadaEm": "2026-10-16T13:14:07.782Z"
       }
+    },
+    {
+      "id": "mvb0xkyn86qlh",
+      "kind": "valor",
+      "event": "Bunyodkor x Sogdiana — Total de gols: Mais de 2,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.75,
+      "stakeA": 130.64,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.51,
+      "prob": 0.66,
+      "winner": null,
+      "date": "2026-10-16T11:00",
+      "modelo": "analise",
+      "total": 130.64,
+      "lucroA": 97.97999999999999,
+      "lucroRed": -130.64,
+      "lucro": 97.97999999999999,
+      "roi": 75,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T13:49:17.279Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1516154,
+        "kickoff": "2026-10-16T14:00:00.000Z",
+        "home": "Bunyodkor",
+        "away": "Sogdiana",
+        "competition": "Super League",
+        "lineId": "gO2.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2,5",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.634,
+        "p_blend": 0.66,
+        "p_pinnacle": 0.56,
+        "fair_odd": 1.51,
+        "odd_min": 1.58,
+        "pinnacle_odd": 1.71,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.66,
+        "ev_pinnacle": 0.14,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 10.41,
+        "p_model_cal": 0.63,
+        "status": "aposta",
+        "inboxId": "anmvb0xkisol3p",
+        "enviadaEm": "2026-10-16T13:49:16.708Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37447,5 +37502,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T13:42:35.547Z"
+  "updatedAt": "2026-10-16T13:49:17.279Z"
 }
