@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 428,
+      "value": 326.8,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-15T22:19:14.815Z"
+      "updatedAt": "2026-10-16T01:21:55.181Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4817,9 +4817,9 @@
     {
       "id": "muiqez8andqrf",
       "name": "BC.game",
-      "value": 2.95,
+      "value": 41.72,
       "currency": "USD",
-      "updatedAt": "2026-10-15T20:01:30.959Z"
+      "updatedAt": "2026-10-16T01:21:55.181Z"
     },
     {
       "id": "mulu8ra1y8ze7",
@@ -36880,7 +36880,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.13,
       "prob": 0.469,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-15T20:15",
       "modelo": "analise",
       "total": 101.2,
@@ -36889,9 +36889,10 @@
       "lucro": 96.14,
       "roi": 95,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-15T17:23:36.940Z",
+      "updatedAt": "2026-10-16T01:21:55.181Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1642286,
@@ -36912,7 +36913,12 @@
         "priced_by": "combo: placares da Pinnacle (1X2 e total de gols) + 10% do modelo",
         "fragile": true,
         "inboxId": "anmv9t5bhavhfl",
-        "enviadaEm": "2026-10-15T17:23:35.134Z"
+        "enviadaEm": "2026-10-15T17:23:35.134Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "CD Marathon 2–1 Olancho · combo: as duas pernas ganharam",
+          "at": "2026-10-16T01:21:55.180Z"
+        }
       }
     },
     {
@@ -37324,5 +37330,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-15T22:19:54.514Z"
+  "updatedAt": "2026-10-16T01:21:55.181Z"
 }
