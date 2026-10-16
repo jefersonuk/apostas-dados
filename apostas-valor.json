@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 673.94,
+      "value": 503.54,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T14:18:31.203Z"
+      "updatedAt": "2026-10-16T15:02:12.205Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 10.61,
+      "value": 17.51,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T14:05:49.805Z"
+      "updatedAt": "2026-10-16T15:02:12.205Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -37246,7 +37246,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T10:00",
       "modelo": "analise",
       "total": 142,
@@ -37255,9 +37255,10 @@
       "lucro": 68.16,
       "roi": 48,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T13:14:08.238Z",
+      "updatedAt": "2026-10-16T15:02:11.639Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1555186,
@@ -37279,7 +37280,12 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvazod9ibh80",
-        "enviadaEm": "2026-10-16T13:14:07.782Z"
+        "enviadaEm": "2026-10-16T13:14:07.782Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Ashdod 0–0 Maccabi Kiryat Gat · saldo de gols do Ashdod: 0 (linha 0.5)",
+          "at": "2026-10-16T15:02:11.638Z"
+        }
       }
     },
     {
@@ -37349,7 +37355,7 @@
       "market": "Total de Gols",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-16T10:00",
       "modelo": "analise",
       "total": 28.4,
@@ -37358,9 +37364,10 @@
       "lucro": 10.791999999999996,
       "roi": 37.999999999999986,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-16T14:05:49.805Z",
+      "updatedAt": "2026-10-16T15:02:12.205Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1581539,
@@ -37382,7 +37389,12 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvb1iudn71lx",
-        "enviadaEm": "2026-10-16T14:05:49.259Z"
+        "enviadaEm": "2026-10-16T14:05:49.259Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Alashkert 5–1 Syunik · gols no jogo: 6 (linha 2.5)",
+          "at": "2026-10-16T15:02:12.205Z"
+        }
       }
     },
     {
@@ -37652,5 +37664,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T14:18:31.203Z"
+  "updatedAt": "2026-10-16T15:02:12.205Z"
 }
