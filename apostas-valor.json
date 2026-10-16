@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 115.78,
+      "value": 128.19,
       "currency": "USD",
-      "updatedAt": "2026-10-16T17:51:59.664Z"
+      "updatedAt": "2026-10-16T17:52:18.666Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 555.84,
+      "value": 492.92,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T17:52:05.560Z"
+      "updatedAt": "2026-10-16T17:52:18.666Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38105,7 +38105,7 @@
       "event": "Annecy x Nancy — Ambas marcam: Ambas marcam",
       "houseA": "Overtimemarkets",
       "oddA": 1.88,
-      "stakeA": 113.62,
+      "stakeA": 50.7,
       "curA": "USD",
       "sport": "Futebol",
       "market": "Ambas Marcam",
@@ -38114,15 +38114,15 @@
       "winner": null,
       "date": "2026-10-16T15:00",
       "modelo": "analise",
-      "total": 113.62,
-      "lucroA": 99.98559999999999,
-      "lucroRed": -113.62,
-      "lucro": 99.98559999999999,
+      "total": 50.7,
+      "lucroA": 44.616,
+      "lucroRed": -50.7,
+      "lucro": 44.616,
       "roi": 87.99999999999999,
       "aplicado": {
         "stakes": true
       },
-      "updatedAt": "2026-10-16T17:51:59.664Z",
+      "updatedAt": "2026-10-16T17:52:18.666Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1552495,
@@ -38144,7 +38144,8 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvb9loixfuek",
-        "enviadaEm": "2026-10-16T17:51:58.569Z"
+        "enviadaEm": "2026-10-16T17:51:58.569Z",
+        "editadaEm": "2026-10-16T17:52:18.665Z"
       }
     }
   ],
@@ -38312,5 +38313,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T17:52:05.560Z"
+  "updatedAt": "2026-10-16T17:52:18.666Z"
 }
