@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 183.8,
+      "value": 148.4,
       "currency": "USD",
-      "updatedAt": "2026-10-16T16:57:06.476Z"
+      "updatedAt": "2026-10-16T17:06:55.346Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4648,7 +4648,7 @@
       "value": 328.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T16:57:06.477Z"
+      "updatedAt": "2026-10-16T17:06:59.858Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37314,7 +37314,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T15:55:17.327Z",
+      "updatedAt": "2026-10-16T17:06:53.739Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1516154,
@@ -37347,7 +37347,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Bunyodkor 1–1 Sogdiana · gols no jogo: 2 (linha 2.5)",
-          "at": "2026-10-16T15:55:17.327Z"
+          "at": "2026-10-16T17:06:53.737Z"
         },
         "clv": -0.019539294017687392,
         "closingFair": 1.7848752013439382
@@ -37431,7 +37431,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-16T15:55:26.842Z",
+      "updatedAt": "2026-10-16T17:06:54.548Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1611416,
@@ -37452,7 +37452,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmvb1ohyg5564",
-        "enviadaEm": "2026-10-16T14:10:13.097Z"
+        "enviadaEm": "2026-10-16T14:10:13.097Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Olympique Akbou 2–1 Ben Aknoun · gols no jogo: 3 (linha 1.5)",
+          "at": "2026-10-16T17:06:54.548Z"
+        },
+        "clv": -0.04928073666443411,
+        "closingFair": 1.5461977648823013
       }
     },
     {
@@ -37479,7 +37486,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-16T16:57:06.477Z",
+      "updatedAt": "2026-10-16T17:06:55.346Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1565274,
@@ -37512,7 +37519,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Oţelul 1–1 Csikszereda · gols no jogo: 2 (linha 2)",
-          "at": "2026-10-16T16:57:06.476Z"
+          "at": "2026-10-16T17:06:55.346Z"
         },
         "clv": -0.0441820886029769,
         "closingFair": 1.5797988110444432
@@ -37542,7 +37549,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T16:53:07.607Z",
+      "updatedAt": "2026-10-16T17:06:56.429Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1559807,
@@ -37567,7 +37574,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Vlašim 1–0 Hanácká · gols no jogo: 1 (linha 2.5)",
-          "at": "2026-10-16T16:53:07.607Z"
+          "at": "2026-10-16T17:06:56.429Z"
         },
         "clv": 0.10707649581014511,
         "closingFair": 1.5446087117481822
@@ -38029,5 +38036,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T16:57:06.477Z"
+  "updatedAt": "2026-10-16T17:06:56.431Z"
 }
