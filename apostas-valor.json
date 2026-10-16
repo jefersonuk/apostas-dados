@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 326.8,
+      "value": 312.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T01:21:55.181Z"
+      "updatedAt": "2026-10-16T13:14:08.238Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 38.26,
+      "value": 38.61,
       "currency": "EUR",
-      "updatedAt": "2026-10-15T22:19:14.815Z"
+      "updatedAt": "2026-10-16T13:14:08.238Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -30885,7 +30885,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T01:34:08.737Z",
+      "updatedAt": "2026-10-16T13:11:34.694Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -31000,7 +31000,7 @@
         "check": {
           "status": "encerrado",
           "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
-          "at": "2026-10-16T01:34:08.737Z"
+          "at": "2026-10-16T13:11:34.694Z"
         }
       }
     },
@@ -31299,7 +31299,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-16T01:34:09.096Z",
+      "updatedAt": "2026-10-16T13:11:35.219Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31325,7 +31325,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-16T01:34:09.096Z"
+          "at": "2026-10-16T13:11:35.219Z"
         }
       }
     },
@@ -34317,7 +34317,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-16T01:34:09.463Z",
+      "updatedAt": "2026-10-16T13:11:35.736Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585788,
@@ -34342,7 +34342,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Match Interrupted",
-          "at": "2026-10-16T01:34:09.463Z"
+          "at": "2026-10-16T13:11:35.736Z"
         }
       }
     },
@@ -34895,7 +34895,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-16T01:34:09.833Z",
+      "updatedAt": "2026-10-16T13:11:36.279Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34952,7 +34952,7 @@
         "check": {
           "status": "manual",
           "detail": "múltipla 1/2: Baník Souš 1–1 Benátky nad Jizerou ↩ · Minerva Punjab 2–1 Odisha ✅ — perna com devolução ou meia: a casa recalcula a odd; confira o valor pago e marque à mão",
-          "at": "2026-10-16T01:34:09.833Z"
+          "at": "2026-10-16T13:11:36.279Z"
         }
       }
     },
@@ -35142,7 +35142,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T01:34:10.594Z",
+      "updatedAt": "2026-10-16T13:11:37.352Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35169,7 +35169,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Bryne 1–1 Raufoss · saldo de gols do Bryne: 0 (linha 3.5)",
-          "at": "2026-10-16T01:34:10.594Z"
+          "at": "2026-10-16T13:11:37.352Z"
         }
       }
     },
@@ -36933,7 +36933,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.44,
       "prob": 0.694,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-15T22:00",
       "modelo": "analise",
       "total": 113.4,
@@ -36942,9 +36942,10 @@
       "lucro": 49.895999999999994,
       "roi": 43.99999999999999,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-15T17:25:31.535Z",
+      "updatedAt": "2026-10-16T13:11:38.428Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1549664,
@@ -36965,7 +36966,14 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmv9t7rn6gpcn",
-        "enviadaEm": "2026-10-15T17:25:29.394Z"
+        "enviadaEm": "2026-10-15T17:25:29.394Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Quindio 1–1 Real Cartagena · gols no jogo: 2 (linha 1.5)",
+          "at": "2026-10-16T13:11:38.428Z"
+        },
+        "clv": 0.0015346676525833658,
+        "closingFair": 1.4377934648783555
       }
     },
     {
@@ -36980,7 +36988,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.33,
       "prob": 0.754,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-15T23:00",
       "modelo": "analise",
       "total": 113.4,
@@ -36989,9 +36997,10 @@
       "lucro": 37.42200000000001,
       "roi": 33.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-15T17:26:40.879Z",
+      "updatedAt": "2026-10-16T13:11:39.454Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1551700,
@@ -37012,7 +37021,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmv9t9aaq0hws",
-        "enviadaEm": "2026-10-15T17:26:40.226Z"
+        "enviadaEm": "2026-10-15T17:26:40.226Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Deportivo Saprissa 6–0 Sporting San Jose · gols no jogo: 6 (linha 1.5)",
+          "at": "2026-10-16T13:11:39.454Z"
+        },
+        "clv": 0.01227085509426673,
+        "closingFair": 1.313877598378692
       }
     },
     {
@@ -37130,7 +37146,7 @@
       "market": "Combo (criar aposta)",
       "oddMkt": 2.39,
       "prob": 0.419,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-15T18:00",
       "modelo": "analise",
       "total": 100,
@@ -37139,9 +37155,10 @@
       "lucro": 100.99999999999997,
       "roi": 100.99999999999997,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T01:34:10.976Z",
+      "updatedAt": "2026-10-16T13:11:39.971Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1645637,
@@ -37164,10 +37181,105 @@
         "inboxId": "anmv9zz67rmhiy",
         "enviadaEm": "2026-10-15T20:34:45.687Z",
         "check": {
-          "status": "pendente",
-          "detail": "situação na API: Not Started",
-          "at": "2026-10-16T01:34:10.976Z"
+          "status": "encerrado",
+          "detail": "H&H Export 2–0 Rancho Santana · combo: uma perna perdeu",
+          "at": "2026-10-16T13:11:39.971Z"
         }
+      }
+    },
+    {
+      "id": "mvazketnqudk6",
+      "kind": "valor",
+      "event": "Gomora United FC x Cape Town City — Total de gols: Mais de 1,5",
+      "houseA": "Sportmarket",
+      "oddA": 1.5,
+      "stakeA": 170.1,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.37,
+      "prob": 0.73,
+      "winner": null,
+      "date": "2026-10-16T10:30",
+      "modelo": "analise",
+      "total": 170.1,
+      "lucroA": 85.05,
+      "lucroRed": -170.1,
+      "lucro": 85.05,
+      "roi": 50,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T13:11:03.179Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1627737,
+        "kickoff": "2026-10-16T13:30:00.000Z",
+        "home": "Gomora United FC",
+        "away": "Cape Town City",
+        "competition": "1st Division",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "da simulação",
+        "p_model": null,
+        "p_blend": 0.73,
+        "p_pinnacle": 0.631,
+        "fair_odd": 1.37,
+        "odd_min": null,
+        "pinnacle_odd": 1.5,
+        "priced_by": "pinnacle",
+        "fragile": false,
+        "inboxId": "anmvazkasmwjwu",
+        "enviadaEm": "2026-10-16T13:10:57.958Z"
+      }
+    },
+    {
+      "id": "mvazodm61ezug",
+      "kind": "valor",
+      "event": "Ashdod x Maccabi Kiryat Gat — 1X2: Ashdod vence",
+      "houseA": "Sportmarket",
+      "oddA": 1.48,
+      "stakeA": 142,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-16T10:00",
+      "modelo": "analise",
+      "total": 142,
+      "lucroA": 68.16,
+      "lucroRed": -142,
+      "lucro": 68.16,
+      "roi": 48,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T13:14:08.238Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1555186,
+        "kickoff": "2026-10-16T13:00:00.000Z",
+        "home": "Ashdod",
+        "away": "Maccabi Kiryat Gat",
+        "competition": "Liga Leumit",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Ashdod vence",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmvazod9ibh80",
+        "enviadaEm": "2026-10-16T13:14:07.782Z"
       }
     }
   ],
@@ -37335,5 +37447,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T13:11:01.831Z"
+  "updatedAt": "2026-10-16T13:14:08.238Z"
 }
