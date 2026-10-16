@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 138.19,
+      "value": 115.78,
       "currency": "USD",
-      "updatedAt": "2026-10-16T17:48:00.417Z"
+      "updatedAt": "2026-10-16T17:51:59.664Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 470.62,
+      "value": 584.24,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T17:48:00.418Z"
+      "updatedAt": "2026-10-16T17:51:59.664Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38097,6 +38097,54 @@
         "inboxId": "anmvb9gkaxya8a",
         "enviadaEm": "2026-10-16T17:47:59.817Z"
       }
+    },
+    {
+      "id": "mvb9lpdco720w",
+      "kind": "valor",
+      "event": "Annecy x Nancy — Ambas marcam: Ambas marcam",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.88,
+      "stakeA": 113.62,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Ambas Marcam",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-16T15:00",
+      "modelo": "analise",
+      "total": 113.62,
+      "lucroA": 99.98559999999999,
+      "lucroRed": -113.62,
+      "lucro": 99.98559999999999,
+      "roi": 87.99999999999999,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T17:51:59.664Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1552495,
+        "kickoff": "2026-10-16T18:00:00.000Z",
+        "home": "Annecy",
+        "away": "Nancy",
+        "competition": "Ligue 2",
+        "lineId": "bttsY",
+        "mercado": "Ambas marcam",
+        "linha": "Ambas marcam",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmvb9loixfuek",
+        "enviadaEm": "2026-10-16T17:51:58.569Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38263,5 +38311,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T17:48:00.418Z"
+  "updatedAt": "2026-10-16T17:51:59.664Z"
 }
