@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 129,
+      "value": 119,
       "currency": "USD",
-      "updatedAt": "2026-10-16T15:07:07.580Z"
+      "updatedAt": "2026-10-16T15:15:45.180Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 474.6,
+      "value": 525.3,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T15:07:07.580Z"
+      "updatedAt": "2026-10-16T15:15:45.180Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37594,6 +37594,54 @@
         "inboxId": "anmvb3po0lx2zq",
         "enviadaEm": "2026-10-16T15:07:06.837Z"
       }
+    },
+    {
+      "id": "mvb40ryz9bdl2",
+      "kind": "valor",
+      "event": "Ekranas x Dainava — Resultado 1º tempo: Dainava vence primeiro tempo",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.82,
+      "stakeA": 50.7,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-16T13:00",
+      "modelo": "analise",
+      "total": 50.7,
+      "lucroA": 41.574000000000005,
+      "lucroRed": -50.7,
+      "lucro": 41.574000000000005,
+      "roi": 82,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T15:15:45.180Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1556470,
+        "kickoff": "2026-10-16T16:00:00.000Z",
+        "home": "Ekranas",
+        "away": "Dainava",
+        "competition": "1 Lyga",
+        "lineId": "1T2",
+        "mercado": "Resultado 1º tempo",
+        "linha": "Dainava vence primeiro tempo",
+        "tier": "manual",
+        "p_model": null,
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "fragile": false,
+        "manual": true,
+        "inboxId": "anmvb40r3iqihm",
+        "enviadaEm": "2026-10-16T15:15:44.046Z"
+      }
     }
   ],
   "invertidos": [],
@@ -37760,5 +37808,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T15:11:41.741Z"
+  "updatedAt": "2026-10-16T15:15:45.180Z"
 }
