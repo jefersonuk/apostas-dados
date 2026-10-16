@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 125.99,
+      "value": 115.99,
       "currency": "USD",
-      "updatedAt": "2026-10-16T17:17:36.455Z"
+      "updatedAt": "2026-10-16T17:29:15.169Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 470.62,
+      "value": 521.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T17:20:52.725Z"
+      "updatedAt": "2026-10-16T17:29:15.169Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37964,6 +37964,90 @@
         "inboxId": "anmvb8hl4wtsg7",
         "enviadaEm": "2026-10-16T17:20:47.936Z"
       }
+    },
+    {
+      "id": "mvb8sgipmws9b",
+      "kind": "valor",
+      "event": "Heerenveen x Excelsior — Mesmo jogo: Heerenveen vence primeiro tempo + Mais de 2,5 gols + Ambas marcam",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.95,
+      "stakeA": 50.7,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Combo (criar aposta)",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-16T15:00",
+      "modelo": "analise",
+      "total": 50.7,
+      "lucroA": 98.86500000000001,
+      "lucroRed": -50.7,
+      "lucro": 98.86500000000001,
+      "roi": 195.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T17:29:15.169Z",
+      "origem": "analise",
+      "analise": {
+        "manual": true,
+        "multi": true,
+        "same_game": true,
+        "home": "Heerenveen",
+        "away": "Excelsior",
+        "legs": [
+          {
+            "fixtureId": 1552189,
+            "kickoff": "2026-10-16T18:00:00.000Z",
+            "home": "Heerenveen",
+            "away": "Excelsior",
+            "competition": "Eredivisie",
+            "lineId": "1T1",
+            "linha": "Heerenveen vence primeiro tempo",
+            "mercado": "Resultado 1º tempo",
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1552189,
+            "kickoff": "2026-10-16T18:00:00.000Z",
+            "home": "Heerenveen",
+            "away": "Excelsior",
+            "competition": "Eredivisie",
+            "lineId": "gO2.5",
+            "linha": "Mais de 2,5 gols",
+            "mercado": "Total de gols",
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1552189,
+            "kickoff": "2026-10-16T18:00:00.000Z",
+            "home": "Heerenveen",
+            "away": "Excelsior",
+            "competition": "Eredivisie",
+            "lineId": "bttsY",
+            "linha": "Ambas marcam",
+            "mercado": "Ambas marcam",
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1552189,
+        "lineId": "multi",
+        "kickoff": "2026-10-16T18:00:00.000Z",
+        "first_kickoff": "2026-10-16T18:00:00.000Z",
+        "competition": "Eredivisie",
+        "mercado": "Mesmo jogo",
+        "linha": "Heerenveen vence primeiro tempo + Mais de 2,5 gols + Ambas marcam",
+        "tier": "manual",
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "inboxId": "anmvb8sg1xxm3t",
+        "enviadaEm": "2026-10-16T17:29:14.565Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38130,5 +38214,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T17:20:52.725Z"
+  "updatedAt": "2026-10-16T17:29:15.169Z"
 }
