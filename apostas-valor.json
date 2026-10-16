@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 480.72,
+      "value": 594.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T18:12:36.938Z"
+      "updatedAt": "2026-10-16T18:15:48.651Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 39.2,
+      "value": 19.2,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T18:12:36.938Z"
+      "updatedAt": "2026-10-16T18:15:48.651Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -38195,6 +38195,53 @@
         "inboxId": "anmvb9o5cix793",
         "enviadaEm": "2026-10-16T17:53:53.682Z"
       }
+    },
+    {
+      "id": "mvbagbzfiiv8j",
+      "kind": "valor",
+      "event": "Hellas Verona x Catanzaro — 1X2: Hellas Verona vence",
+      "houseA": "Sportmarket",
+      "oddA": 1.8,
+      "stakeA": 113.6,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 1.81,
+      "prob": 0.554,
+      "winner": null,
+      "date": "2026-10-16T15:30",
+      "modelo": "analise",
+      "total": 113.6,
+      "lucroA": 90.88,
+      "lucroRed": -113.6,
+      "lucro": 90.88,
+      "roi": 80,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T18:15:48.651Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1601562,
+        "kickoff": "2026-10-16T18:30:00.000Z",
+        "home": "Hellas Verona",
+        "away": "Catanzaro",
+        "competition": "Serie B",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Hellas Verona vence",
+        "tier": "especulativa",
+        "p_model": 0.466,
+        "p_blend": 0.554,
+        "p_pinnacle": 0.563,
+        "fair_odd": 1.81,
+        "odd_min": 1.81,
+        "pinnacle_odd": 1.74,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmvbagbi30ffa",
+        "enviadaEm": "2026-10-16T18:15:48.027Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38361,5 +38408,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T18:12:36.938Z"
+  "updatedAt": "2026-10-16T18:15:48.651Z"
 }
