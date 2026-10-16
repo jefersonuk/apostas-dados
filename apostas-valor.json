@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 621.86,
+      "value": 582.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T16:08:04.534Z"
+      "updatedAt": "2026-10-16T16:53:07.607Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -37522,7 +37522,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.58,
       "prob": 0.634,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T12:00",
       "modelo": "analise",
       "total": 39.76,
@@ -37531,9 +37531,10 @@
       "lucro": 28.229599999999998,
       "roi": 71,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T15:04:59.007Z",
+      "updatedAt": "2026-10-16T16:53:07.607Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1559807,
@@ -37554,7 +37555,14 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmvb3mwwh386s",
-        "enviadaEm": "2026-10-16T15:04:58.385Z"
+        "enviadaEm": "2026-10-16T15:04:58.385Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Vlašim 1–0 Hanácká · gols no jogo: 1 (linha 2.5)",
+          "at": "2026-10-16T16:53:07.607Z"
+        },
+        "clv": 0.10707649581014511,
+        "closingFair": 1.5446087117481822
       }
     },
     {
@@ -38011,5 +38019,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T16:08:04.534Z"
+  "updatedAt": "2026-10-16T16:53:07.607Z"
 }
