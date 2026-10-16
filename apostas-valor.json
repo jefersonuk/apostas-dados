@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 128.19,
+      "value": 108.19,
       "currency": "USD",
-      "updatedAt": "2026-10-16T17:52:18.666Z"
+      "updatedAt": "2026-10-16T17:53:54.284Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 492.92,
+      "value": 594.32,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T17:52:18.666Z"
+      "updatedAt": "2026-10-16T17:53:54.284Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38147,6 +38147,53 @@
         "enviadaEm": "2026-10-16T17:51:58.569Z",
         "editadaEm": "2026-10-16T17:52:18.665Z"
       }
+    },
+    {
+      "id": "mvb9o5t8hyubw",
+      "kind": "valor",
+      "event": "Grenoble x Boulogne — Total de gols: Mais de 1,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 1.53,
+      "stakeA": 101.4,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.56,
+      "prob": 0.64,
+      "winner": null,
+      "date": "2026-10-16T15:00",
+      "modelo": "analise",
+      "total": 101.4,
+      "lucroA": 53.742000000000004,
+      "lucroRed": -101.4,
+      "lucro": 53.742000000000004,
+      "roi": 53,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-16T17:53:54.284Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1552496,
+        "kickoff": "2026-10-16T18:00:00.000Z",
+        "home": "Grenoble",
+        "away": "Boulogne",
+        "competition": "Ligue 2",
+        "lineId": "gO1.5",
+        "mercado": "Total de gols",
+        "linha": "Mais de 1,5",
+        "tier": "sólida",
+        "p_model": 0.686,
+        "p_blend": 0.64,
+        "p_pinnacle": 0.635,
+        "fair_odd": 1.56,
+        "odd_min": 1.59,
+        "pinnacle_odd": 1.53,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "inboxId": "anmvb9o5cix793",
+        "enviadaEm": "2026-10-16T17:53:53.682Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38313,5 +38360,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T17:52:18.666Z"
+  "updatedAt": "2026-10-16T17:53:54.284Z"
 }
