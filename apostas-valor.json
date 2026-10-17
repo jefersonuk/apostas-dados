@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 101.4,
+      "value": 0,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-16T21:18:39.268Z"
+      "updatedAt": "2026-10-17T00:27:56.183Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38437,7 +38437,7 @@
       "market": "Total de Gols",
       "oddMkt": 2.52,
       "prob": 0.397,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-16T19:00",
       "modelo": "analise",
       "total": 101.4,
@@ -38446,9 +38446,10 @@
       "lucro": 140.94600000000003,
       "roi": 139,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-16T19:47:21.731Z",
+      "updatedAt": "2026-10-17T00:27:56.182Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1493186,
@@ -38470,7 +38471,14 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvbdq20spuuw",
-        "enviadaEm": "2026-10-16T19:47:21.148Z"
+        "enviadaEm": "2026-10-16T19:47:21.148Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Defensa Y Justicia 0–1 Instituto Cordoba · gols no jogo: 1 (linha 2.5)",
+          "at": "2026-10-17T00:27:56.182Z"
+        },
+        "clv": -0.050521305880386835,
+        "closingFair": 2.5171707535955656
       }
     }
   ],
@@ -38638,5 +38646,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-16T21:18:39.268Z"
+  "updatedAt": "2026-10-17T00:27:56.183Z"
 }
