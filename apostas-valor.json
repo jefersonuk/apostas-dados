@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 146,
+      "value": 186.06,
       "currency": "USD",
-      "updatedAt": "2026-10-19T16:29:50.226Z"
+      "updatedAt": "2026-10-19T17:49:21.856Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 259.6,
+      "value": 107.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-19T17:49:10.718Z"
+      "updatedAt": "2026-10-19T17:49:21.856Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38481,7 +38481,7 @@
       "market": "Total de Gols",
       "oddMkt": 1.37,
       "prob": 0.733,
-      "winner": null,
+      "winner": "A",
       "date": "2026-10-19T13:30",
       "modelo": "analise",
       "total": 152.1,
@@ -38490,9 +38490,10 @@
       "lucro": 50.19300000000001,
       "roi": 33.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "A"
       },
-      "updatedAt": "2026-10-19T12:24:46.231Z",
+      "updatedAt": "2026-10-19T17:49:21.856Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1550153,
@@ -38889,5 +38890,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-19T17:49:10.718Z"
+  "updatedAt": "2026-10-19T17:49:21.856Z"
 }
