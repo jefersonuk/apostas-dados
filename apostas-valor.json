@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 186.06,
+      "value": 236.12,
       "currency": "USD",
-      "updatedAt": "2026-10-19T17:49:21.856Z"
+      "updatedAt": "2026-10-19T19:15:47.798Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 158,
+      "value": 107.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-19T19:15:45.904Z"
+      "updatedAt": "2026-10-19T19:15:47.213Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -5166,10 +5166,10 @@
   ],
   "usdRate": 5.05,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-19T16:29:48.050Z",
+  "usdRateAt": "2026-10-19T19:15:48.719Z",
   "eurRate": 5.67,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-19T16:29:48.290Z",
+  "eurRateAt": "2026-10-19T19:15:49.054Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -5728,6 +5728,10 @@
     {
       "id": "mue95xogyqnk4",
       "at": "2026-10-19T13:00:54.669Z"
+    },
+    {
+      "id": "mvfgzlshjs3v4",
+      "at": "2026-10-19T19:15:47.212Z"
     }
   ],
   "surebets": [
@@ -38630,54 +38634,6 @@
       }
     },
     {
-      "id": "mvfgzlshjs3v4",
-      "kind": "valor",
-      "event": "Tottenham x Coventry — Handicap asiático: Coventry +0,5",
-      "houseA": "Overtimemarkets",
-      "oddA": 2.47,
-      "stakeA": 50.5,
-      "curA": "USD",
-      "sport": "Futebol",
-      "market": "Handicap Asiático",
-      "oddMkt": 2.55,
-      "prob": 0.392,
-      "winner": null,
-      "date": "2026-10-19T16:00",
-      "modelo": "analise",
-      "total": 50.5,
-      "lucroA": 74.23500000000001,
-      "lucroRed": -50.5,
-      "lucro": 74.23500000000001,
-      "roi": 147.00000000000003,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-10-19T16:29:50.226Z",
-      "origem": "analise",
-      "analise": {
-        "fixtureId": 1557436,
-        "kickoff": "2026-10-19T19:00:00.000Z",
-        "home": "Tottenham",
-        "away": "Coventry",
-        "competition": "Premier League",
-        "lineId": "ahA0.5",
-        "mercado": "Handicap asiático",
-        "linha": "Coventry +0,5",
-        "tier": "especulativa",
-        "p_model": 0.591,
-        "p_blend": 0.392,
-        "p_pinnacle": 0.371,
-        "fair_odd": 2.55,
-        "odd_min": 2.68,
-        "pinnacle_odd": 2.59,
-        "priced_by": "pinnacle",
-        "fragile": true,
-        "manual": true,
-        "inboxId": "anmvfd67lvws9p",
-        "enviadaEm": "2026-10-19T14:42:59.971Z"
-      }
-    },
-    {
       "id": "mvfh7uftq0esl",
       "kind": "valor",
       "event": "Degerfors IF x Kalmar FF — 1X2: Degerfors IF vence",
@@ -38938,5 +38894,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-19T17:49:21.856Z"
+  "updatedAt": "2026-10-19T19:15:49.054Z"
 }
