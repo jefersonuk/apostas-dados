@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 253.1,
+      "value": 350,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-19T12:26:42.681Z"
+      "updatedAt": "2026-10-19T12:59:52.133Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 0.2,
+      "value": -16.8,
       "currency": "EUR",
-      "updatedAt": "2026-10-16T18:18:00.147Z"
+      "updatedAt": "2026-10-19T12:59:52.132Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -38575,6 +38575,54 @@
         "inboxId": "anmvf8axj3233m",
         "enviadaEm": "2026-10-19T12:26:42.111Z"
       }
+    },
+    {
+      "id": "mvf9hl1go1o0s",
+      "kind": "valor",
+      "event": "Maccabi Neve Sha'anan x Maccabi Nujeidat Ahmed — 1X2: Maccabi Neve Sha'anan vence",
+      "houseA": "Sportmarket",
+      "oddA": 2.47,
+      "stakeA": 96.9,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "1X2 / Resultado",
+      "oddMkt": 2.05,
+      "prob": 0.487,
+      "winner": null,
+      "date": "2026-10-19T09:00",
+      "modelo": "analise",
+      "total": 96.9,
+      "lucroA": 142.44300000000004,
+      "lucroRed": -96.9,
+      "lucro": 142.44300000000004,
+      "roi": 147.00000000000003,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-19T12:59:52.132Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1621366,
+        "kickoff": "2026-10-19T12:00:00.000Z",
+        "home": "Maccabi Neve Sha'anan",
+        "away": "Maccabi Nujeidat Ahmed",
+        "competition": "Liga Alef",
+        "lineId": "1",
+        "mercado": "1X2",
+        "linha": "Maccabi Neve Sha'anan vence",
+        "tier": "especulativa",
+        "p_model": 0.524,
+        "p_blend": 0.487,
+        "p_pinnacle": 0.483,
+        "fair_odd": 2.05,
+        "odd_min": 2.16,
+        "pinnacle_odd": 1.91,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmvf9hkl6mryh",
+        "enviadaEm": "2026-10-19T12:59:51.546Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38741,5 +38789,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-19T12:26:42.681Z"
+  "updatedAt": "2026-10-19T12:59:52.133Z"
 }
