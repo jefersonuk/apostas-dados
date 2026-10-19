@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": -16.8,
+      "value": 206.13,
       "currency": "EUR",
-      "updatedAt": "2026-10-19T12:59:52.132Z"
+      "updatedAt": "2026-10-19T13:00:31.627Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -4722,13 +4722,6 @@
       "updatedAt": "2026-09-06T23:41:34.727Z"
     },
     {
-      "id": "mtack9k6bppn8",
-      "name": "Megapari",
-      "value": 2,
-      "updatedAt": "2026-08-26T17:28:21.959Z",
-      "currency": "USD"
-    },
-    {
       "id": "mtack9k79qsdy",
       "name": "Vave",
       "value": 0,
@@ -4762,13 +4755,6 @@
       "updatedAt": "2026-09-04T16:35:40.893Z"
     },
     {
-      "id": "mu9kbil8elos7",
-      "name": "Betrebels",
-      "value": 0.1,
-      "updatedAt": "2026-09-28T16:30:58.052Z",
-      "currency": "USD"
-    },
-    {
       "id": "mu9kk8ei6ezqm",
       "name": "Betwarrior",
       "value": 0,
@@ -4785,20 +4771,6 @@
       "name": "Cassino",
       "value": 0,
       "updatedAt": "2026-09-21T19:42:09.432Z"
-    },
-    {
-      "id": "mucxsx8o9axks",
-      "name": "20bet",
-      "value": 0.1,
-      "currency": "BRL",
-      "updatedAt": "2026-09-30T21:37:40.342Z"
-    },
-    {
-      "id": "mue95xogyqnk4",
-      "name": "BookmakerXyz",
-      "value": 0.02,
-      "currency": "USD",
-      "updatedAt": "2026-09-24T13:51:11.323Z"
     },
     {
       "id": "muh4k5nvhsp0z",
@@ -5740,6 +5712,22 @@
     {
       "id": "mva3os1rrzc40",
       "at": "2026-10-15T22:19:14.387Z"
+    },
+    {
+      "id": "mtack9k6bppn8",
+      "at": "2026-10-19T13:00:39.561Z"
+    },
+    {
+      "id": "mu9kbil8elos7",
+      "at": "2026-10-19T13:00:43.088Z"
+    },
+    {
+      "id": "mucxsx8o9axks",
+      "at": "2026-10-19T13:00:45.050Z"
+    },
+    {
+      "id": "mue95xogyqnk4",
+      "at": "2026-10-19T13:00:54.669Z"
     }
   ],
   "surebets": [
@@ -38789,5 +38777,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-19T12:59:52.133Z"
+  "updatedAt": "2026-10-19T13:00:54.669Z"
 }
