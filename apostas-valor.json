@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 195.41,
+      "value": 175.41,
       "currency": "USD",
-      "updatedAt": "2026-10-19T12:24:46.231Z"
+      "updatedAt": "2026-10-19T12:26:42.681Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 152.1,
+      "value": 253.1,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-19T12:24:46.231Z"
+      "updatedAt": "2026-10-19T12:26:42.681Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38527,6 +38527,54 @@
         "inboxId": "anmvf889oypkim",
         "enviadaEm": "2026-10-19T12:24:37.906Z"
       }
+    },
+    {
+      "id": "mvf8axyxi2f6z",
+      "kind": "valor",
+      "event": "Al-Fayha x Al-Ahli Jeddah — Handicap asiático: Al-Ahli Jeddah −1,5",
+      "houseA": "Overtimemarkets",
+      "oddA": 2.1,
+      "stakeA": 101,
+      "curA": "USD",
+      "sport": "Futebol",
+      "market": "Handicap Asiático",
+      "oddMkt": 2.24,
+      "prob": 0.446,
+      "winner": null,
+      "date": "2026-10-19T12:05",
+      "modelo": "analise",
+      "total": 101,
+      "lucroA": 111.10000000000001,
+      "lucroRed": -101,
+      "lucro": 111.10000000000001,
+      "roi": 110.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-19T12:26:42.681Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1603057,
+        "kickoff": "2026-10-19T15:05:00.000Z",
+        "home": "Al-Fayha",
+        "away": "Al-Ahli Jeddah",
+        "competition": "Pro League",
+        "lineId": "ahA-1.5",
+        "mercado": "Handicap asiático",
+        "linha": "Al-Ahli Jeddah −1,5",
+        "tier": "especulativa",
+        "p_model": 0.348,
+        "p_blend": 0.446,
+        "p_pinnacle": 0.458,
+        "fair_odd": 2.24,
+        "odd_min": 2.35,
+        "pinnacle_odd": 2.09,
+        "priced_by": "pinnacle",
+        "fragile": true,
+        "manual": true,
+        "inboxId": "anmvf8axj3233m",
+        "enviadaEm": "2026-10-19T12:26:42.111Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38693,5 +38741,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-19T12:24:46.231Z"
+  "updatedAt": "2026-10-19T12:26:42.681Z"
 }
