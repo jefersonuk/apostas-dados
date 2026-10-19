@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 360.6,
+      "value": 259.6,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-19T16:36:14.681Z"
+      "updatedAt": "2026-10-19T17:49:10.718Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38528,7 +38528,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.24,
       "prob": 0.446,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-19T12:05",
       "modelo": "analise",
       "total": 101,
@@ -38537,9 +38537,10 @@
       "lucro": 111.10000000000001,
       "roi": 110.00000000000001,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-19T12:26:42.681Z",
+      "updatedAt": "2026-10-19T17:49:10.718Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1603057,
@@ -38561,7 +38562,14 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmvf8axj3233m",
-        "enviadaEm": "2026-10-19T12:26:42.111Z"
+        "enviadaEm": "2026-10-19T12:26:42.111Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Al-Fayha 2–3 Al-Ahli Jeddah · saldo de gols do Al-Fayha: -1 (linha -1.5)",
+          "at": "2026-10-19T17:49:10.718Z"
+        },
+        "clv": -0.03919080181684942,
+        "closingFair": 2.1856576768530225
       }
     },
     {
@@ -38881,5 +38889,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-19T16:36:14.681Z"
+  "updatedAt": "2026-10-19T17:49:10.718Z"
 }
