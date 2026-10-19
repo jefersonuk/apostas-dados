@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 107.5,
+      "value": 50.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-19T19:15:47.213Z"
+      "updatedAt": "2026-10-19T19:23:59.704Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -38645,7 +38645,7 @@
       "market": "1X2 / Resultado",
       "oddMkt": null,
       "prob": null,
-      "winner": null,
+      "winner": "RED",
       "date": "2026-10-19T14:00",
       "modelo": "analise",
       "total": 57,
@@ -38654,9 +38654,10 @@
       "lucro": 124.83,
       "roi": 219,
       "aplicado": {
-        "stakes": true
+        "stakes": true,
+        "resultado": "RED"
       },
-      "updatedAt": "2026-10-19T16:36:14.681Z",
+      "updatedAt": "2026-10-19T19:23:59.704Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1494299,
@@ -38678,7 +38679,12 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvfh798wg8ti",
-        "enviadaEm": "2026-10-19T16:35:47.216Z"
+        "enviadaEm": "2026-10-19T16:35:47.216Z",
+        "check": {
+          "status": "encerrado",
+          "detail": "Degerfors IF 1–2 Kalmar FF · saldo de gols do Degerfors IF: -1 (linha 0.5)",
+          "at": "2026-10-19T19:23:59.703Z"
+        }
       }
     },
     {
@@ -38894,5 +38900,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-19T19:15:49.054Z"
+  "updatedAt": "2026-10-19T19:23:59.704Z"
 }
