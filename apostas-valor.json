@@ -39,8 +39,8 @@
       "idealMin": 8,
       "idealMax": 12,
       "pct": 1,
-      "stake": 300,
-      "stakeMes": "2026-09",
+      "stake": 170,
+      "stakeMes": "2026-10",
       "inicio": "2026-09-28",
       "meta": 300
     },
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 113.2,
+      "value": 226.4,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-20T13:06:23.071Z"
+      "updatedAt": "2026-10-20T13:11:09.123Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 171.13,
+      "value": 151.13,
       "currency": "EUR",
-      "updatedAt": "2026-10-20T13:06:23.071Z"
+      "updatedAt": "2026-10-20T13:11:09.122Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -38853,6 +38853,76 @@
         "inboxId": "anmvgp5svw9gyb",
         "enviadaEm": "2026-10-20T13:06:22.460Z"
       }
+    },
+    {
+      "id": "mvgpby2qq61nm",
+      "kind": "valor",
+      "event": "Múltipla (2) — Al Orubah x Al Bukayriyah Mais de 1,5 gols · Wadi Degla x National Bank of Egypt Mais de 1,5 gols",
+      "houseA": "Sportmarket",
+      "oddA": 1.92,
+      "stakeA": 113.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Múltipla",
+      "oddMkt": null,
+      "prob": null,
+      "winner": null,
+      "date": "2026-10-20T12:20",
+      "modelo": "analise",
+      "total": 113.2,
+      "lucroA": 104.14399999999999,
+      "lucroRed": -113.2,
+      "lucro": 104.14399999999999,
+      "roi": 92,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-20T13:11:09.122Z",
+      "origem": "analise",
+      "analise": {
+        "manual": true,
+        "multi": true,
+        "legs": [
+          {
+            "fixtureId": 1604031,
+            "kickoff": "2026-10-20T15:20:00.000Z",
+            "home": "Al Orubah",
+            "away": "Al Bukayriyah",
+            "competition": "Division 1",
+            "lineId": "gO1.5",
+            "linha": "Mais de 1,5 gols",
+            "mercado": "Total de gols",
+            "odd_casa": null
+          },
+          {
+            "fixtureId": 1612263,
+            "kickoff": "2026-10-20T17:00:00.000Z",
+            "home": "Wadi Degla",
+            "away": "National Bank of Egypt",
+            "competition": "Premier League",
+            "lineId": "gO1.5",
+            "linha": "Mais de 1,5 gols",
+            "mercado": "Total de gols",
+            "odd_casa": null
+          }
+        ],
+        "fixtureId": 1612263,
+        "lineId": "multi",
+        "kickoff": "2026-10-20T17:00:00.000Z",
+        "first_kickoff": "2026-10-20T15:20:00.000Z",
+        "competition": "Division 1, Premier League",
+        "mercado": "Múltipla",
+        "linha": "2 pernas",
+        "tier": "manual",
+        "p_blend": null,
+        "p_pinnacle": null,
+        "fair_odd": null,
+        "odd_min": null,
+        "pinnacle_odd": null,
+        "priced_by": "manual",
+        "inboxId": "anmvgpbw4wl8o0",
+        "enviadaEm": "2026-10-20T13:11:06.608Z"
+      }
     }
   ],
   "invertidos": [],
@@ -39019,5 +39089,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-20T13:06:23.071Z"
+  "updatedAt": "2026-10-20T13:11:09.123Z"
 }
