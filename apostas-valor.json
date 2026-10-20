@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 0,
+      "value": 113.2,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-20T13:01:41.140Z"
+      "updatedAt": "2026-10-20T13:06:23.071Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 191.13,
+      "value": 171.13,
       "currency": "EUR",
-      "updatedAt": "2026-10-20T12:36:24.658Z"
+      "updatedAt": "2026-10-20T13:06:23.071Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -38798,6 +38798,61 @@
         "clv": -0.06862481157567735,
         "closingFair": 2.65199248455253
       }
+    },
+    {
+      "id": "mvgp5tcvz3nfd",
+      "kind": "valor",
+      "event": "Masr x Future FC — Total de gols: Mais de 2",
+      "houseA": "Sportmarket",
+      "oddA": 2.22,
+      "stakeA": 113.2,
+      "curA": "EUR",
+      "sport": "Futebol",
+      "market": "Total de Gols",
+      "oddMkt": 1.95,
+      "prob": 0.51,
+      "winner": null,
+      "date": "2026-10-20T11:00",
+      "modelo": "analise",
+      "total": 113.2,
+      "lucroA": 138.104,
+      "lucroRed": -113.2,
+      "lucro": 138.104,
+      "roi": 122.00000000000001,
+      "aplicado": {
+        "stakes": true
+      },
+      "updatedAt": "2026-10-20T13:06:23.071Z",
+      "origem": "analise",
+      "analise": {
+        "fixtureId": 1612266,
+        "kickoff": "2026-10-20T14:00:00.000Z",
+        "home": "Masr",
+        "away": "Future FC",
+        "competition": "Premier League",
+        "lineId": "gO2",
+        "mercado": "Total de gols",
+        "linha": "Mais de 2",
+        "tier": "contra a Pinnacle",
+        "p_model": 0.512,
+        "p_blend": 0.51,
+        "p_pinnacle": 0.427,
+        "fair_odd": 1.95,
+        "odd_min": 2.04,
+        "pinnacle_odd": 2.21,
+        "priced_by": "nossa análise",
+        "fragile": true,
+        "scenario": true,
+        "p_scenario": 0.51,
+        "ev_pinnacle": 0.13,
+        "ours": true,
+        "contra_pinnacle": true,
+        "diff_pp": 8.65,
+        "p_model_cal": 0.51,
+        "status": "aposta",
+        "inboxId": "anmvgp5svw9gyb",
+        "enviadaEm": "2026-10-20T13:06:22.460Z"
+      }
     }
   ],
   "invertidos": [],
@@ -38964,5 +39019,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-20T13:01:41.140Z"
+  "updatedAt": "2026-10-20T13:06:23.071Z"
 }
