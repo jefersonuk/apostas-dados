@@ -1603,7 +1603,7 @@
 <script>
 (function(){
   const $ = id => document.getElementById(id);
-  const APP_BUILD='20261002-1542';   // identifica esta versão do código; sobe a cada publicação
+  const APP_BUILD='20261020-1900';   // identifica esta versão do código; sobe a cada publicação
   let codigoDesatualizado=false;
   const STORAGE_KEY='apostasValor_v1';
   let storageAvailable=true;
@@ -1755,7 +1755,9 @@
 
   /* ---------- cloud sync (GitHub Contents API) ---------- */
   const SYNC_KEY='apostasValorSync_v1';
-  let syncCfg=null, cloudSha=null, pushTimer=null, syncBusy=false;
+  // cloudSha: a versão da nuvem que este aparelho já leu e fundiu (ou gravou); nuvemLida: a nuvem foi lida nesta sessão —
+  // sem isso nada é enviado (20/10/2026: com a leitura falhando, um aparelho gravou por cima do que o outro registrou)
+  let syncCfg=null, cloudSha=null, pushTimer=null, syncBusy=false, nuvemLida=false, syncErro=null;
   try{ const raw=localStorage.getItem(SYNC_KEY); if(raw) syncCfg=JSON.parse(raw); }catch(e){}
 
   const sEls={
@@ -1767,8 +1769,12 @@
   function setSyncStatus(msg,isError){
     sEls.info.innerHTML=msg;
     sEls.info.style.color=isError?'#F87171':'#5C6472';
+    const txt=msg.replace(/<[^>]+>/g,''), era=syncErro;
+    syncErro=isError?txt.replace(/^⚠\s*/,''):null;
+    // o erro vai também para o topo (antes ficava só no painel da nuvem, e o topo seguia em "Baixando dados da nuvem…")
     const el=$('autosaveStatus');
-    if(syncCfg&&!isError){ el.textContent='☁ '+msg.replace(/<[^>]+>/g,''); el.style.color='#5C6472'; }
+    if(syncCfg){ el.textContent=isError?txt:'☁ '+txt; el.style.color=isError?'#F87171':'#5C6472'; }
+    if(era!==syncErro) try{ renderAnalise(); }catch(e){}   // o "Aguardando" diz por que a caixa não entrou
   }
 
   const DATA_BRANCH='dados';   // dados ficam fora da branch do site -> nao dispara build do Pages
@@ -1777,6 +1783,7 @@
     return comRef ? base+'?ref='+DATA_BRANCH : base;
   }
   function apiHeaders(){ return { 'Authorization':'Bearer '+syncCfg.token, 'Accept':'application/vnd.github+json' }; }
+  const blobUrl=sha=>'https://api.github.com/repos/'+syncCfg.repo+'/git/blobs/'+sha;
   function b64encode(str){ return btoa(unescape(encodeURIComponent(str))); }
   function b64decode(b64){ return decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))); }
 
@@ -1789,21 +1796,40 @@
     if(status===404) return 'Repositório ou arquivo não encontrado (HTTP 404): confira se o repositório é '+repo+' e o arquivo apostas-valor.json.';
     return 'Erro ao '+acao+' (HTTP '+status+').';
   }
-  async function cloudPull(){
-    const r=await fetch(apiUrl(true),{headers:apiHeaders()});
-    if(r.status===404){ cloudSha=null; return null; }
+  // Lê a nuvem. Até 1 MB o conteúdo vem junto; acima disso a API de conteúdo manda o arquivo sem ele (encoding "none":
+  // em 20/10/2026 o arquivo passou de 1 MB e a leitura falhava com "JSON inválido") e ele vem pelo blob, até 100 MB.
+  // seMudou: devolve MESMA sem baixar quando a nuvem é a versão que este aparelho já tem. cloudSha só muda depois de ler
+  // de verdade: com ele marcado numa leitura que falhou, o envio seguinte passava e gravava por cima da nuvem.
+  const MESMA={};
+  async function cloudPull({seMudou=false}={}){
+    const r=await fetch(apiUrl(true),{headers:apiHeaders(),cache:'no-store'});
+    if(r.status===404){ cloudSha=null; nuvemLida=true; return null; }
     if(!r.ok) throw new Error(erroGitHub(r.status,'ler'));
-    const j=await r.json(); cloudSha=j.sha;
-    try{
-      const remoto=JSON.parse(b64decode(j.content));
-      // se a nuvem foi escrita por uma versão do código mais nova que a que está rodando
-      // aqui, esta aba está desatualizada: para de enviar (só recebe) e avisa.
-      if(remoto.appBuild && remoto.appBuild>APP_BUILD && !codigoDesatualizado){
-        codigoDesatualizado=true;
-        mostrarAvisoDesatualizado();
-      }
-      return remoto;
-    }catch(e){ throw new Error('JSON inválido na nuvem.'); }
+    const j=await r.json();
+    if(seMudou&&nuvemLida&&cloudSha&&j.sha===cloudSha) return MESMA;
+    let b64=j.encoding==='base64'&&j.content?j.content:null;
+    if(!b64){
+      const rb=await fetch(blobUrl(j.sha),{headers:apiHeaders(),cache:'no-store'});
+      if(!rb.ok) throw new Error(erroGitHub(rb.status,'ler'));
+      b64=(await rb.json()).content;
+    }
+    let remoto;
+    try{ remoto=JSON.parse(b64decode(b64||'')); }catch(e){ throw new Error('JSON inválido na nuvem.'); }
+    cloudSha=j.sha; nuvemLida=true;
+    // se a nuvem foi escrita por uma versão do código mais nova que a que está rodando
+    // aqui, esta aba está desatualizada: para de enviar (só recebe) e avisa.
+    if(remoto.appBuild && remoto.appBuild>APP_BUILD && !codigoDesatualizado){
+      codigoDesatualizado=true;
+      mostrarAvisoDesatualizado();
+    }
+    return remoto;
+  }
+  // uma versão antiga do arquivo pelo blob (a recuperação abaixo); null quando ela não existe neste repositório
+  async function cloudBlob(sha){
+    const r=await fetch(blobUrl(sha),{headers:apiHeaders(),cache:'no-store'});
+    if(r.status===404||r.status===422) return null;
+    if(!r.ok) throw new Error(erroGitHub(r.status,'ler'));
+    try{ return JSON.parse(b64decode((await r.json()).content||'')); }catch(e){ return null; }
   }
 
   function mostrarAvisoDesatualizado(){
@@ -1816,16 +1842,16 @@
   async function cloudPush(retry){
     if(!syncCfg) return;
     if(codigoDesatualizado) return;   // aba desatualizada: nunca escreve por cima da nuvem
+    if(!nuvemLida) throw new Error('A nuvem ainda não foi lida neste aparelho: nada foi enviado, para não gravar por cima do que outro aparelho registrou.');
     state.appBuild=APP_BUILD;
-    const body={ message:'sync '+new Date().toISOString(), content:b64encode(JSON.stringify(state,null,2)), branch:DATA_BRANCH };
+    // sem indentação: o arquivo fica ~30% menor (com ela passou de 1 MB em 20/10/2026)
+    const body={ message:'sync '+new Date().toISOString(), content:b64encode(JSON.stringify(state)), branch:DATA_BRANCH };
     if(cloudSha) body.sha=cloudSha;
     const r=await fetch(apiUrl(),{method:'PUT',headers:{...apiHeaders(),'Content-Type':'application/json'},body:JSON.stringify(body)});
     if((r.status===409||r.status===422)&&!retry){
-      // outro dispositivo gravou antes: funde e reenvia, sem descartar nada
-      try{
-        const remoto=await cloudPull();
-        if(remoto){ state=fundirEstados(state,normalize(remoto)); try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){} fillCfg(); renderAll(); }
-      }catch(e){}
+      // outro dispositivo gravou antes: lê, funde e reenvia, sem descartar nada; sem conseguir ler, não grava
+      const remoto=await cloudPull();
+      if(remoto) aplicarNuvem(remoto);
       return cloudPush(true);
     }
     if(!r.ok) throw new Error(erroGitHub(r.status,'gravar'));
@@ -1917,6 +1943,46 @@
     return (fundido.surebets||[]).filter(o=>!antes.has(o.id)).length;
   }
 
+  // Funde a nuvem lida no estado deste aparelho (registro a registro: o mais novo vence, nada é apagado) e guarda;
+  // devolve quantos registros chegaram.
+  function aplicarNuvem(remoto){
+    const antes=state;
+    state=fundirEstados(state,normalize(remoto));
+    try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){}
+    fillCfg(); renderAll();
+    return diffFusao(antes,state);
+  }
+  // A nuvem não tem algo que este aparelho tem (um registro, ou a versão mais nova dele): é preciso reenviar. Acontece
+  // quando um aparelho com o código antigo grava por cima da nuvem.
+  function nuvemAtrasada(remoto,fundido){
+    const r=normalize(remoto), id=o=>o.id, casa=b=>(b.name||'').trim().toLowerCase();
+    const falta=(xs,ys,k)=>{ const m=new Map((ys||[]).map(y=>[k(y),y])); return (xs||[]).some(x=>{ const y=m.get(k(x)); return !y||(x.updatedAt||'')>(y.updatedAt||''); }); };
+    return falta(fundido.surebets,r.surebets,id)||falta(fundido.bets,r.bets,id)||falta(fundido.middles,r.middles,id)||falta(fundido.aportes,r.aportes,id)
+      ||falta(fundido.balances,r.balances,casa)||(fundido.deleted||[]).length>(r.deleted||[]).length;
+  }
+  // Recuperação de 20/10/2026: o arquivo passou de 1 MB, a leitura falhava e, às 11:26 e às 14:02, um aparelho gravou por
+  // cima da nuvem o que tinha — sumiram as duas do Al Taawon x Al-Qadisiyah, e saldos e análises voltaram atrás. As
+  // versões de antes de cada gravação por cima (10:11 e 13:46) são fundidas uma vez em cada aparelho, antes de registrar a
+  // caixa (para a caixa reconhecer o que já foi registrado): a fusão é registro a registro — o mais novo vence e o
+  // excluído não volta —, então só volta o que tinha sumido.
+  const RECUPERAR={ 'jefersonuk/apostas-dados':['a18102c8d8d08a2e7b7b218a986b483f9f53ddf9','4692b8235526c6f983866fce838a3160fd7597c7'] };
+  const REC_KEY='apostasRecuperado_v1';
+  async function recuperarVersoes(){
+    const shas=RECUPERAR[String(syncCfg&&syncCfg.repo||'').trim().toLowerCase()]||[];
+    let feitos=[]; try{ feitos=JSON.parse(localStorage.getItem(REC_KEY))||[]; }catch(e){}
+    let novos=0;
+    for(const sha of shas.filter(x=>!feitos.includes(x))){
+      try{
+        const antiga=await cloudBlob(sha);
+        if(antiga){ const antes=state; state=fundirEstados(state,normalize(antiga)); novos+=diffFusao(antes,state); }
+        feitos.push(sha);
+      }catch(e){ /* sem rede: tenta na próxima leitura */ }
+    }
+    try{ localStorage.setItem(REC_KEY,JSON.stringify(feitos)); localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){}
+    if(novos){ fillCfg(); renderAll(); toast(novos+' registro(s) recuperado(s) da nuvem ✓'); }
+    return novos;
+  }
+
   async function initialSync(){
     if(!syncCfg) return;
     try{
@@ -1924,15 +1990,10 @@
       const remote=await cloudPull();
       if(remote===null){ await cloudPush(); setSyncStatus('Nuvem inicializada ↑ '+new Date().toLocaleTimeString('pt-BR')); marcarSyncPronto(); }
       else {
-        const antes=state;
-        const fundido=fundirEstados(state,normalize(remote));
-        const novos=diffFusao(antes,fundido);
-        state=fundido;
-        try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }catch(e){}
-        fillCfg(); renderAll();
+        const novos=aplicarNuvem(remote), rec=await recuperarVersoes();
         marcarSyncPronto();   // o estado já tem a nuvem: pode registrar mesmo se o envio abaixo falhar
-        await cloudPush();   // devolve a versão fundida para a nuvem
-        setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR')+(novos?` · ${novos} registro(s) recebido(s)`:''));
+        await cloudPush();   // devolve a versão fundida (compacta e com a versão do código: o código antigo passa a só receber)
+        setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR')+(novos+rec?` · ${novos+rec} registro(s) recebido(s)`:''));
         if(novos) toast(`${novos} registro(s) de outro dispositivo ✓`);
       }
     }catch(e){ setSyncStatus('⚠ '+e.message,true); }
@@ -1966,11 +2027,8 @@
     try{
       const remote=await cloudPull();
       if(remote===null){ alert('Ainda não existe arquivo na nuvem.'); }
-      else { const antes=state;
-        state=fundirEstados(state,normalize(remote));
-        const novos=diffFusao(antes,state);
-        try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}
-        fillCfg(); renderAll();
+      else { const novos=aplicarNuvem(remote);
+        marcarSyncPronto();
         setSyncStatus('Sincronizado ↓ '+new Date().toLocaleTimeString('pt-BR')); toast(novos?`${novos} registro(s) recebido(s) ☁`:'Baixado ☁');
       }
     }catch(e){ setSyncStatus('⚠ '+e.message,true); }
@@ -6261,26 +6319,31 @@
 
   /* ---------- verificação periódica de mudanças remotas ---------- */
   let autoSyncTimer=null;
+  // Só baixa quando a nuvem mudou (outra versão que a lida ou gravada aqui). Mudou: funde sempre (a fusão é registro a
+  // registro, não perde nada) e reenvia quando a nuvem ficou sem algo que este aparelho tem.
   async function verificarRemoto(){
     if(!syncCfg||syncBusy||pushTimer) return;
     syncBusy=true;
     try{
-      const remoto=await cloudPull();
-      if(remoto){
-        const antes=state;
-        const fundido=fundirEstados(state,normalize(remoto));
-        const novos=diffFusao(antes,fundido);
-        if(novos>0 || (remoto.updatedAt||'')>(state.updatedAt||'')){
-          state=fundido;
-          try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}
-          fillCfg(); renderAll();
-          if(novos>0){ toast(`${novos} registro(s) de outro dispositivo ✓`); await cloudPush(); }
-          setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR'));
-        }
+      const remoto=await cloudPull({seMudou:true});
+      if(remoto===MESMA||remoto===null){
         marcarSyncPronto();
-      } else if(remoto===null) marcarSyncPronto();
-    }catch(e){}
+        if(syncErro) setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR'));
+        return;
+      }
+      const novos=aplicarNuvem(remoto), rec=await recuperarVersoes();
+      marcarSyncPronto();
+      if(novos>0) toast(`${novos} registro(s) de outro dispositivo ✓`);
+      if(rec||nuvemAtrasada(remoto,state)) await cloudPush();
+      setSyncStatus('Sincronizado ↕ '+new Date().toLocaleTimeString('pt-BR'));
+    }catch(e){ setSyncStatus('⚠ '+e.message,true); }
     finally{ syncBusy=false; }
+  }
+  // "🔄 Tentar agora" no Aguardando: lê a nuvem de novo (a primeira leitura, se ela ainda não deu certo) e registra a caixa
+  async function tentarNuvem(){
+    if(!syncCfg||syncBusy) return;
+    if(!nuvemLida) await initialSync(); else await verificarRemoto();
+    importarAnalise();
   }
   function iniciarAutoSync(){
     clearInterval(autoSyncTimer);
@@ -6352,7 +6415,7 @@
     const box=lerCaixa();
     anAguardando=[];
     if(!box.length){ renderAnalise(); return []; }
-    if(!syncPronto){ anAguardando=box.map(it=>({it,motivo:'aguardando sincronizar com a nuvem'})); renderAnalise(); return []; }
+    if(!syncPronto){ anAguardando=box.map(it=>({it,semNuvem:true,motivo:'entra assim que a nuvem for lida'})); renderAnalise(); return []; }
     const ja=registradasAnalise();
     const pegar=[], ficar=[];
     box.forEach(it=>{
@@ -6499,9 +6562,13 @@
       (motivo.startsWith('a casa')?'<button type="button" class="btn small" data-ancriar="'+esc(it.id)+'">Criar a casa e registrar</button>':'')+
       (confirmar?'<span><button type="button" class="btn small" data-anok="'+esc(it.id)+'">Registrar</button> <button type="button" class="btn small danger" data-andescartar="'+esc(it.id)+'">Descartar</button></span>':'')+'</div>'+
       '<div class="an-meta">'+esc(it.casa)+' @'+Number(it.odd).toFixed(2)+' · '+anStakeItem(it)+' — '+esc(motivo)+'</div></div>').join('');
+    // a nuvem ainda não foi lida neste aparelho: diz por quê (o erro da leitura) e deixa tentar de novo
+    const ler=anAguardando.some(x=>x.semNuvem)?'<div class="hint" style="margin:0 0 8px;">'+(syncErro?'<span style="color:var(--red)">⚠ A nuvem não pôde ser lida: '+esc(syncErro)+'</span> ':'☁ Lendo a nuvem… ')
+      +'Os envios entram assim que ela for lida — antes disso nada é registrado, para não duplicar nem gravar por cima do que outro aparelho registrou. '
+      +'<button type="button" class="btn small" data-anretry>🔄 Tentar agora</button></div>':'';
     const nuvem=anNuvem.cfg===false&&syncPronto?'<div class="hint" style="margin:0 0 8px;">Para receber aqui as apostas enviadas de outros aparelhos, conecte a ☁️ nuvem no app de análise neste aparelho (⚙️ Chave).</div>'
       :anNuvem.erro?'<div class="hint" style="margin:0 0 8px;">Caixa da nuvem com erro: '+esc(anNuvem.erro)+'</div>':'';
-    $('anWait').innerHTML=nuvem+(espera?'<div class="card"><div class="card-title">📥 Aguardando</div>'+espera+'</div>':'');
+    $('anWait').innerHTML=nuvem+(espera?'<div class="card"><div class="card-title">📥 Aguardando</div>'+ler+espera+'</div>':'');
   }
 
   /* ---------- em aberto: ao vivo e liquidação em um toque ---------- */
@@ -6679,6 +6746,8 @@
     $('anCal').innerHTML=html+(pouco?'<div class="hint" style="margin:10px 0 0;"><span style="color:var(--amber)">•</span> menos de 30 apostas na faixa: a diferença ainda é ruído.</div>':'');
   }
   $('anWait').addEventListener('click',e=>{
+    const tenta=e.target.closest('[data-anretry]');
+    if(tenta){ tenta.disabled=true; tenta.textContent='Lendo…'; tentarNuvem().finally(()=>renderAnalise()); return; }
     const ok=e.target.closest('[data-anok]');
     if(ok){ importarAnalise(null,ok.dataset.anok); return; }
     const fora=e.target.closest('[data-andescartar]');
