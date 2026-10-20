@@ -1,7 +1,7 @@
 {
   "cfg": {
     "bankroll": 1000,
-    "startDate": "2026-10-20",
+    "startDate": "2026-10-08",
     "stakeMin": 5,
     "stakeMax": 20,
     "oddMin": 1.5,
@@ -39,7 +39,7 @@
       "idealMin": 8,
       "idealMax": 12,
       "pct": 1,
-      "stake": 170,
+      "stake": 210,
       "stakeMes": "2026-10",
       "inicio": "2026-09-28",
       "meta": 300
@@ -4546,9 +4546,9 @@
     {
       "id": "mrgvt68edox8t",
       "name": "Pipay",
-      "value": 1226.82,
+      "value": 245,
       "currency": "BRL",
-      "updatedAt": "2026-10-20T12:35:22.698Z"
+      "updatedAt": "2026-10-19T13:01:40.611Z"
     },
     {
       "id": "mrskg1h6rlv1s",
@@ -4559,9 +4559,9 @@
     {
       "id": "mrvd6n3x6xs48",
       "name": "Binance",
-      "value": 6843.25,
+      "value": 8922.43,
       "currency": "BRL",
-      "updatedAt": "2026-10-20T12:35:38.513Z"
+      "updatedAt": "2026-10-19T13:01:11.898Z"
     },
     {
       "id": "mrzmpfmzgil2s",
@@ -4574,8 +4574,8 @@
     {
       "id": "ms2ghozrogav9",
       "name": "Metamask",
-      "value": 6190.38,
-      "updatedAt": "2026-10-20T12:35:51.257Z"
+      "value": 5370,
+      "updatedAt": "2026-10-19T13:01:28.051Z"
     },
     {
       "id": "ms95ud6rq4x12",
@@ -4631,9 +4631,9 @@
     {
       "id": "msoqu4qsf39md",
       "name": "Overtimemarkets",
-      "value": 151,
+      "value": 236.12,
       "currency": "USD",
-      "updatedAt": "2026-10-20T12:36:03.929Z"
+      "updatedAt": "2026-10-19T19:15:47.798Z"
     },
     {
       "id": "msqr1ktmyxbew",
@@ -4645,10 +4645,10 @@
     {
       "id": "msqtofykbh7kq",
       "name": "Em apostas de valor",
-      "value": 226.4,
+      "value": 50.5,
       "currency": "BRL",
       "auto": true,
-      "updatedAt": "2026-10-20T13:11:09.123Z"
+      "updatedAt": "2026-10-19T19:23:59.704Z"
     },
     {
       "id": "msrueg4hvw63f",
@@ -4681,9 +4681,9 @@
     {
       "id": "mt0iuq8ibqnbd",
       "name": "Sportmarket",
-      "value": 151.13,
+      "value": 196.08,
       "currency": "EUR",
-      "updatedAt": "2026-10-20T13:11:09.122Z"
+      "updatedAt": "2026-10-19T16:36:14.681Z"
     },
     {
       "id": "mt1hgn4qd7j3a",
@@ -5164,12 +5164,12 @@
       "updatedAt": "2026-10-14T12:38:18.928Z"
     }
   ],
-  "usdRate": 5.02,
+  "usdRate": 5.01,
   "usdRateSrc": "CoinGecko",
-  "usdRateAt": "2026-10-20T12:27:13.524Z",
-  "eurRate": 5.66,
+  "usdRateAt": "2026-10-20T14:26:48.306Z",
+  "eurRate": 5.63,
   "eurRateSrc": "AwesomeAPI",
-  "eurRateAt": "2026-10-20T12:27:13.724Z",
+  "eurRateAt": "2026-10-20T14:26:48.668Z",
   "appBuild": "20261002-1542",
   "deleted": [
     {
@@ -30877,7 +30877,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-20T13:01:31.511Z",
+      "updatedAt": "2026-10-16T13:11:34.694Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -30991,8 +30991,8 @@
         "enviadaEm": "2026-10-09T11:15:20.174Z",
         "check": {
           "status": "encerrado",
-          "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC 1–0 Deportivo Universitario ❌",
-          "at": "2026-10-20T13:01:31.511Z"
+          "detail": "múltipla 3/6: Phrae United 2–1 Kanchanaburi ✅ · FC Rostov 1–0 Akron ❌ · Al Sadd 2–3 Al-Arabi SC ✅ · Nancy 1–0 Guingamp ❌ · Tacuary 2–4 Paraguari AC ✅ · San Francisco FC x Deportivo Universitario: Not Started",
+          "at": "2026-10-16T13:11:34.694Z"
         }
       }
     },
@@ -31291,7 +31291,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-20T13:01:31.829Z",
+      "updatedAt": "2026-10-16T13:11:35.219Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1570410,
@@ -31317,7 +31317,7 @@
         "check": {
           "status": "cancelado",
           "detail": "jogo não disputado",
-          "at": "2026-10-20T13:01:31.829Z"
+          "at": "2026-10-16T13:11:35.219Z"
         }
       }
     },
@@ -34309,7 +34309,7 @@
         "stakes": true,
         "resultado": "VOID"
       },
-      "updatedAt": "2026-10-20T13:01:32.109Z",
+      "updatedAt": "2026-10-16T13:11:35.736Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1585788,
@@ -34334,7 +34334,7 @@
         "check": {
           "status": "pendente",
           "detail": "situação na API: Match Interrupted",
-          "at": "2026-10-20T13:01:32.109Z"
+          "at": "2026-10-16T13:11:35.736Z"
         }
       }
     },
@@ -34887,7 +34887,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-20T13:01:32.397Z",
+      "updatedAt": "2026-10-16T13:11:36.279Z",
       "origem": "analise",
       "analise": {
         "multi": true,
@@ -34944,7 +34944,7 @@
         "check": {
           "status": "manual",
           "detail": "múltipla 1/2: Baník Souš 1–1 Benátky nad Jizerou ↩ · Minerva Punjab 2–1 Odisha ✅ — perna com devolução ou meia: a casa recalcula a odd; confira o valor pago e marque à mão",
-          "at": "2026-10-20T13:01:32.397Z"
+          "at": "2026-10-16T13:11:36.279Z"
         }
       }
     },
@@ -35134,7 +35134,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-20T13:01:33.233Z",
+      "updatedAt": "2026-10-16T13:11:37.352Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1495975,
@@ -35161,7 +35161,7 @@
         "check": {
           "status": "encerrado",
           "detail": "Bryne 1–1 Raufoss · saldo de gols do Bryne: 0 (linha 3.5)",
-          "at": "2026-10-20T13:01:33.233Z"
+          "at": "2026-10-16T13:11:37.352Z"
         }
       }
     },
@@ -37203,7 +37203,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-20T13:01:34.184Z",
+      "updatedAt": "2026-10-16T15:02:21.380Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1627737,
@@ -37224,14 +37224,7 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmvazkasmwjwu",
-        "enviadaEm": "2026-10-16T13:10:57.958Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Gomora United FC 2–3 Cape Town City · gols no jogo: 5 (linha 1.5)",
-          "at": "2026-10-20T13:01:34.184Z"
-        },
-        "clv": -0.05470496950375836,
-        "closingFair": 1.586806183898545
+        "enviadaEm": "2026-10-16T13:10:57.958Z"
       }
     },
     {
@@ -37700,7 +37693,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-20T13:01:35.064Z",
+      "updatedAt": "2026-10-16T16:54:01.564Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1548545,
@@ -37721,14 +37714,7 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmvb42ddyfso2",
-        "enviadaEm": "2026-10-16T15:16:59.590Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Rudes 1–2 HNK Rijeka · saldo de gols no 1º tempo do Rudes: -1 (linha -0.5)",
-          "at": "2026-10-20T13:01:35.064Z"
-        },
-        "clv": -0.053265688381387566,
-        "closingFair": 1.8695847169348567
+        "enviadaEm": "2026-10-16T15:16:59.590Z"
       }
     },
     {
@@ -37808,7 +37794,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-20T13:01:35.985Z",
+      "updatedAt": "2026-10-16T18:12:36.938Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1494298,
@@ -37829,14 +37815,7 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmvb5ugytea80",
-        "enviadaEm": "2026-10-16T16:06:50.213Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "IF Brommapojkarna 0–2 Djurgardens IF · saldo de gols no 1º tempo do IF Brommapojkarna: -1 (linha -0.5)",
-          "at": "2026-10-20T13:01:35.985Z"
-        },
-        "clv": -0.007124544877765038,
-        "closingFair": 1.9740643097665258
+        "enviadaEm": "2026-10-16T16:06:50.213Z"
       }
     },
     {
@@ -37863,7 +37842,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-20T13:01:36.792Z",
+      "updatedAt": "2026-10-16T18:51:30.657Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1565271,
@@ -37884,14 +37863,7 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmvb5w2b5vtf2",
-        "enviadaEm": "2026-10-16T16:08:04.529Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Dinamo Bucuresti 2–0 FC Botosani · saldo de gols no 1º tempo do Dinamo Bucuresti: 0 (linha 0.5)",
-          "at": "2026-10-20T13:01:36.792Z"
-        },
-        "clv": 0.0037543355675691004,
-        "closingFair": 1.9626316222943845
+        "enviadaEm": "2026-10-16T16:08:04.529Z"
       }
     },
     {
@@ -37918,7 +37890,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-20T13:01:37.618Z",
+      "updatedAt": "2026-10-16T18:18:17.825Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1561945,
@@ -37939,14 +37911,7 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmvb8dgvs98kc",
-        "enviadaEm": "2026-10-16T17:17:35.800Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Rapid Vienna 3–1 TSV Hartberg · saldo de gols no 1º tempo do Rapid Vienna: 2 (linha 0.5)",
-          "at": "2026-10-20T13:01:37.618Z"
-        },
-        "clv": -0.051319132435721504,
-        "closingFair": 1.718175263916723
+        "enviadaEm": "2026-10-16T17:17:35.800Z"
       }
     },
     {
@@ -38325,7 +38290,7 @@
         "stakes": true,
         "resultado": "RED"
       },
-      "updatedAt": "2026-10-20T13:01:38.435Z",
+      "updatedAt": "2026-10-16T19:36:00.496Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1492781,
@@ -38347,14 +38312,7 @@
         "fragile": false,
         "manual": true,
         "inboxId": "anmvbaj4zq62gn",
-        "enviadaEm": "2026-10-16T18:17:59.558Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Bohemians 2–1 Waterford · saldo de gols no 1º tempo do Bohemians: 0 (linha 0.5)",
-          "at": "2026-10-20T13:01:38.435Z"
-        },
-        "clv": 0.007679360106045419,
-        "closingFair": 2.1931579503299794
+        "enviadaEm": "2026-10-16T18:17:59.558Z"
       }
     },
     {
@@ -38435,7 +38393,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-20T13:01:39.269Z",
+      "updatedAt": "2026-10-16T20:58:26.467Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1571167,
@@ -38456,14 +38414,7 @@
         "priced_by": "pinnacle",
         "fragile": true,
         "inboxId": "anmvbdkyngkyfl",
-        "enviadaEm": "2026-10-16T19:43:23.500Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Alcorcon 1–1 Huesca · gols no jogo: 2 (linha 1.5)",
-          "at": "2026-10-20T13:01:39.269Z"
-        },
-        "clv": 0.2648265838932342,
-        "closingFair": 1.4310262158063438
+        "enviadaEm": "2026-10-16T19:43:23.500Z"
       }
     },
     {
@@ -38546,7 +38497,7 @@
         "stakes": true,
         "resultado": "A"
       },
-      "updatedAt": "2026-10-20T13:01:40.282Z",
+      "updatedAt": "2026-10-19T17:49:21.856Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1550153,
@@ -38567,14 +38518,7 @@
         "priced_by": "pinnacle",
         "fragile": false,
         "inboxId": "anmvf889oypkim",
-        "enviadaEm": "2026-10-19T12:24:37.906Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Monza 4–0 Cagliari · gols no jogo: 4 (linha 1.5)",
-          "at": "2026-10-20T13:01:40.282Z"
-        },
-        "clv": -0.04059285481398356,
-        "closingFair": 1.386272769254945
+        "enviadaEm": "2026-10-19T12:24:37.906Z"
       }
     },
     {
@@ -38755,7 +38699,7 @@
       "market": "Handicap Asiático",
       "oddMkt": 2.55,
       "prob": 0.392,
-      "winner": "RED",
+      "winner": null,
       "date": "2026-10-19T16:00",
       "modelo": "analise",
       "total": 50.5,
@@ -38764,10 +38708,9 @@
       "lucro": 74.23500000000001,
       "roi": 147.00000000000003,
       "aplicado": {
-        "stakes": true,
-        "resultado": "RED"
+        "stakes": true
       },
-      "updatedAt": "2026-10-20T13:01:41.139Z",
+      "updatedAt": "2026-10-19T14:43:04.852Z",
       "origem": "analise",
       "analise": {
         "fixtureId": 1557436,
@@ -38789,139 +38732,7 @@
         "fragile": true,
         "manual": true,
         "inboxId": "anmvfd67lvws9p",
-        "enviadaEm": "2026-10-19T14:42:59.971Z",
-        "check": {
-          "status": "encerrado",
-          "detail": "Tottenham 3–1 Coventry · saldo de gols do Tottenham: 2 (linha 0.5)",
-          "at": "2026-10-20T13:01:41.137Z"
-        },
-        "clv": -0.06862481157567735,
-        "closingFair": 2.65199248455253
-      }
-    },
-    {
-      "id": "mvgp5tcvz3nfd",
-      "kind": "valor",
-      "event": "Masr x Future FC — Total de gols: Mais de 2",
-      "houseA": "Sportmarket",
-      "oddA": 2.22,
-      "stakeA": 113.2,
-      "curA": "EUR",
-      "sport": "Futebol",
-      "market": "Total de Gols",
-      "oddMkt": 1.95,
-      "prob": 0.51,
-      "winner": null,
-      "date": "2026-10-20T11:00",
-      "modelo": "analise",
-      "total": 113.2,
-      "lucroA": 138.104,
-      "lucroRed": -113.2,
-      "lucro": 138.104,
-      "roi": 122.00000000000001,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-10-20T13:06:23.071Z",
-      "origem": "analise",
-      "analise": {
-        "fixtureId": 1612266,
-        "kickoff": "2026-10-20T14:00:00.000Z",
-        "home": "Masr",
-        "away": "Future FC",
-        "competition": "Premier League",
-        "lineId": "gO2",
-        "mercado": "Total de gols",
-        "linha": "Mais de 2",
-        "tier": "contra a Pinnacle",
-        "p_model": 0.512,
-        "p_blend": 0.51,
-        "p_pinnacle": 0.427,
-        "fair_odd": 1.95,
-        "odd_min": 2.04,
-        "pinnacle_odd": 2.21,
-        "priced_by": "nossa análise",
-        "fragile": true,
-        "scenario": true,
-        "p_scenario": 0.51,
-        "ev_pinnacle": 0.13,
-        "ours": true,
-        "contra_pinnacle": true,
-        "diff_pp": 8.65,
-        "p_model_cal": 0.51,
-        "status": "aposta",
-        "inboxId": "anmvgp5svw9gyb",
-        "enviadaEm": "2026-10-20T13:06:22.460Z"
-      }
-    },
-    {
-      "id": "mvgpby2qq61nm",
-      "kind": "valor",
-      "event": "Múltipla (2) — Al Orubah x Al Bukayriyah Mais de 1,5 gols · Wadi Degla x National Bank of Egypt Mais de 1,5 gols",
-      "houseA": "Sportmarket",
-      "oddA": 1.92,
-      "stakeA": 113.2,
-      "curA": "EUR",
-      "sport": "Futebol",
-      "market": "Múltipla",
-      "oddMkt": null,
-      "prob": null,
-      "winner": null,
-      "date": "2026-10-20T12:20",
-      "modelo": "analise",
-      "total": 113.2,
-      "lucroA": 104.14399999999999,
-      "lucroRed": -113.2,
-      "lucro": 104.14399999999999,
-      "roi": 92,
-      "aplicado": {
-        "stakes": true
-      },
-      "updatedAt": "2026-10-20T13:11:09.122Z",
-      "origem": "analise",
-      "analise": {
-        "manual": true,
-        "multi": true,
-        "legs": [
-          {
-            "fixtureId": 1604031,
-            "kickoff": "2026-10-20T15:20:00.000Z",
-            "home": "Al Orubah",
-            "away": "Al Bukayriyah",
-            "competition": "Division 1",
-            "lineId": "gO1.5",
-            "linha": "Mais de 1,5 gols",
-            "mercado": "Total de gols",
-            "odd_casa": null
-          },
-          {
-            "fixtureId": 1612263,
-            "kickoff": "2026-10-20T17:00:00.000Z",
-            "home": "Wadi Degla",
-            "away": "National Bank of Egypt",
-            "competition": "Premier League",
-            "lineId": "gO1.5",
-            "linha": "Mais de 1,5 gols",
-            "mercado": "Total de gols",
-            "odd_casa": null
-          }
-        ],
-        "fixtureId": 1612263,
-        "lineId": "multi",
-        "kickoff": "2026-10-20T17:00:00.000Z",
-        "first_kickoff": "2026-10-20T15:20:00.000Z",
-        "competition": "Division 1, Premier League",
-        "mercado": "Múltipla",
-        "linha": "2 pernas",
-        "tier": "manual",
-        "p_blend": null,
-        "p_pinnacle": null,
-        "fair_odd": null,
-        "odd_min": null,
-        "pinnacle_odd": null,
-        "priced_by": "manual",
-        "inboxId": "anmvgpbw4wl8o0",
-        "enviadaEm": "2026-10-20T13:11:06.608Z"
+        "enviadaEm": "2026-10-19T14:42:59.971Z"
       }
     }
   ],
@@ -39089,5 +38900,5 @@
     }
   ],
   "sbBankroll": 0,
-  "updatedAt": "2026-10-20T13:11:09.123Z"
+  "updatedAt": "2026-10-20T14:26:48.668Z"
 }
